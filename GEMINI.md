@@ -18,3 +18,4 @@ This file documents the instructions provided to the Gemini CLI for processing a
 
 - A `.gitignore` file is in place to prevent audio files (`.wav`, `.webm`, `.mp3`) and the `data/media` directory from being committed to the repository.
 - The number of audio files on disk should be limited to a maximum of 20 to conserve disk space.
+- All audio and transcript files should be named using `snake_case`. The format should be `[title_in_snake_case]_episode_[number]_[everything_is_everything]`.
