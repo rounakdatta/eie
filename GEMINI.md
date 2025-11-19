@@ -46,7 +46,7 @@ swift run diarize-transcribe "/path/to/your/audio/file.wav" --output "/path/to/y
 And now armed with all the data, we want to do all kind of cool things like: 
 
 - All the cool stories that Ajay and Amit has told. Many of them mind-blowing how they connect them back to important ideas. These stories also often display a very unseen side of popular and unpopular historical events, giving that event an unique, warm, aha perspective.
-- All the recommendations that have been shared by Amit and Ajay. It's also very important to share the background of *why* they're recommending that. Very crisp and to the point. If possible, you should also look up the internet and provide a relevant hyperlink to it (say Goodreads for books).
+- All the recommendations that have been shared by Amit and Ajay. It's also very important to share the background of *why* they're recommending that. Very crisp and to the point. If possible, you should also look up the internet and provide a relevant hyperlink (book_url) to it (say OpenLibrary API or Goodreads for books) and also a cover image URL (book_img_cover_url).
 - The core idea and mindsets, if anything. For example, "Adam Smith's idea of free markets", or the fact that "a French economist invented the noble idea of VAT" or the fact that "Stalin was a well read person who was comfortable to sit and have elaborate discussions with philosophers".
 - All the good and terrible jokes cracked. And cultural references mentioned.
 
