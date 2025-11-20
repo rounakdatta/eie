@@ -54,13 +54,13 @@ Now that we have all the data, I think we can do much better than the all-around
 
 All of these things should be preferably in a JSON file, so that it can be later used to visualize on an UI. Also, you should add the release date of the episode in the JSON file.
 
-## Insight Extraction Strategy (The Psychological Algorithm)
+## Insight Extraction Strategy (the psychology of how you choose which insight would be valuable and which not)
 
 **Target Reader:** A super curious mid-20s person whose goal is to learn and connect dots. They want intellectual nourishment and "aha" moments.
 
 **The Key Test:** "Would a curious 20-something find this valuable for learning and connecting dots?"
 
-### Stories (aim for 4-6)
+### Stories
 **What to capture:**
 - Stories that teach something or reveal an interesting perspective
 - Personal anecdotes if they connect to broader ideas
@@ -69,7 +69,7 @@ All of these things should be preferably in a JSON file, so that it can be later
 
 **Examples:** Billy Joel story (luck in success), snake encounter (instinct vs knowledge), USSR collapse (social conformity)
 
-### Recommendations (aim for 3-5)
+### Recommendations
 **What to capture:**
 - ALL explicit recommendations: books, essays, albums, films
 - The "WHY" is crucial - helps reader decide if it's for them
@@ -77,7 +77,7 @@ All of these things should be preferably in a JSON file, so that it can be later
 
 **Be generous:** If they mention a book with enthusiasm or context, it's likely a recommendation.
 
-### Core Ideas (aim for 5-8)
+### Core Ideas
 **What to capture:**
 - Major intellectual concepts that help connect dots
 - Frameworks for understanding the world (like "Four Quadrants of Conformism")
@@ -86,7 +86,7 @@ All of these things should be preferably in a JSON file, so that it can be later
 
 **Examples:** "Hardware vs Software," "Preference Falsification," "People as Brains Not Stomachs"
 
-### Jokes & Cultural References (aim for 6-10)
+### Jokes & Cultural References
 **What to capture:**
 - Genuinely witty moments (not casual banter)
 - Cultural touchpoints that add flavor and context
@@ -98,4 +98,4 @@ All of these things should be preferably in a JSON file, so that it can be later
 ### Overall Philosophy
 **Think like a curator, not a transcriber.** Be generous but discerning. Each insight should pass the test: "Would this help someone learn something valuable or make an interesting connection?"
 
-Not everything needs to be profound - warmth, humor, and relatability matter too. But avoid capturing noise just for completeness.
+Not everything needs to be profound - warmth, humor, and relatability matter too. But avoid capturing noise just for completeness. And remember, you should prioritize quality over quantity. It doesn't matter whether you pick 2 insights or 20, they should be high quality.
