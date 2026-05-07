@@ -43,10 +43,10 @@ swift run diarize-transcribe "/path/to/your/audio/file.wav" --output "/path/to/y
 
 ## Once transcribed and diarized files are ready
 
-And now armed with all the data, we want to do all kind of cool things like: 
+And now armed with all the data (both the transcript and the descriptions - make sure to keep this point in mind), we want to do all kind of cool things like: 
 
 - All the cool stories that Ajay and Amit has told. Many of them mind-blowing how they connect them back to important ideas. These stories also often display a very unseen side of popular and unpopular historical events, giving that event an unique, warm, aha perspective.
-- All the recommendations that have been shared by Amit and Ajay. It's also very important to share the background of *why* they're recommending that. Very crisp and to the point. If possible, you should also look up the internet and provide a relevant hyperlink (book_url) to it (say OpenLibrary API or Goodreads for books) and also a cover image URL (book_img_cover_url).
+- All the recommendations that have been shared by Amit and Ajay. It's also very important to share the background of *why* they're recommending that. Very crisp and to the point.
 - The core idea and mindsets, if anything. For example, "Adam Smith's idea of free markets", or the fact that "a French economist invented the noble idea of VAT" or the fact that "Stalin was a well read person who was comfortable to sit and have elaborate discussions with philosophers".
 - All the good and terrible jokes cracked. And cultural references mentioned. Please don't capture small kidding around, instead be mature enough to capture the real jokes and witty moments. We are dealing with quality here.
 
@@ -73,7 +73,8 @@ All of these things should be preferably in a JSON file, so that it can be later
 **What to capture:**
 - ALL explicit recommendations: books, essays, albums, films
 - The "WHY" is crucial - helps reader decide if it's for them
-- For books: Look up OpenLibrary for book_url and book_cover_img_url
+- Make sure to include clearly who the recommender is. **Crucial:** Just the recommender's name (e.g., "Amit Varma", "Ajay Shah"). Do **NOT** add parenthetical context like "(referenced)" or "(guest)".
+- I had initally asked your to look up book URLs, but actually ignore that. No need to bring in URLs by searching for them. If the podcast hosts have specified something interesting URL, then feel free to include that as you find interesting and insightful, but no need to look up book cover images and book URLs and all of that.
 
 **Be generous:** If they mention a book with enthusiasm or context, it's likely a recommendation.
 
