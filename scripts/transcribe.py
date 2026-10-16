@@ -59,16 +59,27 @@ def write_json(obj, path):
 
 
 def feed_audio(n):
-    """Download episode n from the podcast feed and decode it to 16 kHz mono samples."""
+    """Download episode n from the podcast feed and decode it to 16 kHz mono samples.
+
+    A file in work/audio-override/NNN.* wins: the feed files Episode 7's audio under Episode 12.
+    """
+    override = glob.glob(os.path.join(WORK, "audio-override", f"{n:03d}.*"))
+    if override:
+        return decode(override[0])
     feed = os.path.join(WORK, "feed.xml")
     if not os.path.exists(feed):
         urllib.request.urlretrieve(FEED, feed)
     item = next(i for i in ET.parse(feed).getroot().iter("item") if i.findtext("title").startswith(f"Ep {n}:"))
     mp3 = os.path.join(WORK, f"audio-{n:03d}.mp3")
     urllib.request.urlretrieve(item.find("enclosure").get("url"), mp3)
-    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", mp3, "-f", "s16le", "-ac", "1",
-                          "-ar", str(SR), "-"], check=True, capture_output=True).stdout
+    audio = decode(mp3)
     os.remove(mp3)
+    return audio
+
+
+def decode(path):
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", path, "-f", "s16le", "-ac", "1",
+                          "-ar", str(SR), "-"], check=True, capture_output=True).stdout
     return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768
 
 
@@ -328,7 +339,8 @@ def main(episodes):
               "old_text_similarity": similarity(old_words, words, duration, ""),
               "old_label_agreement": agreement(old, words, labels),
               "processing_minutes": round((time.time() - began) / 60, 1)}
-        write_json({"metadata": {"source": "podcast feed audio, re-timed to the YouTube video",
+        write_json({"metadata": {"source": "YouTube audio" if glob.glob(os.path.join(WORK, "audio-override", f"{n:03d}.*"))
+                                 else "podcast feed audio, re-timed to the YouTube video",
                                  "feedOffsetSeconds": offset, "durationSeconds": duration, "asr": ASR,
                                  "vad": "silero-vad", "speakerLabels": LABELS,
                                  "speakers": sorted(talk), "created": datetime.date.today().isoformat()},
