@@ -4,15 +4,21 @@
   python3 scripts/transcribe.py [N ...]   # all 128 by default; resumable, skips finished episodes
 
 Audio comes from the show's podcast feed. Silero VAD cuts it at pauses into chunks of up to
-30 s, NVIDIA Parakeet TDT 0.6B v3 (fp32 ONNX, via onnx-asr) transcribes them, and each word
+30 s, NVIDIA Parakeet TDT 0.6B v3 (int8 ONNX, via onnx-asr; episodes 1-16 ran the 2x larger
+fp32 build) transcribes them, and each word
 is labelled Amit Varma, Ajay Shah or other by comparing WeSpeaker ResNet34 voiceprints
 (via sherpa-onnx) with the two hosts' voices. The feed opens with a ~14 s notice the video
 lacks ("You're listening to the audio version ..."), which is dropped, and its clock is offset
 from the YouTube video's, so times are shifted to the video's: the offset comes from matching
 the current transcript's word timings against the feed audio's loudness.
 
-Needs `pip install onnx-asr onnxruntime sherpa-onnx numpy` and ffmpeg. Models live in
-work/models (see MODELS). `touch work/PAUSE` pauses between episodes; remove it to resume.
+It shares a 10 GiB container with interactive work, so it stays small (int8 model, 16-bit
+audio, 2 threads, run at nice 19) and exits with status 75 the moment the container's memory
+nears its cap: an OOM there kills every process in it. Run it under scripts/gently.py, which
+starts it again once memory recedes. `touch work/PAUSE` pauses between episodes; remove it to resume.
+
+Needs `pip install onnx-asr onnxruntime sherpa-onnx numpy imageio-ffmpeg`. Models live in
+work/models (see MODELS).
 """
 import collections
 import datetime
@@ -23,10 +29,12 @@ import os
 import re
 import subprocess
 import sys
+import threading
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
 
+import imageio_ffmpeg
 import numpy as np
 import onnx_asr
 import onnxruntime
@@ -38,9 +46,11 @@ METADATA = os.path.join(ROOT, "data", "original", "metadata")
 WORK = os.path.join(ROOT, "work")
 MODELS = os.path.join(WORK, "models")
 FEED = "https://anchor.fm/s/f752ab78/podcast/rss"
-ASR = "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)"
+ASR = "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)"
+PARAKEET = "nvidia/parakeet-tdt-0.6b-v3"  # either build counts as transcribed
 LABELS = "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)"
-SR, THREADS, MAX_CHUNK = 16000, 3, 30.0
+SR, THREADS, MAX_CHUNK = 16000, 2, 30.0
+MEMORY_LIMIT = int(os.environ.get("EIE_MEMORY_LIMIT", 7 * 2**30))  # container anon + shmem; the cap is 10 GiB
 WIN, HOP, FLOOR, MIN_TURN = 1.5, 0.5, 0.5, 1.5  # voiceprint windows; below FLOOR for both hosts -> "other"
 # Stretches of Episode 128 (video time) where only one host speaks, for the voiceprints.
 VOICES = {"Amit Varma": [(20, 50), (150, 200), (220, 300)], "Ajay Shah": [(60, 95), (100, 140), (330, 400)]}
@@ -78,15 +88,42 @@ def feed_audio(n):
 
 
 def decode(path):
-    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", path, "-f", "s16le", "-ac", "1",
-                          "-ar", str(SR), "-"], check=True, capture_output=True).stdout
-    return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768
+    """16 kHz mono samples as int16; pcm() converts the stretch in hand to float."""
+    raw = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-nostdin", "-loglevel", "error", "-i", path,
+                          "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], check=True, capture_output=True).stdout
+    return np.frombuffer(raw, dtype=np.int16)
+
+
+def pcm(audio, a, b):
+    """Seconds a to b of the audio as float32 in [-1, 1]."""
+    return audio[max(0, int(a * SR)):max(0, int(b * SR))].astype(np.float32) / 32768
+
+
+def container_memory():
+    with open("/sys/fs/cgroup/memory.stat") as f:
+        stat = dict(line.split() for line in f)
+    return int(stat["anon"]) + int(stat["shmem"])
+
+
+def guard_memory():
+    """Exit with 75 as soon as the container's memory nears its cap, freeing ours before an OOM kills all."""
+    def watch():
+        while True:
+            used = container_memory()
+            if used > MEMORY_LIMIT:
+                print(json.dumps({"yield": "memory", "container_gib": round(used / 2**30, 2)}), flush=True)
+                os._exit(75)
+            time.sleep(1)
+    threading.Thread(target=watch, daemon=True).start()
 
 
 def video_offset(audio, words):
     """Seconds by which the feed audio runs ahead of the video, and how many 5-minute windows agree."""
     frames = len(audio) // 1600
-    loud = np.sqrt((audio[:frames * 1600].reshape(frames, 1600) ** 2).mean(1))
+    loud = np.empty(frames, dtype=np.float32)
+    for i in range(0, frames, 6000):  # ten minutes at a time
+        block = audio[i * 1600:min(frames, i + 6000) * 1600].reshape(-1, 1600).astype(np.float32) / 32768
+        loud[i:i + len(block)] = np.sqrt((block ** 2).mean(1))
     speech = (loud > np.percentile(loud, 30)).astype(float)
     mask = np.zeros(int(words[-1]["endTime"] * 10) + 2)
     for w in words:
@@ -105,11 +142,13 @@ def speech_chunks(vad, audio):
     """Silero speech segments merged into chunks of at most MAX_CHUNK seconds, cut only at pauses."""
     vad.reset()
     segments = []
-    for i in range(0, len(audio), 512):
-        vad.accept_waveform(audio[i:i + 512])
-        while not vad.empty():
-            segments.append((vad.front.start / SR, (vad.front.start + len(vad.front.samples)) / SR))
-            vad.pop()
+    for i in range(0, len(audio), 512 * 600):
+        block = audio[i:i + 512 * 600].astype(np.float32) / 32768
+        for j in range(0, len(block), 512):
+            vad.accept_waveform(block[j:j + 512])
+            while not vad.empty():
+                segments.append((vad.front.start / SR, (vad.front.start + len(vad.front.samples)) / SR))
+                vad.pop()
     vad.flush()
     while not vad.empty():
         segments.append((vad.front.start / SR, (vad.front.start + len(vad.front.samples)) / SR))
@@ -128,7 +167,7 @@ def transcribe(asr, audio, chunks):
     words = []
     for a, b in chunks:
         start = max(0.0, a - 0.15)
-        r = asr.recognize(audio[int(start * SR):int((b + 0.15) * SR)], sample_rate=SR)
+        r = asr.recognize(pcm(audio, start, b + 0.15), sample_rate=SR)
         chunk = []
         for token, t, logprob in zip(r.tokens, r.timestamps, r.logprobs):
             if not chunk or token.startswith(" "):  # a leading space starts a word; pieces and punctuation join it
@@ -182,9 +221,10 @@ def label(extractor, voices, audio, words, cache):
         saved = np.load(cache)
         assert np.array_equal(saved["windows"], windows)
         embeddings = saved["embeddings"].astype(np.float32)
-    except (OSError, AssertionError, KeyError):
+    except Exception:  # missing, stale, or cut short by a memory exit
         embeddings = np.array([embed(extractor, audio, a, b) for a, b in windows])
-        np.savez_compressed(cache, windows=windows, embeddings=embeddings.astype(np.float16))
+        np.savez_compressed(cache + ".tmp.npz", windows=windows, embeddings=embeddings.astype(np.float16))
+        os.replace(cache + ".tmp.npz", cache)
     centroids = refs
     for _ in range(5):
         nearest = (embeddings @ centroids.T).argmax(1)
@@ -219,7 +259,7 @@ def label(extractor, voices, audio, words, cache):
 
 def embed(extractor, audio, a, b):
     stream = extractor.create_stream()
-    stream.accept_waveform(SR, audio[max(0, int(a * SR)):int(b * SR)])
+    stream.accept_waveform(SR, pcm(audio, a, b))
     stream.input_finished()
     e = np.array(extractor.compute(stream))
     return e / np.linalg.norm(e)
@@ -264,10 +304,11 @@ def fluidaudio(n, current):
 
 
 def main(episodes):
+    guard_memory()
     so = onnxruntime.SessionOptions()
     so.intra_op_num_threads, so.inter_op_num_threads = THREADS, 1
-    asr = onnx_asr.load_model("nemo-parakeet-tdt-0.6b-v3", path=os.path.join(MODELS, "parakeet-v3-fp32"),
-                              sess_options=so).with_timestamps()
+    asr = onnx_asr.load_model("nemo-parakeet-tdt-0.6b-v3", path=os.path.join(MODELS, "parakeet-v3-int8"),
+                              quantization="int8", sess_options=so).with_timestamps()
     vad_config = sherpa_onnx.VadModelConfig()
     vad_config.silero_vad.model = os.path.join(MODELS, "silero_vad.onnx")
     vad_config.silero_vad.threshold, vad_config.silero_vad.min_silence_duration = 0.5, 0.3
@@ -293,7 +334,8 @@ def main(episodes):
     for n in episodes:
         path = os.path.join(TRANSCRIPTS, f"{n:03d}.json")
         current = load_json(path)
-        if current["metadata"].get("asr") == ASR and current["metadata"].get("speakerLabels") == LABELS:
+        transcribed = current["metadata"].get("asr", "").startswith(PARAKEET)
+        if transcribed and current["metadata"].get("speakerLabels") == LABELS:
             continue
         while os.path.exists(os.path.join(WORK, "PAUSE")):
             time.sleep(60)
@@ -303,7 +345,7 @@ def main(episodes):
         duration = load_json(os.path.join(METADATA, f"{n:03d}.json"))["duration_seconds"]
         audio = feed_audio(n)
         offset, agree = video_offset(audio, old_words)
-        if current["metadata"].get("asr") == ASR:  # transcribed already: only the speaker labels are redone
+        if transcribed:  # only the speaker labels are redone
             notice = None
             words = [dict(w, startTime=round(w["startTime"] + current["metadata"]["feedOffsetSeconds"], 2),
                           endTime=round(w["endTime"] + current["metadata"]["feedOffsetSeconds"], 2))
@@ -341,7 +383,8 @@ def main(episodes):
               "processing_minutes": round((time.time() - began) / 60, 1)}
         write_json({"metadata": {"source": "YouTube audio" if glob.glob(os.path.join(WORK, "audio-override", f"{n:03d}.*"))
                                  else "podcast feed audio, re-timed to the YouTube video",
-                                 "feedOffsetSeconds": offset, "durationSeconds": duration, "asr": ASR,
+                                 "feedOffsetSeconds": offset, "durationSeconds": duration,
+                                 "asr": current["metadata"]["asr"] if transcribed else ASR,
                                  "vad": "silero-vad", "speakerLabels": LABELS,
                                  "speakers": sorted(talk), "created": datetime.date.today().isoformat()},
                     "segments": segments}, path)
