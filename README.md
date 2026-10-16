@@ -78,5 +78,5 @@ Audio and transcription are covered in [GEMINI.md](GEMINI.md) (yt-dlp, then Flui
 
 ## Caveats
 
-- Speaker labels are diarizer IDs, not names, and they often merge the two hosts. Episode 76 is one undiarised segment.
+- Speaker labels are per-episode diarizer IDs, not names: Amit is `1` in episode 128 but `2` in episode 126. Episode 76 is one undiarised segment.
 - The insights record what the hosts said, slips included. In episode 6 Amit places the 1993 earthquake in Gujarat; in episode 66 he correctly says Latur.
