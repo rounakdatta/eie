@@ -50,7 +50,7 @@ ASR = "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)"
 PARAKEET = "nvidia/parakeet-tdt-0.6b-v3"  # either build counts as transcribed
 LABELS = "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)"
 SR, THREADS, MAX_CHUNK = 16000, 2, 30.0
-MEMORY_LIMIT = int(os.environ.get("EIE_MEMORY_LIMIT", 7 * 2**30))  # container anon + shmem; the cap is 10 GiB
+MEMORY_LIMIT = int(os.environ.get("EIE_MEMORY_LIMIT", 6.5 * 2**30))  # container anon + shmem; the cap is 10 GiB
 WIN, HOP, FLOOR, MIN_TURN = 1.5, 0.5, 0.5, 1.5  # voiceprint windows; below FLOOR for both hosts -> "other"
 # Stretches of Episode 128 (video time) where only one host speaks, for the voiceprints.
 VOICES = {"Amit Varma": [(20, 50), (150, 200), (220, 300)], "Ajay Shah": [(60, 95), (100, 140), (330, 400)]}
@@ -113,7 +113,7 @@ def guard_memory():
             if used > MEMORY_LIMIT:
                 print(json.dumps({"yield": "memory", "container_gib": round(used / 2**30, 2)}), flush=True)
                 os._exit(75)
-            time.sleep(1)
+            time.sleep(0.5)
     threading.Thread(target=watch, daemon=True).start()
 
 

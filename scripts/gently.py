@@ -14,7 +14,7 @@ import sys
 import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESUME = 5 * 2**30  # container anon + shmem
+RESUME = 4.5 * 2**30  # container anon + shmem
 
 
 def container_memory():
