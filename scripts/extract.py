@@ -5,7 +5,8 @@
   python3 scripts/extract.py --wait    # keep going as the transcription run finishes episodes
   python3 scripts/extract.py --force N # redo episode N even if it's already extracted
 
-Claude Opus 5.5 reads the speaker-labelled transcript, the show notes and the previous
+Long speaker disagreements are settled first (scripts/adjudicate.py). Then Claude Opus 5.5
+reads the speaker-labelled transcript, the show notes and the previous
 extraction (a checklist of candidates, never a source) and returns the four kinds of insight
 in the existing schema. Quotes, speakers and recommendations are then checked against the
 transcript and show notes; whatever fails goes back to the model once, and a quote that still
@@ -24,6 +25,9 @@ import sys
 import time
 
 import anthropic
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import adjudicate  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRANSCRIPTS = os.path.join(ROOT, "data", "original", "transcripts")
@@ -189,6 +193,7 @@ def ask(client, system, messages):
 
 def extract(client, n):
     began = time.time()
+    adjudicate.adjudicate(client, n)  # settle long speaker disagreements first; a no-op for most episodes
     transcript = load(os.path.join(TRANSCRIPTS, f"{n:03d}.json"))
     meta = load(os.path.join(METADATA, f"{n:03d}.json"))
     with open(os.path.join(DESCRIPTIONS, f"{n:03d}.txt"), encoding="utf-8") as f:

@@ -335,7 +335,7 @@ def main(episodes):
         path = os.path.join(TRANSCRIPTS, f"{n:03d}.json")
         current = load_json(path)
         transcribed = current["metadata"].get("asr", "").startswith(PARAKEET)
-        if transcribed and current["metadata"].get("speakerLabels") == LABELS:
+        if transcribed and current["metadata"].get("speakerLabels", "").startswith(LABELS):  # incl. adjudicated
             continue
         while os.path.exists(os.path.join(WORK, "PAUSE")):
             time.sleep(60)
