@@ -5,7 +5,7 @@
     "durationSeconds": 6134,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -102661,15 +102661,23 @@
     {
       "speaker": "Amit Varma",
       "startTime": 5665.97,
-      "endTime": 5667.95,
-      "text": "open source.",
+      "endTime": 5666.45,
+      "text": "open",
       "words": [
         {
           "word": "open",
           "startTime": 5665.97,
           "endTime": 5666.45,
           "confidence": 0.999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 5666.45,
+      "endTime": 5667.95,
+      "text": "source.",
+      "words": [
         {
           "word": "source.",
           "startTime": 5666.45,
@@ -110405,8 +110413,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 6116.49,
-      "endTime": 6126.28,
-      "text": "Does this mean we have to do the next one indoor? Yeah, next one indoors. And we'll have to find a new shirt.",
+      "endTime": 6124.78,
+      "text": "Does this mean we have to do the next one indoor? Yeah, next one indoors. And we'll have to find a new",
       "words": [
         {
           "word": "Does",
@@ -110539,7 +110547,15 @@
           "startTime": 6124.46,
           "endTime": 6124.78,
           "confidence": 0.9992
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 6124.78,
+      "endTime": 6126.28,
+      "text": "shirt.",
+      "words": [
         {
           "word": "shirt.",
           "startTime": 6124.78,

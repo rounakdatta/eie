@@ -5,7 +5,7 @@
     "durationSeconds": 3336,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -15,10 +15,10 @@
   },
   "segments": [
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 15.89,
-      "endTime": 17.01,
-      "text": "Welcome to",
+      "endTime": 19.89,
+      "text": "Welcome to everyone. Okay, you go.",
       "words": [
         {
           "word": "Welcome",
@@ -31,15 +31,7 @@
           "startTime": 16.13,
           "endTime": 17.01,
           "confidence": 0.9805
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 17.01,
-      "endTime": 19.89,
-      "text": "everyone. Okay, you go.",
-      "words": [
+        },
         {
           "word": "everyone.",
           "startTime": 17.01,
@@ -16209,8 +16201,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 824.1,
-      "endTime": 846.05,
-      "text": "and if I remember correctly, Robert Travers, you have a ton of work. Talking about altruism and self interest, and you know the reflexive assumption again is they're at odds with each other. Actually we are hardwired for both. And exactly as you said, we have this desire to help others as well. And what I would love to do is amplify the better angels of our natures, be more altruistic. And actually in that indirectly lies our self interest as",
+      "endTime": 845.81,
+      "text": "and if I remember correctly, Robert Travers, you have a ton of work. Talking about altruism and self interest, and you know the reflexive assumption again is they're at odds with each other. Actually we are hardwired for both. And exactly as you said, we have this desire to help others as well. And what I would love to do is amplify the better angels of our natures, be more altruistic. And actually in that indirectly lies our self interest",
       "words": [
         {
           "word": "and",
@@ -16691,21 +16683,21 @@
           "startTime": 845.41,
           "endTime": 845.81,
           "confidence": 0.9994
-        },
-        {
-          "word": "as",
-          "startTime": 845.81,
-          "endTime": 846.05,
-          "confidence": 0.9987
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 846.05,
+      "startTime": 845.81,
       "endTime": 847.55,
-      "text": "well.",
+      "text": "as well.",
       "words": [
+        {
+          "word": "as",
+          "startTime": 845.81,
+          "endTime": 846.05,
+          "confidence": 0.9987
+        },
         {
           "word": "well.",
           "startTime": 846.05,
@@ -32321,29 +32313,29 @@
     {
       "speaker": "other",
       "startTime": 1633.66,
-      "endTime": 1635.16,
-      "text": "masturbate.",
+      "endTime": 1635.9,
+      "text": "masturbate. Right.",
       "words": [
         {
           "word": "masturbate.",
           "startTime": 1633.66,
           "endTime": 1635.16,
           "confidence": 0.9596
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1635.42,
-      "endTime": 1817.49,
-      "text": "Right. And what is the lesson here? The lesson here is that deliberately out of a sense of humor, I committed a fallacy called the post hoc. Ergo Proctor Hawk. Now what that fallacy means, a post hoc fallacy, is that something happened, something happened after it. Therefore the first thing caused the second thing, right? So Ryan uh masturbated and then he got a big body. So therefore to get a big body you have to masturbate. Masturbation causes a big body. Now it's a fallacy. There's a similar fallacy called ironically, come Hawk Ergo Proctor Hawk, right? So uh it's it's I love the name because of this the the uh main activity in in the story, right? And that means when two things happen simultaneously, you assume that one causes the other, and that is also a fallacy. Now for the post hoc fallacy, that X cause Y, Michael uh Crichton has a great name for this. Wet streets cause rain fallacy. Right? So you have wet streets and it's raining, and you say wet streets cause the rain, where you get the causation the other way around. So this is the opposite of, you know, this is you get the causation completely, Ulta, and again, uh it's a fallacy, it's a post-hoc fallacy. And in a sense, I can imagine how this evolved, right? Because you're living in a really simple universe when you're in a hunter-gatherer tribe. You hear a noise inside a bush and a tiger emerges, or whatever. You know, you do something, you immediately get the action. It's easy for you to attribute causation and to you know tell those simple stories that we need to tell to make sense of the world. And by the way, all religion emerged out of those simple stories as well. You know, what caused rain, you can't think of something you did. So either it is a god or it is a ritual which sometimes causes rain, so confirmation bias, et cetera, et cetera, without going there. This is sort of uh a classic um uh fallacy that comes up all the time, that we believe that if something happened, there must be a reason for it. And then we will build a story and we will say that that is the reason. And often it is, you know, not the reason. Like uh Savil in his book gives a great example um of the great depression, right? I meant to say example of the great depression, but I said great example of the great depression because you know that is uh how language uh messes with us. And his thing was that people say there was a stock market crash in 1929 that caused the great depression. And Saval breaks it down. He says, Yeah, okay, there was a stock market crash, but in the year that followed, the peak of unemployment was at 9%. And by June 1930, it was basically 6.5%. And at around that time, the government decided to intervene. First, there was a Snootes Holly tariff, and then there's a whole bunch of government interventions, and then it explodes. And the case that he makes convincingly with a lot of data, I think Amity Schleze also has a book on it, if I remember correctly, is that it it wasn't the stock market crash. It was a whole bunch of interventions which led to the problem. And as an example, He says that look in 1989 we had a stock market crash as well. But then you have a couple of decades of uh, you know, great economic growth happening after that. So it's it's it's convenient to blame something because the world is complex and we can't really figure out. But you know, the causation isn't always so simple. And unfortunately, when it comes to economics, we just see this happening all the",
-      "words": [
+        },
         {
           "word": "Right.",
           "startTime": 1635.42,
           "endTime": 1635.9,
           "confidence": 0.6894
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1635.9,
+      "endTime": 1817.49,
+      "text": "And what is the lesson here? The lesson here is that deliberately out of a sense of humor, I committed a fallacy called the post hoc. Ergo Proctor Hawk. Now what that fallacy means, a post hoc fallacy, is that something happened, something happened after it. Therefore the first thing caused the second thing, right? So Ryan uh masturbated and then he got a big body. So therefore to get a big body you have to masturbate. Masturbation causes a big body. Now it's a fallacy. There's a similar fallacy called ironically, come Hawk Ergo Proctor Hawk, right? So uh it's it's I love the name because of this the the uh main activity in in the story, right? And that means when two things happen simultaneously, you assume that one causes the other, and that is also a fallacy. Now for the post hoc fallacy, that X cause Y, Michael uh Crichton has a great name for this. Wet streets cause rain fallacy. Right? So you have wet streets and it's raining, and you say wet streets cause the rain, where you get the causation the other way around. So this is the opposite of, you know, this is you get the causation completely, Ulta, and again, uh it's a fallacy, it's a post-hoc fallacy. And in a sense, I can imagine how this evolved, right? Because you're living in a really simple universe when you're in a hunter-gatherer tribe. You hear a noise inside a bush and a tiger emerges, or whatever. You know, you do something, you immediately get the action. It's easy for you to attribute causation and to you know tell those simple stories that we need to tell to make sense of the world. And by the way, all religion emerged out of those simple stories as well. You know, what caused rain, you can't think of something you did. So either it is a god or it is a ritual which sometimes causes rain, so confirmation bias, et cetera, et cetera, without going there. This is sort of uh a classic um uh fallacy that comes up all the time, that we believe that if something happened, there must be a reason for it. And then we will build a story and we will say that that is the reason. And often it is, you know, not the reason. Like uh Savil in his book gives a great example um of the great depression, right? I meant to say example of the great depression, but I said great example of the great depression because you know that is uh how language uh messes with us. And his thing was that people say there was a stock market crash in 1929 that caused the great depression. And Saval breaks it down. He says, Yeah, okay, there was a stock market crash, but in the year that followed, the peak of unemployment was at 9%. And by June 1930, it was basically 6.5%. And at around that time, the government decided to intervene. First, there was a Snootes Holly tariff, and then there's a whole bunch of government interventions, and then it explodes. And the case that he makes convincingly with a lot of data, I think Amity Schleze also has a book on it, if I remember correctly, is that it it wasn't the stock market crash. It was a whole bunch of interventions which led to the problem. And as an example, He says that look in 1989 we had a stock market crash as well. But then you have a couple of decades of uh, you know, great economic growth happening after that. So it's it's it's convenient to blame something because the world is complex and we can't really figure out. But you know, the causation isn't always so simple. And unfortunately, when it comes to economics, we just see this happening all the",
+      "words": [
         {
           "word": "And",
           "startTime": 1635.9,
@@ -43413,8 +43405,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2209.71,
-      "endTime": 2271.49,
-      "text": "And this also brings me to my personal lesson from this fallacy, and this is something we spoke about in our poker episode as well, which is that you know 98% of what happens to each of us is sheer dumb luck. We don't control that shit. We'll give causation. But basically you got lucky. Don't let it get to your head. Or similarly, you might say that hey, I'm a Nikamma, I made all these mistakes and you know I got screwed. But you don't need to let it uh get you down as well. Sometimes, you know, the the the the the things that we do, they play out in the long term. It's a long game. So all you can do is, you know, not build stories about I am good, therefore good things happened, or I am bad, therefore bad things happened. But instead just keep doing the right thing as you can, keep doing whatever you define your dharma as. And just Keto diet. Keto diet, there you go. Plus one meal a day, which is my magic formula for now, because I want to be like Ryan. Which Ryan do I want to be like? Any of the two. But I just want to get closer to that. So so yeah, that's my personal takeaway from",
+      "endTime": 2271.25,
+      "text": "And this also brings me to my personal lesson from this fallacy, and this is something we spoke about in our poker episode as well, which is that you know 98% of what happens to each of us is sheer dumb luck. We don't control that shit. We'll give causation. But basically you got lucky. Don't let it get to your head. Or similarly, you might say that hey, I'm a Nikamma, I made all these mistakes and you know I got screwed. But you don't need to let it uh get you down as well. Sometimes, you know, the the the the the things that we do, they play out in the long term. It's a long game. So all you can do is, you know, not build stories about I am good, therefore good things happened, or I am bad, therefore bad things happened. But instead just keep doing the right thing as you can, keep doing whatever you define your dharma as. And just Keto diet. Keto diet, there you go. Plus one meal a day, which is my magic formula for now, because I want to be like Ryan. Which Ryan do I want to be like? Any of the two. But I just want to get closer to that. So so yeah, that's my personal takeaway",
       "words": [
         {
           "word": "And",
@@ -44741,21 +44733,21 @@
           "startTime": 2270.61,
           "endTime": 2271.25,
           "confidence": 0.9874
-        },
-        {
-          "word": "from",
-          "startTime": 2271.25,
-          "endTime": 2271.49,
-          "confidence": 0.9998
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 2271.49,
+      "startTime": 2271.25,
       "endTime": 2272.99,
-      "text": "this.",
+      "text": "from this.",
       "words": [
+        {
+          "word": "from",
+          "startTime": 2271.25,
+          "endTime": 2271.49,
+          "confidence": 0.9998
+        },
         {
           "word": "this.",
           "startTime": 2271.49,
@@ -65227,10 +65219,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 3334.27,
-      "endTime": 3334.75,
-      "text": "Be aware",
+      "endTime": 3336.41,
+      "text": "Be aware of the wolves.",
       "words": [
         {
           "word": "Be",
@@ -65243,15 +65235,7 @@
           "startTime": 3334.43,
           "endTime": 3334.75,
           "confidence": 0.9315
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 3334.75,
-      "endTime": 3336.41,
-      "text": "of the wolves.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 3334.75,

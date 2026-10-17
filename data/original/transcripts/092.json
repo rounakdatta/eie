@@ -5,10 +5,11 @@
     "durationSeconds": 4755,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
-      "Amit Varma"
+      "Amit Varma",
+      "other"
     ],
     "created": "2026-10-17"
   },
@@ -9954,17 +9955,25 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 554.83,
-      "endTime": 572.98,
-      "text": "little. So day I shall ask you to be a storyteller that rather than just talk about the ideas in an abstract sense, make it come alive for me in a concrete way by telling a story. Let's go.",
+      "endTime": 556.33,
+      "text": "little.",
       "words": [
         {
           "word": "little.",
           "startTime": 554.83,
           "endTime": 556.33,
           "confidence": 0.6578
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 563.95,
+      "endTime": 572.98,
+      "text": "So day I shall ask you to be a storyteller that rather than just talk about the ideas in an abstract sense, make it come alive for me in a concrete way by telling a story. Let's go.",
+      "words": [
         {
           "word": "So",
           "startTime": 563.95,

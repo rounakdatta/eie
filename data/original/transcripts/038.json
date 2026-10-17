@@ -5,10 +5,11 @@
     "durationSeconds": 2078,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
     "speakers": [
       "Ajay Shah",
-      "Amit Varma"
+      "Amit Varma",
+      "other"
     ],
     "created": "2026-10-17"
   },
@@ -45078,8 +45079,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2065.33,
-      "endTime": 2072.75,
-      "text": "And at this point I won't I'm suddenly I wondered and thinking aloud you said don't beat yourself up. How does somebody beat themselves up?",
+      "endTime": 2070.69,
+      "text": "And at this point I won't I'm suddenly I wondered and thinking aloud you said don't beat yourself up. How does somebody beat",
       "words": [
         {
           "word": "And",
@@ -45218,7 +45219,15 @@
           "startTime": 2070.37,
           "endTime": 2070.69,
           "confidence": 0.9951
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2070.69,
+      "endTime": 2074.35,
+      "text": "themselves up? Um",
+      "words": [
         {
           "word": "themselves",
           "startTime": 2070.69,
@@ -45230,15 +45239,7 @@
           "startTime": 2071.25,
           "endTime": 2072.75,
           "confidence": 0.8679
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2072.85,
-      "endTime": 2074.35,
-      "text": "Um",
-      "words": [
+        },
         {
           "word": "Um",
           "startTime": 2072.85,

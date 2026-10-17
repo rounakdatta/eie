@@ -5,10 +5,11 @@
     "durationSeconds": 5590,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
-      "Amit Varma"
+      "Amit Varma",
+      "other"
     ],
     "created": "2026-10-17"
   },
@@ -11020,15 +11021,23 @@
     {
       "speaker": "Amit Varma",
       "startTime": 631.67,
-      "endTime": 634.13,
-      "text": "liberalization done.",
+      "endTime": 632.63,
+      "text": "liberalization",
       "words": [
         {
           "word": "liberalization",
           "startTime": 631.67,
           "endTime": 632.63,
           "confidence": 0.8766
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 632.63,
+      "endTime": 634.13,
+      "text": "done.",
+      "words": [
         {
           "word": "done.",
           "startTime": 632.63,
@@ -11310,7 +11319,7 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 653.91,
       "endTime": 656.09,
       "text": "GATT. First,",

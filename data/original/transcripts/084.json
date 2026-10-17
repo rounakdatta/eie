@@ -5,7 +5,7 @@
     "durationSeconds": 5023,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -6371,25 +6371,17 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 410.34,
-      "endTime": 410.66,
-      "text": "at",
+      "endTime": 412.16,
+      "text": "at work.",
       "words": [
         {
           "word": "at",
           "startTime": 410.34,
           "endTime": 410.66,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 410.66,
-      "endTime": 412.16,
-      "text": "work.",
-      "words": [
+        },
         {
           "word": "work.",
           "startTime": 410.66,

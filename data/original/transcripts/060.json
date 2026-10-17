@@ -5,7 +5,7 @@
     "durationSeconds": 3899,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -2977,8 +2977,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 176.55,
-      "endTime": 474.87,
-      "text": "There is an array of differences between the life of a firm. and the life of uh government and that's our purpose today. And at the end, gentle reader, we hope to persuade you that uh the two skills are really completely apart. That we revere firms, we care about firms. Our friend Deviya Sornaraj recently said something very interesting to me. She said there's an interesting analogy of thinking about a firm like a cell. So imagine the human body is made of cell. So the overall economy is made of firms. And you want a science of psychology where you study one cell at a time. And that is good and appropriate. But we should not think that what works at the level of the cell works at the level of the overall organism. They're different. There's a different knowledge set on understanding the overall organism as compared to understanding one cell at a time. And yet the cell are key. If you don't have well functioning cell, there's no question of making the overall economy work. The overall economy is just the sum total of the production of the productivity of the firms. So there is no path to prosperity without building high productivity firms. But there are fundamental ways in which they are different. So let me start at the first uh the first is the issue of feedback loops. In a firm, there are excellent feedback loops of information coming back to kick the firm. Okay, firms observe their own market share, they observe their own revenue, they observe their own internal MIS on profits and profitability, and they observe their own stock price. Okay? These all happen with a little bit of a varying lag. Stock price comes out daily. Firms generally have daily or weekly MIS of their own production. And all modern firms have a monthly conception of profit. So when things go wrong in the firm, then they lose market share rapidly, they lose profitability rapidly, and they get slapped in the face immediately. So the management gets instant feedback saying, Hey, this is not working. So you can actually be very incrementally responsive. You you often don't need to be a big thinker. You just need to keep debugging your way and troubleshooting your way, and it gets you to a certain kind of stable firm, that there is a certain firefighting that happens, and you'll keep solving one small problem after another. It keeps the firm going. It doesn't get you great leaps of firm, but it keeps the firm going. Now that's not true in the world of public policy. There is no meaningful stock price. Okay, the stock market index is absolutely not a vote on how well the economy is faring or how well the government is faring. It is a complicated beast. I'm happy to discuss separately under a different F of finance, but nobody should mistake the stock market index as a report card about what's going on in the economy. As an example, we had COVID, it was a terrible catastrophe, and the US Fed cut rates sharply, RBI cut rates sharply, stock prices went up. It was really about a new interest rate for computing NPVs. It was not about the firms were being run much better. So I don't want to diss on the stock price that it is some non informative nonsense. There is a lot of sense and sanity in what stock prices do, but they do not report a state of health of the economy. Another measure that people like to use is the GDP data at its best. It is a quarterly data flow which comes out with a considerable lag. Unfortunately in India many many difficulties have arisen in GDP measurement. Our good friend Rajeshwarish and Gupto has been quite clever and insightful in understanding that landscape and in telling those stories well. And unfortunately, you know, that's not a measure that directly informs what is going on. Similarly, many other things are not measured properly. So when you are in the world of public policy and you're thinking of the country, you're thinking of the economy of India. It's a little bit of flying blind that we really don't know. We don't know what is going on. And then you don't get feedback loops, that you don't know what's going on. You could be making mistakes and they just can uh emanate out into the world and perpetuate damage week after week and month after month, and you don't know what is going on. So that's the first fundamental difference between the world of public policy and the world of the firms. Firms can work well and have a better chance at working well because there are feedback loops and they get slapped into shape. When a firm misbehaves within a matter of months you can see the impact on market share, on revenues, on profits, on stock prices. But you have no such feedback loops in government.",
+      "endTime": 254.68,
+      "text": "There is an array of differences between the life of a firm. and the life of uh government and that's our purpose today. And at the end, gentle reader, we hope to persuade you that uh the two skills are really completely apart. That we revere firms, we care about firms. Our friend Deviya Sornaraj recently said something very interesting to me. She said there's an interesting analogy of thinking about a firm like a cell. So imagine the human body is made of cell. So the overall economy is made of firms. And you want a science of psychology where you study one cell at a time. And that is good and appropriate. But we should not think that what works at the level of the cell works at the level of the overall organism. They're different. There's a different knowledge set on understanding the overall organism as compared to understanding one cell at a time. And yet the cell are key. If you don't have well functioning cell, there's no question of making the overall economy work. The overall economy is just the sum total of the production of the productivity of the firms. So there is no path to prosperity without building high productivity firms. But there are fundamental ways in which they are different. So let me start at the",
       "words": [
         {
           "word": "There",
@@ -4323,13 +4323,29 @@
           "startTime": 254.44,
           "endTime": 254.68,
           "confidence": 0.9989
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 254.68,
+      "endTime": 256.18,
+      "text": "first",
+      "words": [
         {
           "word": "first",
           "startTime": 254.68,
           "endTime": 256.18,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 256.68,
+      "endTime": 474.87,
+      "text": "uh the first is the issue of feedback loops. In a firm, there are excellent feedback loops of information coming back to kick the firm. Okay, firms observe their own market share, they observe their own revenue, they observe their own internal MIS on profits and profitability, and they observe their own stock price. Okay? These all happen with a little bit of a varying lag. Stock price comes out daily. Firms generally have daily or weekly MIS of their own production. And all modern firms have a monthly conception of profit. So when things go wrong in the firm, then they lose market share rapidly, they lose profitability rapidly, and they get slapped in the face immediately. So the management gets instant feedback saying, Hey, this is not working. So you can actually be very incrementally responsive. You you often don't need to be a big thinker. You just need to keep debugging your way and troubleshooting your way, and it gets you to a certain kind of stable firm, that there is a certain firefighting that happens, and you'll keep solving one small problem after another. It keeps the firm going. It doesn't get you great leaps of firm, but it keeps the firm going. Now that's not true in the world of public policy. There is no meaningful stock price. Okay, the stock market index is absolutely not a vote on how well the economy is faring or how well the government is faring. It is a complicated beast. I'm happy to discuss separately under a different F of finance, but nobody should mistake the stock market index as a report card about what's going on in the economy. As an example, we had COVID, it was a terrible catastrophe, and the US Fed cut rates sharply, RBI cut rates sharply, stock prices went up. It was really about a new interest rate for computing NPVs. It was not about the firms were being run much better. So I don't want to diss on the stock price that it is some non informative nonsense. There is a lot of sense and sanity in what stock prices do, but they do not report a state of health of the economy. Another measure that people like to use is the GDP data at its best. It is a quarterly data flow which comes out with a considerable lag. Unfortunately in India many many difficulties have arisen in GDP measurement. Our good friend Rajeshwarish and Gupto has been quite clever and insightful in understanding that landscape and in telling those stories well. And unfortunately, you know, that's not a measure that directly informs what is going on. Similarly, many other things are not measured properly. So when you are in the world of public policy and you're thinking of the country, you're thinking of the economy of India. It's a little bit of flying blind that we really don't know. We don't know what is going on. And then you don't get feedback loops, that you don't know what's going on. You could be making mistakes and they just can uh emanate out into the world and perpetuate damage week after week and month after month, and you don't know what is going on. So that's the first fundamental difference between the world of public policy and the world of the firms. Firms can work well and have a better chance at working well because there are feedback loops and they get slapped into shape. When a firm misbehaves within a matter of months you can see the impact on market share, on revenues, on profits, on stock prices. But you have no such feedback loops in government.",
+      "words": [
         {
           "word": "uh",
           "startTime": 256.68,
@@ -11779,8 +11795,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 664.85,
-      "endTime": 672.93,
-      "text": "are actually all the time because state elections, local elections are always happening. And they uh lead a drive towards short termism. Not you're not going to do anything long",
+      "endTime": 672.61,
+      "text": "are actually all the time because state elections, local elections are always happening. And they uh lead a drive towards short termism. Not you're not going to do anything",
       "words": [
         {
           "word": "are",
@@ -11955,21 +11971,21 @@
           "startTime": 672.29,
           "endTime": 672.61,
           "confidence": 0.9998
-        },
-        {
-          "word": "long",
-          "startTime": 672.61,
-          "endTime": 672.93,
-          "confidence": 0.9959
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 672.93,
+      "startTime": 672.61,
       "endTime": 674.43,
-      "text": "term.",
+      "text": "long term.",
       "words": [
+        {
+          "word": "long",
+          "startTime": 672.61,
+          "endTime": 672.93,
+          "confidence": 0.9959
+        },
         {
           "word": "term.",
           "startTime": 672.93,
@@ -49575,8 +49591,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2689.45,
-      "endTime": 2748.26,
-      "text": "So Ajay, this reminds me of a quiz question I had once set in a quiz, I think 15 years ago, and I'm gonna ask you now and I'm gonna look at my phone to ask you this quiz question. It's related. So here is the question, you know, and I written a column on quizzing, which I will link from the show notes where I included this question. Where good quizzing to me is not a question of you know it or you don't. That's damn boring for people who don't uh uh you know are not into trivia. A good quiz question is one where you can work out the answer. So in real time, I'm gonna ask you to work this out. Use your mental calculator. Are you ready, Arjesha? Do it. So here's a question. Um X is a unit of hype. Okay, X is a unit of hype. One kilo X is equal to 10.42 days. One mega X is equal to 28.5 years. What is X? You can work this out. X is a unit of hype. One kilo X is equal to ten point four two days. You can work it out from this alone.",
+      "endTime": 2746.76,
+      "text": "So Ajay, this reminds me of a quiz question I had once set in a quiz, I think 15 years ago, and I'm gonna ask you now and I'm gonna look at my phone to ask you this quiz question. It's related. So here is the question, you know, and I written a column on quizzing, which I will link from the show notes where I included this question. Where good quizzing to me is not a question of you know it or you don't. That's damn boring for people who don't uh uh you know are not into trivia. A good quiz question is one where you can work out the answer. So in real time, I'm gonna ask you to work this out. Use your mental calculator. Are you ready, Arjesha? Do it. So here's a question. Um X is a unit of hype. Okay, X is a unit of hype. One kilo X is equal to 10.42 days. One mega X is equal to 28.5 years. What is X? You can work this out. X is a unit of hype. One kilo X is equal to ten point four two days. You can work it out from this",
       "words": [
         {
           "word": "So",
@@ -50783,7 +50799,15 @@
           "startTime": 2746.52,
           "endTime": 2746.76,
           "confidence": 0.999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2746.76,
+      "endTime": 2748.26,
+      "text": "alone.",
+      "words": [
         {
           "word": "alone.",
           "startTime": 2746.76,
@@ -50833,8 +50857,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2753.32,
-      "endTime": 2757.54,
-      "text": "Which is how much? How many minutes?",
+      "endTime": 2753.72,
+      "text": "Which is",
       "words": [
         {
           "word": "Which",
@@ -50847,7 +50871,15 @@
           "startTime": 2753.56,
           "endTime": 2753.72,
           "confidence": 0.9984
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2753.72,
+      "endTime": 2757.54,
+      "text": "how much? How many minutes?",
+      "words": [
         {
           "word": "how",
           "startTime": 2753.72,
@@ -51451,8 +51483,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2800.07,
-      "endTime": 2810.77,
-      "text": "On that same note, Amit, can I challenge you? Usk. No no. What is a millihelen?",
+      "endTime": 2802.79,
+      "text": "On that same note, Amit, can I challenge you?",
       "words": [
         {
           "word": "On",
@@ -51507,13 +51539,29 @@
           "startTime": 2802.07,
           "endTime": 2802.79,
           "confidence": 0.9078
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2802.79,
+      "endTime": 2804.29,
+      "text": "Usk.",
+      "words": [
         {
           "word": "Usk.",
           "startTime": 2802.79,
           "endTime": 2804.29,
           "confidence": 0.6175
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2805.99,
+      "endTime": 2810.77,
+      "text": "No no. What is a millihelen?",
+      "words": [
         {
           "word": "No",
           "startTime": 2805.99,

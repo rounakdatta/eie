@@ -5,7 +5,7 @@
     "durationSeconds": 3821,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -67509,10 +67509,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "other",
       "startTime": 3795.11,
-      "endTime": 3796.07,
-      "text": "Should we walk a",
+      "endTime": 3822.02,
+      "text": "Should we walk a bit? So we'll just wander this way. Do you like the champa tree? Do you like the bunion trees? This is two banyan trees. So all this is one tree.",
       "words": [
         {
           "word": "Should",
@@ -67537,29 +67537,13 @@
           "startTime": 3795.91,
           "endTime": 3796.07,
           "confidence": 0.9833
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 3796.07,
-      "endTime": 3797.57,
-      "text": "bit?",
-      "words": [
+        },
         {
           "word": "bit?",
           "startTime": 3796.07,
           "endTime": 3797.57,
           "confidence": 0.7776
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3798.63,
-      "endTime": 3814.42,
-      "text": "So we'll just wander this way. Do you like the champa tree? Do you like the bunion trees?",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 3798.63,
@@ -67667,15 +67651,7 @@
           "startTime": 3812.92,
           "endTime": 3814.42,
           "confidence": 0.9238
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 3815.32,
-      "endTime": 3822.02,
-      "text": "This is two banyan trees. So all this is one tree.",
-      "words": [
+        },
         {
           "word": "This",
           "startTime": 3815.32,

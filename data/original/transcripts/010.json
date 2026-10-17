@@ -5,10 +5,11 @@
     "durationSeconds": 4442,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
-      "Amit Varma"
+      "Amit Varma",
+      "other"
     ],
     "created": "2026-10-16"
   },
@@ -12906,8 +12907,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 698.5,
-      "endTime": 748.64,
-      "text": "Another way we see this is that uh people may make their peace with conditions of unfreedom. Okay? So we humans are survivors. We will survive in a concentration camp. When that individual agency is taken away, then the dynamism is lost. People stop thinking, people stop creating the culture, the arts, the science, the business, all these things go into a dull despondence. And what you need for a poor country like India is the opposite of that. What we need is an effervescence. of optimism, of creativity, of invention, of people starting a business, of people coming up with a new business model. And freedom lies at the heart of all these things.",
+      "endTime": 747.14,
+      "text": "Another way we see this is that uh people may make their peace with conditions of unfreedom. Okay? So we humans are survivors. We will survive in a concentration camp. When that individual agency is taken away, then the dynamism is lost. People stop thinking, people stop creating the culture, the arts, the science, the business, all these things go into a dull despondence. And what you need for a poor country like India is the opposite of that. What we need is an effervescence. of optimism, of creativity, of invention, of people starting a business, of people coming up with a new business model. And freedom lies at the heart of all these",
       "words": [
         {
           "word": "Another",
@@ -13592,7 +13593,15 @@
           "startTime": 746.9,
           "endTime": 747.14,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 747.14,
+      "endTime": 748.64,
+      "text": "things.",
+      "words": [
         {
           "word": "things.",
           "startTime": 747.14,

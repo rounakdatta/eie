@@ -5,7 +5,7 @@
     "durationSeconds": 3122,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -8583,8 +8583,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 438.71,
-      "endTime": 439.59,
-      "text": "of those. Yes,",
+      "endTime": 439.27,
+      "text": "of those.",
       "words": [
         {
           "word": "of",
@@ -8597,21 +8597,21 @@
           "startTime": 438.79,
           "endTime": 439.27,
           "confidence": 0.9708
-        },
-        {
-          "word": "Yes,",
-          "startTime": 439.27,
-          "endTime": 439.59,
-          "confidence": 0.7881
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 439.59,
+      "startTime": 439.27,
       "endTime": 441.09,
-      "text": "please.",
+      "text": "Yes, please.",
       "words": [
+        {
+          "word": "Yes,",
+          "startTime": 439.27,
+          "endTime": 439.59,
+          "confidence": 0.7881
+        },
         {
           "word": "please.",
           "startTime": 439.59,

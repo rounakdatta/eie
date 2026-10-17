@@ -5,7 +5,7 @@
     "durationSeconds": 3680,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -5929,8 +5929,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 315.64,
-      "endTime": 377.7,
-      "text": "out stuff. You should not be you should not apologize for all the mistakes you made. We should be thankful for all the mistakes you make because they advance the discourse, they bring you here, everything is everything. What is that conventional belief about infrastructure that we are bursting today? Take me through, you know, what lies behind that. And I know through this episode you'll be giving us what I consider really novel insights, which you know, uh uh which I'm really pleased to. Like what we sometimes do is there's a subject we'll know very well, and we'll synthesize what is known about it and bring it to you. Uh but there'll be nothing novel in it. For example, episodes, the episode on chess that we did recently, where I don't think I brought anything novel to it, but I kind of synthesized my knowledge, which leads to my enthusiasm. But there are other episodes, like many of our episodes on firms, for example, where there is a fair amount of novel thinking that is going on. And in my opinion, today's episode is like seriously one of those.",
+      "endTime": 376.2,
+      "text": "out stuff. You should not be you should not apologize for all the mistakes you made. We should be thankful for all the mistakes you make because they advance the discourse, they bring you here, everything is everything. What is that conventional belief about infrastructure that we are bursting today? Take me through, you know, what lies behind that. And I know through this episode you'll be giving us what I consider really novel insights, which you know, uh uh which I'm really pleased to. Like what we sometimes do is there's a subject we'll know very well, and we'll synthesize what is known about it and bring it to you. Uh but there'll be nothing novel in it. For example, episodes, the episode on chess that we did recently, where I don't think I brought anything novel to it, but I kind of synthesized my knowledge, which leads to my enthusiasm. But there are other episodes, like many of our episodes on firms, for example, where there is a fair amount of novel thinking that is going on. And in my opinion, today's episode is like seriously one of",
       "words": [
         {
           "word": "out",
@@ -7071,7 +7071,15 @@
           "startTime": 376.04,
           "endTime": 376.2,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 376.2,
+      "endTime": 377.7,
+      "text": "those.",
+      "words": [
         {
           "word": "those.",
           "startTime": 376.2,
@@ -58299,8 +58307,8 @@
     {
       "speaker": "other",
       "startTime": 3320.15,
-      "endTime": 3327.25,
-      "text": "it, so",
+      "endTime": 3329.13,
+      "text": "it, so you can't do it.",
       "words": [
         {
           "word": "it,",
@@ -58313,15 +58321,7 @@
           "startTime": 3325.75,
           "endTime": 3327.25,
           "confidence": 0.0574
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3328.63,
-      "endTime": 3329.13,
-      "text": "you can't do it.",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 3328.63,

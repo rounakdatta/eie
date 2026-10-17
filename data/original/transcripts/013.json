@@ -5,7 +5,7 @@
     "durationSeconds": 4799,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -27815,8 +27815,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1582.46,
-      "endTime": 1590.32,
-      "text": "Tell me your story. What have you understood? What have you thought? What has Bruce Springsteen meant to you? So I",
+      "endTime": 1587.58,
+      "text": "Tell me your story. What have you understood? What have you thought? What has Bruce Springsteen meant to",
       "words": [
         {
           "word": "Tell",
@@ -27925,7 +27925,15 @@
           "startTime": 1587.34,
           "endTime": 1587.58,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1587.58,
+      "endTime": 1590.32,
+      "text": "you? So I",
+      "words": [
         {
           "word": "you?",
           "startTime": 1587.58,
@@ -52357,8 +52365,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2721.6,
-      "endTime": 2742.8,
-      "text": "get around to it. There's a uh there's a band I love, an alternative rock band from the eighties called The Replacements, uh, led by Paul Westerberg. And they had uh this great song called Answering Machine, where they had this line, How do you say goodnight to an answering machine? Right and that expresses so much, right? But of course, uh you know, kids of today may not know what an answering machine is.",
+      "endTime": 2741.3,
+      "text": "get around to it. There's a uh there's a band I love, an alternative rock band from the eighties called The Replacements, uh, led by Paul Westerberg. And they had uh this great song called Answering Machine, where they had this line, How do you say goodnight to an answering machine? Right and that expresses so much, right? But of course, uh you know, kids of today may not know what an answering machine",
       "words": [
         {
           "word": "get",
@@ -52803,7 +52811,15 @@
           "startTime": 2740.58,
           "endTime": 2741.3,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2741.3,
+      "endTime": 2742.8,
+      "text": "is.",
+      "words": [
         {
           "word": "is.",
           "startTime": 2741.3,
@@ -87775,23 +87791,15 @@
     {
       "speaker": "other",
       "startTime": 4344.22,
-      "endTime": 4345.72,
-      "text": "ancestor.",
+      "endTime": 4347.18,
+      "text": "ancestor. What do you think about",
       "words": [
         {
           "word": "ancestor.",
           "startTime": 4344.22,
           "endTime": 4345.72,
           "confidence": 0.9956
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4345.98,
-      "endTime": 4388.69,
-      "text": "What do you think about this? I mean, I I asked because i it just you know, in our uh uh two episodes ago when we spoke of uh uh you know our productivity mantra, which Springsteen performed all his life, Kathor Rebhaji. All his life Springsteen kathoded the bhaji as it were, if I may kind of uh uh turn Kathor uh into an English verb. He kathoded Rebhaji. And in that episode you spoke of this sense of Purpose. And what I see in this beautiful line, I work to be an ancestor, is this sense that he is not only mining his past and his experiences for the stories that he tells, but he also has this awareness of himself as a character in the story of others and in this larger, longer story that goes on. So",
-      "words": [
+        },
         {
           "word": "What",
           "startTime": 4345.98,
@@ -87821,7 +87829,15 @@
           "startTime": 4346.86,
           "endTime": 4347.18,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4347.18,
+      "endTime": 4388.69,
+      "text": "this? I mean, I I asked because i it just you know, in our uh uh two episodes ago when we spoke of uh uh you know our productivity mantra, which Springsteen performed all his life, Kathor Rebhaji. All his life Springsteen kathoded the bhaji as it were, if I may kind of uh uh turn Kathor uh into an English verb. He kathoded Rebhaji. And in that episode you spoke of this sense of Purpose. And what I see in this beautiful line, I work to be an ancestor, is this sense that he is not only mining his past and his experiences for the stories that he tells, but he also has this awareness of himself as a character in the story of others and in this larger, longer story that goes on. So",
+      "words": [
         {
           "word": "this?",
           "startTime": 4347.18,

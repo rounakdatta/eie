@@ -5,7 +5,7 @@
     "durationSeconds": 4173,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -35463,17 +35463,25 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 1910.71,
-      "endTime": 1943.43,
-      "text": "around. So Ajay you know you've Explained quite excellently the uh you know the different kinds of problems that come up with the creditors, the different kind of deals that can be on the table, the choices you face, the squabbles that might happen, the competing interests. What does an ideal bankruptcy code look like which takes all of this into account and finds an optimal way to reconcile it? So I've already put many of the pieces up, but let me",
+      "endTime": 1912.21,
+      "text": "around.",
       "words": [
         {
           "word": "around.",
           "startTime": 1910.71,
           "endTime": 1912.21,
           "confidence": 0.8361
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1919.43,
+      "endTime": 1943.43,
+      "text": "So Ajay you know you've Explained quite excellently the uh you know the different kinds of problems that come up with the creditors, the different kind of deals that can be on the table, the choices you face, the squabbles that might happen, the competing interests. What does an ideal bankruptcy code look like which takes all of this into account and finds an optimal way to reconcile it? So I've already put many of the pieces up, but let me",
+      "words": [
         {
           "word": "So",
           "startTime": 1919.43,
@@ -55387,8 +55395,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3002.23,
-      "endTime": 3005.03,
-      "text": "out. This is not a great arrangement, but that's where we",
+      "endTime": 3004.71,
+      "text": "out. This is not a great arrangement, but that's where",
       "words": [
         {
           "word": "out.",
@@ -55449,21 +55457,21 @@
           "startTime": 3004.47,
           "endTime": 3004.71,
           "confidence": 0.9796
-        },
-        {
-          "word": "we",
-          "startTime": 3004.71,
-          "endTime": 3005.03,
-          "confidence": 0.9981
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 3005.03,
+      "startTime": 3004.71,
       "endTime": 3006.53,
-      "text": "are.",
+      "text": "we are.",
       "words": [
+        {
+          "word": "we",
+          "startTime": 3004.71,
+          "endTime": 3005.03,
+          "confidence": 0.9981
+        },
         {
           "word": "are.",
           "startTime": 3005.03,

@@ -5,7 +5,7 @@
     "durationSeconds": 7805,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -805,8 +805,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 59.5,
-      "endTime": 71.66,
-      "text": "So Aja, you all set for this Unix episode. Have you done your screencast and your recordings and everything? Yeah, I'm ready with the screencast. And uh for the rest of the main story I kinda know well. So I'm happy",
+      "endTime": 70.78,
+      "text": "So Aja, you all set for this Unix episode. Have you done your screencast and your recordings and everything? Yeah, I'm ready with the screencast. And uh for the rest of the main story I kinda know well. So",
       "words": [
         {
           "word": "So",
@@ -1041,7 +1041,15 @@
           "startTime": 70.54,
           "endTime": 70.78,
           "confidence": 0.9626
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 70.78,
+      "endTime": 73.74,
+      "text": "I'm happy to get this opportunity to talk about it.",
+      "words": [
         {
           "word": "I'm",
           "startTime": 70.78,
@@ -1053,15 +1061,7 @@
           "startTime": 71.26,
           "endTime": 71.66,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 71.66,
-      "endTime": 73.02,
-      "text": "to get this opportunity to talk",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 71.66,
@@ -1097,15 +1097,7 @@
           "startTime": 72.86,
           "endTime": 73.02,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 73.02,
-      "endTime": 73.74,
-      "text": "about it.",
-      "words": [
+        },
         {
           "word": "about",
           "startTime": 73.02,
@@ -1123,8 +1115,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 73.74,
-      "endTime": 165.42,
-      "text": "Let's go with it. And I want to start by sort of setting the stage for you to do your thing, uh since it's an episode really focused on Unix. But I like zooming up and giving perspective. So first I want to talk a little bit about the place where Unix was born, which is Bell Labs. Now, uh Bill Gates was once asked that if he could enter a time machine and go at any any time in the world to any place in the world, where would he go? And he said I would go December nineteen forty seven to Bell Labs. That's where I would be. What happened in December nineteen forty-seven, the transistor was created, the first great semiconductor device, and at you know, the heart of all of technological uh progress since then. And Bell Labs was a remarkable place where there has been so much uh, you know, scientific creation and innovation and so on and so forth. I mean, this was 1947 when the transistor was created, the Unix story begins in the late sixties. But by the sixties, Bell Labs, which was an R D laboratory of uh ATT, employed uh more than fifteen thousand people with more than twelve hundred PhDs. So it was like an absolute hub of the finest minds coming together, working together. And there's a there's a very interesting structural reason for this. Now we hate monopolies, both you and I, we love competit places. But ATT was a sort of a natural monopoly, in the sense that they were in telephony and the entry barrier for telephony was incredibly high. You had to sort of end to end, you had to provide telephony, you had to do wiring all across the country, build telephone exchanges, do all of that. So it was kind of like a natural monopoly. And in return",
+      "endTime": 302.56,
+      "text": "Let's go with it. And I want to start by sort of setting the stage for you to do your thing, uh since it's an episode really focused on Unix. But I like zooming up and giving perspective. So first I want to talk a little bit about the place where Unix was born, which is Bell Labs. Now, uh Bill Gates was once asked that if he could enter a time machine and go at any any time in the world to any place in the world, where would he go? And he said I would go December nineteen forty seven to Bell Labs. That's where I would be. What happened in December nineteen forty-seven, the transistor was created, the first great semiconductor device, and at you know, the heart of all of technological uh progress since then. And Bell Labs was a remarkable place where there has been so much uh, you know, scientific creation and innovation and so on and so forth. I mean, this was 1947 when the transistor was created, the Unix story begins in the late sixties. But by the sixties, Bell Labs, which was an R D laboratory of uh ATT, employed uh more than fifteen thousand people with more than twelve hundred PhDs. So it was like an absolute hub of the finest minds coming together, working together. And there's a there's a very interesting structural reason for this. Now we hate monopolies, both you and I, we love competit places. But ATT was a sort of a natural monopoly, in the sense that they were in telephony and the entry barrier for telephony was incredibly high. You had to sort of end to end, you had to provide telephony, you had to do wiring all across the country, build telephone exchanges, do all of that. So it was kind of like a natural monopoly. And in return for that, you know, the government also made some deals with them, which included that you have to provide access to places where access doesn't go, et cetera, et cetera. But the result of that was that for a long period of time there was really no competition. So they were kind of guaranteed a revenue stream. And they could put some of that revenue in things which would uh you know, which didn't have to cater to the short term horizon of the next quarter. You know, they could do long term research, long term R and D so they set up Bell Labs just for this initial idea that we need to understand this technology better, new products for our own use, better switching, et cetera, et cetera. And then build science and technology for the future. Now a lot of people sort of overstate these numbers. Uh actually if you think about it, um You know, Bell Labs spent about two point eight percent of its uh revenues, if I'm remember correctly, on R D. Uh ATT rather, spent two point uh uh eight percent of its revenues on uh R D. And of that point three percent was basic research, the kind of basic research we celebrate today from which semiconductors came and from which uh uh Unix came. And a small ch chunk of that was there. But what is particularly important is that and particularly different from a lot of corporate structures, is that a lot of that research could have a really long time horizon. It need not be about, oh, we got to get a product out in January. This is a feature we need, build this feature. It was no, this is a broad field we are in. Many things are possible. Design the future. And that was kind of the sense that it was. And one particular phrase that I like in this regard is also it comes from a uh quote by Arthur C. Clarke where he once said that uh, you know, at first sight when one comes across this in a surprisingly rural setting, the Bell Telephone Laboratory's main New Jersey site looks like a large and up to date factory. which in a sense it is. But it is a factory for ideas. And so its production lines are invisible. And uh there's a great book, first recommendation of today called The Idea Factory by John Gertner. Uh he picked up uh you know the the name the idea factory from this great author C uh Clark Court. And it was a factory for ideas playing the long game. And that's why uh that that's how so many great ideas uh came out of there, which in a sense are the foundation of the modern world.",
       "words": [
         {
           "word": "Let's",
@@ -3021,15 +3013,7 @@
           "startTime": 164.94,
           "endTime": 165.42,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 165.42,
-      "endTime": 166.06,
-      "text": "for that,",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 165.42,
@@ -3041,15 +3025,7 @@
           "startTime": 165.58,
           "endTime": 166.06,
           "confidence": 0.9399
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 166.06,
-      "endTime": 302.56,
-      "text": "you know, the government also made some deals with them, which included that you have to provide access to places where access doesn't go, et cetera, et cetera. But the result of that was that for a long period of time there was really no competition. So they were kind of guaranteed a revenue stream. And they could put some of that revenue in things which would uh you know, which didn't have to cater to the short term horizon of the next quarter. You know, they could do long term research, long term R and D so they set up Bell Labs just for this initial idea that we need to understand this technology better, new products for our own use, better switching, et cetera, et cetera. And then build science and technology for the future. Now a lot of people sort of overstate these numbers. Uh actually if you think about it, um You know, Bell Labs spent about two point eight percent of its uh revenues, if I'm remember correctly, on R D. Uh ATT rather, spent two point uh uh eight percent of its revenues on uh R D. And of that point three percent was basic research, the kind of basic research we celebrate today from which semiconductors came and from which uh uh Unix came. And a small ch chunk of that was there. But what is particularly important is that and particularly different from a lot of corporate structures, is that a lot of that research could have a really long time horizon. It need not be about, oh, we got to get a product out in January. This is a feature we need, build this feature. It was no, this is a broad field we are in. Many things are possible. Design the future. And that was kind of the sense that it was. And one particular phrase that I like in this regard is also it comes from a uh quote by Arthur C. Clarke where he once said that uh, you know, at first sight when one comes across this in a surprisingly rural setting, the Bell Telephone Laboratory's main New Jersey site looks like a large and up to date factory. which in a sense it is. But it is a factory for ideas. And so its production lines are invisible. And uh there's a great book, first recommendation of today called The Idea Factory by John Gertner. Uh he picked up uh you know the the name the idea factory from this great author C uh Clark Court. And it was a factory for ideas playing the long game. And that's why uh that that's how so many great ideas uh came out of there, which in a sense are the foundation of the modern world.",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 166.06,
@@ -5863,8 +5839,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 304.22,
-      "endTime": 392.97,
-      "text": "I find it very inspiring to think that at Murray Hill, which was the essence of Bell Labs, which is more the R and less than D. At Murray Hill there were about three thousand employees, out of whom there were about one thousand PhDs. And you know what? This is not an expenditure point that is very inaccessible to many, many organizations in the world today. Okay, even in India, we can think of many private people who have the ability to put down this kind of money on a twentieth horizon. So it's not the magic of resourcing. It is some other magic. It's a magic of culture, it's a magic of management and there is a lot for all of us to learn by understanding the culture, the management, the people and why this thing worked so well. Because there were many, many other collections of scientists and engineers and technologists and thinkers everywhere in the world. And there was just a bunch of accidents which brought some people together to Bell Labs. So I never want to say they were better. I want to say there was something about the place, there was something about that culture, there was something about the management mechanisms that created conditions where these three thousand people were unusually effective and unusually creative. So I feel we should try to understand that world",
+      "endTime": 342.86,
+      "text": "I find it very inspiring to think that at Murray Hill, which was the essence of Bell Labs, which is more the R and less than D. At Murray Hill there were about three thousand employees, out of whom there were about one thousand PhDs. And you know what? This is not an expenditure point that is very inaccessible to many, many organizations in the world today. Okay, even in India, we can think of many private people who have the ability to put down this kind of money on a twentieth",
       "words": [
         {
           "word": "I",
@@ -6417,7 +6393,15 @@
           "startTime": 342.06,
           "endTime": 342.86,
           "confidence": 0.7636
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 342.86,
+      "endTime": 348.3,
+      "text": "horizon. So it's not the magic of resourcing. It is some other magic.",
+      "words": [
         {
           "word": "horizon.",
           "startTime": 342.86,
@@ -6495,7 +6479,15 @@
           "startTime": 347.5,
           "endTime": 348.3,
           "confidence": 0.9494
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 348.3,
+      "endTime": 392.97,
+      "text": "It's a magic of culture, it's a magic of management and there is a lot for all of us to learn by understanding the culture, the management, the people and why this thing worked so well. Because there were many, many other collections of scientists and engineers and technologists and thinkers everywhere in the world. And there was just a bunch of accidents which brought some people together to Bell Labs. So I never want to say they were better. I want to say there was something about the place, there was something about that culture, there was something about the management mechanisms that created conditions where these three thousand people were unusually effective and unusually creative. So I feel we should try to understand that world",
+      "words": [
         {
           "word": "It's",
           "startTime": 348.3,
@@ -9145,8 +9137,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 504.84,
-      "endTime": 648.74,
-      "text": "Labs is uh that it was not just a place for dreamers. Like there's this beautiful phrase I picked up either from Gertner's book or Brian Curning's great uh history of Unix, which we'll also link from the show notes and is a must read, uh, which is that it was a place for eccentrics but not dreamers. And you know, not dreamers in the uh you know, the pejorative sense of the term. In the sense that everything that was made was made with a purpose. Ideas had to become things. You couldn't just build castles in the air. You know, you could take a long term perspective, but there was a purpose to it. And that impresses me. And the other thing that impresses me, which I think is super important, is you know, we've done an episode about how uh the g great minds tend to cluster together and multiply each other and all of that, and we learn that from the show notes as well. And it seems to me that there was something happening here. Like in Curning's great memoir, he talks about how one day, you know, he's just settled into this new office and when b you know, random guy comes to him and says, Hey I'm Dick, let's go for lunch. So he goes for lunch, you know. And then later on he realizes that this gentleman who just, you know, uh calls himself uh Dick A M Dick, let's go for lunch, he's a great Richard Hamming, you know, whose textbook uh Cunningham uh Cunningham has l Curnion has learned from and uh so on and so forth. And across the hall from him later on down the line, um, you know, there are all the great uh other great figures, Thomson, Richie, uh all of those guys. And uh there is a striking thing that um Curn says, which is geography is destiny. And that really strikes me. And you know, there's a there's a you know, these days there's a lot of fashion for work from home and all of that is one of those uh sort of mantras people keep using. And I remember this great tweet from Shane Parish a year ago to the effect of uh you know those who show up at work in the office will end up being the bosses of those who show up at at work at home. Something to that effect will reproduce a screen. And the idea isn't that oh you have to follow bureaucratic procedure and do the performative thing and go to office. The idea is you need to interact with real people. Where the to me, where the real work happens, the real creativity happens is in the watercooler conversations. It's in the beer after the office work. You know, all of that. Like you and I shoot in person, right? About half our episodes, gentle readers, have actually happened because on the fly we've been talking about something and we're like, I'm not sure. And we will also, of course, plan out certain episodes well in advance and send each other notes. But some of our most fun episodes,",
+      "endTime": 636.9,
+      "text": "Labs is uh that it was not just a place for dreamers. Like there's this beautiful phrase I picked up either from Gertner's book or Brian Curning's great uh history of Unix, which we'll also link from the show notes and is a must read, uh, which is that it was a place for eccentrics but not dreamers. And you know, not dreamers in the uh you know, the pejorative sense of the term. In the sense that everything that was made was made with a purpose. Ideas had to become things. You couldn't just build castles in the air. You know, you could take a long term perspective, but there was a purpose to it. And that impresses me. And the other thing that impresses me, which I think is super important, is you know, we've done an episode about how uh the g great minds tend to cluster together and multiply each other and all of that, and we learn that from the show notes as well. And it seems to me that there was something happening here. Like in Curning's great memoir, he talks about how one day, you know, he's just settled into this new office and when b you know, random guy comes to him and says, Hey I'm Dick, let's go for lunch. So he goes for lunch, you know. And then later on he realizes that this gentleman who just, you know, uh calls himself uh Dick A M Dick, let's go for lunch, he's a great Richard Hamming, you know, whose textbook uh Cunningham uh Cunningham has l Curnion has learned from and uh so on and so forth. And across the hall from him later on down the line, um, you know, there are all the great uh other great figures, Thomson, Richie, uh all of those guys. And uh there is a striking thing that um Curn says, which is geography is destiny. And that really strikes me. And you know, there's a there's a you know, these days there's a lot of fashion for work from home and all of that is one of those uh sort of mantras people keep using. And I remember this great tweet from Shane Parish a year ago to the effect of uh you know those who show up at work in the office will end up being the bosses of those who show up at at work at home. Something to that effect will reproduce a screen. And the idea isn't that oh you have to follow bureaucratic procedure and do the performative thing and go to office. The idea is you need to interact with real people. Where the to me, where the real work happens, the real creativity happens is in the watercooler conversations. It's in the beer after the office work. You know, all of that. Like you and I shoot in person, right? About half our episodes, gentle",
       "words": [
         {
           "word": "Labs",
@@ -12087,7 +12079,15 @@
           "startTime": 636.5,
           "endTime": 636.9,
           "confidence": 0.96
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 636.9,
+      "endTime": 645.14,
+      "text": "readers, have actually happened because on the fly we've been talking about something and we're like, I'm not sure. And we will also, of course, plan out certain episodes well in",
+      "words": [
         {
           "word": "readers,",
           "startTime": 636.9,
@@ -12273,7 +12273,15 @@
           "startTime": 644.98,
           "endTime": 645.14,
           "confidence": 0.9988
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 645.14,
+      "endTime": 647.54,
+      "text": "advance and send each other notes. But some of",
+      "words": [
         {
           "word": "advance",
           "startTime": 645.14,
@@ -12327,7 +12335,15 @@
           "startTime": 647.38,
           "endTime": 647.54,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 647.54,
+      "endTime": 650.1,
+      "text": "our most fun episodes, like Seven Stories That Should",
+      "words": [
         {
           "word": "our",
           "startTime": 647.54,
@@ -12351,15 +12367,7 @@
           "startTime": 648.26,
           "endTime": 648.74,
           "confidence": 0.9271
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 648.74,
-      "endTime": 649.7,
-      "text": "like Seven Stories",
-      "words": [
+        },
         {
           "word": "like",
           "startTime": 648.74,
@@ -12377,15 +12385,7 @@
           "startTime": 649.3,
           "endTime": 649.7,
           "confidence": 0.9948
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 649.7,
-      "endTime": 663.14,
-      "text": "That Should Be Films, for example, or the Great Math episode that we did, they were all they all came on the fly because we're sh taking energy from each other uh and and and and so I've I find that that's an incredible part and uh another",
-      "words": [
+        },
         {
           "word": "That",
           "startTime": 649.7,
@@ -12397,7 +12397,15 @@
           "startTime": 649.94,
           "endTime": 650.1,
           "confidence": 0.9947
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 650.1,
+      "endTime": 663.14,
+      "text": "Be Films, for example, or the Great Math episode that we did, they were all they all came on the fly because we're sh taking energy from each other uh and and and and so I've I find that that's an incredible part and uh another",
+      "words": [
         {
           "word": "Be",
           "startTime": 650.1,
@@ -35983,8 +35991,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1972.78,
-      "endTime": 2227.08,
-      "text": "on a phototype setter and that would be submitted to the US Patent Office. And they said, look, you give us that sum of money, we will build an internal piece of patent software. So they just it was equality that what you are about to pay to an external vendor for that kind of money. We will build an entire text processing, document processing system. And what they knew in their mind was they were actually going to write an operating system. So for the money that management was about to pay somebody for a specialized piece of patent processing software, they were going to write an entire typesetting system, a document processing system, and run it on Unix and build Unix out on some modern hardware. They knew that internally, they knew that was the kind of firepower that they had, and management approved it. So that's how the next wave of Unix development happened. And they built the world's first typesetting software, which was first called Rov and then NRF, and then TRof. And these are like very powerful abstract tools for writing marked up text. So if you've heard HTML hypertext markup language, the word markup originates here, where inside the text are embedded commands for italics and boldface and section number. raw text is given to a typesetting software which drives the typesetter and you get the beautifully typeset uh patent application. So all these things were built there and that's how Unix happened. The next piece is the story of C. By this time Unix was starting to go into multiple machines and in these years all the operating systems had been written in assembly language. So you needed crazy people like Ken Thompson to write an entire operating system in assembly language. And the great man Dennis Recci started working with Ken and saying that, you know, could we write this in a high level programming language? None of the high level programming languages of the age were good enough to write an operating system. So Dennis and others got together and built a brand new programming language, and that is C. So the most important programming language in the world today is C. And C was written to make it possible to write Unix in C. And then there was a ridiculous moment where Ken Thompson and Dennis Ritchie rewrote the entire UNX NC. And there are these great feats again and again in this story. And then it suddenly became portable. So it was able to go to more and more machines. I want to claim some credit to the for the economists here, that I think that there was significant pressure on ATT at the time from the antitrust authorities. And that impeded the ability of ATT to turn this into a product. Okay, so at this point, Unix was so cool and so powerful and so successful. It could have readily turned into ATT launching computers and operating system, and they would have become the bloody monopoly because they were streets ahead of everybody else. I have an opinion that they dropped this ball because they were absorbed in their battles with the US FTC. And launching a computer and an operating system would have appeared too close to the telecom business and it would have appeared like an extension of their monopoly power. And so they kind of let this thing be. It didn't readily fit their business strategy. And it kept growing, and then they licensed it to other universities, so it spread to other universities, and then they started giving source code licenses. So the full C source code started spreading to universities all over the world. Uh there's a famous book which was written where there is a print out of the Unix kernel source code, and there's a volume two, which is a line by line explanation of what it's doing. So this went to universities all over the world where people could then read how an operating system is written. And so their lingua franca was Unix, because Unix was the operating system that they studied. And most importantly it went to UC Berkeley, where there was a great man called Bill Joy, who Connected it up into the developments happening in the world of computer networking. And so Unix became the vehicle of PCP IP and the internet. And that was another little explosion, and the modern internet",
+      "endTime": 2052.12,
+      "text": "on a phototype setter and that would be submitted to the US Patent Office. And they said, look, you give us that sum of money, we will build an internal piece of patent software. So they just it was equality that what you are about to pay to an external vendor for that kind of money. We will build an entire text processing, document processing system. And what they knew in their mind was they were actually going to write an operating system. So for the money that management was about to pay somebody for a specialized piece of patent processing software, they were going to write an entire typesetting system, a document processing system, and run it on Unix and build Unix out on some modern hardware. They knew that internally, they knew that was the kind of firepower that they had, and management approved it. So that's how the next wave of Unix development happened. And they built the world's first typesetting software, which was first called Rov and then NRF, and then TRof. And these are like very powerful abstract tools for writing marked up text. So if you've heard HTML hypertext markup language, the word markup originates here, where inside the text are embedded commands for italics and boldface and section number. raw text is given to a typesetting software which drives the typesetter",
       "words": [
         {
           "word": "on",
@@ -37353,7 +37361,15 @@
           "startTime": 2051.16,
           "endTime": 2052.12,
           "confidence": 0.974
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2052.12,
+      "endTime": 2060.28,
+      "text": "and you get the beautifully typeset uh patent application. So all these things were built there and that's how Unix happened. The next",
+      "words": [
         {
           "word": "and",
           "startTime": 2052.12,
@@ -37491,7 +37507,15 @@
           "startTime": 2059.96,
           "endTime": 2060.28,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2060.28,
+      "endTime": 2227.08,
+      "text": "piece is the story of C. By this time Unix was starting to go into multiple machines and in these years all the operating systems had been written in assembly language. So you needed crazy people like Ken Thompson to write an entire operating system in assembly language. And the great man Dennis Recci started working with Ken and saying that, you know, could we write this in a high level programming language? None of the high level programming languages of the age were good enough to write an operating system. So Dennis and others got together and built a brand new programming language, and that is C. So the most important programming language in the world today is C. And C was written to make it possible to write Unix in C. And then there was a ridiculous moment where Ken Thompson and Dennis Ritchie rewrote the entire UNX NC. And there are these great feats again and again in this story. And then it suddenly became portable. So it was able to go to more and more machines. I want to claim some credit to the for the economists here, that I think that there was significant pressure on ATT at the time from the antitrust authorities. And that impeded the ability of ATT to turn this into a product. Okay, so at this point, Unix was so cool and so powerful and so successful. It could have readily turned into ATT launching computers and operating system, and they would have become the bloody monopoly because they were streets ahead of everybody else. I have an opinion that they dropped this ball because they were absorbed in their battles with the US FTC. And launching a computer and an operating system would have appeared too close to the telecom business and it would have appeared like an extension of their monopoly power. And so they kind of let this thing be. It didn't readily fit their business strategy. And it kept growing, and then they licensed it to other universities, so it spread to other universities, and then they started giving source code licenses. So the full C source code started spreading to universities all over the world. Uh there's a famous book which was written where there is a print out of the Unix kernel source code, and there's a volume two, which is a line by line explanation of what it's doing. So this went to universities all over the world where people could then read how an operating system is written. And so their lingua franca was Unix, because Unix was the operating system that they studied. And most importantly it went to UC Berkeley, where there was a great man called Bill Joy, who Connected it up into the developments happening in the world of computer networking. And so Unix became the vehicle of PCP IP and the internet. And that was another little explosion, and the modern internet",
+      "words": [
         {
           "word": "piece",
           "startTime": 2060.28,
@@ -82717,8 +82741,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4503.54,
-      "endTime": 4558.0,
-      "text": "talked earlier about abuse of the word digital public goods. I think Unix and the internet are digital public goods. There's no government in the picture. There is public funding. The United United States Department of Defense funded TCPIP. Okay, and all in all mothership of ATT funded the early development of U Unix by paying those salaries. But the creations went out and they became the true digital public goods. There's no government in the picture, there is no coercion in the picture, nobody forced anybody. Okay, that is a digital public good. And I just want to say in passing for all the Indian nationalists, Nobody called it America Stack, they just called it Unix and the Internet. And you know, that's how these ideas work. Don't mix it up with nationalism. It will be used all over the world. It will be adopted all over the world. Linas Thorvald is from Finland, okay? And so on. You don't need to bring nationalism into it.",
+      "endTime": 4564.34,
+      "text": "talked earlier about abuse of the word digital public goods. I think Unix and the internet are digital public goods. There's no government in the picture. There is public funding. The United United States Department of Defense funded TCPIP. Okay, and all in all mothership of ATT funded the early development of U Unix by paying those salaries. But the creations went out and they became the true digital public goods. There's no government in the picture, there is no coercion in the picture, nobody forced anybody. Okay, that is a digital public good. And I just want to say in passing for all the Indian nationalists, Nobody called it America Stack, they just called it Unix and the Internet. And you know, that's how these ideas work. Don't mix it up with nationalism. It will be used all over the world. It will be adopted all over the world. Linas Thorvald is from Finland, okay? And so on. You don't need to bring nationalism into it. This is such an inspiring story at uh multiple levels. And one of them, of course, is that, you know, both of us",
       "words": [
         {
           "word": "talked",
@@ -83721,15 +83745,7 @@
           "startTime": 4557.67,
           "endTime": 4558.0,
           "confidence": 0.9642
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4558.34,
-      "endTime": 4611.09,
-      "text": "This is such an inspiring story at uh multiple levels. And one of them, of course, is that, you know, both of us are great believers in things happening bottom up rather than top down. And that you know, the exact example that you give, you know, Microsoft spending those billions in R D, but nothing much really coming out of there. But the open source world just creating so much is miraculous. And I think uh as both of them as part of markets, like I think of markets as a mechanism of for voluntary action through which you and I can work together in different ways. One way to organize that is through a company with IP, with contracts. Another way is that you and I are just talking freely, sharing ideas. I give you my code, you give me your code. And obviously it's a w win w win for me because your code is worth more. And and uh you know, and and and that's how all this beauty happens. So it's it's a triumph of freedom, it's a triumph of uh sort of human beings, and there are so many kind of lessons in this for us to learn.",
-      "words": [
+        },
         {
           "word": "This",
           "startTime": 4558.34,
@@ -83867,7 +83883,15 @@
           "startTime": 4563.86,
           "endTime": 4564.34,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4564.34,
+      "endTime": 4611.09,
+      "text": "are great believers in things happening bottom up rather than top down. And that you know, the exact example that you give, you know, Microsoft spending those billions in R D, but nothing much really coming out of there. But the open source world just creating so much is miraculous. And I think uh as both of them as part of markets, like I think of markets as a mechanism of for voluntary action through which you and I can work together in different ways. One way to organize that is through a company with IP, with contracts. Another way is that you and I are just talking freely, sharing ideas. I give you my code, you give me your code. And obviously it's a w win w win for me because your code is worth more. And and uh you know, and and and that's how all this beauty happens. So it's it's a triumph of freedom, it's a triumph of uh sort of human beings, and there are so many kind of lessons in this for us to learn.",
+      "words": [
         {
           "word": "are",
           "startTime": 4564.34,
@@ -84959,8 +84983,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4620.55,
-      "endTime": 4857.51,
-      "text": "Continuing on the ideas of the culture, the philosophy, there are two more things that I want to talk about. One is that in this environment of many, many clever people working with underpowered computers with inadequate research budgets, there has been a stubborn frugality about the Unix world. So you will always get more bang for the buck. because people have passionately tried to improve the code and improve the algorithms. The people sitting inside corporations tend to be well funded and they tend to have super duper state of the art machines. And also that level of devotion, uh the sadhana is not there. So it just becomes more inefficient, it becomes badly written code. Whereas hiding inside Unix, there are extremes of nice algorithms where people have spent fifty years sharpening the algorithm, sharpening the algorithm, improving it, improving it, so that today it becomes a very efficient system. So you can get away with a great deal of underpower equipment. So all over the world today, as there is a great sound of decluttering. Okay, there are old computers being thrown out. A lot of those can be rescued and put to good use because when once you install Unix on them, they actually can be quite tight and efficient and perform useful functions and useful roles. So there's a nice simple efficiency that is wired you can get by. With less hardware. Also, if you are a thinker, if you're a developer in the Unix world, you please know that the bar for algorithms is higher. You can't make do with quick and dirty, like happens in a lot of uh more normal settings. Uh finally, uh on the themes of individual freedom and self-expression, that is just a part of the people, this world, this culture, the uh separating equilibrium where certain people gravitated to this kind of thing, certain people joined certain corporations. You know, so I mean like Bill Gates led a camp and Richard Stallman led a camp and certain people out of their own sense of values and philosophy went in certain directions. So there was deep inside this engineering there are an array of decisions that don't do central control. It is very easy for that supervisory system, the operating system to exert draconian control over individuals. So if computers are the clay, the putty out of which we fashion the modern world, it could easily have become that they are straight jackets and there is control. Okay? So You can surely imagine a WhatsApp uncle who will insist that every time you switch on your phone, you should have to do a UID authentication with an iris scan because otherwise terrorists will use phones. Right? I'm sure you would imagine these kinds of things. But the internet is not designed like that. The internet is deeply wired for free, flexible, anonymous use. There is a great deal of anarchism. That is understood and accepted. That this is part of life. That if you and I wish to do a secret conversation, we will encrypt our packets and send it across. And not that there be a claustrophobic system that will control the whole thing so that other people cannot read our communications. So this is a deep philosophy that has been there inside Unix and the internet all along, which has partly helped make the internet successful, and which has partly helped. create and uphold a greater space for freedom in this world. Because I could paint you an alternative reality. There can be a very nice novel written that in the Bill Gates versus Richard Stallman debate, actually Bill Gates ends up winning. And then you have a claustrophobic corpor corporation that controls all the computing. And when computers are connected to each other, they are all under the rubric of Microsoft Windows and then corporations and governments have complete control. So you we could have gone down that route. Or even before",
+      "endTime": 4695.98,
+      "text": "Continuing on the ideas of the culture, the philosophy, there are two more things that I want to talk about. One is that in this environment of many, many clever people working with underpowered computers with inadequate research budgets, there has been a stubborn frugality about the Unix world. So you will always get more bang for the buck. because people have passionately tried to improve the code and improve the algorithms. The people sitting inside corporations tend to be well funded and they tend to have super duper state of the art machines. And also that level of devotion, uh the sadhana is not there. So it just becomes more inefficient, it becomes badly written code. Whereas hiding inside Unix, there are extremes of nice algorithms where people have spent fifty years sharpening the algorithm, sharpening the algorithm, improving it, improving it, so that today it becomes a very efficient system. So you can get away with a great deal of underpower equipment. So all over the world today, as there is a great sound of decluttering. Okay, there are old computers being thrown out. A lot of those can be rescued and put to good use because when once you install Unix on them, they actually can be quite tight and efficient",
       "words": [
         {
           "word": "Continuing",
@@ -86245,7 +86269,15 @@
           "startTime": 4695.18,
           "endTime": 4695.98,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4695.98,
+      "endTime": 4701.26,
+      "text": "and perform useful functions and useful roles. So there's a nice simple",
+      "words": [
         {
           "word": "and",
           "startTime": 4695.98,
@@ -86317,7 +86349,15 @@
           "startTime": 4700.54,
           "endTime": 4701.26,
           "confidence": 0.9916
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4701.26,
+      "endTime": 4857.51,
+      "text": "efficiency that is wired you can get by. With less hardware. Also, if you are a thinker, if you're a developer in the Unix world, you please know that the bar for algorithms is higher. You can't make do with quick and dirty, like happens in a lot of uh more normal settings. Uh finally, uh on the themes of individual freedom and self-expression, that is just a part of the people, this world, this culture, the uh separating equilibrium where certain people gravitated to this kind of thing, certain people joined certain corporations. You know, so I mean like Bill Gates led a camp and Richard Stallman led a camp and certain people out of their own sense of values and philosophy went in certain directions. So there was deep inside this engineering there are an array of decisions that don't do central control. It is very easy for that supervisory system, the operating system to exert draconian control over individuals. So if computers are the clay, the putty out of which we fashion the modern world, it could easily have become that they are straight jackets and there is control. Okay? So You can surely imagine a WhatsApp uncle who will insist that every time you switch on your phone, you should have to do a UID authentication with an iris scan because otherwise terrorists will use phones. Right? I'm sure you would imagine these kinds of things. But the internet is not designed like that. The internet is deeply wired for free, flexible, anonymous use. There is a great deal of anarchism. That is understood and accepted. That this is part of life. That if you and I wish to do a secret conversation, we will encrypt our packets and send it across. And not that there be a claustrophobic system that will control the whole thing so that other people cannot read our communications. So this is a deep philosophy that has been there inside Unix and the internet all along, which has partly helped make the internet successful, and which has partly helped. create and uphold a greater space for freedom in this world. Because I could paint you an alternative reality. There can be a very nice novel written that in the Bill Gates versus Richard Stallman debate, actually Bill Gates ends up winning. And then you have a claustrophobic corpor corporation that controls all the computing. And when computers are connected to each other, they are all under the rubric of Microsoft Windows and then corporations and governments have complete control. So you we could have gone down that route. Or even before",
+      "words": [
         {
           "word": "efficiency",
           "startTime": 4701.26,
@@ -94717,8 +94757,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5162.62,
-      "endTime": 5185.1,
-      "text": "everybody should play with the Raspberry Pi. It's a delight. It's a tiny small cheap computer. You boot Linux on it and you can be tinkering with computers and various cool applications of computers at a very low entry level point and the whole thing comes to life and you know we can be building systems, building code, we can become tinkerers, we can become creators to a greater extent.",
+      "endTime": 5178.78,
+      "text": "everybody should play with the Raspberry Pi. It's a delight. It's a tiny small cheap computer. You boot Linux on it and you can be tinkering with computers and various cool applications of computers at a very low entry level point and the whole thing comes to life",
       "words": [
         {
           "word": "everybody",
@@ -95007,7 +95047,15 @@
           "startTime": 5178.38,
           "endTime": 5178.78,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5178.78,
+      "endTime": 5187.26,
+      "text": "and you know we can be building systems, building code, we can become tinkerers, we can become creators to a greater extent. What cool things have you done with the Raspberry Pi?",
+      "words": [
         {
           "word": "and",
           "startTime": 5178.78,
@@ -95139,15 +95187,7 @@
           "startTime": 5184.54,
           "endTime": 5185.1,
           "confidence": 0.9906
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5185.1,
-      "endTime": 5187.26,
-      "text": "What cool things have you done with the Raspberry Pi?",
-      "words": [
+        },
         {
           "word": "What",
           "startTime": 5185.1,
@@ -95611,8 +95651,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 5211.06,
-      "endTime": 5223.79,
-      "text": "what can be done using the Raspberry Pi. And now it's time to go to your demonstration of Unix. So here is that video that you gentle uh readers have been waiting for. And uh here we go.",
+      "endTime": 5436.51,
+      "text": "what can be done using the Raspberry Pi. And now it's time to go to your demonstration of Unix. So here is that video that you gentle uh readers have been waiting for. And uh here we go. Welcome to Unix. At the simplest you could just be using a conventional big graphical application. So as an example, I'm going to show you a spreadsheet. Okay This is a free open source spreadsheet that is called LibreOffice. And yeah, you could use this. And uh these days uh most interesting things happen inside a browser. You could run Chrome, you could run Google Docs, you could run Firefox. So all that is standard material on any Unix machine. So if you're using a Chromebook or you're using the Mac OS X or you're using Linux, these kind of foundations are a given. But that's not what makes this special. So I'm just going to ignore the world of big fat graphical applications. Just treat that as a given. What is interesting is to do things on the so-called Unix command line. Okay, so that is what I'm going to show you today. Look at this black screen here. Okay, this thing is called a terminal. We issue commands here. So I'm going to say echo hello. That's a command that says hello. Uh it's making a little bit of noise there because it's saying to me that the LibraOffice, which is that spreadsheet, was closed by me. Okay, I'll do it again. Echo hello and it says hello. So what has happened? There is a command which is called echo and it was given an argument which is hello and in response it produced the word hello. So I can say echo hello world and it says hello world. Okay, so that's an example of a command, echo, which takes two arguments, hello world, and it responds by saying hello world. So living in the Unix command line is about using a large number of these kinds of commands and getting a lot of good work done. So one of those commands is uh ls. Ls is Show me the list of the files and directories that you have here. Okay, so let me uh get into the directory for everything is everything, which is abbreviated EIE. So in my directory system, I start at tilde. This tilde sign means my home directory. Then I have some mess and then there is a clean part. And in that I do work. And in that I keep a directory called media. And in that I keep a directory called EIE. Okay, so that is where all my stuff is sitting. And you can see some blue things and a white thing, that is the readme. Okay, the blue things are themselves directories. So if I say ls inserts, it shows me the contents of the directory that is called inserts.",
       "words": [
         {
           "word": "what",
@@ -95841,15 +95881,7 @@
           "startTime": 5223.46,
           "endTime": 5223.79,
           "confidence": 0.947
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5237.21,
-      "endTime": 7717.44,
-      "text": "Welcome to Unix. At the simplest you could just be using a conventional big graphical application. So as an example, I'm going to show you a spreadsheet. Okay This is a free open source spreadsheet that is called LibreOffice. And yeah, you could use this. And uh these days uh most interesting things happen inside a browser. You could run Chrome, you could run Google Docs, you could run Firefox. So all that is standard material on any Unix machine. So if you're using a Chromebook or you're using the Mac OS X or you're using Linux, these kind of foundations are a given. But that's not what makes this special. So I'm just going to ignore the world of big fat graphical applications. Just treat that as a given. What is interesting is to do things on the so-called Unix command line. Okay, so that is what I'm going to show you today. Look at this black screen here. Okay, this thing is called a terminal. We issue commands here. So I'm going to say echo hello. That's a command that says hello. Uh it's making a little bit of noise there because it's saying to me that the LibraOffice, which is that spreadsheet, was closed by me. Okay, I'll do it again. Echo hello and it says hello. So what has happened? There is a command which is called echo and it was given an argument which is hello and in response it produced the word hello. So I can say echo hello world and it says hello world. Okay, so that's an example of a command, echo, which takes two arguments, hello world, and it responds by saying hello world. So living in the Unix command line is about using a large number of these kinds of commands and getting a lot of good work done. So one of those commands is uh ls. Ls is Show me the list of the files and directories that you have here. Okay, so let me uh get into the directory for everything is everything, which is abbreviated EIE. So in my directory system, I start at tilde. This tilde sign means my home directory. Then I have some mess and then there is a clean part. And in that I do work. And in that I keep a directory called media. And in that I keep a directory called EIE. Okay, so that is where all my stuff is sitting. And you can see some blue things and a white thing, that is the readme. Okay, the blue things are themselves directories. So if I say ls inserts, it shows me the contents of the directory that is called inserts. I have a directory called catalog, I have a directory called inserts, I have a directory called Metrics, and I have a directory called Upcoming Shows. It is good practice to keep a readme just to guide your own future self or to guide a collaborator on what is going on. So if I want to print the contents of readme, I say cat readme. I'll explain what is cat in a moment. So this is my readme file. This is just my discipline that uh in the directory called catalog. I track an archive of the material that's been put out. In the directory called Inserts, I have some inserts. In the directory called Metrics, I track information about usage of the show. And in the directory called Upcoming Shows, I am developing future shows. Uh in some other operating systems, you may be familiar with the word folders. In Unix, these things are call directories. They were invented here and they've been adopted. by other operating systems in the world also. Okay. So uh in this I'm showing you my care in how to manage a directory system. So if I say ls I don't have a random uh collection of bad file names and bad directory names. Okay so I will say CD to go into catalog then I say ls and There are some good logical file names. There is a file name catalog, and then there are some other things which I'm going to explain in a moment, but the key point is there is thought and care around file names. So choosing good file names and managing a good directory system is a superpower and is an important part of being productive, and I always encourage people that think hard about file names. You will notice I have a file name here called third party underscore materials. You can have uh white space or blanks inside file names, but it turns out to be nicer if you don't do that. So use an underscore. Similarly, you will see me carefully using capital letters and lowercase letters. So normal files have lowercase names. Normal files have lowercase names. Okay, whereas directories have uppercase names, and there are some special files which have uppercase names. There's a reason for that, but I don't want to go into too much detail. My point right now is to be intentional. That think hard about the kind of file names that you use, because that has a major impact on the legibility and comprehensibility of what you are doing. There is a very big philosophy here around legibility and comprehensibility. We do everything as a battle against the frail human mind. that my mind is weak, my mind is not able to comprehend. My mind will not remember what the hell I was thinking. And I have my own directories and my own files that are thirty and forty years old. So the only way in which I will be able to handle my own stuff is to take great care on file names and a well structured directory organization. I just used the command CD, which I did not explain. CD means change directory. So if I CD upcoming shows, then now I'm inside the directory called upcoming shows. If I say cd dot dot, I go back up to the parent. Dot dot is one upstairs. Oh, and you will see I did not actually type in the entire upcoming shows. What I did was I said UP and then I pressed tab. That works. Why? Because if you say ls you see that the file names are catalog inserts metrics readme and upcoming shows so once you have said up there is only one place to go and then when you say tab it gets automatically completed so if I say ls u tab then it knows that the rest of it there can only be one directory which is upcoming shows so it expands automatically so far I have just introduced the basics of a directory system and the need for sensible file names and some good conventions use uppercase for directory names use uppercase for some special things like the readme file and use logical file names everywhere if I say star that maps to all the things present here so if I say ls star it gives you the contents of all the directories so at a glance you're seeing everything going on Read me is just a file. Then catalog is a directory and it contains a few things. Inserts is a directory and it contains a few things. Metrics is a directory and it contains a few things. Upcoming shows is a directory and it contains a few things. Okay. So at a glance, you're getting the full picture and you can see my basic hygiene that I try to keep things clean and I care about what file names I use, what directory structure I use. And that's our beginning. So Okay. Now we turn to chapter three. In this I'm going to introduce some concepts of the way these commands work and a little bit of the tool chain. Okay, so now imagine I say LS and it gives me these things. Uh there is a conceptual thing going on here, which is that Output of Ls is said to go into a standard output. So what you're seeing on the screen is the standard output. You can always capture that standard output and put it into a file. So if I say ls greater than a file, what's going to happen is the command ls will run and the output of ls will go into the file a file. Okay. And now let's look at the contents of a file. Okay, and you see the Text that came out because of the ls has come into a file. We can operate, and I'm going to delete the file. A file. Now, so far we have taken the output of a program and put it into a file. Now just for your information, there's a directory called slash tmp, which stores things for you that are temporary, and each time You power off and power on your machine, the slash TMP file gets emptied. I like to put temporary things there because then I don't need to remember to delete them. So that way we have less junk sitting around. So I'm going to often do examples where I'm going to push things into slash tmp. So let's go into my metrics directory and uh I'll show you some of the commands in operation. So first let me show you my file shows.csv. Showstart CSV is a file where I keep track of the uh usage of the various shows of everything is everything. So here you see an episode number, uh shortened name of the show, then what is the length of the show, what were the number of hours that were used in the first 24 hours, what is the total number of hours used, and similarly all the things that are mentioned here. Okay so There is a command in Unix which is called sort. So I can feed this file to the sort command, and I will get a sorted list of the shows by various things that interest me. So let's imagine I'm interested in the length of the show. This is 54 minutes, this is 60 minutes, this is 46 minutes. Okay, so there are 23 shows in this file. I have not updated it lately. And It shows you a widely varying length of each of the shows. There's a command in Unix which is called sort. Okay now it will grok the file shows.csv. Okay, but somewhere in this we need to think about what do you want to sort on. This the first column is numbered zero, the second column is numbered one, the third column is numbered two. I want to sort on the column two. Okay. So this is sort on the second column. Now the columns in this are delimited with this particular vertical uh line symbol. This is also called the pipe symbol, and I'm going to explain in a moment why it's called the pipe symbol. So how is Mr. Sort to know what is the structure of this file? So I need to say to him that the File separator of this file is the pipe symbol minus t is how I teach sort that the separator of this file is the pipe symbol. Now unfortunately the pipe symbol is special. So I'm gonna need to put a backslash on it. You will see why the pipe symbol is special. It has a special meaning on the command line. So when you put a backslash in front of it, you are saying don't worry about its special meaning, just believe me literally so whatever you put a backslash on gives you a literal interpretation and by default sort sorts alphabetically but I want him to solve sort numerically so let me remove the junk here just to make this more comprehensible I'm just cleaning this so that we you can see it more clearly so what's going on here we have a sort command where we are saying sort numerically in a file where the separator is the pipe symbol and the backslash is to reassure the Unix command line that I mean the pipe. Use the second column but you're counting from zero. So 15 is the first column CR Row is the second column and 57.18 is the third but because we're counting from zero it's zero, one two. And as an input I'm feeding the file shows.csv. So When you say this, you get the output of the sort. And are you just one version of yourself was our shortest show at forty six minutes, and Ukraine was the longest show at 91 minutes. The China model broken has 88 minutes. Okay, and so on. Now suppose uh you don't want to s see the full file where there are a large number of lines, and you just want to see show me the three shortest. Sorry, show me the three longest shows by length. Okay, so you can take the output of this shows and put a pipe symbol here and feed it to a next command. So what's going on here? The pipe symbol means take the output of the left hand side of the pipe, which is this sort incantation, and feed it to another command, which is tail minus three. What is tail minus three? It's a command that says just give me the last three lines. So when I fire this command, I just get the last three lines where we are being told that the beauty of finance at 80 minutes and the China model broken at 88 minutes and Ukraine at 91 minutes are the three longest shows. Now this is a example of the Unix command line and the toolkit in action. There are many many commands. You will need to pick up about 20, 30 of them. And then they can be put together in all kinds of ways. And here I've showed you one example where there is a command called sort, there's a command called tail, and they are strung together using the pipe symbol, and that's how we get our work done, that we are able to command these uh combine these things. Also, please note my files are plain text files. I'm not going to store data in some obscure file format. Because plain text files are the universal language by which all the programs speak to each other and are able to read files, modify files. Plain text files are a good thing. So you don't store things in specialized file formats that are custom to one program at a time. Rather we use the lingua franca, which is simple uh plain text files. Now I go to the next chapter where I'm going to show you some of the productivity tools around how uh we stay organized in the management of everything is everything. So Amit Barma has already mentioned on the show that we use room research. So room research is just a normal fat application. Note I did not type in room research, I said ROA and I said tab, at which point the uh name room research got expanded because there are no other executable commands that are called room that start with ROA okay and I'm going to say ampersand ampersand means fire this off in the background and uh give the command back to me okay and that gives me the screen of Rome Research. So Rome Research is a fat application. Here I'm running the Linux version of Rome Research. Where there is a shared directory, everything is everything, where I'm collaborating with Amit Varma. This is the main directory of everything is everything. Okay, so for example, uh here is vaccines, and uh I think this was show number 27. This is our notes to self on how on the story we were going to tell around the vaccines show. Uh we didn't get to talk about advanced purchase agreements, we didn't get to talk about the miracle of the Covid vaccine. So this is ROM research and it's a conventional fat application running in a graphical system. It works on an internet scale and it permits collaboration. Now I also mentioned that Emacs is an editor which has a similar capability in some respects, which is called org mode. Let me go through this step by step. Emacs is a editor which allows us to edit files. Okay I have a file which is future episodes.org. This is a file that I am managing where I keep track of my own ideas for future episodes. I don't use Rome Research so much myself. So it's a collaboration tool, it works with Amit, and it's quite easy to cut and paste across the two, but my fingers invisibly type Emacs. So I prefer to maintain things. as an Emacs file. So here's Emacs. Uh let me make the font a little bigger because this is going into a video recording. Okay. So the way this works is that this is a plain text file and it supports a hierarchical nesting of subjects which will collapse as a tree. So if I say tab it gets hidden and if I say tab once again it gets expanded. Okay so let me show you these are my ideas for future episodes and just as notes to self I'm keeping track of how complete they are. So I think that there's going to be an episode on market power where I'm going to work with Mega. I think that there's some interesting stuff Mark Andreessen and Vitalik have written about techno optimism, so there's potentially an episode there. Peron has built an India video, there is an episode there, and so on. But note my use of the tab. That if I uh punch on the tab key, then this opens up, but if I punch on the tab t key again, it goes away. So I get to see a high level outline that these are all the show ideas that I have in mind. And uh if I press tab again, the detail is hidden. So I if I press tab at the star level, all the highly feasible get hidden. I have nothing under vagideas. I have a bunch of recommendations in mind under movies that I want to see, there are some that have been used, and uh there are some things for the future. Okay, so there is a range of these things that are being stored here. And uh this is a feature inside Emacs, which allows me to do this hierarchical organization of a file. Okay, and I'm exiting Emacs now. So you could see there is a similar functionality in Rome Research. There is a similar functionality in future episodes. But please note Rome Research is storing a file on the cloud and Does not allow me access to the file in any way other than the data that is stored on the cloud, or I can manually go into Rome Research and export the data and so on. Whereas here, it's sitting here as a file in front of my eyes. It's a simple plain text file. Okay. So let's manipulate that plain text file. Uh remember I said every time there is a star star, that's uh an idea for an episode. So for example. I can use uh a command called grep, which will pull out star star at the start of a sentence from future episodes. And there I get an X ray of the file that I have all these ideas sitting around inside the file, and I could potentially feed them to a command that will count the lines. This is strictly not correct because there's also these things used and future which are not actually episode ideas, but this is a demo of taking a command grep which will hunt for a string inside a plain text file and feeding the output through a pipe into a command called wc, which is a word counter. Okay, so so far I've introduced a command sort, I've introduced a command grep which is to hunt for a string in a file. I've introduced a command wc which is to count the words wc for word count I've introduced a command fail which is to take the last X lines from a file or from an input stream. So there are many such commands and we are able to string them together. Now I want to show you chapter five which is about some amount of automation. So imagine I'm sitting here and I'm doing future episodes.org. And for whatever reason, I want to be able to convert this to a Microsoft Word format. And much as I live in a Unix environment, many people external to me like to use Microsoft Windows. And so there is occasion for needing to convert this file into a Microsoft Word doc file. There's a nice Swissami knife that is called Pandoc. Pandoc is a every to every file format converter so I can say pan doc future episodes.org and I I say put the output into a.docx. Okay and he will helpfully convert this into a Microsoft doc file and now I'm using the command ls and it shows me that on the second of Jan at 119 pm I have a 21 kilobyte file How did I get this detail about a.docx? Because I gave the switches minus al to the command ls. If I just said ls a.docx, it will just give me the file name. But I want to know more. So I say ls-al a.docx, and it tells me this is a 20k file. Okay, and I don't want this and I delete it. Now imagine this is going to have to be done often, and you know, I really should not be so lazy and call it a file a.docx. I should give it a proper name. So what I can do is uh I can make a new command which is uh convert to doc file okay so I'm gonna be in Emacs here and I need this incantation don't ask me for the details right now but by putting this incantation into the text file it becomes a executable command so I will say Pandoc futurepisodes.org minus o future episodes.docx okay ls minus al future episodes.docx. So what have I done? I'm going to save this and exit. So let's look at what I've done. I've created a new command convert to doc file. It contains it contains these commands that there is an incantation at the beginning that is required to make this an executable file. And one first I'm doing a step which is the command Pandoc to convert it into a doc file. And then I'm doing a second step, which is I want to look at it. At what is the file that was created. When you write such a text file, you have created a new command. You need to do one incantation once, and after that we are done. So now I'm able to run this as an incantation. So it converted to the doc file and then it shows me the output. would like it this to say a little more so let's go back inside and I want it to say converting the current dot org file into a dot docx file okay so this is babble a little more tell me what's going on so now when I fire the command it says I'm converting the current.org file into a dot x file and then it does the conversion and it shows me the fruit of this labor. Now I've created a brand new command, convert to doc file. So this is the Unix philosophy that we keep doing automation of our own work. That I think a little that I'm going to store an org file, but because Amitvarma does not use Emacs, when I give it to him, it would be nice if it's a Microsoft Word file. There are ready command line incantations through which the conversion can be done. And then I'll automate that. by making this little specialized command which is called uh convert to doc file okay and on this in this way there is another nice automation tool that is called mic I'm not going to demo that here in more detail but just fyi at some point go look up something that is called Mic. In chapter six I am going to talk about uh a little tool that is called AUK. Awk stands for AWK. Okay. Awk is a tool and I just I'm showing you the spelling there. Uh where it is a system of our supplying a pattern and an action. So imagine you have a text file and there are patterns and there are actions. So I specify the pattern and then I specify the action or and I can have many patterns and many actions. And Ork will run through all the lines of the file and it will try to apply all the patterns and it will do all the actions. So let me show you this in action. Let's go to the metrics directory. You saw the uh shows uh directory, uh sorry, the shows file. Okay, and you remember earlier I had showed you a example of using sort to uh process the shows. Now I'm going to show you an um a demo where we will do similar things but I'm going to bring orc into the picture just to give you a hang of what is going on. I'm going to say orc print dollar three shows dot uh CSV or counts from one so this is column one is 21 column two is beauty finance and column three is the show length okay but here again just like in the case of sort I need to tell him that it's a pipe delimited file and he prints out all the column threes. Now what's going on here? The brace contains the action. So what is presented inside braces is what is the action. What is the action? The action is print the third column. In the first line, so let's look at the shows file. In the first line, I have kept the names of the columns. Okay. So when I do the orc operation for the first line, it also gives me the column name length. What if I don't want that? What if I just want the numbers? So I'm going to make this orc program more complicated by putting a pattern. Okay. So in simple brackets we present a pattern and in braces we present the action. What is the pattern I want here? I want it to apply for all row numbers which are more than one. So NR is an incantation that says the row number and greater than one. So don't do this for row one, but do it for all the others. Row one, you remember, shows length, and I don't want that. Okay. So here I've got a clean output where it ignores the first row. For all the other rows, it has printed out the show length. And I could take this output and pipe it to sort minus n. So take the output of this orc. And feed it into this pipe. The pipe connects it up to sort, and I just want a numeric sort, and I get a sorted list of all the show lengths. Okay and once again we see that the 80 minutes, 88 minutes, 91 minutes are the longest shows, 46 minutes, 49 minutes, 53 minutes are the shortest shows. I could take this and feed it to tail minus three, and it gives me the three. longest show length. The opposite of tail of course is head and I get the shortest three shows. That is done using orc and sort and head. So you see I've combined three tools together that the orc was used to extract the third column. So the orc was told that this is a file where the pipe is used as the file separator. Then find me the pattern where the row number is more than one For every row where the pattern is the row number exceeds one, perform this action. Print the third column, apply this program to shows.csv, take its output and feed it to Sort minus N, take this output and feed it to head minus three. Okay, so this entire complex operation has been done in one line. It's succinct, it's clear, it's fast. And you get your work done right there, sitting on the command line. It's a very powerful way to manipulate files. This is a small trivial file, but you know, you could be doing giant data sets, millions of records uh being processed like this. Let me show you another simple example. Here is a file of the monthly time series of the usage of the show. So in this we have the month and the number of hours for which the show was used. and the number of unique viewers. Okay. So in June we started out as 300 hours being sent out to 1947 unique viewers. And in October and November we are at uh ten or eleven thousand hours being shipped out to some fourteen thousand unique viewers. Now I want to know what is the minutes of use per unique viewer. Okay so I can do this in Ork I will once again apply the pattern NR greater than 1 because in the first line I have stored the column name and I don't want to do arithmetic operations with that and then I want the action where I say print the first column and take the second column which is measured in hours multiplied by 60 to convert into minutes and divide by number three that's the number of unique viewers. Okay. Apply this to monthly TS. So there you go. Right on the command line we find that in June the average user of this show was at nine minutes. Okay so there were two thousand odd people who showed up but most of them were just curious spectators and there was really no usage of the show. Over the months, uh the show has developed a higher and higher loyal base where there are people who know the show who are coming back. So I think the early asymmetric information has receded, and there are people who like this who are coming back, and uh in the month of November, the average viewer was at 45 minutes, 44 minutes. And there are 14,000 such persons standing in the month of November. And so this minutes per unique viewer has risen through these first six months of the show from 9 minutes to 45 minutes. Now note what has started happening in this little conversation. If you are with me so far, and if you see that. When faced with a file monthly TS.csv, that's a monthly time series of the month and the number of hours used of the show and the number of unique viewers where the file says that in June 2023 there were three hundred and one hours by nineteen forty seven unique viewers. We are able to teloc that process a file where there is a file separator colon because there's a colon here and focus on a pattern that the row number should exceed one that's in simple brackets everything in simple brackets is a pattern and perform the following action everything in brace is an action perform the following action what's the action print the first column that's date that's the month number then print The second column multiplied by 60 to convert into minutes and divided by the third column, that's the number of unique viewers, and apply this on the file monthly TS.csv. And we've got this done. At this point, are you just doing something clever and effective on the command line? Or have you, gentle reader, become a computer programmer? Okay, and the answer is both. And that's a part of the Unix philosophy that generally we blur the lines between nonprogrammers and programmers. That if you're doing this, you're already a programmer and within 10, 15 minutes I have got you to start writing something that is actually the code of a computer programming language. And the point is I did it without being very heavy about it. I did not take you through hours of instruction. I just got you going in a simple and intuitive way. And this is part of how the Unix world works that programming is for everybody. It is assumed that everybody will find it useful to do little bits of programming. Programming is not intimidating, it's made very easy. You get to putting these tools together and you get a lot done. Let me show you a little bit about what I'm doing in the catalog to give you a flavor of how these things work. Okay. What is catalog? I have a file called catalog where I just keep a catalog of all the things that have happened in everything is everything. Okay, so this is a simple text file. So for example, for episode 24, I have a file where I keep this clear file structure and pattern where there are two spaces here and I have the title of the episode. There are two spaces here and I have the date of the episode. There are two spaces here and there is the URL of the episode. And then I store all the chapter. This is just my personal convenience that I keep this plain text file for myself because I like to be orderly, so I can hunt down things in this file. Maybe I want to look it up, maybe I want to put it somewhere else, maybe I want to cite this somewhere. Okay. So this is a catalog file. Now sometimes I am required to make a summary catalog as an HTML file, which is just the episode name and a URL to use that episode directly. For that objective, I wrote a simple AUK program. Okay, I'm not going to explain this here, but here's an AU program where there is a pattern called begin which is run only once at the beginning. It's a pattern that is true only at the first time of the program. Then this is a pattern that looks for the words ep okay so you see app 24 this is matched by this pattern and the action is here then there are some pattern action pattern action and then there is an end there is a pattern that is run at the end I'm not going to explain this orc program to you in great detail right now I just want to say to you that this is an Oc program which has a total of 16 lines okay so it's not complicated to write once you know some Oc I admit I have got your hands wet with knowing a little bit of AUK, but you don't yet know AUK enough to understand this, and that's okay. But I just want to say to you that it's a small 16 line AUK program that I wrote. What have I called it? The program is called MKTOC. What is that? It's make the table of contents out of the catalog. So let's run it. I'm running the program MKTOC on the data file catalog. And what this does is it generates an HTML file for me. What is this HTML file? Let's play this HTML file. Because we like to live on the Unix command line. I I can put it in a graphical browser, but I like to do everything in text mode on the command line. Lynx is a web browser that works on the command line. Okay and you see the HTML file that has been created, it has all the shows with the date. And each of these things in blue is a URL that you can click on. So this is a brief catalog of everything that's been done in the show so far. So you see what has happened here. I was maintaining a catalog file, which is just a convenient handy file for me, but I have certain protocols and conventions whereby I'm systematic in how I keep track of the catalog. I wrote an orc program, mktoc.org, and This I have put into uh and this I have put uh this I can run using the command mktocc.org applied to the data file catalog and that generates me an HTML file. Okay so I am at the end of this little bit of an introduction to the Unix command line. I hope to have given you a flavor that We use the command line, we take it seriously, we organize ourselves, keeping files and directories nicely. Things are kept as plain text files, and there is a lovely tool chain around this whereby we can be very effective and very productive.",
-      "words": [
+        },
         {
           "word": "Welcome",
           "startTime": 5237.21,
@@ -98555,7 +98587,15 @@
           "startTime": 5436.01,
           "endTime": 5436.51,
           "confidence": 0.7852
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 5437.88,
+      "endTime": 5441.4,
+      "text": "I have a directory called catalog, I have a directory called inserts, I have a directory",
+      "words": [
         {
           "word": "I",
           "startTime": 5437.88,
@@ -98651,7 +98691,15 @@
           "startTime": 5441.0,
           "endTime": 5441.4,
           "confidence": 0.9994
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5441.4,
+      "endTime": 5875.31,
+      "text": "called Metrics, and I have a directory called Upcoming Shows. It is good practice to keep a readme just to guide your own future self or to guide a collaborator on what is going on. So if I want to print the contents of readme, I say cat readme. I'll explain what is cat in a moment. So this is my readme file. This is just my discipline that uh in the directory called catalog. I track an archive of the material that's been put out. In the directory called Inserts, I have some inserts. In the directory called Metrics, I track information about usage of the show. And in the directory called Upcoming Shows, I am developing future shows. Uh in some other operating systems, you may be familiar with the word folders. In Unix, these things are call directories. They were invented here and they've been adopted. by other operating systems in the world also. Okay. So uh in this I'm showing you my care in how to manage a directory system. So if I say ls I don't have a random uh collection of bad file names and bad directory names. Okay so I will say CD to go into catalog then I say ls and There are some good logical file names. There is a file name catalog, and then there are some other things which I'm going to explain in a moment, but the key point is there is thought and care around file names. So choosing good file names and managing a good directory system is a superpower and is an important part of being productive, and I always encourage people that think hard about file names. You will notice I have a file name here called third party underscore materials. You can have uh white space or blanks inside file names, but it turns out to be nicer if you don't do that. So use an underscore. Similarly, you will see me carefully using capital letters and lowercase letters. So normal files have lowercase names. Normal files have lowercase names. Okay, whereas directories have uppercase names, and there are some special files which have uppercase names. There's a reason for that, but I don't want to go into too much detail. My point right now is to be intentional. That think hard about the kind of file names that you use, because that has a major impact on the legibility and comprehensibility of what you are doing. There is a very big philosophy here around legibility and comprehensibility. We do everything as a battle against the frail human mind. that my mind is weak, my mind is not able to comprehend. My mind will not remember what the hell I was thinking. And I have my own directories and my own files that are thirty and forty years old. So the only way in which I will be able to handle my own stuff is to take great care on file names and a well structured directory organization. I just used the command CD, which I did not explain. CD means change directory. So if I CD upcoming shows, then now I'm inside the directory called upcoming shows. If I say cd dot dot, I go back up to the parent. Dot dot is one upstairs. Oh, and you will see I did not actually type in the entire upcoming shows. What I did was I said UP and then I pressed tab. That works. Why? Because if you say ls you see that the file names are catalog inserts metrics readme and upcoming shows so once you have said up there is only one place to go and then when you say tab it gets automatically completed so if I say ls u tab then it knows that the rest of it there can only be one directory which is upcoming shows so it expands automatically so far I have just introduced the basics of a directory system and the need for sensible file names and some good conventions use uppercase for directory names use uppercase for some special things like the readme file and use logical file names everywhere if I say star that maps to all the things present here so if I say ls star it gives you the contents of all the directories so at a glance you're seeing everything going on Read me is just a file. Then catalog is a directory and it contains a few things. Inserts is a directory and it contains a few things. Metrics is a directory and it contains a few things. Upcoming shows is a directory and it contains a few things. Okay. So at a glance, you're getting the full picture and you can see my basic hygiene that I try to keep things clean and I care about what file names I use, what directory structure I use. And that's our beginning. So Okay. Now we turn to chapter three. In this I'm going to introduce some concepts of the way these commands work and a little bit of the tool chain. Okay, so now imagine I say LS and it gives me these things. Uh there is a conceptual thing going on here, which is that Output of Ls is said to go into a standard output. So what you're seeing on the screen is the standard output. You can always capture that standard output and put it into a file. So if I say ls greater than a file, what's going to happen is the command ls will run and the output of ls will go into the file a file. Okay. And now let's look at the contents of a file. Okay, and you see the Text that came out because of the ls has come into a file. We can operate, and I'm going to delete the file. A file. Now, so far we have taken the output of a program and put it into a file. Now just for your information, there's a directory called slash tmp, which stores things for you that are temporary, and each time You power off and power on your machine, the slash TMP file gets emptied. I like to put temporary things there because then I don't need to remember to delete them. So that way we have less junk sitting around. So I'm going to often do examples where I'm going to push things into slash tmp. So let's go into my metrics directory and uh I'll show you some of the commands in operation. So first let me show you my file shows.csv.",
+      "words": [
         {
           "word": "called",
           "startTime": 5441.4,
@@ -105299,7 +105347,15 @@
           "startTime": 5874.81,
           "endTime": 5875.31,
           "confidence": 0.8315
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 5876.84,
+      "endTime": 5879.24,
+      "text": "Showstart CSV is a file where I",
+      "words": [
         {
           "word": "Showstart",
           "startTime": 5876.84,
@@ -105341,7 +105397,15 @@
           "startTime": 5879.08,
           "endTime": 5879.24,
           "confidence": 0.9994
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5879.24,
+      "endTime": 6105.1,
+      "text": "keep track of the uh usage of the various shows of everything is everything. So here you see an episode number, uh shortened name of the show, then what is the length of the show, what were the number of hours that were used in the first 24 hours, what is the total number of hours used, and similarly all the things that are mentioned here. Okay so There is a command in Unix which is called sort. So I can feed this file to the sort command, and I will get a sorted list of the shows by various things that interest me. So let's imagine I'm interested in the length of the show. This is 54 minutes, this is 60 minutes, this is 46 minutes. Okay, so there are 23 shows in this file. I have not updated it lately. And It shows you a widely varying length of each of the shows. There's a command in Unix which is called sort. Okay now it will grok the file shows.csv. Okay, but somewhere in this we need to think about what do you want to sort on. This the first column is numbered zero, the second column is numbered one, the third column is numbered two. I want to sort on the column two. Okay. So this is sort on the second column. Now the columns in this are delimited with this particular vertical uh line symbol. This is also called the pipe symbol, and I'm going to explain in a moment why it's called the pipe symbol. So how is Mr. Sort to know what is the structure of this file? So I need to say to him that the File separator of this file is the pipe symbol minus t is how I teach sort that the separator of this file is the pipe symbol. Now unfortunately the pipe symbol is special. So I'm gonna need to put a backslash on it. You will see why the pipe symbol is special. It has a special meaning on the command line. So when you put a backslash in front of it, you are saying don't worry about its special meaning, just believe me literally so whatever you put a backslash on gives you a literal interpretation and by default sort sorts alphabetically but I want him to solve sort numerically so let me remove the junk here just to make this more comprehensible I'm just cleaning this so that we you can see it more clearly so what's going on here we have a sort command where we are saying sort numerically in a file where the separator is the pipe symbol and the backslash is to reassure the Unix command line that I mean the pipe. Use the second column but you're counting from zero. So 15 is the first column CR Row is the second column and 57.18 is the third but because we're counting from zero it's zero, one two. And as an input I'm feeding the file shows.csv. So When you say this, you get the output of the sort. And are you just one version of yourself was our shortest show at forty six minutes, and Ukraine was the longest show at 91 minutes. The China model broken has 88 minutes. Okay, and so on. Now suppose uh you don't want to s see the full",
+      "words": [
         {
           "word": "keep",
           "startTime": 5879.24,
@@ -108725,7 +108789,15 @@
           "startTime": 6104.78,
           "endTime": 6105.1,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 6105.1,
+      "endTime": 6110.32,
+      "text": "file where there are a large number of lines, and you just want to see show me the three shortest.",
+      "words": [
         {
           "word": "file",
           "startTime": 6105.1,
@@ -108845,7 +108917,15 @@
           "startTime": 6109.82,
           "endTime": 6110.32,
           "confidence": 0.897
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 6110.97,
+      "endTime": 6170.14,
+      "text": "Sorry, show me the three longest shows by length. Okay, so you can take the output of this shows and put a pipe symbol here and feed it to a next command. So what's going on here? The pipe symbol means take the output of the left hand side of the pipe, which is this sort incantation, and feed it to another command, which is tail minus three. What is tail minus three? It's a command that says just give me the last three lines. So when I fire this command, I just get the last three lines where we are being told that the beauty of finance at 80 minutes and the China model broken at 88 minutes and Ukraine at 91 minutes are the three longest shows. Now this is a example of the Unix command line and the toolkit in action. There are many many commands. You will need to pick up about 20, 30 of them. And then they can be put together",
+      "words": [
         {
           "word": "Sorry,",
           "startTime": 6110.97,
@@ -109847,7 +109927,15 @@
           "startTime": 6169.66,
           "endTime": 6170.14,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 6170.14,
+      "endTime": 6173.26,
+      "text": "in all kinds of ways. And here I've showed you one",
+      "words": [
         {
           "word": "in",
           "startTime": 6170.14,
@@ -109913,7 +110001,15 @@
           "startTime": 6172.94,
           "endTime": 6173.26,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 6173.26,
+      "endTime": 6849.22,
+      "text": "example where there is a command called sort, there's a command called tail, and they are strung together using the pipe symbol, and that's how we get our work done, that we are able to command these uh combine these things. Also, please note my files are plain text files. I'm not going to store data in some obscure file format. Because plain text files are the universal language by which all the programs speak to each other and are able to read files, modify files. Plain text files are a good thing. So you don't store things in specialized file formats that are custom to one program at a time. Rather we use the lingua franca, which is simple uh plain text files. Now I go to the next chapter where I'm going to show you some of the productivity tools around how uh we stay organized in the management of everything is everything. So Amit Barma has already mentioned on the show that we use room research. So room research is just a normal fat application. Note I did not type in room research, I said ROA and I said tab, at which point the uh name room research got expanded because there are no other executable commands that are called room that start with ROA okay and I'm going to say ampersand ampersand means fire this off in the background and uh give the command back to me okay and that gives me the screen of Rome Research. So Rome Research is a fat application. Here I'm running the Linux version of Rome Research. Where there is a shared directory, everything is everything, where I'm collaborating with Amit Varma. This is the main directory of everything is everything. Okay, so for example, uh here is vaccines, and uh I think this was show number 27. This is our notes to self on how on the story we were going to tell around the vaccines show. Uh we didn't get to talk about advanced purchase agreements, we didn't get to talk about the miracle of the Covid vaccine. So this is ROM research and it's a conventional fat application running in a graphical system. It works on an internet scale and it permits collaboration. Now I also mentioned that Emacs is an editor which has a similar capability in some respects, which is called org mode. Let me go through this step by step. Emacs is a editor which allows us to edit files. Okay I have a file which is future episodes.org. This is a file that I am managing where I keep track of my own ideas for future episodes. I don't use Rome Research so much myself. So it's a collaboration tool, it works with Amit, and it's quite easy to cut and paste across the two, but my fingers invisibly type Emacs. So I prefer to maintain things. as an Emacs file. So here's Emacs. Uh let me make the font a little bigger because this is going into a video recording. Okay. So the way this works is that this is a plain text file and it supports a hierarchical nesting of subjects which will collapse as a tree. So if I say tab it gets hidden and if I say tab once again it gets expanded. Okay so let me show you these are my ideas for future episodes and just as notes to self I'm keeping track of how complete they are. So I think that there's going to be an episode on market power where I'm going to work with Mega. I think that there's some interesting stuff Mark Andreessen and Vitalik have written about techno optimism, so there's potentially an episode there. Peron has built an India video, there is an episode there, and so on. But note my use of the tab. That if I uh punch on the tab key, then this opens up, but if I punch on the tab t key again, it goes away. So I get to see a high level outline that these are all the show ideas that I have in mind. And uh if I press tab again, the detail is hidden. So I if I press tab at the star level, all the highly feasible get hidden. I have nothing under vagideas. I have a bunch of recommendations in mind under movies that I want to see, there are some that have been used, and uh there are some things for the future. Okay, so there is a range of these things that are being stored here. And uh this is a feature inside Emacs, which allows me to do this hierarchical organization of a file. Okay, and I'm exiting Emacs now. So you could see there is a similar functionality in Rome Research. There is a similar functionality in future episodes. But please note Rome Research is storing a file on the cloud and Does not allow me access to the file in any way other than the data that is stored on the cloud, or I can manually go into Rome Research and export the data and so on. Whereas here, it's sitting here as a file in front of my eyes. It's a simple plain text file. Okay. So let's manipulate that plain text file. Uh remember I said every time there is a star star, that's uh an idea for an episode. So for example. I can use uh a command called grep, which will pull out star star at the start of a sentence from future episodes. And there I get an X ray of the file that I have all these ideas sitting around inside the file, and I could potentially feed them to a command that will count the lines. This is strictly not correct because there's also these things used and future which are not actually episode ideas, but this is a demo of taking a command grep which will hunt for a string inside a plain text file and feeding the output through a pipe into a command called wc, which is a word counter. Okay, so so far I've introduced a command sort, I've introduced a command grep which is to hunt for a string in a file. I've introduced a command wc which is to count the words wc for word count I've introduced a command fail which is to take the last X lines from a file or from an input stream. So there are many such commands and we are able to string them together. Now I want to show you chapter five which is about some amount of automation. So imagine I'm sitting here and I'm doing future episodes.org. And for whatever reason, I want to be able to convert this to a Microsoft Word format. And much as I live in a Unix environment, many people external to me like to use Microsoft Windows. And so there is occasion for needing to convert this file into a Microsoft Word doc file. There's a nice Swissami knife that is called Pandoc. Pandoc is a every to every file format converter so I can say pan doc future episodes.org and I I say put the output into a.docx. Okay and he will helpfully convert this into a Microsoft doc file and now I'm using the command ls and it shows me that on the second of Jan at 119 pm I have a 21 kilobyte file How did I get this detail about a.docx? Because I gave the switches minus al to the command ls. If I just said ls a.docx, it will just give me the file name. But I want to know more. So I say ls-al a.docx, and it tells me this is a 20k file. Okay, and I don't want this and I delete it. Now imagine this is going to have to be done often, and you know, I really should not be so lazy and call it a file a.docx. I should give it a proper name. So what I can do is uh I can make a new command which is uh convert to doc file okay so I'm gonna be in Emacs here and I need this incantation don't ask me for the details right now but by putting this incantation into the text file it becomes a executable command so I will say Pandoc futurepisodes.org minus o future episodes.docx okay ls minus al future episodes.docx. So what have I done? I'm going to save this and exit. So let's look at what I've done. I've created a new command convert to doc file. It contains it contains these commands that there is an incantation at the beginning that is required to make this an executable file. And one first I'm doing a step which is the command Pandoc to convert it into a doc file. And then I'm doing a second step, which is I want to look at it. At what is the file that was created. When you write such a text file, you have created a new command. You need to do one incantation once, and after that we are done. So now I'm able to run this as an incantation. So it converted to the doc file and then it shows me the output. would like it this to say a little more so let's go back inside and I want it to say converting the current dot org file into a dot docx file okay so this is babble a little more tell me what's going on so now when I fire the command it says I'm converting the current.org file into a dot x file and then it does the conversion and it shows me the fruit of this labor. Now I've created a brand new command, convert to doc file. So this is the Unix philosophy that we keep doing automation of our own work. That I think a little that I'm going to store an org file, but because",
+      "words": [
         {
           "word": "example",
           "startTime": 6173.26,
@@ -119993,7 +120089,15 @@
           "startTime": 6848.34,
           "endTime": 6849.22,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 6849.22,
+      "endTime": 6853.22,
+      "text": "Amitvarma does not use Emacs, when I give it to him, it would be",
+      "words": [
         {
           "word": "Amitvarma",
           "startTime": 6849.22,
@@ -120077,7 +120181,15 @@
           "startTime": 6853.14,
           "endTime": 6853.22,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 6853.22,
+      "endTime": 7432.12,
+      "text": "nice if it's a Microsoft Word file. There are ready command line incantations through which the conversion can be done. And then I'll automate that. by making this little specialized command which is called uh convert to doc file okay and on this in this way there is another nice automation tool that is called mic I'm not going to demo that here in more detail but just fyi at some point go look up something that is called Mic. In chapter six I am going to talk about uh a little tool that is called AUK. Awk stands for AWK. Okay. Awk is a tool and I just I'm showing you the spelling there. Uh where it is a system of our supplying a pattern and an action. So imagine you have a text file and there are patterns and there are actions. So I specify the pattern and then I specify the action or and I can have many patterns and many actions. And Ork will run through all the lines of the file and it will try to apply all the patterns and it will do all the actions. So let me show you this in action. Let's go to the metrics directory. You saw the uh shows uh directory, uh sorry, the shows file. Okay, and you remember earlier I had showed you a example of using sort to uh process the shows. Now I'm going to show you an um a demo where we will do similar things but I'm going to bring orc into the picture just to give you a hang of what is going on. I'm going to say orc print dollar three shows dot uh CSV or counts from one so this is column one is 21 column two is beauty finance and column three is the show length okay but here again just like in the case of sort I need to tell him that it's a pipe delimited file and he prints out all the column threes. Now what's going on here? The brace contains the action. So what is presented inside braces is what is the action. What is the action? The action is print the third column. In the first line, so let's look at the shows file. In the first line, I have kept the names of the columns. Okay. So when I do the orc operation for the first line, it also gives me the column name length. What if I don't want that? What if I just want the numbers? So I'm going to make this orc program more complicated by putting a pattern. Okay. So in simple brackets we present a pattern and in braces we present the action. What is the pattern I want here? I want it to apply for all row numbers which are more than one. So NR is an incantation that says the row number and greater than one. So don't do this for row one, but do it for all the others. Row one, you remember, shows length, and I don't want that. Okay. So here I've got a clean output where it ignores the first row. For all the other rows, it has printed out the show length. And I could take this output and pipe it to sort minus n. So take the output of this orc. And feed it into this pipe. The pipe connects it up to sort, and I just want a numeric sort, and I get a sorted list of all the show lengths. Okay and once again we see that the 80 minutes, 88 minutes, 91 minutes are the longest shows, 46 minutes, 49 minutes, 53 minutes are the shortest shows. I could take this and feed it to tail minus three, and it gives me the three. longest show length. The opposite of tail of course is head and I get the shortest three shows. That is done using orc and sort and head. So you see I've combined three tools together that the orc was used to extract the third column. So the orc was told that this is a file where the pipe is used as the file separator. Then find me the pattern where the row number is more than one For every row where the pattern is the row number exceeds one, perform this action. Print the third column, apply this program to shows.csv, take its output and feed it to Sort minus N, take this output and feed it to head minus three. Okay, so this entire complex operation has been done in one line. It's succinct, it's clear, it's fast. And you get your work done right there, sitting on the command line. It's a very powerful way to manipulate files. This is a small trivial file, but you know, you could be doing giant data sets, millions of records uh being processed like this. Let me show you another simple example. Here is a file of the monthly time series of the usage of the show. So in this we have the month and the number of hours for which the show was used. and the number of unique viewers. Okay. So in June we started out as 300 hours being sent out to 1947 unique viewers. And in October and November we are at uh ten or eleven thousand hours being shipped out to some fourteen thousand unique viewers. Now I want to know what is the minutes of use per unique viewer. Okay so I can do this in Ork I will once again apply the pattern NR greater than 1 because in the first line I have stored the column name and I don't want to do arithmetic operations with that and then I want the action where I say print the first column and take the second column which is measured in hours multiplied by 60 to convert into minutes and divide by number three that's the number of unique viewers. Okay. Apply this to monthly TS. So there you go. Right on the command line we find that in June the average user of this show was at nine minutes. Okay so there were two thousand odd people who showed up but most of them were just curious spectators and there was really no usage of the show. Over the months, uh the show has developed a higher and higher loyal base where there are people who know the show who are coming back. So I think the early asymmetric information has receded, and there are people who like this who are coming back, and uh in the month of November, the average viewer was at 45 minutes, 44 minutes. And there are 14,000 such persons standing in the month of November. And so this minutes per unique viewer has risen through these first six months of the show from 9 minutes to 45 minutes. Now note what has started happening in this little conversation. If you are with me so far, and if you see that. When faced with a file monthly TS.csv, that's a monthly time series of the month and the number of hours used of the show and the number of unique viewers where the file says that in June 2023 there were three hundred and one hours by nineteen forty seven unique viewers. We are able to teloc that process a file where there is a file separator colon because there's a colon here and focus on a pattern that the row number should exceed one that's in simple brackets everything in simple brackets is a pattern and perform the following action everything in brace is an action perform the following action what's the action print the first column that's date that's the month number then print The second column multiplied by 60 to convert into minutes and divided by the third column, that's the number of unique viewers, and apply this on the file monthly TS.csv. And we've got this done. At this point, are you just doing something clever and effective on the command line? Or have you, gentle reader, become a computer programmer? Okay, and the answer is both. And that's a part of the Unix philosophy that generally we blur the lines between nonprogrammers and programmers. That if you're doing this, you're already a programmer and within 10, 15 minutes I have got you to start writing something that is actually the code of a computer programming language. And",
+      "words": [
         {
           "word": "nice",
           "startTime": 6853.22,
@@ -128603,7 +128715,15 @@
           "startTime": 7431.88,
           "endTime": 7432.12,
           "confidence": 0.9492
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 7432.12,
+      "endTime": 7435.24,
+      "text": "the point is I did it without being very heavy about it.",
+      "words": [
         {
           "word": "the",
           "startTime": 7432.12,
@@ -128675,7 +128795,15 @@
           "startTime": 7434.92,
           "endTime": 7435.24,
           "confidence": 0.8997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 7435.24,
+      "endTime": 7511.82,
+      "text": "I did not take you through hours of instruction. I just got you going in a simple and intuitive way. And this is part of how the Unix world works that programming is for everybody. It is assumed that everybody will find it useful to do little bits of programming. Programming is not intimidating, it's made very easy. You get to putting these tools together and you get a lot done. Let me show you a little bit about what I'm doing in the catalog to give you a flavor of how these things work. Okay. What is catalog? I have a file called catalog where I just keep a catalog of all the things that have happened in everything is everything. Okay, so this is a simple text file. So for example, for episode 24, I have a file where I keep this clear file structure and pattern where there are two spaces here and I have the title of the episode. There are two spaces here and I have the date of the episode. There are two spaces here and there is the URL of the episode. And then I store all the chapter. This is just my personal convenience that I keep this plain text file for myself because",
+      "words": [
         {
           "word": "I",
           "startTime": 7435.24,
@@ -129947,7 +130075,15 @@
           "startTime": 7511.5,
           "endTime": 7511.82,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 7511.82,
+      "endTime": 7519.34,
+      "text": "I like to be orderly, so I can hunt down things in this file. Maybe I want to look it up, maybe I want to put it somewhere else, maybe I want to cite this",
+      "words": [
         {
           "word": "I",
           "startTime": 7511.82,
@@ -130157,7 +130293,15 @@
           "startTime": 7519.1,
           "endTime": 7519.34,
           "confidence": 0.9992
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 7519.34,
+      "endTime": 7734.73,
+      "text": "somewhere. Okay. So this is a catalog file. Now sometimes I am required to make a summary catalog as an HTML file, which is just the episode name and a URL to use that episode directly. For that objective, I wrote a simple AUK program. Okay, I'm not going to explain this here, but here's an AU program where there is a pattern called begin which is run only once at the beginning. It's a pattern that is true only at the first time of the program. Then this is a pattern that looks for the words ep okay so you see app 24 this is matched by this pattern and the action is here then there are some pattern action pattern action and then there is an end there is a pattern that is run at the end I'm not going to explain this orc program to you in great detail right now I just want to say to you that this is an Oc program which has a total of 16 lines okay so it's not complicated to write once you know some Oc I admit I have got your hands wet with knowing a little bit of AUK, but you don't yet know AUK enough to understand this, and that's okay. But I just want to say to you that it's a small 16 line AUK program that I wrote. What have I called it? The program is called MKTOC. What is that? It's make the table of contents out of the catalog. So let's run it. I'm running the program MKTOC on the data file catalog. And what this does is it generates an HTML file for me. What is this HTML file? Let's play this HTML file. Because we like to live on the Unix command line. I I can put it in a graphical browser, but I like to do everything in text mode on the command line. Lynx is a web browser that works on the command line. Okay and you see the HTML file that has been created, it has all the shows with the date. And each of these things in blue is a URL that you can click on. So this is a brief catalog of everything that's been done in the show so far. So you see what has happened here. I was maintaining a catalog file, which is just a convenient handy file for me, but I have certain protocols and conventions whereby I'm systematic in how I keep track of the catalog. I wrote an orc program, mktoc.org, and This I have put into uh and this I have put uh this I can run using the command mktocc.org applied to the data file catalog and that generates me an HTML file. Okay so I am at the end of this little bit of an introduction to the Unix command line. I hope to have given you a flavor that We use the command line, we take it seriously, we organize ourselves, keeping files and directories nicely. Things are kept as plain text files, and there is a lovely tool chain around this whereby we can be very effective and very productive. So, Ajai, I've already given a couple of you know mid-episode recommendations, and I won't give any more here. But what are your recommendations on this subject?",
+      "words": [
         {
           "word": "somewhere.",
           "startTime": 7519.34,
@@ -133367,15 +133511,7 @@
           "startTime": 7716.94,
           "endTime": 7717.44,
           "confidence": 0.9943
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 7727.69,
-      "endTime": 7734.73,
-      "text": "So, Ajai, I've already given a couple of you know mid-episode recommendations, and I won't give any more here. But what are your recommendations on this subject?",
-      "words": [
+        },
         {
           "word": "So,",
           "startTime": 7727.69,

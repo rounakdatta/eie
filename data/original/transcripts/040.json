@@ -5,7 +5,7 @@
     "durationSeconds": 4444,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -79999,8 +79999,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4365.59,
-      "endTime": 4442.26,
-      "text": "my recommendation isn't going with the theme of this episode, wonderful book called Midnight in Chernobyl by Adam Higginsbotham. People were raving about the Chernobyl TV series, which is pretty good. But Midnight in Chernobyl by Adam Higginbotham is just a delightful piece of nonfiction reportage which completely captures everything that went on behind the scenes over there. And it just shows in uh such a startling manner two things. One is the failure of the Soviet state when it came to the Chernobyl disaster itself, and how that failure stems from the structure of the system, the incentives of those system, though those words aren't used, but you can just read it and you can say that hey, this was bound to happen. Right. And the second thing is the Indian state in those years itself, because the Indian state in many ways was a fax copy of what the Soviet state was that was considered a model. And our state failed in so many deep ways that you know you and I are of the vintage where we can remember uh the comic uh mishap caused by the uh Indian state and vestiges of many of that are kind of still around us. So Mindight and Chernobyl, however, if you forget all these ideological points you might I might appear to be making, is just a wonderful read. It's a cla crackling read. You can't put it down. Though you should at some point put it down because how long can you you know carry a book around? So yeah, that's my recommendation for the for",
+      "endTime": 4441.78,
+      "text": "my recommendation isn't going with the theme of this episode, wonderful book called Midnight in Chernobyl by Adam Higginsbotham. People were raving about the Chernobyl TV series, which is pretty good. But Midnight in Chernobyl by Adam Higginbotham is just a delightful piece of nonfiction reportage which completely captures everything that went on behind the scenes over there. And it just shows in uh such a startling manner two things. One is the failure of the Soviet state when it came to the Chernobyl disaster itself, and how that failure stems from the structure of the system, the incentives of those system, though those words aren't used, but you can just read it and you can say that hey, this was bound to happen. Right. And the second thing is the Indian state in those years itself, because the Indian state in many ways was a fax copy of what the Soviet state was that was considered a model. And our state failed in so many deep ways that you know you and I are of the vintage where we can remember uh the comic uh mishap caused by the uh Indian state and vestiges of many of that are kind of still around us. So Mindight and Chernobyl, however, if you forget all these ideological points you might I might appear to be making, is just a wonderful read. It's a cla crackling read. You can't put it down. Though you should at some point put it down because how long can you you know carry a book around? So yeah, that's my recommendation for",
       "words": [
         {
           "word": "my",
@@ -81597,7 +81597,15 @@
           "startTime": 4441.62,
           "endTime": 4441.78,
           "confidence": 0.9938
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 4441.78,
+      "endTime": 4444.0,
+      "text": "the for this week.",
+      "words": [
         {
           "word": "the",
           "startTime": 4441.78,
@@ -81609,15 +81617,7 @@
           "startTime": 4442.02,
           "endTime": 4442.26,
           "confidence": 0.9588
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 4442.26,
-      "endTime": 4444.0,
-      "text": "this week.",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 4442.26,

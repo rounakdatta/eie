@@ -5,7 +5,7 @@
     "durationSeconds": 3359,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -60537,8 +60537,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3262.14,
-      "endTime": 3320.48,
-      "text": "Give us a recommendation today. So my recommendation is nothing to do with the subject of the episode, but everything to do with the subject of this episode, because everything is everything. This is a great book called The Story of Art by E. H. Gombrich. And uh you know As the title says, it's a story of art and it's a book I dip into every once in a while. It tells stories about works of art, which explain the context, which explain exactly w what was going on, which explains why it was a survivor that benefited from survivor bias and all of that. And you know, many of us look at art as something arcane, like my relationship with art always is that I don't really understand it. I'll respond to it at a certain visceral kind of level. Something looks good, something looks bad, but I don't really get it, get it. And you know, this great magnificent book gives you the story of art through many many centuries and is just a masterpiece in the story of art, Ajesha is also the story of thinking. It is also the story of the human mind. It is also the story of stories. So yeah, pick up this",
+      "endTime": 3320.08,
+      "text": "Give us a recommendation today. So my recommendation is nothing to do with the subject of the episode, but everything to do with the subject of this episode, because everything is everything. This is a great book called The Story of Art by E. H. Gombrich. And uh you know As the title says, it's a story of art and it's a book I dip into every once in a while. It tells stories about works of art, which explain the context, which explain exactly w what was going on, which explains why it was a survivor that benefited from survivor bias and all of that. And you know, many of us look at art as something arcane, like my relationship with art always is that I don't really understand it. I'll respond to it at a certain visceral kind of level. Something looks good, something looks bad, but I don't really get it, get it. And you know, this great magnificent book gives you the story of art through many many centuries and is just a masterpiece in the story of art, Ajesha is also the story of thinking. It is also the story of the human mind. It is also the story of stories. So yeah, pick",
       "words": [
         {
           "word": "Give",
@@ -61793,7 +61793,15 @@
           "startTime": 3319.84,
           "endTime": 3320.08,
           "confidence": 0.9841
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 3320.08,
+      "endTime": 3321.76,
+      "text": "up this book.",
+      "words": [
         {
           "word": "up",
           "startTime": 3320.08,
@@ -61805,15 +61813,7 @@
           "startTime": 3320.24,
           "endTime": 3320.48,
           "confidence": 0.9862
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 3320.48,
-      "endTime": 3321.76,
-      "text": "book.",
-      "words": [
+        },
         {
           "word": "book.",
           "startTime": 3320.48,

@@ -5,7 +5,7 @@
     "durationSeconds": 4143,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -42939,21 +42939,37 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2291.68,
-      "endTime": 2312.72,
-      "text": "we wanted. So Ajay, both hoy bari bari bate, varaphate, as it were. But tell me a little bit about your t-shirt. I like your t-shirt, man. It says the Tibet Museum, and there is some script on it that I can't quite read, and there are clouds and there is a nice tall building. I really like this t-shirt, man.",
+      "endTime": 2291.92,
+      "text": "we",
       "words": [
         {
           "word": "we",
           "startTime": 2291.68,
           "endTime": 2291.92,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2291.92,
+      "endTime": 2293.42,
+      "text": "wanted.",
+      "words": [
         {
           "word": "wanted.",
           "startTime": 2291.92,
           "endTime": 2293.42,
           "confidence": 0.9301
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2297.84,
+      "endTime": 2312.72,
+      "text": "So Ajay, both hoy bari bari bate, varaphate, as it were. But tell me a little bit about your t-shirt. I like your t-shirt, man. It says the Tibet Museum, and there is some script on it that I can't quite read, and there are clouds and there is a nice tall building. I really like this t-shirt, man.",
+      "words": [
         {
           "word": "So",
           "startTime": 2297.84,

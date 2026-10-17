@@ -5,10 +5,11 @@
     "durationSeconds": 3246,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
-      "Amit Varma"
+      "Amit Varma",
+      "other"
     ],
     "created": "2026-10-16"
   },
@@ -61258,8 +61259,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3210.14,
-      "endTime": 3247.02,
-      "text": "Well, so much of food delivery apps. Uh we should uninstall them. from our phones and cook our own food. And on that note, I think it's sort of, you know, uh time to say goodbye. And so our first episode comes to an end here. And uh uh, you know, g give us feedback, tell us what we can do better, what you'd like to hear us talk about, what went right, what went wrong. Uh so we'll we're just gonna kinda learn as we go along because we're really new to this this video thing. I like to keep joking that I have a face for audio, which clearly you can see is true. So uh uh so thanks for your patience so far and we'll see you next week. Thank",
+      "endTime": 3244.62,
+      "text": "Well, so much of food delivery apps. Uh we should uninstall them. from our phones and cook our own food. And on that note, I think it's sort of, you know, uh time to say goodbye. And so our first episode comes to an end here. And uh uh, you know, g give us feedback, tell us what we can do better, what you'd like to hear us talk about, what went right, what went wrong. Uh so we'll we're just gonna kinda learn as we go along because we're really new to this this video thing. I like to keep joking that I have a face for audio, which clearly you can see is true. So uh uh so thanks for your patience so far and we'll see you",
       "words": [
         {
           "word": "Well,",
@@ -62040,7 +62041,15 @@
           "startTime": 3244.46,
           "endTime": 3244.62,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 3244.62,
+      "endTime": 3247.02,
+      "text": "next week. Thank",
+      "words": [
         {
           "word": "next",
           "startTime": 3244.62,

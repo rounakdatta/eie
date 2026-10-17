@@ -5,7 +5,7 @@
     "durationSeconds": 3697,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -247,8 +247,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 109.19,
-      "endTime": 146.85,
-      "text": "So this is my friend Freddie, but before we talk about Freddie, we have to uh point out that uh Ajay and I sorry I should keep Freddie in the frame. Ajay and I are recording this in uh Karjat as of now. And our producer Vartika has a lovely line that could go on a t shirt about Kharjat. Vartika, what is your line? Bari Bari Bhate Varapau Khate, which is pretty much uh uh you know seems to be targeted at us. And uh I love Varapau. I also love uh Bari Bari Bhate. So how do you like Karjat? Uh best Varapau in the whole world. Best Varapau in the whole world.",
+      "endTime": 145.35,
+      "text": "So this is my friend Freddie, but before we talk about Freddie, we have to uh point out that uh Ajay and I sorry I should keep Freddie in the frame. Ajay and I are recording this in uh Karjat as of now. And our producer Vartika has a lovely line that could go on a t shirt about Kharjat. Vartika, what is your line? Bari Bari Bhate Varapau Khate, which is pretty much uh uh you know seems to be targeted at us. And uh I love Varapau. I also love uh Bari Bari Bhate. So how do you like Karjat? Uh best Varapau in the whole world. Best Varapau in the whole",
       "words": [
         {
           "word": "So",
@@ -933,7 +933,15 @@
           "startTime": 145.11,
           "endTime": 145.35,
           "confidence": 0.9962
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 145.35,
+      "endTime": 146.85,
+      "text": "world.",
+      "words": [
         {
           "word": "world.",
           "startTime": 145.35,
@@ -41503,10 +41511,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 2349.91,
-      "endTime": 2356.79,
-      "text": "did. Okay, that's an interesting answer. And we should speak about programming and you know your journey through it in some other episode.",
+      "endTime": 2351.67,
+      "text": "did. Okay,",
       "words": [
         {
           "word": "did.",
@@ -41519,7 +41527,15 @@
           "startTime": 2351.35,
           "endTime": 2351.67,
           "confidence": 0.7764
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2351.67,
+      "endTime": 2356.79,
+      "text": "that's an interesting answer. And we should speak about programming and you know your journey through it in some other episode.",
+      "words": [
         {
           "word": "that's",
           "startTime": 2351.67,
@@ -64109,8 +64125,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3492.55,
-      "endTime": 3535.72,
-      "text": "everybody. It's a masterpiece. I also recommend uh Free to Choose, another book by him. It became, I think, a 16-episode TV series as well, which you could probably find on YouTube. If I find it somewhere, I'll link it from the show notes. And I love the title, Capitalism and Freedom, because I keep telling people that what is capitalism? It's the voluntary actions of many people coming together. You're playing positive sum games. It's double thank you moments. Which is why I often say and I like to alliterate that capitalism is equal to consent. If you're for consent, you are for capitalism because it's a voluntary action of people making each other better off. And people often conflate it with cronyism, which is just completely the opposite, you know. What is good for markets is not what is good for big businesses, and vice versa. And that distinction we should keep in",
+      "endTime": 3535.4,
+      "text": "everybody. It's a masterpiece. I also recommend uh Free to Choose, another book by him. It became, I think, a 16-episode TV series as well, which you could probably find on YouTube. If I find it somewhere, I'll link it from the show notes. And I love the title, Capitalism and Freedom, because I keep telling people that what is capitalism? It's the voluntary actions of many people coming together. You're playing positive sum games. It's double thank you moments. Which is why I often say and I like to alliterate that capitalism is equal to consent. If you're for consent, you are for capitalism because it's a voluntary action of people making each other better off. And people often conflate it with cronyism, which is just completely the opposite, you know. What is good for markets is not what is good for big businesses, and vice versa. And that distinction we should keep",
       "words": [
         {
           "word": "everybody.",
@@ -65035,21 +65051,21 @@
           "startTime": 3535.08,
           "endTime": 3535.4,
           "confidence": 1.0
-        },
-        {
-          "word": "in",
-          "startTime": 3535.4,
-          "endTime": 3535.72,
-          "confidence": 1.0
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 3535.72,
+      "startTime": 3535.4,
       "endTime": 3537.22,
-      "text": "mind.",
+      "text": "in mind.",
       "words": [
+        {
+          "word": "in",
+          "startTime": 3535.4,
+          "endTime": 3535.72,
+          "confidence": 1.0
+        },
         {
           "word": "mind.",
           "startTime": 3535.72,

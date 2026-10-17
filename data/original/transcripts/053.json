@@ -5,7 +5,7 @@
     "durationSeconds": 4120,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -2929,17 +2929,25 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "other",
       "startTime": 157.02,
-      "endTime": 196.72,
-      "text": "cycling to help all of us understand you better tell us about the Action ratios. Okay so my understanding in poker thought to action ratio 100%. Meaning full thinking, full action. You've actually played poker, meaning you're not an armchair poker. I've been a professional player for a few years. Okay. In chess, thought to action ratio 90. I mean not played at that level of intensity that you did poker for the rest, you're fully there, you've actually lived it, you've had the heart stopping moments on the board when playing comparatively. Cricket? Have you ever actually played cricket or only thought about it?",
+      "endTime": 158.52,
+      "text": "cycling",
       "words": [
         {
           "word": "cycling",
           "startTime": 157.02,
           "endTime": 158.52,
           "confidence": 0.9988
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 158.94,
+      "endTime": 196.72,
+      "text": "to help all of us understand you better tell us about the Action ratios. Okay so my understanding in poker thought to action ratio 100%. Meaning full thinking, full action. You've actually played poker, meaning you're not an armchair poker. I've been a professional player for a few years. Okay. In chess, thought to action ratio 90. I mean not played at that level of intensity that you did poker for the rest, you're fully there, you've actually lived it, you've had the heart stopping moments on the board when playing comparatively. Cricket? Have you ever actually played cricket or only thought about it?",
+      "words": [
         {
           "word": "to",
           "startTime": 158.94,
@@ -23281,8 +23289,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1146.29,
-      "endTime": 1149.25,
-      "text": "I get all these pieces that you're describing, but I'm",
+      "endTime": 1148.93,
+      "text": "I get all these pieces that you're describing,",
       "words": [
         {
           "word": "I",
@@ -23331,7 +23339,15 @@
           "startTime": 1148.45,
           "endTime": 1148.93,
           "confidence": 0.9926
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1148.93,
+      "endTime": 1151.81,
+      "text": "but I'm not able to put it together. How does it become a team",
+      "words": [
         {
           "word": "but",
           "startTime": 1148.93,
@@ -23343,15 +23359,7 @@
           "startTime": 1149.01,
           "endTime": 1149.25,
           "confidence": 0.9662
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 1149.25,
-      "endTime": 1149.73,
-      "text": "not able to",
-      "words": [
+        },
         {
           "word": "not",
           "startTime": 1149.25,
@@ -23369,15 +23377,7 @@
           "startTime": 1149.65,
           "endTime": 1149.73,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1149.73,
-      "endTime": 1152.29,
-      "text": "put it together. How does it become a team sport?",
-      "words": [
+        },
         {
           "word": "put",
           "startTime": 1149.73,
@@ -23431,7 +23431,15 @@
           "startTime": 1151.49,
           "endTime": 1151.81,
           "confidence": 0.9529
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1151.81,
+      "endTime": 1152.29,
+      "text": "sport?",
+      "words": [
         {
           "word": "sport?",
           "startTime": 1151.81,

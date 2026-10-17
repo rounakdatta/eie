@@ -5,7 +5,7 @@
     "durationSeconds": 2658,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -27047,8 +27047,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1418.47,
-      "endTime": 1444.05,
-      "text": "And life itself, like your life itself, right? Like at some point you you've done IIT, you've done a PhD in economics in the US, and then you decide to fucking come back. I remember kids of that generation. I remember in the eighties, once you make it out, oh my God, you've escaped. India wasn't a great place in those days. You made the call to come back, and the quest of course is make India a better place, and I guess that's ongoing, but you know elements of tragedy, elements of rebirth, we will talk about those two archetypes a little",
+      "endTime": 1443.65,
+      "text": "And life itself, like your life itself, right? Like at some point you you've done IIT, you've done a PhD in economics in the US, and then you decide to fucking come back. I remember kids of that generation. I remember in the eighties, once you make it out, oh my God, you've escaped. India wasn't a great place in those days. You made the call to come back, and the quest of course is make India a better place, and I guess that's ongoing, but you know elements of tragedy, elements of rebirth, we will talk about those two archetypes",
       "words": [
         {
           "word": "And",
@@ -27655,7 +27655,15 @@
           "startTime": 1443.09,
           "endTime": 1443.65,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1443.65,
+      "endTime": 1445.55,
+      "text": "a little later.",
+      "words": [
         {
           "word": "a",
           "startTime": 1443.65,
@@ -27667,15 +27675,7 @@
           "startTime": 1443.81,
           "endTime": 1444.05,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 1444.05,
-      "endTime": 1445.55,
-      "text": "later.",
-      "words": [
+        },
         {
           "word": "later.",
           "startTime": 1444.05,

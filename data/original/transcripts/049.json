@@ -5,7 +5,7 @@
     "durationSeconds": 5319,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -75695,29 +75695,29 @@
     {
       "speaker": "other",
       "startTime": 3528.88,
-      "endTime": 3530.38,
-      "text": "short.",
+      "endTime": 3530.64,
+      "text": "short. Yeah",
       "words": [
         {
           "word": "short.",
           "startTime": 3528.88,
           "endTime": 3530.38,
           "confidence": 0.836
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3530.4,
-      "endTime": 3531.52,
-      "text": "Yeah you are like the Tyler",
-      "words": [
+        },
         {
           "word": "Yeah",
           "startTime": 3530.4,
           "endTime": 3530.64,
           "confidence": 0.9416
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3530.64,
+      "endTime": 3531.52,
+      "text": "you are like the Tyler",
+      "words": [
         {
           "word": "you",
           "startTime": 3530.64,

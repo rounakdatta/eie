@@ -5,7 +5,7 @@
     "durationSeconds": 4514,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -15,10 +15,10 @@
   },
   "segments": [
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 15.42,
-      "endTime": 17.02,
-      "text": "I need you both to do something",
+      "endTime": 27.76,
+      "text": "I need you both to do something in the way. Okay. You have to bring in some energy and you're young boys. So you will flex your muscles and scream like you just did. In the way, ready? Okay. Two one.",
       "words": [
         {
           "word": "I",
@@ -61,15 +61,7 @@
           "startTime": 16.54,
           "endTime": 17.02,
           "confidence": 0.9969
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 17.02,
-      "endTime": 18.14,
-      "text": "in the way.",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 17.02,
@@ -87,29 +79,13 @@
           "startTime": 17.42,
           "endTime": 18.14,
           "confidence": 0.6751
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 18.14,
-      "endTime": 18.54,
-      "text": "Okay.",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 18.14,
           "endTime": 18.54,
           "confidence": 0.5617
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 18.54,
-      "endTime": 21.98,
-      "text": "You have to bring in some energy and you're young boys. So",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 18.54,
@@ -181,15 +157,7 @@
           "startTime": 21.74,
           "endTime": 21.98,
           "confidence": 0.9036
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 21.98,
-      "endTime": 24.46,
-      "text": "you will flex your muscles and scream like you",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 21.98,
@@ -243,15 +211,7 @@
           "startTime": 24.3,
           "endTime": 24.46,
           "confidence": 0.9956
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 24.46,
-      "endTime": 25.74,
-      "text": "just did. In the way,",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 24.46,
@@ -281,15 +241,7 @@
           "startTime": 25.26,
           "endTime": 25.74,
           "confidence": 0.5041
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 25.74,
-      "endTime": 106.61,
-      "text": "ready? Okay. Two one. Are we done? Yes. Too much exertion. Okay. So do we start? Yeah. We're rolling? All cameras rolling. Welcome to everything is everything. We are recording this episode. In Ajaisha's house, makeshift uh this thing, because in our last episode you heard about how I had a minor health incident and because of that we showed one episode at my place. Today we are at Ajay's residence. And uh I want to begin this episode by testing my friend's math skills. You know, is that really true? Can we uh you know we have to test it. You know to uh trust but verify. And I trust you, but I will verify this. It's my lifetime regret. I wish I was a mathematician. You wish you were a mathematician. But your math skills are good, you claim. That's for every economist, they should be decent, right? So here's a question for you. What is the sum of the squares of the first four primes? One, two, three, five. No no no, uh leaving aside one. Okay, two, three, five, seven. What is the sum of the squares of the first",
-      "words": [
+        },
         {
           "word": "ready?",
           "startTime": 25.74,
@@ -313,7 +265,15 @@
           "startTime": 27.26,
           "endTime": 27.76,
           "confidence": 0.4168
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 33.34,
+      "endTime": 106.61,
+      "text": "Are we done? Yes. Too much exertion. Okay. So do we start? Yeah. We're rolling? All cameras rolling. Welcome to everything is everything. We are recording this episode. In Ajaisha's house, makeshift uh this thing, because in our last episode you heard about how I had a minor health incident and because of that we showed one episode at my place. Today we are at Ajay's residence. And uh I want to begin this episode by testing my friend's math skills. You know, is that really true? Can we uh you know we have to test it. You know to uh trust but verify. And I trust you, but I will verify this. It's my lifetime regret. I wish I was a mathematician. You wish you were a mathematician. But your math skills are good, you claim. That's for every economist, they should be decent, right? So here's a question for you. What is the sum of the squares of the first four primes? One, two, three, five. No no no, uh leaving aside one. Okay, two, three, five, seven. What is the sum of the squares of the first",
+      "words": [
         {
           "word": "Are",
           "startTime": 33.34,

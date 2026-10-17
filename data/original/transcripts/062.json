@@ -5,7 +5,7 @@
     "durationSeconds": 4114,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -21323,25 +21323,17 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 1222.86,
-      "endTime": 1223.18,
-      "text": "about",
+      "endTime": 1224.68,
+      "text": "about it",
       "words": [
         {
           "word": "about",
           "startTime": 1222.86,
           "endTime": 1223.18,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 1223.18,
-      "endTime": 1224.68,
-      "text": "it",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 1223.18,
@@ -29507,8 +29499,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1663.94,
-      "endTime": 1666.16,
-      "text": "inside the mind.",
+      "endTime": 1664.66,
+      "text": "inside the",
       "words": [
         {
           "word": "inside",
@@ -29521,7 +29513,15 @@
           "startTime": 1664.34,
           "endTime": 1664.66,
           "confidence": 0.9977
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1664.66,
+      "endTime": 1666.16,
+      "text": "mind.",
+      "words": [
         {
           "word": "mind.",
           "startTime": 1664.66,
@@ -69059,10 +69059,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "other",
       "startTime": 3669.67,
-      "endTime": 3689.88,
-      "text": "a talk. So Ajay, well you know you've been writing papers for many, many, many, many, many years. So tell me about some of the i key insights that you have learnt about the craft.",
+      "endTime": 3671.41,
+      "text": "a talk.",
       "words": [
         {
           "word": "a",
@@ -69075,7 +69075,15 @@
           "startTime": 3669.91,
           "endTime": 3671.41,
           "confidence": 0.8252
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3679.19,
+      "endTime": 3689.88,
+      "text": "So Ajay, well you know you've been writing papers for many, many, many, many, many years. So tell me about some of the i key insights that you have learnt about the craft.",
+      "words": [
         {
           "word": "So",
           "startTime": 3679.19,

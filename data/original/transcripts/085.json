@@ -5,7 +5,7 @@
     "durationSeconds": 8110,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -15,10 +15,10 @@
   },
   "segments": [
     {
-      "speaker": "Ajay Shah",
+      "speaker": "other",
       "startTime": 0.43,
-      "endTime": 2.75,
-      "text": "Welcome to Nothing Is Nothing. Today on the",
+      "endTime": 9.89,
+      "text": "Welcome to Nothing Is Nothing. Today on the show we will not feed you introductory. We will make you waste your time perfectly. And you will lead a life filled with regrets.",
       "words": [
         {
           "word": "Welcome",
@@ -67,15 +67,7 @@
           "startTime": 2.67,
           "endTime": 2.75,
           "confidence": 0.9955
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 2.75,
-      "endTime": 6.59,
-      "text": "show we will not feed you introductory. We will make you waste your time",
-      "words": [
+        },
         {
           "word": "show",
           "startTime": 2.75,
@@ -159,15 +151,7 @@
           "startTime": 6.27,
           "endTime": 6.59,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 6.59,
-      "endTime": 8.43,
-      "text": "perfectly. And you will lead",
-      "words": [
+        },
         {
           "word": "perfectly.",
           "startTime": 6.59,
@@ -197,15 +181,7 @@
           "startTime": 8.19,
           "endTime": 8.43,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 8.43,
-      "endTime": 9.89,
-      "text": "a life filled with regrets.",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 8.43,
@@ -31747,8 +31723,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1733.86,
-      "endTime": 1776.03,
-      "text": "No, and you find what works for you. It doesn't need to change twice a year, but I love HM's fast fashion. Like HM and Uniqlo are actually very different. Uniqlo will keep the same line going for a long time. HM will change multiple times a year, not just twice. And I kinda love that because every time I go, there's different uh stuff. You know? And they're all there in oversized and loose fit, so all the shirts fit me and it's awesome and you can kind of get a variety. The one aspect of my fashion, as it were, is that I'm in my black face, so I'm just wearing black for everything, as people watching recent episodes uh uh would have realized. And also my uh other crib about fashion in India is that just as everybody does slim fit, no one gets but ya cell words for men, right. They're all just tailored really badly and that is unfair. But let's",
+      "endTime": 1775.63,
+      "text": "No, and you find what works for you. It doesn't need to change twice a year, but I love HM's fast fashion. Like HM and Uniqlo are actually very different. Uniqlo will keep the same line going for a long time. HM will change multiple times a year, not just twice. And I kinda love that because every time I go, there's different uh stuff. You know? And they're all there in oversized and loose fit, so all the shirts fit me and it's awesome and you can kind of get a variety. The one aspect of my fashion, as it were, is that I'm in my black face, so I'm just wearing black for everything, as people watching recent episodes uh uh would have realized. And also my uh other crib about fashion in India is that just as everybody does slim fit, no one gets but ya cell words for men, right. They're all just tailored really badly and that is unfair. But",
       "words": [
         {
           "word": "No,",
@@ -32739,21 +32715,21 @@
           "startTime": 1775.15,
           "endTime": 1775.63,
           "confidence": 0.6668
-        },
-        {
-          "word": "let's",
-          "startTime": 1775.63,
-          "endTime": 1776.03,
-          "confidence": 0.869
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 1776.03,
-      "endTime": 1777.85,
-      "text": "move on.",
+      "startTime": 1775.63,
+      "endTime": 1784.17,
+      "text": "let's move on. Complicated.",
       "words": [
+        {
+          "word": "let's",
+          "startTime": 1775.63,
+          "endTime": 1776.03,
+          "confidence": 0.869
+        },
         {
           "word": "move",
           "startTime": 1776.03,
@@ -32765,15 +32741,7 @@
           "startTime": 1776.35,
           "endTime": 1777.85,
           "confidence": 0.7722
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1782.67,
-      "endTime": 1784.17,
-      "text": "Complicated.",
-      "words": [
+        },
         {
           "word": "Complicated.",
           "startTime": 1782.67,
@@ -50187,23 +50155,15 @@
     {
       "speaker": "other",
       "startTime": 2665.5,
-      "endTime": 2666.94,
-      "text": "that.",
+      "endTime": 2668.92,
+      "text": "that. Who's next?",
       "words": [
         {
           "word": "that.",
           "startTime": 2665.5,
           "endTime": 2666.94,
           "confidence": 0.7332
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2666.94,
-      "endTime": 2676.52,
-      "text": "Who's next? Happiness. Underrated. Underrated. Complicated.",
-      "words": [
+        },
         {
           "word": "Who's",
           "startTime": 2666.94,
@@ -50215,7 +50175,15 @@
           "startTime": 2667.42,
           "endTime": 2668.92,
           "confidence": 0.9177
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2669.02,
+      "endTime": 2676.52,
+      "text": "Happiness. Underrated. Underrated. Complicated.",
+      "words": [
         {
           "word": "Happiness.",
           "startTime": 2669.02,
@@ -82431,8 +82399,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4404.62,
-      "endTime": 4406.94,
-      "text": "a little bit of less of that, it would be",
+      "endTime": 4406.46,
+      "text": "a little bit of less of that, it",
       "words": [
         {
           "word": "a",
@@ -82481,7 +82449,15 @@
           "startTime": 4406.3,
           "endTime": 4406.46,
           "confidence": 0.9934
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 4406.46,
+      "endTime": 4408.44,
+      "text": "would be good.",
+      "words": [
         {
           "word": "would",
           "startTime": 4406.46,
@@ -82493,15 +82469,7 @@
           "startTime": 4406.7,
           "endTime": 4406.94,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 4406.94,
-      "endTime": 4408.44,
-      "text": "good.",
-      "words": [
+        },
         {
           "word": "good.",
           "startTime": 4406.94,
@@ -95943,8 +95911,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5109.39,
-      "endTime": 5175.14,
-      "text": "There is a great deal of humanitarian work in the world. And you and I would always say that if we could do a little more on economic growth, it would solve many of the problems at the root cause. So the NGO and the humanitarian approach is putting a band aid on a gigantic wound, and we should put in far more effort and priority on just doing the economic growth. Underrated complicated. I was saying earlier, happiness is not something you experience, it is something you remember. Uh as the years go by and as I have become older, life is actually a collection of peak experiences. So you know, we wander through life accumulating those amazing moments and stories and like what it felt like at that moment. And that's actually kinda the point of it all. So no, I don't think of it as pointless old person mourning and age gone by. No, hell yeah, that is what I want to do.",
+      "endTime": 5133.44,
+      "text": "There is a great deal of humanitarian work in the world. And you and I would always say that if we could do a little more on economic growth, it would solve many of the problems at the root cause. So the NGO and the humanitarian approach is putting a band aid on a gigantic wound, and we should put in far more effort and priority on just doing the economic",
       "words": [
         {
           "word": "There",
@@ -96371,13 +96339,29 @@
           "startTime": 5133.04,
           "endTime": 5133.44,
           "confidence": 0.9903
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 5133.44,
+      "endTime": 5134.94,
+      "text": "growth.",
+      "words": [
         {
           "word": "growth.",
           "startTime": 5133.44,
           "endTime": 5134.94,
           "confidence": 0.9523
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 5137.36,
+      "endTime": 5175.14,
+      "text": "Underrated complicated. I was saying earlier, happiness is not something you experience, it is something you remember. Uh as the years go by and as I have become older, life is actually a collection of peak experiences. So you know, we wander through life accumulating those amazing moments and stories and like what it felt like at that moment. And that's actually kinda the point of it all. So no, I don't think of it as pointless old person mourning and age gone by. No, hell yeah, that is what I want to do.",
+      "words": [
         {
           "word": "Underrated",
           "startTime": 5137.36,
@@ -108149,8 +108133,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 5735.04,
-      "endTime": 5783.39,
-      "text": "character. I agree with you entirely, and I'd say the same thing for pharmacology as I say for uh technology. Daddy should be a tool, not a crutch. You know, if you leave aside all of these other good habits, then you're going to hell. You know, pills alone won't solve the problem. Pills can, you know, give you that um uh extra step if you're taking the right thing for the right reasons, and please do your research. Please don't just follow some fashion. It's it' the the questions like is it FDA approved? Because they're anal about approvals and they're like super careful and most meds come late to market because they're so anal and that costs lives. But regardless, the fact that their FDA in the US is so anal about it means anything that is approved by them, like both Moderfinnal and Ozempica, is safe. Don't go into alternative medicine and all that. Scientific proof really matters. Be careful. But you want to be the best version of yourself, whatever tool gets you there, it's",
+      "endTime": 5782.99,
+      "text": "character. I agree with you entirely, and I'd say the same thing for pharmacology as I say for uh technology. Daddy should be a tool, not a crutch. You know, if you leave aside all of these other good habits, then you're going to hell. You know, pills alone won't solve the problem. Pills can, you know, give you that um uh extra step if you're taking the right thing for the right reasons, and please do your research. Please don't just follow some fashion. It's it' the the questions like is it FDA approved? Because they're anal about approvals and they're like super careful and most meds come late to market because they're so anal and that costs lives. But regardless, the fact that their FDA in the US is so anal about it means anything that is approved by them, like both Moderfinnal and Ozempica, is safe. Don't go into alternative medicine and all that. Scientific proof really matters. Be careful. But you want to be the best version of yourself, whatever tool gets you there,",
       "words": [
         {
           "word": "character.",
@@ -109219,35 +109203,27 @@
           "startTime": 5782.51,
           "endTime": 5782.99,
           "confidence": 0.6879
-        },
-        {
-          "word": "it's",
-          "startTime": 5782.99,
-          "endTime": 5783.39,
-          "confidence": 0.972
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 5783.39,
-      "endTime": 5784.89,
-      "text": "important",
+      "startTime": 5782.99,
+      "endTime": 5788.01,
+      "text": "it's important on pizza.",
       "words": [
+        {
+          "word": "it's",
+          "startTime": 5782.99,
+          "endTime": 5783.39,
+          "confidence": 0.972
+        },
         {
           "word": "important",
           "startTime": 5783.39,
           "endTime": 5784.89,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5786.27,
-      "endTime": 5790.89,
-      "text": "on pizza. Complicated. Underrated",
-      "words": [
+        },
         {
           "word": "on",
           "startTime": 5786.27,
@@ -109259,7 +109235,15 @@
           "startTime": 5786.51,
           "endTime": 5788.01,
           "confidence": 0.8758
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5788.35,
+      "endTime": 5790.89,
+      "text": "Complicated. Underrated",
+      "words": [
         {
           "word": "Complicated.",
           "startTime": 5788.35,
@@ -125359,8 +125343,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 6617.46,
-      "endTime": 6714.86,
-      "text": "Two data points, great question. Uh I had done an episode with Swapna Liddle, the historian who wrote this great book called The Broken Script, where she talks about Delhi between the years nineteen oh three eighteen oh three to eighteen fifty seven when the mutiny happens. And in those days, poetry was a part of popular culture. That newspapers started in that era, and newspapers would always publish poems at that time. Now early shallow historians said it's because Bahadusha Zafir was the emperor for a for a part of that period and he liked to write poems, so they were currying favor with him. But even before Zafir it became a thing that uh uh poetry was super popular, they were publishing it in the newspapers, et cetera, et cetera. Uh so It it isn't always like this. The second thing I will say is that part of the role of poetry is actually being supplanted by popular music. You know, there is great music out there. We listen to uh Dylan, we listen to Bruce Springsteen. Every once in a while a look will come on Ajay's face and he will glow and he will say some lines in a particular way. And we will all know that he's quoting from a song he loves. You know, we are shaped by poetry, except it is not perhaps in the form of poetry poetry on a page, but it is there in the music around us, whether in uh w whichever language that we are in. So I feel poetry has a huge kind of um in influence uh on us anyway. Um but I I've I've just been thinking aloud and maybe I I might find counterpoints to it. Uh next up, pornography. Complicated. You go first. We should live in this world, not some imaginary",
+      "endTime": 6708.36,
+      "text": "Two data points, great question. Uh I had done an episode with Swapna Liddle, the historian who wrote this great book called The Broken Script, where she talks about Delhi between the years nineteen oh three eighteen oh three to eighteen fifty seven when the mutiny happens. And in those days, poetry was a part of popular culture. That newspapers started in that era, and newspapers would always publish poems at that time. Now early shallow historians said it's because Bahadusha Zafir was the emperor for a for a part of that period and he liked to write poems, so they were currying favor with him. But even before Zafir it became a thing that uh uh poetry was super popular, they were publishing it in the newspapers, et cetera, et cetera. Uh so It it isn't always like this. The second thing I will say is that part of the role of poetry is actually being supplanted by popular music. You know, there is great music out there. We listen to uh Dylan, we listen to Bruce Springsteen. Every once in a while a look will come on Ajay's face and he will glow and he will say some lines in a particular way. And we will all know that he's quoting from a song he loves. You know, we are shaped by poetry, except it is not perhaps in the form of poetry poetry on a page, but it is there in the music around us, whether in uh w whichever language that we are in. So I feel poetry has a huge kind of um in influence uh on us anyway. Um but I I've I've just been thinking aloud and maybe I I might find counterpoints to it. Uh next up, pornography. Complicated.",
       "words": [
         {
           "word": "Two",
@@ -127143,7 +127127,15 @@
           "startTime": 6707.86,
           "endTime": 6708.36,
           "confidence": 0.9275
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 6710.14,
+      "endTime": 6712.06,
+      "text": "You go first.",
+      "words": [
         {
           "word": "You",
           "startTime": 6710.14,
@@ -127161,7 +127153,15 @@
           "startTime": 6710.62,
           "endTime": 6712.06,
           "confidence": 0.7241
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 6712.06,
+      "endTime": 6714.86,
+      "text": "We should live in this world, not some imaginary",
+      "words": [
         {
           "word": "We",
           "startTime": 6712.06,
@@ -138387,8 +138387,8 @@
     {
       "speaker": "other",
       "startTime": 7306.45,
-      "endTime": 7308.85,
-      "text": "Okay, next is solitude.",
+      "endTime": 7313.07,
+      "text": "Okay, next is solitude. Underrated. Underrated. You go first.",
       "words": [
         {
           "word": "Okay,",
@@ -138413,15 +138413,7 @@
           "startTime": 7307.49,
           "endTime": 7308.85,
           "confidence": 0.8881
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 7308.85,
-      "endTime": 7311.57,
-      "text": "Underrated. Underrated. You go",
-      "words": [
+        },
         {
           "word": "Underrated.",
           "startTime": 7308.85,
@@ -138445,15 +138437,7 @@
           "startTime": 7311.41,
           "endTime": 7311.57,
           "confidence": 0.9948
-        }
-      ]
-    },
-    {
-      "speaker": "other",
-      "startTime": 7311.57,
-      "endTime": 7313.07,
-      "text": "first.",
-      "words": [
+        },
         {
           "word": "first.",
           "startTime": 7311.57,
@@ -141441,8 +141425,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 7482.8,
-      "endTime": 7528.27,
-      "text": "I agree with that, but I would add to that by saying that, you know, we've had episodes on cycling, chess, um, poker. There is a certain intellectual thrill in figuring out what's really going on in a sport. Like every sport involves a game of chess, essentially. You know, yesterday young Vaishnava and I were watching Manchester City play, and uh uh, you know, mid-episode recommendation, Inverting the Pyramid by Jonathan Wilson, a great book on football tactics. That if you're just watching in a shallow tribalistic way, my team is winning, yeah. I th I think that is completely pointless and do something else. But I feel that if you're watching with a deeper kind of attention, then it's great intellectual fun and I I kinda like it. So um probably all don't you think I'll say watching sports is also increasing.",
+      "endTime": 7524.83,
+      "text": "I agree with that, but I would add to that by saying that, you know, we've had episodes on cycling, chess, um, poker. There is a certain intellectual thrill in figuring out what's really going on in a sport. Like every sport involves a game of chess, essentially. You know, yesterday young Vaishnava and I were watching Manchester City play, and uh uh, you know, mid-episode recommendation, Inverting the Pyramid by Jonathan Wilson, a great book on football tactics. That if you're just watching in a shallow tribalistic way, my team is winning, yeah. I th I think that is completely pointless and do something else. But I feel that if you're watching with a deeper kind of attention, then it's great intellectual fun and I I kinda like it. So um probably all don't you think",
       "words": [
         {
           "word": "I",
@@ -142265,7 +142249,15 @@
           "startTime": 7524.67,
           "endTime": 7524.83,
           "confidence": 0.9905
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 7524.83,
+      "endTime": 7529.77,
+      "text": "I'll say watching sports is also increasing. Increasing?",
+      "words": [
         {
           "word": "I'll",
           "startTime": 7524.83,
@@ -142307,21 +142299,21 @@
           "startTime": 7526.83,
           "endTime": 7528.27,
           "confidence": 0.8093
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 7528.27,
-      "endTime": 7546.09,
-      "text": "Increasing? It doesn't fit under the humanities journey of understanding the world. So it it's sort of like you can keep on inventing some rules of the game and you'll play them out, but I don't put it at the level of humanity's knowledge.",
-      "words": [
+        },
         {
           "word": "Increasing?",
           "startTime": 7528.27,
           "endTime": 7529.77,
           "confidence": 0.8617
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 7531.79,
+      "endTime": 7544.59,
+      "text": "It doesn't fit under the humanities journey of understanding the world. So it it's sort of like you can keep on inventing some rules of the game and you'll play them out, but I don't put it at the level of humanity's",
+      "words": [
         {
           "word": "It",
           "startTime": 7531.79,
@@ -142573,21 +142565,21 @@
           "startTime": 7543.87,
           "endTime": 7544.59,
           "confidence": 0.9133
-        },
-        {
-          "word": "knowledge.",
-          "startTime": 7544.59,
-          "endTime": 7546.09,
-          "confidence": 0.8478
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 7546.51,
+      "startTime": 7544.59,
       "endTime": 7548.81,
-      "text": "Talking and listening.",
+      "text": "knowledge. Talking and listening.",
       "words": [
+        {
+          "word": "knowledge.",
+          "startTime": 7544.59,
+          "endTime": 7546.09,
+          "confidence": 0.8478
+        },
         {
           "word": "Talking",
           "startTime": 7546.51,
@@ -144785,8 +144777,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 7671.66,
-      "endTime": 7672.46,
-      "text": "everything that you",
+      "endTime": 7672.14,
+      "text": "everything that",
       "words": [
         {
           "word": "everything",
@@ -144799,21 +144791,21 @@
           "startTime": 7671.98,
           "endTime": 7672.14,
           "confidence": 0.9932
-        },
-        {
-          "word": "you",
-          "startTime": 7672.14,
-          "endTime": 7672.46,
-          "confidence": 0.996
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 7672.46,
+      "startTime": 7672.14,
       "endTime": 7673.96,
-      "text": "said.",
+      "text": "you said.",
       "words": [
+        {
+          "word": "you",
+          "startTime": 7672.14,
+          "endTime": 7672.46,
+          "confidence": 0.996
+        },
         {
           "word": "said.",
           "startTime": 7672.46,
@@ -146833,10 +146825,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "other",
       "startTime": 7786.29,
-      "endTime": 7790.53,
-      "text": "Last one. Writing. Underrated.",
+      "endTime": 7789.31,
+      "text": "Last one. Writing.",
       "words": [
         {
           "word": "Last",
@@ -146855,7 +146847,15 @@
           "startTime": 7787.81,
           "endTime": 7789.31,
           "confidence": 0.7838
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 7789.49,
+      "endTime": 7790.53,
+      "text": "Underrated.",
+      "words": [
         {
           "word": "Underrated.",
           "startTime": 7789.49,

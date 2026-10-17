@@ -5,7 +5,7 @@
     "durationSeconds": 3438,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -22143,8 +22143,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1365.77,
-      "endTime": 1486.04,
-      "text": "Yeah. So we uh At XKDR Forum and Chennai Mathematical Institute and a bunch of other collaborators are building foundational statistics packages for Julia because we think Julia is of transformative importance for doing statistics, for doing data analysis, for doing data science. And it's going very well. There's a lot of amazing work going on. I I think today this is the global frontier of how to do data science. In that Sorish Das is building a beautiful package. First, I want to describe it generically. The principle, the philosophy is that you want a consistent API for a wide variety of different statistical estimators. So there is a linear regression, there is a Bayesian regression, there is a random forest, there are many, many kinds of models. You should not have to go crazy learning many, many different packages. You should get one single calling convention whereby you call the function and you say what kind of package, sorry, what kind of estimator you want to do, and you get a uniform API for doing a wide variety of estimators. And in this, we also want to be uncompromisingly Bayesian. That for every single estimator, you want to be frequentist, you want to be Bayesian, it's one single API. There is no distance. We're trying to remove The stretch that is required to do Bayesian computation. Okay, so this is the beautiful package. So is the leader of this work. And then came the question: what are we gonna call it? Okay, so many ideas, many names were bandied about. And then Monday Sorish came to me and said that I have an idea which is a commitment device. I said, What? He said, I want to call this package crou.jl. I said, huh? Tell me more. He said that this is my way to kick myself. That I will do this well. Wow. We love CR Rao. We respect Sierra Rao. And this is our way of promising ourselves",
+      "endTime": 1479.5,
+      "text": "Yeah. So we uh At XKDR Forum and Chennai Mathematical Institute and a bunch of other collaborators are building foundational statistics packages for Julia because we think Julia is of transformative importance for doing statistics, for doing data analysis, for doing data science. And it's going very well. There's a lot of amazing work going on. I I think today this is the global frontier of how to do data science. In that Sorish Das is building a beautiful package. First, I want to describe it generically. The principle, the philosophy is that you want a consistent API for a wide variety of different statistical estimators. So there is a linear regression, there is a Bayesian regression, there is a random forest, there are many, many kinds of models. You should not have to go crazy learning many, many different packages. You should get one single calling convention whereby you call the function and you say what kind of package, sorry, what kind of estimator you want to do, and you get a uniform API for doing a wide variety of estimators. And in this, we also want to be uncompromisingly Bayesian. That for every single estimator, you want to be frequentist, you want to be Bayesian, it's one single API. There is no distance. We're trying to remove The stretch that is required to do Bayesian computation. Okay, so this is the beautiful package. So is the leader of this work. And then came the question: what are we gonna call it? Okay, so many ideas, many names were bandied about. And then Monday Sorish came to me and said that I have an idea which is a commitment device. I said, What? He said, I want to call this package crou.jl. I said, huh? Tell me more. He said that this is my way to kick myself. That I will do this well. Wow. We love CR Rao. We respect Sierra",
       "words": [
         {
           "word": "Yeah.",
@@ -24083,13 +24083,29 @@
           "startTime": 1479.02,
           "endTime": 1479.5,
           "confidence": 0.5656
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1479.5,
+      "endTime": 1481.0,
+      "text": "Rao.",
+      "words": [
         {
           "word": "Rao.",
           "startTime": 1479.5,
           "endTime": 1481.0,
           "confidence": 0.9108
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1481.5,
+      "endTime": 1486.04,
+      "text": "And this is our way of promising ourselves",
+      "words": [
         {
           "word": "And",
           "startTime": 1481.5,

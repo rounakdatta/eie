@@ -5,7 +5,7 @@
     "durationSeconds": 2948,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 15.19,
-      "endTime": 49.65,
-      "text": "Welcome, gentle readers, to Everything Is Everything. I'm Amit. This is my good friend Ajay. And today we have another presence with us, a corporeal presence, not here in person, but here on my phone. So I I was in Delhi recently, actually three months ago, and I'm a bit late in showing this to you. But one of my writing students recorded a message for you, and she insisted that I play it for you at some point in time, and I said I will play it for him during the show live. Right and he and you can see his reaction as he sees it. I'm now going to play that message for you. Okay,",
+      "endTime": 49.09,
+      "text": "Welcome, gentle readers, to Everything Is Everything. I'm Amit. This is my good friend Ajay. And today we have another presence with us, a corporeal presence, not here in person, but here on my phone. So I I was in Delhi recently, actually three months ago, and I'm a bit late in showing this to you. But one of my writing students recorded a message for you, and she insisted that I play it for you at some point in time, and I said I will play it for him during the show live. Right and he and you can see his reaction as he sees it. I'm now going to play that message for you.",
       "words": [
         {
           "word": "Welcome,",
@@ -715,21 +715,21 @@
           "startTime": 48.53,
           "endTime": 49.09,
           "confidence": 0.9119
-        },
-        {
-          "word": "Okay,",
-          "startTime": 49.09,
-          "endTime": 49.65,
-          "confidence": 0.4386
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 49.65,
+      "startTime": 49.09,
       "endTime": 51.15,
-      "text": "just",
+      "text": "Okay, just",
       "words": [
+        {
+          "word": "Okay,",
+          "startTime": 49.09,
+          "endTime": 49.65,
+          "confidence": 0.4386
+        },
         {
           "word": "just",
           "startTime": 49.65,
@@ -49653,8 +49653,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2763.4,
-      "endTime": 2846.53,
-      "text": "recommendation for today is actually a pure family business book, but it's a beautiful and well-written book. It's not about the design four, it's about a design one and two. And it's called Father, Son, and Company. It's by Tom Watson, Jr. Okay, so this is the son of the great Tom Watson, who was the founder of IBM. The son inherited IBM. When the son started out, IBM was. a funny feudal company where every morning people woke up and sang the company anthem, okay, things like that. And Tom Watson Jr, the son, rolled the dice on the world's most expensive operating system project. This was called OS three sixty. In inflation adjusted dollars, the expenditure on OS three sixty was more than the expenditure on the Manhattan project. And he led IBM through all that and his story and His understanding and his insight of what it means to build a great firm like IBM as a family business is in this book. It's called Father, Son, and Company, and I read it when I was young, and it gave me great insights into understanding the challenges of a family business. Tell us your Uh book recommendations for today?",
+      "endTime": 2833.16,
+      "text": "recommendation for today is actually a pure family business book, but it's a beautiful and well-written book. It's not about the design four, it's about a design one and two. And it's called Father, Son, and Company. It's by Tom Watson, Jr. Okay, so this is the son of the great Tom Watson, who was the founder of IBM. The son inherited IBM. When the son started out, IBM was. a funny feudal company where every morning people woke up and sang the company anthem, okay, things like that. And Tom Watson Jr, the son, rolled the dice on the world's most expensive operating system project. This was called OS three sixty. In inflation adjusted dollars, the expenditure on OS three sixty was more than the expenditure on the Manhattan project. And he led IBM through all that and his story and His understanding and his insight of what it means to build a great firm like IBM as a family business is in this book. It's called Father, Son, and Company, and I read it when I was young, and it gave me great insights into understanding the challenges of a family",
       "words": [
         {
           "word": "recommendation",
@@ -50813,13 +50813,29 @@
           "startTime": 2832.76,
           "endTime": 2833.16,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2833.16,
+      "endTime": 2834.66,
+      "text": "business.",
+      "words": [
         {
           "word": "business.",
           "startTime": 2833.16,
           "endTime": 2834.66,
           "confidence": 0.8946
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2843.56,
+      "endTime": 2846.53,
+      "text": "Tell us your Uh book recommendations for today?",
+      "words": [
         {
           "word": "Tell",
           "startTime": 2843.56,

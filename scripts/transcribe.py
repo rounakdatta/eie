@@ -49,11 +49,13 @@ MODELS = os.path.join(WORK, "models")
 FEED = "https://anchor.fm/s/f752ab78/podcast/rss"
 ASR = "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)"
 PARAKEET = "nvidia/parakeet-tdt-0.6b-v3"  # either build counts as transcribed
-LABELS = "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)"
+LABELS = "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)"
+STICKY = "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)"  # before the third voice
 SR, THREADS, MAX_CHUNK = 16000, 2, 30.0
 MEMORY_LIMIT = int(os.environ.get("EIE_MEMORY_LIMIT", 6.5 * 2**30))  # container anon + shmem; the cap is 10 GiB
-WIN, HOP, FLOOR = 1.5, 0.5, 0.5  # voiceprint windows; below FLOOR for both hosts -> "other"
+WIN, HOP = 1.5, 0.5  # voiceprint windows
 STICK, SHARPNESS = 6.0, 20.0  # decoding: cost of a change of speaker (lower at a pause), 1 / temperature
+OTHER_GAP = 0.22  # a stretch this far below the episode's typical host likeness is someone else, e.g. the crew
 # Stretches of Episode 128 (video time) where only one host speaks, for the voiceprints.
 VOICES = {"Amit Varma": [(20, 50), (150, 200), (220, 300)], "Ajay Shah": [(60, 95), (100, 140), (330, 400)]}
 
@@ -237,35 +239,36 @@ def label(extractor, voices, audio, words, cache):
         centroids /= np.linalg.norm(centroids, axis=1, keepdims=True)
     sims = embeddings @ centroids.T
     pauses = np.r_[False, windows[1:, 0] > windows[:-1, 1]]
-    path = decode_speakers(sims, pauses)
+    path = decode_speakers(sims, pauses, float(np.median(sims.max(1))) - OTHER_GAP)
     centers = windows.mean(axis=1)
+    states = names + ["other"]
     labels, best = [], []
     for w in words:
-        m = (w["startTime"] + w["endTime"]) / 2
-        near = np.abs(centers - m) <= WIN / 2
-        score = sims[near].mean(axis=0) if near.any() else sims[np.argmin(np.abs(centers - m))]
-        i = int(np.argmin(np.abs(centers - m)))
-        labels.append(names[path[i]] if score.max() >= FLOOR else "other")
-        best.append(float(score.max()))
+        i = int(np.argmin(np.abs(centers - (w["startTime"] + w["endTime"]) / 2)))
+        labels.append(states[path[i]])
+        best.append(float(sims[i].max()))
     # How close each episode voice stays to its reference: a swap would show as own < other.
     drift = {name: round(float(centroids[k] @ refs[k]), 3) for k, name in enumerate(names)}
     swapped = any(centroids[k] @ refs[k] < centroids[k] @ refs[1 - k] for k in range(len(names)))
     return labels, float(np.mean(best)), drift, swapped
 
 
-def decode_speakers(sims, pauses):
-    """Most likely speaker per window (Viterbi): a change of speaker costs STICK, a third of that at a pause,
-    so a few seconds of contrary evidence are needed to switch and one odd window can't flip a sentence."""
-    ll = sims * SHARPNESS
+def decode_speakers(sims, pauses, other):
+    """Most likely speaker per window (Viterbi) among the two hosts and "someone else", who scores a
+    flat `other` likeness. A change of speaker costs STICK, a third of that at a pause, so a few
+    seconds of contrary evidence are needed to switch and one odd window can't flip a sentence."""
+    ll = np.c_[sims, np.full(len(sims), other)] * SHARPNESS
     ll = ll - np.logaddexp.reduce(ll, axis=1, keepdims=True)
-    score, back = ll[0].copy(), np.zeros(sims.shape, dtype=np.int8)
-    for i in range(1, len(sims)):
-        switch = score[::-1] - STICK * (0.3 if pauses[i] else 1.0)
-        back[i] = np.where(score >= switch, [0, 1], [1, 0])
-        score = np.maximum(score, switch) + ll[i]
-    path = np.zeros(len(sims), dtype=np.int8)
+    states = ll.shape[1]
+    change = 1 - np.eye(states)
+    score, back = ll[0].copy(), np.zeros(ll.shape, dtype=np.int8)
+    for i in range(1, len(ll)):
+        candidates = score[None, :] - STICK * (0.3 if pauses[i] else 1.0) * change  # [to, from]
+        back[i] = candidates.argmax(1)
+        score = candidates.max(1) + ll[i]
+    path = np.zeros(len(ll), dtype=np.int8)
     path[-1] = score.argmax()
-    for i in range(len(sims) - 1, 0, -1):
+    for i in range(len(ll) - 1, 0, -1):
         path[i - 1] = back[i][path[i]]
     return path
 
@@ -329,8 +332,9 @@ def segments_of(words, labels):
 def relabel(episodes):
     """New speaker labels for finished transcripts, from the cached voiceprints: no audio needed.
 
-    Insights extracted from labels that barely changed (under 3% of words, and never settled by
-    adjudicate.py) are kept and marked current; the rest are left for extract.py to redo.
+    Labels from the sticky decoder keep their host decisions (adjudicated ones included) and only gain
+    the third voice. Insights extracted from labels that barely changed (under 3% of words) are kept
+    and marked current; the rest are left for extract.py to redo.
     """
     voices = load_json(os.path.join(WORK, "voices.json"))
     for n in episodes:
@@ -339,23 +343,31 @@ def relabel(episodes):
         meta = current["metadata"]
         if not meta.get("asr", "").startswith(PARAKEET) or meta.get("speakerLabels", "").startswith(LABELS):
             continue
+        if not os.path.exists(os.path.join(WORK, "embeddings", f"{n:03d}.npz")):
+            print(json.dumps({"episode": n, "skipped": "no cached voiceprints; the main run relabels it from audio"}))
+            continue
         offset = meta["feedOffsetSeconds"]
         words = [w for seg in current["segments"] for w in seg["words"]]
         before = [seg["speaker"] for seg in current["segments"] for _ in seg["words"]]
         feed = [dict(w, startTime=w["startTime"] + offset, endTime=w["endTime"] + offset) for w in words]
-        labels, voice_match, drift, swapped = label(None, voices, None, feed,
-                                                    os.path.join(WORK, "embeddings", f"{n:03d}.npz"))
-        changed = sum(a != b for a, b in zip(before, labels)) / len(words)
+        fresh, voice_match, drift, swapped = label(None, voices, None, feed,
+                                                   os.path.join(WORK, "embeddings", f"{n:03d}.npz"))
         old_labels = meta["speakerLabels"]
+        if old_labels.startswith(STICKY):  # keep the hosts as decided, adjudication included; add the third voice
+            labels = ["other" if b == "other" else a for a, b in zip(before, fresh)]
+            new_labels = LABELS + old_labels[len(STICKY):]
+        else:
+            labels, new_labels = fresh, LABELS
+        changed = sum(a != b for a, b in zip(before, labels)) / len(words)
         segments = segments_of(words, labels)
-        write_json({"metadata": {**meta, "speakerLabels": LABELS, "speakers": sorted({s["speaker"] for s in segments})},
-                    "segments": segments}, path)
+        write_json({"metadata": {**meta, "speakerLabels": new_labels,
+                                 "speakers": sorted({s["speaker"] for s in segments})}, "segments": segments}, path)
         insights_path = os.path.join(ROOT, "data", "generated", "insights", f"{n:03d}.json")
         insights = load_json(insights_path)
         keep = (insights.get("source", {}).get("speakers") == old_labels and changed < 0.03
-                and not old_labels.endswith("settled by Claude"))
+                and (old_labels.startswith(STICKY) or not old_labels.endswith("settled by Claude")))
         if keep:
-            insights["source"]["speakers"] = LABELS
+            insights["source"]["speakers"] = new_labels
             write_json(insights, insights_path)
         qc = {"episode": n, "relabelled": True, "words_changed": round(changed, 4),
               "turns_before": 1 + sum(a != b for a, b in zip(before, before[1:])), "turns_after": len(segments),

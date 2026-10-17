@@ -5,7 +5,7 @@
     "durationSeconds": 3435,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -44157,8 +44157,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2334.94,
-      "endTime": 2378.52,
-      "text": "The German sailors Had other plans. So what was supposed to happen was they were supposed to hand over the ship, jump off the ship, and the British would transport them back and they would sail across the channel and go back home. Okay, this was supposed to be the deal. The German soldiers had other plans. They said, Hell with you, we're going to scuttle this navy. Okay. So they mounted explosives at the right places. They mounted powerful explosives at the right places in their ships. And at the right day, one by one, the explosions came and something like seventy, eighty big warships blew up and sank into the water at Scapa",
+      "endTime": 2377.88,
+      "text": "The German sailors Had other plans. So what was supposed to happen was they were supposed to hand over the ship, jump off the ship, and the British would transport them back and they would sail across the channel and go back home. Okay, this was supposed to be the deal. The German soldiers had other plans. They said, Hell with you, we're going to scuttle this navy. Okay. So they mounted explosives at the right places. They mounted powerful explosives at the right places in their ships. And at the right day, one by one, the explosions came and something like seventy, eighty big warships blew up and sank into the water at",
       "words": [
         {
           "word": "The",
@@ -44843,21 +44843,21 @@
           "startTime": 2377.56,
           "endTime": 2377.88,
           "confidence": 0.9998
-        },
-        {
-          "word": "Scapa",
-          "startTime": 2377.88,
-          "endTime": 2378.52,
-          "confidence": 0.7782
         }
       ]
     },
     {
       "speaker": "other",
-      "startTime": 2378.52,
+      "startTime": 2377.88,
       "endTime": 2380.02,
-      "text": "Flow.",
+      "text": "Scapa Flow.",
       "words": [
+        {
+          "word": "Scapa",
+          "startTime": 2377.88,
+          "endTime": 2378.52,
+          "confidence": 0.7782
+        },
         {
           "word": "Flow.",
           "startTime": 2378.52,
@@ -62147,8 +62147,8 @@
     {
       "speaker": "other",
       "startTime": 3210.36,
-      "endTime": 3212.28,
-      "text": "mean it's",
+      "endTime": 3213.16,
+      "text": "mean it's it's",
       "words": [
         {
           "word": "mean",
@@ -62161,21 +62161,21 @@
           "startTime": 3211.72,
           "endTime": 3212.28,
           "confidence": 0.9075
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3212.28,
-      "endTime": 3229.19,
-      "text": "it's something to think about. And you authentically, Azha are a thinker. So, Ajay, last story of the day, let's go for it. Give it to",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 3212.28,
           "endTime": 3213.16,
           "confidence": 0.9513
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3213.16,
+      "endTime": 3229.19,
+      "text": "something to think about. And you authentically, Azha are a thinker. So, Ajay, last story of the day, let's go for it. Give it to",
+      "words": [
         {
           "word": "something",
           "startTime": 3213.16,
