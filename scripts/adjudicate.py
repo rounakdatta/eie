@@ -122,7 +122,9 @@ def adjudicate(client, n, again=False):
     labels = [seg["speaker"] for seg in transcript["segments"] for _ in seg["words"]]
     fluid = fluid_labels(old, words, labels)
     both = [(s, f) for s, f in zip(labels, fluid) if s in HOSTS and f in HOSTS]
-    agreement = sum(s == f for s, f in both) / max(1, len(both))
+    if not both:  # nothing to compare against
+        return None
+    agreement = sum(s == f for s, f in both) / len(both)
     if agreement >= AGREEMENT:
         return None
     title = load(os.path.join(METADATA, f"{n:03d}.json"))["title"].split("|")[0].strip()
