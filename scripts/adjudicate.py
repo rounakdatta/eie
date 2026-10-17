@@ -78,6 +78,8 @@ def fluid_labels(old, words, labels):
     for r in total:
         if total[r] >= 0.05 * len(words):
             names[r] = max(HOSTS, key=lambda h: counts[(r, h)])
+    if len(set(names.values())) < 2:  # FluidAudio heard one voice (Episode 76): nothing to compare against
+        return [None] * len(words)
     return [names.get(r) for r in raw]
 
 
