@@ -5,7 +5,7 @@
     "durationSeconds": 2438,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 15.04,
-      "endTime": 69.08,
-      "text": "Gentle readers, welcome to the B sessions of Everything Is Everything. As you can see, Ajay and I are surrounded by nature. And in a place like this, you think that you could be anywhere. You don't need to give a name to it. You don't need to look at, you know, lines on maps. What maps are there? I remember I once did an episode with the great food writer Pushpesh Pant, and he said that in his mind there are all kinds of imagine maps which are based, for example, on what souring agent you use for your food, tamarind or cocum, jackfruit or lime, and so on and so forth. I did a recent episode of the And there is this sort of lived connection with the land that they are in. And yet when we go to school, when we go to geography class, we are, you know, given all of these maps, and we are told that okay, this is where you are, this is",
+      "endTime": 96.93,
+      "text": "Gentle readers, welcome to the B sessions of Everything Is Everything. As you can see, Ajay and I are surrounded by nature. And in a place like this, you think that you could be anywhere. You don't need to give a name to it. You don't need to look at, you know, lines on maps. What maps are there? I remember I once did an episode with the great food writer Pushpesh Pant, and he said that in his mind there are all kinds of imagine maps which are based, for example, on what souring agent you use for your food, tamarind or cocum, jackfruit or lime, and so on and so forth. I did a recent episode of the And there is this sort of lived connection with the land that they are in. And yet when we go to school, when we go to geography class, we are, you know, given all of these maps, and we are told that okay, this is where you are, this is what you are, and that other person is a foreigner. And As I've grown older, I feel that these frames that we imbibe subconsciously, I feel that they hold you back. I feel we internalize them and in different ways they affect us. So even though this is completely obvious that there are many other ways to look at the world instead of nation states and lines on maps, actually those lines on maps influence us in many uh disproportionate uh ways. And uh That's what today's episode is about.",
       "words": [
         {
           "word": "Gentle",
@@ -1039,15 +1039,7 @@
           "startTime": 68.84,
           "endTime": 69.08,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 69.08,
-      "endTime": 71.96,
-      "text": "what you are, and that other person is a foreigner.",
-      "words": [
+        },
         {
           "word": "what",
           "startTime": 69.08,
@@ -1107,15 +1099,7 @@
           "startTime": 71.24,
           "endTime": 71.96,
           "confidence": 0.9263
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 71.96,
-      "endTime": 96.93,
-      "text": "And As I've grown older, I feel that these frames that we imbibe subconsciously, I feel that they hold you back. I feel we internalize them and in different ways they affect us. So even though this is completely obvious that there are many other ways to look at the world instead of nation states and lines on maps, actually those lines on maps influence us in many uh disproportionate uh ways. And uh That's what today's episode is about.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 71.96,
@@ -24989,8 +24973,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1374.5,
-      "endTime": 1444.84,
-      "text": "That said uh data is maintained on trade at the level of countries. So uh I began our conversation today at the gravity model, which is a study of the trade between a country and a country. Well, in the global analysis of countries and trade, the place where the gravity model generates predictions that are vastly above the actual trade is South Asia. So India, Pakistan, India, Nepal, India, uh Bangladesh, Nepal, Bangladesh, India, Sri Lanka. These are all places where distances are small. But you would get very high predictions of trade and the reality is not there. That the nation states have so distorted and interfered with the natural way of things that the predictions from the gravity model come out to be much higher compared to the actual reality of trade in Ind the South Asian region. So one of the great opportunities to make progress by achieving more international trade, which is the source of welfare, which is always beneficial in the whole world, is in South Asia. And that's",
+      "endTime": 1411.96,
+      "text": "That said uh data is maintained on trade at the level of countries. So uh I began our conversation today at the gravity model, which is a study of the trade between a country and a country. Well, in the global analysis of countries and trade, the place where the gravity model generates predictions that are vastly above the actual trade is South Asia. So India, Pakistan, India, Nepal, India, uh Bangladesh, Nepal, Bangladesh, India, Sri Lanka. These are all places where distances are small.",
       "words": [
         {
           "word": "That",
@@ -25501,13 +25485,29 @@
           "startTime": 1410.84,
           "endTime": 1411.96,
           "confidence": 0.8307
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1411.96,
+      "endTime": 1413.16,
+      "text": "But",
+      "words": [
         {
           "word": "But",
           "startTime": 1411.96,
           "endTime": 1413.16,
           "confidence": 0.9923
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1413.16,
+      "endTime": 1444.25,
+      "text": "you would get very high predictions of trade and the reality is not there. That the nation states have so distorted and interfered with the natural way of things that the predictions from the gravity model come out to be much higher compared to the actual reality of trade in Ind the South Asian region. So one of the great opportunities to make progress by achieving more international trade, which is the source of welfare, which is always beneficial in the whole world, is in South Asia.",
+      "words": [
         {
           "word": "you",
           "startTime": 1413.16,
@@ -26029,7 +26029,15 @@
           "startTime": 1443.8,
           "endTime": 1444.25,
           "confidence": 0.8951
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1444.52,
+      "endTime": 1462.68,
+      "text": "And that's a great insight there. It's a great example of the scene in the unseen, literally. You know, what is seen is a trade that is happening. What is unseen is all the trade that could have happened had our politics been correct, had we approached uh it in the correct way, because all of those extra trades, those missing trades as it were, would have left people on both sides better off. So what an",
+      "words": [
         {
           "word": "And",
           "startTime": 1444.52,
@@ -26041,15 +26049,7 @@
           "startTime": 1444.6,
           "endTime": 1444.84,
           "confidence": 0.8313
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1444.84,
-      "endTime": 1462.68,
-      "text": "a great insight there. It's a great example of the scene in the unseen, literally. You know, what is seen is a trade that is happening. What is unseen is all the trade that could have happened had our politics been correct, had we approached uh it in the correct way, because all of those extra trades, those missing trades as it were, would have left people on both sides better off. So what an",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 1444.84,
@@ -26505,8 +26505,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1462.68,
-      "endTime": 1493.24,
-      "text": "opening. So it's a it's a it's damage to the welfare where people could have been buying and selling from each other and instead are not. Uh you heard my thoughts on borders as lines on maps, as uh disturbing the natural scheme of things of two people on a field. What do you think about when you see these things?",
+      "endTime": 1493.48,
+      "text": "opening. So it's a it's a it's damage to the welfare where people could have been buying and selling from each other and instead are not. Uh you heard my thoughts on borders as lines on maps, as uh disturbing the natural scheme of things of two people on a field. What do you think about when you see these things? So I",
       "words": [
         {
           "word": "opening.",
@@ -26873,15 +26873,7 @@
           "startTime": 1492.6,
           "endTime": 1493.24,
           "confidence": 0.97
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1493.24,
-      "endTime": 1626.84,
-      "text": "So I have a number of thoughts, and the first of them is about a really interesting moral framework I've thought about a lot. Uh there's a philosopher called W. E. H Lecky who in eighteen ninety nine wrote a book called A History of European Morals. Right? Forget the title, but his basic thesis was of something called the expanding circle. And the thesis was this, that we beg we begin, like every animal, every creature begins with a certain number of s um uh in its species that it cares about, who are in human terms you would say who are worthy of their moral consideration. So when we are living in small tribes in prehistoric times, perhaps our immediate family is worthy of a moral consideration and we everybody else is an other, we can do whatever to them, the same rules don't apply. Then that circle expands. It becomes a tribe. then as different tribes start living together, especially post agriculture, that expands further. It could become a town, it could become a region, it could become a nation state. It could include people who were uh otherwise in that circle to begin with. It could at some point for men it could include women, thank goodness. And it could include people of other races and so on. And Lecky Ces words that this is a circle that is destined to expand till it includes all of humanity. Beautiful story so far. Peter Singer in fact said that it'll expand beyond humans and it'll include animals. And he wrote a book called The Expanding Circle based on this in the late nineteen seventies sometimes. And I think about this because I think that while it might seem that in the larger sweep of history, it is the circle is bound to expand. You look at the larger picture you see it expanding. I feel that we should not take this for granted. that uh especially around us, you know, in the last couple of decades across the world you see greater polarization, you see greater identification of people as the other, you see more fissures coming about. I realize that you cannot exactly take it for granted that we are bound to expand. And for me, this expanding circle doesn't give a shit about geography. People are people, you're trading with them, you know, in the concrete, in the flesh, especially in this age of globalization, everybody's traveling, technology, which I'll come to later. You know, uh the circle should just keep expanding forever. But I think that conceptual notion that this is my country, that is another country.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1493.24,
@@ -26893,7 +26885,15 @@
           "startTime": 1493.4,
           "endTime": 1493.48,
           "confidence": 0.997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1493.48,
+      "endTime": 1626.84,
+      "text": "have a number of thoughts, and the first of them is about a really interesting moral framework I've thought about a lot. Uh there's a philosopher called W. E. H Lecky who in eighteen ninety nine wrote a book called A History of European Morals. Right? Forget the title, but his basic thesis was of something called the expanding circle. And the thesis was this, that we beg we begin, like every animal, every creature begins with a certain number of s um uh in its species that it cares about, who are in human terms you would say who are worthy of their moral consideration. So when we are living in small tribes in prehistoric times, perhaps our immediate family is worthy of a moral consideration and we everybody else is an other, we can do whatever to them, the same rules don't apply. Then that circle expands. It becomes a tribe. then as different tribes start living together, especially post agriculture, that expands further. It could become a town, it could become a region, it could become a nation state. It could include people who were uh otherwise in that circle to begin with. It could at some point for men it could include women, thank goodness. And it could include people of other races and so on. And Lecky Ces words that this is a circle that is destined to expand till it includes all of humanity. Beautiful story so far. Peter Singer in fact said that it'll expand beyond humans and it'll include animals. And he wrote a book called The Expanding Circle based on this in the late nineteen seventies sometimes. And I think about this because I think that while it might seem that in the larger sweep of history, it is the circle is bound to expand. You look at the larger picture you see it expanding. I feel that we should not take this for granted. that uh especially around us, you know, in the last couple of decades across the world you see greater polarization, you see greater identification of people as the other, you see more fissures coming about. I realize that you cannot exactly take it for granted that we are bound to expand. And for me, this expanding circle doesn't give a shit about geography. People are people, you're trading with them, you know, in the concrete, in the flesh, especially in this age of globalization, everybody's traveling, technology, which I'll come to later. You know, uh the circle should just keep expanding forever. But I think that conceptual notion that this is my country, that is another country.",
+      "words": [
         {
           "word": "have",
           "startTime": 1493.48,
@@ -29545,8 +29545,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1626.84,
-      "endTime": 1629.08,
-      "text": "That is not just another country. It is an evil",
+      "endTime": 1635.56,
+      "text": "That is not just another country. It is an evil country. That person is a foreigner. You know, all of these are so toxic. All of these are just",
       "words": [
         {
           "word": "That",
@@ -29607,15 +29607,7 @@
           "startTime": 1628.68,
           "endTime": 1629.08,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1629.08,
-      "endTime": 1633.16,
-      "text": "country. That person is a foreigner. You know, all",
-      "words": [
+        },
         {
           "word": "country.",
           "startTime": 1629.08,
@@ -29669,15 +29661,7 @@
           "startTime": 1633.0,
           "endTime": 1633.16,
           "confidence": 0.9841
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1633.16,
-      "endTime": 1635.56,
-      "text": "of these are so toxic. All of these are just",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1633.16,
@@ -31067,8 +31051,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1706.1,
-      "endTime": 1916.77,
-      "text": "You've put a line through their heart. Let me tell you something. In this field right now, there is no border between economists and poets. So another point I want to make is a point that is actually a deeply personal point for me also. And that is a point uh I often make about I feel being born at just the right time. Had I been born twenty years earlier, I would have been a much sadder person. And the reason for that is that all of us, through human history, have been confined to communities of circumstance. And that circumstance is always geography. You are born in a particular place. You are probably born in a particular caste or social class. You probably go to a particular school and a particular college and join a particular office and this part dependents to all of this. And you are restricted to communities of circumstance and you can never expand them. You yourself cannot grow because you're meeting people kinda like yourself or kind of like each other. And so on and so forth. And I feel the best thing that happened to me in my life is that I could because of technology and the internet, I could move away from communities of circumstance to communities of choice. When I say communities of choice, I mean communities based on shared interests or shared values or shared passions and not restricted by lines on maps. That's the biggest thing that's happened to me. And for every creator who is watching this episode, it's the biggest thing that's happened to you as well. Because you know what Kevin Kelly said about finding a thousand true fans. What I often t you know, I often quote Paul Graham on saying it's better to be loved by a few than like by many. All of that is enabled by the fact that geography no longer matters so much. As a creator, as a podcaster, I can reach anyone in the world. Maybe there might be a thousand true fans who are dispersed by geography, but today they can all come together and make the work that I do viable. In fact I think that if I just was limited to um uh limited by geography as in twenty years ago. I would not have an audience. I would not have validation. I would not grow in my work. I would not be able to do any of the things I am doing now. So it's deeply personal for me, and I think that this is a beautiful thing that enables uh you know the long tail to express itself, for example. So whether it is in music, a band that might have a dispersed audience can suddenly be extremely viable and uh you know, because of technology and what is done. I I talk about how in various different fields the mainstream is crumbling. You know, in media the mainstream is crumbling, in entertainment the mainstream is crumbling. Which is a great thing. Everyone has a means of production. You have different uh uh you know, ways you can reach your fans and you have different artists you can reach and how you can build your taste that way. And all of that is kind of enabled by this. So I think in many other domains, like I think of n the g that framework of nation states as being a mainstream, that is getting less relevant. Now not Disappearing. In fact, in many ways asserting itself more forcefully. You know, you've spoken about how uh we've both spoken about how the state should be there to serve us, but instead it rules us. It stops people from crossing over from one place to another. It stops the flow of money. You know, not only do we belong to the state, our money belongs to the state. So nation states are very much alive, they are very much virulent, nationalism is asserting itself across the world, unfortunately. But um you know, I feel hope that for many of us technology can make it irrelevant in some domains and open these vistas, and that is something that gives me hope and honestly gives me comfort.",
+      "endTime": 1915.27,
+      "text": "You've put a line through their heart. Let me tell you something. In this field right now, there is no border between economists and poets. So another point I want to make is a point that is actually a deeply personal point for me also. And that is a point uh I often make about I feel being born at just the right time. Had I been born twenty years earlier, I would have been a much sadder person. And the reason for that is that all of us, through human history, have been confined to communities of circumstance. And that circumstance is always geography. You are born in a particular place. You are probably born in a particular caste or social class. You probably go to a particular school and a particular college and join a particular office and this part dependents to all of this. And you are restricted to communities of circumstance and you can never expand them. You yourself cannot grow because you're meeting people kinda like yourself or kind of like each other. And so on and so forth. And I feel the best thing that happened to me in my life is that I could because of technology and the internet, I could move away from communities of circumstance to communities of choice. When I say communities of choice, I mean communities based on shared interests or shared values or shared passions and not restricted by lines on maps. That's the biggest thing that's happened to me. And for every creator who is watching this episode, it's the biggest thing that's happened to you as well. Because you know what Kevin Kelly said about finding a thousand true fans. What I often t you know, I often quote Paul Graham on saying it's better to be loved by a few than like by many. All of that is enabled by the fact that geography no longer matters so much. As a creator, as a podcaster, I can reach anyone in the world. Maybe there might be a thousand true fans who are dispersed by geography, but today they can all come together and make the work that I do viable. In fact I think that if I just was limited to um uh limited by geography as in twenty years ago. I would not have an audience. I would not have validation. I would not grow in my work. I would not be able to do any of the things I am doing now. So it's deeply personal for me, and I think that this is a beautiful thing that enables uh you know the long tail to express itself, for example. So whether it is in music, a band that might have a dispersed audience can suddenly be extremely viable and uh you know, because of technology and what is done. I I talk about how in various different fields the mainstream is crumbling. You know, in media the mainstream is crumbling, in entertainment the mainstream is crumbling. Which is a great thing. Everyone has a means of production. You have different uh uh you know, ways you can reach your fans and you have different artists you can reach and how you can build your taste that way. And all of that is kind of enabled by this. So I think in many other domains, like I think of n the g that framework of nation states as being a mainstream, that is getting less relevant. Now not Disappearing. In fact, in many ways asserting itself more forcefully. You know, you've spoken about how uh we've both spoken about how the state should be there to serve us, but instead it rules us. It stops people from crossing over from one place to another. It stops the flow of money. You know, not only do we belong to the state, our money belongs to the state. So nation states are very much alive, they are very much virulent, nationalism is asserting itself across the world, unfortunately. But um you know, I feel hope that for many of us technology can make it irrelevant in some domains and open these vistas, and that is something that gives me hope and honestly gives me",
       "words": [
         {
           "word": "You've",
@@ -35329,21 +35313,21 @@
           "startTime": 1915.11,
           "endTime": 1915.27,
           "confidence": 0.9998
-        },
-        {
-          "word": "comfort.",
-          "startTime": 1915.27,
-          "endTime": 1916.77,
-          "confidence": 0.9194
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1916.79,
+      "startTime": 1915.27,
       "endTime": 1996.87,
-      "text": "It's true. Everything you say is true. we should be cautious. One is in the economic space, there is a large world of physical goods. And with physical goods there is no escaping the tyranny of distance. So there is a death of distance when you are moving uh electrons. You know each uh electrons are very light. Uh the mass of an electron is one by eighteen thirty-eight of the mass of hydrogen. And uh so it's very easy to move information around. But when you come to things they are heavy and then you get to the physicality of movement and then the India Bangladesh border is a great opportunity to move pots of honey okay so I'm just stuck on moving pots of honey and rice because that is the bread and butter. That is one dimension. The other dimension is human interactions. Human interactions need human beings. You need to meet you need to have chai you need to touch. That is the human existence. No amount of video conferencing can replace that. So there also uh the physicality of movement becomes very important. Um I want to as you were speaking about uh distance, I want to d say something which now completely contradicts all the things that we have discussed so far. If you actually build the electrified fence and",
+      "text": "comfort. It's true. Everything you say is true. we should be cautious. One is in the economic space, there is a large world of physical goods. And with physical goods there is no escaping the tyranny of distance. So there is a death of distance when you are moving uh electrons. You know each uh electrons are very light. Uh the mass of an electron is one by eighteen thirty-eight of the mass of hydrogen. And uh so it's very easy to move information around. But when you come to things they are heavy and then you get to the physicality of movement and then the India Bangladesh border is a great opportunity to move pots of honey okay so I'm just stuck on moving pots of honey and rice because that is the bread and butter. That is one dimension. The other dimension is human interactions. Human interactions need human beings. You need to meet you need to have chai you need to touch. That is the human existence. No amount of video conferencing can replace that. So there also uh the physicality of movement becomes very important. Um I want to as you were speaking about uh distance, I want to d say something which now completely contradicts all the things that we have discussed so far. If you actually build the electrified fence and",
       "words": [
+        {
+          "word": "comfort.",
+          "startTime": 1915.27,
+          "endTime": 1916.77,
+          "confidence": 0.9194
+        },
         {
           "word": "It's",
           "startTime": 1916.79,
@@ -44243,8 +44227,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2396.39,
-      "endTime": 2415.46,
-      "text": "Christopher So thank you gentle reader. I hope you have enjoyed uh the second of the beer sessions. Uh we're just in an amazing place and please do like, subscribe and comment. And we'll see you soon. They've",
+      "endTime": 2413.76,
+      "text": "Christopher So thank you gentle reader. I hope you have enjoyed uh the second of the beer sessions. Uh we're just in an amazing place and please do like, subscribe and comment. And we'll see you soon.",
       "words": [
         {
           "word": "Christopher",
@@ -44467,21 +44451,21 @@
           "startTime": 2412.26,
           "endTime": 2413.76,
           "confidence": 0.9784
-        },
-        {
-          "word": "They've",
-          "startTime": 2415.06,
-          "endTime": 2415.46,
-          "confidence": 0.8771
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2415.46,
+      "startTime": 2415.06,
       "endTime": 2427.6,
-      "text": "gone. Come let's go out in the hills here. I don't want to go into some concrete building and all that. Can you climb? Yep, I can climb. Are a social climber? Can you talk while climbing",
+      "text": "They've gone. Come let's go out in the hills here. I don't want to go into some concrete building and all that. Can you climb? Yep, I can climb. Are a social climber? Can you talk while climbing",
       "words": [
+        {
+          "word": "They've",
+          "startTime": 2415.06,
+          "endTime": 2415.46,
+          "confidence": 0.8771
+        },
         {
           "word": "gone.",
           "startTime": 2415.46,

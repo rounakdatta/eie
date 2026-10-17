@@ -5,7 +5,7 @@
     "durationSeconds": 3246,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -16,8 +16,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 52.65,
-      "endTime": 81.21,
-      "text": "Welcome to the scene in the unseen. I'm just kidding. This is not the scene in the unseen. I'm perhaps best known for at audio podcast, which takes intense deep dives into subjects and people and can last three hours to even eight hours. But I also wanted to have a space where I can have, you know, relaxed, fee wheeling conversations, just shoot the breeze with a friend. And so welcome to Everything Is Everything, a show co-hosted by me and my dear friend Ajay Shah. And I'll hand over to Ajay and let you uh tell him more about the show.",
+      "endTime": 82.51,
+      "text": "Welcome to the scene in the unseen. I'm just kidding. This is not the scene in the unseen. I'm perhaps best known for at audio podcast, which takes intense deep dives into subjects and people and can last three hours to even eight hours. But I also wanted to have a space where I can have, you know, relaxed, fee wheeling conversations, just shoot the breeze with a friend. And so welcome to Everything Is Everything, a show co-hosted by me and my dear friend Ajay Shah. And I'll hand over to Ajay and let you uh tell him more about the show. So all of you know",
       "words": [
         {
           "word": "Welcome",
@@ -636,15 +636,7 @@
           "startTime": 80.57,
           "endTime": 81.21,
           "confidence": 0.9933
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 81.21,
-      "endTime": 127.93,
-      "text": "So all of you know The podcast The Seen and the Unseen, and it has evolved over the years into oral history where episodes run from three to eight hours and they are deep dives into one interesting person at a time. Amit and I felt at the same time alongside this, there is a space and it is valuable to create a different concept of a show. And so here we are with everything is everything, which will be a mix of contemporary, interesting questions of the age and we hope with elements of irreverent and amusing views on the world. So we think that you guys will find this interesting.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 81.21,
@@ -674,7 +666,15 @@
           "startTime": 82.01,
           "endTime": 82.51,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 83.21,
+      "endTime": 127.93,
+      "text": "The podcast The Seen and the Unseen, and it has evolved over the years into oral history where episodes run from three to eight hours and they are deep dives into one interesting person at a time. Amit and I felt at the same time alongside this, there is a space and it is valuable to create a different concept of a show. And so here we are with everything is everything, which will be a mix of contemporary, interesting questions of the age and we hope with elements of irreverent and amusing views on the world. So we think that you guys will find this interesting.",
+      "words": [
         {
           "word": "The",
           "startTime": 83.21,
@@ -3824,8 +3824,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 238.82,
-      "endTime": 305.66,
-      "text": "Everybody in India knows about the big four snakes, the venomous snakes that make up most of the bi most of the bad encounters between snakes and people. What is interesting is that the four are actually very different. Okay? So the first most famous one is the cobra. And actually cobras and humans have evolved a good coexistence. The cobras live around human settlements and they are well adjusted to human beings and they flash their scary hoods and the humans know to run away. And in fact, many times when a cobra apparently strikes a human, they do it with their mouth closed. So this is good coexistence, that there is no violence, the everybody gets along fine. So the cobras are much less dangerous than is widely considered. Then comes the common crate, once again, a sweet, quiet creature that doesn't make trouble for people. And occasionally there are bad encounters because the crate comes along and tries to find the warmth of a human being. And accidentally when the human is",
+      "endTime": 313.82,
+      "text": "Everybody in India knows about the big four snakes, the venomous snakes that make up most of the bi most of the bad encounters between snakes and people. What is interesting is that the four are actually very different. Okay? So the first most famous one is the cobra. And actually cobras and humans have evolved a good coexistence. The cobras live around human settlements and they are well adjusted to human beings and they flash their scary hoods and the humans know to run away. And in fact, many times when a cobra apparently strikes a human, they do it with their mouth closed. So this is good coexistence, that there is no violence, the everybody gets along fine. So the cobras are much less dangerous than is widely considered. Then comes the common crate, once again, a sweet, quiet creature that doesn't make trouble for people. And occasionally there are bad encounters because the crate comes along and tries to find the warmth of a human being. And accidentally when the human is sleeping, uh, crushes the snake, and then you get a bad encounter. Mostly the crates are quiet, calm, and well-behaved, and nothing goes",
       "words": [
         {
           "word": "Everybody",
@@ -4876,15 +4876,7 @@
           "startTime": 305.42,
           "endTime": 305.66,
           "confidence": 0.9972
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 305.66,
-      "endTime": 307.74,
-      "text": "sleeping, uh, crushes",
-      "words": [
+        },
         {
           "word": "sleeping,",
           "startTime": 305.66,
@@ -4902,15 +4894,7 @@
           "startTime": 307.1,
           "endTime": 307.74,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 307.74,
-      "endTime": 313.82,
-      "text": "the snake, and then you get a bad encounter. Mostly the crates are quiet, calm, and well-behaved, and nothing goes",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 307.74,
@@ -5338,8 +5322,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 323.98,
-      "endTime": 325.98,
-      "text": "people die in their sleep, but actually they've been",
+      "endTime": 375.87,
+      "text": "people die in their sleep, but actually they've been bitten by a crate. Okay, the third is the saw-scaled wiper, which is a very small snake, it almost looks like an eel. tries to do an interesting display and scare off people and most often it succeeds other than young men who want to say I'm so clever I can pick up an eel by its tail and that goes badly. And the last is the unpleasant, bad-tempered creature, the Russell Swiper. And these are snakes that will hit, strike out at a human with no reasonable provocation. So the four are actually very different in their And this is something that most people have not understood. So I think there is this elevated level of fear about cobras and crates, which is not justified given that actually they are quite mild and they are uh coordinated with the human race and they understand and interoperate.",
       "words": [
         {
           "word": "people",
@@ -5394,15 +5378,7 @@
           "startTime": 325.82,
           "endTime": 325.98,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 325.98,
-      "endTime": 327.58,
-      "text": "bitten by a crate. Okay,",
-      "words": [
+        },
         {
           "word": "bitten",
           "startTime": 325.98,
@@ -5432,15 +5408,7 @@
           "startTime": 327.18,
           "endTime": 327.58,
           "confidence": 0.6915
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 327.58,
-      "endTime": 377.35,
-      "text": "the third is the saw-scaled wiper, which is a very small snake, it almost looks like an eel. tries to do an interesting display and scare off people and most often it succeeds other than young men who want to say I'm so clever I can pick up an eel by its tail and that goes badly. And the last is the unpleasant, bad-tempered creature, the Russell Swiper. And these are snakes that will hit, strike out at a human with no reasonable provocation. So the four are actually very different in their And this is something that most people have not understood. So I think there is this elevated level of fear about cobras and crates, which is not justified given that actually they are quite mild and they are uh coordinated with the human race and they understand and interoperate. The humans.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 327.58,
@@ -6292,7 +6260,15 @@
           "startTime": 375.37,
           "endTime": 375.87,
           "confidence": 0.9914
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 376.63,
+      "endTime": 440.74,
+      "text": "The humans. So what happened to me the other day is that I was uh you know taking rounds of your uh walking track and I'd almost run 7k and I was completely tired, walk-run basically, but I was completely tired and I thought, man, you know, the la my last little bit of jogging, I thought I can't possibly go faster than this. And just as I was cooling down, from the bushes on the right of me, uh a snake whizzed by to the bushes on the left of me, and it waited in those bushes and its tail was hanging out on the path. And I was Uh, you know, so I don't know what to do. Had it disappeared, I would just have continued. But its tail was there. It's almost like I don't that you know, there's an Amitabh Bachan in Shashi Kapoor film where they are bathing together and of course they're naked, and then uh some woman opens a door, I forget who, and instead of doing this, covering themselves like this, they cover themselves like this. And I thought this is a stupid snake, it thinks I can't see it, but the tail is there. And then I was like, play it safe, boy, and I turned around and I sprinted madly. Uh at a speed of what my Garmin watch tells me was like twenty-five k kilometers per hour, which you now tell me is the highest speed man can attain. You",
+      "words": [
         {
           "word": "The",
           "startTime": 376.63,
@@ -6304,15 +6280,7 @@
           "startTime": 376.79,
           "endTime": 377.35,
           "confidence": 0.9263
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 377.35,
-      "endTime": 440.32,
-      "text": "So what happened to me the other day is that I was uh you know taking rounds of your uh walking track and I'd almost run 7k and I was completely tired, walk-run basically, but I was completely tired and I thought, man, you know, the la my last little bit of jogging, I thought I can't possibly go faster than this. And just as I was cooling down, from the bushes on the right of me, uh a snake whizzed by to the bushes on the left of me, and it waited in those bushes and its tail was hanging out on the path. And I was Uh, you know, so I don't know what to do. Had it disappeared, I would just have continued. But its tail was there. It's almost like I don't that you know, there's an Amitabh Bachan in Shashi Kapoor film where they are bathing together and of course they're naked, and then uh some woman opens a door, I forget who, and instead of doing this, covering themselves like this, they cover themselves like this. And I thought this is a stupid snake, it thinks I can't see it, but the tail is there. And then I was like, play it safe, boy, and I turned around and I sprinted madly. Uh at a speed of what my Garmin watch tells me was like twenty-five k kilometers per hour, which you now tell me is the highest speed man can attain.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 377.35,
@@ -7800,21 +7768,21 @@
           "startTime": 438.82,
           "endTime": 440.32,
           "confidence": 0.7962
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 440.5,
-      "endTime": 447.48,
-      "text": "You will be a well-adjusted villager when uh the tail of a snake will no longer excite peaks of physical performance.",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 440.5,
           "endTime": 440.74,
           "confidence": 0.9888
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 440.74,
+      "endTime": 447.48,
+      "text": "will be a well-adjusted villager when uh the tail of a snake will no longer excite peaks of physical performance.",
+      "words": [
         {
           "word": "will",
           "startTime": 440.74,
@@ -8620,8 +8588,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 478.49,
-      "endTime": 550.33,
-      "text": "Seagulls look nice, they seem like you know beautiful, graceful creatures, but they are actually birds of prey in many ways. So when we think of an eagle or we think of a vulture, the image in our mind goes with the part. The behavior of seagulls con conflicts with our conception. of what a seagull ought to be. So we think of a seagull, it should be some nice vegetarian bird. Okay, it's not that. So seagulls are known to attack and kill pigeons and eat them. Uh seagulls are there are some seagulls who find baby whales who are near the surface of the water and they swoop down and they gouge out chunks of meat from the skin of a baby whale and they leave deep wounds on the back of a baby whale. when it is near the surface. There are uh reports of seagulls gouging out the eyes of seals. Okay, things like that. So seagulls are actually like pretty dangerous birds of prey. And I think it's just our anthropocentric failure that when we see seagulls, we think of some cute cuddly bird and its behavior is",
+      "endTime": 556.27,
+      "text": "Seagulls look nice, they seem like you know beautiful, graceful creatures, but they are actually birds of prey in many ways. So when we think of an eagle or we think of a vulture, the image in our mind goes with the part. The behavior of seagulls con conflicts with our conception. of what a seagull ought to be. So we think of a seagull, it should be some nice vegetarian bird. Okay, it's not that. So seagulls are known to attack and kill pigeons and eat them. Uh seagulls are there are some seagulls who find baby whales who are near the surface of the water and they swoop down and they gouge out chunks of meat from the skin of a baby whale and they leave deep wounds on the back of a baby whale. when it is near the surface. There are uh reports of seagulls gouging out the eyes of seals. Okay, things like that. So seagulls are actually like pretty dangerous birds of prey. And I think it's just our anthropocentric failure that when we see seagulls, we think of some cute cuddly bird and its behavior is anything but so I think that creates this cognitive dissonance in us for what we expect versus what it is.",
       "words": [
         {
           "word": "Seagulls",
@@ -9780,15 +9748,7 @@
           "startTime": 550.17,
           "endTime": 550.33,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 550.33,
-      "endTime": 551.85,
-      "text": "anything but so I think that",
-      "words": [
+        },
         {
           "word": "anything",
           "startTime": 550.33,
@@ -9824,15 +9784,7 @@
           "startTime": 551.61,
           "endTime": 551.85,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 551.85,
-      "endTime": 557.1,
-      "text": "creates this cognitive dissonance in us for what we expect versus what it is. Yeah, and",
-      "words": [
+        },
         {
           "word": "creates",
           "startTime": 551.85,
@@ -9916,7 +9868,15 @@
           "startTime": 555.85,
           "endTime": 556.27,
           "confidence": 0.9944
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 556.7,
+      "endTime": 701.98,
+      "text": "Yeah, and what also struck me about seagulls when like what struck me most was that when they attack you, they go for the eyes first, you know, which is uh p perhaps a smarter strategy because then of course you can't fight and you're kinda screwed and uh one can just imagine how uh they um you know, came to that evolved behavior, but then makes you wonder why doesn't everybody attack like that? Because that's possibly an optimal way of attacking. And seagulls, interestingly, not only are they bastards, they're lazy bastards, because another thing they do is what is called kleptoparasitism. Where uh, you know, they'll steal food of other parasites, which is also stealing food from elsewhere. It's like stealing from a thief in a sense. And when I read about that, I straightaway thought of the Indian state. Especially, you know, back in the license Raj days, you'd have your rent seekers and then you'd have the state on top of that taxing the rent seekers or the taxing the cronies, as it were. And uh, you know, uh uh k kind of pretty messed up that way. The other thing that strikes me about this whole Animal kingdom, like when we talk about the vagaries of the animal kingdom taking out eyes and doing all kinds of funky things, is that we describe this behavior in an almost a moral way. So we're not attaching moral judgment to it. You know, jokingly take a bold seagullza bastards. But we're not a attaching moral judgment and all of that. Animals are animals, they do what they do, there's a food chain. And the thing is, we're also animals. Even if we've given this veneer of rationality, though we know so much of what we consider reasoning is really rationalization for wherever our instincts take us. And so we've got this veneer. But at the end of the day, we are also animals. In fact, if anything, we are more deeply fucked up than most other animals because we have so many conflicting instincts coming at us in different directions, plus um, you know, all the social pressures and all of those things around us. And yet there is moral judgment attached to everything humans do. And there's a kind of dilemma in that because whether or not you believe in free will, and I think it's a difficult concept to defend, but we can talk about that in some other episode. But whether or not you believe in that, if you sort of accept that we are all creatures formed by a combination of our genes and circumstances, on the one hand, that could take you to the place where we look at each other like we look at animals and we don't pass judgment. But on the other hand, for society to function, you must have a system where You have an ethical code in place where you punish the bad and you reward the good. And that is just what you need for society to function. So I'm I'm kind of just thinking aloud. What do you think? It's useful",
+      "words": [
         {
           "word": "Yeah,",
           "startTime": 556.7,
@@ -9928,15 +9888,7 @@
           "startTime": 556.94,
           "endTime": 557.1,
           "confidence": 0.9959
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 557.1,
-      "endTime": 701.98,
-      "text": "what also struck me about seagulls when like what struck me most was that when they attack you, they go for the eyes first, you know, which is uh p perhaps a smarter strategy because then of course you can't fight and you're kinda screwed and uh one can just imagine how uh they um you know, came to that evolved behavior, but then makes you wonder why doesn't everybody attack like that? Because that's possibly an optimal way of attacking. And seagulls, interestingly, not only are they bastards, they're lazy bastards, because another thing they do is what is called kleptoparasitism. Where uh, you know, they'll steal food of other parasites, which is also stealing food from elsewhere. It's like stealing from a thief in a sense. And when I read about that, I straightaway thought of the Indian state. Especially, you know, back in the license Raj days, you'd have your rent seekers and then you'd have the state on top of that taxing the rent seekers or the taxing the cronies, as it were. And uh, you know, uh uh k kind of pretty messed up that way. The other thing that strikes me about this whole Animal kingdom, like when we talk about the vagaries of the animal kingdom taking out eyes and doing all kinds of funky things, is that we describe this behavior in an almost a moral way. So we're not attaching moral judgment to it. You know, jokingly take a bold seagullza bastards. But we're not a attaching moral judgment and all of that. Animals are animals, they do what they do, there's a food chain. And the thing is, we're also animals. Even if we've given this veneer of rationality, though we know so much of what we consider reasoning is really rationalization for wherever our instincts take us. And so we've got this veneer. But at the end of the day, we are also animals. In fact, if anything, we are more deeply fucked up than most other animals because we have so many conflicting instincts coming at us in different directions, plus um, you know, all the social pressures and all of those things around us. And yet there is moral judgment attached to everything humans do. And there's a kind of dilemma in that because whether or not you believe in free will, and I think it's a difficult concept to defend, but we can talk about that in some other episode. But whether or not you believe in that, if you sort of accept that we are all creatures formed by a combination of our genes and circumstances, on the one hand, that could take you to the place where we look at each other like we look at animals and we don't pass judgment. But on the other hand, for society to function, you must have a system where You have an ethical code in place where you punish the bad and you reward the good. And that is just what you need for society to function. So I'm I'm kind of just thinking aloud. What do you think? It's useful",
-      "words": [
+        },
         {
           "word": "what",
           "startTime": 557.1,
@@ -13092,8 +13044,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 701.98,
-      "endTime": 734.36,
-      "text": "to think of uh the component of hardware and software, of the role of culture in each organism. So, for example, a newborn king cobra is a hundred percent king cobra right at birth. It is able to bite and kill. And its code is hard-coded and it will be exactly the same for the rest of its life. There is very little culture. Okay. As you go up into other animals, you start getting the word culture, which is a set of learned behaviors and beliefs",
+      "endTime": 785.43,
+      "text": "to think of uh the component of hardware and software, of the role of culture in each organism. So, for example, a newborn king cobra is a hundred percent king cobra right at birth. It is able to bite and kill. And its code is hard-coded and it will be exactly the same for the rest of its life. There is very little culture. Okay. As you go up into other animals, you start getting the word culture, which is a set of learned behaviors and beliefs and heuristics and an entire operating system by the time you get to the humans. So humans are unique in that we can ask ourselves what is our culture, and we can refashion it in ways. The animals can't. So I think that's the way to distinguish that we are amoral about what a king cobra does, but we think about who we are and what is our code. And we are masters of our own destiny because to some extent we're able to interrogate and modify that operating system. So culture, that plasticity is what makes us human. So we are not just hard-coded in the CPU, but we have an operating system on top of it. So I feel that's a nice and fundamental difference, and that is the essence of what makes us human. That's a lovely metaphor,",
       "words": [
         {
           "word": "to",
@@ -13616,15 +13568,7 @@
           "startTime": 733.48,
           "endTime": 734.36,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 734.36,
-      "endTime": 736.76,
-      "text": "and heuristics and an",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 734.36,
@@ -13648,15 +13592,7 @@
           "startTime": 736.36,
           "endTime": 736.76,
           "confidence": 0.9705
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 736.76,
-      "endTime": 786.31,
-      "text": "entire operating system by the time you get to the humans. So humans are unique in that we can ask ourselves what is our culture, and we can refashion it in ways. The animals can't. So I think that's the way to distinguish that we are amoral about what a king cobra does, but we think about who we are and what is our code. And we are masters of our own destiny because to some extent we're able to interrogate and modify that operating system. So culture, that plasticity is what makes us human. So we are not just hard-coded in the CPU, but we have an operating system on top of it. So I feel that's a nice and fundamental difference, and that is the essence of what makes us human. That's a lovely metaphor, but what also strikes",
-      "words": [
+        },
         {
           "word": "entire",
           "startTime": 736.76,
@@ -14478,7 +14414,15 @@
           "startTime": 784.79,
           "endTime": 785.43,
           "confidence": 0.8866
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 785.43,
+      "endTime": 851.08,
+      "text": "but what also strikes me is that it actually plays to my point. Like if my point is that character is contingent, right? And I am shaped by both the software and the hardware. I have my genes and I have my instincts. And like I love this phrase by Steven Pinker where he said, Nature gives us knobs, nurture turns them. Right, that's a interface of uh uh software and hardware. Right? Hardware is the knobs and nature is how much they are sort of turned and we have knobs of for different instincts to different degrees, and then nurture turns them. But how much in control are we really? Because I think what often happens in human beings is that within our hubris we overestimate our own agency. And I'm not making an argument for uh a kind of um Uh for just excusing everything everybody does and saying are characteristic contingent, blah blah blah. I I'm not doing that at all. I think that even if there is no free will for civilization to progress, we must behave as if there is. And even if people are not really at the deepest level responsible for their actions, we must behave as they are. Even looking at hardware software, I think that's that's it's I think it's",
+      "words": [
         {
           "word": "but",
           "startTime": 785.43,
@@ -14502,15 +14446,7 @@
           "startTime": 785.99,
           "endTime": 786.31,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 786.31,
-      "endTime": 851.08,
-      "text": "me is that it actually plays to my point. Like if my point is that character is contingent, right? And I am shaped by both the software and the hardware. I have my genes and I have my instincts. And like I love this phrase by Steven Pinker where he said, Nature gives us knobs, nurture turns them. Right, that's a interface of uh uh software and hardware. Right? Hardware is the knobs and nature is how much they are sort of turned and we have knobs of for different instincts to different degrees, and then nurture turns them. But how much in control are we really? Because I think what often happens in human beings is that within our hubris we overestimate our own agency. And I'm not making an argument for uh a kind of um Uh for just excusing everything everybody does and saying are characteristic contingent, blah blah blah. I I'm not doing that at all. I think that even if there is no free will for civilization to progress, we must behave as if there is. And even if people are not really at the deepest level responsible for their actions, we must behave as they are. Even looking at hardware software, I think that's that's it's I think it's",
-      "words": [
+        },
         {
           "word": "me",
           "startTime": 786.31,
@@ -17090,8 +17026,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 931.35,
-      "endTime": 1057.88,
-      "text": "not sure how interesting and cool it is, but it's it's a thought that was sparked off by something that Shriana Bhtacharya, who wrote the book Desperately Seeking Sharuk, and I did a great episode of the scene and the unseen with her. um uh the loneliness of the Indian woman. And I was uh doing a book event with her and there she paid me what I think is one of the finest compliments I've ever received, where she said, Amit, you are an anti-uncle. So I said, okay. What do you mean by anti-uncle? Because it's a lovely compliment. I know. So she said that here's the thing: you're willing to change, you're willing to listen to arguments from the other side on everything. Your mind is not closed, you're always open to ideas, and you're willing to engage with anyone, and that makes you an anti-uncle. Thereby sort of implying that an uncle is the opposite of that. Someone who's completely closed, they've got their worldview, they've got, you know, their way of thinking about everything, and they're insistent on that. And obviously, there are other things we'll associate with that term uncle, such as perhaps a certain age. uh a certain gender obviously because only men can be uncles of rank women can be Karens, I guess, or whatever, but you can find other terms and and all of that. And that led me to thinking about one of the finest essays I I have read in recent years, the Four Quadrants of Conformism by the by Paul Graham, who's such a wonderful essay writer. And in that, Paul Graham talks about how there are really four kinds of people, right? There are uh like there are two broad kinds, which are the conventional minded and the independent thinkers. And those also you can divide into two kinds. There are the passively conventional minded and the aggressively conventional minded, and there are the passively independent thinkers and the aggressively independent thinkers. So I just want to read out uh a para by uh Graham Veri elaborates on that. In adulthood, we can recognize the four types by their distinctive calls, much as you could recognize four species of birds. The call of the aggressively conventional minded is crush out group. It's rather alarming to see an exclamation point after a variable, but that's a whole problem with the aggressively conventional minded. The call of the passively conventional minded is what will the neighbours think? The call of the passively independent minded is to each his own.",
+      "endTime": 1359.53,
+      "text": "not sure how interesting and cool it is, but it's it's a thought that was sparked off by something that Shriana Bhtacharya, who wrote the book Desperately Seeking Sharuk, and I did a great episode of the scene and the unseen with her. um uh the loneliness of the Indian woman. And I was uh doing a book event with her and there she paid me what I think is one of the finest compliments I've ever received, where she said, Amit, you are an anti-uncle. So I said, okay. What do you mean by anti-uncle? Because it's a lovely compliment. I know. So she said that here's the thing: you're willing to change, you're willing to listen to arguments from the other side on everything. Your mind is not closed, you're always open to ideas, and you're willing to engage with anyone, and that makes you an anti-uncle. Thereby sort of implying that an uncle is the opposite of that. Someone who's completely closed, they've got their worldview, they've got, you know, their way of thinking about everything, and they're insistent on that. And obviously, there are other things we'll associate with that term uncle, such as perhaps a certain age. uh a certain gender obviously because only men can be uncles of rank women can be Karens, I guess, or whatever, but you can find other terms and and all of that. And that led me to thinking about one of the finest essays I I have read in recent years, the Four Quadrants of Conformism by the by Paul Graham, who's such a wonderful essay writer. And in that, Paul Graham talks about how there are really four kinds of people, right? There are uh like there are two broad kinds, which are the conventional minded and the independent thinkers. And those also you can divide into two kinds. There are the passively conventional minded and the aggressively conventional minded, and there are the passively independent thinkers and the aggressively independent thinkers. So I just want to read out uh a para by uh Graham Veri elaborates on that. In adulthood, we can recognize the four types by their distinctive calls, much as you could recognize four species of birds. The call of the aggressively conventional minded is crush out group. It's rather alarming to see an exclamation point after a variable, but that's a whole problem with the aggressively conventional minded. The call of the passively conventional minded is what will the neighbours think? The call of the passively independent minded is to each his own. And the call of the aggressively independent minded is Epur Simuave. Now, Epur Semave is of course what Galileo said. It means still it turns. So Galileo was essentially forced to recant his observation that the earth goes around the sun. And he had to recant it and he had to say I was wrong and I didn't really do that. And then when he came out after that whole episode, he looked up at the sky and he stormed the ground and he said, Epur so sim se muave, you know, and still it turns. So you can make me uh f uh you know uh verbally fall in line with the conventional-minded, but that doesn't change the reality. And this is Something that I feel in my time as a columnist, and no doubt in your time as a columnist, you would have suffered from as well. Because the loudest noise on Twitter and social media is actually made by the aggressively conventional-minded. These are not people saying anything new. These are people vehemently defending received wisdom about which they haven't thought at all. Right? For example, I have three distinctive examples, and the links will be uh in the show notes below of columns I have written which got furious responses. And the first one made the argument that even though we've been taught in school that population is India's greatest problem, it's not. People are brains, not stomachs. And you can give various examples, but I think the clearest illustration of that to me is that the story of human history is a migration from uh, you know, villages and rural areas to big cities where population density is highest. Because the more people there are, people are brains, not stomachs, you know, it uh all all kind of um It it just makes sense. And therefore, I find it shocking that everything that is blamed on the population is actually a problem of governance, a problem with the state. And everyone who says population is a problem will never include themselves as part of the population. Yeah, they'll they'll be like you stop having babies. And uh so again, um uh my column will be linked down below. Another fashion that I keep railing about is when people say inequality. when they mean poverty or should mean poverty. Inequality and poverty are really different things. And I um, you know, clarify this by talking about by asking the question, in which of these two countries would you rather be poor, the USA or Bangladesh? And everybody would r even though Bangladesh is recently doing really well, everybody would rather be poor in the USA. But the truth is that the USA has much more inequality as measured by the Gini coefficient than Bangladesh does. That inequality per se is in the problem. After liberalisation happened, we started solving poverty to some extent. We moved hundreds of millions of people out of poverty, more than four hundred million people out of poverty, as inequality went up. And it's a result of the zero sum mindset that, oh, if the poor rich are getting richer, the poor must be getting poorer. But to me there are really different problems with opposite solutions, and India's problem is poverty. Again, much more detail in the article below, so to uh sort of read that. And and my third piece which really pissed off so many people that people who hadn't been in touch with me th since thirty-five years ago in school got in touch with me on Facebook to tell me I was an asshole. And that argument, meant a bit provocatively, was that it is immoral to have children. And the fundamental argument I was kind of making there was that uh you know, there are three things I think we would all agree on. We should not do s something to anyone without their consent. We should not cause anyone pain and we should not kill anyone. And when we give birth to kids, obviously it's without their consent because consent isn't possible, they will feel pain and they will die. And therefore, just for that reason, it is prima facie immoral and you have to tackle this argument, right? So it's meant to be a little bit provocative and to make you think about these questions. And I would be the first one to say that I might think things are immoral, but I might do them anyway, right? So we are humans, we are fucked up, that's how it is. But man, the flack I kind of got for this. But the point is not these three articles per se. I mean both of us have lots of provocative thoughts. But the uh point and the Paul Pologram also makes is that the aggressively conventional minded are the people who stand in the way of progress, they are not saying anything new. They are stating the conventional wisdom, but they are doing it loudly, and they are shutting you up, and they simply do not want uh dialogue and o on this at all. And they are incredibly dangerous, and they are the loudest on social media. Whether they are conventional minded in terms of following the conventions of their particular tribe, which could be right wingers, which could be wokes, which could be whatever. But they'll follow those conventions and they've mugged up those conventions and those key phrases. And that's it. There's no sense of dialogue, of learning, of yearning for truth and uh so on and so forth. So this is something that I want everyone to think about. That like I realized that whenever I would hear a radically new idea, my initial response to it was Kin Ari No, it would be a negative response. And I learned to fight that in myself. I learned to say that, you know, every idea that changes the world is at first a radical idea. And you've got to be open to everything and think about everything. And that's what I'll ask all the listeners to do, that you know, never dismiss anything out of sight, always keep thinking about stuff. And in some ways you might be conventional-minded, perhaps because you're y used to a set of ways or a frame of looking at the world. But don't be aggressively conventional-minded.",
       "words": [
         {
           "word": "not",
@@ -19672,15 +19608,7 @@
           "startTime": 1057.4,
           "endTime": 1057.88,
           "confidence": 0.8279
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1057.88,
-      "endTime": 1059.56,
-      "text": "And the call of the aggressively",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1057.88,
@@ -19716,15 +19644,7 @@
           "startTime": 1058.84,
           "endTime": 1059.56,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1059.56,
-      "endTime": 1333.4,
-      "text": "independent minded is Epur Simuave. Now, Epur Semave is of course what Galileo said. It means still it turns. So Galileo was essentially forced to recant his observation that the earth goes around the sun. And he had to recant it and he had to say I was wrong and I didn't really do that. And then when he came out after that whole episode, he looked up at the sky and he stormed the ground and he said, Epur so sim se muave, you know, and still it turns. So you can make me uh f uh you know uh verbally fall in line with the conventional-minded, but that doesn't change the reality. And this is Something that I feel in my time as a columnist, and no doubt in your time as a columnist, you would have suffered from as well. Because the loudest noise on Twitter and social media is actually made by the aggressively conventional-minded. These are not people saying anything new. These are people vehemently defending received wisdom about which they haven't thought at all. Right? For example, I have three distinctive examples, and the links will be uh in the show notes below of columns I have written which got furious responses. And the first one made the argument that even though we've been taught in school that population is India's greatest problem, it's not. People are brains, not stomachs. And you can give various examples, but I think the clearest illustration of that to me is that the story of human history is a migration from uh, you know, villages and rural areas to big cities where population density is highest. Because the more people there are, people are brains, not stomachs, you know, it uh all all kind of um It it just makes sense. And therefore, I find it shocking that everything that is blamed on the population is actually a problem of governance, a problem with the state. And everyone who says population is a problem will never include themselves as part of the population. Yeah, they'll they'll be like you stop having babies. And uh so again, um uh my column will be linked down below. Another fashion that I keep railing about is when people say inequality. when they mean poverty or should mean poverty. Inequality and poverty are really different things. And I um, you know, clarify this by talking about by asking the question, in which of these two countries would you rather be poor, the USA or Bangladesh? And everybody would r even though Bangladesh is recently doing really well, everybody would rather be poor in the USA. But the truth is that the USA has much more inequality as measured by the Gini coefficient than Bangladesh does. That inequality per se is in the problem. After liberalisation happened, we started solving poverty to some extent. We moved hundreds of millions of people out of poverty, more than four hundred million people out of poverty, as inequality went up. And it's a result of the zero sum mindset that, oh, if the poor rich are getting richer, the poor must be getting poorer. But to me there are really different problems with opposite solutions, and India's problem is poverty. Again, much more detail in the article below, so to uh sort of read that. And and my third piece which really pissed off so many people that people who hadn't been in touch with me th since thirty-five years ago in school got in touch with me on Facebook to tell me I was an asshole. And that argument, meant a bit provocatively, was that it is immoral to have children. And the fundamental argument I was kind of making there was that uh you know, there are three things I think we would all agree on. We should not do s something to anyone without their consent. We should not cause anyone pain and we should not kill anyone. And when we give birth to kids, obviously it's without their consent because consent isn't possible, they will feel pain and they will die. And therefore, just for that reason, it is prima facie immoral and you have to tackle this argument, right? So it's meant to be a little bit provocative and to make you think about these questions. And I would be the first one to say that I might think things are immoral, but I might do them anyway, right? So we are humans, we are fucked up, that's how it is. But man, the flack I kind of got for this. But the point is not these three articles per se. I mean both of us have lots of provocative thoughts. But the uh point and the Paul Pologram also makes is that the aggressively conventional minded are the people who stand in the way of progress, they are not saying anything new. They are stating the conventional wisdom, but they are doing it loudly, and they are shutting you up, and they simply do not want uh dialogue and o on this at all. And they are incredibly dangerous, and they are the loudest on social media. Whether they are conventional minded in terms of following the conventions of their particular tribe, which could be right wingers, which could be wokes, which could be whatever. But they'll follow those conventions and they've mugged up those conventions and those key phrases. And that's it. There's no sense of dialogue, of learning, of yearning for truth and uh so on and so forth. So this is something that I want everyone to think about. That like I realized that whenever I would hear a radically new idea, my initial response to it was Kin Ari No, it would be a negative response. And I",
-      "words": [
+        },
         {
           "word": "independent",
           "startTime": 1059.56,
@@ -25556,15 +25476,7 @@
           "startTime": 1333.24,
           "endTime": 1333.4,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1333.4,
-      "endTime": 1335.02,
-      "text": "learned to fight that in myself.",
-      "words": [
+        },
         {
           "word": "learned",
           "startTime": 1333.4,
@@ -25600,15 +25512,7 @@
           "startTime": 1334.52,
           "endTime": 1335.02,
           "confidence": 0.9576
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1335.45,
-      "endTime": 1359.53,
-      "text": "I learned to say that, you know, every idea that changes the world is at first a radical idea. And you've got to be open to everything and think about everything. And that's what I'll ask all the listeners to do, that you know, never dismiss anything out of sight, always keep thinking about stuff. And in some ways you might be conventional-minded, perhaps because you're y used to a set of ways or a frame of looking at the world. But don't be aggressively conventional-minded.",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1335.45,
@@ -26130,8 +26034,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1359.53,
-      "endTime": 1524.71,
-      "text": "It is interesting to ask the question. What is optimal for the person? So, because I'm a card carrying economist, I always look at it through the lens of optimization. People are not wood, people are not stones, people are optimizers. So it has often been remarked that in the world of social media, there is this tribalism. People want the warmth and the sense of connection to networks in order to navigate life better. So it's interesting and important thing that why do people become uncles? Why do people loudly enforce social norms? Because they think it's a ticket to power and success. So I think it's an important insight into the world to think not that the uncles are deep believers of that ideology, but they are riding that ideology as a path to achieving power. I'm reminded of the fall of the USSR and the fall of the Berlin Wall, where Timur Kuran coined the phrase preference falsification, which describes the phenomenon where three months before the collapse of communism, everybody in East Germany and everybody in the USSR would profess a complete consistency with the official beliefs, with what was required to survive and get along in that. system of government. And in their heart, nobody had those beliefs. But it was wise and efficient to say that as a way to get along, as a way to gain power. So some people would passively get along with the official ideology, others would aggressively police violators of those rules. So I'm quite uh kind to the aggressive uh conformists and the uncles because I just think that I'll roll my eyes and say, whatever. This is your belief system that you think achieves success and group membership and power today. But it's contingent because the world will change and these people will turn on a dime. So it's like in Indian politics we describe some people as opportunists. I think the world is actually less messy than meets the eye. This is all a show. There's a performance, there's a performative aspect that is being put on in the quest for power. It's not that people actually believe this. So I feel quite kind towards a lot of those people. It's okay. You're just doing it because it's a game you're playing right now and your combination will change tomorrow. I love",
+      "endTime": 1523.91,
+      "text": "It is interesting to ask the question. What is optimal for the person? So, because I'm a card carrying economist, I always look at it through the lens of optimization. People are not wood, people are not stones, people are optimizers. So it has often been remarked that in the world of social media, there is this tribalism. People want the warmth and the sense of connection to networks in order to navigate life better. So it's interesting and important thing that why do people become uncles? Why do people loudly enforce social norms? Because they think it's a ticket to power and success. So I think it's an important insight into the world to think not that the uncles are deep believers of that ideology, but they are riding that ideology as a path to achieving power. I'm reminded of the fall of the USSR and the fall of the Berlin Wall, where Timur Kuran coined the phrase preference falsification, which describes the phenomenon where three months before the collapse of communism, everybody in East Germany and everybody in the USSR would profess a complete consistency with the official beliefs, with what was required to survive and get along in that. system of government. And in their heart, nobody had those beliefs. But it was wise and efficient to say that as a way to get along, as a way to gain power. So some people would passively get along with the official ideology, others would aggressively police violators of those rules. So I'm quite uh kind to the aggressive uh conformists and the uncles because I just think that I'll roll my eyes and say, whatever. This is your belief system that you think achieves success and group membership and power today. But it's contingent because the world will change and these people will turn on a dime. So it's like in Indian politics we describe some people as opportunists. I think the world is actually less messy than meets the eye. This is all a show. There's a performance, there's a performative aspect that is being put on in the quest for power. It's not that people actually believe this. So I feel quite kind towards a lot of those people. It's okay. You're just doing it because it's a game you're playing right now and your combination will change",
       "words": [
         {
           "word": "It",
@@ -28490,7 +28394,15 @@
           "startTime": 1523.59,
           "endTime": 1523.91,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1523.91,
+      "endTime": 1690.31,
+      "text": "tomorrow. I love your kindness and I'm happy to accept that as an explanation, but not a justification because more and more, especially in these times where social media amplifies everything. Uh the consequences can be harsh. And by the way, I'm I'm so impressed that you told me, you know, last evening that Timur Koran was actually your teacher. He taught you. And I keep citing his book, Public Lives, Private Truths, uh, and Preference Falsification. And indeed, the whole the other phrase that came from that book, preference cascades, where suddenly when you realize that hey, everybody else is also against the Soviets, then you know there's a cascade and they can go that way. And for me, that's also an explain um that's an explanation, for example, of why the Modi wave happened. That I, and I'll turn you know, phrase this a little harshly, um, and we can disagree on this specific point. But I uh always think that Indian society has always been deeply illiberal. And of course it contains multitudes of aspects of it are liberal, but always been deeply illiberal. And there were many uncles within us and aunties within us, for example, or young people within us who were closet bigots, but who could never say so openly. You know, at one point it was you couldn't say in polite society that I don't like Muslims or Muslims are having too many children or a woman's place is in the kitchen. You couldn't say this openly. And I think what happened with social media is that there was a preference cascade where that falsification was not necessary. where bigots looked around and realized that fuck, Actually, there are a lot of bigots like me. Actually, the majority of the people are bigots. Actually, this is my tribe. I can openly be who I am and not worry about it. You know? And uh, you know, no longer politicians no longer needed to dog whistle, for example. You could just say the wireless things openly. And you could say that, you know, I remember G uh Glenn Reynolds, Aka Insta Pandit, legendary blogger once wrote that this was a reason for Trump's rise over there. That all the xenophobia could come out, that if Trump could say, hey, Mexicans are rapists, then everybody can uh, you know, um embrace him because their prejudices go in a similar direction, but without um whatever. And I think in uh modern times these have consequences. Like especially when you see what happens on social media and I've been the target of both right wing mobs and woke mobs at different times. And I I've seen friends suffer through that. You know, uh Hussein Haydri who has been on the scene and the unseen once told me that when he was mobbed by the right wing guys, he said he felt so alone. That no one called him to say how how you know that I'm with you or how are you feeling. And I've realized that when I'm the target also, that I might have many well-wishers, I'm really privileged to have friends. But no one realizes what you're going through when within an hour you find a thousand people abusing you and retweeting you and just kind of messing with you. And actions of consequences and this kind of um aggressively conventional-minded mob behavior. can then have a chilling effect on our discourse where uh people aren't willing to say the things they feel till ultimately they don't even feel that way anymore. At",
+      "words": [
         {
           "word": "tomorrow.",
           "startTime": 1523.91,
@@ -28508,15 +28420,7 @@
           "startTime": 1524.55,
           "endTime": 1524.71,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1524.71,
-      "endTime": 1690.31,
-      "text": "your kindness and I'm happy to accept that as an explanation, but not a justification because more and more, especially in these times where social media amplifies everything. Uh the consequences can be harsh. And by the way, I'm I'm so impressed that you told me, you know, last evening that Timur Koran was actually your teacher. He taught you. And I keep citing his book, Public Lives, Private Truths, uh, and Preference Falsification. And indeed, the whole the other phrase that came from that book, preference cascades, where suddenly when you realize that hey, everybody else is also against the Soviets, then you know there's a cascade and they can go that way. And for me, that's also an explain um that's an explanation, for example, of why the Modi wave happened. That I, and I'll turn you know, phrase this a little harshly, um, and we can disagree on this specific point. But I uh always think that Indian society has always been deeply illiberal. And of course it contains multitudes of aspects of it are liberal, but always been deeply illiberal. And there were many uncles within us and aunties within us, for example, or young people within us who were closet bigots, but who could never say so openly. You know, at one point it was you couldn't say in polite society that I don't like Muslims or Muslims are having too many children or a woman's place is in the kitchen. You couldn't say this openly. And I think what happened with social media is that there was a preference cascade where that falsification was not necessary. where bigots looked around and realized that fuck, Actually, there are a lot of bigots like me. Actually, the majority of the people are bigots. Actually, this is my tribe. I can openly be who I am and not worry about it. You know? And uh, you know, no longer politicians no longer needed to dog whistle, for example. You could just say the wireless things openly. And you could say that, you know, I remember G uh Glenn Reynolds, Aka Insta Pandit, legendary blogger once wrote that this was a reason for Trump's rise over there. That all the xenophobia could come out, that if Trump could say, hey, Mexicans are rapists, then everybody can uh, you know, um embrace him because their prejudices go in a similar direction, but without um whatever. And I think in uh modern times these have consequences. Like especially when you see what happens on social media and I've been the target of both right wing mobs and woke mobs at different times. And I I've seen friends suffer through that. You know, uh Hussein Haydri who has been on the scene and the unseen once told me that when he was mobbed by the right wing guys, he said he felt so alone. That no one called him to say how how you know that I'm with you or how are you feeling. And I've realized that when I'm the target also, that I might have many well-wishers, I'm really privileged to have friends. But no one realizes what you're going through when within an hour you find a thousand people abusing you and retweeting you and just kind of messing with you. And actions of consequences and this kind of um aggressively conventional-minded mob behavior. can then have a chilling effect on our discourse where uh people aren't willing to say the things they feel till ultimately they don't even feel that way anymore. At",
-      "words": [
+        },
         {
           "word": "your",
           "startTime": 1524.71,
@@ -32098,8 +32002,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1690.31,
-      "endTime": 1720.57,
-      "text": "some future date we should talk further. We have different opinions on the appropriate place of social media in our life. I am a dissenter and I'm completely away from all social media. But at the same time, as thinkers about the world, we need to recognize that that is where the world is so I think there are two separate decisions. One is what should I do? And the other is in under coldly understanding how this phenomenon is acting upon the world. And both are interesting questions for the future. We'll",
+      "endTime": 1721.13,
+      "text": "some future date we should talk further. We have different opinions on the appropriate place of social media in our life. I am a dissenter and I'm completely away from all social media. But at the same time, as thinkers about the world, we need to recognize that that is where the world is so I think there are two separate decisions. One is what should I do? And the other is in under coldly understanding how this phenomenon is acting upon the world. And both are interesting questions for the future. We'll discuss it in",
       "words": [
         {
           "word": "some",
@@ -32658,15 +32562,7 @@
           "startTime": 1720.33,
           "endTime": 1720.57,
           "confidence": 0.986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1720.57,
-      "endTime": 1812.89,
-      "text": "discuss it in the in a future episode, but there are also two aspects to it, which is the personal aspect and which is a public intellectual aspect. And the personal aspect that I have chosen is to use um, you know, Kashinath Singh's famous phrase from Kashi Kaasi, where he says, uh uh, so my personal approach is harmonia. Right? So I'm not going to really bother about stuff. I'm going to block every toxic thing I see. Anyone who's rude, I'm going to block them. Anyone who uh you know, trolls me, I'm gonna block them. And I'm instead going to use it as a curation device where um I um build a feed of the finest minds in the world. And it's such a it's so magical. Like imagine when I was growing up, you know, when w in 1985 for example, uh or 1995. I could not have imagined that every morning I can wake up in the morning and have access to the best minds in the world thinking aloud for my benefit. That is fucking magic, right? So I'm I'm gonna curate something like that. And that's a personal aspect, the harmonia aspect. Then the question is as a public intellectual, what do you do? Because as a public intellectual, when you take unpopular positions, counterintuitive positions, positions that are not conventional, and therefore will set the aggressively conventional minded against you, you bear a cost perhaps to your career. Certainly I feel to your mental health. And you really then have to be clear about, you know, what is my role in this game that I'm playing. And I can take a step back and say, okay, I do the podcast and I'm playing the long game and I don't have to be too much out there. And I have been too much out there and I've suffered for it. But yeah, I mean these are just two areas we can talk about at a future date. In in in the",
-      "words": [
+        },
         {
           "word": "discuss",
           "startTime": 1720.57,
@@ -32684,7 +32580,15 @@
           "startTime": 1720.97,
           "endTime": 1721.13,
           "confidence": 0.9953
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1721.13,
+      "endTime": 1812.89,
+      "text": "the in a future episode, but there are also two aspects to it, which is the personal aspect and which is a public intellectual aspect. And the personal aspect that I have chosen is to use um, you know, Kashinath Singh's famous phrase from Kashi Kaasi, where he says, uh uh, so my personal approach is harmonia. Right? So I'm not going to really bother about stuff. I'm going to block every toxic thing I see. Anyone who's rude, I'm going to block them. Anyone who uh you know, trolls me, I'm gonna block them. And I'm instead going to use it as a curation device where um I um build a feed of the finest minds in the world. And it's such a it's so magical. Like imagine when I was growing up, you know, when w in 1985 for example, uh or 1995. I could not have imagined that every morning I can wake up in the morning and have access to the best minds in the world thinking aloud for my benefit. That is fucking magic, right? So I'm I'm gonna curate something like that. And that's a personal aspect, the harmonia aspect. Then the question is as a public intellectual, what do you do? Because as a public intellectual, when you take unpopular positions, counterintuitive positions, positions that are not conventional, and therefore will set the aggressively conventional minded against you, you bear a cost perhaps to your career. Certainly I feel to your mental health. And you really then have to be clear about, you know, what is my role in this game that I'm playing. And I can take a step back and say, okay, I do the podcast and I'm playing the long game and I don't have to be too much out there. And I have been too much out there and I've suffered for it. But yeah, I mean these are just two areas we can talk about at a future date. In in in the",
+      "words": [
         {
           "word": "the",
           "startTime": 1721.13,
@@ -34700,8 +34604,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1812.89,
-      "endTime": 1861.48,
-      "text": "book The Art and Science of Economic Policy, Kelkar and I have argued that there is a market failure in the criticism business. Because the critic personally takes the brunt of all the attacks that come by. But actually all the progress of the world is only made possible by the critics. So there's just something fundamentally unbalanced between the cost and benefit. It's an externality problem. The critic induces uh positive externality upon the world while paying a very high cost for herself. So I think that's an interesting distinction that maybe social media has amplified The size of the market failure. Maybe in the good old days, you could be a critic and the cost of being a critic",
+      "endTime": 1868.84,
+      "text": "book The Art and Science of Economic Policy, Kelkar and I have argued that there is a market failure in the criticism business. Because the critic personally takes the brunt of all the attacks that come by. But actually all the progress of the world is only made possible by the critics. So there's just something fundamentally unbalanced between the cost and benefit. It's an externality problem. The critic induces uh positive externality upon the world while paying a very high cost for herself. So I think that's an interesting distinction that maybe social media has amplified The size of the market failure. Maybe in the good old days, you could be a critic and the cost of being a critic was lower. Amit, what's your recommendation for this",
       "words": [
         {
           "word": "book",
@@ -35428,15 +35332,7 @@
           "startTime": 1861.08,
           "endTime": 1861.48,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1861.48,
-      "endTime": 1863.22,
-      "text": "was lower.",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 1861.48,
@@ -35448,15 +35344,7 @@
           "startTime": 1861.72,
           "endTime": 1863.22,
           "confidence": 0.9863
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1866.44,
-      "endTime": 1869.64,
-      "text": "Amit, what's your recommendation for this week?",
-      "words": [
+        },
         {
           "word": "Amit,",
           "startTime": 1866.44,
@@ -35492,21 +35380,21 @@
           "startTime": 1868.6,
           "endTime": 1868.84,
           "confidence": 1.0
-        },
-        {
-          "word": "week?",
-          "startTime": 1868.84,
-          "endTime": 1869.64,
-          "confidence": 0.9981
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1869.64,
-      "endTime": 2041.93,
-      "text": "So every week we're gonna give a couple of recommendations. And um more often than not, I'm gonna talk about books. And before I go to my specific recommendations, I wanna talk about books a little bit first in what they mean to me. Right? One of the beautiful things that has happened because of the scene and the unseen is that there is now this meme that has sprung up called the Seen and the Unseen bookshelf, where, you know, I give extensive show notes every book my um uh guest mentions or I mention it'll be there in the show notes. People uh often get those books. In fact someone said that the Amazon algo indicates that that if you, you know, go to the page of one book recommended by me, you'll find a other five books recommended by Amazon which have no connection to each other or to the central book, but they've all been recommended by me in the reading list. So uh I and I find that really heartening and it also goes to the heart of the lie of what people say that in this modern world people have short attention spans and they don't read anymore and all of that. And that's not true. That's not true. I mean my show indicates and maybe I'll elaborate on that at some day, but the scene and the unseen indicates that yeah, there are moments where we have short attention spans, we are, you know, scrolling up and down or swiping or whatever. But we all crave depth. We all want to understand the world and you know, and reading isn't dying at all. And to me the importance of reading also is and I'll link to a column down below about that. But I feel look, we make sense of the world by connecting dots. How do we collect those dots? In our personal experience we'll find very few dots and it'll take us many years to get them. But books give us the ability to collect many dots very fast. And this is especially true of fiction, you know, where which allow us not only to sort of live our own one life, the one life that we are given, but to live the lives of others. And I find that Something that is so magical and beautiful and uh uh you know, a gift that we are given and that we don't make enough use of. And uh so the book I'm going to recommend in episode one is a beautiful book which uh, you know, brings this home so vividly. It's called The Curious Incident of the Dog in the Night Time by Mark Haddon. And uh I'll quickly, you know, uh quote F Haddon's own words on what this book exactly i uh i is about. So now the book is about a 15-year-old boy with Asperger syndrome who is trying to find out who killed his neighbor's dog. So it's ostensibly a murder mystery, but written in the in the boy's voice, and that's just beautiful. And the way Haddon describes it is this: Curious Incident is not a book about Asperger's. It's a novel whose central character describes himself as, quote, a mathematician with some behavioral difficulties, stop quote. Indeed, he never uses the word aspergers or autism. I slightly regret the fact that the book Aspergers was used on the cover. If anything, it's a novel about difference, about being an outsider, about seeing the world in a surprising and revealing way. It's as much a novel about us as it is about Christopher. Stopquote. And you",
+      "startTime": 1868.84,
+      "endTime": 2110.76,
+      "text": "week? So every week we're gonna give a couple of recommendations. And um more often than not, I'm gonna talk about books. And before I go to my specific recommendations, I wanna talk about books a little bit first in what they mean to me. Right? One of the beautiful things that has happened because of the scene and the unseen is that there is now this meme that has sprung up called the Seen and the Unseen bookshelf, where, you know, I give extensive show notes every book my um uh guest mentions or I mention it'll be there in the show notes. People uh often get those books. In fact someone said that the Amazon algo indicates that that if you, you know, go to the page of one book recommended by me, you'll find a other five books recommended by Amazon which have no connection to each other or to the central book, but they've all been recommended by me in the reading list. So uh I and I find that really heartening and it also goes to the heart of the lie of what people say that in this modern world people have short attention spans and they don't read anymore and all of that. And that's not true. That's not true. I mean my show indicates and maybe I'll elaborate on that at some day, but the scene and the unseen indicates that yeah, there are moments where we have short attention spans, we are, you know, scrolling up and down or swiping or whatever. But we all crave depth. We all want to understand the world and you know, and reading isn't dying at all. And to me the importance of reading also is and I'll link to a column down below about that. But I feel look, we make sense of the world by connecting dots. How do we collect those dots? In our personal experience we'll find very few dots and it'll take us many years to get them. But books give us the ability to collect many dots very fast. And this is especially true of fiction, you know, where which allow us not only to sort of live our own one life, the one life that we are given, but to live the lives of others. And I find that Something that is so magical and beautiful and uh uh you know, a gift that we are given and that we don't make enough use of. And uh so the book I'm going to recommend in episode one is a beautiful book which uh, you know, brings this home so vividly. It's called The Curious Incident of the Dog in the Night Time by Mark Haddon. And uh I'll quickly, you know, uh quote F Haddon's own words on what this book exactly i uh i is about. So now the book is about a 15-year-old boy with Asperger syndrome who is trying to find out who killed his neighbor's dog. So it's ostensibly a murder mystery, but written in the in the boy's voice, and that's just beautiful. And the way Haddon describes it is this: Curious Incident is not a book about Asperger's. It's a novel whose central character describes himself as, quote, a mathematician with some behavioral difficulties, stop quote. Indeed, he never uses the word aspergers or autism. I slightly regret the fact that the book Aspergers was used on the cover. If anything, it's a novel about difference, about being an outsider, about seeing the world in a surprising and revealing way. It's as much a novel about us as it is about Christopher. Stopquote. And you know that that kind of sums up uh, you know, that whole aspect of seeing the world through the the the eyes of others. Like I remember there's this great uh philosophical essay of the early seventies by Thomas Nag Nagel called What is it like to be a bat? And bat of course bats of course don't have eyes. They navigate the world through something called echolocation. So they kind of s you know, see the world through sound as it were. And Nagel's point was that we can describe this experience and we know how scientifically it works, but we can never actually imagine it. It is outside our imagination. But the beautiful thing about human life is that we do imagine it. And you can give scientific reasons for that. Like, you know, V.S. Ram Chandran once met me at a TED event and told me all about mirror neurons before he wrote the book in which he spoke about it at length. Where we have mirror neurons in our brain which mimic the experiences of others when we hear about them and therefore lead to, you know, empathy and compassion and all of those things. And we are actually wired to empathize with each other. And we are wired for connection and community and all of these things. And there is nothing that amplifies this in us. Uh, you know, and makes life worth living, frankly, to me, than to be able to experience the lives and thoughts of others.",
       "words": [
+        {
+          "word": "week?",
+          "startTime": 1868.84,
+          "endTime": 1869.64,
+          "confidence": 0.9981
+        },
         {
           "word": "So",
           "startTime": 1869.64,
@@ -39172,15 +39060,7 @@
           "startTime": 2041.77,
           "endTime": 2041.93,
           "confidence": 0.8385
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2041.93,
-      "endTime": 2043.44,
-      "text": "know that that kind of",
-      "words": [
+        },
         {
           "word": "know",
           "startTime": 2041.93,
@@ -39210,15 +39090,7 @@
           "startTime": 2042.97,
           "endTime": 2043.44,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2044.12,
-      "endTime": 2110.76,
-      "text": "sums up uh, you know, that whole aspect of seeing the world through the the the eyes of others. Like I remember there's this great uh philosophical essay of the early seventies by Thomas Nag Nagel called What is it like to be a bat? And bat of course bats of course don't have eyes. They navigate the world through something called echolocation. So they kind of s you know, see the world through sound as it were. And Nagel's point was that we can describe this experience and we know how scientifically it works, but we can never actually imagine it. It is outside our imagination. But the beautiful thing about human life is that we do imagine it. And you can give scientific reasons for that. Like, you know, V.S. Ram Chandran once met me at a TED event and told me all about mirror neurons before he wrote the book in which he spoke about it at length. Where we have mirror neurons in our brain which mimic the experiences of others when we hear about them and therefore lead to, you know, empathy and compassion and all of those things. And we are actually wired to empathize with each other. And we are wired for connection and community and all of these things. And there is nothing that amplifies this in us. Uh, you know, and makes life worth living, frankly, to me, than to be able to experience the lives and thoughts of others.",
-      "words": [
+        },
         {
           "word": "sums",
           "startTime": 2044.12,
@@ -43434,8 +43306,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2268.9,
-      "endTime": 2350.79,
-      "text": "I just evangelized the glory of big ambitious books of ideas, but my recommendation for today is uh a music album by U2, which is called Songs of Surrender. Uh, U2 is a band that has been around forever, and uh they have put together some of their old works, 40 songs, a little bit of new and mostly old. And uh I found it interesting that they have reimagined those songs. in a more mature and grown up way. So they were kids when they did many of those things. And here they're looking back at the song and the world and reimagining the song many times the musical arrangement is different. Many times the uh lyrics have been edited in interesting ways. So it's not a formula. So there is an MTV unplugged is a certain formula. This is not that. This is thinking from scratch about what a lot of us know well. And I found it deeply interesting. I also found it interesting to think that maybe there are people today who will do this backwards. Maybe there are young people today who will start at Songs of Surrender and then go back much later to Joshua Tree and Unforgettable Fire and so on. So I was just fascinated at this new album that landed about two months ago. And this",
+      "endTime": 2350.35,
+      "text": "I just evangelized the glory of big ambitious books of ideas, but my recommendation for today is uh a music album by U2, which is called Songs of Surrender. Uh, U2 is a band that has been around forever, and uh they have put together some of their old works, 40 songs, a little bit of new and mostly old. And uh I found it interesting that they have reimagined those songs. in a more mature and grown up way. So they were kids when they did many of those things. And here they're looking back at the song and the world and reimagining the song many times the musical arrangement is different. Many times the uh lyrics have been edited in interesting ways. So it's not a formula. So there is an MTV unplugged is a certain formula. This is not that. This is thinking from scratch about what a lot of us know well. And I found it deeply interesting. I also found it interesting to think that maybe there are people today who will do this backwards. Maybe there are young people today who will start at Songs of Surrender and then go back much later to Joshua Tree and Unforgettable Fire and so on. So I was just fascinated at this new album that landed about two months ago.",
       "words": [
         {
           "word": "I",
@@ -44774,7 +44646,15 @@
           "startTime": 2349.98,
           "endTime": 2350.35,
           "confidence": 0.9983
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2350.47,
+      "endTime": 2506.1,
+      "text": "And this reminds me of the phrase that you used earlier about uh you know, when you eloquently said that we have works in progress between uh uh coal we bring between coal and diamond. And the thing about artists is, and by the way, I must say that uh our wonderful producers Bhatika and Rakshida just before this referred to us as artists, and I was like so sort of uh thrilled by that artist, and I think that's what I'm kyabaki. But um An interesting thing that happens is artists are always evolving and they're always creating. But the way their work has come in the marketplace so far, and it's changing and I'll talk about how, but the way it's come in the marketplace so far is that time and again artists are forced to essentially ossify themselves into one static thing and that becomes them. So for example, you two records a Joshua Tree and that version of With or Without You performed at that particular time by those particular boys is a version everybody knows and everybody craves. You know, Radiohead, for example, is sick of performing creep. That was a breakaway hit, of course, but it was written when they were immature young men. It's an angsty teenagerish kind of song. And sure it's a great song, but they're sick of performing it because that's not who they are. they have moved on. I had a great episode of the scene and the unseen with um uh b the musician Gaurav Chintamani and w he's riffed on the same theme as well. That it's tragic that that that sometimes Getting a big hit can be a curse because then wherever you go, people are just, you know, shouting that song at you. And you've changed, you've moved on, you're a different person, but you're ossified into that one three-minute package thing that you did twenty years ago. And in a sense, what U2 is doing with this, and i it to me this is is much better that they did this than an album of all new songs. Because they're saying that, you know, that these songs that you know that was one moment in time. We are evolving, we are changing. This is this moment in time. It could be something else entirely a little later. And and part of the reason they were forced to ossify themselves was that they were limited by form, in the sense that, you know you had those conventional forms of the three minute pop song and the forty minute album and it has to come out this way and the industry function then this way. Kiyab album Nikalo, firab dosal tour karo, firolak album Nikalo and then you become an old band and you only come to India and uh, you know, perform hits of forty years ago. uh which also happens to people. But today, in modern times, you know, bands can just go on YouTube, they can meet their fans on Discord, they can have live jamming sessions. A song is always changing from day to day today. And I find uh that journey sort of fascinating and the ability to kind of, you know, be able to do that.",
+      "words": [
         {
           "word": "And",
           "startTime": 2350.47,
@@ -44786,15 +44666,7 @@
           "startTime": 2350.63,
           "endTime": 2350.79,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2350.79,
-      "endTime": 2506.1,
-      "text": "reminds me of the phrase that you used earlier about uh you know, when you eloquently said that we have works in progress between uh uh coal we bring between coal and diamond. And the thing about artists is, and by the way, I must say that uh our wonderful producers Bhatika and Rakshida just before this referred to us as artists, and I was like so sort of uh thrilled by that artist, and I think that's what I'm kyabaki. But um An interesting thing that happens is artists are always evolving and they're always creating. But the way their work has come in the marketplace so far, and it's changing and I'll talk about how, but the way it's come in the marketplace so far is that time and again artists are forced to essentially ossify themselves into one static thing and that becomes them. So for example, you two records a Joshua Tree and that version of With or Without You performed at that particular time by those particular boys is a version everybody knows and everybody craves. You know, Radiohead, for example, is sick of performing creep. That was a breakaway hit, of course, but it was written when they were immature young men. It's an angsty teenagerish kind of song. And sure it's a great song, but they're sick of performing it because that's not who they are. they have moved on. I had a great episode of the scene and the unseen with um uh b the musician Gaurav Chintamani and w he's riffed on the same theme as well. That it's tragic that that that sometimes Getting a big hit can be a curse because then wherever you go, people are just, you know, shouting that song at you. And you've changed, you've moved on, you're a different person, but you're ossified into that one three-minute package thing that you did twenty years ago. And in a sense, what U2 is doing with this, and i it to me this is is much better that they did this than an album of all new songs. Because they're saying that, you know, that these songs that you know that was one moment in time. We are evolving, we are changing. This is this moment in time. It could be something else entirely a little later. And and part of the reason they were forced to ossify themselves was that they were limited by form, in the sense that, you know you had those conventional forms of the three minute pop song and the forty minute album and it has to come out this way and the industry function then this way. Kiyab album Nikalo, firab dosal tour karo, firolak album Nikalo and then you become an old band and you only come to India and uh, you know, perform hits of forty years ago. uh which also happens to people. But today, in modern times, you know, bands can just go on YouTube, they can meet their fans on Discord, they can have live jamming sessions. A song is always changing from day to day today. And I find uh that journey sort of fascinating and the ability to kind of, you know, be able to do that.",
-      "words": [
+        },
         {
           "word": "reminds",
           "startTime": 2350.79,
@@ -55506,8 +55378,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2903.34,
-      "endTime": 2929.58,
-      "text": "It could well be the fuel for masterpieces of art in all ways. So There is a reason why we got a Rabindranath Tagore coming about in a very difficult time of this country. He was personally privileged, but he was the kind of person that was wired into what was happening in the world around him. So it could well be that good art is counter-cyclical, again,",
+      "endTime": 2937.97,
+      "text": "It could well be the fuel for masterpieces of art in all ways. So There is a reason why we got a Rabindranath Tagore coming about in a very difficult time of this country. He was personally privileged, but he was the kind of person that was wired into what was happening in the world around him. So it could well be that good art is counter-cyclical, again, to use macroeconomics, that good times are the worst thing that you can supply as fuel for the young people who would then go on to build the art.",
       "words": [
         {
           "word": "It",
@@ -55916,15 +55788,7 @@
           "startTime": 2929.34,
           "endTime": 2929.58,
           "confidence": 0.8536
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2929.58,
-      "endTime": 2931.18,
-      "text": "to use macroeconomics, that",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 2929.58,
@@ -55948,15 +55812,7 @@
           "startTime": 2930.86,
           "endTime": 2931.18,
           "confidence": 0.9886
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2931.18,
-      "endTime": 2937.97,
-      "text": "good times are the worst thing that you can supply as fuel for the young people who would then go on to build the art.",
-      "words": [
+        },
         {
           "word": "good",
           "startTime": 2931.18,
@@ -56112,8 +55968,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2938.33,
-      "endTime": 3073.91,
-      "text": "So, you know, before we end, like a final question and I asked this to Eric Weinstein in an uh scene on scene episode I did with him. And my postulation was this, that if you look at uh like obviously there are more people alive in the world today than ever before. And the you know, and it is a much and these people who are alive in the world, a mu much higher absolute number of them are empowered to create art than ever before. Right? So if you look at the Renaissance period and the great artists it gave you, and if you look at different periods of time where art flourished and all of that, and my argument is that your sample size of people who have the luck and the access and the ability to create great art is orders a magnitude bigger than ever before. So you should therefore technically imagine Much greater works of art coming out now than ever before. And uh if that is not happening, it can be because of a number of reasons. Maybe we are overvaluing and overrating w uh you know works of the past. Maybe works of the past are important because they open new doorways and there aren't so many new doorways to open. Or maybe in these times you are actually getting those masterpieces and many more of them, but in a splintered uh sort of um uh economy where you know there is no one mainstream anymore and uh you know people are listening to different niches or whatever maybe they're getting lost and maybe you know many of um uh uh you know many of them never come to prominence at all. Like Bach really became a big thing like decades after he was dead. You know, Billy Joel was almost Piano Man almost disappeared into oblivion. There's a very moving story I'll link from the show notes about how one particular guy loved the song Piano Man so much that he went to radio station after radio station after radio station saying please play this, please play this and finally he did a trade off with one guy, almost bribed him in a sense, um uh you know, at a big radio station to play the song. And the song became a hit and Billy Joel who wasn't gonna do any more music, then made so many more albums. So there's so much luck involved as well. And so what's kind and Eric of course disagreed vehemently and he said, No, that was great art. How can you even say that? But I feel that hey, you know, there are so many more people alive today who also have the L L Ms. They also have access to great much more great art of the future o of the past, which they can get inspired by. So you'd imagine that there's greater potential for",
+      "endTime": 3074.55,
+      "text": "So, you know, before we end, like a final question and I asked this to Eric Weinstein in an uh scene on scene episode I did with him. And my postulation was this, that if you look at uh like obviously there are more people alive in the world today than ever before. And the you know, and it is a much and these people who are alive in the world, a mu much higher absolute number of them are empowered to create art than ever before. Right? So if you look at the Renaissance period and the great artists it gave you, and if you look at different periods of time where art flourished and all of that, and my argument is that your sample size of people who have the luck and the access and the ability to create great art is orders a magnitude bigger than ever before. So you should therefore technically imagine Much greater works of art coming out now than ever before. And uh if that is not happening, it can be because of a number of reasons. Maybe we are overvaluing and overrating w uh you know works of the past. Maybe works of the past are important because they open new doorways and there aren't so many new doorways to open. Or maybe in these times you are actually getting those masterpieces and many more of them, but in a splintered uh sort of um uh economy where you know there is no one mainstream anymore and uh you know people are listening to different niches or whatever maybe they're getting lost and maybe you know many of um uh uh you know many of them never come to prominence at all. Like Bach really became a big thing like decades after he was dead. You know, Billy Joel was almost Piano Man almost disappeared into oblivion. There's a very moving story I'll link from the show notes about how one particular guy loved the song Piano Man so much that he went to radio station after radio station after radio station saying please play this, please play this and finally he did a trade off with one guy, almost bribed him in a sense, um uh you know, at a big radio station to play the song. And the song became a hit and Billy Joel who wasn't gonna do any more music, then made so many more albums. So there's so much luck involved as well. And so what's kind and Eric of course disagreed vehemently and he said, No, that was great art. How can you even say that? But I feel that hey, you know, there are so many more people alive today who also have the L L Ms. They also have access to great much more great art of the future o of the past, which they can get inspired by. So you'd imagine that there's greater potential for that now?",
       "words": [
         {
           "word": "So,",
@@ -59072,15 +58928,7 @@
           "startTime": 3073.75,
           "endTime": 3073.91,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3073.91,
-      "endTime": 3210.14,
-      "text": "that now? So first I agree with you that there is a problem. Okay. So I I wouldn't let off our world lightly. That, you know, the foundation. So think of the number of people in India who have the means, the luxury, the ability to buy a sitar, okay, and get a teacher and so on. It is orders of magnitude bigger than it used to be. So, you know, statistically there should be some tales. and there should be amazing things that are coming out. So I'm not ready to let off the world so lightly. And as I said, my argument is it's the fault of the macroeconomists. Uh I want to s link this to a related debate that has been taking place in the world of science. Okay? So you look back, for example, at the great feats of science of the olden days, Rutherford famously has a picture where he's holding in his hands the assembly in which he fired alpha particles at gold foil and discovered that there is such a thing as a nucleus. And those were simple contraptions that created remarkable insights. Now compared to that, the number of scientists has exploded. The money that goes into the science and the machine of the universities and uh labs has exploded. But by all accounts there is a sense that the pace of fundamental innovation has slowed down. So we don't get the four papers by Einstein in one year, each of which was a world-shattering paper that opened new vistas. So I think there is a concern that something about the machine, something about the modern world, is interfering with the great leaps. And I think it's interesting and important to wonder why. I don't want to belabor the next question which is so what has gone wrong and how can it be changed? But right now I just want to say that exactly as in art, I think there is a question in the world of science that you've driven up the funding a million fold. You've driven up the resourcing of the brains that are being put into it ten thousand fold. How come we're just, you know, building trivial things like food delivery apps and what I consider a relatively trivial innovation, the LLMs?",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 3073.91,
@@ -59092,7 +58940,15 @@
           "startTime": 3074.15,
           "endTime": 3074.55,
           "confidence": 0.7213
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3074.55,
+      "endTime": 3210.14,
+      "text": "So first I agree with you that there is a problem. Okay. So I I wouldn't let off our world lightly. That, you know, the foundation. So think of the number of people in India who have the means, the luxury, the ability to buy a sitar, okay, and get a teacher and so on. It is orders of magnitude bigger than it used to be. So, you know, statistically there should be some tales. and there should be amazing things that are coming out. So I'm not ready to let off the world so lightly. And as I said, my argument is it's the fault of the macroeconomists. Uh I want to s link this to a related debate that has been taking place in the world of science. Okay? So you look back, for example, at the great feats of science of the olden days, Rutherford famously has a picture where he's holding in his hands the assembly in which he fired alpha particles at gold foil and discovered that there is such a thing as a nucleus. And those were simple contraptions that created remarkable insights. Now compared to that, the number of scientists has exploded. The money that goes into the science and the machine of the universities and uh labs has exploded. But by all accounts there is a sense that the pace of fundamental innovation has slowed down. So we don't get the four papers by Einstein in one year, each of which was a world-shattering paper that opened new vistas. So I think there is a concern that something about the machine, something about the modern world, is interfering with the great leaps. And I think it's interesting and important to wonder why. I don't want to belabor the next question which is so what has gone wrong and how can it be changed? But right now I just want to say that exactly as in art, I think there is a question in the world of science that you've driven up the funding a million fold. You've driven up the resourcing of the brains that are being put into it ten thousand fold. How come we're just, you know, building trivial things like food delivery apps and what I consider a relatively trivial innovation, the LLMs?",
+      "words": [
         {
           "word": "So",
           "startTime": 3074.55,

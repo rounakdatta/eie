@@ -5,7 +5,7 @@
     "durationSeconds": 3351,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -147,8 +147,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 23.8,
-      "endTime": 36.44,
-      "text": "I want to tell a story from the deep past. See, I have the white hair to prove it. Okay, I know a deep past. I know a deep past of India that most of you in this audience do not. This is a past",
+      "endTime": 98.27,
+      "text": "I want to tell a story from the deep past. See, I have the white hair to prove it. Okay, I know a deep past. I know a deep past of India that most of you in this audience do not. This is a past where the state of the art electronics was something exotic in India. and it was unavailable owing to Indian protectionism. Okay? So the Indian government thought that you could foster the growth of Indian industry and the success of Indian firms through self reliance and there were trade barriers and it was just very difficult to find many kinds of modern electronics in India. So you could get some consumer stuff, but you went a little offbeat and you just couldn't buy these things. And then there were elaborate subterranean chains of a informal market, some would say a black market, whereby you could obtain those things and you had to ask people traveling to buy you something. And for me personally, the most amazing purchase of those years was one of the early chess computers. So I had a tiny little device where you would move the pieces and",
       "words": [
         {
           "word": "I",
@@ -419,29 +419,13 @@
           "startTime": 35.88,
           "endTime": 36.44,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 36.44,
-      "endTime": 37.94,
-      "text": "where",
-      "words": [
+        },
         {
           "word": "where",
           "startTime": 36.44,
           "endTime": 37.94,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 38.2,
-      "endTime": 100.48,
-      "text": "the state of the art electronics was something exotic in India. and it was unavailable owing to Indian protectionism. Okay? So the Indian government thought that you could foster the growth of Indian industry and the success of Indian firms through self reliance and there were trade barriers and it was just very difficult to find many kinds of modern electronics in India. So you could get some consumer stuff, but you went a little offbeat and you just couldn't buy these things. And then there were elaborate subterranean chains of a informal market, some would say a black market, whereby you could obtain those things and you had to ask people traveling to buy you something. And for me personally, the most amazing purchase of those years was one of the early chess computers. So I had a tiny little device where you would move the pieces and LED would blink and it would tell you how to",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 38.2,
@@ -1335,7 +1319,15 @@
           "startTime": 97.77,
           "endTime": 98.27,
           "confidence": 0.9975
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 98.96,
+      "endTime": 103.84,
+      "text": "LED would blink and it would tell you how to move. I had the same one. Oh my God. Wow. Continue.",
+      "words": [
         {
           "word": "LED",
           "startTime": 98.96,
@@ -1395,15 +1387,7 @@
           "startTime": 100.4,
           "endTime": 100.48,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 100.48,
-      "endTime": 103.84,
-      "text": "move. I had the same one. Oh my God. Wow. Continue.",
-      "words": [
+        },
         {
           "word": "move.",
           "startTime": 100.48,
@@ -1475,8 +1459,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 103.84,
-      "endTime": 137.93,
-      "text": "Okay. But these were difficult exotic things to get. Like I we had a neighbor who was flying to Singapore who brought this thing back for us. Okay? And you would think this is but a distant memory. Okay, the world has finished with this kind of protectionist nonsense, and there is openness in trade and There will be, you know, large scale open dealerships and modern retail, and you could pretty much buy anything anywhere. And I find it amazing that in the streets of Shanghai, in the streets of Kazakhstan, you are now back to",
+      "endTime": 168.89,
+      "text": "Okay. But these were difficult exotic things to get. Like I we had a neighbor who was flying to Singapore who brought this thing back for us. Okay? And you would think this is but a distant memory. Okay, the world has finished with this kind of protectionist nonsense, and there is openness in trade and There will be, you know, large scale open dealerships and modern retail, and you could pretty much buy anything anywhere. And I find it amazing that in the streets of Shanghai, in the streets of Kazakhstan, you are now back to a black market for microchips. So like you're supposed to go nudge nudge and hint hint and wink wink and find out who is the right dealer, who has the correct Nvidia A hundred chip. and you will go buy it from that person. And this is happening in Shanghai today and on a much larger array of chips in Kazakhstan, where there is a black market where people are flying from New Delhi carrying a suitcase of chips to sell for a profit in central Asia. So it's just so amazing that something's come back.",
       "words": [
         {
           "word": "Okay.",
@@ -2059,15 +2043,7 @@
           "startTime": 137.61,
           "endTime": 137.93,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 137.93,
-      "endTime": 139.53,
-      "text": "a black market for",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 137.93,
@@ -2091,15 +2067,7 @@
           "startTime": 139.29,
           "endTime": 139.53,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 139.53,
-      "endTime": 168.89,
-      "text": "microchips. So like you're supposed to go nudge nudge and hint hint and wink wink and find out who is the right dealer, who has the correct Nvidia A hundred chip. and you will go buy it from that person. And this is happening in Shanghai today and on a much larger array of chips in Kazakhstan, where there is a black market where people are flying from New Delhi carrying a suitcase of chips to sell for a profit in central Asia. So it's just so amazing that something's come back.",
-      "words": [
+        },
         {
           "word": "microchips.",
           "startTime": 139.53,
@@ -5029,8 +4997,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 289.45,
-      "endTime": 558.75,
-      "text": "So you know, we'll link to a bunch of pieces on this and you know really right now the first draft of history is being written. Uh there's a wonderful piece by Greg Gibb in the Wall Street Journal, which kind of details uh what and the how uh I'll briefly try and summarize it. Until recently, uh you know, there was a bipartisan consensus in the US, across the aisle, uh across the Democratic and Republican parties, that hey, number one, free trade is a damn good thing, and number two, we should engage with engage with China, we should be friends, et cetera, et cetera. Right. And so it it's almost like the end of history, as it were, to use Fuku Fukuyama's often misinterpreted phrase. That we'd figured shit out. We knew that trade wars don't help, et cetera, et cetera. It was like this. Circa twenty sixteen, even before the elections happened, you heard voices from within the Obama administration, including from Jake Sullivan, who is now the national security advisor, kind of beginning to question this. So it wasn't as if everything happened with Trump. Now Trump came to power on the back of a lot of simplistic rhetoric. Right. One of the reasons for his success I've often speculated is that he came up with these simple narratives which everyone could understand. And these simple narratives were wrong, but be people could get them. So for example, a lot of his appeal was to the American Midwest where there had been loss of jobs and you know it felt like life had gotten worse. And he would tell them that look here's the deal. That number one, and uh immigrants are coming and taking your job, so anti immigration message. And number two, your jobs are being shipped overseas. So anti trade uh message. So when Trump comes into power, he pivots completely and he goes against China and we'll discuss the how of it uh shortly. In twenty nineteen it seems that there is hope. When Joe Biden, who is you know going to be the next candidate eventually, uh tweets against him. He says I will reverse Trump's policies. But by the time Biden comes to power, there is actually dissent in his own administration on what to do. Janet Yellen, who's his treasury secretary, says that hey, you know, let's let's engage with China, let's lower the tariffs, let's go back to the good old days. Catherine Tai, who's a trade secretary, and perhaps where you stand depends on where you sit. Uh so she says that no no, we need higher tariffs, and Jake Sullivan is a national security advisor. And eventually that's the person that Biden um uh kind of agrees with, and we go in that direction. And now for the first time there is a bipartisan consensus in the opposite direction. You know, in just eight years, everything is switched around, and the consensus now is that we are at war with China. So let me briefly give a summary of the how this war is taking place. And I call it a war at the end of the last chapter. The New York Times has this great article, which, you know, ha has tech wars in the headlines. And if you look at the kind of actions that America is doing and the threat they pose to China, that it's not entirely unfeasible to think that the Chinese might with good reason say that, you know, our existence and our prosperity is being imperiled by this. It is hostile action. And this is what you could describe as a three legged stool. Right. And there are three legs to this. So first is industrial policy, where the Americans are saying that there are certain areas where we need to beef up our development and we are going to do that with heavy subsidies. For example, TSMC of Taiwan announced in 2020 that, you know, we'll um open a fabricating plant in Arizona and they were offered subsidies and now they're opening three of them, in fact. And why they are critical is something we'll uh no doubt come to later. So that's industrial policy again, something that you know India tried tried in the fifties and sixties, and it's not a good way to think about the world. The second is tariffs, where they've imposed tariffs on various Chinese goods and chips and et cetera, et cetera, and that's one way of hurting them and the tariffs have just gone higher and higher under both the Trump and Biden administrations. And the third is export controls, where the idea is that If you want to stop China from developing all this indigenously, you need to stop the flow of IP, for example. You need to stop the flow of chips and anything that they might need to help them get ahead. A lot of scientific progress today doesn't happen by trial and error and experiments. A lot of it happens by simulation. Simulation at scale need, you know, high power chips and all of that. So that is another way. So this is the three prong stool, you know? Um industrial policy, tariffs and export control. So Would you like to elaborate on this? Yeah.",
+      "endTime": 558.19,
+      "text": "So you know, we'll link to a bunch of pieces on this and you know really right now the first draft of history is being written. Uh there's a wonderful piece by Greg Gibb in the Wall Street Journal, which kind of details uh what and the how uh I'll briefly try and summarize it. Until recently, uh you know, there was a bipartisan consensus in the US, across the aisle, uh across the Democratic and Republican parties, that hey, number one, free trade is a damn good thing, and number two, we should engage with engage with China, we should be friends, et cetera, et cetera. Right. And so it it's almost like the end of history, as it were, to use Fuku Fukuyama's often misinterpreted phrase. That we'd figured shit out. We knew that trade wars don't help, et cetera, et cetera. It was like this. Circa twenty sixteen, even before the elections happened, you heard voices from within the Obama administration, including from Jake Sullivan, who is now the national security advisor, kind of beginning to question this. So it wasn't as if everything happened with Trump. Now Trump came to power on the back of a lot of simplistic rhetoric. Right. One of the reasons for his success I've often speculated is that he came up with these simple narratives which everyone could understand. And these simple narratives were wrong, but be people could get them. So for example, a lot of his appeal was to the American Midwest where there had been loss of jobs and you know it felt like life had gotten worse. And he would tell them that look here's the deal. That number one, and uh immigrants are coming and taking your job, so anti immigration message. And number two, your jobs are being shipped overseas. So anti trade uh message. So when Trump comes into power, he pivots completely and he goes against China and we'll discuss the how of it uh shortly. In twenty nineteen it seems that there is hope. When Joe Biden, who is you know going to be the next candidate eventually, uh tweets against him. He says I will reverse Trump's policies. But by the time Biden comes to power, there is actually dissent in his own administration on what to do. Janet Yellen, who's his treasury secretary, says that hey, you know, let's let's engage with China, let's lower the tariffs, let's go back to the good old days. Catherine Tai, who's a trade secretary, and perhaps where you stand depends on where you sit. Uh so she says that no no, we need higher tariffs, and Jake Sullivan is a national security advisor. And eventually that's the person that Biden um uh kind of agrees with, and we go in that direction. And now for the first time there is a bipartisan consensus in the opposite direction. You know, in just eight years, everything is switched around, and the consensus now is that we are at war with China. So let me briefly give a summary of the how this war is taking place. And I call it a war at the end of the last chapter. The New York Times has this great article, which, you know, ha has tech wars in the headlines. And if you look at the kind of actions that America is doing and the threat they pose to China, that it's not entirely unfeasible to think that the Chinese might with good reason say that, you know, our existence and our prosperity is being imperiled by this. It is hostile action. And this is what you could describe as a three legged stool. Right. And there are three legs to this. So first is industrial policy, where the Americans are saying that there are certain areas where we need to beef up our development and we are going to do that with heavy subsidies. For example, TSMC of Taiwan announced in 2020 that, you know, we'll um open a fabricating plant in Arizona and they were offered subsidies and now they're opening three of them, in fact. And why they are critical is something we'll uh no doubt come to later. So that's industrial policy again, something that you know India tried tried in the fifties and sixties, and it's not a good way to think about the world. The second is tariffs, where they've imposed tariffs on various Chinese goods and chips and et cetera, et cetera, and that's one way of hurting them and the tariffs have just gone higher and higher under both the Trump and Biden administrations. And the third is export controls, where the idea is that If you want to stop China from developing all this indigenously, you need to stop the flow of IP, for example. You need to stop the flow of chips and anything that they might need to help them get ahead. A lot of scientific progress today doesn't happen by trial and error and experiments. A lot of it happens by simulation. Simulation at scale need, you know, high power chips and all of that. So that is another way. So this is the three prong stool, you know? Um industrial policy, tariffs and export control. So Would you like to elaborate on this?",
       "words": [
         {
           "word": "So",
@@ -10359,21 +10327,21 @@
           "startTime": 557.47,
           "endTime": 558.19,
           "confidence": 0.7513
-        },
-        {
-          "word": "Yeah.",
-          "startTime": 558.19,
-          "endTime": 558.75,
-          "confidence": 0.865
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 558.75,
-      "endTime": 564.83,
-      "text": "Uh it's hard to even imagine the scale and depth of the export",
+      "startTime": 558.19,
+      "endTime": 717.77,
+      "text": "Yeah. Uh it's hard to even imagine the scale and depth of the export controls. The only good analogies are found in pre-1989 export restrictions against the USSR. So in the way that the West blocked off the USSR, at the time China was a very poor country, it was not relevant. So at the time the focus was on the USSR. What is being done now is something comparable to that. Let me run through the pieces that the United States and its Western allies. This includes uh decisions in Japan, in Holland, in Germany, and so on. So, while a lot of the first moves came from the United States, today all the advanced economies are more or less singing the same tune. Proposition one, there are certain things that cannot be exported. So, for example, The machines that ASML makes, the most advanced chipmaking machines of the world, cannot be exported to China and Russia and their allies. Second, you can't even export American software and American tools that are used to make these uh semiconductor chips. And actually there is a global monopoly there in the sense that. Uh all the semiconductor work of the world is done using three American software systems. Further, the way the world works today is you can't be an Indian company using American software, doing chip design, and sending the design to a Chinese vendor. So the depth is extreme. That if any company anywhere in the world will use American tools, American software, and do work for a Chinese customer. Then they will be sanctioned as well. And on top of this, the Americans announced restrictions that if you're an American citizen or a green card holder, you cannot work in these sectors in China. Okay? And thousands of critical leadership, scientific, and engineering staff had to leave China or choose to adopt a Chinese citizenship. You could not have your cake in ET2, you could not be an American citizen and also work in a Chinese electronics company carrying advanced knowledge into there. So it is an amazing depth of export controls that is sought to be imposed upon not just China, but the whole world. And I think you know all of us need to pause and understand The scale and complexity of what is being done.",
       "words": [
+        {
+          "word": "Yeah.",
+          "startTime": 558.19,
+          "endTime": 558.75,
+          "confidence": 0.865
+        },
         {
           "word": "Uh",
           "startTime": 558.75,
@@ -10451,15 +10419,7 @@
           "startTime": 564.19,
           "endTime": 564.83,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 564.83,
-      "endTime": 566.43,
-      "text": "controls. The",
-      "words": [
+        },
         {
           "word": "controls.",
           "startTime": 564.83,
@@ -10471,15 +10431,7 @@
           "startTime": 566.03,
           "endTime": 566.43,
           "confidence": 0.9907
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 566.43,
-      "endTime": 716.97,
-      "text": "only good analogies are found in pre-1989 export restrictions against the USSR. So in the way that the West blocked off the USSR, at the time China was a very poor country, it was not relevant. So at the time the focus was on the USSR. What is being done now is something comparable to that. Let me run through the pieces that the United States and its Western allies. This includes uh decisions in Japan, in Holland, in Germany, and so on. So, while a lot of the first moves came from the United States, today all the advanced economies are more or less singing the same tune. Proposition one, there are certain things that cannot be exported. So, for example, The machines that ASML makes, the most advanced chipmaking machines of the world, cannot be exported to China and Russia and their allies. Second, you can't even export American software and American tools that are used to make these uh semiconductor chips. And actually there is a global monopoly there in the sense that. Uh all the semiconductor work of the world is done using three American software systems. Further, the way the world works today is you can't be an Indian company using American software, doing chip design, and sending the design to a Chinese vendor. So the depth is extreme. That if any company anywhere in the world will use American tools, American software, and do work for a Chinese customer. Then they will be sanctioned as well. And on top of this, the Americans announced restrictions that if you're an American citizen or a green card holder, you cannot work in these sectors in China. Okay? And thousands of critical leadership, scientific, and engineering staff had to leave China or choose to adopt a Chinese citizenship. You could not have your cake in ET2, you could not be an American citizen and also work in a Chinese electronics company carrying advanced knowledge into there. So it is an amazing depth of export controls that is sought to be imposed upon not just China, but the whole world. And I think you know all of us need to pause and understand The scale and complexity of what is",
-      "words": [
+        },
         {
           "word": "only",
           "startTime": 566.43,
@@ -12711,15 +12663,7 @@
           "startTime": 716.81,
           "endTime": 716.97,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 716.97,
-      "endTime": 759.82,
-      "text": "being done. And a particularly pernicious piece of legislation about this is the FDPR. And I'll just read out a line from Alex Palmer's NYT piece to indicate how pernicious it is. Under the FDPR, foreign made items are subject to American controls if they were produced using American technology or software. It is a sweeping assertion of extra territorial power. Even if an item is made and shipped outside the United States, never once crossing the country's borders, and contains no US origin components or technology in the final product. it can still be considered an American good. And the and the earliest and primary target of this was of course Huawei. But y you know, it it's it's kind of staggering, uh the the the sort of the hegemonic implications of this.",
-      "words": [
+        },
         {
           "word": "being",
           "startTime": 716.97,
@@ -12731,7 +12675,15 @@
           "startTime": 717.21,
           "endTime": 717.77,
           "confidence": 0.9301
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 717.77,
+      "endTime": 760.06,
+      "text": "And a particularly pernicious piece of legislation about this is the FDPR. And I'll just read out a line from Alex Palmer's NYT piece to indicate how pernicious it is. Under the FDPR, foreign made items are subject to American controls if they were produced using American technology or software. It is a sweeping assertion of extra territorial power. Even if an item is made and shipped outside the United States, never once crossing the country's borders, and contains no US origin components or technology in the final product. it can still be considered an American good. And the and the earliest and primary target of this was of course Huawei. But y you know, it it's it's kind of staggering, uh the the the sort of the hegemonic implications of this. So",
+      "words": [
         {
           "word": "And",
           "startTime": 717.77,
@@ -13523,21 +13475,21 @@
           "startTime": 759.02,
           "endTime": 759.82,
           "confidence": 0.7746
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 759.82,
-      "endTime": 779.68,
-      "text": "So the the scale of these restrictions are just breathtaking. We've never seen them before. So for right now, we'd just like to show the three legs of the stool. And you know if gentle readers you have not been watching this space then you know you should wake up and start understanding the scale and scope of what is being",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 759.82,
           "endTime": 760.06,
           "confidence": 0.8741
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 760.06,
+      "endTime": 779.68,
+      "text": "the the scale of these restrictions are just breathtaking. We've never seen them before. So for right now, we'd just like to show the three legs of the stool. And you know if gentle readers you have not been watching this space then you know you should wake up and start understanding the scale and scope of what is being",
+      "words": [
         {
           "word": "the",
           "startTime": 760.06,
@@ -13915,10 +13867,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 788.88,
-      "endTime": 789.76,
-      "text": "So Ajay",
+      "endTime": 800.66,
+      "text": "So Ajay let's let's discuss the why. You know, t until twenty sixteen you have a bipartisan consensus, the US is cool, they're engaging with China, everything's going well. Uh then it all goes to hell. Why?",
       "words": [
         {
           "word": "So",
@@ -13931,15 +13883,7 @@
           "startTime": 789.2,
           "endTime": 789.76,
           "confidence": 0.5869
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 789.76,
-      "endTime": 800.66,
-      "text": "let's let's discuss the why. You know, t until twenty sixteen you have a bipartisan consensus, the US is cool, they're engaging with China, everything's going well. Uh then it all goes to hell. Why?",
-      "words": [
+        },
         {
           "word": "let's",
           "startTime": 789.76,
@@ -27715,8 +27659,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1592.33,
-      "endTime": 1697.28,
-      "text": "I'm sympathetic to the why. You think about it, focus the mind around the Ukraine war. It is better to do economic warfare than to do real warfare. So if the choice is killing people or interfering with economic prosperity, I would take interfering with economic prosperity. So as an economist, I always want conditions of world peace and full globalization. But if this is the way the trade-off is put, then yeah, I would support things that reduce the ability of rogue powers. And that is that is where Foreign policy and military affairs do come to precedence around a core of the world which is comfortable with each other, where there is not something prickly and angry and unhappy between the countries, and nobody wants to go to war with each other. So there used to be this old saying that uh two countries which both have McDonald's have never gone to war with each other. Well, Russia invaded Ukraine and both countries had McDonald's. So you know those old thumb rules around good behavior and prosperity no longer quite apply. And then you're present it with the star choice that there is a hot war there. And you know Xi Jinping kept on saying every step of the way, he never backed away from the position of China as a revisionist power. On articulating his anger and hatred at the advanced economies and the global system. He kept on saying that I reserve the right to invade Taiwan, and you know what, one of these days I will. He never backed away from saying no, Taiwan is a nice country, and you know, we'll make peace, we'll figure out how to coexist with Taiwan. And he engaged in lethal aid with the Russian invasion of Ukraine. So when all this comes together, I think that yeah, this is a reasonable strategy to",
+      "endTime": 1699.3,
+      "text": "I'm sympathetic to the why. You think about it, focus the mind around the Ukraine war. It is better to do economic warfare than to do real warfare. So if the choice is killing people or interfering with economic prosperity, I would take interfering with economic prosperity. So as an economist, I always want conditions of world peace and full globalization. But if this is the way the trade-off is put, then yeah, I would support things that reduce the ability of rogue powers. And that is that is where Foreign policy and military affairs do come to precedence around a core of the world which is comfortable with each other, where there is not something prickly and angry and unhappy between the countries, and nobody wants to go to war with each other. So there used to be this old saying that uh two countries which both have McDonald's have never gone to war with each other. Well, Russia invaded Ukraine and both countries had McDonald's. So you know those old thumb rules around good behavior and prosperity no longer quite apply. And then you're present it with the star choice that there is a hot war there. And you know Xi Jinping kept on saying every step of the way, he never backed away from the position of China as a revisionist power. On articulating his anger and hatred at the advanced economies and the global system. He kept on saying that I reserve the right to invade Taiwan, and you know what, one of these days I will. He never backed away from saying no, Taiwan is a nice country, and you know, we'll make peace, we'll figure out how to coexist with Taiwan. And he engaged in lethal aid with the Russian invasion of Ukraine. So when all this comes together, I think that yeah, this is a reasonable strategy to proceed. So uh",
       "words": [
         {
           "word": "I'm",
@@ -29607,15 +29551,7 @@
           "startTime": 1697.12,
           "endTime": 1697.28,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1697.28,
-      "endTime": 1919.07,
-      "text": "proceed. So uh You know, I just disagreed with something you said in the China episode that I hadn't disagreed then. So let me voice a similar disagreement with the third globalization episode that I've been thinking about. At that time your novel in sight and you've written a column on it also, we'll link that as well from the show notes, is that It isn't that globalization has ended. You defined a third globalization where globalization largely continues, but rogue players who don't play by the rules, uh, you know, they're they don't get to be part of the system, namely Russia and China in this context, right? So but I'm I'm trying to steel man your position. That's correct. So my position there is that I think the third globalization is no more globalization than chrony capitalism is capitalism. You know, I think that freedom and voluntary action should not be instrumental, but foundational, should not be contingent but core. And I I I I think it breaks down if you're going to be selective about it. I mean if you're saying if America says that hey, if you're not part of the global order, we will punish you. Who defines a frickin' global order? What arrogance on the part of America to say this is how we want it. Now all the points you raised are really valid points. I agree with them, like Chinese IP theft and et cetera, et cetera. But the point is that you can equally look at many things on the plus side. You can look at a way in which free trade between America and China benefits both the Chinese people and the American people. And it is a Chinese state and the American state where there are warring factions who are then playing these games against uh each other. So I I I have a deep disquiet with this. I don't have a solution to what do you do about the Chinese IP theft, for example. Okay. I don't have a solution of China saying they'll invade Taiwan what do you do? You gotta do something. I agree that you gotta do something to protect Taiwan. But precisely what it is, I don't know. I just feel a disquiet about it because economic warfare hurts the people on both sides. Secondly, we'll link to a piece by you and Ela Patnak, which is about new trade policy, but where you support restrictions on Chinese goods and et cetera, et cetera. And I was reminded of that by um you know something Noah Smith said in one of his newsletter posts, where he spoke about the drone dominance of China. China dominates the manufacturer of drones, DGI is one of the biggest drones. And the ways of dealing with that is number one, America can try all kinds of export restrictions, blah, blah, blah. And number two. They can deregulate the domestic industry so more people make drones in America. So similarly, if there is a problem with cheap Chinese goods coming down here, my argument would be that, boss, we have constricted our manufacturing industry in ways that you and I both agree on for decades, and we need to remove that and allow Indian manufacturers to compete in a global market, including China, because that is how Indian manufacturers will reach a certain level. The metaphor I would do is that let us say that. We are s sick. We are there are sick people here, and our local doctors are not good enough. So we are getting doctors from outside. And then you say no, doctors from outside are, you know, m et cetera, et cetera. You know the argument. The solution to that is get whipping our local doctors into shape by allowing them to compete and not by banning the outside doctors because then the patient will die. And I only mention this because to me economic warfare is economic warfare. I understand your point that the new trade theory argument and what's happening and you know, dumping cheap goods here is one argument. It's a different debate. It is not part of this debate. military and tech wars and all that. But to me economic warfare is economic warfare, and I'm fundamentally against economic warfare at all times. I think even if you unilaterally open up free trade and reduce tariffs, even when the other side doesn't, people on both sides benefit and it is a it is that mutual benefit game we have to play and not a race to the bottom.",
-      "words": [
+        },
         {
           "word": "proceed.",
           "startTime": 1697.28,
@@ -29633,7 +29569,15 @@
           "startTime": 1698.8,
           "endTime": 1699.3,
           "confidence": 0.7033
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1700.04,
+      "endTime": 1919.07,
+      "text": "You know, I just disagreed with something you said in the China episode that I hadn't disagreed then. So let me voice a similar disagreement with the third globalization episode that I've been thinking about. At that time your novel in sight and you've written a column on it also, we'll link that as well from the show notes, is that It isn't that globalization has ended. You defined a third globalization where globalization largely continues, but rogue players who don't play by the rules, uh, you know, they're they don't get to be part of the system, namely Russia and China in this context, right? So but I'm I'm trying to steel man your position. That's correct. So my position there is that I think the third globalization is no more globalization than chrony capitalism is capitalism. You know, I think that freedom and voluntary action should not be instrumental, but foundational, should not be contingent but core. And I I I I think it breaks down if you're going to be selective about it. I mean if you're saying if America says that hey, if you're not part of the global order, we will punish you. Who defines a frickin' global order? What arrogance on the part of America to say this is how we want it. Now all the points you raised are really valid points. I agree with them, like Chinese IP theft and et cetera, et cetera. But the point is that you can equally look at many things on the plus side. You can look at a way in which free trade between America and China benefits both the Chinese people and the American people. And it is a Chinese state and the American state where there are warring factions who are then playing these games against uh each other. So I I I have a deep disquiet with this. I don't have a solution to what do you do about the Chinese IP theft, for example. Okay. I don't have a solution of China saying they'll invade Taiwan what do you do? You gotta do something. I agree that you gotta do something to protect Taiwan. But precisely what it is, I don't know. I just feel a disquiet about it because economic warfare hurts the people on both sides. Secondly, we'll link to a piece by you and Ela Patnak, which is about new trade policy, but where you support restrictions on Chinese goods and et cetera, et cetera. And I was reminded of that by um you know something Noah Smith said in one of his newsletter posts, where he spoke about the drone dominance of China. China dominates the manufacturer of drones, DGI is one of the biggest drones. And the ways of dealing with that is number one, America can try all kinds of export restrictions, blah, blah, blah. And number two. They can deregulate the domestic industry so more people make drones in America. So similarly, if there is a problem with cheap Chinese goods coming down here, my argument would be that, boss, we have constricted our manufacturing industry in ways that you and I both agree on for decades, and we need to remove that and allow Indian manufacturers to compete in a global market, including China, because that is how Indian manufacturers will reach a certain level. The metaphor I would do is that let us say that. We are s sick. We are there are sick people here, and our local doctors are not good enough. So we are getting doctors from outside. And then you say no, doctors from outside are, you know, m et cetera, et cetera. You know the argument. The solution to that is get whipping our local doctors into shape by allowing them to compete and not by banning the outside doctors because then the patient will die. And I only mention this because to me economic warfare is economic warfare. I understand your point that the new trade theory argument and what's happening and you know, dumping cheap goods here is one argument. It's a different debate. It is not part of this debate. military and tech wars and all that. But to me economic warfare is economic warfare, and I'm fundamentally against economic warfare at all times. I think even if you unilaterally open up free trade and reduce tariffs, even when the other side doesn't, people on both sides benefit and it is a it is that mutual benefit game we have to play and not a race to the bottom.",
+      "words": [
         {
           "word": "You",
           "startTime": 1700.04,

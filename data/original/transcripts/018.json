@@ -5,7 +5,7 @@
     "durationSeconds": 4773,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -1535,8 +1535,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 136.93,
-      "endTime": 175.36,
-      "text": "I'm a big fan of uh Maharashtri and Nick Nameas, as it were. And I I'm actually perhaps the only professional limeric writer in the world, in the sense for a period of uh a couple of years, I would write a weekly limeric for the Sunday Times of India. I was also a columnist for them. And I'd have a limeric which would uh you know come in the middle. It was a nice little experiment that they tried, except that at one point it got too political and they like Uh it no longer appears there. But I did, I think about a hundred. And uh uh yeah, fascinating times. But um so how do you feel that uh my first mention of you is in the context of tomatoes?",
+      "endTime": 175.84,
+      "text": "I'm a big fan of uh Maharashtri and Nick Nameas, as it were. And I I'm actually perhaps the only professional limeric writer in the world, in the sense for a period of uh a couple of years, I would write a weekly limeric for the Sunday Times of India. I was also a columnist for them. And I'd have a limeric which would uh you know come in the middle. It was a nice little experiment that they tried, except that at one point it got too political and they like Uh it no longer appears there. But I did, I think about a hundred. And uh uh yeah, fascinating times. But um so how do you feel that uh my first mention of you is in the context of tomatoes? Um",
       "words": [
         {
           "word": "I'm",
@@ -2329,21 +2329,21 @@
           "startTime": 174.0,
           "endTime": 175.36,
           "confidence": 0.8626
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 175.36,
-      "endTime": 208.18,
-      "text": "Um Ashok Desay wrote a book, The Price of Onions. And it just feels like we are in that story all over again with one small substitution. It's not onions, it's tomatoes. So we've been through this. 200 rupees a kg to two rupees a kg drama around tomatoes. I I thought it was hilarious that uh people who were flying in from abroad would get requests from people in India that just fill up the rest of your bags with tomatoes and bring tomatoes to India.",
-      "words": [
+        },
         {
           "word": "Um",
           "startTime": 175.36,
           "endTime": 175.84,
           "confidence": 0.6974
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 175.84,
+      "endTime": 208.18,
+      "text": "Ashok Desay wrote a book, The Price of Onions. And it just feels like we are in that story all over again with one small substitution. It's not onions, it's tomatoes. So we've been through this. 200 rupees a kg to two rupees a kg drama around tomatoes. I I thought it was hilarious that uh people who were flying in from abroad would get requests from people in India that just fill up the rest of your bags with tomatoes and bring tomatoes to India.",
+      "words": [
         {
           "word": "Ashok",
           "startTime": 175.84,
@@ -3479,8 +3479,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 243.97,
-      "endTime": 633.01,
-      "text": "There is a fundamental piece of understanding of the price system. And a piece of understanding of the food market, which comes together to create this phenomena. So let's go one step at a time. First comes the price system. Okay. So for whatever reason, uh there is either an unusually big harvest or an unusually small harvest. These things happen. They're part of life. There are fluctuations, they happen. Now it is just in the nature of the price system that uh finally the amount of tomatoes. That are purchased on the market is equal to the amount of tomatoes that are sold in the market. So supply exposed will have to be equal to demand. That is the meaning of a market. How does that happen? It's important to drill deep into the working of the market. So you know, as children, we are taught supply will equal to demand exposed, but it's good to think more about how and why that happens. So imagine that if instead of 100 units of tomato, You have 90 units of tomato. Okay, so 10 uh uh units of tomato um absent from the market. So under normal circumstances, there used to be 100 for whatever reason, uh now there are 90. The way the price system works is pretty cruel. It rations out those 90. So we should think of the word a rationing system associated with the price system, okay, and this kind of rationing appears cruel to some. It is the nature of the beast, and we should coldly understand how that works. The idea is that the price of tomato has to go up so that some people look at that price and say, you know what? At this price, I'd rather not buy the tomato. And some people choose to step away. Now, people could choose to step away for many reasons. Some people may not like the taste of tomatoes. Some people might switch to cheaper tomato puree or tomato paste. Some people will change recipes to make the same Pow Bhaji with a little more beetroot and a little less tomato. There could be many, many responses in adaptation, but the point is the price has to go up so that some people walk away. Now think about it, if the price of tomatoes goes up by 20%, is that material is that big enough to generate the required 10% reduction in purchases? Maybe it's not. Maybe tomatoes are so fundamental to making a Pow Bhaji that people say, look, I'll grin and bear it and I'll just pay through my nose. I'll whine about the price of tomatoes, but I'll go ahead and buy those tomatoes. In that case, the price has to go up even higher. The price has to just keep on going up till some people walk away. And then you are in business. So the price system should be understood as a rationing mechanism. And so I I want to Uh take this all the way to something like wheat. Imagine wheat, imagine rice, the cheapest, lowest value sources of calories in the society. Imagine that there is a shortfall in supply. Now you and I are not going to respond to a change in the price of wheat. Okay. So imagine that the price of wheat goes up, the price of our chapati or the price of our bread contains some embedded component. The price of wheat, we're not going to respond. You would need a very large increase in the price of wheat for people to change their minds and back away. Okay, so the more a food is consumed by people who are not pay attention to the price, the bigger the price change has to be. It's not malfunctioning on the part of the market economy. This is it. Whereas imagine you have avocados. These are completely a discretionary luxury spending by people. So if there is a shortage of avocados, the price of avocados needs only to go up by a little, and people say, You know what, at this price, I'm not gonna buy avocados, and supply and demand is restored. So the percentage price fluctuations that are required for wheat and rice and potato and tomato are actually very large to close a modest gap between supply and demand. Okay, so this is the first point that the price system works. By having prices move up and down in both directions, till people change their behavior. And if the behavior of people is less flexible, the price change needs to be larger. If the behavior of people is more flexible, you'll get away with a smaller price rise. Okay, this is a critical intuition into the price system. And you know, it's a very powerful toolkit to apply to everything that we study. And then we come to the second idea, which is Paul Samuelson's cobweb model. His idea is simple, that suppose farmers are not very bright, and suppose farmers look back into the past. If they see that in the market tomatoes are going at 200 and 300 rupees a kilo, then many, many people will make the decision of sowing more tomatoes. People will spend more on inputs, whether it is labor or fertilizers or pesticides. And that will create a surge in the tomato crop, and then you'll get a crash in the price of tomatoes. Okay. So the same reasons why when the a small shortage of tomatoes will generate a price rise to 200 rupees will trigger off sowing by farmers and the decisions on what to sow, the decisions on how much money to invest in the agricultural inputs. And that will generate a 10%, 20% increase in production. And then the price will crash all the way down to two rupees. And now the farming community will say, Oh, tomatoes, that's a very bad idea. I was dumping truckloads of tomatoes on the highway because I couldn't pay for the transportation cost of tomato to a neighboring market. And so you stay stuck in this cycle over and over again. So Paul Samuelson told us this story around a dysfunctional. agricultural sector, and it's a good intuition that we should keep in our minds. So I think these are some basics that went off in my mind when I saw this drama about two rupees and two hundred rupees. And just to",
+      "endTime": 633.57,
+      "text": "There is a fundamental piece of understanding of the price system. And a piece of understanding of the food market, which comes together to create this phenomena. So let's go one step at a time. First comes the price system. Okay. So for whatever reason, uh there is either an unusually big harvest or an unusually small harvest. These things happen. They're part of life. There are fluctuations, they happen. Now it is just in the nature of the price system that uh finally the amount of tomatoes. That are purchased on the market is equal to the amount of tomatoes that are sold in the market. So supply exposed will have to be equal to demand. That is the meaning of a market. How does that happen? It's important to drill deep into the working of the market. So you know, as children, we are taught supply will equal to demand exposed, but it's good to think more about how and why that happens. So imagine that if instead of 100 units of tomato, You have 90 units of tomato. Okay, so 10 uh uh units of tomato um absent from the market. So under normal circumstances, there used to be 100 for whatever reason, uh now there are 90. The way the price system works is pretty cruel. It rations out those 90. So we should think of the word a rationing system associated with the price system, okay, and this kind of rationing appears cruel to some. It is the nature of the beast, and we should coldly understand how that works. The idea is that the price of tomato has to go up so that some people look at that price and say, you know what? At this price, I'd rather not buy the tomato. And some people choose to step away. Now, people could choose to step away for many reasons. Some people may not like the taste of tomatoes. Some people might switch to cheaper tomato puree or tomato paste. Some people will change recipes to make the same Pow Bhaji with a little more beetroot and a little less tomato. There could be many, many responses in adaptation, but the point is the price has to go up so that some people walk away. Now think about it, if the price of tomatoes goes up by 20%, is that material is that big enough to generate the required 10% reduction in purchases? Maybe it's not. Maybe tomatoes are so fundamental to making a Pow Bhaji that people say, look, I'll grin and bear it and I'll just pay through my nose. I'll whine about the price of tomatoes, but I'll go ahead and buy those tomatoes. In that case, the price has to go up even higher. The price has to just keep on going up till some people walk away. And then you are in business. So the price system should be understood as a rationing mechanism. And so I I want to Uh take this all the way to something like wheat. Imagine wheat, imagine rice, the cheapest, lowest value sources of calories in the society. Imagine that there is a shortfall in supply. Now you and I are not going to respond to a change in the price of wheat. Okay. So imagine that the price of wheat goes up, the price of our chapati or the price of our bread contains some embedded component. The price of wheat, we're not going to respond. You would need a very large increase in the price of wheat for people to change their minds and back away. Okay, so the more a food is consumed by people who are not pay attention to the price, the bigger the price change has to be. It's not malfunctioning on the part of the market economy. This is it. Whereas imagine you have avocados. These are completely a discretionary luxury spending by people. So if there is a shortage of avocados, the price of avocados needs only to go up by a little, and people say, You know what, at this price, I'm not gonna buy avocados, and supply and demand is restored. So the percentage price fluctuations that are required for wheat and rice and potato and tomato are actually very large to close a modest gap between supply and demand. Okay, so this is the first point that the price system works. By having prices move up and down in both directions, till people change their behavior. And if the behavior of people is less flexible, the price change needs to be larger. If the behavior of people is more flexible, you'll get away with a smaller price rise. Okay, this is a critical intuition into the price system. And you know, it's a very powerful toolkit to apply to everything that we study. And then we come to the second idea, which is Paul Samuelson's cobweb model. His idea is simple, that suppose farmers are not very bright, and suppose farmers look back into the past. If they see that in the market tomatoes are going at 200 and 300 rupees a kilo, then many, many people will make the decision of sowing more tomatoes. People will spend more on inputs, whether it is labor or fertilizers or pesticides. And that will create a surge in the tomato crop, and then you'll get a crash in the price of tomatoes. Okay. So the same reasons why when the a small shortage of tomatoes will generate a price rise to 200 rupees will trigger off sowing by farmers and the decisions on what to sow, the decisions on how much money to invest in the agricultural inputs. And that will generate a 10%, 20% increase in production. And then the price will crash all the way down to two rupees. And now the farming community will say, Oh, tomatoes, that's a very bad idea. I was dumping truckloads of tomatoes on the highway because I couldn't pay for the transportation cost of tomato to a neighboring market. And so you stay stuck in this cycle over and over again. So Paul Samuelson told us this story around a dysfunctional. agricultural sector, and it's a good intuition that we should keep in our minds. So I think these are some basics that went off in my mind when I saw this drama about two rupees and two hundred rupees. And just to add to that,",
       "words": [
         {
           "word": "There",
@@ -9949,15 +9949,7 @@
           "startTime": 632.85,
           "endTime": 633.01,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 633.01,
-      "endTime": 698.31,
-      "text": "add to that, uh you know, for uh those gentle readers who may have missed that episode, we had an episode on Basya and Hayek, and there we also spoke about the price system. And like you correctly said, it not only changes the behavior of the consumer, that if I don't want it so desperately, I'll go and have something else. And frankly for me, I'd rather have avocado than wheat, because you know, hey, sugar is poison uh and um uh you know wheat is carbs uh not only does it change the behavior of the consumer, it also acts as uh you know a carrier of information and incentives it changes what producers do so somebody who is say making potatoes or whatever else may say let me do tomatoes instead I'll make a profit that way and therefore and what is happening therefore is a price system is helping society fulfill the needs of society individuals among us for our self-interest get in there to fulfill the needs of others and that sounds all very beautiful but as Paul Samuelson's you know cobweb model as uh you know seems to point out that you can just go through boom and bus, boom and bus cycles. But You know, that does that doesn't happen in healthy markets. Why so? So tell me more about",
-      "words": [
+        },
         {
           "word": "add",
           "startTime": 633.01,
@@ -9975,7 +9967,15 @@
           "startTime": 633.33,
           "endTime": 633.57,
           "confidence": 0.9152
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 633.57,
+      "endTime": 698.31,
+      "text": "uh you know, for uh those gentle readers who may have missed that episode, we had an episode on Basya and Hayek, and there we also spoke about the price system. And like you correctly said, it not only changes the behavior of the consumer, that if I don't want it so desperately, I'll go and have something else. And frankly for me, I'd rather have avocado than wheat, because you know, hey, sugar is poison uh and um uh you know wheat is carbs uh not only does it change the behavior of the consumer, it also acts as uh you know a carrier of information and incentives it changes what producers do so somebody who is say making potatoes or whatever else may say let me do tomatoes instead I'll make a profit that way and therefore and what is happening therefore is a price system is helping society fulfill the needs of society individuals among us for our self-interest get in there to fulfill the needs of others and that sounds all very beautiful but as Paul Samuelson's you know cobweb model as uh you know seems to point out that you can just go through boom and bus, boom and bus cycles. But You know, that does that doesn't happen in healthy markets. Why so? So tell me more about",
+      "words": [
         {
           "word": "uh",
           "startTime": 633.57,
@@ -28633,8 +28633,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1655.06,
-      "endTime": 1848.32,
-      "text": "was saving my APM C rant for later, but it involves poetry, and I shall go with my APMC rant. APMC stands for Agricultural Produce Market Committee, and like you said, it's a monopson. Like you know, in a monopoly, there's just sort of one company, you have many buyers, one seller, many buyers, they don't have a choice. A monopson is the opposite. You just have one buyer, so the sellers don't have a choice. So what happens is that you have to, if you're a farmer, you have to go to your local APMC and sell there only. Anything else is illegal. And the consumer or or whichever retailers are buying have to buy from those APMCs themselves. And this creates a severe distortion in the sense that I remember an old study which found, and this was in the context of tomatoes, that the farmer was selling his tomatoes for two rupees, whatever the unit was, I forget. The farmer was selling his uh tomatoes to the APMC for two rupees, the consumer was buying it for twenty rupees. And the reason for and there's a massive gap in between, right? And uh the truth is that if you have competition of middlemen or direct sales are allowed and et cetera, et cetera, then chances are that the farmer would sell for 10 rupees and the consumer would buy for twelve rupees, and the middlemen would make two rupees, which is, you know, a standard hefty margin if middlemen are competing against each other, that's enough. Uh and the farmer would therefore earn eight rupees more, the consumer would pay eight rupees less. But instead of ten and twelve, you have two and twenty and they both suffer, and there's a beautiful share by the great Sharajoshi, and I'll spoke about sh talk about uh Sharajial um a little later in the show, we have a segment on him, but uh Sharaji once said, and this is from the voice of a farmer speaking to a consumer, and it runs thus Marthe Tumbiho Marte Hambihe. Right. And the English translation uh of this would run like this. I die my friend and so do you. I die my friend and so do you. I sell my produce cheap and die. You pay so much that you die too. Right? And uh uh absolutely sort of tragic words where this is like a negative sum game. The what the state has done is the with the state power, you've created a monopoly and a monopsony. And the people, the traders at the um uh, you know, at the APMC, they are the ones who reap the benefits. They are basically rent seekers, as the economic term goes, rent seeking, and they are getting all of the rent. Consumers are suffering, the farmers are suffering, you know, and each might well blame the other. But actually it is this mechanism that is messed up, and it really gets my goat where, you know. We understand the good intentions this com come out of and it's fairly predictable uh the mess that they would lead into if you know Econ one oh one. And it really irritates me where when people talk of expand or doing away with A APMCs and letting private companies go directly or letting farmers sell to whoever they want, you have all this talk of oh farmers will get exploited and all of that. And that makes me mad. One, it is incredibly condescending to farmers. They are not fools in all what they're doing. Two, you're offering them the choice, right? And you're often uh you know, like like the recent farm bills. Said that APMCs can remain, but we'll open up that choice. So they weren't even taking the APMC away. You want to sell there, you sell there. But you open up the choice. And I just think about",
+      "endTime": 1913.49,
+      "text": "was saving my APM C rant for later, but it involves poetry, and I shall go with my APMC rant. APMC stands for Agricultural Produce Market Committee, and like you said, it's a monopson. Like you know, in a monopoly, there's just sort of one company, you have many buyers, one seller, many buyers, they don't have a choice. A monopson is the opposite. You just have one buyer, so the sellers don't have a choice. So what happens is that you have to, if you're a farmer, you have to go to your local APMC and sell there only. Anything else is illegal. And the consumer or or whichever retailers are buying have to buy from those APMCs themselves. And this creates a severe distortion in the sense that I remember an old study which found, and this was in the context of tomatoes, that the farmer was selling his tomatoes for two rupees, whatever the unit was, I forget. The farmer was selling his uh tomatoes to the APMC for two rupees, the consumer was buying it for twenty rupees. And the reason for and there's a massive gap in between, right? And uh the truth is that if you have competition of middlemen or direct sales are allowed and et cetera, et cetera, then chances are that the farmer would sell for 10 rupees and the consumer would buy for twelve rupees, and the middlemen would make two rupees, which is, you know, a standard hefty margin if middlemen are competing against each other, that's enough. Uh and the farmer would therefore earn eight rupees more, the consumer would pay eight rupees less. But instead of ten and twelve, you have two and twenty and they both suffer, and there's a beautiful share by the great Sharajoshi, and I'll spoke about sh talk about uh Sharajial um a little later in the show, we have a segment on him, but uh Sharaji once said, and this is from the voice of a farmer speaking to a consumer, and it runs thus Marthe Tumbiho Marte Hambihe. Right. And the English translation uh of this would run like this. I die my friend and so do you. I die my friend and so do you. I sell my produce cheap and die. You pay so much that you die too. Right? And uh uh absolutely sort of tragic words where this is like a negative sum game. The what the state has done is the with the state power, you've created a monopoly and a monopsony. And the people, the traders at the um uh, you know, at the APMC, they are the ones who reap the benefits. They are basically rent seekers, as the economic term goes, rent seeking, and they are getting all of the rent. Consumers are suffering, the farmers are suffering, you know, and each might well blame the other. But actually it is this mechanism that is messed up, and it really gets my goat where, you know. We understand the good intentions this com come out of and it's fairly predictable uh the mess that they would lead into if you know Econ one oh one. And it really irritates me where when people talk of expand or doing away with A APMCs and letting private companies go directly or letting farmers sell to whoever they want, you have all this talk of oh farmers will get exploited and all of that. And that makes me mad. One, it is incredibly condescending to farmers. They are not fools in all what they're doing. Two, you're offering them the choice, right? And you're often uh you know, like like the recent farm bills. Said that APMCs can remain, but we'll open up that choice. So they weren't even taking the APMC away. You want to sell there, you sell there. But you open up the choice. And I just think about in my life, if I had to uh sort of uh go through this, for example, let us say that I'm a columnist, you are a columnist, right? Let us say there is not an APMC, but a CPMC for columnists, right? We are only allowed to sell to one central party. They give us some tiny little figure, like I don't know what you get paid. I hope you're the best paid columnist in India, but perhaps not. But let's say you would get one tenth of that. And anybody who wanted your column would have to pay a crazy amount. Uh and and therefore, you know, they might not buy it at all. And there would be all the APMC politics and you would get no you know, absolutely uh nowhere with that. And it is just it it it makes me so mad, but you will have elites. Sitting in cities, living comfortable lives, where no one's telling me that I can buy my grocery only from one place and at twenty x a price I would otherwise have. No one's telling me that I would be so outraged if someone told me that. So there are people who have choice and freedom in their lives who will speak from a distance from an ivory tower and say, Nini, farmers will get exploited. And that just makes me so mad.",
       "words": [
         {
           "word": "was",
@@ -32577,15 +32577,7 @@
           "startTime": 1847.84,
           "endTime": 1848.32,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1848.32,
-      "endTime": 1849.76,
-      "text": "in my life, if",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 1848.32,
@@ -32609,15 +32601,7 @@
           "startTime": 1849.44,
           "endTime": 1849.76,
           "confidence": 0.9963
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1849.76,
-      "endTime": 1885.32,
-      "text": "I had to uh sort of uh go through this, for example, let us say that I'm a columnist, you are a columnist, right? Let us say there is not an APMC, but a CPMC for columnists, right? We are only allowed to sell to one central party. They give us some tiny little figure, like I don't know what you get paid. I hope you're the best paid columnist in India, but perhaps not. But let's say you would get one tenth of that. And anybody who wanted your column would have to pay a crazy amount. Uh and and therefore, you know, they might not buy it at all. And there would be all the APMC politics and you would get no you know, absolutely uh nowhere with that. And it",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1849.76,
@@ -33415,15 +33399,7 @@
           "startTime": 1885.08,
           "endTime": 1885.32,
           "confidence": 0.9964
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1885.32,
-      "endTime": 1886.84,
-      "text": "is just it it it",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 1885.32,
@@ -33453,15 +33429,7 @@
           "startTime": 1886.68,
           "endTime": 1886.84,
           "confidence": 0.7794
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1886.84,
-      "endTime": 1913.49,
-      "text": "makes me so mad, but you will have elites. Sitting in cities, living comfortable lives, where no one's telling me that I can buy my grocery only from one place and at twenty x a price I would otherwise have. No one's telling me that I would be so outraged if someone told me that. So there are people who have choice and freedom in their lives who will speak from a distance from an ivory tower and say, Nini, farmers will get exploited. And that just makes me so mad.",
-      "words": [
+        },
         {
           "word": "makes",
           "startTime": 1886.84,
@@ -39733,8 +39701,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2238.64,
-      "endTime": 2296.52,
-      "text": "So I have like uh uh you know three takeoff points on this. And one of them is that, you know, what you pointed out that because international trade is not allowed, there are random export bands, import bands, blah, blah, blah. What often happens is that the farmer gets a lower price than he otherwise would, because he would have gotten whatever the international prevailing price is, but he will often get a lower price than that for a variety of reasons, including all of this. And this is what the great Sharajoshi termed a negative subsidy. And I want everyone listening to this to kind of pay attention to that term negative subsidy. Many of us city slickers have the impression that oh farmers get this subsidy, that subsidy, free electricity, blah blah blah, et cetera, et cetera. And you know, they are schmoozing off us taxpayers. Number one, every farmer pays a ton of tax, and number two, it is the other way around. Farmers are giving money to the state, or rather, it is just money being wasted. It is left on the table. I think uh Joshi Sabad also done a calculation of how much this is and is billions and billions, and it is an absolute crime, and um we can elaborate on this.",
+      "endTime": 2298.3,
+      "text": "So I have like uh uh you know three takeoff points on this. And one of them is that, you know, what you pointed out that because international trade is not allowed, there are random export bands, import bands, blah, blah, blah. What often happens is that the farmer gets a lower price than he otherwise would, because he would have gotten whatever the international prevailing price is, but he will often get a lower price than that for a variety of reasons, including all of this. And this is what the great Sharajoshi termed a negative subsidy. And I want everyone listening to this to kind of pay attention to that term negative subsidy. Many of us city slickers have the impression that oh farmers get this subsidy, that subsidy, free electricity, blah blah blah, et cetera, et cetera. And you know, they are schmoozing off us taxpayers. Number one, every farmer pays a ton of tax, and number two, it is the other way around. Farmers are giving money to the state, or rather, it is just money being wasted. It is left on the table. I think uh Joshi Sabad also done a calculation of how much this is and is billions and billions, and it is an absolute crime, and um we can elaborate on this. Can I just amplify on that slightly?",
       "words": [
         {
           "word": "So",
@@ -41055,15 +41023,7 @@
           "startTime": 2296.12,
           "endTime": 2296.52,
           "confidence": 0.817
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2296.52,
-      "endTime": 2364.53,
-      "text": "Can I just amplify on that slightly? Once again, we should understand the price system deeply. Okay? Imagine I'm a humble bloke doing uh tomato farming or tomato storage year after year after year. In most years, it's a boring trade, nothing much is happening. Once in 10 years, the price of tomatoes goes to infinity. That's a time when growing tomatoes, storing tomatoes really makes a lot of money. That's the deal. Is offered to the private trade. So it's an option like character, it's an insurance like character when there are people engaged in production and storage of these things. And it is only fair and reasonable that once in 10 years you should make like a bandit because you were doing that storage. You were performing a service for society. You were the insurance provider year after year. You kept buying the damn tomatoes and making tomato paste. And most years you really didn't make much money. But that once in 10 years, once in 20 years, you make like a bandit. The profit of that time pays for being there year after year for decades. And you're",
-      "words": [
+        },
         {
           "word": "Can",
           "startTime": 2296.52,
@@ -41105,7 +41065,15 @@
           "startTime": 2297.8,
           "endTime": 2298.3,
           "confidence": 0.8229
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2298.6,
+      "endTime": 2364.53,
+      "text": "Once again, we should understand the price system deeply. Okay? Imagine I'm a humble bloke doing uh tomato farming or tomato storage year after year after year. In most years, it's a boring trade, nothing much is happening. Once in 10 years, the price of tomatoes goes to infinity. That's a time when growing tomatoes, storing tomatoes really makes a lot of money. That's the deal. Is offered to the private trade. So it's an option like character, it's an insurance like character when there are people engaged in production and storage of these things. And it is only fair and reasonable that once in 10 years you should make like a bandit because you were doing that storage. You were performing a service for society. You were the insurance provider year after year. You kept buying the damn tomatoes and making tomato paste. And most years you really didn't make much money. But that once in 10 years, once in 20 years, you make like a bandit. The profit of that time pays for being there year after year for decades. And you're",
+      "words": [
         {
           "word": "Once",
           "startTime": 2298.6,
@@ -42361,8 +42329,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2370.05,
-      "endTime": 2396.55,
-      "text": "cetera. Whereas when the Indian state comes in and says, in that moment of the surge in the price of tomatoes, I will come after you, I will take away your ability to make money. That's a really unfair thing. This bloke worked. To be there serving the people all these years. And the profit is really made only once in 10 years. All the other years, it's a dull business. The confidence that the Indian state will misbehave",
+      "endTime": 2417.75,
+      "text": "cetera. Whereas when the Indian state comes in and says, in that moment of the surge in the price of tomatoes, I will come after you, I will take away your ability to make money. That's a really unfair thing. This bloke worked. To be there serving the people all these years. And the profit is really made only once in 10 years. All the other years, it's a dull business. The confidence that the Indian state will misbehave with the producer has a sustained adverse impact upon the supply of those facilities. It's like, why would I be an investor building a vaccine manufacturing capability in India? When At the peak of the pandemic, the Indian state basically destroyed my ability to charge a decent price for that vaccine.",
       "words": [
         {
           "word": "cetera.",
@@ -42837,15 +42805,7 @@
           "startTime": 2395.59,
           "endTime": 2396.55,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2396.55,
-      "endTime": 2398.23,
-      "text": "with the producer",
-      "words": [
+        },
         {
           "word": "with",
           "startTime": 2396.55,
@@ -42863,15 +42823,7 @@
           "startTime": 2397.03,
           "endTime": 2398.23,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2398.23,
-      "endTime": 2417.75,
-      "text": "has a sustained adverse impact upon the supply of those facilities. It's like, why would I be an investor building a vaccine manufacturing capability in India? When At the peak of the pandemic, the Indian state basically destroyed my ability to charge a decent price for that vaccine.",
-      "words": [
+        },
         {
           "word": "has",
           "startTime": 2398.23,
@@ -43165,8 +43117,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2417.75,
-      "endTime": 2494.45,
-      "text": "Absolutely. And I also want to make a broader conceptual point. Like when we talk about uh borders, for example. Now I'm in Andheri, you're in Bandra, right? If I have something that you want to buy and I'm happy to sell it for whatever you're willing to offer it, no one would get in our way. It's a voluntary transaction between two adults. Bandra Andheri, what difference does it make? If someone in Bombay wants to sell to someone in Pune, again, we'd all agree hard he can. You know, if someone in Maharashtra wants to sell to someone in Tamil Nadu, even though the Indian state doesn't allow it, uh everyone watching this, all our gentle readers, but surely Agreki Hart that should be allowed. Why should be any different if uh I'm sitting in Bombay and somebody is in Georgia or somebody is in Azerbaijan or somebody is in Arkansas, right? It is individuals playing a positive sum game and both of them benefit. So I think conceptually when we think of it in terms of nation states and uh you know, I have a bit of a problem with that because we are not really playing that game. And my third point is actually the subject of my first episode of the Seen and the Unseen. Do you d have any idea what my first episode was about? It was about scale in agriculture. It was about allowing corporatization of agriculture, which is exactly what you said, where my guest Pavan Srienath and Kartak Shashidar made a really important point where they said that look, you",
+      "endTime": 2544.61,
+      "text": "Absolutely. And I also want to make a broader conceptual point. Like when we talk about uh borders, for example. Now I'm in Andheri, you're in Bandra, right? If I have something that you want to buy and I'm happy to sell it for whatever you're willing to offer it, no one would get in our way. It's a voluntary transaction between two adults. Bandra Andheri, what difference does it make? If someone in Bombay wants to sell to someone in Pune, again, we'd all agree hard he can. You know, if someone in Maharashtra wants to sell to someone in Tamil Nadu, even though the Indian state doesn't allow it, uh everyone watching this, all our gentle readers, but surely Agreki Hart that should be allowed. Why should be any different if uh I'm sitting in Bombay and somebody is in Georgia or somebody is in Azerbaijan or somebody is in Arkansas, right? It is individuals playing a positive sum game and both of them benefit. So I think conceptually when we think of it in terms of nation states and uh you know, I have a bit of a problem with that because we are not really playing that game. And my third point is actually the subject of my first episode of the Seen and the Unseen. Do you d have any idea what my first episode was about? It was about scale in agriculture. It was about allowing corporatization of agriculture, which is exactly what you said, where my guest Pavan Srienath and Kartak Shashidar made a really important point where they said that look, you know, when I have a particular skill. I can specialise in that skill and do only that and get whatever the market pays me for that. Farmers are have to have to, perforce, master two skills. One is the skill of being a farmer, like you said, you know, the land and all that, and the other is entrepreneur. And a farmer may not want to be an entrepreneur. A farmer may not have the tools to be an entrepreneur. And like you said, with really small holdings, which is, you know, uh I'll come to in my next point. With really small holdings, sometimes you cannot be an entrepreneur. You can't achieve scale. And people, you know, you hear a word like corporatization or scale, and people think, oh, some big business will come and take over and exploit landless laborers. It isn't like that. How many of us work in companies? I mean, I don't anymore, and you're on your own nonprofit. But uh the thing is that so many people work in companies, they're not being exploited. These are world. Or or you know, we can just",
       "words": [
         {
           "word": "Absolutely.",
@@ -44787,15 +44739,7 @@
           "startTime": 2494.29,
           "endTime": 2494.45,
           "confidence": 0.9172
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2494.45,
-      "endTime": 2495.01,
-      "text": "know, when",
-      "words": [
+        },
         {
           "word": "know,",
           "startTime": 2494.45,
@@ -44807,15 +44751,7 @@
           "startTime": 2494.69,
           "endTime": 2495.01,
           "confidence": 0.9966
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2495.01,
-      "endTime": 2544.05,
-      "text": "I have a particular skill. I can specialise in that skill and do only that and get whatever the market pays me for that. Farmers are have to have to, perforce, master two skills. One is the skill of being a farmer, like you said, you know, the land and all that, and the other is entrepreneur. And a farmer may not want to be an entrepreneur. A farmer may not have the tools to be an entrepreneur. And like you said, with really small holdings, which is, you know, uh I'll come to in my next point. With really small holdings, sometimes you cannot be an entrepreneur. You can't achieve scale. And people, you know, you hear a word like corporatization or scale, and people think, oh, some big business will come and take over and exploit landless laborers. It isn't like that. How many of us work in companies? I mean, I don't anymore, and you're on your own nonprofit. But uh the thing is that so many people work in companies, they're not being exploited. These are world. Or or you",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 2495.01,
@@ -45919,15 +45855,7 @@
           "startTime": 2543.97,
           "endTime": 2544.05,
           "confidence": 0.8374
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2544.05,
-      "endTime": 2586.69,
-      "text": "know, we can just keep it very basic. Imagine an individual entrepreneur. Who owns 10 acres, 100 acres of land, okay? There are uh Sikh farmers from Punjab who own land in Madhya Pradesh, who own land in Ukraine, okay? What's wrong with that? It doesn't have to be a corporation. On the other hand, if somebody should choose to make it a limited liability corporation, by all means more power to you. If somebody manages to obtain private equity funding, what's wrong with that? And so on. I'm just on the simple point that. Let this evolve organically. Let it come out of the people rather than from some policymaker. What does a policymaker know about the appropriate institutional arrangements and the ways in which to work the land in a way that maximally creates value?",
-      "words": [
+        },
         {
           "word": "know,",
           "startTime": 2544.05,
@@ -45951,7 +45879,15 @@
           "startTime": 2544.45,
           "endTime": 2544.61,
           "confidence": 0.9959
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2544.61,
+      "endTime": 2586.69,
+      "text": "keep it very basic. Imagine an individual entrepreneur. Who owns 10 acres, 100 acres of land, okay? There are uh Sikh farmers from Punjab who own land in Madhya Pradesh, who own land in Ukraine, okay? What's wrong with that? It doesn't have to be a corporation. On the other hand, if somebody should choose to make it a limited liability corporation, by all means more power to you. If somebody manages to obtain private equity funding, what's wrong with that? And so on. I'm just on the simple point that. Let this evolve organically. Let it come out of the people rather than from some policymaker. What does a policymaker know about the appropriate institutional arrangements and the ways in which to work the land in a way that maximally creates value?",
+      "words": [
         {
           "word": "keep",
           "startTime": 2544.61,
@@ -54619,8 +54555,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3003.8,
-      "endTime": 3016.6,
-      "text": "And I don't it's probably an inappropriate joke to crack at this point, but if uh you know the state won't allow our land markets to be liquid, maybe climate change will create liquid land markets, but leaving that aside, uh, you know,",
+      "endTime": 3097.37,
+      "text": "And I don't it's probably an inappropriate joke to crack at this point, but if uh you know the state won't allow our land markets to be liquid, maybe climate change will create liquid land markets, but leaving that aside, uh, you know, let's let's actually take a step back for a moment. And uh, you know, we should perhaps at the beginning of the episode, but we are so gadget structuring these things, at the beginning of the episode of s you know, given a larger context of what is the agricultural crisis in India. So I really want to kind of lay that out. In India, we are in a position where in nineteen ninety one, the rest of our economy, which affects rich and middle class people, got liberalized, agriculture did not. Right. And the result of that is that uh between fifty and sixty percent of the country, it is estimated, depends on agriculture for a living, which produces fourteen percent of GDP. Now in advanced in all advanced countries, that figure is much lower. In the US is between four percent and eight percent. In Europe, it's again in single figure percentage digits. In India, it's up to fifty to sixty percent. That's simply not sustainable. And Typically, uh you know, th there is what economists call a structural transformation that takes economies away from agriculture into manufacturing, and there is a certain way in which economies grow and i it is a natural way forward. And we miss that bus or that boat, as it were, if climate change comes knocking. And um uh you know, so much went wrong. So can you elaborate a bit more on what economists mean by structural transformation?",
       "words": [
         {
           "word": "And",
@@ -54879,15 +54815,7 @@
           "startTime": 3016.2,
           "endTime": 3016.6,
           "confidence": 0.9199
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3016.6,
-      "endTime": 3018.28,
-      "text": "let's let's actually take a step",
-      "words": [
+        },
         {
           "word": "let's",
           "startTime": 3016.6,
@@ -54923,15 +54851,7 @@
           "startTime": 3018.04,
           "endTime": 3018.28,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3018.28,
-      "endTime": 3097.37,
-      "text": "back for a moment. And uh, you know, we should perhaps at the beginning of the episode, but we are so gadget structuring these things, at the beginning of the episode of s you know, given a larger context of what is the agricultural crisis in India. So I really want to kind of lay that out. In India, we are in a position where in nineteen ninety one, the rest of our economy, which affects rich and middle class people, got liberalized, agriculture did not. Right. And the result of that is that uh between fifty and sixty percent of the country, it is estimated, depends on agriculture for a living, which produces fourteen percent of GDP. Now in advanced in all advanced countries, that figure is much lower. In the US is between four percent and eight percent. In Europe, it's again in single figure percentage digits. In India, it's up to fifty to sixty percent. That's simply not sustainable. And Typically, uh you know, th there is what economists call a structural transformation that takes economies away from agriculture into manufacturing, and there is a certain way in which economies grow and i it is a natural way forward. And we miss that bus or that boat, as it were, if climate change comes knocking. And um uh you know, so much went wrong. So can you elaborate a bit more on what economists mean by structural transformation?",
-      "words": [
+        },
         {
           "word": "back",
           "startTime": 3018.28,
@@ -56383,8 +56303,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3098.16,
-      "endTime": 3240.94,
-      "text": "Structural transformation is the transition of a primitive country out of agriculture and from rural to urban. When high economic growth takes place, these two things happen. In India, you know, given the difficulties of growth. So we got one great episode of growth 1991 to 2011. Apart from that, by and large, in the entire uh period, we've had weak economic growth, and as a consequence, the job creation in the modern sector has not happened. And the pace of transformation from rural to urban has been mild, the pace of transformation out of agricultural jobs has been mild. That said, I just want to quibble about facts. Um The facts you quoted are mainstream standard facts. They depend on the precise phrasing of household survey questions. If a household survey question is phrased roughly as saying that do you do some in the world of agriculture, then you get those kinds of answers. But that's overstating the case for the extent of dependents on agriculture, because hypothetically imagine you're you're rain fed, you're doing one carif crop, then for four months you're doing agricultural work for the remaining eight months you're doing nothing. Or even if you're doing four months of agricultural work, you're not working eight hours a day on that. It requires some hours a day. Everybody who is supposedly an agriculturist Tends to do some other income generating activities. So it's important to go closer into time use and phrase questions correctly. And if you phrase the question correctly around do you primarily rely on agriculture for your income, then it comes to about 35%. So this is from the CMIE, CPHS household survey data, we get a number like 35%, which I think is a better description, but it's still way beyond the 2%, 4%. It's still eight to nine times US. Correct. The 2%, 4% that you see in advanced economies. I also want to link it to land markets. Mechanization in agriculture works best when the pieces of land are large. If you're stuck with one acre, two acre, uh weird geography of a piece of land, then you end up being much more labor intensive, and that's part of what we are facing. So all these problems are intricately interconnected that if you could do more land consolidation and create large chunks of land, there'd be more mechanization and you'd need fewer people to work that same land.",
+      "endTime": 3208.45,
+      "text": "Structural transformation is the transition of a primitive country out of agriculture and from rural to urban. When high economic growth takes place, these two things happen. In India, you know, given the difficulties of growth. So we got one great episode of growth 1991 to 2011. Apart from that, by and large, in the entire uh period, we've had weak economic growth, and as a consequence, the job creation in the modern sector has not happened. And the pace of transformation from rural to urban has been mild, the pace of transformation out of agricultural jobs has been mild. That said, I just want to quibble about facts. Um The facts you quoted are mainstream standard facts. They depend on the precise phrasing of household survey questions. If a household survey question is phrased roughly as saying that do you do some in the world of agriculture, then you get those kinds of answers. But that's overstating the case for the extent of dependents on agriculture, because hypothetically imagine you're you're rain fed, you're doing one carif crop, then for four months you're doing agricultural work for the remaining eight months you're doing nothing. Or even if you're doing four months of agricultural work, you're not working eight hours a day on that. It requires some hours a day. Everybody who is supposedly an agriculturist Tends to do some other income generating activities. So it's important to go closer into time use and phrase questions correctly. And if you phrase the question correctly around do you primarily rely on agriculture for your income, then it comes to about 35%. So this is from the CMIE, CPHS household survey data, we get a number like 35%, which I think is a better description, but it's still way beyond the 2%, 4%.",
       "words": [
         {
           "word": "Structural",
@@ -58191,7 +58111,15 @@
           "startTime": 3207.81,
           "endTime": 3208.45,
           "confidence": 0.8761
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3208.45,
+      "endTime": 3209.81,
+      "text": "It's still eight to nine times US.",
+      "words": [
         {
           "word": "It's",
           "startTime": 3208.45,
@@ -58233,7 +58161,15 @@
           "startTime": 3209.41,
           "endTime": 3209.81,
           "confidence": 0.7077
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3209.81,
+      "endTime": 3240.94,
+      "text": "Correct. The 2%, 4% that you see in advanced economies. I also want to link it to land markets. Mechanization in agriculture works best when the pieces of land are large. If you're stuck with one acre, two acre, uh weird geography of a piece of land, then you end up being much more labor intensive, and that's part of what we are facing. So all these problems are intricately interconnected that if you could do more land consolidation and create large chunks of land, there'd be more mechanization and you'd need fewer people to work that same land.",
+      "words": [
         {
           "word": "Correct.",
           "startTime": 3209.81,
@@ -58833,8 +58769,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3249.92,
-      "endTime": 3390.72,
-      "text": "The last sort of issue in agriculture I quickly want to uh sort of uh uh bring up before we move from issue to person, because I also want to talk about a great uh hero of mine. But the last issue is MSPs, which are minimum support prices. Now again, a classic example of good intention gone wrong, right? The idea of minimum support prices is that hey, life for farmers is nasty, brutish, et cetera, et cetera. Let's uh you know, and but again, uh I think it was during the nineteen sixties, before the green revolution, that the the torment of farmers was uh upfront. And the idea of the state there was we'll give minimum support prices so a farmer no longer has to worry about will I be able to sell my crop. the government will guarantee it and um you know uh we we'll we'll guarantee that at the end of every season uh we buy whatever now this doesn't actually happen in practice in large places I think Barun Mitra in an episode with me had once pointed out that um you know uh across twenty-four particular commodities he looked at in a particular year, the MSP was only paid for six it was promised for twenty-four. But what it does is it corrupts the incentives. So two examples. One example is that circa late sixties, seventies, I forget exactly when the government instituted MSPs for cereals. Now you would think it's a great thing the country needs cereals and the government is assuring farmers that no matter what happens, you know, you'll get that minimum support price. And the result of this was farmers were incentivized to grow cereals because there was that um assurance that uh there'll there'll be a market for their wares. And therefore they moved away from pulses to cereals. And therefore for many, many years, in fact until t until twelve or thirteen years ago, You know, uh, there weren't enough pulses being produced. Now, think of the unseen nutritional impact of this, right? We get our protein either from animals or for those of us who cannot afford animals or eat animals or or don't eat animals, vegetarians, you get it from pulses, right? So it a tremendous nutritional impact on the nation that there's not enough protein being provided. And it is because of a public policy which comes from a good intention that you know, uh support those who make cereals. But on the other hand, the pulses market suffers. Well, typically in a well functioning market, demand and supply would work each other work itself out and you know, uh the production would be according to what people actually really wanted. But here it is perverted because the supply is perverted and there are more people. Yeah.",
+      "endTime": 3388.86,
+      "text": "The last sort of issue in agriculture I quickly want to uh sort of uh uh bring up before we move from issue to person, because I also want to talk about a great uh hero of mine. But the last issue is MSPs, which are minimum support prices. Now again, a classic example of good intention gone wrong, right? The idea of minimum support prices is that hey, life for farmers is nasty, brutish, et cetera, et cetera. Let's uh you know, and but again, uh I think it was during the nineteen sixties, before the green revolution, that the the torment of farmers was uh upfront. And the idea of the state there was we'll give minimum support prices so a farmer no longer has to worry about will I be able to sell my crop. the government will guarantee it and um you know uh we we'll we'll guarantee that at the end of every season uh we buy whatever now this doesn't actually happen in practice in large places I think Barun Mitra in an episode with me had once pointed out that um you know uh across twenty-four particular commodities he looked at in a particular year, the MSP was only paid for six it was promised for twenty-four. But what it does is it corrupts the incentives. So two examples. One example is that circa late sixties, seventies, I forget exactly when the government instituted MSPs for cereals. Now you would think it's a great thing the country needs cereals and the government is assuring farmers that no matter what happens, you know, you'll get that minimum support price. And the result of this was farmers were incentivized to grow cereals because there was that um assurance that uh there'll there'll be a market for their wares. And therefore they moved away from pulses to cereals. And therefore for many, many years, in fact until t until twelve or thirteen years ago, You know, uh, there weren't enough pulses being produced. Now, think of the unseen nutritional impact of this, right? We get our protein either from animals or for those of us who cannot afford animals or eat animals or or don't eat animals, vegetarians, you get it from pulses, right? So it a tremendous nutritional impact on the nation that there's not enough protein being provided. And it is because of a public policy which comes from a good intention that you know, uh support those who make cereals. But on the other hand, the pulses market suffers. Well, typically in a well functioning market, demand and supply would work each other work itself out and you know, uh the production would be according to what people actually really wanted. But here it is perverted because the supply is perverted and there are more people.",
       "words": [
         {
           "word": "The",
@@ -61673,21 +61609,21 @@
           "startTime": 3387.36,
           "endTime": 3388.86,
           "confidence": 0.7412
-        },
-        {
-          "word": "Yeah.",
-          "startTime": 3390.24,
-          "endTime": 3390.72,
-          "confidence": 0.7336
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 3390.72,
-      "endTime": 3410.13,
-      "text": "That's it. So what has happened is pulses are are a market and cereals is the government subsidy. So effectively from a health system point of view. We would just recommend people should go look at our episode on diabetes, where we're trying to say to folks that please eat less cereal. And instead the government is subsidizing the cereal and amplifying the Indian diabetes",
+      "startTime": 3390.24,
+      "endTime": 3410.93,
+      "text": "Yeah. That's it. So what has happened is pulses are are a market and cereals is the government subsidy. So effectively from a health system point of view. We would just recommend people should go look at our episode on diabetes, where we're trying to say to folks that please eat less cereal. And instead the government is subsidizing the cereal and amplifying the Indian diabetes epidemic.",
       "words": [
+        {
+          "word": "Yeah.",
+          "startTime": 3390.24,
+          "endTime": 3390.72,
+          "confidence": 0.7336
+        },
         {
           "word": "That's",
           "startTime": 3390.72,
@@ -62077,21 +62013,21 @@
           "startTime": 3409.57,
           "endTime": 3410.13,
           "confidence": 0.9972
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3410.13,
-      "endTime": 3515.06,
-      "text": "epidemic. Exactly. Less carbs, uh sorry, more carbs, less protein. And this is one powerful example for me, almost a sinful example, the you know, in terms of what it sparked. And like you said, yeah, made the diabetes epidemic worse. The other example is crazy. The other example is MSPs for rice on the one hand and support for sugarcane as well. Now, look at Punjab. Punjab is relatively arid. There isn't such a great groundwater supply. So technically they should not grow rice because rice is water intensive. But A, you institute an MSP for rice, and then B, you give free electricity to farmers, again with good intentions. Farmers use the free electricity to put bore wells and tube wells and whatever and take out huge amounts of groundwater more than they normally would, more than is good for the ecosystem. And uh that goes into rice production because now they're getting the MSPs and the water is not a problem because uh groundwater. Now I have a great episode with a gentleman named Zenrien Man uh Vishwanath on groundwater issues in India, groundwater depletion. And part of it is exactly this bore wells, tube wells, all of that, you know, uh sucking out excess uh groundwater because of bad incentives. And if you look further downstream, it is even more bizarre because this also causes Delhi's uh bad pollution in its worst months, because the farmers make rice and they need to get rid of the rice trouble. And the easiest way to get rid of the rice trouble is by burning it. And then the wind takes it to Del on the other side of the Himalaya, so it's not gonna go there. So the wind takes it to Delhi and then Delhi has its terrible fog smog problem. And one would think that and and it's politically almost impossible to solve because what is a Delhi chief minister to do when the problem is caused by farmers in Punjab over which he has no jurisdiction? And yes, you do have the same party there now, but nothing's gonna happen because politics gets in the way.",
-      "words": [
+        },
         {
           "word": "epidemic.",
           "startTime": 3410.13,
           "endTime": 3410.93,
           "confidence": 0.9695
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3410.93,
+      "endTime": 3515.06,
+      "text": "Exactly. Less carbs, uh sorry, more carbs, less protein. And this is one powerful example for me, almost a sinful example, the you know, in terms of what it sparked. And like you said, yeah, made the diabetes epidemic worse. The other example is crazy. The other example is MSPs for rice on the one hand and support for sugarcane as well. Now, look at Punjab. Punjab is relatively arid. There isn't such a great groundwater supply. So technically they should not grow rice because rice is water intensive. But A, you institute an MSP for rice, and then B, you give free electricity to farmers, again with good intentions. Farmers use the free electricity to put bore wells and tube wells and whatever and take out huge amounts of groundwater more than they normally would, more than is good for the ecosystem. And uh that goes into rice production because now they're getting the MSPs and the water is not a problem because uh groundwater. Now I have a great episode with a gentleman named Zenrien Man uh Vishwanath on groundwater issues in India, groundwater depletion. And part of it is exactly this bore wells, tube wells, all of that, you know, uh sucking out excess uh groundwater because of bad incentives. And if you look further downstream, it is even more bizarre because this also causes Delhi's uh bad pollution in its worst months, because the farmers make rice and they need to get rid of the rice trouble. And the easiest way to get rid of the rice trouble is by burning it. And then the wind takes it to Del on the other side of the Himalaya, so it's not gonna go there. So the wind takes it to Delhi and then Delhi has its terrible fog smog problem. And one would think that and and it's politically almost impossible to solve because what is a Delhi chief minister to do when the problem is caused by farmers in Punjab over which he has no jurisdiction? And yes, you do have the same party there now, but nothing's gonna happen because politics gets in the way.",
+      "words": [
         {
           "word": "Exactly.",
           "startTime": 3410.93,
@@ -66405,8 +66341,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3648.55,
-      "endTime": 3718.35,
-      "text": "So that fascinating person is a gentleman named Sharad Joshi, right? And people will often complain about, Oh, in our freedom struggle we had such great leaders. Where are the great leaders today? Independent India didn't have them. In my opinion, Sharad Joshi is one of our great leaders of the century, a man I respect enormously. Now he was born in 1935 on September 3rd. Um and a man who, you know, uh sort of did commerce at Sydenham College. I did, I think got a good education, was a civil servant for a very long time. I at one point, in fact, before that, he taught economics and statistics in circa 1957. He was a professor there. Then he went on to become a civil servant. As a civil servant between 1968 to 1977, he was working in informatics in Bern in Switzerland and also worked in the UN. So uh, you know, uh an extremely well educated, rational man, and then decided in nineteen seventy seven, when he was in his forties, to come back to India and become a farmer and live here. So he brought twenty three acres in a village called Ambithan in the Pune district and became a full time farmer. And immediately began to realize that uh what we just discussed this entire episode, that everything was messed up.",
+      "endTime": 4249.75,
+      "text": "So that fascinating person is a gentleman named Sharad Joshi, right? And people will often complain about, Oh, in our freedom struggle we had such great leaders. Where are the great leaders today? Independent India didn't have them. In my opinion, Sharad Joshi is one of our great leaders of the century, a man I respect enormously. Now he was born in 1935 on September 3rd. Um and a man who, you know, uh sort of did commerce at Sydenham College. I did, I think got a good education, was a civil servant for a very long time. I at one point, in fact, before that, he taught economics and statistics in circa 1957. He was a professor there. Then he went on to become a civil servant. As a civil servant between 1968 to 1977, he was working in informatics in Bern in Switzerland and also worked in the UN. So uh, you know, uh an extremely well educated, rational man, and then decided in nineteen seventy seven, when he was in his forties, to come back to India and become a farmer and live here. So he brought twenty three acres in a village called Ambithan in the Pune district and became a full time farmer. And immediately began to realize that uh what we just discussed this entire episode, that everything was messed up. But he also had the ability to look beyond the obvious uh solutions, uh uh you know, government handouts, et cetera, et cetera, et cetera, and to diagnose a problem correctly and realize that it stems in every case from state overreach and from clamping down on freedom. Now it is one thing for a person to get that understanding. The point is Can you do anything with it? Can you tell people at large? You and I bemoaned that oh these ideas are counterintuitive, people won't understand, you know, populism roles. Sharajoshi was not uh bound by such pessimism. He he said that no, this is something every farmer should understand intuitively. And he built this great movement, this great party called the Shetkari Sangatana, right? And he built this great party where he would do rallies which lakhs of people would attend, and they would all agree with him. And you know, they would agree with his diagnosis and it was a lived experience. And I remember this amazing experience I had about five or six years ago, when um uh this friend of mine, Barun Mitra, who's done an episode on agriculture with me as well, he took me to this place near Nashik, uh where a a whole bunch of farmer leaders from around Maharashtra were meeting and talking and the Shetkari Sangatana people were there. And uh and I I got a great episode out of that, my only Hindi episode with the Gunvan Patilji episode eighty-six, just uh you know, a a masterpiece of illumination. And I learned something there which moved me deeply. And what I learned there was that all these ideas that I have about freedom, about liberty, about uh you know the state being parasitic and all of that, in a sense, they have come from a distance. Right, I haven't experienced it viscerally. I've read a lot of books, I've applied frameworks, I've tried to grog the world, but in a sense there is a distance. And over there, I met farmer leader after farmer leader, farmer after farmer, who had the same beliefs about the world as me, but it had come to them from experience. They had not read Hayek and Basya, but they agreed with every word that Basya or Hayek would have written because it was a lived experience. And that was an eye-opening moment for me. Because it it shows that even in grassroots politics, it need not all be about populism or the politics of handouts. That like these people are not stupid, right? They're rational human beings, they can see what is going wrong with them, they can articulate what is going wrong with them. And Sharad Joshi tapped into that, you know, with a phrase like negative subsidy, you know, or the beautiful sort of command he had over language. Uh, you know, Marthe Hambiha, Martetumbiho. And immediately you're reaching out to uh everyone and uh and achieving something there. So he built this great movement called the Shetkari Sangatana. And he also realized something critical that all of us forget. Like many years back when I was editor of the policy magazine Pragati, I had uh I used to have this section called Brainstorm where I would take a subject and I would ask five, six experts to write essays to it and then write another essay responding to each other's essays. So I did one on the crisis in agriculture, and one of the writers I got to write for me was Minal Pande. And Minalji made a really profound point there, which she's written about at length elsewhere. And her point was that behind every crisis in India, there is a further layer, which is a crisis of the women in it. So she's saying you have an agricultural crisis, you also have a deep crisis of the women in agriculture. And this is something that Sharajoshiji saw and he realized that one way of mobilizing farmers with him is also involved the women. Right? And he started a women's organization called Shetkari Mahila Agadi in nineteen eighty six, I think sometime in the mid nineteen eighties, it was his legendary rally which had two lakh women farmers, no men. Two lakh women farmers all coming together, you know, and women bringing their common sense to the party, and and once you think about the problem, once you have those light bulbs moment, it becomes obvious what um uh causes these. So he became a massive leader in uh Sura Maharashtra. And he also led one of the most inspiring Satyagrahas. Like we think of the word Satyagraha and we think Gandhi, we think pre independence. This particular one blows my mind, and that's what I want to talk about now. In the nineteen nineties there was a crisis brewing and cotton farming in India. And the crisis was this, that the existing breeds of cotton were being destroyed by bull worms, right? And the way of countering this was pesticide. And then eventually more and more pesticide and it becomes a race to the bottom and crops just weren't surviving. Now, around this time, um uh there was something called BT cotton, which was genetically modified uh cotton, which had become available across the world. Now the Indian government using the precautionary principle, you know, and not understanding the new technology involved, decided to ban BT cotton. So Bt cotton was banned. Okay, it wa it was uh something all g all g all GMO stuff, all genetically modified organisms were banned in agriculture and food. Now, a group of farmers uh uh grarted experimenting with it. They got it from the black market as far as I remember. And uh a group of farmers in Gujarat actually planted BT cotton. And what Bt cotton had is that the bull worms did not attack it. It kept the bull worms away and therefore it flourished. And there is a seminal year, 2002, where crops all across Gujarat failed. Except In a small subset of farms where Bt cotton was used. So get this, it's a catastrophe. Cotton farms everywhere have failed. Bull worms have finally gotten too much. But all the BT cotton people, that cotton has grown. So guess what the government did? The government said, Hey, that's illegal. We're going to destroy those crops. The only ones that survive. They say we're going to destroy those crops. And Sharajoshi, Shitkari, Sangatana gathered together farmers from Maharashtra and elsewhere across the country, and they marched to Gujarat. And they stood on those um uh lands and they stood on those farms and they said over our dead bodies. Right? And eventually and and they marched to Delhi with bales of cotton and all of that. And there's a famous press conference I also gave where my friend Baran Mitra was one of those uh who spoke. And to the credit of the Vajpay government, they saw sense and the ban was lifted and everything was fine. And and this is one of the great Satya Grahas. And what happened after that is that last I checked, which was four or five years ago, the percentage would have grown today. But last I checked about I think five years ago, and I'll link to a column I wrote on this, over ninety percent of the cotton grown in this country was BT cotton. Cotton farmers were thriving. We became the biggest cotton producers and exporters in the world. We passed China. What has also happened is that across the world GMO crops have taken over and really everything is genetically modified. You and I are genetically modified. Even something grown organically is has been genetically modified by nature. The millions of hectares of uh c genetically modified crops have been grown. It's been incredible. Uh, you know, the them uh there are examples of them actually saving a nation in in crisis. BT brinjal is widely used in Bangladesh. In the Philippines, I believe there was uh the uh b the danger of starvation and all that, and millions of babies were helped by uh GMO crops. So GMO crops are now standard, the science is established, billions of meals have been eaten uh with the food that has come out of this. It is completely safe. You know, if there is anything on which there is scientific consensus, it is this, that genetically modified foods are completely safe and yet they are demonized and they're given a a bad name. And what happened in this case was farmers. We talk of farmers as if they don't have agency, they can't make good decisions. It was farmers who decided even if the government has banned it, we have to save ourselves. For our self interest we will get those crops. You know, many years later what what happened was you had sort of two generations of genetically modified cotton uh kind of um uh happening in India, but the world moved ahead to a third generation, a fourth generation, a fifth generation. In India that didn't happen and there were problems and what happens is that there is a degradation with each generation. You need to go on to the next one. And uh eventually a bunch of uh farmers in Maharashtra in Gujarat and all that you know through the black market got something which is called HTBT cotton. uh which is you know a superior brand. And and and you s and and people get arrested for this. It was you know pe people get arrested, people protest, there are many satyagrahas. But I found you know Sharad Joshi's work uh just incredibly um uh sort of inspiring here because not only is there a mass leader who's got his understanding of the world from the ground up, but he is actually spreading uh um that and you know building a mass movement. Good ideas and through good sense. And that was incredibly inspiring for me, and it showed that it could be done. And um, and that's a great place to segue to my recommendations. I just have two",
       "words": [
         {
           "word": "So",
@@ -67769,15 +67705,7 @@
           "startTime": 3718.04,
           "endTime": 3718.35,
           "confidence": 0.9645
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3718.79,
-      "endTime": 3720.47,
-      "text": "But he also",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 3718.79,
@@ -67795,15 +67723,7 @@
           "startTime": 3719.99,
           "endTime": 3720.47,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3720.47,
-      "endTime": 4042.26,
-      "text": "had the ability to look beyond the obvious uh solutions, uh uh you know, government handouts, et cetera, et cetera, et cetera, and to diagnose a problem correctly and realize that it stems in every case from state overreach and from clamping down on freedom. Now it is one thing for a person to get that understanding. The point is Can you do anything with it? Can you tell people at large? You and I bemoaned that oh these ideas are counterintuitive, people won't understand, you know, populism roles. Sharajoshi was not uh bound by such pessimism. He he said that no, this is something every farmer should understand intuitively. And he built this great movement, this great party called the Shetkari Sangatana, right? And he built this great party where he would do rallies which lakhs of people would attend, and they would all agree with him. And you know, they would agree with his diagnosis and it was a lived experience. And I remember this amazing experience I had about five or six years ago, when um uh this friend of mine, Barun Mitra, who's done an episode on agriculture with me as well, he took me to this place near Nashik, uh where a a whole bunch of farmer leaders from around Maharashtra were meeting and talking and the Shetkari Sangatana people were there. And uh and I I got a great episode out of that, my only Hindi episode with the Gunvan Patilji episode eighty-six, just uh you know, a a masterpiece of illumination. And I learned something there which moved me deeply. And what I learned there was that all these ideas that I have about freedom, about liberty, about uh you know the state being parasitic and all of that, in a sense, they have come from a distance. Right, I haven't experienced it viscerally. I've read a lot of books, I've applied frameworks, I've tried to grog the world, but in a sense there is a distance. And over there, I met farmer leader after farmer leader, farmer after farmer, who had the same beliefs about the world as me, but it had come to them from experience. They had not read Hayek and Basya, but they agreed with every word that Basya or Hayek would have written because it was a lived experience. And that was an eye-opening moment for me. Because it it shows that even in grassroots politics, it need not all be about populism or the politics of handouts. That like these people are not stupid, right? They're rational human beings, they can see what is going wrong with them, they can articulate what is going wrong with them. And Sharad Joshi tapped into that, you know, with a phrase like negative subsidy, you know, or the beautiful sort of command he had over language. Uh, you know, Marthe Hambiha, Martetumbiho. And immediately you're reaching out to uh everyone and uh and achieving something there. So he built this great movement called the Shetkari Sangatana. And he also realized something critical that all of us forget. Like many years back when I was editor of the policy magazine Pragati, I had uh I used to have this section called Brainstorm where I would take a subject and I would ask five, six experts to write essays to it and then write another essay responding to each other's essays. So I did one on the crisis in agriculture, and one of the writers I got to write for me was Minal Pande. And Minalji made a really profound point there, which she's written about at length elsewhere. And her point was that behind every crisis in India, there is a further layer, which is a crisis of the women in it. So she's saying you have an agricultural crisis, you also have a deep crisis of the women in agriculture. And this is something that Sharajoshiji saw and he realized that one way of mobilizing farmers with him is also involved the women. Right? And he started a women's organization called Shetkari Mahila Agadi in nineteen eighty six, I think sometime in the mid nineteen eighties, it was his legendary rally which had two lakh women farmers, no men. Two lakh women farmers all coming together, you know, and women bringing their common sense to the party, and and once you think about the problem, once you have those light bulbs moment, it becomes obvious what um uh causes these. So he became a massive leader in uh Sura Maharashtra. And he also led one of the most inspiring Satyagrahas. Like we think of the word Satyagraha and we think Gandhi, we think pre independence. This particular one blows my mind, and that's what I want to talk about now. In the nineteen nineties there was a crisis brewing and cotton farming in India. And the crisis was this, that the existing breeds of cotton were being destroyed by bull worms, right? And the way of countering this was pesticide. And then eventually more and more pesticide and it becomes a race to the bottom and crops just weren't surviving. Now, around this time, um uh there was something called BT cotton, which was genetically modified uh cotton, which had become available across the world. Now the Indian government using the precautionary principle, you know, and not understanding the new technology involved, decided to ban BT cotton. So Bt cotton was banned. Okay, it wa it was uh something all g all g all GMO stuff, all genetically modified organisms were banned in agriculture and food. Now, a group of farmers uh uh grarted experimenting with it. They got it from the black market as far as I remember. And uh a group of farmers in Gujarat actually planted BT cotton. And what Bt cotton had is that the bull worms did not attack it. It kept the bull worms away and therefore it flourished. And there is a seminal year, 2002, where crops all across Gujarat failed. Except",
-      "words": [
+        },
         {
           "word": "had",
           "startTime": 3720.47,
@@ -73857,15 +73777,7 @@
           "startTime": 4041.76,
           "endTime": 4042.26,
           "confidence": 0.9382
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4043.27,
-      "endTime": 4044.79,
-      "text": "In a small subset of",
-      "words": [
+        },
         {
           "word": "In",
           "startTime": 4043.27,
@@ -73895,15 +73807,7 @@
           "startTime": 4044.63,
           "endTime": 4044.79,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4044.79,
-      "endTime": 4093.89,
-      "text": "farms where Bt cotton was used. So get this, it's a catastrophe. Cotton farms everywhere have failed. Bull worms have finally gotten too much. But all the BT cotton people, that cotton has grown. So guess what the government did? The government said, Hey, that's illegal. We're going to destroy those crops. The only ones that survive. They say we're going to destroy those crops. And Sharajoshi, Shitkari, Sangatana gathered together farmers from Maharashtra and elsewhere across the country, and they marched to Gujarat. And they stood on those um uh lands and they stood on those farms and they said over our dead bodies. Right? And eventually and and they marched to Delhi with bales of cotton and all of that. And there's a famous press conference I also gave where my friend Baran Mitra was one of those uh who spoke. And to the credit of the Vajpay government, they saw sense and the ban was lifted and everything was fine. And and this is one of the great Satya Grahas. And what",
-      "words": [
+        },
         {
           "word": "farms",
           "startTime": 4044.79,
@@ -74953,15 +74857,7 @@
           "startTime": 4093.73,
           "endTime": 4093.89,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4093.89,
-      "endTime": 4095.57,
-      "text": "happened after that is that last",
-      "words": [
+        },
         {
           "word": "happened",
           "startTime": 4093.89,
@@ -74997,15 +74893,7 @@
           "startTime": 4095.25,
           "endTime": 4095.57,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4095.57,
-      "endTime": 4249.11,
-      "text": "I checked, which was four or five years ago, the percentage would have grown today. But last I checked about I think five years ago, and I'll link to a column I wrote on this, over ninety percent of the cotton grown in this country was BT cotton. Cotton farmers were thriving. We became the biggest cotton producers and exporters in the world. We passed China. What has also happened is that across the world GMO crops have taken over and really everything is genetically modified. You and I are genetically modified. Even something grown organically is has been genetically modified by nature. The millions of hectares of uh c genetically modified crops have been grown. It's been incredible. Uh, you know, the them uh there are examples of them actually saving a nation in in crisis. BT brinjal is widely used in Bangladesh. In the Philippines, I believe there was uh the uh b the danger of starvation and all that, and millions of babies were helped by uh GMO crops. So GMO crops are now standard, the science is established, billions of meals have been eaten uh with the food that has come out of this. It is completely safe. You know, if there is anything on which there is scientific consensus, it is this, that genetically modified foods are completely safe and yet they are demonized and they're given a a bad name. And what happened in this case was farmers. We talk of farmers as if they don't have agency, they can't make good decisions. It was farmers who decided even if the government has banned it, we have to save ourselves. For our self interest we will get those crops. You know, many years later what what happened was you had sort of two generations of genetically modified cotton uh kind of um uh happening in India, but the world moved ahead to a third generation, a fourth generation, a fifth generation. In India that didn't happen and there were problems and what happens is that there is a degradation with each generation. You need to go on to the next one. And uh eventually a bunch of uh farmers in Maharashtra in Gujarat and all that you know through the black market got something which is called HTBT cotton. uh which is you know a superior brand. And and and you s and and people get arrested for this. It was you know pe people get arrested, people protest, there are many satyagrahas. But I found you know Sharad Joshi's work uh just incredibly um uh sort of inspiring here because not only is there a mass leader who's got his understanding of the world from the ground up, but he is actually spreading uh um that and you know building a mass movement. Good ideas and through good sense. And that was incredibly inspiring for me, and it showed that it could be done. And um, and that's a great place to segue to my recommendations. I",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 4095.57,
@@ -78029,15 +77917,7 @@
           "startTime": 4249.03,
           "endTime": 4249.11,
           "confidence": 0.9212
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4249.11,
-      "endTime": 4378.42,
-      "text": "just have two tidbits to add to this. Uh one is that all too often in India, this uh irritation at the gap between the farm gate price and the price charge to the consumer is channeled into a certain populist hatred. Of the middlemen. Okay. And in India, middlemen are certain occupational castes, they're rich people, and there is a very close connection between resentment about that price premium and a populist hatred of rich or certain occupational castes, or the business of being a middleman where you know there is some. um old Prussian love of the land kind of concept which lurks inside many uh uh land oriented family in their imagination. And I just want to say that we should be careful about this populism. Okay? Hating elites and hating rich people and hating middlemen comes very easily in the Indian landscape and we should be cautious about that. Actually all that's going on here is a lack of freedom. That's all. What is at fault is not those individuals who are maximizing their own economic opportunities in the set of constraints that have been created by the Indian state. What is wrong is what the Indian state has done in terms of creating conditions where voluntary bargains are not able to overcome and solve these problems. And my last little thing that I wanted to say was I I remember Purvi Mehta of uh the Gates Foundation has been talking uh several times she has said to me that there are magical possibilities for uh the beet rice that is uh able to create a better micronutrient package which can be transformative for women's health in India. So there are magical things that can come out of this and we've just got to play this through and persuade people and of course be mindful of ways in which hacking in nature can go wrong. Yeah, w I and one example",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 4249.11,
@@ -78055,7 +77935,15 @@
           "startTime": 4249.51,
           "endTime": 4249.75,
           "confidence": 0.9899
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4249.75,
+      "endTime": 4375.85,
+      "text": "tidbits to add to this. Uh one is that all too often in India, this uh irritation at the gap between the farm gate price and the price charge to the consumer is channeled into a certain populist hatred. Of the middlemen. Okay. And in India, middlemen are certain occupational castes, they're rich people, and there is a very close connection between resentment about that price premium and a populist hatred of rich or certain occupational castes, or the business of being a middleman where you know there is some. um old Prussian love of the land kind of concept which lurks inside many uh uh land oriented family in their imagination. And I just want to say that we should be careful about this populism. Okay? Hating elites and hating rich people and hating middlemen comes very easily in the Indian landscape and we should be cautious about that. Actually all that's going on here is a lack of freedom. That's all. What is at fault is not those individuals who are maximizing their own economic opportunities in the set of constraints that have been created by the Indian state. What is wrong is what the Indian state has done in terms of creating conditions where voluntary bargains are not able to overcome and solve these problems. And my last little thing that I wanted to say was I I remember Purvi Mehta of uh the Gates Foundation has been talking uh several times she has said to me that there are magical possibilities for uh the beet rice that is uh able to create a better micronutrient package which can be transformative for women's health in India. So there are magical things that can come out of this and we've just got to play this through and persuade people and of course be mindful of ways in which hacking in nature can go wrong.",
+      "words": [
         {
           "word": "tidbits",
           "startTime": 4249.75,
@@ -79951,7 +79839,15 @@
           "startTime": 4375.51,
           "endTime": 4375.85,
           "confidence": 0.9884
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4376.5,
+      "endTime": 4394.02,
+      "text": "Yeah, w I and one example of sort of uh a genetically modified crop which really helped was something called golden rice, which helped, you know, generations of children avoid blindness, which was otherwise a problem in the Philippines. You know, you can just do so much with the genetic modification and the science is completely proven and safe.",
+      "words": [
         {
           "word": "Yeah,",
           "startTime": 4376.5,
@@ -79987,15 +79883,7 @@
           "startTime": 4377.86,
           "endTime": 4378.42,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4378.42,
-      "endTime": 4394.02,
-      "text": "of sort of uh a genetically modified crop which really helped was something called golden rice, which helped, you know, generations of children avoid blindness, which was otherwise a problem in the Philippines. You know, you can just do so much with the genetic modification and the science is completely proven and safe.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 4378.42,
@@ -81683,8 +81571,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4470.12,
-      "endTime": 4476.1,
-      "text": "it. I think there is a danger that the precautionary principle taken too far stops all progress in the world.",
+      "endTime": 4516.56,
+      "text": "it. I think there is a danger that the precautionary principle taken too far stops all progress in the world. That's number one. And and number two, as far as GMO is concerned, It's done. It's settled, you know, as far as GMO foods are concerned. They have caused so much humanitarian good through the last uh three, four decades across the world, that uh, you know, you have to be an extreme ludite and someone extremely ignorant of science uh to oppose them. And there will still be NGOs who oppose them because, you know, their funding comes from being alarmist. And there will be, for example, the pesticide lobby will of course be against GMO foods. You know, that's what happened in the late 90s. The pesticide lobby was one of the biggest lobbies saying don't let them in. Why? Because if BT cotton comes, people will stop drying their pesticides. So one also has to look at who are the interests involved and what's",
       "words": [
         {
           "word": "it.",
@@ -81805,15 +81693,7 @@
           "startTime": 4474.6,
           "endTime": 4476.1,
           "confidence": 0.2839
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4476.2,
-      "endTime": 4478.36,
-      "text": "That's number one. And and number two, as far as GMO",
-      "words": [
+        },
         {
           "word": "That's",
           "startTime": 4476.2,
@@ -81879,15 +81759,7 @@
           "startTime": 4477.8,
           "endTime": 4478.36,
           "confidence": 0.9875
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4478.36,
-      "endTime": 4516.56,
-      "text": "is concerned, It's done. It's settled, you know, as far as GMO foods are concerned. They have caused so much humanitarian good through the last uh three, four decades across the world, that uh, you know, you have to be an extreme ludite and someone extremely ignorant of science uh to oppose them. And there will still be NGOs who oppose them because, you know, their funding comes from being alarmist. And there will be, for example, the pesticide lobby will of course be against GMO foods. You know, that's what happened in the late 90s. The pesticide lobby was one of the biggest lobbies saying don't let them in. Why? Because if BT cotton comes, people will stop drying their pesticides. So one also has to look at who are the interests involved and what's",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 4478.36,
@@ -84855,8 +84727,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4631.09,
-      "endTime": 4638.93,
-      "text": "have a book that uh is connected to this subject and is a segue between some of this thinking and a",
+      "endTime": 4688.46,
+      "text": "have a book that uh is connected to this subject and is a segue between some of this thinking and a next frontier of the problems of the food system. Uh the book is by Charles Mann, I don't know how to pronounce M-A-N-N. Uh the title of the book is The Wizard and the Prophet. It's about Norman Burlock. And another great thinker called Robert Vokt. I don't know to pronounce it. William VOGT. William V. William Vogt. I've I forget how to I don't know how to pronounce V O G T. And this is about the tension between the scientific and industrial revolution in agriculture versus concerns about sustainability. And I think that's a great question of the food system for the next 25 years on how we go from some basics about feeding 1.4 billion people. the notions of sustainability and con consistency between the food system and the health system.",
       "words": [
         {
           "word": "have",
@@ -84983,15 +84855,7 @@
           "startTime": 4638.69,
           "endTime": 4638.93,
           "confidence": 0.9125
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4638.93,
-      "endTime": 4640.53,
-      "text": "next frontier of",
-      "words": [
+        },
         {
           "word": "next",
           "startTime": 4638.93,
@@ -85009,15 +84873,7 @@
           "startTime": 4640.29,
           "endTime": 4640.53,
           "confidence": 0.9865
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4640.53,
-      "endTime": 4653.64,
-      "text": "the problems of the food system. Uh the book is by Charles Mann, I don't know how to pronounce M-A-N-N. Uh the title of the book is The Wizard and the Prophet. It's about Norman Burlock. And another great thinker called Robert Vokt. I don't know to",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 4640.53,
@@ -85299,15 +85155,7 @@
           "startTime": 4653.56,
           "endTime": 4653.64,
           "confidence": 0.755
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4653.64,
-      "endTime": 4655.56,
-      "text": "pronounce it. William VOGT. William V. William",
-      "words": [
+        },
         {
           "word": "pronounce",
           "startTime": 4653.64,
@@ -85349,15 +85197,7 @@
           "startTime": 4655.32,
           "endTime": 4655.56,
           "confidence": 0.9179
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4655.56,
-      "endTime": 4688.46,
-      "text": "Vogt. I've I forget how to I don't know how to pronounce V O G T. And this is about the tension between the scientific and industrial revolution in agriculture versus concerns about sustainability. And I think that's a great question of the food system for the next 25 years on how we go from some basics about feeding 1.4 billion people. the notions of sustainability and con consistency between the food system and the health system.",
-      "words": [
+        },
         {
           "word": "Vogt.",
           "startTime": 4655.56,
@@ -85825,8 +85665,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4689.3,
-      "endTime": 4754.79,
-      "text": "Wonderful, and that's a great note to end on. I can't wait to pick that book up. But wait, we will not end here. We have a plea for our gentle readers, and the plea for our gentle readers is this that, you know, do comment, tell us how do you enjoy how you enjoy the show. What would you like us to talk about? Are there subjects you want? And there is one specific gentle uh reader who had a request for you. And this is a demand that I think all your fans, including me, can uh heartily be pub uh proud of, which uh part of, rather. Which is that in every episode, Ajay, you must recommend at least one book, because some episodes you're recommending Masala T and all kinds of other Delightful things. And they want the delightful gyan. But a quota has been put, minimum one book per episode. In this episode you've gotten away with it. But in future episodes, Mr. Shah, I must remind you that you have to recommend at least one book in every episode. And I of course will. And with that, gentle readers, you can see that no matter how gentle you are, we do listen to you. We take you seriously. So just leave some nice comments there and tell us what you like about the show and Uh what you would like us to see uh do that goes beyond this. And uh while you're watching me, gentle reader is there. Kindly watch there and wave goodbye. I",
+      "endTime": 4754.07,
+      "text": "Wonderful, and that's a great note to end on. I can't wait to pick that book up. But wait, we will not end here. We have a plea for our gentle readers, and the plea for our gentle readers is this that, you know, do comment, tell us how do you enjoy how you enjoy the show. What would you like us to talk about? Are there subjects you want? And there is one specific gentle uh reader who had a request for you. And this is a demand that I think all your fans, including me, can uh heartily be pub uh proud of, which uh part of, rather. Which is that in every episode, Ajay, you must recommend at least one book, because some episodes you're recommending Masala T and all kinds of other Delightful things. And they want the delightful gyan. But a quota has been put, minimum one book per episode. In this episode you've gotten away with it. But in future episodes, Mr. Shah, I must remind you that you have to recommend at least one book in every episode. And I of course will. And with that, gentle readers, you can see that no matter how gentle you are, we do listen to you. We take you seriously. So just leave some nice comments there and tell us what you like about the show and Uh what you would like us to see uh do that goes beyond this. And uh while you're watching me, gentle reader is there. Kindly watch there and wave",
       "words": [
         {
           "word": "Wonderful,",
@@ -87387,7 +87227,15 @@
           "startTime": 4753.83,
           "endTime": 4754.07,
           "confidence": 0.9991
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4754.07,
+      "endTime": 4771.29,
+      "text": "goodbye. I I think that you know, books are very nerdy and I'm very nerdy. So I thought it'd be hajar cool to go beyond books and talk about fun things like kafir and masala tea and so on. So I was just like broadening the ambit of fun stuff. Books are hajar cool.",
+      "words": [
         {
           "word": "goodbye.",
           "startTime": 4754.07,
@@ -87399,15 +87247,7 @@
           "startTime": 4754.63,
           "endTime": 4754.79,
           "confidence": 0.5601
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4754.79,
-      "endTime": 4769.91,
-      "text": "I think that you know, books are very nerdy and I'm very nerdy. So I thought it'd be hajar cool to go beyond books and talk about fun things like kafir and masala tea and so on. So I was just like broadening the ambit of fun stuff. Books",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 4754.79,
@@ -87701,15 +87541,7 @@
           "startTime": 4769.43,
           "endTime": 4769.91,
           "confidence": 0.9882
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4769.91,
-      "endTime": 4774.13,
-      "text": "are hajar cool. Thank you for listening.",
-      "words": [
+        },
         {
           "word": "are",
           "startTime": 4769.91,
@@ -87727,7 +87559,15 @@
           "startTime": 4770.79,
           "endTime": 4771.29,
           "confidence": 0.8769
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4773.01,
+      "endTime": 4774.13,
+      "text": "Thank you for listening.",
+      "words": [
         {
           "word": "Thank",
           "startTime": 4773.01,

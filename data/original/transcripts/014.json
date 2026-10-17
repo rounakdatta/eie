@@ -5,10 +5,11 @@
     "durationSeconds": 5476,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
-      "Amit Varma"
+      "Amit Varma",
+      "other"
     ],
     "created": "2026-10-16"
   },
@@ -16,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 88.79,
-      "endTime": 137.41,
-      "text": "Fool you for a moment, didn't we? This is Amit and Ajay, and we're glad to have you here. So, Ajay, I want to kind of tell you this story about a dear friend of mine, Gaurif Chintamani, who edits The Scene and the Unseen, helps us with sound for this show. And uh uh recently I was in Delhi for a bunch of recordings and he's a big fan of yours. And he had uh he started watching Everything Is Everything, loves the show, but he had heard your Ukraine episode and he was completely blown away. You know, the episode you and I uh did for The Scene and the Unseen, five and a half hour primer on Ukraine. Complete masterpiece. I've heard about it from so many people. Like, how did how does this guy know so much about Ukraine, right? And Gorov kind of had the same uh reaction, completely mind-blown. And at one point in his studio, I was saying, can you think of an expert I can call? He said, What is your response to that? I",
+      "endTime": 194.34,
+      "text": "Fool you for a moment, didn't we? This is Amit and Ajay, and we're glad to have you here. So, Ajay, I want to kind of tell you this story about a dear friend of mine, Gaurif Chintamani, who edits The Scene and the Unseen, helps us with sound for this show. And uh uh recently I was in Delhi for a bunch of recordings and he's a big fan of yours. And he had uh he started watching Everything Is Everything, loves the show, but he had heard your Ukraine episode and he was completely blown away. You know, the episode you and I uh did for The Scene and the Unseen, five and a half hour primer on Ukraine. Complete masterpiece. I've heard about it from so many people. Like, how did how does this guy know so much about Ukraine, right? And Gorov kind of had the same uh reaction, completely mind-blown. And at one point in his studio, I was saying, can you think of an expert I can call? He said, What is your response to that? I only know 16 things. Today we're gonna talk about Ukraine because you pointed out that a lot has happened there since we recorded our episode. So why not sort of do an update? But I'm not going to assume that everyone who's watching this right now has seen our episode, though I recommend this show. It's more than five hours. It's a master class in understanding um uh you know the history of the conflict, in understanding the deep history of Russia itself, Ukraine itself, and uh, you know, the nuances of that. But um And I recommend everyone go and watch that. But I want to begin by sort of before we come to the current conflict, I want to quickly go over some of the main areas for those who haven't heard that. And the first question I want to ask you is: why is this important? Russia and Ukraine are far away from where we are in India or far away from where many of our viewers might be. Why does it matter? It's a war in some other random place. Why why why why should we care?",
       "words": [
         {
           "word": "Fool",
@@ -1116,15 +1117,7 @@
           "startTime": 137.09,
           "endTime": 137.41,
           "confidence": 0.9947
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 137.41,
-      "endTime": 139.11,
-      "text": "only know 16 things.",
-      "words": [
+        },
         {
           "word": "only",
           "startTime": 137.41,
@@ -1148,15 +1141,7 @@
           "startTime": 138.61,
           "endTime": 139.11,
           "confidence": 0.8538
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 145.54,
-      "endTime": 194.34,
-      "text": "Today we're gonna talk about Ukraine because you pointed out that a lot has happened there since we recorded our episode. So why not sort of do an update? But I'm not going to assume that everyone who's watching this right now has seen our episode, though I recommend this show. It's more than five hours. It's a master class in understanding um uh you know the history of the conflict, in understanding the deep history of Russia itself, Ukraine itself, and uh, you know, the nuances of that. But um And I recommend everyone go and watch that. But I want to begin by sort of before we come to the current conflict, I want to quickly go over some of the main areas for those who haven't heard that. And the first question I want to ask you is: why is this important? Russia and Ukraine are far away from where we are in India or far away from where many of our viewers might be. Why does it matter? It's a war in some other random place. Why why why why should we care?",
-      "words": [
+        },
         {
           "word": "Today",
           "startTime": 145.54,
@@ -3636,8 +3621,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 294.18,
-      "endTime": 337.7,
-      "text": "What is happening today reminds me of the famous Thomas Jefferson quote about how liberty requires eternal vigilance. You can't take it for granted, you have to fight for it. And uh, you know, that that sense of false hope and optimism that came when the Soviet Union collapsed, the Berlin Wall fell, you know, when Francis Fukuyama famously wrote his essay about the end of history question mark. Uh and but You know, one assumed that uh uh you know the the arc of history was going in a certain direction. And and that direction many felt was okay, liberal democracy. We've solved you know all those big ideological questions. We know this is a way forward, the way to prosperity. And you know, it almost seems in the last few years that uh things are kind of falling apart, and therefore that makes it important. And again,",
+      "endTime": 337.3,
+      "text": "What is happening today reminds me of the famous Thomas Jefferson quote about how liberty requires eternal vigilance. You can't take it for granted, you have to fight for it. And uh, you know, that that sense of false hope and optimism that came when the Soviet Union collapsed, the Berlin Wall fell, you know, when Francis Fukuyama famously wrote his essay about the end of history question mark. Uh and but You know, one assumed that uh uh you know the the arc of history was going in a certain direction. And and that direction many felt was okay, liberal democracy. We've solved you know all those big ideological questions. We know this is a way forward, the way to prosperity. And you know, it almost seems in the last few years that uh things are kind of falling apart, and therefore that makes it important.",
       "words": [
         {
           "word": "What",
@@ -4520,7 +4505,15 @@
           "startTime": 336.66,
           "endTime": 337.3,
           "confidence": 0.9655
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 337.3,
+      "endTime": 416.52,
+      "text": "And again, that that triply amplifies the Ukraine problem. So Imagine if there was no Trump, no Xi Jinping, no Putin, no Erdogan. Okay, if right-wing nationalism was not back as a force all over the world, then the Ukraine war would have had a lower materiality. But that's not the world we live in. We're actually in a world where political systems the world over are a threat from a new kind of authoritarianism. And partly it's a message to everybody that. liberal democracy is a fragile compact and we need to renew our vows every day. But also that there is an international dimension to this. So just as Mussolini and Hitler and Imperial Japan work together like that, the right-wing authoritarians of the world have ways of propping up each other and supporting each other. So uh you remember the phrase uh that I had used in our Podcast conversation going upstream from Hemingway for whom the bell tolls. We cannot ignore a remote conflict in Spain in 1936. We cannot ignore a conflict in Ukraine in 2022,",
+      "words": [
         {
           "word": "And",
           "startTime": 337.3,
@@ -4532,15 +4525,7 @@
           "startTime": 337.46,
           "endTime": 337.7,
           "confidence": 0.9023
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 337.7,
-      "endTime": 416.52,
-      "text": "that that triply amplifies the Ukraine problem. So Imagine if there was no Trump, no Xi Jinping, no Putin, no Erdogan. Okay, if right-wing nationalism was not back as a force all over the world, then the Ukraine war would have had a lower materiality. But that's not the world we live in. We're actually in a world where political systems the world over are a threat from a new kind of authoritarianism. And partly it's a message to everybody that. liberal democracy is a fragile compact and we need to renew our vows every day. But also that there is an international dimension to this. So just as Mussolini and Hitler and Imperial Japan work together like that, the right-wing authoritarians of the world have ways of propping up each other and supporting each other. So uh you remember the phrase uh that I had used in our Podcast conversation going upstream from Hemingway for whom the bell tolls. We cannot ignore a remote conflict in Spain in 1936. We cannot ignore a conflict in Ukraine in 2022,",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 337.7,
@@ -5620,8 +5605,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 416.52,
-      "endTime": 420.68,
-      "text": "2023. I have a question leading on from here, which is",
+      "endTime": 531.99,
+      "text": "2023. I have a question leading on from here, which is that There are there's sort of a broader reason, a broader philosophical reason for fighting this fight and being on Ukraine's side, and that is a fight for liberal democracy and the values we care about of freedom and liberty and so on. And there is also the proximate foreign policy matter that if you allow this to stand, China will feel emboldened to attack Taiwan or take Aru Nachal. And like you said, uh uh, you know, uh Putin could be, if he wins this, could be further emboldened to go deeper, go to Belarus and whatever. And uh These are two simultaneous reasons. But what often happens is that Countries have different incentives, politicians have different incentives across the world. It is not necessary that that larger uh uh you know uh battle for liberal democracy, something that will necessarily concern, say, someone in the US, because they can take it for granted. They're like, we are okay. They're like, why get embroiled in another messy war after Iraq and Afghanistan? And that could be one strain of thinking. Equally, there could be incentives that take you in the other direction. For example, one common thinking, and no doubt Russia's assumption before this war, is that Europe is dependent on our oil. Because Europe at one point, uh a lot of Europe made the d disastrous decision and something I discussed in an episode right when the war started with Praneko Tasani and Nitin Paid. I'll be linked from the show notes as well. Europe made the disastrous decision that we'll have pipelines from Russia giving us oil rather than kind of build ports and open yourself up to supply uh from elsewhere. Right? And they made that choice and Russia assumed that they're dependent on us. We can shut them down. You know, Germany's towns can go without light and warming, especially um which would be a disaster, especially in winter. And that was the assumption. So part of it, uh part of the Russian assumption was that fine, these, you know, these imperatives that you described exist, but the West won't do anything. But the West did. And I want you to tell me a little bit about that. What did they do? Why did they do it?",
       "words": [
         {
           "word": "2023.",
@@ -5688,15 +5673,7 @@
           "startTime": 420.36,
           "endTime": 420.68,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 420.68,
-      "endTime": 422.79,
-      "text": "that There are",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 420.68,
@@ -5714,15 +5691,7 @@
           "startTime": 422.47,
           "endTime": 422.79,
           "confidence": 0.9944
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 422.79,
-      "endTime": 531.99,
-      "text": "there's sort of a broader reason, a broader philosophical reason for fighting this fight and being on Ukraine's side, and that is a fight for liberal democracy and the values we care about of freedom and liberty and so on. And there is also the proximate foreign policy matter that if you allow this to stand, China will feel emboldened to attack Taiwan or take Aru Nachal. And like you said, uh uh, you know, uh Putin could be, if he wins this, could be further emboldened to go deeper, go to Belarus and whatever. And uh These are two simultaneous reasons. But what often happens is that Countries have different incentives, politicians have different incentives across the world. It is not necessary that that larger uh uh you know uh battle for liberal democracy, something that will necessarily concern, say, someone in the US, because they can take it for granted. They're like, we are okay. They're like, why get embroiled in another messy war after Iraq and Afghanistan? And that could be one strain of thinking. Equally, there could be incentives that take you in the other direction. For example, one common thinking, and no doubt Russia's assumption before this war, is that Europe is dependent on our oil. Because Europe at one point, uh a lot of Europe made the d disastrous decision and something I discussed in an episode right when the war started with Praneko Tasani and Nitin Paid. I'll be linked from the show notes as well. Europe made the disastrous decision that we'll have pipelines from Russia giving us oil rather than kind of build ports and open yourself up to supply uh from elsewhere. Right? And they made that choice and Russia assumed that they're dependent on us. We can shut them down. You know, Germany's towns can go without light and warming, especially um which would be a disaster, especially in winter. And that was the assumption. So part of it, uh part of the Russian assumption was that fine, these, you know, these imperatives that you described exist, but the West won't do anything. But the West did. And I want you to tell me a little bit about that. What did they do? Why did they do it?",
-      "words": [
+        },
         {
           "word": "there's",
           "startTime": 422.79,
@@ -13524,8 +13493,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 895.27,
-      "endTime": 919.83,
-      "text": "built. Before my next question, I just want to point out to all our listeners something that both you and I feel deeply about, which is that it's important to separate Russia from the Russian people. Right? The Russian people have protested heroically at this. Um, I follow chess really closely. Uh, some 40 chess grandmasters, you know, the their top players basically, besides uh uh one coward called Sir Sergei Karyakin, who is um sort of a Putin Bhakti.",
+      "endTime": 962.86,
+      "text": "built. Before my next question, I just want to point out to all our listeners something that both you and I feel deeply about, which is that it's important to separate Russia from the Russian people. Right? The Russian people have protested heroically at this. Um, I follow chess really closely. Uh, some 40 chess grandmasters, you know, the their top players basically, besides uh uh one coward called Sir Sergei Karyakin, who is um sort of a Putin Bhakti. But All of most of all of the top grandmasters, besides one guy, you know, wrote a letter protesting against this. Many of them had to move out of the country. Some of them are now, you know, playing for other chess federations in tournaments around the world. All of them protested. We've seen this from artists and thinkers across the world. Um, we've had uh, you know, great intellectuals like Gary Kasparo for years protesting against uh uh Putin, giving us a warning that this is exactly what would happen and you know, fighting against the apologists. And again, that um episode that we did is, you know, I I think an essential counter to a lot of the propaganda that uh Russia spreads because the propaganda machine is mind-blowing. And we discussed the propaganda machine in the episode as well. My next question is this. I came across",
       "words": [
         {
           "word": "built.",
@@ -14006,15 +13975,7 @@
           "startTime": 919.27,
           "endTime": 919.83,
           "confidence": 0.6319
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 919.83,
-      "endTime": 921.57,
-      "text": "But All of most of all of",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 919.83,
@@ -14056,15 +14017,7 @@
           "startTime": 921.41,
           "endTime": 921.57,
           "confidence": 0.9964
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 921.57,
-      "endTime": 962.86,
-      "text": "the top grandmasters, besides one guy, you know, wrote a letter protesting against this. Many of them had to move out of the country. Some of them are now, you know, playing for other chess federations in tournaments around the world. All of them protested. We've seen this from artists and thinkers across the world. Um, we've had uh, you know, great intellectuals like Gary Kasparo for years protesting against uh uh Putin, giving us a warning that this is exactly what would happen and you know, fighting against the apologists. And again, that um episode that we did is, you know, I I think an essential counter to a lot of the propaganda that uh Russia spreads because the propaganda machine is mind-blowing. And we discussed the propaganda machine in the episode as well. My next question is this. I came across",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 921.57,
@@ -14928,8 +14881,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 963.12,
-      "endTime": 1054.74,
-      "text": "an astonishing feat of Russian propaganda is uh Indian video outlets such as Hindustan Times on YouTube. It's amazing how they're swallowing Russian propaganda. So they're really getting through everywhere in the world. Uh I also uh was Not understanding Putin, I was just thinking, you know, one more Russian strongman, Gary Kasparov was a key for me to wake up that no, this is different, that you're going back to a different level of authoritarian and yearning for the USSR. And finally, uh, it's always important for us to establish some of these clean separations, that it's always important to separate the state from the people, that there is a difference between the Bangladeshi state and the Bangladeshi people. And it is Perfectly possible for the Bangladeshi people to be in a very different place and for actions of the state to not even represent the best interests of the Bangladeshi state. So very often these things get conflated, and particularly when you come to war, it is so easy to have a rally around the flag. So uh one good friend of ours said to me about a Russian analyst that when Putin invaded uh Russia. That person felt that I have to stand with my country. And that's a simple, basic intellectual blunder. That when the state invades some other country, your patriotism doesn't mean that you have to stand with your",
+      "endTime": 1055.7,
+      "text": "an astonishing feat of Russian propaganda is uh Indian video outlets such as Hindustan Times on YouTube. It's amazing how they're swallowing Russian propaganda. So they're really getting through everywhere in the world. Uh I also uh was Not understanding Putin, I was just thinking, you know, one more Russian strongman, Gary Kasparov was a key for me to wake up that no, this is different, that you're going back to a different level of authoritarian and yearning for the USSR. And finally, uh, it's always important for us to establish some of these clean separations, that it's always important to separate the state from the people, that there is a difference between the Bangladeshi state and the Bangladeshi people. And it is Perfectly possible for the Bangladeshi people to be in a very different place and for actions of the state to not even represent the best interests of the Bangladeshi state. So very often these things get conflated, and particularly when you come to war, it is so easy to have a rally around the flag. So uh one good friend of ours said to me about a Russian analyst that when Putin invaded uh Russia. That person felt that I have to stand with my country. And that's a simple, basic intellectual blunder. That when the state invades some other country, your patriotism doesn't mean that you have to stand with your government.",
       "words": [
         {
           "word": "an",
@@ -16340,21 +16293,21 @@
           "startTime": 1054.5,
           "endTime": 1054.74,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1054.74,
-      "endTime": 1271.75,
-      "text": "government. In fact, if our country does something wrong or if our government does something wrong, it is a sign of your patriotism that you protest for the sake of what your country means to you. Yeah, and and and and you know, you mentioned um uh what uh a particular media outlet does where they just swallow Russian propaganda. And I think part of the reason for that, and it's very sad and it's something that people need to think about in media more, is that we have lost that distinction between journalism and content. You know, journalism has certain values, it's a pursuit of truth, there's a certain rigor to what you put out there. Etc. etc. Right. But media companies today are no longer really doing journalism per se, but they're doing they are in a content game, and it's a question of keep putting content out, uh, you know, and keep giving quote-unquote insight, whether it is, you know, accurate or not. And the danger of that game is that then the best propaganda machines win. That you know, it becomes a battle of uh it becomes about narrative and not truth, and and that becomes uh problematic. What I want to talk about now is uh for the perhaps the only part of this show I want to kind of personalize it and talk about a person. Now, I I I was reading this great interview of Michael Kaufman and Kaufman in that interview said something that, you know, you and I would have agreed with weeks ago and you and I would have thought uh that You know, we would have said that the Russian invasion is probably gonna succeed and the occupation is going to fail. And the reason for why the occupation is going to fail is something we discussed in an earlier everything is everything episode where we spoke about guerrilla warfare and so on at uh length. There is no way that any Russian occupation could have worked. What took us by surprise, what took almost everybody by surprise, uh perhaps even Ukraine itself, is that the invasion itself failed. And the invasion failed partly because the Russians assume that it's gonna be easy, that we're just gonna march in there and you know they'll welcome us with open arms. They had this clumsy operation where they landed at the airport at Kiev. There were like different groups sent to assassin assassinate Zelensky, and thankfully they failed. And uh, you know, in the first 24 hours were key, but they did not succeed, the invasion failed. And when I look back, part of this is Perhaps because, you know, a big army like a big company can often be ossified in certain ways, can make fallacious assumptions, and there can be, you know, a slow flow of information from bottom to top. But also it has to do, I think, with the in uh the individual megalomania of the man on top, which in this case is Putin. He's 70 years old. Uh he hankers uh for you know not just the Soviet Union, but the imperial past of Russia. He sees it as a great nation. He is perhaps blinded by ego. And what happi typically tends to happen to authoritarian leaders everywhere is that they get surrounded by yes men. And no one dares to contradict them in any way. And therefore their finest minds, uh, you know, eventually disappear into the shadows or in exile and they're surrounded by yes men and delusions can then persist. So tell me a little bit about Vladimir Putin, um you know, you and and your sense of how critical uh you know it is to sort of understand him. Because on the one hand, you know, uh foreign powers and foreign policy people will often behave as if people are rational actors. But this is a 70-year-old man with an imperialist delusion. Uh and time is running out for him because he is 70. Uh, how much can we take his rationality for granted? In fact, this would have been one factor in his favor because you could have assumed that the West would have feared nuclear escalation and they would have, you know, uh stayed away from him. But something else entirely is working out. So what's your sense? Putin is a",
-      "words": [
+        },
         {
           "word": "government.",
           "startTime": 1054.74,
           "endTime": 1055.7,
           "confidence": 0.9924
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1055.7,
+      "endTime": 1271.75,
+      "text": "In fact, if our country does something wrong or if our government does something wrong, it is a sign of your patriotism that you protest for the sake of what your country means to you. Yeah, and and and and you know, you mentioned um uh what uh a particular media outlet does where they just swallow Russian propaganda. And I think part of the reason for that, and it's very sad and it's something that people need to think about in media more, is that we have lost that distinction between journalism and content. You know, journalism has certain values, it's a pursuit of truth, there's a certain rigor to what you put out there. Etc. etc. Right. But media companies today are no longer really doing journalism per se, but they're doing they are in a content game, and it's a question of keep putting content out, uh, you know, and keep giving quote-unquote insight, whether it is, you know, accurate or not. And the danger of that game is that then the best propaganda machines win. That you know, it becomes a battle of uh it becomes about narrative and not truth, and and that becomes uh problematic. What I want to talk about now is uh for the perhaps the only part of this show I want to kind of personalize it and talk about a person. Now, I I I was reading this great interview of Michael Kaufman and Kaufman in that interview said something that, you know, you and I would have agreed with weeks ago and you and I would have thought uh that You know, we would have said that the Russian invasion is probably gonna succeed and the occupation is going to fail. And the reason for why the occupation is going to fail is something we discussed in an earlier everything is everything episode where we spoke about guerrilla warfare and so on at uh length. There is no way that any Russian occupation could have worked. What took us by surprise, what took almost everybody by surprise, uh perhaps even Ukraine itself, is that the invasion itself failed. And the invasion failed partly because the Russians assume that it's gonna be easy, that we're just gonna march in there and you know they'll welcome us with open arms. They had this clumsy operation where they landed at the airport at Kiev. There were like different groups sent to assassin assassinate Zelensky, and thankfully they failed. And uh, you know, in the first 24 hours were key, but they did not succeed, the invasion failed. And when I look back, part of this is Perhaps because, you know, a big army like a big company can often be ossified in certain ways, can make fallacious assumptions, and there can be, you know, a slow flow of information from bottom to top. But also it has to do, I think, with the in uh the individual megalomania of the man on top, which in this case is Putin. He's 70 years old. Uh he hankers uh for you know not just the Soviet Union, but the imperial past of Russia. He sees it as a great nation. He is perhaps blinded by ego. And what happi typically tends to happen to authoritarian leaders everywhere is that they get surrounded by yes men. And no one dares to contradict them in any way. And therefore their finest minds, uh, you know, eventually disappear into the shadows or in exile and they're surrounded by yes men and delusions can then persist. So tell me a little bit about Vladimir Putin, um you know, you and and your sense of how critical uh you know it is to sort of understand him. Because on the one hand, you know, uh foreign powers and foreign policy people will often behave as if people are rational actors. But this is a 70-year-old man with an imperialist delusion. Uh and time is running out for him because he is 70. Uh, how much can we take his rationality for granted? In fact, this would have been one factor in his favor because you could have assumed that the West would have feared nuclear escalation and they would have, you know, uh stayed away from him. But something else entirely is working out. So what's your sense? Putin is a",
+      "words": [
         {
           "word": "In",
           "startTime": 1055.7,
@@ -32116,8 +32069,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1929.4,
-      "endTime": 2055.52,
-      "text": "And I just want to sort of uh zoom in onto one point there, that when you said that I'll go I'll you know, I'll go to the website and I'll f I won't find this information, I want this information, you know, uh our gentle readers might think, why does it matter? What's a big deal, you know? But it matters because transparency indicates accountability. Accountability indicates efficiency. You do your job well when there are always been questions asked from above and below. And uh b y you know, and that's a classic thing. And and Ukraine, of course, was in this messy situation where you are fighting for your life, you'll do whatever it takes and the ingenuity is coming from everywhere. And then there is, you know, hierarchies and egos and all of that don't kick in, which is kind of inspiring. Before we get to the you know the current uh developments as it were, I uh uh a final point I want to sort of talk about because it intrigues me a lot, is a changing nature of modern warfare. Like there was a time where you would, you know, when tanks were first introduced, they were a mind-blowing innovation, they changed everything. Today, if a tank is deployed somewhere in the battlefield within 10 minutes, 10 minutes is a time that it can be detected and destroyed by your drone. You know, uh Ukraine, as you pointed out in that episode, is using about 10,000 drones a month. And these are kind of old estimates. It might even be more now. And I ironically, a lot of them are cheap to Chinese-made drones. And uh essentially now what happens is that you don't even have to be at the front. You can be well inside the front somewhere and a drone can come and see you in a trench and drop a grenade. Or a dr uh drone armed with explosives can, you know, be remote uh flown into whatever your uh target is. You know, so what what happens is that a battlefield becomes totally visible in real time, right? And uh you drones give you that visibility, drones also give you the penetration. It sh kind of changes the nature of modern warfare in a sense to the point where, you know, one day in the distant future there may even be no soldiers, it could all be automated and we could sit at home and watch it on TV. But uh what is uh g give me a co so sense of",
+      "endTime": 2056.24,
+      "text": "And I just want to sort of uh zoom in onto one point there, that when you said that I'll go I'll you know, I'll go to the website and I'll f I won't find this information, I want this information, you know, uh our gentle readers might think, why does it matter? What's a big deal, you know? But it matters because transparency indicates accountability. Accountability indicates efficiency. You do your job well when there are always been questions asked from above and below. And uh b y you know, and that's a classic thing. And and Ukraine, of course, was in this messy situation where you are fighting for your life, you'll do whatever it takes and the ingenuity is coming from everywhere. And then there is, you know, hierarchies and egos and all of that don't kick in, which is kind of inspiring. Before we get to the you know the current uh developments as it were, I uh uh a final point I want to sort of talk about because it intrigues me a lot, is a changing nature of modern warfare. Like there was a time where you would, you know, when tanks were first introduced, they were a mind-blowing innovation, they changed everything. Today, if a tank is deployed somewhere in the battlefield within 10 minutes, 10 minutes is a time that it can be detected and destroyed by your drone. You know, uh Ukraine, as you pointed out in that episode, is using about 10,000 drones a month. And these are kind of old estimates. It might even be more now. And I ironically, a lot of them are cheap to Chinese-made drones. And uh essentially now what happens is that you don't even have to be at the front. You can be well inside the front somewhere and a drone can come and see you in a trench and drop a grenade. Or a dr uh drone armed with explosives can, you know, be remote uh flown into whatever your uh target is. You know, so what what happens is that a battlefield becomes totally visible in real time, right? And uh you drones give you that visibility, drones also give you the penetration. It sh kind of changes the nature of modern warfare in a sense to the point where, you know, one day in the distant future there may even be no soldiers, it could all be automated and we could sit at home and watch it on TV. But uh what is uh g give me a co so sense of I my",
       "words": [
         {
           "word": "And",
@@ -34710,15 +34663,7 @@
           "startTime": 2054.96,
           "endTime": 2055.52,
           "confidence": 0.9925
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2055.52,
-      "endTime": 2237.62,
-      "text": "I my personal sense of organizing all this. Evolution through the histories, I kind of run in four phases. The first is Napoleonic warfare, is the first modern organization of you know people and guns and cavalry and artillery and so on. And uh there was incremental evolution with that all the way till the first world war, over a hundred-year period. At the beginning of the first world war, it rapidly collapsed into a siege stalemate, and we'll talk a lot more about stalemate. And late in the first world war. There were dramatic innovations that took place. Uh, modern so-called combined arms warfare doctrine came together where the infantry and the artillery and the tanks all started working together in a synchronized way. And the magic is that the response of the enemy to the tanks uncovers. Difficulties that the infantry will exploit, that the artillery will exploit. And so on. Each of these is a self-reinforcing thing, and that's called combined arms warfare. Combined arms warfare is the modern configuration, is the modern system of cover, concealment, coordination between many, many different systems. That's like the end of the First World War. Then through the interwar period, there were great developments around understanding uh tanks and aircraft and integrating these into Military doctrine, uh Marshal Tukhachevsky in the Soviet Union, and then the great thinkers of Nazi Germany figured out all this stuff, and that gives us the main material of the Second World War. Then there was a long detour around nuclear questions, and for some time it was thought that conventional warfare is obsolete. And while nuclear strategy is an interesting and separate question, it stands aloof from the main track of conventional warfare. Uh in conventional warfare by the 80s and 90s, people were talking of double quotes, a revolution in military affairs, RMA. And many old timers became a little irritated and jaded around this phrase, revolution of military affairs, implying that this is overstated, and you know, surely you guys are just being too rah-rah about certain incipient developments. In the Ukraine war, for the first time. We see the RMA playing out fully. And it really boils down to two things. One, amazing levels of battlefield transparency that, whether through drones or through satellite imagery, or through a variety of electronic monitoring, the level of detail of what we know about the modern battlefield is just out of this world. Never before in world history have we known so much. And the second is precision-guided munitions. In uh during World War II, if you sent a bomb down from a plane, Half the bombs exploded more than one kilometer or five kilometers away from the target. Note one kilometer or five kilometers away from the target. You had to throw thousands of bombs to hit one factory. Okay? That was the inefficient.",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 2055.52,
@@ -34730,7 +34675,15 @@
           "startTime": 2055.84,
           "endTime": 2056.24,
           "confidence": 0.885
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2056.24,
+      "endTime": 2237.62,
+      "text": "personal sense of organizing all this. Evolution through the histories, I kind of run in four phases. The first is Napoleonic warfare, is the first modern organization of you know people and guns and cavalry and artillery and so on. And uh there was incremental evolution with that all the way till the first world war, over a hundred-year period. At the beginning of the first world war, it rapidly collapsed into a siege stalemate, and we'll talk a lot more about stalemate. And late in the first world war. There were dramatic innovations that took place. Uh, modern so-called combined arms warfare doctrine came together where the infantry and the artillery and the tanks all started working together in a synchronized way. And the magic is that the response of the enemy to the tanks uncovers. Difficulties that the infantry will exploit, that the artillery will exploit. And so on. Each of these is a self-reinforcing thing, and that's called combined arms warfare. Combined arms warfare is the modern configuration, is the modern system of cover, concealment, coordination between many, many different systems. That's like the end of the First World War. Then through the interwar period, there were great developments around understanding uh tanks and aircraft and integrating these into Military doctrine, uh Marshal Tukhachevsky in the Soviet Union, and then the great thinkers of Nazi Germany figured out all this stuff, and that gives us the main material of the Second World War. Then there was a long detour around nuclear questions, and for some time it was thought that conventional warfare is obsolete. And while nuclear strategy is an interesting and separate question, it stands aloof from the main track of conventional warfare. Uh in conventional warfare by the 80s and 90s, people were talking of double quotes, a revolution in military affairs, RMA. And many old timers became a little irritated and jaded around this phrase, revolution of military affairs, implying that this is overstated, and you know, surely you guys are just being too rah-rah about certain incipient developments. In the Ukraine war, for the first time. We see the RMA playing out fully. And it really boils down to two things. One, amazing levels of battlefield transparency that, whether through drones or through satellite imagery, or through a variety of electronic monitoring, the level of detail of what we know about the modern battlefield is just out of this world. Never before in world history have we known so much. And the second is precision-guided munitions. In uh during World War II, if you sent a bomb down from a plane, Half the bombs exploded more than one kilometer or five kilometers away from the target. Note one kilometer or five kilometers away from the target. You had to throw thousands of bombs to hit one factory. Okay? That was the inefficient.",
+      "words": [
         {
           "word": "personal",
           "startTime": 2056.24,
@@ -46924,8 +46877,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2782.13,
-      "endTime": 2795.09,
-      "text": "different. I want to interrupt with a couple of great quotes about plans. One is by Walt Moltke, where he says no plan survives contact with the enemy. And uh, the other one is by Mike Tyson. Everyone has a plan till they get punched in the face. Yeah.",
+      "endTime": 2795.99,
+      "text": "different. I want to interrupt with a couple of great quotes about plans. One is by Walt Moltke, where he says no plan survives contact with the enemy. And uh, the other one is by Mike Tyson. Everyone has a plan till they get punched in the face. Yeah. And uh",
       "words": [
         {
           "word": "different.",
@@ -47220,15 +47173,7 @@
           "startTime": 2794.37,
           "endTime": 2795.09,
           "confidence": 0.8275
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2795.09,
-      "endTime": 3380.07,
-      "text": "And uh The plan is useless. The planning is everything. Gentle reader, if ever you think I'm eloquent, I'm actually just a database. I steal stuff. Okay, so some clever person said this. It was not me. That is what all modern militaries are demanded to do. It is to be able to learn, improvise, and adapt under fire. That is state capacity. And once again, the authoritarians fare badly on this because that culture of debate, discussion, criticism. intellectuals, brain power. This is not what armies are in the best of times, and definitely not what armies of authoritarian countries are. When you cloak yourself in nationalism and you get the machism, you know, that male testosterone view of the world, it's not a thinking way of operating. And this is the weakness of authoritarian countries. So this was the state of play through the winter of 2022. uh the West was arming Ukraine and everybody knew that when the summer comes there will be some counteroffensive and nobody knew what. Okay. Now in this I want to layer the issue of combined arms warfare. Okay, the Western way of war is combined arms warfare, where all these things should work together. Two and two should become twenty-two. You shouldn't have one tank battle being fought separately and one infantry battle being fought separately. They should work together, they should work in harmony. The trouble is, it takes tremendous levels of training, it takes tremendous levels of competence. Uh, I want to say this in two different ways. The first is: imagine we are 10 people in one small organization and we learn to work together, we learn to organize ourselves. If a thousand people want to learn to work together, want to learn to organize themselves, it's much harder. So the bigger the organization, the greater the management challenge. And one standard idea in the world of business is that every 2x the size of a firm in terms of headcount, you need to pretty fundamentally change the organization design, the process manual. So roughly a doubling of the headcount is generally considered uh enough cause to pretty Completely rethink the nature of the organization. So now think we're doing combined arms warfare at the level of a hundred percent group. Inside that hundred percent group, we have many, many kinds of equipment. We've got simple, you know, infantry with guns, we've got people operating drones, we've got people operating electronic warfare, we've got some artillery, we've got some tanks, we've got some other infantry fighting vehicles, okay, we've got a bunch of other things. So Already I have layered on incredible levels of engineering and scientific complexity on a mere hundred blocks. Now those hundred blocks are not superhuman. They're just regular guys, they're like you and me. Okay? If it's a Ukrainian army, it's literally guys like you and me. It is literally people like you and me in Ukraine who have volunteered to go fight this war. Then they have all the human frailties just like you and me. We are all subject to our petty ego and our arrogance and our anger and our little temper and our pride in what we know and a disrespect for what other people know. So the drone guy says to the EW guy, the electronic warfare guy, that, you know, manning a drone is the greatest skill in the world. And the EW guy says, Yeah, you guys, you just fly these birds. We, we shoot them down, okay? And so on. So there are all there's all this pettiness. Imagine bringing them together, melding them. Not just in processes, but in emotions. Not just in camaraderie, but in the level of trust where you lay down your life. Let me be completely tangible about it. I'm a tanker, you're the infantry guy outside me. Sometimes I'm going to ask things of you where you will put your life on the line. Sometimes you will ask things of me where I will put my life on the line. Think of the level of connection, knowledge. A long time together where we have been through many battles together so that we reach that evolved level of trust so that we are fighting like a Capablanca combination. Okay? That doesn't come easily. It takes years of training, it takes enormous knowledge where all these pieces they understand each other, then there is a rook sacrifice, and then the rest of the thing dances into place and achieves amazing things. That is very, very, very hard. And with the kind of time available for training for Ukraine, this kind of combined arms capability has not happened. About group sizes of about 100. Okay, so if you had spoken to me in the winter, this was a great question. The idea was that there are people in Ukraine who know old Soviet warfare, which is frankly a bit obsolete. The latest and greatest thing in the world is the Western way of war, and it involves doing combined arms. at an unbelievable level of grace and speed and a ballet of high capability. They're going to be taught this stuff. How much can they learn? How quickly can they learn? Now we know the answer. They are not able to do combined arms warfare above a hundred people. Okay, so this is problem number one that they have fumbled and failed when larger teams have tried to orchestrate together. There have been crazy phone calls and screaming matches and people have made mistakes. Bunch of tanks went where they were not supposed to go, things like that. Basic fumbles happened when more complex combined arms operations were attempted. This is part one. It's a brute, cruel fact, and which we all should just recognize that the winter of training. Some of the world's best people. Okay, these are the best and brightest from Ukrainian society. These are people with scientific engineering backgrounds. These are people who want to fight for their country under these conditions. In a couple of months, you can't turn civilians into combined arms warfare specialists beyond a footprint of 100 people. So you can get 100 people to talk to each other and work together. You can't get a thousand people to talk together and work together. So this is one fact that we now know about how this did not work well. The second thing the Ukrainians will say is that the Western knowledge about how to do combined arms warfare is not ready for this battlefield. Okay, they say there are two key differences. Difference number one, the Ukrainian side does not have a Western side style air force and complete air superiority. If the Americans were fighting this war, First, the United States Air Force would win the air war. They would win complete unchallenged air superiority. And then from the air, they would destroy every ground-based asset that is visible. They would strafe every uh trench and they would make life miserable for 50, 100 kilometers in the backfield. They would destroy every fuel truck. Okay. And then the grunts would go in and do a mopping-up operation. The grunts would never do a frontal assault on a uh fortified. uh structure. But that's what the Ukrainians are being asked to do. So the Ukrainians are saying, like, hey, your knowledge, your training doesn't prepare you for this because you have always gone to war with an overwhelmingly great air force. We have no air force to speak of. Meaning we've been able to do air denial. The Soviets, the Russians don't have air superiority either, but we do not have air superiority. The third thing the Ukrainians say is that you have never fought in a battlefield where there are enemy drones up in the sky. There are so many beautiful interviews with Ukrainian soldiers who have trained, say, in the UK. And in a way, the UK has done a fantastic job of giving them the latest state-of-the-art British training. And the latest state-of-the-art British training has not thought about hostile skies, where the skies are filled with enemy birds who are either carrying information back. That is used to guide artillery. That basically there is a forward artillery observer in the sky who is correcting artillery strikes or just dropping a hand grenade uh when the moment arises or sending in a loitering munition or kamikaze drone. Finally, the Ukrainians are saying that ever since Second World War, actually you guys have never fought a fair fight. Okay, so the entire Western military experience has been frankly against second rate and third rate opponents. They've never fought against an equal. Here, the Ukrainians are fighting against an equal. That the Russian economy is about three times bigger than the Ukrainian economy. The Russian population is about three times bigger than the Ukrainian population. And Russian incompetence is like a 0.33 multiplication factor. So the two sides are roughly equal in battle. The Ukrainians are saying that you have never had the experience of fighting a peer. Now we are doing it. So, in many ways, I believe the tables have turned. Today, Ukraine knows more than anybody else in the whole world about how to fight conventional war. Just think about it. Nowhere else in the world is there a capability comparable to Ukraine. Of fighting conventional war without air superiority, without nuclear weapons, against a tough opponent, and actually learning the military strategy and tactics and doctrine that will work. I think that war is the lab where the next generation of the Western way of war is being forged.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2795.09,
@@ -47240,7 +47185,15 @@
           "startTime": 2795.49,
           "endTime": 2795.99,
           "confidence": 0.9613
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2798.32,
+      "endTime": 3352.32,
+      "text": "The plan is useless. The planning is everything. Gentle reader, if ever you think I'm eloquent, I'm actually just a database. I steal stuff. Okay, so some clever person said this. It was not me. That is what all modern militaries are demanded to do. It is to be able to learn, improvise, and adapt under fire. That is state capacity. And once again, the authoritarians fare badly on this because that culture of debate, discussion, criticism. intellectuals, brain power. This is not what armies are in the best of times, and definitely not what armies of authoritarian countries are. When you cloak yourself in nationalism and you get the machism, you know, that male testosterone view of the world, it's not a thinking way of operating. And this is the weakness of authoritarian countries. So this was the state of play through the winter of 2022. uh the West was arming Ukraine and everybody knew that when the summer comes there will be some counteroffensive and nobody knew what. Okay. Now in this I want to layer the issue of combined arms warfare. Okay, the Western way of war is combined arms warfare, where all these things should work together. Two and two should become twenty-two. You shouldn't have one tank battle being fought separately and one infantry battle being fought separately. They should work together, they should work in harmony. The trouble is, it takes tremendous levels of training, it takes tremendous levels of competence. Uh, I want to say this in two different ways. The first is: imagine we are 10 people in one small organization and we learn to work together, we learn to organize ourselves. If a thousand people want to learn to work together, want to learn to organize themselves, it's much harder. So the bigger the organization, the greater the management challenge. And one standard idea in the world of business is that every 2x the size of a firm in terms of headcount, you need to pretty fundamentally change the organization design, the process manual. So roughly a doubling of the headcount is generally considered uh enough cause to pretty Completely rethink the nature of the organization. So now think we're doing combined arms warfare at the level of a hundred percent group. Inside that hundred percent group, we have many, many kinds of equipment. We've got simple, you know, infantry with guns, we've got people operating drones, we've got people operating electronic warfare, we've got some artillery, we've got some tanks, we've got some other infantry fighting vehicles, okay, we've got a bunch of other things. So Already I have layered on incredible levels of engineering and scientific complexity on a mere hundred blocks. Now those hundred blocks are not superhuman. They're just regular guys, they're like you and me. Okay? If it's a Ukrainian army, it's literally guys like you and me. It is literally people like you and me in Ukraine who have volunteered to go fight this war. Then they have all the human frailties just like you and me. We are all subject to our petty ego and our arrogance and our anger and our little temper and our pride in what we know and a disrespect for what other people know. So the drone guy says to the EW guy, the electronic warfare guy, that, you know, manning a drone is the greatest skill in the world. And the EW guy says, Yeah, you guys, you just fly these birds. We, we shoot them down, okay? And so on. So there are all there's all this pettiness. Imagine bringing them together, melding them. Not just in processes, but in emotions. Not just in camaraderie, but in the level of trust where you lay down your life. Let me be completely tangible about it. I'm a tanker, you're the infantry guy outside me. Sometimes I'm going to ask things of you where you will put your life on the line. Sometimes you will ask things of me where I will put my life on the line. Think of the level of connection, knowledge. A long time together where we have been through many battles together so that we reach that evolved level of trust so that we are fighting like a Capablanca combination. Okay? That doesn't come easily. It takes years of training, it takes enormous knowledge where all these pieces they understand each other, then there is a rook sacrifice, and then the rest of the thing dances into place and achieves amazing things. That is very, very, very hard. And with the kind of time available for training for Ukraine, this kind of combined arms capability has not happened. About group sizes of about 100. Okay, so if you had spoken to me in the winter, this was a great question. The idea was that there are people in Ukraine who know old Soviet warfare, which is frankly a bit obsolete. The latest and greatest thing in the world is the Western way of war, and it involves doing combined arms. at an unbelievable level of grace and speed and a ballet of high capability. They're going to be taught this stuff. How much can they learn? How quickly can they learn? Now we know the answer. They are not able to do combined arms warfare above a hundred people. Okay, so this is problem number one that they have fumbled and failed when larger teams have tried to orchestrate together. There have been crazy phone calls and screaming matches and people have made mistakes. Bunch of tanks went where they were not supposed to go, things like that. Basic fumbles happened when more complex combined arms operations were attempted. This is part one. It's a brute, cruel fact, and which we all should just recognize that the winter of training. Some of the world's best people. Okay, these are the best and brightest from Ukrainian society. These are people with scientific engineering backgrounds. These are people who want to fight for their country under these conditions. In a couple of months, you can't turn civilians into combined arms warfare specialists beyond a footprint of 100 people. So you can get 100 people to talk to each other and work together. You can't get a thousand people to talk together and work together. So this is one fact that we now know about how this did not work well. The second thing the Ukrainians will say is that the Western knowledge about how to do combined arms warfare is not ready for this battlefield. Okay, they say there are two key differences. Difference number one, the Ukrainian side does not have a Western side style air force and complete air superiority. If the Americans were fighting this war, First, the United States Air Force would win the air war. They would win complete unchallenged air superiority. And then from the air, they would destroy every ground-based asset that is visible. They would strafe every uh trench and they would make life miserable for 50, 100 kilometers in the backfield. They would destroy every fuel truck. Okay. And then the grunts would go in and do a mopping-up operation. The grunts would never do a frontal assault on a uh fortified. uh structure. But that's what the Ukrainians are being asked to do. So the Ukrainians are saying, like, hey, your knowledge, your training doesn't prepare you for this because you have always gone to war with an overwhelmingly great air force. We have no air force to speak of. Meaning we've been able to do air denial. The Soviets, the Russians don't have air superiority either, but we do not have air superiority. The third thing the Ukrainians say is that you have never fought in a battlefield where there are enemy drones up in the sky. There are so many beautiful interviews with Ukrainian soldiers who have trained, say, in the UK. And in a way, the UK has done a fantastic job of giving them the latest state-of-the-art British training. And the latest state-of-the-art British training has not thought about hostile skies, where the skies are filled with enemy birds who are either carrying information back. That is used to guide artillery. That basically there is a forward artillery observer in the sky who is correcting artillery strikes or just dropping a hand grenade uh when the moment arises or sending in a loitering munition or kamikaze drone. Finally, the Ukrainians are saying that ever since Second World War, actually you guys have never fought a fair fight. Okay, so the entire Western military experience has been frankly against second rate and third rate opponents. They've never fought against an equal. Here, the Ukrainians are fighting against an equal. That the Russian economy is about three times bigger than the Ukrainian economy. The Russian population is about three times bigger than the Ukrainian population. And Russian incompetence is like a 0.33 multiplication factor. So the two sides are roughly equal in battle. The Ukrainians are saying that you have never had the experience of fighting a peer. Now we are doing it. So, in many ways, I believe the tables have turned. Today, Ukraine knows more than anybody else in the whole world about how to fight conventional",
+      "words": [
         {
           "word": "The",
           "startTime": 2798.32,
@@ -56570,13 +56523,29 @@
           "startTime": 3351.52,
           "endTime": 3352.32,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 3352.32,
+      "endTime": 3353.6,
+      "text": "war.",
+      "words": [
         {
           "word": "war.",
           "startTime": 3352.32,
           "endTime": 3353.6,
           "confidence": 0.9933
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3353.6,
+      "endTime": 3380.07,
+      "text": "Just think about it. Nowhere else in the world is there a capability comparable to Ukraine. Of fighting conventional war without air superiority, without nuclear weapons, against a tough opponent, and actually learning the military strategy and tactics and doctrine that will work. I think that war is the lab where the next generation of the Western way of war is being forged.",
+      "words": [
         {
           "word": "Just",
           "startTime": 3353.6,
@@ -56960,8 +56929,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3381.86,
-      "endTime": 3499.09,
-      "text": "Uh three things leading to a question. And the first of them is you mentioned about, you know, the the UK military had did not prepare for birds in the sky watching them. Have you heard of a guy called Peter Mackindo? No. So Peter McIndaugh uh is it was this twenty three year old guy when he decided that as an as a public experiment, he's going to give birth to a p conspiracy theory. And the conspiracy theory was that birds aren't real. That about a few decades ago, the US government basically killed all birds, millions of birds, and replaced them with artificial birds, basically robots, which uh have surveillance capabilities and surveil on their uh on civilians. And a number of um sort of uh I'll I'll link to a video where he talks about this. But proof for this, number one, why are birds always sitting on power lines? They are charging. They need to recharge. They need to recharge. Why uh you know Never mind the lack of another thing. Now you've seen many pigeons. Have you ever seen a baby pigeon? It's because only adult pigeons are created in the factories. Yeah, yeah. Uh why do birds poop on people? Surveillance device, they're tracking you, and so on and so forth. Right. And uh even though he made it up, he knows it isn't true, but a lot of people believed it was true. And he would go for three years he may uh maintained the charade. He would go out in a uh go around in a van and give out flyers and all of that. Delightful story. The second point I want to sort of pick up on is you mentioned Capablanca, right? Uh uh when you spoke of combined uh arms warfare. Uh Jose Raul Capablanca, one of the great players of the early 20th century, chess players of the early earlier 20th century, was a positional master. So he would not do the kind of thing that the Americans would have wanted, which is a hardcore strike where you just break through everything, coordinates, you win it quickly. That's more like Mikhail Tal. Right? That is Tahl's approach. Kapablenka played a lot like Karpov, uh, in the sense that positional master, you're preparing for something 40 moves ahead, and everything is",
+      "endTime": 3688.94,
+      "text": "Uh three things leading to a question. And the first of them is you mentioned about, you know, the the UK military had did not prepare for birds in the sky watching them. Have you heard of a guy called Peter Mackindo? No. So Peter McIndaugh uh is it was this twenty three year old guy when he decided that as an as a public experiment, he's going to give birth to a p conspiracy theory. And the conspiracy theory was that birds aren't real. That about a few decades ago, the US government basically killed all birds, millions of birds, and replaced them with artificial birds, basically robots, which uh have surveillance capabilities and surveil on their uh on civilians. And a number of um sort of uh I'll I'll link to a video where he talks about this. But proof for this, number one, why are birds always sitting on power lines? They are charging. They need to recharge. They need to recharge. Why uh you know Never mind the lack of another thing. Now you've seen many pigeons. Have you ever seen a baby pigeon? It's because only adult pigeons are created in the factories. Yeah, yeah. Uh why do birds poop on people? Surveillance device, they're tracking you, and so on and so forth. Right. And uh even though he made it up, he knows it isn't true, but a lot of people believed it was true. And he would go for three years he may uh maintained the charade. He would go out in a uh go around in a van and give out flyers and all of that. Delightful story. The second point I want to sort of pick up on is you mentioned Capablanca, right? Uh uh when you spoke of combined uh arms warfare. Uh Jose Raul Capablanca, one of the great players of the early 20th century, chess players of the early earlier 20th century, was a positional master. So he would not do the kind of thing that the Americans would have wanted, which is a hardcore strike where you just break through everything, coordinates, you win it quickly. That's more like Mikhail Tal. Right? That is Tahl's approach. Kapablenka played a lot like Karpov, uh, in the sense that positional master, you're preparing for something 40 moves ahead, and everything is coordinated. And of course, if a tactical chance presents itself, you'll take it. But if your enemy is strong and there are no gaps, you don't unnecessarily try too hard to attack. You just keep positioning yourself and you wait for the end game. And it strikes me that what the Americans wanted was a sort of a tall or a fissure kind of uh, you know, hardcore strike where you're sacrificing this, you're sacrificing that, you're getting through. But what the Ukrainians are doing is this attritional war where they are sort of, you know, everything is um kind of they are waiting, they've uh uh mapped everything out, they are coordinated, but they're playing within the limitations. And obviously I'm simplifying because Stahl was a great positional player and Kapoblanka could do tactics when required, but broadly. The other interesting thing I think of here is that, you know, uh uh one of Pute Putin's favorite sport is judo. And the whole idea of judo is it's not the strong guy who wins. It's a patient, nimble guy who manoeuvres the spaces between the bodies, who manages to win in the end. And it seems that over here it is Ukraine that is winning the battle of Judo versus uh uh against Russia, which I find delightful. For the third, I want to quote from this great uh piece in the Financial Times which you sent me, where they describe exactly the kind of attritional warfare which Ukraine is engaged in, uh where they write. This has become a war of tree lines, with shifts in the line often counted in hundreds of meters. Artillery fire and drones dominate the battlefield, as small groups of infantry advance to tense minefields, field by field, tree line by tree line. Progress has been fitful and slower than expected. However, Ukraine's recent gains illustrate that it has worn down Russian defenses over time, leveraging an advantage in fires and long-range precision weapons to steadily press Russian forces back from their defensive positions. That said, Ukraine will need to both break through Russian lines and exploit that success to reach its objectives, much could be decided in the coming weeks. And I guess the skeptical question being raised here is Kifine. You know, the way uh the big armies, US and Russia, would do it back in the day, uh, or still think of doing it today. Is there's one massive breakthrough and you overwhelm the opponent. What Ukraine is having to do by necessity and the changing nature of war is you can no longer have 50 tanks go together, you'll immediately be spotted and uh uh you know taken out. But all of these small little attacks, you know, w there is also the danger that you keep attacking, you keep attacking, but the enemy has you know They just have to last longer than you. And you know, we often speak of chess and uh we just spoke of judo. But in poker, for example, you might get into a situation where you're in a game and you've got a limited amount of money, and you've got somebody with a massive stack who is just attacking you, attacking you, attacking you. And you keep going all in against him with a better hand. Uh, let's say you're you know, you you'll win uh a fair number of times, but at some point you're gonna go bankrupt because the resources are inexhaustible. And there is a sense that Russia is so much bigger. Their resources are effectively inexhaustible in the sense they just they can keep putting men into battle. How true is that? Are economic sanctions hurting them? There was a stalk that they've reached out to North Korea because they're running out of artillery shells. What's what's how how does that equation work out?",
       "words": [
         {
           "word": "Uh",
@@ -59314,15 +59283,7 @@
           "startTime": 3498.85,
           "endTime": 3499.09,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3499.09,
-      "endTime": 3500.69,
-      "text": "coordinated. And of course, if",
-      "words": [
+        },
         {
           "word": "coordinated.",
           "startTime": 3499.09,
@@ -59352,15 +59313,7 @@
           "startTime": 3500.53,
           "endTime": 3500.69,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3500.69,
-      "endTime": 3688.94,
-      "text": "a tactical chance presents itself, you'll take it. But if your enemy is strong and there are no gaps, you don't unnecessarily try too hard to attack. You just keep positioning yourself and you wait for the end game. And it strikes me that what the Americans wanted was a sort of a tall or a fissure kind of uh, you know, hardcore strike where you're sacrificing this, you're sacrificing that, you're getting through. But what the Ukrainians are doing is this attritional war where they are sort of, you know, everything is um kind of they are waiting, they've uh uh mapped everything out, they are coordinated, but they're playing within the limitations. And obviously I'm simplifying because Stahl was a great positional player and Kapoblanka could do tactics when required, but broadly. The other interesting thing I think of here is that, you know, uh uh one of Pute Putin's favorite sport is judo. And the whole idea of judo is it's not the strong guy who wins. It's a patient, nimble guy who manoeuvres the spaces between the bodies, who manages to win in the end. And it seems that over here it is Ukraine that is winning the battle of Judo versus uh uh against Russia, which I find delightful. For the third, I want to quote from this great uh piece in the Financial Times which you sent me, where they describe exactly the kind of attritional warfare which Ukraine is engaged in, uh where they write. This has become a war of tree lines, with shifts in the line often counted in hundreds of meters. Artillery fire and drones dominate the battlefield, as small groups of infantry advance to tense minefields, field by field, tree line by tree line. Progress has been fitful and slower than expected. However, Ukraine's recent gains illustrate that it has worn down Russian defenses over time, leveraging an advantage in fires and long-range precision weapons to steadily press Russian forces back from their defensive positions. That said, Ukraine will need to both break through Russian lines and exploit that success to reach its objectives, much could be decided in the coming weeks. And I guess the skeptical question being raised here is Kifine. You know, the way uh the big armies, US and Russia, would do it back in the day, uh, or still think of doing it today. Is there's one massive breakthrough and you overwhelm the opponent. What Ukraine is having to do by necessity and the changing nature of war is you can no longer have 50 tanks go together, you'll immediately be spotted and uh uh you know taken out. But all of these small little attacks, you know, w there is also the danger that you keep attacking, you keep attacking, but the enemy has you know They just have to last longer than you. And you know, we often speak of chess and uh we just spoke of judo. But in poker, for example, you might get into a situation where you're in a game and you've got a limited amount of money, and you've got somebody with a massive stack who is just attacking you, attacking you, attacking you. And you keep going all in against him with a better hand. Uh, let's say you're you know, you you'll win uh a fair number of times, but at some point you're gonna go bankrupt because the resources are inexhaustible. And there is a sense that Russia is so much bigger. Their resources are effectively inexhaustible in the sense they just they can keep putting men into battle. How true is that? Are economic sanctions hurting them? There was a stalk that they've reached out to North Korea because they're running out of artillery shells. What's what's how how does that equation work out?",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 3500.69,
@@ -63212,8 +63165,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3695.62,
-      "endTime": 3711.94,
-      "text": "So many angles to go in. Let me try to be disciplined and not make this into a five-hour conversation. So, first, the American way of war was designed around American strength, both around manufacturing and around",
+      "endTime": 4139.09,
+      "text": "So many angles to go in. Let me try to be disciplined and not make this into a five-hour conversation. So, first, the American way of war was designed around American strength, both around manufacturing and around population. Everybody knows about America as the arsenal of democracy. I just want to show two, three sentences that have just endlessly stuck in my mind uh about how America worked in this war uh in the second world war all the way till 1941 the giant was slumbering okay after 1941 the giant was swung into action to start producing for example to start producing tanks okay and what most people don't think about is that by early 1944 tank production in america was stopped 42, 43, that's all. They started from scratch. They built the world's biggest factories to make tanks. They made like 100,000 tanks. And then the field commanders were saying we're sick of this. We don't want any more tanks. And they started shutting down factories by 1944 at the start. Okay, that is American economic might. It's at a different level altogether compared with anybody else. And also they had an edge in the people, in the population. So they built a way of war around that. And a critical factor in this is how much are you willing to accept the loss of people? Okay. In contrast, uh Churchill and the UK was always very conscious that they don't have much of a population, so they can't lose a lot of people. So all through the Second World War, there were dis disagreements and differences on how large can the losses be? How many people can you have? uh getting killed in the process. And I'm being unsentimental about it. Of course every death is a tragedy. But when you're a small country, it's very different compared to when you're a big country. And so the Americans were in a rush to do Operation Torch in North Africa, to go land on at Sicily and on the beaches of Normandy. And Churchill was always the one holding back, saying, We gotta do it right, we gotta do it right. That be ready for that punch that it will work and let's not go get mauled and just lose a lot of people for almost nothing. And the Americans had to be held back consistently and I think history will judge Churchill very kindly for having had a lot of those strategic calls correctly. Okay, I want to tell a similar second story. After Operation Barbarossa in uh June nineteen forty one, uh the German Wehrmacht was advancing on a very long battle front in Russia in the USSR. So there was Army Group North headed towards St. Petersburg. There was Army Group Center headed towards Moscow. There was Army Group South headed later a little late, they were confused about it, but headed towards Stalingrad and ultimately the oil fields of Baku. There was an overstretch going on. It was a very long front. One of the important strategic choices that Stalin had to make was. Do you concentrate your forces? Do you amass your forces? Do you concentrate your forces and strike at one place and score an operational breakthrough and exploit behind? Okay, so great question. How do you do it? Do you fight at many places? Do you fight at one? Stalin, like Lenin and Trotsky, was actually one of the sophisticated intellectuals of the Second World War. And he had this strategic sense that the USSR had a bigger population than Germany. And once the USSR was backed by American manufacturing, They were basically going to outproduce Germany. Okay, there's there were remarkable levels of German naivety about understanding American economic might, which the communists did not suffer from. The communists correctly understood how war is all economics and it's about production, and they understood the American giant. And Stalin knew that the American giant is on his side, both in terms of teaching Soviet Russia how to produce and in terms of. delivering supplies to Soviet Russia. So Stalin made the remarkable call, we will not concentrate. So at every place, Army Group North, the German Army Group North at St. Petersburg, the German Army Group center at Moscow, the German Army Group South all the way to Stalingrad, every place along the way, counter-attacks were going on. Why? Because that was his way of wearing down the German human beings and the industrial capacity. And in hindsight, we know he was right. Because Germany just did not have enough resource to spray everywhere. Why did they lose the Battle of Stalingrad? Because they were too occupied doing many other things. You can't predict where it will break, but it'll break somewhere. I think that's the intuition around which we should now think about the words war of maneuver and attritional warfare. I think many people have jumped to the wrong interpretation around the words attritional warfare. You kind of think of a stalemate of First World War 1914, 1915, 1916, a little bit of 1917. Okay. What I think we should understand is that attritional warfare is today Soviet-style deep operations warfare. It is Ukraine going after the Soviet, uh going after the Russian logistics. Okay, day after day, they are operating in the backfield, armed with NATO intelligence, armed with standoff weapons, with uh partisans operating behind enemy lines, with standoff munitions like the Storm Shadow and the High Mars missiles, day after day, destroying ammunition dumps, destroying command and control centers, and causing havoc in the Russian backfield that every day chokes the supply. of fuel and ammunition and food to the Russian troops and the uh ability of evacuating wounded soldiers and creating normal rotation routines where soldiers need to be rotated for R and R, otherwise the mind shuts down. After about six months of fighting, the mind can't handle it anymore. And so yes, today it sounds like attritional warfare, but I feel an important intuition is that This is putting the Russian army to the test. By and large, Russian offensive operations have ended. There's a little bit near Kopyansk, but frankly, it's not much. By and large, what's going on is the Russians are pushing at Bakhmut in the region of Bakhmut. Uh, and that is causing a lot of Russian force diversion to Bakhmut. I want to psychoanalyze this. This is a bit like Stalingrad. Why did Stalingrad turn into the mess that it did because of the name Stalin? Okay, it suddenly turned into a symbol for both sides. Hitler became extra eager to take Stalingrad as a symbol of toppling Stalin's city, and the Russians became extra eager to prove him wrong. So it turned into a disproportionate uh force mobilization on both sides. Bakhmut is important because Bakhmut was conquered by Wagner.",
       "words": [
         {
           "word": "So",
@@ -63436,29 +63389,13 @@
           "startTime": 3711.22,
           "endTime": 3711.94,
           "confidence": 0.9842
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3711.94,
-      "endTime": 3713.44,
-      "text": "population.",
-      "words": [
+        },
         {
           "word": "population.",
           "startTime": 3711.94,
           "endTime": 3713.44,
           "confidence": 0.9953
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3714.02,
-      "endTime": 4057.28,
-      "text": "Everybody knows about America as the arsenal of democracy. I just want to show two, three sentences that have just endlessly stuck in my mind uh about how America worked in this war uh in the second world war all the way till 1941 the giant was slumbering okay after 1941 the giant was swung into action to start producing for example to start producing tanks okay and what most people don't think about is that by early 1944 tank production in america was stopped 42, 43, that's all. They started from scratch. They built the world's biggest factories to make tanks. They made like 100,000 tanks. And then the field commanders were saying we're sick of this. We don't want any more tanks. And they started shutting down factories by 1944 at the start. Okay, that is American economic might. It's at a different level altogether compared with anybody else. And also they had an edge in the people, in the population. So they built a way of war around that. And a critical factor in this is how much are you willing to accept the loss of people? Okay. In contrast, uh Churchill and the UK was always very conscious that they don't have much of a population, so they can't lose a lot of people. So all through the Second World War, there were dis disagreements and differences on how large can the losses be? How many people can you have? uh getting killed in the process. And I'm being unsentimental about it. Of course every death is a tragedy. But when you're a small country, it's very different compared to when you're a big country. And so the Americans were in a rush to do Operation Torch in North Africa, to go land on at Sicily and on the beaches of Normandy. And Churchill was always the one holding back, saying, We gotta do it right, we gotta do it right. That be ready for that punch that it will work and let's not go get mauled and just lose a lot of people for almost nothing. And the Americans had to be held back consistently and I think history will judge Churchill very kindly for having had a lot of those strategic calls correctly. Okay, I want to tell a similar second story. After Operation Barbarossa in uh June nineteen forty one, uh the German Wehrmacht was advancing on a very long battle front in Russia in the USSR. So there was Army Group North headed towards St. Petersburg. There was Army Group Center headed towards Moscow. There was Army Group South headed later a little late, they were confused about it, but headed towards Stalingrad and ultimately the oil fields of Baku. There was an overstretch going on. It was a very long front. One of the important strategic choices that Stalin had to make was. Do you concentrate your forces? Do you amass your forces? Do you concentrate your forces and strike at one place and score an operational breakthrough and exploit behind? Okay, so great question. How do you do it? Do you fight at many places? Do you fight at one? Stalin, like Lenin and Trotsky, was actually one of the sophisticated intellectuals of the Second World War. And he had this strategic sense that the USSR had a bigger population than Germany. And once the USSR was backed by American manufacturing, They were basically going to outproduce Germany. Okay, there's there were remarkable levels of German naivety about understanding American economic might, which the communists did not suffer from. The communists correctly understood how war is all economics and it's about production, and they understood the American giant. And Stalin knew that the American giant is on his side, both in terms of teaching Soviet Russia how to produce and in terms of. delivering supplies to Soviet Russia. So Stalin made the remarkable call, we will not concentrate. So at every place, Army Group North, the German Army Group North at St. Petersburg, the German Army Group center at Moscow, the German Army Group South all the way to Stalingrad, every place along the way, counter-attacks were going on. Why? Because that was his way of wearing down the German human beings and the industrial capacity. And in hindsight, we know he was right. Because Germany just did not have enough resource to spray everywhere. Why did they lose the Battle of Stalingrad? Because they were too occupied doing many other things. You can't predict where it will break, but it'll break somewhere. I think that's the intuition around which we should now think about the words war of maneuver and attritional warfare. I think many people have jumped to the wrong interpretation around the words attritional warfare. You kind of think of a stalemate of First World War 1914, 1915, 1916, a little bit of 1917. Okay. What I think we should understand is that attritional warfare is today Soviet-style deep operations warfare. It is Ukraine going after the Soviet, uh going after the Russian logistics. Okay, day after day, they are operating in the backfield, armed with NATO intelligence, armed with standoff weapons, with uh partisans operating behind enemy lines, with standoff munitions like the Storm Shadow and the High Mars missiles, day after day, destroying ammunition dumps, destroying command and control centers, and causing havoc in the Russian backfield that every day chokes the supply. of fuel and ammunition and food to",
-      "words": [
+        },
         {
           "word": "Everybody",
           "startTime": 3714.02,
@@ -68948,15 +68885,7 @@
           "startTime": 4056.96,
           "endTime": 4057.28,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4057.28,
-      "endTime": 4058.8,
-      "text": "the Russian troops",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 4057.28,
@@ -68974,15 +68903,7 @@
           "startTime": 4058.08,
           "endTime": 4058.8,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4058.8,
-      "endTime": 4606.25,
-      "text": "and the uh ability of evacuating wounded soldiers and creating normal rotation routines where soldiers need to be rotated for R and R, otherwise the mind shuts down. After about six months of fighting, the mind can't handle it anymore. And so yes, today it sounds like attritional warfare, but I feel an important intuition is that This is putting the Russian army to the test. By and large, Russian offensive operations have ended. There's a little bit near Kopyansk, but frankly, it's not much. By and large, what's going on is the Russians are pushing at Bakhmut in the region of Bakhmut. Uh, and that is causing a lot of Russian force diversion to Bakhmut. I want to psychoanalyze this. This is a bit like Stalingrad. Why did Stalingrad turn into the mess that it did because of the name Stalin? Okay, it suddenly turned into a symbol for both sides. Hitler became extra eager to take Stalingrad as a symbol of toppling Stalin's city, and the Russians became extra eager to prove him wrong. So it turned into a disproportionate uh force mobilization on both sides. Bakhmut is important because Bakhmut was conquered by Wagner. And The Ukrainian resistance at Bakhmut inflicted such losses upon Wagner that it effectively created a rift between Wagner and the Russian MOD. So, in a way, I feel they did a great job that they did a fighting retreat in a dinky town of 70,000 people, where in a simplistic way of war it would have been like, look, you're going to lose, why not just retreat? Retreat to where? What will you defend next? Cities are where you do the defense. It was a city of 70,000 people. By and large, Ukraine lost. But in the process of losing, they inflicted so much damage upon Wagner that it triggered off the mutiny by Wagner and it knocked out one important fighting formation on the Russian side. So I say, you know, that worked very well. It was a very good idea. Okay, now consider the predicament of Wagner. It would be a PR disaster for Wagner. Sorry, it would be a PR disaster for the MOD if they lose Bakhmut. Right? Because now all the Wagnerites in America, sorry, in Russia, will say that, see, the great Prigozin and Utkin, the martyrs of a plane crash, they conquered uh Bakhmut. And once these uh jelly uh livered uh bureaucrats of the MOD took charge, they were not able to hold that ground. So MOD is desperate. They gotta hold Bakhmut. Great, Ukraine will use this to the hilt. They will put pressure at Bakhmut, knowing that MOD can't afford to make a mistake. And MOD will disproportionately allocate resources there and just keep chipping away, fighting for disproportionate losses. So you've always got to count the exchange rate. How many tanks get killed? How many tanks get killed? How many people get killed? How many people get killed? And so on. So the Ukrainians have to do the math. About the expected cost of every decision. Tactics and strategy have to be chosen so that there's a disproportionate expected loss being imposed on the other side. And you've got to keep counting every day that are we on track on the run rate, right? Sounds familiar. And uh that's what the Ukrainians are doing near Bakhmut. So it locks up a significant Russian force there. Okay. Similarly, let's think about the dagger thrust. Down through Zaporizhia towards the sea. Yes, they've only crossed five kilometers out of 60. They've uh blocked up a big chunk of Russian forces there. The Russians have built phenomenal uh fortified lines of protection. For everybody who's curious about this, uh, go back and read the Battle of Kursk from the Second World War. What Russia has done here is basically out of that Soviet playbook where Seven lines of fortification were built. And when the German attack came, they smashed through five of them and ran out of Jews. The Ukrainians so far have smashed through maybe one 1.5 lines. There are a total of three or four lines. And they are not done yet. There are difficult lines of fortifications yet to go through. So every day there is a very tough war going on on the Russian side where their logistics is being attacked, their people are being attacked. And you never know where something breaks. And it is when something breaks that the attacking side, namely Ukraine, has to have enough spare capacity to then throw force into the fight and do an exploitation. So the fact that there's attritional warfare today doesn't mean that you are in a 1914 stalemate. It means you're in an attritional war today. But every attritional war can be a prelude to one side breaking. And we are about to discover. Will the Russian side break? We don't know. So if you look back at the great Ukrainian gains in Herson and the great Ukrainian gains in Kharkiv, they also look like attritional warfare for some time. For some time, it's just like you're attacking, attacking every day, and nothing is happening. But under the hood, there was a lot going on. The Russians lost their logistics capability to support Hurston. And then one fine day they ran away from Hurzon. And the Ukrainians conquered their entire province without a fight. And in that process, they left an undefied undef undefended chunk up in Kharkiv. And the Ukrainians had spare resources to go launch an attack there and grab another 10,000, 15,000 square kilometers. That is the nature of this kind of modern war, that it will look attritional for some time. It may look attritional for months, but that doesn't mean you're stuck as in 1914. It means you are in a great test of wills and economics and We'll see how it goes. It ain't done. And I want to make one last final proposition here. Uh, why did we think at the outset that what was the most wise and optimal strategy for Ukraine was to do a dagger thrust down through Zaporizhia to the Sea of Azov? Because we thought this is the way that Ukraine will disrupt. Russian logistics. Why? Because that 60 kilometers was not a feasible range for the Heimar's rockets, which had an effective range of about 30 kilometers. So there is that M14 highway. Look closely at the map. There is the M14 highway, the critical supply line running through Zaporizhia. It was not possible to safely place Heimar's trucks and hit the M14 highway pre-counteroffensive. I'm looking at the map every day and I'm seeing two things. One, I'm seeing Heimar's trucks going closer and closer to being within range of the M14 highway and of every piece of logistics in uh Zaporisha. And the second, I'm seeing Ukraine creeping up to better and better standoff weapons. They've already got Storm Shadow, others are coming. So, in a way, I think the objectives, the strategic objectives of every armchair military thinker. Of the winter of 2022 are coming closer to being met even without Ukrainian soldiers reaching the Sea of Azov. They've got to get close enough for their standoff weapons to disrupt Russian logistics. And that's not as hard as it seems. Now, we're coming close to winter. We're already in September. Everybody watching this war now knows beautiful uh Ukrainian words. Th there is the word Raputista, which stands for the mud season where in autumn and in spring a lot of the land goes to mud. Well, that doesn't happen as much in the south. The south is a bit warmer than the north. Uh everybody thinks we're already in September, there will be no fighting days within a week or ten days. And I say, are you thinking Kiev or are you thinking Mitopol? Because they are hundreds of kilometers apart. And also when you get closer to the sea, the sea has a calming effect on the weather. So there are some surprises in store for how this story works out. We should not assume that there is the same Raputista in September, October. We should not assume that the fighting stops in winter. every piece of the logistics story I tell about the difficulties of the Russian economy in supporting such a project will be amplified in winter, because winter requires more fuel and more materials and more difficulty and greater difficulties of concealment compared to fighting in summer. So it could well be that the war will continue into winter. And we should not have this preconception that, oh, the counteroffensive has failed. They've only made five kilometers or seven kilometers headway into Zaporizhia and we are almost towards the mud season.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 4058.8,
@@ -70164,13 +70085,29 @@
           "startTime": 4137.59,
           "endTime": 4139.09,
           "confidence": 0.8809
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 4139.19,
+      "endTime": 4139.69,
+      "text": "And",
+      "words": [
         {
           "word": "And",
           "startTime": 4139.19,
           "endTime": 4139.69,
           "confidence": 0.716
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4140.05,
+      "endTime": 4606.25,
+      "text": "The Ukrainian resistance at Bakhmut inflicted such losses upon Wagner that it effectively created a rift between Wagner and the Russian MOD. So, in a way, I feel they did a great job that they did a fighting retreat in a dinky town of 70,000 people, where in a simplistic way of war it would have been like, look, you're going to lose, why not just retreat? Retreat to where? What will you defend next? Cities are where you do the defense. It was a city of 70,000 people. By and large, Ukraine lost. But in the process of losing, they inflicted so much damage upon Wagner that it triggered off the mutiny by Wagner and it knocked out one important fighting formation on the Russian side. So I say, you know, that worked very well. It was a very good idea. Okay, now consider the predicament of Wagner. It would be a PR disaster for Wagner. Sorry, it would be a PR disaster for the MOD if they lose Bakhmut. Right? Because now all the Wagnerites in America, sorry, in Russia, will say that, see, the great Prigozin and Utkin, the martyrs of a plane crash, they conquered uh Bakhmut. And once these uh jelly uh livered uh bureaucrats of the MOD took charge, they were not able to hold that ground. So MOD is desperate. They gotta hold Bakhmut. Great, Ukraine will use this to the hilt. They will put pressure at Bakhmut, knowing that MOD can't afford to make a mistake. And MOD will disproportionately allocate resources there and just keep chipping away, fighting for disproportionate losses. So you've always got to count the exchange rate. How many tanks get killed? How many tanks get killed? How many people get killed? How many people get killed? And so on. So the Ukrainians have to do the math. About the expected cost of every decision. Tactics and strategy have to be chosen so that there's a disproportionate expected loss being imposed on the other side. And you've got to keep counting every day that are we on track on the run rate, right? Sounds familiar. And uh that's what the Ukrainians are doing near Bakhmut. So it locks up a significant Russian force there. Okay. Similarly, let's think about the dagger thrust. Down through Zaporizhia towards the sea. Yes, they've only crossed five kilometers out of 60. They've uh blocked up a big chunk of Russian forces there. The Russians have built phenomenal uh fortified lines of protection. For everybody who's curious about this, uh, go back and read the Battle of Kursk from the Second World War. What Russia has done here is basically out of that Soviet playbook where Seven lines of fortification were built. And when the German attack came, they smashed through five of them and ran out of Jews. The Ukrainians so far have smashed through maybe one 1.5 lines. There are a total of three or four lines. And they are not done yet. There are difficult lines of fortifications yet to go through. So every day there is a very tough war going on on the Russian side where their logistics is being attacked, their people are being attacked. And you never know where something breaks. And it is when something breaks that the attacking side, namely Ukraine, has to have enough spare capacity to then throw force into the fight and do an exploitation. So the fact that there's attritional warfare today doesn't mean that you are in a 1914 stalemate. It means you're in an attritional war today. But every attritional war can be a prelude to one side breaking. And we are about to discover. Will the Russian side break? We don't know. So if you look back at the great Ukrainian gains in Herson and the great Ukrainian gains in Kharkiv, they also look like attritional warfare for some time. For some time, it's just like you're attacking, attacking every day, and nothing is happening. But under the hood, there was a lot going on. The Russians lost their logistics capability to support Hurston. And then one fine day they ran away from Hurzon. And the Ukrainians conquered their entire province without a fight. And in that process, they left an undefied undef undefended chunk up in Kharkiv. And the Ukrainians had spare resources to go launch an attack there and grab another 10,000, 15,000 square kilometers. That is the nature of this kind of modern war, that it will look attritional for some time. It may look attritional for months, but that doesn't mean you're stuck as in 1914. It means you are in a great test of wills and economics and We'll see how it goes. It ain't done. And I want to make one last final proposition here. Uh, why did we think at the outset that what was the most wise and optimal strategy for Ukraine was to do a dagger thrust down through Zaporizhia to the Sea of Azov? Because we thought this is the way that Ukraine will disrupt. Russian logistics. Why? Because that 60 kilometers was not a feasible range for the Heimar's rockets, which had an effective range of about 30 kilometers. So there is that M14 highway. Look closely at the map. There is the M14 highway, the critical supply line running through Zaporizhia. It was not possible to safely place Heimar's trucks and hit the M14 highway pre-counteroffensive. I'm looking at the map every day and I'm seeing two things. One, I'm seeing Heimar's trucks going closer and closer to being within range of the M14 highway and of every piece of logistics in uh Zaporisha. And the second, I'm seeing Ukraine creeping up to better and better standoff weapons. They've already got Storm Shadow, others are coming. So, in a way, I think the objectives, the strategic objectives of every armchair military thinker. Of the winter of 2022 are coming closer to being met even without Ukrainian soldiers reaching the Sea of Azov. They've got to get close enough for their standoff weapons to disrupt Russian logistics. And that's not as hard as it seems. Now, we're coming close to winter. We're already in September. Everybody watching this war now knows beautiful uh Ukrainian words. Th there is the word Raputista, which stands for the mud season where in autumn and in spring a lot of the land goes to mud. Well, that doesn't happen as much in the south. The south is a bit warmer than the north. Uh everybody thinks we're already in September, there will be no fighting days within a week or ten days. And I say, are you thinking Kiev or are you thinking Mitopol? Because they are hundreds of kilometers apart. And also when you get closer to the sea, the sea has a calming effect on the weather. So there are some surprises in store for how this story works out. We should not assume that there is the same Raputista in September, October. We should not assume that the fighting stops in winter. every piece of the logistics story I tell about the difficulties of the Russian economy in supporting such a project will be amplified in winter, because winter requires more fuel and more materials and more difficulty and greater difficulties of concealment compared to fighting in summer. So it could well be that the war will continue into winter. And we should not have this preconception that, oh, the counteroffensive has failed. They've only made five kilometers or seven kilometers headway into Zaporizhia and we are almost towards the mud season.",
+      "words": [
         {
           "word": "The",
           "startTime": 4140.05,
@@ -80452,8 +80389,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4737.33,
-      "endTime": 4826.61,
-      "text": "And I want to, you know, uh g to bring sort of this Ukraine story to a close for this episode, though who knows we'll probably have future episodes on it, the way developments happen. I want to ask about how it could possibly end. Like when you think of great historical wars of the past, you hear of how there is a decisive battle somewhere or the other and the game is over. And even in World War Two, you know, you needed such actual s such radical action to make Germany and uh Japan kind of uh uh give it up. And in modern times, that is uh something that's become much harder. Where is a decisive battle? What is a breakthrough which will make the uh enemy stop, especially if it is in uh you know an enemy like Russia. Uh you know, even if Putin goes, can his successor eventually, you know, uh suffer the losing of face that would happen in front of, you know, the nationalist elements within the country. So, you know, tell me a little bit about the end game, and I'm also intrigued by, you know, this great quote I read that uh uh you know militaries win battles, economies win wars. You know, how do we look at that? Like on the one hand, Ukraine is a war economy, it cannot be doing so well, et cetera, et cetera. And at the same time, uh Russia is facing severe sanctions and so on and so forth. So, how how how how do you see all of these playing out? What is a best case and a worst case uh scenario? And when I say best, obviously we are both on the side of liberal democracy and the values we stand for. So obviously we mean it for Ukraine. Uh and on the other side is a Russian state.",
+      "endTime": 4827.49,
+      "text": "And I want to, you know, uh g to bring sort of this Ukraine story to a close for this episode, though who knows we'll probably have future episodes on it, the way developments happen. I want to ask about how it could possibly end. Like when you think of great historical wars of the past, you hear of how there is a decisive battle somewhere or the other and the game is over. And even in World War Two, you know, you needed such actual s such radical action to make Germany and uh Japan kind of uh uh give it up. And in modern times, that is uh something that's become much harder. Where is a decisive battle? What is a breakthrough which will make the uh enemy stop, especially if it is in uh you know an enemy like Russia. Uh you know, even if Putin goes, can his successor eventually, you know, uh suffer the losing of face that would happen in front of, you know, the nationalist elements within the country. So, you know, tell me a little bit about the end game, and I'm also intrigued by, you know, this great quote I read that uh uh you know militaries win battles, economies win wars. You know, how do we look at that? Like on the one hand, Ukraine is a war economy, it cannot be doing so well, et cetera, et cetera. And at the same time, uh Russia is facing severe sanctions and so on and so forth. So, how how how how do you see all of these playing out? What is a best case and a worst case uh scenario? And when I say best, obviously we are both on the side of liberal democracy and the values we stand for. So obviously we mean it for Ukraine. Uh and on the other side is a Russian state. Ukraine",
       "words": [
         {
           "word": "And",
@@ -82362,21 +82299,21 @@
           "startTime": 4825.33,
           "endTime": 4826.61,
           "confidence": 0.8275
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4826.61,
-      "endTime": 5100.18,
-      "text": "Ukraine is not the war economy to think about. All the advanced economies of the world are working for Ukraine. So the industrial capacity behind Ukraine is essentially infinite. South Korea is the most important maker of artillery shells going to Ukraine. Okay, and so on. So all over the advanced economies. A vast military-industrial complex is being cranked up into production. And Russia is hilariously outmatched. It's almost laughable. The idea that defense production in Russia and North Korea can keep pace with. All the advanced economies of the world working together. So it is slow, it is fumbling, it is incompetent. Various countries amongst the advanced economies are moving at different speeds in getting their act together. But I consider it a bit inexorable that once you start thinking that wars are won by economies and not by militaries, then it's clear as day. Russia is a Spain-sized GDP. It is Saudi Arabia with nukes. It's not a serious economy. And uh the rate of consumption of ammo and defense equipment in this war is just beyond any practical production capabilities inside Russia. A simple thumb rule is that Russia is losing about 1,000 tanks a year and making about 200. So there is no way that uh they can keep going at this rate. They will double the tank production, it goes from 200 to 400. And Western sanctions interfere with their ability to increase production of munitions. So at a strategic scale, Russia is hilariously outmatched. The advanced economies of the world put together, which is like Europe, America, Japan, South Korea, Australia, Canada, okay? These are the overwhelming economic force of the world. And when they get to producing, there is nothing remotely in comparison. So the strategic picture is very much in favor of Ukraine. And that is part of Ukrainian strategic thinking that let's not burn too many people. Okay, because Ukraine stands alone in having people dying. And so if you're going to play a long war, you don't want too many people to die. You can waste equipment because you know the West will produce infinite equipment. Okay, South Korean factories and Japanese factories will produce infinite equipment. So there's no shortage of equipment. But It's good to be frugal about losing people. Turning to the Russian side, uh, there's a fascinating fact that has emerged in the last few days. Uh, Russia makes a lot of noise about facing NATO as an enemy. This is just propaganda. There is no depth to that proposition at all. NATO is a defensive alliance. Uh, it works out that the military force on the Finnish border, Finland is now a NATO member. the Russian force on the Finnish border is one-fifth of what it traditionally was. So when Finland was the subject of Finlandization and not a NATO member, Russia had 100 units on the Russia-Finland border. Now Finland is a NATO member and Russia has 20 units on the Finland border. What this says is Russia does not have the resource to keep going on all the things that it wants to do and its entire military resource Is being plunged into the war in Ukraine. And therefore, you think of this on a strategic scale, if month after month you keep losing a lot of people and a lot of equipment, then this thing starts falling apart. It's just physically impossible. So just like Ukrainians have problems with training, the Russians have an even bigger problem with training. They're not getting British quality combined arms training. They're getting conscripted blocks being sent into the battle after having fired 10 rounds with an infantry gun. So there is no great capability on the Russian side either. The test of all this optimistic view in the eyes of the Ukrainians is that day after day, some pieces of the Russian story are cracking. Okay? So around Bakhmut, you see one Russian brigade being wiped out five, ten kilometers of gain. Around Zaporisha, you see one brigade being wiped out two kilometers of gain. One by one, their pieces are being knocked out, and it becomes harder to continue. That is the open question that will Russia find Stalin levels of resolve in coping with losses or not?",
-      "words": [
+        },
         {
           "word": "Ukraine",
           "startTime": 4826.61,
           "endTime": 4827.49,
           "confidence": 0.9781
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4827.49,
+      "endTime": 5100.18,
+      "text": "is not the war economy to think about. All the advanced economies of the world are working for Ukraine. So the industrial capacity behind Ukraine is essentially infinite. South Korea is the most important maker of artillery shells going to Ukraine. Okay, and so on. So all over the advanced economies. A vast military-industrial complex is being cranked up into production. And Russia is hilariously outmatched. It's almost laughable. The idea that defense production in Russia and North Korea can keep pace with. All the advanced economies of the world working together. So it is slow, it is fumbling, it is incompetent. Various countries amongst the advanced economies are moving at different speeds in getting their act together. But I consider it a bit inexorable that once you start thinking that wars are won by economies and not by militaries, then it's clear as day. Russia is a Spain-sized GDP. It is Saudi Arabia with nukes. It's not a serious economy. And uh the rate of consumption of ammo and defense equipment in this war is just beyond any practical production capabilities inside Russia. A simple thumb rule is that Russia is losing about 1,000 tanks a year and making about 200. So there is no way that uh they can keep going at this rate. They will double the tank production, it goes from 200 to 400. And Western sanctions interfere with their ability to increase production of munitions. So at a strategic scale, Russia is hilariously outmatched. The advanced economies of the world put together, which is like Europe, America, Japan, South Korea, Australia, Canada, okay? These are the overwhelming economic force of the world. And when they get to producing, there is nothing remotely in comparison. So the strategic picture is very much in favor of Ukraine. And that is part of Ukrainian strategic thinking that let's not burn too many people. Okay, because Ukraine stands alone in having people dying. And so if you're going to play a long war, you don't want too many people to die. You can waste equipment because you know the West will produce infinite equipment. Okay, South Korean factories and Japanese factories will produce infinite equipment. So there's no shortage of equipment. But It's good to be frugal about losing people. Turning to the Russian side, uh, there's a fascinating fact that has emerged in the last few days. Uh, Russia makes a lot of noise about facing NATO as an enemy. This is just propaganda. There is no depth to that proposition at all. NATO is a defensive alliance. Uh, it works out that the military force on the Finnish border, Finland is now a NATO member. the Russian force on the Finnish border is one-fifth of what it traditionally was. So when Finland was the subject of Finlandization and not a NATO member, Russia had 100 units on the Russia-Finland border. Now Finland is a NATO member and Russia has 20 units on the Finland border. What this says is Russia does not have the resource to keep going on all the things that it wants to do and its entire military resource Is being plunged into the war in Ukraine. And therefore, you think of this on a strategic scale, if month after month you keep losing a lot of people and a lot of equipment, then this thing starts falling apart. It's just physically impossible. So just like Ukrainians have problems with training, the Russians have an even bigger problem with training. They're not getting British quality combined arms training. They're getting conscripted blocks being sent into the battle after having fired 10 rounds with an infantry gun. So there is no great capability on the Russian side either. The test of all this optimistic view in the eyes of the Ukrainians is that day after day, some pieces of the Russian story are cracking. Okay? So around Bakhmut, you see one Russian brigade being wiped out five, ten kilometers of gain. Around Zaporisha, you see one brigade being wiped out two kilometers of gain. One by one, their pieces are being knocked out, and it becomes harder to continue. That is the open question that will Russia find Stalin levels of resolve in coping with losses or not?",
+      "words": [
         {
           "word": "is",
           "startTime": 4827.49,
@@ -93812,8 +93749,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5451.52,
-      "endTime": 5454.48,
-      "text": "So we're at the end of this episode. Uh we hope",
+      "endTime": 5473.3,
+      "text": "So we're at the end of this episode. Uh we hope uh you have been amused and uh you have found more interesting things to read out of uh all our labors. Uh please do uh subscribe and like, but even more important, come be part of these great discussions that are erupting in the comments.",
       "words": [
         {
           "word": "So",
@@ -93880,15 +93817,7 @@
           "startTime": 5453.84,
           "endTime": 5454.48,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5454.48,
-      "endTime": 5457.52,
-      "text": "uh you have been amused and",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 5454.48,
@@ -93924,15 +93853,7 @@
           "startTime": 5457.2,
           "endTime": 5457.52,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5457.52,
-      "endTime": 5464.48,
-      "text": "uh you have found more interesting things to read out of uh all our labors. Uh please do uh",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 5457.52,
@@ -94046,29 +93967,13 @@
           "startTime": 5464.0,
           "endTime": 5464.48,
           "confidence": 0.9864
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5464.48,
-      "endTime": 5465.98,
-      "text": "subscribe",
-      "words": [
+        },
         {
           "word": "subscribe",
           "startTime": 5464.48,
           "endTime": 5465.98,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5466.0,
-      "endTime": 5472.8,
-      "text": "and like, but even more important, come be part of these great discussions that are erupting in the",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 5466.0,
@@ -94176,21 +94081,21 @@
           "startTime": 5472.56,
           "endTime": 5472.8,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5472.8,
-      "endTime": 5477.03,
-      "text": "comments. Thank you for listening. Reminder, this",
-      "words": [
+        },
         {
           "word": "comments.",
           "startTime": 5472.8,
           "endTime": 5473.3,
           "confidence": 0.9951
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5475.03,
+      "endTime": 5477.03,
+      "text": "Thank you for listening. Reminder, this",
+      "words": [
         {
           "word": "Thank",
           "startTime": 5475.03,

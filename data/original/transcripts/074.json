@@ -5,7 +5,7 @@
     "durationSeconds": 2865,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -291,8 +291,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 27.36,
-      "endTime": 32.4,
-      "text": "I don't have papers. Uh will you recognize my face? FRT, face recognition",
+      "endTime": 33.04,
+      "text": "I don't have papers. Uh will you recognize my face? FRT, face recognition technology.",
       "words": [
         {
           "word": "I",
@@ -371,21 +371,21 @@
           "startTime": 31.76,
           "endTime": 32.4,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 32.4,
-      "endTime": 41.76,
-      "text": "technology. Biometrics. Take off your glasses, I'll scan your eyes. Yes, Puss. Your Ajaisha.",
-      "words": [
+        },
         {
           "word": "technology.",
           "startTime": 32.4,
           "endTime": 33.04,
           "confidence": 0.8262
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 33.04,
+      "endTime": 41.92,
+      "text": "Biometrics. Take off your glasses, I'll scan your eyes. Yes, Puss. Your Ajaisha. Well",
+      "words": [
         {
           "word": "Biometrics.",
           "startTime": 33.04,
@@ -463,21 +463,21 @@
           "startTime": 40.96,
           "endTime": 41.76,
           "confidence": 0.6853
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 41.76,
-      "endTime": 43.84,
-      "text": "Well done. Can we record an episode now? Let's",
-      "words": [
+        },
         {
           "word": "Well",
           "startTime": 41.76,
           "endTime": 41.92,
           "confidence": 0.9335
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 41.92,
+      "endTime": 43.84,
+      "text": "done. Can we record an episode now? Let's",
+      "words": [
         {
           "word": "done.",
           "startTime": 41.92,
@@ -531,8 +531,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 43.84,
-      "endTime": 150.05,
-      "text": "record an episode right now. Welcome to Everything Is Everything. I'm Amit allegedly, and this is my good friend Ajesha. So, Ajay, although this is not an episode where we tell a story that could be a film, I will tell you now a story that could be a uh film. In fact, I see our good friend the handsome Vaishnav Vyyas as someone who could potentially play the role of Lal Bihari. Right? Let me tell you about Lal Bihari. In the village of Azamgar, in the state of Uttar Pradesh, in 1951, a young lad called um Lal Bihari was born. Though I shouldn't say a young lad called Lal Bihari was born because he wasn't born a young lad. He was born a baby and then he became a young lad with the years. Note the year nineteen fifty one, right? And he grows up and he's playing in the fields and his cousins are his friends and etc everything is going well and he has land. And this is where the problem begins, because in nineteen seventy six, his cousins decide that we have to hur up uh this man's land, right? He is not worthy. And therefore they declare him dead. There's a death certificate which is produced, bribes are paid, he's declared dead, and because he's dead, his relatives get the land, the cousins get the land. So Lal Ba Bihari, at the age of twenty five, when you would think his life is beginning, he finds his life has actually officially ended, right? He is technically dead. What is he to do? Now, this is a matter of great perturbation, but the point is that if he is dead on the official records, he could also become alive on the official records. How does he do this? So first he organizes his own funeral and applies for compensation for his alleged widow. Right? This doesn't work. Then he throws stones at a police station hoping that he'll get arrested, because if they arrest him, they have to concede he",
+      "endTime": 150.53,
+      "text": "record an episode right now. Welcome to Everything Is Everything. I'm Amit allegedly, and this is my good friend Ajesha. So, Ajay, although this is not an episode where we tell a story that could be a film, I will tell you now a story that could be a uh film. In fact, I see our good friend the handsome Vaishnav Vyyas as someone who could potentially play the role of Lal Bihari. Right? Let me tell you about Lal Bihari. In the village of Azamgar, in the state of Uttar Pradesh, in 1951, a young lad called um Lal Bihari was born. Though I shouldn't say a young lad called Lal Bihari was born because he wasn't born a young lad. He was born a baby and then he became a young lad with the years. Note the year nineteen fifty one, right? And he grows up and he's playing in the fields and his cousins are his friends and etc everything is going well and he has land. And this is where the problem begins, because in nineteen seventy six, his cousins decide that we have to hur up uh this man's land, right? He is not worthy. And therefore they declare him dead. There's a death certificate which is produced, bribes are paid, he's declared dead, and because he's dead, his relatives get the land, the cousins get the land. So Lal Ba Bihari, at the age of twenty five, when you would think his life is beginning, he finds his life has actually officially ended, right? He is technically dead. What is he to do? Now, this is a matter of great perturbation, but the point is that if he is dead on the official records, he could also become alive on the official records. How does he do this? So first he organizes his own funeral and applies for compensation for his alleged widow. Right? This doesn't work. Then he throws stones at a police station hoping that he'll get arrested, because if they arrest him, they have to concede he exists.",
       "words": [
         {
           "word": "record",
@@ -2609,21 +2609,21 @@
           "startTime": 149.89,
           "endTime": 150.05,
           "confidence": 0.9854
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 150.05,
-      "endTime": 151.81,
-      "text": "exists. His personhood is assured.",
-      "words": [
+        },
         {
           "word": "exists.",
           "startTime": 150.05,
           "endTime": 150.53,
           "confidence": 0.9682
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 150.53,
+      "endTime": 151.81,
+      "text": "His personhood is assured.",
+      "words": [
         {
           "word": "His",
           "startTime": 150.53,
@@ -2835,8 +2835,8 @@
     {
       "speaker": "other",
       "startTime": 159.01,
-      "endTime": 160.69,
-      "text": "can't arrest a guy because if they arrest",
+      "endTime": 159.57,
+      "text": "can't arrest",
       "words": [
         {
           "word": "can't",
@@ -2849,7 +2849,15 @@
           "startTime": 159.25,
           "endTime": 159.57,
           "confidence": 0.9989
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 159.57,
+      "endTime": 160.05,
+      "text": "a guy because",
+      "words": [
         {
           "word": "a",
           "startTime": 159.57,
@@ -2867,7 +2875,15 @@
           "startTime": 159.89,
           "endTime": 160.05,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 160.05,
+      "endTime": 160.69,
+      "text": "if they arrest",
+      "words": [
         {
           "word": "if",
           "startTime": 160.05,
@@ -5587,10 +5603,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 292.66,
-      "endTime": 330.85,
-      "text": "hard it is. That's how hard it is. Gentle reader, on this pleasant business of being alive and being dead and being able to demonstrate your own activity, we are in the sad subject of know your customer. Okay, so if you've lived in India for any length of time, you have been tormented with uh know your customer problems. Um my bank complains to me every year that I have to come and prove once again that I am the person that I once said that I was with them. And",
+      "endTime": 294.36,
+      "text": "hard it is. That's how hard it is.",
       "words": [
         {
           "word": "hard",
@@ -5639,7 +5655,15 @@
           "startTime": 293.94,
           "endTime": 294.36,
           "confidence": 0.9414
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 303.33,
+      "endTime": 330.85,
+      "text": "Gentle reader, on this pleasant business of being alive and being dead and being able to demonstrate your own activity, we are in the sad subject of know your customer. Okay, so if you've lived in India for any length of time, you have been tormented with uh know your customer problems. Um my bank complains to me every year that I have to come and prove once again that I am the person that I once said that I was with them. And",
+      "words": [
         {
           "word": "Gentle",
           "startTime": 303.33,
@@ -6217,8 +6241,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 333.9,
-      "endTime": 410.43,
-      "text": "Like proofs have the depreciation and they vanish with time, so it has to be re-uped. Um all over the country there are many, many bad stories about bank accounts getting frozen. These are bank accounts that contain money. And the people with the money are just expropriated because something has gone wrong with your KYC. And look, it's one thing for you or I to deal with the paperwork, the Adhar number, and be able to speak to the bank and you know, when The need arises, you can march up to the bank manager and appeal to some common sense. But for most people in the country, this is just a living nightmare that all kinds of people in India go through misery when trying to engage with the official systems. And this is just one big mess. So today, let's take a first principles look at what is this? Where did it come from? Why is it here? And why is most of this a profound error vis-a-vis the fundamental principles of liberal philosophy and the concept of a constitutional democracy. And interestingly, there are mistakes in this framework all over the world. But of course the Indian version of this is way worse than what is found everywhere else in the world.",
+      "endTime": 381.33,
+      "text": "Like proofs have the depreciation and they vanish with time, so it has to be re-uped. Um all over the country there are many, many bad stories about bank accounts getting frozen. These are bank accounts that contain money. And the people with the money are just expropriated because something has gone wrong with your KYC. And look, it's one thing for you or I to deal with the paperwork, the Adhar number, and be able to speak to the bank and you know, when The need arises, you can march up to the bank manager and appeal to some common sense. But for most people in the country, this is just a living nightmare that all kinds of people in India go through misery when trying to engage with the official systems. And this is just one big mess.",
       "words": [
         {
           "word": "Like",
@@ -7059,13 +7083,29 @@
           "startTime": 380.61,
           "endTime": 381.33,
           "confidence": 0.9913
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 381.33,
+      "endTime": 382.21,
+      "text": "So",
+      "words": [
         {
           "word": "So",
           "startTime": 381.33,
           "endTime": 382.21,
           "confidence": 0.9915
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 382.21,
+      "endTime": 410.43,
+      "text": "today, let's take a first principles look at what is this? Where did it come from? Why is it here? And why is most of this a profound error vis-a-vis the fundamental principles of liberal philosophy and the concept of a constitutional democracy. And interestingly, there are mistakes in this framework all over the world. But of course the Indian version of this is way worse than what is found everywhere else in the world.",
+      "words": [
         {
           "word": "today,",
           "startTime": 382.21,
@@ -7521,8 +7561,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 410.58,
-      "endTime": 474.02,
-      "text": "And I want to double score what you just said about how we, the elite privilege, can somehow find a way to uh maneuver this, but most people simply can't, right? And Harsh Varthan, your good friend, was on my show. He's a very senior person in the banking industry. People respect his wisdom a lot. He's on the boards of organizations, et cetera, et cetera. Basically, he knows people the people who run the banks. And he told me about what a nightmare it was for him to get his KYC started out, uh sorted out, that you make phone calls here, you make phone calls there. I know another friend incredibly smart in her 40s. Who had like a supplementary credit card attached to her husband's credit card, and she lost that because she had to give KYC and she just couldn't figure out the maze of paperwork involved. And she'd already done it the previous year, but she couldn't do it this time in time. And she just lost a credit card, which was a supplementary card to her husband who still has it. So it was just anal. And how old people do this. Like I remember my father in his last years was just bumbling and fumbling and completely unable to deal with this. And it was cruelty to expect a man of advancing years or a woman of advancing years to deal with all of this. So this is just a huge",
+      "endTime": 474.74,
+      "text": "And I want to double score what you just said about how we, the elite privilege, can somehow find a way to uh maneuver this, but most people simply can't, right? And Harsh Varthan, your good friend, was on my show. He's a very senior person in the banking industry. People respect his wisdom a lot. He's on the boards of organizations, et cetera, et cetera. Basically, he knows people the people who run the banks. And he told me about what a nightmare it was for him to get his KYC started out, uh sorted out, that you make phone calls here, you make phone calls there. I know another friend incredibly smart in her 40s. Who had like a supplementary credit card attached to her husband's credit card, and she lost that because she had to give KYC and she just couldn't figure out the maze of paperwork involved. And she'd already done it the previous year, but she couldn't do it this time in time. And she just lost a credit card, which was a supplementary card to her husband who still has it. So it was just anal. And how old people do this. Like I remember my father in his last years was just bumbling and fumbling and completely unable to deal with this. And it was cruelty to expect a man of advancing years or a woman of advancing years to deal with all of this. So this is just a huge problem.",
       "words": [
         {
           "word": "And",
@@ -9011,21 +9051,21 @@
           "startTime": 473.7,
           "endTime": 474.02,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 474.02,
-      "endTime": 564.69,
-      "text": "problem. I have one uh insight around what you have just described, and this actually links to our episode around the journey of Indian finance. We're running a central planning system that caters to the interests of the officials in the administrative state who operate the system, and they keep on layering more and more rules and procedures. And there's a smaller and smaller set of people for whom Indian finance works. for a very large number of people, you look at these systems and procedures and you say, Okay, it's not for me. And you know, people just then get on with their lives of cash and gold and real estate and like keep away from the formal systems. Um while on this subject, uh we should uh recall the interesting stories from the United States in the nineteen thirties and uh the gangster Al Capone had this concept of taking cash into a business with cash income, namely laundromats. In America, laundromats are shops where you go with your pile of clothes, stick them into a machine, and you take your washed clothes back. And so income would be shown as the money belonging to the laundromat, and that's how the word money laundering uh emerged. And we are all in the this mess because governments want to go block this kind of money laundering, and every time you see the enforcement directorate in the newspapers, this is the problem that is",
-      "words": [
+        },
         {
           "word": "problem.",
           "startTime": 474.02,
           "endTime": 474.74,
           "confidence": 0.8471
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 474.74,
+      "endTime": 564.69,
+      "text": "I have one uh insight around what you have just described, and this actually links to our episode around the journey of Indian finance. We're running a central planning system that caters to the interests of the officials in the administrative state who operate the system, and they keep on layering more and more rules and procedures. And there's a smaller and smaller set of people for whom Indian finance works. for a very large number of people, you look at these systems and procedures and you say, Okay, it's not for me. And you know, people just then get on with their lives of cash and gold and real estate and like keep away from the formal systems. Um while on this subject, uh we should uh recall the interesting stories from the United States in the nineteen thirties and uh the gangster Al Capone had this concept of taking cash into a business with cash income, namely laundromats. In America, laundromats are shops where you go with your pile of clothes, stick them into a machine, and you take your washed clothes back. And so income would be shown as the money belonging to the laundromat, and that's how the word money laundering uh emerged. And we are all in the this mess because governments want to go block this kind of money laundering, and every time you see the enforcement directorate in the newspapers, this is the problem that is",
+      "words": [
         {
           "word": "I",
           "startTime": 474.74,
@@ -11219,8 +11259,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 616.93,
-      "endTime": 950.6,
-      "text": "Let's get going. I want to start at the fundamental question. What is the case for financial privacy? Okay, so in the modern world of populism, there is a very comfortable notion that oh financial activities they should be surveilled. Okay, and I want to pause and question that. And I want to read financial privacy into fundamental personal privacy. Okay, so let's go step by step. What is surveillance of a person? You find out what conversations they have, the things they do in the day, what kind of things they buy and so on. Okay, so that is getting a picture of a person, you could put a spy to go after a person and try to uh derive all kinds of information about what that person is up to in her life. And we know that this is not on. Surveillance is not permissible in a liberal democracy, and this must not be done. Very well, imagine I give you the complete picture of Amit Barma's financial activities. So I know everything that you buy and sell. This is in fact incredibly intrusive. You will glean a lot of information about the person by being able to look inside their every financial detail. So the simple proposition I want to put up is that if you believe in personal privacy, you should equally believe in financial privacy. That just like nobody, not the Indian State, should be able to see my daily life in any kind of detail in exactly the same fashion. Nobody, not the Indian State, should be able to see my financial life because it is deeply personal. It is private. Too much can be gleaned and inferred about my life by looking at my financial life. You will get the argument, Oh, but if you have nothing to hide, why do you want secrecy? But this is well known, well understood in the entire field of privacy, that Everybody needs privacy. Everybody should desire and be able to obtain complete privacy of their lives. A world in which you do not have privacy is not freedom, okay? Because there's a chilling effect. Once you know you're being observed, you're in the panopticon, then every day your behavior, your activities are distorted out of deference to the watcher. And that is a terrible life to live in. Freedom is the world of not being observed. It is essential. To have your own privacy, to have your own secrecy in order to be free. And that applies equally into financial privacy. Nobody should be able to see your financial data. And so financial privacy is fundamental. Let's go one step further into a firm. Okay? In modern populism, it is a very comfortable idea that okay, fine, maybe the people deserve privacy. But firms know once you become a company, now you have no right to any kind of privacy. And all kinds of people, all kinds of governments can merrily go into the firm and demand all kinds of disclosures, release all kinds of information into the public, and so on. And again, this is not correct. This is not a good way to approach a firm. So I want to give you a trivial example. Imagine you know the database of the customers and the vendors of a firm. You could destroy the firm. by giving this information to their competitors or a concerted attack by powerful people or the government to interfere with the employees, with the customers, with the vendors could torpedo the working of a firm. And that would destroy the firm. It's like a death sentence to have the violation of the financial privacy of a firm. And just in the financial statements of a firm, you can excavate who are all the parties with which this firm is doing business. And that could be very damaging to the life of a business. So there is a very good case for financial privacy of firms. We should not say, oh, because you're a firm, you're some capitalist, you're some big person, now suddenly your claim to privacy is gone, which is a feature of modern populism. I want to link this to freedom of association. Freedom of association is our ability to create clubs associations, political parties, non-government organizations, anything at our free will. This is a fundamental constitutional right in every liberal democracy. Very well, if you don't have financial privacy, then powerful people will be able to mess with the funders and supporters of every nonprofit organization. So to demand intrusions into the financial privacy in terms of detailed reporting requirements for any organization is a violation of freedom of association. So if you take the concept the constitutional right of freedom of association, we can make a club, we can make a nonprofit organization, we can make a for-profit organization, the right to associate is fundamental in liberal democracy. Very well, the right to associate then goes with the right to financial privacy. Then if you will shatter financial privacy, you have shattered right to association. So if you think of the intimate connection To all the other parts of liberal democracy, freedom of speech, blah, blah, blah. They all flow from the right to association. And financial privacy under goods the right to association. So I'm just hoping to say to all of us that we should take financial privacy very seriously. It's not a small matter. That secrets are very important. Financial secrets are very important. Every natural person, every firm. has every right in a sane liberal democracy to keep their secret.",
+      "endTime": 806.34,
+      "text": "Let's get going. I want to start at the fundamental question. What is the case for financial privacy? Okay, so in the modern world of populism, there is a very comfortable notion that oh financial activities they should be surveilled. Okay, and I want to pause and question that. And I want to read financial privacy into fundamental personal privacy. Okay, so let's go step by step. What is surveillance of a person? You find out what conversations they have, the things they do in the day, what kind of things they buy and so on. Okay, so that is getting a picture of a person, you could put a spy to go after a person and try to uh derive all kinds of information about what that person is up to in her life. And we know that this is not on. Surveillance is not permissible in a liberal democracy, and this must not be done. Very well, imagine I give you the complete picture of Amit Barma's financial activities. So I know everything that you buy and sell. This is in fact incredibly intrusive. You will glean a lot of information about the person by being able to look inside their every financial detail. So the simple proposition I want to put up is that if you believe in personal privacy, you should equally believe in financial privacy. That just like nobody, not the Indian State, should be able to see my daily life in any kind of detail in exactly the same fashion. Nobody, not the Indian State, should be able to see my financial life because it is deeply personal. It is private. Too much can be gleaned and inferred about my life by looking at my financial life. You will get the argument, Oh, but if you have nothing to hide, why do you want secrecy? But this is well known, well understood in the entire field of privacy, that Everybody needs privacy. Everybody should desire and be able to obtain complete privacy of their lives. A world in which you do not have privacy is not freedom, okay? Because there's a chilling effect. Once you know you're being observed, you're in the panopticon, then every day your behavior, your activities are distorted out of deference to the watcher. And that is a terrible life to live in. Freedom is the world of not being observed. It is essential. To have your own privacy, to have your own secrecy in order to be free. And that applies equally into financial privacy. Nobody should be able to see your financial data. And so financial privacy is fundamental. Let's go one step further into a firm. Okay? In modern populism, it is a very comfortable idea that okay, fine, maybe the people deserve privacy. But firms know once you become a company, now you have no right to any kind of privacy. And all kinds of people, all kinds of governments can merrily go into the firm and demand all kinds of disclosures, release all kinds of information into the public, and so on. And again, this is not correct. This is not a good way to approach a firm. So I want to give you a trivial example. Imagine you know the database of the customers and the vendors of a",
       "words": [
         {
           "word": "Let's",
@@ -14551,13 +14591,29 @@
           "startTime": 806.1,
           "endTime": 806.34,
           "confidence": 0.9973
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 806.34,
+      "endTime": 807.38,
+      "text": "firm.",
+      "words": [
         {
           "word": "firm.",
           "startTime": 806.34,
           "endTime": 807.38,
           "confidence": 0.9446
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 807.38,
+      "endTime": 950.6,
+      "text": "You could destroy the firm. by giving this information to their competitors or a concerted attack by powerful people or the government to interfere with the employees, with the customers, with the vendors could torpedo the working of a firm. And that would destroy the firm. It's like a death sentence to have the violation of the financial privacy of a firm. And just in the financial statements of a firm, you can excavate who are all the parties with which this firm is doing business. And that could be very damaging to the life of a business. So there is a very good case for financial privacy of firms. We should not say, oh, because you're a firm, you're some capitalist, you're some big person, now suddenly your claim to privacy is gone, which is a feature of modern populism. I want to link this to freedom of association. Freedom of association is our ability to create clubs associations, political parties, non-government organizations, anything at our free will. This is a fundamental constitutional right in every liberal democracy. Very well, if you don't have financial privacy, then powerful people will be able to mess with the funders and supporters of every nonprofit organization. So to demand intrusions into the financial privacy in terms of detailed reporting requirements for any organization is a violation of freedom of association. So if you take the concept the constitutional right of freedom of association, we can make a club, we can make a nonprofit organization, we can make a for-profit organization, the right to associate is fundamental in liberal democracy. Very well, the right to associate then goes with the right to financial privacy. Then if you will shatter financial privacy, you have shattered right to association. So if you think of the intimate connection To all the other parts of liberal democracy, freedom of speech, blah, blah, blah. They all flow from the right to association. And financial privacy under goods the right to association. So I'm just hoping to say to all of us that we should take financial privacy very seriously. It's not a small matter. That secrets are very important. Financial secrets are very important. Every natural person, every firm. has every right in a sane liberal democracy to keep their secret.",
+      "words": [
         {
           "word": "You",
           "startTime": 807.38,
@@ -20735,8 +20791,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1137.04,
-      "endTime": 1250.07,
-      "text": "You brought up the processes uh that are used in advanced economies around uh the police, the law enforcement agencies, and the access to information. And you said it precisely correct. Step one, just because a cop says I want to uh put a phone tap on somebody, that doesn't mean you get through. You have to stand in front of a judge and prove that I have prima facy evidence. Only after that, only the judge can auth authorize the wiretaps. Wiretap suffer a finite amount of time. Further, the phone company does not store my past SMS and my past phone calls. So a wiretap can only be initiated on a prospective basis. Okay? All these concepts are pitch perfect and they should be brought to financial privacy. I e that we each of us should have the ability to establish a deletion window with the bank or the financial firm. Where I should be able to say that any transaction more than three days old, please delete it. So the bank has no information about me. When the policeman wants to investigate me, they should have to go to a judge and get a warrant. And then after that, they get some finite time surveillance rights to look at my life. And then that time ends, and it can only only be authorized by a judge. This is there's an exact analogy between personal privacy and financial privacy. Similarly, there is a great principle in the world of privacy, which is that there cannot exist any mass surveillance system. Okay, implicit in what you've described. is that a cop cannot say I want to monitor everybody's phone and I'll put some AI and I want to listen to conversations involving terrorism. So I'll put in a speech recognition and if they say uh bomb and hand grenade, then I want to know which is the call that is doing that. This is very tempting to policemen. It is only in a police state that a policeman's job is easy. We must make their life difficult. So in every liberal democracy there are no mass surveillance systems. This is fundamental. And in the same fashion, there should be no mass surveillance system in finance. And what is happening in the world is deeply problematic.",
+      "endTime": 1170.83,
+      "text": "You brought up the processes uh that are used in advanced economies around uh the police, the law enforcement agencies, and the access to information. And you said it precisely correct. Step one, just because a cop says I want to uh put a phone tap on somebody, that doesn't mean you get through. You have to stand in front of a judge and prove that I have prima facy evidence. Only after that, only the judge can auth authorize the wiretaps. Wiretap suffer a finite amount of time. Further, the phone company does not store my past SMS and my past phone calls. So a wiretap can only be initiated on a prospective",
       "words": [
         {
           "word": "You",
@@ -21421,13 +21477,29 @@
           "startTime": 1170.19,
           "endTime": 1170.83,
           "confidence": 0.9984
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1170.83,
+      "endTime": 1171.95,
+      "text": "basis.",
+      "words": [
         {
           "word": "basis.",
           "startTime": 1170.83,
           "endTime": 1171.95,
           "confidence": 0.976
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1171.95,
+      "endTime": 1250.07,
+      "text": "Okay? All these concepts are pitch perfect and they should be brought to financial privacy. I e that we each of us should have the ability to establish a deletion window with the bank or the financial firm. Where I should be able to say that any transaction more than three days old, please delete it. So the bank has no information about me. When the policeman wants to investigate me, they should have to go to a judge and get a warrant. And then after that, they get some finite time surveillance rights to look at my life. And then that time ends, and it can only only be authorized by a judge. This is there's an exact analogy between personal privacy and financial privacy. Similarly, there is a great principle in the world of privacy, which is that there cannot exist any mass surveillance system. Okay, implicit in what you've described. is that a cop cannot say I want to monitor everybody's phone and I'll put some AI and I want to listen to conversations involving terrorism. So I'll put in a speech recognition and if they say uh bomb and hand grenade, then I want to know which is the call that is doing that. This is very tempting to policemen. It is only in a police state that a policeman's job is easy. We must make their life difficult. So in every liberal democracy there are no mass surveillance systems. This is fundamental. And in the same fashion, there should be no mass surveillance system in finance. And what is happening in the world is deeply problematic.",
+      "words": [
         {
           "word": "Okay?",
           "startTime": 1171.95,
@@ -26563,8 +26635,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1451.39,
-      "endTime": 1829.86,
-      "text": "These things were indeed an aberration, and then we got back to normal levels of safety and secrecy. That if you're a natural person anywhere in the world, you face the political upheavals and the authoritarian governments of the 20th century. You go hide your wealth in a place like Switzerland, and you get your safety. Okay, and I consider this a very healthy and sensible world, as opposed to a lot of the modern noises that are made about Swiss banks and tax havens and all that. The people doing this are just doing populism and they don't understand the 20th century. Okay, to understand the 20th century is to see that these are the ways by which people protected themselves against governments. And the entire nightmare of the 20th century involved people fleeing from governments and creating a private life, a personal life, and that involved things like a bank in Switzerland. So this was a good way to begin. Things started changing in the United States, and it is really a blot. On the conscience of the United States, all the things that I'm going to describe to you. We often look to the United States for leadership in ideas and philosophy, but this story I'm going to tell is just a huge fail by the American intellectual community and the American state. So this started at the IRS, that the income tax people first in the 70s started creating requirements. that banks have to watch out for large transactions and report these to the IRS. And this is an intrusion into financial privacy. So if you did more than ten thousand dollars of a transaction in the nineteen seventies, which is a big chunk of money today, then banks were obliged to give this information to the IRS. And at the time uh people thought that, oh, but we are only going after tax evaders, so this is okay. So nobody spoke up. And the slippery slope began. And then it started getting worse and it started getting worse. Then came Richard Nixon's war on drugs. And around the war on drugs, a whole new concept of uh financial crime enforcement began, which is called anti-money laundering. So here the philosophy was that they created a concept of a predicate offense and money laundering that I am Supposed to be doing some drug trafficking and you may not even have established it. But associated with that investigation, you start thinking, are there things going on to convert uh criminal proceeds into uh legitimate resources through the banking system? And that's called the crime of money laundering. And a whole new wave of restrictive actions came up, and with it came surveillance. Around this was built an international body which is called FATF, Financial Action Task Force. Okay? All very Orwellian names. And uh the the United States had one of the most Orwellian names for this law that I described around banking. They call it the Banking Privacy Act. It is actually the destruction of privacy in Banking Act. But the names should always be treated with skepticism that what governments do. Is very often inimical to what is good for the people and things are cloaked in uh fancy names. The FATF is a club of the major countries of the world, and uh they created a concept that it was a closed club. There's only a handful of countries in the FATF, and India is the last member of the FATF. After this, I believe no other countries have been accepted into the FATF. And uh every other country suffers from more burden, more pain, more procedure. So then the trade off that was given to countries is look, either you can sign on to a bad world of financial surveillance, or you will face greater friction in the world. And many people took that trade off and said, Okay, fine, we'll go into FATF. And everything here got way, way worse after the nine eleven attacks when the US Treasury championed AML CFT anti-money laundering, countering the financing of terror, where they came up with the wrong idea that in order to investigate terrorist plots, you have to find that hundred thousand dollars wired by a Pakistani major general to Mohammed Atta, who did the work of organizing the 911 attacks. Now This is not a very bright idea because you set up a financial surveillance system covering seven billion people, and the terrorists will just move their activities to other mechanisms. Okay? So I I have frequently used a counterexample that I seem to remember one five five five cigarette box packed with diamonds is a hundred thousand dollars. So you're done. You want to move a hundred thousand dollars to Mahamadata, you just have to carry one cigarette case. And it contains diamonds, so it's invisible to X ray machines. I wonder how modern machines would see it. Sorry, I digress. Uh for all practical purposes, any self respecting terrorist will find ways around this. And you've just dumped the entire world with this pain of handling KYC and procedural constraints, and the adverse impact on liberal democracy that comes from piercing the veil of secrecy of each of us and going after our financial information. I have a good friend who is an official who got private, quiet conversations with Russian who were telling this Indian official with a great sense of wonder that did you know the American Treasury is teaching us how to oppress our own people? Because the American Treasury, the US Treasury taught the Russian government on how to build a mass surveillance system in finance. They didn't know how to do it by themselves. This is the nonsense that emanated in the world originally through Banking Secrecy Act of the United States and then anti money laundering and then the nine eleven attacks. It is well known by now that actually it had no value in terms of disrupting terrorism. So by now there are many articles that have been written that this stuff hasn't helped in disrupting any terrorist plots. It has just fouled up the machine of finance all over the world, and it has been very convenient for governments to obtain more information about their subjects.",
+      "endTime": 1679.54,
+      "text": "These things were indeed an aberration, and then we got back to normal levels of safety and secrecy. That if you're a natural person anywhere in the world, you face the political upheavals and the authoritarian governments of the 20th century. You go hide your wealth in a place like Switzerland, and you get your safety. Okay, and I consider this a very healthy and sensible world, as opposed to a lot of the modern noises that are made about Swiss banks and tax havens and all that. The people doing this are just doing populism and they don't understand the 20th century. Okay, to understand the 20th century is to see that these are the ways by which people protected themselves against governments. And the entire nightmare of the 20th century involved people fleeing from governments and creating a private life, a personal life, and that involved things like a bank in Switzerland. So this was a good way to begin. Things started changing in the United States, and it is really a blot. On the conscience of the United States, all the things that I'm going to describe to you. We often look to the United States for leadership in ideas and philosophy, but this story I'm going to tell is just a huge fail by the American intellectual community and the American state. So this started at the IRS, that the income tax people first in the 70s started creating requirements. that banks have to watch out for large transactions and report these to the IRS. And this is an intrusion into financial privacy. So if you did more than ten thousand dollars of a transaction in the nineteen seventies, which is a big chunk of money today, then banks were obliged to give this information to the IRS. And at the time uh people thought that, oh, but we are only going after tax evaders, so this is okay. So nobody spoke up. And the slippery slope began. And then it started getting worse and it started getting worse. Then came Richard Nixon's war on drugs. And around the war on drugs, a whole new concept of uh financial crime enforcement began, which is called anti-money laundering. So here the philosophy was that they created a concept of a predicate offense and money laundering that I am Supposed to be doing some drug trafficking and you may not even have established it. But associated with that investigation, you start thinking, are there things going on to convert uh criminal proceeds into uh legitimate resources through the banking system? And that's called the crime of money laundering. And a whole new wave of restrictive actions came up, and with it came surveillance. Around this was built an international body which is called FATF, Financial Action Task Force. Okay? All very Orwellian names. And uh the the United States had one of the most Orwellian names for this law that I described around banking. They call it the Banking Privacy Act. It is actually the destruction of privacy in Banking Act. But the names should always be treated with skepticism that what governments do. Is very often inimical to what is good for the people and things are cloaked in uh fancy names. The FATF is a club of the major countries of the world, and uh they created a concept that it was a closed club. There's only a handful of countries in the FATF, and India is the last member of the FATF. After this, I believe no other countries have been accepted into the FATF. And uh every other country suffers from more burden, more pain, more procedure. So then the trade off that was given to countries is look, either you can sign on to a bad world of financial surveillance, or you will face greater friction in the world. And many people took that trade off and said, Okay, fine, we'll go into",
       "words": [
         {
           "word": "These",
@@ -30525,13 +30597,29 @@
           "startTime": 1679.14,
           "endTime": 1679.54,
           "confidence": 0.9907
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1679.54,
+      "endTime": 1680.98,
+      "text": "FATF.",
+      "words": [
         {
           "word": "FATF.",
           "startTime": 1679.54,
           "endTime": 1680.98,
           "confidence": 0.8971
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1680.98,
+      "endTime": 1829.86,
+      "text": "And everything here got way, way worse after the nine eleven attacks when the US Treasury championed AML CFT anti-money laundering, countering the financing of terror, where they came up with the wrong idea that in order to investigate terrorist plots, you have to find that hundred thousand dollars wired by a Pakistani major general to Mohammed Atta, who did the work of organizing the 911 attacks. Now This is not a very bright idea because you set up a financial surveillance system covering seven billion people, and the terrorists will just move their activities to other mechanisms. Okay? So I I have frequently used a counterexample that I seem to remember one five five five cigarette box packed with diamonds is a hundred thousand dollars. So you're done. You want to move a hundred thousand dollars to Mahamadata, you just have to carry one cigarette case. And it contains diamonds, so it's invisible to X ray machines. I wonder how modern machines would see it. Sorry, I digress. Uh for all practical purposes, any self respecting terrorist will find ways around this. And you've just dumped the entire world with this pain of handling KYC and procedural constraints, and the adverse impact on liberal democracy that comes from piercing the veil of secrecy of each of us and going after our financial information. I have a good friend who is an official who got private, quiet conversations with Russian who were telling this Indian official with a great sense of wonder that did you know the American Treasury is teaching us how to oppress our own people? Because the American Treasury, the US Treasury taught the Russian government on how to build a mass surveillance system in finance. They didn't know how to do it by themselves. This is the nonsense that emanated in the world originally through Banking Secrecy Act of the United States and then anti money laundering and then the nine eleven attacks. It is well known by now that actually it had no value in terms of disrupting terrorism. So by now there are many articles that have been written that this stuff hasn't helped in disrupting any terrorist plots. It has just fouled up the machine of finance all over the world, and it has been very convenient for governments to obtain more information about their subjects.",
+      "words": [
         {
           "word": "And",
           "startTime": 1680.98,
@@ -37753,8 +37841,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2073.3,
-      "endTime": 2337.67,
-      "text": "I will say that if you go to London or Zurich or Washington, DC, and open a bank account, your level of misery is low. Okay? So their procedures are sane and sensible, and there is a common sense around what they're doing, while I disagree with what they're doing, because You know, it should be my birthright as a person to block all information flows about my financial activities from the state. Okay? They are not there. But they manage to work it out in a commonsensical way, where whether for reasons of tax evasion or for reasons of terrorism, they are watching transactions in a commonsensical way, which does not create a great amount of friction. Okay, so you could think intuitively it's like having a security procedure at the airport, which is not so bad, meaning it may be stupid, but it's not so bad. When you take these kinds of compulsions and you bring them into India and you hand it to the Indian official dumb, it just creates the worst possible outcome. Uh in the Indian bureaucracy, people are like soldier-soldier when it comes to security. So there is no common sense around security. People are humorless around security, and there's a cover your ass. So something has to be done as per FATF guidelines. Its most harsh and conservative version will be done in India in the rules. Then it will filter to RBI, which will make something worse out of it. Then it will filter to a bank, and the officials of the bank will make something worse out of it. And the frontline employee of the bank will interpret it in the worst possible way. Because each person is saying, I have no accountability. I am under no pressure to cater to the health and freedom and happiness and prosperity of the people of India. My only objective is to cover my ass. So each one. comes up with a harder and crazier version of it. So we in India have ended up with the world's worst procedures around these things. So you look around the world, there are FATF members equally like India, there are FATF members who do a damn decent job of a basic kind of surveillance system where certain kind of information is obtained. In India it's the worst. So you know all the nonsense that you see is the Indian bureaucracy is the failures of the Indian state. It is, you know, everything written about in Kelkar and Shah multiplied by the FATF, generating just an array of bad behavior by the Indian state, and there is an everyday oppression, and all of us just roll our eyes and get miserable and put up one sentence on Twitter and let it go. Because we just live with it day after day and we've normalized this. We're no longer rattling the cage. We've given up. We just accept this kind of nonsense. As you correctly said at the beginning, the worst uh footprint of this happens for poor people because poor people don't have the time and trouble and the ability to deal with all this complexity and overcome it. So you start getting financial exclusion that poor people, small firms, they just look at all this and they give up. So you know that's part of the great crisis of Indian small business. It's just one after another, the Indian state has created structures that work only for the large firms. It has become harder and harder to be a five man, ten man, twenty man, forty man firm in India. It it's just too much friction. There's too much overhead. And the Indian state creates a world where you can't op operate small firms. You can only be big firms in India. And uh then we came to a technological solutionism. Uh people in the field of finance, myself included, had the wrong idea. I am guilty. I'm part of this thought process. And in hindsight I realize how wrong it was. We looked for a technological fix. So we said, Oh, there is all this KYC nonsense. Adar. We will have a UID AI and that will solve our problem. It will give us an end run around this. And now that I'm old and wise, I know you should never do this. You should never accept bad institutions and say that we'll do some technological cover up and somehow we will make do with an underlying foundation. And so Aadhaar has come, it is all over this place, and the KYC nightmare has not ended, the AML CFT nightmare has not ended. The enforcement directorate continues to walk around the streets of India doing all kinds of things and so on. So There are no technological fixes to these things. You have to go to the root cause. You have to go to fundamentals of liberal democracy and locate financial privacy alongside privacy in the Putaswami ruling, in the right to association, turn down mass surveillance systems and turn down the mass surveillance system in finance.",
+      "endTime": 2273.18,
+      "text": "I will say that if you go to London or Zurich or Washington, DC, and open a bank account, your level of misery is low. Okay? So their procedures are sane and sensible, and there is a common sense around what they're doing, while I disagree with what they're doing, because You know, it should be my birthright as a person to block all information flows about my financial activities from the state. Okay? They are not there. But they manage to work it out in a commonsensical way, where whether for reasons of tax evasion or for reasons of terrorism, they are watching transactions in a commonsensical way, which does not create a great amount of friction. Okay, so you could think intuitively it's like having a security procedure at the airport, which is not so bad, meaning it may be stupid, but it's not so bad. When you take these kinds of compulsions and you bring them into India and you hand it to the Indian official dumb, it just creates the worst possible outcome. Uh in the Indian bureaucracy, people are like soldier-soldier when it comes to security. So there is no common sense around security. People are humorless around security, and there's a cover your ass. So something has to be done as per FATF guidelines. Its most harsh and conservative version will be done in India in the rules. Then it will filter to RBI, which will make something worse out of it. Then it will filter to a bank, and the officials of the bank will make something worse out of it. And the frontline employee of the bank will interpret it in the worst possible way. Because each person is saying, I have no accountability. I am under no pressure to cater to the health and freedom and happiness and prosperity of the people of India. My only objective is to cover my ass. So each one. comes up with a harder and crazier version of it. So we in India have ended up with the world's worst procedures around these things. So you look around the world, there are FATF members equally like India, there are FATF members who do a damn decent job of a basic kind of surveillance system where certain kind of information is obtained. In India it's the worst. So you know all the nonsense that you see is the Indian bureaucracy is the failures of the Indian state. It is, you know, everything written about in Kelkar and Shah multiplied by the FATF, generating just an array of bad behavior by the Indian state, and there is an everyday oppression, and all of us just roll our eyes and get miserable and put up one sentence on Twitter and let it go. Because we just live with it day after day and we've normalized this. We're no longer rattling the cage. We've given up. We just accept this kind of nonsense. As you correctly said at the beginning, the worst uh footprint of this happens for poor people because poor people don't have the time and trouble and the ability to deal with all this complexity and overcome it. So you start getting financial exclusion that poor people, small firms, they just look at all this and they give up. So you know that's part of the great crisis of Indian small business. It's just one after another, the Indian state has created structures that work only for the large firms. It has become harder and harder to be a five man, ten man, twenty man, forty man firm in India. It it's just too much friction. There's too much overhead. And the Indian state creates a world where you can't op operate small firms. You can only be big firms in India. And uh then we came to a technological solutionism.",
       "words": [
         {
           "word": "I",
@@ -41625,13 +41713,29 @@
           "startTime": 2271.74,
           "endTime": 2273.18,
           "confidence": 0.8928
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2273.18,
+      "endTime": 2274.46,
+      "text": "Uh",
+      "words": [
         {
           "word": "Uh",
           "startTime": 2273.18,
           "endTime": 2274.46,
           "confidence": 0.8401
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2274.46,
+      "endTime": 2337.67,
+      "text": "people in the field of finance, myself included, had the wrong idea. I am guilty. I'm part of this thought process. And in hindsight I realize how wrong it was. We looked for a technological fix. So we said, Oh, there is all this KYC nonsense. Adar. We will have a UID AI and that will solve our problem. It will give us an end run around this. And now that I'm old and wise, I know you should never do this. You should never accept bad institutions and say that we'll do some technological cover up and somehow we will make do with an underlying foundation. And so Aadhaar has come, it is all over this place, and the KYC nightmare has not ended, the AML CFT nightmare has not ended. The enforcement directorate continues to walk around the streets of India doing all kinds of things and so on. So There are no technological fixes to these things. You have to go to the root cause. You have to go to fundamentals of liberal democracy and locate financial privacy alongside privacy in the Putaswami ruling, in the right to association, turn down mass surveillance systems and turn down the mass surveillance system in finance.",
+      "words": [
         {
           "word": "people",
           "startTime": 2274.46,
@@ -50489,8 +50593,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2760.05,
-      "endTime": 2798.62,
-      "text": "I have a reading list on this subject, including a fascinating article about how AML C F T failed on anti terrorism worldwide. So, gentle reader, please Go to the show notes and I'm going to give you a bunch of articles on this subject. It's a great field, it's well worth doing. Go inside. I'll walk with you.",
+      "endTime": 2796.12,
+      "text": "I have a reading list on this subject, including a fascinating article about how AML C F T failed on anti terrorism worldwide. So, gentle reader, please Go to the show notes and I'm going to give you a bunch of articles on this subject. It's a great field, it's well worth doing. Go inside.",
       "words": [
         {
           "word": "I",
@@ -50821,7 +50925,15 @@
           "startTime": 2794.62,
           "endTime": 2796.12,
           "confidence": 0.8313
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2797.66,
+      "endTime": 2798.62,
+      "text": "I'll walk with you.",
+      "words": [
         {
           "word": "I'll",
           "startTime": 2797.66,

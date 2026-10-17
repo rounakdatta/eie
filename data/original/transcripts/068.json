@@ -5,7 +5,7 @@
     "durationSeconds": 3821,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -6855,8 +6855,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 371.83,
-      "endTime": 454.9,
-      "text": "You could start at your personal consumption, okay? Vast amounts of bacon tiny amounts of uh bread, and then you could tot up your expenses. So quantity of bacon multiplied by price of bacon, expenditure on bacon, dot dot dot. Okay? And then next month with a different set of prices, you could compute your personal inflation rate that Amit Bhahi eats the same amount of bacon every month. Okay? Amit Bhay is a good devout non vegetarian and he eats bacon as a matter of principle. So you could calculate uh inflation rate customized to you, which is the cost of your basket. You buy certain things and you take your quantities, your prices, multiply them together, and then month after month that can be computed. And as you correctly said, there will always be internal fluctuations. Okay? So on average luck is zero. Some things are positive, some things are negative. So some days apples are expensive, some days oranges are cheap. Okay, so on average there will always be an idiosyncratic noise Where some things go up and some things go down. But the average overall systematic increase in the cost of your basket is your inflation, is your truth, is your inflation. Okay? And each person in the country can do this. So what economic statisticians do is the following. Step one, they conduct",
+      "endTime": 487.54,
+      "text": "You could start at your personal consumption, okay? Vast amounts of bacon tiny amounts of uh bread, and then you could tot up your expenses. So quantity of bacon multiplied by price of bacon, expenditure on bacon, dot dot dot. Okay? And then next month with a different set of prices, you could compute your personal inflation rate that Amit Bhahi eats the same amount of bacon every month. Okay? Amit Bhay is a good devout non vegetarian and he eats bacon as a matter of principle. So you could calculate uh inflation rate customized to you, which is the cost of your basket. You buy certain things and you take your quantities, your prices, multiply them together, and then month after month that can be computed. And as you correctly said, there will always be internal fluctuations. Okay? So on average luck is zero. Some things are positive, some things are negative. So some days apples are expensive, some days oranges are cheap. Okay, so on average there will always be an idiosyncratic noise Where some things go up and some things go down. But the average overall systematic increase in the cost of your basket is your inflation, is your truth, is your inflation. Okay? And each person in the country can do this. So what economic statisticians do is the following. Step one, they conduct vast scale household surveys to measure the consumption of everybody in the country. So as an example, the CMIE household survey attempts to measure about 190,000 households three times a year. And for each household, it asks questions about some 90 separate elements of the consumption. That how much are you spending on tuition fees for your kids. It's sort of at that level",
       "words": [
         {
           "word": "You",
@@ -8225,15 +8225,7 @@
           "startTime": 454.26,
           "endTime": 454.9,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 454.9,
-      "endTime": 456.66,
-      "text": "vast scale",
-      "words": [
+        },
         {
           "word": "vast",
           "startTime": 454.9,
@@ -8245,15 +8237,7 @@
           "startTime": 455.54,
           "endTime": 456.66,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 456.66,
-      "endTime": 487.54,
-      "text": "household surveys to measure the consumption of everybody in the country. So as an example, the CMIE household survey attempts to measure about 190,000 households three times a year. And for each household, it asks questions about some 90 separate elements of the consumption. That how much are you spending on tuition fees for your kids. It's sort of at that level",
-      "words": [
+        },
         {
           "word": "household",
           "startTime": 456.66,
@@ -8669,8 +8653,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 490.22,
-      "endTime": 493.34,
-      "text": "No bacon. I think they have some generic categories called meat",
+      "endTime": 492.54,
+      "text": "No bacon. I think they have some generic categories",
       "words": [
         {
           "word": "No",
@@ -8725,7 +8709,15 @@
           "startTime": 491.82,
           "endTime": 492.54,
           "confidence": 0.9992
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 492.54,
+      "endTime": 496.86,
+      "text": "called meat and fish and so on, but not the subtlety of bacon. Okay?",
+      "words": [
         {
           "word": "called",
           "startTime": 492.54,
@@ -8737,15 +8729,7 @@
           "startTime": 492.94,
           "endTime": 493.34,
           "confidence": 0.9978
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 493.34,
-      "endTime": 496.86,
-      "text": "and fish and so on, but not the subtlety of bacon. Okay?",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 493.34,
@@ -8823,8 +8807,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 496.86,
-      "endTime": 515.68,
-      "text": "So this is how the economic measurement is done of the behavior of a large amount of households. Then they are aggregated and you get an overall average of the weights in the consumption basket. So there are poor people, rich people, vegetarians, carnivores, they all have weights of what is the percentage share.",
+      "endTime": 662.52,
+      "text": "So this is how the economic measurement is done of the behavior of a large amount of households. Then they are aggregated and you get an overall average of the weights in the consumption basket. So there are poor people, rich people, vegetarians, carnivores, they all have weights of what is the percentage share. of school fees of children in your household consumption. Okay, and you get one such uh list of weights for each household and you average them across the entire country. And that gives you the overall average weightage of what the households are buying. Okay? And imagine that you then compute that weighted average of prices based on this average basket. That leads to a price index, that leads to a measure of inflation. Okay? So the consumer price index is this, that we measure a large number of households, we express their consumption in a s as a certain weighted basket, and then month after month we go back, find out all those prices. The weights stay the same for a couple of years. Every month the prices change. So you plug in this month's prices, and you get a price index for this month. And then you keep going like this, and uh you get the measure of inflation for India. So it reflects the average inflation as perceived by the overall average of India. No two people are alike and each will differ in their subjective experience, but this is an average which reflects the overall average of what's going on in the country. And uh right here I want to say that in general one should always be uh skeptical about government data. uh when there is a broad lack of state capability in the country, it afflicts everything. So the same government that fares poorly on the police and the judiciary and the air quality in North India will also fare poorly in statistical measurement and the release of data. So I don't mean to single out the people doing economic measurement, but it's hard. It's a government organization. You know, they will have their own foibbles. So all government data should be viewed with great skepticism. And many years ago, when Ila Patnaik and I were working systematically in this field, we thought that it would be good to cross check the veracity of this data. So we used the CMI household survey to obtain the weights, and we cross-checked the weights against the weights as used in the CPI data of the government, and they broadly checked. then we used private sector data sources for prices and we cross check them against the government's data and broadly they",
       "words": [
         {
           "word": "So",
@@ -9149,15 +9133,7 @@
           "startTime": 515.18,
           "endTime": 515.68,
           "confidence": 0.8995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 516.18,
-      "endTime": 518.1,
-      "text": "of school fees of",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 516.18,
@@ -9181,15 +9157,7 @@
           "startTime": 517.78,
           "endTime": 518.1,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 518.1,
-      "endTime": 523.06,
-      "text": "children in your household consumption. Okay, and you get one such",
-      "words": [
+        },
         {
           "word": "children",
           "startTime": 518.1,
@@ -9255,15 +9223,7 @@
           "startTime": 522.26,
           "endTime": 523.06,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 523.06,
-      "endTime": 524.58,
-      "text": "uh list of",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 523.06,
@@ -9281,15 +9241,7 @@
           "startTime": 524.02,
           "endTime": 524.58,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 524.58,
-      "endTime": 535.06,
-      "text": "weights for each household and you average them across the entire country. And that gives you the overall average weightage of what the households are",
-      "words": [
+        },
         {
           "word": "weights",
           "startTime": 524.58,
@@ -9439,15 +9391,7 @@
           "startTime": 534.82,
           "endTime": 535.06,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 535.06,
-      "endTime": 536.9,
-      "text": "buying. Okay?",
-      "words": [
+        },
         {
           "word": "buying.",
           "startTime": 535.06,
@@ -9459,15 +9403,7 @@
           "startTime": 536.02,
           "endTime": 536.9,
           "confidence": 0.7069
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 536.9,
-      "endTime": 551.11,
-      "text": "And imagine that you then compute that weighted average of prices based on this average basket. That leads to a price index, that leads to a measure of inflation. Okay? So the consumer price index is",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 536.9,
@@ -9683,15 +9619,7 @@
           "startTime": 550.79,
           "endTime": 551.11,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 551.11,
-      "endTime": 552.87,
-      "text": "this, that we",
-      "words": [
+        },
         {
           "word": "this,",
           "startTime": 551.11,
@@ -9709,15 +9637,7 @@
           "startTime": 552.55,
           "endTime": 552.87,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 552.87,
-      "endTime": 662.52,
-      "text": "measure a large number of households, we express their consumption in a s as a certain weighted basket, and then month after month we go back, find out all those prices. The weights stay the same for a couple of years. Every month the prices change. So you plug in this month's prices, and you get a price index for this month. And then you keep going like this, and uh you get the measure of inflation for India. So it reflects the average inflation as perceived by the overall average of India. No two people are alike and each will differ in their subjective experience, but this is an average which reflects the overall average of what's going on in the country. And uh right here I want to say that in general one should always be uh skeptical about government data. uh when there is a broad lack of state capability in the country, it afflicts everything. So the same government that fares poorly on the police and the judiciary and the air quality in North India will also fare poorly in statistical measurement and the release of data. So I don't mean to single out the people doing economic measurement, but it's hard. It's a government organization. You know, they will have their own foibbles. So all government data should be viewed with great skepticism. And many years ago, when Ila Patnaik and I were working systematically in this field, we thought that it would be good to cross check the veracity of this data. So we used the CMI household survey to obtain the weights, and we cross-checked the weights against the weights as used in the CPI data of the government, and they broadly checked. then we used private sector data sources for prices and we cross check them against the government's data and broadly they",
-      "words": [
+        },
         {
           "word": "measure",
           "startTime": 552.87,
@@ -13621,8 +13541,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 779.86,
-      "endTime": 788.58,
-      "text": "all. So the wholesale price index is basically not wholesale, not an index, and not a price by itself. So it's just",
+      "endTime": 789.06,
+      "text": "all. So the wholesale price index is basically not wholesale, not an index, and not a price by itself. So it's just people",
       "words": [
         {
           "word": "all.",
@@ -13755,21 +13675,21 @@
           "startTime": 787.22,
           "endTime": 788.58,
           "confidence": 0.6101
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 788.58,
-      "endTime": 804.03,
-      "text": "people very widely go wrong with using these things. I'm happy to discuss in great detail later, but this is my Headline summary Use the CPI. CPI is a decent good index and it is meaningful. Use the WPI underlying component prices as a database.",
-      "words": [
+        },
         {
           "word": "people",
           "startTime": 788.58,
           "endTime": 789.06,
           "confidence": 0.9563
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 789.06,
+      "endTime": 804.03,
+      "text": "very widely go wrong with using these things. I'm happy to discuss in great detail later, but this is my Headline summary Use the CPI. CPI is a decent good index and it is meaningful. Use the WPI underlying component prices as a database.",
+      "words": [
         {
           "word": "very",
           "startTime": 789.06,
@@ -14039,8 +13959,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 813.72,
-      "endTime": 831.24,
-      "text": "So, Ajl, uh let's talk about why is inflation important. Like w you know, when inflation goes out of back, like something when there's hyperinflation and a loaf of bread today will you know cost as much as a house tomorrow, obviously it's a problem. But otherwise one, two percentage points, how does it matter? Or",
+      "endTime": 830.9,
+      "text": "So, Ajl, uh let's talk about why is inflation important. Like w you know, when inflation goes out of back, like something when there's hyperinflation and a loaf of bread today will you know cost as much as a house tomorrow, obviously it's a problem. But otherwise one, two percentage points, how does it matter?",
       "words": [
         {
           "word": "So,",
@@ -14371,21 +14291,21 @@
           "startTime": 829.4,
           "endTime": 830.9,
           "confidence": 0.8553
-        },
-        {
-          "word": "Or",
-          "startTime": 831.0,
-          "endTime": 831.24,
-          "confidence": 0.9745
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 831.24,
+      "startTime": 831.0,
       "endTime": 857.54,
-      "text": "even imagine if you live in a market environment where the inflation is compensated to you by wage hikes or by income hikes. Then are you protected? Okay? Like so imagine you're a self-employed doctor. Okay? When inflation happens, you'll charge more to your patients. So it seems like a minor problem. And uh it is easy to think that it is there, but it's not that",
+      "text": "Or even imagine if you live in a market environment where the inflation is compensated to you by wage hikes or by income hikes. Then are you protected? Okay? Like so imagine you're a self-employed doctor. Okay? When inflation happens, you'll charge more to your patients. So it seems like a minor problem. And uh it is easy to think that it is there, but it's not that",
       "words": [
+        {
+          "word": "Or",
+          "startTime": 831.0,
+          "endTime": 831.24,
+          "confidence": 0.9745
+        },
         {
           "word": "even",
           "startTime": 831.24,
@@ -14793,8 +14713,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 857.54,
-      "endTime": 868.26,
-      "text": "important. Except some of your patients die because uh food is so expensive they can't afford it anymore, and then you have less patients. I'm kidding. Continue. Don't answer me seriously. I was about to launch into",
+      "endTime": 869.7,
+      "text": "important. Except some of your patients die because uh food is so expensive they can't afford it anymore, and then you have less patients. I'm kidding. Continue. Don't answer me seriously. I was about to launch into answering. You seriously",
       "words": [
         {
           "word": "important.",
@@ -15017,15 +14937,7 @@
           "startTime": 868.02,
           "endTime": 868.26,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 868.26,
-      "endTime": 908.36,
-      "text": "answering. You seriously that what do we know in the literature about the impact of inflation shocks on mortality and infant mortality and such like. Yeah, don't don't even get me started. Okay. So uh sometimes people think that uh inflation is the price of growth. If you're going to have high growth, then having a little bit of inflation is okay. And there is some sense in which these are correlated, but I think this is actually a very poor idea and you know the sooner we get rid of this the better. So it is interesting and important to ask the question. Why is inflation important? And you know, should one devote institutional apparatus to the conquest of inflation? And I solidly believe the answer is yes.",
-      "words": [
+        },
         {
           "word": "answering.",
           "startTime": 868.26,
@@ -15043,7 +14955,15 @@
           "startTime": 869.22,
           "endTime": 869.7,
           "confidence": 0.9372
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 869.7,
+      "endTime": 908.36,
+      "text": "that what do we know in the literature about the impact of inflation shocks on mortality and infant mortality and such like. Yeah, don't don't even get me started. Okay. So uh sometimes people think that uh inflation is the price of growth. If you're going to have high growth, then having a little bit of inflation is okay. And there is some sense in which these are correlated, but I think this is actually a very poor idea and you know the sooner we get rid of this the better. So it is interesting and important to ask the question. Why is inflation important? And you know, should one devote institutional apparatus to the conquest of inflation? And I solidly believe the answer is yes.",
+      "words": [
         {
           "word": "that",
           "startTime": 869.7,
@@ -15805,8 +15725,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 908.36,
-      "endTime": 920.28,
-      "text": "And and b when I say when I ask why it is important, both of us right now are talking about reasons beyond the obvious moral reason at the start. Apart from",
+      "endTime": 916.02,
+      "text": "And and b when I say when I ask why it is important, both of us right now are talking about reasons beyond the obvious moral reason at the start.",
       "words": [
         {
           "word": "And",
@@ -15987,7 +15907,15 @@
           "startTime": 914.52,
           "endTime": 916.02,
           "confidence": 0.8875
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 919.72,
+      "endTime": 1260.25,
+      "text": "Apart from that. So I want to go deep into the working of the price system. Okay. So again and again, we have been pushing the knowledge and the intuition of the price system. And core to that is this you know either Hindu or Buddhist philosophy of a world that is ever changing. Okay? The world is ever changing and the job of the self-organizing system, the distributed decentralized information processing of the economic society consists of comprehending that changing world and feeding it back into a correct and improved Resource allocation. So the world keeps on changing, technology changes, tastes change. Each firm, each individual, each consumer, each producer, each self-employed person is looking at this bewildering world where things are changing all the time and applying mind and applying uh finite amount of CPU power to thinking, what should I be doing differently? Okay. So we have emphasized this idea that prices convey signals. But they convey signals to somebody. Like it has to go into the mind of a firm, and then the firm will think and apply its own information processing and come up with ideas for what it should different do different. Now, when a firm decides to do something different, it's not a trivial matter changing. Okay, you want to change the techniques that you use in production. You want to change the locations of your factories, you want to hire some people, you want to fire some people. All this adjustment is not easy. So think of a finite budget of adjustment muscle. Every firm has to look at the world and keep on adapting, but you know adapting is exhausting. It's not a small matter. It is the great ask of the market economy that look the world keeps on changing, you have to keep on changing. You can't sit quiet and silent and say we'll keep on doing the same things forever. Okay? You have to keep responding to a changing world and changing is hard. Some of the people like us who are making this show and are watching this show, have an oversupply of cognitive capacity, and do not have adequate empathy for the difficulty of many people in just keeping up with the modern world. The world changes all the time. Every year is getting shorter, never seem to find the time. So it's so difficult to comprehend what is going on. Okay? So into this problem of a finite amount of adjustment capability and the infinite complexity of the world, Think of what inflation does. So when inflation happens, you are seeing prices change, but those prices don't reflect the changes in the actual economy. They reflect the problems of money and monetary policy and the overall price changes. This is a signal processing problem for each firm, for each individual. When I see the prices of apples going up, is it because apples are scarce? The ability to grow apples went down. Is it that consumers want more apples? Or is it just that there was overall inflation? Like how do I disentangle these two? And it's actually quite hard to disentangle these two. There's also an empirical fact that when overall inflation is high, the overall variability of all prices is higher. So the deep insight is that high inflation messes with the information processing problem of firms. So, in countries where there is high inflation, it also tends to be high and variable inflation. You can't get high and stable inflation. And also when inflation is high and variable, then there is just much more noise in the cross-sectional variation of inflation. All this throws the information processing of firms out of VAC. Firms find it more difficult to figure out the world. Firms get misled, they go off into wrong. adjustments, thinking that oh the world has changed in this fashion and I must respond to it. But actually it was just inflation and they were wrong to go off initiating an adjustment of the resource allocation into these directions. Okay? So this is a deep insight. This is coming from Milton Friedman's 1968 paper and many other things that he wrote that the reason why inflation is important is because it interferes with that ceaseless dance of the market economy. or firms, consumers, all economic agents ceaselessly readjusting their economic designs in a changing world. So nobody wants to take away the fact that the world is changing and people must respond to it. Okay? So this is not a call for government fixed prices or, you know, some artificial notions of stability underwritten and guaranteed by the government, like a fixed exchange rate or anything like that. The world changes and people must deal with the change. Is there a way to reorganize the government which might be a source of high and variable inflation and instead change the government to deliver low and stable inflation? That is an entirely fair ask. That you know, can you build the institutional apparatus in government so that inflation is low and stable? And then invisible there is a calm and greater predictability and understandability. comprehensibility of the world according to the firms and the consumers. And then they are able to do a better job of what they do. And what they do is ceaselessly adjust production in a way that caters to a changing world and that creates a high growth environment because the firms are getting things right. So this is one great pillar of understanding why it is so important to deliver low and stable",
+      "words": [
         {
           "word": "Apart",
           "startTime": 919.72,
@@ -15999,15 +15927,7 @@
           "startTime": 920.04,
           "endTime": 920.28,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 920.28,
-      "endTime": 961.53,
-      "text": "that. So I want to go deep into the working of the price system. Okay. So again and again, we have been pushing the knowledge and the intuition of the price system. And core to that is this you know either Hindu or Buddhist philosophy of a world that is ever changing. Okay? The world is ever changing and the job of the self-organizing system, the distributed decentralized information processing of the economic society consists of comprehending that changing world and feeding it back into a correct and improved Resource allocation. So the world keeps on changing, technology changes,",
-      "words": [
+        },
         {
           "word": "that.",
           "startTime": 920.28,
@@ -16601,15 +16521,7 @@
           "startTime": 960.89,
           "endTime": 961.53,
           "confidence": 0.9921
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 961.53,
-      "endTime": 963.69,
-      "text": "tastes change. Each",
-      "words": [
+        },
         {
           "word": "tastes",
           "startTime": 961.53,
@@ -16627,15 +16539,7 @@
           "startTime": 963.13,
           "endTime": 963.69,
           "confidence": 0.9945
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 963.69,
-      "endTime": 1060.5,
-      "text": "firm, each individual, each consumer, each producer, each self-employed person is looking at this bewildering world where things are changing all the time and applying mind and applying uh finite amount of CPU power to thinking, what should I be doing differently? Okay. So we have emphasized this idea that prices convey signals. But they convey signals to somebody. Like it has to go into the mind of a firm, and then the firm will think and apply its own information processing and come up with ideas for what it should different do different. Now, when a firm decides to do something different, it's not a trivial matter changing. Okay, you want to change the techniques that you use in production. You want to change the locations of your factories, you want to hire some people, you want to fire some people. All this adjustment is not easy. So think of a finite budget of adjustment muscle. Every firm has to look at the world and keep on adapting, but you know adapting is exhausting. It's not a small matter. It is the great ask of the market economy that look the world keeps on changing, you have to keep on changing. You can't sit quiet and silent and say we'll keep on doing the same things forever. Okay? You have to keep responding to a changing world and changing is hard. Some of the people like us who are making this show and are watching this show, have an oversupply of cognitive capacity, and do not have adequate empathy for the difficulty of many people in just keeping up with the modern world. The world changes all the time. Every year is getting shorter, never seem to find the time. So it's so difficult to comprehend what is",
-      "words": [
+        },
         {
           "word": "firm,",
           "startTime": 963.69,
@@ -18429,15 +18333,7 @@
           "startTime": 1060.34,
           "endTime": 1060.5,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1060.5,
-      "endTime": 1062.5,
-      "text": "going on. Okay? So into",
-      "words": [
+        },
         {
           "word": "going",
           "startTime": 1060.5,
@@ -18467,15 +18363,7 @@
           "startTime": 1062.1,
           "endTime": 1062.5,
           "confidence": 0.9426
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1062.5,
-      "endTime": 1164.26,
-      "text": "this problem of a finite amount of adjustment capability and the infinite complexity of the world, Think of what inflation does. So when inflation happens, you are seeing prices change, but those prices don't reflect the changes in the actual economy. They reflect the problems of money and monetary policy and the overall price changes. This is a signal processing problem for each firm, for each individual. When I see the prices of apples going up, is it because apples are scarce? The ability to grow apples went down. Is it that consumers want more apples? Or is it just that there was overall inflation? Like how do I disentangle these two? And it's actually quite hard to disentangle these two. There's also an empirical fact that when overall inflation is high, the overall variability of all prices is higher. So the deep insight is that high inflation messes with the information processing problem of firms. So, in countries where there is high inflation, it also tends to be high and variable inflation. You can't get high and stable inflation. And also when inflation is high and variable, then there is just much more noise in the cross-sectional variation of inflation. All this throws the information processing of firms out of VAC. Firms find it more difficult to figure out the world. Firms get misled, they go off into wrong. adjustments, thinking that oh the world has changed in this fashion and I must respond to it. But actually it was just inflation and they were wrong to go off initiating an adjustment of the resource allocation into",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 1062.5,
@@ -20083,15 +19971,7 @@
           "startTime": 1164.02,
           "endTime": 1164.26,
           "confidence": 0.9766
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1164.26,
-      "endTime": 1165.78,
-      "text": "these directions. Okay? So",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 1164.26,
@@ -20115,15 +19995,7 @@
           "startTime": 1165.54,
           "endTime": 1165.78,
           "confidence": 0.9916
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1165.78,
-      "endTime": 1260.25,
-      "text": "this is a deep insight. This is coming from Milton Friedman's 1968 paper and many other things that he wrote that the reason why inflation is important is because it interferes with that ceaseless dance of the market economy. or firms, consumers, all economic agents ceaselessly readjusting their economic designs in a changing world. So nobody wants to take away the fact that the world is changing and people must respond to it. Okay? So this is not a call for government fixed prices or, you know, some artificial notions of stability underwritten and guaranteed by the government, like a fixed exchange rate or anything like that. The world changes and people must deal with the change. Is there a way to reorganize the government which might be a source of high and variable inflation and instead change the government to deliver low and stable inflation? That is an entirely fair ask. That you know, can you build the institutional apparatus in government so that inflation is low and stable? And then invisible there is a calm and greater predictability and understandability. comprehensibility of the world according to the firms and the consumers. And then they are able to do a better job of what they do. And what they do is ceaselessly adjust production in a way that caters to a changing world and that creates a high growth environment because the firms are getting things right. So this is one great pillar of understanding why it is so important to deliver low and stable",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 1165.78,
@@ -21665,8 +21537,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1260.25,
-      "endTime": 1354.9,
-      "text": "inflation. Let me paraphrase it and tell me if um uh I've understood or summarized it correctly. A market is a beautiful mechanism through which people fulfill each other's needs to mutual benefit. And the key condition for doing this is that information flows in an efficient and decentralized way, and that happens through prices. When prices are determined by what people want and what people can produce through demand and supply, accordingly, producers are just, consumers are just to each other, and that is what a healthy society should be. Everyone's changing all the time, but that information is going back constantly and people are sort of adjusting to that. However, w uh when a change in price happens not because of a change in society. But because of a change in the money supply, then it becomes a problem. It can create a distortion. If you know those sort of fluctuations are not predictable, if it can suddenly go out of whack, then it becomes really hard because if you're a producer, say if I make apples and the price of apples goes up, you know, should I then uh d dedicate more of my farmland to making more apples because the price has gone up? Or did the price go up not because of demand, but because of uh uh you know this distortion, this noise, as you correctly said, that interferes with the signal. And therefore, the rationale here is that look, let us function, markets are a great mechanism, society is doing its own job, everybody is helping everybody else. And all the government needs to do is buggers, we gave you the monopoly on money, you had one job, keep it stable, don't mess with it too much. Perfect.",
+      "endTime": 1355.62,
+      "text": "inflation. Let me paraphrase it and tell me if um uh I've understood or summarized it correctly. A market is a beautiful mechanism through which people fulfill each other's needs to mutual benefit. And the key condition for doing this is that information flows in an efficient and decentralized way, and that happens through prices. When prices are determined by what people want and what people can produce through demand and supply, accordingly, producers are just, consumers are just to each other, and that is what a healthy society should be. Everyone's changing all the time, but that information is going back constantly and people are sort of adjusting to that. However, w uh when a change in price happens not because of a change in society. But because of a change in the money supply, then it becomes a problem. It can create a distortion. If you know those sort of fluctuations are not predictable, if it can suddenly go out of whack, then it becomes really hard because if you're a producer, say if I make apples and the price of apples goes up, you know, should I then uh d dedicate more of my farmland to making more apples because the price has gone up? Or did the price go up not because of demand, but because of uh uh you know this distortion, this noise, as you correctly said, that interferes with the signal. And therefore, the rationale here is that look, let us function, markets are a great mechanism, society is doing its own job, everybody is helping everybody else. And all the government needs to do is buggers, we gave you the monopoly on money, you had one job, keep it stable, don't mess with it too much. Perfect. So",
       "words": [
         {
           "word": "inflation.",
@@ -23437,21 +23309,21 @@
           "startTime": 1354.34,
           "endTime": 1354.9,
           "confidence": 0.8477
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1354.9,
-      "endTime": 1358.02,
-      "text": "So in the use of information in society, there",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1354.9,
           "endTime": 1355.62,
           "confidence": 0.8091
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1355.62,
+      "endTime": 1358.02,
+      "text": "in the use of information in society, there",
+      "words": [
         {
           "word": "in",
           "startTime": 1355.62,
@@ -23543,8 +23415,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1363.13,
-      "endTime": 1366.49,
-      "text": "In the use of knowledge in society, the heavy lifting is being done by",
+      "endTime": 1406.65,
+      "text": "In the use of knowledge in society, the heavy lifting is being done by prices. Now don't put noise into prices. Okay? So this is one block of reasoning that low and stable inflation creates the maximum conditions for good growth because good growth comes out of the energy and brain power and adjustment muscle of the firms. And don't put noise into their faces. Don't give them a dashboard with wrong information. Give them the correct information and then let them struggle it through. Let me belabert the cost of adjustment idea. Okay. This is around all nominal contracting. So imagine you and I are two firms and we wrote a contract that you would deliver me episodes of a podcast every week, and I would pay you ten lakh rupees every week. I",
       "words": [
         {
           "word": "In",
@@ -23629,15 +23501,7 @@
           "startTime": 1366.33,
           "endTime": 1366.49,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1366.49,
-      "endTime": 1368.57,
-      "text": "prices. Now don't put noise into prices.",
-      "words": [
+        },
         {
           "word": "prices.",
           "startTime": 1366.49,
@@ -23679,15 +23543,7 @@
           "startTime": 1368.17,
           "endTime": 1368.57,
           "confidence": 0.9557
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1368.57,
-      "endTime": 1405.93,
-      "text": "Okay? So this is one block of reasoning that low and stable inflation creates the maximum conditions for good growth because good growth comes out of the energy and brain power and adjustment muscle of the firms. And don't put noise into their faces. Don't give them a dashboard with wrong information. Give them the correct information and then let them struggle it through. Let me belabert the cost of adjustment idea. Okay. This is around all nominal contracting. So imagine you and I are two firms and we wrote a contract that you would deliver me episodes of a podcast every week, and I would pay you ten lakh rupees every",
-      "words": [
+        },
         {
           "word": "Okay?",
           "startTime": 1368.57,
@@ -24359,15 +24215,7 @@
           "startTime": 1405.77,
           "endTime": 1405.93,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1405.93,
-      "endTime": 1413.13,
-      "text": "week. I just want to tell dear listeners we're not getting any money for this. It's a labor of love. So uh I love this hypothetical scenario",
-      "words": [
+        },
         {
           "word": "week.",
           "startTime": 1405.93,
@@ -24379,7 +24227,15 @@
           "startTime": 1406.57,
           "endTime": 1406.65,
           "confidence": 0.758
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1406.65,
+      "endTime": 1413.13,
+      "text": "just want to tell dear listeners we're not getting any money for this. It's a labor of love. So uh I love this hypothetical scenario",
+      "words": [
         {
           "word": "just",
           "startTime": 1406.65,
@@ -24535,8 +24391,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1413.13,
-      "endTime": 1421.4,
-      "text": "kindly. We do hypothetical scenarios. And that's written into a contract. Rupees one million will be paid per podcast to the great",
+      "endTime": 1568.07,
+      "text": "kindly. We do hypothetical scenarios. And that's written into a contract. Rupees one million will be paid per podcast to the great podcaster. Okay? That's a nominal contract. It's written one million rupees. Now the length of the rupee keeps fluctuating because of inflation. So we entered into a complex negotiation and we ended up with a contract. Firms take a lot of time and effort to write contracts, to develop contracts with each other. Remember the intuition, there's a cell wall which is the boundary of the firm. and firm to firm relationships are the land of contracts. The overall resource allocation is a list of firms and their internal behavior and their across firm contracts. So every firm is a raft of people processes contracts because the contracts are what bind the firm to others in the ecosystem. We've written a nominal contract with great effort we developed an agreement that you will do this, I will do this, you will do this, I will do this. Under these circumstances you will do that. and everything is written down in nominal rupees. Now, high and variable inflation is the acid that drips on these contracts and destroys their meaning. Like we had agreed on one million rupees. But suddenly inflation took place and prices went up by nine percent, and suddenly now you're unhappy, you know, I mean I know you're paying me a million rupees per podcast episode, but you know, it's really not a fair price, not under present conditions, and see Mr Bear biceps, he gets paid so much better than me and I'm not being paid well. Okay? So we get through back into a contract renegotiation. So a lot of the time and trouble of the firms gets wasted on renegotion around nominal contracts. And this is an example of the finiteness of contracting muscle. Contracts can and should be renegotiated, new contracts should emerge all the time, but they should be in response to the real developments of the market economy where tastes and technology changes and you know we want to go build a better firm. Here it's depreciation of contracts. We're running to standstill. We are damaging we're damaging our existing production arrangements. Because of that external inflation. Okay, so that's like this intuition of think of a finite supply of contracting muscle, of ad adjustment muscle. The firms are trying hard every day to figure out a complex world and renegotiating contracts, coming up with new contracts. And into that, this acid called inflation is interfering with their work, and it is a depreciation that is damaging their work.",
       "words": [
         {
           "word": "kindly.",
@@ -24669,15 +24525,7 @@
           "startTime": 1421.0,
           "endTime": 1421.4,
           "confidence": 0.9974
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1421.4,
-      "endTime": 1422.92,
-      "text": "podcaster. Okay?",
-      "words": [
+        },
         {
           "word": "podcaster.",
           "startTime": 1421.4,
@@ -24689,15 +24537,7 @@
           "startTime": 1422.44,
           "endTime": 1422.92,
           "confidence": 0.7263
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1422.92,
-      "endTime": 1568.07,
-      "text": "That's a nominal contract. It's written one million rupees. Now the length of the rupee keeps fluctuating because of inflation. So we entered into a complex negotiation and we ended up with a contract. Firms take a lot of time and effort to write contracts, to develop contracts with each other. Remember the intuition, there's a cell wall which is the boundary of the firm. and firm to firm relationships are the land of contracts. The overall resource allocation is a list of firms and their internal behavior and their across firm contracts. So every firm is a raft of people processes contracts because the contracts are what bind the firm to others in the ecosystem. We've written a nominal contract with great effort we developed an agreement that you will do this, I will do this, you will do this, I will do this. Under these circumstances you will do that. and everything is written down in nominal rupees. Now, high and variable inflation is the acid that drips on these contracts and destroys their meaning. Like we had agreed on one million rupees. But suddenly inflation took place and prices went up by nine percent, and suddenly now you're unhappy, you know, I mean I know you're paying me a million rupees per podcast episode, but you know, it's really not a fair price, not under present conditions, and see Mr Bear biceps, he gets paid so much better than me and I'm not being paid well. Okay? So we get through back into a contract renegotiation. So a lot of the time and trouble of the firms gets wasted on renegotion around nominal contracts. And this is an example of the finiteness of contracting muscle. Contracts can and should be renegotiated, new contracts should emerge all the time, but they should be in response to the real developments of the market economy where tastes and technology changes and you know we want to go build a better firm. Here it's depreciation of contracts. We're running to standstill. We are damaging we're damaging our existing production arrangements. Because of that external inflation. Okay, so that's like this intuition of think of a finite supply of contracting muscle, of ad adjustment muscle. The firms are trying hard every day to figure out a complex world and renegotiating contracts, coming up with new contracts. And into that, this acid called inflation is interfering with their work, and it is a depreciation that is damaging their work.",
-      "words": [
+        },
         {
           "word": "That's",
           "startTime": 1422.92,
@@ -29039,25 +28879,17 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "Ajay Shah",
       "startTime": 1669.3,
-      "endTime": 1669.62,
-      "text": "to",
+      "endTime": 1754.17,
+      "text": "to summarize, the position of this field is that the highest contribution that a central bank can make to human society is to deliver low and stable inflation, to pursue any other objectives. is a fatuous mistake. And by pursuing any other objectives, you will always end up sacrificing on this core objective. The core dharma of a central bank is to deliver low and stable inflation. And if they will narrow their minds and only deliver that and be held accountable to only deliver that, that is the best that they can do for society. When we divert them for any other objectives or we give them arbitrary power and the lack of accountability through which they respond to other pulls and pressures and tugs, then they will sacrifice on this core objective. And that is damaging to growth. So this whole story is about one thing, it is growth. The highest God is growth. Can you bet get an environment with higher GDP growth? And a central bank is an important and valuable participant in that overall symphony. But the drum he plays is low and stable inflation. He should do nothing else. He should deliver us this one thing and we should applaud when they deliver this one thing. I think it was Keynes who said that if central bankers would be humble like dentists, that would be a pretty fine thing.",
       "words": [
         {
           "word": "to",
           "startTime": 1669.3,
           "endTime": 1669.62,
           "confidence": 0.985
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1669.62,
-      "endTime": 1719.62,
-      "text": "summarize, the position of this field is that the highest contribution that a central bank can make to human society is to deliver low and stable inflation, to pursue any other objectives. is a fatuous mistake. And by pursuing any other objectives, you will always end up sacrificing on this core objective. The core dharma of a central bank is to deliver low and stable inflation. And if they will narrow their minds and only deliver that and be held accountable to only deliver that, that is the best that they can do for society. When we divert them for any other objectives or we give them arbitrary power and the lack of accountability through which they respond to other pulls and pressures and tugs, then they will sacrifice on this core objective. And that is damaging",
-      "words": [
+        },
         {
           "word": "summarize,",
           "startTime": 1669.62,
@@ -29879,15 +29711,7 @@
           "startTime": 1718.98,
           "endTime": 1719.62,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1719.62,
-      "endTime": 1721.62,
-      "text": "to growth. So this",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1719.62,
@@ -29911,15 +29735,7 @@
           "startTime": 1721.3,
           "endTime": 1721.62,
           "confidence": 0.9307
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1721.62,
-      "endTime": 1748.57,
-      "text": "whole story is about one thing, it is growth. The highest God is growth. Can you bet get an environment with higher GDP growth? And a central bank is an important and valuable participant in that overall symphony. But the drum he plays is low and stable inflation. He should do nothing else. He should deliver us this one thing and we should applaud when they deliver this one thing. I think it was Keynes who said that if central",
-      "words": [
+        },
         {
           "word": "whole",
           "startTime": 1721.62,
@@ -30399,15 +30215,7 @@
           "startTime": 1748.01,
           "endTime": 1748.57,
           "confidence": 0.9754
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1748.57,
-      "endTime": 1750.09,
-      "text": "bankers would be",
-      "words": [
+        },
         {
           "word": "bankers",
           "startTime": 1748.57,
@@ -30425,15 +30233,7 @@
           "startTime": 1749.85,
           "endTime": 1750.09,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1750.09,
-      "endTime": 1753.29,
-      "text": "humble like dentists, that would be a pretty fine",
-      "words": [
+        },
         {
           "word": "humble",
           "startTime": 1750.09,
@@ -30487,21 +30287,21 @@
           "startTime": 1752.97,
           "endTime": 1753.29,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1753.29,
-      "endTime": 1755.31,
-      "text": "thing. Dentists are humble.",
-      "words": [
+        },
         {
           "word": "thing.",
           "startTime": 1753.29,
           "endTime": 1754.17,
           "confidence": 0.9226
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1754.17,
+      "endTime": 1755.31,
+      "text": "Dentists are humble.",
+      "words": [
         {
           "word": "Dentists",
           "startTime": 1754.17,
@@ -30569,8 +30369,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1758.22,
-      "endTime": 1760.06,
-      "text": "Yeah, we do use grandmothers. I",
+      "endTime": 1760.22,
+      "text": "Yeah, we do use grandmothers. I think",
       "words": [
         {
           "word": "Yeah,",
@@ -30607,21 +30407,21 @@
           "startTime": 1759.98,
           "endTime": 1760.06,
           "confidence": 0.8881
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1760.06,
-      "endTime": 1766.54,
-      "text": "think Keynes said if economists were humble like dentists, but it always gets used around central banks because there's there's just something",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 1760.06,
           "endTime": 1760.22,
           "confidence": 0.9935
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1760.22,
+      "endTime": 1767.66,
+      "text": "Keynes said if economists were humble like dentists, but it always gets used around central banks because there's there's just something about",
+      "words": [
         {
           "word": "Keynes",
           "startTime": 1760.22,
@@ -30747,21 +30547,21 @@
           "startTime": 1765.9,
           "endTime": 1766.54,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1766.54,
-      "endTime": 1824.23,
-      "text": "about central banking. So when you say the highest god, you know, it is almost as if like gods are standing, you know, that there's a tier of the. Growth is the greatest god. Growth is the greatest god. And you know, we want to underscore that. Why is growth the greatest god? Growth is the greatest god, because our moral imperative as a nation is to tackle poverty. Only growth gets you out of poverty. We've discussed this in great detail in this magnificent episode we did on development, up on the mountains of beer, where we you know, so we had to go to the highest place to talk about the highest god, isn't that how you would say it? So Ajay, we know the enemy. The enemy is inflation. Or rather, the enemy is high and variable inflation. Some inflation is inevitable and uh is bound to happen. How do we get it under control? Like what is the framework? How do we think about this?",
-      "words": [
+        },
         {
           "word": "about",
           "startTime": 1766.54,
           "endTime": 1767.66,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1767.66,
+      "endTime": 1824.23,
+      "text": "central banking. So when you say the highest god, you know, it is almost as if like gods are standing, you know, that there's a tier of the. Growth is the greatest god. Growth is the greatest god. And you know, we want to underscore that. Why is growth the greatest god? Growth is the greatest god, because our moral imperative as a nation is to tackle poverty. Only growth gets you out of poverty. We've discussed this in great detail in this magnificent episode we did on development, up on the mountains of beer, where we you know, so we had to go to the highest place to talk about the highest god, isn't that how you would say it? So Ajay, we know the enemy. The enemy is inflation. Or rather, the enemy is high and variable inflation. Some inflation is inevitable and uh is bound to happen. How do we get it under control? Like what is the framework? How do we think about this?",
+      "words": [
         {
           "word": "central",
           "startTime": 1767.66,
@@ -31775,8 +31575,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1824.23,
-      "endTime": 1880.44,
-      "text": "Um The central bank is a government agency which gets given power by the parliament to create fiat money. Okay. Now it is a fundamental principle of public administration that power should always be match by accountability mechanisms. There should never be unchecked power. Every time there is a power, it should be surrounded by checks and balances. Okay? So, gentle reader, you should look at our episode on public choice theory, and uh this is a simple application of public choice theory. That just because somebody is appointed to build and run a central bank, it doesn't make them good guys. Okay, they've been given power by the parliament. And they are creating fiat money and they could pursue personal objectives, they could be wrong, they could make mistakes. Okay, so ever present in all government organizations is the possibility of failure.",
+      "endTime": 2041.29,
+      "text": "Um The central bank is a government agency which gets given power by the parliament to create fiat money. Okay. Now it is a fundamental principle of public administration that power should always be match by accountability mechanisms. There should never be unchecked power. Every time there is a power, it should be surrounded by checks and balances. Okay? So, gentle reader, you should look at our episode on public choice theory, and uh this is a simple application of public choice theory. That just because somebody is appointed to build and run a central bank, it doesn't make them good guys. Okay, they've been given power by the parliament. And they are creating fiat money and they could pursue personal objectives, they could be wrong, they could make mistakes. Okay, so ever present in all government organizations is the possibility of failure. So the thinkers in the world of public administration were looking for a way to close this loophole that how do you create accountability for a central bank? and then an important innovation came in New Zealand in nineteen eighty seven, which was the idea of an inflation target. Okay so just think about it very intuitively. We know that inflation is only made by a central bank. The parliament has created a central bank with the sole purpose of making fiat money, and fiat money done wrong can give you inflation that is high and variable. So the parliament writes sections of law that tie down The central bank and say that we hold you accountable. You will deliver me a certain inflation target. Okay? And in the genius of New Zealand in 1987, they invented bonuses for the senior central bank staff. So if the central bank governor delivers an inflation outcome that is close to the target, she gets a bonus. Okay? So it is simple agency theory that There will be nothing lofty, we'll treat you like a dentist. If you did a root canal surgery and the tooth works out fine, then we'll give you a bonus. Okay? So it's very simple principle-agent relationship. That the parliament is the principal and the central bank is the agency. So when an agency is given a job by the parliament, the parliament must also code the sections of law that create accountability. So there will be no powerful agencies with some lofty mystic. or independent authority to act as they please. That is not democracy. That is the administrative state. In liberal democracy, the parliament controls the use of the coercive power of the state, and every time it doles out little dollops of that coercive power, it creates the corresponding accountability mechanism. And so that is how this problem was addressed. in the history of monetary policy. So for hundreds of years, fiat money had been created and it generated one disaster after another. So in country after country, central banks have been a profound failure through world history. Okay this is a very bad history of failure upon failure. For the first time things started falling into place where central banks actually started delivering a reasonable level of performance starting in 1987. where inflation targeting came. And just for a quick summary, today all the advanced economies have this approach of inflation targeting. Some of them are too polite or too cheap to offer a bonus. So the inflation target is everywhere, they are held accountable and they suffer reputational and other kinds of damage when they fail on their",
       "words": [
         {
           "word": "Um",
@@ -32635,15 +32435,7 @@
           "startTime": 1879.56,
           "endTime": 1880.44,
           "confidence": 0.9802
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1880.44,
-      "endTime": 1882.2,
-      "text": "So the",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1880.44,
@@ -32655,15 +32447,7 @@
           "startTime": 1881.64,
           "endTime": 1882.2,
           "confidence": 0.967
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1882.2,
-      "endTime": 2042.17,
-      "text": "thinkers in the world of public administration were looking for a way to close this loophole that how do you create accountability for a central bank? and then an important innovation came in New Zealand in nineteen eighty seven, which was the idea of an inflation target. Okay so just think about it very intuitively. We know that inflation is only made by a central bank. The parliament has created a central bank with the sole purpose of making fiat money, and fiat money done wrong can give you inflation that is high and variable. So the parliament writes sections of law that tie down The central bank and say that we hold you accountable. You will deliver me a certain inflation target. Okay? And in the genius of New Zealand in 1987, they invented bonuses for the senior central bank staff. So if the central bank governor delivers an inflation outcome that is close to the target, she gets a bonus. Okay? So it is simple agency theory that There will be nothing lofty, we'll treat you like a dentist. If you did a root canal surgery and the tooth works out fine, then we'll give you a bonus. Okay? So it's very simple principle-agent relationship. That the parliament is the principal and the central bank is the agency. So when an agency is given a job by the parliament, the parliament must also code the sections of law that create accountability. So there will be no powerful agencies with some lofty mystic. or independent authority to act as they please. That is not democracy. That is the administrative state. In liberal democracy, the parliament controls the use of the coercive power of the state, and every time it doles out little dollops of that coercive power, it creates the corresponding accountability mechanism. And so that is how this problem was addressed. in the history of monetary policy. So for hundreds of years, fiat money had been created and it generated one disaster after another. So in country after country, central banks have been a profound failure through world history. Okay this is a very bad history of failure upon failure. For the first time things started falling into place where central banks actually started delivering a reasonable level of performance starting in 1987. where inflation targeting came. And just for a quick summary, today all the advanced economies have this approach of inflation targeting. Some of them are too polite or too cheap to offer a bonus. So the inflation target is everywhere, they are held accountable and they suffer reputational and other kinds of damage when they fail on their target.",
-      "words": [
+        },
         {
           "word": "thinkers",
           "startTime": 1882.2,
@@ -35321,21 +35105,21 @@
           "startTime": 2041.13,
           "endTime": 2041.29,
           "confidence": 0.9937
-        },
-        {
-          "word": "target.",
-          "startTime": 2041.29,
-          "endTime": 2042.17,
-          "confidence": 0.9419
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2042.17,
-      "endTime": 2107.54,
-      "text": "I find this a particularly elegant solution for the following reason. That there are institutions that we do agree should be kinda independent of the state so that they are not, you know, used for political reasons and manipulated. But at the same time, uh you know, it's a liberal democracy, you also have to be accountable. Now we would not want a central bank to be basically run by the government itself, because then it could do all kinds of populist things and there would be disaster. However, nor do you want to say that they should be completely independent and you know whatever they want. Whatever they want and they can be captured by special interests and shit can go wrong there as well. And I find the inflation target a beautiful, elegant mechanism To keep them accountable without necessarily manipulating them. Where you decide, you define the role and you say that you have one job and this is, you know, your inflation target. This you do whatever it takes, this is what you gotta do, and we won't interfere beyond that, but if you don't get there, you are accountable. And this sort of in my mind avoids the overreach on either direction. Yeah. I want to spell",
+      "startTime": 2041.29,
+      "endTime": 2106.66,
+      "text": "target. I find this a particularly elegant solution for the following reason. That there are institutions that we do agree should be kinda independent of the state so that they are not, you know, used for political reasons and manipulated. But at the same time, uh you know, it's a liberal democracy, you also have to be accountable. Now we would not want a central bank to be basically run by the government itself, because then it could do all kinds of populist things and there would be disaster. However, nor do you want to say that they should be completely independent and you know whatever they want. Whatever they want and they can be captured by special interests and shit can go wrong there as well. And I find the inflation target a beautiful, elegant mechanism To keep them accountable without necessarily manipulating them. Where you decide, you define the role and you say that you have one job and this is, you know, your inflation target. This you do whatever it takes, this is what you gotta do, and we won't interfere beyond that, but if you don't get there, you are accountable. And this sort of in my mind avoids the overreach on either direction. Yeah. I want",
       "words": [
+        {
+          "word": "target.",
+          "startTime": 2041.29,
+          "endTime": 2042.17,
+          "confidence": 0.9419
+        },
         {
           "word": "I",
           "startTime": 2042.17,
@@ -36595,7 +36379,15 @@
           "startTime": 2106.42,
           "endTime": 2106.66,
           "confidence": 0.9532
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2106.66,
+      "endTime": 2197.88,
+      "text": "to spell out either direction more clearly. So everything you said is correct, but I just Want to spell it out in words that leave nothing to the imagination. At one extreme is a central bank that is not independent. It is controlled by the government. What will happen, even if it doesn't go crazy supporting populist schemes of the government? What we've seen in advanced economies in the data is that there is an election business cycle. So whenever an election is approaching in the last one or two years, the central bank will tend to keep interest rates low in order to. give everybody a feel good factor in the economy that oh things are great, the inflation is coming with a lag, but you feel good and you're more likely to vote for the incumbent. So this is election manipulation done by the party in power through the agency of the central bank. So all the lofty claims of central bankers that oh we are something special. Actually when you look in the data for advanced economies, it is full of this election business cycle. When the time comes for that one on one heart to heart between a finance minister and the leadership of a central bank, the leadership of the central bank will buckle and they will do what a finance minister wants. This is one kind of caricature. And the other kind of caricature is the lofty claims of my fellow economists that we are good guys. You know, we are immune to public choice theory. Everybody else we do public choice theory. But for us, we're good guys and we should be given a free hand and we should do whatever we want. And there I just say nah, that's not",
+      "words": [
         {
           "word": "to",
           "startTime": 2106.66,
@@ -36607,15 +36399,7 @@
           "startTime": 2107.06,
           "endTime": 2107.54,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2107.54,
-      "endTime": 2196.5,
-      "text": "out either direction more clearly. So everything you said is correct, but I just Want to spell it out in words that leave nothing to the imagination. At one extreme is a central bank that is not independent. It is controlled by the government. What will happen, even if it doesn't go crazy supporting populist schemes of the government? What we've seen in advanced economies in the data is that there is an election business cycle. So whenever an election is approaching in the last one or two years, the central bank will tend to keep interest rates low in order to. give everybody a feel good factor in the economy that oh things are great, the inflation is coming with a lag, but you feel good and you're more likely to vote for the incumbent. So this is election manipulation done by the party in power through the agency of the central bank. So all the lofty claims of central bankers that oh we are something special. Actually when you look in the data for advanced economies, it is full of this election business cycle. When the time comes for that one on one heart to heart between a finance minister and the leadership of a central bank, the leadership of the central bank will buckle and they will do what a finance minister wants. This is one kind of caricature. And the other kind of caricature is the lofty claims of my fellow economists that we are good guys. You know, we are immune to public choice theory. Everybody else we do public choice theory. But for us, we're good guys and we should be given a free hand and we should do whatever we want. And there I just say",
-      "words": [
+        },
         {
           "word": "out",
           "startTime": 2107.54,
@@ -38373,15 +38157,7 @@
           "startTime": 2195.86,
           "endTime": 2196.5,
           "confidence": 0.9716
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2196.5,
-      "endTime": 2203.98,
-      "text": "nah, that's not how this works. You don't don't just say nah. You don't just say right Ajay Sha but we're done.",
-      "words": [
+        },
         {
           "word": "nah,",
           "startTime": 2196.5,
@@ -38399,7 +38175,15 @@
           "startTime": 2197.38,
           "endTime": 2197.88,
           "confidence": 0.9966
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2198.3,
+      "endTime": 2203.98,
+      "text": "how this works. You don't don't just say nah. You don't just say right Ajay Sha but we're done.",
+      "words": [
         {
           "word": "how",
           "startTime": 2198.3,
@@ -51571,8 +51355,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2900.26,
-      "endTime": 2931.86,
-      "text": "percent. I love the way you use uh phrases central blank and penitent in the same sentence. You know, it reminds me of the famous song Please Forgive Me, No Matter What I Do. But just to come back to the story, tell me about uh you know, because it's it's also a really interesting d illustration of how policy changes move through the pipeline and you know, we've discussed it in our episode, The Long Road to Change. So briefly, because the sun is going down and it'll rise again tomorrow, such is a cycle of life. But briefly, uh T uh you know Take me through uh what that process was like. So",
+      "endTime": 2931.94,
+      "text": "percent. I love the way you use uh phrases central blank and penitent in the same sentence. You know, it reminds me of the famous song Please Forgive Me, No Matter What I Do. But just to come back to the story, tell me about uh you know, because it's it's also a really interesting d illustration of how policy changes move through the pipeline and you know, we've discussed it in our episode, The Long Road to Change. So briefly, because the sun is going down and it'll rise again tomorrow, such is a cycle of life. But briefly, uh T uh you know Take me through uh what that process was like. So in",
       "words": [
         {
           "word": "percent.",
@@ -52263,21 +52047,21 @@
           "startTime": 2931.62,
           "endTime": 2931.86,
           "confidence": 0.919
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2931.86,
-      "endTime": 2946.9,
-      "text": "in the beginning, in the bad old days, there was no meaningful uh central bank in India. It was just a central planning agency. It was a handmaiden of the government to grab money from the formal financial system and give it to the government and repress the formal financial system under",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 2931.86,
           "endTime": 2931.94,
           "confidence": 0.9907
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2931.94,
+      "endTime": 2946.58,
+      "text": "the beginning, in the bad old days, there was no meaningful uh central bank in India. It was just a central planning agency. It was a handmaiden of the government to grab money from the formal financial system and give it to the government and repress the formal financial system",
+      "words": [
         {
           "word": "the",
           "startTime": 2931.94,
@@ -52577,21 +52361,21 @@
           "startTime": 2946.1,
           "endTime": 2946.58,
           "confidence": 0.9997
-        },
-        {
-          "word": "under",
-          "startTime": 2946.58,
-          "endTime": 2946.9,
-          "confidence": 0.9993
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2946.9,
-      "endTime": 2949.46,
-      "text": "a complete control system. This is RBI, you're right. This is the",
+      "startTime": 2946.58,
+      "endTime": 2950.18,
+      "text": "under a complete control system. This is RBI, you're right. This is the R BI.",
       "words": [
+        {
+          "word": "under",
+          "startTime": 2946.58,
+          "endTime": 2946.9,
+          "confidence": 0.9993
+        },
         {
           "word": "a",
           "startTime": 2946.9,
@@ -52663,15 +52447,7 @@
           "startTime": 2949.3,
           "endTime": 2949.46,
           "confidence": 0.9736
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2949.46,
-      "endTime": 3046.92,
-      "text": "R BI. So the beginning is just horrible, meaning Many people like to write lofty histories and stories about the great days of the central bank. Like really, when you look at it, it was just an awful central planning organization with uh little by way of redeeming features. The modern journey really begun began in the early nineties, that uh sensible thinking about the RBI began only in the nineties. Uh see Rang Rajan is the key figure, and there was a deputy governor named Tarapur, and these were People who started thinking from scratch and understanding what is wrong with RBI and how this stuff should be done differently. And so, you know, I give them full credit. By the time I was getting to meet with them and talk with them in the 1990s, they had figured out the bulk of the story. So they knew the pieces. They knew that you had to open the capital account, you had to float the exchange rate, and you had to have an inflation target. By and large, they knew these things. Then RBI went into a long socialist period where uh it reverted back to much more of the central planning model and hostility to all these pieces. RBI wanted intrusive, detailed microeconomic control of the financial system. Its role as a central planner of the economy rather than a central bank and control of the exchange rate and try to close the current account and the capital account as much as possible and then not be held accountable for inflation. What accountability, you know? I don't have wait, let me remember. Montague, Norman non Norman, Montague.",
-      "words": [
+        },
         {
           "word": "R",
           "startTime": 2949.46,
@@ -52683,7 +52459,15 @@
           "startTime": 2949.62,
           "endTime": 2950.18,
           "confidence": 0.5345
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2950.18,
+      "endTime": 3046.92,
+      "text": "So the beginning is just horrible, meaning Many people like to write lofty histories and stories about the great days of the central bank. Like really, when you look at it, it was just an awful central planning organization with uh little by way of redeeming features. The modern journey really begun began in the early nineties, that uh sensible thinking about the RBI began only in the nineties. Uh see Rang Rajan is the key figure, and there was a deputy governor named Tarapur, and these were People who started thinking from scratch and understanding what is wrong with RBI and how this stuff should be done differently. And so, you know, I give them full credit. By the time I was getting to meet with them and talk with them in the 1990s, they had figured out the bulk of the story. So they knew the pieces. They knew that you had to open the capital account, you had to float the exchange rate, and you had to have an inflation target. By and large, they knew these things. Then RBI went into a long socialist period where uh it reverted back to much more of the central planning model and hostility to all these pieces. RBI wanted intrusive, detailed microeconomic control of the financial system. Its role as a central planner of the economy rather than a central bank and control of the exchange rate and try to close the current account and the capital account as much as possible and then not be held accountable for inflation. What accountability, you know? I don't have wait, let me remember. Montague, Norman non Norman, Montague.",
+      "words": [
         {
           "word": "So",
           "startTime": 2950.18,
@@ -54465,8 +54249,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3062.2,
-      "endTime": 3069.24,
-      "text": "Norman Montague, the former central bank governor of the Bank of England, once famously said, I don't have reasons, I have",
+      "endTime": 3204.82,
+      "text": "Norman Montague, the former central bank governor of the Bank of England, once famously said, I don't have reasons, I have my instincts. Okay. It's like don't hold me accountable. Don't ask me what am I doing and why. I'm some lofty character. There should be a mystique of central planning. This is all just nonsense. Oh sorry, there should be a mystique of central banking. This is all just nonsense and it should be swept away uh in the spirit of modern notions of public administration and public choice theory. So there was this bad period where really the intellectual leadership on what to do on monetary economics and finance was happening in academics and it was happening through the Ministry of Finance. And there was a long simmering conversation around these questions on how to do things differently. I have described to you a 2002 conversation where I was speaking with the Ashwan Sinna and talking about inflation targeting, and he was saying these ideas are way ahead of the Indian range of ideas amongst the intelligentsia. they need to become much more normalized in the Indian intellectual debate before some future finance minister can do that. And you know, point well taken. This is the way it should be done. And then in the uh mid-2000s, in the 2007 boom, uh the working of the RBI went phenomenally wrong. Uh at a time when the economy was booming and a lot of foreign capital was coming into the country. See these are correlated. When times are good, foreigners bring money into India. When times are bad, foreigners take money out of India. So at a time when the economy was booming and a lot of foreign capital was coming in, uh RBI tried to fix the exchange rate. Okay. So now foreign capital is coming into the country. The rupee ought to appreciate. They're preventing that appreciation by buying up the dollars. Okay? But when they buy the dollars, they pay for it in rupees. And so the local economy got flooded with rupees. And so it was expansionary monetary policy at the worst possible time. And that generated a nice big inflation crisis. And I think by and large, This won the case amongst the economists that this old RBI cannot just be accepted in the modern world. You now need to do better. And uh a critical milestone is FSLRC. In uh FSLRC, which began in 2011. There were rich internal debates and the planning process took place to create an inflation targeting system",
       "words": [
         {
           "word": "Norman",
@@ -54593,15 +54377,7 @@
           "startTime": 3069.0,
           "endTime": 3069.24,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3069.24,
-      "endTime": 3070.76,
-      "text": "my instincts. Okay.",
-      "words": [
+        },
         {
           "word": "my",
           "startTime": 3069.24,
@@ -54619,15 +54395,7 @@
           "startTime": 3070.52,
           "endTime": 3070.76,
           "confidence": 0.6002
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3070.76,
-      "endTime": 3115.0,
-      "text": "It's like don't hold me accountable. Don't ask me what am I doing and why. I'm some lofty character. There should be a mystique of central planning. This is all just nonsense. Oh sorry, there should be a mystique of central banking. This is all just nonsense and it should be swept away uh in the spirit of modern notions of public administration and public choice theory. So there was this bad period where really the intellectual leadership on what to do on monetary economics and finance was happening in academics and it was happening through the Ministry of Finance. And there was a long simmering conversation around these questions on how to do things differently. I have described to you a 2002 conversation where I was speaking with the Ashwan Sinna and talking about inflation targeting, and he was saying these ideas are way ahead of the",
-      "words": [
+        },
         {
           "word": "It's",
           "startTime": 3070.76,
@@ -55515,29 +55283,13 @@
           "startTime": 3114.36,
           "endTime": 3115.0,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3115.0,
-      "endTime": 3116.5,
-      "text": "Indian",
-      "words": [
+        },
         {
           "word": "Indian",
           "startTime": 3115.0,
           "endTime": 3116.5,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3116.84,
-      "endTime": 3204.98,
-      "text": "range of ideas amongst the intelligentsia. they need to become much more normalized in the Indian intellectual debate before some future finance minister can do that. And you know, point well taken. This is the way it should be done. And then in the uh mid-2000s, in the 2007 boom, uh the working of the RBI went phenomenally wrong. Uh at a time when the economy was booming and a lot of foreign capital was coming into the country. See these are correlated. When times are good, foreigners bring money into India. When times are bad, foreigners take money out of India. So at a time when the economy was booming and a lot of foreign capital was coming in, uh RBI tried to fix the exchange rate. Okay. So now foreign capital is coming into the country. The rupee ought to appreciate. They're preventing that appreciation by buying up the dollars. Okay? But when they buy the dollars, they pay for it in rupees. And so the local economy got flooded with rupees. And so it was expansionary monetary policy at the worst possible time. And that generated a nice big inflation crisis. And I think by and large, This won the case amongst the economists that this old RBI cannot just be accepted in the modern world. You now need to do better. And uh a critical milestone is FSLRC. In uh FSLRC, which began in 2011. There were rich internal debates and the planning process took place to create an inflation targeting system in",
-      "words": [
+        },
         {
           "word": "range",
           "startTime": 3116.84,
@@ -57073,21 +56825,21 @@
           "startTime": 3204.42,
           "endTime": 3204.82,
           "confidence": 0.9996
-        },
-        {
-          "word": "in",
-          "startTime": 3204.82,
-          "endTime": 3204.98,
-          "confidence": 0.9949
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 3204.98,
+      "startTime": 3204.82,
       "endTime": 3207.72,
-      "text": "the What is the F FSLRC.",
+      "text": "in the What is the F FSLRC.",
       "words": [
+        {
+          "word": "in",
+          "startTime": 3204.82,
+          "endTime": 3204.98,
+          "confidence": 0.9949
+        },
         {
           "word": "the",
           "startTime": 3204.98,
@@ -63977,8 +63729,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3569.11,
-      "endTime": 3671.21,
-      "text": "uh finally on twentieth of February twenty fifteen, there were some dela along this way. And on twentieth of February twenty fifteen, uh Rajiv Marishi and Raguraham Rajan signed the agreement. Sadly, they did not do this as a nice public show. I feel that would have helped. You know, I said that there should be a public meeting where the signing happens, but that did not happen. So that is how you got to the agreement. And then in 2016 the RBI Act was amended to build in this and to build in a monetary policy committee. And uh this is a historic moment in Indian history for the following reason. When the British had created the Reserve Bank of India in nineteen thirty four, they correctly understood that they don't understand. Okay. So in every law, there is a preamble of some, you know, high-minded statement of purpose of what this law is intended to do. In the preamble of that RBI Act of 1934, the British had the following words, and I quote, where they say that in the present state of disorganization of the g international monetary system, it is not at possible, it is not present to determine the organization of monetary systems for India. And so as a temporary measure, we create the Reserve Bank of India. So the words as a temporary measure were there in the preamble of the act. Okay, so it's like there was a child who was a full grown man standing in 2015, but on his forehead was the word, you're a temporary measure, because we haven't yet figured out what to do. And it gives so much pleasure that in 2016, when the law was amended, that text was removed. And it was replaced by in order to deliver price",
+      "endTime": 3676.33,
+      "text": "uh finally on twentieth of February twenty fifteen, there were some dela along this way. And on twentieth of February twenty fifteen, uh Rajiv Marishi and Raguraham Rajan signed the agreement. Sadly, they did not do this as a nice public show. I feel that would have helped. You know, I said that there should be a public meeting where the signing happens, but that did not happen. So that is how you got to the agreement. And then in 2016 the RBI Act was amended to build in this and to build in a monetary policy committee. And uh this is a historic moment in Indian history for the following reason. When the British had created the Reserve Bank of India in nineteen thirty four, they correctly understood that they don't understand. Okay. So in every law, there is a preamble of some, you know, high-minded statement of purpose of what this law is intended to do. In the preamble of that RBI Act of 1934, the British had the following words, and I quote, where they say that in the present state of disorganization of the g international monetary system, it is not at possible, it is not present to determine the organization of monetary systems for India. And so as a temporary measure, we create the Reserve Bank of India. So the words as a temporary measure were there in the preamble of the act. Okay, so it's like there was a child who was a full grown man standing in 2015, but on his forehead was the word, you're a temporary measure, because we haven't yet figured out what to do. And it gives so much pleasure that in 2016, when the law was amended, that text was removed. And it was replaced by in order to deliver price stability. So now, in twenty sixteen, after all these years, RBI found",
       "words": [
         {
           "word": "uh",
@@ -65797,15 +65549,7 @@
           "startTime": 3670.81,
           "endTime": 3671.21,
           "confidence": 0.9931
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3671.21,
-      "endTime": 3673.05,
-      "text": "stability. So now,",
-      "words": [
+        },
         {
           "word": "stability.",
           "startTime": 3671.21,
@@ -65823,15 +65567,7 @@
           "startTime": 3672.41,
           "endTime": 3673.05,
           "confidence": 0.7263
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3673.05,
-      "endTime": 3675.29,
-      "text": "in twenty sixteen, after all these years,",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 3673.05,
@@ -65873,15 +65609,7 @@
           "startTime": 3674.81,
           "endTime": 3675.29,
           "confidence": 0.9532
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3675.29,
-      "endTime": 3683.59,
-      "text": "RBI found a purpose. Thank you for your service. This is all just great things to do.",
-      "words": [
+        },
         {
           "word": "RBI",
           "startTime": 3675.29,
@@ -65893,7 +65621,15 @@
           "startTime": 3676.09,
           "endTime": 3676.33,
           "confidence": 0.9985
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3676.33,
+      "endTime": 3683.59,
+      "text": "a purpose. Thank you for your service. This is all just great things to do.",
+      "words": [
         {
           "word": "a",
           "startTime": 3676.33,

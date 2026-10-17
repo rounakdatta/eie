@@ -5,7 +5,7 @@
     "durationSeconds": 3272,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -876,8 +876,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 54.21,
-      "endTime": 84.07,
-      "text": "Watching the wheels is from the John Lennon song. And it has a nice contemplative and humble approach that the universe is bigger than any of us, and it trundles along, and we're curiously watching with an air of amusement. Okay. So that's the flavor of the song and of course the song has universal recognition. So the name instantly rhymes. Okay. So the advantage of that name would be that it's a name that everybody",
+      "endTime": 145.06,
+      "text": "Watching the wheels is from the John Lennon song. And it has a nice contemplative and humble approach that the universe is bigger than any of us, and it trundles along, and we're curiously watching with an air of amusement. Okay. So that's the flavor of the song and of course the song has universal recognition. So the name instantly rhymes. Okay. So the advantage of that name would be that it's a name that everybody would connect to. Um everything is everything is taken from uh the song Uh You're Missing, which is from the album The Rising, which Bruce Springsteen wrote after the 911 attacks. And it just so happens that that's a song that is immensely interesting and important. to both Amit and me in our life. And it uh it in the song the work that the phrase is doing is everything is here and you are missing. So it's like my world is here, everything is there, but you are missing. So it is a sense of uh waving your hand across all the wonders of the world, Gloria Mundi. So uh we like that phrase also and we recognize most people don't know that song. So we thought it is kind of standalone and it could work. So we tried out these ideas on many, many people and so on. So there were many, many views on which one is better and we finally settled on everything is",
       "words": [
         {
           "word": "Watching",
@@ -1334,15 +1334,7 @@
           "startTime": 83.43,
           "endTime": 84.07,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 84.07,
-      "endTime": 86.31,
-      "text": "would connect to. Um everything",
-      "words": [
+        },
         {
           "word": "would",
           "startTime": 84.07,
@@ -1372,15 +1364,7 @@
           "startTime": 85.91,
           "endTime": 86.31,
           "confidence": 0.8765
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 86.31,
-      "endTime": 106.98,
-      "text": "is everything is taken from uh the song Uh You're Missing, which is from the album The Rising, which Bruce Springsteen wrote after the 911 attacks. And it just so happens that that's a song that is immensely interesting and important. to both Amit and me in our life. And",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 86.31,
@@ -1680,15 +1664,7 @@
           "startTime": 105.7,
           "endTime": 106.98,
           "confidence": 0.9799
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 106.98,
-      "endTime": 108.74,
-      "text": "it uh it in",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 106.98,
@@ -1712,15 +1688,7 @@
           "startTime": 108.5,
           "endTime": 108.74,
           "confidence": 0.9943
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 108.74,
-      "endTime": 111.38,
-      "text": "the song the work that the phrase is doing",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 108.74,
@@ -1774,15 +1742,7 @@
           "startTime": 110.66,
           "endTime": 111.38,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 111.38,
-      "endTime": 113.38,
-      "text": "is everything is",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 111.38,
@@ -1800,15 +1760,7 @@
           "startTime": 113.06,
           "endTime": 113.38,
           "confidence": 0.9892
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 113.38,
-      "endTime": 145.06,
-      "text": "here and you are missing. So it's like my world is here, everything is there, but you are missing. So it is a sense of uh waving your hand across all the wonders of the world, Gloria Mundi. So uh we like that phrase also and we recognize most people don't know that song. So we thought it is kind of standalone and it could work. So we tried out these ideas on many, many people and so on. So there were many, many views on which one is better and we finally settled on everything is",
-      "words": [
+        },
         {
           "word": "here",
           "startTime": 113.38,
@@ -5656,8 +5608,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 491.05,
-      "endTime": 577.46,
-      "text": "The toolkit in action. Okay. So it's a nice first principles place where the lay of the land is clear. It's not complicated. And there are some very nice results that flow from it. But we should also take interest in vaccines. Gentle reader, you should take interest in vaccines because vaccines are simply miraculous. So I'm just I am going to gush over vaccines. I love vaccines. Vaccines are the greatest thing. It's like as cool as going to the moon and back. Okay, so just just think about it. We've we've also normalized vaccines. The idea that there is something that gets injected into your body, maybe it's multi-cep, so you have to take two or three shots. And then you bloody killed off one disease from your life at a very high probability. Is this magical or what? Uh I find it absolutely amazing that every time you pause to think deeply about it, it is completely magical. And uh I am grateful to the universe for having made so many vaccines uh in commensurately with all the pathogens that Mother Nature left wandering around this planet trying to get their teeth inside us. Um a quick story of vaccination. Vaccination started a long time ago as inoculation. It is many people believe that inoculation was invented here in India around smallpox. Okay, and the uh logic is like this that I think people very early on intuitively got the idea. A mild exposure to",
+      "endTime": 663.54,
+      "text": "The toolkit in action. Okay. So it's a nice first principles place where the lay of the land is clear. It's not complicated. And there are some very nice results that flow from it. But we should also take interest in vaccines. Gentle reader, you should take interest in vaccines because vaccines are simply miraculous. So I'm just I am going to gush over vaccines. I love vaccines. Vaccines are the greatest thing. It's like as cool as going to the moon and back. Okay, so just just think about it. We've we've also normalized vaccines. The idea that there is something that gets injected into your body, maybe it's multi-cep, so you have to take two or three shots. And then you bloody killed off one disease from your life at a very high probability. Is this magical or what? Uh I find it absolutely amazing that every time you pause to think deeply about it, it is completely magical. And uh I am grateful to the universe for having made so many vaccines uh in commensurately with all the pathogens that Mother Nature left wandering around this planet trying to get their teeth inside us. Um a quick story of vaccination. Vaccination started a long time ago as inoculation. It is many people believe that inoculation was invented here in India around smallpox. Okay, and the uh logic is like this that I think people very early on intuitively got the idea. A mild exposure to disease protects. Okay. So as the old Greek saying goes, that which does not destroy you makes you stronger. Okay, so that's inoculation. So what people in India so inoculation was the following idea, which I believe there is fair evidence was invented in India. Maybe not so, maybe it was somewhere in the Ottoman Empire. Inoculation was the following idea that if your child got smallpox, there was a 25% chance of death. And over the first ten, twenty years of life, there was a near certainty that you were gonna encounter smallpox once in that landscape. Uh what people figured out was that you could take the pus out of one of the smallpox, pustooles, I don't know how to pronounce it. Pustoules. Pustoules on the body. So you break one of the pustules on the body of a smallpox. uh infected person and there is a white goo that comes out of that. Then with a knife you cut open a slight uh uh cut in the skin where the blood gets exposed and you smear the white pus into that. Does that sound suitably disgusting and gross and scary as hell? Okay? It is it is absolutely mind blowing the thought that this can or should be done. And the quick answer is that 10% of the kids would die of smallpox. They would actually get smallpox and die. But",
       "words": [
         {
           "word": "The",
@@ -7146,15 +7098,7 @@
           "startTime": 577.22,
           "endTime": 577.46,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 577.46,
-      "endTime": 579.46,
-      "text": "disease protects.",
-      "words": [
+        },
         {
           "word": "disease",
           "startTime": 577.46,
@@ -7166,15 +7110,7 @@
           "startTime": 578.42,
           "endTime": 579.46,
           "confidence": 0.9271
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 579.46,
-      "endTime": 622.17,
-      "text": "Okay. So as the old Greek saying goes, that which does not destroy you makes you stronger. Okay, so that's inoculation. So what people in India so inoculation was the following idea, which I believe there is fair evidence was invented in India. Maybe not so, maybe it was somewhere in the Ottoman Empire. Inoculation was the following idea that if your child got smallpox, there was a 25% chance of death. And over the first ten, twenty years of life, there was a near certainty that you were gonna encounter smallpox once in that landscape. Uh what people figured out was that you could take the pus out of one of the smallpox, pustooles,",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 579.46,
@@ -7864,15 +7800,7 @@
           "startTime": 621.21,
           "endTime": 622.17,
           "confidence": 0.5896
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 622.17,
-      "endTime": 624.81,
-      "text": "I don't know how to pronounce it. Pustoules. Pustoules",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 622.17,
@@ -7926,15 +7854,7 @@
           "startTime": 623.85,
           "endTime": 624.81,
           "confidence": 0.6196
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 624.81,
-      "endTime": 652.57,
-      "text": "on the body. So you break one of the pustules on the body of a smallpox. uh infected person and there is a white goo that comes out of that. Then with a knife you cut open a slight uh uh cut in the skin where the blood gets exposed and you smear the white pus into that. Does that sound suitably disgusting and gross and scary as hell? Okay? It is it is absolutely mind blowing the thought",
-      "words": [
+        },
         {
           "word": "on",
           "startTime": 624.81,
@@ -8408,15 +8328,7 @@
           "startTime": 652.01,
           "endTime": 652.57,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 652.57,
-      "endTime": 654.25,
-      "text": "that this",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 652.57,
@@ -8428,15 +8340,7 @@
           "startTime": 653.53,
           "endTime": 654.25,
           "confidence": 0.9942
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 654.25,
-      "endTime": 664.26,
-      "text": "can or should be done. And the quick answer is that 10% of the kids would die of smallpox. They would actually get smallpox and die. But 10%",
-      "words": [
+        },
         {
           "word": "can",
           "startTime": 654.25,
@@ -8598,21 +8502,21 @@
           "startTime": 662.9,
           "endTime": 663.54,
           "confidence": 0.9963
-        },
-        {
-          "word": "10%",
-          "startTime": 663.54,
-          "endTime": 664.26,
-          "confidence": 0.8253
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 664.26,
+      "startTime": 663.54,
       "endTime": 677.7,
-      "text": "is less than 25%. You know, if someone was trying to do that to me, you know what I would say to them? I would say Pascarov. Sorry. Continue. I have to bring in comic elements when you were saying horrendous things like this. Yeah.",
+      "text": "10% is less than 25%. You know, if someone was trying to do that to me, you know what I would say to them? I would say Pascarov. Sorry. Continue. I have to bring in comic elements when you were saying horrendous things like this. Yeah.",
       "words": [
+        {
+          "word": "10%",
+          "startTime": 663.54,
+          "endTime": 664.26,
+          "confidence": 0.8253
+        },
         {
           "word": "is",
           "startTime": 664.26,
@@ -8888,8 +8792,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 677.7,
-      "endTime": 696.6,
-      "text": "But people were actually doing this. This was inoculation. And it likely went from India to the Ottoman Empire to uh some of the imperial courts in Europe. where people started doing these kinds of things. So the idea is that by exposure to smallpox, uh you become immune to it. And so the ancients knew",
+      "endTime": 988.05,
+      "text": "But people were actually doing this. This was inoculation. And it likely went from India to the Ottoman Empire to uh some of the imperial courts in Europe. where people started doing these kinds of things. So the idea is that by exposure to smallpox, uh you become immune to it. And so the ancients knew these things. The trouble is it's very uncontrolled. You can't predict and I'm sure people that have tried some dosage stuff. But smallpox is a dangerous highly virulent disease at very low doses. So you know if you try in sort of 1 ml of the pus, you try 0.1 or 0.01 ml of the pus That probably doesn't make a whole lot of difference in terms of the capacity for the inoculation to kill the person. So this was an interesting idea, and it was there and it was sparked. The next revolution came from cowpox, where Edward Jenner observed that the women who worked with cows often got cowpox, which is a relative of smallpox. But once they got cowpox, they were completely immunized against smallpox. This is seriously great because cowpox actually doesn't kill you at a 10% probability. Cowpox is pretty harmless. You it's a minor disease. Once you get cowpox, you're protected against smallpox because it's a relative. That was a huge intellectual breakthrough by Edward Jenner. Where the idea came that you know what this stuff can deliver protection without killing a large fraction. of the people. And so the idea was that cowpox is different from smallpox. And the difference between the two is sufficiently large that you don't kill, but it's sufficiently low that it delivers protection. Okay, this led to the whole modern idea around vaccines. And if I may just summarize some of the ideas in vaccine technology, there are the so called attenuated virus vaccines where we take a pure culture of the lethal creatures, and then we attenuate them, we damage their power through a variety of technologies. It could be heating, it could be exposure to acid. There are a couple of techniques whereby you diminish their potency. But there's enough in there for the human immune system to learn the virus. Another line of attack is uh modern techniques. Uh here's an example the uh AstraZeneca vaccine which was manufactured by Cam Institute And sold in India as Covey Shield. Is that right? Yeah. Was sold in India as Covey Shield. Uh works as follows. There is a chimpanzee virus, which is a harmless respiratory sickness in chimpanzees and humans. Using uh genetic engineering, the uh SARS-CoV-2 is placed inside that uh chimpanzee virus, and uh uh Cove Shield. Vaccine involves injecting your body with something like a trillion of these virus particles. And they go wander all over your body. Now, this chimpanzee virus is actually harmless to humans, so we don't get sick. But the human immune system learns the protein surface of that virus, which includes the protein surface of the spike protein of the SARS-CoV-2. So, in the process, the human immune system learns to recognize the protein surface of the SARS-CoV-2. So when the real SARS-CoV-2 shows up, uh, your body is ready. Okay, so that's one modern technology of inventing viruses on demand uh vaccines on demand. Where you discover SARS-CoV-2, you know this old chimpanzee pox, chimpanzee virus idea, you engineer these two things together in a lab, and boom, you have engineered a new virus. There is another line of attack that is called synthetic. vaccines where you just construct some completely novel uh molecule that uh looks like the virus and the human body learns that protein surface and that takes us to the mRNA viruses. It would need an entire episode to discuss mRNA. Uh I'm not the right person for it. I know the person who is and mRNA is absolutely magical. It's a miracle of modern science. It's one of the greatest achievements. It's a pinnacle of human knowledge of biology. And uh mRNA technology was also used to build COVID vaccines. So this is a sense of the spectrum of techniques through which vaccines are produced. And I just want to say that I feel this is all a miracle. The idea that the human race can identify these germs, the bacteria, the viruses can construct vaccines And the vaccines can have extremely high levels of efficacy while often having near zero side effects. So once it's a manufactured chemical, there's no risk of getting sick. Whereas there are many other uh attenuated uh virus vaccines where one in ten thousand will get sick because of the uh vaccine. So this is just a miracle in of human science. And for a very long time there were people who just considered this",
       "words": [
         {
           "word": "But",
@@ -9226,15 +9130,7 @@
           "startTime": 696.2,
           "endTime": 696.6,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 696.6,
-      "endTime": 699.24,
-      "text": "these things. The trouble is",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 696.6,
@@ -9264,15 +9160,7 @@
           "startTime": 698.68,
           "endTime": 699.24,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 699.24,
-      "endTime": 706.28,
-      "text": "it's very uncontrolled. You can't predict and I'm sure people that have tried some dosage stuff. But smallpox is a",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 699.24,
@@ -9392,15 +9280,7 @@
           "startTime": 706.12,
           "endTime": 706.28,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 706.28,
-      "endTime": 707.88,
-      "text": "dangerous highly",
-      "words": [
+        },
         {
           "word": "dangerous",
           "startTime": 706.28,
@@ -9412,15 +9292,7 @@
           "startTime": 707.48,
           "endTime": 707.88,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 707.88,
-      "endTime": 841.01,
-      "text": "virulent disease at very low doses. So you know if you try in sort of 1 ml of the pus, you try 0.1 or 0.01 ml of the pus That probably doesn't make a whole lot of difference in terms of the capacity for the inoculation to kill the person. So this was an interesting idea, and it was there and it was sparked. The next revolution came from cowpox, where Edward Jenner observed that the women who worked with cows often got cowpox, which is a relative of smallpox. But once they got cowpox, they were completely immunized against smallpox. This is seriously great because cowpox actually doesn't kill you at a 10% probability. Cowpox is pretty harmless. You it's a minor disease. Once you get cowpox, you're protected against smallpox because it's a relative. That was a huge intellectual breakthrough by Edward Jenner. Where the idea came that you know what this stuff can deliver protection without killing a large fraction. of the people. And so the idea was that cowpox is different from smallpox. And the difference between the two is sufficiently large that you don't kill, but it's sufficiently low that it delivers protection. Okay, this led to the whole modern idea around vaccines. And if I may just summarize some of the ideas in vaccine technology, there are the so called attenuated virus vaccines where we take a pure culture of the lethal creatures, and then we attenuate them, we damage their power through a variety of technologies. It could be heating, it could be exposure to acid. There are a couple of techniques whereby you diminish their potency. But there's enough in there for the human immune system to learn the virus. Another line of attack is uh modern techniques. Uh here's an example the uh AstraZeneca vaccine which was manufactured by Cam Institute And sold in India as Covey Shield. Is that right? Yeah. Was sold in India as Covey Shield. Uh works as follows. There is a chimpanzee virus, which is a harmless respiratory sickness in chimpanzees and",
-      "words": [
+        },
         {
           "word": "virulent",
           "startTime": 707.88,
@@ -11496,15 +11368,7 @@
           "startTime": 840.85,
           "endTime": 841.01,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 841.01,
-      "endTime": 843.01,
-      "text": "humans. Using",
-      "words": [
+        },
         {
           "word": "humans.",
           "startTime": 841.01,
@@ -11516,15 +11380,7 @@
           "startTime": 842.29,
           "endTime": 843.01,
           "confidence": 0.9914
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 843.01,
-      "endTime": 988.05,
-      "text": "uh genetic engineering, the uh SARS-CoV-2 is placed inside that uh chimpanzee virus, and uh uh Cove Shield. Vaccine involves injecting your body with something like a trillion of these virus particles. And they go wander all over your body. Now, this chimpanzee virus is actually harmless to humans, so we don't get sick. But the human immune system learns the protein surface of that virus, which includes the protein surface of the spike protein of the SARS-CoV-2. So, in the process, the human immune system learns to recognize the protein surface of the SARS-CoV-2. So when the real SARS-CoV-2 shows up, uh, your body is ready. Okay, so that's one modern technology of inventing viruses on demand uh vaccines on demand. Where you discover SARS-CoV-2, you know this old chimpanzee pox, chimpanzee virus idea, you engineer these two things together in a lab, and boom, you have engineered a new virus. There is another line of attack that is called synthetic. vaccines where you just construct some completely novel uh molecule that uh looks like the virus and the human body learns that protein surface and that takes us to the mRNA viruses. It would need an entire episode to discuss mRNA. Uh I'm not the right person for it. I know the person who is and mRNA is absolutely magical. It's a miracle of modern science. It's one of the greatest achievements. It's a pinnacle of human knowledge of biology. And uh mRNA technology was also used to build COVID vaccines. So this is a sense of the spectrum of techniques through which vaccines are produced. And I just want to say that I feel this is all a miracle. The idea that the human race can identify these germs, the bacteria, the viruses can construct vaccines And the vaccines can have extremely high levels of efficacy while often having near zero side effects. So once it's a manufactured chemical, there's no risk of getting sick. Whereas there are many other uh attenuated uh virus vaccines where one in ten thousand will get sick because of the uh vaccine. So this is just a miracle in of human science. And for a very long time there were people who just considered this",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 843.01,
@@ -13774,8 +13630,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 988.05,
-      "endTime": 1024.18,
-      "text": "a pinnacle of human progress. I remember when uh the Covid outbreak happened, there were people who were experts who were predicting that we may never find a vaccine for this. You know, vaccines traditionally took years, if not decades, to find, and uh work on some is still going on, like the the famous search for the HIV vaccine and so on and so forth. So there was a realistic fear that we may never find a vaccine on this. And yet the MRNA vaccine was actually designed by software on practically the same day that SARS CoV 2 was sequenced and uh kind of put online. So when you say it is miraculous Like you know, I I don't think word to justice to what like this modern",
+      "endTime": 1028.1,
+      "text": "a pinnacle of human progress. I remember when uh the Covid outbreak happened, there were people who were experts who were predicting that we may never find a vaccine for this. You know, vaccines traditionally took years, if not decades, to find, and uh work on some is still going on, like the the famous search for the HIV vaccine and so on and so forth. So there was a realistic fear that we may never find a vaccine on this. And yet the MRNA vaccine was actually designed by software on practically the same day that SARS CoV 2 was sequenced and uh kind of put online. So when you say it is miraculous Like you know, I I don't think word to justice to what like this modern sciences that a piece of software could just do this on its",
       "words": [
         {
           "word": "a",
@@ -14556,29 +14412,13 @@
           "startTime": 1023.86,
           "endTime": 1024.18,
           "confidence": 0.9658
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1024.18,
-      "endTime": 1025.68,
-      "text": "sciences",
-      "words": [
+        },
         {
           "word": "sciences",
           "startTime": 1024.18,
           "endTime": 1025.68,
           "confidence": 0.8603
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1026.18,
-      "endTime": 1028.1,
-      "text": "that a piece of software could just do this on its",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1026.18,
@@ -14650,8 +14490,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1028.1,
-      "endTime": 1054.53,
-      "text": "own. Just pause to think of the madness of what was said, that some folks in China sequenced the SARS-CoV-2 and uploaded a file. Then a piece of software read that file and printed out the design of the MRNA vaccine. That's how magical things have become. All the other delay to getting to the vaccine out was just the difficulties of the US FDA testing and then the difficulties of",
+      "endTime": 1053.17,
+      "text": "own. Just pause to think of the madness of what was said, that some folks in China sequenced the SARS-CoV-2 and uploaded a file. Then a piece of software read that file and printed out the design of the MRNA vaccine. That's how magical things have become. All the other delay to getting to the vaccine out was just the difficulties of the US FDA testing",
       "words": [
         {
           "word": "own.",
@@ -15048,7 +14888,15 @@
           "startTime": 1052.61,
           "endTime": 1053.17,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1053.17,
+      "endTime": 1238.47,
+      "text": "and then the difficulties of building factories to scale it up. So the vaccine was ready practically the same day. Mind blowing so you know one of the delightful reasons that I got sort of excited about vaccines was you told me one day you told me that Amit you should take the influencer vaccine. And I said, This is great. There's a vaccine that protects me from influences. I'm signing up, give it to me. You had me at hello. And then I realized that as usual, as usual, Ajsha, it's your mis mispronunciations and your mumbling. And actually you were saying influenza vaccine. And you're a big fan of vaccines in general, and you do want me to take many vaccines, and I will, but we'll talk about that at the end of the episode. What I want to first sort of ask you about is that when it comes to vaccines, we are both fans of vaccines. We are fans of science. We are also fans of freedom. And now it gets a little messy and complicated because in India often there are many misconceptions, some of which were displayed during Covid and we discussed them in our great scene and scene and the unseen episode. Uh if I may uh use terms like great for my own episode. That's feels like self praise, but my guest was great. And uh so I I I want to quickly bring them up because I feel that in the context of what we spoke about in the last two episodes, you know, the state and public policy and all of that, using that framework, it would be useful to kind of Talk about this. And I'll I'll I'll quickly go through some of those. Like number one, people believe that the government should fund vaccine development because hey, if it's a good thing, if it's gonna help people, if it's gonna have positive externalities, government should fund it. Number two, the government only should run the production facilities. It's too important to be left to private parties. Uh they'll adulterate, they'll do this, they'll do that. And then the government should ban imports. Because why why trust anyone else build our own local capacity, nationalistic vaccine, etc. Self reliant. So self reliance vaccine and so on and so forth. And then the government should push vaccination by the people by running vaccination programs. So you know there's nothing as attractive to a bureaucrat as the thought of a government program. You t you know, before they go to sleep you whisper in the ear, government program. Committee, budget. And they'll go to sleep with a beat fixed smile on their face and their wife will think they're having an affair. Why are they smiling like this? But anyway, that'd be uh next sort of claim that people make. The government should completely control the vaccination event by each person, determining who gets vaccinated where and when because of course central planning. You've got to do it. You can't you can't let people decide for themselves. And finally, if a person does not want a vaccine for whatever reason, the government should coerce the person and force them. to get vaccinated. Because hey, they're good for everyone. If you don't know what's good for you, my bab knows what's good for you. So these are some of the common misconceptions. I think they're all rubbish. They make me really angry. My blood is already boiling. It's a good time to inject me with pus. But I want to uh ask you, you know, to kind of h dispassionately and coldly, how do we address all of these in view of the frameworks that we've spoken about already? Yeah. Uh gentle reader",
+      "words": [
         {
           "word": "and",
           "startTime": 1053.17,
@@ -15078,15 +14926,7 @@
           "startTime": 1054.37,
           "endTime": 1054.53,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1054.53,
-      "endTime": 1237.49,
-      "text": "building factories to scale it up. So the vaccine was ready practically the same day. Mind blowing so you know one of the delightful reasons that I got sort of excited about vaccines was you told me one day you told me that Amit you should take the influencer vaccine. And I said, This is great. There's a vaccine that protects me from influences. I'm signing up, give it to me. You had me at hello. And then I realized that as usual, as usual, Ajsha, it's your mis mispronunciations and your mumbling. And actually you were saying influenza vaccine. And you're a big fan of vaccines in general, and you do want me to take many vaccines, and I will, but we'll talk about that at the end of the episode. What I want to first sort of ask you about is that when it comes to vaccines, we are both fans of vaccines. We are fans of science. We are also fans of freedom. And now it gets a little messy and complicated because in India often there are many misconceptions, some of which were displayed during Covid and we discussed them in our great scene and scene and the unseen episode. Uh if I may uh use terms like great for my own episode. That's feels like self praise, but my guest was great. And uh so I I I want to quickly bring them up because I feel that in the context of what we spoke about in the last two episodes, you know, the state and public policy and all of that, using that framework, it would be useful to kind of Talk about this. And I'll I'll I'll quickly go through some of those. Like number one, people believe that the government should fund vaccine development because hey, if it's a good thing, if it's gonna help people, if it's gonna have positive externalities, government should fund it. Number two, the government only should run the production facilities. It's too important to be left to private parties. Uh they'll adulterate, they'll do this, they'll do that. And then the government should ban imports. Because why why trust anyone else build our own local capacity, nationalistic vaccine, etc. Self reliant. So self reliance vaccine and so on and so forth. And then the government should push vaccination by the people by running vaccination programs. So you know there's nothing as attractive to a bureaucrat as the thought of a government program. You t you know, before they go to sleep you whisper in the ear, government program. Committee, budget. And they'll go to sleep with a beat fixed smile on their face and their wife will think they're having an affair. Why are they smiling like this? But anyway, that'd be uh next sort of claim that people make. The government should completely control the vaccination event by each person, determining who gets vaccinated where and when because of course central planning. You've got to do it. You can't you can't let people decide for themselves. And finally, if a person does not want a vaccine for whatever reason, the government should coerce the person and force them. to get vaccinated. Because hey, they're good for everyone. If you don't know what's good for you, my bab knows what's good for you. So these are some of the common misconceptions. I think they're all rubbish. They make me really angry. My blood is already boiling. It's a good time to inject me with pus. But I want to uh ask you, you know, to kind of h dispassionately and coldly, how do we address all of these in view of the frameworks that we've spoken about already? Yeah. Uh",
-      "words": [
+        },
         {
           "word": "building",
           "startTime": 1054.53,
@@ -18830,15 +18670,7 @@
           "startTime": 1237.09,
           "endTime": 1237.49,
           "confidence": 0.6931
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1237.49,
-      "endTime": 1404.9,
-      "text": "gentle reader Pause the video, think about all these uh strange propositions and wonder what makes sense. Uh I want to just use this as a demo of the general toolkit. Okay, so in two videos, we have developed a general technology on how to think about public policy, and it can and should be applied on question after question all across the landscape. And this is as good as any in terms of being a demo. Of that framework and application. So we're supposed to first hunt down where are the market failures. Okay. So please scan the landscape and think what's the market failure. So freedom is the default, be zero base to no state, no intervention. And if there was absolutely no government in the picture, what, if anything, would be the market failure? The first important thing to talk about is the problem of the positive externality. Okay, so consider uh infectious disease, and I'm going to get A vaccine for that. So, first of all, I want to say to everybody that nobody should lose sight of the idea that when I get vaccinated, I am the beneficiary because I become healthier and I remove the possibility of getting sick. Okay? This is pure self-interest. So this is all the selfishness in the world should encourage people to take care of themselves. And people have all the incentive. to pay money and get a vaccine and become safer. Okay, so there is no difficulty here. It's not something abstract like clean air or criminal justice system or foreign affairs, which are far away from a person. Here a vaccine is personal. It's a private good. Okay. So I eat a chocolate, I get utilities out, I get utility out of it. I have a toothache I get healthcare to fix my uh bad teeth, I benefit. Like that, I get a vaccine, I get protected, I benefit. A vaccine is first and foremost a private good. There is a problem inside this, which is a market failure that is called a positive externality, which is that when I get vaccinated, I get protected, I don't fall sick, I don't get sick with that particular pathogen, then you are indirectly the beneficiary. Because you sit with me in the studio and I gab at high speed, and all the molecules from my mouth are carrying pathogens to you. So if I'm vaccinated against SARS-CoV-2, then you are the beneficiary because you will not get exposure to SARS-CoV-2. Okay. So the presence of this positive externality is indeed a market failure. So let's go deeper into it. Let's play with the meaning of the word market",
-      "words": [
+        },
         {
           "word": "gentle",
           "startTime": 1237.49,
@@ -18850,7 +18682,15 @@
           "startTime": 1237.97,
           "endTime": 1238.47,
           "confidence": 0.9929
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1239.17,
+      "endTime": 1691.51,
+      "text": "Pause the video, think about all these uh strange propositions and wonder what makes sense. Uh I want to just use this as a demo of the general toolkit. Okay, so in two videos, we have developed a general technology on how to think about public policy, and it can and should be applied on question after question all across the landscape. And this is as good as any in terms of being a demo. Of that framework and application. So we're supposed to first hunt down where are the market failures. Okay. So please scan the landscape and think what's the market failure. So freedom is the default, be zero base to no state, no intervention. And if there was absolutely no government in the picture, what, if anything, would be the market failure? The first important thing to talk about is the problem of the positive externality. Okay, so consider uh infectious disease, and I'm going to get A vaccine for that. So, first of all, I want to say to everybody that nobody should lose sight of the idea that when I get vaccinated, I am the beneficiary because I become healthier and I remove the possibility of getting sick. Okay? This is pure self-interest. So this is all the selfishness in the world should encourage people to take care of themselves. And people have all the incentive. to pay money and get a vaccine and become safer. Okay, so there is no difficulty here. It's not something abstract like clean air or criminal justice system or foreign affairs, which are far away from a person. Here a vaccine is personal. It's a private good. Okay. So I eat a chocolate, I get utilities out, I get utility out of it. I have a toothache I get healthcare to fix my uh bad teeth, I benefit. Like that, I get a vaccine, I get protected, I benefit. A vaccine is first and foremost a private good. There is a problem inside this, which is a market failure that is called a positive externality, which is that when I get vaccinated, I get protected, I don't fall sick, I don't get sick with that particular pathogen, then you are indirectly the beneficiary. Because you sit with me in the studio and I gab at high speed, and all the molecules from my mouth are carrying pathogens to you. So if I'm vaccinated against SARS-CoV-2, then you are the beneficiary because you will not get exposure to SARS-CoV-2. Okay. So the presence of this positive externality is indeed a market failure. So let's go deeper into it. Let's play with the meaning of the word market failure. Step one. Suppose I care only about myself and I'm selfish, and out of my own self-interest, I got myself vaccinated. Then actually, for me, the story is over, there is no market failure. So if there is anybody in this country that sees their own self-interest and goes to a shop and gets a vaccine and gets vaccinated, we're done. Then there is no issue of market failure. We're only down to the people who are not willing to spend the money required to buy a vaccine. If so, you have a market failure. Apart from that, there's no market failure. Okay, slightly technical uh digression. There are other positive externalities such as education, where the decision on the question of the person is a real number. It could be the money or time that a person commits to education. In that case, the Positive externality problem is I will always underinvest in the time and money I put into education because some of the benefits of my education spill over to you. There is always a market failure for every single person in the country. The amount of time and effort that is dedicated to education is different from what it would be if they pursued social welfare. In the case of vaccine, there's only zero one. There's no second vaccine and there's no real valued vaccine. Vaccines are only integer valued. They're the zero or they're one. For the ones, it's game over. There's no difficulty of market failure. Okay, so unlike real valued decisions, for this integer valued decision, either you choose to get vaccinated, in which case there's no market failure, or you say no, no, this is too expensive. I'm not going to buy the vaccine. So people look at their own self-interest and they figure out What is the magnitude of my income disruption in COVID? So how much money am I willing to spend on a COVID vaccine? And they choose to not get vaccinated, that's where there is a market failure. And the machinery of government that can and I believe should be applied to this problem is basically a funding intervention. So the standard answer for all positive externality problems, whether education or vaccines, is a voucher is that the government will part fund the purchase of the vaccine. So I think for myself and I Incorporate my self-interest in my willingness to pay for a vaccine. The government tops up with some money to express the gains that are obtained by the rest of the society. And then I have a bigger chunk of money and I'll go use that money to buy a vaccine. Okay. So this is the first basic story around vaccines. That there is a market failure, it's a positive externality, and it may justify a funding response. If a disease is sufficiently scary, then maybe you don't need a funding response by the government because the people are so desperate they're willing to buy their own vaccines. Okay. So we shouldn't assume there's government in this. Let's be thoughtful and let's analyze the situation. It so you know maybe for a flu, the price of the vaccine versus the extent to which I'm inconvenienced if I'm a flu. Now you might start getting shades of grey where uh people may be unwilling to spend money for a flu. For the more virulent and dangerous diseases that it may not be a big threat. So we can debate how large That mismatches between personal incentive and the welfare gains of society as a whole. So this is one block of the story of is there market failure in the field of vaccines? And it necessitates or no, it motivates a funding response. It does not necessarily motivate any of the other kinds of claims that you have made. The second block of logic around vaccines concerns the rare situations when the humankind is able to organize itself to go after an eradication. Okay. We will never eradicate the common cold because it actually goes in and out of many species, including pigs. We will never eradicate rabies because rabies has an animal reservoir in dogs and foxes and such like. So there can be no question of eradication there. You just make do. There is always going to be rabies infections, and we're gonna have to live with it. There are some rare situations where a pathogen has no Reservoir outside of a human reservoir. And then you get to a remarkable idea that we can exterminate this damn thing. That we can completely drive smallpox to extinction. Okay? And these are not common. So again, it is a mind-blowing achievement when the humans were able to imagine that we will do smallpox eradication. That I'm not going to settle for this day-to-day vaccole, you keep on fighting with this thing forever. We will eradicate it from the face of the earth. I'll tell a little more story about smallpox in a moment because I can't resist. Because I love the smallpox story so much. It's it's a triumph of human achievement. I will",
+      "words": [
         {
           "word": "Pause",
           "startTime": 1239.17,
@@ -21532,15 +21372,7 @@
           "startTime": 1404.5,
           "endTime": 1404.9,
           "confidence": 0.9965
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1404.9,
-      "endTime": 1407.38,
-      "text": "failure. Step one.",
-      "words": [
+        },
         {
           "word": "failure.",
           "startTime": 1404.9,
@@ -21558,15 +21390,7 @@
           "startTime": 1406.82,
           "endTime": 1407.38,
           "confidence": 0.6678
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1407.38,
-      "endTime": 1629.59,
-      "text": "Suppose I care only about myself and I'm selfish, and out of my own self-interest, I got myself vaccinated. Then actually, for me, the story is over, there is no market failure. So if there is anybody in this country that sees their own self-interest and goes to a shop and gets a vaccine and gets vaccinated, we're done. Then there is no issue of market failure. We're only down to the people who are not willing to spend the money required to buy a vaccine. If so, you have a market failure. Apart from that, there's no market failure. Okay, slightly technical uh digression. There are other positive externalities such as education, where the decision on the question of the person is a real number. It could be the money or time that a person commits to education. In that case, the Positive externality problem is I will always underinvest in the time and money I put into education because some of the benefits of my education spill over to you. There is always a market failure for every single person in the country. The amount of time and effort that is dedicated to education is different from what it would be if they pursued social welfare. In the case of vaccine, there's only zero one. There's no second vaccine and there's no real valued vaccine. Vaccines are only integer valued. They're the zero or they're one. For the ones, it's game over. There's no difficulty of market failure. Okay, so unlike real valued decisions, for this integer valued decision, either you choose to get vaccinated, in which case there's no market failure, or you say no, no, this is too expensive. I'm not going to buy the vaccine. So people look at their own self-interest and they figure out What is the magnitude of my income disruption in COVID? So how much money am I willing to spend on a COVID vaccine? And they choose to not get vaccinated, that's where there is a market failure. And the machinery of government that can and I believe should be applied to this problem is basically a funding intervention. So the standard answer for all positive externality problems, whether education or vaccines, is a voucher is that the government will part fund the purchase of the vaccine. So I think for myself and I Incorporate my self-interest in my willingness to pay for a vaccine. The government tops up with some money to express the gains that are obtained by the rest of the society. And then I have a bigger chunk of money and I'll go use that money to buy a vaccine. Okay. So this is the first basic story around vaccines. That there is a market failure, it's a positive externality, and it may justify a funding response. If a disease is sufficiently scary, then maybe you don't need a funding response by the government because the people are so desperate they're willing to buy their own vaccines. Okay. So we shouldn't assume there's government in this. Let's be thoughtful and let's analyze the situation. It so you know maybe for a flu, the price of the vaccine versus the extent to which I'm inconvenienced if I'm a flu. Now you might start getting shades of grey where uh people may be unwilling to spend money for a flu. For the more virulent and dangerous diseases that it may not be a big threat. So we can debate how large That mismatches between personal incentive and the welfare gains of society as a whole. So this is one block of the story of is there market failure in the field of vaccines? And it necessitates or no, it motivates a funding response. It does not necessarily motivate any of the other kinds of claims that you have made. The second block of logic around vaccines concerns the rare situations when the humankind is able to organize itself to go after an eradication. Okay. We will never eradicate the common cold because it actually goes in and out of many",
-      "words": [
+        },
         {
           "word": "Suppose",
           "startTime": 1407.38,
@@ -25658,15 +25482,7 @@
           "startTime": 1629.11,
           "endTime": 1629.59,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1629.59,
-      "endTime": 1631.59,
-      "text": "species, including pigs.",
-      "words": [
+        },
         {
           "word": "species,",
           "startTime": 1629.59,
@@ -25684,15 +25500,7 @@
           "startTime": 1630.79,
           "endTime": 1631.59,
           "confidence": 0.986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1631.59,
-      "endTime": 1691.51,
-      "text": "We will never eradicate rabies because rabies has an animal reservoir in dogs and foxes and such like. So there can be no question of eradication there. You just make do. There is always going to be rabies infections, and we're gonna have to live with it. There are some rare situations where a pathogen has no Reservoir outside of a human reservoir. And then you get to a remarkable idea that we can exterminate this damn thing. That we can completely drive smallpox to extinction. Okay? And these are not common. So again, it is a mind-blowing achievement when the humans were able to imagine that we will do smallpox eradication. That I'm not going to settle for this day-to-day vaccole, you keep on fighting with this thing forever. We will eradicate it from the face of the earth. I'll tell a little more story about smallpox in a moment because I can't resist. Because I love the smallpox story so much. It's it's a triumph of human achievement. I will",
-      "words": [
+        },
         {
           "word": "We",
           "startTime": 1631.59,
@@ -26906,8 +26714,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1697.27,
-      "endTime": 1730.87,
-      "text": "similarly, there are some other situations like polio, which that only are human reservoir. And if you're able to get the polio vaccine out to every single person in the world, then you're done. You'll get rid of this horror forever. And that is very, very attractive. In that environment, I will now bring a second market failure concept, which is public good. Okay? Imagine a world where smallpox is gone. Okay? Vaishnava and Namchita haven't even had the damn smallpox vaccine. It's only old people like me that have even had the smallpox vaccine. Why? Because it's gone from this",
+      "endTime": 1862.73,
+      "text": "similarly, there are some other situations like polio, which that only are human reservoir. And if you're able to get the polio vaccine out to every single person in the world, then you're done. You'll get rid of this horror forever. And that is very, very attractive. In that environment, I will now bring a second market failure concept, which is public good. Okay? Imagine a world where smallpox is gone. Okay? Vaishnava and Namchita haven't even had the damn smallpox vaccine. It's only old people like me that have even had the smallpox vaccine. Why? Because it's gone from this world. It's non-rival. Vaishnav's consumption of the eradication of smallpox in no way diminishes your consumption of the eradication of smallpox. And it is not even in principle possible to exclude a newborn child from the glory of the absence of smallpox in the world. So this passes the tests of public goods. Okay? So eradication reaches the standard of a public good. Vaccines for normal things. Reaches the market failure of positive externality. Okay? Eradication projects and only eradication projects have the high bar of public goods. Now, in this situation, there is a puzzle of moral philosophy. What if some thousand people in the world say that I'm a conscientious objector and my religion prevents me from injecting a smallpox vaccine into me? Okay, so on one hand, there is freedom because you'd like to say, look, it's your body. And a state that touches your body is a very high form of uh intrusive intervention. So you know, I think of death penalty, torture, incarceration, touching. Okay, so that's the levels of intrusiveness through which a state can mess with your life. So a state forcing a person to get vaccinated is pretty horrible. in its own way. It is a very high level of intrusion. On the other hand, we would love to respect the freedom of individuals. If an individual says, see, I thought about it, I have decided I don't want this vaccine or it is against my religion. Okay? So I may be an atheist, but I will defend unto death your right to be religious. How do you think of that trade-off? Okay, and the puzzle that we should be asking is, would you be willing to have the state coercion of state functionaries Strapping down Amit Bai. And as he's hollering and screaming, uh pulling up his sleeves and injecting him a scene straight out of one flu over the cocko's",
       "words": [
         {
           "word": "similarly,",
@@ -27514,15 +27322,7 @@
           "startTime": 1730.55,
           "endTime": 1730.87,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1730.87,
-      "endTime": 1732.97,
-      "text": "world. It's non-rival.",
-      "words": [
+        },
         {
           "word": "world.",
           "startTime": 1730.87,
@@ -27540,15 +27340,7 @@
           "startTime": 1732.47,
           "endTime": 1732.97,
           "confidence": 0.9419
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1734.09,
-      "endTime": 1798.68,
-      "text": "Vaishnav's consumption of the eradication of smallpox in no way diminishes your consumption of the eradication of smallpox. And it is not even in principle possible to exclude a newborn child from the glory of the absence of smallpox in the world. So this passes the tests of public goods. Okay? So eradication reaches the standard of a public good. Vaccines for normal things. Reaches the market failure of positive externality. Okay? Eradication projects and only eradication projects have the high bar of public goods. Now, in this situation, there is a puzzle of moral philosophy. What if some thousand people in the world say that I'm a conscientious objector and my religion prevents me from injecting a smallpox vaccine into me? Okay, so on one hand, there is freedom because you'd like to say, look, it's your body. And a state that touches your body is a very high form of",
-      "words": [
+        },
         {
           "word": "Vaishnav's",
           "startTime": 1734.09,
@@ -28460,15 +28252,7 @@
           "startTime": 1797.64,
           "endTime": 1798.68,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1798.68,
-      "endTime": 1800.2,
-      "text": "uh intrusive",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 1798.68,
@@ -28480,15 +28264,7 @@
           "startTime": 1799.4,
           "endTime": 1800.2,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1800.2,
-      "endTime": 1862.73,
-      "text": "intervention. So you know, I think of death penalty, torture, incarceration, touching. Okay, so that's the levels of intrusiveness through which a state can mess with your life. So a state forcing a person to get vaccinated is pretty horrible. in its own way. It is a very high level of intrusion. On the other hand, we would love to respect the freedom of individuals. If an individual says, see, I thought about it, I have decided I don't want this vaccine or it is against my religion. Okay? So I may be an atheist, but I will defend unto death your right to be religious. How do you think of that trade-off? Okay, and the puzzle that we should be asking is, would you be willing to have the state coercion of state functionaries Strapping down Amit Bai. And as he's hollering and screaming, uh pulling up his sleeves and injecting him a scene straight out of one flu over the cocko's",
-      "words": [
+        },
         {
           "word": "intervention.",
           "startTime": 1800.2,
@@ -33118,8 +32894,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2051.99,
-      "endTime": 2080.27,
-      "text": "And and you know, today you and I may feel that oh, a government program To do a BCG vaccine, not a bad idea. Okay, it is not inconceivable that at future dates governments might use vaccines based on future biological technology that make a population more docile, more controllable. Okay. So there is no telling what wonders of medical science are coming. And so keeping a government away from a human body is a good thing.",
+      "endTime": 2079.97,
+      "text": "And and you know, today you and I may feel that oh, a government program To do a BCG vaccine, not a bad idea. Okay, it is not inconceivable that at future dates governments might use vaccines based on future biological technology that make a population more docile, more controllable. Okay. So there is no telling what wonders of medical science are coming. And so keeping a government away from a human body is a good",
       "words": [
         {
           "word": "And",
@@ -33576,21 +33352,21 @@
           "startTime": 2079.81,
           "endTime": 2079.97,
           "confidence": 0.9997
-        },
-        {
-          "word": "thing.",
-          "startTime": 2079.97,
-          "endTime": 2080.27,
-          "confidence": 0.9841
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2080.55,
-      "endTime": 2190.43,
-      "text": "And I also want to point out one more thing, uh, which we know we've spoken about in various uh different places, is that a lot of this coercion comes cloaked under good intentions. Now, let us be specific about some of the different kinds of coercion in the context of vaccines that we should oppose even if they have good intentions behind them because they would have bad outcomes. One of them is price controls. Where a government will say that oh poor people can't afford the vaccine, therefore you impose price controls. But we've spoken about price controls and what they do to incentives before. They are a complete disaster. They will hurt poor people more than help them. They will disin incentivise producers and innovators from producing and innovating. And price controls always lead to scarcities. All it means is you won't get the damn thing. The second kind of coercion which we spoke about in our scene on scene episode was where they say that hey, this is so important that only the government will control the supply. We won't let private players in. Private players are going to come for profit and they're going to exploit you. But then you know, it just means that you're vaccinating people slower than they would. What we recommended in our episode is the government can do whatever it's doing well and good, more power to them. This is a place for the state to kind of step in and make sure w uh enable vaccination to happen as fast as possible. But let private players also do what they are doing. If people like you and me go out there and pay a bomb for a random MRNA vaccine, in a sense, we are clearing the space for the scarce supply of the other vaccines to actually reach uh people who can't afford them. And they there can even be mechanisms by which people like us are subsidizing others who can't afford them. So to not let the beauty of a market with the with price system and the information and the incentives that it carries play out is a huge problem. And that kind of coercion comes with good ins uh intentions. But leads to really bad outcomes. I'm not even sure about the intentions, but we can debate that separately.",
+      "startTime": 2079.97,
+      "endTime": 2194.93,
+      "text": "thing. And I also want to point out one more thing, uh, which we know we've spoken about in various uh different places, is that a lot of this coercion comes cloaked under good intentions. Now, let us be specific about some of the different kinds of coercion in the context of vaccines that we should oppose even if they have good intentions behind them because they would have bad outcomes. One of them is price controls. Where a government will say that oh poor people can't afford the vaccine, therefore you impose price controls. But we've spoken about price controls and what they do to incentives before. They are a complete disaster. They will hurt poor people more than help them. They will disin incentivise producers and innovators from producing and innovating. And price controls always lead to scarcities. All it means is you won't get the damn thing. The second kind of coercion which we spoke about in our scene on scene episode was where they say that hey, this is so important that only the government will control the supply. We won't let private players in. Private players are going to come for profit and they're going to exploit you. But then you know, it just means that you're vaccinating people slower than they would. What we recommended in our episode is the government can do whatever it's doing well and good, more power to them. This is a place for the state to kind of step in and make sure w uh enable vaccination to happen as fast as possible. But let private players also do what they are doing. If people like you and me go out there and pay a bomb for a random MRNA vaccine, in a sense, we are clearing the space for the scarce supply of the other vaccines to actually reach uh people who can't afford them. And they there can even be mechanisms by which people like us are subsidizing others who can't afford them. So to not let the beauty of a market with the with price system and the information and the incentives that it carries play out is a huge problem. And that kind of coercion comes with good ins uh intentions. But leads to really bad outcomes. I'm not even sure about the intentions, but we can debate that separately. Can I digress and tell a smallpox story? You tell a story, I'll tell a story. Let's do storytelling.",
       "words": [
+        {
+          "word": "thing.",
+          "startTime": 2079.97,
+          "endTime": 2080.27,
+          "confidence": 0.9841
+        },
         {
           "word": "And",
           "startTime": 2080.55,
@@ -35954,15 +35730,7 @@
           "startTime": 2188.93,
           "endTime": 2190.43,
           "confidence": 0.946
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2190.61,
-      "endTime": 2192.61,
-      "text": "Can I digress and tell a smallpox story?",
-      "words": [
+        },
         {
           "word": "Can",
           "startTime": 2190.61,
@@ -36010,15 +35778,7 @@
           "startTime": 2192.21,
           "endTime": 2192.61,
           "confidence": 0.9531
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2192.61,
-      "endTime": 2194.93,
-      "text": "You tell a story, I'll tell a story. Let's do storytelling.",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 2192.61,
@@ -36090,8 +35850,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2194.93,
-      "endTime": 2256.18,
-      "text": "One of the greatest uh Indian stories is the journey of the eradication of smallpox. Smallpox was eradicated through most of the world and uh India, uh Nepal, Bangladesh, Ethiopia, Somalia were the last holdouts. And spare a thought for all the hero who fought for smallpox eradication everywhere else. For them, this was a constant problem that there is a reservoir of smallpox in these countries because one day it can just bounce back. And the dream is we have stopped inoculating the next generation because we've stopped vaccinating the next generation because we're done. There's no smallpox left on this planet. So India was a very important place where this stuff had to be done and uh one of the many colorful characters in this is a guy named Larry Brilliant. Okay, Larry Brilliant uh was uh hippie living with a",
+      "endTime": 2310.89,
+      "text": "One of the greatest uh Indian stories is the journey of the eradication of smallpox. Smallpox was eradicated through most of the world and uh India, uh Nepal, Bangladesh, Ethiopia, Somalia were the last holdouts. And spare a thought for all the hero who fought for smallpox eradication everywhere else. For them, this was a constant problem that there is a reservoir of smallpox in these countries because one day it can just bounce back. And the dream is we have stopped inoculating the next generation because we've stopped vaccinating the next generation because we're done. There's no smallpox left on this planet. So India was a very important place where this stuff had to be done and uh one of the many colorful characters in this is a guy named Larry Brilliant. Okay, Larry Brilliant uh was uh hippie living with a uh priest with a uh Hindu uh uh spiritual guide up in the Himalayas. Okay, and uh I forget the name of the person. Neem Karoli Baba. Nim Karoli Baba. Okay. And uh one day Mr. Baba had this brainwave that he saw some goddess in his dream, and he caught Larry Brilliant, one of his uh uh hippie uh students, and he said, Now get out of here. You have to go down into the plains in India, and you have to conquer smallpox. And Larry Brilliant was like, Huh? What is going on? Who are you? Why are you telling me this? What sense does it make? What can measly little eye do? Uh about uh smallpox in India. But the Papa said, get out. Now I want you out of here. Go fight smallpox. The goddess has told me in a dream that thou shalt fight smallpox.",
       "words": [
         {
           "word": "One",
@@ -36950,15 +36710,7 @@
           "startTime": 2255.14,
           "endTime": 2256.18,
           "confidence": 0.599
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2256.18,
-      "endTime": 2258.74,
-      "text": "uh priest with",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 2256.18,
@@ -36976,15 +36728,7 @@
           "startTime": 2258.42,
           "endTime": 2258.74,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2258.74,
-      "endTime": 2280.84,
-      "text": "a uh Hindu uh uh spiritual guide up in the Himalayas. Okay, and uh I forget the name of the person. Neem Karoli Baba. Nim Karoli Baba. Okay. And uh one day Mr. Baba had this brainwave that he saw some goddess in his dream, and he caught Larry Brilliant, one of his uh",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 2258.74,
@@ -37308,15 +37052,7 @@
           "startTime": 2280.28,
           "endTime": 2280.84,
           "confidence": 0.8728
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2280.84,
-      "endTime": 2283.56,
-      "text": "uh hippie uh",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 2280.84,
@@ -37334,15 +37070,7 @@
           "startTime": 2282.2,
           "endTime": 2283.56,
           "confidence": 0.891
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2283.56,
-      "endTime": 2310.89,
-      "text": "students, and he said, Now get out of here. You have to go down into the plains in India, and you have to conquer smallpox. And Larry Brilliant was like, Huh? What is going on? Who are you? Why are you telling me this? What sense does it make? What can measly little eye do? Uh about uh smallpox in India. But the Papa said, get out. Now I want you out of here. Go fight smallpox. The goddess has told me in a dream that thou shalt fight smallpox.",
-      "words": [
+        },
         {
           "word": "students,",
           "startTime": 2283.56,
@@ -41186,8 +40914,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2479.24,
-      "endTime": 2635.72,
-      "text": "So I want to enshrine vaccines in your imagination and yours, gentle reader. As a first class part of health seeking behaviors. Okay. So what we should think of is that sleep hygiene and nutrition and eating healthy and exercise and vaccines is that battery of health-seeking behaviors, and we should aspire for all of them, and they are all powerful and they're all equally important. Uh, remarkably enough, there is a whole array of adult vaccines that are available in the world. And many of us we tend to think that vaccines are for children, or we tend to think vaccines are something done by the government. And both these proposition are wrong. Vaccines are not something that are only done by the government. As we have argued, government should be doing very little in the field of vaccines. It's primarily a part of health seeking behaviors. So just like you don't want a government in sleep hygiene, you want a government to not support wheat and rice so as to make space for better nutrition. You don't want a government in exercise. Okay, and so on. Vaccines are not a zone of government. They should be a zone of the people. And they should be normalized as our everyday conversation where we should be telling each other, Oh, yesterday I finished my third dose of this vaccine and create FOMO in all the others. We should be uh putting up pictures on Instagram of look how cool I am. I just got this vaccine. So uh in the show notes uh we will place two URLs. This is a list of adult vaccines approved by the US FDA and recommended by the US CDC. So these are good, well-tested vaccines. Okay, and just so that you understand where my biases lie, I think the US FDA is crazy that they are too conservative and too slow in approving anything. Okay, as we saw with COVID, that they just took a long time. To approve the COVID vaccine. So something being approved by the US FDA is a high bar. And this is a global public good because they've done the hard work of the testing. And they put up the results on a website. Everybody benefits. Our job here in India or in Bangladesh, as one reader emphasized, is that we should be importing the vaccines from those global manufacturers. Okay. So we're going to put up a URL which shows 18 vaccines. Another URL that shows the age sequencing of what you should be doing at different different ages, what requires a new shot every year, every three years,",
+      "endTime": 2661.67,
+      "text": "So I want to enshrine vaccines in your imagination and yours, gentle reader. As a first class part of health seeking behaviors. Okay. So what we should think of is that sleep hygiene and nutrition and eating healthy and exercise and vaccines is that battery of health-seeking behaviors, and we should aspire for all of them, and they are all powerful and they're all equally important. Uh, remarkably enough, there is a whole array of adult vaccines that are available in the world. And many of us we tend to think that vaccines are for children, or we tend to think vaccines are something done by the government. And both these proposition are wrong. Vaccines are not something that are only done by the government. As we have argued, government should be doing very little in the field of vaccines. It's primarily a part of health seeking behaviors. So just like you don't want a government in sleep hygiene, you want a government to not support wheat and rice so as to make space for better nutrition. You don't want a government in exercise. Okay, and so on. Vaccines are not a zone of government. They should be a zone of the people. And they should be normalized as our everyday conversation where we should be telling each other, Oh, yesterday I finished my third dose of this vaccine and create FOMO in all the others. We should be uh putting up pictures on Instagram of look how cool I am. I just got this vaccine. So uh in the show notes uh we will place two URLs. This is a list of adult vaccines approved by the US FDA and recommended by the US CDC. So these are good, well-tested vaccines. Okay, and just so that you understand where my biases lie, I think the US FDA is crazy that they are too conservative and too slow in approving anything. Okay, as we saw with COVID, that they just took a long time. To approve the COVID vaccine. So something being approved by the US FDA is a high bar. And this is a global public good because they've done the hard work of the testing. And they put up the results on a website. Everybody benefits. Our job here in India or in Bangladesh, as one reader emphasized, is that we should be importing the vaccines from those global manufacturers. Okay. So we're going to put up a URL which shows 18 vaccines. Another URL that shows the age sequencing of what you should be doing at different different ages, what requires a new shot every year, every three years, et cetera. So there is a whole group of so-called adult vaccines that everybody should be doing. And that's, in my opinion, just a free lunch. That yeah, you'll pay money for the vaccine, you are the beneficiary. It is way better to rule out disease. Prevention is better than cure. It's better to pay money up front, rule out those diseases. and just be happier, live a better life. So it is one of the great forms of health seeking behavior.",
       "words": [
         {
           "word": "So",
@@ -43840,15 +43568,7 @@
           "startTime": 2635.16,
           "endTime": 2635.72,
           "confidence": 0.9694
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2635.72,
-      "endTime": 2637.24,
-      "text": "et cetera. So there",
-      "words": [
+        },
         {
           "word": "et",
           "startTime": 2635.72,
@@ -43872,15 +43592,7 @@
           "startTime": 2637.0,
           "endTime": 2637.24,
           "confidence": 0.9962
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2637.24,
-      "endTime": 2662.77,
-      "text": "is a whole group of so-called adult vaccines that everybody should be doing. And that's, in my opinion, just a free lunch. That yeah, you'll pay money for the vaccine, you are the beneficiary. It is way better to rule out disease. Prevention is better than cure. It's better to pay money up front, rule out those diseases. and just be happier, live a better life. So it is one of the great forms of health seeking behavior. And it's a",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2637.24,
@@ -44348,7 +44060,15 @@
           "startTime": 2661.17,
           "endTime": 2661.67,
           "confidence": 0.9142
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2662.29,
+      "endTime": 2699.37,
+      "text": "And it's a lesson to me because you've spoken uh about this to me in the past. And our good friend Rajeshwari Shangupto got forty two of those vaccines for her kid, which is just remarkable, you know, paid good money and got uh forty two of those vaccines. And I think you know, we tend to normalize. We think that vaccines are only for a few things and they are administered by the government when you're a little kid, and that is it. And you're done. And that need not be the case. You know, to make ourselves healthier, we can continue taking vaccines through our lives. And in fact when you said adult vaccines, you did not mean vaccines that have grown up. But rather vaccines that are for adults. Right. Just to make a distinction in case someone didn't get that. Or",
+      "words": [
         {
           "word": "And",
           "startTime": 2662.29,
@@ -44366,15 +44086,7 @@
           "startTime": 2662.69,
           "endTime": 2662.77,
           "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2662.77,
-      "endTime": 2699.37,
-      "text": "lesson to me because you've spoken uh about this to me in the past. And our good friend Rajeshwari Shangupto got forty two of those vaccines for her kid, which is just remarkable, you know, paid good money and got uh forty two of those vaccines. And I think you know, we tend to normalize. We think that vaccines are only for a few things and they are administered by the government when you're a little kid, and that is it. And you're done. And that need not be the case. You know, to make ourselves healthier, we can continue taking vaccines through our lives. And in fact when you said adult vaccines, you did not mean vaccines that have grown up. But rather vaccines that are for adults. Right. Just to make a distinction in case someone didn't get that. Or",
-      "words": [
+        },
         {
           "word": "lesson",
           "startTime": 2662.77,
@@ -46202,8 +45914,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2746.28,
-      "endTime": 2762.73,
-      "text": "And I remember somebody will say if you haven't slept enough then we will prevent you from driving a car because you're imposing a negative externality upon others. So you have uh the mobile phone will keep will connect to your sleep tracker and it will speak to your electronic car and the car will not start if you haven't slept enough. And it is a",
+      "endTime": 2762.33,
+      "text": "And I remember somebody will say if you haven't slept enough then we will prevent you from driving a car because you're imposing a negative externality upon others. So you have uh the mobile phone will keep will connect to your sleep tracker and it will speak to your electronic car and the car will not start if you haven't slept enough.",
       "words": [
         {
           "word": "And",
@@ -46576,7 +46288,15 @@
           "startTime": 2761.77,
           "endTime": 2762.33,
           "confidence": 0.9646
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2762.33,
+      "endTime": 2797.33,
+      "text": "And it is a great revelation, by the way, something that I learned from my first recommendation of the day, so I'm gonna get it over with now. Uh my only recommendation of the day, which is Matthew Walker's great book, Why We Sleep. And one of the things I learned from there is that people commit more people uh cause more accidents, uh driving when sleep deprived than driving when drunk. You know? So drunk driving is dangerous. Do not do it, but driving when sleep deprived is even more dangerous. And now you've given the government an idea to avoid those negative externalities that sleepy people should not be able to do What have you done, Ajaisha, this is the beginning of the end.",
+      "words": [
         {
           "word": "And",
           "startTime": 2762.33,
@@ -46600,15 +46320,7 @@
           "startTime": 2762.65,
           "endTime": 2762.73,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2762.73,
-      "endTime": 2797.33,
-      "text": "great revelation, by the way, something that I learned from my first recommendation of the day, so I'm gonna get it over with now. Uh my only recommendation of the day, which is Matthew Walker's great book, Why We Sleep. And one of the things I learned from there is that people commit more people uh cause more accidents, uh driving when sleep deprived than driving when drunk. You know? So drunk driving is dangerous. Do not do it, but driving when sleep deprived is even more dangerous. And now you've given the government an idea to avoid those negative externalities that sleepy people should not be able to do What have you done, Ajaisha, this is the beginning of the end.",
-      "words": [
+        },
         {
           "word": "great",
           "startTime": 2762.73,
@@ -47346,8 +47058,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2806.12,
-      "endTime": 2813.48,
-      "text": "I had planned one recommendation for today, but it shall go to two. The first is a phenomenal science fiction book by Nancy Kress. It's",
+      "endTime": 2853.82,
+      "text": "I had planned one recommendation for today, but it shall go to two. The first is a phenomenal science fiction book by Nancy Kress. It's called The Sleepwalkers. Okay. So just to give you a hint of the plot in The Sleepwalkers, uh there are two kinds of humans, one who need to sleep and one who don't. Oh, very interesting. Okay. And the second book that I want to recommend is one of the fundamental books on the field of health. It's called A history of global health. Interventions into the lives of other people's. Okay, it's by Randall Packard. It's one of the great books in the field of public health. Uh public health is a field that is practically absent in India. All we have is healthcare and some doctors trying to do uh health policy without having bothered to read a certain book.",
       "words": [
         {
           "word": "I",
@@ -47498,15 +47210,7 @@
           "startTime": 2813.24,
           "endTime": 2813.48,
           "confidence": 0.9879
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2813.48,
-      "endTime": 2815.16,
-      "text": "called The Sleepwalkers.",
-      "words": [
+        },
         {
           "word": "called",
           "startTime": 2813.48,
@@ -47524,15 +47228,7 @@
           "startTime": 2814.04,
           "endTime": 2815.16,
           "confidence": 0.9886
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2815.16,
-      "endTime": 2822.68,
-      "text": "Okay. So just to give you a hint of the plot in The Sleepwalkers, uh there are two kinds of humans, one who need to sleep and one who",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 2815.16,
@@ -47706,15 +47402,7 @@
           "startTime": 2822.52,
           "endTime": 2822.68,
           "confidence": 0.9983
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2822.68,
-      "endTime": 2825.24,
-      "text": "don't. Oh, very interesting. Okay.",
-      "words": [
+        },
         {
           "word": "don't.",
           "startTime": 2822.68,
@@ -47744,15 +47432,7 @@
           "startTime": 2824.92,
           "endTime": 2825.24,
           "confidence": 0.7996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2825.24,
-      "endTime": 2827.64,
-      "text": "And the second book that I want to recommend is",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2825.24,
@@ -47812,15 +47492,7 @@
           "startTime": 2827.32,
           "endTime": 2827.64,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2827.64,
-      "endTime": 2830.2,
-      "text": "one of the fundamental books on",
-      "words": [
+        },
         {
           "word": "one",
           "startTime": 2827.64,
@@ -47856,15 +47528,7 @@
           "startTime": 2829.8,
           "endTime": 2830.2,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2830.2,
-      "endTime": 2855.13,
-      "text": "the field of health. It's called A history of global health. Interventions into the lives of other people's. Okay, it's by Randall Packard. It's one of the great books in the field of public health. Uh public health is a field that is practically absent in India. All we have is healthcare and some doctors trying to do uh health policy without having bothered to read a certain book. Yeah, and public health and",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 2830.2,
@@ -48278,7 +47942,15 @@
           "startTime": 2853.32,
           "endTime": 2853.82,
           "confidence": 0.9394
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2854.25,
+      "endTime": 3259.4,
+      "text": "Yeah, and public health and healthcare are completely different things. It is important to know the difference. You have explained the difference in the an episode of this great podcast called The Scene and the Unseen. So that episode is also a self recommendation. Self recommending, as Tyler Carwin often says, but I don't think he means this. Say crazy Do what I do. Give me all kinds of me. Only solutions and look at me lost my mind Snyder, Snyder do Watch doing score We love to watch the road",
+      "words": [
         {
           "word": "Yeah,",
           "startTime": 2854.25,
@@ -48308,15 +47980,7 @@
           "startTime": 2855.05,
           "endTime": 2855.13,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2855.13,
-      "endTime": 3259.4,
-      "text": "healthcare are completely different things. It is important to know the difference. You have explained the difference in the an episode of this great podcast called The Scene and the Unseen. So that episode is also a self recommendation. Self recommending, as Tyler Carwin often says, but I don't think he means this. Say crazy Do what I do. Give me all kinds of me. Only solutions and look at me lost my mind Snyder, Snyder do Watch doing score We love to watch the road",
-      "words": [
+        },
         {
           "word": "healthcare",
           "startTime": 2855.13,

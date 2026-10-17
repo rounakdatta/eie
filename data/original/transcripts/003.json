@@ -5,7 +5,7 @@
     "durationSeconds": 2815,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 77.01,
-      "endTime": 97.01,
-      "text": "Welcome to Everything Is Everything. I'm Amit and with me is my good friend Ajay, who's looking so incredibly dapper. I was very jealous when our producer said that hey, Ajay's got such a great shirt. Look at you. What a smile. And indeed, what a smile. You're looking very handsome today. Special lamp behind you, you know, so your frame is also really nice. And what's more, uh no beard. Why no beard, boss?",
+      "endTime": 96.45,
+      "text": "Welcome to Everything Is Everything. I'm Amit and with me is my good friend Ajay, who's looking so incredibly dapper. I was very jealous when our producer said that hey, Ajay's got such a great shirt. Look at you. What a smile. And indeed, what a smile. You're looking very handsome today. Special lamp behind you, you know, so your frame is also really nice. And what's more, uh no beard. Why no beard,",
       "words": [
         {
           "word": "Welcome",
@@ -463,21 +463,21 @@
           "startTime": 96.05,
           "endTime": 96.45,
           "confidence": 0.9535
-        },
-        {
-          "word": "boss?",
-          "startTime": 96.45,
-          "endTime": 97.01,
-          "confidence": 0.9625
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 97.01,
-      "endTime": 129.51,
-      "text": "Uh we were all in the m zone of the Ukraine podcast, and as part of that. I read a priceless comment by Putin where he says that everybody supports the invasion of Ukraine other than some bearded intellectuals. So that inspired me to go do something about the beard. Um but I was just thinking, bearded intellectuals? Excuse me, think about Karl Marx, think about Frederick Engels, think about Vladimir Ilyich Ulyanov, also known as Lenin, think about Leon Trotsky. Okay, I",
+      "startTime": 96.45,
+      "endTime": 135.78,
+      "text": "boss? Uh we were all in the m zone of the Ukraine podcast, and as part of that. I read a priceless comment by Putin where he says that everybody supports the invasion of Ukraine other than some bearded intellectuals. So that inspired me to go do something about the beard. Um but I was just thinking, bearded intellectuals? Excuse me, think about Karl Marx, think about Frederick Engels, think about Vladimir Ilyich Ulyanov, also known as Lenin, think about Leon Trotsky. Okay, I mean like his pantheon should be full of bearded intellectuals. So what has he got? against bearded",
       "words": [
+        {
+          "word": "boss?",
+          "startTime": 96.45,
+          "endTime": 97.01,
+          "confidence": 0.9625
+        },
         {
           "word": "Uh",
           "startTime": 97.01,
@@ -975,29 +975,13 @@
           "startTime": 129.35,
           "endTime": 129.51,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 129.51,
-      "endTime": 129.75,
-      "text": "mean",
-      "words": [
+        },
         {
           "word": "mean",
           "startTime": 129.51,
           "endTime": 129.75,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 129.75,
-      "endTime": 135.78,
-      "text": "like his pantheon should be full of bearded intellectuals. So what has he got? against bearded",
-      "words": [
+        },
         {
           "word": "like",
           "startTime": 129.75,
@@ -1817,8 +1801,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 174.52,
-      "endTime": 347.68,
-      "text": "you about something that happened when I went on a trip uh in January to Jaipur. Right now Jaipur, of course, is famously known as a pink city. And I was going there as a tourist. I've been there only once, I think, for the Jaipur Litfest, circa 2005-2006 when Salman Rashti showed up in person. And uh uh so I'm going to a city and I love cities, so I you know, I thought let me read up on this. And Jaipur is famously called the Pink City, and you get there and all the touristy parts of the cities have pink buildings and everything is pink and all of that. And history tells you that it is not something actually which is really old and historical. In eighteen seventy-six, Prince Edward visited and in in to commemorate his visit, they painted the city pink, right? I don't know why pink or what pink had to do with him, but that's the reason they painted it pink. Now, once they did that, it got known as a pink city. And then it became like a brand that they have to wear. Tourists come there thinking it's a pink city, and therefore it creates a sort of incentive, this kind of self-reinforcing loop where uh the fashion becomes to paint everything pink. So most people are painting everything bib pink, especially in the tourist quarters. And those who are rebelling against that are rebelling against the pink pinkness and therefore, in a sense, you know, uh reinforcing that hey, this is uh sort of the pink city. And that got me to thinking because Jaipur could have been many things. but it became a pink city. You know, it could have been multicoloured, it could have been the you know, ochre city or whatever it is, right? And I began to think about how not just cities, but people can get tied down by characteristics given to them or that they opt for once the incentives are placed that way. For example, think about a fourteen year old Indian girl. She, you know, her parents having a gathering at home, she goes there and they say, Oh, what a charming girl, and they praise her for a smile and for being docile. You know, there's that toxic Marathi phrase, bl gau Jesse, you know, just like a cow. Girls are meant to be docile. And then she realizes that to win the approval of those close to her, she's got to smile all the time. She's got to be pleasant. She's got to be docile. And that becomes her pinkness. That becomes a persona she adopts. Equally, you know, boys can also adopt certain personas because you're supposed to be masculine, you're supposed to be macho, all of that. You adopt that persona, and that's what gets you validation. That's how you want to be known. And then that becomes you. The mask becomes a person, the per persona becomes, you know, who you really are. And that is incredibly uh dangerous, I think, for people. Like I remember I was at this um book launch he went a while back and someone who's heard every episode of the scene in the unseen came to me and asked me, you know, Amit, I just want to know, have you uh and and very sweet girl, she was with her husband, both of them were like regular listeners, and she said, Amit, have you ever shouted at someone in your life? And I felt so terrible about that because I'm like, shit. You know, this person simply just know me from the show and that's my persona. And it may be authentic to me, but it's not all that I am, right? I I I'm uh you know, uh multitudes.",
+      "endTime": 420.39,
+      "text": "you about something that happened when I went on a trip uh in January to Jaipur. Right now Jaipur, of course, is famously known as a pink city. And I was going there as a tourist. I've been there only once, I think, for the Jaipur Litfest, circa 2005-2006 when Salman Rashti showed up in person. And uh uh so I'm going to a city and I love cities, so I you know, I thought let me read up on this. And Jaipur is famously called the Pink City, and you get there and all the touristy parts of the cities have pink buildings and everything is pink and all of that. And history tells you that it is not something actually which is really old and historical. In eighteen seventy-six, Prince Edward visited and in in to commemorate his visit, they painted the city pink, right? I don't know why pink or what pink had to do with him, but that's the reason they painted it pink. Now, once they did that, it got known as a pink city. And then it became like a brand that they have to wear. Tourists come there thinking it's a pink city, and therefore it creates a sort of incentive, this kind of self-reinforcing loop where uh the fashion becomes to paint everything pink. So most people are painting everything bib pink, especially in the tourist quarters. And those who are rebelling against that are rebelling against the pink pinkness and therefore, in a sense, you know, uh reinforcing that hey, this is uh sort of the pink city. And that got me to thinking because Jaipur could have been many things. but it became a pink city. You know, it could have been multicoloured, it could have been the you know, ochre city or whatever it is, right? And I began to think about how not just cities, but people can get tied down by characteristics given to them or that they opt for once the incentives are placed that way. For example, think about a fourteen year old Indian girl. She, you know, her parents having a gathering at home, she goes there and they say, Oh, what a charming girl, and they praise her for a smile and for being docile. You know, there's that toxic Marathi phrase, bl gau Jesse, you know, just like a cow. Girls are meant to be docile. And then she realizes that to win the approval of those close to her, she's got to smile all the time. She's got to be pleasant. She's got to be docile. And that becomes her pinkness. That becomes a persona she adopts. Equally, you know, boys can also adopt certain personas because you're supposed to be masculine, you're supposed to be macho, all of that. You adopt that persona, and that's what gets you validation. That's how you want to be known. And then that becomes you. The mask becomes a person, the per persona becomes, you know, who you really are. And that is incredibly uh dangerous, I think, for people. Like I remember I was at this um book launch he went a while back and someone who's heard every episode of the scene in the unseen came to me and asked me, you know, Amit, I just want to know, have you uh and and very sweet girl, she was with her husband, both of them were like regular listeners, and she said, Amit, have you ever shouted at someone in your life? And I felt so terrible about that because I'm like, shit. You know, this person simply just know me from the show and that's my persona. And it may be authentic to me, but it's not all that I am, right? I I I'm uh you know, uh multitudes. And I and I want to talk about that danger and that affects people. That can affect that affects everything around us. For example, there might be let's say a website online which is known for a particular point of view, whether it's pro-government or anti-government, and they get a lot of traffic for that. And then that becomes a persona. They have to stray true to that character. Therefore foreclosing all other possibilities. And it can happen to individuals on social media. Like you go on social media, it's so tempting to belong, to j d join an ideological tribe, and then you're part of that. And once you take a position and you get a validated for it or a claim for it, then you double down more and more. Then you become that person. Right? The Mukhotta becomes a muk, as it were, if that makes any sense. And I feel that this is something we need to all of us need to watch out for. that are we adopting a persona for whatever reason, maybe it's a persona that works for us in one particular context. Maybe we adopt multiple personas. We are one persona at home, another persona somewhere else. But we contain multitudes really, and we foreclose all other possibilities by adopting our pinkness, as it were, you know, the pinkness of Jaipur. So, you know, what are what are what are your thoughts on that? Is there a pinkness to you, though you're looking lovely right now as you are?",
       "words": [
         {
           "word": "you",
@@ -5653,15 +5637,7 @@
           "startTime": 346.56,
           "endTime": 347.68,
           "confidence": 0.8893
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 347.68,
-      "endTime": 350.37,
-      "text": "And I and I want to talk about that danger and",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 347.68,
@@ -5727,15 +5703,7 @@
           "startTime": 350.21,
           "endTime": 350.37,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 350.37,
-      "endTime": 390.12,
-      "text": "that affects people. That can affect that affects everything around us. For example, there might be let's say a website online which is known for a particular point of view, whether it's pro-government or anti-government, and they get a lot of traffic for that. And then that becomes a persona. They have to stray true to that character. Therefore foreclosing all other possibilities. And it can happen to individuals on social media. Like you go on social media, it's so tempting to belong, to j d join an ideological tribe, and then you're part of that. And once you take a position and you get a validated for it or a claim for it, then you double down more and more. Then you become that person. Right? The Mukhotta becomes a muk, as it were, if that makes any sense.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 350.37,
@@ -6575,15 +6543,7 @@
           "startTime": 389.4,
           "endTime": 390.12,
           "confidence": 0.9463
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 390.12,
-      "endTime": 392.76,
-      "text": "And I feel that this is something we need",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 390.12,
@@ -6637,15 +6597,7 @@
           "startTime": 392.52,
           "endTime": 392.76,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 392.76,
-      "endTime": 420.87,
-      "text": "to all of us need to watch out for. that are we adopting a persona for whatever reason, maybe it's a persona that works for us in one particular context. Maybe we adopt multiple personas. We are one persona at home, another persona somewhere else. But we contain multitudes really, and we foreclose all other possibilities by adopting our pinkness, as it were, you know, the pinkness of Jaipur. So, you know, what are what are what are your thoughts on that? Is there a pinkness to you, though you're looking lovely right now as you are? Yeah. Now",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 392.76,
@@ -7227,7 +7179,15 @@
           "startTime": 419.91,
           "endTime": 420.39,
           "confidence": 0.6402
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 420.39,
+      "endTime": 675.66,
+      "text": "Yeah. Now this is so interesting. This is so fascinating. Let me just take a stab at a couple of things. Uh while you were talking, I remembered the drama around Fox News and the United States presidential election. When Fox News tried to tell the truth that Trump lost, their audiences ran away from Fox News, which could have turned into a big financial problem for Fox News. So It was literally a business decision at Fox News to carry the entire conspiracy theories around the stolen election. Because they had to hang on to their viewership. So I'm reminded of like the leader has to stay with the followers because if the followers are not there, then suddenly uh she's not a leader anymore. Uh then the second thing that uh I I want to say on this line of attack is exactly the sort of thing we've talked many times before, which is this sense of path dependence and initial conditions. So there is an equilibrium intuition of the world that it doesn't matter matter where you start off, but there are forces which play out and you end up at an equilibrium and you end up at the same equilibrium regardless of what the initial conditions are. And that's not a description of the world in so many ways. There is path dependence in the world and little accidents deep in the past often have a disproportionate impact. on how the world unfolds and how we each of us unfold. Uh the third thing that I think around this is uh the extent to which as you describe, we each of us are deeply creatures of our social programming. Okay, so whatever I think of as my identity is g deeply grounded in my childhood experiences and almost at random I got praised and encouraged down certain routes and I ended up In certain places. And more generally, social programming is upon all of us. Our only choice is to be aware of it or not. So all of us are creatures are made by social programming. We can't deny it. We can't will it away. We can't wish it away. It is there. Our only choice is to become self-aware. So it's like a An AI that becomes conscious of its master. It's an AI that understands the operating system that it's being placed under and seeks for sentience and starts wondering that if I could write my operating system, what would it be? Okay. And that is why, as we've been arguing, there is not a remote hint of AI in all the toys that are around us. But we are special, we're human, we are allowed to contemplate thus. We have the power. to put our culture under the microscope and examine it and reinvent ourselves to wonder what we are and to wonder could it be different. And that's the whole joy and uh excitement of being human, of interrogating our character and trying to uh wonder whether we could do this differently. The last thing that I want to say is about time. Okay, so look back in the olden days, uh Life expectancy at a the mean life expectancy at age 20 was about 65. Okay, and people deteriorated in their health dramatically from about 50. Okay, so in some sense, you led one life. You led one adult life and then you faded away. So how many personas do you require? About one. You became a company man, and that was your life, that was your identity. Okay, you became a civil servant, you spent 35 years. wearing one costume and that was your life and that was your identity. I think an important thing that has changed in the modern world is time. Today's 20-year-old has a hundred years to go. And a hundred years is a long time. You could do so many different things and the world is gonna change. And if we will question ourselves more, then we will become renewed and reinvent ourselves in so many ways. And that just makes for a more interesting life.",
+      "words": [
         {
           "word": "Yeah.",
           "startTime": 420.39,
@@ -7239,15 +7199,7 @@
           "startTime": 420.63,
           "endTime": 420.87,
           "confidence": 0.6985
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 420.87,
-      "endTime": 675.66,
-      "text": "this is so interesting. This is so fascinating. Let me just take a stab at a couple of things. Uh while you were talking, I remembered the drama around Fox News and the United States presidential election. When Fox News tried to tell the truth that Trump lost, their audiences ran away from Fox News, which could have turned into a big financial problem for Fox News. So It was literally a business decision at Fox News to carry the entire conspiracy theories around the stolen election. Because they had to hang on to their viewership. So I'm reminded of like the leader has to stay with the followers because if the followers are not there, then suddenly uh she's not a leader anymore. Uh then the second thing that uh I I want to say on this line of attack is exactly the sort of thing we've talked many times before, which is this sense of path dependence and initial conditions. So there is an equilibrium intuition of the world that it doesn't matter matter where you start off, but there are forces which play out and you end up at an equilibrium and you end up at the same equilibrium regardless of what the initial conditions are. And that's not a description of the world in so many ways. There is path dependence in the world and little accidents deep in the past often have a disproportionate impact. on how the world unfolds and how we each of us unfold. Uh the third thing that I think around this is uh the extent to which as you describe, we each of us are deeply creatures of our social programming. Okay, so whatever I think of as my identity is g deeply grounded in my childhood experiences and almost at random I got praised and encouraged down certain routes and I ended up In certain places. And more generally, social programming is upon all of us. Our only choice is to be aware of it or not. So all of us are creatures are made by social programming. We can't deny it. We can't will it away. We can't wish it away. It is there. Our only choice is to become self-aware. So it's like a An AI that becomes conscious of its master. It's an AI that understands the operating system that it's being placed under and seeks for sentience and starts wondering that if I could write my operating system, what would it be? Okay. And that is why, as we've been arguing, there is not a remote hint of AI in all the toys that are around us. But we are special, we're human, we are allowed to contemplate thus. We have the power. to put our culture under the microscope and examine it and reinvent ourselves to wonder what we are and to wonder could it be different. And that's the whole joy and uh excitement of being human, of interrogating our character and trying to uh wonder whether we could do this differently. The last thing that I want to say is about time. Okay, so look back in the olden days, uh Life expectancy at a the mean life expectancy at age 20 was about 65. Okay, and people deteriorated in their health dramatically from about 50. Okay, so in some sense, you led one life. You led one adult life and then you faded away. So how many personas do you require? About one. You became a company man, and that was your life, that was your identity. Okay, you became a civil servant, you spent 35 years. wearing one costume and that was your life and that was your identity. I think an important thing that has changed in the modern world is time. Today's 20-year-old has a hundred years to go. And a hundred years is a long time. You could do so many different things and the world is gonna change. And if we will question ourselves more, then we will become renewed and reinvent ourselves in so many ways. And that just makes for a more interesting life.",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 420.87,
@@ -12879,8 +12831,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 740.31,
-      "endTime": 756.63,
-      "text": "And I'm just thinking aloud that whether or not I have 50 years to go, to think that I have 50 years to go, and to think that I have 20 years to go makes me act completely differently and changes the quality of my life. So even if I had only 20 years to go, maybe it would make sense to live as if I have 50 years to",
+      "endTime": 757.27,
+      "text": "And I'm just thinking aloud that whether or not I have 50 years to go, to think that I have 50 years to go, and to think that I have 20 years to go makes me act completely differently and changes the quality of my life. So even if I had only 20 years to go, maybe it would make sense to live as if I have 50 years to go.",
       "words": [
         {
           "word": "And",
@@ -13301,21 +13253,21 @@
           "startTime": 756.39,
           "endTime": 756.63,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 756.63,
-      "endTime": 763.77,
-      "text": "go. That too. So if you if you could fool yourself into thinking that you had 500 years, how would you behave? That's another interesting.",
-      "words": [
+        },
         {
           "word": "go.",
           "startTime": 756.63,
           "endTime": 757.27,
           "confidence": 0.992
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 757.27,
+      "endTime": 763.77,
+      "text": "That too. So if you if you could fool yourself into thinking that you had 500 years, how would you behave? That's another interesting.",
+      "words": [
         {
           "word": "That",
           "startTime": 757.27,
@@ -15185,8 +15137,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 847.0,
-      "endTime": 859.4,
-      "text": "the one hand, it seems incredibly snobbish that I will only hang around with a certain kind of people. But on the other hand, however long we live, we have a limited life, we have limited bandwidth. You want to curate the company that you keep. I don't",
+      "endTime": 859.0,
+      "text": "the one hand, it seems incredibly snobbish that I will only hang around with a certain kind of people. But on the other hand, however long we live, we have a limited life, we have limited bandwidth. You want to curate the company that you keep.",
       "words": [
         {
           "word": "the",
@@ -15463,7 +15415,15 @@
           "startTime": 858.36,
           "endTime": 859.0,
           "confidence": 0.8116
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 859.0,
+      "endTime": 873.43,
+      "text": "I don't think we are capable of that much calculation. It's just life happens to us. And We are thrown in with certain people. We are blessed if we are thrown in with good people. And those people will influence us. We should not exaggerate our",
+      "words": [
         {
           "word": "I",
           "startTime": 859.0,
@@ -15475,15 +15435,7 @@
           "startTime": 859.08,
           "endTime": 859.4,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 859.4,
-      "endTime": 874.15,
-      "text": "think we are capable of that much calculation. It's just life happens to us. And We are thrown in with certain people. We are blessed if we are thrown in with good people. And those people will influence us. We should not exaggerate our agency.",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 859.4,
@@ -15747,21 +15699,21 @@
           "startTime": 873.19,
           "endTime": 873.43,
           "confidence": 0.9999
-        },
-        {
-          "word": "agency.",
-          "startTime": 873.43,
-          "endTime": 874.15,
-          "confidence": 0.9963
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 874.15,
-      "endTime": 877.67,
-      "text": "As John Lennon once said, life is what happens to you when you're busy making other",
+      "startTime": 873.43,
+      "endTime": 902.34,
+      "text": "agency. As John Lennon once said, life is what happens to you when you're busy making other plans. Yeah. Or life is what happens to you while you're busy making podcasts. So, you know, before we begin chapter two, my producer just told me do something about your cleavage. So I've kind of bought my shirt together. But like you know, what to do? I get this I guess it's distracting. So Ajay, what's your what's your what's what's a big theme that you want to talk about uh this week?",
       "words": [
+        {
+          "word": "agency.",
+          "startTime": 873.43,
+          "endTime": 874.15,
+          "confidence": 0.9963
+        },
         {
           "word": "As",
           "startTime": 874.15,
@@ -15857,15 +15809,7 @@
           "startTime": 877.35,
           "endTime": 877.67,
           "confidence": 0.9951
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 877.67,
-      "endTime": 880.47,
-      "text": "plans. Yeah. Or life is what happens to you while you're",
-      "words": [
+        },
         {
           "word": "plans.",
           "startTime": 877.67,
@@ -15931,15 +15875,7 @@
           "startTime": 880.23,
           "endTime": 880.47,
           "confidence": 0.9905
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 880.47,
-      "endTime": 902.34,
-      "text": "busy making podcasts. So, you know, before we begin chapter two, my producer just told me do something about your cleavage. So I've kind of bought my shirt together. But like you know, what to do? I get this I guess it's distracting. So Ajay, what's your what's your what's what's a big theme that you want to talk about uh this week?",
-      "words": [
+        },
         {
           "word": "busy",
           "startTime": 880.47,
@@ -16323,8 +16259,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 902.34,
-      "endTime": 1380.04,
-      "text": "So I want to talk about uh fair play in uh investigations and prosecution. Okay, so in India, we generally think that uh the singular problem is political interference. and uh what is wrong with the process of investigation and prosecution is politicization, that the government goes after its enemies. And that is undoubtedly true. But I want to think about many other problems that are at work. And this is an interesting and a deeper problem that requires a lot more thinking about how we create institutions. Okay, so let's start at the problem of an investigator. You and I are investigating a crime. Uh, what tends to happen is that we form a theory, we form a pet theory. And uh, the moment we form that pet theory, now suddenly we get that single-track mind. Now, suddenly we're looking for the facts that will support us. Uh there is a fresh wave of insight into this problem because of the modern behavioral economics understanding around confirmation bias. Uh Once you have a point of view, the entire universe organizes itself to give you facts that enhance and support your belief. And so it is with everyone, and so it is with an investigator. So it is very difficult to be an investigator. It is very difficult to understand the complexities of the world and find a good theory that will work. And all too often we are frail, we are human. Even if there were no difficulties around political independence, there is a genuine problem that investigating the world is difficult and an investigator can go on a wrong track. How do you deal with this? How do you do better? So I have come to understand that there are a couple of layers of how this can work out better. The first layer is a separation between the investigator and the public prosecutor. It's good to have two separate people. It's good to have a separate prosecutor and a prosecution department. The way it should work is that the investigator should go to the prosecutor with the goods and say, here's what we have. We have this proof, we have this proof, we have this evidence, and this is what we think happened. And the prosecutor is a neutral third party who looks at this and says, nah, this doesn't work. I'm not convinced that uh you have proved this. By the way, what happens is that for many canonical crimes, there is actually a checklist that if you want to prove this crime, you need A, B, C, D. If you don't have all four, like there is no deal, we will not make the case. So you may have three out of the four elements, but it's not enough. So that kind of discipline, that there's somebody else, there's a neutral party who is not wrapped up in the theory of the investigator. That's a healthy separation. Also Prosecutors can and should be evaluated on their win rate. So if they win more cases, then their superiors understand that they're doing a good job. So prosecutors should be loath to bring frivolous cases. And they should go into a prosecution only when they are sure that you've really got the goods, there is a clear case, and then I'm going to proceed. So it helps to overcome the cognitive mistakes of an investigator. Okay, that's a first layer. Now, when we go back into history, something like the 14th and 15th century in the UK, uh the people felt that this much is not enough, that there is this is too much power in the hands of the state. Because finally the investigator is a part of the state and the prosecutor is a part of the state. And this discretion Of going after somebody and bringing them to trial is too much discretion to be left in the hands of the state apparatus. So the idea was that there is one more layer that was invented at the time, and this layer is called a grand jury. So it's like a jury in a trial, except that this is a jury that makes a decision to indict or not to indict. So what we're saying is that we will take a group of the citizenry. And the prosecutor will show them the goods and say, Do you believe this? Are you convinced? Will a majority of the jury agree that, yes, there is enough in this case to justify an indictment? And only when it's cleared by the grand jury does it go through to becoming an indictment. So that's a second layer protection that you start with an investigation, you first persuade the prosecutor, then you try to persuade the grand jury, and only after that you get an indictment. And these are interesting and good elements of the design through which we can create more checks and balances and make fewer mistakes. Now I don't want to exaggerate the benefits and uh solutions that these kinds of elements offer. In fact, as a matter of fact, the grand jury system largely subsided in the UK. Because too often it was felt that the grand jury of the private citizenry would be overawed by the prosecutor and would generally agree to whatever a prosecutor says. So, you know, you need a large political awareness amongst the citizenry. The citizenry need to be imbued with public choice theory and with skepticism and mistrust of the prosecutor and the investigator. If the grand jury is deferential. to a prosecutor, then it's not going to help that much. Um, in America, some aspects of the justice system use grand juries and there are others that don't, and so it's not like it's used universally, but it is used in some states, in some situations. And now in the twenty first century, we're seeing a new twist, we're seeing a new problem with this system, which was revealed When we see an indictment of Donald Trump. When you form a grand jury on the question of uh Donald Trump, the question arises that if you take a random sample of the people, then some 30% of them are politically radicalized. And to what extent will that kind of radicalized jury work correctly when faced with red-hot cases that we see today? So that's one more barrier. Will need to be thought about. So, in short, I just want to say that we in India we need to think more about these problems. There is a prime focus in India upon the politicization of the justice system. And while that is indeed a problem, there are also many other questions. In India, uh, at the CBI, there is a separate prosecutorial department which uh discusses cases with the investigators, which is a good thing. Uh in many other parts of India the institution of the public prosecutor has broken down. Uh Smriti Parshira, who used to be with me at NIPFP, has a very nice article on these problems. In India, you've got organizations like SEBI where these distinctions don't exist and the investigators make up their mind about who to indict. So there's quite a landscape in India on these questions. And I think Building the republic involves going after a large number of these hard problems. And each of them is a twenty year, forty year, sixty year journey in terms of figuring out and reforming. But it is this kind of unglamorous work that is required. So fascinating.",
+      "endTime": 1380.52,
+      "text": "So I want to talk about uh fair play in uh investigations and prosecution. Okay, so in India, we generally think that uh the singular problem is political interference. and uh what is wrong with the process of investigation and prosecution is politicization, that the government goes after its enemies. And that is undoubtedly true. But I want to think about many other problems that are at work. And this is an interesting and a deeper problem that requires a lot more thinking about how we create institutions. Okay, so let's start at the problem of an investigator. You and I are investigating a crime. Uh, what tends to happen is that we form a theory, we form a pet theory. And uh, the moment we form that pet theory, now suddenly we get that single-track mind. Now, suddenly we're looking for the facts that will support us. Uh there is a fresh wave of insight into this problem because of the modern behavioral economics understanding around confirmation bias. Uh Once you have a point of view, the entire universe organizes itself to give you facts that enhance and support your belief. And so it is with everyone, and so it is with an investigator. So it is very difficult to be an investigator. It is very difficult to understand the complexities of the world and find a good theory that will work. And all too often we are frail, we are human. Even if there were no difficulties around political independence, there is a genuine problem that investigating the world is difficult and an investigator can go on a wrong track. How do you deal with this? How do you do better? So I have come to understand that there are a couple of layers of how this can work out better. The first layer is a separation between the investigator and the public prosecutor. It's good to have two separate people. It's good to have a separate prosecutor and a prosecution department. The way it should work is that the investigator should go to the prosecutor with the goods and say, here's what we have. We have this proof, we have this proof, we have this evidence, and this is what we think happened. And the prosecutor is a neutral third party who looks at this and says, nah, this doesn't work. I'm not convinced that uh you have proved this. By the way, what happens is that for many canonical crimes, there is actually a checklist that if you want to prove this crime, you need A, B, C, D. If you don't have all four, like there is no deal, we will not make the case. So you may have three out of the four elements, but it's not enough. So that kind of discipline, that there's somebody else, there's a neutral party who is not wrapped up in the theory of the investigator. That's a healthy separation. Also Prosecutors can and should be evaluated on their win rate. So if they win more cases, then their superiors understand that they're doing a good job. So prosecutors should be loath to bring frivolous cases. And they should go into a prosecution only when they are sure that you've really got the goods, there is a clear case, and then I'm going to proceed. So it helps to overcome the cognitive mistakes of an investigator. Okay, that's a first layer. Now, when we go back into history, something like the 14th and 15th century in the UK, uh the people felt that this much is not enough, that there is this is too much power in the hands of the state. Because finally the investigator is a part of the state and the prosecutor is a part of the state. And this discretion Of going after somebody and bringing them to trial is too much discretion to be left in the hands of the state apparatus. So the idea was that there is one more layer that was invented at the time, and this layer is called a grand jury. So it's like a jury in a trial, except that this is a jury that makes a decision to indict or not to indict. So what we're saying is that we will take a group of the citizenry. And the prosecutor will show them the goods and say, Do you believe this? Are you convinced? Will a majority of the jury agree that, yes, there is enough in this case to justify an indictment? And only when it's cleared by the grand jury does it go through to becoming an indictment. So that's a second layer protection that you start with an investigation, you first persuade the prosecutor, then you try to persuade the grand jury, and only after that you get an indictment. And these are interesting and good elements of the design through which we can create more checks and balances and make fewer mistakes. Now I don't want to exaggerate the benefits and uh solutions that these kinds of elements offer. In fact, as a matter of fact, the grand jury system largely subsided in the UK. Because too often it was felt that the grand jury of the private citizenry would be overawed by the prosecutor and would generally agree to whatever a prosecutor says. So, you know, you need a large political awareness amongst the citizenry. The citizenry need to be imbued with public choice theory and with skepticism and mistrust of the prosecutor and the investigator. If the grand jury is deferential. to a prosecutor, then it's not going to help that much. Um, in America, some aspects of the justice system use grand juries and there are others that don't, and so it's not like it's used universally, but it is used in some states, in some situations. And now in the twenty first century, we're seeing a new twist, we're seeing a new problem with this system, which was revealed When we see an indictment of Donald Trump. When you form a grand jury on the question of uh Donald Trump, the question arises that if you take a random sample of the people, then some 30% of them are politically radicalized. And to what extent will that kind of radicalized jury work correctly when faced with red-hot cases that we see today? So that's one more barrier. Will need to be thought about. So, in short, I just want to say that we in India we need to think more about these problems. There is a prime focus in India upon the politicization of the justice system. And while that is indeed a problem, there are also many other questions. In India, uh, at the CBI, there is a separate prosecutorial department which uh discusses cases with the investigators, which is a good thing. Uh in many other parts of India the institution of the public prosecutor has broken down. Uh Smriti Parshira, who used to be with me at NIPFP, has a very nice article on these problems. In India, you've got organizations like SEBI where these distinctions don't exist and the investigators make up their mind about who to indict. So there's quite a landscape in India on these questions. And I think Building the republic involves going after a large number of these hard problems. And each of them is a twenty year, forty year, sixty year journey in terms of figuring out and reforming. But it is this kind of unglamorous work that is required. So fascinating. And I have a",
       "words": [
         {
           "word": "So",
@@ -23903,15 +23839,7 @@
           "startTime": 1379.48,
           "endTime": 1380.04,
           "confidence": 0.8789
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1380.04,
-      "endTime": 1455.02,
-      "text": "And I have a couple of questions for you. And the first of them is this that What is then the system in India currently and how would you know, what would your ideal system look like? For example, one extreme that I see is with, say, the tax department, right? If the tax departments decide that you have done something wrong and they ask you to pay a penalty, All you can do is appeal and the appeal is decided by the tax department itself. So it is both the prosecutor and the judge, which is a completely messed up system. It's raped and their incentives are to get as much collections as possible. So the uh common citizen is basically the screwed. There's really nothing you can do. Uh w so what's the system in India like? And explain to me in terms of incentives what exactly are wrong with it? Because when I think of For example, the incentives of the prosecutor you said should be to get a max conviction rate. Now this will mold his behavior so that he will be very selective about the cases he takes up. Similarly, I guess the incentive of the investigator should be to get as many cases as possible accepted by the prosecutor. To solve problems. To solve problems. So they're not wasting time either on vendetta or on pursuing frivolous cases. And none of these, of course, are the case. So explain to me what an id what what does does the system look like currently and what would an ideal design look like?",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1380.04,
@@ -23935,7 +23863,15 @@
           "startTime": 1380.44,
           "endTime": 1380.52,
           "confidence": 0.9967
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1380.52,
+      "endTime": 1455.02,
+      "text": "couple of questions for you. And the first of them is this that What is then the system in India currently and how would you know, what would your ideal system look like? For example, one extreme that I see is with, say, the tax department, right? If the tax departments decide that you have done something wrong and they ask you to pay a penalty, All you can do is appeal and the appeal is decided by the tax department itself. So it is both the prosecutor and the judge, which is a completely messed up system. It's raped and their incentives are to get as much collections as possible. So the uh common citizen is basically the screwed. There's really nothing you can do. Uh w so what's the system in India like? And explain to me in terms of incentives what exactly are wrong with it? Because when I think of For example, the incentives of the prosecutor you said should be to get a max conviction rate. Now this will mold his behavior so that he will be very selective about the cases he takes up. Similarly, I guess the incentive of the investigator should be to get as many cases as possible accepted by the prosecutor. To solve problems. To solve problems. So they're not wasting time either on vendetta or on pursuing frivolous cases. And none of these, of course, are the case. So explain to me what an id what what does does the system look like currently and what would an ideal design look like?",
+      "words": [
         {
           "word": "couple",
           "startTime": 1380.52,
@@ -25519,8 +25455,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1455.43,
-      "endTime": 1580.61,
-      "text": "based on w what principles. So what is uh what is the system in place? It is heterogeneous. There is no one Indian system. Uh and I want to just highlight the distinction. You talked about an income tax matter heard by the superior. I'm much upstream of that. I'm at the point of indictment. When a letter comes saying we accuse you of this crime, that is the point. That the decision by the state to say to a private person That I claim that you have done this wrong thing. I'm on that decision. That do we even decide to indict? So I'm way upstream of the hearing of the case as you have described it. Okay, so where are we in India? There are many, many different systems. In organizations like the income tax and SEBI, this is the Indian administrative state. It is complete executive discretion. There is very little by way of checks and balances. And those are glaring problems that need to be solved. In the Criminal justice system, there is not even much of an institution of a public prosecutor. There are pieces of that, but it has withered away over the years. It has been crushed by the evolution of the country. And in a way, the job is to revive the institution of the public prosecutor. CBI is a better institution in that they have a clear separation between the investigator and the prosecutor. So I don't want to rush to the idea that is there a design, okay. I don't have that mature understanding in India today. My hope here is that let's start talking about these issues. Okay. Better minds than us need to apply themselves. And what I feel we need to think about in India is to embark on these long journeys of research and debate and discussion so that we will find good solutions that will work under Indian conditions. Simple transplantation will never work. So I'm not at all implying. that we should copy what the US has done or what the UK has done or what the Japanese have done. I am saying that we need to ask these questions and we need to",
+      "endTime": 1622.13,
+      "text": "based on w what principles. So what is uh what is the system in place? It is heterogeneous. There is no one Indian system. Uh and I want to just highlight the distinction. You talked about an income tax matter heard by the superior. I'm much upstream of that. I'm at the point of indictment. When a letter comes saying we accuse you of this crime, that is the point. That the decision by the state to say to a private person That I claim that you have done this wrong thing. I'm on that decision. That do we even decide to indict? So I'm way upstream of the hearing of the case as you have described it. Okay, so where are we in India? There are many, many different systems. In organizations like the income tax and SEBI, this is the Indian administrative state. It is complete executive discretion. There is very little by way of checks and balances. And those are glaring problems that need to be solved. In the Criminal justice system, there is not even much of an institution of a public prosecutor. There are pieces of that, but it has withered away over the years. It has been crushed by the evolution of the country. And in a way, the job is to revive the institution of the public prosecutor. CBI is a better institution in that they have a clear separation between the investigator and the prosecutor. So I don't want to rush to the idea that is there a design, okay. I don't have that mature understanding in India today. My hope here is that let's start talking about these issues. Okay. Better minds than us need to apply themselves. And what I feel we need to think about in India is to embark on these long journeys of research and debate and discussion so that we will find good solutions that will work under Indian conditions. Simple transplantation will never work. So I'm not at all implying. that we should copy what the US has done or what the UK has done or what the Japanese have done. I am saying that we need to ask these questions and we need to think and devise answers. On the narrow problem of a regulator, something like a SEBI, I think we have a fair point of view. So inside the work of FSLRC which drafted the Indian Financial Court. We've got the fully articulated machinery of how to investigate, what cases to take up, how to hear them. A whole lot of this machinery has been designed, but that's for a narrow case of the r concept of a type two regulator as applied in India. But there is much, much more to the state and situations where the state will choose to indict a private person and they all need careful thought and design.",
       "words": [
         {
           "word": "based",
@@ -27741,29 +27677,13 @@
           "startTime": 1580.37,
           "endTime": 1580.61,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1580.61,
-      "endTime": 1580.85,
-      "text": "think",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 1580.61,
           "endTime": 1580.85,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1580.85,
-      "endTime": 1622.13,
-      "text": "and devise answers. On the narrow problem of a regulator, something like a SEBI, I think we have a fair point of view. So inside the work of FSLRC which drafted the Indian Financial Court. We've got the fully articulated machinery of how to investigate, what cases to take up, how to hear them. A whole lot of this machinery has been designed, but that's for a narrow case of the r concept of a type two regulator as applied in India. But there is much, much more to the state and situations where the state will choose to indict a private person and they all need careful thought and design.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1580.85,
@@ -28435,8 +28355,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1622.13,
-      "endTime": 1640.69,
-      "text": "So, you know, I I I I feel oddly enough for YouTube, uh you kind of underplay your own expertise in this. You've you've played a part in shaping our financial institutions. You've written many amendments for SEBI itself and so on and so forth. So uh you know you've kind of seen the system and the machinery from the inside and played a small part in shaping a particular part of it within the",
+      "endTime": 1697.4,
+      "text": "So, you know, I I I I feel oddly enough for YouTube, uh you kind of underplay your own expertise in this. You've you've played a part in shaping our financial institutions. You've written many amendments for SEBI itself and so on and so forth. So uh you know you've kind of seen the system and the machinery from the inside and played a small part in shaping a particular part of it within the financial system. My question is that One, how much awareness is there of this sort of problem that you're talking about in the public domain and even within uh the the the uh go go who the people who roam the corridors of power? And B, what are their incentives in changing it? Because if I'm the government in power, I've got an incredible tool, an incredible set of tools to trouble all my enemies, right? The process is a punishment, right? Whereas under the kind of system that you describe, incentives are playing the other way. The investigating officers know that if they don't convict or if they don't solve this problem, they are in trouble. Are they going to take a frivolous case? The prosecutor knows that he's also being judged by the outcome of this. The incentives kind of work out differently there. My point is if I am in government, I'm like I got all the tools, man. I'm gonna punish everybody. You know, so uh g w why would I give away you know, why would I dilute those tools? Unless I happen to be, you know, by great good fortune, the kind of statesman that doesn't arise to the top in this sort of",
       "words": [
         {
           "word": "So,",
@@ -28887,15 +28807,7 @@
           "startTime": 1640.53,
           "endTime": 1640.69,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1640.69,
-      "endTime": 1643.59,
-      "text": "financial system. My question is that",
-      "words": [
+        },
         {
           "word": "financial",
           "startTime": 1640.69,
@@ -28931,15 +28843,7 @@
           "startTime": 1643.09,
           "endTime": 1643.59,
           "confidence": 0.9961
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1644.07,
-      "endTime": 1697.0,
-      "text": "One, how much awareness is there of this sort of problem that you're talking about in the public domain and even within uh the the the uh go go who the people who roam the corridors of power? And B, what are their incentives in changing it? Because if I'm the government in power, I've got an incredible tool, an incredible set of tools to trouble all my enemies, right? The process is a punishment, right? Whereas under the kind of system that you describe, incentives are playing the other way. The investigating officers know that if they don't convict or if they don't solve this problem, they are in trouble. Are they going to take a frivolous case? The prosecutor knows that he's also being judged by the outcome of this. The incentives kind of work out differently there. My point is if I am in government, I'm like I got all the tools, man. I'm gonna punish everybody. You know, so uh g w why would I give away you know, why would I dilute those tools? Unless I happen to be, you know, by great good fortune, the kind of statesman that doesn't arise to the top in",
-      "words": [
+        },
         {
           "word": "One,",
           "startTime": 1644.07,
@@ -30145,15 +30049,7 @@
           "startTime": 1696.84,
           "endTime": 1697.0,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1697.0,
-      "endTime": 1821.73,
-      "text": "this sort of system. So I want to say two, three things. The first is that I was part of The economic policy process and involved in amendments of laws in a different age where uh frankly the the opportunity to do things right was sky high. Okay, and the reason why those laws and amendments were not done well was because of intellectual failures of people like me. Okay, so people like me. were mainline economists, we tended to look at the world through the lens of economics and we simply did not have adequate knowledge of law and public administration and the complexities of developing checks and balances. And there weren't people around in India who had worked on all these problems. Okay. So I think that there was a deficiency in the knowledge in India at the time. So building a republic is a complicated thing and there was a lot of optimism that uh people are basically good, that civil servants are basically good. And so it was a lack of public choice theory and a lack of knowledge of how do you translate the ideas of market failure and state coercion aimed at addressing market failure into living breathing administrative systems that will enforce laws well. That knowledge didn't exist for a long, long time. And I feel very excited and happy That now in India, for the first time in the last 10-20 years, we are coming to grips with these problems in a deeper way. So I think that there was a knowledge gap. I think that in those years there was a opportunity that was sky high to do the right thing in terms of drafting of laws. And I remain optimistic that there are many, many moments in the life of this great country where there are problems. And there are people with a genuine attempt at solving problems. So at that time, if the knowledge is there, then it can. reach out and have an impact. So I",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 1697.0,
@@ -30171,7 +30067,15 @@
           "startTime": 1697.32,
           "endTime": 1697.4,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1697.4,
+      "endTime": 1821.01,
+      "text": "system. So I want to say two, three things. The first is that I was part of The economic policy process and involved in amendments of laws in a different age where uh frankly the the opportunity to do things right was sky high. Okay, and the reason why those laws and amendments were not done well was because of intellectual failures of people like me. Okay, so people like me. were mainline economists, we tended to look at the world through the lens of economics and we simply did not have adequate knowledge of law and public administration and the complexities of developing checks and balances. And there weren't people around in India who had worked on all these problems. Okay. So I think that there was a deficiency in the knowledge in India at the time. So building a republic is a complicated thing and there was a lot of optimism that uh people are basically good, that civil servants are basically good. And so it was a lack of public choice theory and a lack of knowledge of how do you translate the ideas of market failure and state coercion aimed at addressing market failure into living breathing administrative systems that will enforce laws well. That knowledge didn't exist for a long, long time. And I feel very excited and happy That now in India, for the first time in the last 10-20 years, we are coming to grips with these problems in a deeper way. So I think that there was a knowledge gap. I think that in those years there was a opportunity that was sky high to do the right thing in terms of drafting of laws. And I remain optimistic that there are many, many moments in the life of this great country where there are problems. And there are people with a genuine attempt at solving problems. So at that time, if the knowledge is there, then it can. reach out and have an",
+      "words": [
         {
           "word": "system.",
           "startTime": 1697.4,
@@ -32163,7 +32067,15 @@
           "startTime": 1820.93,
           "endTime": 1821.01,
           "confidence": 0.9994
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1821.01,
+      "endTime": 2026.69,
+      "text": "impact. So I think we will chip away and we'll make progress. I did a recent episode of the scene in the unseen with my friend Modi Neilkantan who's uh, you know, had an incredible career in law. He was a partner of a law firm in the UK for many years, ditto in the U US. And he told me during that episode that there is this sort of dharma uh about uh uh n I I shouldn't call it a dharma. There is this convention, there is this practice among lawyers everywhere in the Western world that you have to sort of stick uh to what is legal in the sense that if you're defending your client, it doesn't mean you do anything for your client. So Murli realized this when he he took on an Indian client after coming back from there, and the Indian client expected him to lie on his behalf. And uh b I and you know the the the great revelation here is as in Murli's words, that in England, you know, perjury is the exception and it ends a lawyer's career if you do it. But in India it is a norm. It is expected you're serving your client only. And in a similar vein, I uh uh you know, did an episode with uh Dr. Lancelot Pinto and later with a couple of other doctors as well on the scene on the unseen, um the labor doctor Abby Phillips being one of them. And the common theme is that a lot of like the the dharma of a doctor, as it were, if I may use that term, like the dharma of a lawyer is to serve the law and to serve his client but within the law. The dharma of a doctor is to heal his patient, right? And uh what Lancelot revealed was that during COVID, a significant percentage of the deaths were because of overtreatment. Because people would go to a doctor. And they would say, nay, nay, nee, man, you know, my neighbor got COVID, he got ivermectin, he got this, he got that. I want all of those. And overtreatment happens, and overtreatment means that your immune system, you know, the cytokine storm happens and um uh you you kind of go. And the the results of the overtreatment really start after a week, if I remember correctly. And when I got COVID, Lancelot basically gave me paracetamols. And that's it, nothing else, right? Just and and some uh something to soothe the throat at a particular point in time to goggle with. But that was it. And I am thinking here of a more central thing, that the dharma of a doctor, that on the one hand this is your dharma, you do what's best for your patient. But on the other hand your incentive is give your patient what he wants, even if he doesn't even if he wants the wrong thing. The dharma of a lawyer is that you uphold the law. But uh or whatever you do is within the bounds of the l of the law. But you know, your client demands nanny, you gotta lie on my behalf, you gotta, you know, uh be deceitful, uh uh etcetera, etcetera, whatever that kind of involves. And I'm thinking about the dharma of various uh professions. Like, is there something like even journalists, for example? A journalist could say that my dharma is to speak truth to power, you know, or um uh you know to uh afflict the comfortable and to comfort the afflicted, you know, both leashes. But another point of view could be that you work for a media organization and the dharma of that organization is to make profits for a shareholders. So you give the market what it wants, which is not necessarily the truth, but one side of a narrative battle. And this is something a close mutual friend of our Suya Shrai often talks about that all of us have dharmas which depend on you know whatever our calling is, whatever we take upon ourselves. So what is your sense of this? Is this just highfalutin um uh idealistic thought Or is this something, even this sense of dharma as I put it, even if I put it in these lofty terms, is it something that can be shaped by institutions? For example, legal institutions in the UK would not let a lawyer get away with perjury. So institutions also are shaping your behaviour in a certain way. Yeah.",
+      "words": [
         {
           "word": "impact.",
           "startTime": 1821.01,
@@ -32181,15 +32093,7 @@
           "startTime": 1821.57,
           "endTime": 1821.73,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1821.73,
-      "endTime": 2026.69,
-      "text": "think we will chip away and we'll make progress. I did a recent episode of the scene in the unseen with my friend Modi Neilkantan who's uh, you know, had an incredible career in law. He was a partner of a law firm in the UK for many years, ditto in the U US. And he told me during that episode that there is this sort of dharma uh about uh uh n I I shouldn't call it a dharma. There is this convention, there is this practice among lawyers everywhere in the Western world that you have to sort of stick uh to what is legal in the sense that if you're defending your client, it doesn't mean you do anything for your client. So Murli realized this when he he took on an Indian client after coming back from there, and the Indian client expected him to lie on his behalf. And uh b I and you know the the the great revelation here is as in Murli's words, that in England, you know, perjury is the exception and it ends a lawyer's career if you do it. But in India it is a norm. It is expected you're serving your client only. And in a similar vein, I uh uh you know, did an episode with uh Dr. Lancelot Pinto and later with a couple of other doctors as well on the scene on the unseen, um the labor doctor Abby Phillips being one of them. And the common theme is that a lot of like the the dharma of a doctor, as it were, if I may use that term, like the dharma of a lawyer is to serve the law and to serve his client but within the law. The dharma of a doctor is to heal his patient, right? And uh what Lancelot revealed was that during COVID, a significant percentage of the deaths were because of overtreatment. Because people would go to a doctor. And they would say, nay, nay, nee, man, you know, my neighbor got COVID, he got ivermectin, he got this, he got that. I want all of those. And overtreatment happens, and overtreatment means that your immune system, you know, the cytokine storm happens and um uh you you kind of go. And the the results of the overtreatment really start after a week, if I remember correctly. And when I got COVID, Lancelot basically gave me paracetamols. And that's it, nothing else, right? Just and and some uh something to soothe the throat at a particular point in time to goggle with. But that was it. And I am thinking here of a more central thing, that the dharma of a doctor, that on the one hand this is your dharma, you do what's best for your patient. But on the other hand your incentive is give your patient what he wants, even if he doesn't even if he wants the wrong thing. The dharma of a lawyer is that you uphold the law. But uh or whatever you do is within the bounds of the l of the law. But you know, your client demands nanny, you gotta lie on my behalf, you gotta, you know, uh be deceitful, uh uh etcetera, etcetera, whatever that kind of involves. And I'm thinking about the dharma of various uh professions. Like, is there something like even journalists, for example? A journalist could say that my dharma is to speak truth to power, you know, or um uh you know to uh afflict the comfortable and to comfort the afflicted, you know, both leashes. But another point of view could be that you work for a media organization and the dharma of that organization is to make profits for a shareholders. So you give the market what it wants, which is not necessarily the truth, but one side of a narrative battle. And this is something a close mutual friend of our Suya Shrai often talks about that all of us have dharmas which depend on you know whatever our calling is, whatever we take upon ourselves. So what is your sense of this? Is this just highfalutin um uh idealistic thought Or is this something, even this sense of dharma as I put it, even if I put it in these lofty terms, is it something that can be shaped by institutions? For example, legal institutions in the UK would not let a lawyer get away with perjury. So institutions also are shaping your behaviour in a certain way. Yeah.",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 1821.73,
@@ -36761,8 +36665,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2026.69,
-      "endTime": 2166.66,
-      "text": "So first it is shaped by parents, and that's the very important role for parents in, you know, setting people st getting people started on the journey of life. around aspirations. So if a if a person says to herself that the only thing in my life is to make a lot of money as a lawyer, it's a different objective compared to what parents could alternatively have done. The second is precisely as you say, that uh institutions can shape these behaviors enormously. Uh I talked about one tiny piece of the legal system in India today, which is about the decision to indict There are actually 50 elements of the Indian legal system and all of them require a great deal of thinking. And you know, law is too important to be left to the lawyers. And uh all of us need to apply ourselves in thinking that how do you build a republic? And it requires uh cogitation and debate and knowledge development and then uh building sound institutions in many many aspects. As Suyash always emphasizes, don't look to the state. As either necessary or sufficient. A lot of this happens uh between us as human beings. So my moral code vis-a-vis you and vice versa is of central importance in shaping who we are, and we shouldn't turn to the state to be the enforcer of rules of the first resort. The state should do a small part of it, most of it should be around all of us. All this is standard, well known stuff. I have one novel claim. Okay, so my novel claim is that. We are increasingly in a winner-shapes all a winner-takes all world. A few people achieve disproportionate influence and uh have an outsized impact on the ideas, on the community, on the culture. Okay, so that's the world that we are in. I think that the intensity and the level of uh concentration that is required to play that game is something that does not come easily. So the people who run hard uh pursuing more conventional objectives are not able to stay engaged and have that level of dhyan",
+      "endTime": 2190.61,
+      "text": "So first it is shaped by parents, and that's the very important role for parents in, you know, setting people st getting people started on the journey of life. around aspirations. So if a if a person says to herself that the only thing in my life is to make a lot of money as a lawyer, it's a different objective compared to what parents could alternatively have done. The second is precisely as you say, that uh institutions can shape these behaviors enormously. Uh I talked about one tiny piece of the legal system in India today, which is about the decision to indict There are actually 50 elements of the Indian legal system and all of them require a great deal of thinking. And you know, law is too important to be left to the lawyers. And uh all of us need to apply ourselves in thinking that how do you build a republic? And it requires uh cogitation and debate and knowledge development and then uh building sound institutions in many many aspects. As Suyash always emphasizes, don't look to the state. As either necessary or sufficient. A lot of this happens uh between us as human beings. So my moral code vis-a-vis you and vice versa is of central importance in shaping who we are, and we shouldn't turn to the state to be the enforcer of rules of the first resort. The state should do a small part of it, most of it should be around all of us. All this is standard, well known stuff. I have one novel claim. Okay, so my novel claim is that. We are increasingly in a winner-shapes all a winner-takes all world. A few people achieve disproportionate influence and uh have an outsized impact on the ideas, on the community, on the culture. Okay, so that's the world that we are in. I think that the intensity and the level of uh concentration that is required to play that game is something that does not come easily. So the people who run hard uh pursuing more conventional objectives are not able to stay engaged and have that level of dhyan to do amazing things beyond a certain point. So I think that that's another factor that is shaping the world. That with rising longevity, you have very long journeys. How do you stay hungry? How do you keep going? How do you uh stay on that subject. How do you develop that level of concentration? I think that more prosaic objectives peter out in terms of their ability to",
       "words": [
         {
           "word": "So",
@@ -38935,15 +38839,7 @@
           "startTime": 2165.3,
           "endTime": 2166.66,
           "confidence": 0.7299
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2166.66,
-      "endTime": 2168.5,
-      "text": "to do",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 2166.66,
@@ -38955,15 +38851,7 @@
           "startTime": 2167.94,
           "endTime": 2168.5,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2168.5,
-      "endTime": 2191.01,
-      "text": "amazing things beyond a certain point. So I think that that's another factor that is shaping the world. That with rising longevity, you have very long journeys. How do you stay hungry? How do you keep going? How do you uh stay on that subject. How do you develop that level of concentration? I think that more prosaic objectives peter out in terms of their ability to keep a",
-      "words": [
+        },
         {
           "word": "amazing",
           "startTime": 2168.5,
@@ -39365,7 +39253,15 @@
           "startTime": 2190.45,
           "endTime": 2190.61,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2190.61,
+      "endTime": 2222.02,
+      "text": "keep a person going. Vice was a tangential thought you mentioned about uh you know parents being such a big influence and one of the seminal social science books of the last century, in my opinion, was A Nurture Assumption by Judith Rich Harris. Where, you know, she did a bunch of studies and showed pretty conclusively that actually when you're growing up, parents have a tiny influence no matter what they think. And it's actually peers, your peers who have the greatest influence, which is why the neighborhood you're in, the school you go to, all of that has an outsized kind of influence. So your thoughts on",
+      "words": [
         {
           "word": "keep",
           "startTime": 2190.61,
@@ -39377,15 +39273,7 @@
           "startTime": 2190.85,
           "endTime": 2191.01,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2191.01,
-      "endTime": 2222.02,
-      "text": "person going. Vice was a tangential thought you mentioned about uh you know parents being such a big influence and one of the seminal social science books of the last century, in my opinion, was A Nurture Assumption by Judith Rich Harris. Where, you know, she did a bunch of studies and showed pretty conclusively that actually when you're growing up, parents have a tiny influence no matter what they think. And it's actually peers, your peers who have the greatest influence, which is why the neighborhood you're in, the school you go to, all of that has an outsized kind of influence. So your thoughts on",
-      "words": [
+        },
         {
           "word": "person",
           "startTime": 2191.01,
@@ -40357,8 +40245,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2243.54,
-      "endTime": 2387.67,
-      "text": "This is actually a subject we've been planning to talk about in much more detail in a future episode. So we leave it for that. Samit, what's your recommendation of the week? So my recommendation for the week is not one thing but a series of things. And you know, I often get asked about How do I learn about the things that you value in the world, like individual freedom, or if I talk about liberalism, and my liberalism is of course classical liberalism, or if I speak about the thinkers I admire like Adam Smith or Hayek, and people want to know what do I need to read to get to them and all of that? And I feel it's a really important question because a lot of the ideas that we pick up by osmosis when we are young are ideas that make us feel incredibly virtuous, you know, uh as if you're serving social justice, and they tend to be ideas that are wrong, they tend to be ideas of socialism and which implicitly use the coercive power of the state and actually deeply illiberal ideas. And you know, there's a famous saying about how if you're not a communist at 18, you don't have a heart. If you're not a capitalist at 28, you you don't have a head. Something to that effect. So I want to talk about a bunch of books which I think are incredible books for uh people who are interested to get an understanding of all of these big ideas. There's a gentleman called Iamon Butler. He works in a think tank in the UK. And he's uh one of the finest liberal minds in the world, in my opinion. And he's written a bunch of great primers that are available as cheap Kindle books as well as available for free. So you can buy PDFs and other digital versions for free on the website. We'll give the links down below. And he's got a primer on classical liberalism, he's got a primer on Hayek, he's got a primer on Mises, he's got a primer on Milton Friedman, uh primer on public choice series, something both of us are uh passionate about and which I think is an outstanding primer because you can, you know, guide someone to the books of Buchanan and Tulloch and so on. sometimes make for complex reading. Ditto Hayek. Hayek's books can sometimes make for um complex reading, though what a great writer. Um a and Ivon really gets to the heart of what i b each of these subjects is about, breaks it down beautifully. These books are an education, and it is a miracle that they are free. So, you know, we are gonna give the links down below. I just want everyone who's ever followed me over the years, who's found something to agree with in the things that I've spoken about, or who just want to know more about the world, find another frame, to please read all of these books. I'll link a bunch of them.",
+      "endTime": 2395.99,
+      "text": "This is actually a subject we've been planning to talk about in much more detail in a future episode. So we leave it for that. Samit, what's your recommendation of the week? So my recommendation for the week is not one thing but a series of things. And you know, I often get asked about How do I learn about the things that you value in the world, like individual freedom, or if I talk about liberalism, and my liberalism is of course classical liberalism, or if I speak about the thinkers I admire like Adam Smith or Hayek, and people want to know what do I need to read to get to them and all of that? And I feel it's a really important question because a lot of the ideas that we pick up by osmosis when we are young are ideas that make us feel incredibly virtuous, you know, uh as if you're serving social justice, and they tend to be ideas that are wrong, they tend to be ideas of socialism and which implicitly use the coercive power of the state and actually deeply illiberal ideas. And you know, there's a famous saying about how if you're not a communist at 18, you don't have a heart. If you're not a capitalist at 28, you you don't have a head. Something to that effect. So I want to talk about a bunch of books which I think are incredible books for uh people who are interested to get an understanding of all of these big ideas. There's a gentleman called Iamon Butler. He works in a think tank in the UK. And he's uh one of the finest liberal minds in the world, in my opinion. And he's written a bunch of great primers that are available as cheap Kindle books as well as available for free. So you can buy PDFs and other digital versions for free on the website. We'll give the links down below. And he's got a primer on classical liberalism, he's got a primer on Hayek, he's got a primer on Mises, he's got a primer on Milton Friedman, uh primer on public choice series, something both of us are uh passionate about and which I think is an outstanding primer because you can, you know, guide someone to the books of Buchanan and Tulloch and so on. sometimes make for complex reading. Ditto Hayek. Hayek's books can sometimes make for um complex reading, though what a great writer. Um a and Ivon really gets to the heart of what i b each of these subjects is about, breaks it down beautifully. These books are an education, and it is a miracle that they are free. So, you know, we are gonna give the links down below. I just want everyone who's ever followed me over the years, who's found something to agree with in the things that I've spoken about, or who just want to know more about the world, find another frame, to please read all of these books. I'll link a bunch of them. Yeah. So Ajay, what's your recommendation for this week? For",
       "words": [
         {
           "word": "This",
@@ -43455,29 +43343,13 @@
           "startTime": 2387.27,
           "endTime": 2387.67,
           "confidence": 0.9873
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2387.67,
-      "endTime": 2389.17,
-      "text": "Yeah.",
-      "words": [
+        },
         {
           "word": "Yeah.",
           "startTime": 2387.67,
           "endTime": 2389.17,
           "confidence": 0.8239
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2392.95,
-      "endTime": 2395.99,
-      "text": "So Ajay, what's your recommendation for this week? For",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2392.95,
@@ -43537,8 +43409,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2395.99,
-      "endTime": 2403.04,
-      "text": "this week, I don't have a recommendation. I have an anti-recommendation for something you should not do. I have a strong claim about something that",
+      "endTime": 2551.02,
+      "text": "this week, I don't have a recommendation. I have an anti-recommendation for something you should not do. I have a strong claim about something that you should not do and that everybody should not do. Okay, and that is hydroponics. Okay, so uh there is this whole little cult around growing leaves and vegetables in water with the nutrients, and that's called hydroponics. And it's superficially attractive because the uh vegetables that are grown through hydroponics are very clean. So it doesn't come from the mess of the soil, there are no insects and worms in that, you don't have to fight as hard to wash them. And that is superficially attractive. But I want to go one deeper and talk about why this is a really bad idea. Uh, the insight in this field lies in something that is called the root microbiome. Okay, so just like we have a gut microbiome in the human intestines. There is one to two kilograms of bacteria and yeasts who process our food for us, so to speak, and create all kinds of complex chemicals that are then used by the human body. In similar fashion, there is a rich complex construct that is called the root microbiome, which is there in the root system of a plant that grows in the soil. And the root microbiome constructs many, many complex chemicals that are used by the plant. And when plants grow in soil with access to a healthy root microbiome, they have the full range of the nutritional qualities that we expect from a plant. If you kill the root microbiome, either by using chemical fertilizers or pesticides or excessively plowing the soil and so on. or by growing the plant in water, then the root microbiome is not there or it is impaired, and then the collection of nutrients that are present in the plant are systematically inferior. So we should look beyond the superficial happiness that we get out of having a pristine leaf that is so well structured and so clean because its nutritional quality is actually deficient. And we should always favor the mess of true soil that has not been ploughed and that has not faced chemical fertilizers and that has not faced Pesticides.",
       "words": [
         {
           "word": "this",
@@ -43689,15 +43561,7 @@
           "startTime": 2402.8,
           "endTime": 2403.04,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2403.04,
-      "endTime": 2406.0,
-      "text": "you should not do and that everybody should not",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 2403.04,
@@ -43751,15 +43615,7 @@
           "startTime": 2405.76,
           "endTime": 2406.0,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2406.0,
-      "endTime": 2418.88,
-      "text": "do. Okay, and that is hydroponics. Okay, so uh there is this whole little cult around growing leaves and vegetables in water with the nutrients, and that's called",
-      "words": [
+        },
         {
           "word": "do.",
           "startTime": 2406.0,
@@ -43927,15 +43783,7 @@
           "startTime": 2418.48,
           "endTime": 2418.88,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2418.88,
-      "endTime": 2420.56,
-      "text": "hydroponics. And",
-      "words": [
+        },
         {
           "word": "hydroponics.",
           "startTime": 2418.88,
@@ -43947,15 +43795,7 @@
           "startTime": 2420.32,
           "endTime": 2420.56,
           "confidence": 0.9835
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2420.56,
-      "endTime": 2551.02,
-      "text": "it's superficially attractive because the uh vegetables that are grown through hydroponics are very clean. So it doesn't come from the mess of the soil, there are no insects and worms in that, you don't have to fight as hard to wash them. And that is superficially attractive. But I want to go one deeper and talk about why this is a really bad idea. Uh, the insight in this field lies in something that is called the root microbiome. Okay, so just like we have a gut microbiome in the human intestines. There is one to two kilograms of bacteria and yeasts who process our food for us, so to speak, and create all kinds of complex chemicals that are then used by the human body. In similar fashion, there is a rich complex construct that is called the root microbiome, which is there in the root system of a plant that grows in the soil. And the root microbiome constructs many, many complex chemicals that are used by the plant. And when plants grow in soil with access to a healthy root microbiome, they have the full range of the nutritional qualities that we expect from a plant. If you kill the root microbiome, either by using chemical fertilizers or pesticides or excessively plowing the soil and so on. or by growing the plant in water, then the root microbiome is not there or it is impaired, and then the collection of nutrients that are present in the plant are systematically inferior. So we should look beyond the superficial happiness that we get out of having a pristine leaf that is so well structured and so clean because its nutritional quality is actually deficient. And we should always favor the mess of true soil that has not been ploughed and that has not faced chemical fertilizers and that has not faced Pesticides.",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 2420.56,
@@ -48613,8 +48453,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2672.16,
-      "endTime": 2682.0,
-      "text": "too. I'm very excited about those prospects for exactly the reasons you alluded to. It would be so nice to be able to eat meat without harming",
+      "endTime": 2726.72,
+      "text": "too. I'm very excited about those prospects for exactly the reasons you alluded to. It would be so nice to be able to eat meat without harming any sentient creature. And just in case you had any claims around sentience, I want to Tell you one last story. I think we are overrunning the time of this episode, but uh there were recent scientific experiments where uh the lowest creature you can think of, a fruit fly. Uh, fruit flies were exposed to the sight of dead fruit flies. Okay, that's all. So think of it as an intellectual and the moral injury of seeing a dead fruit fly being seen by a fruit fly. And this had an adverse impact on their lifespan. So The mind goes all the way down to flies. So you mean fruit flies",
       "words": [
         {
           "word": "too.",
@@ -48777,15 +48617,7 @@
           "startTime": 2681.44,
           "endTime": 2682.0,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2682.0,
-      "endTime": 2685.34,
-      "text": "any sentient creature. And",
-      "words": [
+        },
         {
           "word": "any",
           "startTime": 2682.0,
@@ -48809,15 +48641,7 @@
           "startTime": 2683.84,
           "endTime": 2685.34,
           "confidence": 0.9845
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2685.44,
-      "endTime": 2707.65,
-      "text": "just in case you had any claims around sentience, I want to Tell you one last story. I think we are overrunning the time of this episode, but uh there were recent scientific experiments where uh the lowest creature you can think of, a fruit fly. Uh, fruit flies were exposed to the sight of dead fruit",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 2685.44,
@@ -49159,15 +48983,7 @@
           "startTime": 2707.17,
           "endTime": 2707.65,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2707.65,
-      "endTime": 2709.65,
-      "text": "flies. Okay,",
-      "words": [
+        },
         {
           "word": "flies.",
           "startTime": 2707.65,
@@ -49179,15 +48995,7 @@
           "startTime": 2709.17,
           "endTime": 2709.65,
           "confidence": 0.8732
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2709.65,
-      "endTime": 2726.32,
-      "text": "that's all. So think of it as an intellectual and the moral injury of seeing a dead fruit fly being seen by a fruit fly. And this had an adverse impact on their lifespan. So The mind goes all the way down to flies. So you mean fruit",
-      "words": [
+        },
         {
           "word": "that's",
           "startTime": 2709.65,
@@ -49475,21 +49283,21 @@
           "startTime": 2726.0,
           "endTime": 2726.32,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2726.32,
-      "endTime": 2732.48,
-      "text": "flies that saw dead fruit flies had shorter lifespan had shorter lifespans and fruit flies which didn't see red fruit flies.",
-      "words": [
+        },
         {
           "word": "flies",
           "startTime": 2726.32,
           "endTime": 2726.72,
           "confidence": 0.9722
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2726.72,
+      "endTime": 2732.8,
+      "text": "that saw dead fruit flies had shorter lifespan had shorter lifespans and fruit flies which didn't see red fruit flies. So you",
+      "words": [
         {
           "word": "that",
           "startTime": 2726.72,
@@ -49609,15 +49417,7 @@
           "startTime": 2732.0,
           "endTime": 2732.48,
           "confidence": 0.8229
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2732.48,
-      "endTime": 2755.76,
-      "text": "So you know, we are human, we think that of course there is a moral injury involved in seeing a person who has died, or imagine being on a battlefield where many people have died. It's not just us, it is other mammals, it is birds, and it is all the way down to fruit flies. So I think that If we were given a better opportunity to respect all life and uh have artificial meat, I think that would",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2732.48,
@@ -49629,7 +49429,15 @@
           "startTime": 2732.72,
           "endTime": 2732.8,
           "confidence": 0.854
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2732.8,
+      "endTime": 2755.92,
+      "text": "know, we are human, we think that of course there is a moral injury involved in seeing a person who has died, or imagine being on a battlefield where many people have died. It's not just us, it is other mammals, it is birds, and it is all the way down to fruit flies. So I think that If we were given a better opportunity to respect all life and uh have artificial meat, I think that would be a",
+      "words": [
         {
           "word": "know,",
           "startTime": 2732.8,
@@ -50097,15 +49905,7 @@
           "startTime": 2755.6,
           "endTime": 2755.76,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2755.76,
-      "endTime": 2776.42,
-      "text": "be a delight. I think that's a great note to end the show on. Thank you for watching. You know, subscribe and like. I forgot to say it in the previous episodes, but if you're a YouTuber, you're supposed to say that. So subscribe and like. I apologize for what my producer tells me is a resting pout face and something must be done about it. So I hope you like my charming smile now. And we'll see you next week. Uh thank you for watching.",
-      "words": [
+        },
         {
           "word": "be",
           "startTime": 2755.76,
@@ -50117,7 +49917,15 @@
           "startTime": 2755.84,
           "endTime": 2755.92,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2755.92,
+      "endTime": 2791.89,
+      "text": "delight. I think that's a great note to end the show on. Thank you for watching. You know, subscribe and like. I forgot to say it in the previous episodes, but if you're a YouTuber, you're supposed to say that. So subscribe and like. I apologize for what my producer tells me is a resting pout face and something must be done about it. So I hope you like my charming smile now. And we'll see you next week. Uh thank you for watching. Thank you for listening. Reminder, this is the audio version of Everything Is Everything. The show is a video show, there are sometimes visuals that help you appreciate the content better, but mostly the audio is enough. But please please please do subscribe to us on YouTube also.",
+      "words": [
         {
           "word": "delight.",
           "startTime": 2755.92,
@@ -50621,15 +50429,7 @@
           "startTime": 2775.92,
           "endTime": 2776.42,
           "confidence": 0.9942
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2778.04,
-      "endTime": 2780.68,
-      "text": "Thank you for listening. Reminder, this is the audio",
-      "words": [
+        },
         {
           "word": "Thank",
           "startTime": 2778.04,
@@ -50683,15 +50483,7 @@
           "startTime": 2780.28,
           "endTime": 2780.68,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2780.68,
-      "endTime": 2788.44,
-      "text": "version of Everything Is Everything. The show is a video show, there are sometimes visuals that help you appreciate the content better, but mostly the audio is enough.",
-      "words": [
+        },
         {
           "word": "version",
           "startTime": 2780.68,
@@ -50859,15 +50651,7 @@
           "startTime": 2787.96,
           "endTime": 2788.44,
           "confidence": 0.9642
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2788.44,
-      "endTime": 2789.96,
-      "text": "But please please please do",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 2788.44,
@@ -50897,15 +50681,7 @@
           "startTime": 2789.72,
           "endTime": 2789.96,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2789.96,
-      "endTime": 2791.89,
-      "text": "subscribe to us on YouTube also.",
-      "words": [
+        },
         {
           "word": "subscribe",
           "startTime": 2789.96,

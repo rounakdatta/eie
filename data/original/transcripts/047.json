@@ -5,7 +5,7 @@
     "durationSeconds": 4857,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -349,8 +349,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 35.88,
-      "endTime": 170.52,
-      "text": "So it's not so much a dangerous idea, but it's it's a it's an interesting idea which I hadn't thought about before. Now uh it struck me this idea the the the thought that I'm gonna share struck me while I was researching for my episode with the great economist Land Pichett, released on the scene and the unseen um a few days ago. And uh he's just such a great man that I no amount of time would have done it justice, but I did my best. But while researching for that, uh I c uh I sort of came across a strand of thinking which is not something I think he explicitly stated, but when I was looking at the history of how States evolved and cities, uh the thought struck me that actually, you know, when we think about city governments, We think that there is a nation state that has a government and then they give power to various units under them, and that's a city government right there. But actually city governments and nation state governments evolved in a very different way. A nation state evolved in a very top down coercive kind of way. Where the idea is that you form a nation state, your immediate priority as a state is number one, you need tax revenues to govern, so you take that, and number two, you need conscription for the army because you're always fighting wars back in the old days. So it's basically people and their money and that's a whole thing and you don't actually have to do anything in return beyond the point. Where if you look at city states, city governments evolve in a bottom up kind of way. You know, we live together in a particular place. If the two of us are living together, it's not a big deal. Our family is not a big deal, but once you go beyond a certain size, there is an organic need for order. There is an organic need for perhaps rule of law or basic services. And that's how the city state comes into being. So it is by its nature much more responsive, much more nimble, and uh b you know, so it these are separate sort of evolutions. And what we have kind of landed up uh in India with is essentially just the you know, the larger coercive superstructure of the nation state with no concept of what a truly responsive government is. Because it's we've never been allowed to evolve from the bottom up in modern times, you know? And uh and I I I think that frame made me think, you know, look at things differently, look at in fact federalism differently as",
+      "endTime": 171.16,
+      "text": "So it's not so much a dangerous idea, but it's it's a it's an interesting idea which I hadn't thought about before. Now uh it struck me this idea the the the thought that I'm gonna share struck me while I was researching for my episode with the great economist Land Pichett, released on the scene and the unseen um a few days ago. And uh he's just such a great man that I no amount of time would have done it justice, but I did my best. But while researching for that, uh I c uh I sort of came across a strand of thinking which is not something I think he explicitly stated, but when I was looking at the history of how States evolved and cities, uh the thought struck me that actually, you know, when we think about city governments, We think that there is a nation state that has a government and then they give power to various units under them, and that's a city government right there. But actually city governments and nation state governments evolved in a very different way. A nation state evolved in a very top down coercive kind of way. Where the idea is that you form a nation state, your immediate priority as a state is number one, you need tax revenues to govern, so you take that, and number two, you need conscription for the army because you're always fighting wars back in the old days. So it's basically people and their money and that's a whole thing and you don't actually have to do anything in return beyond the point. Where if you look at city states, city governments evolve in a bottom up kind of way. You know, we live together in a particular place. If the two of us are living together, it's not a big deal. Our family is not a big deal, but once you go beyond a certain size, there is an organic need for order. There is an organic need for perhaps rule of law or basic services. And that's how the city state comes into being. So it is by its nature much more responsive, much more nimble, and uh b you know, so it these are separate sort of evolutions. And what we have kind of landed up uh in India with is essentially just the you know, the larger coercive superstructure of the nation state with no concept of what a truly responsive government is. Because it's we've never been allowed to evolve from the bottom up in modern times, you know? And uh and I I I think that frame made me think, you know, look at things differently, look at in fact federalism differently as well.",
       "words": [
         {
           "word": "So",
@@ -3105,21 +3105,21 @@
           "startTime": 170.36,
           "endTime": 170.52,
           "confidence": 0.9983
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 170.52,
-      "endTime": 208.18,
-      "text": "well. We in India are too used to thinking of a centralisation worldview, that there is New Delhi and the power is concentrated in New Delhi. And this, you know, reflects uh the empires of old, it reflects the way the British behaved, and uh we've carried forward too much of that package and of great importance in the journey of India is to rethink this and find a different intellectual package on how to think about the Indian state and how to think about decentralization.",
-      "words": [
+        },
         {
           "word": "well.",
           "startTime": 170.52,
           "endTime": 171.16,
           "confidence": 0.9758
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 171.16,
+      "endTime": 208.18,
+      "text": "We in India are too used to thinking of a centralisation worldview, that there is New Delhi and the power is concentrated in New Delhi. And this, you know, reflects uh the empires of old, it reflects the way the British behaved, and uh we've carried forward too much of that package and of great importance in the journey of India is to rethink this and find a different intellectual package on how to think about the Indian state and how to think about decentralization.",
+      "words": [
         {
           "word": "We",
           "startTime": 171.16,
@@ -4933,10 +4933,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 281.65,
-      "endTime": 283.17,
-      "text": "So Ajay let's let's start",
+      "endTime": 298.49,
+      "text": "So Ajay let's let's start by laying the ground uh you know as the title of the episode indicates we want to talk about decentralization and it's important today everyone keeps paying uh lip service to it and the remarkable thing is if there is any place in the world that needs decentralization it is really India. So you know explain why.",
       "words": [
         {
           "word": "So",
@@ -4967,15 +4967,7 @@
           "startTime": 283.01,
           "endTime": 283.17,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 283.17,
-      "endTime": 298.49,
-      "text": "by laying the ground uh you know as the title of the episode indicates we want to talk about decentralization and it's important today everyone keeps paying uh lip service to it and the remarkable thing is if there is any place in the world that needs decentralization it is really India. So you know explain why.",
-      "words": [
+        },
         {
           "word": "by",
           "startTime": 283.17,
@@ -8535,8 +8527,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 516.61,
-      "endTime": 777.22,
-      "text": "So I want to come at that uh from two different angles, but first and aside, that I love that metric about uh you know how many women own mobile phones. A few years back I did an episode of the scene in the on scene with uh Devikha, Nidhi Gupta and Hamsini Haryyaran called Metrics of Empowerment, where we sat down together and tried to discuss that what are the unconventional metrics by which we can talk about whether women in India are more empowered or not. Like my starting metric for that, and I wrote a controversial column on it more than a decade ago. Because my point was that rising divorce rates means more m women are getting empowered and have the agency and perhaps the independents to walk away from bad marriages. So I thought, you know, so other people will bemoan it and say, Oh, we are getting like the West. I thought that is a phenomenal indicator and we need more of that. And uh uh B three women like phenomenal thinkers, all of them came up with a whole bunch of interesting ones. You know, one I remember off the top of my head was that who orders a groceries in the house, is it the man or the woman? So there are really interesting uh uh sort of areas that you can look at there. Now I want to sort of underscore what you said in two ways. One is to talk about that disparity, I want to also look at some conventional metrics and mention these disparities. Now the next two figures I got from Neila Kantanaris' book North versus South, he's run an episode of the scene and the unseen with me. Disparity one life expectancy, right? So Kerella has a life expectancy of seventy five. which is really high, which is essentially like Argentina and Thailand it's pretty good. Whereas uh UP has a life expectancy of eleven years less, sixty four years old. Sixty four years is you know and and and that's what you would expect from Liberia, Ethiopia and Haiti. Right. So you have Argentina, uh Thailand on the one hand, and Liberia and Ethiopia on the other hand, seventy five and sixty five. The other figure is infant mortality rates, which is truly startling. Where India's uh best performing state in that regard is Kerala with an infant mortality rate of seven, seven kids per thousand. And uh the lower the better, obviously, uh for my gentle uh readers who may not know you know know what this number is. So Kerala is seven, the USA is six. Right. So Kerala is that good. Uh you know, Tamil Nadu is second at fifteen, you have a bunch of middling states like Punjab, Maharashtra nineteen twenty. Madhya Pradesh is forty eight. Right? So you have Kerala at seven and you have Madhya Pradesh at forty eight, which is which just completely blows my mind. The other dimension at which I want to come to is something that uh I first learnt about in the third of four episodes I recorded with our mutual friend Kartik Mulli Tharan, and I'm sure he has his data in his book as well, which is just out. And It's about the size of the Indian states. We take it for granted, we don't realise how freaking big they are. Right? So has has fifteen of uh the the fifteen biggest Indian states would all be among uh the world's top forty two countries by population, right? Uttar Pradesh, Ajay, Uttar Pradesh and this I calculated myself, so forgive me if I'm wrong by a hundred thousand or so. Uttar Pradesh is the size of France, Germany, Italy and Spain combined. Right, it is that big. Karthik points out that we you know, you spoke of hundred uh homogenous region. Karthik just looks at the seven hundred districts and he points out that the average district is bigger than eighty five countries in the world today. So that is a governance challenge which you face, you know? And those eighty five countries hopefully would all say we demand democracy. A district actually cannot have democracy by definition because everything is so uh centralized. And the governance challenge is mind blowing. You know, the it's what b Uttar Pradesh is as uh g that blows my mind. France, Germany, Spain, Italy. And I'm saying oh one state government ever. It is it is a mind blowing challenge. And so no wonder so many things go wrong. So you know, uh th these are incredible figures. So, Ajay, I have a question for you therefore. You know, we've established the heterogeneity, we've established the diversity, and we've established the freaking incredible size. How do we think about governance in this regard? What are the implications? How do we, you know, d uh think of the role of the state, what should be done at a central level, state level, city level?",
+      "endTime": 777.54,
+      "text": "So I want to come at that uh from two different angles, but first and aside, that I love that metric about uh you know how many women own mobile phones. A few years back I did an episode of the scene in the on scene with uh Devikha, Nidhi Gupta and Hamsini Haryyaran called Metrics of Empowerment, where we sat down together and tried to discuss that what are the unconventional metrics by which we can talk about whether women in India are more empowered or not. Like my starting metric for that, and I wrote a controversial column on it more than a decade ago. Because my point was that rising divorce rates means more m women are getting empowered and have the agency and perhaps the independents to walk away from bad marriages. So I thought, you know, so other people will bemoan it and say, Oh, we are getting like the West. I thought that is a phenomenal indicator and we need more of that. And uh uh B three women like phenomenal thinkers, all of them came up with a whole bunch of interesting ones. You know, one I remember off the top of my head was that who orders a groceries in the house, is it the man or the woman? So there are really interesting uh uh sort of areas that you can look at there. Now I want to sort of underscore what you said in two ways. One is to talk about that disparity, I want to also look at some conventional metrics and mention these disparities. Now the next two figures I got from Neila Kantanaris' book North versus South, he's run an episode of the scene and the unseen with me. Disparity one life expectancy, right? So Kerella has a life expectancy of seventy five. which is really high, which is essentially like Argentina and Thailand it's pretty good. Whereas uh UP has a life expectancy of eleven years less, sixty four years old. Sixty four years is you know and and and that's what you would expect from Liberia, Ethiopia and Haiti. Right. So you have Argentina, uh Thailand on the one hand, and Liberia and Ethiopia on the other hand, seventy five and sixty five. The other figure is infant mortality rates, which is truly startling. Where India's uh best performing state in that regard is Kerala with an infant mortality rate of seven, seven kids per thousand. And uh the lower the better, obviously, uh for my gentle uh readers who may not know you know know what this number is. So Kerala is seven, the USA is six. Right. So Kerala is that good. Uh you know, Tamil Nadu is second at fifteen, you have a bunch of middling states like Punjab, Maharashtra nineteen twenty. Madhya Pradesh is forty eight. Right? So you have Kerala at seven and you have Madhya Pradesh at forty eight, which is which just completely blows my mind. The other dimension at which I want to come to is something that uh I first learnt about in the third of four episodes I recorded with our mutual friend Kartik Mulli Tharan, and I'm sure he has his data in his book as well, which is just out. And It's about the size of the Indian states. We take it for granted, we don't realise how freaking big they are. Right? So has has fifteen of uh the the fifteen biggest Indian states would all be among uh the world's top forty two countries by population, right? Uttar Pradesh, Ajay, Uttar Pradesh and this I calculated myself, so forgive me if I'm wrong by a hundred thousand or so. Uttar Pradesh is the size of France, Germany, Italy and Spain combined. Right, it is that big. Karthik points out that we you know, you spoke of hundred uh homogenous region. Karthik just looks at the seven hundred districts and he points out that the average district is bigger than eighty five countries in the world today. So that is a governance challenge which you face, you know? And those eighty five countries hopefully would all say we demand democracy. A district actually cannot have democracy by definition because everything is so uh centralized. And the governance challenge is mind blowing. You know, the it's what b Uttar Pradesh is as uh g that blows my mind. France, Germany, Spain, Italy. And I'm saying oh one state government ever. It is it is a mind blowing challenge. And so no wonder so many things go wrong. So you know, uh th these are incredible figures. So, Ajay, I have a question for you therefore. You know, we've established the heterogeneity, we've established the diversity, and we've established the freaking incredible size. How do we think about governance in this regard? What are the implications? How do we, you know, d uh think of the role of the state, what should be done at a central level, state level, city level? Uh",
       "words": [
         {
           "word": "So",
@@ -13565,21 +13557,21 @@
           "startTime": 775.86,
           "endTime": 777.22,
           "confidence": 0.8074
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 777.22,
-      "endTime": 889.2,
-      "text": "Uh there are two questions that change quite a bit when you grapple with this level of heterogeneity and you take this heterogeneity seriously. Uh the first question is what should the state do? What are the problems, what are the public goods where uh you might like to use state power? And then these answers will vary greatly depending on where you are. So if you are in uh North India, maybe air quality is a very big deal. If uh you are in Kerala, maybe climate change and the rising waters and the new phenomenon of Arabian Sea cyclones. which are tearing away at the coastline. That's a big problem. So you know different places are different and they each have their own problems. So that's the first idea that what are the questions where a public goods response is called for will vary depending on where you are. The second line of attack is how you might choose to do something would vary greatly based on where you are because the government is supposed to produce some public goods and get some things done. But the management details, the mechanics about how that will be done should vary greatly based on the local conditions. So what technologies can be used, what um uh organization designs would be appropriate. Right away I want to open up a great black box which is wages. Okay, we have a mad idea in India that all civil servants in India essentially paid the same. Now what sense does this make? This is a widely heterogeneous country. The wages should reflect local conditions. A civil servant in Bombay should get paid more than a civil servant living in Calcutta. Don't you think, uh Amit, that reflecting the poverty of Calcutta, we should be doing things differently.",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 777.22,
           "endTime": 777.54,
           "confidence": 0.7826
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 777.54,
+      "endTime": 889.2,
+      "text": "there are two questions that change quite a bit when you grapple with this level of heterogeneity and you take this heterogeneity seriously. Uh the first question is what should the state do? What are the problems, what are the public goods where uh you might like to use state power? And then these answers will vary greatly depending on where you are. So if you are in uh North India, maybe air quality is a very big deal. If uh you are in Kerala, maybe climate change and the rising waters and the new phenomenon of Arabian Sea cyclones. which are tearing away at the coastline. That's a big problem. So you know different places are different and they each have their own problems. So that's the first idea that what are the questions where a public goods response is called for will vary depending on where you are. The second line of attack is how you might choose to do something would vary greatly based on where you are because the government is supposed to produce some public goods and get some things done. But the management details, the mechanics about how that will be done should vary greatly based on the local conditions. So what technologies can be used, what um uh organization designs would be appropriate. Right away I want to open up a great black box which is wages. Okay, we have a mad idea in India that all civil servants in India essentially paid the same. Now what sense does this make? This is a widely heterogeneous country. The wages should reflect local conditions. A civil servant in Bombay should get paid more than a civil servant living in Calcutta. Don't you think, uh Amit, that reflecting the poverty of Calcutta, we should be doing things differently.",
+      "words": [
         {
           "word": "there",
           "startTime": 777.54,
@@ -19357,8 +19349,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1105.6,
-      "endTime": 1204.36,
-      "text": "And and as I was saying disparity in the local capabilities and the local mechanisms. Uh I want to tell two stories around Kerala. Uh at the time of the pandemic, Kerala had a head start. There were uh Malayali students studying in China and they came back home and they brought back COVID. So Kerala actually was grappling with the first surge of COVID before almost anybody else in India. And Kerala has significant capabilities in their health system. So they they were up and running figuring out quarantines and uh isolation and a whole bunch a bag of techniques on how to deal with the early stages of COVID. And uh for some time the Union government tried to do absolutely nothing. And then the Union government started announcing these complete lockdowns that were going to apply across the entire country. And so on. All through that period, there was a very legitimate pushback from Kerala health authorities saying hang on, we know what we are doing. We know what to do. Don't tell us what to do. We are probably three steps ahead of you talking back to the union. We are probably three steps ahead of you in terms of figuring this thing out and knowing what to do. And it was a very vivid example where there was capability in parts of India and you know, it made no sense for New Delhi to instruct everybody on what is to be done. And I have a favorite anecdote which is about uh the time when Susan Thomas was bitten by a dog. Okay, so Susan was bitten by a dog and uh a series of wonderful things happened.",
+      "endTime": 1373.06,
+      "text": "And and as I was saying disparity in the local capabilities and the local mechanisms. Uh I want to tell two stories around Kerala. Uh at the time of the pandemic, Kerala had a head start. There were uh Malayali students studying in China and they came back home and they brought back COVID. So Kerala actually was grappling with the first surge of COVID before almost anybody else in India. And Kerala has significant capabilities in their health system. So they they were up and running figuring out quarantines and uh isolation and a whole bunch a bag of techniques on how to deal with the early stages of COVID. And uh for some time the Union government tried to do absolutely nothing. And then the Union government started announcing these complete lockdowns that were going to apply across the entire country. And so on. All through that period, there was a very legitimate pushback from Kerala health authorities saying hang on, we know what we are doing. We know what to do. Don't tell us what to do. We are probably three steps ahead of you talking back to the union. We are probably three steps ahead of you in terms of figuring this thing out and knowing what to do. And it was a very vivid example where there was capability in parts of India and you know, it made no sense for New Delhi to instruct everybody on what is to be done. And I have a favorite anecdote which is about uh the time when Susan Thomas was bitten by a dog. Okay, so Susan was bitten by a dog and uh a series of wonderful things happened. Okay? Starting with the biting. Well the biting. Um Susan will always apologize that it was her fault. So the dog bit her and she says, I was troubling the dog. So I mean it is fair that the dog bit me. You know, Susan has like very high standards for good behavior. So uh the story starts at uh Susan irritating the dog and the dog bit her. Uh so here's the list of surprises. So surprise number one, the family members took her to a government clinic. Okay so now in most parts of India, people like us would not do that. People like us would go to a private establishment uh in Kerala. There was no friction. It was considered the obvious thing to do that yeah, you'll go to a government clinic. Okay. And then surprise number uh two, the doctor at the government clinic was there. The facility was not vacant and he was smart and competent and sensible. So, he asked the correct questions. He said, Uh, is it a family dog? Yes, it is a family dog. Is the dog around at home and is he fine? Yes, he is fine. Will the dog be under observation? Yes, he will be under observation. Okay. If so, I'll give you a little bit of antiseptic and you go home. And why is that? Because if the dog has rabies, the dog will collapse and go crazy first. That time we start the Rebe's vaccinations for the human. Okay, now this is the correct diagnostic pathway. These are the correct set of questions and this is the correct conclusion. Now most doctors in India, private or public, would respond to a dog bite by saying we will blast Rebbe's vaccination. And this was such a nice experience where the person did the right thing. Now this is a civil servant in Kerala. doing all these things. In the rest of India, in most states, this is unimaginable, you know, starting with the family would not think to take a person to a government facility, the government facility will most likely be vacant. Or there will be a low quality hack who will not know his or her way and they will just blast nine injections without little bit of knowledge and care about what is rabies. So this is again a story that reminds us about the immense diversity of India and then you should not have a one size fits all. That what you think about state has to vary with that. That I may be uh radical in my views on the health system, but I respect what Kerala has in a government run health system. And most of India the government run healthcare system is horrible and you know you you really want to do radical changes there. But in Kerala we respect the capabilities that they have. And",
       "words": [
         {
           "word": "And",
@@ -21057,15 +21049,7 @@
           "startTime": 1203.72,
           "endTime": 1204.36,
           "confidence": 0.9508
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1204.36,
-      "endTime": 1206.52,
-      "text": "Okay? Starting with the biting.",
-      "words": [
+        },
         {
           "word": "Okay?",
           "startTime": 1204.36,
@@ -21095,15 +21079,7 @@
           "startTime": 1205.88,
           "endTime": 1206.52,
           "confidence": 0.9214
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1206.52,
-      "endTime": 1373.06,
-      "text": "Well the biting. Um Susan will always apologize that it was her fault. So the dog bit her and she says, I was troubling the dog. So I mean it is fair that the dog bit me. You know, Susan has like very high standards for good behavior. So uh the story starts at uh Susan irritating the dog and the dog bit her. Uh so here's the list of surprises. So surprise number one, the family members took her to a government clinic. Okay so now in most parts of India, people like us would not do that. People like us would go to a private establishment uh in Kerala. There was no friction. It was considered the obvious thing to do that yeah, you'll go to a government clinic. Okay. And then surprise number uh two, the doctor at the government clinic was there. The facility was not vacant and he was smart and competent and sensible. So, he asked the correct questions. He said, Uh, is it a family dog? Yes, it is a family dog. Is the dog around at home and is he fine? Yes, he is fine. Will the dog be under observation? Yes, he will be under observation. Okay. If so, I'll give you a little bit of antiseptic and you go home. And why is that? Because if the dog has rabies, the dog will collapse and go crazy first. That time we start the Rebe's vaccinations for the human. Okay, now this is the correct diagnostic pathway. These are the correct set of questions and this is the correct conclusion. Now most doctors in India, private or public, would respond to a dog bite by saying we will blast Rebbe's vaccination. And this was such a nice experience where the person did the right thing. Now this is a civil servant in Kerala. doing all these things. In the rest of India, in most states, this is unimaginable, you know, starting with the family would not think to take a person to a government facility, the government facility will most likely be vacant. Or there will be a low quality hack who will not know his or her way and they will just blast nine injections without little bit of knowledge and care about what is rabies. So this is again a story that reminds us about the immense diversity of India and then you should not have a one size fits all. That what you think about state has to vary with that. That I may be uh radical in my views on the health system, but I respect what Kerala has in a government run health system. And most of India the government run healthcare system is horrible and you know you you really want to do radical changes there. But in Kerala we respect the capabilities that they have. And",
-      "words": [
+        },
         {
           "word": "Well",
           "startTime": 1206.52,
@@ -24001,8 +23977,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1373.06,
-      "endTime": 1500.36,
-      "text": "perhaps a subject for another day, but the excellent governance culture in Kerala actually predates independence and it goes back uh uh you know, decades if not uh centuries. So i i it's not just something that uh, you know, post independent phenomenon, but it it kind of predates that and that's interesting. And an aside, not related to cities or decentralization, but you mentioned that doctor and the excellent treatment that he gave, that I have done an episode of the scene in the unseen with uh our mutual friend Lancelot Pinto, who is one of the great doctors in this country. And uh b you know, and b part of it was about how do you treat Covid. And his funda and he treated me when I got COVID twice. And his funda was that do not over medicate. A lot of the deaths were happening because of over medication and patients would be demanding. They would say neighborhood, and uh the over medication would cause her immune system to overreact and a week later they'd be gone because of that, not because of Covid. Right, and this was happening and b Lanclaw to me was boss Amit? Just it start with a paracetamol, right? And you take it step by step. And I never had to take anything other than paracetamol and cough syrup. And of course I was lucky it wasn't so severe, but it was a structured approach and not play by the book, which is especially courageous because playing by the book is a safe thing to do. You know? Even patients you treat correctly, random things will happen and they could pop off and then they'll blame you upne the wine ear. So, you know, just an uh delightful aside. So, Ajay, my question to you is that how do we learn from history in the sense that there are other large countries like the USA, like the European Union, it's not a country but it's, you know, face many of these challenges have also dealt with um you know heterogeneity and also are deeply federalist in nature. In fact for the USA it is as much a part of the DNA as a respect for individual freedom is quite beautiful. Uh so how how how do we use those lessons and how do we think about our challenge because I don't think there is any uh challenge at this scale when you consider the crazy heterogeneity and the sizes involved.",
+      "endTime": 1499.16,
+      "text": "perhaps a subject for another day, but the excellent governance culture in Kerala actually predates independence and it goes back uh uh you know, decades if not uh centuries. So i i it's not just something that uh, you know, post independent phenomenon, but it it kind of predates that and that's interesting. And an aside, not related to cities or decentralization, but you mentioned that doctor and the excellent treatment that he gave, that I have done an episode of the scene in the unseen with uh our mutual friend Lancelot Pinto, who is one of the great doctors in this country. And uh b you know, and b part of it was about how do you treat Covid. And his funda and he treated me when I got COVID twice. And his funda was that do not over medicate. A lot of the deaths were happening because of over medication and patients would be demanding. They would say neighborhood, and uh the over medication would cause her immune system to overreact and a week later they'd be gone because of that, not because of Covid. Right, and this was happening and b Lanclaw to me was boss Amit? Just it start with a paracetamol, right? And you take it step by step. And I never had to take anything other than paracetamol and cough syrup. And of course I was lucky it wasn't so severe, but it was a structured approach and not play by the book, which is especially courageous because playing by the book is a safe thing to do. You know? Even patients you treat correctly, random things will happen and they could pop off and then they'll blame you upne the wine ear. So, you know, just an uh delightful aside. So, Ajay, my question to you is that how do we learn from history in the sense that there are other large countries like the USA, like the European Union, it's not a country but it's, you know, face many of these challenges have also dealt with um you know heterogeneity and also are deeply federalist in nature. In fact for the USA it is as much a part of the DNA as a respect for individual freedom is quite beautiful. Uh so how how how do we use those lessons and how do we think about our challenge because I don't think there is any uh challenge at this scale when you consider the crazy heterogeneity and the sizes",
       "words": [
         {
           "word": "perhaps",
@@ -26505,21 +26481,21 @@
           "startTime": 1498.68,
           "endTime": 1499.16,
           "confidence": 0.9995
-        },
-        {
-          "word": "involved.",
-          "startTime": 1499.16,
-          "endTime": 1500.36,
-          "confidence": 0.8414
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1500.36,
-      "endTime": 1523.01,
-      "text": "Uh these uh debates have actually taken place all over the world. So this uh problem of highly heterogeneous India is not new and it has been dealt elsewhere. Uh and the main answer is through more decentralization. And there is a sweet term which is used which is a federalist approach. Federalism and a federalist approach is what works better",
+      "startTime": 1499.16,
+      "endTime": 1603.41,
+      "text": "involved. Uh these uh debates have actually taken place all over the world. So this uh problem of highly heterogeneous India is not new and it has been dealt elsewhere. Uh and the main answer is through more decentralization. And there is a sweet term which is used which is a federalist approach. Federalism and a federalist approach is what works better and you basically devolve power down. Um you you you said the European Union is not a country. It's actually a very conscious set of design choices around these kinds of questions. Where the idea is that in the European Union you will together certain things that should be done at a Europe scale and you will decentralize others where there is a legitimate case for local preferences. So personal law in Portugal, in Spain, it reflects more of Catholic religious thinking, whereas personal law in Northern Europe uh are more like uh atheistic, modern secular people. And so they respect that heterogeneity within the country, within the countries. And uh each country goes its own way while having uh many common structures. And remember, for example, they have the European Central Bank, which is a common currency, the Euro, not exactly the same as the European Union, but still that is an example of where something is brought together because it makes sense to bring it together. Similarly, the the problem of national defense has been brought together into NATO and uh you don't have to have the same solution for everything. So we we will go by each issue and that is actually the design philosophy that we will apply. While I'm on this subject I cannot resist talking about",
       "words": [
+        {
+          "word": "involved.",
+          "startTime": 1499.16,
+          "endTime": 1500.36,
+          "confidence": 0.8414
+        },
         {
           "word": "Uh",
           "startTime": 1500.36,
@@ -26885,29 +26861,13 @@
           "startTime": 1522.37,
           "endTime": 1523.01,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1523.01,
-      "endTime": 1523.41,
-      "text": "and",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1523.01,
           "endTime": 1523.41,
           "confidence": 0.9899
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1523.41,
-      "endTime": 1604.53,
-      "text": "you basically devolve power down. Um you you you said the European Union is not a country. It's actually a very conscious set of design choices around these kinds of questions. Where the idea is that in the European Union you will together certain things that should be done at a Europe scale and you will decentralize others where there is a legitimate case for local preferences. So personal law in Portugal, in Spain, it reflects more of Catholic religious thinking, whereas personal law in Northern Europe uh are more like uh atheistic, modern secular people. And so they respect that heterogeneity within the country, within the countries. And uh each country goes its own way while having uh many common structures. And remember, for example, they have the European Central Bank, which is a common currency, the Euro, not exactly the same as the European Union, but still that is an example of where something is brought together because it makes sense to bring it together. Similarly, the the problem of national defense has been brought together into NATO and uh you don't have to have the same solution for everything. So we we will go by each issue and that is actually the design philosophy that we will apply. While I'm on this subject I cannot resist talking about tanks.",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 1523.41,
@@ -28233,21 +28193,21 @@
           "startTime": 1603.17,
           "endTime": 1603.41,
           "confidence": 0.9996
-        },
-        {
-          "word": "tanks.",
-          "startTime": 1603.41,
-          "endTime": 1604.53,
-          "confidence": 0.8482
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1604.53,
+      "startTime": 1603.41,
       "endTime": 1609.25,
-      "text": "You can never resist talking about tanks. Fine Ajaisha one more time let's talk about tanks.",
+      "text": "tanks. You can never resist talking about tanks. Fine Ajaisha one more time let's talk about tanks.",
       "words": [
+        {
+          "word": "tanks.",
+          "startTime": 1603.41,
+          "endTime": 1604.53,
+          "confidence": 0.8482
+        },
         {
           "word": "You",
           "startTime": 1604.53,
@@ -41985,8 +41945,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2341.59,
-      "endTime": 2352.55,
-      "text": "I think I vaguely remember that when Iceland did well in uh uh a previous football world cup or Euro or whatever, I did the calculation and found out that the population of Iceland is equal to Varsova. Yeah,",
+      "endTime": 2352.07,
+      "text": "I think I vaguely remember that when Iceland did well in uh uh a previous football world cup or Euro or whatever, I did the calculation and found out that the population of Iceland is equal to Varsova.",
       "words": [
         {
           "word": "I",
@@ -42215,21 +42175,21 @@
           "startTime": 2351.11,
           "endTime": 2352.07,
           "confidence": 0.8647
-        },
-        {
-          "word": "Yeah,",
-          "startTime": 2352.07,
-          "endTime": 2352.55,
-          "confidence": 0.6058
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 2352.55,
+      "startTime": 2352.07,
       "endTime": 2355.93,
-      "text": "three three hundred thousand or something. And and half of them are fishermen.",
+      "text": "Yeah, three three hundred thousand or something. And and half of them are fishermen.",
       "words": [
+        {
+          "word": "Yeah,",
+          "startTime": 2352.07,
+          "endTime": 2352.55,
+          "confidence": 0.6058
+        },
         {
           "word": "three",
           "startTime": 2352.55,
@@ -53223,8 +53183,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2955.2,
-      "endTime": 2961.92,
-      "text": "called. In fact I have a great episode with Prane Kutasani I think seven years ago where he made the same argument. So seen and the unseen. Yeah.",
+      "endTime": 2961.6,
+      "text": "called. In fact I have a great episode with Prane Kutasani I think seven years ago where he made the same argument. So seen and the unseen.",
       "words": [
         {
           "word": "called.",
@@ -53387,21 +53347,21 @@
           "startTime": 2960.96,
           "endTime": 2961.6,
           "confidence": 0.6407
-        },
-        {
-          "word": "Yeah.",
-          "startTime": 2961.6,
-          "endTime": 2961.92,
-          "confidence": 0.6794
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 2961.92,
+      "startTime": 2961.6,
       "endTime": 3355.53,
-      "text": "So I think there should be no centrally sponsored schemes. And I think the union should vacate the concurrent list. Okay, that is the path to genuine decentralization. But then you get to the problem of the state and the city and the village. Okay. In the old design of the constitution of India, there was just the union and the states, that's all. Okay, and this is really closer to the vision of the Government of India Act of 1935. It is remarkable how much uh plagiarism test would pick up things in the constitution of India that come from the Government of India Act. Much later, there was a greater understanding about the importance of decentralization. Uh when Rajiv Gandhi was prime minister, there was a remarkable moment where uh the INC was politically so strong that they could amend the constitution. And at that time uh many people, most importantly Manishankarayer, uh led the thought that the Indian constitution needs to be amended in favor of a more decentralized vision of government. And thus was introduced the 73rd and the 74th Amendments, which builds a city government and a state and and a village government. Okay? Unfortunately, in my opinion, this did not remotely go far enough. So as an example, a logical extension would be to have a union list and have a state list and have a city list. Okay and I think by the eighties it was time to wake up and say that the concurrent list isn't working. We should just cut the pretense of a collaborative uh agreement between the union and the states on the concurrent list. And we should have had a union list and a state list and a city list, but that was not done. Similarly, there needed to be far more clarity about the resourcing of cities. What was done was that the constitution imagines that there will be a state finance commission, SFC, okay, which is a little version of the finance commission. Supposedly a lot of the principles are to go through where it is supposed to be a neutral body, it is supposed to be an independent body, it is not uh supposed to be beholden or allied to either union or states. Okay. These are what good finance commissions look like. And unfortunately these good features are only in norms and not in laws. So there is always the possibility of a finance commission being set up in ways that are cravenly in favor of the union government because it is a union government that establishes the finance commission. Well, all these problems about the fairness and neutrality of the Finance Commission are what bedevil the state finance commission. Things are so bad in India, there are many states that are in violation of the Constitution and they practically never bother setting up a state finance commission. But when they do, there is low technical capability, they don't have the data sets, they don't have the technical teams And there is not even a pretense of neutrality. So the sharing that happens between a Maharashtra and a Bombay is really, you know, extremely unfair and it has not been done correctly. And these are all the limitations of the 73rd and the 74th Amendment. Now one big change in the taxation environment which happened later and so which was not known to the authors of the 73rd and the 74th Amendment. A very important thing that has happened is the GST. A GST is new in that it is clearly attributable where the transaction took place. So when I uh go and buy a mobile phone from a shop, there is a clear attribution about the location where the consumption event took place, and that is the location of the shop. So you can attribute the location of the shop to a state and to a city. The thinking work that happened on the GST, Dr. Govindrao and others had worked on this earlier, and then Vijay Kelkar, Arbin Modi, and I built a detailed bluprint of the GST as part of the FRBM implementation task force that was set up by Jaswan Singh in 2003. In that we visibly could visualize that There is a city as a subnational unit of government and there is full attributability of every expenditure event to a city. And so there can be a GST slicing that is not just union and state. So imagine hypothetically there is a GST design of a 5% GST for the union and a five percent GST for the state. Okay? This is the sort of thing we had in mind when we were working on the GST. Many things have happened after that. and India has landed up with a bad GST system, one of the world's bad GST systems, but don't get me started ranting on that. Let's stick with the original dream of a single rate GST of about five at the union and five at the States. Now that could equally have been cut up as, you know, perhaps three at the Union and two at the State, and five at the City. Okay? It was it is entirely feasible today. So the GST is an important moment. Where there can be a first class tax revenue pathway that goes to the city and is immune to the institutional problems of the fair play of the finance commission at the level of the union and a finance commission at the level of the state. And currently cities are often like sitting as a supplicant at the end of two groups, and we hope that the two groups will each be fair and sound, and that may or may not be the case. There is a lot of interest in also developing a revenue base at the city through property tax, and that is good and appropriate. I'm all for a property tax that takes place at the city, but the revenue potential is relatively limited. You can't get large amounts of money out of a property tax. So GST for the city is critical. So this is my long-winded explanation. That's a summary of the constitutional arrangement and uh the financing that can go to states and cities.",
+      "text": "Yeah. So I think there should be no centrally sponsored schemes. And I think the union should vacate the concurrent list. Okay, that is the path to genuine decentralization. But then you get to the problem of the state and the city and the village. Okay. In the old design of the constitution of India, there was just the union and the states, that's all. Okay, and this is really closer to the vision of the Government of India Act of 1935. It is remarkable how much uh plagiarism test would pick up things in the constitution of India that come from the Government of India Act. Much later, there was a greater understanding about the importance of decentralization. Uh when Rajiv Gandhi was prime minister, there was a remarkable moment where uh the INC was politically so strong that they could amend the constitution. And at that time uh many people, most importantly Manishankarayer, uh led the thought that the Indian constitution needs to be amended in favor of a more decentralized vision of government. And thus was introduced the 73rd and the 74th Amendments, which builds a city government and a state and and a village government. Okay? Unfortunately, in my opinion, this did not remotely go far enough. So as an example, a logical extension would be to have a union list and have a state list and have a city list. Okay and I think by the eighties it was time to wake up and say that the concurrent list isn't working. We should just cut the pretense of a collaborative uh agreement between the union and the states on the concurrent list. And we should have had a union list and a state list and a city list, but that was not done. Similarly, there needed to be far more clarity about the resourcing of cities. What was done was that the constitution imagines that there will be a state finance commission, SFC, okay, which is a little version of the finance commission. Supposedly a lot of the principles are to go through where it is supposed to be a neutral body, it is supposed to be an independent body, it is not uh supposed to be beholden or allied to either union or states. Okay. These are what good finance commissions look like. And unfortunately these good features are only in norms and not in laws. So there is always the possibility of a finance commission being set up in ways that are cravenly in favor of the union government because it is a union government that establishes the finance commission. Well, all these problems about the fairness and neutrality of the Finance Commission are what bedevil the state finance commission. Things are so bad in India, there are many states that are in violation of the Constitution and they practically never bother setting up a state finance commission. But when they do, there is low technical capability, they don't have the data sets, they don't have the technical teams And there is not even a pretense of neutrality. So the sharing that happens between a Maharashtra and a Bombay is really, you know, extremely unfair and it has not been done correctly. And these are all the limitations of the 73rd and the 74th Amendment. Now one big change in the taxation environment which happened later and so which was not known to the authors of the 73rd and the 74th Amendment. A very important thing that has happened is the GST. A GST is new in that it is clearly attributable where the transaction took place. So when I uh go and buy a mobile phone from a shop, there is a clear attribution about the location where the consumption event took place, and that is the location of the shop. So you can attribute the location of the shop to a state and to a city. The thinking work that happened on the GST, Dr. Govindrao and others had worked on this earlier, and then Vijay Kelkar, Arbin Modi, and I built a detailed bluprint of the GST as part of the FRBM implementation task force that was set up by Jaswan Singh in 2003. In that we visibly could visualize that There is a city as a subnational unit of government and there is full attributability of every expenditure event to a city. And so there can be a GST slicing that is not just union and state. So imagine hypothetically there is a GST design of a 5% GST for the union and a five percent GST for the state. Okay? This is the sort of thing we had in mind when we were working on the GST. Many things have happened after that. and India has landed up with a bad GST system, one of the world's bad GST systems, but don't get me started ranting on that. Let's stick with the original dream of a single rate GST of about five at the union and five at the States. Now that could equally have been cut up as, you know, perhaps three at the Union and two at the State, and five at the City. Okay? It was it is entirely feasible today. So the GST is an important moment. Where there can be a first class tax revenue pathway that goes to the city and is immune to the institutional problems of the fair play of the finance commission at the level of the union and a finance commission at the level of the state. And currently cities are often like sitting as a supplicant at the end of two groups, and we hope that the two groups will each be fair and sound, and that may or may not be the case. There is a lot of interest in also developing a revenue base at the city through property tax, and that is good and appropriate. I'm all for a property tax that takes place at the city, but the revenue potential is relatively limited. You can't get large amounts of money out of a property tax. So GST for the city is critical. So this is my long-winded explanation. That's a summary of the constitutional arrangement and uh the financing that can go to states and cities.",
       "words": [
+        {
+          "word": "Yeah.",
+          "startTime": 2961.6,
+          "endTime": 2961.92,
+          "confidence": 0.6794
+        },
         {
           "word": "So",
           "startTime": 2961.92,
@@ -69213,10 +69173,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "Ajay Shah",
       "startTime": 3890.58,
-      "endTime": 3891.62,
-      "text": "I forgot what was",
+      "endTime": 3900.66,
+      "text": "I forgot what was it? Halfway to coal, halfway to diamonds. Half, halfway from diamond. Yeah. All right. That's a line in a song. What's the line that appears before",
       "words": [
         {
           "word": "I",
@@ -69241,15 +69201,7 @@
           "startTime": 3891.46,
           "endTime": 3891.62,
           "confidence": 0.9722
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3891.62,
-      "endTime": 3900.66,
-      "text": "it? Halfway to coal, halfway to diamonds. Half, halfway from diamond. Yeah. All right. That's a line in a song. What's the line that appears before",
-      "words": [
+        },
         {
           "word": "it?",
           "startTime": 3891.62,
@@ -69425,8 +69377,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3901.78,
-      "endTime": 3903.78,
-      "text": "to tell people kindly explain.",
+      "endTime": 3983.25,
+      "text": "to tell people kindly explain. Dragonfli are busy buzzing me. Dragonflies are busy buzzing me. Right? And that is an incentive. States have to compete for people and revenues. And if people leave, they lose revenues. If people come, they gain revenues. They are always in competition with each other across different margins. The incentives are wonderful. They are trying to make lives better for the people. And m perhaps some wise small states might even be trying to build certain niches which you know for people who don't feel at home in other states. And that whole process of competition playing out leads to what I think of as a virtuous cycle. Everyone's better off, everybody's competing. Equally. My sort of skepticism about the migration in India is that I think the migration is awesome. But I think the incentive is not so strong because the states aren't so empowered because their incentives are not so strong because that tax money anyway, only a tiny chunk of it is coming to them. It doesn't really matter so much. It it goes to the center, a little bit of it is devolved back. There is obviously some incentive that you don't just want everyone to Keep going all the time, but it's not so strong as in America, for example, where it is almost an existential thing and everybody's competing.",
       "words": [
         {
           "word": "to",
@@ -69457,15 +69409,7 @@
           "startTime": 3903.14,
           "endTime": 3903.78,
           "confidence": 0.8305
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3903.78,
-      "endTime": 3905.38,
-      "text": "Dragonfli are busy buzzing",
-      "words": [
+        },
         {
           "word": "Dragonfli",
           "startTime": 3903.78,
@@ -69489,15 +69433,7 @@
           "startTime": 3904.98,
           "endTime": 3905.38,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3905.38,
-      "endTime": 3983.25,
-      "text": "me. Dragonflies are busy buzzing me. Right? And that is an incentive. States have to compete for people and revenues. And if people leave, they lose revenues. If people come, they gain revenues. They are always in competition with each other across different margins. The incentives are wonderful. They are trying to make lives better for the people. And m perhaps some wise small states might even be trying to build certain niches which you know for people who don't feel at home in other states. And that whole process of competition playing out leads to what I think of as a virtuous cycle. Everyone's better off, everybody's competing. Equally. My sort of skepticism about the migration in India is that I think the migration is awesome. But I think the incentive is not so strong because the states aren't so empowered because their incentives are not so strong because that tax money anyway, only a tiny chunk of it is coming to them. It doesn't really matter so much. It it goes to the center, a little bit of it is devolved back. There is obviously some incentive that you don't just want everyone to Keep going all the time, but it's not so strong as in America, for example, where it is almost an existential thing and everybody's competing.",
-      "words": [
+        },
         {
           "word": "me.",
           "startTime": 3905.38,
@@ -78439,8 +78375,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4442.47,
-      "endTime": 4481.56,
-      "text": "That's a brilliant cautionary point. And what I especially like is it shows the dangers of shallow thinking. Like too often what happens is we'll take up a mantra decentralization, how it's good. But beyond that we won't think deeper. Like what I think we need to do is we need to begin with first principles. And then you'll arrive at decentralization. Like why is decentralization good? But if you stick to the first principles and if you look at the data, then you'll realize that okay, you know, the state isn't enough, you got to think about this much more deeply, kind of like uh how you're doing. So, Ajay, this is most depressing. This is a situation we are in. What's the way forward? How do we solve",
+      "endTime": 4482.68,
+      "text": "That's a brilliant cautionary point. And what I especially like is it shows the dangers of shallow thinking. Like too often what happens is we'll take up a mantra decentralization, how it's good. But beyond that we won't think deeper. Like what I think we need to do is we need to begin with first principles. And then you'll arrive at decentralization. Like why is decentralization good? But if you stick to the first principles and if you look at the data, then you'll realize that okay, you know, the state isn't enough, you got to think about this much more deeply, kind of like uh how you're doing. So, Ajay, this is most depressing. This is a situation we are in. What's the way forward? How do we solve this?",
       "words": [
         {
           "word": "That's",
@@ -79221,21 +79157,21 @@
           "startTime": 4481.16,
           "endTime": 4481.56,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4481.56,
-      "endTime": 4636.74,
-      "text": "this? So m many, many ideas here are important and need to be done. So, for example, a slice of the GST going to the city, then a decoupling in our minds of city government from village government. They're two different problems that need to be approached separately, then the political system development at a city and at a state so as to achieve a republic. to have dispersion of power, to have more check and balance. All these things are required. Uh one big piece that is required is that every government, every state, I'm using the state as in government. Every state requires a commensurate intellectual community. You need the data sets, the thinkers, the research papers, the public debate, the criticism. Without that no government ever works well. Otherwise it's just pure political games that, you know, once you strip out the knowledge, it becomes a raw power project and that's not very interesting or useful and it doesn't get good things done. So if you take decentralization seriously, we're going to need to develop a knowledge community at the level of each state and each city. My friends in Janagraha argue that there are many groups of cities which actually are sufficiently similar, sort of like a homogeneous regions argument. There is a group of homogeneous Cities who are much like each other. So, for example, you know, reasonable people will uh agree that Bombay, New Bombay, Thana, okay, are really one group and you don't need to have separate data sets and researchers. You just need to broaden your footprint of the research. It shouldn't be the uh perimeter of the island of Bombay. Okay, so the folks in Janagha argue that there are sixty-three groups of cities in India. And around each of these sixty-three groups of cities, can you create Some amount of shared capabilities. It could be data sets. It could be researchers, it could be research organizations, it could be some amount of shared services doing a variety of municipal things. So these are important ways in which to go. So like you take West Bengal, you know, it would make a lot of sense to maybe have West Bengal as two states or three states, one of which is Calcutta. Calcutta is so vast and so complex. It needs to be a first class state. And that also fits in the Indian constitutional scheme of the finance commission.",
-      "words": [
+        },
         {
           "word": "this?",
           "startTime": 4481.56,
           "endTime": 4482.68,
           "confidence": 0.9363
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4482.68,
+      "endTime": 4636.74,
+      "text": "So m many, many ideas here are important and need to be done. So, for example, a slice of the GST going to the city, then a decoupling in our minds of city government from village government. They're two different problems that need to be approached separately, then the political system development at a city and at a state so as to achieve a republic. to have dispersion of power, to have more check and balance. All these things are required. Uh one big piece that is required is that every government, every state, I'm using the state as in government. Every state requires a commensurate intellectual community. You need the data sets, the thinkers, the research papers, the public debate, the criticism. Without that no government ever works well. Otherwise it's just pure political games that, you know, once you strip out the knowledge, it becomes a raw power project and that's not very interesting or useful and it doesn't get good things done. So if you take decentralization seriously, we're going to need to develop a knowledge community at the level of each state and each city. My friends in Janagraha argue that there are many groups of cities which actually are sufficiently similar, sort of like a homogeneous regions argument. There is a group of homogeneous Cities who are much like each other. So, for example, you know, reasonable people will uh agree that Bombay, New Bombay, Thana, okay, are really one group and you don't need to have separate data sets and researchers. You just need to broaden your footprint of the research. It shouldn't be the uh perimeter of the island of Bombay. Okay, so the folks in Janagha argue that there are sixty-three groups of cities in India. And around each of these sixty-three groups of cities, can you create Some amount of shared capabilities. It could be data sets. It could be researchers, it could be research organizations, it could be some amount of shared services doing a variety of municipal things. So these are important ways in which to go. So like you take West Bengal, you know, it would make a lot of sense to maybe have West Bengal as two states or three states, one of which is Calcutta. Calcutta is so vast and so complex. It needs to be a first class state. And that also fits in the Indian constitutional scheme of the finance commission.",
+      "words": [
         {
           "word": "So",
           "startTime": 4482.68,
@@ -83119,8 +83055,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4727.72,
-      "endTime": 4789.36,
-      "text": "So a couple of the books I would naturally have wanted to recommend, I think we've already recommended before, the there's a power broker by Robert Carrow, and there is Triumph of the City by Ed Laser. But I want to recommend, and I might have recommended this before also, but it's an absolute masterpiece, The Death and Life of Great American Cities by Jane Jacobs. And she's our kind of thinker. She's like, you know, cities evolve bottom up, you need organic growth, you need to respect that cities are people more than anything else, not just buildings and highways. And this is like a fundamental philosophical difference with Robert Moses. who was the main character in K Ros the Power Broker. And uh uh you know, they uh fought a lot about this. So the death and life of great American cities is a must read. Jacobs for me is one of the great thinkers of the twentieth century. We should all read her and again all of us who live in cities literally have skin in the game. So please read Jane Jacobs is my plea. And what about you? What's your recommendation?",
+      "endTime": 4788.16,
+      "text": "So a couple of the books I would naturally have wanted to recommend, I think we've already recommended before, the there's a power broker by Robert Carrow, and there is Triumph of the City by Ed Laser. But I want to recommend, and I might have recommended this before also, but it's an absolute masterpiece, The Death and Life of Great American Cities by Jane Jacobs. And she's our kind of thinker. She's like, you know, cities evolve bottom up, you need organic growth, you need to respect that cities are people more than anything else, not just buildings and highways. And this is like a fundamental philosophical difference with Robert Moses. who was the main character in K Ros the Power Broker. And uh uh you know, they uh fought a lot about this. So the death and life of great American cities is a must read. Jacobs for me is one of the great thinkers of the twentieth century. We should all read her and again all of us who live in cities literally have skin in the game. So please read Jane Jacobs is my plea. And what about you? What's your",
       "words": [
         {
           "word": "So",
@@ -84291,21 +84227,21 @@
           "startTime": 4788.0,
           "endTime": 4788.16,
           "confidence": 0.9997
-        },
-        {
-          "word": "recommendation?",
-          "startTime": 4788.16,
-          "endTime": 4789.36,
-          "confidence": 0.9922
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 4789.36,
+      "startTime": 4788.16,
       "endTime": 4820.42,
-      "text": "Um I'm going to uh reveal a great secret uh to you, gentle reader. Uh that I'm going to recommend a book that is not yet released. Okay. Uh Bimal Patel is a preeminent urban thinker in India. Uh he is a dreamer about town planning. He gets town planning in a way that essentially nobody in India does. And I shall reveal his secret that he's building a book. And when that book comes out you should run, not walk, and you should read that",
+      "text": "recommendation? Um I'm going to uh reveal a great secret uh to you, gentle reader. Uh that I'm going to recommend a book that is not yet released. Okay. Uh Bimal Patel is a preeminent urban thinker in India. Uh he is a dreamer about town planning. He gets town planning in a way that essentially nobody in India does. And I shall reveal his secret that he's building a book. And when that book comes out you should run, not walk, and you should read that",
       "words": [
+        {
+          "word": "recommendation?",
+          "startTime": 4788.16,
+          "endTime": 4789.36,
+          "confidence": 0.9922
+        },
         {
           "word": "Um",
           "startTime": 4789.36,

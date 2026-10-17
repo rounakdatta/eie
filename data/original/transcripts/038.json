@@ -5,7 +5,7 @@
     "durationSeconds": 2078,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -16,8 +16,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 14.42,
-      "endTime": 51.78,
-      "text": "Hello, gentle reader. Welcome to this episode of Everything Is Everything. I know you guys think that we're some dull people that keep trying to feed you one obscure episode after another, but actually we listen to you. So from public demand, we built a Unix episode, and then there's been a whole lot of demand for poker, because one of us is a genius and knows a hell of a lot about poker. Tell us, Amit, how should we Build an episode on poker. Ajay, I object to this. First of all, nobody thinks we're",
+      "endTime": 74.33,
+      "text": "Hello, gentle reader. Welcome to this episode of Everything Is Everything. I know you guys think that we're some dull people that keep trying to feed you one obscure episode after another, but actually we listen to you. So from public demand, we built a Unix episode, and then there's been a whole lot of demand for poker, because one of us is a genius and knows a hell of a lot about poker. Tell us, Amit, how should we Build an episode on poker. Ajay, I object to this. First of all, nobody thinks we're dull people. You know, everybody loves us, at least everybody in the comments seems to love us. Secondly, we're not just doing things on public demand. These are things that we have expressed a passion for in the past. So our gentle readers have said, Hey, do Unix because Ajay loves it, and do poker because Amit loves it. Thirdly. Please remember, the golden rule is that you underpromiver. You are over promising by saying I'm a genius.",
       "words": [
         {
           "word": "Hello,",
@@ -594,15 +594,7 @@
           "startTime": 51.54,
           "endTime": 51.78,
           "confidence": 0.8054
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 51.78,
-      "endTime": 80.11,
-      "text": "dull people. You know, everybody loves us, at least everybody in the comments seems to love us. Secondly, we're not just doing things on public demand. These are things that we have expressed a passion for in the past. So our gentle readers have said, Hey, do Unix because Ajay loves it, and do poker because Amit loves it. Thirdly. Please remember, the golden rule is that you underpromiver. You are over promising by saying I'm a genius. I'm not a genius at all, but I played poker for many years in a very serious way. And I've um uh you know uh",
-      "words": [
+        },
         {
           "word": "dull",
           "startTime": 51.78,
@@ -1070,7 +1062,15 @@
           "startTime": 74.01,
           "endTime": 74.33,
           "confidence": 0.9592
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 74.33,
+      "endTime": 592.53,
+      "text": "I'm not a genius at all, but I played poker for many years in a very serious way. And I've um uh you know uh love the game and also have conflicting thoughts about the game for a bunch of different reasons. But what I've always felt is that the way it's depicted in popular culture and films and all, they completely get it wrong poker is really different. Poker has uh you know, it's of deep intellectual interest. It tests our mind. It's got game theory and mathematics. Uh at the same time it's a great test of character. And at a third level, the reason it f also fascinates me so much, he started taught me many different life lessons. Now these life lessons are something you and I will discuss together at the end of the presentation, but right now, just as you uh prepared a presentation for Unix on popular demand, I've uh you know done a presentation for poker where we'll talk about, you know, I'll start with basic rules because generally when poker players talk to each other, there's so much jargon everyone is lost. So I'll start with basic rules, explain the basic terminology and then go on to uh you know, get a give as deep an understanding of the game as I possibly can in this little uh presentation. So I hope uh dear readers that you enjoy it and I hope you enjoy it, Ajay. Hello, hello, hello, gentle readers. Welcome to the poker episode of Everything Is Everything. I played poker seriously between twenty ten and twenty fifteen and even wrote a regular column on it for the Economic Times. Poker is a game of skill, but the purpose of this video is not for me to show you how to be a good poker player. That's beyond me. It would take a lot of experience and intentional learning on your part. Instead, I want to talk about the basics of how to play poker and then talk about the foundational thought processes that go into the game. This is important because there are life lessons in here. Learning how to play poker can help you think differently about the world and can help you make better decisions in your life. Now that's a grand claim, but this presentation is not grand. There will be no fancy animation, no funky graphics, I'm just gonna give it striped down and I hope the content speaks for itself. So let's go. First up, here's the table of contents. Chapter one is just basic rules, so you follow what I speak about in the rest of the video. This is the mechanics of the most popular version of the game, no limit hold them. After this we'll go over some basic fundas in terms of terminology. In chapter three we'll talk about probabilistic thinking, we'll talk about how it applies to poker and to life also. In chapter four we go beyond probabilistic thinking and look at the role of game theory in poker. Most non players, I promise you will find this chapter eye opening, it will bust many of the myths you might have about the game. Chapter four will teach us that math is everything. Chapter five about the mental game of poker will be about how math isn't everything, and about our mastering the numbers alone cannot help us if we can't master our minds. And in chapter six, I'll end with an important note of caution. So let's start. So in my first chapter I'm gonna take you through the basic rules of No Limit Holdem, the most popular form of the game. I'm gonna keep it quick, as many of you may know it already, and you can easily find more detailed descriptions online. Let's imagine there are nine players at a table. Everyone is playing with a certain amount of money, represented by gambling chips. One of the play has a dealer button in front of him, which shifts to the left with every hand. This is an important detail I'll come back to later. There are two compulsory bets in each hand, the person to the left of the button posts what is known as a small blind, the next person posts a double of that which is known as a big blind. So in a hundred two hundred game, the small blind would put in hundred rupees and the big blind would put in two hundred rupees. The cards are distributed from the seat after the button from the small line to one card at a time, till each player has two hidden cards in front of them. These are known in the terminology as whole cards, and no one else but the player knows what they are. Now how the game proceeds is that over four rounds of betting, five community cards are revealed face up. First you have three cards, they're known as a flop, then you have one card, which is known as a turn, then you have a fifth card, which is known as a river. Each player has to combine their two whole cards which only they can see with the five community cards to create the best five card hand possible. Now here on the screen, you see a hand ranking. I won't go through the details of them, but obviously the higher ranked hands are ranked higher because they occur less frequently. Now let's talk about the betting. Remember that there are two compulsory bets, a small blind and the big blind. After the whole cards are dealt and the players have what they have, the action falls to the player to the left of the big blind who is called under the gun or UTG. He can either fold his hand or call the bet or raise the bet. If he raises it, that raise is what others have to match. Let's say the blinds are hundred and two hundred, the player under the gun makes it thousand. The others after him now have to match thousand. They can also fold or raise. If they raise, the original razor has to match that and so on. If there's more than one player in the hand, the flop opens. There's another round of betting, then the turn, another round of betting, then the river, and a final round of betting. Obviously at every stage players are choosing to make their choices based on how likely they feel they are to have the best hand, or to outplay their opponent. So these are the rules. Let's go on to chapter two now. The first of the basic funders you should be aware of is position. I mentioned the dealer button shifts with every hand. Why is this important? Well it matters because it determines the order in which the players act. The player with the button is the last to act in every hand. This is important because of the informational advantage he has. The later your position in a hand, the more information you have about what the others are doing. This is a big deal. And you can actually play weaker and weaker hands as you get later and later in position. It's a key part of the dynamic of the game. The next basic funder you should be aware of is stack size. How many chips is each person sitting with. So if the blind are hundred, two hundred and you have a stack of twenty thousand, that's equal to a hundred big blinds, which is standard in cash games. This matters and I'll explain why later in this presentation. The third fund I want to talk about is cash games versus tournaments. Stack sizes play a key role in this. In a cash game, the blinds remain the same for as long as you play. You can top up your stack any time you want in between hands, just not during a hand. So in a hundred to hundred game you can sit with twenty thousand and add chips whenever you want, you can sit with forty thousand or more, et cetera et cetera. Tournament is a different kind of comparative format. In a tournament, everybody pays an entry fee and gets a certain number of chips for that. For example, in the de facto World Championship of Poker, the World Series of Poker Main event last year, the entry fee was ten thousand dollars and each player got sixty thousand tournament chips. No, these chips have no monetary value by themselves. What happens in a tournament is that the blinds keep going up in the tournament at regular intervals. At the first level on day one, they're hundred, two hundred, and since you're starting with sixty thousand chips, that is equivalent to three hundred big blinds, but the blinds keep rising with every level till eventually they reach five million, ten million. So obviously to survive in the game, you have to keep multiplying your stack. eventually there is only one player left at the end, and that's the tournament winner. In this particular tournament the prize pool came to you I think around ninety five million and the first prize was about twelve million. That's how tournaments work. You take a lot of shots and when you get the payout once in a while it's a huge payout and it covers all your entry fees. So stack sizes matter differently in these two ways of organizing poker, and this is important to remember. Let's get to chapter three now. Probabilistic thinking. This is the first big lesson we learn in thinking about poker and it's an important life lesson as well. Let's begin with the concept of expected value. What is expected value or EV. First up, I'll link an old piece I wrote in the show notes. It's called What Cricket Can Learn About Poker. I talk a lot about luck in probabilistic thinking in that piece, so read it for a detailed explanation. I used an example of a coin toss in that to explain expected value or EV, so let me repeat that here. In a coin toss an evenly weighted will fall heads fifty percent of the time and tails the other fifty percent. So let's say I come to you with a fair coin and I tell you this, let's flip the coin once. If it's heads, I'll give you fifty one per se, and if it's tails, you give me forty nine per se. Here's how a poker player would analyze this. If you flip the coin hundred times, you would expect to win fifty one pes fifty times and lose forty nine pesty times for a total profit of one hundred pes. If you divide that by hundred, since there were hundred tosses, you get one pes. So that's the expected value of the bet, one pes. So accepting this deal would be a plus E V decision for you by one pes. Now if you do this deal you could get unlucky. The coin may land on tails, which means you lose forty nine per se. Does this mean you made a bad decision? No it doesn't. You made the right decision and you got unlucky. But In life and in poker, if you keep making plus E V decisions, you will be a winner in the long run. So you must apply probabilistic thinking in everything you do. Here's a poker example of this. Let's say your whole cards are ace ten of hearts. You enter the hand and the flop has two hearts in it. You need one more heart on the turn or river to complete a flush, which is",
+      "words": [
         {
           "word": "I'm",
           "startTime": 74.33,
@@ -1220,15 +1220,7 @@
           "startTime": 79.61,
           "endTime": 80.11,
           "confidence": 0.5
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 81.19,
-      "endTime": 83.27,
-      "text": "love the game and also have conflicting",
-      "words": [
+        },
         {
           "word": "love",
           "startTime": 81.19,
@@ -1270,15 +1262,7 @@
           "startTime": 82.71,
           "endTime": 83.27,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 83.27,
-      "endTime": 85.43,
-      "text": "thoughts about the game for a bunch of different reasons.",
-      "words": [
+        },
         {
           "word": "thoughts",
           "startTime": 83.27,
@@ -1338,15 +1322,7 @@
           "startTime": 84.79,
           "endTime": 85.43,
           "confidence": 0.9548
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 85.43,
-      "endTime": 87.91,
-      "text": "But what I've always felt is that the way it's depicted",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 85.43,
@@ -1412,15 +1388,7 @@
           "startTime": 87.43,
           "endTime": 87.91,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 87.91,
-      "endTime": 99.67,
-      "text": "in popular culture and films and all, they completely get it wrong poker is really different. Poker has uh you know, it's of deep intellectual interest. It tests our mind. It's got game theory and mathematics. Uh",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 87.91,
@@ -1642,15 +1610,7 @@
           "startTime": 99.43,
           "endTime": 99.67,
           "confidence": 0.8704
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 99.67,
-      "endTime": 101.27,
-      "text": "at the same time it's a great",
-      "words": [
+        },
         {
           "word": "at",
           "startTime": 99.67,
@@ -1692,15 +1652,7 @@
           "startTime": 100.95,
           "endTime": 101.27,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 101.27,
-      "endTime": 113.61,
-      "text": "test of character. And at a third level, the reason it f also fascinates me so much, he started taught me many different life lessons. Now these life lessons are something you and I will discuss together at the end of the presentation,",
-      "words": [
+        },
         {
           "word": "test",
           "startTime": 101.27,
@@ -1958,15 +1910,7 @@
           "startTime": 113.05,
           "endTime": 113.61,
           "confidence": 0.8519
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 113.61,
-      "endTime": 116.25,
-      "text": "but right now, just as you uh prepared a presentation",
-      "words": [
+        },
         {
           "word": "but",
           "startTime": 113.61,
@@ -2026,15 +1970,7 @@
           "startTime": 115.85,
           "endTime": 116.25,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 116.25,
-      "endTime": 127.37,
-      "text": "for Unix on popular demand, I've uh you know done a presentation for poker where we'll talk about, you know, I'll start with basic rules because generally when poker players talk to each other, there's so much jargon everyone is lost.",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 116.25,
@@ -2280,15 +2216,7 @@
           "startTime": 126.81,
           "endTime": 127.37,
           "confidence": 0.9913
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 127.37,
-      "endTime": 129.21,
-      "text": "So I'll start with basic rules,",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 127.37,
@@ -2324,15 +2252,7 @@
           "startTime": 128.65,
           "endTime": 129.21,
           "confidence": 0.9771
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 129.21,
-      "endTime": 138.52,
-      "text": "explain the basic terminology and then go on to uh you know, get a give as deep an understanding of the game as I possibly can in this little uh",
-      "words": [
+        },
         {
           "word": "explain",
           "startTime": 129.21,
@@ -2512,15 +2432,7 @@
           "startTime": 138.28,
           "endTime": 138.52,
           "confidence": 0.8977
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 138.52,
-      "endTime": 141.24,
-      "text": "presentation. So I hope uh dear readers",
-      "words": [
+        },
         {
           "word": "presentation.",
           "startTime": 138.52,
@@ -2562,15 +2474,7 @@
           "startTime": 140.76,
           "endTime": 141.24,
           "confidence": 0.9936
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 141.24,
-      "endTime": 227.06,
-      "text": "that you enjoy it and I hope you enjoy it, Ajay. Hello, hello, hello, gentle readers. Welcome to the poker episode of Everything Is Everything. I played poker seriously between twenty ten and twenty fifteen and even wrote a regular column on it for the Economic Times. Poker is a game of skill, but the purpose of this video is not for me to show you how to be a good poker player. That's beyond me. It would take a lot of experience and intentional learning on your part. Instead, I want to talk about the basics of how to play poker and then talk about the foundational thought processes that go into the game. This is important because there are life lessons in here. Learning how to play poker can help you think differently about the world and can help you make better decisions in your life. Now that's a grand claim, but this presentation is not grand. There will be no fancy animation, no funky graphics, I'm just gonna give it striped down and I hope the content speaks for itself. So let's go. First up, here's the table of contents. Chapter one is just basic rules, so you follow what I speak about in the rest of the video. This is the mechanics of the most popular version of the game, no limit hold them. After this we'll go over some basic fundas in terms of terminology. In chapter three we'll talk about probabilistic thinking, we'll talk about how it applies to poker and to life also. In chapter four we go beyond probabilistic thinking and look at the role of game theory in poker. Most non players, I promise you will find this chapter eye opening, it will bust many of the myths you might have about the game. Chapter four will teach us that math",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 141.24,
@@ -4430,15 +4334,7 @@
           "startTime": 226.5,
           "endTime": 227.06,
           "confidence": 0.9304
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 227.06,
-      "endTime": 229.3,
-      "text": "is everything. Chapter five about the mental",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 227.06,
@@ -4480,15 +4376,7 @@
           "startTime": 228.98,
           "endTime": 229.3,
           "confidence": 0.9965
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 229.3,
-      "endTime": 592.53,
-      "text": "game of poker will be about how math isn't everything, and about our mastering the numbers alone cannot help us if we can't master our minds. And in chapter six, I'll end with an important note of caution. So let's start. So in my first chapter I'm gonna take you through the basic rules of No Limit Holdem, the most popular form of the game. I'm gonna keep it quick, as many of you may know it already, and you can easily find more detailed descriptions online. Let's imagine there are nine players at a table. Everyone is playing with a certain amount of money, represented by gambling chips. One of the play has a dealer button in front of him, which shifts to the left with every hand. This is an important detail I'll come back to later. There are two compulsory bets in each hand, the person to the left of the button posts what is known as a small blind, the next person posts a double of that which is known as a big blind. So in a hundred two hundred game, the small blind would put in hundred rupees and the big blind would put in two hundred rupees. The cards are distributed from the seat after the button from the small line to one card at a time, till each player has two hidden cards in front of them. These are known in the terminology as whole cards, and no one else but the player knows what they are. Now how the game proceeds is that over four rounds of betting, five community cards are revealed face up. First you have three cards, they're known as a flop, then you have one card, which is known as a turn, then you have a fifth card, which is known as a river. Each player has to combine their two whole cards which only they can see with the five community cards to create the best five card hand possible. Now here on the screen, you see a hand ranking. I won't go through the details of them, but obviously the higher ranked hands are ranked higher because they occur less frequently. Now let's talk about the betting. Remember that there are two compulsory bets, a small blind and the big blind. After the whole cards are dealt and the players have what they have, the action falls to the player to the left of the big blind who is called under the gun or UTG. He can either fold his hand or call the bet or raise the bet. If he raises it, that raise is what others have to match. Let's say the blinds are hundred and two hundred, the player under the gun makes it thousand. The others after him now have to match thousand. They can also fold or raise. If they raise, the original razor has to match that and so on. If there's more than one player in the hand, the flop opens. There's another round of betting, then the turn, another round of betting, then the river, and a final round of betting. Obviously at every stage players are choosing to make their choices based on how likely they feel they are to have the best hand, or to outplay their opponent. So these are the rules. Let's go on to chapter two now. The first of the basic funders you should be aware of is position. I mentioned the dealer button shifts with every hand. Why is this important? Well it matters because it determines the order in which the players act. The player with the button is the last to act in every hand. This is important because of the informational advantage he has. The later your position in a hand, the more information you have about what the others are doing. This is a big deal. And you can actually play weaker and weaker hands as you get later and later in position. It's a key part of the dynamic of the game. The next basic funder you should be aware of is stack size. How many chips is each person sitting with. So if the blind are hundred, two hundred and you have a stack of twenty thousand, that's equal to a hundred big blinds, which is standard in cash games. This matters and I'll explain why later in this presentation. The third fund I want to talk about is cash games versus tournaments. Stack sizes play a key role in this. In a cash game, the blinds remain the same for as long as you play. You can top up your stack any time you want in between hands, just not during a hand. So in a hundred to hundred game you can sit with twenty thousand and add chips whenever you want, you can sit with forty thousand or more, et cetera et cetera. Tournament is a different kind of comparative format. In a tournament, everybody pays an entry fee and gets a certain number of chips for that. For example, in the de facto World Championship of Poker, the World Series of Poker Main event last year, the entry fee was ten thousand dollars and each player got sixty thousand tournament chips. No, these chips have no monetary value by themselves. What happens in a tournament is that the blinds keep going up in the tournament at regular intervals. At the first level on day one, they're hundred, two hundred, and since you're starting with sixty thousand chips, that is equivalent to three hundred big blinds, but the blinds keep rising with every level till eventually they reach five million, ten million. So obviously to survive in the game, you have to keep multiplying your stack. eventually there is only one player left at the end, and that's the tournament winner. In this particular tournament the prize pool came to you I think around ninety five million and the first prize was about twelve million. That's how tournaments work. You take a lot of shots and when you get the payout once in a while it's a huge payout and it covers all your entry fees. So stack sizes matter differently in these two ways of organizing poker, and this is important to remember. Let's get to chapter three now. Probabilistic thinking. This is the first big lesson we learn in thinking about poker and it's an important life lesson as well. Let's begin with the concept of expected value. What is expected value or EV. First up, I'll link an old piece I wrote in the show notes. It's called What Cricket Can Learn About Poker. I talk a lot about luck in probabilistic thinking in that piece, so read it for a detailed explanation. I used an example of a coin toss in that to explain expected value or EV, so let me repeat that here. In a coin toss an evenly weighted will fall heads fifty percent of the time and tails the other fifty percent. So let's say I come to you with a fair coin and I tell you this, let's flip the coin once. If it's heads, I'll give you fifty one per se, and if it's tails, you give me forty nine per se. Here's how a poker player would analyze this. If you flip the coin hundred times, you would expect to win fifty one pes fifty times and lose forty nine pesty times for a total profit of one hundred pes. If you divide that by hundred, since there were hundred tosses, you get one pes. So that's the expected value of the bet, one pes. So accepting this deal would be a plus E V decision for you by one pes. Now if you do this deal you could get unlucky. The coin may land on tails, which means you lose forty nine per se. Does this mean you made a bad decision? No it doesn't. You made the right decision and you got unlucky. But In life and in poker, if you keep making plus E V decisions, you will be a winner in the long run. So you must apply probabilistic thinking in everything you do. Here's a poker example of this. Let's say your whole cards are ace ten of hearts. You enter the hand and the flop has two hearts in it. You need one more heart on the turn or river to complete a flush, which is",
-      "words": [
+        },
         {
           "word": "game",
           "startTime": 229.3,
@@ -13130,8 +13018,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 596.61,
-      "endTime": 608.13,
-      "text": "stack and has ten thousand rupees left. It's a thought, so indulge me. He goes all in, right? So he's bet ten thousand into ten thousand. No one else is in the hand, so if you call there will be no more bets and the turn in the river will open. What's",
+      "endTime": 1296.49,
+      "text": "stack and has ten thousand rupees left. It's a thought, so indulge me. He goes all in, right? So he's bet ten thousand into ten thousand. No one else is in the hand, so if you call there will be no more bets and the turn in the river will open. What's more, your opponent now fumblingly shows you pocket aces. Now this means that he has you beat now, right? He's beating your Ace Tin. But should you call anyway? Here's a mat. There are nine hearts out there, either in the deck or with your opponent. The odds of one of them coming in the turn of the river are around thirty eight percent. You will need to call ten thousand into a pot of twenty thousand, so you're getting two to one to call. You will have to be right one in three times to win the bet, which is thirty three point three percent. Now you'll be right thirty eight percent of the time, so therefore this is an easy call. This is plus E V. Now what if your opponent had bet twenty thousand into a pot of ten thousand? Now you'd have to call twenty thousand into a pot of thirty thousand, getting three two two words or forty percent. And as your chances of winning a hand are thirty eight percent, this is just about a fold. You know, this is what we would call a minus EV call. Let's talk about another concept now called equity. If you apply the percentage chance of winning a pot by the money in the pot, you get equity. For example, in a first thought experiment, once you call ten thousand the pot had thirty thousand, and you had a thircent chance of winning a hand. Thirty eight percent of thirty thousand is eleven thousand four hundred. So that's your equity in the pot. And of course it's plus E V because you had to call, you know, ten thousand to realize that. But there are two kinds of equity. What you just saw is pot equity, which is your straight up chances of winning a hand. But there is also fold equity. In some situations when you raise your opponent may fold and when he does that, you win what's already in the pot. For example, let's play the same hand, but let's also say that your opponent does not show his hand and could have anything. Let's also assume that you have stacks of forty thousand. So he bet ten thousand into a pot of ten thousand. You now go all in for forty thousand, right? So the the twenty in the pot, you bet forty, your opponent is twenty behind. He has to call his remaining thirty into a pot of sixty thousand. Now if he calls hundred percent of the time then your chance of winning the hand against his unknown hand will be around forty percent. Some of the time even hitting one of the three d aces in the deck may win you the hand, which, you know, gives you equity of around thirty six thousand in a pot of ninety K. Since you bet forty thousand, this is minus E V on its own. You should not do this. However, what if he folds? Let's say he folds fifty percent of the time, then half the time you take down the twenty thousand in the pot uncontested, and overall when you do the math, that makes it plus EV. This is why aggression is so important in poker. You don't have to make the best hand to win. Making the other guy fold also works. This also plays into the Fandara there are two reasons to bet in poker. One is to make a worse hand call, the other is to make a better hand fold. You either bet for value or you bet as a bluff. Sometimes you can do both at the same time, but let's not get into that here. I'll also quickly mention the concept of employed odds. Let's say in a hundred, two hundred game you raise to twelve hundred before the floor with six six, pocket sixes. The tightest player on the table now re raises you to thirty six hundred. Both of you have stacks of one lakh you have to call twenty four hundred into the fifty one hundred already out there to see your flop. So you're getting kind of uh around two to one. You know you will have a better hand only if you hit another six. Should you call? Now at one level the answer is no. Because on the flop you will hit one of the two remaining sixes one in eight times. But on the other hand, if you believe that if you hit that six you can get the other player to give you another thirty thousand over the next two rounds of betting, then that additional thirty thousand makes a call totally worth it. This is called implied odds. You're not calculating the odds just based on the size of the pot now, but on what it could be if you hit your hand and you milk your opponent. Another important thing to note is that you obviously never know what hand an opponent has, but you may have some sense of what range of hands it would play in a particular situation. So you have to calculate your expected value against that range. This takes a lot of study and practice. There are a bunch of tools out there that will help you figure out your equity with your hand against a particular range of hands. And at some point you will need to think not just about your hand versus their range, but even your range against their range. This is advanced thinking and I won't try to explain or illustrate this here. I just wanted to give you a sense of the kind of probabilistic thinking that poker players need to apply here. Now there's one more point I'll make that comes from a question that my everything is everything co-host Ajay Shah once asked me. Why do bad players bet on poker but not on chess? Well the reason for that is that in chess you get immediate feedback with every game about how good you are, and every player knows their level. The ELO rankings on all major chess sites and in uh you know competitive chess itself, they're pretty accurate. So a bad player won't be stupid enough to bet money against a better player. Poker is a game of skill, but the role of luck is much higher in it than in other games of skill. To use poker terminology, the variance is high. The skill manifests only in the long run. Every bad player will have lucky hands, lucky sessions, even lucky months. And so many end up believing that they are good players when they are not. Poker can indeed be like a delusion machine. I've written many pieces about them, I'll link them from the show notes, so do check them out. Good players train themselves to think in terms of expected value and keep making good decisions without worrying about short term outcomes. This is what we need to do in life itself. Every decision in life involves probabilities. Thinking in terms of probabilities will help us make better decisions, it will also make us equanimous about outcomes. In fact, the peaceful detachment can be so strong that one could argue that understanding poker is the root to Buddhism. Chapter four is about game theory. You might think from watching popular cinema that poker is all about spotting tails and bluffs and so on. As you would have seen from the last chapter, all that doesn't really matter. It's all math. And as you will find out from this chapter if you apply game theory to poker, you don't even need to think about what cards your opponent may have. It literally doesn't matter. Let me explain. Let's say you and I are in a hand on the river, I bet hundred into a pot of two hundred. You have to call hundred into a pot that now has three hundred in it, which means you are getting odds of three to one to call. If you're right twenty five percent of the time it is a break even call. Now let's turn to me. If I construct my ranges well in this pot, I can't lose. If I have exactly twenty five percent gloves and seventy five percent value hands in my range at this time, then I don't care what you have and I don't care what you do. Over a period of time, if you call too much, I make money. If you fall too much, I make money. The worst that happens to me is that you play perfectly, in which case I break even. To take another example, if I make a pot size bet on the river, that is if I bet hundred into hundred, my opponent will be getting two to one to call. If one third of my hands here are bluffs and two thirds are value hands, I can't lose in the long run. So an ideal player who plays game theory optimal poker or what is known LGTO will build their ranges from the time the cards are dealt in such a way that they don't need to think about the other person's hands. On every street they will play in such a way that no matter what happens, they win in the long run unless their opponents also play perfectly. This is what poker players mean when they talk about balance ranges. A balance range is not one in which you mix good hands and bad hands. It is one in which you get the proportions right. The ranges you build, the bed sizing you choose and so on. Again I've written pieces on this in detail that I will link from the show notes, so check those out. This sort of game theory applies to all games, by the way. In rock, paper, scissors, for example, the optimal strategy is to be totally random. Game theory also applies to, say, penalties in football. Every good goalkeeper will know the stats of whoever is taking the penalty, but every good goal taker will randomize. So finally the goalie has to randomize as well. If anyone deviates from that, they're gonna lose in the long run. Here's the thing. It's almost impossible for a human to play game theory optimal poker. Constructing balanced ranges through a hand is damn hard but you can try to come close to game theory optimal play, the the closer you get to it, the more you will make. I want to introduce another term to you now which is super important. I already explained what GTO means, game theory optimal. The kind of poker all of us play in the real world though is called exploitative poker. You win in poker by identifying the mistakes of your opponents and exploiting them. So when I would sit down at a game I would try to find tendencies in my opponents that I could then take advantage of. If someone folded too much, I would bluff more against them. If someone called too much, I would reduce my bluffs and bet more for value, and so on. Every deviation they make from game theory Optimal Play can be exploited by me. But equally when I am exploitative, I am also exploitable because I am also deviating from GTO. My opponent could notice I am bluffing more and start calling more. If player A folds too much and I start bluffing him more, player C could exploit me by raising over my beds, knowing I now have more bluffs in my range, and therefore they have more fold equity. You get it? So a lot of the fun in life, poker, comes from these mental games of figuring each other out. And everything here is based on math. on frequencies, probabilities, expected value, equity. In theory, poker is all about the numbers. In practice, though, it's a mental game. Mastering the math is not enough. You also have to master the mind. Human beings play poker, and human beings are frail and flawed. Here's another term I want you to think about Tilt. Tilt basically comes from anger. something happens at a poker table and you lose your composure. You start making bad decisions, you start losing money. Many things could cause this anger. Poker takes a big load on the emotions. In any other field, if you have a bad day on march fifteenth, it's not a big deal. In poker, you could lose everything you earned in Jan and Pheb. And this is especially so because most players that I know don't do bankrupt management. This can feel devastating, especially to men whose main ego is tied in with the notion of money as status and with winning in competitive environments. Add to this loss aversion, the fact that the pain of a loss feels stronger than the joy of an equivalent win. So poker players are always in danger of losing their emotional balance of tilting. There are many kinds of tilt. one that I was personally prone to is called entitlement tilt, and go into a game with all my math and game theory and knowledge of ranges and so on. And then some idiot who knows none of this and is playing it like Teen Pati on Diwali would give me five bad beats in a hand and I played correctly, and suddenly I'd be fuming and I'd actually start playing badly and losing money. There are different kinds of tilt. One needs to be aware of what they all are, and watch out for them in one's self. All the cognitive biases we have also come into play here. I'd once done an episode of the Seen and the Unseen with my friend Mohit Satanan, in which we spoke about the cognitive biases common to poker and investing. Check that out for more. When I started playing poker, I fell in love with the mathematical aspects of it. I looked at the ecosystem and saw that only about five percent of players were long term winners. My assumption was that over a long period, that five percent of winners would stay in the game and the losers would rotate out. When I left poker myself years later, I realized that the opposite was true. Many winning players leave because what makes them good at poker also makes them good at other things, so they move on. the losers stay because they're addicted. And gambling addiction is a terrible, terrible thing. I've seen lives destroyed by it. So if you think you have an addictive personality, be careful, don't play this game. I've written pieces on this aspect of it, and again I'll link them from the show notes. I'll also link to my final poker column for the Economic Times called Why I Loved and Left Poker. It will tell you why I left, it may tell you why you shouldn't start playing. One more word of caution, don't break the law. Before you play, please be aware of what the legalities are. Last I checked, life poker in India is only possible in the offshore casinos of Goa and in Sitkim. And of course you can travel to different parts of Asia, if not to Vegas to play. Online poker is legal in most states of India, but please check for yourself before you play. And with that I'll end this presentation. Again I didn't go into much detail because I just wanted to give you a gist of the foundational principles behind the game and and how they also apply to life, which Ajay and I will now chat about. So don't go anywhere. I",
       "words": [
         {
           "word": "stack",
@@ -13444,15 +13332,7 @@
           "startTime": 607.65,
           "endTime": 608.13,
           "confidence": 0.9579
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 608.13,
-      "endTime": 609.81,
-      "text": "more, your opponent now",
-      "words": [
+        },
         {
           "word": "more,",
           "startTime": 608.13,
@@ -13476,15 +13356,7 @@
           "startTime": 609.33,
           "endTime": 609.81,
           "confidence": 0.9964
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 609.81,
-      "endTime": 1027.75,
-      "text": "fumblingly shows you pocket aces. Now this means that he has you beat now, right? He's beating your Ace Tin. But should you call anyway? Here's a mat. There are nine hearts out there, either in the deck or with your opponent. The odds of one of them coming in the turn of the river are around thirty eight percent. You will need to call ten thousand into a pot of twenty thousand, so you're getting two to one to call. You will have to be right one in three times to win the bet, which is thirty three point three percent. Now you'll be right thirty eight percent of the time, so therefore this is an easy call. This is plus E V. Now what if your opponent had bet twenty thousand into a pot of ten thousand? Now you'd have to call twenty thousand into a pot of thirty thousand, getting three two two words or forty percent. And as your chances of winning a hand are thirty eight percent, this is just about a fold. You know, this is what we would call a minus EV call. Let's talk about another concept now called equity. If you apply the percentage chance of winning a pot by the money in the pot, you get equity. For example, in a first thought experiment, once you call ten thousand the pot had thirty thousand, and you had a thircent chance of winning a hand. Thirty eight percent of thirty thousand is eleven thousand four hundred. So that's your equity in the pot. And of course it's plus E V because you had to call, you know, ten thousand to realize that. But there are two kinds of equity. What you just saw is pot equity, which is your straight up chances of winning a hand. But there is also fold equity. In some situations when you raise your opponent may fold and when he does that, you win what's already in the pot. For example, let's play the same hand, but let's also say that your opponent does not show his hand and could have anything. Let's also assume that you have stacks of forty thousand. So he bet ten thousand into a pot of ten thousand. You now go all in for forty thousand, right? So the the twenty in the pot, you bet forty, your opponent is twenty behind. He has to call his remaining thirty into a pot of sixty thousand. Now if he calls hundred percent of the time then your chance of winning the hand against his unknown hand will be around forty percent. Some of the time even hitting one of the three d aces in the deck may win you the hand, which, you know, gives you equity of around thirty six thousand in a pot of ninety K. Since you bet forty thousand, this is minus E V on its own. You should not do this. However, what if he folds? Let's say he folds fifty percent of the time, then half the time you take down the twenty thousand in the pot uncontested, and overall when you do the math, that makes it plus EV. This is why aggression is so important in poker. You don't have to make the best hand to win. Making the other guy fold also works. This also plays into the Fandara there are two reasons to bet in poker. One is to make a worse hand call, the other is to make a better hand fold. You either bet for value or you bet as a bluff. Sometimes you can do both at the same time, but let's not get into that here. I'll also quickly mention the concept of employed odds. Let's say in a hundred, two hundred game you raise to twelve hundred before the floor with six six, pocket sixes. The tightest player on the table now re raises you to thirty six hundred. Both of you have stacks of one lakh you have to call twenty four hundred into the fifty one hundred already out there to see your flop. So you're getting kind of uh around two to one. You know you will have a better hand only if you hit another six. Should you call? Now at one level the answer is no. Because on the flop you will hit one of the two remaining sixes one in eight times. But on the other hand, if you believe that if you hit that six you can get the other player to give you another thirty thousand over the next two rounds of betting, then that additional thirty thousand makes a call totally worth it. This is called implied odds. You're not calculating the odds just based on the size of the pot now, but on what it could be if you hit your hand and you milk your opponent. Another important thing to note is that you obviously never know what hand an opponent has, but you may have some sense of what range of hands it would play in a particular situation. So you have to calculate your expected value against that range. This takes a lot of study and practice. There are a bunch of tools out there that will help you figure out your equity with your hand against a particular range of hands. And at some point you will need to think not just about your hand versus their range, but even your range against their range. This is advanced thinking and I won't try to explain or illustrate this here. I just wanted to give you a sense of the kind of probabilistic thinking that poker players need to apply here. Now there's one more point I'll make that comes from a question that my everything is everything co-host Ajay Shah once asked me. Why do bad players bet on poker but not on chess? Well the reason for that is that in chess you get immediate feedback with every game about how good you are, and every player knows their level. The ELO rankings on all major chess sites and in uh you know competitive chess itself, they're pretty accurate. So a bad player won't be stupid enough to bet money against a better player. Poker is a game of skill, but the role of luck is much higher in it than in other games of skill. To use poker terminology, the variance is high. The skill manifests only in the long run. Every bad player will have lucky hands, lucky sessions, even lucky months. And so many end up believing that they are good players when they are not. Poker can indeed be like a delusion machine. I've written many pieces about them, I'll link them from the show notes, so do check them out. Good players train themselves to think in terms of expected value and keep making good decisions without worrying about short term outcomes. This is what we need to do in life itself. Every decision in life involves probabilities. Thinking in terms of probabilities will help us make better decisions, it will also make us equanimous about outcomes. In fact, the peaceful detachment can be so strong that one could argue that understanding poker is the root to Buddhism. Chapter four is about game theory. You might think from watching popular cinema that poker is all about spotting tails and bluffs and so on. As you would have seen from the last chapter, all that doesn't really matter. It's all math. And as you will find out from this chapter if you apply game theory to poker, you don't even need to think about what cards your opponent may have. It literally doesn't matter. Let me explain. Let's say you and I are in a hand on the river, I bet hundred into a pot of two hundred. You have to call hundred into a pot that now has three hundred in it, which means you are getting odds of three to one to call. If you're right twenty five percent of the time it is a break even call. Now let's turn to me. If I construct my ranges well in this pot, I can't lose. If I have exactly twenty five percent gloves and seventy five percent value hands in my range at this time, then I don't care what you have and I don't care what you do. Over a period of time, if you call too much, I make money. If you fall too much, I make money. The worst that happens to me is that you play perfectly, in which case I break even. To take another example, if I make a pot size bet on the river, that is if I bet hundred into hundred, my opponent will be getting two to one to call. If one third of my hands here are bluffs and two thirds are value hands, I can't lose in the long run. So an ideal player who plays game theory optimal poker or what is known LGTO will build their ranges from the time the cards are dealt in such a way that they don't need to think about the other person's hands. On every street they will play in such a way that no matter what happens, they win in the long run unless their opponents also play perfectly. This is what poker players mean when they talk about balance ranges. A balance range is not one in which you mix good hands and bad hands. It is one in which you get the proportions right. The ranges you build, the bed sizing you choose and so on. Again I've written pieces on this in detail that I will link from the show notes, so check those out. This sort",
-      "words": [
+        },
         {
           "word": "fumblingly",
           "startTime": 609.81,
@@ -23348,15 +23220,7 @@
           "startTime": 1027.51,
           "endTime": 1027.75,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1027.75,
-      "endTime": 1031.27,
-      "text": "of game theory applies to all games, by the way. In rock, paper, scissors, for example, the",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1027.75,
@@ -23458,15 +23322,7 @@
           "startTime": 1031.19,
           "endTime": 1031.27,
           "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1031.27,
-      "endTime": 1102.61,
-      "text": "optimal strategy is to be totally random. Game theory also applies to, say, penalties in football. Every good goalkeeper will know the stats of whoever is taking the penalty, but every good goal taker will randomize. So finally the goalie has to randomize as well. If anyone deviates from that, they're gonna lose in the long run. Here's the thing. It's almost impossible for a human to play game theory optimal poker. Constructing balanced ranges through a hand is damn hard but you can try to come close to game theory optimal play, the the closer you get to it, the more you will make. I want to introduce another term to you now which is super important. I already explained what GTO means, game theory optimal. The kind of poker all of us play in the real world though is called exploitative poker. You win in poker by identifying the mistakes of your opponents and exploiting them. So when I would sit down at a game I would try to find tendencies in my opponents that I could then take advantage of. If someone folded too much, I would bluff more against them. If someone called too much, I would reduce my bluffs and bet more for value, and so on. Every deviation they make from game theory Optimal Play can be exploited by me. But equally when I am exploitative, I am also exploitable because I am also deviating from GTO. My opponent could notice I am bluffing more and start calling more. If",
-      "words": [
+        },
         {
           "word": "optimal",
           "startTime": 1031.27,
@@ -25002,15 +24858,7 @@
           "startTime": 1102.45,
           "endTime": 1102.61,
           "confidence": 0.9961
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1102.61,
-      "endTime": 1107.57,
-      "text": "player A folds too much and I start bluffing him more, player C could exploit me by raising over my",
-      "words": [
+        },
         {
           "word": "player",
           "startTime": 1102.61,
@@ -25130,15 +24978,7 @@
           "startTime": 1107.41,
           "endTime": 1107.57,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1107.57,
-      "endTime": 1296.49,
-      "text": "beds, knowing I now have more bluffs in my range, and therefore they have more fold equity. You get it? So a lot of the fun in life, poker, comes from these mental games of figuring each other out. And everything here is based on math. on frequencies, probabilities, expected value, equity. In theory, poker is all about the numbers. In practice, though, it's a mental game. Mastering the math is not enough. You also have to master the mind. Human beings play poker, and human beings are frail and flawed. Here's another term I want you to think about Tilt. Tilt basically comes from anger. something happens at a poker table and you lose your composure. You start making bad decisions, you start losing money. Many things could cause this anger. Poker takes a big load on the emotions. In any other field, if you have a bad day on march fifteenth, it's not a big deal. In poker, you could lose everything you earned in Jan and Pheb. And this is especially so because most players that I know don't do bankrupt management. This can feel devastating, especially to men whose main ego is tied in with the notion of money as status and with winning in competitive environments. Add to this loss aversion, the fact that the pain of a loss feels stronger than the joy of an equivalent win. So poker players are always in danger of losing their emotional balance of tilting. There are many kinds of tilt. one that I was personally prone to is called entitlement tilt, and go into a game with all my math and game theory and knowledge of ranges and so on. And then some idiot who knows none of this and is playing it like Teen Pati on Diwali would give me five bad beats in a hand and I played correctly, and suddenly I'd be fuming and I'd actually start playing badly and losing money. There are different kinds of tilt. One needs to be aware of what they all are, and watch out for them in one's self. All the cognitive biases we have also come into play here. I'd once done an episode of the Seen and the Unseen with my friend Mohit Satanan, in which we spoke about the cognitive biases common to poker and investing. Check that out for more. When I started playing poker, I fell in love with the mathematical aspects of it. I looked at the ecosystem and saw that only about five percent of players were long term winners. My assumption was that over a long period, that five percent of winners would stay in the game and the losers would rotate out. When I left poker myself years later, I realized that the opposite was true. Many winning players leave because what makes them good at poker also makes them good at other things, so they move on. the losers stay because they're addicted. And gambling addiction is a terrible, terrible thing. I've seen lives destroyed by it. So if you think you have an addictive personality, be careful, don't play this game. I've written pieces on this aspect of it, and again I'll link them from the show notes. I'll also link to my final poker column for the Economic Times called Why I Loved and Left Poker. It will tell you why I left, it may tell you why you shouldn't start playing. One more word of caution, don't break the law. Before you play, please be aware of what the legalities are. Last I checked, life poker in India is only possible in the offshore casinos of Goa and in Sitkim. And of course you can travel to different parts of Asia, if not to Vegas to play. Online poker is legal in most states of India, but please check for yourself before you play. And with that I'll end this presentation. Again I didn't go into much detail because I just wanted to give you a gist of the foundational principles behind the game and and how they also apply to life, which Ajay and I will now chat about. So don't go anywhere. I",
-      "words": [
+        },
         {
           "word": "beds,",
           "startTime": 1107.57,
@@ -29628,8 +29468,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1314.41,
-      "endTime": 1316.49,
-      "text": "is a small",
+      "endTime": 1316.99,
+      "text": "is a small game.",
       "words": [
         {
           "word": "is",
@@ -29648,21 +29488,21 @@
           "startTime": 1316.09,
           "endTime": 1316.49,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1316.49,
-      "endTime": 1347.94,
-      "text": "game. What is hiding inside that is it's a metaphor about life, because life actually is a play of probability. So what is going on in so many ways is something much bigger than the game of poker. So what are your thoughts on how we can take some of the stylized model, that finite probabilistic and game theory problem that you've discussed and generalize it to a bigger level and think about life on a bigger scale?",
-      "words": [
+        },
         {
           "word": "game.",
           "startTime": 1316.49,
           "endTime": 1316.99,
           "confidence": 0.9433
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1317.89,
+      "endTime": 1362.45,
+      "text": "What is hiding inside that is it's a metaphor about life, because life actually is a play of probability. So what is going on in so many ways is something much bigger than the game of poker. So what are your thoughts on how we can take some of the stylized model, that finite probabilistic and game theory problem that you've discussed and generalize it to a bigger level and think about life on a bigger scale? So I think my play poker for so many years uh taught me important lessons about life. And I want to talk about three of them today. And the first of them is just acknowledging the role of luck in our lives. Uh poker is very interesting in the sense that it is obviously, as I explained",
+      "words": [
         {
           "word": "What",
           "startTime": 1317.89,
@@ -30124,15 +29964,7 @@
           "startTime": 1347.49,
           "endTime": 1347.94,
           "confidence": 0.7947
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1348.05,
-      "endTime": 1359.41,
-      "text": "So I think my play poker for so many years uh taught me important lessons about life. And I want to talk about three of them today. And the first of them is just acknowledging the role of luck in our lives. Uh",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1348.05,
@@ -30390,15 +30222,7 @@
           "startTime": 1359.17,
           "endTime": 1359.41,
           "confidence": 0.7644
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1359.41,
-      "endTime": 1362.45,
-      "text": "poker is very interesting in the sense that it is obviously, as I explained",
-      "words": [
+        },
         {
           "word": "poker",
           "startTime": 1359.41,
@@ -30488,8 +30312,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1362.45,
-      "endTime": 1381.43,
-      "text": "in the presentation, it is a game of skill, but the quantum of luck is really high. And the skill in poker is management of that luck. Now what I realize to playing poker is that luck plays a far bigger part in our lives than we realize. I would go as far as to say that ninety eight or ninety nine percent of everything that happens to us is shared unluck.",
+      "endTime": 1369.49,
+      "text": "in the presentation, it is a game of skill, but the quantum of luck is really high. And the skill in poker is management of that luck. Now",
       "words": [
         {
           "word": "in",
@@ -30658,7 +30482,15 @@
           "startTime": 1369.25,
           "endTime": 1369.49,
           "confidence": 0.9889
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1369.49,
+      "endTime": 1377.83,
+      "text": "what I realize to playing poker is that luck plays a far bigger part in our lives than we realize. I would go as far as to say that ninety eight",
+      "words": [
         {
           "word": "what",
           "startTime": 1369.49,
@@ -30844,7 +30676,15 @@
           "startTime": 1377.67,
           "endTime": 1377.83,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1377.83,
+      "endTime": 1401.25,
+      "text": "or ninety nine percent of everything that happens to us is shared unluck. And what often happens is that we don't understand this. Good things happen to us, we let it get to our heads, we become arrogant and complacent. Or bad things happen to us and we uh you know, become defeatist, we let it affect our confidence, we start doing less because we're like, Hey, what the point what's the point, I'm a loser? Or we have the imposter syndrome and so on and so forth.",
+      "words": [
         {
           "word": "or",
           "startTime": 1377.83,
@@ -30922,15 +30762,7 @@
           "startTime": 1380.79,
           "endTime": 1381.43,
           "confidence": 0.6121
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1381.43,
-      "endTime": 1383.03,
-      "text": "And what often happens",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1381.43,
@@ -30954,15 +30786,7 @@
           "startTime": 1382.23,
           "endTime": 1383.03,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1383.03,
-      "endTime": 1401.73,
-      "text": "is that we don't understand this. Good things happen to us, we let it get to our heads, we become arrogant and complacent. Or bad things happen to us and we uh you know, become defeatist, we let it affect our confidence, we start doing less because we're like, Hey, what the point what's the point, I'm a loser? Or we have the imposter syndrome and so on and so forth. And",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 1383.03,
@@ -31388,21 +31212,21 @@
           "startTime": 1400.79,
           "endTime": 1401.25,
           "confidence": 0.8965
-        },
-        {
-          "word": "And",
-          "startTime": 1401.41,
-          "endTime": 1401.73,
-          "confidence": 0.7299
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1401.73,
-      "endTime": 1405.81,
-      "text": "the big lesson from poker is that a lot of this stuff you can't control.",
+      "startTime": 1401.41,
+      "endTime": 1410.77,
+      "text": "And the big lesson from poker is that a lot of this stuff you can't control. Acknowledge the role of luck in your life and then figure out what are the things that you can",
       "words": [
+        {
+          "word": "And",
+          "startTime": 1401.41,
+          "endTime": 1401.73,
+          "confidence": 0.7299
+        },
         {
           "word": "the",
           "startTime": 1401.73,
@@ -31492,15 +31316,7 @@
           "startTime": 1405.25,
           "endTime": 1405.81,
           "confidence": 0.9671
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1405.81,
-      "endTime": 1408.37,
-      "text": "Acknowledge the role of luck in your life and then",
-      "words": [
+        },
         {
           "word": "Acknowledge",
           "startTime": 1405.81,
@@ -31560,15 +31376,7 @@
           "startTime": 1408.13,
           "endTime": 1408.37,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1408.37,
-      "endTime": 1410.77,
-      "text": "figure out what are the things that you can",
-      "words": [
+        },
         {
           "word": "figure",
           "startTime": 1408.37,
@@ -31628,8 +31436,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1410.77,
-      "endTime": 1415.09,
-      "text": "control and focus only on them and nothing else. Like poker players are",
+      "endTime": 1422.37,
+      "text": "control and focus only on them and nothing else. Like poker players are often taught, uh, because the role of luck is so high in a particular hand, but over the long run it evens out and I'll come back to that.",
       "words": [
         {
           "word": "control",
@@ -31708,57 +31516,25 @@
           "startTime": 1415.01,
           "endTime": 1415.09,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1415.09,
-      "endTime": 1415.41,
-      "text": "often",
-      "words": [
+        },
         {
           "word": "often",
           "startTime": 1415.09,
           "endTime": 1415.41,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1415.41,
-      "endTime": 1415.89,
-      "text": "taught,",
-      "words": [
+        },
         {
           "word": "taught,",
           "startTime": 1415.41,
           "endTime": 1415.89,
           "confidence": 0.8469
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1415.89,
-      "endTime": 1416.21,
-      "text": "uh,",
-      "words": [
+        },
         {
           "word": "uh,",
           "startTime": 1415.89,
           "endTime": 1416.21,
           "confidence": 0.7165
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1416.21,
-      "endTime": 1422.37,
-      "text": "because the role of luck is so high in a particular hand, but over the long run it evens out and I'll come back to that.",
-      "words": [
+        },
         {
           "word": "because",
           "startTime": 1416.21,
@@ -31976,8 +31752,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1425.01,
-      "endTime": 1432.37,
-      "text": "oriented, by which we mean short term results. You know. It's as uh you know uh Lord Krishna and Spike Lee would be in agreement over this. Do the",
+      "endTime": 1453.77,
+      "text": "oriented, by which we mean short term results. You know. It's as uh you know uh Lord Krishna and Spike Lee would be in agreement over this. Do the right thing, don't worry about the fruits of your action. In other words, be process oriented. Your dharma is to keep doing your best, to keep doing the right thing, and not think about results. And in the context of life, this would be not think about, you know, whether you're getting validation for your efforts or not, whether you're getting what you feel are the just rewards or no. Your dharma is to work hard, your dharma is to do",
       "words": [
         {
           "word": "oriented,",
@@ -32152,15 +31928,7 @@
           "startTime": 1432.29,
           "endTime": 1432.37,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1432.37,
-      "endTime": 1434.05,
-      "text": "right thing, don't worry about the fruits",
-      "words": [
+        },
         {
           "word": "right",
           "startTime": 1432.37,
@@ -32202,15 +31970,7 @@
           "startTime": 1433.73,
           "endTime": 1434.05,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1434.05,
-      "endTime": 1444.53,
-      "text": "of your action. In other words, be process oriented. Your dharma is to keep doing your best, to keep doing the right thing, and not think about results. And in the context of life, this would be not",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1434.05,
@@ -32438,29 +32198,13 @@
           "startTime": 1444.29,
           "endTime": 1444.53,
           "confidence": 0.9963
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1444.53,
-      "endTime": 1444.85,
-      "text": "think",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 1444.53,
           "endTime": 1444.85,
           "confidence": 0.9926
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1444.85,
-      "endTime": 1465.24,
-      "text": "about, you know, whether you're getting validation for your efforts or not, whether you're getting what you feel are the just rewards or no. Your dharma is to work hard, your dharma is to do that's all that you can control. And at the same time to be equanimous about whatever happens to you almost in a Buddhist kind of way. This is a very uh sort of a lesson about equanimity here as well.",
-      "words": [
+        },
         {
           "word": "about,",
           "startTime": 1444.85,
@@ -32670,7 +32414,15 @@
           "startTime": 1453.33,
           "endTime": 1453.77,
           "confidence": 0.9964
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1454.2,
+      "endTime": 1467.72,
+      "text": "that's all that you can control. And at the same time to be equanimous about whatever happens to you almost in a Buddhist kind of way. This is a very uh sort of a lesson about equanimity here as well. Because, you know, in one of my columns called Unlikely is",
+      "words": [
         {
           "word": "that's",
           "startTime": 1454.2,
@@ -32910,15 +32662,7 @@
           "startTime": 1464.76,
           "endTime": 1465.24,
           "confidence": 0.7515
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1465.24,
-      "endTime": 1468.6,
-      "text": "Because, you know, in one of my columns called Unlikely is inevitable, you",
-      "words": [
+        },
         {
           "word": "Because,",
           "startTime": 1465.24,
@@ -32984,7 +32728,15 @@
           "startTime": 1467.56,
           "endTime": 1467.72,
           "confidence": 0.8625
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1467.72,
+      "endTime": 1480.12,
+      "text": "inevitable, you know, I spoke about the law of truly large numbers. And that then the law of truly l large numbers basically states that uh if there are enough iterations, the most unlikely things will happen. Right?",
+      "words": [
         {
           "word": "inevitable,",
           "startTime": 1467.72,
@@ -32996,15 +32748,7 @@
           "startTime": 1468.52,
           "endTime": 1468.6,
           "confidence": 0.87
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1468.6,
-      "endTime": 1472.76,
-      "text": "know, I spoke about the law of truly large numbers. And that then the law",
-      "words": [
+        },
         {
           "word": "know,",
           "startTime": 1468.6,
@@ -33094,15 +32838,7 @@
           "startTime": 1472.6,
           "endTime": 1472.76,
           "confidence": 0.9694
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1472.76,
-      "endTime": 1477.64,
-      "text": "of truly l large numbers basically states that uh if there are enough iterations, the",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1472.76,
@@ -33192,15 +32928,7 @@
           "startTime": 1477.48,
           "endTime": 1477.64,
           "confidence": 0.9784
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1477.64,
-      "endTime": 1480.12,
-      "text": "most unlikely things will happen. Right?",
-      "words": [
+        },
         {
           "word": "most",
           "startTime": 1477.64,
@@ -33322,8 +33050,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1484.12,
-      "endTime": 1498.3,
-      "text": "terrible things may well happen to us and it is what it is. We can't think that oh I am fated to be this way or the universe is conspiring against me or blah blah blah. We just have to deal with the hand of cards that we are dealt and do the best we can.",
+      "endTime": 1514.18,
+      "text": "terrible things may well happen to us and it is what it is. We can't think that oh I am fated to be this way or the universe is conspiring against me or blah blah blah. We just have to deal with the hand of cards that we are dealt and do the best we can. So even before I talk about action, my next two points are about how to think about the world and the action that we can put in. I would say that we must first acknowledge that luck plays a big part in our lives. This is not a reason to assume that the world is deterministic or",
       "words": [
         {
           "word": "terrible",
@@ -33660,15 +33388,7 @@
           "startTime": 1497.88,
           "endTime": 1498.3,
           "confidence": 0.9219
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1498.5,
-      "endTime": 1501.22,
-      "text": "So even before I talk about action, my next",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1498.5,
@@ -33722,15 +33442,7 @@
           "startTime": 1500.98,
           "endTime": 1501.22,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1501.22,
-      "endTime": 1507.7,
-      "text": "two points are about how to think about the world and the action that we can put in. I would say that we must first acknowledge",
-      "words": [
+        },
         {
           "word": "two",
           "startTime": 1501.22,
@@ -33886,15 +33598,7 @@
           "startTime": 1506.82,
           "endTime": 1507.7,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1507.7,
-      "endTime": 1509.46,
-      "text": "that luck plays a big part in our",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1507.7,
@@ -33942,15 +33646,7 @@
           "startTime": 1509.3,
           "endTime": 1509.46,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1509.46,
-      "endTime": 1514.18,
-      "text": "lives. This is not a reason to assume that the world is deterministic or",
-      "words": [
+        },
         {
           "word": "lives.",
           "startTime": 1509.46,
@@ -34266,8 +33962,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1524.09,
-      "endTime": 1526.97,
-      "text": "whatever else happens, happens. And I think this is, in a sense, it is a",
+      "endTime": 1527.21,
+      "text": "whatever else happens, happens. And I think this is, in a sense, it is a road",
       "words": [
         {
           "word": "whatever",
@@ -34358,21 +34054,21 @@
           "startTime": 1526.89,
           "endTime": 1526.97,
           "confidence": 0.7875
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1526.97,
-      "endTime": 1535.13,
-      "text": "road to happiness because a lot of our unhappiness comes from not being happy with the consequences of our actions. Hey, we don't control the consequences, you",
-      "words": [
+        },
         {
           "word": "road",
           "startTime": 1526.97,
           "endTime": 1527.21,
           "confidence": 0.9943
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1527.21,
+      "endTime": 1541.53,
+      "text": "to happiness because a lot of our unhappiness comes from not being happy with the consequences of our actions. Hey, we don't control the consequences, you know. We do what we do and if we can find happiness and satisfaction there, that that's all there is. No, this",
+      "words": [
         {
           "word": "to",
           "startTime": 1527.21,
@@ -34528,15 +34224,7 @@
           "startTime": 1534.97,
           "endTime": 1535.13,
           "confidence": 0.9919
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1535.13,
-      "endTime": 1537.05,
-      "text": "know. We do what we do and if we can",
-      "words": [
+        },
         {
           "word": "know.",
           "startTime": 1535.13,
@@ -34596,15 +34284,7 @@
           "startTime": 1536.81,
           "endTime": 1537.05,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1537.05,
-      "endTime": 1541.93,
-      "text": "find happiness and satisfaction there, that that's all there is. No, this is",
-      "words": [
+        },
         {
           "word": "find",
           "startTime": 1537.05,
@@ -34676,21 +34356,21 @@
           "startTime": 1541.37,
           "endTime": 1541.53,
           "confidence": 0.9987
-        },
-        {
-          "word": "is",
-          "startTime": 1541.53,
-          "endTime": 1541.93,
-          "confidence": 0.9971
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1541.93,
-      "endTime": 1552.34,
-      "text": "absolutely uh on track. Um if you spend ten to twenty days walking in the mountains for forty-five years. Then you know you're probably going to break your ankle",
+      "startTime": 1541.53,
+      "endTime": 1590.63,
+      "text": "is absolutely uh on track. Um if you spend ten to twenty days walking in the mountains for forty-five years. Then you know you're probably going to break your ankle once. So just the God of probability at work. I want to connect what you're saying to finance analogies. So Mark Twain, I think, said that if you must forecast, forecast often. Okay. So really wrong thing that people do is try to be very cautious and only speak occasionally and venture to make a forecast when you're absolutely sure. Okay, that's a delusion of being absolutely sure. It is better to try to get to 51%. If you're going to be correct 51% of the time and you lay a large number of bets, then that's going to work for you. That's",
       "words": [
+        {
+          "word": "is",
+          "startTime": 1541.53,
+          "endTime": 1541.93,
+          "confidence": 0.9971
+        },
         {
           "word": "absolutely",
           "startTime": 1541.93,
@@ -34864,15 +34544,7 @@
           "startTime": 1551.86,
           "endTime": 1552.34,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1552.34,
-      "endTime": 1553.94,
-      "text": "once. So",
-      "words": [
+        },
         {
           "word": "once.",
           "startTime": 1552.34,
@@ -34884,15 +34556,7 @@
           "startTime": 1552.9,
           "endTime": 1553.94,
           "confidence": 0.8781
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1553.94,
-      "endTime": 1590.63,
-      "text": "just the God of probability at work. I want to connect what you're saying to finance analogies. So Mark Twain, I think, said that if you must forecast, forecast often. Okay. So really wrong thing that people do is try to be very cautious and only speak occasionally and venture to make a forecast when you're absolutely sure. Okay, that's a delusion of being absolutely sure. It is better to try to get to 51%. If you're going to be correct 51% of the time and you lay a large number of bets, then that's going to work for you. That's",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 1553.94,
@@ -37542,8 +37206,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1699.65,
-      "endTime": 1720.54,
-      "text": "third points that I was going to make, both of them. So uh I'll I'll go over those points and then you know we can kind of add to that. And uh I'll go over both of them briefly and then we can talk about each of them. And uh you know, my first point, my first life lesson was acknowledge luck. My second life lesson is about how you think about the world, which is sync probabilistically, you know.",
+      "endTime": 1712.21,
+      "text": "third points that I was going to make, both of them. So uh I'll I'll go over those points and then you know we can kind of add to that. And uh I'll go over both of them briefly and then we can talk about each of them. And uh you know,",
       "words": [
         {
           "word": "third",
@@ -37856,7 +37520,15 @@
           "startTime": 1711.49,
           "endTime": 1712.21,
           "confidence": 0.6943
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1712.21,
+      "endTime": 1718.13,
+      "text": "my first point, my first life lesson was acknowledge luck. My second life lesson is about how you think about the world, which is",
+      "words": [
         {
           "word": "my",
           "startTime": 1712.21,
@@ -38000,7 +37672,15 @@
           "startTime": 1717.89,
           "endTime": 1718.13,
           "confidence": 0.997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1718.13,
+      "endTime": 1720.54,
+      "text": "sync probabilistically, you know.",
+      "words": [
         {
           "word": "sync",
           "startTime": 1718.13,
@@ -38030,8 +37710,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1720.74,
-      "endTime": 1725.06,
-      "text": "Uh what the hindsight bias does for us is we look in the past and we assume that everything",
+      "endTime": 1732.58,
+      "text": "Uh what the hindsight bias does for us is we look in the past and we assume that everything that happened was inevitable. Right? Now the thing is after something at it has has happened, it has 100% happened or it has zero percent happen, which",
       "words": [
         {
           "word": "Uh",
@@ -38146,15 +37826,7 @@
           "startTime": 1724.74,
           "endTime": 1725.06,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1725.06,
-      "endTime": 1726.9,
-      "text": "that happened was inevitable. Right?",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1725.06,
@@ -38184,15 +37856,7 @@
           "startTime": 1726.58,
           "endTime": 1726.9,
           "confidence": 0.7168
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1726.9,
-      "endTime": 1731.06,
-      "text": "Now the thing is after something at it has has happened, it has 100% happened",
-      "words": [
+        },
         {
           "word": "Now",
           "startTime": 1726.9,
@@ -38282,15 +37946,7 @@
           "startTime": 1730.5,
           "endTime": 1731.06,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1731.06,
-      "endTime": 1764.93,
-      "text": "or it has zero percent happen, which means it's not happened. It's 100, it's a binary. But until that time, there are probabilities in play, right? So when uh uh for example, if I sort of throw a dice, right? If I throw a dice, You know, if it lands on five, it has hundred percent landed on five, or it lands on something else, a zero percent landed on five. But the probability when it is up i is up in the air is, you know, it's even for all the numbers on that dice. And we need to think about the world probabilistically. And again, this sort of acknowledges the role of luck, that you think probabilistically.",
-      "words": [
+        },
         {
           "word": "or",
           "startTime": 1731.06,
@@ -38332,7 +37988,15 @@
           "startTime": 1732.42,
           "endTime": 1732.58,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1732.58,
+      "endTime": 1735.54,
+      "text": "means it's not happened. It's 100, it's a binary.",
+      "words": [
         {
           "word": "means",
           "startTime": 1732.58,
@@ -38386,7 +38050,15 @@
           "startTime": 1734.74,
           "endTime": 1735.54,
           "confidence": 0.9393
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1735.54,
+      "endTime": 1759.57,
+      "text": "But until that time, there are probabilities in play, right? So when uh uh for example, if I sort of throw a dice, right? If I throw a dice, You know, if it lands on five, it has hundred percent landed on five, or it lands on something else, a zero percent landed on five. But the probability when it is up i is up in the air is, you know, it's even for all the numbers on that dice. And we need to think about the",
+      "words": [
         {
           "word": "But",
           "startTime": 1735.54,
@@ -38908,7 +38580,15 @@
           "startTime": 1759.49,
           "endTime": 1759.57,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1759.57,
+      "endTime": 1771.94,
+      "text": "world probabilistically. And again, this sort of acknowledges the role of luck, that you think probabilistically. And in a sense, we do that. You know, p people often uh talk of poker and say that hey it's gambling. Now I have",
+      "words": [
         {
           "word": "world",
           "startTime": 1759.57,
@@ -39004,15 +38684,7 @@
           "startTime": 1763.89,
           "endTime": 1764.93,
           "confidence": 0.8413
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1764.93,
-      "endTime": 1766.77,
-      "text": "And in a sense, we do that. You know, p",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1764.93,
@@ -39072,15 +38744,7 @@
           "startTime": 1766.45,
           "endTime": 1766.77,
           "confidence": 0.5829
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1766.77,
-      "endTime": 1771.94,
-      "text": "people often uh talk of poker and say that hey it's gambling. Now I have",
-      "words": [
+        },
         {
           "word": "people",
           "startTime": 1766.77,
@@ -39176,8 +38840,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1771.94,
-      "endTime": 1774.42,
-      "text": "two things to say about that. One, I point out that no it's a",
+      "endTime": 1780.1,
+      "text": "two things to say about that. One, I point out that no it's a game of scale. It's not gambling. And at the same time, I say what's wrong with gambling? We are all gambling. If you think about",
       "words": [
         {
           "word": "two",
@@ -39262,15 +38926,7 @@
           "startTime": 1774.34,
           "endTime": 1774.42,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1774.42,
-      "endTime": 1775.94,
-      "text": "game of scale. It's not gambling.",
-      "words": [
+        },
         {
           "word": "game",
           "startTime": 1774.42,
@@ -39306,15 +38962,7 @@
           "startTime": 1775.38,
           "endTime": 1775.94,
           "confidence": 0.9623
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1775.94,
-      "endTime": 1780.1,
-      "text": "And at the same time, I say what's wrong with gambling? We are all gambling. If you think about",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1775.94,
@@ -39496,8 +39144,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1784.66,
-      "endTime": 1787.46,
-      "text": "We do this every day. You cross the road there is a probability",
+      "endTime": 1793.49,
+      "text": "We do this every day. You cross the road there is a probability you'll be hit by a truck. In fact it's greater than an air accident. And yet we choose to cross the road. We choose to do",
       "words": [
         {
           "word": "We",
@@ -39576,15 +39224,7 @@
           "startTime": 1787.06,
           "endTime": 1787.46,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1787.46,
-      "endTime": 1790.28,
-      "text": "you'll be hit by a truck. In fact it's greater than an air accident.",
-      "words": [
+        },
         {
           "word": "you'll",
           "startTime": 1787.46,
@@ -39668,15 +39308,7 @@
           "startTime": 1789.78,
           "endTime": 1790.28,
           "confidence": 0.8909
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1790.61,
-      "endTime": 1793.49,
-      "text": "And yet we choose to cross the road. We choose to do",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1790.61,
@@ -39754,8 +39386,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1793.49,
-      "endTime": 1798.53,
-      "text": "various things. You know, you see a pretty girl at a bar, you go and talk to her. You know, the you there",
+      "endTime": 1819.91,
+      "text": "various things. You know, you see a pretty girl at a bar, you go and talk to her. You know, the you there th there are a range of possible responses that she has and you're thinking probabilistically and deciding what to do. You know, so w you buy a house, it's a gamble. You make a friend, it's a gamble. Uh every action that you take with all the opportunity costs that are piled up, they are all gambles. G uh they're all gambles. So what we are doing in a sense is that we are thinking probabilistically",
       "words": [
         {
           "word": "various",
@@ -39894,15 +39526,7 @@
           "startTime": 1798.29,
           "endTime": 1798.53,
           "confidence": 0.7721
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1798.53,
-      "endTime": 1801.65,
-      "text": "th there are a range of possible responses that she has",
-      "words": [
+        },
         {
           "word": "th",
           "startTime": 1798.53,
@@ -39968,15 +39592,7 @@
           "startTime": 1801.33,
           "endTime": 1801.65,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1801.65,
-      "endTime": 1859.61,
-      "text": "and you're thinking probabilistically and deciding what to do. You know, so w you buy a house, it's a gamble. You make a friend, it's a gamble. Uh every action that you take with all the opportunity costs that are piled up, they are all gambles. G uh they're all gambles. So what we are doing in a sense is that we are thinking probabilistically implicitly, but we don't often acknowledge it to ourselves. And I think acknowledging it to ourselves will mean that we don't blame ourselves for decisions in the past that went wrong. And we once we start applying numbers to important decisions in our lives, we also have more clarity on what we are doing and why. And that can help us. So probabilistic thinking to me is key. And uh you know, mid episode recommendation, a great book on this is super forecasting by Philip Tedlock. Uh just a wonderful book. Uh and the the third point is again a point of action, which is put in volume. Like what I often say about Poker is that while it's a game of skill, the quantum of luck is much higher than another games of skill. So if",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1801.65,
@@ -40366,7 +39982,15 @@
           "startTime": 1819.41,
           "endTime": 1819.91,
           "confidence": 0.9943
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1820.98,
+      "endTime": 1836.18,
+      "text": "implicitly, but we don't often acknowledge it to ourselves. And I think acknowledging it to ourselves will mean that we don't blame ourselves for decisions in the past that went wrong. And we once we start applying numbers to important decisions in our lives, we also have more clarity on what we are doing",
+      "words": [
         {
           "word": "implicitly,",
           "startTime": 1820.98,
@@ -40690,7 +40314,15 @@
           "startTime": 1835.7,
           "endTime": 1836.18,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1836.18,
+      "endTime": 1845.32,
+      "text": "and why. And that can help us. So probabilistic thinking to me is key. And uh you know, mid episode recommendation, a great book on this is super forecasting by Philip Tedlock.",
+      "words": [
         {
           "word": "and",
           "startTime": 1836.18,
@@ -40882,7 +40514,15 @@
           "startTime": 1844.82,
           "endTime": 1845.32,
           "confidence": 0.866
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1845.7,
+      "endTime": 1862.25,
+      "text": "Uh just a wonderful book. Uh and the the third point is again a point of action, which is put in volume. Like what I often say about Poker is that while it's a game of skill, the quantum of luck is much higher than another games of skill. So if I play like a hundred points of tennis with Nadal,",
+      "words": [
         {
           "word": "Uh",
           "startTime": 1845.7,
@@ -41188,15 +40828,7 @@
           "startTime": 1859.45,
           "endTime": 1859.61,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1859.61,
-      "endTime": 1862.49,
-      "text": "I play like a hundred points of tennis with Nadal, of course,",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1859.61,
@@ -41256,7 +40888,15 @@
           "startTime": 1861.69,
           "endTime": 1862.25,
           "confidence": 0.9828
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1862.25,
+      "endTime": 1869.29,
+      "text": "of course, he'll win them all. If I play a hundred games of chess with Magnus Carlson, even though I'm a good recreational player, he'll win them all. But you uh",
+      "words": [
         {
           "word": "of",
           "startTime": 1862.25,
@@ -41268,15 +40908,7 @@
           "startTime": 1862.33,
           "endTime": 1862.49,
           "confidence": 0.8652
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1862.49,
-      "endTime": 1879.93,
-      "text": "he'll win them all. If I play a hundred games of chess with Magnus Carlson, even though I'm a good recreational player, he'll win them all. But you uh you know, have a hand of poker between the best player in the world and someone who just learned the rules, maybe someone will just watch my presentation before this. And it'll be like 51-49. There is an edge for the better player, but the edge is really",
-      "words": [
+        },
         {
           "word": "he'll",
           "startTime": 1862.49,
@@ -41450,7 +41082,15 @@
           "startTime": 1868.81,
           "endTime": 1869.29,
           "confidence": 0.854
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1869.29,
+      "endTime": 1914.28,
+      "text": "you know, have a hand of poker between the best player in the world and someone who just learned the rules, maybe someone will just watch my presentation before this. And it'll be like 51-49. There is an edge for the better player, but the edge is really small. The edge manifests itself over the long run when uh poker players do what is called as putting in volume. Right, you have to put in volume. You increase that sample size and you do well. Exactly the point you were making about finance, that you don't make one or two big bets. That is duft. You know, you make as many bets as you can, and you try to make sure, therefore, with poker, that every hand is different inner sense. There are commonalities, but there the commonality that has to be in all of them is you try to make a plus EV decision. You know, as long as you keep trying to make plus EV decisions, eventually the outcome will",
+      "words": [
         {
           "word": "you",
           "startTime": 1869.29,
@@ -41738,15 +41378,7 @@
           "startTime": 1879.77,
           "endTime": 1879.93,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1879.93,
-      "endTime": 1882.01,
-      "text": "small. The edge manifests itself",
-      "words": [
+        },
         {
           "word": "small.",
           "startTime": 1879.93,
@@ -41776,15 +41408,7 @@
           "startTime": 1881.61,
           "endTime": 1882.01,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1882.01,
-      "endTime": 1883.93,
-      "text": "over the long run when uh poker",
-      "words": [
+        },
         {
           "word": "over",
           "startTime": 1882.01,
@@ -41826,15 +41450,7 @@
           "startTime": 1883.61,
           "endTime": 1883.93,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1883.93,
-      "endTime": 1886.58,
-      "text": "players do what is called as putting in volume. Right,",
-      "words": [
+        },
         {
           "word": "players",
           "startTime": 1883.93,
@@ -41894,15 +41510,7 @@
           "startTime": 1886.34,
           "endTime": 1886.58,
           "confidence": 0.724
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1886.58,
-      "endTime": 1916.92,
-      "text": "you have to put in volume. You increase that sample size and you do well. Exactly the point you were making about finance, that you don't make one or two big bets. That is duft. You know, you make as many bets as you can, and you try to make sure, therefore, with poker, that every hand is different inner sense. There are commonalities, but there the commonality that has to be in all of them is you try to make a plus EV decision. You know, as long as you keep trying to make plus EV decisions, eventually the outcome will be plus EV for you. And during that time",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 1886.58,
@@ -42514,7 +42122,15 @@
           "startTime": 1914.12,
           "endTime": 1914.28,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1914.28,
+      "endTime": 1934.28,
+      "text": "be plus EV for you. And during that time you may think something is plus EV, but maybe some assumption is wrong, some premise is wrong, you're getting the math wrong. So you have to be deeply self-critical um and you know, really work on your game. And I think that that applies for life as well. I mean, our next episode we're going to talk about increasing the surface area of luck, and serendipity, whatever. But",
+      "words": [
         {
           "word": "be",
           "startTime": 1914.28,
@@ -42568,15 +42184,7 @@
           "startTime": 1916.6,
           "endTime": 1916.92,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1916.92,
-      "endTime": 1918.44,
-      "text": "you may think something is plus EV,",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 1916.92,
@@ -42618,15 +42226,7 @@
           "startTime": 1917.96,
           "endTime": 1918.44,
           "confidence": 0.8582
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1918.44,
-      "endTime": 1926.84,
-      "text": "but maybe some assumption is wrong, some premise is wrong, you're getting the math wrong. So you have to be deeply self-critical um and you know, really work on your game.",
-      "words": [
+        },
         {
           "word": "but",
           "startTime": 1918.44,
@@ -42812,15 +42412,7 @@
           "startTime": 1926.36,
           "endTime": 1926.84,
           "confidence": 0.956
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1926.84,
-      "endTime": 1928.36,
-      "text": "And I think that that applies for",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1926.84,
@@ -42862,15 +42454,7 @@
           "startTime": 1928.2,
           "endTime": 1928.36,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1928.36,
-      "endTime": 1934.28,
-      "text": "life as well. I mean, our next episode we're going to talk about increasing the surface area of luck, and serendipity, whatever. But",
-      "words": [
+        },
         {
           "word": "life",
           "startTime": 1928.36,
@@ -43014,8 +42598,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1934.28,
-      "endTime": 1937.4,
-      "text": "I think that applies in life as well. It applies for creators.",
+      "endTime": 1936.76,
+      "text": "I think that applies in life as well. It applies",
       "words": [
         {
           "word": "I",
@@ -43076,7 +42660,15 @@
           "startTime": 1936.36,
           "endTime": 1936.76,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1936.76,
+      "endTime": 1945.0,
+      "text": "for creators. You know, the more you create, there's a dual benefit. the more you create, number one, you get better and better because constant iteration makes us better.",
+      "words": [
         {
           "word": "for",
           "startTime": 1936.76,
@@ -43088,15 +42680,7 @@
           "startTime": 1936.92,
           "endTime": 1937.4,
           "confidence": 0.8818
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1937.4,
-      "endTime": 1945.0,
-      "text": "You know, the more you create, there's a dual benefit. the more you create, number one, you get better and better because constant iteration makes us better.",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 1937.4,
@@ -43264,8 +42848,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1945.0,
-      "endTime": 1948.84,
-      "text": "But number two, you also increase the likelihood of hitting upon a",
+      "endTime": 1948.44,
+      "text": "But number two, you also increase the likelihood of hitting",
       "words": [
         {
           "word": "But",
@@ -43326,7 +42910,15 @@
           "startTime": 1948.12,
           "endTime": 1948.44,
           "confidence": 0.9986
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1948.44,
+      "endTime": 2043.29,
+      "text": "upon a genius idea that really works. You increase the idea of the video you have made or the blog post you have written going viral and getting you a new following. So it's really important to sort of do that. If you're just gonna be sitting in your room all day doing nothing, uh, you know, it becomes hard to uh f for good things to happen to you. For good things to happen to you, you have to put in a volume of possibilities where uh you know which you can benefit from. Uh so you know, if you have many doors, opportunity will knock somewhere or the other. Uh this doesn't, of course, mean that you completely diversify, that's also daft. But in the things that you're passionate about, you put in that volume and uh may not apply to every field necessarily. But in general, as you said, it's it's kind of a good idea to think of it like this, because you know, here's the tragedy. The the tragic lesson of poker is that m mostly everything is luck, and your skill only applies to how well you play the ha cards that you're dealt. Now in poker, I can play a million hands. Especially like at one point I used to multi-table play tables at a time and et cetera, et cetera. Online hands go really fast. You know, you can get a big sample size. In life you can't. And it's a great tragedy. You're dealt the cards, you're dealt, everybody is real. You and I have got relatively incredibly uh you know good starting hands. And and Nard Dharma is to make the most of them and help others also. But um you you often you can't put in volume in certain Areas, but in certain areas you can. And and it's just an important uh sort of frame to keep in mind.",
+      "words": [
         {
           "word": "upon",
           "startTime": 1948.44,
@@ -43338,15 +42930,7 @@
           "startTime": 1948.68,
           "endTime": 1948.84,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1948.84,
-      "endTime": 1981.8,
-      "text": "genius idea that really works. You increase the idea of the video you have made or the blog post you have written going viral and getting you a new following. So it's really important to sort of do that. If you're just gonna be sitting in your room all day doing nothing, uh, you know, it becomes hard to uh f for good things to happen to you. For good things to happen to you, you have to put in a volume of possibilities where uh you know which you can benefit from. Uh so you know, if you have many doors, opportunity will knock somewhere or the other. Uh this doesn't, of course, mean that you",
-      "words": [
+        },
         {
           "word": "genius",
           "startTime": 1948.84,
@@ -44048,15 +43632,7 @@
           "startTime": 1981.56,
           "endTime": 1981.8,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1981.8,
-      "endTime": 1983.16,
-      "text": "completely diversify,",
-      "words": [
+        },
         {
           "word": "completely",
           "startTime": 1981.8,
@@ -44068,15 +43644,7 @@
           "startTime": 1982.2,
           "endTime": 1983.16,
           "confidence": 0.7868
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1983.16,
-      "endTime": 1992.26,
-      "text": "that's also daft. But in the things that you're passionate about, you put in that volume and uh may not apply to every field necessarily. But in general,",
-      "words": [
+        },
         {
           "word": "that's",
           "startTime": 1983.16,
@@ -44244,15 +43812,7 @@
           "startTime": 1991.78,
           "endTime": 1992.26,
           "confidence": 0.9395
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1992.26,
-      "endTime": 1994.02,
-      "text": "as you said, it's it's kind of a",
-      "words": [
+        },
         {
           "word": "as",
           "startTime": 1992.26,
@@ -44300,15 +43860,7 @@
           "startTime": 1993.94,
           "endTime": 1994.02,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1994.02,
-      "endTime": 1999.22,
-      "text": "good idea to think of it like this, because you know, here's the tragedy. The the tragic",
-      "words": [
+        },
         {
           "word": "good",
           "startTime": 1994.02,
@@ -44410,15 +43962,7 @@
           "startTime": 1998.74,
           "endTime": 1999.22,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1999.22,
-      "endTime": 2001.78,
-      "text": "lesson of poker is that m mostly everything",
-      "words": [
+        },
         {
           "word": "lesson",
           "startTime": 1999.22,
@@ -44466,15 +44010,7 @@
           "startTime": 2001.38,
           "endTime": 2001.78,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2001.78,
-      "endTime": 2003.54,
-      "text": "is luck, and",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2001.78,
@@ -44492,15 +44028,7 @@
           "startTime": 2002.74,
           "endTime": 2003.54,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2003.54,
-      "endTime": 2006.02,
-      "text": "your skill only applies to how well you play the ha",
-      "words": [
+        },
         {
           "word": "your",
           "startTime": 2003.54,
@@ -44566,15 +44094,7 @@
           "startTime": 2005.78,
           "endTime": 2006.02,
           "confidence": 0.6994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2006.02,
-      "endTime": 2043.29,
-      "text": "cards that you're dealt. Now in poker, I can play a million hands. Especially like at one point I used to multi-table play tables at a time and et cetera, et cetera. Online hands go really fast. You know, you can get a big sample size. In life you can't. And it's a great tragedy. You're dealt the cards, you're dealt, everybody is real. You and I have got relatively incredibly uh you know good starting hands. And and Nard Dharma is to make the most of them and help others also. But um you you often you can't put in volume in certain Areas, but in certain areas you can. And and it's just an important uh sort of frame to keep in mind.",
-      "words": [
+        },
         {
           "word": "cards",
           "startTime": 2006.02,
@@ -45330,8 +44850,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2043.29,
-      "endTime": 2048.65,
-      "text": "Uh in so you're absolutely right that in some dimensions of life, high N",
+      "endTime": 2070.69,
+      "text": "Uh in so you're absolutely right that in some dimensions of life, high N is not a choice. But there is still a case for being a little zen about it. That don't beat yourself up and don't go raging against life and the world. It just is. And so, you know, be calm and accept those lotteries and make the best of what we can. And at this point I won't I'm suddenly I wondered and thinking aloud you said don't beat yourself up. How does somebody beat",
       "words": [
         {
           "word": "Uh",
@@ -45416,15 +44936,7 @@
           "startTime": 2048.17,
           "endTime": 2048.65,
           "confidence": 0.8649
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2048.65,
-      "endTime": 2050.33,
-      "text": "is not a choice. But",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2048.65,
@@ -45454,15 +44966,7 @@
           "startTime": 2050.09,
           "endTime": 2050.33,
           "confidence": 0.9936
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2050.33,
-      "endTime": 2067.01,
-      "text": "there is still a case for being a little zen about it. That don't beat yourself up and don't go raging against life and the world. It just is. And so, you know, be calm and accept those lotteries and make the best of what we can. And at this point I won't I'm suddenly",
-      "words": [
+        },
         {
           "word": "there",
           "startTime": 2050.33,
@@ -45792,15 +45296,7 @@
           "startTime": 2066.61,
           "endTime": 2067.01,
           "confidence": 0.8071
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2067.01,
-      "endTime": 2068.93,
-      "text": "I wondered and thinking aloud you said don't",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 2067.01,
@@ -45848,15 +45344,7 @@
           "startTime": 2068.69,
           "endTime": 2068.93,
           "confidence": 0.9366
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2068.93,
-      "endTime": 2070.69,
-      "text": "beat yourself up. How does somebody beat",
-      "words": [
+        },
         {
           "word": "beat",
           "startTime": 2068.93,

@@ -5,7 +5,7 @@
     "durationSeconds": 2994,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -493,8 +493,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 87.13,
-      "endTime": 95.64,
-      "text": "We've done many, many things in this show so far. Uh here's one we haven't. Firms. I take great interest in firms.",
+      "endTime": 121.91,
+      "text": "We've done many, many things in this show so far. Uh here's one we haven't. Firms. I take great interest in firms. Uh production in the market economy is organized in firms uh to be an advanced economy. We need the firms with the productivity and the capabilities of the firms of advanced economies. So I see India's journey as synonymous with the journey of building great firms. So all my life I've taken interest. in what makes firm",
       "words": [
         {
           "word": "We've",
@@ -627,15 +627,7 @@
           "startTime": 94.84,
           "endTime": 95.64,
           "confidence": 0.9442
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 95.64,
-      "endTime": 97.8,
-      "text": "Uh production",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 95.64,
@@ -647,15 +639,7 @@
           "startTime": 96.92,
           "endTime": 97.8,
           "confidence": 0.9878
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 97.8,
-      "endTime": 102.04,
-      "text": "in the market economy is organized in firms uh to be an advanced",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 97.8,
@@ -733,15 +717,7 @@
           "startTime": 101.4,
           "endTime": 102.04,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 102.04,
-      "endTime": 104.84,
-      "text": "economy. We need",
-      "words": [
+        },
         {
           "word": "economy.",
           "startTime": 102.04,
@@ -759,15 +735,7 @@
           "startTime": 104.04,
           "endTime": 104.84,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 104.84,
-      "endTime": 121.91,
-      "text": "the firms with the productivity and the capabilities of the firms of advanced economies. So I see India's journey as synonymous with the journey of building great firms. So all my life I've taken interest. in what makes firm",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 104.84,
@@ -1191,8 +1159,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 138.23,
-      "endTime": 259.5,
-      "text": "Today I want to tell the story of three great firms. Okay, these are old stories in a way, but they're memorable and across all these years they have stuck in my head. So I shall burden you, gentle reader, with these stories. Uh let's think about how firms grow. Let's think about how firms expand. At the base, we have some standard ideas, uh, what is called economies of scope and economies of scale. Um, economies of scale is we already know how to do something. We want to do it 10x or 100x on scale. Ideally, we'd like to reap efficiencies, but it's very difficult to take the knowledge of a few people. in artisanal mode and scale it to bigger teams, then the law of large numbers kicks in. Once in a blue moon events become commonplace when you're playing at scale. So the process manuals have to become commensurately complicated to be able to deal with those so-called rare events as seen in an artisanal shop. And then there is economies of scope where we want to find adjacencies, we want to serve the customer that knows how to trust us. by doing things that are not that different from what we already know how to do. Okay, this is reasonably well established standard territory. I've I would like to single out three firm stories because what these three firms did was just unimaginably audacious and just did not fit any standard conception of how firms grow. Uh they took risks they took They made great leaps, and you know what, by and large, they were right. Okay, so let's start. Story number one, Sun Microsystems. My first story is a company that was called Sun",
+      "endTime": 570.46,
+      "text": "Today I want to tell the story of three great firms. Okay, these are old stories in a way, but they're memorable and across all these years they have stuck in my head. So I shall burden you, gentle reader, with these stories. Uh let's think about how firms grow. Let's think about how firms expand. At the base, we have some standard ideas, uh, what is called economies of scope and economies of scale. Um, economies of scale is we already know how to do something. We want to do it 10x or 100x on scale. Ideally, we'd like to reap efficiencies, but it's very difficult to take the knowledge of a few people. in artisanal mode and scale it to bigger teams, then the law of large numbers kicks in. Once in a blue moon events become commonplace when you're playing at scale. So the process manuals have to become commensurately complicated to be able to deal with those so-called rare events as seen in an artisanal shop. And then there is economies of scope where we want to find adjacencies, we want to serve the customer that knows how to trust us. by doing things that are not that different from what we already know how to do. Okay, this is reasonably well established standard territory. I've I would like to single out three firm stories because what these three firms did was just unimaginably audacious and just did not fit any standard conception of how firms grow. Uh they took risks they took They made great leaps, and you know what, by and large, they were right. Okay, so let's start. Story number one, Sun Microsystems. My first story is a company that was called Sun Microsystems. In the late 1980s, they were making computers. Okay. At the time it was called a workstation, but that's irrelevant. What were they doing? They were buying off the shelf CPUs and off-the-shelf peripherals and putting them together and they innovated in the operating system. So one of the co-founders at Sun Microsystems was a guy named Bill Joy. He brought in the knowledge of a variant of Unix. From UC Berkeley, that was called BSD Unix. So their innovation was in the operating system. They had a really good operating system, and they were building nice computers. Their CPUs were taken from a then CPU manufacturing company called Motorola. So just to fix intuition, imagine today you're a PC maker. You will buy some CPU from AMD, and you will assemble a computer. And maybe you will innovate on the operating system. Okay, so that's what Sun Microsystems was doing in the late 80s. So your mental model is that a company that is doing a little bit of hardware design and assembling nice global state of the art fast computers using off the shelf components and writing a nice operating system to put on top of it. That's the way it was. Then Sun started getting into trouble because Motorola started floundering. That Sun was not able to escalate the capability of these computers fast enough because for a variety of reasons Motorola was stuck. Motorola was not able to grow the capabilities of their CPUs. They had hit a wall in that period. That was also a very interesting time in the history of CPUs. At the time, there were two main vendors, Intel and Motorola, and both of them were making so-called complex instruction set computers. There was a idea brewing in the labs in Stanford and in Berkeley, which is called reduced instruction set uh computing, where the idea was you make the CPU very, very simple and then it goes fast. So you reduce complexity in the CPU dramatically, you reduce the Architecture as shown to the programmer, you make it very simple. And in return, you get great leaps of performance. So this was a controversial idea at the time. There were the two giant incumbents, Intel and Motorola. And here was one tiny company on the side, namely Sun Microsystems. At that time, Sun made an audacious leap. They said, You know what? Why don't we make CPUs? So you can imagine. Assembling computers based on other people's peripherals is a you know not too complicated problem. Designing CPUs, manufacturing CPUs, that's an entirely separate cattle of fish. And Sun saw that opportunity in two ways. One was they were at the cutting edge in terms of being a company that wanted to buy the fastest CPUs in the world, and Motorola was failing. And on the other hand, There was that idea brewing on the side that maybe there is a pathway to radically simplify the instruction set and making the CPUs faster. So they put this two and two together and made an incredible great leap. They said, You know what? We're going to make CPUs. And they invented an architecture which is called Spark, and they jumped into the CPU business and for a run of about 10 years. They were successful and important and influential, and they helped challenge the mainstream of the day on what CPUs should be. Okay. So this was an example of a firm where it really was a breathtaking level of audacity that a normal computer maker chose to jump into the world's most complicated design and manufacturing problem, namely CPUs. And they pulled it off. And for a period they did it rather well. On a similar note, Sun jumped into a different level when they invented the computer programming language Java. Okay, again, it was that level of audacity that programming language, you know, generally no corporation wins in doing a programming language. Nobody makes money from doing a programming language. And inherently programming languages are things that don't work in the hands of one corporation. But Sun made that leap, they built Java, it was incredibly influential. Okay, so these leaps. Are what I call remarkable milestones in the history of a firm. It's not normal uh business rules of the expansion of firms. It was not economies of scale, it was not really economies of scope, and it was jumping to something way more complicated. Okay, so that's my story of Sun Microsystems.",
       "words": [
         {
           "word": "Today",
@@ -2933,29 +2901,13 @@
           "startTime": 259.02,
           "endTime": 259.5,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 259.5,
-      "endTime": 261.0,
-      "text": "Microsystems.",
-      "words": [
+        },
         {
           "word": "Microsystems.",
           "startTime": 259.5,
           "endTime": 261.0,
           "confidence": 0.9115
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 261.02,
-      "endTime": 368.02,
-      "text": "In the late 1980s, they were making computers. Okay. At the time it was called a workstation, but that's irrelevant. What were they doing? They were buying off the shelf CPUs and off-the-shelf peripherals and putting them together and they innovated in the operating system. So one of the co-founders at Sun Microsystems was a guy named Bill Joy. He brought in the knowledge of a variant of Unix. From UC Berkeley, that was called BSD Unix. So their innovation was in the operating system. They had a really good operating system, and they were building nice computers. Their CPUs were taken from a then CPU manufacturing company called Motorola. So just to fix intuition, imagine today you're a PC maker. You will buy some CPU from AMD, and you will assemble a computer. And maybe you will innovate on the operating system. Okay, so that's what Sun Microsystems was doing in the late 80s. So your mental model is that a company that is doing a little bit of hardware design and assembling nice global state of the art fast computers using off the shelf components and writing a nice operating system to put on top of it. That's the way it was. Then Sun started getting into trouble because Motorola started floundering. That Sun was not able to escalate the capability of these computers fast enough because for a variety of reasons Motorola was stuck. Motorola was not able to grow the capabilities of their CPUs. They had hit a wall in that",
-      "words": [
+        },
         {
           "word": "In",
           "startTime": 261.02,
@@ -4485,29 +4437,13 @@
           "startTime": 367.7,
           "endTime": 368.02,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 368.02,
-      "endTime": 369.52,
-      "text": "period.",
-      "words": [
+        },
         {
           "word": "period.",
           "startTime": 368.02,
           "endTime": 369.52,
           "confidence": 0.9885
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 370.18,
-      "endTime": 382.31,
-      "text": "That was also a very interesting time in the history of CPUs. At the time, there were two main vendors, Intel and Motorola, and both of them were making so-called complex instruction set",
-      "words": [
+        },
         {
           "word": "That",
           "startTime": 370.18,
@@ -4705,29 +4641,13 @@
           "startTime": 381.83,
           "endTime": 382.31,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 382.31,
-      "endTime": 383.81,
-      "text": "computers.",
-      "words": [
+        },
         {
           "word": "computers.",
           "startTime": 382.31,
           "endTime": 383.81,
           "confidence": 0.9908
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 384.15,
-      "endTime": 428.09,
-      "text": "There was a idea brewing in the labs in Stanford and in Berkeley, which is called reduced instruction set uh computing, where the idea was you make the CPU very, very simple and then it goes fast. So you reduce complexity in the CPU dramatically, you reduce the Architecture as shown to the programmer, you make it very simple. And in return, you get great leaps of performance. So this was a controversial idea at the time. There were the two giant incumbents, Intel and Motorola. And here was one tiny company on the side, namely Sun Microsystems. At that time, Sun made an audacious leap. They said, You know what? Why don't we make",
-      "words": [
+        },
         {
           "word": "There",
           "startTime": 384.15,
@@ -5417,29 +5337,13 @@
           "startTime": 427.85,
           "endTime": 428.09,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 428.09,
-      "endTime": 429.59,
-      "text": "CPUs?",
-      "words": [
+        },
         {
           "word": "CPUs?",
           "startTime": 428.09,
           "endTime": 429.59,
           "confidence": 0.9532
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 429.77,
-      "endTime": 570.46,
-      "text": "So you can imagine. Assembling computers based on other people's peripherals is a you know not too complicated problem. Designing CPUs, manufacturing CPUs, that's an entirely separate cattle of fish. And Sun saw that opportunity in two ways. One was they were at the cutting edge in terms of being a company that wanted to buy the fastest CPUs in the world, and Motorola was failing. And on the other hand, There was that idea brewing on the side that maybe there is a pathway to radically simplify the instruction set and making the CPUs faster. So they put this two and two together and made an incredible great leap. They said, You know what? We're going to make CPUs. And they invented an architecture which is called Spark, and they jumped into the CPU business and for a run of about 10 years. They were successful and important and influential, and they helped challenge the mainstream of the day on what CPUs should be. Okay. So this was an example of a firm where it really was a breathtaking level of audacity that a normal computer maker chose to jump into the world's most complicated design and manufacturing problem, namely CPUs. And they pulled it off. And for a period they did it rather well. On a similar note, Sun jumped into a different level when they invented the computer programming language Java. Okay, again, it was that level of audacity that programming language, you know, generally no corporation wins in doing a programming language. Nobody makes money from doing a programming language. And inherently programming languages are things that don't work in the hands of one corporation. But Sun made that leap, they built Java, it was incredibly influential. Okay, so these leaps. Are what I call remarkable milestones in the history of a firm. It's not normal uh business rules of the expansion of firms. It was not economies of scale, it was not really economies of scope, and it was jumping to something way more complicated. Okay, so that's my story of Sun Microsystems.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 429.77,
@@ -11619,8 +11523,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 819.45,
-      "endTime": 1021.74,
-      "text": "My second story of this nature is Google. So now if you see it in sequence in history, the second story is Google. Now look at the beginnings of Google. What were they doing? They were doing a search engine. Okay. So they were they dragged up a big computer and they downloaded the entire internet. They innovated on an algorithm about uh what is an important page versus what is not. This is an algorithm by Larry Page. It is called PageRank, where the word page is not a web page, but it is Larry Page. And uh they built a search engine. Okay, and all of us have used it. Nice. It's like Yahoo, it's like Alta Vista. Okay, you go to uh Google and you run a search and you would get the pages that you should be reading. So that's where they started. Then they made one small leap where they understood that uh this is incredibly resource intensive because you effectively have to download the entire internet. And you have to index the entire internet. So they were really pushing the limits internally on infrastructure. And somewhere in there, their self-understanding became that we're not a search company, we're an infrastructure company. Our unique edge is we know how to handle more millions of CPUs than anybody else in the world. Okay, so that's an interesting shift in their engineering hunger. That I'm not an application developer of search. But I am an infrastructure provider because I have understood how to download the entire internet and index the entire internet and process uh algorithms surrounding the text of the entire internet. Okay, so that's a different level of engineering complexity. Once again, it speaks to the knowledge and capabilities of people like Larry Page and Sergei Bryn. That when faced with these kinds of horrendous engineering problems, they did not blink. They said, Sure, we can do it. And they had the respect and the recruitment and the money that they were able to build those engineering teams. And they just managed to become an amazing internal engineering firm where they were doing the world's most complex compute. They had the most vast computation of the whole world because they were storing and processing the entire internet. And then you get to the remarkable moment of Android. Google became the maker of Android, and that's a different leap altogether. Now suddenly they became an operating systems vendor. An operating system is the most complex piece of software. So it is akin to Sun Microsystems jumping to the CPU. This is Google jumping to saying, you know what, I'm going to write the operating system. However good you be as a search company, as an infrastructure company, it's a different level to say, I'm going to write the operating system. Okay, and there is a sweet little story. There, the uh project Android had begun in the hands of another person, I think the name is Andy Rubin. And uh he was nurturing it, building it, nurturing it, building it. And it wasn't really working too well, partly because in that age, it was very difficult to build a mobile phone with adequate CPU power and battery life to do any meaningful calculations. And at some point he maxed out, he ran out of steam, and uh he was about to do a transaction to sell it to a Canadian. Telecom company, I think it was called",
+      "endTime": 1209.95,
+      "text": "My second story of this nature is Google. So now if you see it in sequence in history, the second story is Google. Now look at the beginnings of Google. What were they doing? They were doing a search engine. Okay. So they were they dragged up a big computer and they downloaded the entire internet. They innovated on an algorithm about uh what is an important page versus what is not. This is an algorithm by Larry Page. It is called PageRank, where the word page is not a web page, but it is Larry Page. And uh they built a search engine. Okay, and all of us have used it. Nice. It's like Yahoo, it's like Alta Vista. Okay, you go to uh Google and you run a search and you would get the pages that you should be reading. So that's where they started. Then they made one small leap where they understood that uh this is incredibly resource intensive because you effectively have to download the entire internet. And you have to index the entire internet. So they were really pushing the limits internally on infrastructure. And somewhere in there, their self-understanding became that we're not a search company, we're an infrastructure company. Our unique edge is we know how to handle more millions of CPUs than anybody else in the world. Okay, so that's an interesting shift in their engineering hunger. That I'm not an application developer of search. But I am an infrastructure provider because I have understood how to download the entire internet and index the entire internet and process uh algorithms surrounding the text of the entire internet. Okay, so that's a different level of engineering complexity. Once again, it speaks to the knowledge and capabilities of people like Larry Page and Sergei Bryn. That when faced with these kinds of horrendous engineering problems, they did not blink. They said, Sure, we can do it. And they had the respect and the recruitment and the money that they were able to build those engineering teams. And they just managed to become an amazing internal engineering firm where they were doing the world's most complex compute. They had the most vast computation of the whole world because they were storing and processing the entire internet. And then you get to the remarkable moment of Android. Google became the maker of Android, and that's a different leap altogether. Now suddenly they became an operating systems vendor. An operating system is the most complex piece of software. So it is akin to Sun Microsystems jumping to the CPU. This is Google jumping to saying, you know what, I'm going to write the operating system. However good you be as a search company, as an infrastructure company, it's a different level to say, I'm going to write the operating system. Okay, and there is a sweet little story. There, the uh project Android had begun in the hands of another person, I think the name is Andy Rubin. And uh he was nurturing it, building it, nurturing it, building it. And it wasn't really working too well, partly because in that age, it was very difficult to build a mobile phone with adequate CPU power and battery life to do any meaningful calculations. And at some point he maxed out, he ran out of steam, and uh he was about to do a transaction to sell it to a Canadian. Telecom company, I think it was called Macrow. And the version of the story that I have read in the press is that late one evening he reached out to the Google crew saying that tomorrow morning I'm going to sign the term sheet to sell Android to Macrow. But you know what? This project really become belongs in Google, that Google has the culture, has the engineering capability, has the hunger. to do justice to Android. So you know, let's talk and really I would love it if this project went to Google and I will go with the project to Google. And over that evening it was thrashed out and Google purchased Andy Rubin's company and the rest is history. Today Android is one of the most important operating systems of the planet. So this again speaks for that engineering culture and the respect. And by the way, as an aside, what I want to say is that there was an old Unix culture in Silicon Valley and it first coalesced in Sun. And after Sun, many of the key people, for example, Eric Schmidt was chief scientist at Sun, they moved to Netscape. Eric Schmidt moved as the chairman or CEO or something of Netscape. And then when Netscape ended, a lot of that team moved to Google. So I've I see a succession of some of the best Uh Unix philosophy and engineering ethos from Sun to Netscape to Google. So Google had those people, Google had the culture. Okay there are legends from the original Unix team of Bell Labs like Rob Pike, who work in Google. So now again, in the eyes of a person like Andy Rubin, if there is a good engineering organization that you want to take the love of your life to. It would be Google. So that's how Android landed up in Google. And Google did justice to it. They were able to take that flicky early stage bad Android and turn it into the world beating Android of today, where today it is one of the most important operating systems of the whole world. Okay, so this is another example that the search engine company didn't think that I will do search for text, I will do search for movies, I'll do search for music. Okay, those would have been normal analogies and extensions, economies of scope. I will give you a search appliance that sits inside your company and run search on your private database inside your company. Those would all have been normal business thinking. Instead, these guys were audacious. They set up their tagline as we want to organize the whole world's information. Okay. So not modest objectives. And they had the raw engineering punch. To first build amazing internal infrastructure so that they had that living engineering capabilities inside. They had the engineering culture. You know, so as I said, in some ways they inherited the old Unix culture of Sun and Netscape. And then they had the respect in the eyes of the community, so that some of the best people gravitated there. And then the great leap came with Android.",
       "words": [
         {
           "word": "My",
@@ -15107,15 +15011,7 @@
           "startTime": 1021.5,
           "endTime": 1021.74,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1021.74,
-      "endTime": 1023.34,
-      "text": "Macrow. And",
-      "words": [
+        },
         {
           "word": "Macrow.",
           "startTime": 1021.74,
@@ -15127,15 +15023,7 @@
           "startTime": 1022.78,
           "endTime": 1023.34,
           "confidence": 0.9944
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1023.34,
-      "endTime": 1209.95,
-      "text": "the version of the story that I have read in the press is that late one evening he reached out to the Google crew saying that tomorrow morning I'm going to sign the term sheet to sell Android to Macrow. But you know what? This project really become belongs in Google, that Google has the culture, has the engineering capability, has the hunger. to do justice to Android. So you know, let's talk and really I would love it if this project went to Google and I will go with the project to Google. And over that evening it was thrashed out and Google purchased Andy Rubin's company and the rest is history. Today Android is one of the most important operating systems of the planet. So this again speaks for that engineering culture and the respect. And by the way, as an aside, what I want to say is that there was an old Unix culture in Silicon Valley and it first coalesced in Sun. And after Sun, many of the key people, for example, Eric Schmidt was chief scientist at Sun, they moved to Netscape. Eric Schmidt moved as the chairman or CEO or something of Netscape. And then when Netscape ended, a lot of that team moved to Google. So I've I see a succession of some of the best Uh Unix philosophy and engineering ethos from Sun to Netscape to Google. So Google had those people, Google had the culture. Okay there are legends from the original Unix team of Bell Labs like Rob Pike, who work in Google. So now again, in the eyes of a person like Andy Rubin, if there is a good engineering organization that you want to take the love of your life to. It would be Google. So that's how Android landed up in Google. And Google did justice to it. They were able to take that flicky early stage bad Android and turn it into the world beating Android of today, where today it is one of the most important operating systems of the whole world. Okay, so this is another example that the search engine company didn't think that I will do search for text, I will do search for movies, I'll do search for music. Okay, those would have been normal analogies and extensions, economies of scope. I will give you a search appliance that sits inside your company and run search on your private database inside your company. Those would all have been normal business thinking. Instead, these guys were audacious. They set up their tagline as we want to organize the whole world's information. Okay. So not modest objectives. And they had the raw engineering punch. To first build amazing internal infrastructure so that they had that living engineering capabilities inside. They had the engineering culture. You know, so as I said, in some ways they inherited the old Unix culture of Sun and Netscape. And then they had the respect in the eyes of the community, so that some of the best people gravitated there. And then the great leap came with Android.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1023.34,
@@ -18255,8 +18143,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1210.73,
-      "endTime": 1289.0,
-      "text": "So I have a question for you. Beyond the engineering capability and the engineering culture, it strikes me that there is another component here, which is of the leaders in the comp on in the company to think in unconventional ways. Like I think it is not an accident that the founders, um, you know, Larry Page and Sergei Brain, founded it right out of college before they could be indoctrinated in the conventional thinking that happens within the corporate world. And therefore they did a bunch of things which were very wise and prescient, but weren't exactly conventional. For example, What I really loved about Google in those days when I read about its culture is that they allowed people to pursue side projects and they would put money in those side projects. So you could spend a certain if you're if you're a Google employer, you could spend a certain number of hours every week on a side project, which they'd fund. And you might imagine that funding all these random side projects is is a distraction and it is even minus eeve to go back to our question of expected value. But my argument and no doubt the way they saw it is that forget about individual side projects doing well. Building a culture where everyone is allowed to be innovative and to get excited about something they're passionate about is massively plus EV. You know, has great expected value. So how much of a part do you think that uh you know really played? Yeah.",
+      "endTime": 1288.68,
+      "text": "So I have a question for you. Beyond the engineering capability and the engineering culture, it strikes me that there is another component here, which is of the leaders in the comp on in the company to think in unconventional ways. Like I think it is not an accident that the founders, um, you know, Larry Page and Sergei Brain, founded it right out of college before they could be indoctrinated in the conventional thinking that happens within the corporate world. And therefore they did a bunch of things which were very wise and prescient, but weren't exactly conventional. For example, What I really loved about Google in those days when I read about its culture is that they allowed people to pursue side projects and they would put money in those side projects. So you could spend a certain if you're if you're a Google employer, you could spend a certain number of hours every week on a side project, which they'd fund. And you might imagine that funding all these random side projects is is a distraction and it is even minus eeve to go back to our question of expected value. But my argument and no doubt the way they saw it is that forget about individual side projects doing well. Building a culture where everyone is allowed to be innovative and to get excited about something they're passionate about is massively plus EV. You know, has great expected value. So how much of a part do you think that uh you know really played?",
       "words": [
         {
           "word": "So",
@@ -19805,21 +19693,21 @@
           "startTime": 1288.04,
           "endTime": 1288.68,
           "confidence": 0.9848
-        },
-        {
-          "word": "Yeah.",
-          "startTime": 1288.68,
-          "endTime": 1289.0,
-          "confidence": 0.6203
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1289.0,
-      "endTime": 1435.82,
-      "text": "So the uh there is something about a research culture, about an engineering culture, where there is an almost aesthetic uh respect for high quality work. And beauty in engineering. There is a big distinction between a good design, a clean design, as opposed to a bad design, which an engine sees. Functionally, the product can look the same, but an engineer knows how to look inside. And there is an almost aesthetic sense of what is good and what is bad. And at a deeper level, actually the stuff matters. And when a corporation uh pushes the execution mindset that shut up and get it done. then a lot of sacrifices are made in the internal implementation. And that may be wise in the short term, but it actually creates bad products in the medium term and it exerts a subtle uh impact on the HR because now suddenly the best people don't want to do this stuff. Um it it the way in which you manage above the API and below the API are different. So if you're just running a whole bunch of grants, you could you know run a certain kind of uh cruel HR system where you just want to give people instructions and uh grind away at their time use and get them to do more work for you per day and there are tyrannical bosses and tyrannical organizations that just work that way. But that's not the wise and useful way to play in more creative pursuits. And almost all the important firms today are in a knowledge game. In a creative game, they have to dream and imagine and strategize. So of course we need execution, but execution is commoditized. And you know, you can get execution, guys, a dime or doesn't what what the world is short of is the great leaps of the ideas. And I know every sentence I've just said runs counter to mainstream firm culture in India, where mostly I see a very mediocre emphasis on execution, execution, and I I almost feel that there is a weakness in strategic thinking, in imagination, in innovation, and that's part of what makes India a poor country. That we are in place where people are just trying to get regimented organizations and lots of obedient people. And",
+      "startTime": 1288.68,
+      "endTime": 1529.14,
+      "text": "Yeah. So the uh there is something about a research culture, about an engineering culture, where there is an almost aesthetic uh respect for high quality work. And beauty in engineering. There is a big distinction between a good design, a clean design, as opposed to a bad design, which an engine sees. Functionally, the product can look the same, but an engineer knows how to look inside. And there is an almost aesthetic sense of what is good and what is bad. And at a deeper level, actually the stuff matters. And when a corporation uh pushes the execution mindset that shut up and get it done. then a lot of sacrifices are made in the internal implementation. And that may be wise in the short term, but it actually creates bad products in the medium term and it exerts a subtle uh impact on the HR because now suddenly the best people don't want to do this stuff. Um it it the way in which you manage above the API and below the API are different. So if you're just running a whole bunch of grants, you could you know run a certain kind of uh cruel HR system where you just want to give people instructions and uh grind away at their time use and get them to do more work for you per day and there are tyrannical bosses and tyrannical organizations that just work that way. But that's not the wise and useful way to play in more creative pursuits. And almost all the important firms today are in a knowledge game. In a creative game, they have to dream and imagine and strategize. So of course we need execution, but execution is commoditized. And you know, you can get execution, guys, a dime or doesn't what what the world is short of is the great leaps of the ideas. And I know every sentence I've just said runs counter to mainstream firm culture in India, where mostly I see a very mediocre emphasis on execution, execution, and I I almost feel that there is a weakness in strategic thinking, in imagination, in innovation, and that's part of what makes India a poor country. That we are in place where people are just trying to get regimented organizations and lots of obedient people. And that's not the pathway to greatness. Nachikit Moore once said something very nice to me, and that line figures in this book. And what he said was People respond to incentives, great people volunteer. Okay. So that's a very important way to think about it. That yeah, you'll get a normal guy, run of the mill, you drive him hard with a KRA, pay them on a piece rate, you know, pay them a percentage of whatever profit they generate from their business, and you'll get a normal guy. They'll run hard for you, but they won't imagine for you, they won't create for you, they won't give you the great leaps, they won't do problem solving in an autonomous and intelligent way. For that, you got to find something deeper. You got to find a commitment, some passion for excellence, for beauty, for imagination. And at the heights of engineering, actually, that's what works. The best engineers are there to build something beautiful. They're not there to meet that KRA. They're not there to, you know, dance to the tune of corporate HR. And uh the common story that I saw in Sun and in Google was uh philosophy and the values of Andy Bactolsheim and Bill Joy and Larry Page and Sergey Brin were which shaped the way they did their internal management. And that was the environment in which good people gravitated to these organizations.",
       "words": [
+        {
+          "word": "Yeah.",
+          "startTime": 1288.68,
+          "endTime": 1289.0,
+          "confidence": 0.6203
+        },
         {
           "word": "So",
           "startTime": 1289.0,
@@ -22147,15 +22035,7 @@
           "startTime": 1435.58,
           "endTime": 1435.82,
           "confidence": 0.9921
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1435.82,
-      "endTime": 1437.1,
-      "text": "that's not the pathway to",
-      "words": [
+        },
         {
           "word": "that's",
           "startTime": 1435.82,
@@ -22185,15 +22065,7 @@
           "startTime": 1436.94,
           "endTime": 1437.1,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1437.1,
-      "endTime": 1529.14,
-      "text": "greatness. Nachikit Moore once said something very nice to me, and that line figures in this book. And what he said was People respond to incentives, great people volunteer. Okay. So that's a very important way to think about it. That yeah, you'll get a normal guy, run of the mill, you drive him hard with a KRA, pay them on a piece rate, you know, pay them a percentage of whatever profit they generate from their business, and you'll get a normal guy. They'll run hard for you, but they won't imagine for you, they won't create for you, they won't give you the great leaps, they won't do problem solving in an autonomous and intelligent way. For that, you got to find something deeper. You got to find a commitment, some passion for excellence, for beauty, for imagination. And at the heights of engineering, actually, that's what works. The best engineers are there to build something beautiful. They're not there to meet that KRA. They're not there to, you know, dance to the tune of corporate HR. And uh the common story that I saw in Sun and in Google was uh philosophy and the values of Andy Bactolsheim and Bill Joy and Larry Page and Sergey Brin were which shaped the way they did their internal management. And that was the environment in which good people gravitated to these organizations.",
-      "words": [
+        },
         {
           "word": "greatness.",
           "startTime": 1437.1,
@@ -23773,8 +23645,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1545.66,
-      "endTime": 1579.05,
-      "text": "Okay, and my third story of this nature is Amazon. Okay, so once again, let's get started. Amazon was running a bookshop. Okay, Amazon was a flip cart. Amazon, you know, was doing the dullest thing in the world. Amazon was a mintra. You put up lots of SKUs on a screen and do execution, execution on deliveries. And Amazon is the biggest recruiter in the whole world of PhDs in economics who will find every uh behavioral economics bug in your behavior. And con you out of 35 more paisa for the shirt. Okay, that's Amazon.",
+      "endTime": 1880.67,
+      "text": "Okay, and my third story of this nature is Amazon. Okay, so once again, let's get started. Amazon was running a bookshop. Okay, Amazon was a flip cart. Amazon, you know, was doing the dullest thing in the world. Amazon was a mintra. You put up lots of SKUs on a screen and do execution, execution on deliveries. And Amazon is the biggest recruiter in the whole world of PhDs in economics who will find every uh behavioral economics bug in your behavior. And con you out of 35 more paisa for the shirt. Okay, that's Amazon. Nice. Then Amazon understood something about their own operations. They saw that there was a great surge of traffic prior to Christmas in Amazon. So there's Christmas shopping, and there are ridiculous surges of demand where people are buying things prior to Christmas. And of course, you never ever want to turn away a customer. So Amazon would size their equipment to be sufficiently powerful to cope with the demand at Christmas time. But the inevitable consequence of that was that for most of the year, Amazon had ideal equipment. So they were paying the full price of equipment that was sort of paying the cost of capital 365 days a year. But really only being used for 10, 15 days a year. So then they started wondering how do you do this better? And they had an aha moment. They said, you know what? Can we find ways to uh package up this computational capacity and wrap it into an API and sell it to other people. So basically, we take some of our excess capacity and rent it out to other people. And that was very cool. It was a very nice idea. But that required building an engineering capability that is essentially at the level of operating systems. So once again, I take you to Mintra or Flipkart or such Indian organizations, and imagine if you say to them that guys, we're going to build something that resembles the complexity of an operating system. And they'll flat out say, No, that that's not our capability. We're we're an e-commerce shop. So you know, we rent other people's facilities. And we sell books or we sell shirts. But our self-image and our engine capabilities is not that we can make a great leap and jump into the most complex problem in the world, which is operating systems. So once again, in the story of Sun, they jumped into the world's most complex thing, CPUs. In the case of Google, they jumped into the world's most complex thing, operating systems. And similarly, what Amazon jumped into is basically operating systems. So Amazon made that leap, and effectively they invented a whole new industry, cloud computing, which they dominated and continue to dominate. And I just look back in wonder, saying, wow, how did a bookshop turn into one of the important computer science corporations of the world? So what I see is reasonable cleverness in Amazon is that they are the world's biggest employer of PhD economics. That I get. things that's a normal company but jumping to imagining a new business that is call cloud computing that was a world changing business and uh becoming number one in that field and inventing a whole range of technologies writing operating system level of complexity in a series of the things that did they did it just makes me say wow so this is my third story and these are three amazing firms that just have stuck in my mind where it's been so many years, none of these stories are new. But these three firms have stuck in my mind that wow, this was something remarkable. Um so I want to pause and be careful. So I worry we should all always be skeptical about ourselves. Is this just a survivorship bias? Okay? Could it be that many people tried such things and mostly floundered and fell? And then with a P probability some things are going to work. So is this just that dumb luck that many people try audacious leaps and only a few get through? So maybe we're wrong and there is nothing really special about this. So you know, gentle reader, we're never going to do a show here saying three great fund managers. Okay, because almost everything going on in great fund managers is just Survivorship bias that the others fall by the wayside. You throw 10,000 darts, 10 are going to look great. So I'm self-aware that am I uh valorizing something that is actually merely survivorship bias? And enough years have gone by, and I have grown to respect these three teams a lot. Okay, and while I'm on this subject, Gentle reader, uh, we'd love to hear your thoughts in the comments. Do you agree? Was there something remarkable about these three companies? Why did Sun make the leap? Did Google make the leap? Did Amazon make the leap? And are there other examples of companies that made such phenomenal leaps? We'd love to hear from you. It potentially is a nice book to write.",
       "words": [
         {
           "word": "Okay,",
@@ -24357,29 +24229,13 @@
           "startTime": 1578.41,
           "endTime": 1579.05,
           "confidence": 0.9388
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1579.05,
-      "endTime": 1580.55,
-      "text": "Nice.",
-      "words": [
+        },
         {
           "word": "Nice.",
           "startTime": 1579.05,
           "endTime": 1580.55,
           "confidence": 0.9765
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1580.81,
-      "endTime": 1626.71,
-      "text": "Then Amazon understood something about their own operations. They saw that there was a great surge of traffic prior to Christmas in Amazon. So there's Christmas shopping, and there are ridiculous surges of demand where people are buying things prior to Christmas. And of course, you never ever want to turn away a customer. So Amazon would size their equipment to be sufficiently powerful to cope with the demand at Christmas time. But the inevitable consequence of that was that for most of the year, Amazon had ideal equipment. So they were paying the full price of equipment that",
-      "words": [
+        },
         {
           "word": "Then",
           "startTime": 1580.81,
@@ -24973,15 +24829,7 @@
           "startTime": 1626.07,
           "endTime": 1626.71,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1626.71,
-      "endTime": 1628.47,
-      "text": "was sort",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 1626.71,
@@ -24993,15 +24841,7 @@
           "startTime": 1628.23,
           "endTime": 1628.47,
           "confidence": 0.9951
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1628.47,
-      "endTime": 1659.69,
-      "text": "of paying the cost of capital 365 days a year. But really only being used for 10, 15 days a year. So then they started wondering how do you do this better? And they had an aha moment. They said, you know what? Can we find ways to uh package up this computational capacity and wrap it into an API and sell it to other people. So basically, we take some of our excess capacity and rent it out",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1628.47,
@@ -25475,15 +25315,7 @@
           "startTime": 1659.05,
           "endTime": 1659.69,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1659.69,
-      "endTime": 1661.47,
-      "text": "to other people.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1659.69,
@@ -25501,15 +25333,7 @@
           "startTime": 1660.97,
           "endTime": 1661.47,
           "confidence": 0.9623
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1663.21,
-      "endTime": 1880.67,
-      "text": "And that was very cool. It was a very nice idea. But that required building an engineering capability that is essentially at the level of operating systems. So once again, I take you to Mintra or Flipkart or such Indian organizations, and imagine if you say to them that guys, we're going to build something that resembles the complexity of an operating system. And they'll flat out say, No, that that's not our capability. We're we're an e-commerce shop. So you know, we rent other people's facilities. And we sell books or we sell shirts. But our self-image and our engine capabilities is not that we can make a great leap and jump into the most complex problem in the world, which is operating systems. So once again, in the story of Sun, they jumped into the world's most complex thing, CPUs. In the case of Google, they jumped into the world's most complex thing, operating systems. And similarly, what Amazon jumped into is basically operating systems. So Amazon made that leap, and effectively they invented a whole new industry, cloud computing, which they dominated and continue to dominate. And I just look back in wonder, saying, wow, how did a bookshop turn into one of the important computer science corporations of the world? So what I see is reasonable cleverness in Amazon is that they are the world's biggest employer of PhD economics. That I get. things that's a normal company but jumping to imagining a new business that is call cloud computing that was a world changing business and uh becoming number one in that field and inventing a whole range of technologies writing operating system level of complexity in a series of the things that did they did it just makes me say wow so this is my third story and these are three amazing firms that just have stuck in my mind where it's been so many years, none of these stories are new. But these three firms have stuck in my mind that wow, this was something remarkable. Um so I want to pause and be careful. So I worry we should all always be skeptical about ourselves. Is this just a survivorship bias? Okay? Could it be that many people tried such things and mostly floundered and fell? And then with a P probability some things are going to work. So is this just that dumb luck that many people try audacious leaps and only a few get through? So maybe we're wrong and there is nothing really special about this. So you know, gentle reader, we're never going to do a show here saying three great fund managers. Okay, because almost everything going on in great fund managers is just Survivorship bias that the others fall by the wayside. You throw 10,000 darts, 10 are going to look great. So I'm self-aware that am I uh valorizing something that is actually merely survivorship bias? And enough years have gone by, and I have grown to respect these three teams a lot. Okay, and while I'm on this subject, Gentle reader, uh, we'd love to hear your thoughts in the comments. Do you agree? Was there something remarkable about these three companies? Why did Sun make the leap? Did Google make the leap? Did Amazon make the leap? And are there other examples of companies that made such phenomenal leaps? We'd love to hear from you. It potentially is a nice book to write.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1663.21,
@@ -30377,8 +30201,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1954.38,
-      "endTime": 1987.48,
-      "text": "your argument would be that Flipkart and Mintra are actually Me To's because Amazon had blazed away. So when we play the analogy that could Flipkart have ever jumped and become a complex operating system innovator, or could Mintra have ever jumped and become a complex operating system innovator, it seems no they're just a bookshop. But actually Amazon had a giant innovation at its initial stages where they actually imagined the very concept of e-commerce. Fair point. Flipkart and",
+      "endTime": 1986.84,
+      "text": "your argument would be that Flipkart and Mintra are actually Me To's because Amazon had blazed away. So when we play the analogy that could Flipkart have ever jumped and become a complex operating system innovator, or could Mintra have ever jumped and become a complex operating system innovator, it seems no they're just a bookshop. But actually Amazon had a giant innovation at its initial stages where they actually imagined the very concept of e-commerce. Fair point.",
       "words": [
         {
           "word": "your",
@@ -30847,7 +30671,15 @@
           "startTime": 1986.44,
           "endTime": 1986.84,
           "confidence": 0.8543
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1986.84,
+      "endTime": 2360.49,
+      "text": "Flipkart and Mintra have never innovated. Very few Indian companies have, while Amazon was an innovator to start with. The other point that really strikes me here is imagination. You know, you spoke about how Google had the audacity to say we will organize the world's information. And I think that's really important that when you have the audacity to tell a story about yourself like that, it makes a big difference. I uh remember reading Aswad Dhamudharan's great book, uh Narrative and Numbers. Now, Aswad Dhamudharan is known for his valuations and all of that, but he made a point here which is quite profound and goes beyond valuations and goes into the heart of what firms are all about and the stories they tell themselves. And this is also a beautiful story of intellectual humility. So I think circa twenty four, Ashwad Dhamudharan wrote this post where he tried to come up with a valuation for Uber. which he felt was overvalued. And his thinking was that uh the story that he told about Uber in that post is that Uber is in the business of taxi and car service uh industry. And to him the total addressable market or TAM was $100 billion. And he said at most Uber will get 10% of this. And therefore that is how you should uh think of their valuation. Now after he wrote this post, which was a broadly skeptical post, and we'll link it all from the show notes. A gentleman named Bill Gurley, a legend himself, who happened to be an early investor in Uber, wrote a post responding to this, right, where he said that, you know, I respect everything Mr. Damadharan says and does, but I'd like to respond to this point because I think he's wrong. And Gurley's point was that Aswat, Dhammadharan got the wrong story that Uber is not just in taxi and car rentals. Uber is out to replace car ownership. Right? And that is a far bigger market. And then he laid out the numbers for that and spoke about that. Right? And that was a shift where people stop owning cars because they're just Ubering everywhere. That was a shift that hadn't really happened then, but went on to happen after that, right, to some extent in some cities, depending on the liquidity of the market, and so on. And his point was that you therefore have to treat it differently. And Aswat Dhamadharan see the intellectual honesty of the man responded To Bill Gurley by saying that yes, Bill Gurley is right. I missed it. That is a story on which I should uh base my valuation. And he did a new valuation. And if I remember correctly, in his first valuation, he valued Uber at about five billion. In his second valuation, based on Gurley's insight, he valued Uber at twenty-eight billion. Right? And uh and the fundamental point there in Gurley's post is that when you're doing something so new, you cannot look at what exists. And try to uh uh assume what the size of the market will be, right? You you have to take that leap of imagination. Like there is a great tweet you'll see on the uh screen now by Aaron Levy, where he says, quote, sizing the market for a disruptor based on an incumbents market is like sizing the car industry of how many horses there were in 1910. Right. And this is such a great point. And if you look at the modern times that we are living in, where I think technological innovation has just happened more in the last two decades than in any two decade period before in history, in terms of the fundamental changes, you see this all around us. Like I'm just thinking aloud, I don't have any numbers, but I just think of, for example, food delivery apps. Right, if you were to try and figure out ten years ago what is a market for food delivery, it would be minuscule because you would look at the existing market, how many of us call restaurants an order, and you would think that is your time. But actually, you know, once that service is there, You know, people change the way they behave. People start living their lives differently. You know, you have more and more nuclear families where both people are working and cooking every day is such a chore, and now you have cloud kitchens coming up serving home like food and so on and so forth. It just changes the fabric of your culture in a good way, in a way that can actually be empowering uh for some people. So I think that reimagination is what is key to me. That inner sense a business leader has to be an artist. to really succeed. You can be a good business leader by go, you know, doing your MBA, figuring out execution, uh, you know, doing that uh right, responding to incentives, as Nachikit Moore said in that great quote. But to be great, I think you also have to be a little bit of a storyteller. And I look at other stories. I look at what Reed Hastings did with Netflix, for example. Netflix started in 1997 as DVD rentals. In 2007, they shipped their one billionth DVD. And that was a film Babel, you know, for those who are interested in trivial. And at that point, you would have thought, like, wow, they've cornered the market. But they could have made the same mistake that Kodak made with film. And refuse to accept that the world was changing. But they accepted that the world was changing. They started a streaming service first by I think taking season three or Breaking Bad and you know making that big and then of course commissioning House of Cards and so on and so forth and changed all of that. And I look at other businesses around and I think you have to figure out what stories they tell. Like is is Starbucks a coffee uh vendor, or are they in the real estate business where people are drinking more coffee because they need a place to sit and work. You know, is Walmart in the business of retail or are they a real estate operation where they're leasing out space to brands and so on and so forth? So I think everyone, whether we are consumers, but especially if you're businessmen and innovators, we need to just, you know, not look at the conventional way uh at anything, but uh Imagine new stories. Think about the role that you're really playing in uh people's lives, you know, where sometimes you are not fighting to sell someone a product, but you're fighting for their attention. Like I, or you know, people often talk about how these tech giants like Google and Twitter and Facebook and all are uh you know monopolies in their domains. And I think if you shift the frame a little bit, if you tell a different story, they're actually not monopolies. They're fighting for our attention, they're fighting for our time pass, what are the different ways of doing that? And I think just thinking a little deeper about that, about imagining the world as it can be five years later or ten years later. can help you tell a different story about yourself and you know become a better business in that",
+      "words": [
         {
           "word": "Flipkart",
           "startTime": 1986.84,
@@ -30859,15 +30691,7 @@
           "startTime": 1987.4,
           "endTime": 1987.48,
           "confidence": 0.9904
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1987.48,
-      "endTime": 2360.49,
-      "text": "Mintra have never innovated. Very few Indian companies have, while Amazon was an innovator to start with. The other point that really strikes me here is imagination. You know, you spoke about how Google had the audacity to say we will organize the world's information. And I think that's really important that when you have the audacity to tell a story about yourself like that, it makes a big difference. I uh remember reading Aswad Dhamudharan's great book, uh Narrative and Numbers. Now, Aswad Dhamudharan is known for his valuations and all of that, but he made a point here which is quite profound and goes beyond valuations and goes into the heart of what firms are all about and the stories they tell themselves. And this is also a beautiful story of intellectual humility. So I think circa twenty four, Ashwad Dhamudharan wrote this post where he tried to come up with a valuation for Uber. which he felt was overvalued. And his thinking was that uh the story that he told about Uber in that post is that Uber is in the business of taxi and car service uh industry. And to him the total addressable market or TAM was $100 billion. And he said at most Uber will get 10% of this. And therefore that is how you should uh think of their valuation. Now after he wrote this post, which was a broadly skeptical post, and we'll link it all from the show notes. A gentleman named Bill Gurley, a legend himself, who happened to be an early investor in Uber, wrote a post responding to this, right, where he said that, you know, I respect everything Mr. Damadharan says and does, but I'd like to respond to this point because I think he's wrong. And Gurley's point was that Aswat, Dhammadharan got the wrong story that Uber is not just in taxi and car rentals. Uber is out to replace car ownership. Right? And that is a far bigger market. And then he laid out the numbers for that and spoke about that. Right? And that was a shift where people stop owning cars because they're just Ubering everywhere. That was a shift that hadn't really happened then, but went on to happen after that, right, to some extent in some cities, depending on the liquidity of the market, and so on. And his point was that you therefore have to treat it differently. And Aswat Dhamadharan see the intellectual honesty of the man responded To Bill Gurley by saying that yes, Bill Gurley is right. I missed it. That is a story on which I should uh base my valuation. And he did a new valuation. And if I remember correctly, in his first valuation, he valued Uber at about five billion. In his second valuation, based on Gurley's insight, he valued Uber at twenty-eight billion. Right? And uh and the fundamental point there in Gurley's post is that when you're doing something so new, you cannot look at what exists. And try to uh uh assume what the size of the market will be, right? You you have to take that leap of imagination. Like there is a great tweet you'll see on the uh screen now by Aaron Levy, where he says, quote, sizing the market for a disruptor based on an incumbents market is like sizing the car industry of how many horses there were in 1910. Right. And this is such a great point. And if you look at the modern times that we are living in, where I think technological innovation has just happened more in the last two decades than in any two decade period before in history, in terms of the fundamental changes, you see this all around us. Like I'm just thinking aloud, I don't have any numbers, but I just think of, for example, food delivery apps. Right, if you were to try and figure out ten years ago what is a market for food delivery, it would be minuscule because you would look at the existing market, how many of us call restaurants an order, and you would think that is your time. But actually, you know, once that service is there, You know, people change the way they behave. People start living their lives differently. You know, you have more and more nuclear families where both people are working and cooking every day is such a chore, and now you have cloud kitchens coming up serving home like food and so on and so forth. It just changes the fabric of your culture in a good way, in a way that can actually be empowering uh for some people. So I think that reimagination is what is key to me. That inner sense a business leader has to be an artist. to really succeed. You can be a good business leader by go, you know, doing your MBA, figuring out execution, uh, you know, doing that uh right, responding to incentives, as Nachikit Moore said in that great quote. But to be great, I think you also have to be a little bit of a storyteller. And I look at other stories. I look at what Reed Hastings did with Netflix, for example. Netflix started in 1997 as DVD rentals. In 2007, they shipped their one billionth DVD. And that was a film Babel, you know, for those who are interested in trivial. And at that point, you would have thought, like, wow, they've cornered the market. But they could have made the same mistake that Kodak made with film. And refuse to accept that the world was changing. But they accepted that the world was changing. They started a streaming service first by I think taking season three or Breaking Bad and you know making that big and then of course commissioning House of Cards and so on and so forth and changed all of that. And I look at other businesses around and I think you have to figure out what stories they tell. Like is is Starbucks a coffee uh vendor, or are they in the real estate business where people are drinking more coffee because they need a place to sit and work. You know, is Walmart in the business of retail or are they a real estate operation where they're leasing out space to brands and so on and so forth? So I think everyone, whether we are consumers, but especially if you're businessmen and innovators, we need to just, you know, not look at the conventional way uh at anything, but uh Imagine new stories. Think about the role that you're really playing in uh people's lives, you know, where sometimes you are not fighting to sell someone a product, but you're fighting for their attention. Like I, or you know, people often talk about how these tech giants like Google and Twitter and Facebook and all are uh you know monopolies in their domains. And I think if you shift the frame a little bit, if you tell a different story, they're actually not monopolies. They're fighting for our attention, they're fighting for our time pass, what are the different ways of doing that? And I think just thinking a little deeper about that, about imagining the world as it can be five years later or ten years later. can help you tell a different story about yourself and you know become a better business in that",
-      "words": [
+        },
         {
           "word": "Mintra",
           "startTime": 1987.48,
@@ -39351,8 +39175,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2417.69,
-      "endTime": 2421.85,
-      "text": "book. Is it true you took part in the 1857 rebellion? Not",
+      "endTime": 2421.35,
+      "text": "book. Is it true you took part in the 1857 rebellion?",
       "words": [
         {
           "word": "book.",
@@ -39419,21 +39243,21 @@
           "startTime": 2419.85,
           "endTime": 2421.35,
           "confidence": 0.8565
-        },
-        {
-          "word": "Not",
-          "startTime": 2421.53,
-          "endTime": 2421.85,
-          "confidence": 0.9897
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 2421.85,
-      "endTime": 2453.21,
-      "text": "quite. Um there is an older book which meant a lot to me, and maybe I'm delusional, but it can mean a lot to others as well. Uh it's a book by Tracy Kidder. It's called Soul of a New Machine. This was a journalist that got embedded in the project to design a microprocessor. Equivalent inside a now defunct company called Data General in the late 70s,",
+      "startTime": 2421.53,
+      "endTime": 2477.48,
+      "text": "Not quite. Um there is an older book which meant a lot to me, and maybe I'm delusional, but it can mean a lot to others as well. Uh it's a book by Tracy Kidder. It's called Soul of a New Machine. This was a journalist that got embedded in the project to design a microprocessor. Equivalent inside a now defunct company called Data General in the late 70s, early 80s. And I felt it had the passion. So when I was young, for me it was my first glimpse into what it meant to do engineering with all your heart and soul. So, you know, there is a beautiful line. There are sim there are still Some men who know how to love desperately. I saw that in this",
       "words": [
+        {
+          "word": "Not",
+          "startTime": 2421.53,
+          "endTime": 2421.85,
+          "confidence": 0.9897
+        },
         {
           "word": "quite.",
           "startTime": 2421.85,
@@ -39841,15 +39665,7 @@
           "startTime": 2451.85,
           "endTime": 2453.21,
           "confidence": 0.965
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2453.21,
-      "endTime": 2454.89,
-      "text": "early 80s.",
-      "words": [
+        },
         {
           "word": "early",
           "startTime": 2453.21,
@@ -39861,15 +39677,7 @@
           "startTime": 2453.77,
           "endTime": 2454.89,
           "confidence": 0.9092
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2454.89,
-      "endTime": 2477.48,
-      "text": "And I felt it had the passion. So when I was young, for me it was my first glimpse into what it meant to do engineering with all your heart and soul. So, you know, there is a beautiful line. There are sim there are still Some men who know how to love desperately. I saw that in this",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2454.89,
@@ -42347,8 +42155,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2581.91,
-      "endTime": 2686.39,
-      "text": "Maybe my experiences are limited, but I actually think about this in exactly the opposite way. I go around singing songs to people about the exact opposite idea. Okay, can I uh please explain that? Can you sing a song also? Um I can't sing a song, but you you get my drift. Uh let me take this book as an example. Okay when Kilkar and I started this book, our objectives are relatively modest. We were going to write like a primer of basic fundas. Of public economics, of public administration, okay, bring some remarkable knowledge from public ad that was not known to the economists, and bring some remarkable knowledge from economics that was not known to a normal public ad people. And uh it was a task of exposition, and frankly, it was a bit boring, and it was a chore, and we were doing it as a responsibility. Okay, that's where the project began. And uh at first. The thing was around 20 chapters deep, and I was not having fun. Meaning I was doing it as the responsibility to the universe, but I was not really enjoying it. And by the way, this happens to me a lot, that a lot of my projects in the early stages, it just feels like work, work, work. You're basically laying the foundations of the house, and uh it's heavy breathing, and you're doing all kinds of hard work, and it's not really interesting at first. But once And and uh the way Kilkar and I did this project, and I advise this kind of working from a lot of collaborative projects, is that uh we would do some rev rev rev, and then with a certain draft with a physical hard",
+      "endTime": 2772.89,
+      "text": "Maybe my experiences are limited, but I actually think about this in exactly the opposite way. I go around singing songs to people about the exact opposite idea. Okay, can I uh please explain that? Can you sing a song also? Um I can't sing a song, but you you get my drift. Uh let me take this book as an example. Okay when Kilkar and I started this book, our objectives are relatively modest. We were going to write like a primer of basic fundas. Of public economics, of public administration, okay, bring some remarkable knowledge from public ad that was not known to the economists, and bring some remarkable knowledge from economics that was not known to a normal public ad people. And uh it was a task of exposition, and frankly, it was a bit boring, and it was a chore, and we were doing it as a responsibility. Okay, that's where the project began. And uh at first. The thing was around 20 chapters deep, and I was not having fun. Meaning I was doing it as the responsibility to the universe, but I was not really enjoying it. And by the way, this happens to me a lot, that a lot of my projects in the early stages, it just feels like work, work, work. You're basically laying the foundations of the house, and uh it's heavy breathing, and you're doing all kinds of hard work, and it's not really interesting at first. But once And and uh the way Kilkar and I did this project, and I advise this kind of working from a lot of collaborative projects, is that uh we would do some rev rev rev, and then with a certain draft with a physical hard copy, I would go to Puna and we would sit together for a half day or a full day and just walk through every page and brainstorm and 20 ideas would come up. Okay, so as the thing started growing. More ideas and more innovation started coming. And my mind opened up that ooh, this is fun. This is interesting. This is becoming innovative. This is not just a chore. This is not just an expository book. This is not just a responsibility. It's actually a creative project. We're doing something new. And then each innovation fed on the next. Somewhere in there, also I've always found that on the 15th rewrite, the language becomes good. So on the first trite, the language is always shitty. But endlessly, what happens to me is I just head to toe I do a scrub. Head to toe I do a scrub. Then as it gets better, the language becomes nicer. And then it becomes a delight. Then it comes to life. And then my mind wakes up and then I start trying to improve it further. That oh, this is such a nice product. Now let's make it nicer. So it actually goes off as an exponential that a product starts. workmanlike and it becomes more and more beautiful as you go. And I find myself surprised very often at the late stage of a journey that hmm, this is really nice. So I always love my babies much better at the end than at the beginning.",
       "words": [
         {
           "word": "Maybe",
@@ -44113,15 +43921,7 @@
           "startTime": 2685.99,
           "endTime": 2686.39,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2686.39,
-      "endTime": 2687.91,
-      "text": "copy, I",
-      "words": [
+        },
         {
           "word": "copy,",
           "startTime": 2686.39,
@@ -44133,15 +43933,7 @@
           "startTime": 2687.67,
           "endTime": 2687.91,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2687.91,
-      "endTime": 2772.89,
-      "text": "would go to Puna and we would sit together for a half day or a full day and just walk through every page and brainstorm and 20 ideas would come up. Okay, so as the thing started growing. More ideas and more innovation started coming. And my mind opened up that ooh, this is fun. This is interesting. This is becoming innovative. This is not just a chore. This is not just an expository book. This is not just a responsibility. It's actually a creative project. We're doing something new. And then each innovation fed on the next. Somewhere in there, also I've always found that on the 15th rewrite, the language becomes good. So on the first trite, the language is always shitty. But endlessly, what happens to me is I just head to toe I do a scrub. Head to toe I do a scrub. Then as it gets better, the language becomes nicer. And then it becomes a delight. Then it comes to life. And then my mind wakes up and then I start trying to improve it further. That oh, this is such a nice product. Now let's make it nicer. So it actually goes off as an exponential that a product starts. workmanlike and it becomes more and more beautiful as you go. And I find myself surprised very often at the late stage of a journey that hmm, this is really nice. So I always love my babies much better at the end than at the beginning.",
-      "words": [
+        },
         {
           "word": "would",
           "startTime": 2687.91,
@@ -45665,8 +45457,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2773.53,
-      "endTime": 2792.41,
-      "text": "So uh b because young babies are a pain. We uh but you know so I'll put both these stories together and I'll say that sure, you have a great idea, sounds amazing, then you sit down to start. It is drudgery, it is terrible. But if you do katur ribaji, katur ribaji, you just keep uh you know putting in the work, then eventually uh magic can happen.",
+      "endTime": 2792.65,
+      "text": "So uh b because young babies are a pain. We uh but you know so I'll put both these stories together and I'll say that sure, you have a great idea, sounds amazing, then you sit down to start. It is drudgery, it is terrible. But if you do katur ribaji, katur ribaji, you just keep uh you know putting in the work, then eventually uh magic can happen. Uh",
       "words": [
         {
           "word": "So",
@@ -46081,21 +45873,21 @@
           "startTime": 2791.69,
           "endTime": 2792.41,
           "confidence": 0.9896
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2792.41,
-      "endTime": 2884.31,
-      "text": "Uh and just one last note on this subject. Uh l little bit of life lessons for me. Uh I I I really learned to Pretty and hardworking around one simple proposition. So one of my hero is Robert Lucas, the economist who died recently. And uh I consider Lucas's writings to be beautiful. Okay. So Lucas is in Friedman League in terms of the perfection of writing and the beauty of writing. And uh I spent a lot of time studying the craft, watching Lucas write and watching Friedman write. And then one day Lucas said, that any article for me requires 10 complete rewrites. That to literally throw it away and start from scratch and write it all over again. And that was an eye opener for me and it helped me to make peace with the crappy stuff that I do at the early stages. So all products start out bad, but you have to just shoe leather it, that you have to keep going at making it better, making it better, making it better. And as I said, when the sparks of life come in the product, Then I finish with my hard working phase and then the joy starts. Then I'm having fun that oh this is so nice. Here's one more idea, how can we put it here? Or oh, this is so well written, this is so what a lovely paragraph. But you know what? I can wordsmith this sentence one further. Like that. I just the then the innovation start coming, the writing becomes beautiful, and then I am in that happiness zone where I'm just making it better.",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 2792.41,
           "endTime": 2792.65,
           "confidence": 0.6997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2792.65,
+      "endTime": 2883.74,
+      "text": "and just one last note on this subject. Uh l little bit of life lessons for me. Uh I I I really learned to Pretty and hardworking around one simple proposition. So one of my hero is Robert Lucas, the economist who died recently. And uh I consider Lucas's writings to be beautiful. Okay. So Lucas is in Friedman League in terms of the perfection of writing and the beauty of writing. And uh I spent a lot of time studying the craft, watching Lucas write and watching Friedman write. And then one day Lucas said, that any article for me requires 10 complete rewrites. That to literally throw it away and start from scratch and write it all over again. And that was an eye opener for me and it helped me to make peace with the crappy stuff that I do at the early stages. So all products start out bad, but you have to just shoe leather it, that you have to keep going at making it better, making it better, making it better. And as I said, when the sparks of life come in the product, Then I finish with my hard working phase and then the joy starts. Then I'm having fun that oh this is so nice. Here's one more idea, how can we put it here? Or oh, this is so well written, this is so what a lovely paragraph. But you know what? I can wordsmith this sentence one further. Like that. I just the then the innovation start coming, the writing becomes beautiful, and then I am in that happiness zone where I'm just making",
+      "words": [
         {
           "word": "and",
           "startTime": 2792.65,
@@ -47739,7 +47531,15 @@
           "startTime": 2883.5,
           "endTime": 2883.74,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2883.74,
+      "endTime": 2923.53,
+      "text": "it better. Another example to buttress uh uh you know the story of Lucas is Paul Graham, who I think is one of the finest essayists of the century. And Paul Graham will also take a couple of months to write each essay, he'll workshop it, he'll send it to his friends, he'll get their feedback and do all of that. But in contrast to that, there is also George Orwell. Like I have in the past recommended George Orwell's great book, Essays, and that's a collection of all his nonfiction writing. He would just bang it out. He would just bang it out. He do like three, four columns a week and he would just bang it out, and they were all brilliant and I just love Orwell so much. So it just depends on what approach works for you. But the important thing is you have to put your mum on that chair and get the writing done. There's no other",
+      "words": [
         {
           "word": "it",
           "startTime": 2883.74,
@@ -47751,15 +47551,7 @@
           "startTime": 2883.9,
           "endTime": 2884.31,
           "confidence": 0.9783
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2884.6,
-      "endTime": 2923.53,
-      "text": "Another example to buttress uh uh you know the story of Lucas is Paul Graham, who I think is one of the finest essayists of the century. And Paul Graham will also take a couple of months to write each essay, he'll workshop it, he'll send it to his friends, he'll get their feedback and do all of that. But in contrast to that, there is also George Orwell. Like I have in the past recommended George Orwell's great book, Essays, and that's a collection of all his nonfiction writing. He would just bang it out. He would just bang it out. He do like three, four columns a week and he would just bang it out, and they were all brilliant and I just love Orwell so much. So it just depends on what approach works for you. But the important thing is you have to put your mum on that chair and get the writing done. There's no other",
-      "words": [
+        },
         {
           "word": "Another",
           "startTime": 2884.6,
@@ -48731,8 +48523,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2923.53,
-      "endTime": 2943.91,
-      "text": "way. So getting one sentence right. Light up your day.",
+      "endTime": 2941.79,
+      "text": "way. So getting one sentence right.",
       "words": [
         {
           "word": "way.",
@@ -48769,7 +48561,15 @@
           "startTime": 2941.29,
           "endTime": 2941.79,
           "confidence": 0.6748
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2942.63,
+      "endTime": 2995.14,
+      "text": "Light up your day. The actual quote is one true sentence. He said this in this memorable Paris Review interview, which we'll also link from the show notes. And it was about writer's blog. And he said, All I do is I sit down and I try to write one true sentence and then one more. And what I have always how I have interpreted that is not one true sentence in the sense of factually correct. Of course, but one true sentence in the sense of something authentic to that moment in what you're trying to say. So that is indeed a beautiful quote. So on that note, thank you for watching everything is everything. Like, share, subscribe, and do comment. You know, comment and tell us what do you think of the firms we spoke about? Are there other firms you want to talk about? Do you agree with us on anything? Do you disagree with us on anything? And finally, the most important thing, what do you think of Ajay's shirt? Thank you for listening. Reminder, this is the audio version",
+      "words": [
         {
           "word": "Light",
           "startTime": 2942.63,
@@ -48793,15 +48593,7 @@
           "startTime": 2943.27,
           "endTime": 2943.91,
           "confidence": 0.8738
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2943.91,
-      "endTime": 2995.14,
-      "text": "The actual quote is one true sentence. He said this in this memorable Paris Review interview, which we'll also link from the show notes. And it was about writer's blog. And he said, All I do is I sit down and I try to write one true sentence and then one more. And what I have always how I have interpreted that is not one true sentence in the sense of factually correct. Of course, but one true sentence in the sense of something authentic to that moment in what you're trying to say. So that is indeed a beautiful quote. So on that note, thank you for watching everything is everything. Like, share, subscribe, and do comment. You know, comment and tell us what do you think of the firms we spoke about? Are there other firms you want to talk about? Do you agree with us on anything? Do you disagree with us on anything? And finally, the most important thing, what do you think of Ajay's shirt? Thank you for listening. Reminder, this is the audio version",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 2943.91,

@@ -5,7 +5,7 @@
     "durationSeconds": 4564,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -4651,8 +4651,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 244.62,
-      "endTime": 298.46,
-      "text": "on the Before we go any further, I just want to do two bumper stickers. Let's do it. Okay so bumper sticker, the Japanese yen, some 130 yen to the dollar. So if you were going to be uncomfortable about INR going from 40 to 80 to 200 to the dollar. Here we have a living breathing example. The Japanese yen, some 120, 130 yen to the dollar. And you know, arguably one of the most successful, most wonderful countries of the whole world. So there is absolutely no connection between national development and the numerical value of the exchange rate. And another bumper sticker is like suppose magically you just replaced every one rupee by 10. So instantly, instead of 80 rupees to the dollar, it became 800 rupees to the dollar. So imagine like a Better than monetiz demonetization.",
+      "endTime": 294.07,
+      "text": "on the Before we go any further, I just want to do two bumper stickers. Let's do it. Okay so bumper sticker, the Japanese yen, some 130 yen to the dollar. So if you were going to be uncomfortable about INR going from 40 to 80 to 200 to the dollar. Here we have a living breathing example. The Japanese yen, some 120, 130 yen to the dollar. And you know, arguably one of the most successful, most wonderful countries of the whole world. So there is absolutely no connection between national development and the numerical value of the exchange rate. And another bumper sticker is like suppose magically you just replaced every one rupee by 10. So instantly, instead of 80 rupees to the dollar, it became 800 rupees to the dollar. So imagine like a",
       "words": [
         {
           "word": "on",
@@ -5475,7 +5475,15 @@
           "startTime": 293.57,
           "endTime": 294.07,
           "confidence": 0.8765
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 296.54,
+      "endTime": 303.98,
+      "text": "Better than monetiz demonetization. Okay. So better. It's that was the worst possible thing. Everything is better. So one fine",
+      "words": [
         {
           "word": "Better",
           "startTime": 296.54,
@@ -5499,15 +5507,7 @@
           "startTime": 297.42,
           "endTime": 298.46,
           "confidence": 0.9504
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 298.46,
-      "endTime": 303.5,
-      "text": "Okay. So better. It's that was the worst possible thing. Everything is better. So",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 298.46,
@@ -5591,15 +5591,7 @@
           "startTime": 302.46,
           "endTime": 303.5,
           "confidence": 0.7466
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 303.5,
-      "endTime": 339.55,
-      "text": "one fine day the government announces that come to me with all your old rupees and we will issue new rupees, which are 10x. By number. So every one rupee generates ten new rupees. So suddenly INR has to go from eighty rupees to the dollar to eight hundred rupees to the dollar. But does anything change? No, nothing changes. So these are bumpers sticker level arguments that the absolute level of the exchange rate means nothing. It's it's as silly as counting my height in millimeters versus my height in inches and getting excited. So it's just a unit and one should pay no attention. But there's a much deeper story and we should do it today.",
-      "words": [
+        },
         {
           "word": "one",
           "startTime": 303.5,
@@ -5611,7 +5603,15 @@
           "startTime": 303.66,
           "endTime": 303.98,
           "confidence": 0.9262
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 303.98,
+      "endTime": 339.55,
+      "text": "day the government announces that come to me with all your old rupees and we will issue new rupees, which are 10x. By number. So every one rupee generates ten new rupees. So suddenly INR has to go from eighty rupees to the dollar to eight hundred rupees to the dollar. But does anything change? No, nothing changes. So these are bumpers sticker level arguments that the absolute level of the exchange rate means nothing. It's it's as silly as counting my height in millimeters versus my height in inches and getting excited. So it's just a unit and one should pay no attention. But there's a much deeper story and we should do it today.",
+      "words": [
         {
           "word": "day",
           "startTime": 303.98,
@@ -6783,8 +6783,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 370.32,
-      "endTime": 575.09,
-      "text": "In the spirit of our previous episode, we told a story about prices and how the price system creates the resource allocation. Okay. And gentle reader, you are an economist when you are able to use these words correctly. The price system. The resource allocation. Okay? Get these words. They're deceptively simple, plain English words, but they are packed with insight and imagination. By that yardstick, all prices are important. And the market system discovers all the prices. And it's great. Okay. So there are prices and there are prices. Now you will wonder, are there some prices that are more important than others? Or you know, are there some prices that are more pricey than others? And uh the most important price of all is the exchange rate. And here's why. Okay, so let's run through all the ways. The entire international trade of the country is influenced by the exchange rate. And let's just spell out the ways. So we fix intuition and once again little bit of terminology and practical intuition. And I'm going to start at 80 rupees to the dollar as a baseline. So I will discuss the possibilities of it becoming 90 or 70. Okay. But we start at 80 and we will consistently use the scenarios of eighty to ninety and eighty to seventy. Eighty to ninety is called a depreciation. Eighty to seventy is called an appreciation. So the entire international trade of the country is intermediated through the exchange rate. So if I'm an importer or an exporter, I care about the exchange rate. Every day in the morning, I will look what is the exchange rate. How does the impact work out? So if the exchange rate goes from 80 to the dollar to 90 to the dollar, then an Indian producer becomes more attractive to foreigners because the price of the Indian product is divided by the exchange rate and expressed in dollars. So when INR goes from 80 to 90. In the eyes of a foreigner, Indian goods have become cheaper. So they say, Hey, great. I'm very happy. I'm now more inclined to send business to India. So you take the same Indian cotton shirt which is being sold in wholesale for 600 rupees. Okay, the Indian guy in Tirapur or the Indian guy in Bangalore says, See, I can make a white cotton shirt for 600 rupees. That is deeply driven by calculations here about. My electricity cost and my labor cost and the Indian minimum wage and so on. Okay, so the Indian producer says, see, I can produce at uh 600 rupees, uh I can produce a shirt. Now in the eyes of a foreigner, it is 600 divided by 80, or 600 divided by 90, or 600 divided by 70. So the competitiveness of the Indian producer of the shirt is greatly influenced by the exchange rate, and the directionality is depreciation good. So if you're an exporter, depreciation good. You uh use all your bank balance with a lot to say, give me a good depreciation next year. Okay. Let's flip it around. I'm an importer. So I'm buying a phone that is made abroad. Uh I mean there's a fiction about phones being made in India, but they're just assembled here. There's negligible value added. Realistically, phones are made abroad. Okay, there's nothing meaningful happening in India in uh assembling the phones, meaning that's a trivial. part of the value add",
+      "endTime": 960.24,
+      "text": "In the spirit of our previous episode, we told a story about prices and how the price system creates the resource allocation. Okay. And gentle reader, you are an economist when you are able to use these words correctly. The price system. The resource allocation. Okay? Get these words. They're deceptively simple, plain English words, but they are packed with insight and imagination. By that yardstick, all prices are important. And the market system discovers all the prices. And it's great. Okay. So there are prices and there are prices. Now you will wonder, are there some prices that are more important than others? Or you know, are there some prices that are more pricey than others? And uh the most important price of all is the exchange rate. And here's why. Okay, so let's run through all the ways. The entire international trade of the country is influenced by the exchange rate. And let's just spell out the ways. So we fix intuition and once again little bit of terminology and practical intuition. And I'm going to start at 80 rupees to the dollar as a baseline. So I will discuss the possibilities of it becoming 90 or 70. Okay. But we start at 80 and we will consistently use the scenarios of eighty to ninety and eighty to seventy. Eighty to ninety is called a depreciation. Eighty to seventy is called an appreciation. So the entire international trade of the country is intermediated through the exchange rate. So if I'm an importer or an exporter, I care about the exchange rate. Every day in the morning, I will look what is the exchange rate. How does the impact work out? So if the exchange rate goes from 80 to the dollar to 90 to the dollar, then an Indian producer becomes more attractive to foreigners because the price of the Indian product is divided by the exchange rate and expressed in dollars. So when INR goes from 80 to 90. In the eyes of a foreigner, Indian goods have become cheaper. So they say, Hey, great. I'm very happy. I'm now more inclined to send business to India. So you take the same Indian cotton shirt which is being sold in wholesale for 600 rupees. Okay, the Indian guy in Tirapur or the Indian guy in Bangalore says, See, I can make a white cotton shirt for 600 rupees. That is deeply driven by calculations here about. My electricity cost and my labor cost and the Indian minimum wage and so on. Okay, so the Indian producer says, see, I can produce at uh 600 rupees, uh I can produce a shirt. Now in the eyes of a foreigner, it is 600 divided by 80, or 600 divided by 90, or 600 divided by 70. So the competitiveness of the Indian producer of the shirt is greatly influenced by the exchange rate, and the directionality is depreciation good. So if you're an exporter, depreciation good. You uh use all your bank balance with a lot to say, give me a good depreciation next year. Okay. Let's flip it around. I'm an importer. So I'm buying a phone that is made abroad. Uh I mean there's a fiction about phones being made in India, but they're just assembled here. There's negligible value added. Realistically, phones are made abroad. Okay, there's nothing meaningful happening in India in uh assembling the phones, meaning that's a trivial. part of the value add that happens here. So the phone is $100. Say. Then at 80 rupees to the dollar, it is 8,000 rupees cost in India. If it becomes 90 rupees to the dollar, it becomes 9000 rupees. If it becomes 70 rupees to the dollar, it becomes 7000 rupees. So as a buyer of phones, you want to say I like an appreciation that my Indian income, my Indian wealth gives me more bang for the buck When buying things abroad. Okay. So when I is strong, when I appreciates you're better off as an Indian consumer. Okay, one of the simplest things is you go travel to Sri Lanka. Okay, you go travel to Greece, you go travel to Switzerland. If I and R is stronger, your same Indian income and Indian wealth translates to better bang for the buck in your ability to feel that goods and services in those foreign countries are affordable. Okay, so these are two different worlds. In the world of an exporter, IR depreciation is a good thing because Indian goods become cheaper in the eyes of a foreign buyer and in the eyes of an Indian buyer, IR appreciation is a good thing because you feel richer and your same income stretches to buying more things. Okay. So there is no one way to think about this. They're just different people. And this is true of all prices. Okay. If the price of steel goes up, it is Mirth and merriment in the world of steel producers and sadness in the hands of steel buyers. This is just the market economy. All prices cut both ways, and this is the first level at which we have to think. But it runs deeper. Okay. And it runs deeper in two interesting angles. The first interesting angle is called import parity pricing. Okay? So consider steel. In fact, there is no Indian market of steel. In fact, there is no Chinese market of steel. The whole world is one steel market, is one integrated steel market, and there is only one global steel price, and that global steel price is made at the London Metals Exchange. Okay, so I don't care who you are, I don't care what you think. There is only one global price of steel, and that is produced moment by moment at the LME at the London Metals Exchange. For everybody in the world, the local price of steel is the LME price of steel multiplied by an exchange rate. So there will be an LME price of steel and you multiply by USD INR is the exchange rate and you get the Indian price of steel. So the exchange rate is now in purely local transactions. You could be a local producer of steel, I could be a local buyer of steel, okay? So you could be Tata steel, making steel in Jamshetpur, using purely Indian coal and Indian iron ore and Indian electricity and Indian labour. But the local price of steel in India. is the LME price. The LME controls the local price of steel, and you have to multiply through by an exchange rate. And suddenly now the exchange rate is pervasive. Every participant in the Indian steel market has one eye to the LME price of steel and another eye to the currency market. So this is how the exchange rate is everywhere in globally traded commodities. Isn't it cool? So uh I used to be on the board of one company and it was just amazing that Uh Reliance has one of the world's great refineries off the coast of Jamnagar, and they would send one ship filled with benzene every day to the Indian buyer on the other side of the Gulf of Gujarat. And the price was the Korean price of benzene multiplied by the exchange rate. So there was a commitment. You're giving me so much benzene every day. But every day the price will fluctuate. And this is a fully internationalized market. And I cannot help But go off into a digression that is not currency, but it is just, you know, the glory of economics. Uh, what holds this there? Why is the Indian price of benzene the Korean price of benzene? Why is the Indian price of steel the LME price of steel? And the answer is called goods arbitrage. Okay, goods arbitrage is where there are always some clever traders, okay? Like the best and brightest of the business acumen of Bengal, okay, the blood relatives of Robin Ranar Tagore are engaged in the highly intellectual activity of watching the price of steel in Singapore and watching the price of steel in Dubai, and watching the price of steel landed in Vishakapatnam or Bishakapatnam. And when there are slightest movements of the price of steel that goes away here and there from each other They immediately do a trade where they will buy steel in Singapore and transport it to Vishaka Patnam or vice versa. And that's what equalizes the prices. So there's no central planner, there's no law. This is self-organizing system. Okay? Thousands and thousands of individuals are doing these trades. Based on pure profit motive. So there are blokes watching the Dubai price of steel versus the London price of steel. There are people watching the Dubai price of steel versus the Bombay price of steel. There are people watching the Bombay price of steel versus the Oranga Park price of steel. And so it goes all over the world. The chains of arbitrage hold prices together. So if a price ever goes out of line, then there will be real sector trades that take place and transportation and inventory. Okay, there's an I pencil story here. And this magic works all over the world, so there is only one price of steel. Okay. So this is the first cool idea that goods arbitrage holds the world together, and a small amount of trades have to happen. See, most of the time people will just say give up is all there is. Most of the time we are not even checking, we are not bothering. Is it cheaper in Ulasnagar? Is it cheaper in Kalyan? Shall I buy it in Ulasnagar and transport it? Just we save everybody the trouble for just using the LME price. we're not even thinking. So there are some people who will always do the arbitrage. But the point is everybody gets that there is only one global price of steel, and that is the LME price of steel, and this is the arbitrage. Digression number two. Okay. I was very young then, but the price of crude oil went up dramatically in the uh Middle East. Because uh you know, they got angry about losing the Yom Kippur war and in a fit of anger they said we will quadruple the price of crude oil from two dollars to eight dollars. Okay? And uh I I was young then, but I remember You're",
       "words": [
         {
           "word": "In",
@@ -10265,15 +10265,7 @@
           "startTime": 574.69,
           "endTime": 575.09,
           "confidence": 0.9766
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 575.09,
-      "endTime": 576.61,
-      "text": "that happens here. So",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 575.09,
@@ -10297,15 +10289,7 @@
           "startTime": 576.29,
           "endTime": 576.61,
           "confidence": 0.997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 576.61,
-      "endTime": 922.13,
-      "text": "the phone is $100. Say. Then at 80 rupees to the dollar, it is 8,000 rupees cost in India. If it becomes 90 rupees to the dollar, it becomes 9000 rupees. If it becomes 70 rupees to the dollar, it becomes 7000 rupees. So as a buyer of phones, you want to say I like an appreciation that my Indian income, my Indian wealth gives me more bang for the buck When buying things abroad. Okay. So when I is strong, when I appreciates you're better off as an Indian consumer. Okay, one of the simplest things is you go travel to Sri Lanka. Okay, you go travel to Greece, you go travel to Switzerland. If I and R is stronger, your same Indian income and Indian wealth translates to better bang for the buck in your ability to feel that goods and services in those foreign countries are affordable. Okay, so these are two different worlds. In the world of an exporter, IR depreciation is a good thing because Indian goods become cheaper in the eyes of a foreign buyer and in the eyes of an Indian buyer, IR appreciation is a good thing because you feel richer and your same income stretches to buying more things. Okay. So there is no one way to think about this. They're just different people. And this is true of all prices. Okay. If the price of steel goes up, it is Mirth and merriment in the world of steel producers and sadness in the hands of steel buyers. This is just the market economy. All prices cut both ways, and this is the first level at which we have to think. But it runs deeper. Okay. And it runs deeper in two interesting angles. The first interesting angle is called import parity pricing. Okay? So consider steel. In fact, there is no Indian market of steel. In fact, there is no Chinese market of steel. The whole world is one steel market, is one integrated steel market, and there is only one global steel price, and that global steel price is made at the London Metals Exchange. Okay, so I don't care who you are, I don't care what you think. There is only one global price of steel, and that is produced moment by moment at the LME at the London Metals Exchange. For everybody in the world, the local price of steel is the LME price of steel multiplied by an exchange rate. So there will be an LME price of steel and you multiply by USD INR is the exchange rate and you get the Indian price of steel. So the exchange rate is now in purely local transactions. You could be a local producer of steel, I could be a local buyer of steel, okay? So you could be Tata steel, making steel in Jamshetpur, using purely Indian coal and Indian iron ore and Indian electricity and Indian labour. But the local price of steel in India. is the LME price. The LME controls the local price of steel, and you have to multiply through by an exchange rate. And suddenly now the exchange rate is pervasive. Every participant in the Indian steel market has one eye to the LME price of steel and another eye to the currency market. So this is how the exchange rate is everywhere in globally traded commodities. Isn't it cool? So uh I used to be on the board of one company and it was just amazing that Uh Reliance has one of the world's great refineries off the coast of Jamnagar, and they would send one ship filled with benzene every day to the Indian buyer on the other side of the Gulf of Gujarat. And the price was the Korean price of benzene multiplied by the exchange rate. So there was a commitment. You're giving me so much benzene every day. But every day the price will fluctuate. And this is a fully internationalized market. And I cannot help But go off into a digression that is not currency, but it is just, you know, the glory of economics. Uh, what holds this there? Why is the Indian price of benzene the Korean price of benzene? Why is the Indian price of steel the LME price of steel? And the answer is called goods arbitrage. Okay, goods arbitrage is where there are always some clever traders, okay? Like the best and brightest of the business acumen of Bengal, okay, the blood relatives of Robin Ranar Tagore are engaged in the highly intellectual activity of watching the price of steel in Singapore and watching the price of steel in Dubai, and watching the price of steel landed in Vishakapatnam or Bishakapatnam. And when there are slightest movements of the price of steel that goes away here and there from each other They immediately do a trade where they will buy steel in Singapore and transport it to Vishaka Patnam or vice versa. And that's what equalizes the prices. So there's no central planner, there's no law. This is self-organizing system. Okay? Thousands and thousands of individuals are doing these trades. Based on pure profit motive. So there are blokes watching the Dubai price of steel versus the London price of steel. There are people watching the Dubai price of steel versus the Bombay price of steel. There are people watching the Bombay price of steel versus the Oranga Park price of steel. And so it goes all over the world. The chains of arbitrage hold prices together. So if a price ever goes out of line, then there will be real sector trades that take place and transportation and inventory. Okay, there's an I pencil story here. And this magic works all over the world, so there is only one price of steel. Okay. So this is the first cool idea that goods arbitrage holds the world together, and a small amount of trades have to happen. See, most of the time people will just say give up is all there is. Most of the time we are not even checking, we are not bothering. Is it cheaper in Ulasnagar? Is it cheaper in Kalyan? Shall I buy it in Ulasnagar and transport it? Just we save everybody the",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 576.61,
@@ -16599,15 +16583,7 @@
           "startTime": 921.97,
           "endTime": 922.13,
           "confidence": 0.9961
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 922.13,
-      "endTime": 924.77,
-      "text": "trouble for just using the LME price. we're not",
-      "words": [
+        },
         {
           "word": "trouble",
           "startTime": 922.13,
@@ -16661,15 +16637,7 @@
           "startTime": 924.61,
           "endTime": 924.77,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 924.77,
-      "endTime": 935.01,
-      "text": "even thinking. So there are some people who will always do the arbitrage. But the point is everybody gets that there is only one global price of steel, and that is the LME price of steel, and this is the",
-      "words": [
+        },
         {
           "word": "even",
           "startTime": 924.77,
@@ -16909,29 +16877,13 @@
           "startTime": 934.85,
           "endTime": 935.01,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 935.01,
-      "endTime": 936.51,
-      "text": "arbitrage.",
-      "words": [
+        },
         {
           "word": "arbitrage.",
           "startTime": 935.01,
           "endTime": 936.51,
           "confidence": 0.987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 936.53,
-      "endTime": 944.21,
-      "text": "Digression number two. Okay. I was very young then, but the price of crude oil went up dramatically in the uh",
-      "words": [
+        },
         {
           "word": "Digression",
           "startTime": 936.53,
@@ -17057,15 +17009,7 @@
           "startTime": 943.73,
           "endTime": 944.21,
           "confidence": 0.5689
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 944.21,
-      "endTime": 945.89,
-      "text": "Middle East.",
-      "words": [
+        },
         {
           "word": "Middle",
           "startTime": 944.21,
@@ -17077,15 +17021,7 @@
           "startTime": 944.77,
           "endTime": 945.89,
           "confidence": 0.7024
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 945.89,
-      "endTime": 960.0,
-      "text": "Because uh you know, they got angry about losing the Yom Kippur war and in a fit of anger they said we will quadruple the price of crude oil from two dollars to eight dollars. Okay? And uh I I was young then, but I remember",
-      "words": [
+        },
         {
           "word": "Because",
           "startTime": 945.89,
@@ -17361,21 +17297,21 @@
           "startTime": 959.28,
           "endTime": 960.0,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 960.0,
-      "endTime": 962.8,
-      "text": "You're still young, Ajay Shaw you're still young. Yeah. I I",
-      "words": [
+        },
         {
           "word": "You're",
           "startTime": 960.0,
           "endTime": 960.24,
           "confidence": 0.6928
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 960.24,
+      "endTime": 962.8,
+      "text": "still young, Ajay Shaw you're still young. Yeah. I I",
+      "words": [
         {
           "word": "still",
           "startTime": 960.24,
@@ -17441,8 +17377,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 962.8,
-      "endTime": 1098.86,
-      "text": "remember screaming in laughter at the conversation that the ship has not yet left the Middle East carrying the high price crude oil. So why is the price in India higher immediately? Why is the price in California higher immediately? Meaning you have to wait for that costly crude oil to come now. Only after like the old crude oil is at the old price. So Gentle reader, this is not how markets work. When the price of steel changes in London, instantly the price of steel changes here. It's called electronics. It is the information business that transmits the information. The crude oil doesn't carry a price labeled on top of it. So the moment a price changes, prices everywhere change. Widget the ingot of steel is not labeled with a date and the historical price at which it was purchased. At that instant, the price changes. Okay. So I'm that was just all digressions uh on the funhand games. Now import parity pricing has very interesting implications for the top line and the operating profit of the firm. So you have to understand this very clearly. Watch, I'm Tata Steel. I already emphasized Indian coal, Indian iron ore, Indian labor. Indian electricity, basically that's the bulk of what you spend to make steel. Now the LME price goes up. For the Indian producer, it's a pure windfall because the LE price went up or INR depreciated. And now my domestic price realization in rupees for the steel has gone up. Is that cool? So nothing changed for me. My costs are unchanged. Just The output price in INR went up. So I'm spending in INR, I have a fixed expenditure in INR, and suddenly the rupee depreciated, and lo and behold, I'm making more money. I have a higher top line and it's all profit. So the change in the top line directly propagates to the operating profit line. It's just it's free money when I depreciates the Indian domestic producers with a domestic buyer of the products that are priced at import parity pricing straight away get higher profitability and vice versa. When I appreciates all these guys are weeping, saying, I spent the same amount of money to buy my labor and buy my iron ore, and suddenly I'm getting paid less in",
+      "endTime": 1135.82,
+      "text": "remember screaming in laughter at the conversation that the ship has not yet left the Middle East carrying the high price crude oil. So why is the price in India higher immediately? Why is the price in California higher immediately? Meaning you have to wait for that costly crude oil to come now. Only after like the old crude oil is at the old price. So Gentle reader, this is not how markets work. When the price of steel changes in London, instantly the price of steel changes here. It's called electronics. It is the information business that transmits the information. The crude oil doesn't carry a price labeled on top of it. So the moment a price changes, prices everywhere change. Widget the ingot of steel is not labeled with a date and the historical price at which it was purchased. At that instant, the price changes. Okay. So I'm that was just all digressions uh on the funhand games. Now import parity pricing has very interesting implications for the top line and the operating profit of the firm. So you have to understand this very clearly. Watch, I'm Tata Steel. I already emphasized Indian coal, Indian iron ore, Indian labor. Indian electricity, basically that's the bulk of what you spend to make steel. Now the LME price goes up. For the Indian producer, it's a pure windfall because the LE price went up or INR depreciated. And now my domestic price realization in rupees for the steel has gone up. Is that cool? So nothing changed for me. My costs are unchanged. Just The output price in INR went up. So I'm spending in INR, I have a fixed expenditure in INR, and suddenly the rupee depreciated, and lo and behold, I'm making more money. I have a higher top line and it's all profit. So the change in the top line directly propagates to the operating profit line. It's just it's free money when I depreciates the Indian domestic producers with a domestic buyer of the products that are priced at import parity pricing straight away get higher profitability and vice versa. When I appreciates all these guys are weeping, saying, I spent the same amount of money to buy my labor and buy my iron ore, and suddenly I'm getting paid less in India. Okay. She moves in mysterious ways. Okay, you have to understand how the market economy works. And uh this is another beautiful, interesting implication that in the class of the products that have import parity pricing. Fluctuations of the INR straight away feed into higher top line, higher revenues, higher operating profit, gram for gram, every pit of the currency depreciation or currency appreciation feeds into the profitability of a purely Indian transaction. That you're an Indian buyer, I'm an Indian seller, but suddenly our world has been shaken by the exchange rate. Am I getting through? Am I selling to you that the exchange rate is truly",
       "words": [
         {
           "word": "remember",
@@ -19765,15 +19701,7 @@
           "startTime": 1098.62,
           "endTime": 1098.86,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1098.86,
-      "endTime": 1100.38,
-      "text": "India. Okay. She moves",
-      "words": [
+        },
         {
           "word": "India.",
           "startTime": 1098.86,
@@ -19797,15 +19725,7 @@
           "startTime": 1100.06,
           "endTime": 1100.38,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1100.38,
-      "endTime": 1135.82,
-      "text": "in mysterious ways. Okay, you have to understand how the market economy works. And uh this is another beautiful, interesting implication that in the class of the products that have import parity pricing. Fluctuations of the INR straight away feed into higher top line, higher revenues, higher operating profit, gram for gram, every pit of the currency depreciation or currency appreciation feeds into the profitability of a purely Indian transaction. That you're an Indian buyer, I'm an Indian seller, but suddenly our world has been shaken by the exchange rate. Am I getting through? Am I selling to you that the exchange rate is truly",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 1100.38,
@@ -20689,8 +20609,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1149.23,
-      "endTime": 1162.51,
-      "text": "they've moved a long distance. Okay. Finally, the most important role of the exchange rate is not even all this. Okay. All this is trade. Okay. Trade is like some minor thing that real people",
+      "endTime": 1248.09,
+      "text": "they've moved a long distance. Okay. Finally, the most important role of the exchange rate is not even all this. Okay. All this is trade. Okay. Trade is like some minor thing that real people do. Trade is like some minor thing that you do. Trade is some minor thing that real people do. The really big thing in the world is called finance. Okay. So compared to finance, trade is small change. the really big thing that people do is finance. So vast amounts of money slosh in and out of India on the capital account. And all that is shaped by the INR. Moment to moment there is a market clearing on the currency market. So there is some importer, there is some exporter, there is some FDI, there is some portfolio investment, and there are small imbalances in the currency market, there are traders coming in and doing that. So there is just an unbelievably vast enterprise called finance, which is also fully and deeply shaped by the exchange rate. So there is a very common economisty blunder that the economists who don't know finance think that the exchange rate is about trade or ought to be about trade. And that is just like sorry, that world went away fifty years ago. In today's world, finance is all powerful. Finance rules the most important activities on the currency market are coming out of finance. Trade is a step sister compared to the size of finance. So these are all the things going on where the exchange rate matters greatly, and in the priceless words of Josh Felman, The exchange rate is the most important price of all.",
       "words": [
         {
           "word": "they've",
@@ -20901,15 +20821,7 @@
           "startTime": 1162.27,
           "endTime": 1162.51,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1162.51,
-      "endTime": 1164.75,
-      "text": "do. Trade is like some minor thing that you do. Trade is some",
-      "words": [
+        },
         {
           "word": "do.",
           "startTime": 1162.51,
@@ -20987,15 +20899,7 @@
           "startTime": 1164.59,
           "endTime": 1164.75,
           "confidence": 0.993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1164.75,
-      "endTime": 1248.09,
-      "text": "minor thing that real people do. The really big thing in the world is called finance. Okay. So compared to finance, trade is small change. the really big thing that people do is finance. So vast amounts of money slosh in and out of India on the capital account. And all that is shaped by the INR. Moment to moment there is a market clearing on the currency market. So there is some importer, there is some exporter, there is some FDI, there is some portfolio investment, and there are small imbalances in the currency market, there are traders coming in and doing that. So there is just an unbelievably vast enterprise called finance, which is also fully and deeply shaped by the exchange rate. So there is a very common economisty blunder that the economists who don't know finance think that the exchange rate is about trade or ought to be about trade. And that is just like sorry, that world went away fifty years ago. In today's world, finance is all powerful. Finance rules the most important activities on the currency market are coming out of finance. Trade is a step sister compared to the size of finance. So these are all the things going on where the exchange rate matters greatly, and in the priceless words of Josh Felman, The exchange rate is the most important price of all.",
-      "words": [
+        },
         {
           "word": "minor",
           "startTime": 1164.75,
@@ -24735,8 +24639,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1368.42,
-      "endTime": 1373.06,
-      "text": "now? So you have to go back into history in this. So in the deep past",
+      "endTime": 1458.54,
+      "text": "now? So you have to go back into history in this. So in the deep past and and it is deeply connected to money. It is impossible to discuss exchange rates without discussing money. In the deep past, money was forged out of gold. And intuitively you first had coins made of gold, and uh then people thought, you know, we'll keep the gold in a vault and we'll have money made out of paper. So but it was backed by gold. You the fiction that I promised to pay the bearer, okay, that the gold is supposed to be sitting somewhere. And uh every now and then there would be a country where this went wrong. where the backed by gold was not done correctly and things uh went very badly, and there was a wisdom that no, you have to be s careful, you have to be responsible. So a king in France and a king in the UK would both issue money, but everything would be linked on to gold. And so it was a world of relative simplicity and it was also a world of constant fear and mistrust. Because you don't know if that block is actually living up to their promises that you know institutions were untrusted. Then there was a long period in this where the United States government put its institutional might to saying that thirty-five dollars shall be one ounce of gold. And so they just created a stability at the foundation of the entire world economy where various currencies were linked to the dollar and the dollar was linked to gold and it all appeared nice and",
       "words": [
         {
           "word": "now?",
@@ -24833,15 +24737,7 @@
           "startTime": 1372.66,
           "endTime": 1373.06,
           "confidence": 0.9953
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1373.06,
-      "endTime": 1375.4,
-      "text": "and and it is deeply connected to money.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1373.06,
@@ -24889,15 +24785,7 @@
           "startTime": 1374.9,
           "endTime": 1375.4,
           "confidence": 0.7851
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1375.97,
-      "endTime": 1458.54,
-      "text": "It is impossible to discuss exchange rates without discussing money. In the deep past, money was forged out of gold. And intuitively you first had coins made of gold, and uh then people thought, you know, we'll keep the gold in a vault and we'll have money made out of paper. So but it was backed by gold. You the fiction that I promised to pay the bearer, okay, that the gold is supposed to be sitting somewhere. And uh every now and then there would be a country where this went wrong. where the backed by gold was not done correctly and things uh went very badly, and there was a wisdom that no, you have to be s careful, you have to be responsible. So a king in France and a king in the UK would both issue money, but everything would be linked on to gold. And so it was a world of relative simplicity and it was also a world of constant fear and mistrust. Because you don't know if that block is actually living up to their promises that you know institutions were untrusted. Then there was a long period in this where the United States government put its institutional might to saying that thirty-five dollars shall be one ounce of gold. And so they just created a stability at the foundation of the entire world economy where various currencies were linked to the dollar and the dollar was linked to gold and it all appeared nice and",
-      "words": [
+        },
         {
           "word": "It",
           "startTime": 1375.97,
@@ -26421,8 +26309,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1458.54,
-      "endTime": 1461.5,
-      "text": "tight. And this is known as a gold standard. This is the period of",
+      "endTime": 1462.32,
+      "text": "tight. And this is known as a gold standard. This is the period of the gold standard.",
       "words": [
         {
           "word": "tight.",
@@ -26507,15 +26395,7 @@
           "startTime": 1461.42,
           "endTime": 1461.5,
           "confidence": 0.9943
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1461.5,
-      "endTime": 1630.98,
-      "text": "the gold standard. And uh one very important figure, uh, John Maynard Keynes, who played a critical role in the architecture of the post second world war economic order, threw his weight behind these kinds of arrangements, saying, We fix this with the gold standard with the US dollar and you don't have currencies that fluctuate too much. He was reading a lot in trying to understand and avert some of the currency chaos that had taken place at the time of the Great Depression. So he voted that you've got to keep this thing reasonably fixed and came up with a arrangement for how to do that. And it's a separate discussion that that arrangement, in my opinion, was not a wise one. And inevitably it fell apart. Okay. So then you got to Richard Nixon taking the United States away from the g gold standard, and that is called the collapse the collapse of Bretton Woods. And ever since that currencies have just been Fiat money, that is money that is money by fiat. A state asserts that this is money. If we had any kind of foresight, at this point I would be holding a five hundred rupee note and I would have been saying that there is nothing in here other than the spirit of the Indian state. It is the Indian state that makes it so. That you believe it is five hundred rupees, I believe it is five hundred rupees, and it achieves this value out of thin air. And uh as we know, a bunch of people have wondered, could you do it better that, you know, if a currency is under girded by some cool mathematical theorems, it's a bit more believable than something that has the mere word of a state, and that takes us into a different direction. But you had a whole bunch of these fiat currencies backed by government. Now in this world, what is the exchange rate between the Great Britain pound and the French franc? and the Indian rupee and so on, suddenly it's up for grabs. It can be anything you want it to be, because there is no gold in the picture. So there's no common factor called gold that is holding the whole thing together. It is now the world of a pure market. There is some IR and there is some Sri Lankan rupee and it is just supply and demand that make the price. And uh that is the new world we have operated in ever since the collapse of the Bretton Woods system. And uh a variety of policymakers and uh uh people in governments that desire more control over these things are going through their stages of grief in accepting and getting used to the idea that markets make the exchange rate. So you will find many people in governments who will have views on these things, but I think that story is over and we are in a world of floating exchange rates.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1461.5,
@@ -26533,7 +26413,15 @@
           "startTime": 1461.82,
           "endTime": 1462.32,
           "confidence": 0.8821
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1462.66,
+      "endTime": 1630.98,
+      "text": "And uh one very important figure, uh, John Maynard Keynes, who played a critical role in the architecture of the post second world war economic order, threw his weight behind these kinds of arrangements, saying, We fix this with the gold standard with the US dollar and you don't have currencies that fluctuate too much. He was reading a lot in trying to understand and avert some of the currency chaos that had taken place at the time of the Great Depression. So he voted that you've got to keep this thing reasonably fixed and came up with a arrangement for how to do that. And it's a separate discussion that that arrangement, in my opinion, was not a wise one. And inevitably it fell apart. Okay. So then you got to Richard Nixon taking the United States away from the g gold standard, and that is called the collapse the collapse of Bretton Woods. And ever since that currencies have just been Fiat money, that is money that is money by fiat. A state asserts that this is money. If we had any kind of foresight, at this point I would be holding a five hundred rupee note and I would have been saying that there is nothing in here other than the spirit of the Indian state. It is the Indian state that makes it so. That you believe it is five hundred rupees, I believe it is five hundred rupees, and it achieves this value out of thin air. And uh as we know, a bunch of people have wondered, could you do it better that, you know, if a currency is under girded by some cool mathematical theorems, it's a bit more believable than something that has the mere word of a state, and that takes us into a different direction. But you had a whole bunch of these fiat currencies backed by government. Now in this world, what is the exchange rate between the Great Britain pound and the French franc? and the Indian rupee and so on, suddenly it's up for grabs. It can be anything you want it to be, because there is no gold in the picture. So there's no common factor called gold that is holding the whole thing together. It is now the world of a pure market. There is some IR and there is some Sri Lankan rupee and it is just supply and demand that make the price. And uh that is the new world we have operated in ever since the collapse of the Bretton Woods system. And uh a variety of policymakers and uh uh people in governments that desire more control over these things are going through their stages of grief in accepting and getting used to the idea that markets make the exchange rate. So you will find many people in governments who will have views on these things, but I think that story is over and we are in a world of floating exchange rates.",
+      "words": [
         {
           "word": "And",
           "startTime": 1462.66,
@@ -29563,10 +29451,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "Ajay Shah",
       "startTime": 1633.84,
-      "endTime": 1634.48,
-      "text": "it is",
+      "endTime": 1793.17,
+      "text": "it is amazing to think that the person who first got this was Milton Friedman. So the case for flexible exchange rates is from capitalism and freedom. No, it says in positive economics, and it was Friedman Friedman. He was the first person who understood that I don't need a government in exchange rates, and he showed all the logical ways in which exchange rate adjustment makes the world a better place. And so once again, you have to salute Milton Friedman for being the first guy who figured out the modern world in these ways. Okay, so I want to caricature the approach of governments towards exchange rates around three cases. And every real world system is a little bit different from this, but to fix the mind, there are three cases. Okay, so there is case one, probably North Korea, okay, where every transaction involving the exchange rate has one counterparty, that is the government. So all the coercive power of the state is used to block all private private currency transactions. So uh if you've ever wondered that if you and I will privately do a transaction where I will give you uh uh euro bills and you will give me INR bills, then does that get us into some trouble with the Indian state? I think the answer is yes. Okay, so this is a kind of use of the coercive power of the state that you know we may debate about the soundness of that. But there are countries which do it to the limit where they say every single transaction you come to me. So you want to buy Uh dollars come to me. You want to sell dollars, come to me. And they use violence against their people and they enforce that. Okay, so this is category one, where the central bank is in every single transaction. Case two. There are private private transactions, but they are fully controlled by the central bank. The central bank establishes detailed rules about who can transact, where they can transact, when they can transact, and the central bank uses many, many levers of power. and outright trading on the market to control the exchange rate. Okay. So this is case two. That there exists a private private market, but it is highly restricted. And I think you and I in India are coerced by the state that we cannot do private private transactions. That's",
       "words": [
         {
           "word": "it",
@@ -29579,15 +29467,7 @@
           "startTime": 1634.16,
           "endTime": 1634.48,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1634.48,
-      "endTime": 1664.64,
-      "text": "amazing to think that the person who first got this was Milton Friedman. So the case for flexible exchange rates is from capitalism and freedom. No, it says in positive economics, and it was Friedman Friedman. He was the first person who understood that I don't need a government in exchange rates, and he showed all the logical ways in which exchange rate adjustment makes the world a better place. And so once again, you have to salute Milton Friedman for being the first guy who figured out the modern world in",
-      "words": [
+        },
         {
           "word": "amazing",
           "startTime": 1634.48,
@@ -30139,15 +30019,7 @@
           "startTime": 1664.4,
           "endTime": 1664.64,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1664.64,
-      "endTime": 1666.46,
-      "text": "these ways.",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 1664.64,
@@ -30159,15 +30031,7 @@
           "startTime": 1664.96,
           "endTime": 1666.46,
           "confidence": 0.9568
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1674.16,
-      "endTime": 1794.05,
-      "text": "Okay, so I want to caricature the approach of governments towards exchange rates around three cases. And every real world system is a little bit different from this, but to fix the mind, there are three cases. Okay, so there is case one, probably North Korea, okay, where every transaction involving the exchange rate has one counterparty, that is the government. So all the coercive power of the state is used to block all private private currency transactions. So uh if you've ever wondered that if you and I will privately do a transaction where I will give you uh uh euro bills and you will give me INR bills, then does that get us into some trouble with the Indian state? I think the answer is yes. Okay, so this is a kind of use of the coercive power of the state that you know we may debate about the soundness of that. But there are countries which do it to the limit where they say every single transaction you come to me. So you want to buy Uh dollars come to me. You want to sell dollars, come to me. And they use violence against their people and they enforce that. Okay, so this is category one, where the central bank is in every single transaction. Case two. There are private private transactions, but they are fully controlled by the central bank. The central bank establishes detailed rules about who can transact, where they can transact, when they can transact, and the central bank uses many, many levers of power. and outright trading on the market to control the exchange rate. Okay. So this is case two. That there exists a private private market, but it is highly restricted. And I think you and I in India are coerced by the state that we cannot do private private transactions. That's my",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 1674.16,
@@ -32039,21 +31903,21 @@
           "startTime": 1792.93,
           "endTime": 1793.17,
           "confidence": 0.8539
-        },
-        {
-          "word": "my",
-          "startTime": 1793.17,
-          "endTime": 1794.05,
-          "confidence": 0.5552
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1794.05,
+      "startTime": 1793.17,
       "endTime": 1819.36,
-      "text": "just want to point out that this is not merely coercion. It is also theft. Because this coercion introduces a friction into our lives which reduces the amount of value that we can get from making mutually beneficial transactions. It changes our decisions, it changes our lives, it changes the economy around us when it's applied to all the people at large as it indeed is. So this is the state stealing the money of the people or even worse, not even stealing it, but just burning it. Because it be it's it's a negative.",
+      "text": "my just want to point out that this is not merely coercion. It is also theft. Because this coercion introduces a friction into our lives which reduces the amount of value that we can get from making mutually beneficial transactions. It changes our decisions, it changes our lives, it changes the economy around us when it's applied to all the people at large as it indeed is. So this is the state stealing the money of the people or even worse, not even stealing it, but just burning it. Because it be it's it's a negative.",
       "words": [
+        {
+          "word": "my",
+          "startTime": 1793.17,
+          "endTime": 1794.05,
+          "confidence": 0.5552
+        },
         {
           "word": "just",
           "startTime": 1794.05,
@@ -34217,8 +34081,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1897.86,
-      "endTime": 2013.89,
-      "text": "So in the advanced economies, they've got this message and by and large they're completely out of it. There are two notable exceptions. One, the Japanese government does it all the time. And second, in recent years, Switzerland has done a bit of it. They are now coming to the end of that period. Apart from this, I think it's over. All the advanced economies, they get this stuff that they have complete untrammeled freedom. exchange of currencies by their people. So if you are an American resident in the streets of America, you do a private transaction, converting Swiss franc into US dollar or US dollars into Swiss francs. It is your freedom To do so, nobody will interfere with you. There is no coercive of the power of the state saying anything to you that I will punish you, I will interfere with this transaction. Nothing. Okay, so these are three rooms in the house. That you can be North Korea, where every single transaction directly goes through the central bank. You can be a country like India where they are very concerned about the exchange rate. They have not yet finished their stages of grief. And there is the advanced economies where basically the story is over. by the early nineties it was over that exchange rates are not our business, it is the business of the market. So these are three alternative designs you see all over the world. And you know, we should think we should debate. But certainly, gentle reader, when you think take interest in any country, you should understand this. The exchange rate mechanism, the exchange rate regime is supremely important. In understanding a country, you must understand this. What is Sri Lanka doing on the exchange rate? What is Pakistan doing on the exchange rate? What is Korea doing on the exchange rate? For each to understand a country you must understand its exchange rate system and the exchange rate regime. And it gives you great insight into what's going on in the country. And also I'm just going to say in the future we will do something on monetary economics. And there's an absolutely core connection between the exchange rate approach of the country and monetary",
+      "endTime": 2014.39,
+      "text": "So in the advanced economies, they've got this message and by and large they're completely out of it. There are two notable exceptions. One, the Japanese government does it all the time. And second, in recent years, Switzerland has done a bit of it. They are now coming to the end of that period. Apart from this, I think it's over. All the advanced economies, they get this stuff that they have complete untrammeled freedom. exchange of currencies by their people. So if you are an American resident in the streets of America, you do a private transaction, converting Swiss franc into US dollar or US dollars into Swiss francs. It is your freedom To do so, nobody will interfere with you. There is no coercive of the power of the state saying anything to you that I will punish you, I will interfere with this transaction. Nothing. Okay, so these are three rooms in the house. That you can be North Korea, where every single transaction directly goes through the central bank. You can be a country like India where they are very concerned about the exchange rate. They have not yet finished their stages of grief. And there is the advanced economies where basically the story is over. by the early nineties it was over that exchange rates are not our business, it is the business of the market. So these are three alternative designs you see all over the world. And you know, we should think we should debate. But certainly, gentle reader, when you think take interest in any country, you should understand this. The exchange rate mechanism, the exchange rate regime is supremely important. In understanding a country, you must understand this. What is Sri Lanka doing on the exchange rate? What is Pakistan doing on the exchange rate? What is Korea doing on the exchange rate? For each to understand a country you must understand its exchange rate system and the exchange rate regime. And it gives you great insight into what's going on in the country. And also I'm just going to say in the future we will do something on monetary economics. And there's an absolutely core connection between the exchange rate approach of the country and monetary policy.",
       "words": [
         {
           "word": "So",
@@ -36475,21 +36339,21 @@
           "startTime": 2013.33,
           "endTime": 2013.89,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2013.89,
-      "endTime": 2020.4,
-      "text": "policy. Not in the future. In the immediate future. We d the next episode will be about the gentle listeners",
-      "words": [
+        },
         {
           "word": "policy.",
           "startTime": 2013.89,
           "endTime": 2014.39,
           "confidence": 0.9832
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2015.76,
+      "endTime": 2086.05,
+      "text": "Not in the future. In the immediate future. We d the next episode will be about the gentle listeners because we plan a little ahead. So just hang in there, finish this episode first. Take your time, watch it at zero point two five X so it'll last and last and last till we get there. So Ajay, I love the story so far. The continuum that you established from North Korea on the one hand to the advanced West on the other hand, with India somewhere in middle and there should be a cautionary tale for us. Like dear India, who do you want to be more like? Do you want to be like North Korea or do you want to be like the West or are you happy chugging along as you are lessen from this. I feel we sometimes learn the long uh wrong lesson. But to get back to the precise subject on hand Uh the West has decided that A, don't mess with prices, as we know in every other domain. It's it it it just distorts everything, it doesn't work. Don't mess with prices. Lesson number one. Lesson number two, don't worry about fluctu uh f fluctuating exchange rates. Let them fluctuate. It's great, everything works out. Explain that to me. Why are flu freely fluctuating exchange rates actually a damn good",
+      "words": [
         {
           "word": "Not",
           "startTime": 2015.76,
@@ -36603,29 +36467,13 @@
           "startTime": 2020.0,
           "endTime": 2020.4,
           "confidence": 0.8309
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2020.4,
-      "endTime": 2021.9,
-      "text": "because",
-      "words": [
+        },
         {
           "word": "because",
           "startTime": 2020.4,
           "endTime": 2021.9,
           "confidence": 0.8629
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2022.48,
-      "endTime": 2085.89,
-      "text": "we plan a little ahead. So just hang in there, finish this episode first. Take your time, watch it at zero point two five X so it'll last and last and last till we get there. So Ajay, I love the story so far. The continuum that you established from North Korea on the one hand to the advanced West on the other hand, with India somewhere in middle and there should be a cautionary tale for us. Like dear India, who do you want to be more like? Do you want to be like North Korea or do you want to be like the West or are you happy chugging along as you are lessen from this. I feel we sometimes learn the long uh wrong lesson. But to get back to the precise subject on hand Uh the West has decided that A, don't mess with prices, as we know in every other domain. It's it it it just distorts everything, it doesn't work. Don't mess with prices. Lesson number one. Lesson number two, don't worry about fluctu uh f fluctuating exchange rates. Let them fluctuate. It's great, everything works out. Explain that to me. Why are flu freely fluctuating exchange rates actually a damn",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 2022.48,
@@ -37867,21 +37715,21 @@
           "startTime": 2085.57,
           "endTime": 2085.89,
           "confidence": 0.9933
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2085.89,
-      "endTime": 2146.45,
-      "text": "good thing. So first I want to wind about you, gentle reader. The entire Indian elite has an obsession with exchange rate stability. They would like it if the exchange rate did not move. And I really don't get where this comes from. Okay? We're not in a half pants anymore as a market economy. So the price of steel fluctuates, the price of cement fluctuates, the price of uh nickel fluctuates, Lord knows one of these days the price of electricity will fluctuate. Okay? So why this attachment to an exchange rate that does not fluctuate? See, earlier today I have described that exchange rate is the most important price of the economy. So yeah, it'll fluctuate, but that's part of life. I mean to be in business is to be in this world of ceaseless change. And to constantly understand opportunities and reshape your own organization and change the resource allocation. in profit seeking ways. If you're not doing that, then you know, you're not in business.",
-      "words": [
+        },
         {
           "word": "good",
           "startTime": 2085.89,
           "endTime": 2086.05,
           "confidence": 0.9896
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2086.05,
+      "endTime": 2146.45,
+      "text": "thing. So first I want to wind about you, gentle reader. The entire Indian elite has an obsession with exchange rate stability. They would like it if the exchange rate did not move. And I really don't get where this comes from. Okay? We're not in a half pants anymore as a market economy. So the price of steel fluctuates, the price of cement fluctuates, the price of uh nickel fluctuates, Lord knows one of these days the price of electricity will fluctuate. Okay? So why this attachment to an exchange rate that does not fluctuate? See, earlier today I have described that exchange rate is the most important price of the economy. So yeah, it'll fluctuate, but that's part of life. I mean to be in business is to be in this world of ceaseless change. And to constantly understand opportunities and reshape your own organization and change the resource allocation. in profit seeking ways. If you're not doing that, then you know, you're not in business.",
+      "words": [
         {
           "word": "thing.",
           "startTime": 2086.05,
@@ -38895,8 +38743,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2146.45,
-      "endTime": 2154.05,
-      "text": "The world is fluctuating. Our desires are fluctuating. You want the prices to fluctuate as well. You want the information to adjust to",
+      "endTime": 2154.29,
+      "text": "The world is fluctuating. Our desires are fluctuating. You want the prices to fluctuate as well. You want the information to adjust to So I",
       "words": [
         {
           "word": "The",
@@ -39035,15 +38883,7 @@
           "startTime": 2153.41,
           "endTime": 2154.05,
           "confidence": 0.994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2154.05,
-      "endTime": 2260.75,
-      "text": "So I think there's a closet bureaucrat inside each of us who just wants a simple unchanging life. That the world may change, but I don't want to have to change. I don't want to have to think. Okay. I just want to lead my everyday that is the same as what I did yesterday. And I just want to flag this that There is an irrational attachment to exchange rate uh fixedness in the eyes of the Indian elite, and it mystifies me, where is this coming from? As I said, we're not in half pants anymore. We are a country where the price of steel fluctuates. Okay? You've got you've got used to it. You've got used to so many fluctuations. Why be so stuck on this one? Now, claim two. Let's apply the general theory. The general theory is that the price system solves for the resource allocation. Okay. So the world changes, prices change, the prices are information wrapped in an incentive, and the firms are supposed to see those prices. Consumers, producers are supposed to see those prices, change their behavior, and reshape the entire resource allocation of the country. Recall, gentle reader, that the resource allocation is the detailed description about how all economic activity takes place. And it is either handed down from high above, or it is discovered by the people, by the participants in this game. So by Uh analogy, the exchange rate is one more price. It is discovered by the price system, and its fluctuations lead to all good things. So precisely like we talked about trying to fix a price of nickel or trying to fix a price of a car. It is equally silly to try to fix the price of an exchange rate. That's a general theory that carries",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2154.05,
@@ -39055,7 +38895,15 @@
           "startTime": 2154.21,
           "endTime": 2154.29,
           "confidence": 0.9884
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2154.29,
+      "endTime": 2267.23,
+      "text": "think there's a closet bureaucrat inside each of us who just wants a simple unchanging life. That the world may change, but I don't want to have to change. I don't want to have to think. Okay. I just want to lead my everyday that is the same as what I did yesterday. And I just want to flag this that There is an irrational attachment to exchange rate uh fixedness in the eyes of the Indian elite, and it mystifies me, where is this coming from? As I said, we're not in half pants anymore. We are a country where the price of steel fluctuates. Okay? You've got you've got used to it. You've got used to so many fluctuations. Why be so stuck on this one? Now, claim two. Let's apply the general theory. The general theory is that the price system solves for the resource allocation. Okay. So the world changes, prices change, the prices are information wrapped in an incentive, and the firms are supposed to see those prices. Consumers, producers are supposed to see those prices, change their behavior, and reshape the entire resource allocation of the country. Recall, gentle reader, that the resource allocation is the detailed description about how all economic activity takes place. And it is either handed down from high above, or it is discovered by the people, by the participants in this game. So by Uh analogy, the exchange rate is one more price. It is discovered by the price system, and its fluctuations lead to all good things. So precisely like we talked about trying to fix a price of nickel or trying to fix a price of a car. It is equally silly to try to fix the price of an exchange rate. That's a general theory that carries through. But I can see the skeptical Bengali saying no, no, no, no. In everything else, markets are good, but exchange",
+      "words": [
         {
           "word": "think",
           "startTime": 2154.29,
@@ -40861,15 +40709,7 @@
           "startTime": 2260.27,
           "endTime": 2260.75,
           "confidence": 0.9956
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2260.75,
-      "endTime": 2262.67,
-      "text": "through. But I can see",
-      "words": [
+        },
         {
           "word": "through.",
           "startTime": 2260.75,
@@ -40899,15 +40739,7 @@
           "startTime": 2262.43,
           "endTime": 2262.67,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2262.67,
-      "endTime": 2267.23,
-      "text": "the skeptical Bengali saying no, no, no, no. In everything else, markets are good, but exchange",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 2262.67,
@@ -53721,8 +53553,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3028.88,
-      "endTime": 3094.96,
-      "text": "So uh the situation on the cross-border engagement is a bloody mess. There is one law FEMA, there are hundreds of circular notifications, and there are thousands of cases. This is uh Feeding frenzy for lawyers and accountants, where all kinds of hoops have to be jumped, and there are intricacies of rules and regulations about everything. You want to do anything in the world of cross-border activities, you are tied down by 45 rules and regulations and procedures. And basically, this is an uh employment guarantee program for lawyers and accountants. Okay, so the government of India is basically making sure that lawyers get paid lots of money for supporting the ordinary business activities of. Internationalizing India. Now, this is bad in terms of public policy because I want to draw attention to our episode on firms and internationalization. Internationalization of the economy is the engine of economic growth. A country becomes better with higher productivity in its",
+      "endTime": 3247.74,
+      "text": "So uh the situation on the cross-border engagement is a bloody mess. There is one law FEMA, there are hundreds of circular notifications, and there are thousands of cases. This is uh Feeding frenzy for lawyers and accountants, where all kinds of hoops have to be jumped, and there are intricacies of rules and regulations about everything. You want to do anything in the world of cross-border activities, you are tied down by 45 rules and regulations and procedures. And basically, this is an uh employment guarantee program for lawyers and accountants. Okay, so the government of India is basically making sure that lawyers get paid lots of money for supporting the ordinary business activities of. Internationalizing India. Now, this is bad in terms of public policy because I want to draw attention to our episode on firms and internationalization. Internationalization of the economy is the engine of economic growth. A country becomes better with higher productivity in its local economy. Internationalization. So you want more and more trade, you want more and more cross-border engagement, we want FDI, we want foreign capital, all those things come into the country and they come as a package of knowledge, that they reshape the knowledge and the capabilities of the country. So internationalization is the package through which you obtain economic growth. So putting in all these frictions of lawyers, rules, regulations, and by the way, the Agency that enforces the FEMA is called the enforcement directorate. And that's another little disaster. This is an organization with very poor rule of law. So they have all kinds of draconian powers. They can conduct raids. Okay. So the uh polite term for raids that is used in uh government circles is called search and seizure. It sounds nicer, but it is a pre-done knock where they come to your house and they ring the doorbell. and they barge into your house and they demand access to documents and they make people sit down and answer questions and it is just an uncivilized feature of what is going on in India that you've got a whole system of currency controls backed by the coercive power of the enforcement directorate, which is not an agency with a well drafted law. So there is just non rule of law. And just see the connections that you will be able to speak with many political actors today in India who get that the ED is a problem. But the economists who built FEMA and the ED did not understand these things. So this is where I say that to do state capability, rule of law, public administration, public choice theory, all these things have to be deeply mated with the economics. And if you just say as an economist, oh, we want a little more openness on the current account, but capital account is bad and you should not have openness on the capital account, This kind of stuff doesn't go very far. This is the core of the Indian failure. It is why you know we petered out after 20 years of some progress. Finally, there is a slogan, there is a headline where it is claimed that India has current account convertibility. Okay, which is supposed to mean that for activities on the current account, there are no procedures, there are no rules, there are no checks and balances, you can do whatever the hell you want, you can freely convert rupees and dollars. And I just want to say, no, that's not true. This is what people say. And the people who say this are economists who don't understand law. Okay. So our good friend Bhargavi Zaveri and I have thought deeply about this and we've written some stuff on this. And what is there in India is not current account",
       "words": [
         {
           "word": "So",
@@ -54677,15 +54509,7 @@
           "startTime": 3094.56,
           "endTime": 3094.96,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3094.96,
-      "endTime": 3098.67,
-      "text": "local economy. Internationalization.",
-      "words": [
+        },
         {
           "word": "local",
           "startTime": 3094.96,
@@ -54703,15 +54527,7 @@
           "startTime": 3097.17,
           "endTime": 3098.67,
           "confidence": 0.9283
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3098.69,
-      "endTime": 3247.74,
-      "text": "So you want more and more trade, you want more and more cross-border engagement, we want FDI, we want foreign capital, all those things come into the country and they come as a package of knowledge, that they reshape the knowledge and the capabilities of the country. So internationalization is the package through which you obtain economic growth. So putting in all these frictions of lawyers, rules, regulations, and by the way, the Agency that enforces the FEMA is called the enforcement directorate. And that's another little disaster. This is an organization with very poor rule of law. So they have all kinds of draconian powers. They can conduct raids. Okay. So the uh polite term for raids that is used in uh government circles is called search and seizure. It sounds nicer, but it is a pre-done knock where they come to your house and they ring the doorbell. and they barge into your house and they demand access to documents and they make people sit down and answer questions and it is just an uncivilized feature of what is going on in India that you've got a whole system of currency controls backed by the coercive power of the enforcement directorate, which is not an agency with a well drafted law. So there is just non rule of law. And just see the connections that you will be able to speak with many political actors today in India who get that the ED is a problem. But the economists who built FEMA and the ED did not understand these things. So this is where I say that to do state capability, rule of law, public administration, public choice theory, all these things have to be deeply mated with the economics. And if you just say as an economist, oh, we want a little more openness on the current account, but capital account is bad and you should not have openness on the capital account, This kind of stuff doesn't go very far. This is the core of the Indian failure. It is why you know we petered out after 20 years of some progress. Finally, there is a slogan, there is a headline where it is claimed that India has current account convertibility. Okay, which is supposed to mean that for activities on the current account, there are no procedures, there are no rules, there are no checks and balances, you can do whatever the hell you want, you can freely convert rupees and dollars. And I just want to say, no, that's not true. This is what people say. And the people who say this are economists who don't understand law. Okay. So our good friend Bhargavi Zaveri and I have thought deeply about this and we've written some stuff on this. And what is there in India is not current account",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 3098.69,
@@ -62603,8 +62419,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3507.07,
-      "endTime": 3869.97,
-      "text": "And then Sobarau as uh governor, we actually had high levels of exchange rate flexibility. There was a nice chunk of years were these? Give me a sense. Uh 2007 to 2012 or 2013. Okay. So it was a five, six year period of significant exchange rate flexibility. There is a nice chunk of months in which RBI did no trading on the currency market and you had a genuine market. fluctuation, meaning you still had a whole bunch of restrictions on what you could do on the market. But RBI was not trading in that market on top of that. And by and large when Ragunam Rajan became governor that period ended and we got back to a highly managed exchange rate. So we have tasted exchange rate flexibility, but unfortunately we just went back to the bad ideas and this is where we've been stuck ever since. What are the range of possibilities? The One big pillar of the story is in good shape, which is the inflation targeting. Okay, so it fundamentally creates a good foundation that RBI is now accountable for the right thing. RBI is not accountable for delivering an exchange rate. RPI is not accountable for delivering exchange rate stability. So RBI is accountable for delivering an inflation target, and this is correct. Okay, so it's one big piece that has got done. Like we've poured concrete on the foundation, and that is in good shape. What is not in good shape is that uh the employment guarantee program for thousands and thousands of lawyers, just an infinitely intricate world of rules, restrictions. If you are a foreign investor who is a dentist investing in nanotechnology, then we will permit you to do ECB and you have to fill form number 74, EE1. Okay? And like that. I'm just I'm making this up, but it is at that level of absurd that there are detailed rules and there are entire law firms making a living out of these rules. At present there is no uh momentum. There is no community. There are no researchers working to fix this. Okay, there was a time when there was. But today That entire knowledge community, the policy community that got this stuff and that worked every day in the intricacies of individual regulations, understanding that this regulation is a needless intrusion on freedom, there is no market failure, you're just creating a lot of legal risk and compliance overhead, nobody is better off. Can we get rid of this one regulation at a time? So I I'm I'm conservative in my thinking on public policy, that I don't like big sweeping changes. You should cross a river by feeling the stones. Which means that you can't not learn the edifice of central planning. You have to learn one regulation, one law at a time, and be able to persuade many, many people that, you know, this thing doesn't make sense and we should get rid of it and do one liberalization at a time. That requires an intellectual capability in government backed by knowledge orgs. It's sort of the story we told in our conversation around pension reforms. It's the same story here. That what you need is teams of full-time employees who understand these things, who are doing deep research, understanding the data, talking to practitioners, reading rules, reading laws, writing blog articles, making videos, okay, persuading the larger community that this doesn't make sense. That is completely absent in India today. So there is no movement on solving these things today. What is the range of possibilities? The best possibility is that. FEMA goes away and is replaced by a clean modern law which says that all transactions are legal. By the way, here are a few exceptions. Instead of flipping it around that all transactions are illegal, and by the way, here are a few things that are permissible. And we just need to, you know, actually do convertibility on the current account. On most of the capital account, there is no case for restrictions. There may be a little bit of a case here and there for restrictions. By the way, you will not at all be surprised to know that there is a vast black market. Okay, so there is a very large world of private people doing their own cross-border stuff on their own steam. Okay, it is inevitable. Whenever a government will make these restrictions, a black market will emerge. Uh in this field, what it has turned into is the following: that the lawyers are high-priced, so the people who are able to achieve cross-border transactions are the rich and they are the large firms. Okay? So If you are an anybody other than the top 0.1%, it's a closed capital account. It is not current account convertibility. You have to suffer all kinds of restrictions and too bad you can't do anything. If you are the top point one percent of India, you will go to the lawyers and you'll figure out how to get your money out of the country, how to invest in an ETF on Nasdaq, how to buy a real estate in London and so on, and the richest people are able to do that. This is going by the existing rules of FEMA and all that. So operating within the law, you have to be a big company, you have to be a big investor, you have to be a rich person, and then you will pay for all the lawyering and the accounting, and you will be able to jump the hoops off the obstacle course that RBI has created for you. But there is another way, and again, this is available to the corporations and not the people. This is call misinvoicing. So every time. An Indian company exports to a foreign buyer, imagine the goods are worth 100. Imagine that the company invoices it as 110. Okay, so the payment that comes from abroad is 110 and not 100. So this is falsifying the price of the goods that are being transacted. And so 10 rupees has come into India. It's actually a capital account transaction. So it's me and myself that my money outside is brought into India by overcharging for an export, or vice versa. Okay. So misinvoicing of imports can be done, misinvoicing of exports can be done, and there can be very large gross movements where some people are taking money out of the country, some people are",
+      "endTime": 3919.04,
+      "text": "And then Sobarau as uh governor, we actually had high levels of exchange rate flexibility. There was a nice chunk of years were these? Give me a sense. Uh 2007 to 2012 or 2013. Okay. So it was a five, six year period of significant exchange rate flexibility. There is a nice chunk of months in which RBI did no trading on the currency market and you had a genuine market. fluctuation, meaning you still had a whole bunch of restrictions on what you could do on the market. But RBI was not trading in that market on top of that. And by and large when Ragunam Rajan became governor that period ended and we got back to a highly managed exchange rate. So we have tasted exchange rate flexibility, but unfortunately we just went back to the bad ideas and this is where we've been stuck ever since. What are the range of possibilities? The One big pillar of the story is in good shape, which is the inflation targeting. Okay, so it fundamentally creates a good foundation that RBI is now accountable for the right thing. RBI is not accountable for delivering an exchange rate. RPI is not accountable for delivering exchange rate stability. So RBI is accountable for delivering an inflation target, and this is correct. Okay, so it's one big piece that has got done. Like we've poured concrete on the foundation, and that is in good shape. What is not in good shape is that uh the employment guarantee program for thousands and thousands of lawyers, just an infinitely intricate world of rules, restrictions. If you are a foreign investor who is a dentist investing in nanotechnology, then we will permit you to do ECB and you have to fill form number 74, EE1. Okay? And like that. I'm just I'm making this up, but it is at that level of absurd that there are detailed rules and there are entire law firms making a living out of these rules. At present there is no uh momentum. There is no community. There are no researchers working to fix this. Okay, there was a time when there was. But today That entire knowledge community, the policy community that got this stuff and that worked every day in the intricacies of individual regulations, understanding that this regulation is a needless intrusion on freedom, there is no market failure, you're just creating a lot of legal risk and compliance overhead, nobody is better off. Can we get rid of this one regulation at a time? So I I'm I'm conservative in my thinking on public policy, that I don't like big sweeping changes. You should cross a river by feeling the stones. Which means that you can't not learn the edifice of central planning. You have to learn one regulation, one law at a time, and be able to persuade many, many people that, you know, this thing doesn't make sense and we should get rid of it and do one liberalization at a time. That requires an intellectual capability in government backed by knowledge orgs. It's sort of the story we told in our conversation around pension reforms. It's the same story here. That what you need is teams of full-time employees who understand these things, who are doing deep research, understanding the data, talking to practitioners, reading rules, reading laws, writing blog articles, making videos, okay, persuading the larger community that this doesn't make sense. That is completely absent in India today. So there is no movement on solving these things today. What is the range of possibilities? The best possibility is that. FEMA goes away and is replaced by a clean modern law which says that all transactions are legal. By the way, here are a few exceptions. Instead of flipping it around that all transactions are illegal, and by the way, here are a few things that are permissible. And we just need to, you know, actually do convertibility on the current account. On most of the capital account, there is no case for restrictions. There may be a little bit of a case here and there for restrictions. By the way, you will not at all be surprised to know that there is a vast black market. Okay, so there is a very large world of private people doing their own cross-border stuff on their own steam. Okay, it is inevitable. Whenever a government will make these restrictions, a black market will emerge. Uh in this field, what it has turned into is the following: that the lawyers are high-priced, so the people who are able to achieve cross-border transactions are the rich and they are the large firms. Okay? So If you are an anybody other than the top 0.1%, it's a closed capital account. It is not current account convertibility. You have to suffer all kinds of restrictions and too bad you can't do anything. If you are the top point one percent of India, you will go to the lawyers and you'll figure out how to get your money out of the country, how to invest in an ETF on Nasdaq, how to buy a real estate in London and so on, and the richest people are able to do that. This is going by the existing rules of FEMA and all that. So operating within the law, you have to be a big company, you have to be a big investor, you have to be a rich person, and then you will pay for all the lawyering and the accounting, and you will be able to jump the hoops off the obstacle course that RBI has created for you. But there is another way, and again, this is available to the corporations and not the people. This is call misinvoicing. So every time. An Indian company exports to a foreign buyer, imagine the goods are worth 100. Imagine that the company invoices it as 110. Okay, so the payment that comes from abroad is 110 and not 100. So this is falsifying the price of the goods that are being transacted. And so 10 rupees has come into India. It's actually a capital account transaction. So it's me and myself that my money outside is brought into India by overcharging for an export, or vice versa. Okay. So misinvoicing of imports can be done, misinvoicing of exports can be done, and there can be very large gross movements where some people are taking money out of the country, some people are taking money into the country. Abhijit Sengupta. Not Abhijit Banaj. Abhijit Sengupta, Ila Patnaik and I have a paper where we do some crude measurement of the magnitudes of misinvoicing that are taking place in India and the numbers are staggering. So very large monies are moving in and out of the country through the vast amount of imports and exports. So does a government have the ability to squash freedom enough that people are all choked in India and can't do anything cross-border? Absolutely not. There is a vast illegality in which misinvoicing is done, and it dwarfs the quantities that are seen in the formal world that is done by using FEMA and lawyers and accountants. This is just a mess. And you know, we should get rid of",
       "words": [
         {
           "word": "And",
@@ -69157,15 +68973,7 @@
           "startTime": 3869.73,
           "endTime": 3869.97,
           "confidence": 0.9972
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3869.97,
-      "endTime": 3872.29,
-      "text": "taking money into the country.",
-      "words": [
+        },
         {
           "word": "taking",
           "startTime": 3869.97,
@@ -69195,15 +69003,7 @@
           "startTime": 3871.01,
           "endTime": 3872.29,
           "confidence": 0.9804
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3872.29,
-      "endTime": 3919.04,
-      "text": "Abhijit Sengupta. Not Abhijit Banaj. Abhijit Sengupta, Ila Patnaik and I have a paper where we do some crude measurement of the magnitudes of misinvoicing that are taking place in India and the numbers are staggering. So very large monies are moving in and out of the country through the vast amount of imports and exports. So does a government have the ability to squash freedom enough that people are all choked in India and can't do anything cross-border? Absolutely not. There is a vast illegality in which misinvoicing is done, and it dwarfs the quantities that are seen in the formal world that is done by using FEMA and lawyers and accountants. This is just a mess. And you know, we should get rid of",
-      "words": [
+        },
         {
           "word": "Abhijit",
           "startTime": 3872.29,
@@ -74219,8 +74019,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4138.35,
-      "endTime": 4154.0,
-      "text": "That Aja is a one track mind. All he thinks about is exchange rates. Okay. So today I have tried to show you One part of the grand story of exchange rates. It is just so fascinating. It is so important. But even more is",
+      "endTime": 4154.32,
+      "text": "That Aja is a one track mind. All he thinks about is exchange rates. Okay. So today I have tried to show you One part of the grand story of exchange rates. It is just so fascinating. It is so important. But even more is to",
       "words": [
         {
           "word": "That",
@@ -74491,21 +74291,21 @@
           "startTime": 4153.68,
           "endTime": 4154.0,
           "confidence": 0.9959
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4154.0,
-      "endTime": 4169.84,
-      "text": "to come. And even more is to come next week when gentle readers we will talk about inflation targeting, uh uh of which Ade Ajay was trying to persuade people in the government as far back as 2002 that hey, this is what we should do, and then it took 13 years to finally happen.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 4154.0,
           "endTime": 4154.32,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4154.32,
+      "endTime": 4169.84,
+      "text": "come. And even more is to come next week when gentle readers we will talk about inflation targeting, uh uh of which Ade Ajay was trying to persuade people in the government as far back as 2002 that hey, this is what we should do, and then it took 13 years to finally happen.",
+      "words": [
         {
           "word": "come.",
           "startTime": 4154.32,
@@ -76599,8 +76399,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4251.82,
-      "endTime": 4253.9,
-      "text": "I only want to recommend Milton Fatman, the case",
+      "endTime": 4261.92,
+      "text": "I only want to recommend Milton Fatman, the case for flexible exchange rates. It's just 1953. You just learn to admire and appreciate that person. Like he figured it out. He got all this first.",
       "words": [
         {
           "word": "I",
@@ -76655,15 +76455,7 @@
           "startTime": 4253.74,
           "endTime": 4253.9,
           "confidence": 0.8332
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4253.9,
-      "endTime": 4257.16,
-      "text": "for flexible exchange rates. It's just 1953.",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 4253.9,
@@ -76705,15 +76497,7 @@
           "startTime": 4255.66,
           "endTime": 4257.16,
           "confidence": 0.8823
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4257.18,
-      "endTime": 4260.38,
-      "text": "You just learn to admire and appreciate that person. Like he figured",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 4257.18,
@@ -76785,15 +76569,7 @@
           "startTime": 4260.06,
           "endTime": 4260.38,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4260.38,
-      "endTime": 4320.27,
-      "text": "it out. He got all this first. Welcome to Life Lessons. I'm Amit Varma. This is my good friend Ajay Shah. You would have seen us on the YouTube show, Everything Is Everything, where we talk about well, everything. Now, here's the funda behind this course. For a long, long time, a few years, in fact, I've been thinking a lot about how everything useful that I've learned has come outside of the educational system. Most of the lessons I've learned in my life, and it's true for Ajay, despite his many degrees, and I'm sure it's true for most of you, really comes from the act of living. And we thought, you know, there are certain fundamental things that I wish I had known when I was twenty years old. And and I and I simply didn't. Nobody taught me that stuff. Or when I was forty years old. Or when he was forty years old. And no one taught us that stuff. So we thought let's put together a course of all those fundamental things which we believe are essential to living a good life.",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 4260.38,
@@ -76835,7 +76611,15 @@
           "startTime": 4261.42,
           "endTime": 4261.92,
           "confidence": 0.9589
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4272.13,
+      "endTime": 4320.27,
+      "text": "Welcome to Life Lessons. I'm Amit Varma. This is my good friend Ajay Shah. You would have seen us on the YouTube show, Everything Is Everything, where we talk about well, everything. Now, here's the funda behind this course. For a long, long time, a few years, in fact, I've been thinking a lot about how everything useful that I've learned has come outside of the educational system. Most of the lessons I've learned in my life, and it's true for Ajay, despite his many degrees, and I'm sure it's true for most of you, really comes from the act of living. And we thought, you know, there are certain fundamental things that I wish I had known when I was twenty years old. And and I and I simply didn't. Nobody taught me that stuff. Or when I was forty years old. Or when he was forty years old. And no one taught us that stuff. So we thought let's put together a course of all those fundamental things which we believe are essential to living a good life.",
+      "words": [
         {
           "word": "Welcome",
           "startTime": 4272.13,

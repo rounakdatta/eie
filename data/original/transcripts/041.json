@@ -5,7 +5,7 @@
     "durationSeconds": 2774,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -14337,8 +14337,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 816.7,
-      "endTime": 854.9,
-      "text": "It's complicated. So there is there was a great journey of ideas. If you read Friedman 1968, it is conducted in terms of money supply. In the early eighties, uh in the advanced economies, it was understood. given the nature of the modern financial system, given the sophistication of the modern financial system, it's impossible to measure and control money supply. So we've just given up on that, we've backed out and we've set interest rates. So Friedman was wrong on emphasizing money supply. The rest of the Freedmanite package, the rest of the Freedmanite philosophy goes through. You just have to switch from control of the money supply to control of the interest rate. And money",
+      "endTime": 854.5,
+      "text": "It's complicated. So there is there was a great journey of ideas. If you read Friedman 1968, it is conducted in terms of money supply. In the early eighties, uh in the advanced economies, it was understood. given the nature of the modern financial system, given the sophistication of the modern financial system, it's impossible to measure and control money supply. So we've just given up on that, we've backed out and we've set interest rates. So Friedman was wrong on emphasizing money supply. The rest of the Freedmanite package, the rest of the Freedmanite philosophy goes through. You just have to switch from control of the money supply to control of the interest rate.",
       "words": [
         {
           "word": "It's",
@@ -15029,7 +15029,15 @@
           "startTime": 854.1,
           "endTime": 854.5,
           "confidence": 0.9409
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 854.5,
+      "endTime": 857.3,
+      "text": "And money supply is still a good proxy in terms of thought of thinking about",
+      "words": [
         {
           "word": "And",
           "startTime": 854.5,
@@ -15041,15 +15049,7 @@
           "startTime": 854.66,
           "endTime": 854.9,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 854.9,
-      "endTime": 857.3,
-      "text": "supply is still a good proxy in terms of thought of thinking about",
-      "words": [
+        },
         {
           "word": "supply",
           "startTime": 854.9,
@@ -29747,8 +29747,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1592.33,
-      "endTime": 1648.26,
-      "text": "No, no, when you pause to think about it, we are moved to rapture. It's it's the only reasonable response. Because when you pause to think about it, just think about the magic of billions of people, know central controller, each one solving their own optimization, figuring out what is good for themselves. And prices are the information. So each one looks at the price and behaves. That's all. And the world gets ordered. It is nothing less than miraculous. My uh second paper is uh the a 1937 article by Ronald Kowes called The Nature of the Firm. Um this is something that he did. He is a was a law thinker, was not even an economist. Okay, he got a Nobel Prize in",
+      "endTime": 1938.82,
+      "text": "No, no, when you pause to think about it, we are moved to rapture. It's it's the only reasonable response. Because when you pause to think about it, just think about the magic of billions of people, know central controller, each one solving their own optimization, figuring out what is good for themselves. And prices are the information. So each one looks at the price and behaves. That's all. And the world gets ordered. It is nothing less than miraculous. My uh second paper is uh the a 1937 article by Ronald Kowes called The Nature of the Firm. Um this is something that he did. He is a was a law thinker, was not even an economist. Okay, he got a Nobel Prize in Economics. Everything is everything. Yeah. And he got a Nobel Prize in Economics, and it's absolutely great. And the advantage of being an outsider was he did not take to the vocabulary and the modeling strategies of the economists for free. He curiously wondered why does this make sense. So the puzzle to which he applied himself was about why is it that we simultaneously have a world of prices and bargains and negotiations and contracts on one hand, which is a normal story of economics. And then at the same time, you have a firm where you put a boundary wall around the firm, and inside the firm we don't bargain, we don't negotiate. We establish an organization chart. And authority is distributed, and there's a great deal of obedience, and people fall in line. So inside a firm, people fall in line, but outside the firm, the dealings of the firm outside are the complexity and the chaos of prices, contracts, negotiations, bargains. Okay? So why is there this separation of one kind of behavior inside a firm and a very different kind of behavior outside the firm? And he got to thinking about the word the boundary of the firm, that where do we draw the boundary of the firm. And his insight, his logic is something like this that he tells a story that contracting is costly. Okay? It is costly for us to bargain. It is costly for us to arrive at a deal, to arrive at a contract terms. Okay, all of us have been through it. It takes time, it takes effort, it takes emotional energy, sometimes you know with friends, it's difficult to do contracting. and you arrive at a term sheet that this is the way we'll do the contract. Then you have to expend lawyering costs to turn it into a document. And then the day the document is signed, The universe starts misbehaving and doing strange things. It takes you outside the zone of that contract. Then once again you have to have the deep sigh and do a renegotiation and say to the guy, I know the contract said that, but you agree under these circumstances it would make no sense at all for you to behave like this. Come on, let's be friends, let's overcome this. So you have to end up doing contract renegotiation all the time. Contracting is costly. Okay? So on one hand, Contracting and negotiation and fluctuations of prices and every deal is up for grabs, it can be negotiated. But it comes at a friction, it comes at a cost of transacting. Within a firm, you basically fight off the costs of transaction. So at the simplest case, there is a employer that hires an employee. And then the employee wakes up every morning, boss says, Do this for me today. Now you're not negotiating. We're not negotiating the price. We're not negotiating what has to be done, we're just getting ahead and doing the work. Okay, and that's very efficient. So that's the way to think about it. That inside a firm we operate in a different way. It is a centrally planned way. There is every firm has a power structure and a distribution of power, and we can debate about whether to be more centralized, less centralized, decentralized. Okay, and actually we've had two episodes of Everything Is Everything around precisely these ideas. We've had one episode about the problem of concentrated power at a CAO. And how the game is to disperse that power and create more check and balance inside the firm. We've had another episode about decentralisation. That when you think about a subcontinent the size of India, a firm would not be wise in imposing one single product and one single process design on the whole country. It instead needs more bottom up evolution of ideas inside itself. So then the firm has to Regig itself to not be so Stalinist inside, but to create power centers all over the firm, where there are decision making authorities for East UP and West UP and so on. All this is inspired from this starting point. So for me personally, it was Cos who opened my mind to thinking about the market economy. Think of a market economy as atomic individuals, one person trading with another person. We're all self-employed, we are all talking, bargaining, negotiating, contracting. And then inside that you get these little fortresses of firms. And Coast taught us that what is a successful firm, what is the optimal size of the firm is where these trade-offs balance out. That on one hand it's very efficient to be inside a firm in a centrally controlled thing, in a centrally planned thing. But on the other hand, you lose that flexibility of how markets work. And there are trade offs in both ways. So this is a 1937 article. And a seminal milestone to starting to think about firms. Not just the firm is some black box that maximizes profit, but a firm is a complicated, messy thing inside. And let's start understanding the firm.",
       "words": [
         {
           "word": "No,",
@@ -30499,15 +30499,7 @@
           "startTime": 1648.18,
           "endTime": 1648.26,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1648.26,
-      "endTime": 1650.02,
-      "text": "Economics. Everything is everything. Yeah. And",
-      "words": [
+        },
         {
           "word": "Economics.",
           "startTime": 1648.26,
@@ -30543,15 +30535,7 @@
           "startTime": 1649.86,
           "endTime": 1650.02,
           "confidence": 0.9568
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1650.02,
-      "endTime": 1938.82,
-      "text": "he got a Nobel Prize in Economics, and it's absolutely great. And the advantage of being an outsider was he did not take to the vocabulary and the modeling strategies of the economists for free. He curiously wondered why does this make sense. So the puzzle to which he applied himself was about why is it that we simultaneously have a world of prices and bargains and negotiations and contracts on one hand, which is a normal story of economics. And then at the same time, you have a firm where you put a boundary wall around the firm, and inside the firm we don't bargain, we don't negotiate. We establish an organization chart. And authority is distributed, and there's a great deal of obedience, and people fall in line. So inside a firm, people fall in line, but outside the firm, the dealings of the firm outside are the complexity and the chaos of prices, contracts, negotiations, bargains. Okay? So why is there this separation of one kind of behavior inside a firm and a very different kind of behavior outside the firm? And he got to thinking about the word the boundary of the firm, that where do we draw the boundary of the firm. And his insight, his logic is something like this that he tells a story that contracting is costly. Okay? It is costly for us to bargain. It is costly for us to arrive at a deal, to arrive at a contract terms. Okay, all of us have been through it. It takes time, it takes effort, it takes emotional energy, sometimes you know with friends, it's difficult to do contracting. and you arrive at a term sheet that this is the way we'll do the contract. Then you have to expend lawyering costs to turn it into a document. And then the day the document is signed, The universe starts misbehaving and doing strange things. It takes you outside the zone of that contract. Then once again you have to have the deep sigh and do a renegotiation and say to the guy, I know the contract said that, but you agree under these circumstances it would make no sense at all for you to behave like this. Come on, let's be friends, let's overcome this. So you have to end up doing contract renegotiation all the time. Contracting is costly. Okay? So on one hand, Contracting and negotiation and fluctuations of prices and every deal is up for grabs, it can be negotiated. But it comes at a friction, it comes at a cost of transacting. Within a firm, you basically fight off the costs of transaction. So at the simplest case, there is a employer that hires an employee. And then the employee wakes up every morning, boss says, Do this for me today. Now you're not negotiating. We're not negotiating the price. We're not negotiating what has to be done, we're just getting ahead and doing the work. Okay, and that's very efficient. So that's the way to think about it. That inside a firm we operate in a different way. It is a centrally planned way. There is every firm has a power structure and a distribution of power, and we can debate about whether to be more centralized, less centralized, decentralized. Okay, and actually we've had two episodes of Everything Is Everything around precisely these ideas. We've had one episode about the problem of concentrated power at a CAO. And how the game is to disperse that power and create more check and balance inside the firm. We've had another episode about decentralisation. That when you think about a subcontinent the size of India, a firm would not be wise in imposing one single product and one single process design on the whole country. It instead needs more bottom up evolution of ideas inside itself. So then the firm has to Regig itself to not be so Stalinist inside, but to create power centers all over the firm, where there are decision making authorities for East UP and West UP and so on. All this is inspired from this starting point. So for me personally, it was Cos who opened my mind to thinking about the market economy. Think of a market economy as atomic individuals, one person trading with another person. We're all self-employed, we are all talking, bargaining, negotiating, contracting. And then inside that you get these little fortresses of firms. And Coast taught us that what is a successful firm, what is the optimal size of the firm is where these trade-offs balance out. That on one hand it's very efficient to be inside a firm in a centrally controlled thing, in a centrally planned thing. But on the other hand, you lose that flexibility of how markets work. And there are trade offs in both ways. So this is a 1937 article. And a seminal milestone to starting to think about firms. Not just the firm is some black box that maximizes profit, but a firm is a complicated, messy thing inside. And let's start understanding the firm.",
-      "words": [
+        },
         {
           "word": "he",
           "startTime": 1650.02,
@@ -48945,8 +48929,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2595.03,
-      "endTime": 2724.78,
-      "text": "Tyler Carwin and Alex Taberok in their textbook on microeconomics also had that memorable line, a price is a signal wrapped in an incentive. Right? And it almost sums up the use of knowledge in society. And I want to come up with my recommendation right away, which is marginal revolution university. Check that out, because if you gentle readers are intrigued by the concepts of economics that we talk about, the price system, opportunity cost, and many more complicated things. The best way to understand them clearly is really marginal revolution university is a miracle in that sense. And it's really well done. I mean, they make their videos not with fancy production value or whatever. They basically record powerpoints. So they will you know, and which anybody can do. It doesn't require anything. And the knowledge is brilliant and both uh, you know, Tyler and Alex, and Alex has been on my show many times, Tyler's been there once. Uh they're just brilliant people. The blog marginal revolution is I think has been for 15 years the best blog in the world. I mean, obviously I'm deeply biased because you know their ideas mean so much to me, and just a clear way in which they b uh they bring these important concepts to the public discourse is something that I find uh miraculous. And in their wide-ranging interests, for example, one of the ways I figure out sometimes, I like I've discovered great music and great novels, great literature, just through reading Tyler's annual recommendation notes, best books I read this year and all that. So in that sense they are like, you know, renaissance people. They're the everything is everything. They're not in a silo, they're not specialists. And I really love that. And that's what we should all aspire to be, even if we can't get there. And gentle reader, don't worry, we're not going anywhere yet. I just want to share one final thought with you. Frederick Basia is no more Frederick Hayek is no more. Milton Friedman is no more. We often speak of people of ages past. And I want to tell you that, you know, people come and people go. People are not so important. Ideas are important. You know, ideas are uh what matters and what shapes civilization. So in that way, I hope you're enjoying the show. One day, Ajay and I will also be gone. But I hope that some of the things we speak about will leave a mark on you. In fact, why someday we could be gone now? Everything's",
+      "endTime": 2718.75,
+      "text": "Tyler Carwin and Alex Taberok in their textbook on microeconomics also had that memorable line, a price is a signal wrapped in an incentive. Right? And it almost sums up the use of knowledge in society. And I want to come up with my recommendation right away, which is marginal revolution university. Check that out, because if you gentle readers are intrigued by the concepts of economics that we talk about, the price system, opportunity cost, and many more complicated things. The best way to understand them clearly is really marginal revolution university is a miracle in that sense. And it's really well done. I mean, they make their videos not with fancy production value or whatever. They basically record powerpoints. So they will you know, and which anybody can do. It doesn't require anything. And the knowledge is brilliant and both uh, you know, Tyler and Alex, and Alex has been on my show many times, Tyler's been there once. Uh they're just brilliant people. The blog marginal revolution is I think has been for 15 years the best blog in the world. I mean, obviously I'm deeply biased because you know their ideas mean so much to me, and just a clear way in which they b uh they bring these important concepts to the public discourse is something that I find uh miraculous. And in their wide-ranging interests, for example, one of the ways I figure out sometimes, I like I've discovered great music and great novels, great literature, just through reading Tyler's annual recommendation notes, best books I read this year and all that. So in that sense they are like, you know, renaissance people. They're the everything is everything. They're not in a silo, they're not specialists. And I really love that. And that's what we should all aspire to be, even if we can't get there. And gentle reader, don't worry, we're not going anywhere yet. I just want to share one final thought with you. Frederick Basia is no more Frederick Hayek is no more. Milton Friedman is no more. We often speak of people of ages past. And I want to tell you that, you know, people come and people go. People are not so important. Ideas are important. You know, ideas are uh what matters and what shapes civilization. So in that way, I hope you're enjoying the show. One day, Ajay and I will also be gone. But I hope that some of the things we speak about will leave a mark on you. In fact, why someday we could be gone now?",
       "words": [
         {
           "word": "Tyler",
@@ -51545,21 +51529,21 @@
           "startTime": 2718.42,
           "endTime": 2718.75,
           "confidence": 0.766
-        },
-        {
-          "word": "Everything's",
-          "startTime": 2723.82,
-          "endTime": 2724.78,
-          "confidence": 0.6683
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 2724.78,
-      "endTime": 2729.18,
-      "text": "ready guys. Uh June don't be junior tech. You have to be quicker and faster. Set up the",
+      "startTime": 2723.82,
+      "endTime": 2738.78,
+      "text": "Everything's ready guys. Uh June don't be junior tech. You have to be quicker and faster. Set up the frame quickly. Okay, we can now start. Rolling.",
       "words": [
+        {
+          "word": "Everything's",
+          "startTime": 2723.82,
+          "endTime": 2724.78,
+          "confidence": 0.6683
+        },
         {
           "word": "ready",
           "startTime": 2724.78,
@@ -51667,15 +51651,7 @@
           "startTime": 2729.1,
           "endTime": 2729.18,
           "confidence": 0.9983
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2729.18,
-      "endTime": 2738.78,
-      "text": "frame quickly. Okay, we can now start. Rolling.",
-      "words": [
+        },
         {
           "word": "frame",
           "startTime": 2729.18,

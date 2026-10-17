@@ -5,7 +5,7 @@
     "durationSeconds": 3633,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 52.7,
-      "endTime": 119.01,
-      "text": "Welcome to everything is everything. I'm Amit. This is my good friend Ajay. We were, you know, we just thought that we could call this show Amit and Shah. Because you know, Amit and Shah. But we we we're not gonna do that. So Ajay, you know, welcome and welcome to your own show. And I gotta tell you that uh yesterday I was hanging with uh, you know, one of your former colleagues, Saneita, who's worked in the UN for many years, Sonita rather, whose apologies, who's worked in the UN for many years and she worked with you at the finance ministry for four years when you were at an IPFP. And here's what she told me about you. She said Ajay was horrible to work with. He was a monster. He would make me cry. So often I have sat weeping in front of him. This is common for everyone, not just for me. But we always used to come back and work with him again. And Dad says something. And she says that I learned so much with him. And fundamentally, of course, he's, you know, a great human being and all that. But we learnt not only did we learn things from him, we learnt how to learn. You know, so this is what has been said about you. You made people cry but they would keep coming back to work with you. What is your response to this allegation, sir?",
+      "endTime": 117.81,
+      "text": "Welcome to everything is everything. I'm Amit. This is my good friend Ajay. We were, you know, we just thought that we could call this show Amit and Shah. Because you know, Amit and Shah. But we we we're not gonna do that. So Ajay, you know, welcome and welcome to your own show. And I gotta tell you that uh yesterday I was hanging with uh, you know, one of your former colleagues, Saneita, who's worked in the UN for many years, Sonita rather, whose apologies, who's worked in the UN for many years and she worked with you at the finance ministry for four years when you were at an IPFP. And here's what she told me about you. She said Ajay was horrible to work with. He was a monster. He would make me cry. So often I have sat weeping in front of him. This is common for everyone, not just for me. But we always used to come back and work with him again. And Dad says something. And she says that I learned so much with him. And fundamentally, of course, he's, you know, a great human being and all that. But we learnt not only did we learn things from him, we learnt how to learn. You know, so this is what has been said about you. You made people cry but they would keep coming back to work with you. What is your response to this allegation,",
       "words": [
         {
           "word": "Welcome",
@@ -1489,21 +1489,21 @@
           "startTime": 117.01,
           "endTime": 117.81,
           "confidence": 0.9676
-        },
-        {
-          "word": "sir?",
-          "startTime": 117.81,
-          "endTime": 119.01,
-          "confidence": 0.8735
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 119.01,
+      "startTime": 117.81,
       "endTime": 149.52,
-      "text": "Um I I think of it as the most interesting stuff in life is just the invisible spillovers that are not intermediated by the market system. So, you know, in the market system we have the double thank you moment, there are transactions, there are contracts. But really, y as we said in an earlier show, we are a linear combination of our influences and we invisibly impose externalities on each other, sometimes positive and sometimes negative. And all the good stuff in the world happens like that.",
+      "text": "sir? Um I I think of it as the most interesting stuff in life is just the invisible spillovers that are not intermediated by the market system. So, you know, in the market system we have the double thank you moment, there are transactions, there are contracts. But really, y as we said in an earlier show, we are a linear combination of our influences and we invisibly impose externalities on each other, sometimes positive and sometimes negative. And all the good stuff in the world happens like that.",
       "words": [
+        {
+          "word": "sir?",
+          "startTime": 117.81,
+          "endTime": 119.01,
+          "confidence": 0.8735
+        },
         {
           "word": "Um",
           "startTime": 119.01,
@@ -2575,8 +2575,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 176.74,
-      "endTime": 311.6,
-      "text": "No, it was a fantastic fantastic difference. Uh and you know, like the our episode thumbnail and the chapter title and all of that may indicate, today I want to talk about how I reversed my type 2 diabetes and you played a small part in that journey. But a journey is a really long journey. It's a journey uh of learning as much as uh anything else, and I want to talk a bit about that. And There are four books I want everyone watching this to pick up and read in their grade. The first is a book by Sidney Mintz called Sweetness and Power. There's a great book called The Big Fat Surprise by Nina Tychols. She's also appeared on the Joe Rogan show. We'll link to that as well. There's a book by Jason Fung called The Obesity Code. He's also written a great book called The Diabetes Code, which I've gifted to people which played a part in my journey. I'll talk about that as well. But the key book that I want to talk about is a book by Gary Topps called The Case Against Sugar. He's written a bunch of books. This this I think has a best overarching look at the subject, which is, as the title indicates, a case against. sugar. Now, Torb is an award winning science journalist and writer who was once described by Michael Pollan as a solzenichin of the nutrition world. And this was partly because circa late nineties, early two thousands, he started taking on dogmas and conventions um that were then uh b you know that all of us uh in a sense grew up believing and that had disastrous consequences. So I just want to quote from his book The Case Against Sugar to speak about what um uh you know his mission for that book was. This book makes the argument that sugars like sucrose and high fructose corn syrup are fundamental causes of diabetes and obesity using the same simple concept of causality that we employ when we say smoking cigarettes causes lung cancer. It is not because we eat too much of these sugars, although that is implied merely by the terms over consumption and overeating, but because they have unique physiological, metabolic and endocronological, that is hormonal effects in the human body that directly triggered. these disorders. These sugars are not short term toxins that operate over days and weeks, but ones that do their damage over years and decades and perhaps even from generation to generation. In other words, mothers will pass the problem down to their children, not through how they feed them, though that plays a role, but through what they eat themselves and how that changes the environment in the womb in which the children develop. Stock quote,",
+      "endTime": 636.45,
+      "text": "No, it was a fantastic fantastic difference. Uh and you know, like the our episode thumbnail and the chapter title and all of that may indicate, today I want to talk about how I reversed my type 2 diabetes and you played a small part in that journey. But a journey is a really long journey. It's a journey uh of learning as much as uh anything else, and I want to talk a bit about that. And There are four books I want everyone watching this to pick up and read in their grade. The first is a book by Sidney Mintz called Sweetness and Power. There's a great book called The Big Fat Surprise by Nina Tychols. She's also appeared on the Joe Rogan show. We'll link to that as well. There's a book by Jason Fung called The Obesity Code. He's also written a great book called The Diabetes Code, which I've gifted to people which played a part in my journey. I'll talk about that as well. But the key book that I want to talk about is a book by Gary Topps called The Case Against Sugar. He's written a bunch of books. This this I think has a best overarching look at the subject, which is, as the title indicates, a case against. sugar. Now, Torb is an award winning science journalist and writer who was once described by Michael Pollan as a solzenichin of the nutrition world. And this was partly because circa late nineties, early two thousands, he started taking on dogmas and conventions um that were then uh b you know that all of us uh in a sense grew up believing and that had disastrous consequences. So I just want to quote from his book The Case Against Sugar to speak about what um uh you know his mission for that book was. This book makes the argument that sugars like sucrose and high fructose corn syrup are fundamental causes of diabetes and obesity using the same simple concept of causality that we employ when we say smoking cigarettes causes lung cancer. It is not because we eat too much of these sugars, although that is implied merely by the terms over consumption and overeating, but because they have unique physiological, metabolic and endocronological, that is hormonal effects in the human body that directly triggered. these disorders. These sugars are not short term toxins that operate over days and weeks, but ones that do their damage over years and decades and perhaps even from generation to generation. In other words, mothers will pass the problem down to their children, not through how they feed them, though that plays a role, but through what they eat themselves and how that changes the environment in the womb in which the children develop. Stock quote, I want to now talk about certain different aspects of sugar because they're all things that I learnt about in this journey and I think are important. One, I often keep saying that sugar is the most addictive substance out there. And there's a great quote by Michael Pollan which uh sums it up. Pollan writes in his book Botany of Desire. Imagine a moment when the sensation of honey or sugar on the tongue was an astonishment, a kind of intoxication. The closest I've ever come to recovering such a sense of sweetness was second hand, though it left a powerful impression on me. Even so, I'm thinking of my son's first experience of sugar, the icing on the cake at his first birthday. I have only the testimony of Isaac's face to go by, that and his fierceness to repeat the experience. But it was plain that his first encounter with sugar had intoxicated him, was in fact an ecstasy. in the literal sense of that word. That is, he was beside himself with the pleasure of it, no longer here with me in space and time, in quite the same way he had been just a moment before. Between bites, Isaac gazed up at me in amazement. He was on my lap and I was delivering the ambroxial folkfuls through his gaping mouth, as if to exclaim, Your world contains this. From this day onwards I shall dedicate my life to it. Stop quote. And uh Sidney Mintz in Sweetness and Power says Sugars, particularly highly refined sucrose, produce peculiar uh physiological effects. Uh right, and What we also know about sugar is that it affects the reward center of the brain in the same way that nicotine or alcohol and, you know, all of those other addictive substances do. In fact, here's something that people may not know. You know, you uh smoking causes lung cancer. Today we know it is true despite what the tobacco industry uh did against it. I would say that in a sense, sugars enabled smoking to cause lung cancer. Until nineteen thirteen, cigarette smoke was alkaline. So if you tried to inhale it, you would start coughing. What happened in nineteen thirteen was there was a new brand of cigarette called Camel. Its manufacturers increased the carbohydrate content of it and therefore more sugar, and therefore the Um uh it went from alkaline to acidic, it became easy to inhale and it became addictive because sugar is addictive. So an incredible aga and again I got this from Taub's book, an incredible correlation of um uh you know uh sugar and tobacco and how addictive uh sugar really is. And the interesting thing about this addiction is that we don't realize we are addicted. You know, we will never experience a withdrawal symptom. because we are never without sugar for long enough to experience uh that withdrawal symptom. And also unlike other addictions, like say even something as minor as coffee, you know, coffee will if you have too much of it'll leave you jittery, all kinds of things happen, you know that you're taking too much of it. With sugar you never quite get that sense. So that's the first part of my story, addiction. And now I'm going to talk about uh the second uh chapter of my little narrative, and this one is going to be about diabetes. In 1907, a fellow Bengali of mine, Roy Kollas Chandar Bosh, said the following words: There is not the slightest shadow of a doubt that with the progress of civilization, of high education, and increased wealth and prosperity of the people under the British rule, the number of diabetic cases has enormously increased. Right? And but even back in these early days, y b these early sort of proto-physicians and even long before this were associating diabetes with carbohydrates. And the question was, okay Medical science was advancing very gradually at this point, if you if you're looking at the early 1900s. Now um a quick digression. I would say that medical science is fairly advanced today compared to where it was at that time, but nutrition has been much slower to advance. So today when there is a consensus on the truth in medicine, I can say that it is broadly more or less true. In nutrition we have been on uncertain ground for a long, long time, as this narrative uh will show. So the next part of understanding um sort of diabetes and what causes it, um had this physician called Elliot Jocelyn who became really prominent in America in the early 20th century. And he wrote this book called he wrote this book of paper called Treatment of Diabetes mellitus circa 1960 16. And his thing was that he was completely absorbing carbohydrates and sugar and all of that looking for other causes. In fact in 1925 uh he famously said that automobiles cause diabetes. Why do automobiles cause diabetes? Because people go around in automobiles, they don't walk enough, therefore they get fat and therefore they get diabetes. So the link with obesity was kind of well known. But uh his conjuncture was that he it is not sugar, it is all these other things. And one of his allies was a researcher called Harold Himsworth. Harold Himsworth comes up with um uh you know this uh paper, which we now know to be completely flawed, uh a few years later where he says that fat is a cause. Sugar is perfectly fine, fat causes diabetes, that becomes uh dogma for a little while. Simultaneously what happens in American uh America is that sugar consumption goes up massively. So it's not just in the cigarettes. But also you've got prohibition, you've had people having less and less alcohol, more and more candy. So everywhere, even in the literature, you find more talk of candy, more talk of chocolates. I suspect if you did a meta search of language used in literature of that period, newspapers of that period. But",
       "words": [
         {
           "word": "No,",
@@ -5409,15 +5409,7 @@
           "startTime": 310.1,
           "endTime": 311.6,
           "confidence": 0.5997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 315.78,
-      "endTime": 317.33,
-      "text": "I want to now",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 315.78,
@@ -5441,15 +5433,7 @@
           "startTime": 316.93,
           "endTime": 317.33,
           "confidence": 0.5644
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 317.33,
-      "endTime": 519.9,
-      "text": "talk about certain different aspects of sugar because they're all things that I learnt about in this journey and I think are important. One, I often keep saying that sugar is the most addictive substance out there. And there's a great quote by Michael Pollan which uh sums it up. Pollan writes in his book Botany of Desire. Imagine a moment when the sensation of honey or sugar on the tongue was an astonishment, a kind of intoxication. The closest I've ever come to recovering such a sense of sweetness was second hand, though it left a powerful impression on me. Even so, I'm thinking of my son's first experience of sugar, the icing on the cake at his first birthday. I have only the testimony of Isaac's face to go by, that and his fierceness to repeat the experience. But it was plain that his first encounter with sugar had intoxicated him, was in fact an ecstasy. in the literal sense of that word. That is, he was beside himself with the pleasure of it, no longer here with me in space and time, in quite the same way he had been just a moment before. Between bites, Isaac gazed up at me in amazement. He was on my lap and I was delivering the ambroxial folkfuls through his gaping mouth, as if to exclaim, Your world contains this. From this day onwards I shall dedicate my life to it. Stop quote. And uh Sidney Mintz in Sweetness and Power says Sugars, particularly highly refined sucrose, produce peculiar uh physiological effects. Uh right, and What we also know about sugar is that it affects the reward center of the brain in the same way that nicotine or alcohol and, you know, all of those other addictive substances do. In fact, here's something that people may not know. You know, you uh smoking causes lung cancer. Today we know it is true despite what the tobacco industry uh did against it. I would say that in a sense, sugars enabled smoking to cause lung cancer. Until nineteen thirteen, cigarette smoke was alkaline. So if you tried to inhale it, you would start coughing. What happened in nineteen thirteen was there was a new brand of cigarette called Camel. Its manufacturers increased the carbohydrate content of it and therefore more sugar, and therefore the Um uh it went from alkaline to acidic, it became easy to inhale and it became addictive because sugar is addictive. So an incredible aga and again I got this from Taub's book, an incredible correlation of um uh you know uh sugar and tobacco and how addictive uh sugar really is. And the interesting thing about this addiction is that we don't realize we are addicted. You know, we will never experience a withdrawal symptom. because we are never without sugar for long enough to experience uh that withdrawal symptom. And also unlike other addictions, like say even something as minor as coffee, you know, coffee will if you have too much of it'll leave you jittery, all kinds of things happen, you know that you're taking too much of it. With sugar you never quite get that sense. So that's the first part of my story, addiction. And now I'm going to talk about uh the second uh chapter of my little narrative, and this one is going to be about diabetes. In 1907, a fellow Bengali of mine, Roy Kollas Chandar Bosh, said the following words: There is not the slightest shadow of a doubt that with the progress of civilization, of high education, and increased wealth and prosperity of the people under the British rule, the number of diabetic cases has enormously increased. Right? And but even back in these early days, y b these early sort of proto-physicians and even long before this were associating diabetes with carbohydrates.",
-      "words": [
+        },
         {
           "word": "talk",
           "startTime": 317.33,
@@ -9325,15 +9309,7 @@
           "startTime": 518.54,
           "endTime": 519.9,
           "confidence": 0.9647
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 519.9,
-      "endTime": 521.68,
-      "text": "And the question was, okay",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 519.9,
@@ -9363,15 +9339,7 @@
           "startTime": 521.18,
           "endTime": 521.68,
           "confidence": 0.9439
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 522.29,
-      "endTime": 550.46,
-      "text": "Medical science was advancing very gradually at this point, if you if you're looking at the early 1900s. Now um a quick digression. I would say that medical science is fairly advanced today compared to where it was at that time, but nutrition has been much slower to advance. So today when there is a consensus on the truth in medicine, I can say that it is broadly more or less true. In nutrition we have been on uncertain ground for a long, long time, as this narrative uh will show.",
-      "words": [
+        },
         {
           "word": "Medical",
           "startTime": 522.29,
@@ -9917,15 +9885,7 @@
           "startTime": 549.82,
           "endTime": 550.46,
           "confidence": 0.9937
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 550.46,
-      "endTime": 552.46,
-      "text": "So the next part of",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 550.46,
@@ -9955,15 +9915,7 @@
           "startTime": 551.9,
           "endTime": 552.46,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 552.46,
-      "endTime": 636.45,
-      "text": "understanding um sort of diabetes and what causes it, um had this physician called Elliot Jocelyn who became really prominent in America in the early 20th century. And he wrote this book called he wrote this book of paper called Treatment of Diabetes mellitus circa 1960 16. And his thing was that he was completely absorbing carbohydrates and sugar and all of that looking for other causes. In fact in 1925 uh he famously said that automobiles cause diabetes. Why do automobiles cause diabetes? Because people go around in automobiles, they don't walk enough, therefore they get fat and therefore they get diabetes. So the link with obesity was kind of well known. But uh his conjuncture was that he it is not sugar, it is all these other things. And one of his allies was a researcher called Harold Himsworth. Harold Himsworth comes up with um uh you know this uh paper, which we now know to be completely flawed, uh a few years later where he says that fat is a cause. Sugar is perfectly fine, fat causes diabetes, that becomes uh dogma for a little while. Simultaneously what happens in American uh America is that sugar consumption goes up massively. So it's not just in the cigarettes. But also you've got prohibition, you've had people having less and less alcohol, more and more candy. So everywhere, even in the literature, you find more talk of candy, more talk of chocolates. I suspect if you did a meta search of language used in literature of that period, newspapers of that period. But",
-      "words": [
+        },
         {
           "word": "understanding",
           "startTime": 552.46,
@@ -11553,8 +11505,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 636.45,
-      "endTime": 656.43,
-      "text": "this is just about prosperity. Okay. So for example, uh your fellow Bengali in nineteen oh seven, who looked at the economic progress of India, and then all over India the wealthy were starting to eat More sweets. So is this just a simple income elasticity thing? There's",
+      "endTime": 655.79,
+      "text": "this is just about prosperity. Okay. So for example, uh your fellow Bengali in nineteen oh seven, who looked at the economic progress of India, and then all over India the wealthy were starting to eat More sweets. So is this just a simple income elasticity",
       "words": [
         {
           "word": "this",
@@ -11831,7 +11783,15 @@
           "startTime": 655.15,
           "endTime": 655.79,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 655.79,
+      "endTime": 764.82,
+      "text": "thing? There's a correlation, but as I will talk about later, uh in other countries prosperity didn't play out the same way. In Japan it didn't play out the same way. In France it didn't play out the same way. In Germany it didn't play out the same way, and I'll talk uh talk a little bit about that. But there's definitely a component of prosperity, uh, but there's also that cultural component that you're having sweet things, you're having sugar free things. Like I did an episode and cast with the brilliant Dalit scholar Chandraban Prasad, and one of the points he made, which was a great TIL to me, he said, When I go back to my village and I see my village elders are obese and they have diabetes, my heart fills with pride. Why does it heart fill with pride? Because these people would not have been prosperous enough to get diabetes a couple of generations ago, so it is incredibly poignant he makes a similar point about women wearing the hungat. Where in villages where where there is there is caste segregation, women of the lower caste are not supposed to wear a gungat because it is an upper caste thing. So one lens of looking at the gungat would be that this is patriarchal oppression, which has been my lens all my life. But for him, he says that you might be a feminist, but when a woman Dalit woman wears a hungat at her wedding, you celebrate because she can. You know, and she's exercising that choice and earlier she couldn't. So that's sort of an interesting aside. So now what happens during this time is that sugar consumption goes up massively and there is not yet any link of the between sugar and diabetes. Why isn't there such a link? Because there might be physicians like Jocelyn who are treating diabetes who sort of understand the hormonal impact of it, but they don't understand nutrition and diets. And the nutritionists of that time don't have the medical insight. In other words, you can't really link the dots. You don't get how the hormones work. You d haven't fully understood the role of insulin and insulin resistance and all of that. So people are coming up with other theories. Those theories take root, then cabals build a along those theories, careers are based on those theories and so on and so",
+      "words": [
         {
           "word": "thing?",
           "startTime": 655.79,
@@ -11843,15 +11803,7 @@
           "startTime": 656.19,
           "endTime": 656.43,
           "confidence": 0.958
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 656.43,
-      "endTime": 764.82,
-      "text": "a correlation, but as I will talk about later, uh in other countries prosperity didn't play out the same way. In Japan it didn't play out the same way. In France it didn't play out the same way. In Germany it didn't play out the same way, and I'll talk uh talk a little bit about that. But there's definitely a component of prosperity, uh, but there's also that cultural component that you're having sweet things, you're having sugar free things. Like I did an episode and cast with the brilliant Dalit scholar Chandraban Prasad, and one of the points he made, which was a great TIL to me, he said, When I go back to my village and I see my village elders are obese and they have diabetes, my heart fills with pride. Why does it heart fill with pride? Because these people would not have been prosperous enough to get diabetes a couple of generations ago, so it is incredibly poignant he makes a similar point about women wearing the hungat. Where in villages where where there is there is caste segregation, women of the lower caste are not supposed to wear a gungat because it is an upper caste thing. So one lens of looking at the gungat would be that this is patriarchal oppression, which has been my lens all my life. But for him, he says that you might be a feminist, but when a woman Dalit woman wears a hungat at her wedding, you celebrate because she can. You know, and she's exercising that choice and earlier she couldn't. So that's sort of an interesting aside. So now what happens during this time is that sugar consumption goes up massively and there is not yet any link of the between sugar and diabetes. Why isn't there such a link? Because there might be physicians like Jocelyn who are treating diabetes who sort of understand the hormonal impact of it, but they don't understand nutrition and diets. And the nutritionists of that time don't have the medical insight. In other words, you can't really link the dots. You don't get how the hormones work. You d haven't fully understood the role of insulin and insulin resistance and all of that. So people are coming up with other theories. Those theories take root, then cabals build a along those theories, careers are based on those theories and so on and so",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 656.43,
@@ -14307,8 +14259,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 769.3,
-      "endTime": 1351.04,
-      "text": "So what happens now is that around the nineteen thirties there are two dogmas which are forming. One dogma is that fat causes chronic diseases, like heart disease, hypertension, all of those things. And the other dogma is that obesity is a matter of calorific deficit. that you take in more calories than uh uh you lose and therefore you get fat and the way to lose weight is that uh you take in um uh you know less calories than you're uh consuming. Right? And uh Torbs sort of d talks about this really well when he writes. This sinking renders effectively irrelevant the radically different impact that different macronutrients of protein, fat, and carbohydrate content of foods have on metabolism and on the hormones and enzymes that regulate what our bodies do with these foods, whether they are burned for fuel, used to rebuild tissues and organs, or stored as fat. And at this time, obviously the sugar lobby is getting uh powerful, Coca-Cola's uh uh a big company, all you you know, put there's an explosion in processed food, everybody has an interest in keeping that particular myth going. And Franklin Roosevelt at around this time says that the sugar lobby is the most powerful interest group he has seen in his lifetime. This is a man who won World War II in a sense, but couldn't beat the sugar lobby. There are insidious forces at play here. What is also happening is the sugar lobby starts funding academic studies. Uh there's a famous University of Minnesota physician uh researcher called Ansel Keyes. Uh he's almost a legend. He first ascribes um you know causation to he says you know fat causes heart disease and so on. And then he does this famous uh seven countries study. And his famous seven countries study, sometime towards the end of the 50s, um uh appears to show that it is uh saturated fat. that that is linked with heart disease. Now what he did was he did something deeply intellectually dishonest. If you want to prove a particular hypothesis, you ha if you take the route of falsifiability, you have to examine anything that could disprove that. So the logical thing for Ansel Keys when he was doing this study is to take the countries that might disprove his hypothesis. like France, for example, which had a high fat diet and low heart disease, or other similar countries like Switzerland and Germany. Instead he chose only those countries which happen to have high fat correlated high fat diets correlated with heart disease and they also had high sugar intake, uh, which he completely skipped over uh while while drawing his conclusions. So he cherry picks the countries, then he cherry picks the evidence, then he comes to the conclusion that fat is uh the problem. Now, the American Heart Association in 1957 argued against one of his studies and said that it's wrong. But by 1960, Keyes was part of the main panel and was effectively one of the people running the American Heart Association, that changed completely. In 1961, there were guidelines that high-fat diets are bad, you gotta go low fat. And if you look at uh you know, if if you d take a chart of the diabetes cases since then, or if you just look at obesity since then. I think it went from one in uh seven people to one in three people over the course of the next forty years. Right? And critics were brutally shut down. In nineteen seventy-six a writer called Jean Meyer had published this piece in the New York Times, uh I think titled The Bitter Truth About Sugar or something like that. And the Redolf Digest was gonna carry excerpts from it, but then the sugar lobby got together, calls were made to the managing editor of Reader Digest, it was spiked. And um there was a researcher called David Kichevsky, who is quoted in Ty Coll's excellent book, and he said Quote, we were jumped on. People would just pit on us. It's hard to imagine now the heat of the passion. It was just like we had desecrated the American flag. They were so angry that we were going against the suggestions of the American Heart Association and the National Institutes of Health. Now what were the outcomes of this? Number of outcomes. In nineteen seventy-seven the US Senate comes out with what is known as dietary goals, where they recommend a low fat diet and they say sugar is perfectly fine. Right. And in nineteen eighty, then the American Heart Association, I think, came out with something even more detailed. And if you take a chart, and I'll show a chart now on the screen taker from Ty Colls's book of the obesity epidemic in America, clear upswing around that time when it absolutely um uh you know shoots up. Um so clear linkage of government guidelines under the uh sway of the sugar lobby, which kind of um Uh causes the obesity epidemic in America and also everything else that follows along with it. So the impact of this is not just the obesity epidemic. Today we know that uh you know sugar is the cause of all these chronic diseases that fat was blamed for. There is nothing wrong with saturated fat. I'll talk about other, you know, dietary myths that uh kind of need to be busted. And uh sugar is associated not just with obesity or diabetes, but also with hypertension, heart disease. Um, you know, there are researchers who are working on its links with cancer. Alzheimer's disease has been called by some researchers as type 3 diabetes. That is how strong the link of sugar to all of these. And yet, even till today there continues to be this pushback from really what I see as three sources. One is the same interest groups, because all processed foods, um, you know, even if they have misleading labels like no added sugar, they contain huge amounts of sugar in some form or the other. So one, you still have the same corporate interest groups. Uh two, you have what we described in episode one as the aggressively conventional minded. Great phrase by Paul Graham, his essays in the uh notes down below. But people who've, you know, they think in a particular conventional way and they can't change their mind. And third, what I would call uh, you know, self interested status quous. In the sense that uh I think that today if you get diabetes, especially in India and you go to a doctor above forty, it's dangerous because every one of those doctors when they medic uh when they w went to medical school they were trained in the wrong way. And um you are likely to get bad advice unless they've been one of those people who takes the initiative and they keep updating themselves. So if you've studied medicine, if you've studied nutrition, if you've studied in a particular way, chances are if you graduated in 2010 or even a little later, chances are you're wrong. The science has moved on, you know. And we've seen this in many, like many of the particularly uh persistent myths around this. Um Uh uh are still things people believe in the popular imagination. For example, it makes me mad when I hear a dietitian say something like small frequent meals are good. Small frequent meals are terrible. We'll link to a video by Jason Fung down below which explains why. But every time you eat something, there is an insulin spike. The more insulin spikes there are, the closer you're getting to insulin resistance, which is eventually going to give you diabetes. Intermittent fasting is just brilliant as a lifestyle. uh right and there is a reason in in a sense why fasting was a part of every major religion. In some way f uh th you know, th they sort of got something right. Another myth that bugs the hell out of me is when people have egg white omelets. Let me kind of assure everyone watching this, the egg yolk is the healthiest, uh perhaps the healthiest food known to man, and there's nothing wrong with it. Dietary cholesterol has absolutely nothing to do with the cholesterol in our body. And you can s actually see this shift in these Time magazine covers we'll put up here, where once upon a time they're saying cholesterol is bad news, then they are saying cholesterol is good news, then they are saying butter is good. Right. So have all the egg yolk you want. According to a friend of mine who really geeked out on this, Hello Gotham John. You can have up to twenty five eggs a day safely. Nothing's gonna uh kind of go wrong. So that's sort of um the brief capped history of uh sugar and uh everything that I learnt about it from these four great books and I I'll just you know um I recommend that everyone check these books out and more books by Gary Tobbs in fact because this was not even his first book on the subject but this is I think the most um uh definitive for me. Now I wanna talk a bit about my personal journey. Right. So when I discovered all of this about five, six years ago, I was 105 kgs. And I said, okay, I gotta do something and you know let's get to shape and all that. And part of the reason I was so heavy is I played five, I I was a professional poker player for five years. And um while it was decent in terms of income, I made more money than I would have doing anything else. At the same time, it was corrosive as a lifestyle. You play a 15-hour session, go home and sleep, play another 15-hour session, it was corrosive and I put on tons of weight. So I was at 105. I read all these books, I said, okay, what do I do? I said, let me do keto plus intermittent fasting. So for a few months I read keto plus intermittent fasting, plus I would run every day. And at the end of that period, I had uh sort of lost 20 kgs, gone to 8586, super healthy, full of energy all the time. I would wake up in the morning and jump out of bed and do stuff. And I'd get up early in the morning and go running. I even ran 10k at that time. You know, these pictures that have been flashing on the screen indicate how slim I was. I kind of stopped uh circa the end of uh 20 uh 18 or so, and I was at a stable weight for a long time. So it is not that you go off a diet and immediately, you know, you go back up. I was stable for a long time, then COVID came. And COVID made me extremely uh sedentary. I was just sitting on my chair all day, um, you know, doing stuff. And uh in some domains like the podcast and the writing course I teach, I got a lot of work done. But I put on huge amounts of weight and I kind of went overboard. So I was like, anytime I need comfort food, biryani lao, pizza lao, like what you gonna do? You know, and it's just one meal. And so one meal at a time, I went in the wrong direction, went to 107. And about 18 months ago, I was diagnosed with type 2 diabetes, hypertension, all of those things. I had an HBA1C of 7.7.",
+      "endTime": 1381.12,
+      "text": "So what happens now is that around the nineteen thirties there are two dogmas which are forming. One dogma is that fat causes chronic diseases, like heart disease, hypertension, all of those things. And the other dogma is that obesity is a matter of calorific deficit. that you take in more calories than uh uh you lose and therefore you get fat and the way to lose weight is that uh you take in um uh you know less calories than you're uh consuming. Right? And uh Torbs sort of d talks about this really well when he writes. This sinking renders effectively irrelevant the radically different impact that different macronutrients of protein, fat, and carbohydrate content of foods have on metabolism and on the hormones and enzymes that regulate what our bodies do with these foods, whether they are burned for fuel, used to rebuild tissues and organs, or stored as fat. And at this time, obviously the sugar lobby is getting uh powerful, Coca-Cola's uh uh a big company, all you you know, put there's an explosion in processed food, everybody has an interest in keeping that particular myth going. And Franklin Roosevelt at around this time says that the sugar lobby is the most powerful interest group he has seen in his lifetime. This is a man who won World War II in a sense, but couldn't beat the sugar lobby. There are insidious forces at play here. What is also happening is the sugar lobby starts funding academic studies. Uh there's a famous University of Minnesota physician uh researcher called Ansel Keyes. Uh he's almost a legend. He first ascribes um you know causation to he says you know fat causes heart disease and so on. And then he does this famous uh seven countries study. And his famous seven countries study, sometime towards the end of the 50s, um uh appears to show that it is uh saturated fat. that that is linked with heart disease. Now what he did was he did something deeply intellectually dishonest. If you want to prove a particular hypothesis, you ha if you take the route of falsifiability, you have to examine anything that could disprove that. So the logical thing for Ansel Keys when he was doing this study is to take the countries that might disprove his hypothesis. like France, for example, which had a high fat diet and low heart disease, or other similar countries like Switzerland and Germany. Instead he chose only those countries which happen to have high fat correlated high fat diets correlated with heart disease and they also had high sugar intake, uh, which he completely skipped over uh while while drawing his conclusions. So he cherry picks the countries, then he cherry picks the evidence, then he comes to the conclusion that fat is uh the problem. Now, the American Heart Association in 1957 argued against one of his studies and said that it's wrong. But by 1960, Keyes was part of the main panel and was effectively one of the people running the American Heart Association, that changed completely. In 1961, there were guidelines that high-fat diets are bad, you gotta go low fat. And if you look at uh you know, if if you d take a chart of the diabetes cases since then, or if you just look at obesity since then. I think it went from one in uh seven people to one in three people over the course of the next forty years. Right? And critics were brutally shut down. In nineteen seventy-six a writer called Jean Meyer had published this piece in the New York Times, uh I think titled The Bitter Truth About Sugar or something like that. And the Redolf Digest was gonna carry excerpts from it, but then the sugar lobby got together, calls were made to the managing editor of Reader Digest, it was spiked. And um there was a researcher called David Kichevsky, who is quoted in Ty Coll's excellent book, and he said Quote, we were jumped on. People would just pit on us. It's hard to imagine now the heat of the passion. It was just like we had desecrated the American flag. They were so angry that we were going against the suggestions of the American Heart Association and the National Institutes of Health. Now what were the outcomes of this? Number of outcomes. In nineteen seventy-seven the US Senate comes out with what is known as dietary goals, where they recommend a low fat diet and they say sugar is perfectly fine. Right. And in nineteen eighty, then the American Heart Association, I think, came out with something even more detailed. And if you take a chart, and I'll show a chart now on the screen taker from Ty Colls's book of the obesity epidemic in America, clear upswing around that time when it absolutely um uh you know shoots up. Um so clear linkage of government guidelines under the uh sway of the sugar lobby, which kind of um Uh causes the obesity epidemic in America and also everything else that follows along with it. So the impact of this is not just the obesity epidemic. Today we know that uh you know sugar is the cause of all these chronic diseases that fat was blamed for. There is nothing wrong with saturated fat. I'll talk about other, you know, dietary myths that uh kind of need to be busted. And uh sugar is associated not just with obesity or diabetes, but also with hypertension, heart disease. Um, you know, there are researchers who are working on its links with cancer. Alzheimer's disease has been called by some researchers as type 3 diabetes. That is how strong the link of sugar to all of these. And yet, even till today there continues to be this pushback from really what I see as three sources. One is the same interest groups, because all processed foods, um, you know, even if they have misleading labels like no added sugar, they contain huge amounts of sugar in some form or the other. So one, you still have the same corporate interest groups. Uh two, you have what we described in episode one as the aggressively conventional minded. Great phrase by Paul Graham, his essays in the uh notes down below. But people who've, you know, they think in a particular conventional way and they can't change their mind. And third, what I would call uh, you know, self interested status quous. In the sense that uh I think that today if you get diabetes, especially in India and you go to a doctor above forty, it's dangerous because every one of those doctors when they medic uh when they w went to medical school they were trained in the wrong way. And um you are likely to get bad advice unless they've been one of those people who takes the initiative and they keep updating themselves. So if you've studied medicine, if you've studied nutrition, if you've studied in a particular way, chances are if you graduated in 2010 or even a little later, chances are you're wrong. The science has moved on, you know. And we've seen this in many, like many of the particularly uh persistent myths around this. Um Uh uh are still things people believe in the popular imagination. For example, it makes me mad when I hear a dietitian say something like small frequent meals are good. Small frequent meals are terrible. We'll link to a video by Jason Fung down below which explains why. But every time you eat something, there is an insulin spike. The more insulin spikes there are, the closer you're getting to insulin resistance, which is eventually going to give you diabetes. Intermittent fasting is just brilliant as a lifestyle. uh right and there is a reason in in a sense why fasting was a part of every major religion. In some way f uh th you know, th they sort of got something right. Another myth that bugs the hell out of me is when people have egg white omelets. Let me kind of assure everyone watching this, the egg yolk is the healthiest, uh perhaps the healthiest food known to man, and there's nothing wrong with it. Dietary cholesterol has absolutely nothing to do with the cholesterol in our body. And you can s actually see this shift in these Time magazine covers we'll put up here, where once upon a time they're saying cholesterol is bad news, then they are saying cholesterol is good news, then they are saying butter is good. Right. So have all the egg yolk you want. According to a friend of mine who really geeked out on this, Hello Gotham John. You can have up to twenty five eggs a day safely. Nothing's gonna uh kind of go wrong. So that's sort of um the brief capped history of uh sugar and uh everything that I learnt about it from these four great books and I I'll just you know um I recommend that everyone check these books out and more books by Gary Tobbs in fact because this was not even his first book on the subject but this is I think the most um uh definitive for me. Now I wanna talk a bit about my personal journey. Right. So when I discovered all of this about five, six years ago, I was 105 kgs. And I said, okay, I gotta do something and you know let's get to shape and all that. And part of the reason I was so heavy is I played five, I I was a professional poker player for five years. And um while it was decent in terms of income, I made more money than I would have doing anything else. At the same time, it was corrosive as a lifestyle. You play a 15-hour session, go home and sleep, play another 15-hour session, it was corrosive and I put on tons of weight. So I was at 105. I read all these books, I said, okay, what do I do? I said, let me do keto plus intermittent fasting. So for a few months I read keto plus intermittent fasting, plus I would run every day. And at the end of that period, I had uh sort of lost 20 kgs, gone to 8586, super healthy, full of energy all the time. I would wake up in the morning and jump out of bed and do stuff. And I'd get up early in the morning and go running. I even ran 10k at that time. You know, these pictures that have been flashing on the screen indicate how slim I was. I kind of stopped uh circa the end of uh 20 uh 18 or so, and I was at a stable weight for a long time. So it is not that you go off a diet and immediately, you know, you go back up. I was stable for a long time, then COVID came. And COVID made me extremely uh sedentary. I was just sitting on my chair all day, um, you know, doing stuff. And uh in some domains like the podcast and the writing course I teach, I got a lot of work done. But I put on huge amounts of weight and I kind of went overboard. So I was like, anytime I need comfort food, biryani lao, pizza lao, like what you gonna do? You know, and it's just one meal. And so one meal at a time, I went in the wrong direction, went to 107. And about 18 months ago, I was diagnosed with type 2 diabetes, hypertension, all of those things. I had an HBA1C of 7.7. Now intellectually I know what I need to do to reverse it. Right. I had in fact gifted the book, The Diabetes Code by Jason Fung to friends of mine and they you know, they were raving about it. Intellectually I knew, but I was too lazy. I went to the doctor, he gave me, you know, the standard met morphine and whatever other stuff that there was, and then I said, What about diet? and he looked a little embarrassed because at that moment I sensed that he knows that everything he has been taught is wrong and is pointless, but he can't say so. So he said, You're a smart man, you know what to",
       "words": [
         {
           "word": "So",
@@ -26153,15 +26105,7 @@
           "startTime": 1350.54,
           "endTime": 1351.04,
           "confidence": 0.9601
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1351.47,
-      "endTime": 1353.07,
-      "text": "Now intellectually I",
-      "words": [
+        },
         {
           "word": "Now",
           "startTime": 1351.47,
@@ -26179,15 +26123,7 @@
           "startTime": 1352.83,
           "endTime": 1353.07,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1353.07,
-      "endTime": 1381.12,
-      "text": "know what I need to do to reverse it. Right. I had in fact gifted the book, The Diabetes Code by Jason Fung to friends of mine and they you know, they were raving about it. Intellectually I knew, but I was too lazy. I went to the doctor, he gave me, you know, the standard met morphine and whatever other stuff that there was, and then I said, What about diet? and he looked a little embarrassed because at that moment I sensed that he knows that everything he has been taught is wrong and is pointless, but he can't say so. So he said, You're a smart man, you know what to",
-      "words": [
+        },
         {
           "word": "know",
           "startTime": 1353.07,
@@ -26877,8 +26813,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1381.12,
-      "endTime": 1407.5,
-      "text": "do. What is not uh adequately understood is the extent to which uh doctors in the context of noncommunicable diseases are amateur psychologists. They're judging your discipline, your character, and they're tailoring an advice that will get things done. And so, you know, if they think that you're really not going to be able to execute lifestyle changes, tail figure that I'm just going to drug the hell out of you.",
+      "endTime": 1408.06,
+      "text": "do. What is not uh adequately understood is the extent to which uh doctors in the context of noncommunicable diseases are amateur psychologists. They're judging your discipline, your character, and they're tailoring an advice that will get things done. And so, you know, if they think that you're really not going to be able to execute lifestyle changes, tail figure that I'm just going to drug the hell out of you. Yeah. So",
       "words": [
         {
           "word": "do.",
@@ -27305,15 +27241,7 @@
           "startTime": 1407.1,
           "endTime": 1407.5,
           "confidence": 0.9446
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1407.5,
-      "endTime": 1715.6,
-      "text": "Yeah. So this guy just kind of looked at me. Uh and in that look, uh, you know, he knew, I knew, he knew, he knew, I knew, he knew. And it was kind of i it was like, you know, what to do, you figure it out. But I continued in the Mets for about three months and nothing really improved. And at that point of time, Ajaisha, I met you and uh you said, why don't you use a CGM? And I was like, what is a CGM boss? And you point you told me about, you know, uh CGM, which stands for continuous locose monitor, you put it on your arm, and like you have right now, everybody focus on that. Yeah. So I I wore that for um, you know, mm uh b e each of those has a two-week cycle. I did three two-week cycles, and in that time. I figured out that everything I knew intellectually was correct. There were nuances, but it was broadly correct. I would have a slice of toast, my glucose would go to 285. I'd have eggs and bacon and it was a complete flat line. You know, and I figured out other nuanced aspects of it. I started recommending it to friends. You know. Like one of my friends would always be about I have oats, oats is healthy. And every time I would say, oats are terribly unhealthy, what are you doing? And I would cite books and studies and she would be like, You are crazy. Right? Because conventional thinking oats are healthy. She'd put put the CGM, had oats, two eighty. Next day had eggs, flatlined. You know? In uh she I think uh wore the C GM for around a month or so, changed her lifestyle, dropped twenty five kgs from that day. Super healthy. And the same thing kind of happened to me, that over a period of time, and I I went I used it, I went to keto plus intermittent fasting. The intermittent fasting became one meal a day, which was a really happy period in my life because I would be full of energy all day and I'd have all my I'd do all my eating between six and eight. I'd go to the kitchen, I'd put on some music, I'd make two-course, three-course meal for myself. Uh and my HBA1C went from 7.7 to 5.7. I'd reversed type 2 diabetes. My plan is not to be on keto one meal a day all the time. In fact, right now I'm not even on keto and I'm kind of on an intermittent fasting thing where I don't eat in the morning till one. Uh my plan is simply to get to a steady state of weight loss. Like now I'm at around 95, maybe get to 85 and then go to intermittent fasting plus low carb. and so on and so forth. But I don't want to sell any particular diet to you. Why should you listen to me? You could read these four books. Why should you listen to these four books? The point is today we have the tools to understand ourselves and the impact that food has on our body. So what I want to urge everyone watching this is get a continuous glucose monitor, figure out other tools that help you understand yourself better and you figure out what works for you and what doesn't. And one of the sort of um interesting things that I realized Are there many nuances here? Like it is of course not true that all carbs are necessarily bad, and you'll elaborate on this uh soon I know. But I discovered that even little things like the order of eating helps. For example, if you straightaway take carbs on an empty stomach, you're gonna get that insulin spike because your stomach straight away gets to work um, you know, processing the carbs has been given. But if you have some protein first or some fibrous sink first, which is slower to digest, then your stomach gets to work on that and then later when you have carbs, your stomach's already busy and the insulin spike is much slower. And so I find it remarkable that that European order or that Western order of having a meal, salad, followed by protein, followed by dessert, Is actually perfect. Starting with fiber is great. Having the protein second is perfect. Having the carbs last is great. This is also why, in fact, that if you uh want to have an ice cream, you know, I I say sugar is poison because well it is, uh, and it's not just in excess, it is something that you should generally try to cut down on. But if you have to have it, either have it in complex carbohydrates like uh you know you're gonna talk about soon, or if you have to have even uh a sinful ice cream, don't have it on its own in the middle of the day, have it at the end of a meal where you've had a bunch of other stuff and that helps. So what the C GM helped me discover is that the order in which you eat food matters. It matters the exercise that you do. Like if you go for a twenty minute walk right after a meal, it can stop that incidence bike from going out of whack. And then also you discover nuances even in uh the sugary diets that you might have. So that is kind of my uh sort of overall uh spiel. That's a food journey that I've taken that I man you know, that over a period of time I had this intellectual journey where I l you know learnt about sugar, learnt about fat. And to me, this is a scandal. You know, you have films like The Insider which talk about the tobacco industry and what the tobacco lobby did. This is a far greater scandal what the sugar lobby has done. We are surrounded by poison every day, we are feeding it to our kids every day. And uh it's you know, and and I'm really glad that I could figure this stuff out. And I'm really glad that uh I also sort of use this knowledge for my own benefit to reverse type 2 diabetes. And by the way, anyone who t any doctor who tells you type 2 diabetes is a chronic disease and cannot be reversed is a lying quack. Treat him as no better than a homeopathic doctor or an Ayurvedic doctor. The knowledge is outdated. It is reversible, type 2 diabetes, it can be reversed through diet alone. It is a disease of the diet.",
-      "words": [
+        },
         {
           "word": "Yeah.",
           "startTime": 1407.5,
@@ -27325,7 +27253,15 @@
           "startTime": 1407.82,
           "endTime": 1408.06,
           "confidence": 0.9903
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1408.06,
+      "endTime": 1715.6,
+      "text": "this guy just kind of looked at me. Uh and in that look, uh, you know, he knew, I knew, he knew, he knew, I knew, he knew. And it was kind of i it was like, you know, what to do, you figure it out. But I continued in the Mets for about three months and nothing really improved. And at that point of time, Ajaisha, I met you and uh you said, why don't you use a CGM? And I was like, what is a CGM boss? And you point you told me about, you know, uh CGM, which stands for continuous locose monitor, you put it on your arm, and like you have right now, everybody focus on that. Yeah. So I I wore that for um, you know, mm uh b e each of those has a two-week cycle. I did three two-week cycles, and in that time. I figured out that everything I knew intellectually was correct. There were nuances, but it was broadly correct. I would have a slice of toast, my glucose would go to 285. I'd have eggs and bacon and it was a complete flat line. You know, and I figured out other nuanced aspects of it. I started recommending it to friends. You know. Like one of my friends would always be about I have oats, oats is healthy. And every time I would say, oats are terribly unhealthy, what are you doing? And I would cite books and studies and she would be like, You are crazy. Right? Because conventional thinking oats are healthy. She'd put put the CGM, had oats, two eighty. Next day had eggs, flatlined. You know? In uh she I think uh wore the C GM for around a month or so, changed her lifestyle, dropped twenty five kgs from that day. Super healthy. And the same thing kind of happened to me, that over a period of time, and I I went I used it, I went to keto plus intermittent fasting. The intermittent fasting became one meal a day, which was a really happy period in my life because I would be full of energy all day and I'd have all my I'd do all my eating between six and eight. I'd go to the kitchen, I'd put on some music, I'd make two-course, three-course meal for myself. Uh and my HBA1C went from 7.7 to 5.7. I'd reversed type 2 diabetes. My plan is not to be on keto one meal a day all the time. In fact, right now I'm not even on keto and I'm kind of on an intermittent fasting thing where I don't eat in the morning till one. Uh my plan is simply to get to a steady state of weight loss. Like now I'm at around 95, maybe get to 85 and then go to intermittent fasting plus low carb. and so on and so forth. But I don't want to sell any particular diet to you. Why should you listen to me? You could read these four books. Why should you listen to these four books? The point is today we have the tools to understand ourselves and the impact that food has on our body. So what I want to urge everyone watching this is get a continuous glucose monitor, figure out other tools that help you understand yourself better and you figure out what works for you and what doesn't. And one of the sort of um interesting things that I realized Are there many nuances here? Like it is of course not true that all carbs are necessarily bad, and you'll elaborate on this uh soon I know. But I discovered that even little things like the order of eating helps. For example, if you straightaway take carbs on an empty stomach, you're gonna get that insulin spike because your stomach straight away gets to work um, you know, processing the carbs has been given. But if you have some protein first or some fibrous sink first, which is slower to digest, then your stomach gets to work on that and then later when you have carbs, your stomach's already busy and the insulin spike is much slower. And so I find it remarkable that that European order or that Western order of having a meal, salad, followed by protein, followed by dessert, Is actually perfect. Starting with fiber is great. Having the protein second is perfect. Having the carbs last is great. This is also why, in fact, that if you uh want to have an ice cream, you know, I I say sugar is poison because well it is, uh, and it's not just in excess, it is something that you should generally try to cut down on. But if you have to have it, either have it in complex carbohydrates like uh you know you're gonna talk about soon, or if you have to have even uh a sinful ice cream, don't have it on its own in the middle of the day, have it at the end of a meal where you've had a bunch of other stuff and that helps. So what the C GM helped me discover is that the order in which you eat food matters. It matters the exercise that you do. Like if you go for a twenty minute walk right after a meal, it can stop that incidence bike from going out of whack. And then also you discover nuances even in uh the sugary diets that you might have. So that is kind of my uh sort of overall uh spiel. That's a food journey that I've taken that I man you know, that over a period of time I had this intellectual journey where I l you know learnt about sugar, learnt about fat. And to me, this is a scandal. You know, you have films like The Insider which talk about the tobacco industry and what the tobacco lobby did. This is a far greater scandal what the sugar lobby has done. We are surrounded by poison every day, we are feeding it to our kids every day. And uh it's you know, and and I'm really glad that I could figure this stuff out. And I'm really glad that uh I also sort of use this knowledge for my own benefit to reverse type 2 diabetes. And by the way, anyone who t any doctor who tells you type 2 diabetes is a chronic disease and cannot be reversed is a lying quack. Treat him as no better than a homeopathic doctor or an Ayurvedic doctor. The knowledge is outdated. It is reversible, type 2 diabetes, it can be reversed through diet alone. It is a disease of the diet.",
+      "words": [
         {
           "word": "this",
           "startTime": 1408.06,
@@ -52685,8 +52621,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2855.82,
-      "endTime": 2876.21,
-      "text": "in the case case of oats it varies greatly with the amount of food processing that's been done. So again, you're back to the same story that whole uh uh s grains coming out of the land is relatively safe. And the more industrial you make it the worse the sugar surge and the less the nutrition that gets through to the gut microbiome.",
+      "endTime": 2875.33,
+      "text": "in the case case of oats it varies greatly with the amount of food processing that's been done. So again, you're back to the same story that whole uh uh s grains coming out of the land is relatively safe. And the more industrial you make it the worse the sugar surge and the less the nutrition that gets through to the gut",
       "words": [
         {
           "word": "in",
@@ -53065,21 +53001,21 @@
           "startTime": 2875.09,
           "endTime": 2875.33,
           "confidence": 0.9996
-        },
-        {
-          "word": "microbiome.",
-          "startTime": 2875.33,
-          "endTime": 2876.21,
-          "confidence": 0.9841
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2876.21,
-      "endTime": 2898.83,
-      "text": "What I would also say is I'll again reiterate what Gary Taupp says about calories. A calorie is not a calorie in the sense a calorie produced by carbs is not equal to a calorie produced by fat because a calorie produced by carbs is leading to insulin surge in the end to insulin resistance. It is having fast worse impact. Every calorie is not necessarily equal, while saturated fat as we now know is completely safe and trans fats can be a problem.",
+      "startTime": 2875.33,
+      "endTime": 2915.38,
+      "text": "microbiome. What I would also say is I'll again reiterate what Gary Taupp says about calories. A calorie is not a calorie in the sense a calorie produced by carbs is not equal to a calorie produced by fat because a calorie produced by carbs is leading to insulin surge in the end to insulin resistance. It is having fast worse impact. Every calorie is not necessarily equal, while saturated fat as we now know is completely safe and trans fats can be a problem. Uh I would also suggest that you need to watch out for the labelling on food because a lot of the labelling is incredibly misleading. They'll put things like no added sugar, but there'll be all kinds of things which are basically sugar inside, but there'll be like no added sugar, kiti ka white chini ni dalla.",
       "words": [
+        {
+          "word": "microbiome.",
+          "startTime": 2875.33,
+          "endTime": 2876.21,
+          "confidence": 0.9841
+        },
         {
           "word": "What",
           "startTime": 2876.21,
@@ -53583,15 +53519,7 @@
           "startTime": 2898.37,
           "endTime": 2898.83,
           "confidence": 0.9546
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2899.14,
-      "endTime": 2901.06,
-      "text": "Uh I would also",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 2899.14,
@@ -53615,15 +53543,7 @@
           "startTime": 2900.26,
           "endTime": 2901.06,
           "confidence": 0.9951
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2901.06,
-      "endTime": 2915.38,
-      "text": "suggest that you need to watch out for the labelling on food because a lot of the labelling is incredibly misleading. They'll put things like no added sugar, but there'll be all kinds of things which are basically sugar inside, but there'll be like no added sugar, kiti ka white chini ni dalla.",
-      "words": [
+        },
         {
           "word": "suggest",
           "startTime": 2901.06,
@@ -53947,8 +53867,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2915.38,
-      "endTime": 2923.15,
-      "text": "One standard trick is concentrated apple juice. So that's just a way of getting sugar in and saying this is hundred percent fruit.",
+      "endTime": 2922.66,
+      "text": "One standard trick is concentrated apple juice. So that's just a way of getting sugar in and saying this is hundred percent",
       "words": [
         {
           "word": "One",
@@ -54081,21 +54001,21 @@
           "startTime": 2922.42,
           "endTime": 2922.66,
           "confidence": 0.9265
-        },
-        {
-          "word": "fruit.",
-          "startTime": 2922.66,
-          "endTime": 2923.15,
-          "confidence": 0.9576
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2923.31,
-      "endTime": 2930.11,
-      "text": "But I feel I feel jealous of apple that kind of apple juice because I find it so hard to stay concentrated. So whatchamaco.",
+      "startTime": 2922.66,
+      "endTime": 3031.41,
+      "text": "fruit. But I feel I feel jealous of apple that kind of apple juice because I find it so hard to stay concentrated. So whatchamaco. Uh the other thing I wanna say is that one of the side effects of sugar that I didn't mention that I used to go through and I can see the difference when I'm on keto is brain fog. That my not only do I get tired through the day much quicker, but my thinking is far worse. And there is an objective measure for this, and we have discussed this. And that objective measure is chess. You know, so when I I play a lot on chess.com under a pseudonym, no one shall ever know. And when I play I'm not playing to improve. You know, back in my poker days I was improving all the time and I used to berate others, you're just addicted, you're not improving, you're not working on your game. For chess I'm like that. I'm the addict. I'll play a whole bunch of bullet games every day. And because I'm not improving, my ELO rating goes up hundred and fifty points. If I get off keto, have a kabi day, indulge on a pizza, it comes down one fifty points, or even more if I add a biryani to the pizza. And I have done these things. Have you heard of the concept, by the way, of bang bang? Do you know what a bang bang is? The great Louis C. had this routine, I think, uh part of his great show Louis, uh where um uh the way he defines a bang bang is you enter a restaurant, you have one complete meal. and then you get out and you enter another restaurant immediately with a different cuisine and you have another complete meal and that's a bang bang. So I guess Pizza Biryani would be a a little bit bit like that. And finally what I'd add to that is when you talk about how we should be careful of what we consume, Recently, um, you know, I went to a friend's place and I was wondering what do I sort of give her as a gift while going and I was like, No chocolates, sugar is poison, no alcohol, sugar is poison and alcohol is also bad for the liver and even in moderate quantities you should uh never have it. You know, people say studies have shown that a glass of wine is good for the heart, and my point is yeah, but what what is it doing to the liver?",
       "words": [
+        {
+          "word": "fruit.",
+          "startTime": 2922.66,
+          "endTime": 2923.15,
+          "confidence": 0.9576
+        },
         {
           "word": "But",
           "startTime": 2923.31,
@@ -54239,15 +54159,7 @@
           "startTime": 2928.75,
           "endTime": 2930.11,
           "confidence": 0.5437
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2930.11,
-      "endTime": 2932.67,
-      "text": "Uh the other thing I wanna say is that",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 2930.11,
@@ -54301,15 +54213,7 @@
           "startTime": 2932.27,
           "endTime": 2932.67,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2932.67,
-      "endTime": 3031.41,
-      "text": "one of the side effects of sugar that I didn't mention that I used to go through and I can see the difference when I'm on keto is brain fog. That my not only do I get tired through the day much quicker, but my thinking is far worse. And there is an objective measure for this, and we have discussed this. And that objective measure is chess. You know, so when I I play a lot on chess.com under a pseudonym, no one shall ever know. And when I play I'm not playing to improve. You know, back in my poker days I was improving all the time and I used to berate others, you're just addicted, you're not improving, you're not working on your game. For chess I'm like that. I'm the addict. I'll play a whole bunch of bullet games every day. And because I'm not improving, my ELO rating goes up hundred and fifty points. If I get off keto, have a kabi day, indulge on a pizza, it comes down one fifty points, or even more if I add a biryani to the pizza. And I have done these things. Have you heard of the concept, by the way, of bang bang? Do you know what a bang bang is? The great Louis C. had this routine, I think, uh part of his great show Louis, uh where um uh the way he defines a bang bang is you enter a restaurant, you have one complete meal. and then you get out and you enter another restaurant immediately with a different cuisine and you have another complete meal and that's a bang bang. So I guess Pizza Biryani would be a a little bit bit like that. And finally what I'd add to that is when you talk about how we should be careful of what we consume, Recently, um, you know, I went to a friend's place and I was wondering what do I sort of give her as a gift while going and I was like, No chocolates, sugar is poison, no alcohol, sugar is poison and alcohol is also bad for the liver and even in moderate quantities you should uh never have it. You know, people say studies have shown that a glass of wine is good for the heart, and my point is yeah, but what what is it doing to the liver?",
-      "words": [
+        },
         {
           "word": "one",
           "startTime": 2932.67,
@@ -57637,8 +57541,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3075.44,
-      "endTime": 3086.08,
-      "text": "There's one practical wisdom that I have figured which greatly helps. Uh you should stick it into your arm and then let a full 24 hours go by and not initialize",
+      "endTime": 3092.66,
+      "text": "There's one practical wisdom that I have figured which greatly helps. Uh you should stick it into your arm and then let a full 24 hours go by and not initialize it. And then any yeah. And then when you initialize it, the accuracy of the readings improves greatly. So yeah, there is variation, it's not perfect.",
       "words": [
         {
           "word": "There's",
@@ -57825,15 +57729,7 @@
           "startTime": 3085.52,
           "endTime": 3086.08,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3086.08,
-      "endTime": 3087.6,
-      "text": "it. And then any yeah. And",
-      "words": [
+        },
         {
           "word": "it.",
           "startTime": 3086.08,
@@ -57869,15 +57765,7 @@
           "startTime": 3087.44,
           "endTime": 3087.6,
           "confidence": 0.9627
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3087.6,
-      "endTime": 3094.03,
-      "text": "then when you initialize it, the accuracy of the readings improves greatly. So yeah, there is variation, it's not perfect. Fundamentally",
-      "words": [
+        },
         {
           "word": "then",
           "startTime": 3087.6,
@@ -57997,21 +57885,21 @@
           "startTime": 3092.16,
           "endTime": 3092.66,
           "confidence": 0.9747
-        },
-        {
-          "word": "Fundamentally",
-          "startTime": 3093.23,
-          "endTime": 3094.03,
-          "confidence": 0.8981
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 3094.03,
+      "startTime": 3093.23,
       "endTime": 3099.87,
-      "text": "But what you should also do is do a prick test, do it for a couple of days, calibrate according to that, and then you'll be fine. And",
+      "text": "Fundamentally But what you should also do is do a prick test, do it for a couple of days, calibrate according to that, and then you'll be fine. And",
       "words": [
+        {
+          "word": "Fundamentally",
+          "startTime": 3093.23,
+          "endTime": 3094.03,
+          "confidence": 0.8981
+        },
         {
           "word": "But",
           "startTime": 3094.03,
@@ -64441,8 +64329,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3390.88,
-      "endTime": 3468.1,
-      "text": "it. Give us a document, we'll write the code. Uh the second thing I'd like to rec so you need to buy this gizmo as well, which will do the reading. It's painful uh until Abbott Labs will fix that. Uh the second thing I'd like to recommend is a great book, which is on the stand there. It's called Lenin Stone by David Remnick. It's a picture in the dying days of the USSR about the end of communism in the USSR. It is a great story in and of itself about how a society struggles with itself in trying to deal with an authoritarian state and how the possibilities for progress. Are damaged for a very long time. I think it was Gordon Brown who said that the rule of law is a difficult project for the first 500 years. It really takes a very long time to learn the culture, the decency of being a democracy. And we know something today that David Remnick did not when writing the book, which is that Russia was about to go back to hell in terms of the Putin regime. So the book is doubly interesting today because. We know the way that story worked out and it gives you all kinds of insights into the world. And",
+      "endTime": 3467.38,
+      "text": "it. Give us a document, we'll write the code. Uh the second thing I'd like to rec so you need to buy this gizmo as well, which will do the reading. It's painful uh until Abbott Labs will fix that. Uh the second thing I'd like to recommend is a great book, which is on the stand there. It's called Lenin Stone by David Remnick. It's a picture in the dying days of the USSR about the end of communism in the USSR. It is a great story in and of itself about how a society struggles with itself in trying to deal with an authoritarian state and how the possibilities for progress. Are damaged for a very long time. I think it was Gordon Brown who said that the rule of law is a difficult project for the first 500 years. It really takes a very long time to learn the culture, the decency of being a democracy. And we know something today that David Remnick did not when writing the book, which is that Russia was about to go back to hell in terms of the Putin regime. So the book is doubly interesting today because. We know the way that story worked out and it gives you all kinds of insights into the",
       "words": [
         {
           "word": "it.",
@@ -65739,7 +65627,15 @@
           "startTime": 3467.3,
           "endTime": 3467.38,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3467.38,
+      "endTime": 3587.87,
+      "text": "world. And Remnik is one of the great journalists of our times. I think uh in those days he was with the Washington Post, he wrote a couple of books on Russia where he was posted. I think he was a Moscow correspondent, went on to become editor of The New Yorker, wrote a great book on Barack Obama called The Bridge, from which I learned a little bit of trivia that Barack Obama was also Yes, what am I about to say? Barack Obama was also just like me. A basketball player. I'm not a basketball player. Barack Obama, just like me, was also a poker player. He played poker a little bit in the late nineties, not because he loved the game, intellectual challenge, wanted to make money, none of that. But because he wanted to get uh he wanted to find a way of socializing and networking with uh people in the Democratic Party uh in a relaxed, convivial atmosphere, and playing poker with them was the best way to do that. So that was his in into these circles. So it's quite fascinating. And did not even involve alcohol. and did not even uh involve alcohol. So there's a win there. You avoid sugar but you get gambling. I don't know which is a bigger evil, you know, but I uh yeah. Uh so I didn't get uh type two diabetes by playing poker, so we know what the answer to that is. So yeah. So thank you for watching this episode. Um you know, if I've been a little incoherent in parts of it is because it's a subject I care about deeply. I really think that, you know, when I think of someone like Anson Keys or some of the prominent people in the sugar lobby, I think of them as men who committed crimes on humanity. Right? Millions of people died and suffered and continue to suffer because of wrong dietary advice given by government bodies because of conventions that we still continue to stick to. So, you know, read these books, make up your own mind, use a C GM, understand your body, know thyself is sort of the key message here. So two key messages. One, know thyself and two, sugar is poison. Ajay, do you have anything to add to that? Oh, okay. So Abikarth, take it. You can put a cut and then bring it back. I'll do",
+      "words": [
         {
           "word": "world.",
           "startTime": 3467.38,
@@ -65751,15 +65647,7 @@
           "startTime": 3467.94,
           "endTime": 3468.1,
           "confidence": 0.9401
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3468.1,
-      "endTime": 3587.55,
-      "text": "Remnik is one of the great journalists of our times. I think uh in those days he was with the Washington Post, he wrote a couple of books on Russia where he was posted. I think he was a Moscow correspondent, went on to become editor of The New Yorker, wrote a great book on Barack Obama called The Bridge, from which I learned a little bit of trivia that Barack Obama was also Yes, what am I about to say? Barack Obama was also just like me. A basketball player. I'm not a basketball player. Barack Obama, just like me, was also a poker player. He played poker a little bit in the late nineties, not because he loved the game, intellectual challenge, wanted to make money, none of that. But because he wanted to get uh he wanted to find a way of socializing and networking with uh people in the Democratic Party uh in a relaxed, convivial atmosphere, and playing poker with them was the best way to do that. So that was his in into these circles. So it's quite fascinating. And did not even involve alcohol. and did not even uh involve alcohol. So there's a win there. You avoid sugar but you get gambling. I don't know which is a bigger evil, you know, but I uh yeah. Uh so I didn't get uh type two diabetes by playing poker, so we know what the answer to that is. So yeah. So thank you for watching this episode. Um you know, if I've been a little incoherent in parts of it is because it's a subject I care about deeply. I really think that, you know, when I think of someone like Anson Keys or some of the prominent people in the sugar lobby, I think of them as men who committed crimes on humanity. Right? Millions of people died and suffered and continue to suffer because of wrong dietary advice given by government bodies because of conventions that we still continue to stick to. So, you know, read these books, make up your own mind, use a C GM, understand your body, know thyself is sort of the key message here. So two key messages. One, know thyself and two, sugar is poison. Ajay, do you have anything to add to that? Oh, okay. So Abikarth, take it. You can put a cut and then bring it back.",
-      "words": [
+        },
         {
           "word": "Remnik",
           "startTime": 3468.1,
@@ -68189,15 +68077,7 @@
           "startTime": 3587.23,
           "endTime": 3587.55,
           "confidence": 0.3703
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3587.55,
-      "endTime": 3593.95,
-      "text": "I'll do it. Ajay, do you have something to recommend? No, I will say it. Guys,",
-      "words": [
+        },
         {
           "word": "I'll",
           "startTime": 3587.55,
@@ -68209,7 +68089,15 @@
           "startTime": 3587.79,
           "endTime": 3587.87,
           "confidence": 0.9988
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3587.87,
+      "endTime": 3602.59,
+      "text": "it. Ajay, do you have something to recommend? No, I will say it. Guys, like and subscribe the show. Okay, say it now. So, Ajay, do you have anything to add to that? Guys, like and subscribe the show. Yeah, and not just",
+      "words": [
         {
           "word": "it.",
           "startTime": 3587.87,
@@ -68293,15 +68181,7 @@
           "startTime": 3592.75,
           "endTime": 3593.95,
           "confidence": 0.7899
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3593.95,
-      "endTime": 3597.55,
-      "text": "like and subscribe the show. Okay, say it now. So, Ajay, do you have anything to add",
-      "words": [
+        },
         {
           "word": "like",
           "startTime": 3593.95,
@@ -68403,15 +68283,7 @@
           "startTime": 3597.31,
           "endTime": 3597.55,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3597.55,
-      "endTime": 3602.59,
-      "text": "to that? Guys, like and subscribe the show. Yeah, and not just",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 3597.55,

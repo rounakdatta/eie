@@ -5,7 +5,7 @@
     "durationSeconds": 3438,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -1529,8 +1529,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 154.96,
-      "endTime": 327.2,
-      "text": "So that's absolutely one line of attack. That's a humant line of attack. Okay, one of the great lessons of history is that authoritarian tyrants have obedient regimes that are full of people who hate them. So there is plenty of opportunity for obtaining humans from creating sources. Because there are plenty of people inside the government of an authoritarian who actually detest the authoritarian. Okay, so that is indeed one line of attack, and that's called humint. And then there is another line of attack that is called SIGINT, where you process signals and you intercept communications and so on. Now, in this case, uh there was a different line of attack, which is every now and then in the battlefield, the allies would kill a German tank. The Germans were very systematic. Every tank would have a serial number. Okay, the methodical German mind would assign incremental numerical serial numbers on every tank. Just imagine this would have been harder if they had randomized every number. But every engine had a nice serial number which were flowing incrementally. And this is called the German tank problem. That n number of tanks are being produced every month. Every month, some tanks are being killed. you get the serial numbers of the tanks that have been killed every month. So out of the stock of tanks, some tanks are killed every month. And our job is to estimate what is the grand total number of tanks that exist as of every month. And then you subtract them and you get the production of every month. Okay, so this is called the German tank problem. That a few sporadic killed numbers are observed, and out of that you have to estimate what is the grand total of the number of tanks that have ever been produced. And th there is a cute piece of statistical thinking here. So imagine that tank number 26, 74, and 90 have been killed. So I killed the tank, my people went and verified the serial number 24, 76, and 90. One simple approach. is to say 90 is the highest number of what we have verified is a tank that has been killed. Therefore 90 tanks exist. Okay. And the sweet mathematical intuition is no. There could well be more tanks and you just happen to kill Mr. 90. Maybe there's a hundred, maybe there's a hundred and ten. So there is a max value which is above the ninety. So you want to top up this number ninety with something. What would you do? And the sweet mathematical answer is Take the distance between tank 1 and 2, the 24 and the 70, take the distance from 74 to 90, take the average of the intertank distance, and add that back into 90. And that gives you an estimator of the top. So it's a sweet, simple",
+      "endTime": 392.1,
+      "text": "So that's absolutely one line of attack. That's a humant line of attack. Okay, one of the great lessons of history is that authoritarian tyrants have obedient regimes that are full of people who hate them. So there is plenty of opportunity for obtaining humans from creating sources. Because there are plenty of people inside the government of an authoritarian who actually detest the authoritarian. Okay, so that is indeed one line of attack, and that's called humint. And then there is another line of attack that is called SIGINT, where you process signals and you intercept communications and so on. Now, in this case, uh there was a different line of attack, which is every now and then in the battlefield, the allies would kill a German tank. The Germans were very systematic. Every tank would have a serial number. Okay, the methodical German mind would assign incremental numerical serial numbers on every tank. Just imagine this would have been harder if they had randomized every number. But every engine had a nice serial number which were flowing incrementally. And this is called the German tank problem. That n number of tanks are being produced every month. Every month, some tanks are being killed. you get the serial numbers of the tanks that have been killed every month. So out of the stock of tanks, some tanks are killed every month. And our job is to estimate what is the grand total number of tanks that exist as of every month. And then you subtract them and you get the production of every month. Okay, so this is called the German tank problem. That a few sporadic killed numbers are observed, and out of that you have to estimate what is the grand total of the number of tanks that have ever been produced. And th there is a cute piece of statistical thinking here. So imagine that tank number 26, 74, and 90 have been killed. So I killed the tank, my people went and verified the serial number 24, 76, and 90. One simple approach. is to say 90 is the highest number of what we have verified is a tank that has been killed. Therefore 90 tanks exist. Okay. And the sweet mathematical intuition is no. There could well be more tanks and you just happen to kill Mr. 90. Maybe there's a hundred, maybe there's a hundred and ten. So there is a max value which is above the ninety. So you want to top up this number ninety with something. What would you do? And the sweet mathematical answer is Take the distance between tank 1 and 2, the 24 and the 70, take the distance from 74 to 90, take the average of the intertank distance, and add that back into 90. And that gives you an estimator of the top. So it's a sweet, simple idea. And this is the field of statistics. This kind of reasoning, this kind of careful thinking, and the development of these kinds of formulae that will solve complex estimation problems. This is what the statisticians do. Now, during the Second World War, this field was very nascent. Very little knowledge of statistics existed. And it turned out that there was a conflict between the human department, okay, the people who created sources, who knew the girlfriend of some brigadier and managed to extract secrets out of the mighty German Wehrmacht. Those estimates were coming out like 1500 tanks produced per month. And the numerical calculations by the statisticians were producing an estimate like 200 a month. So these two estimates were very far apart. And it was a raging debate about which one is right. And after the war ended, when the Allies went and did the postmortem inside the German production records, it turned out that basically the statisticians were right and the human was wrong. What is the moral of this story?",
       "words": [
         {
           "word": "So",
@@ -4429,15 +4429,7 @@
           "startTime": 326.8,
           "endTime": 327.2,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 327.2,
-      "endTime": 328.72,
-      "text": "idea. And this is the",
-      "words": [
+        },
         {
           "word": "idea.",
           "startTime": 327.2,
@@ -4467,15 +4459,7 @@
           "startTime": 328.48,
           "endTime": 328.72,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 328.72,
-      "endTime": 389.61,
-      "text": "field of statistics. This kind of reasoning, this kind of careful thinking, and the development of these kinds of formulae that will solve complex estimation problems. This is what the statisticians do. Now, during the Second World War, this field was very nascent. Very little knowledge of statistics existed. And it turned out that there was a conflict between the human department, okay, the people who created sources, who knew the girlfriend of some brigadier and managed to extract secrets out of the mighty German Wehrmacht. Those estimates were coming out like 1500 tanks produced per month. And the numerical calculations by the statisticians were producing an estimate like 200 a month. So these two estimates were very far apart. And it was a raging debate about which one is right. And after the war ended, when the Allies went and did the postmortem inside the German production records, it turned out that basically the statisticians were right and the human",
-      "words": [
+        },
         {
           "word": "field",
           "startTime": 328.72,
@@ -5441,15 +5425,7 @@
           "startTime": 389.05,
           "endTime": 389.61,
           "confidence": 0.8567
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 389.61,
-      "endTime": 398.81,
-      "text": "was wrong. What is the moral of this story? I will tell you the moral of the story. The moral of the story is brigadiers lie to their girlfriends.",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 389.61,
@@ -5503,7 +5479,15 @@
           "startTime": 391.61,
           "endTime": 392.1,
           "confidence": 0.9975
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 392.91,
+      "endTime": 398.81,
+      "text": "I will tell you the moral of the story. The moral of the story is brigadiers lie to their girlfriends.",
+      "words": [
         {
           "word": "I",
           "startTime": 392.91,
@@ -5687,8 +5671,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 411.63,
-      "endTime": 433.71,
-      "text": "So Ajay, uh 22nd August, a few days ago, a few days before we are recording, you were pretty upset. You said a hero of yours has died. Um C R R Tell me a little bit more about him because honestly, I've heard the name, but I know absolutely nothing about the man. And uh hearing about the reverence you hold him in made me want to know more. So why not get to know more in front of everybody? Yeah.",
+      "endTime": 433.07,
+      "text": "So Ajay, uh 22nd August, a few days ago, a few days before we are recording, you were pretty upset. You said a hero of yours has died. Um C R R Tell me a little bit more about him because honestly, I've heard the name, but I know absolutely nothing about the man. And uh hearing about the reverence you hold him in made me want to know more. So why not get to know more in front of everybody?",
       "words": [
         {
           "word": "So",
@@ -6175,21 +6159,21 @@
           "startTime": 432.35,
           "endTime": 433.07,
           "confidence": 0.991
-        },
-        {
-          "word": "Yeah.",
-          "startTime": 433.07,
-          "endTime": 433.71,
-          "confidence": 0.8534
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 433.71,
+      "startTime": 433.07,
       "endTime": 1010.94,
-      "text": "Uh Sierra is one of the great figures of the 20th century. Uh and uh let me tell his story. Uh his story, of course, is deeply intertwined with PC Mahalanabis. Sierra was born in 1920. Uh As the name C.R. Rao suggests, he was South Indian. He m migrated to Calcutta, and there he met Mahalanabis and became a student at the Indian Statistical Institute. At the ISI in the mid-40s, you have to understand what a unique moment that was in history. Mahalanabis had built this new organization, ISI. Mahalanabis was himself a very skilled physicist. He was a fellow of the Royal Society. So while he never got a Nobel Prize, he was a really good physicist. And he was one of the early pioneers who understood that there was something remarkable going on in the field of statistics. And he was a pioneer in trying to wake up and create interest and curiosity and work on statistics in India. And Sierra Rao came into that world. As a young man, he came into the world of Mahalanabis and the Indian Statistical Institute, which was there in uh Calcutta at the time. And note this is pre-independence. So there was like no government patronage, no government money. This was all activities bootstrapped by Mahalanabis many times with his own personal money and so on. So these were remarkable people who were doing things without waiting for a government to give them money or tell them what to do. And while at uh Calcutta, uh Sierra built some of the great propositions, some of the great theorems of statistics of the 20th century. So if you think of five or ten of the greatest results, the greatest theorems, the greatest achievements of statistics of the 20th century, then two of them are by Sierra, or they're co-authored by Sierra, even though they were done completely separately. So one of them is called the Kramer-Rao lower bound. It was independently discovered by both people. And I'll tell that story in a moment. And the other is called the Rao Black Wealth Theorem. Once again, it was done separately. Their names were pasted together because they had independently discovered it. It's sort of like calling it a Darwin-Wallace theory of evolution. It was like that. Just imagine. young person all alone, away from the mainstream of European science, living in Calcutta, in the little magic created by Mahalanabis, who built two of the five or ten great achievements of the statistics of the twentieth century, all by himself in India. And it is just so amazing that this work got done. Uh now, what were what were those results? Uh let me tell a personal story. Uh as a uh undergraduate student at college, I didn't get any probability of statistics education. So then when I landed up to start a PhD, I was told that I had deficiencies. So I had to do makeup coursework. Uh measly undergraduate coursework was required of me because I just did had gaps in my background. Which is a good way to approach it. You should recognize gaps in knowledge and we should overcome them. All gaps are overcomable. So I was placed In a fourth-year undergraduate econometrics class taught by a great econometrician and a hero of mine, Denis Eigner. Note I'd never taken probability or statistics before. So this was a fourth-year undergraduate econometrics class. So in the first five lectures, He did a helicopter tour of all statistics. And for me, it was just a hurricane. I was swept away in the beauty and the grandeur. I cannot tell you how excited I was day after day learning all those things. And you know, of course, I would go back home and learn everything myself all over again. But in class, those were memorable moments. So Dennis started teaching the concept of an estimator and the concept of a more efficient estimator or a less efficient estimator. So take the German tank problem. You could say that I'll take the highest serial number of the tank, and that's my estimator. And intuitively we can see that has a problem. You're likely to undercount the tanks. So you need to worry that there are some tanks that have been produced that have not yet been killed. And so you need to add back something into that. Okay, this is the subject of designing, analyzing, and comparing estimators and coming up with better and better estimators. So the moment he started saying in class. Here's one estimator, here's another estimator, and you can see we make it better, we make it better. And I put up my hand and I said that surely you can't keep going forever, that there will be a limit, there will be a theoretical limit on how good an estimator can get. And he said there was an Indian guy who asked that question and he got the answer, and that is the Kramer Rao lower bound. So the Kramer Rao lower bound proves what is the limit of how good an estimator can be. When faced with a certain kind of data set. So just imagine how fundamental is that result? That given a model, given a data set, you get an analytical derivation of the it's like a possibility result. What best estimator can possibly exist? And the answer is the Kremerau lower bound shows us the limit of what estimators can do. So you can run and run and build better and better estimators, but you can't cross the Kramer Rao lower bound. So that's the first of his results. And I'm narrating this to give you a flavor of how basic that result is. It's a fundamental result. And he got it in 1943, all by himself in Calcutta, cut off from the European mainstream. And this is the greatness of what CR Rao represented. The second result, the Rao Blackwell Theorem, isn't technology for making a one step better estimator. Again, one of the fundamental theorems of twentieth century statistics done by Sierra. So this is uh the man uh Sierrao and he built many many things in his life. Now I want to think about Ramanujan versus Anand. Okay, so these are two concepts of the limits of Indian genius, right? So There was something amazing in Ramanujan, there was something there is something amazing in Vishwanath and Anand. Both of them are heroes to us, and both of them contain deep insights on what is the journey of building knowledge, building expertise, building communities in India. In a fundamental way, Ramanujan is was completely self taught. He built himself in complete isolation. He had nothing. He just had some obscure nineteenth century school textbook. And out of that he rebuilt magnificent edifices of knowledge all by himself. And then he wrote a letter to G. H. Hardy and he transported to Cambridge. And everything else that happened to Ramanujan is the credit of Cambridge. He he was the creature of Cambridge. It is G. H. Hardy who, you know, delicately cultivated the genius of Ramanujan and took him from an astonishing child to one of the world's great mathematicians. It is the achievement of the Cambridge ecosystem. It is something weird about India that at those levels of deprivation and malnutrition that a Ramanujan character happened in India. It is something truly remarkable that there are people like Ramanujan in India. But for the rest, the shaping of Ramanujan and the translation of Ramanujan into greatness happened in Cambridge. That is not the case with Anand. Okay, to a substantial extent. Anand lived in India, worked in India, was built by the Indian ecosystem. With all its flaws, the Indian ecosystem nurtured Anand, funded him, gave him impulses. He went abroad a lot. He lived in Spain, like many other world champions did. He hired seconds in Spain and so on. But there is a fundamental sense in which Anand is that second generation of the Indian ecosystem of chess that came after that first weak generation. So there is a substantial extent in which Anand was the product of an Indian ecosystem. And then Anand was that great person who helped nurture that third generation of the Indian ecosystem, where chess in India just exploded, and it is all to a substantial extent, the credit of Anand. Partly Anand as an inspiration, but also Anand at a hands-on level, nurtured the talent and it took 20-30 years. And we are today at an explosive moment where, you know, in some sense, the teenagers in India are just the best in the world. Today, India is ready to say. At the teen level, we are basically world number one. Sierra Rao to me is a little more of an Anand story and not the Ramanujan story. Sierra Rao came into an ecosystem built by Mahalanabis. He was not shipped off to Cambridge as a precocious child. He was not a precocious, gifted person on the scale of Ramanujan. He did not write a letter to Mahalanabis saying, I proved some theorems and what do you think is going on? He came as a regular student to ISI and he exploded in the world created by Mahalanabis. So it is the achievement of Mahalanabis. And at the risk of offending Bengalis all over the world, I would like to claim that Sierra is the greatest achievement of the Bengali Renaissance. Okay, is that a reasonable proposition? That's",
+      "text": "Yeah. Uh Sierra is one of the great figures of the 20th century. Uh and uh let me tell his story. Uh his story, of course, is deeply intertwined with PC Mahalanabis. Sierra was born in 1920. Uh As the name C.R. Rao suggests, he was South Indian. He m migrated to Calcutta, and there he met Mahalanabis and became a student at the Indian Statistical Institute. At the ISI in the mid-40s, you have to understand what a unique moment that was in history. Mahalanabis had built this new organization, ISI. Mahalanabis was himself a very skilled physicist. He was a fellow of the Royal Society. So while he never got a Nobel Prize, he was a really good physicist. And he was one of the early pioneers who understood that there was something remarkable going on in the field of statistics. And he was a pioneer in trying to wake up and create interest and curiosity and work on statistics in India. And Sierra Rao came into that world. As a young man, he came into the world of Mahalanabis and the Indian Statistical Institute, which was there in uh Calcutta at the time. And note this is pre-independence. So there was like no government patronage, no government money. This was all activities bootstrapped by Mahalanabis many times with his own personal money and so on. So these were remarkable people who were doing things without waiting for a government to give them money or tell them what to do. And while at uh Calcutta, uh Sierra built some of the great propositions, some of the great theorems of statistics of the 20th century. So if you think of five or ten of the greatest results, the greatest theorems, the greatest achievements of statistics of the 20th century, then two of them are by Sierra, or they're co-authored by Sierra, even though they were done completely separately. So one of them is called the Kramer-Rao lower bound. It was independently discovered by both people. And I'll tell that story in a moment. And the other is called the Rao Black Wealth Theorem. Once again, it was done separately. Their names were pasted together because they had independently discovered it. It's sort of like calling it a Darwin-Wallace theory of evolution. It was like that. Just imagine. young person all alone, away from the mainstream of European science, living in Calcutta, in the little magic created by Mahalanabis, who built two of the five or ten great achievements of the statistics of the twentieth century, all by himself in India. And it is just so amazing that this work got done. Uh now, what were what were those results? Uh let me tell a personal story. Uh as a uh undergraduate student at college, I didn't get any probability of statistics education. So then when I landed up to start a PhD, I was told that I had deficiencies. So I had to do makeup coursework. Uh measly undergraduate coursework was required of me because I just did had gaps in my background. Which is a good way to approach it. You should recognize gaps in knowledge and we should overcome them. All gaps are overcomable. So I was placed In a fourth-year undergraduate econometrics class taught by a great econometrician and a hero of mine, Denis Eigner. Note I'd never taken probability or statistics before. So this was a fourth-year undergraduate econometrics class. So in the first five lectures, He did a helicopter tour of all statistics. And for me, it was just a hurricane. I was swept away in the beauty and the grandeur. I cannot tell you how excited I was day after day learning all those things. And you know, of course, I would go back home and learn everything myself all over again. But in class, those were memorable moments. So Dennis started teaching the concept of an estimator and the concept of a more efficient estimator or a less efficient estimator. So take the German tank problem. You could say that I'll take the highest serial number of the tank, and that's my estimator. And intuitively we can see that has a problem. You're likely to undercount the tanks. So you need to worry that there are some tanks that have been produced that have not yet been killed. And so you need to add back something into that. Okay, this is the subject of designing, analyzing, and comparing estimators and coming up with better and better estimators. So the moment he started saying in class. Here's one estimator, here's another estimator, and you can see we make it better, we make it better. And I put up my hand and I said that surely you can't keep going forever, that there will be a limit, there will be a theoretical limit on how good an estimator can get. And he said there was an Indian guy who asked that question and he got the answer, and that is the Kramer Rao lower bound. So the Kramer Rao lower bound proves what is the limit of how good an estimator can be. When faced with a certain kind of data set. So just imagine how fundamental is that result? That given a model, given a data set, you get an analytical derivation of the it's like a possibility result. What best estimator can possibly exist? And the answer is the Kremerau lower bound shows us the limit of what estimators can do. So you can run and run and build better and better estimators, but you can't cross the Kramer Rao lower bound. So that's the first of his results. And I'm narrating this to give you a flavor of how basic that result is. It's a fundamental result. And he got it in 1943, all by himself in Calcutta, cut off from the European mainstream. And this is the greatness of what CR Rao represented. The second result, the Rao Blackwell Theorem, isn't technology for making a one step better estimator. Again, one of the fundamental theorems of twentieth century statistics done by Sierra. So this is uh the man uh Sierrao and he built many many things in his life. Now I want to think about Ramanujan versus Anand. Okay, so these are two concepts of the limits of Indian genius, right? So There was something amazing in Ramanujan, there was something there is something amazing in Vishwanath and Anand. Both of them are heroes to us, and both of them contain deep insights on what is the journey of building knowledge, building expertise, building communities in India. In a fundamental way, Ramanujan is was completely self taught. He built himself in complete isolation. He had nothing. He just had some obscure nineteenth century school textbook. And out of that he rebuilt magnificent edifices of knowledge all by himself. And then he wrote a letter to G. H. Hardy and he transported to Cambridge. And everything else that happened to Ramanujan is the credit of Cambridge. He he was the creature of Cambridge. It is G. H. Hardy who, you know, delicately cultivated the genius of Ramanujan and took him from an astonishing child to one of the world's great mathematicians. It is the achievement of the Cambridge ecosystem. It is something weird about India that at those levels of deprivation and malnutrition that a Ramanujan character happened in India. It is something truly remarkable that there are people like Ramanujan in India. But for the rest, the shaping of Ramanujan and the translation of Ramanujan into greatness happened in Cambridge. That is not the case with Anand. Okay, to a substantial extent. Anand lived in India, worked in India, was built by the Indian ecosystem. With all its flaws, the Indian ecosystem nurtured Anand, funded him, gave him impulses. He went abroad a lot. He lived in Spain, like many other world champions did. He hired seconds in Spain and so on. But there is a fundamental sense in which Anand is that second generation of the Indian ecosystem of chess that came after that first weak generation. So there is a substantial extent in which Anand was the product of an Indian ecosystem. And then Anand was that great person who helped nurture that third generation of the Indian ecosystem, where chess in India just exploded, and it is all to a substantial extent, the credit of Anand. Partly Anand as an inspiration, but also Anand at a hands-on level, nurtured the talent and it took 20-30 years. And we are today at an explosive moment where, you know, in some sense, the teenagers in India are just the best in the world. Today, India is ready to say. At the teen level, we are basically world number one. Sierra Rao to me is a little more of an Anand story and not the Ramanujan story. Sierra Rao came into an ecosystem built by Mahalanabis. He was not shipped off to Cambridge as a precocious child. He was not a precocious, gifted person on the scale of Ramanujan. He did not write a letter to Mahalanabis saying, I proved some theorems and what do you think is going on? He came as a regular student to ISI and he exploded in the world created by Mahalanabis. So it is the achievement of Mahalanabis. And at the risk of offending Bengalis all over the world, I would like to claim that Sierra is the greatest achievement of the Bengali Renaissance. Okay, is that a reasonable proposition? That's",
       "words": [
+        {
+          "word": "Yeah.",
+          "startTime": 433.07,
+          "endTime": 433.71,
+          "confidence": 0.8534
+        },
         {
           "word": "Uh",
           "startTime": 433.71,
@@ -24159,8 +24143,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1486.46,
-      "endTime": 1497.98,
-      "text": "that we will do this right. We should have called the show CR Rao. Everything is Sierra Rao. So you you would also have put more effort in what is this? What kind of shirt are you wearing, untucked and all that? But no, no, what a fantastic",
+      "endTime": 1498.46,
+      "text": "that we will do this right. We should have called the show CR Rao. Everything is Sierra Rao. So you you would also have put more effort in what is this? What kind of shirt are you wearing, untucked and all that? But no, no, what a fantastic thought.",
       "words": [
         {
           "word": "that",
@@ -24449,21 +24433,21 @@
           "startTime": 1497.58,
           "endTime": 1497.98,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1497.98,
-      "endTime": 1698.41,
-      "text": "thought. So that's how uh Saurish chose the name, Sierra Rao. It was just a promise to ourselves that. We will not let him down and we will build this into a really good package. Uh, last tiny story of that. Uh, we got an email from Sierra's daughter that somehow she became aware that we had built this package and she said that she showed it to him and he smiled. Okay, so that is the closest that I ever came to the greatness uh that is Sierra, and we were very happy and we were very proud. Uh, I want to close off with a bit of a sad story that I describe so many things to you. I said in nineteen forty three Sierra as a student was building, you know, global frontiers mathematics in India, in a institution, the Indian Statistical Institute, built by Mahalanabis with basically no government funding and so on. What an amazing start. In many ways, it was a seed capital to do something remarkable. And it didn't It pan out like that. That, you know, in some way that should have been the beginning of something truly remarkable. It didn't quite pan out that way. So I feel we in India should think a lot about why that amazing initial condition didn't work out. It takes us to fundamental questions around the management of institutions. That there is something going wrong with the Indian public sector research organization or uh educational institution. Where these management methods have problems. So whether it's the IITs or the ISC, etc., there's something about the modern Indian public sector state-funded organization that is just incompatible with quality and excellence. We are not able to recreate what Mahalanabis and Sierra were doing at that age. In the field of statistics, something strange happened. Okay. So at the beginning, Mahlanabis, Sierra Rao, etc., were at the absolute global frontier. And the frontier at that time is a field that today is called mathematical statistics. It was about proving theorems about estimators. It was about setting up a mathematical toolbox on analyzing estimators and designing estimators and developing new estimators. And it was high mathematics, it was very complex mathematics. And in the 40s and 50s, people in India were top of the game. Okay? Now what happened was that By the 70s, the game started changing. Okay, so there was a series of people in the 70s and the 80s. Uh, famously in 1979, Bradley Efron developed what is called the bootstrap. And there was a whole bunch of other innovations in a field that today is called computational statistics, where the strategy became that an estimator doesn't have to be a closed-form mathematical formula. An estimator can be an algorithm. And then suddenly you are dreaming algorithmically or thinking algorithmically. I mean, of course, we use mathematics to analyze those algorithms, but the unit of analysis stops being a mathematical estimator that can be written down in closed form. But the estimator becomes an algorithm and it opens up a whole set of possibilities for how we can design estimators. I must",
-      "words": [
+        },
         {
           "word": "thought.",
           "startTime": 1497.98,
           "endTime": 1498.46,
           "confidence": 0.9817
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1498.46,
+      "endTime": 1698.91,
+      "text": "So that's how uh Saurish chose the name, Sierra Rao. It was just a promise to ourselves that. We will not let him down and we will build this into a really good package. Uh, last tiny story of that. Uh, we got an email from Sierra's daughter that somehow she became aware that we had built this package and she said that she showed it to him and he smiled. Okay, so that is the closest that I ever came to the greatness uh that is Sierra, and we were very happy and we were very proud. Uh, I want to close off with a bit of a sad story that I describe so many things to you. I said in nineteen forty three Sierra as a student was building, you know, global frontiers mathematics in India, in a institution, the Indian Statistical Institute, built by Mahalanabis with basically no government funding and so on. What an amazing start. In many ways, it was a seed capital to do something remarkable. And it didn't It pan out like that. That, you know, in some way that should have been the beginning of something truly remarkable. It didn't quite pan out that way. So I feel we in India should think a lot about why that amazing initial condition didn't work out. It takes us to fundamental questions around the management of institutions. That there is something going wrong with the Indian public sector research organization or uh educational institution. Where these management methods have problems. So whether it's the IITs or the ISC, etc., there's something about the modern Indian public sector state-funded organization that is just incompatible with quality and excellence. We are not able to recreate what Mahalanabis and Sierra were doing at that age. In the field of statistics, something strange happened. Okay. So at the beginning, Mahlanabis, Sierra Rao, etc., were at the absolute global frontier. And the frontier at that time is a field that today is called mathematical statistics. It was about proving theorems about estimators. It was about setting up a mathematical toolbox on analyzing estimators and designing estimators and developing new estimators. And it was high mathematics, it was very complex mathematics. And in the 40s and 50s, people in India were top of the game. Okay? Now what happened was that By the 70s, the game started changing. Okay, so there was a series of people in the 70s and the 80s. Uh, famously in 1979, Bradley Efron developed what is called the bootstrap. And there was a whole bunch of other innovations in a field that today is called computational statistics, where the strategy became that an estimator doesn't have to be a closed-form mathematical formula. An estimator can be an algorithm. And then suddenly you are dreaming algorithmically or thinking algorithmically. I mean, of course, we use mathematics to analyze those algorithms, but the unit of analysis stops being a mathematical estimator that can be written down in closed form. But the estimator becomes an algorithm and it opens up a whole set of possibilities for how we can design estimators. I must tell.",
+      "words": [
         {
           "word": "So",
           "startTime": 1498.46,
@@ -27613,21 +27597,21 @@
           "startTime": 1698.09,
           "endTime": 1698.41,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1698.41,
-      "endTime": 1717.93,
-      "text": "tell. I must tell dear readers there that that is a ghosts of statisticians past who have worked at the ISI wailing to see the condition. No, it's not, it's it's uh our cats are fighting and we have to go to the next chapter anyway. So give us a moment, we will sort out the kitten situation.",
-      "words": [
+        },
         {
           "word": "tell.",
           "startTime": 1698.41,
           "endTime": 1698.91,
           "confidence": 0.8919
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1699.63,
+      "endTime": 1717.93,
+      "text": "I must tell dear readers there that that is a ghosts of statisticians past who have worked at the ISI wailing to see the condition. No, it's not, it's it's uh our cats are fighting and we have to go to the next chapter anyway. So give us a moment, we will sort out the kitten situation.",
+      "words": [
         {
           "word": "I",
           "startTime": 1699.63,
@@ -28649,8 +28633,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1759.12,
-      "endTime": 1782.25,
-      "text": "We miss the boat on algorithms and what I'm worried about is that you and I will miss the boat on the YouTube algorithm. Keep hai kuchkaro. Let us at least if we can't go viral shah, let us at least go viral sha, as it were, right? So uh yeah, that that's uh it's actually a pretty moving story of not just a man, but an entire ecosystem which almost seems lost. Yes.",
+      "endTime": 1978.4,
+      "text": "We miss the boat on algorithms and what I'm worried about is that you and I will miss the boat on the YouTube algorithm. Keep hai kuchkaro. Let us at least if we can't go viral shah, let us at least go viral sha, as it were, right? So uh yeah, that that's uh it's actually a pretty moving story of not just a man, but an entire ecosystem which almost seems lost. Yes. Talked about the German tank problem. Do you have fun problems on your mind? Yes, yes. Why should we talk? See, we you uh the equity has to be there. You have spoken about German tanks. Now we must speak about British planes. Okay, let's set the record straight. So I want to tell you the story, and this is such a famous story, you obviously know it, and many of our gentle readers may also know it. Now, Abraham Wald was also kind of like a Renaissance man, did well in various uh fields, decision theory, sequential analysis, statistics, blah, blah, blah. And circa 1942. two, if I remember correctly, he was drafted into something called the Strategic Research Group. Right. The strategic research group was in fact headed by a gentleman called something Wallace, who was one of his students, and Wallace at one point described it, not without exaggeration as we know today looking back in hindsight, as the greatest group of living statisticians ever assembled. It was such a remarkable group. There was such intelligence in the room that at one point somebody quipped that Milton Friedman is the fourth smartest person in the room. Can you imagine? So, and Abraham Wald would have been the first smartest person. And despite this, I may tell you, he didn't have security clearance, by the way. So he would work on problems like which he didn't have security clearance to actually see for himself. So there was a joke that a secretary would stand by his side and every time he finished writing a sheet of paper, the secretary would quickly take the sheet away and then he'd begin work on the next sheet. So that was where the joke went. So there was an interesting problem that came to them about British aeroplanes that analysis needed to be done. A lot of British aeroplanes were coming back wounded, as it were. You anthropomorphized tanks earlier by saying tanks were killed. So these were wounded aeroplanes were kind of coming back. And uh one had to analyze these wounded aeroplanes to see how they could be made stronger. And one way of doing this was just seeing the bullet holes in different parts of the plane. Right. So a simple uh sort of uh uh a table that looked at that saw um that the engine had fewer holes than the fuselage. Uh right. And so a conclusion that many drew from there is that, hey, look, you know, uh all the bullet holes are in the fuselage, that's a problem, let's make it stronger. Walt said, No, wait a minute, that's not how you think about it. Ask the fundamental question, where are the missing bullets? Right? Once again. Where are the missing bullets? And his theory was this, that assume that all parts of a plane are going to get struck more or less equally, right? The part with the fewer bullets is the part which is most vulnerable that needs to be fixed because that is what is going down. Where are the missing bullets? The missing bullets are in the planes that went down. So it is the engine that you need to protect and you need to kind of uh cover up for that, which is a counterintuitive um uh you know sort of way of thinking about it. But U Stats came up with that, and it reminds me of something another great sports person came up with intuitively, where you know Ricky Ponting, the great Australian batsman, was once asked about his journey towards becoming a great batsman, and he said, Look, most batsmen have a map of the fielders in their head. I had a map of the gaps. That's that's sort of you had a German tank story. I r I I call you and I raise you with a British uh airplane story.",
       "words": [
         {
           "word": "We",
@@ -29095,15 +29079,7 @@
           "startTime": 1781.76,
           "endTime": 1782.25,
           "confidence": 0.8605
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1789.9,
-      "endTime": 1792.94,
-      "text": "Talked about the German tank problem. Do you have fun problems on your mind?",
-      "words": [
+        },
         {
           "word": "Talked",
           "startTime": 1789.9,
@@ -29187,15 +29163,7 @@
           "startTime": 1792.54,
           "endTime": 1792.94,
           "confidence": 0.9933
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1792.94,
-      "endTime": 1978.4,
-      "text": "Yes, yes. Why should we talk? See, we you uh the equity has to be there. You have spoken about German tanks. Now we must speak about British planes. Okay, let's set the record straight. So I want to tell you the story, and this is such a famous story, you obviously know it, and many of our gentle readers may also know it. Now, Abraham Wald was also kind of like a Renaissance man, did well in various uh fields, decision theory, sequential analysis, statistics, blah, blah, blah. And circa 1942. two, if I remember correctly, he was drafted into something called the Strategic Research Group. Right. The strategic research group was in fact headed by a gentleman called something Wallace, who was one of his students, and Wallace at one point described it, not without exaggeration as we know today looking back in hindsight, as the greatest group of living statisticians ever assembled. It was such a remarkable group. There was such intelligence in the room that at one point somebody quipped that Milton Friedman is the fourth smartest person in the room. Can you imagine? So, and Abraham Wald would have been the first smartest person. And despite this, I may tell you, he didn't have security clearance, by the way. So he would work on problems like which he didn't have security clearance to actually see for himself. So there was a joke that a secretary would stand by his side and every time he finished writing a sheet of paper, the secretary would quickly take the sheet away and then he'd begin work on the next sheet. So that was where the joke went. So there was an interesting problem that came to them about British aeroplanes that analysis needed to be done. A lot of British aeroplanes were coming back wounded, as it were. You anthropomorphized tanks earlier by saying tanks were killed. So these were wounded aeroplanes were kind of coming back. And uh one had to analyze these wounded aeroplanes to see how they could be made stronger. And one way of doing this was just seeing the bullet holes in different parts of the plane. Right. So a simple uh sort of uh uh a table that looked at that saw um that the engine had fewer holes than the fuselage. Uh right. And so a conclusion that many drew from there is that, hey, look, you know, uh all the bullet holes are in the fuselage, that's a problem, let's make it stronger. Walt said, No, wait a minute, that's not how you think about it. Ask the fundamental question, where are the missing bullets? Right? Once again. Where are the missing bullets? And his theory was this, that assume that all parts of a plane are going to get struck more or less equally, right? The part with the fewer bullets is the part which is most vulnerable that needs to be fixed because that is what is going down. Where are the missing bullets? The missing bullets are in the planes that went down. So it is the engine that you need to protect and you need to kind of uh cover up for that, which is a counterintuitive um uh you know sort of way of thinking about it. But U Stats came up with that, and it reminds me of something another great sports person came up with intuitively, where you know Ricky Ponting, the great Australian batsman, was once asked about his journey towards becoming a great batsman, and he said, Look, most batsmen have a map of the fielders in their head. I had a map of the gaps. That's that's sort of you had a German tank story. I r I I call you and I raise you with a British uh airplane story.",
-      "words": [
+        },
         {
           "word": "Yes,",
           "startTime": 1792.94,
@@ -33445,8 +33413,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1996.32,
-      "endTime": 2054.28,
-      "text": "I'll interrupt you before you go on to your story and tell you uh this interesting problem and I wrote a column based on this once as well about the uh illustrating survivorship bias. But at its heart it's a scam. It's a great Indian scam, right? So let us say that on a given day, I write to a thousand people who I know are uh like to bet on cricket and I tell them that look, I everything is fixed and betters often believe in conspiracy theories, everything is fixed. I will tell you the result of the next India Sri Lanka match. And they say, okay, tell us. And I'll say you don't have to pay me anything, I'll just tell you for free. I tell 500 of them India is going to win. I tell 500 of them Sri Lanka is going to win. Right? Let's say Sri Lanka wins. So 500 of them know I got it right. I do the same thing again. I tell 250 of them India is going to win. 250 of them Sri Lanka is going to win. Let's say India wins. 250 think I'm right. By the time I bring that number down to, you know, 10 or 12 or whatever. Uh, they believe me completely. I've got four, five, six right in a row. They're willing to pay their money. And",
+      "endTime": 2086.62,
+      "text": "I'll interrupt you before you go on to your story and tell you uh this interesting problem and I wrote a column based on this once as well about the uh illustrating survivorship bias. But at its heart it's a scam. It's a great Indian scam, right? So let us say that on a given day, I write to a thousand people who I know are uh like to bet on cricket and I tell them that look, I everything is fixed and betters often believe in conspiracy theories, everything is fixed. I will tell you the result of the next India Sri Lanka match. And they say, okay, tell us. And I'll say you don't have to pay me anything, I'll just tell you for free. I tell 500 of them India is going to win. I tell 500 of them Sri Lanka is going to win. Right? Let's say Sri Lanka wins. So 500 of them know I got it right. I do the same thing again. I tell 250 of them India is going to win. 250 of them Sri Lanka is going to win. Let's say India wins. 250 think I'm right. By the time I bring that number down to, you know, 10 or 12 or whatever. Uh, they believe me completely. I've got four, five, six right in a row. They're willing to pay their money. And actually what happened was all of these were arbitrary random strategies. And it just so happens that that one particular strategy which led to twelve correct answers in a row, they will think it's a great strategy and that survivorship bias at play. And when you think about mutual funds, this is why you can't just look at a mutual fund or a hedge fund and look at like a five, six year record. Because if you say have a family of mutual funds, you you can just randomly make them do different things and by sheer dumb luck, one will come out on top. But it doesn't mean that that is a correct strategy. Perhaps it just got lucky. So sorry, illustration or so.",
       "words": [
         {
           "word": "I'll",
@@ -34845,15 +34813,7 @@
           "startTime": 2054.04,
           "endTime": 2054.28,
           "confidence": 0.9904
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2054.28,
-      "endTime": 2055.8,
-      "text": "actually what happened was all of",
-      "words": [
+        },
         {
           "word": "actually",
           "startTime": 2054.28,
@@ -34889,15 +34849,7 @@
           "startTime": 2055.64,
           "endTime": 2055.8,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2055.8,
-      "endTime": 2087.12,
-      "text": "these were arbitrary random strategies. And it just so happens that that one particular strategy which led to twelve correct answers in a row, they will think it's a great strategy and that survivorship bias at play. And when you think about mutual funds, this is why you can't just look at a mutual fund or a hedge fund and look at like a five, six year record. Because if you say have a family of mutual funds, you you can just randomly make them do different things and by sheer dumb luck, one will come out on top. But it doesn't mean that that is a correct strategy. Perhaps it just got lucky. So sorry, illustration or so. Absolutely.",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 2055.8,
@@ -35611,21 +35563,21 @@
           "startTime": 2086.06,
           "endTime": 2086.62,
           "confidence": 0.6707
-        },
-        {
-          "word": "Absolutely.",
-          "startTime": 2086.62,
-          "endTime": 2087.12,
-          "confidence": 0.9032
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 2087.29,
+      "startTime": 2086.62,
       "endTime": 2125.64,
-      "text": "Survivorship bias is is a lovely idea. Also, I I would love to sell to everybody doing data analysis and data science that these are examples where you are encouraged to think more deeply. So for too many people, statistics has become a mechanical process where you throw some data into some software package and you get some answers. And always and always it is important to preserve fundamental intuition and insight and common sense. So you need to always understand the problem and too many people in India are trying to turn this into a mechanical affair. Let me uh raise you with another simple story but",
+      "text": "Absolutely. Survivorship bias is is a lovely idea. Also, I I would love to sell to everybody doing data analysis and data science that these are examples where you are encouraged to think more deeply. So for too many people, statistics has become a mechanical process where you throw some data into some software package and you get some answers. And always and always it is important to preserve fundamental intuition and insight and common sense. So you need to always understand the problem and too many people in India are trying to turn this into a mechanical affair. Let me uh raise you with another simple story but",
       "words": [
+        {
+          "word": "Absolutely.",
+          "startTime": 2086.62,
+          "endTime": 2087.12,
+          "confidence": 0.9032
+        },
         {
           "word": "Survivorship",
           "startTime": 2087.29,
@@ -36293,8 +36245,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2127.4,
-      "endTime": 2335.98,
-      "text": "a beautiful and insightful story, which is related to the planes. Okay. So the planes were going from the island of the UK to the continent and Trying to kill facilities like uh oil refinery or a tank production factory. And uh they were getting shot up by German fighters and the ground-based flak, the 88-millimeter artillery gun. And uh they would either get shot down or they would struggle to limp back. By the way, one of the most beautiful phrases in the English language. Coming back on a wing and a prayer. Okay, that is a phrase that is used all the time. Well, this is where it originated. It is literally a British or an American plane high above the European continent with its engines shot out. So it's just a wing. It's trying to glide back home. And you're just praying that you'll reach in time. So that's the source of the phrase, uh, a wing and a prayer. Okay, so now in that Imagine that we are given a problem, that there is a tank factory and we want to kill it. So you gotta be scientific about it. You don't just throw bombs from high up and hope for the best. Okay? So there is always a bomb damage analysis that is done afterwards. You have a spotter plane, you have local intelligence, you have the brigadier's girlfriend, you gotta find out whether the plant actually got destroyed. And d at the time of World War Two, the imprecision of bombs falling under the force of gravity was horrendous. Okay, the circular error probabilities like one kilometer, five kilometers. You would throw thousands of bombs and you would not be sure you have hit one factory correctly. So you needed to figure out probabilities of what is the chance of the bomb hitting. Now, in that, the there were antiaircraft guns from the ground and there were German fighters that were at the ground who were Shooting at the craft. So for the fighters, it was terrifying to go low and they fight, they wanted to fly high. So they wanted to be at 20,000 feet. So you're out of range of the anti-aircraft guns. So you fly, you drop your bombs, and you come back home. Okay? And that sounds superficially like a good idea. Because, you know, the anti anti-aircraft guns don't get you. The jump the Luftwaffe had low capabilities by 1943 to actually scramble fighter planes and attack the bombers that were flying high above. Now that is where statistics comes in. Okay, so you start calculating that I send one bomber flying at 20,000 feet and it drops some bombs. And what's the hit rate? There's a minuscule hit rate. There's very high in precision. So very few bombs get through. Or I fly at 6,000 feet. I run the gauntlet of all the anti-aircraft guns. There is some rate at which this one is dying. There is some rate at which that one is dying. But I ask, what is the rate at which the factory is getting killed? Okay? And the brutal answer turns out that you have to fly at 6,000 feet. Because while the chances of getting killed by the anti-aircraft guns are higher, you need a smaller multiplication factor to overcome the imprecision. of the",
+      "endTime": 2334.78,
+      "text": "a beautiful and insightful story, which is related to the planes. Okay. So the planes were going from the island of the UK to the continent and Trying to kill facilities like uh oil refinery or a tank production factory. And uh they were getting shot up by German fighters and the ground-based flak, the 88-millimeter artillery gun. And uh they would either get shot down or they would struggle to limp back. By the way, one of the most beautiful phrases in the English language. Coming back on a wing and a prayer. Okay, that is a phrase that is used all the time. Well, this is where it originated. It is literally a British or an American plane high above the European continent with its engines shot out. So it's just a wing. It's trying to glide back home. And you're just praying that you'll reach in time. So that's the source of the phrase, uh, a wing and a prayer. Okay, so now in that Imagine that we are given a problem, that there is a tank factory and we want to kill it. So you gotta be scientific about it. You don't just throw bombs from high up and hope for the best. Okay? So there is always a bomb damage analysis that is done afterwards. You have a spotter plane, you have local intelligence, you have the brigadier's girlfriend, you gotta find out whether the plant actually got destroyed. And d at the time of World War Two, the imprecision of bombs falling under the force of gravity was horrendous. Okay, the circular error probabilities like one kilometer, five kilometers. You would throw thousands of bombs and you would not be sure you have hit one factory correctly. So you needed to figure out probabilities of what is the chance of the bomb hitting. Now, in that, the there were antiaircraft guns from the ground and there were German fighters that were at the ground who were Shooting at the craft. So for the fighters, it was terrifying to go low and they fight, they wanted to fly high. So they wanted to be at 20,000 feet. So you're out of range of the anti-aircraft guns. So you fly, you drop your bombs, and you come back home. Okay? And that sounds superficially like a good idea. Because, you know, the anti anti-aircraft guns don't get you. The jump the Luftwaffe had low capabilities by 1943 to actually scramble fighter planes and attack the bombers that were flying high above. Now that is where statistics comes in. Okay, so you start calculating that I send one bomber flying at 20,000 feet and it drops some bombs. And what's the hit rate? There's a minuscule hit rate. There's very high in precision. So very few bombs get through. Or I fly at 6,000 feet. I run the gauntlet of all the anti-aircraft guns. There is some rate at which this one is dying. There is some rate at which that one is dying. But I ask, what is the rate at which the factory is getting killed? Okay? And the brutal answer turns out that you have to fly at 6,000 feet. Because while the chances of getting killed by the anti-aircraft guns are higher, you need a smaller multiplication factor to overcome the imprecision.",
       "words": [
         {
           "word": "a",
@@ -39649,7 +39601,15 @@
           "startTime": 2334.28,
           "endTime": 2334.78,
           "confidence": 0.9669
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2335.5,
+      "endTime": 2339.82,
+      "text": "of the bombs. So the question you're really asking is how many lives is a factory worth?",
+      "words": [
         {
           "word": "of",
           "startTime": 2335.5,
@@ -39661,15 +39621,7 @@
           "startTime": 2335.74,
           "endTime": 2335.98,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2335.98,
-      "endTime": 2339.82,
-      "text": "bombs. So the question you're really asking is how many lives is a factory worth?",
-      "words": [
+        },
         {
           "word": "bombs.",
           "startTime": 2335.98,
@@ -42093,8 +42045,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2459.6,
-      "endTime": 2471.84,
-      "text": "So I mean I talked a lot about CR Rao. And I know you've uh deeply analyzed PC Mahalanabys, your fellow Bengali. Tell us more about Mahalanabis.",
+      "endTime": 2470.48,
+      "text": "So I mean I talked a lot about CR Rao. And I know you've uh deeply analyzed PC Mahalanabys, your fellow Bengali. Tell us more about",
       "words": [
         {
           "word": "So",
@@ -42251,21 +42203,21 @@
           "startTime": 2470.32,
           "endTime": 2470.48,
           "confidence": 1.0
-        },
-        {
-          "word": "Mahalanabis.",
-          "startTime": 2470.48,
-          "endTime": 2471.84,
-          "confidence": 0.7936
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2471.84,
+      "startTime": 2470.48,
       "endTime": 2867.98,
-      "text": "All Bengali geniuses are belong to me, Dada. So here's the scene. And you know, there I found, as you said earlier, that Mahalanabis, you know, studied physics first. And then when he was gonna ship back to India. he was given volumes and volumes of a statistical magazine called Biometrica. And he lost himself in those magazines. He got so fascinated that he was just enraptured by them. And by the time he landed in India, statistics was his love. Right. So he actually taught physics in Presidency College. That's where he was hired for a while. But in those days, he would go on to found the Indian Statistical Uh Institute and kind of do all of that. And and a very unusual kind of man, even for the age. And uh Nikil in his book has this excellent uh uh uh you know description of him. He writes. Tall, prominently nosed, stern of gaze, vast of brow with hair severely parted and slicked flat by coconut oil, Mahalonobis looked the part of a serious man. He was born into a family that belonged to Bengal's landed elite, and his early milieu was that of intellectual enquiry and religious reform in turn of the century calcata. He grew up to be a prim workaholic, seemingly immune to frivolity, and usually found day and night stooping over his calculations. As a friend of nearly half a century corroborated, he had no time for small talk and little capacity to compromise with unreason, these are the friend's words. And even a smile, tight lipped and partial to the right cheek, could seem a grudging concession. Mahalonabas appeared to make a virtue of withholding expressions of affection, being believing it his duty to conceal it, except to pets, which included dogs, cats, and cows. Now I know not of your fondness for dogs and cows, but the rest of this seems to fit you, Ajaisha, let me note uh and uh Cows also. Cows also, there you go. All of cows. All of this sort of uh fits you. And the interesting thing about Malono Bis is that around this time, he sort of was one of the early pioneers of randomized sample surveys. So in 1944, there was this sort of fascinating real-world experiment where uh Malonobis's innovation, the random sample survey, which you know he and his colleagues had sort of pioneered in a sense at the ISI, was pitted against traditional methods of counting. And I'll read this book out from uh uh Nikkel's book also, it's fascinating. He writes a science the science of random sample surveys, for which the professor and the institute were among the earliest crusaders, was yet to gain widespread acceptance anywhere in the world. There were calls to abandon it and tr return to traditional plot to plot enumeration. In nineteen forty four, the Bengal government decided to settle this dispute over technique by commissioning both methods in a competition. The idea was to run them simultaneously and then compare their results against the official jute sales uh figures. This was about jute basically. Against the official jute sales figures to determine the more accurate reading. It was a moment of sweet vindication for the institute and the science of sampling. The cumbersome enumeration or counting carried out by the government turned out to be off the mark. By sixteen point six percent. While the institute's more sophisticated sample survey end only by 0.3%. Even more conclusively, the sample survey cost only a tenth of the enumeration. Stopquote. So obviously at this point he kind of becomes uh you know much m better known, much more credible. And the question is, how does this then affect him? You know, remarkable success, clearly a great genius. And uh uh, you know, at one point Nikhil writes in his book, quote, an urban an urbane savant, Mahalano Bis was once described as Quote unquote, a physicist by training, statistician by intellect, and planner by conviction. He was also much more He was also much more versed in ancient Sanskrit text, possessing of a discerning ear for Bengali poetry and a dabbler in architecture. In short, he was a proud polymath, although of uneven talents, despite his high estimation of his own abilities. Even an admiring younger colleague conceded, and now these are the colleagues' words, he thought he knew best in practically every matter. Colleague's words ends. Mahlanabis was often referred to in Indian academic and government circles as a professor, and it wasn't a moniker he was shy about. um and it wasn't a moniker. He was shy about employing while signing correspondence. Uh stop quote. And you know, the the the story goes on. I will now quote the new third smartest man in the world, Milton Friedman, talking about Mahlonabys. And Friedman says this of Mahlonabys. Mahlonabis began as a mathematician and is a very able one. Able mathematicians are usually recognized for their ability at a relatively early age. Realizing their own ability as they do and working in a field of absolutes tends, in my opinion, to make them dangerous when they apply themselves to economic planning. They produce specific and detailed plans in which they have confidence without perhaps realizing that economic planning is not the absolute science that mathematics is. Uh stop quote. And he himself could not stand economists. He was much more thinking of the world in terms of physics. He respected physicists more, but he was also perhaps searching for those certainties, while economics have to economists have to recognize the messy complexities of the real world. Hannah Arendt said about Mahalanobis. He must be nearly seventy, and this was obviously l late in Mahalanobis' year years. He must be nearly seventy, immensely vigorous, alert and intelligent, but also domineering, vain and bigoted, a Bengali aristocrat who in moving towards a Stalinist type authoritarianism has completely bypassed democratic liberal notions, never in any doubt who would plan and who would be planned for or against. Right? And there is another uh you know, I know you hate surveillance in the surveillance state and all that, and there's another excerpt from Nikol's book about um, you know, what the ki kind of benevolent autocrat Mahlanabis was, and Nikol writes While attracting students from across the country to enroll in the institute's year long programme in statistics, the only one of its kind in India, the professor found little time to teach. This did not, however, soften the harsh glare of an overbearing administrator. Students and staff were expected to record their daily activities in a diary, and an attendance register was used to record entry and egress. I must know everything. But he would have loved Aadhaar and, you know, modern uh tools. of uh surveillance. So just contrasting sides, a man who is a genius, but in a sense is also trapped by his own genius into a hubris and an arrogance that uh doesn't serve him so well uh you know going down the line. This is",
+      "text": "Mahalanabis. All Bengali geniuses are belong to me, Dada. So here's the scene. And you know, there I found, as you said earlier, that Mahalanabis, you know, studied physics first. And then when he was gonna ship back to India. he was given volumes and volumes of a statistical magazine called Biometrica. And he lost himself in those magazines. He got so fascinated that he was just enraptured by them. And by the time he landed in India, statistics was his love. Right. So he actually taught physics in Presidency College. That's where he was hired for a while. But in those days, he would go on to found the Indian Statistical Uh Institute and kind of do all of that. And and a very unusual kind of man, even for the age. And uh Nikil in his book has this excellent uh uh uh you know description of him. He writes. Tall, prominently nosed, stern of gaze, vast of brow with hair severely parted and slicked flat by coconut oil, Mahalonobis looked the part of a serious man. He was born into a family that belonged to Bengal's landed elite, and his early milieu was that of intellectual enquiry and religious reform in turn of the century calcata. He grew up to be a prim workaholic, seemingly immune to frivolity, and usually found day and night stooping over his calculations. As a friend of nearly half a century corroborated, he had no time for small talk and little capacity to compromise with unreason, these are the friend's words. And even a smile, tight lipped and partial to the right cheek, could seem a grudging concession. Mahalonabas appeared to make a virtue of withholding expressions of affection, being believing it his duty to conceal it, except to pets, which included dogs, cats, and cows. Now I know not of your fondness for dogs and cows, but the rest of this seems to fit you, Ajaisha, let me note uh and uh Cows also. Cows also, there you go. All of cows. All of this sort of uh fits you. And the interesting thing about Malono Bis is that around this time, he sort of was one of the early pioneers of randomized sample surveys. So in 1944, there was this sort of fascinating real-world experiment where uh Malonobis's innovation, the random sample survey, which you know he and his colleagues had sort of pioneered in a sense at the ISI, was pitted against traditional methods of counting. And I'll read this book out from uh uh Nikkel's book also, it's fascinating. He writes a science the science of random sample surveys, for which the professor and the institute were among the earliest crusaders, was yet to gain widespread acceptance anywhere in the world. There were calls to abandon it and tr return to traditional plot to plot enumeration. In nineteen forty four, the Bengal government decided to settle this dispute over technique by commissioning both methods in a competition. The idea was to run them simultaneously and then compare their results against the official jute sales uh figures. This was about jute basically. Against the official jute sales figures to determine the more accurate reading. It was a moment of sweet vindication for the institute and the science of sampling. The cumbersome enumeration or counting carried out by the government turned out to be off the mark. By sixteen point six percent. While the institute's more sophisticated sample survey end only by 0.3%. Even more conclusively, the sample survey cost only a tenth of the enumeration. Stopquote. So obviously at this point he kind of becomes uh you know much m better known, much more credible. And the question is, how does this then affect him? You know, remarkable success, clearly a great genius. And uh uh, you know, at one point Nikhil writes in his book, quote, an urban an urbane savant, Mahalano Bis was once described as Quote unquote, a physicist by training, statistician by intellect, and planner by conviction. He was also much more He was also much more versed in ancient Sanskrit text, possessing of a discerning ear for Bengali poetry and a dabbler in architecture. In short, he was a proud polymath, although of uneven talents, despite his high estimation of his own abilities. Even an admiring younger colleague conceded, and now these are the colleagues' words, he thought he knew best in practically every matter. Colleague's words ends. Mahlanabis was often referred to in Indian academic and government circles as a professor, and it wasn't a moniker he was shy about. um and it wasn't a moniker. He was shy about employing while signing correspondence. Uh stop quote. And you know, the the the story goes on. I will now quote the new third smartest man in the world, Milton Friedman, talking about Mahlonabys. And Friedman says this of Mahlonabys. Mahlonabis began as a mathematician and is a very able one. Able mathematicians are usually recognized for their ability at a relatively early age. Realizing their own ability as they do and working in a field of absolutes tends, in my opinion, to make them dangerous when they apply themselves to economic planning. They produce specific and detailed plans in which they have confidence without perhaps realizing that economic planning is not the absolute science that mathematics is. Uh stop quote. And he himself could not stand economists. He was much more thinking of the world in terms of physics. He respected physicists more, but he was also perhaps searching for those certainties, while economics have to economists have to recognize the messy complexities of the real world. Hannah Arendt said about Mahalanobis. He must be nearly seventy, and this was obviously l late in Mahalanobis' year years. He must be nearly seventy, immensely vigorous, alert and intelligent, but also domineering, vain and bigoted, a Bengali aristocrat who in moving towards a Stalinist type authoritarianism has completely bypassed democratic liberal notions, never in any doubt who would plan and who would be planned for or against. Right? And there is another uh you know, I know you hate surveillance in the surveillance state and all that, and there's another excerpt from Nikol's book about um, you know, what the ki kind of benevolent autocrat Mahlanabis was, and Nikol writes While attracting students from across the country to enroll in the institute's year long programme in statistics, the only one of its kind in India, the professor found little time to teach. This did not, however, soften the harsh glare of an overbearing administrator. Students and staff were expected to record their daily activities in a diary, and an attendance register was used to record entry and egress. I must know everything. But he would have loved Aadhaar and, you know, modern uh tools. of uh surveillance. So just contrasting sides, a man who is a genius, but in a sense is also trapped by his own genius into a hubris and an arrogance that uh doesn't serve him so well uh you know going down the line. This is",
       "words": [
+        {
+          "word": "Mahalanabis.",
+          "startTime": 2470.48,
+          "endTime": 2471.84,
+          "confidence": 0.7936
+        },
         {
           "word": "All",
           "startTime": 2471.84,
@@ -51451,8 +51403,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2984.01,
-      "endTime": 3293.92,
-      "text": "I am not aware of those details, but uh I mean obviously the sadhus don't need to be certified today, so something happened. But here's the interesting thing all right, once the Bharat Sadhu Samaj was farmed, uh formed, not farmed, you could farm them. uh with licensed and certificated uh sa sadhus, you know, with their documentation in triplicate and all of that. Uh they all gathered all these sadhus, and Rajendra Prasad, uh our honourable president, gave a speech to them. And here is what he said. You need hardly be told that there is an intimate relationship between the world we live in and parlock the world we strive for. It is not possible to achieve anything in the other world without setting things in order in this world. Our scriptures do not enjoin indifference towards this world. Stop quote. And I want to ask you, why did he say this? What is the subject of what he is talking about? It is planning. He wanted the support for the five year plan because he said that you wanna be good in that world, you gotta be good in this world. Five year plan will get you there. So that is the story of the Bharat Sadhu Samajan, which I learned from Nikol's book again, Planning Democracy. So everyone should buy it. I have had nothing to do with the ISI, but I do have more stories. Right. I had once done an episode with someone Subramaniam on narrative nonfiction, and he'd written a great book called A Dominant Character on the scientist JBS Haldane. Now, JBS Haldane in the mid-50s, when he was in his 60s, had come to work at uh uh ISI, and there he had the following words to say about Mahalanobis, who was traveling all the time. The journeyings of our director define a novel random vector. Right. So that is uh, you know, Holden talking about Mahalanobis in statistical terms. I'm I'm I have no idea what that phrase means, but I'm sure you do. And I also talk about Holdain coming to India uh to describe a great example of show don't tell, right? The writing principle show don't tell is just don't tell something in straight words, show it with something. And there's a great example of this in Haldane, where he was asked, right, boss, you've lived all your life in England in your sixties or whatever. You've come to India. Why do you want to you know, why have you shifted? And he could have said that I want to live a simple life unconstrained by convention. Or whatever. He could have said one of those things. Instead, he said, I don't want to wear socks anymore. And that's such a beautiful sentiment because everybody immediately gets a vibe. Nobody likes wearing socks. I mean, unless they're kind of kinky and, you know, they wear it on their heads while doing unspeakable things. Look up uh um auto-erotic asphyxiation. But uh his gig was, I just want to chill. And his way of saying this was, I don't want to wear socks anymore. And you see pictures of him in the rest of his life. He's like in Banyan and Dhoti and Pajama and all of that, but never a sock in sight. So a fantastic story about Holdain. And my final RSI uh connection and a suitably Sanskari way to end the show is circa 1944, around the time um you know Mahalanobis proved that the random sample surveys work against the government of Bengal. Now I don't know if there was a causative link or whatever, but a gentleman who was high up in the government called Chintaman Deshmuk, later to be a finance minister, C. D. Deshmuk. Uh Chintaman Deshmuk approved a certain flow of funds to ISI, practically guaranteeing that it would survive and it would remain for a few more years at least. And he also seems to be a sort of a renaissance man. And uh uh again Nikil in his excellent book writes of him A diminutive man with a chiseled face, Deshmuk was a suave cerebral product of elite bombay and Cambridge education who ranked first in the Indian civil service. He was a rooted cosmopolitan combining Angliciz sophistication with Brahmanical learning, a figure known for reciting Vedic slokas for pleasure, translating Kalidasa's Megduth from Sanskrit, and quoting scripture to buttress economic policy, uh commitment to the classical Randeep. Stop quote. And I just got randomly interested in this person because I'd never heard of him before. So uh I uh I had heard that uh, you know, he had uh after he was widowed, tragically, in the early fifties, he'd married this lady called Durga Bay Deshmuk. And Durgabhai Deshmuk had herself had a child marriage at the age of eight. And then when she turned 14 and the marriage wasn't consummated yet, she told her father, I'm not gonna do this. She spoke to the guy, the guy was liberal enough and let her go and all of that. And she was a feisty, outspoken woman. And she eventually married Chintaman Deshmuk in the 50s and uh, you know, lived happily ever after and all of that. And people were agast at the marriage because he was urban, sophisticated. She was outspoken, you know, will say whatever comes into her head. And I tried hard to look for her autobiography, Chintaman and I. And it is not available on Kindle, it's not available anywhere. However, however, I found a free copy of it on the net, which I will link from the show notes. And I love the opening words of that book. These are the opening words. Chintaman took me to a eucalyptus tree in his garden and inscribed two Sanskrit slokas on its bark. It was a proposal of marriage. I accepted and he kissed me. So this is sort of my final story of the day, which shows that even people who care about statistics and math have hearts.",
+      "endTime": 3305.58,
+      "text": "I am not aware of those details, but uh I mean obviously the sadhus don't need to be certified today, so something happened. But here's the interesting thing all right, once the Bharat Sadhu Samaj was farmed, uh formed, not farmed, you could farm them. uh with licensed and certificated uh sa sadhus, you know, with their documentation in triplicate and all of that. Uh they all gathered all these sadhus, and Rajendra Prasad, uh our honourable president, gave a speech to them. And here is what he said. You need hardly be told that there is an intimate relationship between the world we live in and parlock the world we strive for. It is not possible to achieve anything in the other world without setting things in order in this world. Our scriptures do not enjoin indifference towards this world. Stop quote. And I want to ask you, why did he say this? What is the subject of what he is talking about? It is planning. He wanted the support for the five year plan because he said that you wanna be good in that world, you gotta be good in this world. Five year plan will get you there. So that is the story of the Bharat Sadhu Samajan, which I learned from Nikol's book again, Planning Democracy. So everyone should buy it. I have had nothing to do with the ISI, but I do have more stories. Right. I had once done an episode with someone Subramaniam on narrative nonfiction, and he'd written a great book called A Dominant Character on the scientist JBS Haldane. Now, JBS Haldane in the mid-50s, when he was in his 60s, had come to work at uh uh ISI, and there he had the following words to say about Mahalanobis, who was traveling all the time. The journeyings of our director define a novel random vector. Right. So that is uh, you know, Holden talking about Mahalanobis in statistical terms. I'm I'm I have no idea what that phrase means, but I'm sure you do. And I also talk about Holdain coming to India uh to describe a great example of show don't tell, right? The writing principle show don't tell is just don't tell something in straight words, show it with something. And there's a great example of this in Haldane, where he was asked, right, boss, you've lived all your life in England in your sixties or whatever. You've come to India. Why do you want to you know, why have you shifted? And he could have said that I want to live a simple life unconstrained by convention. Or whatever. He could have said one of those things. Instead, he said, I don't want to wear socks anymore. And that's such a beautiful sentiment because everybody immediately gets a vibe. Nobody likes wearing socks. I mean, unless they're kind of kinky and, you know, they wear it on their heads while doing unspeakable things. Look up uh um auto-erotic asphyxiation. But uh his gig was, I just want to chill. And his way of saying this was, I don't want to wear socks anymore. And you see pictures of him in the rest of his life. He's like in Banyan and Dhoti and Pajama and all of that, but never a sock in sight. So a fantastic story about Holdain. And my final RSI uh connection and a suitably Sanskari way to end the show is circa 1944, around the time um you know Mahalanobis proved that the random sample surveys work against the government of Bengal. Now I don't know if there was a causative link or whatever, but a gentleman who was high up in the government called Chintaman Deshmuk, later to be a finance minister, C. D. Deshmuk. Uh Chintaman Deshmuk approved a certain flow of funds to ISI, practically guaranteeing that it would survive and it would remain for a few more years at least. And he also seems to be a sort of a renaissance man. And uh uh again Nikil in his excellent book writes of him A diminutive man with a chiseled face, Deshmuk was a suave cerebral product of elite bombay and Cambridge education who ranked first in the Indian civil service. He was a rooted cosmopolitan combining Angliciz sophistication with Brahmanical learning, a figure known for reciting Vedic slokas for pleasure, translating Kalidasa's Megduth from Sanskrit, and quoting scripture to buttress economic policy, uh commitment to the classical Randeep. Stop quote. And I just got randomly interested in this person because I'd never heard of him before. So uh I uh I had heard that uh, you know, he had uh after he was widowed, tragically, in the early fifties, he'd married this lady called Durga Bay Deshmuk. And Durgabhai Deshmuk had herself had a child marriage at the age of eight. And then when she turned 14 and the marriage wasn't consummated yet, she told her father, I'm not gonna do this. She spoke to the guy, the guy was liberal enough and let her go and all of that. And she was a feisty, outspoken woman. And she eventually married Chintaman Deshmuk in the 50s and uh, you know, lived happily ever after and all of that. And people were agast at the marriage because he was urban, sophisticated. She was outspoken, you know, will say whatever comes into her head. And I tried hard to look for her autobiography, Chintaman and I. And it is not available on Kindle, it's not available anywhere. However, however, I found a free copy of it on the net, which I will link from the show notes. And I love the opening words of that book. These are the opening words. Chintaman took me to a eucalyptus tree in his garden and inscribed two Sanskrit slokas on its bark. It was a proposal of marriage. I accepted and he kissed me. So this is sort of my final story of the day, which shows that even people who care about statistics and math have hearts. when men were men and inscribed Sanskrit uh shlokas into barks of trees. Have you ever done that? No, no such luck.",
       "words": [
         {
           "word": "I",
@@ -57543,15 +57495,7 @@
           "startTime": 3293.42,
           "endTime": 3293.92,
           "confidence": 0.9792
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3294.8,
-      "endTime": 3296.48,
-      "text": "when men were men and",
-      "words": [
+        },
         {
           "word": "when",
           "startTime": 3294.8,
@@ -57581,15 +57525,7 @@
           "startTime": 3296.16,
           "endTime": 3296.48,
           "confidence": 0.9966
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3296.48,
-      "endTime": 3305.58,
-      "text": "inscribed Sanskrit uh shlokas into barks of trees. Have you ever done that? No, no such luck.",
-      "words": [
+        },
         {
           "word": "inscribed",
           "startTime": 3296.48,
@@ -57697,8 +57633,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3309.44,
-      "endTime": 3312.52,
-      "text": "Amit, tell us your recommendations for today. So I want",
+      "endTime": 3311.62,
+      "text": "Amit, tell us your recommendations for today.",
       "words": [
         {
           "word": "Amit,",
@@ -57741,7 +57677,15 @@
           "startTime": 3311.2,
           "endTime": 3311.62,
           "confidence": 0.9333
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3312.04,
+      "endTime": 3384.33,
+      "text": "So I want to turn to my right because I'm always turning to the right and uh point to the uh set of three books here, The Great Mental Models. You know, these are bought out by Farnham Street. Um Shane Parish is one of the co-authors, Shane Parish of the Excellent Knowledge Project podcast. And these are brilliant books because you know, one of we get educated in a sense, but one of the things that our formal education doesn't teach many of us is how do you think about the world. And these three books give you those mental models. Like the volume one has them in a very general sense, and you have physics and chemistry, then you have math. So you're getting all the mental models, the tools with which you can grok dig different aspects of the world. I mean, when you and I say everything is everything, right? Everything is related to everything else. But where are the tools with which you will find those commonalities and where are those frames through which you will find meaning in everything that you see? Uh so this three-volume set, which was gifted to me a long time back by a good friend of mine, Gotham John, when I went to Bangalore. Um, just a treasure. Everybody must have it. And I think the Kindle copies are really cheap. So I would uh recommend them for everyone. So, Ajay, what recommendation are you leaving us with this week?",
+      "words": [
         {
           "word": "So",
           "startTime": 3312.04,
@@ -57759,15 +57703,7 @@
           "startTime": 3312.44,
           "endTime": 3312.52,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3312.52,
-      "endTime": 3384.33,
-      "text": "to turn to my right because I'm always turning to the right and uh point to the uh set of three books here, The Great Mental Models. You know, these are bought out by Farnham Street. Um Shane Parish is one of the co-authors, Shane Parish of the Excellent Knowledge Project podcast. And these are brilliant books because you know, one of we get educated in a sense, but one of the things that our formal education doesn't teach many of us is how do you think about the world. And these three books give you those mental models. Like the volume one has them in a very general sense, and you have physics and chemistry, then you have math. So you're getting all the mental models, the tools with which you can grok dig different aspects of the world. I mean, when you and I say everything is everything, right? Everything is related to everything else. But where are the tools with which you will find those commonalities and where are those frames through which you will find meaning in everything that you see? Uh so this three-volume set, which was gifted to me a long time back by a good friend of mine, Gotham John, when I went to Bangalore. Um, just a treasure. Everybody must have it. And I think the Kindle copies are really cheap. So I would uh recommend them for everyone. So, Ajay, what recommendation are you leaving us with this week?",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 3312.52,
@@ -59261,8 +59197,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3384.33,
-      "endTime": 3402.06,
-      "text": "Even if you've never done any statistics, I recommend the book The Lady Tasting Tea by David Salzberg. It is it takes us into the early years of thinking about statistics and Fisher and the others and asking very simple questions around a lady",
+      "endTime": 3403.82,
+      "text": "Even if you've never done any statistics, I recommend the book The Lady Tasting Tea by David Salzberg. It is it takes us into the early years of thinking about statistics and Fisher and the others and asking very simple questions around a lady tasting tea. So it's a fun book.",
       "words": [
         {
           "word": "Even",
@@ -59527,15 +59463,7 @@
           "startTime": 3401.66,
           "endTime": 3402.06,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3402.06,
-      "endTime": 3405.82,
-      "text": "tasting tea. So it's a fun book. Like where is the adrak?",
-      "words": [
+        },
         {
           "word": "tasting",
           "startTime": 3402.06,
@@ -59577,7 +59505,15 @@
           "startTime": 3403.34,
           "endTime": 3403.82,
           "confidence": 0.9755
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3403.82,
+      "endTime": 3405.82,
+      "text": "Like where is the adrak?",
+      "words": [
         {
           "word": "Like",
           "startTime": 3403.82,
@@ -59613,8 +59549,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3405.82,
-      "endTime": 3418.78,
-      "text": "Well uh the lady claimed that whether you put the tea in the milk or the milk in the tea, it matters. And Fisher set out to establish whether she actually knew it or she didn't. So",
+      "endTime": 3423.84,
+      "text": "Well uh the lady claimed that whether you put the tea in the milk or the milk in the tea, it matters. And Fisher set out to establish whether she actually knew it or she didn't. So a blind test would sort that out, right? Yeah. But how do you develop concepts of testing, blind testing?",
       "words": [
         {
           "word": "Well",
@@ -59837,15 +59773,7 @@
           "startTime": 3418.46,
           "endTime": 3418.78,
           "confidence": 0.9926
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3418.78,
-      "endTime": 3419.74,
-      "text": "a blind test would",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 3418.78,
@@ -59869,15 +59797,7 @@
           "startTime": 3419.58,
           "endTime": 3419.74,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3419.74,
-      "endTime": 3423.84,
-      "text": "sort that out, right? Yeah. But how do you develop concepts of testing, blind testing?",
-      "words": [
+        },
         {
           "word": "sort",
           "startTime": 3419.74,

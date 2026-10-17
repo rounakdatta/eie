@@ -5,7 +5,7 @@
     "durationSeconds": 3477,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -3612,8 +3612,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 179.91,
-      "endTime": 185.67,
-      "text": "An economist is someone who, when something works in practice, wonders whether it works in",
+      "endTime": 211.08,
+      "text": "An economist is someone who, when something works in practice, wonders whether it works in theory So I want to start at terminology and uh I'm a Nazi on language. Okay? So no Plebeian evolution of language. The language is a flexible beast. It evolves every day. If different people will start using words in their own strange ways, we will get a tower of",
       "words": [
         {
           "word": "An",
@@ -3704,29 +3704,13 @@
           "startTime": 185.43,
           "endTime": 185.67,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 185.67,
-      "endTime": 187.17,
-      "text": "theory",
-      "words": [
+        },
         {
           "word": "theory",
           "startTime": 185.67,
           "endTime": 187.17,
           "confidence": 0.9966
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 194.47,
-      "endTime": 211.08,
-      "text": "So I want to start at terminology and uh I'm a Nazi on language. Okay? So no Plebeian evolution of language. The language is a flexible beast. It evolves every day. If different people will start using words in their own strange ways, we will get a tower of",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 194.47,
@@ -9414,8 +9398,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 512.34,
-      "endTime": 548.9,
-      "text": "So Ajay, I mean the key thing that gives me disquiet about it is The fact that it's a government monopoly. And in my experience and both of us have grown up in an India pre liberalization where whenever the state had a monopoly on something, it was dysfunctional, it didn't work out, and the reasons for that are clear. Incentives uh were bad, the government is this behemoth that works in these strange, slow, dysfunctional ways, et cetera, et cetera. We know all of that. Uh but on the other hand some would say that hey, it seems to work so well. But we'll get to that question later. But what are the problems with this being a government monopoly? Um",
+      "endTime": 546.19,
+      "text": "So Ajay, I mean the key thing that gives me disquiet about it is The fact that it's a government monopoly. And in my experience and both of us have grown up in an India pre liberalization where whenever the state had a monopoly on something, it was dysfunctional, it didn't work out, and the reasons for that are clear. Incentives uh were bad, the government is this behemoth that works in these strange, slow, dysfunctional ways, et cetera, et cetera. We know all of that. Uh but on the other hand some would say that hey, it seems to work so well. But we'll get to that question later. But what are the problems with this being a government monopoly?",
       "words": [
         {
           "word": "So",
@@ -10142,21 +10126,21 @@
           "startTime": 545.69,
           "endTime": 546.19,
           "confidence": 0.9508
-        },
-        {
-          "word": "Um",
-          "startTime": 547.4,
-          "endTime": 548.9,
-          "confidence": 0.8439
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 548.92,
-      "endTime": 851.94,
-      "text": "govern a government monopoly tends to work top down and it goes with coercive power. And then a series of difficulties will arise. So the first complexity, the difficulty of UPI, is that while UPI has a nice engineering design, it's designed by engineers. Okay. So at heart I want to uh bring in another phrase Uh gentle readers, this is from Seeing Like a State by James C. Scott, but the phrase runs much before that. The phrase is high modernism. Okay, high modernism is the idea that some powerful scientists, engineers, bureaucrats, politicians will design the society and send the design down from high. And either because we are helpless lemmings and we are willing to accept the authority of people above us, or The things, the documents that come down from on high are backed by coercive power. Then that is the way the society shall be designed. And then everybody will fall in line, there will be great harmony, we will all sing in unison, and everything will be happy. That's the high modernist idea. The problem with the high modernist idea is it does not adequately grapple with the messiness of the real world. The real world is complicated. In the real world, what you need is a very complicated dance of People, information, asymmetric information, fraud, crime, consumers, serving consumers, and solving problems in the gritty reality. A designed system tends to work poorly on that. In a design system, you will not have richness, you will not have sophistication. Because that is the nature of the high modernists, the people who design from above like to have things that appear clean in a whiteboard. But the reality is messy and how do you confront that? So as an example, UPI does not contain a business model. It just sounds hilarious. It sounds so wildly strange that all the participants in the system are supposed to do this out of the good of their hearts. And uh they haven't thought about who makes money and why should people build infrastructure to support it? Why should people build equipment and people and teams to support it and to solve problems of consumers and to keep on evolving their offerings. That was just left out as a minor detail. Oh, we are engineers. It's so great. I've written some new software. It's that science project feeling that I built something as a science project. But reality is a minor problem. We'll fix that later. UPI does not have a business model. Every participant in the system is doing this as nation building. And then the investments in it will always be inadequate. Because finally private firms are going to be hard nosed. They're going to say, Where's the revenue for me? Meaning it's one thing I'll do a demo. some powerful person will come and cut a ribbon, I'll get to rub shoulders with powerful people, or the government wants us to do it. So I'll show the government that I did one million transactions of UPI. But actually my heart is not in it. The only way the heart of a private person can be in it is when there is revenues in it, when there's profit in it. And that minor detail of a revenue stream was never anticipated. And as a consequence, we see many, many things going wrong. For example, we see transaction fails. Okay, so I have regularly had transaction failure. I'm trying to do a UPI transaction. Once I was stopped by a cop in Delhi for going through a red light and six times a UPI transaction to pay the fine failed. Okay, and I was just like sitting and grumbling my heart off that this is the state of modern India. The cop is saying I will not accept the fine in cash. I will only accept it in electronics, and the dam electronics doesn't work. I have perfect internet connectivity, and six consecutive times the UPR transaction failed, it only got through on the seventh. Okay, and this is the kind of things that happen. Then the next layer we go to is even greater complexity around consumers, consumer protection, uh help helping consumers, and fraud. Okay, so every now and then a transaction will go wrong. As it will, it's human nature. When you do millions of transactions, there will be fails. It's it's just inevitable that there's nothing you can do about it. And because UPI did not grow organically, because UPI was designed top down, the minor detail of figuring out who takes responsibility and how do you resolve consumer complaints was never solved. So consumers basically have no recourse. That if you think you paid somebody and the somebody says, I don't think I got the money. Then you're basically coming to blows with each other, and there's really no way to get a recourse. There is no way to solve a problem. And on that situation has arisen a great wave of UPI fraud. UPI fraud is happening on a large scale. There is one extremely clever person I know named Ayush Patnaik, who has been defrauded of 15,000 rupees. Okay? Now Ayush is as computer savvy as you can get. And if Ayush got corned out of 15,000 rupees, then imagine what happens to dentists and grandmothers. So UPI fraud is a big problem. And the system is not ready for it. They haven't thought deeply about it. And the answer is it's a science project. It was not thought through at the level of the richness and the complexity of how systems should be",
+      "startTime": 547.4,
+      "endTime": 939.17,
+      "text": "Um govern a government monopoly tends to work top down and it goes with coercive power. And then a series of difficulties will arise. So the first complexity, the difficulty of UPI, is that while UPI has a nice engineering design, it's designed by engineers. Okay. So at heart I want to uh bring in another phrase Uh gentle readers, this is from Seeing Like a State by James C. Scott, but the phrase runs much before that. The phrase is high modernism. Okay, high modernism is the idea that some powerful scientists, engineers, bureaucrats, politicians will design the society and send the design down from high. And either because we are helpless lemmings and we are willing to accept the authority of people above us, or The things, the documents that come down from on high are backed by coercive power. Then that is the way the society shall be designed. And then everybody will fall in line, there will be great harmony, we will all sing in unison, and everything will be happy. That's the high modernist idea. The problem with the high modernist idea is it does not adequately grapple with the messiness of the real world. The real world is complicated. In the real world, what you need is a very complicated dance of People, information, asymmetric information, fraud, crime, consumers, serving consumers, and solving problems in the gritty reality. A designed system tends to work poorly on that. In a design system, you will not have richness, you will not have sophistication. Because that is the nature of the high modernists, the people who design from above like to have things that appear clean in a whiteboard. But the reality is messy and how do you confront that? So as an example, UPI does not contain a business model. It just sounds hilarious. It sounds so wildly strange that all the participants in the system are supposed to do this out of the good of their hearts. And uh they haven't thought about who makes money and why should people build infrastructure to support it? Why should people build equipment and people and teams to support it and to solve problems of consumers and to keep on evolving their offerings. That was just left out as a minor detail. Oh, we are engineers. It's so great. I've written some new software. It's that science project feeling that I built something as a science project. But reality is a minor problem. We'll fix that later. UPI does not have a business model. Every participant in the system is doing this as nation building. And then the investments in it will always be inadequate. Because finally private firms are going to be hard nosed. They're going to say, Where's the revenue for me? Meaning it's one thing I'll do a demo. some powerful person will come and cut a ribbon, I'll get to rub shoulders with powerful people, or the government wants us to do it. So I'll show the government that I did one million transactions of UPI. But actually my heart is not in it. The only way the heart of a private person can be in it is when there is revenues in it, when there's profit in it. And that minor detail of a revenue stream was never anticipated. And as a consequence, we see many, many things going wrong. For example, we see transaction fails. Okay, so I have regularly had transaction failure. I'm trying to do a UPI transaction. Once I was stopped by a cop in Delhi for going through a red light and six times a UPI transaction to pay the fine failed. Okay, and I was just like sitting and grumbling my heart off that this is the state of modern India. The cop is saying I will not accept the fine in cash. I will only accept it in electronics, and the dam electronics doesn't work. I have perfect internet connectivity, and six consecutive times the UPR transaction failed, it only got through on the seventh. Okay, and this is the kind of things that happen. Then the next layer we go to is even greater complexity around consumers, consumer protection, uh help helping consumers, and fraud. Okay, so every now and then a transaction will go wrong. As it will, it's human nature. When you do millions of transactions, there will be fails. It's it's just inevitable that there's nothing you can do about it. And because UPI did not grow organically, because UPI was designed top down, the minor detail of figuring out who takes responsibility and how do you resolve consumer complaints was never solved. So consumers basically have no recourse. That if you think you paid somebody and the somebody says, I don't think I got the money. Then you're basically coming to blows with each other, and there's really no way to get a recourse. There is no way to solve a problem. And on that situation has arisen a great wave of UPI fraud. UPI fraud is happening on a large scale. There is one extremely clever person I know named Ayush Patnaik, who has been defrauded of 15,000 rupees. Okay? Now Ayush is as computer savvy as you can get. And if Ayush got corned out of 15,000 rupees, then imagine what happens to dentists and grandmothers. So UPI fraud is a big problem. And the system is not ready for it. They haven't thought deeply about it. And the answer is it's a science project. It was not thought through at the level of the richness and the complexity of how systems should be evolving. My next problem about UPI is it's a public sector monopoly. And it is in the nature of a public sector monopoly that there will be a lack of energy and hunger and incentive in evolving it. So you may even build a good system on day one. I think of it as analogous to the operations and maintenance problem of public infrastructure. The public sector can even commission a good highway. But after that, they don't know what to do next with it. They don't have the incentives to keep evolving it. But as we know so well, the march of technology never stands still. There will be new ideas, there will be innovations, the world will change. The world will change in profound ways. And it will inevitably be the case that a government run monopoly. Be stuck. It just doesn't have incentives, it doesn't have the energy, it doesn't have the hunger. There was an one accident in history where some engineers were there and they designed a great thing. But it's not in the inherent nature of government organizations that they will design systems and they will evolve them. And one critical push through which even a government organization can make progress is through competitive pressure. And that is the saddest part of UPI. that it is backed by state coercion. UPI did not win fair and square. UPI won because everybody else was blocked. A array of private players and foreign players were blocked using the coercive power of the state to create the vacuum where UPI could succeed. And that seems like a sad thing to me.",
       "words": [
+        {
+          "word": "Um",
+          "startTime": 547.4,
+          "endTime": 548.9,
+          "confidence": 0.8439
+        },
         {
           "word": "govern",
           "startTime": 548.92,
@@ -15820,29 +15804,13 @@
           "startTime": 851.78,
           "endTime": 851.94,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 851.94,
-      "endTime": 853.44,
-      "text": "evolving.",
-      "words": [
+        },
         {
           "word": "evolving.",
           "startTime": 851.94,
           "endTime": 853.44,
           "confidence": 0.9444
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 853.46,
-      "endTime": 939.17,
-      "text": "My next problem about UPI is it's a public sector monopoly. And it is in the nature of a public sector monopoly that there will be a lack of energy and hunger and incentive in evolving it. So you may even build a good system on day one. I think of it as analogous to the operations and maintenance problem of public infrastructure. The public sector can even commission a good highway. But after that, they don't know what to do next with it. They don't have the incentives to keep evolving it. But as we know so well, the march of technology never stands still. There will be new ideas, there will be innovations, the world will change. The world will change in profound ways. And it will inevitably be the case that a government run monopoly. Be stuck. It just doesn't have incentives, it doesn't have the energy, it doesn't have the hunger. There was an one accident in history where some engineers were there and they designed a great thing. But it's not in the inherent nature of government organizations that they will design systems and they will evolve them. And one critical push through which even a government organization can make progress is through competitive pressure. And that is the saddest part of UPI. that it is backed by state coercion. UPI did not win fair and square. UPI won because everybody else was blocked. A array of private players and foreign players were blocked using the coercive power of the state to create the vacuum where UPI could succeed. And that seems like a sad thing to me.",
-      "words": [
+        },
         {
           "word": "My",
           "startTime": 853.46,
@@ -17486,8 +17454,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 939.86,
-      "endTime": 1039.32,
-      "text": "You know, uh we were speaking earlier about terms that don't really fit. And high modernism is one such term. Like if you just hear the term without really knowing what it means. It sounds great, it's modernism, it's high, but this is really coercive power from top down. It's a top down view of the world. And we've discussed in many episodes in the past about uh, you know, how everything good in a complex uh s uh system uh emerges from the bottom uh by spontaneous order. You know the the the fundamental problem here at the heart of all of this is the fact that it's a monopoly by the state, but even if it was a monopoly not by the state, same thing. The word monopoly is the key. problem here because yeah, okay they don't have a business model and therefore the incentives are wrong. I wouldn't care about all of that if it wasn't a monopoly. Because then you would have other payment systems competing and uh other and and also then it would not be an issue of oh their incentives aren't great, they're not adapting. Because competition would force them to adapt or they would go bust. That would be the nature of the beast. Correct. Let's move on now. And I want to understand from you then that what are other ways to look at it? That uh you know, give me other examples like TCP IP versus X twenty-five is a great example where an open source community uh attempt to build a standard for the internet beat out a state led uh uh you know attempt. And this is almost ubiquitous, that wherever the state tries to do something from the top down, it's i incredibly messy. But when society does it, like I don't you know, people will say, Oh, private players, greedy capitalists, but I would rather use the word society. And when society does something, there's so much innovation, there's so much flourishing, that there are such great incentives because you're competing with others. Let things work out. So",
+      "endTime": 1039.0,
+      "text": "You know, uh we were speaking earlier about terms that don't really fit. And high modernism is one such term. Like if you just hear the term without really knowing what it means. It sounds great, it's modernism, it's high, but this is really coercive power from top down. It's a top down view of the world. And we've discussed in many episodes in the past about uh, you know, how everything good in a complex uh s uh system uh emerges from the bottom uh by spontaneous order. You know the the the fundamental problem here at the heart of all of this is the fact that it's a monopoly by the state, but even if it was a monopoly not by the state, same thing. The word monopoly is the key. problem here because yeah, okay they don't have a business model and therefore the incentives are wrong. I wouldn't care about all of that if it wasn't a monopoly. Because then you would have other payment systems competing and uh other and and also then it would not be an issue of oh their incentives aren't great, they're not adapting. Because competition would force them to adapt or they would go bust. That would be the nature of the beast. Correct. Let's move on now. And I want to understand from you then that what are other ways to look at it? That uh you know, give me other examples like TCP IP versus X twenty-five is a great example where an open source community uh attempt to build a standard for the internet beat out a state led uh uh you know attempt. And this is almost ubiquitous, that wherever the state tries to do something from the top down, it's i incredibly messy. But when society does it, like I don't you know, people will say, Oh, private players, greedy capitalists, but I would rather use the word society. And when society does something, there's so much innovation, there's so much flourishing, that there are such great incentives because you're competing with others. Let things work out.",
       "words": [
         {
           "word": "You",
@@ -19600,21 +19568,21 @@
           "startTime": 1038.28,
           "endTime": 1039.0,
           "confidence": 0.9645
-        },
-        {
-          "word": "So",
-          "startTime": 1039.0,
-          "endTime": 1039.32,
-          "confidence": 0.9528
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1039.32,
+      "startTime": 1039.0,
       "endTime": 1447.5,
-      "text": "the first is the great example that you said. Exactly the India digital public goods story play out many years ago in the field of computer networks. Okay the uh global telecom monopolies got together and designed a computer networking standard that is called X. And this was Agreed to by governments, and in those days, in many many countries, including advanced economies, telecom was a public sector monopoly. So all these uh rich country monopolies got together and designed a standard. And all the private telecom equipment manufacturers fell into line and started making equipment for this. And this was supposed to be the great global new standard for computer networking. It was called XO25, and it was being pushed by all the governments. So it's it's very reminiscent of the top-down push that we see here in India, led by the government trying to push some technology down the throats of the people. In fact, there something very different happened, which is that uh the United States DARPA had contracted out a research project. to a bunch of researchers, including WintSurf, to develop a computer networking standard that would work under battlefield conditions. Where the emphasis was extreme robustness, extreme ability to handle failure and re route dynamically under battlefield conditions. And who could have known that that actually is a very interesting and important metaphor on how to think about the world. That you know we are here in Himachal Pradesh. a line goes down, a line goes up, and it is a glory of T CPIP that it will dynamically shift paths and find a channel through. So actually that was a very insightful way to think about how to do computer networking. And then Bill Joy and others took that existing T CPIP standard and put it inside Unix. And the development of Unix is another great bottom up thing where really the academic computer scientists and the hobbyists all over the world built this thing out. That they built TCP IP, they built Unix, they built BSD, BSD Unix, and later on this turned into Linux. And this is the internet revolution. So the entire internet revolution came by fighting off a government standard. TCP IP competed with the government. TCP IP competed with Microsoft. At the time it was a large and important computer company. And Microsoft was pushing some standard of its own. I seem to remember it was called BOE or something. And then there was Nobel pushing a standard of its own called network. So there were two giant corporations and one government. And the hackers and the hobbyists and the academicians, they won. Because that BSD and Unix had the correct engine on how to do these things. And you've got to think further why. The why was it was just the power of brain power and adaptation, that continuous thinking, rethinking hundreds of minds all over the world. That the open source revolution should really open our eyes. the power of innovation as opposed to top down. So I would really plead with the policymakers and the bureaucrats who think that they are pushing digital public goods down on the country. That I think they have failed to understand how engineering happens. Okay, so I am a card carrying engineer, in addition to being an economist. How many cards do you have, first? I I carry a couple of cards. And my deep insight into engineering and computer science is around the glory of how free software works, how open source has worked. We did an episode on Unix. I have a deep intuition into the magic of many, many minds. thinking, disagreeing, coming up with rival versions, constantly tinkering, coming up with a new attempt. There'll be five fragmented systems competing with each other. That is a good thing. In the world of Linux, there are ten rival file systems squabbling with each other all the time. That is a healthy thing. If there was just one standard, then you've basically got the silence of a graveyard. So I feel I would like to say to the politicians and the bureaucrats who are doing these monopoly systems that I feel they are misunderstanding the glory of a single standard. Single standards are mediocrity. Single standards are the silence of a graveyard. What works is the energy, the dynamism, the differences of opinion, the competition. So in the world of uh technology there is a lot of uh emphasis on the phrase standards wars. Okay, periodically rival technologies fight it out. There's an old war between Petamax and VHS in the world of video I just described the war around computer networks of the CPIP versus X2 25 versus Microsoft NetBOE versus uh Novelle uh systems. I'm forgetting the exact name that was used for the networking protocol inside Novel Network. Similarly, there has been rivalry in uh uh so many computer standards, and it just erupts every few years. There are multiple rival ideas on how you want to think about the world. And there are wars, there are passionate disagreements and competition where different camps are trying to take their idea and see it through. And that's a good thing. That messy process of people arguing, people fighting, multiple competing systems, they don't talk to each other. Okay, so for example, I want to talk about health. Okay, once again, many powerful people in India are in the grip of high modernism, and what they would like to do is they would like to top down shove Standards on the country, government monopolies on the country, a single government repository where all health records in India will be stored, which sounds like a little nightmare to me. Okay? In the United States, there are 13 of 14 rival standards for electronic health records. There are 13 or 14 rival companies, each of which has built their own EHR system. And there are there's innumerable amounts of squabbling between all these people. But in that squabbling, is continuous technical improvement. And then they will negotiate with each other. Some private company will come up which will build a connector between your standard and my standard, and private people will pay for that translation module. And that's how the messy uh bazaar of the uh technology industry works. I am alluding to a beautiful essay by Eric Raymond that we will link to in the show notes, The Cathedral and the Bazaar. And I would love to sell this as a critical reading. For every advocate of the new monopolies in the world of technology, I feel they have not understood the glory of the modern world of technology. The modern world of technology is a world of cleverness, of intelligence, of ceaseless development, of competition, of rivalry, of standards, wars, and of striving. It is not the silence of a graveyard.",
+      "text": "So the first is the great example that you said. Exactly the India digital public goods story play out many years ago in the field of computer networks. Okay the uh global telecom monopolies got together and designed a computer networking standard that is called X. And this was Agreed to by governments, and in those days, in many many countries, including advanced economies, telecom was a public sector monopoly. So all these uh rich country monopolies got together and designed a standard. And all the private telecom equipment manufacturers fell into line and started making equipment for this. And this was supposed to be the great global new standard for computer networking. It was called XO25, and it was being pushed by all the governments. So it's it's very reminiscent of the top-down push that we see here in India, led by the government trying to push some technology down the throats of the people. In fact, there something very different happened, which is that uh the United States DARPA had contracted out a research project. to a bunch of researchers, including WintSurf, to develop a computer networking standard that would work under battlefield conditions. Where the emphasis was extreme robustness, extreme ability to handle failure and re route dynamically under battlefield conditions. And who could have known that that actually is a very interesting and important metaphor on how to think about the world. That you know we are here in Himachal Pradesh. a line goes down, a line goes up, and it is a glory of T CPIP that it will dynamically shift paths and find a channel through. So actually that was a very insightful way to think about how to do computer networking. And then Bill Joy and others took that existing T CPIP standard and put it inside Unix. And the development of Unix is another great bottom up thing where really the academic computer scientists and the hobbyists all over the world built this thing out. That they built TCP IP, they built Unix, they built BSD, BSD Unix, and later on this turned into Linux. And this is the internet revolution. So the entire internet revolution came by fighting off a government standard. TCP IP competed with the government. TCP IP competed with Microsoft. At the time it was a large and important computer company. And Microsoft was pushing some standard of its own. I seem to remember it was called BOE or something. And then there was Nobel pushing a standard of its own called network. So there were two giant corporations and one government. And the hackers and the hobbyists and the academicians, they won. Because that BSD and Unix had the correct engine on how to do these things. And you've got to think further why. The why was it was just the power of brain power and adaptation, that continuous thinking, rethinking hundreds of minds all over the world. That the open source revolution should really open our eyes. the power of innovation as opposed to top down. So I would really plead with the policymakers and the bureaucrats who think that they are pushing digital public goods down on the country. That I think they have failed to understand how engineering happens. Okay, so I am a card carrying engineer, in addition to being an economist. How many cards do you have, first? I I carry a couple of cards. And my deep insight into engineering and computer science is around the glory of how free software works, how open source has worked. We did an episode on Unix. I have a deep intuition into the magic of many, many minds. thinking, disagreeing, coming up with rival versions, constantly tinkering, coming up with a new attempt. There'll be five fragmented systems competing with each other. That is a good thing. In the world of Linux, there are ten rival file systems squabbling with each other all the time. That is a healthy thing. If there was just one standard, then you've basically got the silence of a graveyard. So I feel I would like to say to the politicians and the bureaucrats who are doing these monopoly systems that I feel they are misunderstanding the glory of a single standard. Single standards are mediocrity. Single standards are the silence of a graveyard. What works is the energy, the dynamism, the differences of opinion, the competition. So in the world of uh technology there is a lot of uh emphasis on the phrase standards wars. Okay, periodically rival technologies fight it out. There's an old war between Petamax and VHS in the world of video I just described the war around computer networks of the CPIP versus X2 25 versus Microsoft NetBOE versus uh Novelle uh systems. I'm forgetting the exact name that was used for the networking protocol inside Novel Network. Similarly, there has been rivalry in uh uh so many computer standards, and it just erupts every few years. There are multiple rival ideas on how you want to think about the world. And there are wars, there are passionate disagreements and competition where different camps are trying to take their idea and see it through. And that's a good thing. That messy process of people arguing, people fighting, multiple competing systems, they don't talk to each other. Okay, so for example, I want to talk about health. Okay, once again, many powerful people in India are in the grip of high modernism, and what they would like to do is they would like to top down shove Standards on the country, government monopolies on the country, a single government repository where all health records in India will be stored, which sounds like a little nightmare to me. Okay? In the United States, there are 13 of 14 rival standards for electronic health records. There are 13 or 14 rival companies, each of which has built their own EHR system. And there are there's innumerable amounts of squabbling between all these people. But in that squabbling, is continuous technical improvement. And then they will negotiate with each other. Some private company will come up which will build a connector between your standard and my standard, and private people will pay for that translation module. And that's how the messy uh bazaar of the uh technology industry works. I am alluding to a beautiful essay by Eric Raymond that we will link to in the show notes, The Cathedral and the Bazaar. And I would love to sell this as a critical reading. For every advocate of the new monopolies in the world of technology, I feel they have not understood the glory of the modern world of technology. The modern world of technology is a world of cleverness, of intelligence, of ceaseless development, of competition, of rivalry, of standards, wars, and of striving. It is not the silence of a graveyard.",
       "words": [
+        {
+          "word": "So",
+          "startTime": 1039.0,
+          "endTime": 1039.32,
+          "confidence": 0.9528
+        },
         {
           "word": "the",
           "startTime": 1039.32,
@@ -29910,8 +29878,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1643.14,
-      "endTime": 1979.32,
-      "text": "So uh state legibility projects have not necessarily work well for the people. Okay, so just because the state knows more, it doesn't mean they will use this information well through history again and again and again. When the state has amassed information about the people, it has abused this power repeatedly. So what you need is a very complex set of check and balance where every time the information in the hands of the state goes up, you need to commensurately increase the checks and balances. So, as an example, in the early days of the discussions around UID AI, I think all of us. took a very simple sentence that, yeah, we'll do UID AI, and side by side with that we'll do a great privacy law which will block off all the state abuse of that information. Well, here we are standing in 2024. The first Aadhaar number was issued in 2009, and there is no sign of a law on privacy in India. Uh unlike the advanced economies, we did not inherit A common law tradition of privacy. So in a lot of other countries, the sheer common law on privacy carried them through into the computer evolution with great success. That jurisprudence evolved where timeless principles were carried through. That a policem cannot open an envelope and read my letter, therefore a policeman cannot read my email. Okay, those kinds of things went through. But in India, neither did we have a common law tradition around liberty, nor did we create a new modern law cutting off the state from all this electronic information. And the most dangerous, of course, are government systems are government databases where the government is amassing information. So, you know, the in the world of payments, in the world of health, you've got all this information being amassed by the government, and the UID AI number reduces the friction. For assembling these databases. Many people will say to me that, you know, they would have been able to assemble these databases from diverse sources, even if there was no other number. Here I will appeal to low Indian state capability. While it could be done in principle, in practice, to get an Indian state organization to assemble databases is quite hard. So under Indian levels of state non-capability, this is a decisive step. That you make it easy and convenient to link databases. For the first time, the database linkage will now actually happen in India. So I feel that we in India have thundered into improvements in state legibility through the computer revolution. We have happily given power to the state by supporting our legislators who have increasingly pushed us into the panopticon, I think of restrictions on the use of cash. Whenever there is a law that says you are not allowed to use cash, I just think of it as a fundamental failure of private property. It's my money, it's my cash. It's like how dare you tell me how cash can be used and cannot be used. But we have accepted that. We have accepted effectively a mass surveillance system in finance. That anything you do in finance, the government has a right to see everything, all know your customer is done, there is no privacy, there is no anonymity. So overall, we just handed over all this information to the Indian state. with no commensurate gains in the check and balance. And I think this is quite concerning for the Indian society. And I want to go one step further and appeal to the concepts from uh Asemoglu and Robinson around the narrow corridor in the twenty twenty book. They're coming at similar concepts. What they're saying is that freedom and prosperity, as it has been found in the great advanced economies of the world, the OECD countries of the world, Is a very rare balance between state power, state information, state capability, and the check-and-balance of a society that is roaring back and telling the state, buzz off, keep your hands off me. And then you get the check and balance, which creates conditions of liberty and prosperity. And their argument is that we have been too casual. In assuming that that's the natural state of affairs. It's not the natural state of affairs. It takes a tremendous emphasis on freedom, on civil liberty. It takes a tradition of the people pushing back against the state in order to achieve those conditions. And all too often we have seen countries where this topples over in the side of state power. And we've seen that, say, with China or with Russia, where the state is all powerful. And It is almost impossible to envision the emergence of the UK of the Renaissance and the Enlightenment coming about in China today. Because today the Chinese state is on top and it is using modern technology and it is so thoroughly on top that the people will never be able to throw away that state power. So Asamoglu and Robinson argue that there's a narrow corridor, and it's not certain that you will be able to navigate that. And this actually comes to the core. of the debate of development economics, and we should do a full episode on that, that I think we've all been too optimistic. We think development is in the bag, we think development is in the computers. But actually this stuff is very dangerous. And so in the book Kelkar and I argue that could it be that all this information, this world new world of state legibility, has it tipped the balance of power in favor of the Indian state and created a fundamental new set of challenges for the emergence of a republic. So you know,",
+      "endTime": 1977.58,
+      "text": "So uh state legibility projects have not necessarily work well for the people. Okay, so just because the state knows more, it doesn't mean they will use this information well through history again and again and again. When the state has amassed information about the people, it has abused this power repeatedly. So what you need is a very complex set of check and balance where every time the information in the hands of the state goes up, you need to commensurately increase the checks and balances. So, as an example, in the early days of the discussions around UID AI, I think all of us. took a very simple sentence that, yeah, we'll do UID AI, and side by side with that we'll do a great privacy law which will block off all the state abuse of that information. Well, here we are standing in 2024. The first Aadhaar number was issued in 2009, and there is no sign of a law on privacy in India. Uh unlike the advanced economies, we did not inherit A common law tradition of privacy. So in a lot of other countries, the sheer common law on privacy carried them through into the computer evolution with great success. That jurisprudence evolved where timeless principles were carried through. That a policem cannot open an envelope and read my letter, therefore a policeman cannot read my email. Okay, those kinds of things went through. But in India, neither did we have a common law tradition around liberty, nor did we create a new modern law cutting off the state from all this electronic information. And the most dangerous, of course, are government systems are government databases where the government is amassing information. So, you know, the in the world of payments, in the world of health, you've got all this information being amassed by the government, and the UID AI number reduces the friction. For assembling these databases. Many people will say to me that, you know, they would have been able to assemble these databases from diverse sources, even if there was no other number. Here I will appeal to low Indian state capability. While it could be done in principle, in practice, to get an Indian state organization to assemble databases is quite hard. So under Indian levels of state non-capability, this is a decisive step. That you make it easy and convenient to link databases. For the first time, the database linkage will now actually happen in India. So I feel that we in India have thundered into improvements in state legibility through the computer revolution. We have happily given power to the state by supporting our legislators who have increasingly pushed us into the panopticon, I think of restrictions on the use of cash. Whenever there is a law that says you are not allowed to use cash, I just think of it as a fundamental failure of private property. It's my money, it's my cash. It's like how dare you tell me how cash can be used and cannot be used. But we have accepted that. We have accepted effectively a mass surveillance system in finance. That anything you do in finance, the government has a right to see everything, all know your customer is done, there is no privacy, there is no anonymity. So overall, we just handed over all this information to the Indian state. with no commensurate gains in the check and balance. And I think this is quite concerning for the Indian society. And I want to go one step further and appeal to the concepts from uh Asemoglu and Robinson around the narrow corridor in the twenty twenty book. They're coming at similar concepts. What they're saying is that freedom and prosperity, as it has been found in the great advanced economies of the world, the OECD countries of the world, Is a very rare balance between state power, state information, state capability, and the check-and-balance of a society that is roaring back and telling the state, buzz off, keep your hands off me. And then you get the check and balance, which creates conditions of liberty and prosperity. And their argument is that we have been too casual. In assuming that that's the natural state of affairs. It's not the natural state of affairs. It takes a tremendous emphasis on freedom, on civil liberty. It takes a tradition of the people pushing back against the state in order to achieve those conditions. And all too often we have seen countries where this topples over in the side of state power. And we've seen that, say, with China or with Russia, where the state is all powerful. And It is almost impossible to envision the emergence of the UK of the Renaissance and the Enlightenment coming about in China today. Because today the Chinese state is on top and it is using modern technology and it is so thoroughly on top that the people will never be able to throw away that state power. So Asamoglu and Robinson argue that there's a narrow corridor, and it's not certain that you will be able to navigate that. And this actually comes to the core. of the debate of development economics, and we should do a full episode on that, that I think we've all been too optimistic. We think development is in the bag, we think development is in the computers. But actually this stuff is very dangerous. And so in the book Kelkar and I argue that could it be that all this information, this world new world of state legibility, has it tipped the balance of power in favor of the Indian state and created a fundamental new set of challenges for the emergence of a republic.",
       "words": [
         {
           "word": "So",
@@ -35690,7 +35658,15 @@
           "startTime": 1977.08,
           "endTime": 1977.58,
           "confidence": 0.9564
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1978.76,
+      "endTime": 2083.16,
+      "text": "So you know, I used to earlier take a lot of consolation from the fact that even though the state in India has enormous power over us, it does not actually have the state capacity to do much with that power. And uh uh and what you're saying in that sense is very scary because what these systems then do is that they make irrelevant one aspect of state capacity, the aspect of you know gathering all the uh information and the private data together. If it's all there in one place, then that's uh you know it becomes much easier for them. In my episode with Rahul, he did ex Rahul Martin, he did exactly make d that precise argument that you're uh countering right now that if the state wants to get all all of this data, it's much easier for them to go through uh to get it through technologies that have existed before uh you know UPI or before Aadhaar came along. For example, I remember when there was a case on Teastra Settleworth, they actually, you know, looked at her credit card bills and figured out that she'd bought alcohol at one point and for some some reason they you know, that became something to attack her with, that she bought alcohol and there was a press conference about it and absolutely wild behavior by the state. And your argument is that look, the complete profile of what a person does with their life and with their money is now available to the state immediately. Rahul's point is that privacy is encoded in Aadhaar and it becomes impossible to do this. For example, he says that when you give your like if you go to a bank and you give your Aadhaar number as proof of identity, the only uh sort of communication that happens is the bank verifying from the central database is this person who this person says he is. And otherwise there is nothing that goes to a central database anywhere that is stored. Through Aadhaar, the government can't figure out what your bank number is or what your telephone number is. They have that data through other means.",
+      "words": [
         {
           "word": "So",
           "startTime": 1978.76,
@@ -35708,15 +35684,7 @@
           "startTime": 1979.16,
           "endTime": 1979.32,
           "confidence": 0.7667
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1979.32,
-      "endTime": 2083.16,
-      "text": "I used to earlier take a lot of consolation from the fact that even though the state in India has enormous power over us, it does not actually have the state capacity to do much with that power. And uh uh and what you're saying in that sense is very scary because what these systems then do is that they make irrelevant one aspect of state capacity, the aspect of you know gathering all the uh information and the private data together. If it's all there in one place, then that's uh you know it becomes much easier for them. In my episode with Rahul, he did ex Rahul Martin, he did exactly make d that precise argument that you're uh countering right now that if the state wants to get all all of this data, it's much easier for them to go through uh to get it through technologies that have existed before uh you know UPI or before Aadhaar came along. For example, I remember when there was a case on Teastra Settleworth, they actually, you know, looked at her credit card bills and figured out that she'd bought alcohol at one point and for some some reason they you know, that became something to attack her with, that she bought alcohol and there was a press conference about it and absolutely wild behavior by the state. And your argument is that look, the complete profile of what a person does with their life and with their money is now available to the state immediately. Rahul's point is that privacy is encoded in Aadhaar and it becomes impossible to do this. For example, he says that when you give your like if you go to a bank and you give your Aadhaar number as proof of identity, the only uh sort of communication that happens is the bank verifying from the central database is this person who this person says he is. And otherwise there is nothing that goes to a central database anywhere that is stored. Through Aadhaar, the government can't figure out what your bank number is or what your telephone number is. They have that data through other means.",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1979.32,
@@ -38066,8 +38034,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2089.74,
-      "endTime": 2104.2,
-      "text": "know. Earlier you were different, different numbers. You had a chaos of multiple databases in the country and at Indian levels of state capability that was quite a barrier. It has become easier at Indian levels of state capability for government organizations to merely. Yeah,",
+      "endTime": 2104.04,
+      "text": "know. Earlier you were different, different numbers. You had a chaos of multiple databases in the country and at Indian levels of state capability that was quite a barrier. It has become easier at Indian levels of state capability for government organizations to merely.",
       "words": [
         {
           "word": "know.",
@@ -38332,21 +38300,21 @@
           "startTime": 2103.32,
           "endTime": 2104.04,
           "confidence": 0.3958
-        },
-        {
-          "word": "Yeah,",
-          "startTime": 2104.04,
-          "endTime": 2104.2,
-          "confidence": 0.7456
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2104.2,
+      "startTime": 2104.04,
       "endTime": 2117.8,
-      "text": "but his point is that if the government has if I understood him correctly, is that if the government has your Radha number, it doesn't necessarily know your bank number. Your bank it w asked you for your Radha to verify who you are. It's an identificate but they don't store the number.",
+      "text": "Yeah, but his point is that if the government has if I understood him correctly, is that if the government has your Radha number, it doesn't necessarily know your bank number. Your bank it w asked you for your Radha to verify who you are. It's an identificate but they don't store the number.",
       "words": [
+        {
+          "word": "Yeah,",
+          "startTime": 2104.04,
+          "endTime": 2104.2,
+          "confidence": 0.7456
+        },
         {
           "word": "but",
           "startTime": 2104.2,
@@ -48494,8 +48462,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2637.42,
-      "endTime": 2733.32,
-      "text": "question? So uh one is that uh yes Google knows a lot about me, but Google does not have coercive power on me. Second, I can spread my life across 20 big tech firms. I control and choose what information goes where, and none of them have subpoena powers on each other. So they can't assemble my information from multiple sources. So the damage that can come to me through uh Google is case one, there's a security breach, and information goes out from Google about me without my authorization. And uh Case two, Google will use that information to do micro targeting of advertisements at me. So yes, I will get manipulated by the advertisers and I consider that small damage. And on the issue about computer security and safety, in advanced economies, there are uh good frameworks where consumer protection generates liabilities for these companies that when they fail on data protection. they end up paying hundreds of millions of dollars to consumers, which gives them incentive. It gives them good incentives to build good systems. Whereas in the Indian state environment, actually today there is a bit of a mess where large data sets are being built, and uh Indian state organizations work very poorly on protecting the data and they have no incentive to get it right. They're not accountable to the people and actually significant data breaches are happening and large data sets with fairly private information about individuals is being leaked because the Indian state has low capability and does not know how to protect",
+      "endTime": 2734.98,
+      "text": "question? So uh one is that uh yes Google knows a lot about me, but Google does not have coercive power on me. Second, I can spread my life across 20 big tech firms. I control and choose what information goes where, and none of them have subpoena powers on each other. So they can't assemble my information from multiple sources. So the damage that can come to me through uh Google is case one, there's a security breach, and information goes out from Google about me without my authorization. And uh Case two, Google will use that information to do micro targeting of advertisements at me. So yes, I will get manipulated by the advertisers and I consider that small damage. And on the issue about computer security and safety, in advanced economies, there are uh good frameworks where consumer protection generates liabilities for these companies that when they fail on data protection. they end up paying hundreds of millions of dollars to consumers, which gives them incentive. It gives them good incentives to build good systems. Whereas in the Indian state environment, actually today there is a bit of a mess where large data sets are being built, and uh Indian state organizations work very poorly on protecting the data and they have no incentive to get it right. They're not accountable to the people and actually significant data breaches are happening and large data sets with fairly private information about individuals is being leaked because the Indian state has low capability and does not know how to protect that information.",
       "words": [
         {
           "word": "question?",
@@ -50062,15 +50030,7 @@
           "startTime": 2732.92,
           "endTime": 2733.32,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2733.32,
-      "endTime": 2802.25,
-      "text": "that information. One part is a building of the system itself, the building of UPI, the building of Aadhaar, the design and the technology that goes into it. And another part is a government policy that says this is going to be a monopoly, we're going to use coercion. Right. Now many of your close friends and people we both admire have been behind the design and the technology of all of this in a sense of implementing that high modernism. And their argument might well be, and I'm sure you've had these conversations with them, but I'm not privy to them and this is a curiosity I myself have, their argument might well be that look, I can't control that aspect of it. If the state chooses to have a monopoly, I can't control that. If the state uh uh you know, chooses to use coercive power for these to be implemented, I can't control that. But I can build the best ficking system I can and I can do whatever that I can do at my end, which is kind of the argument Ma Rahul would make, for example, to make sure that the things that we value like privacy and so on are protected. So we can do our best and that is about all we can do. So so what is sort of what are the conversations you've had, what is your sense of",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 2733.32,
@@ -50082,7 +50042,15 @@
           "startTime": 2733.48,
           "endTime": 2734.98,
           "confidence": 0.8502
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2741.8,
+      "endTime": 2802.25,
+      "text": "One part is a building of the system itself, the building of UPI, the building of Aadhaar, the design and the technology that goes into it. And another part is a government policy that says this is going to be a monopoly, we're going to use coercion. Right. Now many of your close friends and people we both admire have been behind the design and the technology of all of this in a sense of implementing that high modernism. And their argument might well be, and I'm sure you've had these conversations with them, but I'm not privy to them and this is a curiosity I myself have, their argument might well be that look, I can't control that aspect of it. If the state chooses to have a monopoly, I can't control that. If the state uh uh you know, chooses to use coercive power for these to be implemented, I can't control that. But I can build the best ficking system I can and I can do whatever that I can do at my end, which is kind of the argument Ma Rahul would make, for example, to make sure that the things that we value like privacy and so on are protected. So we can do our best and that is about all we can do. So so what is sort of what are the conversations you've had, what is your sense of",
+      "words": [
         {
           "word": "One",
           "startTime": 2741.8,
@@ -58900,8 +58868,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3213.66,
-      "endTime": 3251.08,
-      "text": "And I was saying to her that what failed us is the philosophers. What failed us is the political philosophy. But the larger knowledge of politics, economics, philosophy, law, ethics, liberty in India is what was wrong. So that these kind of silver bullets became exciting. While I am on this subject, I want to make one last point before we end, which is this funny idea that has somehow sprung up that uh improvements in digital technology and payments and identity somehow is a transformative moment for Indian economic development.",
+      "endTime": 3271.43,
+      "text": "And I was saying to her that what failed us is the philosophers. What failed us is the political philosophy. But the larger knowledge of politics, economics, philosophy, law, ethics, liberty in India is what was wrong. So that these kind of silver bullets became exciting. While I am on this subject, I want to make one last point before we end, which is this funny idea that has somehow sprung up that uh improvements in digital technology and payments and identity somehow is a transformative moment for Indian economic development. is really bad economics. Okay, that there is like nothing about the Indian development crisis which really will be materially moved by these technologies. And the way in which this idea has gained currency again to me is a reflection of the failures of economic thinking in India.",
       "words": [
         {
           "word": "And",
@@ -59448,15 +59416,7 @@
           "startTime": 3250.58,
           "endTime": 3251.08,
           "confidence": 0.9875
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3252.06,
-      "endTime": 3253.82,
-      "text": "is really bad economics.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 3252.06,
@@ -59480,15 +59440,7 @@
           "startTime": 3252.86,
           "endTime": 3253.82,
           "confidence": 0.9097
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3253.82,
-      "endTime": 3271.43,
-      "text": "Okay, that there is like nothing about the Indian development crisis which really will be materially moved by these technologies. And the way in which this idea has gained currency again to me is a reflection of the failures of economic thinking in India.",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 3253.82,

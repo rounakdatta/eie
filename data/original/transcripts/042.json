@@ -5,7 +5,7 @@
     "durationSeconds": 4091,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -4869,8 +4869,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 270.06,
-      "endTime": 274.86,
-      "text": "It's only words and words are all we have. Tell us what is",
+      "endTime": 272.96,
+      "text": "It's only words and words are all we have.",
       "words": [
         {
           "word": "It's",
@@ -4925,7 +4925,15 @@
           "startTime": 272.46,
           "endTime": 272.96,
           "confidence": 0.8147
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 273.98,
+      "endTime": 332.55,
+      "text": "Tell us what is populism. I never thought you're gonna quote the BGs at me, but well done. Uh what is populism is a good question because it's actually the title of a wonderful book by Jean Werner Müller, where uh uh you know, in terms of understanding the theory, it's an important book. I wrote a column on it a long time back. We'll link it from the show notes. Uh, but he points out that there are seven things that populace have in common. So let's go through them one by one. Number one, defining the people. Populists claim that everyone who supports them, they are the people. And ev n no one else matters, you know. Um Muller, in fact, right, the core claim of populism is that only some of the people are the people. In May 2016, Donald Trump, who's a classic populist, once said that what matters is a unification of the people and the other people don't matter. Right? So you're just kind of defining the people as the people who support you. In a similar way, you could argue that hey, if you are for me, You are, you know, a patriot, otherwise you're anti national. So that that can also happen.",
+      "words": [
         {
           "word": "Tell",
           "startTime": 273.98,
@@ -4949,15 +4957,7 @@
           "startTime": 274.54,
           "endTime": 274.86,
           "confidence": 0.8481
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 274.86,
-      "endTime": 332.55,
-      "text": "populism. I never thought you're gonna quote the BGs at me, but well done. Uh what is populism is a good question because it's actually the title of a wonderful book by Jean Werner Müller, where uh uh you know, in terms of understanding the theory, it's an important book. I wrote a column on it a long time back. We'll link it from the show notes. Uh, but he points out that there are seven things that populace have in common. So let's go through them one by one. Number one, defining the people. Populists claim that everyone who supports them, they are the people. And ev n no one else matters, you know. Um Muller, in fact, right, the core claim of populism is that only some of the people are the people. In May 2016, Donald Trump, who's a classic populist, once said that what matters is a unification of the people and the other people don't matter. Right? So you're just kind of defining the people as the people who support you. In a similar way, you could argue that hey, if you are for me, You are, you know, a patriot, otherwise you're anti national. So that that can also happen.",
-      "words": [
+        },
         {
           "word": "populism.",
           "startTime": 274.86,
@@ -6199,8 +6199,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 332.55,
-      "endTime": 340.55,
-      "text": "Yeah. Uh similarly I think Donald Trump refers to the press as the enemies of the people. In other words, the people who",
+      "endTime": 341.11,
+      "text": "Yeah. Uh similarly I think Donald Trump refers to the press as the enemies of the people. In other words, the people who criticize",
       "words": [
         {
           "word": "Yeah.",
@@ -6339,21 +6339,21 @@
           "startTime": 340.39,
           "endTime": 340.55,
           "confidence": 0.9978
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 340.55,
-      "endTime": 371.42,
-      "text": "criticize me. Yeah, and it's important to watch out for that kind of rhetoric. The second point is the anti elite rhetoric, right? So populism is not just against pluralism, as we just discussed. It is against the elite. A common part of the rhetoric is that, hey, listen, you know, we speak for you, the people, the common person, these elite sitting in, you know, uh these big buildings in Washington, if you're talking about the US or wherever, these elite's are destroying our country, they are robbing you. We know what's right for you, you know? And uh uh w we'll help you along the way.",
-      "words": [
+        },
         {
           "word": "criticize",
           "startTime": 340.55,
           "endTime": 341.11,
           "confidence": 0.9771
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 341.11,
+      "endTime": 371.42,
+      "text": "me. Yeah, and it's important to watch out for that kind of rhetoric. The second point is the anti elite rhetoric, right? So populism is not just against pluralism, as we just discussed. It is against the elite. A common part of the rhetoric is that, hey, listen, you know, we speak for you, the people, the common person, these elite sitting in, you know, uh these big buildings in Washington, if you're talking about the US or wherever, these elite's are destroying our country, they are robbing you. We know what's right for you, you know? And uh uh w we'll help you along the way.",
+      "words": [
         {
           "word": "me.",
           "startTime": 341.11,
@@ -13381,8 +13381,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 721.21,
-      "endTime": 825.86,
-      "text": "You know, I can completely understand why someone says a hamburger is tasty. Yes, some hamburgers are tasty. But if you tell me a hamburger is good for you, you know, there's a serious kind of problem with that. The sixth point Muller brings up, and I think it's a really important point, is that Populists will aim for simplistic narratives. And I had even written a column about this. In fact, before I read Muller's book, I think it was in context of Trump in 2016 again, where my theory for why Trump was getting the kind of following he did is that he did not bring complicated narratives about what is wrong with the world and all. He kept it simple so people could understand. And simple in his case was simplistic and wrong. For example, he appealed to unemployed people in Middle America by saying, Hey, you're losing jobs, where are your jobs going? Number one, your jobs are being shipped overseas. You know, anti-free trade argument. Number two, you know, uh, illegal immigrants are coming and they're taking your jobs. So anti-immigration argument. Now, both of these are extremely simplistic and not quite true, but they are they you know they appeal to the common person. Suddenly you can, you know, uh tell yourself a story that appears to explain the world. And that also, again, going back to what Karl Schmidt says, gives you an other to rail against. Whereas if you sell like a deeply complicated narrative that why is there this unemployment problem in the Midwest, and you talk about how it's multifactorial and you talk about all those different aspects playing out, it's just difficult to understand. You can't reach out to people like that. And you know, people with integrity will care about the truth, and the truth is nuanced. So they will not avoid the nuance as far as possible. Whereas, you know, uh populists don't care about integrity, you know, they care about just uh sort of appealing to uh pee you know, people's emotions and just getting them riled up in simplistic narratives are a key part of that.",
+      "endTime": 825.3,
+      "text": "You know, I can completely understand why someone says a hamburger is tasty. Yes, some hamburgers are tasty. But if you tell me a hamburger is good for you, you know, there's a serious kind of problem with that. The sixth point Muller brings up, and I think it's a really important point, is that Populists will aim for simplistic narratives. And I had even written a column about this. In fact, before I read Muller's book, I think it was in context of Trump in 2016 again, where my theory for why Trump was getting the kind of following he did is that he did not bring complicated narratives about what is wrong with the world and all. He kept it simple so people could understand. And simple in his case was simplistic and wrong. For example, he appealed to unemployed people in Middle America by saying, Hey, you're losing jobs, where are your jobs going? Number one, your jobs are being shipped overseas. You know, anti-free trade argument. Number two, you know, uh, illegal immigrants are coming and they're taking your jobs. So anti-immigration argument. Now, both of these are extremely simplistic and not quite true, but they are they you know they appeal to the common person. Suddenly you can, you know, uh tell yourself a story that appears to explain the world. And that also, again, going back to what Karl Schmidt says, gives you an other to rail against. Whereas if you sell like a deeply complicated narrative that why is there this unemployment problem in the Midwest, and you talk about how it's multifactorial and you talk about all those different aspects playing out, it's just difficult to understand. You can't reach out to people like that. And you know, people with integrity will care about the truth, and the truth is nuanced. So they will not avoid the nuance as far as possible. Whereas, you know, uh populists don't care about integrity, you know, they care about just uh sort of appealing to uh pee you know, people's emotions and just getting them riled up in simplistic narratives are a key part of",
       "words": [
         {
           "word": "You",
@@ -15543,21 +15543,21 @@
           "startTime": 825.22,
           "endTime": 825.3,
           "confidence": 0.9997
-        },
-        {
-          "word": "that.",
-          "startTime": 825.3,
-          "endTime": 825.86,
-          "confidence": 0.9259
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 825.86,
+      "startTime": 825.3,
       "endTime": 875.03,
-      "text": "Uh and one critical simplistic narrative that appeals to emotion, which requires an economy of thought. Which goes well with the masses who in any case are not prone to deep knowledge and obtaining information is the game of hatred. So it is very easy to make people angry, to pour salt on the fire of their biases and their preconceptions. So I always think that great leaders make us better than who we are. They bring out the best in us. They ask of us that find the good inside you. Whereas the uh populist uh leaders bring out the worst in us. They reduce us to our essential identity and they w blow oxygen on the embers of hatred and resentment that are inside each of us.",
+      "text": "that. Uh and one critical simplistic narrative that appeals to emotion, which requires an economy of thought. Which goes well with the masses who in any case are not prone to deep knowledge and obtaining information is the game of hatred. So it is very easy to make people angry, to pour salt on the fire of their biases and their preconceptions. So I always think that great leaders make us better than who we are. They bring out the best in us. They ask of us that find the good inside you. Whereas the uh populist uh leaders bring out the worst in us. They reduce us to our essential identity and they w blow oxygen on the embers of hatred and resentment that are inside each of us.",
       "words": [
+        {
+          "word": "that.",
+          "startTime": 825.3,
+          "endTime": 825.86,
+          "confidence": 0.9259
+        },
         {
           "word": "Uh",
           "startTime": 825.86,
@@ -16337,8 +16337,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 875.03,
-      "endTime": 931.91,
-      "text": "Beautifully said. And the thing is, look, you know, Lofty emotions like love and solidarity will not make you run out to the pole to vote because it is urgent. Anger does, hatred does, and that's really sad. And but I you know, and and I must at this point, you know, to shift our attention away from politics to literature. You know, I'm a writing teacher, I hate mixed metaphors, and you said pour salt on the fire. No, you do not. You can pour salt on a wound and you can pour oil on a fire. Why would you pour salt on a fire, Ajesha? My mistake. And finally, Muller's final point is conspiracy theories, where he says conspiracy theories are rooted in and emerge from the logic of populism itself. Because think about it, you know, you've got simplistic narratives, the elites are bad, uh, et cetera, et cetera. You you put all of them together and you'll you can have crazy conspiracy theories, ki Yehura, Vuhura, et cetera, et cetera. And this is something you find common to all uh sort of uh populist movements and you know, wherever you",
+      "endTime": 932.71,
+      "text": "Beautifully said. And the thing is, look, you know, Lofty emotions like love and solidarity will not make you run out to the pole to vote because it is urgent. Anger does, hatred does, and that's really sad. And but I you know, and and I must at this point, you know, to shift our attention away from politics to literature. You know, I'm a writing teacher, I hate mixed metaphors, and you said pour salt on the fire. No, you do not. You can pour salt on a wound and you can pour oil on a fire. Why would you pour salt on a fire, Ajesha? My mistake. And finally, Muller's final point is conspiracy theories, where he says conspiracy theories are rooted in and emerge from the logic of populism itself. Because think about it, you know, you've got simplistic narratives, the elites are bad, uh, et cetera, et cetera. You you put all of them together and you'll you can have crazy conspiracy theories, ki Yehura, Vuhura, et cetera, et cetera. And this is something you find common to all uh sort of uh populist movements and you know, wherever you look.",
       "words": [
         {
           "word": "Beautifully",
@@ -17503,21 +17503,21 @@
           "startTime": 931.75,
           "endTime": 931.91,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 931.91,
-      "endTime": 1084.14,
-      "text": "look. Religion is the opiate of the masses. Conspiracy theories are the opiate of the assets. This is a great uh checklist, and I encourage you, gentle reader, to you know grab each of these as a toolkit in the mind. We should be able to argue and reason based on these tools. Um, I want to uh quickly respond, saying I find it so fascinating. This is not about the old classification between left and right ideologies. This is a distinct world of populism versus responsible or whatever, right? The non-populism does not have a clear name as of yet, but we've got to recognize that there is populism of the left and there is populism of the right, and both are equally toxic, and you know we need to not play with the old binaries of leftist and rightist. Similarly, there can be a populism engine. Inside a variety of political systems. So Hitler was a populist, Chairman Mao was a populist, Lenin was a populist, Donald Trump is a populist. Okay? They're operating in very different political systems. So again, the simple binary of an authoritarian totalitarian system versus democracy doesn't get you the correct classification. Populism is an idea in and of itself, and it deserves to be understood as such and called out and measured. Through these kinds of concepts. The last thing I'd like to say is that gentle reader, I have warned everybody that these are not areas of our expertise. You know, we could well be circling the truth and fumbling on it every step along the way. In my reading of this field, I have understood the central engine of populism as being rousing the underclass to hate the elite. This is the French Revolution, this is Karl Marx, this is Hitler, this is Lenin, this is Mao, this is a whole bunch of populist movements all around the world, where of essence is the idea that there is a cultural elite, there is a business elite, there is an intellectual elite, and a political movement seeks to stoke against them and ultimately command the state, the political elite, and put the knife into the other three. Okay, so that, in my understanding, is the populist project. That how to eviscerate the elite capability of a country, and of course that has very bad consequences.",
-      "words": [
+        },
         {
           "word": "look.",
           "startTime": 931.91,
           "endTime": 932.71,
           "confidence": 0.9031
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 932.71,
+      "endTime": 1084.14,
+      "text": "Religion is the opiate of the masses. Conspiracy theories are the opiate of the assets. This is a great uh checklist, and I encourage you, gentle reader, to you know grab each of these as a toolkit in the mind. We should be able to argue and reason based on these tools. Um, I want to uh quickly respond, saying I find it so fascinating. This is not about the old classification between left and right ideologies. This is a distinct world of populism versus responsible or whatever, right? The non-populism does not have a clear name as of yet, but we've got to recognize that there is populism of the left and there is populism of the right, and both are equally toxic, and you know we need to not play with the old binaries of leftist and rightist. Similarly, there can be a populism engine. Inside a variety of political systems. So Hitler was a populist, Chairman Mao was a populist, Lenin was a populist, Donald Trump is a populist. Okay? They're operating in very different political systems. So again, the simple binary of an authoritarian totalitarian system versus democracy doesn't get you the correct classification. Populism is an idea in and of itself, and it deserves to be understood as such and called out and measured. Through these kinds of concepts. The last thing I'd like to say is that gentle reader, I have warned everybody that these are not areas of our expertise. You know, we could well be circling the truth and fumbling on it every step along the way. In my reading of this field, I have understood the central engine of populism as being rousing the underclass to hate the elite. This is the French Revolution, this is Karl Marx, this is Hitler, this is Lenin, this is Mao, this is a whole bunch of populist movements all around the world, where of essence is the idea that there is a cultural elite, there is a business elite, there is an intellectual elite, and a political movement seeks to stoke against them and ultimately command the state, the political elite, and put the knife into the other three. Okay, so that, in my understanding, is the populist project. That how to eviscerate the elite capability of a country, and of course that has very bad consequences.",
+      "words": [
         {
           "word": "Religion",
           "startTime": 932.71,
@@ -24567,8 +24567,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1307.24,
-      "endTime": 1359.1,
-      "text": "Uh just one last. Aside before we'll move on to more fun things, you start at the Republic by Plato. He's actually very clear-eyed about democracy. He says, like the people, you know, this is not going to work too well. And in the modern times, you get the power of mass media. You think of Mussolini using radio, you think of Hitler organizing large scale rallies for the first time, and then you come to television and you come to social media and the internet. These things have become potent mechanisms by which we're able to get these kinds of simplistic messages out to the people. And there has been a great empowerment of the people in modern electoral processes. And then the simplistic narrative which takes five seconds to think about and latch onto and tribalistic attachment just wins the day. And my",
+      "endTime": 1358.61,
+      "text": "Uh just one last. Aside before we'll move on to more fun things, you start at the Republic by Plato. He's actually very clear-eyed about democracy. He says, like the people, you know, this is not going to work too well. And in the modern times, you get the power of mass media. You think of Mussolini using radio, you think of Hitler organizing large scale rallies for the first time, and then you come to television and you come to social media and the internet. These things have become potent mechanisms by which we're able to get these kinds of simplistic messages out to the people. And there has been a great empowerment of the people in modern electoral processes. And then the simplistic narrative which takes five seconds to think about and latch onto and tribalistic attachment just wins the day.",
       "words": [
         {
           "word": "Uh",
@@ -25427,7 +25427,15 @@
           "startTime": 1358.22,
           "endTime": 1358.61,
           "confidence": 0.9954
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1358.78,
+      "endTime": 1414.24,
+      "text": "And my whole point is that the people having the power is a damn good thing. That's the whole idea of a democracy. But what you need is two other things. One, you also need it to be a republic where you have a system of government that is designed via the constitution and other means to be something that protects the freedom of every individual, that protects their rights, and constrains a role of the state. In India, we really have uh the role of the people being constrained. So it's kind of the other way around, and in many parts of the world is defaulted to that. That's uh sort of uh uh you know, for me that's important to note. And the second thing that we need besides the constitution and you you know, all the systemic safeguards is you need a healthy public discourse. So simplistic narratives do not win. And that healthy the the absence of that public discourse is in a sense, I would say it is our failure. That people like us have to keep going out there and keep, you know, pushing these ideas and uh, you know, wade into that mess instead of just sitting around and complaining.",
+      "words": [
         {
           "word": "And",
           "startTime": 1358.78,
@@ -25439,15 +25447,7 @@
           "startTime": 1358.94,
           "endTime": 1359.1,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1359.1,
-      "endTime": 1414.24,
-      "text": "whole point is that the people having the power is a damn good thing. That's the whole idea of a democracy. But what you need is two other things. One, you also need it to be a republic where you have a system of government that is designed via the constitution and other means to be something that protects the freedom of every individual, that protects their rights, and constrains a role of the state. In India, we really have uh the role of the people being constrained. So it's kind of the other way around, and in many parts of the world is defaulted to that. That's uh sort of uh uh you know, for me that's important to note. And the second thing that we need besides the constitution and you you know, all the systemic safeguards is you need a healthy public discourse. So simplistic narratives do not win. And that healthy the the absence of that public discourse is in a sense, I would say it is our failure. That people like us have to keep going out there and keep, you know, pushing these ideas and uh, you know, wade into that mess instead of just sitting around and complaining.",
-      "words": [
+        },
         {
           "word": "whole",
           "startTime": 1359.1,
@@ -35159,8 +35159,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1849.14,
-      "endTime": 2210.9,
-      "text": "worried. So twenty twenty four is shaping up as a very important year in this journey. Um I'd like to talk about four countries because I happen to know a little bit about them. The United States, Israel, Hungary, and Poland. Okay, each of them are countries where I have a little bit of knowledge. Gentle reader, by no means am I an expert for our Hungarian readers, I apologize in advance for how I'm butchering the complexities of your country. But I feel that they are all little. uh examples of these grand stories playing out exactly as you say, that then you see it in sharp focus and it helps us to understand the larger theory. So it's interesting to look at these stories because they put structure and detail on the idea, but also because the fate of the world is on the line. 2024 is a critical year, and there are many many countries in which this drama is also playing out. Okay, this is also playing out in France With Marine Le Pen, it is also playing out in the UK. Okay, there are many, many countries where there is a very dangerous uh contest around populism. I'm going to talk about four countries where I have a little bit of knowledge. Okay, so let's start with the United States. The United States has a Republican Party and a Donald Trump that has just gone like way populist. This is not your father's Republican Party. This is something completely different. Now, what I find Remarkable about the United States is in two steps. Step one, that when Donald Trump was in office, he was actually not able to subvert the institutions to a significant extent. So he asked the IRS, the income tax department, and the FBI to go investigate and torment his rivals. And by and large, they refused to do so. Like, can you think about that? How marvelous is that? How wonderful is that that there was the institutional quality, there was the institutional depth that the populist, the leader would ask things of his own coercive arms. The coercive arms would say, No, this is not legal. This violates our rules. We refuse to do it, we will not do it. Okay, and that was really an amazing story of the strength of institutions of the United States that protected the country. Okay, and now that leads to Part two of the story. So I want to focus on Jeff Bezos, one of the richest people in the world. First, Jeff Bezos explicitly clearly staked out an anti-Trump position in the public domain. Okay? That's pretty cool. Okay? Rich people having the nerve to stand up to a government. How often does that happen? Again, it was a comment on the institutional quality of the United States. That a rich person said, you know, it's safe. So in a way, rich people have hostages. They have the most to lose, and in a way, rich people could be the most timid, because you just don't want to mess with the government. But in fact, in the United States, Jeff Bezos, the richest person in the country, had no qualms, had no difficulty standing up in public, challenging Trump, owning the Washington Post, one of the most important newspapers that exposed the misdeeds of the Trump period. Again, I say, wow. Okay, and then you get to the 2020 election. was not able to disrupt the ability of the Democratic Party to organize. The Democratic Party was able to raise campaign contributions, was able to have advisors, was able to have volunteers, was able to run a rally in the street, was able to get the vote out, dot dot dot, all the way to the 2020 elections. So I think a lot that I feel an election is not Fair and free if the counting is done correctly. An election is only fair and free if rival opposition parties are able to fundraise, are able to have advisors openly talking about them, participating in them, are able to have a free press that will speak openly about what various political parties are saying, are able to build an organization without fear of coercive arms of the state. Attacking the individuals or the organization and are able to go out into the street, organize rallies, and organize get the vote out. Okay. If you don't have all that, you actually don't have a free and fair election. So I feel that many, many people, including some good thinking people in India, have been completely confused around the word elections. An election is not fair if the votes are counted correctly. An election is only fair if the entire surrounding infrastructure that creates a competitive landscape. is fair. And you could think that, imagine if Donald Trump had been able to block rallies by the Democrats, then how many percentage points of a vote share would it have made? Okay and that's the correct analytical construct to use that under the conditions of state power being applied against opposition parties, how many percent of vote share of a difference did it make? And then that is the extent to which your elections may not be free and fair. And my third observation around the United States is I'm absolutely blown by how small the margin was. I mean, Biden just kind of squeaked through. It was not large margins. A large part of the sullen, angry underclass of America is fine with Donald Trump, despite the mind-blowing misbehavior of his four years, the failures on COVID, the scandals upon scandals, the difficulties on collaborating with Vladimir Putin, you take your pick. Still, Donald Trump remains viable. It is a very scary message that in America, where freedom of speech is fine, the media has worked fine, the intellectuals have worked",
+      "endTime": 2086.28,
+      "text": "worried. So twenty twenty four is shaping up as a very important year in this journey. Um I'd like to talk about four countries because I happen to know a little bit about them. The United States, Israel, Hungary, and Poland. Okay, each of them are countries where I have a little bit of knowledge. Gentle reader, by no means am I an expert for our Hungarian readers, I apologize in advance for how I'm butchering the complexities of your country. But I feel that they are all little. uh examples of these grand stories playing out exactly as you say, that then you see it in sharp focus and it helps us to understand the larger theory. So it's interesting to look at these stories because they put structure and detail on the idea, but also because the fate of the world is on the line. 2024 is a critical year, and there are many many countries in which this drama is also playing out. Okay, this is also playing out in France With Marine Le Pen, it is also playing out in the UK. Okay, there are many, many countries where there is a very dangerous uh contest around populism. I'm going to talk about four countries where I have a little bit of knowledge. Okay, so let's start with the United States. The United States has a Republican Party and a Donald Trump that has just gone like way populist. This is not your father's Republican Party. This is something completely different. Now, what I find Remarkable about the United States is in two steps. Step one, that when Donald Trump was in office, he was actually not able to subvert the institutions to a significant extent. So he asked the IRS, the income tax department, and the FBI to go investigate and torment his rivals. And by and large, they refused to do so. Like, can you think about that? How marvelous is that? How wonderful is that that there was the institutional quality, there was the institutional depth that the populist, the leader would ask things of his own coercive arms. The coercive arms would say, No, this is not legal. This violates our rules. We refuse to do it, we will not do it. Okay, and that was really an amazing story of the strength of institutions of the United States that protected the country. Okay, and now that leads to Part two of the story. So I want to focus on Jeff Bezos, one of the richest people in the world. First, Jeff Bezos explicitly clearly staked out an anti-Trump position in the public domain. Okay? That's pretty cool. Okay? Rich people having the nerve to stand up to a government. How often does that happen? Again, it was a comment on the institutional quality of the United States. That a rich person said, you know, it's safe. So in a way, rich people have hostages. They have the most to lose, and in a way, rich people could be the most timid, because you just don't want to mess with the government. But in fact, in the United States, Jeff Bezos, the richest person in the country, had no qualms, had no difficulty standing up in public, challenging Trump, owning the Washington Post, one of the most important newspapers that exposed the misdeeds of the Trump period. Again, I say, wow. Okay, and then you get to the 2020 election. was not able to disrupt the ability of the Democratic Party to organize. The Democratic Party was able to raise campaign contributions, was able to have advisors, was able to have volunteers, was able to run a rally in the street, was able to get the vote out, dot dot dot, all the way to the 2020 elections. So I think a lot that I feel an election is not Fair and free if the counting is done correctly. An election is only fair and free",
       "words": [
         {
           "word": "worried.",
@@ -39145,13 +39145,29 @@
           "startTime": 2085.8,
           "endTime": 2086.28,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2086.28,
+      "endTime": 2087.56,
+      "text": "if",
+      "words": [
         {
           "word": "if",
           "startTime": 2086.28,
           "endTime": 2087.56,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2087.56,
+      "endTime": 2210.9,
+      "text": "rival opposition parties are able to fundraise, are able to have advisors openly talking about them, participating in them, are able to have a free press that will speak openly about what various political parties are saying, are able to build an organization without fear of coercive arms of the state. Attacking the individuals or the organization and are able to go out into the street, organize rallies, and organize get the vote out. Okay. If you don't have all that, you actually don't have a free and fair election. So I feel that many, many people, including some good thinking people in India, have been completely confused around the word elections. An election is not fair if the votes are counted correctly. An election is only fair if the entire surrounding infrastructure that creates a competitive landscape. is fair. And you could think that, imagine if Donald Trump had been able to block rallies by the Democrats, then how many percentage points of a vote share would it have made? Okay and that's the correct analytical construct to use that under the conditions of state power being applied against opposition parties, how many percent of vote share of a difference did it make? And then that is the extent to which your elections may not be free and fair. And my third observation around the United States is I'm absolutely blown by how small the margin was. I mean, Biden just kind of squeaked through. It was not large margins. A large part of the sullen, angry underclass of America is fine with Donald Trump, despite the mind-blowing misbehavior of his four years, the failures on COVID, the scandals upon scandals, the difficulties on collaborating with Vladimir Putin, you take your pick. Still, Donald Trump remains viable. It is a very scary message that in America, where freedom of speech is fine, the media has worked fine, the intellectuals have worked",
+      "words": [
         {
           "word": "rival",
           "startTime": 2087.56,
@@ -43621,10 +43637,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "Ajay Shah",
       "startTime": 2338.36,
-      "endTime": 2340.12,
-      "text": "So Aj, let's let's let's talk about",
+      "endTime": 2651.0,
+      "text": "So Aj, let's let's let's talk about Israel. Uh Israel is a sad story. Uh just to put my biases on the table, I'm deeply sympathetic. The project of Israel. Okay, I'm just putting my biases up front. And for many years, I've just admired many things about that country. They came out of nothing and a war in 1948, and they built one of the world's great countries. Israel is the preeminent economic and military power of the Middle East. It is a civilizing force in the Middle East. I want to give you one trivial uh anecdote around this. Did you know every day there are Dozens or sometimes hundreds of illegal migrants who run across the border from adjoining Arab countries and become illegal migrants into Israel. Okay, and what's going on? Legalization of homosexuality. That's it. If you are in the other countries, the governments are monstrous, the society is monstrous. Whereas Israel has liberal freedoms, and so homosexuals like to run away. from all the surrounding Middle Eastern countries and live in Israel. Okay, that is the civilizing force, the decency of Israel. Unfortunately things have gone very wrong in certain ways. At a big strategic level, Israel was originally populated by the intellectual elite of Europe. Okay, the Jews that came in from Europe had phenomenal human capital knowledge. They brought the entire thousand years of the civilizational package, which actually is great raw material around which to build the cultural elite, the business elite, the intellectual elite, and the state. And so many things came together quite nicely, and Israel became an advanced economy extremely successfully. After the fall of the USSR, Israel got a very high scale of immigration of Jews from all over Eastern Europe, but most notably Russia. And they brought a very different conservative package of values. So they were basically wedded to old hardliner ways of life on questions of religion, of women, of personal freedoms, and so on. And that has moved the dial of Israeli electoral politics in a very unpleasant manner, and it has created the window for a hardline right wing conservative nationalism, religion, conservative values kind of package to succeed. So It's very strange and unfortunate that one of the great successful countries of the world is back to battling the demons of the twentieth century, where you're dealing with religion and nationalism and freedom of women and the social oppression, the whole conservative package is back in electoral salience in Israel. So there is a war for the soul of Israel that is afoot and it is alive and well. And uh there was a great battle around the judiciary. The uh leader of Israel, Benjamin Netanyahu, tried to create conditions where the executive would have veto powers on the selection of judges. Okay, and for anybody who knows a little bit about the working of democracy, that is anathema. You cannot have the executive controlling who becomes a judge. That is just not done. And there was this absolutely amazing upswell from the population where the people stepped out onto the streets and mobilized. And once again, you have to look at the greatness of Israel. Very often in many countries, uh military folk tend to be low on knowledge and tend to be militaristic and right wing and male values and conservative values. In Israel, again and again, It was the people from the military background, from elite military formations, who stepped out into the society and said, look, we are soldiers, we have given our life and our blood to protect this country. But we do not believe that the executive branch should ride roughshod over the judicial branch. So there was an amazing upswell of the organizing power of the society, which pushed back against Netanyahu and Got a 75%, but yet not 100% victory on these questions. And it was a great moment in the history of Israel. And it showed you the liberal core, the intellectual capacity of that country, including amongst military folk, who are very often the first to sign on to the destruction of institutions in the country. So, you know, lots of people suffer from a strong man, machismo. But the military folk seem to suffer from it the most. In Israel, it was military people who led that intellectual upswell with the concept that separation of powers is important. The executive should not control the judiciary, and it is not okay if the executive will have either a veto power or appointment power on",
       "words": [
         {
           "word": "So",
@@ -43667,15 +43683,7 @@
           "startTime": 2339.96,
           "endTime": 2340.12,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2340.12,
-      "endTime": 2651.0,
-      "text": "Israel. Uh Israel is a sad story. Uh just to put my biases on the table, I'm deeply sympathetic. The project of Israel. Okay, I'm just putting my biases up front. And for many years, I've just admired many things about that country. They came out of nothing and a war in 1948, and they built one of the world's great countries. Israel is the preeminent economic and military power of the Middle East. It is a civilizing force in the Middle East. I want to give you one trivial uh anecdote around this. Did you know every day there are Dozens or sometimes hundreds of illegal migrants who run across the border from adjoining Arab countries and become illegal migrants into Israel. Okay, and what's going on? Legalization of homosexuality. That's it. If you are in the other countries, the governments are monstrous, the society is monstrous. Whereas Israel has liberal freedoms, and so homosexuals like to run away. from all the surrounding Middle Eastern countries and live in Israel. Okay, that is the civilizing force, the decency of Israel. Unfortunately things have gone very wrong in certain ways. At a big strategic level, Israel was originally populated by the intellectual elite of Europe. Okay, the Jews that came in from Europe had phenomenal human capital knowledge. They brought the entire thousand years of the civilizational package, which actually is great raw material around which to build the cultural elite, the business elite, the intellectual elite, and the state. And so many things came together quite nicely, and Israel became an advanced economy extremely successfully. After the fall of the USSR, Israel got a very high scale of immigration of Jews from all over Eastern Europe, but most notably Russia. And they brought a very different conservative package of values. So they were basically wedded to old hardliner ways of life on questions of religion, of women, of personal freedoms, and so on. And that has moved the dial of Israeli electoral politics in a very unpleasant manner, and it has created the window for a hardline right wing conservative nationalism, religion, conservative values kind of package to succeed. So It's very strange and unfortunate that one of the great successful countries of the world is back to battling the demons of the twentieth century, where you're dealing with religion and nationalism and freedom of women and the social oppression, the whole conservative package is back in electoral salience in Israel. So there is a war for the soul of Israel that is afoot and it is alive and well. And uh there was a great battle around the judiciary. The uh leader of Israel, Benjamin Netanyahu, tried to create conditions where the executive would have veto powers on the selection of judges. Okay, and for anybody who knows a little bit about the working of democracy, that is anathema. You cannot have the executive controlling who becomes a judge. That is just not done. And there was this absolutely amazing upswell from the population where the people stepped out onto the streets and mobilized. And once again, you have to look at the greatness of Israel. Very often in many countries, uh military folk tend to be low on knowledge and tend to be militaristic and right wing and male values and conservative values. In Israel, again and again, It was the people from the military background, from elite military formations, who stepped out into the society and said, look, we are soldiers, we have given our life and our blood to protect this country. But we do not believe that the executive branch should ride roughshod over the judicial branch. So there was an amazing upswell of the organizing power of the society, which pushed back against Netanyahu and Got a 75%, but yet not 100% victory on these questions. And it was a great moment in the history of Israel. And it showed you the liberal core, the intellectual capacity of that country, including amongst military folk, who are very often the first to sign on to the destruction of institutions in the country. So, you know, lots of people suffer from a strong man, machismo. But the military folk seem to suffer from it the most. In Israel, it was military people who led that intellectual upswell with the concept that separation of powers is important. The executive should not control the judiciary, and it is not okay if the executive will have either a veto power or appointment power on",
-      "words": [
+        },
         {
           "word": "Israel.",
           "startTime": 2340.12,
@@ -54229,8 +54237,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2988.41,
-      "endTime": 2991.23,
-      "text": "over. Every generation has to fight its own battles.",
+      "endTime": 3265.7,
+      "text": "over. Every generation has to fight its own battles. Uh Poland. And I've told you many sad stories, and now I want to tell you a story of redemption and rapture. Okay, so uh Poland is either world number two or world number one in terms of being one of the saddest countries of the world. Um I feel deeply about Poland. It was created out of the Treaty of Versailles. It for centuries has been savaged by one monstrous country on one side, Germany, and another monstrous country on another side. Russia. On the first of September 1939, they were invaded from uh one side by Nazi Germany, and on the 16th of September 1939, they were invaded from the other side by the Russians. And after the second world war, they got swallowed by the Russians, who installed a communist party. Stalin took care to make a list of 40,000 people of the Polish elite, and they were murdered. pause to think for any country that you love. Imagine a carefully made list of the forty thousand people who make up the intellectual and the business and the cultural elite of the country. And imagine that they get murdered. It is like destroying the foundations of the country and then you know how will you start over? It takes a long time, it takes generations to rebuild that kind of knowledge and capacity because The culture is transmitted by people, and those 40,000 individuals were disproportionately important as transmitters of knowledge and culture and values and norms. That's where Poland began. And then Poland was amongst the first in building an anti-communist movement with Lek Hwalesa organizing the portworkers of Poland. And then in 1989, when the fall of communism took place, Poland enthusiastically took to trying to rebuild the country. in a modern image, and uh they became a part of the European Union, they became a part of uh NATO. I visited Poland in about uh two thousand five and I've had the privilege of having extensive conversations with the nation builders of the new Poland. And I remember how much they told me that the EU was their stabilizing force because on a large number of questions they didn't not actually have to dis develop institutions from scratch, you got a you got a rough working draft from the EU of what a law roughly looks like, of what an institution roughly looks like. And that was it gave them a great leg up and they rapidly succeeded. They were an economic success. For example, Poland and Ukraine started out at similar values at the end of communism, but Poland took off and became a successful economy, while Ukraine was not. Poland was in the EU and in NATO and Ukraine was not. Okay, and Russia was able to constantly meddle in the politics of Ukraine. By and large, the politics of Poland worked out better. So for a long time, we thought Poland was a success story. That in a rapid time after 1989, Poland was able to kindle democratic institutions and become a good liberal country with freedom, with economic freedom, with political freedom. Sadly, that was not to be. And there was a 10-year period in which Poland really collapsed. There was something called the Law and Justice Party, which was just a simple unreconstructed populist movement. It was an alliance between farmers and Christians and thugs. Okay? These came together and they became a conservative force. So they became opposed to the freedom of women, they became opposed to Western influences, they became opposed to foreigners, and they had enough to get a vote share, and they monopolized power, they made it very difficult to compete. Okay. And so once again, there was a time when it was deeply disturbing that like Poland was the star pupil, where in a post-communist environment they got their act together, but even they collapsed into a populist disaster. I want to point out one thing that really struck me. And gentle reader, I'm not an expert. So please people correct me where I'm wrong and you know, write comments about how what I'm saying doesn't make sense. They'll",
       "words": [
         {
           "word": "over.",
@@ -54285,15 +54293,7 @@
           "startTime": 2990.73,
           "endTime": 2991.23,
           "confidence": 0.9825
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3001.42,
-      "endTime": 3003.34,
-      "text": "Uh Poland.",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 3001.42,
@@ -54305,15 +54305,7 @@
           "startTime": 3002.14,
           "endTime": 3003.34,
           "confidence": 0.7263
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3003.34,
-      "endTime": 3265.46,
-      "text": "And I've told you many sad stories, and now I want to tell you a story of redemption and rapture. Okay, so uh Poland is either world number two or world number one in terms of being one of the saddest countries of the world. Um I feel deeply about Poland. It was created out of the Treaty of Versailles. It for centuries has been savaged by one monstrous country on one side, Germany, and another monstrous country on another side. Russia. On the first of September 1939, they were invaded from uh one side by Nazi Germany, and on the 16th of September 1939, they were invaded from the other side by the Russians. And after the second world war, they got swallowed by the Russians, who installed a communist party. Stalin took care to make a list of 40,000 people of the Polish elite, and they were murdered. pause to think for any country that you love. Imagine a carefully made list of the forty thousand people who make up the intellectual and the business and the cultural elite of the country. And imagine that they get murdered. It is like destroying the foundations of the country and then you know how will you start over? It takes a long time, it takes generations to rebuild that kind of knowledge and capacity because The culture is transmitted by people, and those 40,000 individuals were disproportionately important as transmitters of knowledge and culture and values and norms. That's where Poland began. And then Poland was amongst the first in building an anti-communist movement with Lek Hwalesa organizing the portworkers of Poland. And then in 1989, when the fall of communism took place, Poland enthusiastically took to trying to rebuild the country. in a modern image, and uh they became a part of the European Union, they became a part of uh NATO. I visited Poland in about uh two thousand five and I've had the privilege of having extensive conversations with the nation builders of the new Poland. And I remember how much they told me that the EU was their stabilizing force because on a large number of questions they didn't not actually have to dis develop institutions from scratch, you got a you got a rough working draft from the EU of what a law roughly looks like, of what an institution roughly looks like. And that was it gave them a great leg up and they rapidly succeeded. They were an economic success. For example, Poland and Ukraine started out at similar values at the end of communism, but Poland took off and became a successful economy, while Ukraine was not. Poland was in the EU and in NATO and Ukraine was not. Okay, and Russia was able to constantly meddle in the politics of Ukraine. By and large, the politics of Poland worked out better. So for a long time, we thought Poland was a success story. That in a rapid time after 1989, Poland was able to kindle democratic institutions and become a good liberal country with freedom, with economic freedom, with political freedom. Sadly, that was not to be. And there was a 10-year period in which Poland really collapsed. There was something called the Law and Justice Party, which was just a simple unreconstructed populist movement. It was an alliance between farmers and Christians and thugs. Okay? These came together and they became a conservative force. So they became opposed to the freedom of women, they became opposed to Western influences, they became opposed to foreigners, and they had enough to get a vote share, and they monopolized power, they made it very difficult to compete. Okay. And so once again, there was a time when it was deeply disturbing that like Poland was the star pupil, where in a post-communist environment they got their act together, but even they collapsed into a populist disaster. I want to point out one thing that really struck me. And gentle reader, I'm not an expert. So please people correct me where I'm wrong and you know, write comments about how what I'm saying doesn't make sense.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 3003.34,
@@ -58465,21 +58457,21 @@
           "startTime": 3265.06,
           "endTime": 3265.46,
           "confidence": 0.9609
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3265.46,
-      "endTime": 3267.06,
-      "text": "They'll correct you if you're right also.",
-      "words": [
+        },
         {
           "word": "They'll",
           "startTime": 3265.46,
           "endTime": 3265.7,
           "confidence": 0.9079
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3265.7,
+      "endTime": 3267.06,
+      "text": "correct you if you're right also.",
+      "words": [
         {
           "word": "correct",
           "startTime": 3265.7,

@@ -5,7 +5,7 @@
     "durationSeconds": 3045,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -373,8 +373,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 71.12,
-      "endTime": 101.42,
-      "text": "I was in a ridiculously well maintained office where there was a glass wall which was completely clean. It was just wiped so clean. that you couldn't see anything uh that made you feel that there was a wall there. And I was busy talking and saying something and I abruptly took a right turn trying to go into the room to get my computer that was sitting there. And in fact I crashed into the glass wall and I got hurt a little. So it was",
+      "endTime": 99.97,
+      "text": "I was in a ridiculously well maintained office where there was a glass wall which was completely clean. It was just wiped so clean. that you couldn't see anything uh that made you feel that there was a wall there. And I was busy talking and saying something and I abruptly took a right turn trying to go into the room to get my computer that was sitting there. And in fact I crashed into the glass wall and I got hurt a",
       "words": [
         {
           "word": "I",
@@ -873,7 +873,15 @@
           "startTime": 99.81,
           "endTime": 99.97,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 99.97,
+      "endTime": 128.3,
+      "text": "little. So it was Startling experiencing that. And not only does this tell me that in terms of clarity, there is something that is out there that can match the clarity of your prose. So, you know, compliment to both you and the glass wall. But I have to say that, you know, what this is a metaphor for me is the state, because the state is also like that invisible fist when we least expect it, we don't see it, it comes in our way, and kind of fits, you know, segue in nicely with the theme of our episode today.",
+      "words": [
         {
           "word": "little.",
           "startTime": 99.97,
@@ -897,15 +905,7 @@
           "startTime": 100.93,
           "endTime": 101.42,
           "confidence": 0.9968
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 102.54,
-      "endTime": 128.3,
-      "text": "Startling experiencing that. And not only does this tell me that in terms of clarity, there is something that is out there that can match the clarity of your prose. So, you know, compliment to both you and the glass wall. But I have to say that, you know, what this is a metaphor for me is the state, because the state is also like that invisible fist when we least expect it, we don't see it, it comes in our way, and kind of fits, you know, segue in nicely with the theme of our episode today.",
-      "words": [
+        },
         {
           "word": "Startling",
           "startTime": 102.54,
@@ -1499,8 +1499,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 128.3,
-      "endTime": 135.01,
-      "text": "The state is omnipresent, it invisibly reshapes. our life and once in a while it slams into your",
+      "endTime": 188.39,
+      "text": "The state is omnipresent, it invisibly reshapes. our life and once in a while it slams into your face. I want to talk about the tension between narrow specialized domain knowledge and general principles. So as an example, I recently wrote an article around questions of public policy in the airline industry. And it's good to go deep dive into one example and try to understand how to do it. And of course, there are general principles being applied there. Is it the right way to approach these things to go after one practical example at a time? Or is it good and important to do the general principles in and of themselves? And you know, in the modern distracted age, people have no time and attention for high ideas. So how should we think about that tension?",
       "words": [
         {
           "word": "The",
@@ -1609,29 +1609,13 @@
           "startTime": 134.69,
           "endTime": 135.01,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 135.01,
-      "endTime": 136.51,
-      "text": "face.",
-      "words": [
+        },
         {
           "word": "face.",
           "startTime": 135.01,
           "endTime": 136.51,
           "confidence": 0.8231
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 144.37,
-      "endTime": 188.39,
-      "text": "I want to talk about the tension between narrow specialized domain knowledge and general principles. So as an example, I recently wrote an article around questions of public policy in the airline industry. And it's good to go deep dive into one example and try to understand how to do it. And of course, there are general principles being applied there. Is it the right way to approach these things to go after one practical example at a time? Or is it good and important to do the general principles in and of themselves? And you know, in the modern distracted age, people have no time and attention for high ideas. So how should we think about that tension?",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 144.37,
@@ -2351,8 +2335,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 188.75,
-      "endTime": 371.42,
-      "text": "I think there are two trade offs here, and this is an important question, and one is from a point of view of how we look at the world and the other is from a point of view of how we explain the world or explain the way that we see the world to others. Now I think that the first tension is really a tension between mechanics and principles. I remember in my time as a professional poker player, a significant people of professionals would start out as maybe part of a stable. Now what a stable would be is that there would be a poker player who's very successful, but there's only so much volume he can put in individually. So he would use his money to stake a bunch of players and he would coach them so that they play profitably. And the coaching would often consist of these mechanics Uh that if you have twenty big blinds, you know, here's your reshove range, here's your showing range, et cetera, et cetera. You know, in this particular kind of spot, this is your equity with this range, this is what you do. And people would ratamaro that, memorize that, and they would kind of go with that. And I would notice in a lot of cases, players are playing correctly because they've memorized what to do from the theory, but they're not thinking from first principles and figuring out shit themselves. Right? A very small percentage of the successful players who are a very small percentage themselves of all players would kind of do that. And I would always be asking the question why? You know, and I think the why matters in everything that in our lives in terms of the things that we do, we can either learn the mechanics of whatever we do, whether it's engineering or whatever field we are part of, or we can at every point stop and ask why. And obviously asking why all the time is a bit cumbersome. Now the other aspect of this is that let us say that there's something we're trying to communicate. Uh uh you know, there are sort of two approaches to take. And one approach is you take an example, you tell a story, a great way to capture attention, and then through that story you bring some principle out. But often that principle is sort of adrift in space, you know, by itself and easily forgotten. It's like a fancy lesson in LinkedIn. It's like, you know, a sentence that is out there. Whereas I think what is also useful sometimes is to present a framework to say that this is how uh you know this particular thing or this is how the world if you want to be grandiose about it works. This is a framework, this is these are the first principles, these are the root causes, and let's think from here. And you can then get systematic about that. And of course, if there is a flaw with the framework or your assumptions, then it is easy also to find that flaw and to talk about it. But then you're talking about what really matters. And you can then apply the framework to everything, you know, like the reason I uh love economics so much, which some people you know find uh call the dismal art. Or the dismal science is that for me it's a study of human behavior. It explains the whole world. And uh uh and I find it applies to everything. Uh but you know, I find economics, I I find scarcity and incentives across all human action and the best of literature, the best of art, the best of music. So I am really a first principles person that way. I understand that you have to maintain that balance between the abstract concept and the concrete illustration of it. But I think it is important to have that foundation of first principles and that framework. And then when you talk about things, you're much more grounded.",
+      "endTime": 371.82,
+      "text": "I think there are two trade offs here, and this is an important question, and one is from a point of view of how we look at the world and the other is from a point of view of how we explain the world or explain the way that we see the world to others. Now I think that the first tension is really a tension between mechanics and principles. I remember in my time as a professional poker player, a significant people of professionals would start out as maybe part of a stable. Now what a stable would be is that there would be a poker player who's very successful, but there's only so much volume he can put in individually. So he would use his money to stake a bunch of players and he would coach them so that they play profitably. And the coaching would often consist of these mechanics Uh that if you have twenty big blinds, you know, here's your reshove range, here's your showing range, et cetera, et cetera. You know, in this particular kind of spot, this is your equity with this range, this is what you do. And people would ratamaro that, memorize that, and they would kind of go with that. And I would notice in a lot of cases, players are playing correctly because they've memorized what to do from the theory, but they're not thinking from first principles and figuring out shit themselves. Right? A very small percentage of the successful players who are a very small percentage themselves of all players would kind of do that. And I would always be asking the question why? You know, and I think the why matters in everything that in our lives in terms of the things that we do, we can either learn the mechanics of whatever we do, whether it's engineering or whatever field we are part of, or we can at every point stop and ask why. And obviously asking why all the time is a bit cumbersome. Now the other aspect of this is that let us say that there's something we're trying to communicate. Uh uh you know, there are sort of two approaches to take. And one approach is you take an example, you tell a story, a great way to capture attention, and then through that story you bring some principle out. But often that principle is sort of adrift in space, you know, by itself and easily forgotten. It's like a fancy lesson in LinkedIn. It's like, you know, a sentence that is out there. Whereas I think what is also useful sometimes is to present a framework to say that this is how uh you know this particular thing or this is how the world if you want to be grandiose about it works. This is a framework, this is these are the first principles, these are the root causes, and let's think from here. And you can then get systematic about that. And of course, if there is a flaw with the framework or your assumptions, then it is easy also to find that flaw and to talk about it. But then you're talking about what really matters. And you can then apply the framework to everything, you know, like the reason I uh love economics so much, which some people you know find uh call the dismal art. Or the dismal science is that for me it's a study of human behavior. It explains the whole world. And uh uh and I find it applies to everything. Uh but you know, I find economics, I I find scarcity and incentives across all human action and the best of literature, the best of art, the best of music. So I am really a first principles person that way. I understand that you have to maintain that balance between the abstract concept and the concrete illustration of it. But I think it is important to have that foundation of first principles and that framework. And then when you talk about things, you're much more grounded. Uh",
       "words": [
         {
           "word": "I",
@@ -6451,21 +6435,21 @@
           "startTime": 370.38,
           "endTime": 371.42,
           "confidence": 0.9726
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 371.42,
-      "endTime": 461.06,
-      "text": "Uh this is a perennial tension around education as well. I want to tell it two ways. In engineering education, there is this constant problem that you could be trained on how an air conditioner works. And you know this one air conditioner well, and you can repair this air conditioner, you can tinker with it. If you don't know the high theory of thermodynamics, you won't be able to reinvent air conditioners. You won't be ready for the next wave of new ways of thinking about heat pumps. And if you don't actually know some very advanced physics, you won't be able to understand the amazing stuff happening around solid state heat pumps. So there is a very genuine difference between vocational education, which is job ready. Which, in my opinion, I think is valorized too much in India as part of this whole execution orientation. You want to get your hands dirty and do useful things. Yeah, but it's limiting because the world will change and you actually need to do problem solving and think at a deeper level, and you need to be ready for that ever-changing universe. The same idea applies in the beautiful dream of the liberal arts education. Okay, in some ways. the most useless thing in the world is the liberal arts education. You're absolutely not job ready. But you know what? It's the best kind of education because those general principles prepare you for that seventy, eighty years of working life which stands in front of a twenty year old today. And at",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 371.42,
           "endTime": 371.82,
           "confidence": 0.7898
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 371.82,
+      "endTime": 461.62,
+      "text": "this is a perennial tension around education as well. I want to tell it two ways. In engineering education, there is this constant problem that you could be trained on how an air conditioner works. And you know this one air conditioner well, and you can repair this air conditioner, you can tinker with it. If you don't know the high theory of thermodynamics, you won't be able to reinvent air conditioners. You won't be ready for the next wave of new ways of thinking about heat pumps. And if you don't actually know some very advanced physics, you won't be able to understand the amazing stuff happening around solid state heat pumps. So there is a very genuine difference between vocational education, which is job ready. Which, in my opinion, I think is valorized too much in India as part of this whole execution orientation. You want to get your hands dirty and do useful things. Yeah, but it's limiting because the world will change and you actually need to do problem solving and think at a deeper level, and you need to be ready for that ever-changing universe. The same idea applies in the beautiful dream of the liberal arts education. Okay, in some ways. the most useless thing in the world is the liberal arts education. You're absolutely not job ready. But you know what? It's the best kind of education because those general principles prepare you for that seventy, eighty years of working life which stands in front of a twenty year old today. And at this point I",
+      "words": [
         {
           "word": "this",
           "startTime": 371.82,
@@ -8025,15 +8009,7 @@
           "startTime": 460.98,
           "endTime": 461.06,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 461.06,
-      "endTime": 490.38,
-      "text": "this point I must point out for our gentle readers as well, and I'm sure Rajay agrees with me, and we've spoken about this in a past episode, that both of us agree that a liberal arts education, understanding the humanities, is just a fantastic way to become a more rounded person, but the universities do a terrible job of providing it. So sadly we have to, you know, take the initiative and get a lot of it ourselves, either by osmosis or making a conscious effort and through popular culture, through books, through movies, through art, uh extremely important, but education has failed us.",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 461.06,
@@ -8051,7 +8027,15 @@
           "startTime": 461.46,
           "endTime": 461.62,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 461.62,
+      "endTime": 490.38,
+      "text": "must point out for our gentle readers as well, and I'm sure Rajay agrees with me, and we've spoken about this in a past episode, that both of us agree that a liberal arts education, understanding the humanities, is just a fantastic way to become a more rounded person, but the universities do a terrible job of providing it. So sadly we have to, you know, take the initiative and get a lot of it ourselves, either by osmosis or making a conscious effort and through popular culture, through books, through movies, through art, uh extremely important, but education has failed us.",
+      "words": [
         {
           "word": "must",
           "startTime": 461.62,
@@ -8875,8 +8859,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 507.31,
-      "endTime": 716.43,
-      "text": "one. I am the person who puts the I in V. I haven't envisioned anything. We have envisioned uh, you know, a set of episodes in which we talk about all of this. In today's episode, we are really going to talk about the state. People keep talking about the state, and they'll be like government ko ye kan na che vo kan nachi, this is the role of the state, govern should provide this. And uh, you know, and I want to talk about my understanding of what the role of the state should be, uh, you know, and and how that relates to individual rights and so on, and just lay that framework out for how we think. That's what we're going to do in today's episode, what the proper role of the state should be. Why do we need a state? What does it do? And kind of lay out those grounds. In the next episode, we are going to go a little further and, you know, zoom in a little bit and talk uh, you know, about, you know, when the state should make policy, what are the factors under which it should make policy, what does it even mean when we talk about public policy, something that you've written about with great detail in your masterpiece of a book in service of the republic. And then in in a couple of episodes after that, not necessarily the next two ones, but we'll dive in onto specific industries and examples that really explain those frameworks uh so much better. And in a sense, this is not really an attempt to say that this is how I think. You must also think like this. But just you know, uh an attempt to give you the lay of the land. So then you can apply your own perspectives and your own prisms onto it, but at least we'll sort of be talking on the same page. So let's go so let's go go back to first principles and talk about the existence of the state. Why does the state exist? And it begins with us, right? I think everyone would agree and everyone would say that we have rights. Now let's not you know, we can double click at a later date on what do we mean by rights. Are they natural rights or are rights granted? Do we arrive at them in some way? But Leave that aside for the moment. Assume that we can all agree that individuals have rights. Those rights only have meaning when they're they are defended, when they are protected, and for that you need the state. And this leads me to what I think of as a great liberal paradox, that, you know, liberalism says that we all have rights and no one should infringe them. And yet for those rights to have meaning and to be protected, we have to give away some of the rights. Because the existence of the state means we create an entity with a monopoly on violence, and we give away some of the some of our rights for the State to exist. And often, you know, we've normalized the State so much we don't realize that the existence of the State is actually an act of violence. I once wrote in uh a piece for the Times of India called Every Act of Government is an act of violence. And by this I don't mean that, oh, if the state does this or the state does that, that is violence. No, I mean the existence of the state itself is at its core violence. Um now what do I mean by that? This for the state to exist, you need taxes, right and it might appear that we pay taxes willingly, but the truth of the matter is that nobody would pay taxes if we weren't kind of forced to. You know, the state essentially is like this uh monopoly mafia. which holds you at ransom and which say h says, Hey, I'm gonna abduct you and I'm gonna imprison you if you kind of don't pay taxes and so we have to pay taxes and that's a necessary cost, you know, for our rights to be protected. And it's something that, you know, uh uh a as a society we do. Now here is the thing, we normalize what taxes",
+      "endTime": 1047.25,
+      "text": "one. I am the person who puts the I in V. I haven't envisioned anything. We have envisioned uh, you know, a set of episodes in which we talk about all of this. In today's episode, we are really going to talk about the state. People keep talking about the state, and they'll be like government ko ye kan na che vo kan nachi, this is the role of the state, govern should provide this. And uh, you know, and I want to talk about my understanding of what the role of the state should be, uh, you know, and and how that relates to individual rights and so on, and just lay that framework out for how we think. That's what we're going to do in today's episode, what the proper role of the state should be. Why do we need a state? What does it do? And kind of lay out those grounds. In the next episode, we are going to go a little further and, you know, zoom in a little bit and talk uh, you know, about, you know, when the state should make policy, what are the factors under which it should make policy, what does it even mean when we talk about public policy, something that you've written about with great detail in your masterpiece of a book in service of the republic. And then in in a couple of episodes after that, not necessarily the next two ones, but we'll dive in onto specific industries and examples that really explain those frameworks uh so much better. And in a sense, this is not really an attempt to say that this is how I think. You must also think like this. But just you know, uh an attempt to give you the lay of the land. So then you can apply your own perspectives and your own prisms onto it, but at least we'll sort of be talking on the same page. So let's go so let's go go back to first principles and talk about the existence of the state. Why does the state exist? And it begins with us, right? I think everyone would agree and everyone would say that we have rights. Now let's not you know, we can double click at a later date on what do we mean by rights. Are they natural rights or are rights granted? Do we arrive at them in some way? But Leave that aside for the moment. Assume that we can all agree that individuals have rights. Those rights only have meaning when they're they are defended, when they are protected, and for that you need the state. And this leads me to what I think of as a great liberal paradox, that, you know, liberalism says that we all have rights and no one should infringe them. And yet for those rights to have meaning and to be protected, we have to give away some of the rights. Because the existence of the state means we create an entity with a monopoly on violence, and we give away some of the some of our rights for the State to exist. And often, you know, we've normalized the State so much we don't realize that the existence of the State is actually an act of violence. I once wrote in uh a piece for the Times of India called Every Act of Government is an act of violence. And by this I don't mean that, oh, if the state does this or the state does that, that is violence. No, I mean the existence of the state itself is at its core violence. Um now what do I mean by that? This for the state to exist, you need taxes, right and it might appear that we pay taxes willingly, but the truth of the matter is that nobody would pay taxes if we weren't kind of forced to. You know, the state essentially is like this uh monopoly mafia. which holds you at ransom and which say h says, Hey, I'm gonna abduct you and I'm gonna imprison you if you kind of don't pay taxes and so we have to pay taxes and that's a necessary cost, you know, for our rights to be protected. And it's something that, you know, uh uh a as a society we do. Now here is the thing, we normalize what taxes do. The uh one way to think about it is this. If one third of my income goes in taxes, right, in and direct, indirect taxes, Mila K everything, if you put it together, it might well be that much. If one third of your income goes in taxes, that means that between January and April every year, you don't work for yourself, you work for the state. That means you we are all essentially in part time slavery. Right, for a third or a fourth of the year, we are working for the state, and the rest of the time we are working for ourselves. And it's important to have that frame to think about what the cost is. Th the g the existence of the state means that we are not completely free. And of course there's a paradox that we agree to this so the state will sort of protect our rights. And at this point before moving ahead, I've also got to point out that there is a misconception people have. That oh, taxpayers are only X percentage of the population in India, they'll say it's only three percent and all that, and that's absolute nonsense. You know, sure, a small percentage of the people may pay direct income taxes, but everybody is paying taxes in some way or the other. You know, your domestic help, when she buys salt, she's a taxpayer. You know, the uh beggar you see or you choose not to see at the traffic signal, when she buys a cup of tea or milk milk for a baby, you know, she's a taxpayer. We are all taxpayers. Even inflation, in a sense, is a form of tax because the government will increase the money supply and prices of everything will go up, and I think of it as a f tax on the poor people. That's really what it is. So we are all paying taxes, we are all being coerced, and whenever the state does something therefore, that is a cost. The cost is violence. It is not just a monetary cost, it is a moral cost. And that cost is not just born by the rich. It's born by everybody all the way down the line. So I think of the central question in political philosophy as essentially this, right? People will look at ideologies and talk about why they differ and all that. To me all ideologies have this one central question on which they differ, which is when is this violent violence justified and why? Right. So a classical liberal or a libertarian or whatever, and I I I hate labels these days, so let's not go there, but one view of the state could be that the state is only there to protect our rights. It's a night watchman state. It's got to do the rule of law. and perhaps defense and a few other things, and there's a minimal state and b the violence is only justified there. Others may say that no, you know, we need to uh build roads, we need to build uh uh public utilities, and that is also uh a good job for the state to have and there are positive externalities and blah blah blah. There are others who will say that uh, you know, we should build statues for famous people. And And yet others might, for example, uh want to do space programs or might want to spend a lot of money doing sport. And I'm not arguing against or for any of these. You know, communists will see one role of the state, libertarians will see another, social democrat may see a role for the state. At this moment, I don't want to take a position. I just want to say that no matter uh, you know, which side you fall down on, understand that the central question. Is that whatever the state does, it does through violence. And therefore you have to justify that, right? And you have to justify that and say that I believe violence is justified for this, and this is why it is justified for this. And to acknowledge that is important. And then where you stand is kind of where you stand. And I I have often, for example, in uh I I used to on my old blog India and Card I used to have a section called Where Your Taxes Go. You know, where your taxes go number one to number eighty to it just kind of went on forever. And I'll read out some examples of where we would kind of spend our taxes from there. And examples include and this is the state spending money on all of these things, moustache allowances, educating and rehabilit rehabilitating monkeys. You know, uh the state has overpaid for condoms. I think there used to be a company which would make sex toys as part of what they did. This is a state, not individuals. Uh you know, policing parrots is something that um the state has done. Paying fake municipal employees who don't really exist, but they draw a salary, and it's a it's like a common scam. Uh golf buggies for the army, and of course hundreds and thousands of statues uh for you know, whoever uh you kind of fancy. Um, you know, sixty-two sand sandstone elephants is what I see on my uh uh list and regulating skirt hemlines, which is also sort of something that the state has done. So this is the first big point I want to make about the state, that we should acknowledge that the existence of the state is an act of violence, lest this seem extreme. I am not saying we do away with the state. So there are marvelous books which talk about how this can also lead to a good equilibrium. I would recommend uh you know Robert Nozick's great book, Anarchy, State and Utopia, but that's not what I'm saying. I'm saying we need the state. I think everybody watching this and you would agree that we need the state. Now the only argument therefore is for what do we need the state, or rather for what is a violence justified. And I feel that when people talk at different times, government should do this, government should do that, they don't take into account that there is a cost. It is not money coming from the air, it's not floating around freely. There is a serious cost to this. You want a space program, great. You know who's paying for it? Your domestic help is paying for it. You know, the beggar at the traffic signal is pay for it. The poorest of the poor is paying for it. Even if you tax the rich more, it's un it's uh unavoidable. There is a cost. So I'm saying that let's discuss that cost and have that at the forefront, rather than be in this dreamland where we can just pay for whatever we want and hey, you know, the state will take care of everything.",
       "words": [
         {
           "word": "one.",
@@ -13299,29 +13283,13 @@
           "startTime": 715.95,
           "endTime": 716.43,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 716.43,
-      "endTime": 716.78,
-      "text": "do.",
-      "words": [
+        },
         {
           "word": "do.",
           "startTime": 716.43,
           "endTime": 716.78,
           "confidence": 0.8382
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 717.52,
-      "endTime": 1047.25,
-      "text": "The uh one way to think about it is this. If one third of my income goes in taxes, right, in and direct, indirect taxes, Mila K everything, if you put it together, it might well be that much. If one third of your income goes in taxes, that means that between January and April every year, you don't work for yourself, you work for the state. That means you we are all essentially in part time slavery. Right, for a third or a fourth of the year, we are working for the state, and the rest of the time we are working for ourselves. And it's important to have that frame to think about what the cost is. Th the g the existence of the state means that we are not completely free. And of course there's a paradox that we agree to this so the state will sort of protect our rights. And at this point before moving ahead, I've also got to point out that there is a misconception people have. That oh, taxpayers are only X percentage of the population in India, they'll say it's only three percent and all that, and that's absolute nonsense. You know, sure, a small percentage of the people may pay direct income taxes, but everybody is paying taxes in some way or the other. You know, your domestic help, when she buys salt, she's a taxpayer. You know, the uh beggar you see or you choose not to see at the traffic signal, when she buys a cup of tea or milk milk for a baby, you know, she's a taxpayer. We are all taxpayers. Even inflation, in a sense, is a form of tax because the government will increase the money supply and prices of everything will go up, and I think of it as a f tax on the poor people. That's really what it is. So we are all paying taxes, we are all being coerced, and whenever the state does something therefore, that is a cost. The cost is violence. It is not just a monetary cost, it is a moral cost. And that cost is not just born by the rich. It's born by everybody all the way down the line. So I think of the central question in political philosophy as essentially this, right? People will look at ideologies and talk about why they differ and all that. To me all ideologies have this one central question on which they differ, which is when is this violent violence justified and why? Right. So a classical liberal or a libertarian or whatever, and I I I hate labels these days, so let's not go there, but one view of the state could be that the state is only there to protect our rights. It's a night watchman state. It's got to do the rule of law. and perhaps defense and a few other things, and there's a minimal state and b the violence is only justified there. Others may say that no, you know, we need to uh build roads, we need to build uh uh public utilities, and that is also uh a good job for the state to have and there are positive externalities and blah blah blah. There are others who will say that uh, you know, we should build statues for famous people. And And yet others might, for example, uh want to do space programs or might want to spend a lot of money doing sport. And I'm not arguing against or for any of these. You know, communists will see one role of the state, libertarians will see another, social democrat may see a role for the state. At this moment, I don't want to take a position. I just want to say that no matter uh, you know, which side you fall down on, understand that the central question. Is that whatever the state does, it does through violence. And therefore you have to justify that, right? And you have to justify that and say that I believe violence is justified for this, and this is why it is justified for this. And to acknowledge that is important. And then where you stand is kind of where you stand. And I I have often, for example, in uh I I used to on my old blog India and Card I used to have a section called Where Your Taxes Go. You know, where your taxes go number one to number eighty to it just kind of went on forever. And I'll read out some examples of where we would kind of spend our taxes from there. And examples include and this is the state spending money on all of these things, moustache allowances, educating and rehabilit rehabilitating monkeys. You know, uh the state has overpaid for condoms. I think there used to be a company which would make sex toys as part of what they did. This is a state, not individuals. Uh you know, policing parrots is something that um the state has done. Paying fake municipal employees who don't really exist, but they draw a salary, and it's a it's like a common scam. Uh golf buggies for the army, and of course hundreds and thousands of statues uh for you know, whoever uh you kind of fancy. Um, you know, sixty-two sand sandstone elephants is what I see on my uh uh list and regulating skirt hemlines, which is also sort of something that the state has done. So this is the first big point I want to make about the state, that we should acknowledge that the existence of the state is an act of violence, lest this seem extreme. I am not saying we do away with the state. So there are marvelous books which talk about how this can also lead to a good equilibrium. I would recommend uh you know Robert Nozick's great book, Anarchy, State and Utopia, but that's not what I'm saying. I'm saying we need the state. I think everybody watching this and you would agree that we need the state. Now the only argument therefore is for what do we need the state, or rather for what is a violence justified. And I feel that when people talk at different times, government should do this, government should do that, they don't take into account that there is a cost. It is not money coming from the air, it's not floating around freely. There is a serious cost to this. You want a space program, great. You know who's paying for it? Your domestic help is paying for it. You know, the beggar at the traffic signal is pay for it. The poorest of the poor is paying for it. Even if you tax the rich more, it's un it's uh unavoidable. There is a cost. So I'm saying that let's discuss that cost and have that at the forefront, rather than be in this dreamland where we can just pay for whatever we want and hey, you know, the state will take care of everything.",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 717.52,
@@ -20455,8 +20423,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1047.25,
-      "endTime": 1099.79,
-      "text": "So I want to add a few things uh to this very correct beginning in knowledge on uh political philosophy. The first is that the levels of taxation uh imposed by the British. That kicked off Gandhiji's Dandi March are actually modest and decent compared to the levels of taxation in uh independent India. So I feel that there is just way too much of acceptance of usurious rates of taxation in India today. We've just normalized very high levels of taxation. The second distinction that I find useful is that. The monopoly on violence is used to force people to compel people to pay up money, and that's taxation, which creates spending power in the hands of the government, for example, to build",
+      "endTime": 1423.33,
+      "text": "So I want to add a few things uh to this very correct beginning in knowledge on uh political philosophy. The first is that the levels of taxation uh imposed by the British. That kicked off Gandhiji's Dandi March are actually modest and decent compared to the levels of taxation in uh independent India. So I feel that there is just way too much of acceptance of usurious rates of taxation in India today. We've just normalized very high levels of taxation. The second distinction that I find useful is that. The monopoly on violence is used to force people to compel people to pay up money, and that's taxation, which creates spending power in the hands of the government, for example, to build statues. Okay. The second track is coercive power, qua coercive power is used by the state, for example, to say that thou shalt not murder me. Okay. So these are two pathways. All state action is coercion. One channel goes into raising money that is spent, the other channel goes into directly coercing people and telling them what they will not be permitted to do, lest uh there will be some punishment that will hit them. Uh I have grown to understand what I feel is a big and important idea. I've grown to understand that there is a fundamental budget constraint around the word money. So when you think of budgeting, All in all, in any country, it's difficult to raise tax revenues. And once the revenues are raised, they're fully fungible. Rupees are rupees. So you add up all the money raised by a government. And then there is some sanity in how that money gets allocated. So it's difficult to raise money, and every politician will think twice about the amount of money that is raised. And public finance and the budgeting process introduces some common sense and care on how much money are we raising, how much money are we spending. I have learned to think that there is a problem in that in the other wing around raw state coercion, there is no budget constraint. There is no budget. There is no single statement that detains and documents all the acts of state coercion. And year after year, the state just layers on more and more and more. Coercion and nobody keeps track of it. There is no unified budget constraint. So I've grown to understand that the other wing of non-taxation coercion of the state is potentially a bigger public administration problem because there is no check and balance surrounding it. Ultimately, people hate paying taxes, and that creates a pushback against governments raising money. On the other wing, there are hundreds of government agencies running around the landscape, introducing one new coercion every day. And all of us have just normalized our loss of freedom, and we just take it for granted. So I feel this is an important problem that we need to ponder. The last thing that I want to bring up at this very point is that there was a very beautiful debate in the early years of American political thinking, which runs like this. They thought a lot about the question. I want to put this in a little historical context. America was created by many mad religious sects. wanted to run away from the oppression of Europe. So in Europe there was this formal machinery of either Catholic or Protestant churches who had a certain kind of regimented religion and all kinds of oppression for people who wanted to do deviant things. And oh I don't mean deviants like atheism. I mean deviant like more crazy religious sects as compared to normal mainline religion in Europe. So a lot of those sects Were persecuted in Europe in horrible ways, and they chose to run away and establish themselves in America. So there's a very deep idea in America that there should be freedom to pursue your own madness. And only later it turned into the possibility and the idea that your own madness is atheism, which, of course, is the dominant idea in the world today. So it's interesting that in the early years in America, nobody was thinking of a post-religious world. They were just thinking, Don't mess with me. Let me be. Let me do whatever religion religion I want to do. So separation of church and state was originally intended not as a entry path into the process of secularization and atheism, which is the way the 20th century has worked out, but rather to create space for specialized crazy religious sects. And in line with that, there has been the idea that suppose 100 people, 200 people, 20 people. Decide to live in a commune and put a boundary wall around them? Should they be able to walk out of the rules of living defined by the state and create their own rules for living? Okay, and it's a very interesting question to ponder that what are the rules of the state, the community that achieves and maintains a monopoly of physical violence in a given territory? What parts of that rule set Can be suspended by 200 people who've created their own commune. But what parts of the larger rule set outside must apply universally even inside the commune? Okay, so for example, you and I would argue that the IPC prohibits murder, and that should apply equally inside the commune. You should not be able to create a commune within which murder is legitimate. But I want us to hold that thought and carry it further, and I think this has been a great source of energy in the American political project, because they have taken this question seriously. Because different religious sects wanted to create their own little worlds. And there have been many important ways in which you can create a new city, you can create a new township, you can create your own rules to a significant extent. This has been an idea embedded in American history and American political philosophy. And I think we in India would benefit from thinking in these",
       "words": [
         {
           "word": "So",
@@ -21201,15 +21169,7 @@
           "startTime": 1099.55,
           "endTime": 1099.79,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1099.79,
-      "endTime": 1101.39,
-      "text": "statues. Okay.",
-      "words": [
+        },
         {
           "word": "statues.",
           "startTime": 1099.79,
@@ -21221,15 +21181,7 @@
           "startTime": 1100.67,
           "endTime": 1101.39,
           "confidence": 0.7219
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1101.39,
-      "endTime": 1233.01,
-      "text": "The second track is coercive power, qua coercive power is used by the state, for example, to say that thou shalt not murder me. Okay. So these are two pathways. All state action is coercion. One channel goes into raising money that is spent, the other channel goes into directly coercing people and telling them what they will not be permitted to do, lest uh there will be some punishment that will hit them. Uh I have grown to understand what I feel is a big and important idea. I've grown to understand that there is a fundamental budget constraint around the word money. So when you think of budgeting, All in all, in any country, it's difficult to raise tax revenues. And once the revenues are raised, they're fully fungible. Rupees are rupees. So you add up all the money raised by a government. And then there is some sanity in how that money gets allocated. So it's difficult to raise money, and every politician will think twice about the amount of money that is raised. And public finance and the budgeting process introduces some common sense and care on how much money are we raising, how much money are we spending. I have learned to think that there is a problem in that in the other wing around raw state coercion, there is no budget constraint. There is no budget. There is no single statement that detains and documents all the acts of state coercion. And year after year, the state just layers on more and more and more. Coercion and nobody keeps track of it. There is no unified budget constraint. So I've grown to understand that the other wing of non-taxation coercion of the state is potentially a bigger public administration problem because there is no check and balance surrounding it. Ultimately, people hate paying taxes, and that creates a pushback against governments raising money. On the other wing, there are hundreds of government agencies running around the landscape, introducing one new coercion every day. And all of us have just normalized our loss of freedom, and we just take it for granted. So I feel this is an important problem that",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 1101.39,
@@ -23425,15 +23377,7 @@
           "startTime": 1232.69,
           "endTime": 1233.01,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1233.01,
-      "endTime": 1234.85,
-      "text": "we need to ponder.",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 1233.01,
@@ -23457,15 +23401,7 @@
           "startTime": 1233.65,
           "endTime": 1234.85,
           "confidence": 0.9925
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1234.85,
-      "endTime": 1423.33,
-      "text": "The last thing that I want to bring up at this very point is that there was a very beautiful debate in the early years of American political thinking, which runs like this. They thought a lot about the question. I want to put this in a little historical context. America was created by many mad religious sects. wanted to run away from the oppression of Europe. So in Europe there was this formal machinery of either Catholic or Protestant churches who had a certain kind of regimented religion and all kinds of oppression for people who wanted to do deviant things. And oh I don't mean deviants like atheism. I mean deviant like more crazy religious sects as compared to normal mainline religion in Europe. So a lot of those sects Were persecuted in Europe in horrible ways, and they chose to run away and establish themselves in America. So there's a very deep idea in America that there should be freedom to pursue your own madness. And only later it turned into the possibility and the idea that your own madness is atheism, which, of course, is the dominant idea in the world today. So it's interesting that in the early years in America, nobody was thinking of a post-religious world. They were just thinking, Don't mess with me. Let me be. Let me do whatever religion religion I want to do. So separation of church and state was originally intended not as a entry path into the process of secularization and atheism, which is the way the 20th century has worked out, but rather to create space for specialized crazy religious sects. And in line with that, there has been the idea that suppose 100 people, 200 people, 20 people. Decide to live in a commune and put a boundary wall around them? Should they be able to walk out of the rules of living defined by the state and create their own rules for living? Okay, and it's a very interesting question to ponder that what are the rules of the state, the community that achieves and maintains a monopoly of physical violence in a given territory? What parts of that rule set Can be suspended by 200 people who've created their own commune. But what parts of the larger rule set outside must apply universally even inside the commune? Okay, so for example, you and I would argue that the IPC prohibits murder, and that should apply equally inside the commune. You should not be able to create a commune within which murder is legitimate. But I want us to hold that thought and carry it further, and I think this has been a great source of energy in the American political project, because they have taken this question seriously. Because different religious sects wanted to create their own little worlds. And there have been many important ways in which you can create a new city, you can create a new township, you can create your own rules to a significant extent. This has been an idea embedded in American history and American political philosophy. And I think we in India would benefit from thinking in these",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 1234.85,
@@ -26663,8 +26599,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1423.33,
-      "endTime": 1517.81,
-      "text": "ways. Our friend Subashish Badra has an excellent book called The Cage Tiger, and I've done an episode of The Scene and the Unseen with him as well, where we speak about it. And one of the excellent sort of um uh frames that I got from the book was that constitutions also are contextual, that you have to see how they arose. That because the constitution of America arose out of this ferment, arose out of uh an environment where the people wanted to avoid this persecution and where individual freedom mattered so much. They had a constitution which, you know, valorized individual freedom and which protected the people from the state. the rules of the game were to protect the people from the state, which is what a constitution should do. In the Indian constitution, because of the way it was set up, where there was the extreme violence of partition, the country was falling apart, it was a question of whether the center would hold. The rules of the game were to everything was centralized, and the rules of the game were to protect the state from the people. So suddenly it became the other way around, not protecting the people from the state, but the state from the people. It is as if the state does not exist for our sake, which is the origin as we discussed. But we exist for the sake of the state. We exist to give them taxes and to be subjects. You know, so instead of them the the state being there to serve us, they are the rulers and we are the ones who are kind of serving the state. And this has just become such a you know a a sort of a mental framework that this is where this mission creep uh creeps in, where the state at any point in time can tell you what to do, can tell you what what what not to do. Uh and all",
+      "endTime": 1529.46,
+      "text": "ways. Our friend Subashish Badra has an excellent book called The Cage Tiger, and I've done an episode of The Scene and the Unseen with him as well, where we speak about it. And one of the excellent sort of um uh frames that I got from the book was that constitutions also are contextual, that you have to see how they arose. That because the constitution of America arose out of this ferment, arose out of uh an environment where the people wanted to avoid this persecution and where individual freedom mattered so much. They had a constitution which, you know, valorized individual freedom and which protected the people from the state. the rules of the game were to protect the people from the state, which is what a constitution should do. In the Indian constitution, because of the way it was set up, where there was the extreme violence of partition, the country was falling apart, it was a question of whether the center would hold. The rules of the game were to everything was centralized, and the rules of the game were to protect the state from the people. So suddenly it became the other way around, not protecting the people from the state, but the state from the people. It is as if the state does not exist for our sake, which is the origin as we discussed. But we exist for the sake of the state. We exist to give them taxes and to be subjects. You know, so instead of them the the state being there to serve us, they are the rulers and we are the ones who are kind of serving the state. And this has just become such a you know a a sort of a mental framework that this is where this mission creep uh creeps in, where the state at any point in time can tell you what to do, can tell you what what what not to do. Uh and all of that is mission over creep, you know, all of that should not be the case. You know, the the state is there for a for a more limited purpose, and uh our next chapter uh will, you know uh elucidate more on",
       "words": [
         {
           "word": "ways.",
@@ -28663,29 +28599,13 @@
           "startTime": 1517.65,
           "endTime": 1517.81,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1517.81,
-      "endTime": 1517.97,
-      "text": "of",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1517.81,
           "endTime": 1517.97,
           "confidence": 0.9975
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1517.97,
-      "endTime": 1529.46,
-      "text": "that is mission over creep, you know, all of that should not be the case. You know, the the state is there for a for a more limited purpose, and uh our next chapter uh will, you know uh elucidate more on",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1517.97,
@@ -43815,8 +43735,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2299.01,
-      "endTime": 2366.37,
-      "text": "want to flip it around to the economics side of things. Uh many people are in a hurry that India should become an advanced economy. Okay, so uh the Indian Per capita GDP in PPP terms is one ninth of the United States. Okay, so roughly speaking, a little more than three doublings, and India would be at United States levels. So for example, if you got to uh 7% per capita GDP growth, which is a torid pace of growth, then you have a doubling every 10 years, and three doublings is 30 years. In 30 years would be within spitting distance of today's United States. Of course, in those 30 years, the United States would have got some growth, we'd still be quite some distance behind the United States. But there is a dream for many people that if you got 7% real per capita GDP growth, then in a short sprint of 30 years, you'll match the United States. Now, you know what? 7% Per capita GDP growth on a sustained thirty years has essentially never happened",
+      "endTime": 2503.48,
+      "text": "want to flip it around to the economics side of things. Uh many people are in a hurry that India should become an advanced economy. Okay, so uh the Indian Per capita GDP in PPP terms is one ninth of the United States. Okay, so roughly speaking, a little more than three doublings, and India would be at United States levels. So for example, if you got to uh 7% per capita GDP growth, which is a torid pace of growth, then you have a doubling every 10 years, and three doublings is 30 years. In 30 years would be within spitting distance of today's United States. Of course, in those 30 years, the United States would have got some growth, we'd still be quite some distance behind the United States. But there is a dream for many people that if you got 7% real per capita GDP growth, then in a short sprint of 30 years, you'll match the United States. Now, you know what? 7% Per capita GDP growth on a sustained thirty years has essentially never happened in world history. So we should just rescale ourselves. That's not how economic growth works. And I cannot Imagine a way to do it. And this is critically linked to this question of checks and balances. If you decide that I'm going to be a dictator and I'm going to force this country into modernity, then you would do many disgusting things. And for some time you might get some growth. It might be like Hitler and Stalin mobilizing their economies. But we know well these things really don't work very well. And actually. the country is work very badly under the baleful influence of these kinds of strongmen. What we can hope to do is to be a hare, not a tortoise. So our dream as the mascot of India, and by the way, I made this up Uh when I was at the Orange City Literature Festival in the audience, somebody said, What is your dream for India? Do you want to be a tiger or do you want to be an elephant? And I said, I want us to be the tortoise. That you want to chip away for long years and get sustained growth. The magic is sustained growth. What we are going through now is a hair that we get 20 years of high growth 1991 to 2011, and then we do badly thereafter. And so before and after, we have not got our act together to be a harmonious, successful liberal democracy. And then you get the great achievements like the history of the UK and the history of the United States, where they chug away for a hundred years at modest growth rates and get the best of all these pieces, that there is decency. There is consultation, less mistakes are made, you don't overpower other people, you don't put people into jail, you don't trigger off great social conflicts, you chip away at modernity, we organically discover, not design, what it means to be a healthy liberal society. So our dreams should not be that in thirty years I will match the per capita GDP of the United States, I'll I'll get to within spitting distance of the per capita GDP of the United States by growing at seven percent a year. That's a bad dream, that's a wrong objective to pursue. And I think that the people who chase those kinds of objectives haven't thought deeply about the process of economic development.",
       "words": [
         {
           "word": "want",
@@ -44897,15 +44817,7 @@
           "startTime": 2365.89,
           "endTime": 2366.37,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2366.37,
-      "endTime": 2367.89,
-      "text": "in world history. So",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 2366.37,
@@ -44929,15 +44841,7 @@
           "startTime": 2367.65,
           "endTime": 2367.89,
           "confidence": 0.9865
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2367.89,
-      "endTime": 2503.48,
-      "text": "we should just rescale ourselves. That's not how economic growth works. And I cannot Imagine a way to do it. And this is critically linked to this question of checks and balances. If you decide that I'm going to be a dictator and I'm going to force this country into modernity, then you would do many disgusting things. And for some time you might get some growth. It might be like Hitler and Stalin mobilizing their economies. But we know well these things really don't work very well. And actually. the country is work very badly under the baleful influence of these kinds of strongmen. What we can hope to do is to be a hare, not a tortoise. So our dream as the mascot of India, and by the way, I made this up Uh when I was at the Orange City Literature Festival in the audience, somebody said, What is your dream for India? Do you want to be a tiger or do you want to be an elephant? And I said, I want us to be the tortoise. That you want to chip away for long years and get sustained growth. The magic is sustained growth. What we are going through now is a hair that we get 20 years of high growth 1991 to 2011, and then we do badly thereafter. And so before and after, we have not got our act together to be a harmonious, successful liberal democracy. And then you get the great achievements like the history of the UK and the history of the United States, where they chug away for a hundred years at modest growth rates and get the best of all these pieces, that there is decency. There is consultation, less mistakes are made, you don't overpower other people, you don't put people into jail, you don't trigger off great social conflicts, you chip away at modernity, we organically discover, not design, what it means to be a healthy liberal society. So our dreams should not be that in thirty years I will match the per capita GDP of the United States, I'll I'll get to within spitting distance of the per capita GDP of the United States by growing at seven percent a year. That's a bad dream, that's a wrong objective to pursue. And I think that the people who chase those kinds of objectives haven't thought deeply about the process of economic development.",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 2367.89,
@@ -52415,8 +52319,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2771.66,
-      "endTime": 2804.56,
-      "text": "Before my recommendations for today, I'll give you a really funky quote which I kind of love and which tells you a lot about the state as well. And uh you'll see this on the screen now. This is by David Bose. And the quote goes, conservatives want to be your dad, telling you what to do and what not to do. Liberals want to be your mommy, feeding you, tucking you in and wiping your nose. Libertarians want to treat you as an ad adult. So this is and I want to avoid labels here, and obviously the kind of liberals he's speaking about are the the more American welfare state kind of liberals. I want to interrupt you with some rubbish.",
+      "endTime": 2801.7,
+      "text": "Before my recommendations for today, I'll give you a really funky quote which I kind of love and which tells you a lot about the state as well. And uh you'll see this on the screen now. This is by David Bose. And the quote goes, conservatives want to be your dad, telling you what to do and what not to do. Liberals want to be your mommy, feeding you, tucking you in and wiping your nose. Libertarians want to treat you as an ad adult. So this is and I want to avoid labels here, and obviously the kind of liberals he's speaking about are the the more American welfare state kind of liberals.",
       "words": [
         {
           "word": "Before",
@@ -53107,7 +53011,15 @@
           "startTime": 2800.66,
           "endTime": 2801.7,
           "confidence": 0.9423
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2801.7,
+      "endTime": 2813.76,
+      "text": "I want to interrupt you with some rubbish. Churchill said, uh dogs look up to us. Cats look down on us. Pigs treat us as equals.",
+      "words": [
         {
           "word": "I",
           "startTime": 2801.7,
@@ -53155,15 +53067,7 @@
           "startTime": 2803.06,
           "endTime": 2804.56,
           "confidence": 0.9549
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2804.82,
-      "endTime": 2813.76,
-      "text": "Churchill said, uh dogs look up to us. Cats look down on us. Pigs treat us as equals.",
-      "words": [
+        },
         {
           "word": "Churchill",
           "startTime": 2804.82,
@@ -53277,8 +53181,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2816.37,
-      "endTime": 2960.74,
-      "text": "Beautifully said and and uh fits in but I'd I'd I'd kind of urge my gentle readers to forget about labels. I don't care about labels anymore. Uh you know, earlier there was a time where I would have said I'm a classical liberal or a libertarian or whatever. Labels don't matter. Think about principles, think about what you stand for, you know, discuss along those lines. I think labels are often used in terrible tribal ways, and perhaps we can, you know, discuss that in a future episode, and we must avoid tribalism at all cost, uh and just focus on the principles behind that. But I read out this quote by David Bose because I would recommend here it is. This excellent book by David Bose called The Libertarian Reader, Uh and again, don't go by the label in the title. This has some wonderful essays and pieces by great liberal thinkers like Milton Friedman, Frederick Hayek, etc., etc. And it is sort of a good way to get a distillation of many different kinds of thoughts. David Bose has other books worth reading. He's been on the scene and the unseen with me, so we'll link that episode from the show notes as well. I would also like to recommend, we've you know, earlier I recommended Francis Fukuyama State Building. I'd also like to recommend two other books by him. which is like a two part volume. One is right here, The Origins of Political Order and the other one is called Political Order and Political Decay. So these are sort of two books, magisterial books, which over a long period of time give you a sense of the history of the state and the evolution of the state and uh so on and so forth. And I feel it's kind of important to read these books because no man is an island in the sense that, you know, one way of looking at the world is and and something that I And I'll give a family friendly version of it here. Bharme Jai Dunya, Ham Bajai Harmonia. Right? So I often think that I just want to be in harmonia mode. key the world is going to hell, why stress myself out about it? But if you are of the inclination as I am the rest of the time, that no harmonia to te but you gotta care about the world that you live in and what's happening in society and all of that. Then we need to understand a delicate interplay between the state and society. We need to find ways to think about it so we can see more clearly, which brings me back to the glass wall that you crashed into. So we you know uh and for that I think these books are excellent. Learning is excellent, engaging with knowledge Is extremely important. You know,",
+      "endTime": 2960.5,
+      "text": "Beautifully said and and uh fits in but I'd I'd I'd kind of urge my gentle readers to forget about labels. I don't care about labels anymore. Uh you know, earlier there was a time where I would have said I'm a classical liberal or a libertarian or whatever. Labels don't matter. Think about principles, think about what you stand for, you know, discuss along those lines. I think labels are often used in terrible tribal ways, and perhaps we can, you know, discuss that in a future episode, and we must avoid tribalism at all cost, uh and just focus on the principles behind that. But I read out this quote by David Bose because I would recommend here it is. This excellent book by David Bose called The Libertarian Reader, Uh and again, don't go by the label in the title. This has some wonderful essays and pieces by great liberal thinkers like Milton Friedman, Frederick Hayek, etc., etc. And it is sort of a good way to get a distillation of many different kinds of thoughts. David Bose has other books worth reading. He's been on the scene and the unseen with me, so we'll link that episode from the show notes as well. I would also like to recommend, we've you know, earlier I recommended Francis Fukuyama State Building. I'd also like to recommend two other books by him. which is like a two part volume. One is right here, The Origins of Political Order and the other one is called Political Order and Political Decay. So these are sort of two books, magisterial books, which over a long period of time give you a sense of the history of the state and the evolution of the state and uh so on and so forth. And I feel it's kind of important to read these books because no man is an island in the sense that, you know, one way of looking at the world is and and something that I And I'll give a family friendly version of it here. Bharme Jai Dunya, Ham Bajai Harmonia. Right? So I often think that I just want to be in harmonia mode. key the world is going to hell, why stress myself out about it? But if you are of the inclination as I am the rest of the time, that no harmonia to te but you gotta care about the world that you live in and what's happening in society and all of that. Then we need to understand a delicate interplay between the state and society. We need to find ways to think about it so we can see more clearly, which brings me back to the glass wall that you crashed into. So we you know uh and for that I think these books are excellent. Learning is excellent, engaging with knowledge Is extremely important.",
       "words": [
         {
           "word": "Beautifully",
@@ -56165,7 +56069,15 @@
           "startTime": 2959.78,
           "endTime": 2960.5,
           "confidence": 0.9202
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2960.5,
+      "endTime": 3014.21,
+      "text": "You know, there is an instrumental objective of knowledge that you know I want to be in a business, I want to engage with the world, I want to be in a government, and so those folks need to understand the world. Okay, and that's a healthy and worthy goal. And but then there is an equally important amusement objective. So you could be uh indifferent to all forms of persecution. But hey, you'll have more fun along the way if you understand the spectacle. So I think it's an equally good objective that look, you're here, you're living in this world. You may have cut yourself off into your high walls, but you'll have more fun if you think deeply about the play. So it's like you're watching a chess game. If you know more about chess, you'll actually have a more interesting ride as uh you watch this.",
+      "words": [
         {
           "word": "You",
           "startTime": 2960.5,
@@ -56177,15 +56089,7 @@
           "startTime": 2960.58,
           "endTime": 2960.74,
           "confidence": 0.9098
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2960.74,
-      "endTime": 3014.21,
-      "text": "there is an instrumental objective of knowledge that you know I want to be in a business, I want to engage with the world, I want to be in a government, and so those folks need to understand the world. Okay, and that's a healthy and worthy goal. And but then there is an equally important amusement objective. So you could be uh indifferent to all forms of persecution. But hey, you'll have more fun along the way if you understand the spectacle. So I think it's an equally good objective that look, you're here, you're living in this world. You may have cut yourself off into your high walls, but you'll have more fun if you think deeply about the play. So it's like you're watching a chess game. If you know more about chess, you'll actually have a more interesting ride as uh you watch this.",
-      "words": [
+        },
         {
           "word": "there",
           "startTime": 2960.74,

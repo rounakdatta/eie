@@ -5,7 +5,7 @@
     "durationSeconds": 3376,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -222,8 +222,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 58.17,
-      "endTime": 93.21,
-      "text": "So after many, many years, I decided, hey, you know, we've got a chess board here, we've got some pieces and all of that. So let me solve the eight queens problem, which I must have last solved like 20 years ago or something of that sort. Uh and the eight queens problem basically is you've got to play it, place eight queens on a chess board, and none of them can capture uh any other. So, you know, different um uh rows, different flanks, different diagonals, which I managed to do in one feverish attempt. So, like well done to me. But one of the things we have in common is both of us love playing chess. Neither of us is particularly good at it, but we both love it. So tell me a bit about your love for chess,",
+      "endTime": 93.71,
+      "text": "So after many, many years, I decided, hey, you know, we've got a chess board here, we've got some pieces and all of that. So let me solve the eight queens problem, which I must have last solved like 20 years ago or something of that sort. Uh and the eight queens problem basically is you've got to play it, place eight queens on a chess board, and none of them can capture uh any other. So, you know, different um uh rows, different flanks, different diagonals, which I managed to do in one feverish attempt. So, like well done to me. But one of the things we have in common is both of us love playing chess. Neither of us is particularly good at it, but we both love it. So tell me a bit about your love for chess, man.",
       "words": [
         {
           "word": "So",
@@ -1070,21 +1070,21 @@
           "startTime": 92.81,
           "endTime": 93.21,
           "confidence": 0.9492
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 93.21,
-      "endTime": 121.48,
-      "text": "man. Uh well I uh I have an ancient happy memory of uh writing a program that solves an eight queens problem first in FOTRAN, which is a very limited language in terms of its expressivity, and then in nicer languages that allow you to do these algorithms nicely. So for me it's an n-queens problem, and I have lost the ability to think of it as a chess problem. I only think of it as an",
-      "words": [
+        },
         {
           "word": "man.",
           "startTime": 93.21,
           "endTime": 93.71,
           "confidence": 0.9835
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 93.96,
+      "endTime": 120.76,
+      "text": "Uh well I uh I have an ancient happy memory of uh writing a program that solves an eight queens problem first in FOTRAN, which is a very limited language in terms of its expressivity, and then in nicer languages that allow you to do these algorithms nicely. So for me it's an n-queens problem, and I have lost the ability to think of it as a chess problem. I only think",
+      "words": [
         {
           "word": "Uh",
           "startTime": 93.96,
@@ -1516,7 +1516,15 @@
           "startTime": 120.52,
           "endTime": 120.76,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 120.76,
+      "endTime": 127.64,
+      "text": "of it as an algorithm problem. Wow. So that's one way of looking at it. When AI can do this, why are you wasting your",
+      "words": [
         {
           "word": "of",
           "startTime": 120.76,
@@ -1540,15 +1548,7 @@
           "startTime": 121.32,
           "endTime": 121.48,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 121.48,
-      "endTime": 127.64,
-      "text": "algorithm problem. Wow. So that's one way of looking at it. When AI can do this, why are you wasting your",
-      "words": [
+        },
         {
           "word": "algorithm",
           "startTime": 121.48,
@@ -1808,8 +1808,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 132.94,
-      "endTime": 145.74,
-      "text": "n queens solutions for a number n. So what is the maximum number of queens on a board of nxn? I I presume. What is the maximum uh what is the biggest board on which you can do something like this?",
+      "endTime": 145.9,
+      "text": "n queens solutions for a number n. So what is the maximum number of queens on a board of nxn? I I presume. What is the maximum uh what is the biggest board on which you can do something like this? I",
       "words": [
         {
           "word": "n",
@@ -2056,21 +2056,21 @@
           "startTime": 145.1,
           "endTime": 145.74,
           "confidence": 0.9018
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 145.74,
-      "endTime": 147.44,
-      "text": "I think that it is always solvable.",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 145.74,
           "endTime": 145.9,
           "confidence": 0.9568
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 145.9,
+      "endTime": 147.44,
+      "text": "think that it is always solvable.",
+      "words": [
         {
           "word": "think",
           "startTime": 145.9,
@@ -3918,8 +3918,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 243.78,
-      "endTime": 287.94,
-      "text": "Well, uh if you think of a car caricature of a cartel, it would be opaque because at its peak it was a coalition of all the oil producers in the world and they would agree to fix a price and they would agree to cut supply so as to achieve their target price. So it was really the most brazen visible story of price fixing. But because it was not by firms and it was by governments, then it was immune to any kind of antitrust. So you could have uh competition policy rules in any one country, but there are no ways To enforce supranational rules about competition. So if you thought that there was a problem in competition,",
+      "endTime": 507.91,
+      "text": "Well, uh if you think of a car caricature of a cartel, it would be opaque because at its peak it was a coalition of all the oil producers in the world and they would agree to fix a price and they would agree to cut supply so as to achieve their target price. So it was really the most brazen visible story of price fixing. But because it was not by firms and it was by governments, then it was immune to any kind of antitrust. So you could have uh competition policy rules in any one country, but there are no ways To enforce supranational rules about competition. So if you thought that there was a problem in competition, then this was the prototypical demo. In its heyday, uh OPEC was famous for driving up the price of crude oil quite dramatically in the early 70s, from something like $1.5 a barrel to something like $11 a barrel. There is a particular moment there where there had been a long and easy collaboration between Between the Arab countries, most notably Saudi Arabia, and the Western consumers of crude oil. And there was a live and let live on both sides. So OPEC did not really find its feet and go after trying to force up the price. Then there was this big event, which was the 1973 war. So if you recall the history, first there was the 1967 war, what Ariel uh Sharon named the Six-Day War, which Israel won spectacularly. And then a bunch of Arab countries prepared and prepared for a rematch. And they got their strategic surprise in the 1973 war, but then Israel was able to pick itself up, and Israel won the 73 war. At the end of that, the Arab street was just angry. There was just humiliation and frustration and blinding hatred all over the Middle East against Israel, which won the 1973 war. So this they they failed to eject the Jews in 1948. They had failed in 1967 and they had failed in 1973. So, in that fit of anger, a bunch of the oil-producing countries got together and said, we will raise the price of crude oil. And much later, when the histories were being written, we know that they themselves thought that this was a reckless thing to do. And for all you know, some uh powerful, important oil-consuming countries of the world will just land an army and grab the oil fields. Of the Persian Gulf. Okay. And it is believed that Henry Kissinger was the author of a pseudonymous article that was written in a magazine, which basically showed the detail of a military operation to grab the oil-producing regions of the Persian Gulf and turn them into a global trust. Okay, saying that these Bedouins should not have control of that oil. Okay, as we all know, that didn't happen. And suddenly the Arabs looked at each other saying, Wow, we got such a big increase in the oil price. Okay, and this is the beginnings of what I call The caricature of a cartel, the cartoonish monopoly, where really you're calling all the shots, and there is no ability of any state to try to make a difference. Okay? So if there was ever a cartel that shaped a price, this is it. So very well. How did it work? How did that work out? And let's look at the data. Roughly speaking, in 1974, the price of crude oil was about $11 a barrel, and today it's about $77 a barrel. Okay, so it's a 7x from 1974 till 2023, which works out to about 4% nominal USD. Okay, you knock out a little more than 2% for inflation. It's about 1.5% real. Okay, so you you tell me that you've got this powerful. Cartel that's controlling the price, and all they've managed to get is about one and a half percent real of a price hike over the succeeding",
       "words": [
         {
           "word": "Well,",
@@ -4646,15 +4646,7 @@
           "startTime": 287.06,
           "endTime": 287.94,
           "confidence": 0.996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 287.94,
-      "endTime": 289.22,
-      "text": "then this was the",
-      "words": [
+        },
         {
           "word": "then",
           "startTime": 287.94,
@@ -4678,15 +4670,7 @@
           "startTime": 288.9,
           "endTime": 289.22,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 289.22,
-      "endTime": 507.91,
-      "text": "prototypical demo. In its heyday, uh OPEC was famous for driving up the price of crude oil quite dramatically in the early 70s, from something like $1.5 a barrel to something like $11 a barrel. There is a particular moment there where there had been a long and easy collaboration between Between the Arab countries, most notably Saudi Arabia, and the Western consumers of crude oil. And there was a live and let live on both sides. So OPEC did not really find its feet and go after trying to force up the price. Then there was this big event, which was the 1973 war. So if you recall the history, first there was the 1967 war, what Ariel uh Sharon named the Six-Day War, which Israel won spectacularly. And then a bunch of Arab countries prepared and prepared for a rematch. And they got their strategic surprise in the 1973 war, but then Israel was able to pick itself up, and Israel won the 73 war. At the end of that, the Arab street was just angry. There was just humiliation and frustration and blinding hatred all over the Middle East against Israel, which won the 1973 war. So this they they failed to eject the Jews in 1948. They had failed in 1967 and they had failed in 1973. So, in that fit of anger, a bunch of the oil-producing countries got together and said, we will raise the price of crude oil. And much later, when the histories were being written, we know that they themselves thought that this was a reckless thing to do. And for all you know, some uh powerful, important oil-consuming countries of the world will just land an army and grab the oil fields. Of the Persian Gulf. Okay. And it is believed that Henry Kissinger was the author of a pseudonymous article that was written in a magazine, which basically showed the detail of a military operation to grab the oil-producing regions of the Persian Gulf and turn them into a global trust. Okay, saying that these Bedouins should not have control of that oil. Okay, as we all know, that didn't happen. And suddenly the Arabs looked at each other saying, Wow, we got such a big increase in the oil price. Okay, and this is the beginnings of what I call The caricature of a cartel, the cartoonish monopoly, where really you're calling all the shots, and there is no ability of any state to try to make a difference. Okay? So if there was ever a cartel that shaped a price, this is it. So very well. How did it work? How did that work out? And let's look at the data. Roughly speaking, in 1974, the price of crude oil was about $11 a barrel, and today it's about $77 a barrel. Okay, so it's a 7x from 1974 till 2023, which works out to about 4% nominal USD. Okay, you knock out a little more than 2% for inflation. It's about 1.5% real. Okay, so you you tell me that you've got this powerful. Cartel that's controlling the price, and all they've managed to get is about one and a half percent real of a price hike over the succeeding",
-      "words": [
+        },
         {
           "word": "prototypical",
           "startTime": 289.22,
@@ -9250,8 +9234,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 563.78,
-      "endTime": 1181.16,
-      "text": "the reasons for that? So let's go dive into the reasons. But first, my headline is that if you think this was a cartel that could deliver, sorry, that didn't work out. All they got was one and a half percent real. Okay, so how did this happen? Uh many, many things were at work, and let me sketch uh some of them. The first big idea is that In a problem like crude oil and actually in almost any market in the world, price elasticities tend to be low in the short term. So if I suddenly double the price, in the short term, you don't have alternatives. You have to ride to work in your car and you just keep on buying that amount of petrol and uh you are stuck. So in the short term, the responsivity of demand to the change in prices is very small. In the long run, however, human beings adjust dramatically. Okay, so uh new oil deposits were found on a large scale because the higher price justified bigger investments in exploration. Consumption went down because all kinds of innovative technological solutions were found to make cars more fuel efficient, to find uh alternatives to oil as a way of getting your work done. Then uh countries don't like to be extorted. So many times people have a simplistic notion of hard power. You think that I am powerful because I can choke your oil supply, you think that I am powerful because I can choke your rare earth supply. As China tried to do to Japan in 2012? You think that you're powerful because I'll choke your energy supply as Russia tried to do to Western Europe at the time of the Ukraine invasion. I don't think these things work too much because nobody likes to be extorted. So as long as you are playing fair, I am your user, I can have a large dependence, it'll be okay. The moment you try to misbehave and you try to exert your might and start choking supply, driving up prices in an unreasonable way. Then I will come up with a large scale of responses. So the analogy I'd like to give is like this. Suppose we say India is a superpower in call center services. Okay? And if the world tries to misbehave with India on some problem, then we will cut off the supply of call centers to the whole world. Okay? And suppose the Indian state actually got every call center in India to refuse to work for JP Morgan. Okay? Yeah, it would be a big disruption for JP Morgan for the first three weeks. And then in the long run, it would be a strategic mistake because by God, the world will find ways to get their call center work done without having to deal with somebody who misbehaves. So I think a lot of this double quotes hard power thinking is really extremely short-sighted. It's done without the slightest sense that in a conflict the other guy gets a vote and people don't like to be extorted. And so all over the world, governments built all kinds of responses and encouraged. Ways in which their economies could be de-risked vis-a-vis extortion by OPEC. So that was the second thing that drove the world towards finding ways to work better. The third problem that happened is that in every cartel, cohesion and coordination are actually not that easy. It is easy for a Saudi Arabia or a Kuwait or a Qatar to coldly cut back on production to be able to reduce supply. So by the way, that early 70s production decline was only 8%. They only cut production by 8% and the price went up by a very large amount from $2 from $1.5 to $11. So you need the ability of the cartel to cut back on oil supply. For countries like Saudi Arabia, Kuwait and Qatar, these are countries with a very small population and the oil revenues are frankly extremely large. So they're quite comfortable with cutting back on supply, accepting weak revenues for a short time, and causing turmoil in the world oil market, and you're fine. But there were many other cartel members with large populations, Iraq, Iran, where these choices were not available. And so they were keen to sell more. So on one hand, when Saudi Arabia would be trying to cut back production because of its cartel obligations, then on the other hand, some cartel members would be merrily flooding the market with more oil. So they'd be rinaging on the cartel. It's very difficult for a cartel to enforce. on its other members. In terms of the political coherence, countries like Mexico and Russia were less aligned with the interests of the Middle Eastern countries. And within the Middle East, Iran was not aligned in terms of its security interests with the Sunni Arab countries. And the high population countries were not aligned with the interests of the low population countries. So all in all, the ability of the cartel, the ability of Saudi Arabia to move output around in achieving the stated objectives of the cartel were actually much weaker than meets the eye. So, you know, on one hand, the OPEC would meet and they would make all these loud promises that this is unacceptable, we will cut back oil prices by two million barrels a day, and then they would go home and it would not really work out. So there was a time when Saudi Arabia was able to lead the cartel and get this done. But with the emergence of North Sea oil and Russia and Mexico and Iran and Iraq and all the other countries. It became that Saudi Arabia would pull back by one to three million barrels a day, others would make it up. And so the overall effectiveness of the cartel became quite poor. Okay. And then you get to the most interesting period, which is the recent period. When the war in Ukraine began, uh there was a great turmoil in the energy market. To some extent, uh Putin tried to extort Europe by cutting back on energy supplies. The implicit threat was that. If you don't stop supporting Ukraine, then I will create a recession and you will be shivering in your homes in winter. Remember the war started in February 2022. So winter of 2022 was a big battle. And Europe chose to call that bluff and say, no, we're going to do things differently. And they were able to find enormous effort and solutions. They found an array of solutions and they were able to keep the European economy working. Uh, despite that. What it turned into was that Russian sale of crude oil shifted to primarily India and China. India is at about 51% of Russian crude oil sales. At this point, something remarkable happened. The Western countries decided that they would invent a new tool of economic statecraft. They decided that we will impose a price limit upon all sales of crude oil by Russia. At $60 a barrel. And when I first thought about it, I said, huh? It's like Russia is selling crude oil to China and India. And how do these Western countries get a say in putting a cap on what price will be charged? And the answer, it turns out, is very fascinating. Almost all the shipping of the world and almost all the shipping insurance of the world is run out of Western countries, most notably the UK. So the Western countries use this leverage to To create state coercion upon the shipping companies and upon the insurers, saying that we will hit you with punishments if you transport Russian oil or insure the transportation of Russian oil at a price of above $60 a barrel. Okay, so you would never have imagined that this kind of instrument of economic statecraft would be invented. And I wasn't even certain that this stuff would work. I mean, come on, people would invent. new fleets of uh tankers that are not registered in Western countries, and the Financial Times has a report about one such organization operating out of Bombay. But all in all This seems to have worked because when you look at the data, it looks like Russian sale of crude oil was choked at $60 a barrel. Okay, now you come to the last act of the recent period. Russia needed money in order to wage that war. So Putin was actually under pressure to sell more and more crude oil in order to fund the war. And he had only two sellers, uh, he had only two buyers to go to, China and India. So suddenly, instead of OPEC being a cartel of sellers, you had China and India as a cartel of buyers. Who increasingly got the power to drive a hard bargain and get the crude oil from Putin at a very low price. So that's just such a hilarious turnaround that we went a full circle from a cartoonish cartel that was able to dramatically raise the world price of crude oil in response to the 1973 war to a reverse OPEC comprising India and China, which was able to drive down the price of crude oil in the aftermath of the 2022 war. war in Ukraine. So that's been such a dramatic and funny journey and it makes us think deeply about these markets. Now let's spend five minutes more peering into the future. Okay, the Saudi oil minister uh Ahmad Zaki Yamani many years ago said something truly, truly brilliant. He said the Stone Age did not end because the world ran out of stones. Okay, and the analogy is that the oil age won't end because the world will run out of oil. There will be technological innovation and there will be other ways to get your energy done. Okay, and at the time he was probably thinking",
+      "endTime": 1248.65,
+      "text": "the reasons for that? So let's go dive into the reasons. But first, my headline is that if you think this was a cartel that could deliver, sorry, that didn't work out. All they got was one and a half percent real. Okay, so how did this happen? Uh many, many things were at work, and let me sketch uh some of them. The first big idea is that In a problem like crude oil and actually in almost any market in the world, price elasticities tend to be low in the short term. So if I suddenly double the price, in the short term, you don't have alternatives. You have to ride to work in your car and you just keep on buying that amount of petrol and uh you are stuck. So in the short term, the responsivity of demand to the change in prices is very small. In the long run, however, human beings adjust dramatically. Okay, so uh new oil deposits were found on a large scale because the higher price justified bigger investments in exploration. Consumption went down because all kinds of innovative technological solutions were found to make cars more fuel efficient, to find uh alternatives to oil as a way of getting your work done. Then uh countries don't like to be extorted. So many times people have a simplistic notion of hard power. You think that I am powerful because I can choke your oil supply, you think that I am powerful because I can choke your rare earth supply. As China tried to do to Japan in 2012? You think that you're powerful because I'll choke your energy supply as Russia tried to do to Western Europe at the time of the Ukraine invasion. I don't think these things work too much because nobody likes to be extorted. So as long as you are playing fair, I am your user, I can have a large dependence, it'll be okay. The moment you try to misbehave and you try to exert your might and start choking supply, driving up prices in an unreasonable way. Then I will come up with a large scale of responses. So the analogy I'd like to give is like this. Suppose we say India is a superpower in call center services. Okay? And if the world tries to misbehave with India on some problem, then we will cut off the supply of call centers to the whole world. Okay? And suppose the Indian state actually got every call center in India to refuse to work for JP Morgan. Okay? Yeah, it would be a big disruption for JP Morgan for the first three weeks. And then in the long run, it would be a strategic mistake because by God, the world will find ways to get their call center work done without having to deal with somebody who misbehaves. So I think a lot of this double quotes hard power thinking is really extremely short-sighted. It's done without the slightest sense that in a conflict the other guy gets a vote and people don't like to be extorted. And so all over the world, governments built all kinds of responses and encouraged. Ways in which their economies could be de-risked vis-a-vis extortion by OPEC. So that was the second thing that drove the world towards finding ways to work better. The third problem that happened is that in every cartel, cohesion and coordination are actually not that easy. It is easy for a Saudi Arabia or a Kuwait or a Qatar to coldly cut back on production to be able to reduce supply. So by the way, that early 70s production decline was only 8%. They only cut production by 8% and the price went up by a very large amount from $2 from $1.5 to $11. So you need the ability of the cartel to cut back on oil supply. For countries like Saudi Arabia, Kuwait and Qatar, these are countries with a very small population and the oil revenues are frankly extremely large. So they're quite comfortable with cutting back on supply, accepting weak revenues for a short time, and causing turmoil in the world oil market, and you're fine. But there were many other cartel members with large populations, Iraq, Iran, where these choices were not available. And so they were keen to sell more. So on one hand, when Saudi Arabia would be trying to cut back production because of its cartel obligations, then on the other hand, some cartel members would be merrily flooding the market with more oil. So they'd be rinaging on the cartel. It's very difficult for a cartel to enforce. on its other members. In terms of the political coherence, countries like Mexico and Russia were less aligned with the interests of the Middle Eastern countries. And within the Middle East, Iran was not aligned in terms of its security interests with the Sunni Arab countries. And the high population countries were not aligned with the interests of the low population countries. So all in all, the ability of the cartel, the ability of Saudi Arabia to move output around in achieving the stated objectives of the cartel were actually much weaker than meets the eye. So, you know, on one hand, the OPEC would meet and they would make all these loud promises that this is unacceptable, we will cut back oil prices by two million barrels a day, and then they would go home and it would not really work out. So there was a time when Saudi Arabia was able to lead the cartel and get this done. But with the emergence of North Sea oil and Russia and Mexico and Iran and Iraq and all the other countries. It became that Saudi Arabia would pull back by one to three million barrels a day, others would make it up. And so the overall effectiveness of the cartel became quite poor. Okay. And then you get to the most interesting period, which is the recent period. When the war in Ukraine began, uh there was a great turmoil in the energy market. To some extent, uh Putin tried to extort Europe by cutting back on energy supplies. The implicit threat was that. If you don't stop supporting Ukraine, then I will create a recession and you will be shivering in your homes in winter. Remember the war started in February 2022. So winter of 2022 was a big battle. And Europe chose to call that bluff and say, no, we're going to do things differently. And they were able to find enormous effort and solutions. They found an array of solutions and they were able to keep the European economy working. Uh, despite that. What it turned into was that Russian sale of crude oil shifted to primarily India and China. India is at about 51% of Russian crude oil sales. At this point, something remarkable happened. The Western countries decided that they would invent a new tool of economic statecraft. They decided that we will impose a price limit upon all sales of crude oil by Russia. At $60 a barrel. And when I first thought about it, I said, huh? It's like Russia is selling crude oil to China and India. And how do these Western countries get a say in putting a cap on what price will be charged? And the answer, it turns out, is very fascinating. Almost all the shipping of the world and almost all the shipping insurance of the world is run out of Western countries, most notably the UK. So the Western countries use this leverage to To create state coercion upon the shipping companies and upon the insurers, saying that we will hit you with punishments if you transport Russian oil or insure the transportation of Russian oil at a price of above $60 a barrel. Okay, so you would never have imagined that this kind of instrument of economic statecraft would be invented. And I wasn't even certain that this stuff would work. I mean, come on, people would invent. new fleets of uh tankers that are not registered in Western countries, and the Financial Times has a report about one such organization operating out of Bombay. But all in all This seems to have worked because when you look at the data, it looks like Russian sale of crude oil was choked at $60 a barrel. Okay, now you come to the last act of the recent period. Russia needed money in order to wage that war. So Putin was actually under pressure to sell more and more crude oil in order to fund the war. And he had only two sellers, uh, he had only two buyers to go to, China and India. So suddenly, instead of OPEC being a cartel of sellers, you had China and India as a cartel of buyers. Who increasingly got the power to drive a hard bargain and get the crude oil from Putin at a very low price. So that's just such a hilarious turnaround that we went a full circle from a cartoonish cartel that was able to dramatically raise the world price of crude oil in response to the 1973 war to a reverse OPEC comprising India and China, which was able to drive down the price of crude oil in the aftermath of the 2022 war. war in Ukraine. So that's been such a dramatic and funny journey and it makes us think deeply about these markets. Now let's spend five minutes more peering into the future. Okay, the Saudi oil minister uh Ahmad Zaki Yamani many years ago said something truly, truly brilliant. He said the Stone Age did not end because the world ran out of stones. Okay, and the analogy is that the oil age won't end because the world will run out of oil. There will be technological innovation and there will be other ways to get your energy done. Okay, and at the time he was probably thinking nuclear and fusion, which Is always the great technology of the next 20 years and has always been and will always be. You had no idea what technological change will happen, but he was thinking on those lines. And you know what? That is indeed the way the world has evolved because of the problem of climate change. Okay? So now decarbonization is the major problem reshaping the world. And uh the leaders in this are in Europe, where they seem to be deathly intent on getting their net carbon emissions to roughly zero. By about 2035 or maybe 2040, which is not so far away, which is you know 13 or 18 years away. So it is plausible to think of a world where that gas sitting in the Siberian fields. May still be there a thousand years from now. That maybe 2022, 2023 was actually the end of that gas extraction from Siberia. So we're in a whole new world, and who would have thought that this is where OPEC would",
       "words": [
         {
           "word": "the",
@@ -19332,15 +19316,7 @@
           "startTime": 1180.68,
           "endTime": 1181.16,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1181.16,
-      "endTime": 1183.8,
-      "text": "nuclear and fusion,",
-      "words": [
+        },
         {
           "word": "nuclear",
           "startTime": 1181.16,
@@ -19358,15 +19334,7 @@
           "startTime": 1182.92,
           "endTime": 1183.8,
           "confidence": 0.943
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1183.8,
-      "endTime": 1248.89,
-      "text": "which Is always the great technology of the next 20 years and has always been and will always be. You had no idea what technological change will happen, but he was thinking on those lines. And you know what? That is indeed the way the world has evolved because of the problem of climate change. Okay? So now decarbonization is the major problem reshaping the world. And uh the leaders in this are in Europe, where they seem to be deathly intent on getting their net carbon emissions to roughly zero. By about 2035 or maybe 2040, which is not so far away, which is you know 13 or 18 years away. So it is plausible to think of a world where that gas sitting in the Siberian fields. May still be there a thousand years from now. That maybe 2022, 2023 was actually the end of that gas extraction from Siberia. So we're in a whole new world, and who would have thought that this is where OPEC would end",
-      "words": [
+        },
         {
           "word": "which",
           "startTime": 1183.8,
@@ -20386,21 +20354,21 @@
           "startTime": 1248.41,
           "endTime": 1248.65,
           "confidence": 0.9998
-        },
-        {
-          "word": "end",
-          "startTime": 1248.65,
-          "endTime": 1248.89,
-          "confidence": 1.0
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1248.89,
-      "endTime": 1290.89,
-      "text": "up? To quote, you know, one of our heroes, Bob Dylan, a hard day's rain agonapal. So it's raining outside, and you know, so if that noise kind of gets into your system, it's cool, it's rain. There's nothing wrong with rain. It's gonna be a sunny day tomorrow. And I also want to uh tell our viewers that we did this great episode on Ukraine and Russia, which is full of incredible insights like the one that he just shared. That's You know, more than five hours, link will be in the show notes. Uh uh great episode of the scene and the unseen, so do check that out. Um A couple of thoughts. One is, you know, I was reminded of this crackpot conspiracy theory called Peacoil. You know, which has been circulating from uh the seventies, eighties onwards, where there were a bunch of people. I never heard this. Please tell. Of course you've heard of peacoil. Peacoil was",
+      "startTime": 1248.65,
+      "endTime": 1413.82,
+      "text": "end up? To quote, you know, one of our heroes, Bob Dylan, a hard day's rain agonapal. So it's raining outside, and you know, so if that noise kind of gets into your system, it's cool, it's rain. There's nothing wrong with rain. It's gonna be a sunny day tomorrow. And I also want to uh tell our viewers that we did this great episode on Ukraine and Russia, which is full of incredible insights like the one that he just shared. That's You know, more than five hours, link will be in the show notes. Uh uh great episode of the scene and the unseen, so do check that out. Um A couple of thoughts. One is, you know, I was reminded of this crackpot conspiracy theory called Peacoil. You know, which has been circulating from uh the seventies, eighties onwards, where there were a bunch of people. I never heard this. Please tell. Of course you've heard of peacoil. Peacoil was that oil is going to run out eventually. Peak oil, yeah, got it. Yeah. Yeah, uh sorry. So uh yeah, so peacoil was this whole theory that hey, we're gonna run out of oil and we gotta do something and blah blah blah. And seventies onwards people have been saying that. And anyone who's slightly enumerate A and understands economics would not think like that because A, the numbers indicate there was always enough oil, we weren't going to run out. And B, even if you were to come to an extrapolation from current numbers, that okay, at this rate of production and these are the known reserves, we might run out at some point if people keep increasing their use of oil. The point was if you understand the way incentives work, then it doesn't really matter. What happens if uh the your your supply of oil goes down is that the prices go up, or maybe the cartel takes the prices up anyway. But that changes the incentives, it incentivizes people as you pointed out. to invest more in oil oil exploration, to invest more in alternative energy sources and renewables and all of that, to maybe make a shift towards nuclear, etc., etc. And the whole game really changes. We respond to incentives. So any simplistic view of the world that doesn't take those incentives into account is completely out of whack. And and and peak oil was one such theory which thankfully is uh long dead. And and we see those incentives play out even in Russia Ukraine because you know Russia basically had Europe where it wanted Europe. Europe was reliant on Russia's gas and oil uh supplies. It had nowhere else to turn and Russia assumed that okay Europe is gonna be with us. But incentives, Europe turned around, uh like you've you know jokingly said before that Putin should get the Nobel Prize for uh uh peace because solve for solving climate change because suddenly the war has led to a spurt in investment in renewables and so on and so forth. And We respond to incentives, number one, and humans are deeply ingenuous. We will find our way out of any situation. We are not dependent on anything or anyone. And you get such a great example of this in the war and the whole oil and gas industry is such a great illustration. Yeah, and and",
       "words": [
+        {
+          "word": "end",
+          "startTime": 1248.65,
+          "endTime": 1248.89,
+          "confidence": 1.0
+        },
         {
           "word": "up?",
           "startTime": 1248.89,
@@ -21372,15 +21340,7 @@
           "startTime": 1290.73,
           "endTime": 1290.89,
           "confidence": 0.9961
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1290.89,
-      "endTime": 1292.33,
-      "text": "that oil is going to run out eventually.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1290.89,
@@ -21428,15 +21388,7 @@
           "startTime": 1291.77,
           "endTime": 1292.33,
           "confidence": 0.9457
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1292.33,
-      "endTime": 1395.34,
-      "text": "Peak oil, yeah, got it. Yeah. Yeah, uh sorry. So uh yeah, so peacoil was this whole theory that hey, we're gonna run out of oil and we gotta do something and blah blah blah. And seventies onwards people have been saying that. And anyone who's slightly enumerate A and understands economics would not think like that because A, the numbers indicate there was always enough oil, we weren't going to run out. And B, even if you were to come to an extrapolation from current numbers, that okay, at this rate of production and these are the known reserves, we might run out at some point if people keep increasing their use of oil. The point was if you understand the way incentives work, then it doesn't really matter. What happens if uh the your your supply of oil goes down is that the prices go up, or maybe the cartel takes the prices up anyway. But that changes the incentives, it incentivizes people as you pointed out. to invest more in oil oil exploration, to invest more in alternative energy sources and renewables and all of that, to maybe make a shift towards nuclear, etc., etc. And the whole game really changes. We respond to incentives. So any simplistic view of the world that doesn't take those incentives into account is completely out of whack. And and and peak oil was one such theory which thankfully is uh long dead. And and we see those incentives play out even in Russia Ukraine because you know Russia basically had Europe where it wanted Europe. Europe was reliant on Russia's gas and oil uh supplies. It had nowhere else to turn and Russia assumed that okay Europe is gonna be with us. But incentives, Europe turned around, uh like you've you know jokingly said before that Putin should get the Nobel Prize for uh uh peace because solve for solving climate change because suddenly the war has led to a spurt in investment in renewables and so on and so forth.",
-      "words": [
+        },
         {
           "word": "Peak",
           "startTime": 1292.33,
@@ -23482,15 +23434,7 @@
           "startTime": 1394.7,
           "endTime": 1395.34,
           "confidence": 0.8638
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1395.34,
-      "endTime": 1397.9,
-      "text": "And We respond to incentives,",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1395.34,
@@ -23520,15 +23464,7 @@
           "startTime": 1397.26,
           "endTime": 1397.9,
           "confidence": 0.8805
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1397.9,
-      "endTime": 1413.26,
-      "text": "number one, and humans are deeply ingenuous. We will find our way out of any situation. We are not dependent on anything or anyone. And you get such a great example of this in the war and the whole oil and gas industry is such a great illustration.",
-      "words": [
+        },
         {
           "word": "number",
           "startTime": 1397.9,
@@ -23816,15 +23752,7 @@
           "startTime": 1412.54,
           "endTime": 1413.26,
           "confidence": 0.9949
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1413.26,
-      "endTime": 1561.22,
-      "text": "Yeah, and and this is a very important uh illustration of the gap between the thinking of engineers and the thinking of economists. Okay, so uh in 1972 there was this Club of Rome report. where they did a whole bunch of mechanical extrapolations about the consumption of various things including oil. And it was all doom and gloom that the world is going to come to an end. And what was missing in that entire thinking was the word price. Okay, once you bring a price system into it, it is magical that supply and demand will both respond to changing prices. So similarly, every now and then we get these concerns about lithium, that lithium is the raw material that is uh being used to make lithium-ion batteries. And it is claimed that China has a global monopoly position in the making of lithium. And I'd just like to say that first, in the furnace of the stars, right after hydrogen and helium, a very large amount of lithium is made. Lithium is a very plentiful element. It's there all over the universe. It's not exotic, it's not rare. Okay? And second, if China tries to mess with the world in terms of the access to lithium, then there is just no question that there will be a temporary disruption and nobody likes to be extorted. People will not do business with China again, and all kinds of production will spring up everywhere in the world. So there have recently been some very big discoveries of lithium in uh the state of Jammu and Kashmir. Okay, and so on. Like lithium is plentiful in this universe. There is nothing difficult about it. Uh similarly, we had already reached the point with certain uh natural resource prices where serious people were making up business plans to send spacecraft out into the asteroid belt, find Asteroids that are rich in that particular element and tow it back to the earth. And this has been done in the last 10-20 years. The designing. It never worked out. The financing did not quite work out. But I say we are this close that you give me 50%, 100% higher prices, and this stuff will start happening. So I I just never worry about natural resource constraints. I worry about global warming. So those are the real constraints that if we fill the air with CO2, there will be large-scale. Anthropogenic climate change, which would be a pretty terrible life for all of us. That is a real threat. Resource constraints are not a",
-      "words": [
+        },
         {
           "word": "Yeah,",
           "startTime": 1413.26,
@@ -23842,7 +23770,15 @@
           "startTime": 1413.66,
           "endTime": 1413.82,
           "confidence": 0.8838
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1413.82,
+      "endTime": 1561.22,
+      "text": "this is a very important uh illustration of the gap between the thinking of engineers and the thinking of economists. Okay, so uh in 1972 there was this Club of Rome report. where they did a whole bunch of mechanical extrapolations about the consumption of various things including oil. And it was all doom and gloom that the world is going to come to an end. And what was missing in that entire thinking was the word price. Okay, once you bring a price system into it, it is magical that supply and demand will both respond to changing prices. So similarly, every now and then we get these concerns about lithium, that lithium is the raw material that is uh being used to make lithium-ion batteries. And it is claimed that China has a global monopoly position in the making of lithium. And I'd just like to say that first, in the furnace of the stars, right after hydrogen and helium, a very large amount of lithium is made. Lithium is a very plentiful element. It's there all over the universe. It's not exotic, it's not rare. Okay? And second, if China tries to mess with the world in terms of the access to lithium, then there is just no question that there will be a temporary disruption and nobody likes to be extorted. People will not do business with China again, and all kinds of production will spring up everywhere in the world. So there have recently been some very big discoveries of lithium in uh the state of Jammu and Kashmir. Okay, and so on. Like lithium is plentiful in this universe. There is nothing difficult about it. Uh similarly, we had already reached the point with certain uh natural resource prices where serious people were making up business plans to send spacecraft out into the asteroid belt, find Asteroids that are rich in that particular element and tow it back to the earth. And this has been done in the last 10-20 years. The designing. It never worked out. The financing did not quite work out. But I say we are this close that you give me 50%, 100% higher prices, and this stuff will start happening. So I I just never worry about natural resource constraints. I worry about global warming. So those are the real constraints that if we fill the air with CO2, there will be large-scale. Anthropogenic climate change, which would be a pretty terrible life for all of us. That is a real threat. Resource constraints are not a",
+      "words": [
         {
           "word": "this",
           "startTime": 1413.82,
@@ -26604,8 +26540,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1570.18,
-      "endTime": 1573.3,
-      "text": "have to do heavy elements. Lithium is plentiful on the Earth. Plentiful on the Earth.",
+      "endTime": 1574.58,
+      "text": "have to do heavy elements. Lithium is plentiful on the Earth. Plentiful on the Earth. Find tantalum or something.",
       "words": [
         {
           "word": "have",
@@ -26696,15 +26632,7 @@
           "startTime": 1572.82,
           "endTime": 1573.3,
           "confidence": 0.8646
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1573.3,
-      "endTime": 1579.12,
-      "text": "Find tantalum or something. Tantalum. Tantalum is it's a real thing. Yeah. Right. So okay.",
-      "words": [
+        },
         {
           "word": "Find",
           "startTime": 1573.3,
@@ -26728,7 +26656,15 @@
           "startTime": 1574.26,
           "endTime": 1574.58,
           "confidence": 0.9678
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1574.58,
+      "endTime": 1579.12,
+      "text": "Tantalum. Tantalum is it's a real thing. Yeah. Right. So okay.",
+      "words": [
         {
           "word": "Tantalum.",
           "startTime": 1574.58,
@@ -26800,8 +26736,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1580.74,
-      "endTime": 1599.53,
-      "text": "I just made I picked one name from the periodic table. Okay. So TK Hilton. There are all kinds of beautiful names. There's Yitrium and So, Amit, what cool ideas do you have to offer us today? So,",
+      "endTime": 1599.13,
+      "text": "I just made I picked one name from the periodic table. Okay. So TK Hilton. There are all kinds of beautiful names. There's Yitrium and So, Amit, what cool ideas do you have to offer us today?",
       "words": [
         {
           "word": "I",
@@ -27024,21 +26960,21 @@
           "startTime": 1598.33,
           "endTime": 1599.13,
           "confidence": 0.9976
-        },
-        {
-          "word": "So,",
-          "startTime": 1599.13,
-          "endTime": 1599.53,
-          "confidence": 0.9023
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1599.53,
+      "startTime": 1599.13,
       "endTime": 1718.65,
-      "text": "you know, I tend to, and I think the same applies to you, I tend to sometimes go down a rabbit hole and then just kind of disappear into it for a few days or weeks or months or years or lifetimes or whatever it takes. And I went through a similar rabbit hole uh which started in uh my favorite bookshop in the whole world. And there's a story behind this also. I was uh you know when I go to Bangalore, I stay in Church Street, in a hotel in Church Street. The Takshishila Institution is right there. They allow me to use a captive studio because they're good friends of mine, so I always record my episodes there. And my favorite bookshop in the world, Blossoms, is right there as well. And there's a Starbucks there, and it's basically it's just the best street in the world, right? So I was recording with Ram Guha once, uh an episode of The Seen and the Unseen a long time back. And after it was over, he said, Amit, what are you doing now? So I said, I'm going to go to the best bookshop in the world. So he said, Which is that? So I said, Blossoms. So he said, Amit, you fool. I mean he didn't use these words, but give me some liberty in telling a story. He said, Amit, you fool, you know nothing. Blossoms is not even the best bookshop on Church Street. Right. And he went to a bookshop called Um Book uh Bookworm, I think it's called, which is uh there. And I visited both uh bookshops and it turned out Bookworm actually had a copy of a shitty book I wrote a decade and a half ago. So I immediately concluded Blossoms is better. But I love being in Blossoms because they have this uh Uh like the one that is on the third floor, they have this incredible secondhand book section where I can just spend hours or days, or you know, like if you want to go for a week to Bali, I'll go for a week to Blossoms. That's the feeling I get there. So once I was there and I discovered this interesting hardback which was on sale like everything else by Fred Kaplan called The Insurgents. And that got me to reading about guerrilla warfare and what it was, and reading about how warfare has kind of evolved over the years. And what typically happens when I get into a book like that is I'll then read 30 other books because I'll just keep going down different rabbit holes from there, and it becomes an entry into a universe. And it was about Counterin insurgency warfare and from there I discovered",
+      "text": "So, you know, I tend to, and I think the same applies to you, I tend to sometimes go down a rabbit hole and then just kind of disappear into it for a few days or weeks or months or years or lifetimes or whatever it takes. And I went through a similar rabbit hole uh which started in uh my favorite bookshop in the whole world. And there's a story behind this also. I was uh you know when I go to Bangalore, I stay in Church Street, in a hotel in Church Street. The Takshishila Institution is right there. They allow me to use a captive studio because they're good friends of mine, so I always record my episodes there. And my favorite bookshop in the world, Blossoms, is right there as well. And there's a Starbucks there, and it's basically it's just the best street in the world, right? So I was recording with Ram Guha once, uh an episode of The Seen and the Unseen a long time back. And after it was over, he said, Amit, what are you doing now? So I said, I'm going to go to the best bookshop in the world. So he said, Which is that? So I said, Blossoms. So he said, Amit, you fool. I mean he didn't use these words, but give me some liberty in telling a story. He said, Amit, you fool, you know nothing. Blossoms is not even the best bookshop on Church Street. Right. And he went to a bookshop called Um Book uh Bookworm, I think it's called, which is uh there. And I visited both uh bookshops and it turned out Bookworm actually had a copy of a shitty book I wrote a decade and a half ago. So I immediately concluded Blossoms is better. But I love being in Blossoms because they have this uh Uh like the one that is on the third floor, they have this incredible secondhand book section where I can just spend hours or days, or you know, like if you want to go for a week to Bali, I'll go for a week to Blossoms. That's the feeling I get there. So once I was there and I discovered this interesting hardback which was on sale like everything else by Fred Kaplan called The Insurgents. And that got me to reading about guerrilla warfare and what it was, and reading about how warfare has kind of evolved over the years. And what typically happens when I get into a book like that is I'll then read 30 other books because I'll just keep going down different rabbit holes from there, and it becomes an entry into a universe. And it was about Counterin insurgency warfare and from there I discovered",
       "words": [
+        {
+          "word": "So,",
+          "startTime": 1599.13,
+          "endTime": 1599.53,
+          "confidence": 0.9023
+        },
         {
           "word": "you",
           "startTime": 1599.53,
@@ -29834,8 +29770,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1718.65,
-      "endTime": 1724.09,
-      "text": "Do you remember roughly what year was that book? The Insurgents. Yeah. Fred Kaplan's book? I",
+      "endTime": 1728.41,
+      "text": "Do you remember roughly what year was that book? The Insurgents. Yeah. Fred Kaplan's book? I don't remember the year, but we can be. Because thinking on the subject has evolved greatly.",
       "words": [
         {
           "word": "Do",
@@ -29932,15 +29868,7 @@
           "startTime": 1724.01,
           "endTime": 1724.09,
           "confidence": 0.919
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1724.09,
-      "endTime": 1726.09,
-      "text": "don't remember the year, but we can be. Because",
-      "words": [
+        },
         {
           "word": "don't",
           "startTime": 1724.09,
@@ -29994,15 +29922,7 @@
           "startTime": 1725.93,
           "endTime": 1726.09,
           "confidence": 0.8396
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1726.09,
-      "endTime": 1728.65,
-      "text": "thinking on the subject has evolved greatly. No,",
-      "words": [
+        },
         {
           "word": "thinking",
           "startTime": 1726.09,
@@ -30044,21 +29964,21 @@
           "startTime": 1727.45,
           "endTime": 1728.41,
           "confidence": 0.9511
-        },
-        {
-          "word": "No,",
-          "startTime": 1728.41,
-          "endTime": 1728.65,
-          "confidence": 0.925
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1728.65,
-      "endTime": 1798.57,
-      "text": "it's it's a recent book. Okay. Kaplan's book is a recent book. It takes in Petraeus, it takes in all the all the later developments. So I know what you mean, but it's it's fairly recent. And uh from there I found what is essentially the Bible of that literature. It's a book called Counter Inter Insurgency Warfare by David Galula. Now David Galula was uh uh and I'm surely pronouncing his uh name wrong because I think his friends so David Knul or whatever it is. And uh he uh he fought in China, he fought in Algeria, he fought in a bunch of other places where he faced counter insurgencies. He was in fact imprisoned by Mao's men at one point in time. And he wrote his book in the 60s. And the point he was making is that when you're fighting a guerrilla movement or when you're fighting an insurgency, it is very, very different from fighting a conventional war. And the metaphor he used was of a fly and a lion. He said, Look, if a fly and a lion are fighting, the fly cannot deliver a knockout blow, and the lion cannot fly. You know? So if you're using conventional tactics against a fly, it's as effective as using a fly squatter. It ain't gonna work, the flies are gonna kind of uh keep on coming. And this is how Kaplan uh sums up Gallula's core inside. So",
+      "startTime": 1728.41,
+      "endTime": 2300.04,
+      "text": "No, it's it's a recent book. Okay. Kaplan's book is a recent book. It takes in Petraeus, it takes in all the all the later developments. So I know what you mean, but it's it's fairly recent. And uh from there I found what is essentially the Bible of that literature. It's a book called Counter Inter Insurgency Warfare by David Galula. Now David Galula was uh uh and I'm surely pronouncing his uh name wrong because I think his friends so David Knul or whatever it is. And uh he uh he fought in China, he fought in Algeria, he fought in a bunch of other places where he faced counter insurgencies. He was in fact imprisoned by Mao's men at one point in time. And he wrote his book in the 60s. And the point he was making is that when you're fighting a guerrilla movement or when you're fighting an insurgency, it is very, very different from fighting a conventional war. And the metaphor he used was of a fly and a lion. He said, Look, if a fly and a lion are fighting, the fly cannot deliver a knockout blow, and the lion cannot fly. You know? So if you're using conventional tactics against a fly, it's as effective as using a fly squatter. It ain't gonna work, the flies are gonna kind of uh keep on coming. And this is how Kaplan uh sums up Gallula's core inside. So Kaplan summed up Gallula's step-by-step process thus: first, concentrate enough armed forces to push the insurgents out of the area. Second, keep enough troops there to repel a comeback, eventually turning it over to trained local soldiers or police. Third, establish contact with the people, earn their trust or control their movements, and cut off their ties to the insurgents. Fourth, destroy the insurgents' local political organization and create new ones. Finally, mop up or win the insurgency's remnants. This is similar to similar to what the American general David Petraeus once said. The key question to ask before a military operation was, Will this operation take more bad guys off the street than it creates by the way it's conducted? Absolutely. Right. And uh Mao's one of Mao's generals had this serious insight, which I which I think sums up the whole thing, where he said that fighting a counterinsurgency is twenty percent military, eighty percent political. Right? And in fact it is so messy that uh T. E. Lawrence in his book Seven Pillars of Wisdom once described it as, you know, eating soup with a knife, which was also the title of a great book by John Nagel, Learning to Eat Soup with a Knife. And uh When I thought of this formulation, I straightaway thought of Kashmir and I thought of our Naxil areas and I thought of what we've been doing there. Like essentially our the Indian Army's approach to what they did in Kashmir and how they controlled the insurgency was not twenty percent military and eighty percent political, it was hundred percent military, more or less. The key point in David Galula's formulation was that you have to keep the people on your side. You go out there, you fight the insurgents, you destroy, you know, w wherever they might be, and you get the local population on your side, and then you do whatever you can to repel others coming in. And the Indian Army simply did not do this. It it acted essentially. As an occupying force rate. Now, whatever you think of what went on in Kashmir, it's very complicated. There was a political s uh side to the problem. There is a historical side to the problem, which I've discussed in great detail in an episode with Srinath Ragavan a few years ago on the scene and the unseen. And and there is, of course, the element of Pakistan then coming in, and wherever they come in, of course you have to defend your borders and defend your sovereignty and you have to fight all that. But where the Indian army messed up throughout was rather than keep the people with you, you know, we alienated the people by treating them the way that we did. And there's a great book by David Devdas called A Generation of Rage in Kashmir. And it's a fascinating book in the sense that Devdas' contention is. Is that in 2007, uh that was a year of new beginnings and new ends. I think these are broadly his words. And his point was that there was a new generation coming up at that time in Kashmir which wanted a good life, which was sick of the fighting, which was sick of the insurgency, which wanted opportunities, which wanted to be, you know, they wanted to be computer programmers, engineers, artists, so on and so forth. So they were ready to take that step forward. And also uh, you know, the Vajpay Navasharif talks of 2003 had or uh Vajpay Musharraf talks of 2003, sorry, had also laid a country kind of groundwork for that. But the problem was that the Indian security forces were deeply entrenched and the people within that who were on the front lines uh in in the nineties were now in senior positions. And the incentives had always been crazy. Like for example, Devdas gives a bunch of those examples and the incentives included, for example, um an incentive for uh uh in a sense it was uh how many heads can you collect? You know, how many people can you kill? Which would often lead to incidents which Devdas documents where you're just killing innocent people because you're getting uh rewarded for that. And those are the incentives that you have. Secondly, there was immense rent seeking happening because for anything that an ordinary Kashmiri had to do, you had to take permission from the government. It was Maibaab multiplied, it was it was much worse than in the rest of India. So you had massive rent seeking there, which led to massive resentment. It led to extortion, you know. Where if anybody is doing well in Kashmir at all, you're the security force. You can just go and extort them for uh anything that you want. There's a classic example of this uh young kid, 19 or 20, who who had a car, I think a Tata indigo. Which some security forces guy wanted. And when he refused to hand it over, you know, he was imprisoned and all kinds of terrible things happened. They're all in the book. But the point being that we completely ignore the political aspect that you need the people on your side. The you know the whole point of what Petraeus said is that you do not want to create more terrorists than you're taking out. And among the local population, unfortunately, they did that. And af maybe 2007 was a moment of hope when it could have turned. But this entire security strait apparatus knew only to behave in one way, and things got worse, and then Pakistan came in and uh you know in the middle of the last decade and so on, and things kind of went to hell. And when you think of it from a Kashmiri boy's point of view, you know, you've seen your older brother taken away by the security forces and he disappears. You've seen your sister lose her eyes because um uh bishis out on the streets and um uh you know whatever is happening is happening and so on and so forth. It's very hard not to feel that if I were in their shoes you know, how would I react? Uh and therefore and it's a situation that India messed up completely. Like it is I'm not saying don't fight terrorists, especially when they come from Pakistan, but how do you fight them? And a large part, if you're considering the Kashmiri if you're saying Kashmir is an integral part of India, I strongly believe that that means that Kashmiri people are Indian people, you have to treat them like your own citizens. You have to look after them, like um uh b you know, which which is a job of the state not to rule over its people but to serve them. And we ignored that political side completely. And I written a column about this in Dombert Quint, that'll be linked in the show notes, and I wrote about another c I wrote another column about a related problem, which is the Naxon problem. Where the frame I used to talk about that, which even this counter-in-insurgency uh frame feeds into, was something that Manko Rolsen came out c came up with in his book The Logic of Collective Action, where he spoke about roving bandits and stationary bandits, right? Now, imagine a village that exists sui generally out of nowhere. No state rules over it. You have bandits that come and go. Now, a roving bandit, uh a roving bandit is someone who comes, robs the entire village, and goes away. And he doesn't care about it because he's come, he's gone, he has no intention of coming back. A stationary bandit is a bandit who comes, he robs a village, but he wants to stay there and keep robbing it because people are resources, they'll create more. So he hangs in there, he taxes them. To tax them, then he has to build infrastructure, etc. etc. And a state, in my view, Is often like a stationary bandit, right? And the stationary bandit then obviously wants to keep the roving bandits out. You take uh uh you know, you use a monopoly of violence, and you're not now the state and you do that. And in a lot of India's Naxal areas, number one, the state was absent in every way. So both the state and the Naxalites were like roving bandits. They would come, they would take all the loc low locals had to offer, and they would go away. And in some places, it was the Naxils who were actually settling down and providing services and trying to actually run that area. Like a stationary bandit. And it's a again a useful formulation to think of. And therefore, if you want to fight Naxalites, it is again critical, in my opinion, to go back to that twenty percent military, eighty percent political formulation and say that look, this is a political problem. The military problem is fine, you get the area under control, that's fine, you use the force against the actual perpetrators. But ultimately, it is a political problem and you do not win this kind of battle unless you win sort of the political problem. And I've spoken to people in the army, I've had a couple of them on my show as well. Uh I had an episode with General Prakash Menan, which I'll link from the show notes, where uh we discussed Kashmir briefly and then I realized that he was actually I think in charge of the army in Kashmir for a while, so he was very sensitive and no, we did everything right, and what are we to do if Pakistan sends his people? And I get that. You know, I had a um strong argument with Nitin Pai also in a recent episode, which again we'll uh link from the show notes. And and I think that one has to have a complex view on this. That fine, if you're looking at it from the point of view of a nation state, you gotta defend your borders, etc. etc. But your people are your people. If you're claiming that these people are your people, you gotta serve them, you gotta look after them, you gotta get them on your side. And I think this is just an important component that went completely",
       "words": [
+        {
+          "word": "No,",
+          "startTime": 1728.41,
+          "endTime": 1728.65,
+          "confidence": 0.925
+        },
         {
           "word": "it's",
           "startTime": 1728.65,
@@ -31516,15 +31436,7 @@
           "startTime": 1798.41,
           "endTime": 1798.57,
           "confidence": 0.989
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1798.57,
-      "endTime": 1800.17,
-      "text": "Kaplan summed up Gallula's",
-      "words": [
+        },
         {
           "word": "Kaplan",
           "startTime": 1798.57,
@@ -31548,15 +31460,7 @@
           "startTime": 1799.45,
           "endTime": 1800.17,
           "confidence": 0.8001
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1800.17,
-      "endTime": 2300.04,
-      "text": "step-by-step process thus: first, concentrate enough armed forces to push the insurgents out of the area. Second, keep enough troops there to repel a comeback, eventually turning it over to trained local soldiers or police. Third, establish contact with the people, earn their trust or control their movements, and cut off their ties to the insurgents. Fourth, destroy the insurgents' local political organization and create new ones. Finally, mop up or win the insurgency's remnants. This is similar to similar to what the American general David Petraeus once said. The key question to ask before a military operation was, Will this operation take more bad guys off the street than it creates by the way it's conducted? Absolutely. Right. And uh Mao's one of Mao's generals had this serious insight, which I which I think sums up the whole thing, where he said that fighting a counterinsurgency is twenty percent military, eighty percent political. Right? And in fact it is so messy that uh T. E. Lawrence in his book Seven Pillars of Wisdom once described it as, you know, eating soup with a knife, which was also the title of a great book by John Nagel, Learning to Eat Soup with a Knife. And uh When I thought of this formulation, I straightaway thought of Kashmir and I thought of our Naxil areas and I thought of what we've been doing there. Like essentially our the Indian Army's approach to what they did in Kashmir and how they controlled the insurgency was not twenty percent military and eighty percent political, it was hundred percent military, more or less. The key point in David Galula's formulation was that you have to keep the people on your side. You go out there, you fight the insurgents, you destroy, you know, w wherever they might be, and you get the local population on your side, and then you do whatever you can to repel others coming in. And the Indian Army simply did not do this. It it acted essentially. As an occupying force rate. Now, whatever you think of what went on in Kashmir, it's very complicated. There was a political s uh side to the problem. There is a historical side to the problem, which I've discussed in great detail in an episode with Srinath Ragavan a few years ago on the scene and the unseen. And and there is, of course, the element of Pakistan then coming in, and wherever they come in, of course you have to defend your borders and defend your sovereignty and you have to fight all that. But where the Indian army messed up throughout was rather than keep the people with you, you know, we alienated the people by treating them the way that we did. And there's a great book by David Devdas called A Generation of Rage in Kashmir. And it's a fascinating book in the sense that Devdas' contention is. Is that in 2007, uh that was a year of new beginnings and new ends. I think these are broadly his words. And his point was that there was a new generation coming up at that time in Kashmir which wanted a good life, which was sick of the fighting, which was sick of the insurgency, which wanted opportunities, which wanted to be, you know, they wanted to be computer programmers, engineers, artists, so on and so forth. So they were ready to take that step forward. And also uh, you know, the Vajpay Navasharif talks of 2003 had or uh Vajpay Musharraf talks of 2003, sorry, had also laid a country kind of groundwork for that. But the problem was that the Indian security forces were deeply entrenched and the people within that who were on the front lines uh in in the nineties were now in senior positions. And the incentives had always been crazy. Like for example, Devdas gives a bunch of those examples and the incentives included, for example, um an incentive for uh uh in a sense it was uh how many heads can you collect? You know, how many people can you kill? Which would often lead to incidents which Devdas documents where you're just killing innocent people because you're getting uh rewarded for that. And those are the incentives that you have. Secondly, there was immense rent seeking happening because for anything that an ordinary Kashmiri had to do, you had to take permission from the government. It was Maibaab multiplied, it was it was much worse than in the rest of India. So you had massive rent seeking there, which led to massive resentment. It led to extortion, you know. Where if anybody is doing well in Kashmir at all, you're the security force. You can just go and extort them for uh anything that you want. There's a classic example of this uh young kid, 19 or 20, who who had a car, I think a Tata indigo. Which some security forces guy wanted. And when he refused to hand it over, you know, he was imprisoned and all kinds of terrible things happened. They're all in the book. But the point being that we completely ignore the political aspect that you need the people on your side. The you know the whole point of what Petraeus said is that you do not want to create more terrorists than you're taking out. And among the local population, unfortunately, they did that. And af maybe 2007 was a moment of hope when it could have turned. But this entire security strait apparatus knew only to behave in one way, and things got worse, and then Pakistan came in and uh you know in the middle of the last decade and so on, and things kind of went to hell. And when you think of it from a Kashmiri boy's point of view, you know, you've seen your older brother taken away by the security forces and he disappears. You've seen your sister lose her eyes because um uh bishis out on the streets and um uh you know whatever is happening is happening and so on and so forth. It's very hard not to feel that if I were in their shoes you know, how would I react? Uh and therefore and it's a situation that India messed up completely. Like it is I'm not saying don't fight terrorists, especially when they come from Pakistan, but how do you fight them? And a large part, if you're considering the Kashmiri if you're saying Kashmir is an integral part of India, I strongly believe that that means that Kashmiri people are Indian people, you have to treat them like your own citizens. You have to look after them, like um uh b you know, which which is a job of the state not to rule over its people but to serve them. And we ignored that political side completely. And I written a column about this in Dombert Quint, that'll be linked in the show notes, and I wrote about another c I wrote another column about a related problem, which is the Naxon problem. Where the frame I used to talk about that, which even this counter-in-insurgency uh frame feeds into, was something that Manko Rolsen came out c came up with in his book The Logic of Collective Action, where he spoke about roving bandits and stationary bandits, right? Now, imagine a village that exists sui generally out of nowhere. No state rules over it. You have bandits that come and go. Now, a roving bandit, uh a roving bandit is someone who comes, robs the entire village, and goes away. And he doesn't care about it because he's come, he's gone, he has no intention of coming back. A stationary bandit is a bandit who comes, he robs a village, but he wants to stay there and keep robbing it because people are resources, they'll create more. So he hangs in there, he taxes them. To tax them, then he has to build infrastructure, etc. etc. And a state, in my view, Is often like a stationary bandit, right? And the stationary bandit then obviously wants to keep the roving bandits out. You take uh uh you know, you use a monopoly of violence, and you're not now the state and you do that. And in a lot of India's Naxal areas, number one, the state was absent in every way. So both the state and the Naxalites were like roving bandits. They would come, they would take all the loc low locals had to offer, and they would go away. And in some places, it was the Naxils who were actually settling down and providing services and trying to actually run that area. Like a stationary bandit. And it's a again a useful formulation to think of. And therefore, if you want to fight Naxalites, it is again critical, in my opinion, to go back to that twenty percent military, eighty percent political formulation and say that look, this is a political problem. The military problem is fine, you get the area under control, that's fine, you use the force against the actual perpetrators. But ultimately, it is a political problem and you do not win this kind of battle unless you win sort of the political problem. And I've spoken to people in the army, I've had a couple of them on my show as well. Uh I had an episode with General Prakash Menan, which I'll link from the show notes, where uh we discussed Kashmir briefly and then I realized that he was actually I think in charge of the army in Kashmir for a while, so he was very sensitive and no, we did everything right, and what are we to do if Pakistan sends his people? And I get that. You know, I had a um strong argument with Nitin Pai also in a recent episode, which again we'll uh link from the show notes. And and I think that one has to have a complex view on this. That fine, if you're looking at it from the point of view of a nation state, you gotta defend your borders, etc. etc. But your people are your people. If you're claiming that these people are your people, you gotta serve them, you gotta look after them, you gotta get them on your side. And I think this is just an important component that went completely",
-      "words": [
+        },
         {
           "word": "step-by-step",
           "startTime": 1800.17,
@@ -53652,8 +53556,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2979.45,
-      "endTime": 2990.49,
-      "text": "you? It's how little has changed. So there is a deeper level at which I could just recognize so many of the things going on and I came a c I came out with new respect of the folks a",
+      "endTime": 2992.67,
+      "text": "you? It's how little has changed. So there is a deeper level at which I could just recognize so many of the things going on and I came a c I came out with new respect of the folks a hundred years ago and a hundred and fifty years ago.",
       "words": [
         {
           "word": "you?",
@@ -53894,15 +53798,7 @@
           "startTime": 2990.41,
           "endTime": 2990.49,
           "confidence": 0.7612
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2990.49,
-      "endTime": 3121.2,
-      "text": "hundred years ago and a hundred and fifty years ago. And Amit, tell us today, what is your recommendation for today? Yeah, so you know, I remember a couple of years back, somebody there was this Twitter thing going around, everybody were naming their five favorite web series and all that. And I also did that, and one of them surprised a lot of people because they didn't really see it as a TV series or whatever, but I did. And this is Christoph Kislowski's great uh set of ten films, ten short films called Decalogue. So Christoph Kislowski is this Polish filmmaker, and at the turn of the nineties or at the end of the eighties, I forget exactly when. He was commissioned by Polish television to make a series of ten short films, uh, I think they were about an hour each, on the Ten Commandments. And uh and these films are masterpieces. Uh it's for me it's a pinnacle of cinema. Like he's much more famous for his Three Colors trilogy and the Double Life of Veronique, which came later. But for me, the Decalogue is just a pinnacle pinnacle of cinematic storytelling. And they're not directly about any of the commandments, but at the same time, they're beautiful human stories, like The first one, and I don't think I'll I'm really giving away any spoilers, but the first one which has stayed with me for a long time was about the commandment, Thou shalt not have any other god than me. And it is about a man who is very much like you, who has a young son, and the young son is waiting for the ice on the lake to freeze up enough so he can go skating. And the father is a scientist. So he's monitoring the temperature every day, he's monitoring the weather reports, he's monitoring everything, and the whole film is building up to that that his kid is so excited and he wants to go skating. And the father, ultra-rational, you know, figuring everything out, taking data from here, there, whatever. And then one day he realizes that yeah, this is the day you can go skating today within the margin of error, everything, nothing is gonna happen. The kid goes skating, the ice cracks, he dies. Right? And the last shot of the film, it's a very moving film. So I think of it is the father at the side of the lake, and in the distance he sees that there's a homeless person sitting on the side of the lake who's lit a fire to warm his hands.",
-      "words": [
+        },
         {
           "word": "hundred",
           "startTime": 2990.49,
@@ -53962,7 +53858,15 @@
           "startTime": 2992.17,
           "endTime": 2992.67,
           "confidence": 0.9851
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2998.22,
+      "endTime": 3219.24,
+      "text": "And Amit, tell us today, what is your recommendation for today? Yeah, so you know, I remember a couple of years back, somebody there was this Twitter thing going around, everybody were naming their five favorite web series and all that. And I also did that, and one of them surprised a lot of people because they didn't really see it as a TV series or whatever, but I did. And this is Christoph Kislowski's great uh set of ten films, ten short films called Decalogue. So Christoph Kislowski is this Polish filmmaker, and at the turn of the nineties or at the end of the eighties, I forget exactly when. He was commissioned by Polish television to make a series of ten short films, uh, I think they were about an hour each, on the Ten Commandments. And uh and these films are masterpieces. Uh it's for me it's a pinnacle of cinema. Like he's much more famous for his Three Colors trilogy and the Double Life of Veronique, which came later. But for me, the Decalogue is just a pinnacle pinnacle of cinematic storytelling. And they're not directly about any of the commandments, but at the same time, they're beautiful human stories, like The first one, and I don't think I'll I'm really giving away any spoilers, but the first one which has stayed with me for a long time was about the commandment, Thou shalt not have any other god than me. And it is about a man who is very much like you, who has a young son, and the young son is waiting for the ice on the lake to freeze up enough so he can go skating. And the father is a scientist. So he's monitoring the temperature every day, he's monitoring the weather reports, he's monitoring everything, and the whole film is building up to that that his kid is so excited and he wants to go skating. And the father, ultra-rational, you know, figuring everything out, taking data from here, there, whatever. And then one day he realizes that yeah, this is the day you can go skating today within the margin of error, everything, nothing is gonna happen. The kid goes skating, the ice cracks, he dies. Right? And the last shot of the film, it's a very moving film. So I think of it is the father at the side of the lake, and in the distance he sees that there's a homeless person sitting on the side of the lake who's lit a fire to warm his hands. And this is not this film doesn't have an anti-science message to me. Instead, it has an important humility message to me. That never think that you can grok everything about the world or that you can calculate everything, that the world is deeply complex. And you know, if you have an engineering mindset that you can figure shit out, you know, things often go wrong. So a beautiful moving film. It o two of the films are made into longer films, uh I think 90-minute films, a short film about love, and a short film about killing, and uh they're masterpieces. In fact, I talk about a scene from a short film about love to tell my writing students about Show Don't Tell. How even in a film You can have that element of show-don't tell, where basically a short film about love is basically about this kid in an apartment uh complex who has a crush on a woman who lives just across. So kind of creepily he's spying on her and he's always trying to look into a window and all of that. And one day he decides that he's going to go up to her house and he's going to introduce himself. And I think he delivers the milk or the papers or whatever. So he decides that when she does that, he's gonna ask her out on a date. And uh he rings a bell. And at this point, a typical stereotypical film would show the door being opened, would show him ask a question, would show her response and all of that. But it just shows him ringing the bell, and the next shot is he's down in the courtyard, and it's a top angle shot, and he's down in the courtyard going round and round on a cycle in sheer joy. And it just tells you everything. And that's such a great moment of show don't tell. You know, even in in sort of a uh cinematic sense. So Decalogue to me is just the pinnacle of storytelling, and everyone should see it. And that's relevant for today. Uh",
+      "words": [
         {
           "word": "And",
           "startTime": 2998.22,
@@ -56536,15 +56440,7 @@
           "startTime": 3120.7,
           "endTime": 3121.2,
           "confidence": 0.9619
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3122.71,
-      "endTime": 3124.71,
-      "text": "And this is not this film doesn't",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 3122.71,
@@ -56586,15 +56482,7 @@
           "startTime": 3124.47,
           "endTime": 3124.71,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3124.71,
-      "endTime": 3219.24,
-      "text": "have an anti-science message to me. Instead, it has an important humility message to me. That never think that you can grok everything about the world or that you can calculate everything, that the world is deeply complex. And you know, if you have an engineering mindset that you can figure shit out, you know, things often go wrong. So a beautiful moving film. It o two of the films are made into longer films, uh I think 90-minute films, a short film about love, and a short film about killing, and uh they're masterpieces. In fact, I talk about a scene from a short film about love to tell my writing students about Show Don't Tell. How even in a film You can have that element of show-don't tell, where basically a short film about love is basically about this kid in an apartment uh complex who has a crush on a woman who lives just across. So kind of creepily he's spying on her and he's always trying to look into a window and all of that. And one day he decides that he's going to go up to her house and he's going to introduce himself. And I think he delivers the milk or the papers or whatever. So he decides that when she does that, he's gonna ask her out on a date. And uh he rings a bell. And at this point, a typical stereotypical film would show the door being opened, would show him ask a question, would show her response and all of that. But it just shows him ringing the bell, and the next shot is he's down in the courtyard, and it's a top angle shot, and he's down in the courtyard going round and round on a cycle in sheer joy. And it just tells you everything. And that's such a great moment of show don't tell. You know, even in in sort of a uh cinematic sense. So Decalogue to me is just the pinnacle of storytelling, and everyone should see it. And that's relevant for today. Uh",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 3124.71,
@@ -58694,8 +58582,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3219.24,
-      "endTime": 3235.19,
-      "text": "on a less serious note, I once saw I think it was Bloomberg. Who made a stock market index out of uh the vice. So they picked each vice and they found a bunch of stocks that represent that vice. And then they had stock",
+      "endTime": 3235.43,
+      "text": "on a less serious note, I once saw I think it was Bloomberg. Who made a stock market index out of uh the vice. So they picked each vice and they found a bunch of stocks that represent that vice. And then they had stock market",
       "words": [
         {
           "word": "on",
@@ -58966,21 +58854,21 @@
           "startTime": 3234.95,
           "endTime": 3235.19,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3235.19,
-      "endTime": 3238.87,
-      "text": "market indexes for each of the vices. Give me an example. You remember?",
-      "words": [
+        },
         {
           "word": "market",
           "startTime": 3235.19,
           "endTime": 3235.43,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3235.43,
+      "endTime": 3238.87,
+      "text": "indexes for each of the vices. Give me an example. You remember?",
+      "words": [
         {
           "word": "indexes",
           "startTime": 3235.43,
@@ -59058,8 +58946,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3238.87,
-      "endTime": 3241.35,
-      "text": "So like gambling. And then they would find out listed",
+      "endTime": 3245.03,
+      "text": "So like gambling. And then they would find out listed companies that would profit from gambling like that. So for each vice, there was a",
       "words": [
         {
           "word": "So",
@@ -59120,15 +59008,7 @@
           "startTime": 3240.95,
           "endTime": 3241.35,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3241.35,
-      "endTime": 3242.79,
-      "text": "companies that would profit from",
-      "words": [
+        },
         {
           "word": "companies",
           "startTime": 3241.35,
@@ -59158,15 +59038,7 @@
           "startTime": 3242.63,
           "endTime": 3242.79,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3242.79,
-      "endTime": 3245.75,
-      "text": "gambling like that. So for each vice, there was a stock market.",
-      "words": [
+        },
         {
           "word": "gambling",
           "startTime": 3242.79,
@@ -59226,7 +59098,15 @@
           "startTime": 3244.95,
           "endTime": 3245.03,
           "confidence": 0.9972
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3245.03,
+      "endTime": 3295.16,
+      "text": "stock market. Before we end, I have a mini rant on that. In case I never get to say it again on the show, I'll say that. I used to be a professional poker player for five years. Now it's a game of skill. So it's technically it's not pure gambling, you're not playing against a house. But nevertheless, my point on gambling is. That everything we do in our lives is gambling because after all, what is gambling? You suss up the probabilities and you make a bet based on that. Right? So whether I'm spinning something at a roulette table where I'm sussing up probabilities badly because you're always gonna lose at a roulette table in the long run. Or I see a pretty woman in a bar and I go and talk to her. Or I think that okay, you know, that house is known to be a haunted house, so the price, market price might be lower. Let me get it. I don't believe in ghosts. Everything you do in your life, like our launching the show. is a gamble of sorts. So all we are all all that all of us do all the time is gamble. So",
+      "words": [
         {
           "word": "stock",
           "startTime": 3245.03,
@@ -59238,15 +59118,7 @@
           "startTime": 3245.19,
           "endTime": 3245.75,
           "confidence": 0.7027
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3245.75,
-      "endTime": 3295.16,
-      "text": "Before we end, I have a mini rant on that. In case I never get to say it again on the show, I'll say that. I used to be a professional poker player for five years. Now it's a game of skill. So it's technically it's not pure gambling, you're not playing against a house. But nevertheless, my point on gambling is. That everything we do in our lives is gambling because after all, what is gambling? You suss up the probabilities and you make a bet based on that. Right? So whether I'm spinning something at a roulette table where I'm sussing up probabilities badly because you're always gonna lose at a roulette table in the long run. Or I see a pretty woman in a bar and I go and talk to her. Or I think that okay, you know, that house is known to be a haunted house, so the price, market price might be lower. Let me get it. I don't believe in ghosts. Everything you do in your life, like our launching the show. is a gamble of sorts. So all we are all all that all of us do all the time is gamble. So",
-      "words": [
+        },
         {
           "word": "Before",
           "startTime": 3245.75,

@@ -5,7 +5,7 @@
     "durationSeconds": 3122,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -4455,8 +4455,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 218.28,
-      "endTime": 224.94,
-      "text": "which means this. I was just thinking that ha the system knows that I like this song. How do you back up to the genre? So I was a",
+      "endTime": 223.9,
+      "text": "which means this. I was just thinking that ha the system knows that I like this song. How do you back up to the genre?",
       "words": [
         {
           "word": "which",
@@ -4607,7 +4607,15 @@
           "startTime": 223.4,
           "endTime": 223.9,
           "confidence": 0.9012
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 224.46,
+      "endTime": 251.5,
+      "text": "So I was a kind of person who never, by the way, listened too much to new music. Uh, you know, I was stuck in my comfort zone. With books, movies, I'm checking out new stuff. With music I was in a comfort zone, Van Morrison Suninge and stuff I like, I listen to that, I'll be happy there. But recently, because of the randomized playlist at the Spotify Algo uh sho shows me, I've gotten into this sort of loop that if a random playlist starts after something I'm listening to, I'll just let it play till something strikes me and explore further and I feel good about",
+      "words": [
         {
           "word": "So",
           "startTime": 224.46,
@@ -4631,15 +4639,7 @@
           "startTime": 224.86,
           "endTime": 224.94,
           "confidence": 0.5997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 224.94,
-      "endTime": 251.5,
-      "text": "kind of person who never, by the way, listened too much to new music. Uh, you know, I was stuck in my comfort zone. With books, movies, I'm checking out new stuff. With music I was in a comfort zone, Van Morrison Suninge and stuff I like, I listen to that, I'll be happy there. But recently, because of the randomized playlist at the Spotify Algo uh sho shows me, I've gotten into this sort of loop that if a random playlist starts after something I'm listening to, I'll just let it play till something strikes me and explore further and I feel good about",
-      "words": [
+        },
         {
           "word": "kind",
           "startTime": 224.94,
@@ -5275,8 +5275,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 251.5,
-      "endTime": 297.58,
-      "text": "this. So I also have been the beneficiary of new music thanks to YouTube music. Uh there was a friend of mine and I recently solved the following question. What are the two most recent songs that you know? Okay? And your answer is probably twenty twenty four and twenty twenty four. Okay, for me like at first instinct my answer would be like November Rain, nineteen ninety two. That would be my normal thinking. I actually thought carefully about it and I discovered I know one song, I know and love one song from 2017 and one song from 2018. Instantly tell me which are these. 2017 is uh Harry Styles The Sign of the Times. And he's bloody good, huh?",
+      "endTime": 287.98,
+      "text": "this. So I also have been the beneficiary of new music thanks to YouTube music. Uh there was a friend of mine and I recently solved the following question. What are the two most recent songs that you know? Okay? And your answer is probably twenty twenty four and twenty twenty four. Okay, for me like at first instinct my answer would be like November Rain, nineteen ninety two. That would be my normal thinking. I actually thought carefully about it and I discovered I know one song, I know and love one song from 2017 and one song from 2018.",
       "words": [
         {
           "word": "this.",
@@ -5883,7 +5883,15 @@
           "startTime": 286.94,
           "endTime": 287.98,
           "confidence": 0.9429
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 287.98,
+      "endTime": 289.74,
+      "text": "Instantly tell me which are these.",
+      "words": [
         {
           "word": "Instantly",
           "startTime": 287.98,
@@ -5919,7 +5927,15 @@
           "startTime": 289.26,
           "endTime": 289.74,
           "confidence": 0.6798
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 289.74,
+      "endTime": 308.88,
+      "text": "2017 is uh Harry Styles The Sign of the Times. And he's bloody good, huh? Yeah. We should not look down on you, it's twenty eighteen. Twenty eighteen. Uh there's a song by Lady Gaga and uh somebody else. Um I'm struggling to remember the name, but",
+      "words": [
         {
           "word": "2017",
           "startTime": 289.74,
@@ -6009,15 +6025,7 @@
           "startTime": 297.26,
           "endTime": 297.58,
           "confidence": 0.8623
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 297.58,
-      "endTime": 300.14,
-      "text": "Yeah. We should not look down on you, it's twenty eighteen.",
-      "words": [
+        },
         {
           "word": "Yeah.",
           "startTime": 297.58,
@@ -6083,15 +6091,7 @@
           "startTime": 299.66,
           "endTime": 300.14,
           "confidence": 0.9487
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 300.14,
-      "endTime": 308.88,
-      "text": "Twenty eighteen. Uh there's a song by Lady Gaga and uh somebody else. Um I'm struggling to remember the name, but",
-      "words": [
+        },
         {
           "word": "Twenty",
           "startTime": 300.14,
@@ -6649,8 +6649,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 342.12,
-      "endTime": 388.12,
-      "text": "So I don't put these together. There's a gentleman called Rob Henderson, a very fine thinker, you should follow a young man in his thirtees, he just come out with a great book about uh growing up in foster homes, highly recommended. Tyler Carwin also spoke about it uh on his blog Marginal Revolution. So Rob Henderson came up with the term luxury beliefs, and this is his definition of it. Luxury beliefs are ideas and opinions that confer status on the upper class while often inflicting costs on the lower classes. This is this immediately struck a chord because a lot of the beliefs I see around me, the ideological beliefs, mostly from the left but some from the right as well, are what I consider luxury beliefs. That the elites are sitting in their living room, everything is air conditioned, they are writing into their MacBooks and they're discussing which luxury headphone to buy next to add to the three they already",
+      "endTime": 438.71,
+      "text": "So I don't put these together. There's a gentleman called Rob Henderson, a very fine thinker, you should follow a young man in his thirtees, he just come out with a great book about uh growing up in foster homes, highly recommended. Tyler Carwin also spoke about it uh on his blog Marginal Revolution. So Rob Henderson came up with the term luxury beliefs, and this is his definition of it. Luxury beliefs are ideas and opinions that confer status on the upper class while often inflicting costs on the lower classes. This is this immediately struck a chord because a lot of the beliefs I see around me, the ideological beliefs, mostly from the left but some from the right as well, are what I consider luxury beliefs. That the elites are sitting in their living room, everything is air conditioned, they are writing into their MacBooks and they're discussing which luxury headphone to buy next to add to the three they already have. And they are giving grand policy ideas which will hurt the poor. And these beliefs are fashionable. They give them a certain kind of status, perhaps. Uh, you know, they're a sign of status if not absolute luxury, but they hurt the poor and they give them nevertheless. And it really makes me angry because, you know, like you, um I'm I've taken inspiration from Gandhi's words, that whenever you think of a policy, the first thing that you must think about is the impact of that policy on the poor. And especially in India, where we are a poor country and solving poverty is uh uh it's a moral question. You know, um I I take this to heart and I find that many of the policies um you know which the elites recommend actually harm the poor. So I want to, you know, dig a little bit into those and go into a handful",
       "words": [
         {
           "word": "So",
@@ -7635,29 +7635,13 @@
           "startTime": 387.88,
           "endTime": 388.12,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 388.12,
-      "endTime": 389.62,
-      "text": "have.",
-      "words": [
+        },
         {
           "word": "have.",
           "startTime": 388.12,
           "endTime": 389.62,
           "confidence": 0.8778
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 392.52,
-      "endTime": 438.71,
-      "text": "And they are giving grand policy ideas which will hurt the poor. And these beliefs are fashionable. They give them a certain kind of status, perhaps. Uh, you know, they're a sign of status if not absolute luxury, but they hurt the poor and they give them nevertheless. And it really makes me angry because, you know, like you, um I'm I've taken inspiration from Gandhi's words, that whenever you think of a policy, the first thing that you must think about is the impact of that policy on the poor. And especially in India, where we are a poor country and solving poverty is uh uh it's a moral question. You know, um I I take this to heart and I find that many of the policies um you know which the elites recommend actually harm the poor. So I want to, you know, dig a little bit into those and go into a handful",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 392.52,
@@ -15147,8 +15131,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 749.51,
-      "endTime": 782.41,
-      "text": "It's an interesting exercise. Please go get a copy of The Communist Manifesto by Karl Marx and Frederick Engels. And at the end of the book, they translate all their uh ideas and fervent beliefs into a program for action. And they have a checkpoint, they have a checklist of the program for action. And you'll be astonished at how much of that is in modern India. So, you know, in many ways, modern India is the kind of communist paradise that Karl Marx and Frederick Engels",
+      "endTime": 783.21,
+      "text": "It's an interesting exercise. Please go get a copy of The Communist Manifesto by Karl Marx and Frederick Engels. And at the end of the book, they translate all their uh ideas and fervent beliefs into a program for action. And they have a checkpoint, they have a checklist of the program for action. And you'll be astonished at how much of that is in modern India. So, you know, in many ways, modern India is the kind of communist paradise that Karl Marx and Frederick Engels wanted?",
       "words": [
         {
           "word": "It's",
@@ -15671,21 +15655,21 @@
           "startTime": 781.85,
           "endTime": 782.41,
           "confidence": 0.8762
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 782.41,
-      "endTime": 799.43,
-      "text": "wanted? Because ultimately communism is about state coercion, it is about centralizing power. And we see a lot of that happening today as well. Um and in fact for all seventy um five five years plus of our existence. So yeah,",
-      "words": [
+        },
         {
           "word": "wanted?",
           "startTime": 782.41,
           "endTime": 783.21,
           "confidence": 0.6852
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 783.21,
+      "endTime": 799.43,
+      "text": "Because ultimately communism is about state coercion, it is about centralizing power. And we see a lot of that happening today as well. Um and in fact for all seventy um five five years plus of our existence. So yeah,",
+      "words": [
         {
           "word": "Because",
           "startTime": 783.21,
@@ -15987,8 +15971,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 812.07,
-      "endTime": 901.13,
-      "text": "So my next example of a luxury belief is a word, and the word is inequality, right? And let me begin with a story, and this is a story I get from Stephen Pinker's book, Enlightenment Now, where he talks of two Russian farmers, Boris and Igor, right? And Boris has a goat. Igor does not have a goat. So Igor goes to the authority and says, It's not fair, Boris has a goat, I don't have a goat. So the authority says, What do you want to do? And he says, Kill Boris's goat. Right? And what do you have if you kill Boris's goat? That's the end of inequality. Right, and neither of them has a good. And I think about this often because there is a fundamental difference between inequality and poverty. Now, in the in our last episode we spoke about the zero sum fallacy, right? If the world was actually zero sum, if for the rich to get richer, the poor would have to get poorer. In that case inequality and poverty would lead to the same direction. If there was more poverty, then there would be more inequality because where is the wealth going? It's going to the top. But actually we live in a positive sum world and that is not the case. How growth happens is that growth is spread across the spectrum in in in whatever proportion. The poor go richer, the rich go more richer, inequality goes up. Right? What has happened since the liberalization of nineteen ninety-one? Hundreds of millions of people have come out of poverty because of whatever increased freedoms uh you know were granted to us. Uh not enough in my opinion and your opinion, but uh enough to make that difference. Poverty went down, inequality went up, right? A question that I often ask people and this is like a thought experiment for you, dear listener, dear reader.",
+      "endTime": 1044.74,
+      "text": "So my next example of a luxury belief is a word, and the word is inequality, right? And let me begin with a story, and this is a story I get from Stephen Pinker's book, Enlightenment Now, where he talks of two Russian farmers, Boris and Igor, right? And Boris has a goat. Igor does not have a goat. So Igor goes to the authority and says, It's not fair, Boris has a goat, I don't have a goat. So the authority says, What do you want to do? And he says, Kill Boris's goat. Right? And what do you have if you kill Boris's goat? That's the end of inequality. Right, and neither of them has a good. And I think about this often because there is a fundamental difference between inequality and poverty. Now, in the in our last episode we spoke about the zero sum fallacy, right? If the world was actually zero sum, if for the rich to get richer, the poor would have to get poorer. In that case inequality and poverty would lead to the same direction. If there was more poverty, then there would be more inequality because where is the wealth going? It's going to the top. But actually we live in a positive sum world and that is not the case. How growth happens is that growth is spread across the spectrum in in in whatever proportion. The poor go richer, the rich go more richer, inequality goes up. Right? What has happened since the liberalization of nineteen ninety-one? Hundreds of millions of people have come out of poverty because of whatever increased freedoms uh you know were granted to us. Uh not enough in my opinion and your opinion, but uh enough to make that difference. Poverty went down, inequality went up, right? A question that I often ask people and this is like a thought experiment for you, dear listener, dear reader. We are not listeners, we are readers. Uh w in which of these two countries would you rather be poor, the USA or Bangladesh? And the answer everybody will say I would rather be poor in the USA. But the truth is that the USA has greater inequality, Bangladesh has greater poverty. Poverty is the key. And in India our moral imperative is to lift hundreds of millions of people out of poverty. Now, this is not merely a semantic question. It is a question with real world consequences because the how you treat inequality is by killing Boris's goat. Right, you make both people equally poor. How you treat poverty is through economic growth. Economic growth in a poor country at the stage that we are in will inevitably lead to higher inequality. That is fine. Right. There is this great book by the philosopher Harry Frankfurt called On uh On Inequality, right? And he has what he calls a doctrine of subsistence. Where he says that what I care about and he makes similar arguments there, but he's a philosopher. So slightly different, you should read that book. It's a slim uh sort of booklet. And the doctrine of sufficiency is that you define what is enough for a man to live on. Right, you define that. And then you try to get everyone to that level. That is what matters. So in a sense, it is a proxy for removing poverty also. That you want everyone to reach that um you know that level of sufficiency, which you and I would agree we haven't in India. We have failed after all these decades. Every government has failed us in this regard. Though some governments have put us in the right direction, especially from ninety one to twenty eleven. we've also discussed a lot. So this is a bugbear of mine, because I think I'll find a lot of people in English speaking bubbles they've been educated in foreign colleges. Some of them are actual working economists, some of them work for fancy institutions, and there will be inequality, inequality, inequality. And I'm like Boss, this is a fashion of the West. We don't have the luxury to think about inequality because we need to solve poverty first. when people are starving in India every day, where a s a large proportion of children are b born malnourished. You have no business to say that doesn't matter. You know, make me feel good about this little fashionable thing. It is, you know, is it is deeply immoral and at the very least it is ignorant. So all of you who ever use the word inequality, you're you don't have to agree or disagree with me, but just think about this. What is the greater problem? Poverty or inequality, they're different things we need to solve for poverty. Only growth will get you there. And you know, that that's that's sort of my contention in my bag",
       "words": [
         {
           "word": "So",
@@ -17927,15 +17911,7 @@
           "startTime": 900.33,
           "endTime": 901.13,
           "confidence": 0.9225
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 901.13,
-      "endTime": 903.93,
-      "text": "We are not listeners, we are readers. Uh",
-      "words": [
+        },
         {
           "word": "We",
           "startTime": 901.13,
@@ -17983,15 +17959,7 @@
           "startTime": 903.13,
           "endTime": 903.93,
           "confidence": 0.7251
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 903.93,
-      "endTime": 1044.74,
-      "text": "w in which of these two countries would you rather be poor, the USA or Bangladesh? And the answer everybody will say I would rather be poor in the USA. But the truth is that the USA has greater inequality, Bangladesh has greater poverty. Poverty is the key. And in India our moral imperative is to lift hundreds of millions of people out of poverty. Now, this is not merely a semantic question. It is a question with real world consequences because the how you treat inequality is by killing Boris's goat. Right, you make both people equally poor. How you treat poverty is through economic growth. Economic growth in a poor country at the stage that we are in will inevitably lead to higher inequality. That is fine. Right. There is this great book by the philosopher Harry Frankfurt called On uh On Inequality, right? And he has what he calls a doctrine of subsistence. Where he says that what I care about and he makes similar arguments there, but he's a philosopher. So slightly different, you should read that book. It's a slim uh sort of booklet. And the doctrine of sufficiency is that you define what is enough for a man to live on. Right, you define that. And then you try to get everyone to that level. That is what matters. So in a sense, it is a proxy for removing poverty also. That you want everyone to reach that um you know that level of sufficiency, which you and I would agree we haven't in India. We have failed after all these decades. Every government has failed us in this regard. Though some governments have put us in the right direction, especially from ninety one to twenty eleven. we've also discussed a lot. So this is a bugbear of mine, because I think I'll find a lot of people in English speaking bubbles they've been educated in foreign colleges. Some of them are actual working economists, some of them work for fancy institutions, and there will be inequality, inequality, inequality. And I'm like Boss, this is a fashion of the West. We don't have the luxury to think about inequality because we need to solve poverty first. when people are starving in India every day, where a s a large proportion of children are b born malnourished. You have no business to say that doesn't matter. You know, make me feel good about this little fashionable thing. It is, you know, is it is deeply immoral and at the very least it is ignorant. So all of you who ever use the word inequality, you're you don't have to agree or disagree with me, but just think about this. What is the greater problem? Poverty or inequality, they're different things we need to solve for poverty. Only growth will get you there. And you know, that that's that's sort of my contention in my bag",
-      "words": [
+        },
         {
           "word": "w",
           "startTime": 903.93,
@@ -23425,8 +23393,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1205.98,
-      "endTime": 1237.06,
-      "text": "now. So thirty-two years is an entirely practical and visible. uh date and we're talking a 4x gain in income for the country as an average, which is cool. I think it's something that is lovely and worth hankering after. Seventy years, you know, that is like so far out that you can barely understand it. And this came out of an apparently small difference. 2%, 4%. You think only 200 basis points, but there's a power of compounding. And also an additional",
+      "endTime": 1235.07,
+      "text": "now. So thirty-two years is an entirely practical and visible. uh date and we're talking a 4x gain in income for the country as an average, which is cool. I think it's something that is lovely and worth hankering after. Seventy years, you know, that is like so far out that you can barely understand it. And this came out of an apparently small difference. 2%, 4%. You think only 200 basis points, but there's a power of compounding.",
       "words": [
         {
           "word": "now.",
@@ -23901,7 +23869,15 @@
           "startTime": 1234.57,
           "endTime": 1235.07,
           "confidence": 0.9874
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1236.02,
+      "endTime": 1336.18,
+      "text": "And also an additional problem there is that if you think about why it is e you know, if you think about these two as uh you know, different approaches that to solve poverty you need growth. To solve inequality and I I don't even like to use the word solve because you know nothing wrong with it. But to tackle inequality you need redistribution. that it is cognitively easier to come to terms with redistribution and to sell it, you feel virtuous. I will take Boris's coat, I will cut half of it, and I will give that half to Igor and I will give the half with Boris. And you think you've solved both people's problems, but actually you don't, because tomorrow neither of them has a goat and you've got more equality. And it is just messed up, but it makes you feel virtuous. Km we will tax the rich more. I'm also rich, but um you know, I'm saying we'll tax the rich more. And it makes you feel virtuous and all of this shit happens. And uh yeah, that's why it's it's like difficult to fight. It is tempting to just be intellectually lazy and not have to make the difficult case for something uh what appears to be as nebulous as growth driven policies and s s say that, you know, inequality, let's do something about that. And uh and it's driving the country backwards. And and I want people to have the rigor and the moral honesty to kind of look within and ask them what is really good for the poor, as Gandhi G said. So my third idea of luxury beliefs is actually now an idea from the right, because we've been shitting on the left, as indeed we should, but we should we should also shit on the right. Because both the right and the left are often united by the love for straight coercion, and we don't like coercion. What don't we like, Azha?",
+      "words": [
         {
           "word": "And",
           "startTime": 1236.02,
@@ -23925,15 +23901,7 @@
           "startTime": 1236.66,
           "endTime": 1237.06,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1237.06,
-      "endTime": 1449.54,
-      "text": "problem there is that if you think about why it is e you know, if you think about these two as uh you know, different approaches that to solve poverty you need growth. To solve inequality and I I don't even like to use the word solve because you know nothing wrong with it. But to tackle inequality you need redistribution. that it is cognitively easier to come to terms with redistribution and to sell it, you feel virtuous. I will take Boris's coat, I will cut half of it, and I will give that half to Igor and I will give the half with Boris. And you think you've solved both people's problems, but actually you don't, because tomorrow neither of them has a goat and you've got more equality. And it is just messed up, but it makes you feel virtuous. Km we will tax the rich more. I'm also rich, but um you know, I'm saying we'll tax the rich more. And it makes you feel virtuous and all of this shit happens. And uh yeah, that's why it's it's like difficult to fight. It is tempting to just be intellectually lazy and not have to make the difficult case for something uh what appears to be as nebulous as growth driven policies and s s say that, you know, inequality, let's do something about that. And uh and it's driving the country backwards. And and I want people to have the rigor and the moral honesty to kind of look within and ask them what is really good for the poor, as Gandhi G said. So my third idea of luxury beliefs is actually now an idea from the right, because we've been shitting on the left, as indeed we should, but we should we should also shit on the right. Because both the right and the left are often united by the love for straight coercion, and we don't like coercion. What don't we like, Azha? The lack of freedom. Okay, the lack of freedom. Well done. So we don't like the lack of freedom. Uh so here's the thing. Uh my third idea is victimless crimes, right? So the right will get all moralistic and say prostitution is bad, ban prostitution. Or they will say that betting is bad, you know match fixing is terrible, ban uh uh uh betting and so on and so forth. Alcohol is bad, look at the social evil, ban it. And all of these actually have terrible consequences and get the opposite impact. For example, a logic for criminalizing prostitution or the soliciting of prostitution, as it were. It's a bit technical, but in India, for all practical purposes, it's criminalized, right? Now, the idea is the their idea is that prostitution is bad, people should not do immoral things, and also there is trafficking. To which my answer would be that look, it's a little bit different because what happens when you ban a victimless crime? the underworld comes in because you can't do it in a legal way. Where there is underworld, uh you know, they're paying off the cops anyway, which is how the system works in India. And where there is the underworld, there is coercion and uh you know, you can't regulate that shit. The rule of law doesn't apply. The trafficking goes up. If you look at Netherland, you know, pr prostitution is legal there. You have regulated brothels which are respected places which advertise openly. Prostitutes have rights, uh they pay taxes, sex workers have rights, they pay taxes. I shouldn't even have corrected the word because there's nothing wrong with the word prostitute. You and I are prostitutes, we're selling our services for money. Uh, you know, I do a lot of things free even. So I'm even worse. Uh so you know so there's nothing wrong in that word. You know, people are selling their services for money and they are treated judge treated just as workers anywhere else, and the level of crime against them is really low. So that is my first case. If you care about trafficking and coercion, make it legal, regulate it. There is nothing wrong with this just because you have your high volutin models and scarves",
-      "words": [
+        },
         {
           "word": "problem",
           "startTime": 1237.06,
@@ -25919,7 +25887,15 @@
           "startTime": 1334.68,
           "endTime": 1336.18,
           "confidence": 0.5845
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1336.84,
+      "endTime": 1337.9,
+      "text": "The lack of freedom.",
+      "words": [
         {
           "word": "The",
           "startTime": 1336.84,
@@ -25943,7 +25919,15 @@
           "startTime": 1337.4,
           "endTime": 1337.9,
           "confidence": 0.9356
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1340.3,
+      "endTime": 1449.54,
+      "text": "Okay, the lack of freedom. Well done. So we don't like the lack of freedom. Uh so here's the thing. Uh my third idea is victimless crimes, right? So the right will get all moralistic and say prostitution is bad, ban prostitution. Or they will say that betting is bad, you know match fixing is terrible, ban uh uh uh betting and so on and so forth. Alcohol is bad, look at the social evil, ban it. And all of these actually have terrible consequences and get the opposite impact. For example, a logic for criminalizing prostitution or the soliciting of prostitution, as it were. It's a bit technical, but in India, for all practical purposes, it's criminalized, right? Now, the idea is the their idea is that prostitution is bad, people should not do immoral things, and also there is trafficking. To which my answer would be that look, it's a little bit different because what happens when you ban a victimless crime? the underworld comes in because you can't do it in a legal way. Where there is underworld, uh you know, they're paying off the cops anyway, which is how the system works in India. And where there is the underworld, there is coercion and uh you know, you can't regulate that shit. The rule of law doesn't apply. The trafficking goes up. If you look at Netherland, you know, pr prostitution is legal there. You have regulated brothels which are respected places which advertise openly. Prostitutes have rights, uh they pay taxes, sex workers have rights, they pay taxes. I shouldn't even have corrected the word because there's nothing wrong with the word prostitute. You and I are prostitutes, we're selling our services for money. Uh, you know, I do a lot of things free even. So I'm even worse. Uh so you know so there's nothing wrong in that word. You know, people are selling their services for money and they are treated judge treated just as workers anywhere else, and the level of crime against them is really low. So that is my first case. If you care about trafficking and coercion, make it legal, regulate it. There is nothing wrong with this just because you have your high volutin models and scarves",
+      "words": [
         {
           "word": "Okay,",
           "startTime": 1340.3,
@@ -42747,8 +42731,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2112.41,
-      "endTime": 2116.25,
-      "text": "element of elite belief that is characterized as luxury beliefs.",
+      "endTime": 2116.49,
+      "text": "element of elite belief that is characterized as luxury beliefs. So",
       "words": [
         {
           "word": "element",
@@ -42809,21 +42793,21 @@
           "startTime": 2115.53,
           "endTime": 2116.25,
           "confidence": 0.9135
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2116.25,
-      "endTime": 2160.31,
-      "text": "So my last one is something I have spoken about so much, you could like make T-shirts and just put that. It's price controls. Right? It's price controls where the elite belief will be that XYZ is too expensive, put a price control. Or if there is a scarcity, there's a natural calamity, airplane seats are too expensive, we can't get out, put a price control. Right? And I I will tell you, gentle reader, let's run a thought. What would happen tomorrow if the government said, Ki Deko cars are becoming very expensive. Cars should be affordable by everybody. Every Indian should have a car. Let's put price control no car above ten thousand rupees. Right? Now what will happen? Pause the video if you don't know the answer already. Pause the video and think about it. Have you paused? I just did statue to myself. That was in the pause. You're in pause. Okay. So",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2116.25,
           "endTime": 2116.49,
           "confidence": 0.9912
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2116.49,
+      "endTime": 2291.1,
+      "text": "my last one is something I have spoken about so much, you could like make T-shirts and just put that. It's price controls. Right? It's price controls where the elite belief will be that XYZ is too expensive, put a price control. Or if there is a scarcity, there's a natural calamity, airplane seats are too expensive, we can't get out, put a price control. Right? And I I will tell you, gentle reader, let's run a thought. What would happen tomorrow if the government said, Ki Deko cars are becoming very expensive. Cars should be affordable by everybody. Every Indian should have a car. Let's put price control no car above ten thousand rupees. Right? Now what will happen? Pause the video if you don't know the answer already. Pause the video and think about it. Have you paused? I just did statue to myself. That was in the pause. You're in pause. Okay. So here's what will happen. You know, car cars that cannot be manufactured for less than uh ten thousand bucks, which is all cars, will completely go out. There will be a complete scarcity out there. And the cars that do exist will sell on the black market for far more than whatever their sticker price was. The entire industry will die out completely. Now I've given an extreme example, but when you put a price control, that is exactly what happens. We'll link to episodes and we've done on this, we'll link to pieces we've written on this. But what happens is that uh some elite virtue signaling fool will sit somewhere and think XYZ is too expensive for the poor, let me fix a price. A signal of uh, you know, all the scarcities in the world, all the constraints of the world, it carries an incentive to people to produce more of them. If you take that information away, you are always going to have scarcities. I had you know, there was a price control on stents a few years back. I had tweeted right then I know what will happen, there will be scarcity. There were scarcities and stents. People died. Right? So it is not a small matter. I have written uh a column on Uber, we'll link that from the show notes. Under my chair, all right, don't come don't come up be under the chair. And so we'll kind of uh uh link that also. Where Uber search pricing, if it's implemented well by Uber and their algo works faithfully, it is great because if you ban search pricing, then you will have shortages. That you want to take someone to the hospital, you got a flight to catch, they're out because it's first come, first serve. This is just basic economics. I don't I've spoken about it before on the show. I I don't want to belabor the point, uh, but uh and the the it's such an easy elite belief to have. You know, there's this line from Yes Minister that we must do something, this is something, let's do it. And I feel the intellectually lazy resort to these kind of luxury beliefs to make themselves feel we have done something. We care about the world, we care about the poor. No. You're hurting the poor, all these hurt the poor. We have to have the rigor and the energy to think these through. So, Ajay, I have ranted and raved, which is my uh elite privilege. It is a luxury uh that I uh you know get to enjoy. But you know what are your",
+      "words": [
         {
           "word": "my",
           "startTime": 2116.49,
@@ -43759,15 +43743,7 @@
           "startTime": 2160.15,
           "endTime": 2160.31,
           "confidence": 0.9941
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2160.31,
-      "endTime": 2161.91,
-      "text": "here's what will happen. You",
-      "words": [
+        },
         {
           "word": "here's",
           "startTime": 2160.31,
@@ -43797,15 +43773,7 @@
           "startTime": 2161.83,
           "endTime": 2161.91,
           "confidence": 0.8004
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2161.91,
-      "endTime": 2292.14,
-      "text": "know, car cars that cannot be manufactured for less than uh ten thousand bucks, which is all cars, will completely go out. There will be a complete scarcity out there. And the cars that do exist will sell on the black market for far more than whatever their sticker price was. The entire industry will die out completely. Now I've given an extreme example, but when you put a price control, that is exactly what happens. We'll link to episodes and we've done on this, we'll link to pieces we've written on this. But what happens is that uh some elite virtue signaling fool will sit somewhere and think XYZ is too expensive for the poor, let me fix a price. A signal of uh, you know, all the scarcities in the world, all the constraints of the world, it carries an incentive to people to produce more of them. If you take that information away, you are always going to have scarcities. I had you know, there was a price control on stents a few years back. I had tweeted right then I know what will happen, there will be scarcity. There were scarcities and stents. People died. Right? So it is not a small matter. I have written uh a column on Uber, we'll link that from the show notes. Under my chair, all right, don't come don't come up be under the chair. And so we'll kind of uh uh link that also. Where Uber search pricing, if it's implemented well by Uber and their algo works faithfully, it is great because if you ban search pricing, then you will have shortages. That you want to take someone to the hospital, you got a flight to catch, they're out because it's first come, first serve. This is just basic economics. I don't I've spoken about it before on the show. I I don't want to belabor the point, uh, but uh and the the it's such an easy elite belief to have. You know, there's this line from Yes Minister that we must do something, this is something, let's do it. And I feel the intellectually lazy resort to these kind of luxury beliefs to make themselves feel we have done something. We care about the world, we care about the poor. No. You're hurting the poor, all these hurt the poor. We have to have the rigor and the energy to think these through. So, Ajay, I have ranted and raved, which is my uh elite privilege. It is a luxury uh that I uh you know get to enjoy. But you know what are your thoughts?",
-      "words": [
+        },
         {
           "word": "know,",
           "startTime": 2161.91,
@@ -46445,21 +46413,21 @@
           "startTime": 2290.94,
           "endTime": 2291.1,
           "confidence": 0.9995
-        },
-        {
-          "word": "thoughts?",
-          "startTime": 2291.1,
-          "endTime": 2292.14,
-          "confidence": 0.9264
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 2292.14,
-      "endTime": 2550.3,
-      "text": "Uh uh because I'm a card carrying economist, okay, and I here is my card. Uh I always uh apply the methodological strategy of saying why are people doing this? Okay, so what's the optimization? What are the rational reasons that lead so many people who are in that upper class. to then have these luxury beliefs which harm other people. Okay. So I mean one simple notion is I have already acquired my wealth and uh prosperity and I don't care about others and then it's costless for me to espouse these things which will harm poor people, but you know what? I don't care. I mean that's a simple and cynical approach to doing it. But that still doesn't give us a positive explanation of why favor those kinds of beliefs. Just wondering what might be at work and here are a couple of hypotheses and you know you will also have some thoughts on this subject. So um one notion is something related to an old conception of philanthropy that uh rich people uh don't feel safe and uh it's prudent to build temples, to build hospitals, to build schools, and say certain pious nice phrases because you know you're worried that one day there will be folks with pitchforks. Who will come after you. And you know, a lot of the Indian state is quite populist. So then by that logic, it also buys some amount of safety when compared with the state. So this is one kind of rational argument that the rich espouse these beliefs because it makes them safer. Okay, and we can see that may be true for some people. Another line of attack is the fashions and the clubs. Where uh it sounds very nice, or we we support poor people, we care about poor people, we're so empathetic. And you know, intellectual capabilities are placed at a discount. So moral fervor, you know, my intentions are right. I care about poor people and never mind that I'm a champion mechanisms that will actually harm poor people. But this makes me look good in the eyes of other people, and it makes other people think that. I am a nice warm, caring, empathetic person. And then others might be more inclined to like me or be with me or collaborate with me. Okay, so this could be a second line of attack. A third line of attack could be so imagine that at random this kind of idea takes root. Then uh it becomes a very talkist cheap method for unrelated people to lay claim to membership of those clubs. You know, to buy a Louis Vuitton is at least expensive. Here it's talk. Talk is free. So it is an efficient way for people to portray a certain package of beliefs that makes other people think that you are part of a certain kind of group and community. And this could go with an upgrade in your status, which may be what people might like. So they may not believe a word of this, but it might be efficient to claim these kinds of things. Then I'm reminded of the whole preference falsification idea of Timur Quran that you and I have spoken about many times. But people say anything, people will say all kinds of things. People will always, you know, say things that will they think will help them to get ahead, to gain power, to gain influence, to be safer. And so then this whole package could fit under that. But to uphold this equilibrium. What you do need is a certain kind of intellectual soft headedness, that there should be a shortage of people who get this shit, who are able to call out the fanciful claims. So you have to start to make this model work, you have to start with a broad base of doctor engineer capabilities, where there is very low knowledge of social science and humanities. And then into that fertile ground, you can sprinkle these beliefs and suddenly, oh, we're such good people, we care about poor people. So maybe there is this package at work. I",
+      "startTime": 2291.1,
+      "endTime": 2550.46,
+      "text": "thoughts? Uh uh because I'm a card carrying economist, okay, and I here is my card. Uh I always uh apply the methodological strategy of saying why are people doing this? Okay, so what's the optimization? What are the rational reasons that lead so many people who are in that upper class. to then have these luxury beliefs which harm other people. Okay. So I mean one simple notion is I have already acquired my wealth and uh prosperity and I don't care about others and then it's costless for me to espouse these things which will harm poor people, but you know what? I don't care. I mean that's a simple and cynical approach to doing it. But that still doesn't give us a positive explanation of why favor those kinds of beliefs. Just wondering what might be at work and here are a couple of hypotheses and you know you will also have some thoughts on this subject. So um one notion is something related to an old conception of philanthropy that uh rich people uh don't feel safe and uh it's prudent to build temples, to build hospitals, to build schools, and say certain pious nice phrases because you know you're worried that one day there will be folks with pitchforks. Who will come after you. And you know, a lot of the Indian state is quite populist. So then by that logic, it also buys some amount of safety when compared with the state. So this is one kind of rational argument that the rich espouse these beliefs because it makes them safer. Okay, and we can see that may be true for some people. Another line of attack is the fashions and the clubs. Where uh it sounds very nice, or we we support poor people, we care about poor people, we're so empathetic. And you know, intellectual capabilities are placed at a discount. So moral fervor, you know, my intentions are right. I care about poor people and never mind that I'm a champion mechanisms that will actually harm poor people. But this makes me look good in the eyes of other people, and it makes other people think that. I am a nice warm, caring, empathetic person. And then others might be more inclined to like me or be with me or collaborate with me. Okay, so this could be a second line of attack. A third line of attack could be so imagine that at random this kind of idea takes root. Then uh it becomes a very talkist cheap method for unrelated people to lay claim to membership of those clubs. You know, to buy a Louis Vuitton is at least expensive. Here it's talk. Talk is free. So it is an efficient way for people to portray a certain package of beliefs that makes other people think that you are part of a certain kind of group and community. And this could go with an upgrade in your status, which may be what people might like. So they may not believe a word of this, but it might be efficient to claim these kinds of things. Then I'm reminded of the whole preference falsification idea of Timur Quran that you and I have spoken about many times. But people say anything, people will say all kinds of things. People will always, you know, say things that will they think will help them to get ahead, to gain power, to gain influence, to be safer. And so then this whole package could fit under that. But to uphold this equilibrium. What you do need is a certain kind of intellectual soft headedness, that there should be a shortage of people who get this shit, who are able to call out the fanciful claims. So you have to start to make this model work, you have to start with a broad base of doctor engineer capabilities, where there is very low knowledge of social science and humanities. And then into that fertile ground, you can sprinkle these beliefs and suddenly, oh, we're such good people, we care about poor people. So maybe there is this package at work. I have",
       "words": [
+        {
+          "word": "thoughts?",
+          "startTime": 2291.1,
+          "endTime": 2292.14,
+          "confidence": 0.9264
+        },
         {
           "word": "Uh",
           "startTime": 2292.14,
@@ -50635,21 +50603,21 @@
           "startTime": 2550.14,
           "endTime": 2550.3,
           "confidence": 0.9166
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2550.3,
-      "endTime": 2798.82,
-      "text": "have a couple of points to make and one point is that we lie to ourselves as much as we lie to others. We want to tell a s simple story to ourselves about hey, we are good people. So a lot of these beliefs which help you signal virtue, you are also signaling virtue to yourself. and not to others. It is a convenient way of uh doing so. You don't have to do good deeds and make the world a better place. You can just hold these opinions into weighty characters and your job is kind of done. So while at one level I get it that whether it is out of fear or carrying favor with the government, fear of the government or currying favor from the government, it might be rational to take these positions while knowing that the position is wrong. Well a lot of people, if not most people who hold these positions, I will give them credit where credit is due, that the intentions are good. They really believe that they care about the poor, they are they really believe that this is compassion and they don't have the intellectual rigor. The second point I want to make is that and it's a dual point. And and it they might even seem to contradict each other. But part one is about modern times and social media. That what happens on social media is you go online. And then you want the comfort of community. You want to feel you belong, you want to feel respected. The easiest way of doing this is by joining an ideological tribe, either on the right or the left. And then you want to raise your status within the tribe. So not only do you uncritically accept all the dogmas of that particular tribe, but then eventually you beg begin attacking people on the other side, not never arguments, only people on the other side. And then you begin attacking people on your own side for not showing adequate purity. Which is why a lot of the cancellation that happens happens from your own tribe only. Just uh you know, knocking your head off. And uh and this b uh creates an incentive for extremism and it also creates a sort of doubling down. Like, you know, I said a lot of silly things when I was 17, 18, right? I read Marks and Engels and I said a lot of silly things. Now, if they were on social media forever and people had screenshots, you know, what would happen is that once I express them on social media, I'm embraced by that tribe. Then I feel the incentive to double down on them for ego reasons, and then I become that person. I don't have that intellectual growth I might otherwise have. So that is something I worry about. But my second point here, which might contradict the first a little bit, is that Ajay it was always thus. You know, Thomas Saval has a great book called Vision of the Anointed, where the subtitle is Self Congratulation as a Basis for Social Policy. Right, which speaks to what we are talking about. Self congratulation as a basis for social policy. And he has these great lines there that I want to read out. What a vision may offer and what the prevailing vision of our time emphatically does offer is a special state of grace for those who believe in it. Those who accept this vision are deemed to be not merely factually correct, but morally on a higher plane. Put differently, those who disagree with the prevailing vision are seen as being not merely in error, but in sin. For those who have this vision of the world, the anointed and the benighted do not argue on the same moral plane or play by the same cold rules of logic and evidence. The benighted are to be made aware, to have their consciousness raised, and the wistful hope is held out that they will grow. Should the Benited prove recalcitrant, however, then the mean spiritedness must be fought, and the real reasons behind their arguments and actions exposed. While verbal fashions change, this basic picture of the differential rectitude of the anointed and the benighted has not changedally in at least two hundred years. Stop quote. Incredible quote gets to the heart of the problem and also gets to something that we spoke about in our last episode, that these two are hardwired in us. The desire to belong in a tribe. the desire to always keep showing our virtue and by the way, gentle listener, I often say those who signal the most virtue possess the least. You know, and I have found this to be true especially of men, so watch out. Uh and uh yeah. So you know so yeah, so these are sort of my broad thoughts on it that the A, it is hardwired in us to be tribalistic in this manner, and we've seen that. We've spoken about that in episode forty two as well. Populism, the direction of the Republican Party and what has happened to it. And at the same time it is exacerbated in a sense by social media. Which plays to the worst demons of our nature, as it were, instead of the better",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 2550.3,
           "endTime": 2550.46,
           "confidence": 0.9983
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2550.46,
+      "endTime": 2798.82,
+      "text": "a couple of points to make and one point is that we lie to ourselves as much as we lie to others. We want to tell a s simple story to ourselves about hey, we are good people. So a lot of these beliefs which help you signal virtue, you are also signaling virtue to yourself. and not to others. It is a convenient way of uh doing so. You don't have to do good deeds and make the world a better place. You can just hold these opinions into weighty characters and your job is kind of done. So while at one level I get it that whether it is out of fear or carrying favor with the government, fear of the government or currying favor from the government, it might be rational to take these positions while knowing that the position is wrong. Well a lot of people, if not most people who hold these positions, I will give them credit where credit is due, that the intentions are good. They really believe that they care about the poor, they are they really believe that this is compassion and they don't have the intellectual rigor. The second point I want to make is that and it's a dual point. And and it they might even seem to contradict each other. But part one is about modern times and social media. That what happens on social media is you go online. And then you want the comfort of community. You want to feel you belong, you want to feel respected. The easiest way of doing this is by joining an ideological tribe, either on the right or the left. And then you want to raise your status within the tribe. So not only do you uncritically accept all the dogmas of that particular tribe, but then eventually you beg begin attacking people on the other side, not never arguments, only people on the other side. And then you begin attacking people on your own side for not showing adequate purity. Which is why a lot of the cancellation that happens happens from your own tribe only. Just uh you know, knocking your head off. And uh and this b uh creates an incentive for extremism and it also creates a sort of doubling down. Like, you know, I said a lot of silly things when I was 17, 18, right? I read Marks and Engels and I said a lot of silly things. Now, if they were on social media forever and people had screenshots, you know, what would happen is that once I express them on social media, I'm embraced by that tribe. Then I feel the incentive to double down on them for ego reasons, and then I become that person. I don't have that intellectual growth I might otherwise have. So that is something I worry about. But my second point here, which might contradict the first a little bit, is that Ajay it was always thus. You know, Thomas Saval has a great book called Vision of the Anointed, where the subtitle is Self Congratulation as a Basis for Social Policy. Right, which speaks to what we are talking about. Self congratulation as a basis for social policy. And he has these great lines there that I want to read out. What a vision may offer and what the prevailing vision of our time emphatically does offer is a special state of grace for those who believe in it. Those who accept this vision are deemed to be not merely factually correct, but morally on a higher plane. Put differently, those who disagree with the prevailing vision are seen as being not merely in error, but in sin. For those who have this vision of the world, the anointed and the benighted do not argue on the same moral plane or play by the same cold rules of logic and evidence. The benighted are to be made aware, to have their consciousness raised, and the wistful hope is held out that they will grow. Should the Benited prove recalcitrant, however, then the mean spiritedness must be fought, and the real reasons behind their arguments and actions exposed. While verbal fashions change, this basic picture of the differential rectitude of the anointed and the benighted has not changedally in at least two hundred years. Stop quote. Incredible quote gets to the heart of the problem and also gets to something that we spoke about in our last episode, that these two are hardwired in us. The desire to belong in a tribe. the desire to always keep showing our virtue and by the way, gentle listener, I often say those who signal the most virtue possess the least. You know, and I have found this to be true especially of men, so watch out. Uh and uh yeah. So you know so yeah, so these are sort of my broad thoughts on it that the A, it is hardwired in us to be tribalistic in this manner, and we've seen that. We've spoken about that in episode forty two as well. Populism, the direction of the Republican Party and what has happened to it. And at the same time it is exacerbated in a sense by social media. Which plays to the worst demons of our nature, as it were, instead of the better",
+      "words": [
         {
           "word": "a",
           "startTime": 2550.46,

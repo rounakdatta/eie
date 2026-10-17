@@ -5,7 +5,7 @@
     "durationSeconds": 3180,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -97,8 +97,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 18.83,
-      "endTime": 316.28,
-      "text": "stories. Today the great Amit Varma and the even greater Rajesha are going to tell you stories. I have three stories that should be films. We have done a bunch of episodes in the past where we've spoken about stories that should be films. We've had a lot of fun doing it. None of them have been uh films yet. If you, gentle reader, are interested in producing a film like that, get in touch with us, we'll get the job done. So we thought let's do another fun episode. Florida's Red Should Be Films. I have three stories. Ajay is not really super keen on this, he has one or two. So if my three don't take up sufficient time, Ajay will add one or two of his. But you know, let's get going. Tell us a story. Right. So my first story Ajesha stars you, right? So I was walking around in the balcony early in the morning, just having woken up and I encounter our fine cinematographer, Vaishnavyas. And uh I ask him how he is. He says he's fine. He says he has a strange dream. He just uh awoke from a strange dream. So I said, Tell me your dream, young man. Right? And uh the dream involved you. So it was a dream where you live in a particular building and you steal all the paper there in the sense everybody's electricity bills, phone bills, everything you are stealing and hoarding. So my first story is based on this promise. His dream went in a kind of a different direction, perhaps one that shows you in a better night. But I started with the premise. The thought of a man like you in his mid fifties, but unlike you career wise, right, who is for some reason stealing everybody's electricity bills. And then the question is, why is he doing it? What's going on there? What kind of person is he? What happens next? How can we build a love interest into this Ajesha and have a story evolve. So that's the start of my story, right? So film essentially begins perhaps with a close up of an electricity bill on the floor. And then you see a man's hand pick them up. And he walks and so far so good. But then the next door has another electricity bill and he picks that up as well. And then you gradually zoom up and you see someone who looks just like you, Ajesha. Uh let's say early fifties because you look younger than you are. So a man in his early fifties walking up the stairs from door to door in an oldish but respectable apartment building which could easily be in Bandra East. Working all the way up, taking all the bills, entering his house, uh, you know, uh maybe settling them into alphabetical order, we don't know. But eventually taking all of them, collecting uh them. Now what's going on here, right? So as part of the setting, as part of the first part of act one, I want to show you two things. One is how this man lives, right? This man has a messy bachelor pad, he's clearly alone. We don't know his backstory, whether he was ever with someone or not. He's a bit of a geek. He's got all kinds of wires and electronics lying around and he's also got all these storage boxes all over the place which appear to be full of paper and as we will duly find they are. But essentially it's almost like a go down kind of field. And uh you know, we see him go over to make chai for himself at the kitchen platform, right? And he's making dip dip tea. He's clearly not a very good cook because there are not too many utensils around. And there are piles and piles of Maggie Packets, and there is one toaster, and there is half a packet of bread. So you get the sense that this man's culinary skills are kind of limited. This is all a glance, right? I'm doing a show don't tell kind of thing here. So you get a sense of this guy's life, this is what he's leaving. And at one point uh when he's about to boiling water for himself and he's got a tea bag and a mug, he looks out of the window and he sees a guy approaching on the road. And then he adds some more water and he takes another mug and he adds a tea back to that, right? And then this person comes up as the tea is ready and this is his friend from the electricity department. And here is a scam they run, right? Um the scam they run is that the people who haven't got electricity bills, some of them will omit to pay their electricity bill because hey, they don't have it, right? And therefore this electricity guy will cut their electricity off. And then we have our hero to the rescue because our hero is kind of um a four man, everyday man of the building or whatever. He helps people out. We'll have to figure out the specific role, but he helps people out. So whenever somebody gets electricity cut out, they come to him and they say, Ajay Bhai, Ajay Bhay, I'm taking the liberty of giving him your name, but we'll find a better name for him, Ajis to comment. So they're like Ajeebai, Ajaybai Kujkaru. And then he says, My Kartov, don't worry. He takes a bill amount, he takes a late fee, he takes a bribe, he goes, he gets it reconnected, and the proceedings are split. Right? So you see that there is a racket running here, a ra racket that you are quite capable of coming up with. I don't know whether that's a compliment or it's not a compliment. What do you think so far, Ajesha? I",
+      "endTime": 316.2,
+      "text": "stories. Today the great Amit Varma and the even greater Rajesha are going to tell you stories. I have three stories that should be films. We have done a bunch of episodes in the past where we've spoken about stories that should be films. We've had a lot of fun doing it. None of them have been uh films yet. If you, gentle reader, are interested in producing a film like that, get in touch with us, we'll get the job done. So we thought let's do another fun episode. Florida's Red Should Be Films. I have three stories. Ajay is not really super keen on this, he has one or two. So if my three don't take up sufficient time, Ajay will add one or two of his. But you know, let's get going. Tell us a story. Right. So my first story Ajesha stars you, right? So I was walking around in the balcony early in the morning, just having woken up and I encounter our fine cinematographer, Vaishnavyas. And uh I ask him how he is. He says he's fine. He says he has a strange dream. He just uh awoke from a strange dream. So I said, Tell me your dream, young man. Right? And uh the dream involved you. So it was a dream where you live in a particular building and you steal all the paper there in the sense everybody's electricity bills, phone bills, everything you are stealing and hoarding. So my first story is based on this promise. His dream went in a kind of a different direction, perhaps one that shows you in a better night. But I started with the premise. The thought of a man like you in his mid fifties, but unlike you career wise, right, who is for some reason stealing everybody's electricity bills. And then the question is, why is he doing it? What's going on there? What kind of person is he? What happens next? How can we build a love interest into this Ajesha and have a story evolve. So that's the start of my story, right? So film essentially begins perhaps with a close up of an electricity bill on the floor. And then you see a man's hand pick them up. And he walks and so far so good. But then the next door has another electricity bill and he picks that up as well. And then you gradually zoom up and you see someone who looks just like you, Ajesha. Uh let's say early fifties because you look younger than you are. So a man in his early fifties walking up the stairs from door to door in an oldish but respectable apartment building which could easily be in Bandra East. Working all the way up, taking all the bills, entering his house, uh, you know, uh maybe settling them into alphabetical order, we don't know. But eventually taking all of them, collecting uh them. Now what's going on here, right? So as part of the setting, as part of the first part of act one, I want to show you two things. One is how this man lives, right? This man has a messy bachelor pad, he's clearly alone. We don't know his backstory, whether he was ever with someone or not. He's a bit of a geek. He's got all kinds of wires and electronics lying around and he's also got all these storage boxes all over the place which appear to be full of paper and as we will duly find they are. But essentially it's almost like a go down kind of field. And uh you know, we see him go over to make chai for himself at the kitchen platform, right? And he's making dip dip tea. He's clearly not a very good cook because there are not too many utensils around. And there are piles and piles of Maggie Packets, and there is one toaster, and there is half a packet of bread. So you get the sense that this man's culinary skills are kind of limited. This is all a glance, right? I'm doing a show don't tell kind of thing here. So you get a sense of this guy's life, this is what he's leaving. And at one point uh when he's about to boiling water for himself and he's got a tea bag and a mug, he looks out of the window and he sees a guy approaching on the road. And then he adds some more water and he takes another mug and he adds a tea back to that, right? And then this person comes up as the tea is ready and this is his friend from the electricity department. And here is a scam they run, right? Um the scam they run is that the people who haven't got electricity bills, some of them will omit to pay their electricity bill because hey, they don't have it, right? And therefore this electricity guy will cut their electricity off. And then we have our hero to the rescue because our hero is kind of um a four man, everyday man of the building or whatever. He helps people out. We'll have to figure out the specific role, but he helps people out. So whenever somebody gets electricity cut out, they come to him and they say, Ajay Bhai, Ajay Bhay, I'm taking the liberty of giving him your name, but we'll find a better name for him, Ajis to comment. So they're like Ajeebai, Ajaybai Kujkaru. And then he says, My Kartov, don't worry. He takes a bill amount, he takes a late fee, he takes a bribe, he goes, he gets it reconnected, and the proceedings are split. Right? So you see that there is a racket running here, a ra racket that you are quite capable of coming up with. I don't know whether that's a compliment or it's not a compliment. What do you think so far, Ajesha?",
       "words": [
         {
           "word": "stories.",
@@ -6105,21 +6105,21 @@
           "startTime": 314.92,
           "endTime": 316.2,
           "confidence": 0.652
-        },
-        {
-          "word": "I",
-          "startTime": 316.2,
-          "endTime": 316.28,
-          "confidence": 0.7988
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 316.28,
+      "startTime": 316.2,
       "endTime": 324.7,
-      "text": "was actually on a different track. If I would scoop up the bills of people, it the only earthly reason would be to create a data set about electricity",
+      "text": "I was actually on a different track. If I would scoop up the bills of people, it the only earthly reason would be to create a data set about electricity",
       "words": [
+        {
+          "word": "I",
+          "startTime": 316.2,
+          "endTime": 316.28,
+          "confidence": 0.7988
+        },
         {
           "word": "was",
           "startTime": 316.28,
@@ -6299,8 +6299,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 324.7,
-      "endTime": 431.88,
-      "text": "consumption. Create data set. Well done. Nicely done. Yeah. But this is not you. This is someone who kinda looks like you, inspired by you, and let me tell you, even in Vaishnav's dream, that is not what was happening. Different direction happened over there, right? But with his permission, I am taking my own sort of imaginative leaps, right? So this is a setup. Now, in the second part of act one. uh an interesting thing happens. This new woman who is perhaps in her forties, indeterminate age, but this new woman who is living alone moves into the apartment block. Her nephew in fact drops her and sets her up, but he is kind of rude and not really interested in her. He'll just he uh he must have promised um this lady's sister who is his mother that I'm I'm gonna do it for you. Vaishnav Vyas is gonna play this role. He offered to play you, I said you're too young and handsome. Which is not to say you are not handsome, but uh you are not young. So anyway, so this lady moves into the building and Two to Firm her electricity bill comes and our hero. Look at this. This is a sign from the heavens. This is a this is a five leaf clover. Can we call it that. Five leaf clover, gentle readers. So we shall put it here gently. And um he takes a bill and then duly he messages that other guy. That other guy comes and he disconnects his woman's electricity supply. Now he is expecting to be contacted by this woman. He's told the watchman also. But the woman doesn't contact him. An hour goes, two hours go, three hours go, he knows a woman is at home, she hasn't contacted him. A whole twenty-four hours pass. He's very surprised. There's no electricity. How is she managing? So he decides that he will just pay a visit and, you know, figure out a way to get it out of her. Maybe she doesn't know who to turn to. So he goes. He knocks on the door. Why does he knock on the door, Rajesha?",
+      "endTime": 887.21,
+      "text": "consumption. Create data set. Well done. Nicely done. Yeah. But this is not you. This is someone who kinda looks like you, inspired by you, and let me tell you, even in Vaishnav's dream, that is not what was happening. Different direction happened over there, right? But with his permission, I am taking my own sort of imaginative leaps, right? So this is a setup. Now, in the second part of act one. uh an interesting thing happens. This new woman who is perhaps in her forties, indeterminate age, but this new woman who is living alone moves into the apartment block. Her nephew in fact drops her and sets her up, but he is kind of rude and not really interested in her. He'll just he uh he must have promised um this lady's sister who is his mother that I'm I'm gonna do it for you. Vaishnav Vyas is gonna play this role. He offered to play you, I said you're too young and handsome. Which is not to say you are not handsome, but uh you are not young. So anyway, so this lady moves into the building and Two to Firm her electricity bill comes and our hero. Look at this. This is a sign from the heavens. This is a this is a five leaf clover. Can we call it that. Five leaf clover, gentle readers. So we shall put it here gently. And um he takes a bill and then duly he messages that other guy. That other guy comes and he disconnects his woman's electricity supply. Now he is expecting to be contacted by this woman. He's told the watchman also. But the woman doesn't contact him. An hour goes, two hours go, three hours go, he knows a woman is at home, she hasn't contacted him. A whole twenty-four hours pass. He's very surprised. There's no electricity. How is she managing? So he decides that he will just pay a visit and, you know, figure out a way to get it out of her. Maybe she doesn't know who to turn to. So he goes. He knocks on the door. Why does he knock on the door, Rajesha? Because the doorbell isn't working. Because the doorbell isn't working, you're quick on the uptake. So he goes and he knocks on the door and uh she opens the door. And she's clearly ill. She's looking really frail. And she almost falls over. And he introduces himself. Or perhaps a met when she was moving in, we can figure out the modalities. And uh he realizes she's very ill. She's been in bed all day. Maybe she's got COVID, maybe it's something else. She's been very weak and frail. And too we can fail to actually move around much, right? So the electricity went, obviously she would have been affected by the fact that the fan isn't there. But she doesn't have the energy to do anything about it. She'll just been lying there. She's pretty ill. And our hero is touched by this. You would have thought that this is an evil grifter, he's taking advantage of others, but no. He is human. He is touched by this. And uh You know, she tells him there's no fan, but I don't know what to do and I'm feeling so ill and she kind of hobbles through the bed and he says, Don't worry. I'll take care of it. Just give me the bill. She gives him the bill and he goes and he gets the thing started. And then he comes back to her. And he realizes she's really unwell and he says, Should I order something for you? Or she's She says, Oh, I don't like outside food, you know, et cetera, et cetera. And oh what would I do for some Dal Chavel now? So I don't know whether you should this should be Dal Chavel or soup. One of the two, there is something that is her comfort food. And our friend who we have already established lives on Maggie and Toast, which is why we showed that scene. Shekhov's gun. You have you heard the concept of Shekhov's gun? Interruption, general readers. Um gentle readers, not general. Uh the great Russian short story writer Anton Shekhov had a principle that if you show a gun in the first act of the play, it must go off by the third act. Right? It should not be there for no reason. You can't just show a gun and not have it go off. So that's a principle known as Shekhov's gun. Everything has a reason. So when we show him earlier that he's geeky and wires are everywhere, that has that has a reason. When we show Maggie and he's not really been able to make anything, even his T is dip-dip T. That has a reason. So he decides that this lady, and at this point we can't talk of attraction, we can only talk of empathy. But nevertheless, he's male. She's female. Who knows what is there. You have to leave it to the viewers to kind of superimpose themselves into that situation and think about what's going on here. But she's a pleasant lady and he's an oldish man. And he decides I'm going to make Dal Chavul for you. Right. And having made this offer that I will make Dal Chavel for you, he remembers that like all men he has overpromised, right? He has no idea how to make Dal Chavel. So he quickly figures out and I do I haven't decided when this film will be set, but if it is set in older times without the internet, maybe he goes up and from some cupboard he digs out all kinds of old books, including his mother's recipe books. Right. This indicates he's a hoarder of stuff, which is an important point. And he finds a recipe book and he finds a recipe for Dal. And then he tries making it. He says he'll make it in his flat and bring it for her. He tries making it, uh, but he fails with the Dal, he fails with the rice. All kinds of nonsense is happening, things are exploding, amateurish mistakes. Oh, what's he gonna do? Right? So he quickly does jogar of Dal Chavel from somewhere. Maybe he asks another neighbor, maybe he goes round and gets it from a restaurant. Doesn't matter. He does jugar and then he takes it to her. And she's like, Oh thank you. I thought you'd never come, but thank you. Why did you go to this trouble? And then he sits with her and he puts a plate and she's like, Won't you eat? And he realizes he's just got one person's potion. He says, No no no, though he hasn't eaten. And she starts eating the Dal Chavel. And then she realises and this is again something that is pure show don't tell. It's never told. She kinda realizes as she eats it that this bugger can't have made this. So she says, Oh, by the way, Vish Dal is this? And he looks at her and she looks at him and they kinda smile. Right? Charming so far and this is uh the setup. This is uh uh uh g you know, now the story is properly going and you know that there is something happening here. Now, eventually you show that he's kinda taking care of her, sending her stuff, and she gets better and she says, Look, I have to thank you. You got me at Dal Chavil and et cetera, et cetera. So why don't you come home for dinner? So he says, Okay. So he goes home for dinner and she painstakingly cooks for him. And again you have a sequence where you show that she's the cooking is really painstaking, the polar opposite of his. You also see you begin to notice that she is obsessive compulsive. Right? That the way everything is chopped into perfect pieces, the way uh, you know, the prep stuff is kept on the board, the way she, you know, folds a piece of paper and puts it, you just notice that she's like really finicky about stuff, obsessive compulsive. So this is again something to remember about her. Shekhov's gun, this is how she kinda is. So she makes uh uh, you know, the meal for him. He comes, he enjoys it, he's kinda unsure how to use the cutlery, what is the deal because one of those things is sophisticated, whatever. By now we've learned that she's kind of, you know, finicky, obsessive, compulsive. We also now learn about him when she asks him that, you know, uh he comments on her neatness and he says, Oh, I'm just see opposite and so on so on and so forth. And then she asks him about his life and he's starts saying that, you know, uh you now you figure out the backstory that he's never kinda gotten married, he's always been geeky as some source of income, we can figure it out what it is. Uh, you know, let's not get into the details at the story session, right? uh the n uh narration um uh phase of this project, as it were, Ajesha. And uh so we learn from his past that he's a hoarder. Now we realise that he likes And at one point he hears a tinkle of a cycle outside, which is like the electricity guy, and that takes him into a minor reverie. And we realize that what is actually happening is that his habit of collecting everything, every piece of paper, organizing it, keeping everything carefully, is a habit that started this particular project of his where he steals electricity bills. Where he is passing people's house, he sees the bills, he just can't help himself. Right, he can't help himself and somebody's electricity is cut and he offers to help and out of this emerges uh the the business model. Right? And I don't know whether it is in a reverie or we figure out some other way of smoothly telling the story and not something quite so crude. So now things are kind of falling into place. We're beginning to understand them a little better, right? So now he's got to uh sort of invite her home to reciprocate. So he invites her home one day. for dinner or lunch or whatever. Let's say dinner, because wine will be served, as you will find. So she duly comes, but before she comes, he is trying in his hapless bachelor way to clear a house that cannot be cannot be cleaned. You know, a messy bachelor's house is messy. You can you know transplant things from here to there, but the mess remains. Right? It is almost a spiritual mess, as it were so even though he's a man in his fifties and looks like you right. So um He does the best he can. She comes, uh, he apologizes for the mess and she's like, No no no worries, okay Then he takes a bottle of wine which he's bought specially for her. Maybe we see him before this go out and buy the wine. But either way, he's got the bottle of wine. Right. Now an important question emerges, Ajesha, a problem that you must have faced in your life. How do you open the bottle of wine? Precisely. Right. Do you have experience with this? What is your experience?",
       "words": [
         {
           "word": "consumption.",
@@ -8497,15 +8497,7 @@
           "startTime": 431.08,
           "endTime": 431.88,
           "confidence": 0.8561
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 431.88,
-      "endTime": 433.8,
-      "text": "Because the doorbell isn't working. Because the doorbell",
-      "words": [
+        },
         {
           "word": "Because",
           "startTime": 431.88,
@@ -8553,15 +8545,7 @@
           "startTime": 433.32,
           "endTime": 433.8,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 433.8,
-      "endTime": 559.48,
-      "text": "isn't working, you're quick on the uptake. So he goes and he knocks on the door and uh she opens the door. And she's clearly ill. She's looking really frail. And she almost falls over. And he introduces himself. Or perhaps a met when she was moving in, we can figure out the modalities. And uh he realizes she's very ill. She's been in bed all day. Maybe she's got COVID, maybe it's something else. She's been very weak and frail. And too we can fail to actually move around much, right? So the electricity went, obviously she would have been affected by the fact that the fan isn't there. But she doesn't have the energy to do anything about it. She'll just been lying there. She's pretty ill. And our hero is touched by this. You would have thought that this is an evil grifter, he's taking advantage of others, but no. He is human. He is touched by this. And uh You know, she tells him there's no fan, but I don't know what to do and I'm feeling so ill and she kind of hobbles through the bed and he says, Don't worry. I'll take care of it. Just give me the bill. She gives him the bill and he goes and he gets the thing started. And then he comes back to her. And he realizes she's really unwell and he says, Should I order something for you? Or she's She says, Oh, I don't like outside food, you know, et cetera, et cetera. And oh what would I do for some Dal Chavel now? So I don't know whether you should this should be Dal Chavel or soup. One of the two, there is something that is her comfort food. And our friend who we have already established lives on Maggie and Toast, which is why we showed that scene. Shekhov's gun. You have you heard the concept of Shekhov's gun? Interruption, general readers. Um gentle readers, not general. Uh the great Russian short story writer Anton Shekhov had a principle that if you show a gun in the first act of the play, it must go off by the third act. Right? It should not be there for no reason. You can't just show a gun and not have it go off. So that's a principle known as Shekhov's gun. Everything has a reason. So when we show him earlier that he's geeky and wires are everywhere, that has that has a reason. When we show Maggie and he's not really been able to make anything, even his T is dip-dip T. That has a reason. So he decides that this lady, and at this",
-      "words": [
+        },
         {
           "word": "isn't",
           "startTime": 433.8,
@@ -11267,15 +11251,7 @@
           "startTime": 559.32,
           "endTime": 559.48,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 559.48,
-      "endTime": 561.08,
-      "text": "point we can't talk of attraction,",
-      "words": [
+        },
         {
           "word": "point",
           "startTime": 559.48,
@@ -11311,15 +11287,7 @@
           "startTime": 560.52,
           "endTime": 561.08,
           "confidence": 0.8898
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 561.08,
-      "endTime": 840.39,
-      "text": "we can only talk of empathy. But nevertheless, he's male. She's female. Who knows what is there. You have to leave it to the viewers to kind of superimpose themselves into that situation and think about what's going on here. But she's a pleasant lady and he's an oldish man. And he decides I'm going to make Dal Chavul for you. Right. And having made this offer that I will make Dal Chavel for you, he remembers that like all men he has overpromised, right? He has no idea how to make Dal Chavel. So he quickly figures out and I do I haven't decided when this film will be set, but if it is set in older times without the internet, maybe he goes up and from some cupboard he digs out all kinds of old books, including his mother's recipe books. Right. This indicates he's a hoarder of stuff, which is an important point. And he finds a recipe book and he finds a recipe for Dal. And then he tries making it. He says he'll make it in his flat and bring it for her. He tries making it, uh, but he fails with the Dal, he fails with the rice. All kinds of nonsense is happening, things are exploding, amateurish mistakes. Oh, what's he gonna do? Right? So he quickly does jogar of Dal Chavel from somewhere. Maybe he asks another neighbor, maybe he goes round and gets it from a restaurant. Doesn't matter. He does jugar and then he takes it to her. And she's like, Oh thank you. I thought you'd never come, but thank you. Why did you go to this trouble? And then he sits with her and he puts a plate and she's like, Won't you eat? And he realizes he's just got one person's potion. He says, No no no, though he hasn't eaten. And she starts eating the Dal Chavel. And then she realises and this is again something that is pure show don't tell. It's never told. She kinda realizes as she eats it that this bugger can't have made this. So she says, Oh, by the way, Vish Dal is this? And he looks at her and she looks at him and they kinda smile. Right? Charming so far and this is uh the setup. This is uh uh uh g you know, now the story is properly going and you know that there is something happening here. Now, eventually you show that he's kinda taking care of her, sending her stuff, and she gets better and she says, Look, I have to thank you. You got me at Dal Chavil and et cetera, et cetera. So why don't you come home for dinner? So he says, Okay. So he goes home for dinner and she painstakingly cooks for him. And again you have a sequence where you show that she's the cooking is really painstaking, the polar opposite of his. You also see you begin to notice that she is obsessive compulsive. Right? That the way everything is chopped into perfect pieces, the way uh, you know, the prep stuff is kept on the board, the way she, you know, folds a piece of paper and puts it, you just notice that she's like really finicky about stuff, obsessive compulsive. So this is again something to remember about her. Shekhov's gun, this is how she kinda is. So she makes uh uh, you know, the meal for him. He comes, he enjoys it, he's kinda unsure how to use the cutlery, what is the deal because one of those things is sophisticated, whatever. By now we've learned that she's kind of, you know, finicky, obsessive, compulsive. We also now learn about him when she asks him that, you know, uh he comments on her neatness and he says, Oh, I'm just see opposite and so on so on and so forth. And then she asks him about his life and he's starts saying that, you know, uh you now you figure out the backstory that he's never kinda gotten married, he's always been geeky as some source of income, we can figure it out what it is. Uh, you know, let's not get into the details at the story session, right? uh the n uh narration um uh phase of this project, as it were, Ajesha. And uh so we learn from his past that he's a hoarder. Now we realise that he likes And at one point he hears a tinkle of a cycle outside, which is like the electricity guy, and that takes him into a minor reverie. And we realize that what is actually happening is that his habit of collecting everything, every piece of paper, organizing it, keeping everything carefully, is a habit that started this particular project of his where he steals electricity bills. Where he is passing people's house, he sees the bills, he just can't help himself. Right, he can't help himself and somebody's electricity is cut and he offers to help and out of this emerges uh the the business model. Right? And I don't know whether it is in a reverie or we figure out some other way of smoothly telling the story and not something quite so crude. So now things are kind of falling into place. We're beginning to understand them a little better, right? So now he's got to uh sort of invite her home to reciprocate. So he invites her home one day. for dinner or lunch or whatever. Let's say dinner, because wine will be served, as you will find. So she duly comes, but before she comes, he is trying in",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 561.08,
@@ -17019,15 +16987,7 @@
           "startTime": 840.23,
           "endTime": 840.39,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 840.39,
-      "endTime": 841.99,
-      "text": "his hapless bachelor way",
-      "words": [
+        },
         {
           "word": "his",
           "startTime": 840.39,
@@ -17051,15 +17011,7 @@
           "startTime": 841.67,
           "endTime": 841.99,
           "confidence": 0.9768
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 841.99,
-      "endTime": 887.21,
-      "text": "to clear a house that cannot be cannot be cleaned. You know, a messy bachelor's house is messy. You can you know transplant things from here to there, but the mess remains. Right? It is almost a spiritual mess, as it were so even though he's a man in his fifties and looks like you right. So um He does the best he can. She comes, uh, he apologizes for the mess and she's like, No no no worries, okay Then he takes a bottle of wine which he's bought specially for her. Maybe we see him before this go out and buy the wine. But either way, he's got the bottle of wine. Right. Now an important question emerges, Ajesha, a problem that you must have faced in your life. How do you open the bottle of wine? Precisely. Right. Do you have experience with this? What is your experience?",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 841.99,
@@ -27875,8 +27827,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1396.27,
-      "endTime": 1817.59,
-      "text": "War. Alienation and War indeed. Have you seen the play Waiting for Godot or read the play Waiting for Godot by Samuel Beckett? Right. So it has those two characters, Vladimir and Estragon, and you get that sense of alienation there in the kind of conversations they have. Equally, have you uh read the play uh or even watched it, Rosencratz and Gildersteen are dead by Tom Stoppard. Yeah. Right. So again two similar characters originally created by Shakespeare, they are part of uh they're in the group of Hamlet's friends, but Stoppard takes him and it's a little bit about alienation, right? So my story stars two young Saddhars in the eighteenth century, right? And these Saddhars are called Botasingh and Garja Singh. Garja Singh also has a nickname of Motas Singh, right? So I presume that in appearance at least he might have looked a little bit like me. But uh leaving that aside. Now, the key date to note here is july twenty seventh, seventeen thirty-nine, right? And the key place that I'm going to talk about is somewhere in Punjab, but it's the united Punjab of that time. It's on the road from Amritsar to uh from Delhi to Lahore, right? It's on that road. It is square in the middle of Punjab. Let me give you some historical context. Punjab is being governed at this time. You know, whether you call him a governor or a Subedar as he was called, is being governed by a guy called Zakharia Khan, right? Zakharia Khan looks after Punjab on behalf of the Mughal Emperor of the time, Mahomet Shah. So 1730s, like I think he's there from 1725 to 1745, something like that, um uh around uh that much. And I should point out at this point that I am telling this story based on something that I learned in an excellent by Sarpreet Singh. He's a Sikh historian. He's recorded with me on the scene and the unseen. The episode will either already be out, or it'll be out uh next time. I'm really not sure when I'm gonna release it. Magnificent book. He's written a bunch of books which are very cool. And this is from a book um called The Rise of the Sikh. Excellent book, right? So let me set the historical stage a little bit. This gentleman here is uh Zakharia Khan is the governor of Punjab for the Mughal Empire, and there are Sikhs who he and his father before him, who was uh uh Sub earlier Subadar, have been persecuting really badly. And these Sikh have kind of risen up at different times and all of that. So so in seventeen thirty four there is an incident where he goes to uh one of the Sikh landlords who has a lot of land that the Mughal Empire had given him, and he says, We're taking away most of this land, you will just have the small estate, deal with it, dude. And the gentleman who is there says that you know his pride is affected, his Khalsa pride as it were. And he said, henceforth every Sikh will consider the domain of Punjab to belong to him. Right. And this leads to a kind of rebellion. There are two rebel groups within the Sikhs. Complicated story. Sarpreet tells it very well in his book. And they rise up and uh you know they fight against um Zakariakan. And they succeed for a while. There is a place called Sirhind. So th there is something called the second siege of Sir Hind where uh you know the Sikh manage to go into the city, they plunder, they kill, they loot. uh you know a lot of good stuff is happening. They take away a lot of the loot. Zakariya Khan hears about this, he g has them chased. There is a battle which both sides claim to win. Right? So narrative battles even in b those days where the Mughals are saying we cho chase the Sikh away. And the Sikhs are saying we got away with the plunder. They couldn't take it back, et cetera, et cetera. But over the next three, four, five years, what gradually happens is that the landscape is um uh, you know, becomes dominated by the Mughals, and the Sikhs are in hiding and they have kind of Disappeared. So this is a backstory. This is not the actual story, right? Now the legend of Botasingh and Garja Singh really starts and different stories tell it differently. Were they both together at the start, or did Garja Singh join later? So that's irrelevant. For the moment, I will go with the narrative in Sappreet's book, and they're kinda together and they're hiding out in the fields at one point, and a farmer sees them, and one farmer says to the other farmer, Oh, look, there are two Sikhs. And uh s b uh there are two sing, rather, and sing also means lion, right? And the other person, very snarkily, says that no no, these are not lions, they must be jackals. A real lion would never run away from the enemy, would never hide. They would engage in battle, right? So these two guys hear this, that they are not being considered real Sikhs and this kind of affects them. And uh, you know, they decide that we wanna do something about this. And I see these two people almost as tragic comic characters at some point in the narrative. Now I'm really fictionalizing the real events. Uh uh and the fictionalizing is in the backstory and in the internal motivation. Did you have a backstory where Botha Singh is like the third son in the family and he's almost like the black sheep and his father is like, What good are you? And then when he goes out to war, he says, You don't come, you'll just get us into trouble. Forget the fact you can't fight. So he's got a self esteem issue. But one of his fellow backbenchers, as it were, there were no schools, no benches, no backbenchers, but you get what I'm saying. One of his fellow backbenchers is this one year younger guy to him, Garja Singh. And Garja really looks up to him. At one point Garja sort of falls in love with the girl, but the girl rebuffs him, like you're useless, what are you doing? et cetera, et cetera. And he feels bad about that. It's a self-esteem issue. And then Botha assumed that like even if she said yes, what are you going to do? You know, life is sad. We are just losers. So there's partly a self-esteem issue where they're trying to kind of figure out um you know who they are and how they can gain respect. And Partly it is also a larger question which you and I will resonate with, which is a larger question of what do you want? What is your purpose. These two young people don't know what they want. This particular incident I'm talking about, where they are taunted that, oh you are not singing's jackals. You know, it really hurts them to the core. And they say that man, this is something we gotta do something about and we've got to figure something out to gain gain some pride back. And it's better to be dead than have to deal with this shit. And you know martyrdom is glorious. Let us do something truly brave and bold. So then there is this place in Punjab called uh the Sarai Nordhan. It's an inn, like Sarai means uh in it's an inn where a lot of wayfarers will gather and all of that. And beside that there is a small wooden bridge. So they decide we are going to conquer this bridge. So they go to the bridge and there is nobody there. So you know they can conquer the bridge. Conquest is achieved. And uh the then they decide we are going to institute a toll that every bugger who is going to pass here is going to have to pay a toll, and they call it the Khalsa regime tax. Right. So you got the word Khalsa and there's a feeling of pride, we're doing something for this greater cause. So they institute a toll. What is the toll, Ajaisha? You are an economist. This is 1739.",
+      "endTime": 2291.48,
+      "text": "War. Alienation and War indeed. Have you seen the play Waiting for Godot or read the play Waiting for Godot by Samuel Beckett? Right. So it has those two characters, Vladimir and Estragon, and you get that sense of alienation there in the kind of conversations they have. Equally, have you uh read the play uh or even watched it, Rosencratz and Gildersteen are dead by Tom Stoppard. Yeah. Right. So again two similar characters originally created by Shakespeare, they are part of uh they're in the group of Hamlet's friends, but Stoppard takes him and it's a little bit about alienation, right? So my story stars two young Saddhars in the eighteenth century, right? And these Saddhars are called Botasingh and Garja Singh. Garja Singh also has a nickname of Motas Singh, right? So I presume that in appearance at least he might have looked a little bit like me. But uh leaving that aside. Now, the key date to note here is july twenty seventh, seventeen thirty-nine, right? And the key place that I'm going to talk about is somewhere in Punjab, but it's the united Punjab of that time. It's on the road from Amritsar to uh from Delhi to Lahore, right? It's on that road. It is square in the middle of Punjab. Let me give you some historical context. Punjab is being governed at this time. You know, whether you call him a governor or a Subedar as he was called, is being governed by a guy called Zakharia Khan, right? Zakharia Khan looks after Punjab on behalf of the Mughal Emperor of the time, Mahomet Shah. So 1730s, like I think he's there from 1725 to 1745, something like that, um uh around uh that much. And I should point out at this point that I am telling this story based on something that I learned in an excellent by Sarpreet Singh. He's a Sikh historian. He's recorded with me on the scene and the unseen. The episode will either already be out, or it'll be out uh next time. I'm really not sure when I'm gonna release it. Magnificent book. He's written a bunch of books which are very cool. And this is from a book um called The Rise of the Sikh. Excellent book, right? So let me set the historical stage a little bit. This gentleman here is uh Zakharia Khan is the governor of Punjab for the Mughal Empire, and there are Sikhs who he and his father before him, who was uh uh Sub earlier Subadar, have been persecuting really badly. And these Sikh have kind of risen up at different times and all of that. So so in seventeen thirty four there is an incident where he goes to uh one of the Sikh landlords who has a lot of land that the Mughal Empire had given him, and he says, We're taking away most of this land, you will just have the small estate, deal with it, dude. And the gentleman who is there says that you know his pride is affected, his Khalsa pride as it were. And he said, henceforth every Sikh will consider the domain of Punjab to belong to him. Right. And this leads to a kind of rebellion. There are two rebel groups within the Sikhs. Complicated story. Sarpreet tells it very well in his book. And they rise up and uh you know they fight against um Zakariakan. And they succeed for a while. There is a place called Sirhind. So th there is something called the second siege of Sir Hind where uh you know the Sikh manage to go into the city, they plunder, they kill, they loot. uh you know a lot of good stuff is happening. They take away a lot of the loot. Zakariya Khan hears about this, he g has them chased. There is a battle which both sides claim to win. Right? So narrative battles even in b those days where the Mughals are saying we cho chase the Sikh away. And the Sikhs are saying we got away with the plunder. They couldn't take it back, et cetera, et cetera. But over the next three, four, five years, what gradually happens is that the landscape is um uh, you know, becomes dominated by the Mughals, and the Sikhs are in hiding and they have kind of Disappeared. So this is a backstory. This is not the actual story, right? Now the legend of Botasingh and Garja Singh really starts and different stories tell it differently. Were they both together at the start, or did Garja Singh join later? So that's irrelevant. For the moment, I will go with the narrative in Sappreet's book, and they're kinda together and they're hiding out in the fields at one point, and a farmer sees them, and one farmer says to the other farmer, Oh, look, there are two Sikhs. And uh s b uh there are two sing, rather, and sing also means lion, right? And the other person, very snarkily, says that no no, these are not lions, they must be jackals. A real lion would never run away from the enemy, would never hide. They would engage in battle, right? So these two guys hear this, that they are not being considered real Sikhs and this kind of affects them. And uh, you know, they decide that we wanna do something about this. And I see these two people almost as tragic comic characters at some point in the narrative. Now I'm really fictionalizing the real events. Uh uh and the fictionalizing is in the backstory and in the internal motivation. Did you have a backstory where Botha Singh is like the third son in the family and he's almost like the black sheep and his father is like, What good are you? And then when he goes out to war, he says, You don't come, you'll just get us into trouble. Forget the fact you can't fight. So he's got a self esteem issue. But one of his fellow backbenchers, as it were, there were no schools, no benches, no backbenchers, but you get what I'm saying. One of his fellow backbenchers is this one year younger guy to him, Garja Singh. And Garja really looks up to him. At one point Garja sort of falls in love with the girl, but the girl rebuffs him, like you're useless, what are you doing? et cetera, et cetera. And he feels bad about that. It's a self-esteem issue. And then Botha assumed that like even if she said yes, what are you going to do? You know, life is sad. We are just losers. So there's partly a self-esteem issue where they're trying to kind of figure out um you know who they are and how they can gain respect. And Partly it is also a larger question which you and I will resonate with, which is a larger question of what do you want? What is your purpose. These two young people don't know what they want. This particular incident I'm talking about, where they are taunted that, oh you are not singing's jackals. You know, it really hurts them to the core. And they say that man, this is something we gotta do something about and we've got to figure something out to gain gain some pride back. And it's better to be dead than have to deal with this shit. And you know martyrdom is glorious. Let us do something truly brave and bold. So then there is this place in Punjab called uh the Sarai Nordhan. It's an inn, like Sarai means uh in it's an inn where a lot of wayfarers will gather and all of that. And beside that there is a small wooden bridge. So they decide we are going to conquer this bridge. So they go to the bridge and there is nobody there. So you know they can conquer the bridge. Conquest is achieved. And uh the then they decide we are going to institute a toll that every bugger who is going to pass here is going to have to pay a toll, and they call it the Khalsa regime tax. Right. So you got the word Khalsa and there's a feeling of pride, we're doing something for this greater cause. So they institute a toll. What is the toll, Ajaisha? You are an economist. This is 1739. They charge one unit for a donkey and six units for a cart. You have to guess what is that unit. No idea. It's a paisa. So they charge one pick uh one paisa for a donkey to pass and six paisas for a cart to pass. See the audacity. This is a Mughal Empire, right? This particular region is under the reign of the fearful Zakaria Khan, right and these two random Chunamunus, Rosencratz and Guldestreen, Vladimir and Estragon, Botha and Garja, also known as Motar, they are now charging a tax. Guess what happens, Ajesha? When the first bystander comes and he's strolled of the stacks. He pays. Then the next bystander comes and uh you know, passer by comes rather and is strolled of the stacks and he pays. And I'm using the male pronoun here because I'm I'm guessing that uh, you know, a lot of the travelling would have been done by males in those deeply problematic times. But regardless, people pass and everybody's playing the frickin' toll. And this is not exactly what they wanted. They wanted to be warriors. They wanted conflict. They want to feel like we have won. But if no one is fighting you, how do you win? However, money is coming in. At one point in this film I see them having this uh dialogue where uh Garja says that, see, we have made so much money. You know, isn't this great? We'll just continue making it. And you know, like a true uh Baniya or you know, if there is any Gujarati blood, I have no idea. He calculates that NPV and we'll make so much money and et cetera, et cetera. And then Botha Singh points out that we came here to be warriors, not traders. So they both think about it for a while. There is silence. And then Garja Singh says, But what's wrong with being traders? You know? Now I'll take you back to that earlier episode where we spoke about the Indian concept of Ahimsa, traders not traders. It's beautiful, right? But Botasing has a response to this. Botha Singh says, actually we are making money, but we are not traders also, because it's not voluntary, right? Not in so many words. But he says that we are like crooks or government. Which to him are synonyms. And I uh I will tell that in most contexts they are, right? And Botha says this and Gajah falls silent again. Yes. Correct. But a rent seeker, you normally do rent seeking You know, with the conemance of the state and you've got some state power, here it is almost by default you have been allowed to rent seek. And people are so apathetic. That also tells something. Nobody is questioning that what Hals are regime tax, and who the who are you? Nobody's questioning. It gets normalized. People are paying the money, they're taking the money. But they're like they're not quite happy. Like, what is this? This is not glory. This is not people would respect us for. We want a little more than this. Right? So then they send a letter to Zakariakan. Right, and there are different retellings of this, and I can't reproduce the original Punjabi, but I will reproduce s uh Sarpreet Singh's uh uh English translation, and on the screen you will also see the Punjabi. So those of you who can read Punjabi, gentle Punjabi readers, uh you know, that's also there. So this is the narrative in the Punjabi scripture where it comes from. A letter than Botha Singh wrote, staff in hand on the road I stand, a penny and ass, sixpence a cart, this is a toll that I command. My sister in law, my dear Khan, a response does Botasing demand. Right. So I haven't really understood this, perhaps some native speaker can inform me, but he seems to have insulted Zakaria Khan by calling him his sister in law. So whatever. Let us assume that it was for those times uh an insult of some sort to give to a hearty man that, you know, I'm like the emperor of of this land and you're calling me sister in law or whatever the case might be. So he was not technically the emperor, but there were rumors that he would rise up against Mohammed Shah. Long different story. In his mind, every man is an emperor, Rajesha, isn't it? Right, except you. So you are the economist. So uh So he sends off this letter, and Zakariya Khan gets his letter. And he is like, What is even this? You know, what is even this? I have gone to war with ten thousand horses, I have phase CX with fifty thousand horses. That is battle. Is this really becoming of me? Me, Zakaria Khan Bahadur? You know, am I going to do this kind of shit? But here's what the deal is, Ajesha. The deal is number one, there are no ongoing wars. Number two, there is no television, no internet, no mobile phone, no OTTs to watch. So Zakariya Khan is bored. And he says, Fuck it. I'm gonna go. And I'm gonna teach these boys a lesson. Right? And I'm gonna go in force. So he gathers a hundred horses. Sadpit's narrative says a hundred horses went. I am guessing that they were humans with those horses. Right? So a hundred horses with humans and perhaps some cavalry as well. They all land up there. In my film, all these events are real, by the way. They took this bridge, they charge the taxes, sent this letter. All of it is real. But the stuff that I'm making up is what's inside the head, the interior life. So these buggers in uh kind of land up there's a Kharia Khan, you know, all kind of dressed up for war and the hundred horses and all that. And these two uh Saddar gentlemen are there. Now we come to a critical problem in retellings of history, right? And this is also a curious problem. The problem is, and I'll tell you why it's curious after this. The problem is that history is often told only from one side. So that is the only version you hear. What is curious is that history is normally told from the winner's side. In this case, the only recountings we have of this event is from the loser's side, where various Sikh books mention it. And they mention it as a moral victory of sorts, where these two achieve martyrdom. So what basically happens in all the recountings is it's like a Rajikant film, right? Not a hundred people come, they repel them, they send their back, one of them has a Stick the other one as a maze. What have all kinds of random things are happening. These two are like superheroes and they fight all these people, then another wave comes, and another wave comes. Then the Mughals decide, fuck it, we need bullets. You know, uh all these other standard weapons won't do. Their sticks are too much to us. So they get bullets. Then they shoot the men, right? And the best part of the story is is the one legged last stand. This is what the one legged law stand is. Both men are short in their legs, their legs are broken. Both men collapse, right? Botha sing here, Garja sing here. Garja sing here, Botha Sing here. Right? Botha Motha. Motha Botha, etcetera. They've both collapsed. They can't stand. Between them they have one functional leg. So they wrap their arms around each other, like, you know, however you would, and they stand on that one leg facing opposite directions and they take a last stand. And the Mughals apparently at this moment are like, What is this even? We thought these guys are gone, their bodies have been destroyed, they have one leg between them. And they're standing and fighting TM Maru. And our friends die. And it's kind of a tragic ending. But throughout, I think That focus on the interior life, the interior battle. Who am I? What do I want, right? What am I proving to others? What am I proving to myself? You know, all these questions kind of come up. I tell you, you have Botasingh and Garja Singh, and they take a stand and they do particular things, and this is the sequence of events, and they die, and it seems like they died in vain. But which of us? You know, is not Motasingh or Garja Singh or Botasingh, as it were. Uh you know. So many lives are lost because you're anxious to prove things to others, because you're anxious to prove things to yourself. Right? So many lost are so many lives are lost. Facing futile battles, is everything is everything a futile battle? Are we standing on one leg against the power of the state, I ask you, against the power of bad ideas? We shall continue to stand, it is all we can do. But this is my story. What do you think? Absolutely",
       "words": [
         {
           "word": "War.",
@@ -36361,15 +36313,7 @@
           "startTime": 1816.09,
           "endTime": 1817.59,
           "confidence": 0.9037
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1817.93,
-      "endTime": 1819.45,
-      "text": "They charge",
-      "words": [
+        },
         {
           "word": "They",
           "startTime": 1817.93,
@@ -36381,15 +36325,7 @@
           "startTime": 1818.49,
           "endTime": 1819.45,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1819.45,
-      "endTime": 1882.09,
-      "text": "one unit for a donkey and six units for a cart. You have to guess what is that unit. No idea. It's a paisa. So they charge one pick uh one paisa for a donkey to pass and six paisas for a cart to pass. See the audacity. This is a Mughal Empire, right? This particular region is under the reign of the fearful Zakaria Khan, right and these two random Chunamunus, Rosencratz and Guldestreen, Vladimir and Estragon, Botha and Garja, also known as Motar, they are now charging a tax. Guess what happens, Ajesha? When the first bystander comes and he's strolled of the stacks. He pays. Then the next bystander comes and uh you know, passer by comes rather and is strolled of the stacks and he pays. And I'm using the male pronoun here because I'm I'm guessing that uh, you know, a lot of the travelling would have been done by males in those deeply problematic times. But regardless, people pass and everybody's playing the frickin' toll. And this is not exactly what they wanted. They wanted to be warriors. They wanted",
-      "words": [
+        },
         {
           "word": "one",
           "startTime": 1819.45,
@@ -37505,15 +37441,7 @@
           "startTime": 1881.69,
           "endTime": 1882.09,
           "confidence": 0.9793
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1882.09,
-      "endTime": 1885.99,
-      "text": "conflict. They want to feel like we have won. But if no one is fighting you,",
-      "words": [
+        },
         {
           "word": "conflict.",
           "startTime": 1882.09,
@@ -37609,15 +37537,7 @@
           "startTime": 1885.75,
           "endTime": 1885.99,
           "confidence": 0.9495
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1885.99,
-      "endTime": 1979.93,
-      "text": "how do you win? However, money is coming in. At one point in this film I see them having this uh dialogue where uh Garja says that, see, we have made so much money. You know, isn't this great? We'll just continue making it. And you know, like a true uh Baniya or you know, if there is any Gujarati blood, I have no idea. He calculates that NPV and we'll make so much money and et cetera, et cetera. And then Botha Singh points out that we came here to be warriors, not traders. So they both think about it for a while. There is silence. And then Garja Singh says, But what's wrong with being traders? You know? Now I'll take you back to that earlier episode where we spoke about the Indian concept of Ahimsa, traders not traders. It's beautiful, right? But Botasing has a response to this. Botha Singh says, actually we are making money, but we are not traders also, because it's not voluntary, right? Not in so many words. But he says that we are like crooks or government. Which to him are synonyms. And I uh I will tell that in most contexts they are, right? And Botha says this and Gajah falls silent again. Yes. Correct. But a rent seeker, you normally do rent seeking You know, with the conemance of the state and you've got some state power, here it is almost by default you have been allowed to rent seek. And people are so apathetic. That also tells something. Nobody is questioning that what Hals are regime tax, and who the who are you? Nobody's questioning. It gets normalized. People are paying the money, they're taking the money.",
-      "words": [
+        },
         {
           "word": "how",
           "startTime": 1885.99,
@@ -39345,15 +39265,7 @@
           "startTime": 1979.37,
           "endTime": 1979.93,
           "confidence": 0.9248
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1979.93,
-      "endTime": 1982.33,
-      "text": "But they're like they're not quite happy. Like, what is",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 1979.93,
@@ -39413,15 +39325,7 @@
           "startTime": 1982.17,
           "endTime": 1982.33,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1982.33,
-      "endTime": 2167.79,
-      "text": "this? This is not glory. This is not people would respect us for. We want a little more than this. Right? So then they send a letter to Zakariakan. Right, and there are different retellings of this, and I can't reproduce the original Punjabi, but I will reproduce s uh Sarpreet Singh's uh uh English translation, and on the screen you will also see the Punjabi. So those of you who can read Punjabi, gentle Punjabi readers, uh you know, that's also there. So this is the narrative in the Punjabi scripture where it comes from. A letter than Botha Singh wrote, staff in hand on the road I stand, a penny and ass, sixpence a cart, this is a toll that I command. My sister in law, my dear Khan, a response does Botasing demand. Right. So I haven't really understood this, perhaps some native speaker can inform me, but he seems to have insulted Zakaria Khan by calling him his sister in law. So whatever. Let us assume that it was for those times uh an insult of some sort to give to a hearty man that, you know, I'm like the emperor of of this land and you're calling me sister in law or whatever the case might be. So he was not technically the emperor, but there were rumors that he would rise up against Mohammed Shah. Long different story. In his mind, every man is an emperor, Rajesha, isn't it? Right, except you. So you are the economist. So uh So he sends off this letter, and Zakariya Khan gets his letter. And he is like, What is even this? You know, what is even this? I have gone to war with ten thousand horses, I have phase CX with fifty thousand horses. That is battle. Is this really becoming of me? Me, Zakaria Khan Bahadur? You know, am I going to do this kind of shit? But here's what the deal is, Ajesha. The deal is number one, there are no ongoing wars. Number two, there is no television, no internet, no mobile phone, no OTTs to watch. So Zakariya Khan is bored. And he says, Fuck it. I'm gonna go. And I'm gonna teach these boys a lesson. Right? And I'm gonna go in force. So he gathers a hundred horses. Sadpit's narrative says a hundred horses went. I am guessing that they were humans with those horses. Right? So a hundred horses with humans and perhaps some cavalry as well. They all land up there. In my film, all these events are real, by the way. They took this bridge, they charge the taxes, sent this letter. All of it is real. But the stuff that I'm making up is what's inside the head, the interior life. So these buggers in uh kind of land up there's a Kharia Khan, you know, all kind of dressed up for war and the hundred horses and all that. And these two uh Saddar gentlemen are there. Now we come to a critical problem in retellings of history, right? And this is also a curious problem. The problem is, and I'll tell you why it's curious after this. The problem is that history is often told only from one side. So that is the only version you hear. What is curious is that history is normally told from the winner's side. In this case, the only recountings we have of this event is from the loser's side, where various Sikh books mention it. And they mention it as a moral victory of sorts, where these two achieve martyrdom. So what basically happens in all the recountings is it's like a Rajikant film, right? Not a hundred people come, they",
-      "words": [
+        },
         {
           "word": "this?",
           "startTime": 1982.33,
@@ -43165,15 +43069,7 @@
           "startTime": 2167.55,
           "endTime": 2167.79,
           "confidence": 0.9481
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2167.79,
-      "endTime": 2169.79,
-      "text": "repel them, they send their back, one of them has",
-      "words": [
+        },
         {
           "word": "repel",
           "startTime": 2167.79,
@@ -43233,15 +43129,7 @@
           "startTime": 2169.63,
           "endTime": 2169.79,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2169.79,
-      "endTime": 2203.11,
-      "text": "a Stick the other one as a maze. What have all kinds of random things are happening. These two are like superheroes and they fight all these people, then another wave comes, and another wave comes. Then the Mughals decide, fuck it, we need bullets. You know, uh all these other standard weapons won't do. Their sticks are too much to us. So they get bullets. Then they shoot the men, right? And the best part of the story is is the one legged last stand. This is what the one legged law stand is. Both men are short in their legs, their legs are broken. Both men collapse, right? Botha sing here, Garja sing here. Garja sing here, Botha Sing here. Right?",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 2169.79,
@@ -43979,15 +43867,7 @@
           "startTime": 2202.47,
           "endTime": 2203.11,
           "confidence": 0.6895
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2203.11,
-      "endTime": 2206.23,
-      "text": "Botha Motha. Motha Botha, etcetera. They've both",
-      "words": [
+        },
         {
           "word": "Botha",
           "startTime": 2203.11,
@@ -44029,15 +43909,7 @@
           "startTime": 2206.07,
           "endTime": 2206.23,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2206.23,
-      "endTime": 2225.93,
-      "text": "collapsed. They can't stand. Between them they have one functional leg. So they wrap their arms around each other, like, you know, however you would, and they stand on that one leg facing opposite directions and they take a last stand. And the Mughals apparently at this moment are like, What is this even? We thought these guys are gone, their bodies have been destroyed, they have one leg between them. And",
-      "words": [
+        },
         {
           "word": "collapsed.",
           "startTime": 2206.23,
@@ -44469,15 +44341,7 @@
           "startTime": 2225.77,
           "endTime": 2225.93,
           "confidence": 0.9811
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2225.93,
-      "endTime": 2227.61,
-      "text": "they're standing and fighting TM",
-      "words": [
+        },
         {
           "word": "they're",
           "startTime": 2225.93,
@@ -44507,15 +44371,7 @@
           "startTime": 2227.05,
           "endTime": 2227.61,
           "confidence": 0.3443
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2227.61,
-      "endTime": 2290.28,
-      "text": "Maru. And our friends die. And it's kind of a tragic ending. But throughout, I think That focus on the interior life, the interior battle. Who am I? What do I want, right? What am I proving to others? What am I proving to myself? You know, all these questions kind of come up. I tell you, you have Botasingh and Garja Singh, and they take a stand and they do particular things, and this is the sequence of events, and they die, and it seems like they died in vain. But which of us? You know, is not Motasingh or Garja Singh or Botasingh, as it were. Uh you know. So many lives are lost because you're anxious to prove things to others, because you're anxious to prove things to yourself. Right? So many lost are so many lives are lost. Facing futile battles, is everything is everything a futile battle? Are we standing on one leg against the power of the state, I ask you, against the power of bad ideas? We shall continue to stand, it is all we can do. But this is my story. What do you think?",
-      "words": [
+        },
         {
           "word": "Maru.",
           "startTime": 2227.61,
@@ -45673,15 +45529,7 @@
           "startTime": 2289.82,
           "endTime": 2290.28,
           "confidence": 0.8611
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2290.92,
-      "endTime": 2291.48,
-      "text": "Absolutely",
-      "words": [
+        },
         {
           "word": "Absolutely",
           "startTime": 2290.92,
@@ -45745,8 +45593,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2302.44,
-      "endTime": 2316.12,
-      "text": "I have a question for you, Ajesha. Do you like chess? Yeah. This is a story about chess. It's a story about India. It is a story about pride. It is a story about alienation. It is a story about warfare. What is not to like. Are you excited? Absolutely. So what I want to do",
+      "endTime": 2774.32,
+      "text": "I have a question for you, Ajesha. Do you like chess? Yeah. This is a story about chess. It's a story about India. It is a story about pride. It is a story about alienation. It is a story about warfare. What is not to like. Are you excited? Absolutely. So what I want to do here is I want to combine two stories. One is a great novella by Stefan Jumi called The Royal Game. I have recommended it on the show before, also released under the title Chess Story, right? And the story of that essentially is that there is a ship, there is a world champion on that chess world champion on that ship who is an idiot savant, basically brilliant player, but otherwise completely uncultured, knows nothing, et cetera, et cetera. And there is a mysterious man called Mr. B. And at one point in time, uh a chess match happens between them and Mr. B is restoring him. And they have no idea who this guy is, where he came from, what's going on. And the backstory of Mr. B is he was imprisoned, I think, by the Nazis. Uh ironically, Stefan Juy committed suicide a year after the book was released. It's a very moving story. Perhaps we should do an episode on that sometime. But leave that aside for the moment. The backstory of Mr. B or Dr. B is that he was um sort of imprisoned by the Nazis and he was in solitary confinement for a long time with nothing but a chess book with him. And he memorized all the games and then he created an alter ego and played chess against him. And repeatedly again and again and again and again he played chess against himself till he became incredibly good at it, but nobody knew, and he had never played another human being. The glorious tradition of Alpha Zero. In the glorious tradition of Alpha Zero playing himself all the time, though with considerably less computing capacity, but nevertheless a human brain is a human brain, let us not underestimate it too much. So that is a novel. And I want to interspersed this with a real life story. The real life story of Sultan Khan. Have you heard of Sultan Khan? So Sultan Khan was born in nineteen oh three to a family of Meads and landlords, right? And the real life story of Sultan Khan is that he first learnt Indian chess, he became the best Indian chess player in his whole listing. Indian chess has slightly different rules. Then he was taught European chess, he became like really kick ass at it. Then he was taken to Britain. He played the Br British Chess Championship in nineteen twenty eight and he won. Contrary to everyone's expectations, first time Indian player, a lot of his playing would have been intuitive, no one to discuss chess with, you're just picking up everything on your own. I had written a piece on Vishwanatan Anand for ESPN, which you'll see here, where I had spoken about how in many ways he mirrored a journey that he was playing against all the players who emerged from the Soviet school where you're taught everything in a systematic way. And Anand, to use my metaphor in that piece, was taking a Maruti eight hundred into a Formula One race. You know, he had to learn the shit himself on uh y b you know, and not have the benefit of years of osmosis and conscious training. And nevertheless he managed to do that. So Sultan Khan, decades before Anand, is in a similar position. That no one's ever taught him, and he's not read chess books, and he's not even had conversations with other players. He picks it up nineteen twenty eight, wins a British chess championship, wins it two more times. I think he attempts it four times, wins it three times. and that's a deal that is happening, and then eventually he comes back to India and never plays chess again after the age of twenty four. So that is what we know of the man. I want to kind of fictionalize it. And I want to focus on Sultan Khan's interior life. Right? Sultan Khan is born into this family, but let us say that his father is a black sheep brother. not considered very highly by anyone, trying to gain respect among his peers, and these are very proud landlords and means and you know people like that. And then at one point Sultan Khan learns how to play chess, perhaps from his dad, and he beats his dad. And then he goes out and he beats the head of the family one by one. You know, and you can make it quite dramatic where he's playing the head of the household, as it were, the eldest brother, and he beats him. And you can tell that everyone's looking at him differently and therefore at his father differently, who suddenly feels black ship no more. Black sheep no more, rather. He was never a black ship. So you know, it's his battle. Bengali is showing. So it is this battle for respect which is unfolding. His father's battle for respect. His own battle for respect. His father didn't think much of him. Maybe he's a second child, you know, or whatever. Uh his father didn't think much of him, but now his dad is like his dad is impressed with him. the family is impressed with the dad, and then the head of the household takes him to play a district tournament or some gathering where there are many others, and he wins that at the tender age or whatever his tender age is. And at that point the entire family is gaining respect. So in a sense it's a battle for respect. And in a sense he has no choice. From the time he learns to play, he happens to be really good at it, but he has to win almost on demand, it becomes kind of rote for him. Not rote, it becomes kind of routine for him that he has to win because everywhere respect is at stake. His respect, his father's respect, his family's respect, his nation's respect, when he goes to the British chess championship. Right? Now I want to talk about these two chess players and talk about two fundamental ways in which they are different. The prisoner in the boat, Mr. B and Jweek's story, we can give him a name. The prisoner in the boat. is deeply tactical, right? He is not actually playing thousands of games against real players. So it's not that the pattern recognition is setting in. But he's thinking many, many moves ahead. In concrete calculation, especially in the middle game, he becomes peerless. Now we of course know of the study by Adrian DeGrud that was done in the middle of the last century, which show which try to see how club level players and expert players how much they uh think ahead. And actually grandmasters and novices will think the same number of moves ahead. The grandmasters are better at back pattern recognition. Yet there is something called much better calculation. And this guy on this board does that. So whenever he's sitting at a board, he can play concrete lines and his concrete calculations go much further, almost engine like, you could say. Because he's had hundreds and thousands of hours of solitary confinement where he'll doing nothing but he's going through all of this. And our Sultan Khan equivalent, the fictional uh equivalent of his character on the other hand, doesn't do all of this. He just has an incredible positional sense. That is his superiority. that he understands space. He understands initiative. He can look at a position in the opening on move eight, and he can visualize that if I play in a particular way, I'll have this kind of pun structure in the ending, and then I can outmaneuver the person. I don't need to win material now, I don't need to checkmate him now. Two completely different styles of play. And in my fictional story, it doesn't end at the British Chess Championship. Sultan Khan or the fictional equivalent goes on to win the world championship. And at some point he is in the situation in the royal game where he is playing a game against this guy, this tortured soul who has come out of imprisonment, who is unknown by everyone. And there is, you know, on Sultan's side, pride at stake, because you know, this is a big stage. This is he's still playing for that, for pride, for respect, all of that. And as he plays the game with this guy, somewhat as in royal game but with the roles reversed. He decides that he doesn't want to win. That he wants to let this guy take it, and he gives it up because he recognizes that the game that he has been playing all his life is not the game on the board. It is another game, and it is, you know, everything he was trying to win there was superficial and it doesn't really matter. And this man in front of him has no access to any of that. And he is also playing a different kind of game in his tortured head in those circumstances. And You know, that's what's kind of going on. So I just feel as this is just s sort of a skeletal structure. But I think that when you look at the interior battles of two men so different from each other in different circumstances, with chess as an instrument of their self actualization, of their kind of realizing who they are, I think there is something truly fascinating here.",
       "words": [
         {
           "word": "I",
@@ -46083,29 +45931,13 @@
           "startTime": 2315.96,
           "endTime": 2316.12,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2316.12,
-      "endTime": 2316.28,
-      "text": "here",
-      "words": [
+        },
         {
           "word": "here",
           "startTime": 2316.12,
           "endTime": 2316.28,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2316.28,
-      "endTime": 2774.32,
-      "text": "is I want to combine two stories. One is a great novella by Stefan Jumi called The Royal Game. I have recommended it on the show before, also released under the title Chess Story, right? And the story of that essentially is that there is a ship, there is a world champion on that chess world champion on that ship who is an idiot savant, basically brilliant player, but otherwise completely uncultured, knows nothing, et cetera, et cetera. And there is a mysterious man called Mr. B. And at one point in time, uh a chess match happens between them and Mr. B is restoring him. And they have no idea who this guy is, where he came from, what's going on. And the backstory of Mr. B is he was imprisoned, I think, by the Nazis. Uh ironically, Stefan Juy committed suicide a year after the book was released. It's a very moving story. Perhaps we should do an episode on that sometime. But leave that aside for the moment. The backstory of Mr. B or Dr. B is that he was um sort of imprisoned by the Nazis and he was in solitary confinement for a long time with nothing but a chess book with him. And he memorized all the games and then he created an alter ego and played chess against him. And repeatedly again and again and again and again he played chess against himself till he became incredibly good at it, but nobody knew, and he had never played another human being. The glorious tradition of Alpha Zero. In the glorious tradition of Alpha Zero playing himself all the time, though with considerably less computing capacity, but nevertheless a human brain is a human brain, let us not underestimate it too much. So that is a novel. And I want to interspersed this with a real life story. The real life story of Sultan Khan. Have you heard of Sultan Khan? So Sultan Khan was born in nineteen oh three to a family of Meads and landlords, right? And the real life story of Sultan Khan is that he first learnt Indian chess, he became the best Indian chess player in his whole listing. Indian chess has slightly different rules. Then he was taught European chess, he became like really kick ass at it. Then he was taken to Britain. He played the Br British Chess Championship in nineteen twenty eight and he won. Contrary to everyone's expectations, first time Indian player, a lot of his playing would have been intuitive, no one to discuss chess with, you're just picking up everything on your own. I had written a piece on Vishwanatan Anand for ESPN, which you'll see here, where I had spoken about how in many ways he mirrored a journey that he was playing against all the players who emerged from the Soviet school where you're taught everything in a systematic way. And Anand, to use my metaphor in that piece, was taking a Maruti eight hundred into a Formula One race. You know, he had to learn the shit himself on uh y b you know, and not have the benefit of years of osmosis and conscious training. And nevertheless he managed to do that. So Sultan Khan, decades before Anand, is in a similar position. That no one's ever taught him, and he's not read chess books, and he's not even had conversations with other players. He picks it up nineteen twenty eight, wins a British chess championship, wins it two more times. I think he attempts it four times, wins it three times. and that's a deal that is happening, and then eventually he comes back to India and never plays chess again after the age of twenty four. So that is what we know of the man. I want to kind of fictionalize it. And I want to focus on Sultan Khan's interior life. Right? Sultan Khan is born into this family, but let us say that his father is a black sheep brother. not considered very highly by anyone, trying to gain respect among his peers, and these are very proud landlords and means and you know people like that. And then at one point Sultan Khan learns how to play chess, perhaps from his dad, and he beats his dad. And then he goes out and he beats the head of the family one by one. You know, and you can make it quite dramatic where he's playing the head of the household, as it were, the eldest brother, and he beats him. And you can tell that everyone's looking at him differently and therefore at his father differently, who suddenly feels black ship no more. Black sheep no more, rather. He was never a black ship. So you know, it's his battle. Bengali is showing. So it is this battle for respect which is unfolding. His father's battle for respect. His own battle for respect. His father didn't think much of him. Maybe he's a second child, you know, or whatever. Uh his father didn't think much of him, but now his dad is like his dad is impressed with him. the family is impressed with the dad, and then the head of the household takes him to play a district tournament or some gathering where there are many others, and he wins that at the tender age or whatever his tender age is. And at that point the entire family is gaining respect. So in a sense it's a battle for respect. And in a sense he has no choice. From the time he learns to play, he happens to be really good at it, but he has to win almost on demand, it becomes kind of rote for him. Not rote, it becomes kind of routine for him that he has to win because everywhere respect is at stake. His respect, his father's respect, his family's respect, his nation's respect, when he goes to the British chess championship. Right? Now I want to talk about these two chess players and talk about two fundamental ways in which they are different. The prisoner in the boat, Mr. B and Jweek's story, we can give him a name. The prisoner in the boat. is deeply tactical, right? He is not actually playing thousands of games against real players. So it's not that the pattern recognition is setting in. But he's thinking many, many moves ahead. In concrete calculation, especially in the middle game, he becomes peerless. Now we of course know of the study by Adrian DeGrud that was done in the middle of the last century, which show which try to see how club level players and expert players how much they uh think ahead. And actually grandmasters and novices will think the same number of moves ahead. The grandmasters are better at back pattern recognition. Yet there is something called much better calculation. And this guy on this board does that. So whenever he's sitting at a board, he can play concrete lines and his concrete calculations go much further, almost engine like, you could say. Because he's had hundreds and thousands of hours of solitary confinement where he'll doing nothing but he's going through all of this. And our Sultan Khan equivalent, the fictional uh equivalent of his character on the other hand, doesn't do all of this. He just has an incredible positional sense. That is his superiority. that he understands space. He understands initiative. He can look at a position in the opening on move eight, and he can visualize that if I play in a particular way, I'll have this kind of pun structure in the ending, and then I can outmaneuver the person. I don't need to win material now, I don't need to checkmate him now. Two completely different styles of play. And in my fictional story, it doesn't end at the British Chess Championship. Sultan Khan or the fictional equivalent goes on to win the world championship. And at some point he is in the situation in the royal game where he is playing a game against this guy, this tortured soul who has come out of imprisonment, who is unknown by everyone. And there is, you know, on Sultan's side, pride at stake, because you know, this is a big stage. This is he's still playing for that, for pride, for respect, all of that. And as he plays the game with this guy, somewhat as in royal game but with the roles reversed. He decides that he doesn't want to win. That he wants to let this guy take it, and he gives it up because he recognizes that the game that he has been playing all his life is not the game on the board. It is another game, and it is, you know, everything he was trying to win there was superficial and it doesn't really matter. And this man in front of him has no access to any of that. And he is also playing a different kind of game in his tortured head in those circumstances. And You know, that's what's kind of going on. So I just feel as this is just s sort of a skeletal structure. But I think that when you look at the interior battles of two men so different from each other in different circumstances, with chess as an instrument of their self actualization, of their kind of realizing who they are, I think there is something truly fascinating here.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2316.28,
@@ -55687,8 +55519,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2778.3,
-      "endTime": 2781.34,
-      "text": "In Fish Pasky there is a psychological aspect in",
+      "endTime": 2787.81,
+      "text": "In Fish Pasky there is a psychological aspect in Gokeshthing. Some some matches are more normal than others, but these matches stick out.",
       "words": [
         {
           "word": "In",
@@ -55743,29 +55575,13 @@
           "startTime": 2781.1,
           "endTime": 2781.34,
           "confidence": 0.9915
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2781.34,
-      "endTime": 2782.84,
-      "text": "Gokeshthing.",
-      "words": [
+        },
         {
           "word": "Gokeshthing.",
           "startTime": 2781.34,
           "endTime": 2782.84,
           "confidence": 0.6262
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2783.26,
-      "endTime": 2787.81,
-      "text": "Some some matches are more normal than others, but these matches stick out.",
-      "words": [
+        },
         {
           "word": "Some",
           "startTime": 2783.26,
@@ -58113,8 +57929,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2897.91,
-      "endTime": 2905.05,
-      "text": "See, my concept of stories that ought to be movies is exactly opposite. I think of it like setting",
+      "endTime": 2972.44,
+      "text": "See, my concept of stories that ought to be movies is exactly opposite. I think of it like setting up the rules of a situation. And then we require a genius like you to animate it with people and desires and all the human drama that I sort of leave as an exercise to the reader. But I have an eye for amazing moments and amazing situations. And there, you know, history is cool. Reality is stranger than fiction. And so I want to tell one story from history that uh in the United States in the nineteenth century, the great institution of the post office emerged, where that public good was created that you can deliver uh a packet to any PIN code all over the United States at modest prices. Okay. So it's interesting to think, what's a market failure, why is it not a private good, we'll leave that to another day. Okay? But something cool in universal delivery by a post office. And so people would come with ten kilograms of potatoes or thirty kilograms of wheat and the postal system would move those packets around. And then almost as a joke one day some people came up and said, I want to post this",
       "words": [
         {
           "word": "See,",
@@ -58229,15 +58045,7 @@
           "startTime": 2904.49,
           "endTime": 2905.05,
           "confidence": 0.9925
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2905.05,
-      "endTime": 2907.69,
-      "text": "up the rules of a",
-      "words": [
+        },
         {
           "word": "up",
           "startTime": 2905.05,
@@ -58267,15 +58075,7 @@
           "startTime": 2907.37,
           "endTime": 2907.69,
           "confidence": 0.8628
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2907.69,
-      "endTime": 2972.44,
-      "text": "situation. And then we require a genius like you to animate it with people and desires and all the human drama that I sort of leave as an exercise to the reader. But I have an eye for amazing moments and amazing situations. And there, you know, history is cool. Reality is stranger than fiction. And so I want to tell one story from history that uh in the United States in the nineteenth century, the great institution of the post office emerged, where that public good was created that you can deliver uh a packet to any PIN code all over the United States at modest prices. Okay. So it's interesting to think, what's a market failure, why is it not a private good, we'll leave that to another day. Okay? But something cool in universal delivery by a post office. And so people would come with ten kilograms of potatoes or thirty kilograms of wheat and the postal system would move those packets around. And then almost as a joke one day some people came up and said, I want to post this",
-      "words": [
+        },
         {
           "word": "situation.",
           "startTime": 2907.69,
@@ -60081,8 +59881,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3006.78,
-      "endTime": 3052.99,
-      "text": "Correct. And a parcel is not in a box. A parcel is a parcel, thirty two kg, which allows you so much money. And then the post office employees implemented the routing of the parcel exactly as they would have a parcel. So the child got taken from one post office clearing center to another, and everybody in the system played along with the gag. And the child was successfully delivered to the grandparents or something. And this, of course, is highly noteworthy. Everybody started talking about it. And so lo and behold, it became a thing that you could post children. It just became a normal thing that you could post children. You want to send children for a long Accompanied unescorted to",
+      "endTime": 3075.75,
+      "text": "Correct. And a parcel is not in a box. A parcel is a parcel, thirty two kg, which allows you so much money. And then the post office employees implemented the routing of the parcel exactly as they would have a parcel. So the child got taken from one post office clearing center to another, and everybody in the system played along with the gag. And the child was successfully delivered to the grandparents or something. And this, of course, is highly noteworthy. Everybody started talking about it. And so lo and behold, it became a thing that you could post children. It just became a normal thing that you could post children. You want to send children for a long Accompanied unescorted to just send them. And this is just so phenomenal when we see it in today's terms. It speaks very well for the trust capital of that country. That parents and post office employees and the kids were all comfortable with trusting in the good behavior of strangers. And all this actually happened. So now I think the great Abhid Barbara will spin beautiful stories surrounding this.",
       "words": [
         {
           "word": "Correct.",
@@ -60827,15 +60627,7 @@
           "startTime": 3052.67,
           "endTime": 3052.99,
           "confidence": 0.8971
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3052.99,
-      "endTime": 3054.75,
-      "text": "just send them. And",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 3052.99,
@@ -60859,15 +60651,7 @@
           "startTime": 3054.19,
           "endTime": 3054.75,
           "confidence": 0.9731
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3054.75,
-      "endTime": 3075.75,
-      "text": "this is just so phenomenal when we see it in today's terms. It speaks very well for the trust capital of that country. That parents and post office employees and the kids were all comfortable with trusting in the good behavior of strangers. And all this actually happened. So now I think the great Abhid Barbara will spin beautiful stories surrounding this.",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 3054.75,

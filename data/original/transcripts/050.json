@@ -5,7 +5,7 @@
     "durationSeconds": 7446,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 14.89,
-      "endTime": 69.74,
-      "text": "Welcome to the beat sessions. What are the beat sessions? We'll tell you in a minute or two. Welcome to Everything Is Everything. Today we're doing a special episode. We've reached episode 50. Yeah, Jay, congratulations. This is a great moment, episode 50. And we decided uh that uh we're gonna do an Ask Me Anything episode because one of the things we're really delighted about is a community that we've built of people who comment on the YouTube page and write to us and so on and so forth. And we felt that let's have a direct conversation. So we asked for uh you know questions on Twitter and elsewhere. We've collated the questions. Ajay has gone through all of the questions. He's uh sort of organized them, which is why you don't see a laptop in front of me because I don't need notes today. Ajay is going to proctor the questions as it were. And he might have paraphrased some of them to make them crisper, editing to Chalu Have I. So uh you know, so uh if your question has been uh sounds more elegant than it was, this is the man the credit goes to. Uh what should we tackle",
+      "endTime": 70.21,
+      "text": "Welcome to the beat sessions. What are the beat sessions? We'll tell you in a minute or two. Welcome to Everything Is Everything. Today we're doing a special episode. We've reached episode 50. Yeah, Jay, congratulations. This is a great moment, episode 50. And we decided uh that uh we're gonna do an Ask Me Anything episode because one of the things we're really delighted about is a community that we've built of people who comment on the YouTube page and write to us and so on and so forth. And we felt that let's have a direct conversation. So we asked for uh you know questions on Twitter and elsewhere. We've collated the questions. Ajay has gone through all of the questions. He's uh sort of organized them, which is why you don't see a laptop in front of me because I don't need notes today. Ajay is going to proctor the questions as it were. And he might have paraphrased some of them to make them crisper, editing to Chalu Have I. So uh you know, so uh if your question has been uh sounds more elegant than it was, this is the man the credit goes to. Uh what should we tackle first?",
       "words": [
         {
           "word": "Welcome",
@@ -1249,21 +1249,21 @@
           "startTime": 69.34,
           "endTime": 69.74,
           "confidence": 0.9964
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 69.74,
-      "endTime": 97.06,
-      "text": "first? In the interest of brevity, I have made questions shorter. So I've rewritten and paraphrased questions, and gentle reader, I apologize if the subtlety and the nuance of your original question is lost in this. And we have a lot of questions to go through. So the answers will also be like helicopter tours and not doing justice to the question. Okay. Let's go. Um Anish Shati asks, Amit, we're tired of this look, we want new locations.",
-      "words": [
+        },
         {
           "word": "first?",
           "startTime": 69.74,
           "endTime": 70.21,
           "confidence": 0.8287
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 70.48,
+      "endTime": 97.06,
+      "text": "In the interest of brevity, I have made questions shorter. So I've rewritten and paraphrased questions, and gentle reader, I apologize if the subtlety and the nuance of your original question is lost in this. And we have a lot of questions to go through. So the answers will also be like helicopter tours and not doing justice to the question. Okay. Let's go. Um Anish Shati asks, Amit, we're tired of this look, we want new locations.",
+      "words": [
         {
           "word": "In",
           "startTime": 70.48,
@@ -2775,8 +2775,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 152.49,
-      "endTime": 224.03,
-      "text": "Just beautiful knowledge. There is six liters of blood in the average human body. when you start exercising you sweat and you lose water and you can imagine if you've ever drunk a liter of water after exercise, then losing one liter of water as sweat on a base of six is reasonable and that's sixteen point six six percent, which is material. So the blood becomes thicker. When the blood is thicker, it is harder for the heart to pump that blood. Which is why we feel subjectively more tired in a cardio sense. when we do exercise and we have lost water. And the which is why drinking water makes us feel better because the blood flow is better. Okay? So that's like this interesting direct connection between fluid intake and sweating and uh exercise capacity. But I I thought about it in a different way. That you could use this as a tool for training. So imagine under city conditions, in a treadmill where you have a refrigerator filled with water. Imagine if you deliberately train less water, then that basically amounts to amping up the challenge on your heart. So that could be a way of cardio training to push the capability",
+      "endTime": 223.12,
+      "text": "Just beautiful knowledge. There is six liters of blood in the average human body. when you start exercising you sweat and you lose water and you can imagine if you've ever drunk a liter of water after exercise, then losing one liter of water as sweat on a base of six is reasonable and that's sixteen point six six percent, which is material. So the blood becomes thicker. When the blood is thicker, it is harder for the heart to pump that blood. Which is why we feel subjectively more tired in a cardio sense. when we do exercise and we have lost water. And the which is why drinking water makes us feel better because the blood flow is better. Okay? So that's like this interesting direct connection between fluid intake and sweating and uh exercise capacity. But I I thought about it in a different way. That you could use this as a tool for training. So imagine under city conditions, in a treadmill where you have a refrigerator filled with water. Imagine if you deliberately train less water, then that basically amounts to amping up the challenge on your heart. So that could be a way of cardio training to push",
       "words": [
         {
           "word": "Just",
@@ -4001,7 +4001,15 @@
           "startTime": 222.62,
           "endTime": 223.12,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 223.47,
+      "endTime": 233.07,
+      "text": "the capability of your heart. The Bengali in me is freaking delighted because I'm just thinking that I don't need to go running anymore. I can just stay away from water and walk around gently in the heart is still working for you.",
+      "words": [
         {
           "word": "the",
           "startTime": 223.47,
@@ -4013,15 +4021,7 @@
           "startTime": 223.55,
           "endTime": 224.03,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 224.03,
-      "endTime": 233.07,
-      "text": "of your heart. The Bengali in me is freaking delighted because I'm just thinking that I don't need to go running anymore. I can just stay away from water and walk around gently in the heart is still working for you.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 224.03,
@@ -5403,8 +5403,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 280.03,
-      "endTime": 338.96,
-      "text": "Anishati asks me, How does low TFR hurt? What will its consequences for India be? Total fertility rate is the number of children that an average woman would have if she lived her entire life in 2024. So if the woman was born and died in 2024, and if the age specific fertility rates applicable at every age were played out in 2024, that's the TFR of 2024. Having young people is truly great for a society. Young people have energy and risk taking. And uh create dynamism in the society. So when a society ages, you get great European movies, but you also get many social problems. There's a thought there that the quality of movies in a country is basically proportional to the median age. So when India was a very young country, the quality of the movies was atrocious. And as the country ages, we start getting better movies.",
+      "endTime": 340.42,
+      "text": "Anishati asks me, How does low TFR hurt? What will its consequences for India be? Total fertility rate is the number of children that an average woman would have if she lived her entire life in 2024. So if the woman was born and died in 2024, and if the age specific fertility rates applicable at every age were played out in 2024, that's the TFR of 2024. Having young people is truly great for a society. Young people have energy and risk taking. And uh create dynamism in the society. So when a society ages, you get great European movies, but you also get many social problems. There's a thought there that the quality of movies in a country is basically proportional to the median age. So when India was a very young country, the quality of the movies was atrocious. And as the country ages, we start getting better movies. Is that a plausible proposition?",
       "words": [
         {
           "word": "Anishati",
@@ -6317,15 +6317,7 @@
           "startTime": 338.08,
           "endTime": 338.96,
           "confidence": 0.9672
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 338.96,
-      "endTime": 365.36,
-      "text": "Is that a plausible proposition? It's it's uh plausible and I would just uh at this point gave a mid episode recommendation and I suspect many of these might come up, that a filmmaker I truly love is Ingmar Bergman, but often inaccessible for some people. So what I would recommend as a best gateway into Bergman's work is this magnificent film called Wild Strawberries, which is in fact about old age and growing old gracefully, and it's just a wonderful uh masterpiece. So you know, that's my first recommendation for the",
-      "words": [
+        },
         {
           "word": "Is",
           "startTime": 338.96,
@@ -6355,7 +6347,15 @@
           "startTime": 339.92,
           "endTime": 340.42,
           "confidence": 0.9847
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 341.04,
+      "endTime": 365.36,
+      "text": "It's it's uh plausible and I would just uh at this point gave a mid episode recommendation and I suspect many of these might come up, that a filmmaker I truly love is Ingmar Bergman, but often inaccessible for some people. So what I would recommend as a best gateway into Bergman's work is this magnificent film called Wild Strawberries, which is in fact about old age and growing old gracefully, and it's just a wonderful uh masterpiece. So you know, that's my first recommendation for the",
+      "words": [
         {
           "word": "It's",
           "startTime": 341.04,
@@ -10155,8 +10155,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 536.97,
-      "endTime": 620.17,
-      "text": "And Anish Shetty asks me, is there something fundamentally wrong with the US economy? Okay. So th there are many, many, many things to admire about the United States economy. It's an amazing country. If I think of the fundamentally wrong things about the United States today. Uh one part is that they're not in a good fiscal place for precisely the stuff that we talked about a moment ago. When you add up the entitlements in the United States of social security, Medicare and Medicaid, and you bring those on balance sheet, the United States public finance is under deep stress and it's not clear how this is going to play out. So the country has really got the government has got extra vagrant promises which are going to hurt. and uh the even bigger problem facing the United States is that in some ways the civil war was not won and they have not exercised the ghosts of racism and populism and conservative social values and the anger of the underclass. So I think there is another generation to go for the United States to find its place and calm, the uh level of social conflict in the United States is unbelievable. And that is interfering with everything. It is really holding",
+      "endTime": 627.37,
+      "text": "And Anish Shetty asks me, is there something fundamentally wrong with the US economy? Okay. So th there are many, many, many things to admire about the United States economy. It's an amazing country. If I think of the fundamentally wrong things about the United States today. Uh one part is that they're not in a good fiscal place for precisely the stuff that we talked about a moment ago. When you add up the entitlements in the United States of social security, Medicare and Medicaid, and you bring those on balance sheet, the United States public finance is under deep stress and it's not clear how this is going to play out. So the country has really got the government has got extra vagrant promises which are going to hurt. and uh the even bigger problem facing the United States is that in some ways the civil war was not won and they have not exercised the ghosts of racism and populism and conservative social values and the anger of the underclass. So I think there is another generation to go for the United States to find its place and calm, the uh level of social conflict in the United States is unbelievable. And that is interfering with everything. It is really holding back the country. Okay. Next, I go to Rishav Datta. He says to Amit, what do you do for a",
       "words": [
         {
           "word": "And",
@@ -11441,15 +11441,7 @@
           "startTime": 619.69,
           "endTime": 620.17,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 620.17,
-      "endTime": 622.09,
-      "text": "back the country. Okay.",
-      "words": [
+        },
         {
           "word": "back",
           "startTime": 620.17,
@@ -11473,15 +11465,7 @@
           "startTime": 621.53,
           "endTime": 622.09,
           "confidence": 0.816
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 622.09,
-      "endTime": 627.37,
-      "text": "Next, I go to Rishav Datta. He says to Amit, what do you do for a",
-      "words": [
+        },
         {
           "word": "Next,",
           "startTime": 622.09,
@@ -11583,8 +11567,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 627.37,
-      "endTime": 634.97,
-      "text": "living? I'm a professional podcaster as of now, which uh sort of um uh not too many of us around",
+      "endTime": 635.13,
+      "text": "living? I'm a professional podcaster as of now, which uh sort of um uh not too many of us around but",
       "words": [
         {
           "word": "living?",
@@ -11705,21 +11689,21 @@
           "startTime": 634.33,
           "endTime": 634.97,
           "confidence": 0.9082
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 634.97,
-      "endTime": 639.55,
-      "text": "but that's like honorary service to the universe, right? I mean you're just giving gifts to the universe.",
-      "words": [
+        },
         {
           "word": "but",
           "startTime": 634.97,
           "endTime": 635.13,
           "confidence": 0.7251
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 635.13,
+      "endTime": 639.55,
+      "text": "that's like honorary service to the universe, right? I mean you're just giving gifts to the universe.",
+      "words": [
         {
           "word": "that's",
           "startTime": 635.13,
@@ -17299,8 +17283,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 911.76,
-      "endTime": 1009.8,
-      "text": "It's really hard. And it's really hard because I think you know when people will ask me that okay, how can I learn about the kind of classical liberalism you speak about? And then I think about it and I I can think of random books here and there, but where is a primer? Or there is a question to you later, and I'm sure you'll address that, that how can I learn about India? What is a toolkit to understand India better? And there is really no one book. And perhaps that is a call to action for um you know either of us or both of us to actually get down to writing some of the things that ought to be written. It's hard for me, I think o over the course of um the um uh forty nine episodes we've done before this, we've given a bunch of uh recommendations. So um I I'd kind of go back to them. I'd say Eamon Butler's primers on public choice, on classical liberalism, on Hayek and Friedman are excellent primers on those great thinkers who everyone should read. Seeing like a straight by James C. Scott, which you mentioned in the past, and uh his other books, uh I love Orwell's essays. But I think the important thing that I would say is that it is also important to read a lot of fiction, to read novels, to immerse yourself in that world, to watch good cinema. Because understanding the world is not just taking in information about the world, but so uh you know, immersing yourselves in the lives of others, and the minds of others, and d b you know, taking in all of that by osmosis. So I would in fact say that Reading a hundred books indiscriminately is better than reading ten selected books. You know, uh you read as much as you can, uh get into the habit of when you're bored, you don't pick up your phone, you pick up a book. So that's a great habit to have.",
+      "endTime": 1009.96,
+      "text": "It's really hard. And it's really hard because I think you know when people will ask me that okay, how can I learn about the kind of classical liberalism you speak about? And then I think about it and I I can think of random books here and there, but where is a primer? Or there is a question to you later, and I'm sure you'll address that, that how can I learn about India? What is a toolkit to understand India better? And there is really no one book. And perhaps that is a call to action for um you know either of us or both of us to actually get down to writing some of the things that ought to be written. It's hard for me, I think o over the course of um the um uh forty nine episodes we've done before this, we've given a bunch of uh recommendations. So um I I'd kind of go back to them. I'd say Eamon Butler's primers on public choice, on classical liberalism, on Hayek and Friedman are excellent primers on those great thinkers who everyone should read. Seeing like a straight by James C. Scott, which you mentioned in the past, and uh his other books, uh I love Orwell's essays. But I think the important thing that I would say is that it is also important to read a lot of fiction, to read novels, to immerse yourself in that world, to watch good cinema. Because understanding the world is not just taking in information about the world, but so uh you know, immersing yourselves in the lives of others, and the minds of others, and d b you know, taking in all of that by osmosis. So I would in fact say that Reading a hundred books indiscriminately is better than reading ten selected books. You know, uh you read as much as you can, uh get into the habit of when you're bored, you don't pick up your phone, you pick up a book. So that's a great habit to have. I",
       "words": [
         {
           "word": "It's",
@@ -19377,21 +19361,21 @@
           "startTime": 1009.24,
           "endTime": 1009.8,
           "confidence": 0.9478
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1009.8,
-      "endTime": 1068.62,
-      "text": "I want to add to that. Uh I'm not even convinced anymore that there is an objectively great book. I feel what happens is there is each of us is a trajectory through time. Okay, no man can cross the same river twice. We are evolving and growing and changing through time. And what we need is the matching process where the right book shows up at the right time. And I find there are explosive moments where the right book came to me at the right time, and I'm just transfixed. And it's not the fault of the book. If it came at the wrong time, it doesn't feel perfect to me, and it's not the fault of the book. So what we should nurture is that matching process. So I feel we have to lightly engage with a large amount of books. And sort of keep a database in our head that yeah, this book is about this, this book is about that. And then at the right time we'll get better matches. And then it just feels explosive. It feels like something fundamental happen in your life when the right book comes along at the right",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1009.8,
           "endTime": 1009.96,
           "confidence": 0.7131
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1009.96,
+      "endTime": 1068.62,
+      "text": "want to add to that. Uh I'm not even convinced anymore that there is an objectively great book. I feel what happens is there is each of us is a trajectory through time. Okay, no man can cross the same river twice. We are evolving and growing and changing through time. And what we need is the matching process where the right book shows up at the right time. And I find there are explosive moments where the right book came to me at the right time, and I'm just transfixed. And it's not the fault of the book. If it came at the wrong time, it doesn't feel perfect to me, and it's not the fault of the book. So what we should nurture is that matching process. So I feel we have to lightly engage with a large amount of books. And sort of keep a database in our head that yeah, this book is about this, this book is about that. And then at the right time we'll get better matches. And then it just feels explosive. It feels like something fundamental happen in your life when the right book comes along at the right",
+      "words": [
         {
           "word": "want",
           "startTime": 1009.96,
@@ -22825,8 +22809,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1184.06,
-      "endTime": 1292.24,
-      "text": "Okay, uh uh interesting question. I didn't expect that. But I would just say that uh you know, if you snore, I urge you to get teste for sleep apnea. Uh I forget the exact figure, but I think something like twenty percent uh of uh the population has a sleep apnea problem. And the clearest sign of it is that uh you snore. And it's a dangerous problem. What really happens is that you essentially uh and obesity can cause it sometimes, uh which was an issue I had. Um and uh what happens is you you kind of stop breathing when you're uh th you know there's obstruction and so on. And one result of that is snoring, but another result is that it can be dangerous because you're constantly waking up without realising it and during the day you feel tired. So I would urge everyone, first of all, if you even slightly suspect that this is an issue with you or your loved ones, you can transform your quality of life by getting tested for it. Now, I got tested for it once. I had a marginal uh this thing of sleep apnea, but I started using a CPAP machine and this is again unexpected second order effects. It transformed my life, but not in the expected way because I didn't You know, lack of sleep wasn't a really an issue for me. Uh all my life I've had an acid reflux problem. So for uh many years I would wake up in the morning with either a cold or a sore throat. And after a while I realized it's because of acid reflux and nothing really worked and it's a chronic thing. And using the CPAP machine for the sleep apnea actually changed that because the air that is gushing into your lungs, especially if you use a nasal mask, prevents the acid acid from coming up. And since then I have never y you know, woken up with a cold or a sore throat because of that, while that was an everyday thing. So in this very unexpected way, it kind of transformed my life. So I think of it as transformative for that reason. I don't really know what to make of it. I can't see if you have acid reflux, you should get a CPAP machine. But sleep apnea is a uh genuine problem, so watch out for",
+      "endTime": 1293.74,
+      "text": "Okay, uh uh interesting question. I didn't expect that. But I would just say that uh you know, if you snore, I urge you to get teste for sleep apnea. Uh I forget the exact figure, but I think something like twenty percent uh of uh the population has a sleep apnea problem. And the clearest sign of it is that uh you snore. And it's a dangerous problem. What really happens is that you essentially uh and obesity can cause it sometimes, uh which was an issue I had. Um and uh what happens is you you kind of stop breathing when you're uh th you know there's obstruction and so on. And one result of that is snoring, but another result is that it can be dangerous because you're constantly waking up without realising it and during the day you feel tired. So I would urge everyone, first of all, if you even slightly suspect that this is an issue with you or your loved ones, you can transform your quality of life by getting tested for it. Now, I got tested for it once. I had a marginal uh this thing of sleep apnea, but I started using a CPAP machine and this is again unexpected second order effects. It transformed my life, but not in the expected way because I didn't You know, lack of sleep wasn't a really an issue for me. Uh all my life I've had an acid reflux problem. So for uh many years I would wake up in the morning with either a cold or a sore throat. And after a while I realized it's because of acid reflux and nothing really worked and it's a chronic thing. And using the CPAP machine for the sleep apnea actually changed that because the air that is gushing into your lungs, especially if you use a nasal mask, prevents the acid acid from coming up. And since then I have never y you know, woken up with a cold or a sore throat because of that, while that was an everyday thing. So in this very unexpected way, it kind of transformed my life. So I think of it as transformative for that reason. I don't really know what to make of it. I can't see if you have acid reflux, you should get a CPAP machine. But sleep apnea is a uh genuine problem, so watch out for it.",
       "words": [
         {
           "word": "Okay,",
@@ -25263,21 +25247,21 @@
           "startTime": 1292.08,
           "endTime": 1292.24,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1292.24,
-      "endTime": 1380.88,
-      "text": "it. Why did India lose out to Bangladesh in the government industry? Um I think that uh in India we have a employment rate of about thirty-five percent, uh, which means that sixty five percent of the persons of working age are not working. And this is amongst the worst situations you can find of this nature anywhere in the world. Now basic economics so you have a lot of people who are not working and their labor supply should lead to a crash in prices and wages should go down dramatically. But we have a whole structure of interventions by the Indian state. where there are high minimum wage laws and there is an array of labor law restrictions which make it dangerous and difficult for firms to hire large workforces. So India has a self-inflicted wound of an artificially low working population and artificially small economy because the Indian state has damaged the ability of the labor market to function. And Bangladesh basically avoided all these problems. So the wage in Bangladesh is lower than the wage in India. So the employment rate in Bangladesh is higher than the employment rate in West Bengal and Bangladesh does better and government exporting is a low end labor intense thing. So it was India's game to lose and it is the Indian state which damaged government exporting",
-      "words": [
+        },
         {
           "word": "it.",
           "startTime": 1292.24,
           "endTime": 1293.74,
           "confidence": 0.9537
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1295.2,
+      "endTime": 1381.04,
+      "text": "Why did India lose out to Bangladesh in the government industry? Um I think that uh in India we have a employment rate of about thirty-five percent, uh, which means that sixty five percent of the persons of working age are not working. And this is amongst the worst situations you can find of this nature anywhere in the world. Now basic economics so you have a lot of people who are not working and their labor supply should lead to a crash in prices and wages should go down dramatically. But we have a whole structure of interventions by the Indian state. where there are high minimum wage laws and there is an array of labor law restrictions which make it dangerous and difficult for firms to hire large workforces. So India has a self-inflicted wound of an artificially low working population and artificially small economy because the Indian state has damaged the ability of the labor market to function. And Bangladesh basically avoided all these problems. So the wage in Bangladesh is lower than the wage in India. So the employment rate in Bangladesh is higher than the employment rate in West Bengal and Bangladesh does better and government exporting is a low end labor intense thing. So it was India's game to lose and it is the Indian state which damaged government exporting from",
+      "words": [
         {
           "word": "Why",
           "startTime": 1295.2,
@@ -26633,21 +26617,21 @@
           "startTime": 1380.32,
           "endTime": 1380.88,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1380.88,
-      "endTime": 1428.0,
-      "text": "from India. And just to clarify uh sort of a basic economic point there and I'll link to a video by Milton Friedman where he talks about the minimum wage, is that if you set a minimum wage at fifteen thousand rupees, say, what you're effectively doing is that you're putting everybody below f whose uh w wages would be worth or valued at less than fifteen thousand, you're putting them out of a job. You're hurting the poorest of the poor. They would have had a job at maybe twelve thousand, now they don't have a job at all. So it's effectively R which is tragic. And we have a penopy of labor laws which uh uh you know are so Difficult to comply with, that companies just say, when necessary, which is why a lot of firms are stuck at a small to medium size and can never scale and become big. And all of these end up hurting the workers they are supposed to",
-      "words": [
+        },
         {
           "word": "from",
           "startTime": 1380.88,
           "endTime": 1381.04,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1381.04,
+      "endTime": 1429.5,
+      "text": "India. And just to clarify uh sort of a basic economic point there and I'll link to a video by Milton Friedman where he talks about the minimum wage, is that if you set a minimum wage at fifteen thousand rupees, say, what you're effectively doing is that you're putting everybody below f whose uh w wages would be worth or valued at less than fifteen thousand, you're putting them out of a job. You're hurting the poorest of the poor. They would have had a job at maybe twelve thousand, now they don't have a job at all. So it's effectively R which is tragic. And we have a penopy of labor laws which uh uh you know are so Difficult to comply with, that companies just say, when necessary, which is why a lot of firms are stuck at a small to medium size and can never scale and become big. And all of these end up hurting the workers they are supposed to protect.",
+      "words": [
         {
           "word": "India.",
           "startTime": 1381.04,
@@ -27643,21 +27627,21 @@
           "startTime": 1427.76,
           "endTime": 1428.0,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1428.0,
-      "endTime": 1436.5,
-      "text": "protect. And in West Bengal?",
-      "words": [
+        },
         {
           "word": "protect.",
           "startTime": 1428.0,
           "endTime": 1429.5,
           "confidence": 0.9624
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1435.44,
+      "endTime": 1471.71,
+      "text": "And in West Bengal? If you build a business, you will have to deal with all kinds of trade union complexities. So very few firms choose to build a government manufacturing firm in West Bengal. But in East Bengal, they have a minimum wage of 8,000. So people get jobs. And uh Bangladesh has escaped the extremities of populism in India. There is a more harmonious relation. They've built a political settlement which is conducive to firms and to growth. So firms from all over the world go to Bangladesh and build",
+      "words": [
         {
           "word": "And",
           "startTime": 1435.44,
@@ -27681,15 +27665,7 @@
           "startTime": 1436.0,
           "endTime": 1436.5,
           "confidence": 0.7561
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1437.05,
-      "endTime": 1438.73,
-      "text": "If you build a business,",
-      "words": [
+        },
         {
           "word": "If",
           "startTime": 1437.05,
@@ -27719,15 +27695,7 @@
           "startTime": 1438.25,
           "endTime": 1438.73,
           "confidence": 0.9612
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1438.73,
-      "endTime": 1471.23,
-      "text": "you will have to deal with all kinds of trade union complexities. So very few firms choose to build a government manufacturing firm in West Bengal. But in East Bengal, they have a minimum wage of 8,000. So people get jobs. And uh Bangladesh has escaped the extremities of populism in India. There is a more harmonious relation. They've built a political settlement which is conducive to firms and to growth. So firms from all over the world go to Bangladesh",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 1438.73,
@@ -28213,15 +28181,7 @@
           "startTime": 1470.35,
           "endTime": 1471.23,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1471.23,
-      "endTime": 1471.71,
-      "text": "and build",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1471.23,
@@ -31707,8 +31667,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1638.03,
-      "endTime": 1673.92,
-      "text": "D says, Ajay, how do we think about sustainability and biodiversity? Should we live a simple life? Is degrowth an attractive option? Um so I think that for a country at the poverty levels of India, degrowth is just morally wrong. Okay, it is a absolute imperative in India to grow GDP by five X and ten X. Okay. So a very important fact all of us should keep in our foreground is that PPP adjusted per capita GDP in India is about a tenth of what it is in the United States, and there's no reason to be that. So we",
+      "endTime": 1843.87,
+      "text": "D says, Ajay, how do we think about sustainability and biodiversity? Should we live a simple life? Is degrowth an attractive option? Um so I think that for a country at the poverty levels of India, degrowth is just morally wrong. Okay, it is a absolute imperative in India to grow GDP by five X and ten X. Okay. So a very important fact all of us should keep in our foreground is that PPP adjusted per capita GDP in India is about a tenth of what it is in the United States, and there's no reason to be that. So we should put the growth off the table. Um how do we think about sustainability and uh biodiversity? I think that these fit within the framework of market failure. Okay, so as an example emitting carbon dioxide imposes a negative externality. It is uh global bad and carbon emissions should be taxed. So the whole toolkit of uh market failure works. That fundamentally the a dynamic private economy delivers the goods subject to the limitations of market failure. Okay, so biodiversity has positive externalities. There is a private benefit when a man destroys ten acres of forest. But there is a gain to society when that forest is allowed to be there. And so the usual toolkit of how to think about market failure and state and state intervention. So should you live lead a simple life. Okay, so I think all of us should lead a simple life because it's a better place to be. I mean, that's a separate debate. I feel we are happier when we lead a simple life. But also like in recognition of the failures of the state and particularly the Indian state. For example, I'm I'm I just don't like creating trash because I now know how badly trash is handled in Bombay. So uh our good friend uh Sao Mia Roy has this amazing book about the trash mountains of Bombay. And uh it's a mess what is being done there. And plastic in waste turns into microplastic in the ground, and fragments of microplastic are going into our stomachs. where the acid is reacting with plastic and creating truly toxic chemicals inside our stomachs, and this is just a terrible state to be. So I do think that it would be nice to live with less plastic. And for example, it leads to many tangible solutions, which is you should buy milk in a plastic pouch rather than milk in a tetra pack. Because for that same one liter of milk, you have less grams of plastic in the packaging. I feel that given state failure, given the mess that we have in the world, either on issues like plastic and solid waste management or carbon dioxide or the destruction of forests and biodiversity. So I feel that yeah we each of us should try to care and adapt our life, even though we are a drop in the ocean. It just I do feel that sense of discomfort and disquiet. So you know, for some time I was buying those nice Amultetra packs of protein drinks. And after the tenth of the setra packs, I just hit started feeling bad that so much plastic for stupid two hundred ml of the drink, so then I switched to protein powders instead. Okay.",
       "words": [
         {
           "word": "D",
@@ -32321,15 +32281,7 @@
           "startTime": 1673.76,
           "endTime": 1673.92,
           "confidence": 0.9943
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1673.92,
-      "endTime": 1674.64,
-      "text": "should put",
-      "words": [
+        },
         {
           "word": "should",
           "startTime": 1673.92,
@@ -32341,15 +32293,7 @@
           "startTime": 1674.16,
           "endTime": 1674.64,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1674.64,
-      "endTime": 1842.33,
-      "text": "the growth off the table. Um how do we think about sustainability and uh biodiversity? I think that these fit within the framework of market failure. Okay, so as an example emitting carbon dioxide imposes a negative externality. It is uh global bad and carbon emissions should be taxed. So the whole toolkit of uh market failure works. That fundamentally the a dynamic private economy delivers the goods subject to the limitations of market failure. Okay, so biodiversity has positive externalities. There is a private benefit when a man destroys ten acres of forest. But there is a gain to society when that forest is allowed to be there. And so the usual toolkit of how to think about market failure and state and state intervention. So should you live lead a simple life. Okay, so I think all of us should lead a simple life because it's a better place to be. I mean, that's a separate debate. I feel we are happier when we lead a simple life. But also like in recognition of the failures of the state and particularly the Indian state. For example, I'm I'm I just don't like creating trash because I now know how badly trash is handled in Bombay. So uh our good friend uh Sao Mia Roy has this amazing book about the trash mountains of Bombay. And uh it's a mess what is being done there. And plastic in waste turns into microplastic in the ground, and fragments of microplastic are going into our stomachs. where the acid is reacting with plastic and creating truly toxic chemicals inside our stomachs, and this is just a terrible state to be. So I do think that it would be nice to live with less plastic. And for example, it leads to many tangible solutions, which is you should buy milk in a plastic pouch rather than milk in a tetra pack. Because for that same one liter of milk, you have less grams of plastic in the packaging. I feel that given state failure, given the mess that we have in the world, either on issues like plastic and solid waste management or carbon dioxide or the destruction of forests and biodiversity. So I feel that yeah we each of us should try to care and adapt our life, even though we are a drop in the ocean. It just I do feel that sense of discomfort and disquiet. So you know, for some time I was buying those nice Amultetra packs of protein drinks. And after the tenth of the setra packs, I just hit started feeling bad that so much plastic for stupid two hundred ml of the drink, so then I switched to protein",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1674.64,
@@ -35079,15 +35023,7 @@
           "startTime": 1841.85,
           "endTime": 1842.33,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1842.33,
-      "endTime": 1919.8,
-      "text": "powders instead. Okay. So I just uh uh uh want to add to that by pointing uh you guys to our episode on luxury beliefs. Degrowth is a classic luxury belief, which the rich can hold conveniently from the air conditioned rooms, it hurts the poor. So I agree with Ajay that it is sort of morally wrong to uh uh you know to uh speak about degrowth, especially in an Indian context. And my second recommendation would be the works of Beyond Lomberg. And one funda I learned from a great book by Lomberg, which came out more than twenty years ago called The Skeptical Environmentalist, was when he traced the arc of all the great Western cities. And I remember particularly him pointing out that London at one point a hundred years ago was deeply polluted, unhealthy, it was a mess, uh a terrible place to live in. But what happens is that as countries grow more prosperous, those environmental issues begin to sort themselves out because citizens like us become more aware and start living in different ways. And I think sustainability and growth can go together. In fact, growth helps sustainability. And uh you know the it's often a false dichotomy that people make between markets and the environment. Um i i if if you look at the Western world, um you know you'll see that the trajectories like a bell curve where they'll get very polluted and things seem to be going out of back, but then as they go prosperous, things kind of get much",
-      "words": [
+        },
         {
           "word": "powders",
           "startTime": 1842.33,
@@ -35105,7 +35041,15 @@
           "startTime": 1843.37,
           "endTime": 1843.87,
           "confidence": 0.4637
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1844.3,
+      "endTime": 1921.08,
+      "text": "So I just uh uh uh want to add to that by pointing uh you guys to our episode on luxury beliefs. Degrowth is a classic luxury belief, which the rich can hold conveniently from the air conditioned rooms, it hurts the poor. So I agree with Ajay that it is sort of morally wrong to uh uh you know to uh speak about degrowth, especially in an Indian context. And my second recommendation would be the works of Beyond Lomberg. And one funda I learned from a great book by Lomberg, which came out more than twenty years ago called The Skeptical Environmentalist, was when he traced the arc of all the great Western cities. And I remember particularly him pointing out that London at one point a hundred years ago was deeply polluted, unhealthy, it was a mess, uh a terrible place to live in. But what happens is that as countries grow more prosperous, those environmental issues begin to sort themselves out because citizens like us become more aware and start living in different ways. And I think sustainability and growth can go together. In fact, growth helps sustainability. And uh you know the it's often a false dichotomy that people make between markets and the environment. Um i i if if you look at the Western world, um you know you'll see that the trajectories like a bell curve where they'll get very polluted and things seem to be going out of back, but then as they go prosperous, things kind of get much better.",
+      "words": [
         {
           "word": "So",
           "startTime": 1844.3,
@@ -36653,21 +36597,21 @@
           "startTime": 1919.48,
           "endTime": 1919.8,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1919.8,
-      "endTime": 1987.02,
-      "text": "better. Vika Sam says, Ajay, are there countries which can be templates for a future Indian education system? Um I would may say that there is no real Indian template. Uh may I request you to see our decentralization episode. make sense as in K twelve education system in Kerala would be very different from Himachal, would be very different from UP. So there is no India. There are states and each state is on a different place, on a different journey, and will do things their own way. I think India is unique in the way large parts of the Indian population have walked out on the state system. So really it's a private led system, and the job of the state is to equitably send public money through a voucher system. So there is something very mean and unfair that uh thousands of rupees um lavished as per pupil expense for the kids that go to public schools. And where the parents choose to go to a private school, there is no public money going to them, and that is just mean and unfair. And it's better to have the funding follow the child.",
-      "words": [
+        },
         {
           "word": "better.",
           "startTime": 1919.8,
           "endTime": 1921.08,
           "confidence": 0.98
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1921.08,
+      "endTime": 1987.02,
+      "text": "Vika Sam says, Ajay, are there countries which can be templates for a future Indian education system? Um I would may say that there is no real Indian template. Uh may I request you to see our decentralization episode. make sense as in K twelve education system in Kerala would be very different from Himachal, would be very different from UP. So there is no India. There are states and each state is on a different place, on a different journey, and will do things their own way. I think India is unique in the way large parts of the Indian population have walked out on the state system. So really it's a private led system, and the job of the state is to equitably send public money through a voucher system. So there is something very mean and unfair that uh thousands of rupees um lavished as per pupil expense for the kids that go to public schools. And where the parents choose to go to a private school, there is no public money going to them, and that is just mean and unfair. And it's better to have the funding follow the child.",
+      "words": [
         {
           "word": "Vika",
           "startTime": 1921.08,
@@ -44865,8 +44809,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2361.05,
-      "endTime": 2566.46,
-      "text": "So part one is the very decision making process takes time with public debate and consultation, as it should. Then there is uh problem of land acquisition which will always be complicated and that's a good thing. Okay? No state should be able to casually acquire land and force private people out of land and putting in due process and challenge in court, etcetera, is a good thing. Then you come to the actual project design and the project implementation. There are two kinds of incompetence here. There is the incompetence of government in contract management and there is incompetence of private construction companies. uh government's contracts, contract management. This is a huge choke point in Indian state capacity, in Indian state capability. And this is clearly something governments need to learn to do better. So how to do the market survey, how to do the bid preparation, how to handle contract disputes, how to change the uh project design incrementally, these are all things that the Indian state does very poorly and that inevitably generates delays and mistakes and litigation and so on. On the private construction company side, in all fairness, Indian construction companies have gotten better. Project management has gotten better. Okay, so you and I are old enough to remember that building a normal residential building in Bombay used to take five years and ten years. And these days in two years they get the job done. So uh engineering project management efficiencies in India have gone up and you know that's a part of the learning curve and the journey. So uh to riff on our uh everything is everything episode on firms and internationalization. When you see L and T competing globally and building the airport in Abu Dhabi, it gives you greater confidence that L and T actually has good project management capabilities and they are swift and efficient in how they build an airport. Okay. Uh Bhavesh says Ajay tell us your evolution of learning programming languages. Will you build a show on Julia? evolution in programmages. I started out as an undergraduate student in IIT. I learned Fotran, then I learned Pascal, then I learned then I switched to Unix, I learned AUC, I learned C, I learned Perl, um, I learned a couple of other things along the way. Then around data and uh systems that are used for data analysis. I started out with a mix of AU and shell programs. Uh I also know stata though I never really use Tata too much. learned R. I was an early adopter when I in two thousand two when I was at the Ministry of Finance, I switched my everything to R. I moved all my data analysis work to R and now I'm in the process of moving to Julia. Will there be an EI episode on Julia? Probably not. I think it's too niche for the EI community. But uh where do you live? Are you in Bombay, even if you are not in Bombay? Uh i m in my research community, we are active in the India Julia community. We are building a bunch of open source packages. We do run some amount of Bombay Julia meetups. Okay, so do get in touch and we're happy to get engaged in other ways. Bhavish says to you, Amit, how do you manage work life balance? How do you stay focused in a seen and the unseen conversation for many hours?",
+      "endTime": 2476.36,
+      "text": "So part one is the very decision making process takes time with public debate and consultation, as it should. Then there is uh problem of land acquisition which will always be complicated and that's a good thing. Okay? No state should be able to casually acquire land and force private people out of land and putting in due process and challenge in court, etcetera, is a good thing. Then you come to the actual project design and the project implementation. There are two kinds of incompetence here. There is the incompetence of government in contract management and there is incompetence of private construction companies. uh government's contracts, contract management. This is a huge choke point in Indian state capacity, in Indian state capability. And this is clearly something governments need to learn to do better. So how to do the market survey, how to do the bid preparation, how to handle contract disputes, how to change the uh project design incrementally, these are all things that the Indian state does very poorly and that inevitably generates delays and mistakes and litigation and so on. On the private construction company side, in all fairness, Indian construction companies have gotten better. Project management has gotten better. Okay, so you and I are old enough to remember that building a normal residential building in Bombay used to take five years and ten years. And these days in two years they get the job done. So uh engineering project management efficiencies in India have gone up and you know that's a part of the learning curve and the journey. So uh to riff on our uh everything is everything episode on firms and internationalization. When you see L and T competing globally and building the airport in Abu Dhabi, it gives you greater confidence that L and T actually has good project management capabilities and they are swift and efficient in how they build an",
       "words": [
         {
           "word": "So",
@@ -46793,13 +46737,29 @@
           "startTime": 2476.12,
           "endTime": 2476.36,
           "confidence": 0.9975
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 2476.36,
+      "endTime": 2477.8,
+      "text": "airport.",
+      "words": [
         {
           "word": "airport.",
           "startTime": 2476.36,
           "endTime": 2477.8,
           "confidence": 0.9385
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2477.8,
+      "endTime": 2566.46,
+      "text": "Okay. Uh Bhavesh says Ajay tell us your evolution of learning programming languages. Will you build a show on Julia? evolution in programmages. I started out as an undergraduate student in IIT. I learned Fotran, then I learned Pascal, then I learned then I switched to Unix, I learned AUC, I learned C, I learned Perl, um, I learned a couple of other things along the way. Then around data and uh systems that are used for data analysis. I started out with a mix of AU and shell programs. Uh I also know stata though I never really use Tata too much. learned R. I was an early adopter when I in two thousand two when I was at the Ministry of Finance, I switched my everything to R. I moved all my data analysis work to R and now I'm in the process of moving to Julia. Will there be an EI episode on Julia? Probably not. I think it's too niche for the EI community. But uh where do you live? Are you in Bombay, even if you are not in Bombay? Uh i m in my research community, we are active in the India Julia community. We are building a bunch of open source packages. We do run some amount of Bombay Julia meetups. Okay, so do get in touch and we're happy to get engaged in other ways. Bhavish says to you, Amit, how do you manage work life balance? How do you stay focused in a seen and the unseen conversation for many hours?",
+      "words": [
         {
           "word": "Okay.",
           "startTime": 2477.8,
@@ -58011,8 +57971,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2992.03,
-      "endTime": 3160.96,
-      "text": "o all those things. Here are a few more that I would like to bring on the table. Uh the first is that the the crush of mass culture consumes the time and life and space for most people. So cricket and Bollywood and uh T V shows is just eating up the day and then that leaves less space for everything else. So I feel like one has to self consciously distance oneself from mass culture. That you know self consciously ask yourself to l live in the world of high culture and that's a better place to be. The second thing is that in addition to all the things that you said, I would also emphasize the role of community. It's about our people. Our five, fifteen, fifty people are really disproportionately important because our conversations with our people, our engagement with our people, our sense of connection with the people really fuels the journey of knowledge. Uh the third thing that I feel is particularly important is The puzzle is of purpose. If you do this as a career, if you do this as an objective that I want to get a job, I want to become famous, I want to become successful, then lo and behold, you will become famous, you will become successful. And then what? Because life is too long to run on such middle level goals. So purpose is the ultimate superpower, and you've got to ask yourself, why am I here? Why is this important? And uh Taking interest in the world and building knowledge about the world is really you know an ultimate purpose. And that segues into an interdisciplinary approach. By default, we are brought up to be specialists. Okay, you are brought up to be a card cardiac surgeon. Then your interest in life is how do I do surgery of the human heart? And in everything else, you are dull and uninterested. But that doesn't take you on a journey to knowledge. Whereas once you take interest in the world, then suddenly everything is relevant. History is relevant, sociology is relevant, people are relevant, emotions are relevant, news is relevant. Okay, everything is relevant and it comes together as one great picture that is building in your mind. On recollecting things and on both having the curiosity and the thirst to pick up one more block of knowledge and also recollecting things. The human mind works by storing connections to everything. So when everything is connected to everything, you have a higher chance of recollect and then the pieces come together. Otherwise it feels like I'm reading a book and you know, six months later it did not leave an impression. So it's very hard for any of us to make a big leap and go off into a completely new field. But we go by adjacencies. That let's learn the next thing, let's learn the adjacent thing and making better sense of the great tapestry of",
+      "endTime": 3162.46,
+      "text": "o all those things. Here are a few more that I would like to bring on the table. Uh the first is that the the crush of mass culture consumes the time and life and space for most people. So cricket and Bollywood and uh T V shows is just eating up the day and then that leaves less space for everything else. So I feel like one has to self consciously distance oneself from mass culture. That you know self consciously ask yourself to l live in the world of high culture and that's a better place to be. The second thing is that in addition to all the things that you said, I would also emphasize the role of community. It's about our people. Our five, fifteen, fifty people are really disproportionately important because our conversations with our people, our engagement with our people, our sense of connection with the people really fuels the journey of knowledge. Uh the third thing that I feel is particularly important is The puzzle is of purpose. If you do this as a career, if you do this as an objective that I want to get a job, I want to become famous, I want to become successful, then lo and behold, you will become famous, you will become successful. And then what? Because life is too long to run on such middle level goals. So purpose is the ultimate superpower, and you've got to ask yourself, why am I here? Why is this important? And uh Taking interest in the world and building knowledge about the world is really you know an ultimate purpose. And that segues into an interdisciplinary approach. By default, we are brought up to be specialists. Okay, you are brought up to be a card cardiac surgeon. Then your interest in life is how do I do surgery of the human heart? And in everything else, you are dull and uninterested. But that doesn't take you on a journey to knowledge. Whereas once you take interest in the world, then suddenly everything is relevant. History is relevant, sociology is relevant, people are relevant, emotions are relevant, news is relevant. Okay, everything is relevant and it comes together as one great picture that is building in your mind. On recollecting things and on both having the curiosity and the thirst to pick up one more block of knowledge and also recollecting things. The human mind works by storing connections to everything. So when everything is connected to everything, you have a higher chance of recollect and then the pieces come together. Otherwise it feels like I'm reading a book and you know, six months later it did not leave an impression. So it's very hard for any of us to make a big leap and go off into a completely new field. But we go by adjacencies. That let's learn the next thing, let's learn the adjacent thing and making better sense of the great tapestry of knowledge.",
       "words": [
         {
           "word": "o",
@@ -61007,21 +60967,21 @@
           "startTime": 3160.88,
           "endTime": 3160.96,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3160.96,
-      "endTime": 3258.36,
-      "text": "knowledge. If you're not busy being born, you're busy dying. And to me, b this is about that engagement, that if you're a heart surgeon and you've learned your h surgery, you're a specialist, but you're not interested in anything else, you're not really involved in the world except in a shallow way, then you're busy dying. You know, busy being born as you engage with the world, you take it in every day, there is excitement and discovery. The second point I want to also make is about the goals that we have. Like yesterday, you and I and Vaishnavan Namsutta and a couple of our friends were sitting in a cafe in beer, and I asked the question um that uh, you know, when is it that you are most happy? And I loved everybody's answer. You know, one person said that I'm most happy when I'm in the mountains. Another girl said that I'm most happy when I'm with my dog. And the thing about all our answers were and you said that uh you're most happy when you have a new idea and that excitement is makes you happy. And uh what struck me about that is that all of us said things that are easily achievable. It is easy for you to be with your dog, it is easy for you to be in the mountains if you really love it. It's easy for you to just sit and think about stuff. And I think that you ha that that's a great way to define happiness. And people often make the mistake of defining happiness in terms of grand goals. And I think those are dangerous, those are elusive, and even if you get there, you will never be happy because it's too goal oriented rather than process oriented, being in the moment, enjoying what you enjoy. So I think that's something to keep in mind. And uh after these two points, my one pointer is to our declutter episode, episode thirty, where we spoke about a lot of our personal philosophy through about",
-      "words": [
+        },
         {
           "word": "knowledge.",
           "startTime": 3160.96,
           "endTime": 3162.46,
           "confidence": 0.9364
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3168.4,
+      "endTime": 3258.36,
+      "text": "If you're not busy being born, you're busy dying. And to me, b this is about that engagement, that if you're a heart surgeon and you've learned your h surgery, you're a specialist, but you're not interested in anything else, you're not really involved in the world except in a shallow way, then you're busy dying. You know, busy being born as you engage with the world, you take it in every day, there is excitement and discovery. The second point I want to also make is about the goals that we have. Like yesterday, you and I and Vaishnavan Namsutta and a couple of our friends were sitting in a cafe in beer, and I asked the question um that uh, you know, when is it that you are most happy? And I loved everybody's answer. You know, one person said that I'm most happy when I'm in the mountains. Another girl said that I'm most happy when I'm with my dog. And the thing about all our answers were and you said that uh you're most happy when you have a new idea and that excitement is makes you happy. And uh what struck me about that is that all of us said things that are easily achievable. It is easy for you to be with your dog, it is easy for you to be in the mountains if you really love it. It's easy for you to just sit and think about stuff. And I think that you ha that that's a great way to define happiness. And people often make the mistake of defining happiness in terms of grand goals. And I think those are dangerous, those are elusive, and even if you get there, you will never be happy because it's too goal oriented rather than process oriented, being in the moment, enjoying what you enjoy. So I think that's something to keep in mind. And uh after these two points, my one pointer is to our declutter episode, episode thirty, where we spoke about a lot of our personal philosophy through about",
+      "words": [
         {
           "word": "If",
           "startTime": 3168.4,
@@ -69621,17 +69581,25 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 3590.43,
-      "endTime": 3688.48,
-      "text": "Uh Chaya says Ajay, give me thoughts on how to learn India. Publish a step by step guide, for example, he supplies a URL of a step by step guide in a certain computer system. Um learning India is not like learning physics. So there is no book of love, there is no book of India where you master that book and then you know India. It is an infinitely rich uh landscape of knowledge and it contains history, so it's a moving uh tapestry and we have to learn it. So my first thought is look around you, look out of your window. India is there. Okay? So every day through keen observation we can learn India and we should learn India. So one of the most important sources is observation, that every day you are embedded in your source material and look at it in an intellectual way and you are gaining knowledge all the time. Watch the changing gender composition of flights, how it varies by the time of the day. Things like that. Just keep watching and keep thinking, keep wondering why might this be. So intellectualize about what you see rather than experiencing the day in a state of deadness. In the book uh In Service of the Republic by Vajai Kelkar and Ajaisha, in the second edition, uh we responded to a lot of uh requests by building out the endnotes. So Each of those forty five chapters is backed by a reading list at the end of the book. And I think that's a very good jumping off",
+      "endTime": 3590.75,
+      "text": "Uh",
       "words": [
         {
           "word": "Uh",
           "startTime": 3590.43,
           "endTime": 3590.75,
           "confidence": 0.7549
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3590.75,
+      "endTime": 4025.38,
+      "text": "Chaya says Ajay, give me thoughts on how to learn India. Publish a step by step guide, for example, he supplies a URL of a step by step guide in a certain computer system. Um learning India is not like learning physics. So there is no book of love, there is no book of India where you master that book and then you know India. It is an infinitely rich uh landscape of knowledge and it contains history, so it's a moving uh tapestry and we have to learn it. So my first thought is look around you, look out of your window. India is there. Okay? So every day through keen observation we can learn India and we should learn India. So one of the most important sources is observation, that every day you are embedded in your source material and look at it in an intellectual way and you are gaining knowledge all the time. Watch the changing gender composition of flights, how it varies by the time of the day. Things like that. Just keep watching and keep thinking, keep wondering why might this be. So intellectualize about what you see rather than experiencing the day in a state of deadness. In the book uh In Service of the Republic by Vajai Kelkar and Ajaisha, in the second edition, uh we responded to a lot of uh requests by building out the endnotes. So Each of those forty five chapters is backed by a reading list at the end of the book. And I think that's a very good jumping off point. Okay next. Rishab Mishra says, Ajay, can the problems of modern capitalism be eradicated? Low wages, poor working conditions, and harming the environment. And my answer is these are three different things and they require you to think in different ways. Low wages, this is just economic growth that hang in there and build a society that is able to sustain high growth and you know, just get out of the uh anti growth ways. For example, a moment ago we spoke about India and Bangladesh and how we have damaged The cause of garment manufacturing in India by trying to help low wage people. Okay, so these things are just outright harmful. Similarly, poor working conditions, a lot of that is just about the resourcing. You get to growth, conditions will get better. The poorest factories are hot inside, then you become a richer country and the firm puts fans into the factory, and you become a richer country and the factory becomes air conditioned. Okay, so this this is the journey of economic growth. Got to fix this. Harming the environment, on the other hand, is about market failure. That you put pollutants into the environment, they harm other people, that's an externality, that's a market failure. And then you need to either come to Causan bargains or state coercion, and that needs to be solved. So that's different. These problems are not homogeneous. Okay. Nivid De Sai says, tell us about words, state organizations versus institutions. I think the word institution is bandied about too often, loosely. It's actually an aspiration, it's not a reality. An institution is an impersonal capability. That people come and people go, but the institution works in a predictable and consistent way. The term takes you closer to the words rule of law. That people come and people go, but you're treated in a predictable, consistent way, and that is an institution. And I think we do wrong in India. where we are a very backward country and the word institution is banded about. So you know, is the behavior of many Indian state organizations predictable and consistent regardless of the people who man the shop? No, it isn't. These are personalized organizations. So see the word organization versus institution. So the word institution should be used with caution. You are an institution when the organization works in a predictable and consistent manner across many many leadership changes. For example, I think Hindustan Lever is an institution. It has a ready it has a regular cycling of the top ten persons in the organization. CEOs come and CEOs go, but Hindustan Lever has a predictable behavior about it. And that is an institution. So that's the word institution. It should be used with caution. It should be treated as an aspiration that In order for RBI to emerge as an institution, we needed to bring about the legal changes for inflation targeting. So it should be an aspirational word. The word organizations, on the other hand, it contains no aspirational character about it. It's just reality that you make an organization of a thousand people, it will have its own dynamics. People will be lazy, people will be corrupt, people will try to amass power, people will try to do things that are in their self-interest. And that gets you into the main business of management, that organizations are collections of people responding to incentives and behaving in certain ways. And we should bring a skeptical public choice theory toolkit on understanding how and why organizations behave where there is no lofty claim that just because you're an organization, you are either good or competent. Just because you're an organization, you are bedeviled by all the problems of all organizations, which is agency problems in in government settings, public choice theory, people crave laziness, corruption, power. So each individual is pursuing her own objective and the organizational objectives are distinct. And how do you reconcile these problems? So that's surrounding the word organization. So we should always be cautious and skeptical and not sign up for language in India which is very lofty and presumes that organizations in India are comparable to uh those present in advanced economies. Okay then Vas Vas maybe a short form for Vasudev says how might the languages used in India evolve in the future? I think uh India is moving in some very interesting directions. In the elite English has one, English is the lingua franca. You may be from Kashmir, you may be from Kanyakumari, the Indian elite uh uh uses English as the lingua franca. Uh Metcalf's law teaches us that the power of a network grows as proportion to n squared, where n is the number of uh nodes in the graph. So as the number of people and the number of organizations uh that are connected up in the Indian English speaking network grow every day. The power of that network keeps growing. It is the most important language network of the country today. Parents have got the memo and are pushing their kids into learning more and more English. At the street level, Hingish has won. All over India in many, many places. You will get by in working class settings, in a modicum of English, and so it's become a different kind of lingua franca, which is operating at the working class level.",
+      "words": [
         {
           "word": "Chaya",
           "startTime": 3590.75,
@@ -71215,29 +71183,13 @@
           "startTime": 3688.32,
           "endTime": 3688.48,
           "confidence": 0.9962
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3688.48,
-      "endTime": 3689.98,
-      "text": "point.",
-      "words": [
+        },
         {
           "word": "point.",
           "startTime": 3688.48,
           "endTime": 3689.98,
           "confidence": 0.5641
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3691.6,
-      "endTime": 3775.82,
-      "text": "Okay next. Rishab Mishra says, Ajay, can the problems of modern capitalism be eradicated? Low wages, poor working conditions, and harming the environment. And my answer is these are three different things and they require you to think in different ways. Low wages, this is just economic growth that hang in there and build a society that is able to sustain high growth and you know, just get out of the uh anti growth ways. For example, a moment ago we spoke about India and Bangladesh and how we have damaged The cause of garment manufacturing in India by trying to help low wage people. Okay, so these things are just outright harmful. Similarly, poor working conditions, a lot of that is just about the resourcing. You get to growth, conditions will get better. The poorest factories are hot inside, then you become a richer country and the firm puts fans into the factory, and you become a richer country and the factory becomes air conditioned. Okay, so this this is the journey of economic growth. Got to fix this. Harming the environment, on the other hand, is about market failure. That you put pollutants into the environment, they harm other people, that's an externality, that's a market failure. And then you need to either come to Causan bargains or state coercion, and that needs to be solved. So that's different. These problems are not",
-      "words": [
+        },
         {
           "word": "Okay",
           "startTime": 3691.6,
@@ -72647,15 +72599,7 @@
           "startTime": 3775.5,
           "endTime": 3775.82,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3775.82,
-      "endTime": 3778.06,
-      "text": "homogeneous. Okay.",
-      "words": [
+        },
         {
           "word": "homogeneous.",
           "startTime": 3775.82,
@@ -72667,15 +72611,7 @@
           "startTime": 3777.42,
           "endTime": 3778.06,
           "confidence": 0.7407
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3778.06,
-      "endTime": 4025.38,
-      "text": "Nivid De Sai says, tell us about words, state organizations versus institutions. I think the word institution is bandied about too often, loosely. It's actually an aspiration, it's not a reality. An institution is an impersonal capability. That people come and people go, but the institution works in a predictable and consistent way. The term takes you closer to the words rule of law. That people come and people go, but you're treated in a predictable, consistent way, and that is an institution. And I think we do wrong in India. where we are a very backward country and the word institution is banded about. So you know, is the behavior of many Indian state organizations predictable and consistent regardless of the people who man the shop? No, it isn't. These are personalized organizations. So see the word organization versus institution. So the word institution should be used with caution. You are an institution when the organization works in a predictable and consistent manner across many many leadership changes. For example, I think Hindustan Lever is an institution. It has a ready it has a regular cycling of the top ten persons in the organization. CEOs come and CEOs go, but Hindustan Lever has a predictable behavior about it. And that is an institution. So that's the word institution. It should be used with caution. It should be treated as an aspiration that In order for RBI to emerge as an institution, we needed to bring about the legal changes for inflation targeting. So it should be an aspirational word. The word organizations, on the other hand, it contains no aspirational character about it. It's just reality that you make an organization of a thousand people, it will have its own dynamics. People will be lazy, people will be corrupt, people will try to amass power, people will try to do things that are in their self-interest. And that gets you into the main business of management, that organizations are collections of people responding to incentives and behaving in certain ways. And we should bring a skeptical public choice theory toolkit on understanding how and why organizations behave where there is no lofty claim that just because you're an organization, you are either good or competent. Just because you're an organization, you are bedeviled by all the problems of all organizations, which is agency problems in in government settings, public choice theory, people crave laziness, corruption, power. So each individual is pursuing her own objective and the organizational objectives are distinct. And how do you reconcile these problems? So that's surrounding the word organization. So we should always be cautious and skeptical and not sign up for language in India which is very lofty and presumes that organizations in India are comparable to uh those present in advanced economies. Okay then Vas Vas maybe a short form for Vasudev says how might the languages used in India evolve in the future? I think uh India is moving in some very interesting directions. In the elite English has one, English is the lingua franca. You may be from Kashmir, you may be from Kanyakumari, the Indian elite uh uh uses English as the lingua franca. Uh Metcalf's law teaches us that the power of a network grows as proportion to n squared, where n is the number of uh nodes in the graph. So as the number of people and the number of organizations uh that are connected up in the Indian English speaking network grow every day. The power of that network keeps growing. It is the most important language network of the country today. Parents have got the memo and are pushing their kids into learning more and more English. At the street level, Hingish has won. All over India in many, many places. You will get by in working class settings, in a modicum of English, and so it's become a different kind of lingua franca, which is operating at the working class level.",
-      "words": [
+        },
         {
           "word": "Nivid",
           "startTime": 3778.06,
@@ -81309,8 +81245,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4253.07,
-      "endTime": 4258.08,
-      "text": "What's the developmental process like how much time, effort, prep go into reading and not taking? For each",
+      "endTime": 4259.28,
+      "text": "What's the developmental process like how much time, effort, prep go into reading and not taking? For each episode.",
       "words": [
         {
           "word": "What's",
@@ -81419,21 +81355,21 @@
           "startTime": 4257.84,
           "endTime": 4258.08,
           "confidence": 0.9833
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4258.08,
-      "endTime": 4308.49,
-      "text": "episode. For me nowhere near as much as uh the scene and the unseen. We talk about stuff that we already have thought about and all of that. Uh b when you come up with a subject that you know deeply and I don't, uh then maybe I'll do some reading on it. And uh you know, I'll brush up my own reading on a subject that I might know pretty well. But it doesn't take days and days per se. So we'll ideate and often what happens is that if you're meeting, say often we'll record five episodes over a couple of days. And uh we might have ideas about let's talk about this, this, this, but they're vague ideas, and when we meet, something will randomly emerge, how say. Like I remember we were at dinner one day and you said something about Newton and I said something about Gandhi, and straight away the next morning we recorded and we spoke about Newton and Gandhi and just constructed an episode out of that. So there is a sort of an improvisatory um uh improvisatory vibe that we leave ourselves open to in that",
-      "words": [
+        },
         {
           "word": "episode.",
           "startTime": 4258.08,
           "endTime": 4259.28,
           "confidence": 0.8268
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4259.28,
+      "endTime": 4308.49,
+      "text": "For me nowhere near as much as uh the scene and the unseen. We talk about stuff that we already have thought about and all of that. Uh b when you come up with a subject that you know deeply and I don't, uh then maybe I'll do some reading on it. And uh you know, I'll brush up my own reading on a subject that I might know pretty well. But it doesn't take days and days per se. So we'll ideate and often what happens is that if you're meeting, say often we'll record five episodes over a couple of days. And uh we might have ideas about let's talk about this, this, this, but they're vague ideas, and when we meet, something will randomly emerge, how say. Like I remember we were at dinner one day and you said something about Newton and I said something about Gandhi, and straight away the next morning we recorded and we spoke about Newton and Gandhi and just constructed an episode out of that. So there is a sort of an improvisatory um uh improvisatory vibe that we leave ourselves open to in that",
+      "words": [
         {
           "word": "For",
           "startTime": 4259.28,
@@ -94521,8 +94457,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4929.44,
-      "endTime": 5008.99,
-      "text": "Uh Sachin says, Ajay, can Bitcoin or other cryptocurrencies do something fundamental for increasing freedom in India? So I think that uh there is a great damage. that was done to freedom in India by the exchange controls that were put up by the British during Second World War and exacerbated in the following period. So uh the people responded by coming up with many, many many ways through which uh the people are able to break past these restrictions. One of them is uh misinvoicing on trade. So when you send goods out worth hundreds, they are Invoiced as 90 and 10 rupees goes into a foreign bank account. Okay, and the reverse of that on the incoming side. Uh I have a co-authored paper on this, and there are very large numbers going on through which the Indian business community has been able to bypass these uh exchange control restrictions and achieve de facto convertibility. So I think that cryptocurrencies becomes one more vehicle for doing that. I think of it as one more tool, not something fundamental. Um Vaishnava Vyas. I wonder who that is. I",
+      "endTime": 5016.53,
+      "text": "Uh Sachin says, Ajay, can Bitcoin or other cryptocurrencies do something fundamental for increasing freedom in India? So I think that uh there is a great damage. that was done to freedom in India by the exchange controls that were put up by the British during Second World War and exacerbated in the following period. So uh the people responded by coming up with many, many many ways through which uh the people are able to break past these restrictions. One of them is uh misinvoicing on trade. So when you send goods out worth hundreds, they are Invoiced as 90 and 10 rupees goes into a foreign bank account. Okay, and the reverse of that on the incoming side. Uh I have a co-authored paper on this, and there are very large numbers going on through which the Indian business community has been able to bypass these uh exchange control restrictions and achieve de facto convertibility. So I think that cryptocurrencies becomes one more vehicle for doing that. I think of it as one more tool, not something fundamental. Um Vaishnava Vyas. I wonder who that is. I wonder who that is. Amit, what's the biggest mistake that a parent can make in a child's formative years?",
       "words": [
         {
           "word": "Uh",
@@ -95657,15 +95593,7 @@
           "startTime": 5008.83,
           "endTime": 5008.99,
           "confidence": 0.5336
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5008.99,
-      "endTime": 5010.89,
-      "text": "wonder who that is.",
-      "words": [
+        },
         {
           "word": "wonder",
           "startTime": 5008.99,
@@ -95689,15 +95617,7 @@
           "startTime": 5009.39,
           "endTime": 5010.89,
           "confidence": 0.7142
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5010.91,
-      "endTime": 5016.53,
-      "text": "Amit, what's the biggest mistake that a parent can make in a child's formative years?",
-      "words": [
+        },
         {
           "word": "Amit,",
           "startTime": 5010.91,
@@ -106515,8 +106435,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5573.02,
-      "endTime": 5621.13,
-      "text": "And Kastupagash says, Ajay, it is one thing to think about optimal paths for India as of today. Not all of this correctly ports to nineteen forty seven. was some of the developmental state stuff done by Nehru appropriate given those initial conditions? It's a great question and we should debate. I really shake my head and disagree. I r I disagree with all the developmental state stuff. If you could go back in a time machine, I can't help thinking that what was best in nineteen forty seven was just do basic public goods. If the Indian state had done ten percent of GTP, build rule of law, build the judiciary, build a tax system with rule of law, and you know, do basics and learn how to do basics, then it would have created conditions for the flowering of private",
+      "endTime": 5620.81,
+      "text": "And Kastupagash says, Ajay, it is one thing to think about optimal paths for India as of today. Not all of this correctly ports to nineteen forty seven. was some of the developmental state stuff done by Nehru appropriate given those initial conditions? It's a great question and we should debate. I really shake my head and disagree. I r I disagree with all the developmental state stuff. If you could go back in a time machine, I can't help thinking that what was best in nineteen forty seven was just do basic public goods. If the Indian state had done ten percent of GTP, build rule of law, build the judiciary, build a tax system with rule of law, and you know, do basics and learn how to do basics, then it would have created conditions for the flowering of",
       "words": [
         {
           "word": "And",
@@ -107363,21 +107283,21 @@
           "startTime": 5620.65,
           "endTime": 5620.81,
           "confidence": 0.9998
-        },
-        {
-          "word": "private",
-          "startTime": 5620.81,
-          "endTime": 5621.13,
-          "confidence": 0.9986
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 5621.13,
-      "endTime": 5630.17,
-      "text": "person. And we have a great episode on this, uh uh where you know there are title is about freedom and it is, but it's really India's economic history over centuries, in fact. So check that",
+      "startTime": 5620.81,
+      "endTime": 5631.21,
+      "text": "private person. And we have a great episode on this, uh uh where you know there are title is about freedom and it is, but it's really India's economic history over centuries, in fact. So check that out.",
       "words": [
+        {
+          "word": "private",
+          "startTime": 5620.81,
+          "endTime": 5621.13,
+          "confidence": 0.9986
+        },
         {
           "word": "person.",
           "startTime": 5621.13,
@@ -107593,21 +107513,21 @@
           "startTime": 5630.01,
           "endTime": 5630.17,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5630.17,
-      "endTime": 5636.51,
-      "text": "out. Then Immaraju Giridhar says Amit, tell us about your disagreement with Ajay.",
-      "words": [
+        },
         {
           "word": "out.",
           "startTime": 5630.17,
           "endTime": 5631.21,
           "confidence": 0.9616
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 5631.21,
+      "endTime": 5636.51,
+      "text": "Then Immaraju Giridhar says Amit, tell us about your disagreement with Ajay.",
+      "words": [
         {
           "word": "Then",
           "startTime": 5631.21,
@@ -107685,8 +107605,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 5637.2,
-      "endTime": 5649.12,
-      "text": "My disagreements with Ajay. We don't really we've never fought, have we? We've never come close to a point where I say I don't want to be friends with this guy anymore. So I don't think we have disagreements of that sort. I",
+      "endTime": 5759.85,
+      "text": "My disagreements with Ajay. We don't really we've never fought, have we? We've never come close to a point where I say I don't want to be friends with this guy anymore. So I don't think we have disagreements of that sort. I think at an instinctive level, uh I am even more towards freedom than Ajay is. And I feel that he uses the word market failure a lot. And there's a lot of nuance there in a sense of saying that. Intervention should only be done by the state when there is market failure, and that's the thing. But I think people can often misunderstand that uh and think that oh market failure to harjaga. And actually, no, market failures are incredibly rare. Government failure is ubiquitous. It was written into the incentives of the state, as we spoke about in our public choice episode. So I have a feeling that if we dig down deep enough into certain areas, you might find that Ajay is a little more favor of government regulation than I am. But broadly, I think in terms of values, Ajay and I are completely aligned. In terms of values, in terms of the importance of freedom and uh autonomy and consent, we are completely aligned. Uh I think life has taught us similar hard lessons, though we've never spoken overtly about them. So our personal philosophies uh are also sort of uh similar, and I'm sure we'll agree and keep fighting about things like AI I am more optimistic than he is, which is great, which is how we kind of can learn from each other. But uh otherwise, yeah, this is a problem. Uh we uh like I have a friend Deeper K, whom whom you know. with whom I did a great episode of The Seen and the Unseen. And every time we meet, he'll keep asking me questions, What do you think about this? Because he wants to find something on which he disagrees with me. And even though I'm so, you know, libertarian and this and that, there's very little that we can find. Which I think is okay, but broadly, uh, you know, we are not with each other because we want to be with like minded people. Many of my friends I have violent disagreements with them over this or that. But I think friendship is friendship and views matching is another thing. And our values match and that's great, and I think that's a great basis. What do you think?",
       "words": [
         {
           "word": "My",
@@ -107945,15 +107865,7 @@
           "startTime": 5648.96,
           "endTime": 5649.12,
           "confidence": 0.9862
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5649.12,
-      "endTime": 5651.2,
-      "text": "think at an instinctive",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 5649.12,
@@ -107977,15 +107889,7 @@
           "startTime": 5649.84,
           "endTime": 5651.2,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5651.2,
-      "endTime": 5758.35,
-      "text": "level, uh I am even more towards freedom than Ajay is. And I feel that he uses the word market failure a lot. And there's a lot of nuance there in a sense of saying that. Intervention should only be done by the state when there is market failure, and that's the thing. But I think people can often misunderstand that uh and think that oh market failure to harjaga. And actually, no, market failures are incredibly rare. Government failure is ubiquitous. It was written into the incentives of the state, as we spoke about in our public choice episode. So I have a feeling that if we dig down deep enough into certain areas, you might find that Ajay is a little more favor of government regulation than I am. But broadly, I think in terms of values, Ajay and I are completely aligned. In terms of values, in terms of the importance of freedom and uh autonomy and consent, we are completely aligned. Uh I think life has taught us similar hard lessons, though we've never spoken overtly about them. So our personal philosophies uh are also sort of uh similar, and I'm sure we'll agree and keep fighting about things like AI I am more optimistic than he is, which is great, which is how we kind of can learn from each other. But uh otherwise, yeah, this is a problem. Uh we uh like I have a friend Deeper K, whom whom you know. with whom I did a great episode of The Seen and the Unseen. And every time we meet, he'll keep asking me questions, What do you think about this? Because he wants to find something on which he disagrees with me. And even though I'm so, you know, libertarian and this and that, there's very little that we can find. Which I think is okay, but broadly, uh, you know, we are not with each other because we want to be with like minded people. Many of my friends I have violent disagreements with them over this or that. But I think friendship is friendship and views matching is another thing. And our values match and that's great, and I think that's a great basis. What do you",
-      "words": [
+        },
         {
           "word": "level,",
           "startTime": 5651.2,
@@ -110241,21 +110145,21 @@
           "startTime": 5758.11,
           "endTime": 5758.35,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5758.35,
-      "endTime": 5772.35,
-      "text": "think? For example, today we spoke about the my shifting positions around technology. There is more of a dark side than I used to. And you know, we constantly have differences of opinion about her. And that's",
-      "words": [
+        },
         {
           "word": "think?",
           "startTime": 5758.35,
           "endTime": 5759.85,
           "confidence": 0.8723
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 5759.95,
+      "endTime": 5772.35,
+      "text": "For example, today we spoke about the my shifting positions around technology. There is more of a dark side than I used to. And you know, we constantly have differences of opinion about her. And that's",
+      "words": [
         {
           "word": "For",
           "startTime": 5759.95,
@@ -121379,8 +121283,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 6344.86,
-      "endTime": 6349.42,
-      "text": "Mayank says Amit, how did you meet Ajay? I think we",
+      "endTime": 6348.36,
+      "text": "Mayank says Amit, how did you meet Ajay?",
       "words": [
         {
           "word": "Mayank",
@@ -121429,7 +121333,15 @@
           "startTime": 6346.86,
           "endTime": 6348.36,
           "confidence": 0.8242
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 6348.94,
+      "endTime": 6365.34,
+      "text": "I think we met through friends. We were part of an email group where we would discuss interesting things many years ago, so maybe fifteen, sixteen years ago. And um for a long time um uh we uh didn't really become friends. I think we became friends four five years ago. I mean I don't know, but what's what's your memory of this?",
+      "words": [
         {
           "word": "I",
           "startTime": 6348.94,
@@ -121447,15 +121359,7 @@
           "startTime": 6349.26,
           "endTime": 6349.42,
           "confidence": 0.9967
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 6349.42,
-      "endTime": 6365.34,
-      "text": "met through friends. We were part of an email group where we would discuss interesting things many years ago, so maybe fifteen, sixteen years ago. And um for a long time um uh we uh didn't really become friends. I think we became friends four five years ago. I mean I don't know, but what's what's your memory of this?",
-      "words": [
+        },
         {
           "word": "met",
           "startTime": 6349.42,
@@ -124887,8 +124791,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 6540.67,
-      "endTime": 6608.16,
-      "text": "So when I started I did not visualize them as I will aim towards the making it this particular thing and I will put an effort towards that. They kind of evolved organically over a period of time. As a scene and the unseen evolved into its longer form, I kind of fell in love with it. I also felt that there is a higher purpose that when the discourse is so polluted outside. that I can have meaningful deeper conversations that travel across time, not just across space. You can listen to these conversations thirty years later, they'll make sense. And I realized that people value them so much. And that gave me an added sense of responsibility. And it's really a labor of love. Like at this precise moment I don't even know if in money I'm net positive from these shows. I don't think I am. But uh uh uh you know, in indirect ways, as I described earlier, they uh sort of keep me going financially anyway. But the larger thing is that I love doing this, and I'm very fortunate to be able to do what I love and there's a lot of uh value in that. It is not all I love, it's a very small part, so I'm deeply frustrated and angry with myself for not being able to do a lot else of what I want to do, uh, especially when it comes to writing. But I'll do that with time, but meanwhile I love these two. Th these mean a big deal to me and I will not",
+      "endTime": 6609.2,
+      "text": "So when I started I did not visualize them as I will aim towards the making it this particular thing and I will put an effort towards that. They kind of evolved organically over a period of time. As a scene and the unseen evolved into its longer form, I kind of fell in love with it. I also felt that there is a higher purpose that when the discourse is so polluted outside. that I can have meaningful deeper conversations that travel across time, not just across space. You can listen to these conversations thirty years later, they'll make sense. And I realized that people value them so much. And that gave me an added sense of responsibility. And it's really a labor of love. Like at this precise moment I don't even know if in money I'm net positive from these shows. I don't think I am. But uh uh uh you know, in indirect ways, as I described earlier, they uh sort of keep me going financially anyway. But the larger thing is that I love doing this, and I'm very fortunate to be able to do what I love and there's a lot of uh value in that. It is not all I love, it's a very small part, so I'm deeply frustrated and angry with myself for not being able to do a lot else of what I want to do, uh, especially when it comes to writing. But I'll do that with time, but meanwhile I love these two. Th these mean a big deal to me and I will not stop.",
       "words": [
         {
           "word": "So",
@@ -126491,21 +126395,21 @@
           "startTime": 6607.92,
           "endTime": 6608.16,
           "confidence": 0.9983
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 6608.16,
-      "endTime": 6614.81,
-      "text": "stop. Srivas says Who are songwriters beyond Springsteen that you admire?",
-      "words": [
+        },
         {
           "word": "stop.",
           "startTime": 6608.16,
           "endTime": 6609.2,
           "confidence": 0.8725
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 6609.2,
+      "endTime": 6614.81,
+      "text": "Srivas says Who are songwriters beyond Springsteen that you admire?",
+      "words": [
         {
           "word": "Srivas",
           "startTime": 6609.2,
@@ -136095,8 +135999,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 7091.1,
-      "endTime": 7101.98,
-      "text": "Tears are coming to my eyes thinking of the amount of brood coercion that would be required to make me a master of computer programming. I if I if I get there myself, I'm s sure algorithms will make me tear up as well.",
+      "endTime": 7100.78,
+      "text": "Tears are coming to my eyes thinking of the amount of brood coercion that would be required to make me a master of computer programming. I if I if I get there myself, I'm s sure algorithms will make me tear up as",
       "words": [
         {
           "word": "Tears",
@@ -136355,21 +136259,21 @@
           "startTime": 7100.7,
           "endTime": 7100.78,
           "confidence": 0.9993
-        },
-        {
-          "word": "well.",
-          "startTime": 7100.78,
-          "endTime": 7101.98,
-          "confidence": 0.9115
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 7101.98,
-      "endTime": 7171.37,
-      "text": "I do think so. Okay. Rupe Chavan similarly says to me, a genie gives you one boon to fix India, what would you choose? Okay, so like you're not you're giving me no limits, right? It's a genie, a really super powerful genie. Laws of physics don't apply. Yes? And I won't cheat, I I'll stick to only one. Basically, I feel that we just got very, very unlucky in the great freedom movement generation, where I think 1947 was an unlucky year. 1927 to 1947 was that formative period. It was a time where all over the world freedom did badly. and the big state did well. And in the first world war and the second world war, war economies just became complete state mobilization. So I just think that there was a whole thuggish state domination character to that generation. And you know, the same people would have done so much better if their philosophy was better. Or if you're gonna hold all the dates and the events intact. What I would like to go do is take a time machine A bag of books and you know get it to Nehru and Gandhi and Raj Gopanachary and so on. No, they were full, they were",
+      "startTime": 7100.78,
+      "endTime": 7190.33,
+      "text": "well. I do think so. Okay. Rupe Chavan similarly says to me, a genie gives you one boon to fix India, what would you choose? Okay, so like you're not you're giving me no limits, right? It's a genie, a really super powerful genie. Laws of physics don't apply. Yes? And I won't cheat, I I'll stick to only one. Basically, I feel that we just got very, very unlucky in the great freedom movement generation, where I think 1947 was an unlucky year. 1927 to 1947 was that formative period. It was a time where all over the world freedom did badly. and the big state did well. And in the first world war and the second world war, war economies just became complete state mobilization. So I just think that there was a whole thuggish state domination character to that generation. And you know, the same people would have done so much better if their philosophy was better. Or if you're gonna hold all the dates and the events intact. What I would like to go do is take a time machine A bag of books and you know get it to Nehru and Gandhi and Raj Gopanachary and so on. No, they were full, they were heavy. You have to see that in that context, if you gave them like ten books. So for example, the kind of difference that seeing like a state made to me in chipping away at my technological high modernism. That's what a book can do. And those were intellectuals.",
       "words": [
+        {
+          "word": "well.",
+          "startTime": 7100.78,
+          "endTime": 7101.98,
+          "confidence": 0.9115
+        },
         {
           "word": "I",
           "startTime": 7101.98,
@@ -137617,29 +137521,13 @@
           "startTime": 7171.21,
           "endTime": 7171.37,
           "confidence": 0.9814
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 7171.37,
-      "endTime": 7172.87,
-      "text": "heavy.",
-      "words": [
+        },
         {
           "word": "heavy.",
           "startTime": 7171.37,
           "endTime": 7172.87,
           "confidence": 0.7748
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 7174.17,
-      "endTime": 7190.33,
-      "text": "You have to see that in that context, if you gave them like ten books. So for example, the kind of difference that seeing like a state made to me in chipping away at my technological high modernism. That's what a book can do. And those were intellectuals.",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 7174.17,
@@ -141635,8 +141523,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 7360.64,
-      "endTime": 7372.64,
-      "text": "And uh Aditya asks me, she says, Ajay, shall we build a hike for EIE people? Let's walk and let's talk under the stars. And I say, Great idea, let's do it. Send me mail and let's build something. Let's do it,",
+      "endTime": 7373.12,
+      "text": "And uh Aditya asks me, she says, Ajay, shall we build a hike for EIE people? Let's walk and let's talk under the stars. And I say, Great idea, let's do it. Send me mail and let's build something. Let's do it, yeah, it's a good",
       "words": [
         {
           "word": "And",
@@ -141889,15 +141777,7 @@
           "startTime": 7372.4,
           "endTime": 7372.64,
           "confidence": 0.7259
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 7372.64,
-      "endTime": 7381.94,
-      "text": "yeah, it's a good idea, no? Twenty five people walk under the stars. Will sicker. Twive too much. Anyway. I guess Aditi's got herself up the queue.",
-      "words": [
+        },
         {
           "word": "yeah,",
           "startTime": 7372.64,
@@ -141921,7 +141801,15 @@
           "startTime": 7373.04,
           "endTime": 7373.12,
           "confidence": 0.9977
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 7373.12,
+      "endTime": 7381.94,
+      "text": "idea, no? Twenty five people walk under the stars. Will sicker. Twive too much. Anyway. I guess Aditi's got herself up the queue.",
+      "words": [
         {
           "word": "idea,",
           "startTime": 7373.12,

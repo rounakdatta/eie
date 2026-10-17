@@ -5,7 +5,7 @@
     "durationSeconds": 3899,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -2977,8 +2977,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 176.55,
-      "endTime": 249.24,
-      "text": "There is an array of differences between the life of a firm. and the life of uh government and that's our purpose today. And at the end, gentle reader, we hope to persuade you that uh the two skills are really completely apart. That we revere firms, we care about firms. Our friend Deviya Sornaraj recently said something very interesting to me. She said there's an interesting analogy of thinking about a firm like a cell. So imagine the human body is made of cell. So the overall economy is made of firms. And you want a science of psychology where you study one cell at a time. And that is good and appropriate. But we should not think that what works at the level of the cell works at the level of the overall organism. They're different. There's a different knowledge set on understanding the overall organism as compared to understanding one cell at a time. And yet the cell are key. If you don't have well functioning cell, there's no question of making the overall economy work. The overall economy is just the sum total of the production of the productivity of the firms. So there is no path to prosperity without building high productivity",
+      "endTime": 474.87,
+      "text": "There is an array of differences between the life of a firm. and the life of uh government and that's our purpose today. And at the end, gentle reader, we hope to persuade you that uh the two skills are really completely apart. That we revere firms, we care about firms. Our friend Deviya Sornaraj recently said something very interesting to me. She said there's an interesting analogy of thinking about a firm like a cell. So imagine the human body is made of cell. So the overall economy is made of firms. And you want a science of psychology where you study one cell at a time. And that is good and appropriate. But we should not think that what works at the level of the cell works at the level of the overall organism. They're different. There's a different knowledge set on understanding the overall organism as compared to understanding one cell at a time. And yet the cell are key. If you don't have well functioning cell, there's no question of making the overall economy work. The overall economy is just the sum total of the production of the productivity of the firms. So there is no path to prosperity without building high productivity firms. But there are fundamental ways in which they are different. So let me start at the first uh the first is the issue of feedback loops. In a firm, there are excellent feedback loops of information coming back to kick the firm. Okay, firms observe their own market share, they observe their own revenue, they observe their own internal MIS on profits and profitability, and they observe their own stock price. Okay? These all happen with a little bit of a varying lag. Stock price comes out daily. Firms generally have daily or weekly MIS of their own production. And all modern firms have a monthly conception of profit. So when things go wrong in the firm, then they lose market share rapidly, they lose profitability rapidly, and they get slapped in the face immediately. So the management gets instant feedback saying, Hey, this is not working. So you can actually be very incrementally responsive. You you often don't need to be a big thinker. You just need to keep debugging your way and troubleshooting your way, and it gets you to a certain kind of stable firm, that there is a certain firefighting that happens, and you'll keep solving one small problem after another. It keeps the firm going. It doesn't get you great leaps of firm, but it keeps the firm going. Now that's not true in the world of public policy. There is no meaningful stock price. Okay, the stock market index is absolutely not a vote on how well the economy is faring or how well the government is faring. It is a complicated beast. I'm happy to discuss separately under a different F of finance, but nobody should mistake the stock market index as a report card about what's going on in the economy. As an example, we had COVID, it was a terrible catastrophe, and the US Fed cut rates sharply, RBI cut rates sharply, stock prices went up. It was really about a new interest rate for computing NPVs. It was not about the firms were being run much better. So I don't want to diss on the stock price that it is some non informative nonsense. There is a lot of sense and sanity in what stock prices do, but they do not report a state of health of the economy. Another measure that people like to use is the GDP data at its best. It is a quarterly data flow which comes out with a considerable lag. Unfortunately in India many many difficulties have arisen in GDP measurement. Our good friend Rajeshwarish and Gupto has been quite clever and insightful in understanding that landscape and in telling those stories well. And unfortunately, you know, that's not a measure that directly informs what is going on. Similarly, many other things are not measured properly. So when you are in the world of public policy and you're thinking of the country, you're thinking of the economy of India. It's a little bit of flying blind that we really don't know. We don't know what is going on. And then you don't get feedback loops, that you don't know what's going on. You could be making mistakes and they just can uh emanate out into the world and perpetuate damage week after week and month after month, and you don't know what is going on. So that's the first fundamental difference between the world of public policy and the world of the firms. Firms can work well and have a better chance at working well because there are feedback loops and they get slapped into shape. When a firm misbehaves within a matter of months you can see the impact on market share, on revenues, on profits, on stock prices. But you have no such feedback loops in government.",
       "words": [
         {
           "word": "There",
@@ -4221,15 +4221,7 @@
           "startTime": 248.44,
           "endTime": 249.24,
           "confidence": 0.9978
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 249.24,
-      "endTime": 251.08,
-      "text": "firms. But",
-      "words": [
+        },
         {
           "word": "firms.",
           "startTime": 249.24,
@@ -4241,15 +4233,7 @@
           "startTime": 250.76,
           "endTime": 251.08,
           "confidence": 0.9969
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 251.08,
-      "endTime": 254.68,
-      "text": "there are fundamental ways in which they are different. So let me start at the",
-      "words": [
+        },
         {
           "word": "there",
           "startTime": 251.08,
@@ -4339,29 +4323,13 @@
           "startTime": 254.44,
           "endTime": 254.68,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 254.68,
-      "endTime": 256.18,
-      "text": "first",
-      "words": [
+        },
         {
           "word": "first",
           "startTime": 254.68,
           "endTime": 256.18,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 256.68,
-      "endTime": 388.05,
-      "text": "uh the first is the issue of feedback loops. In a firm, there are excellent feedback loops of information coming back to kick the firm. Okay, firms observe their own market share, they observe their own revenue, they observe their own internal MIS on profits and profitability, and they observe their own stock price. Okay? These all happen with a little bit of a varying lag. Stock price comes out daily. Firms generally have daily or weekly MIS of their own production. And all modern firms have a monthly conception of profit. So when things go wrong in the firm, then they lose market share rapidly, they lose profitability rapidly, and they get slapped in the face immediately. So the management gets instant feedback saying, Hey, this is not working. So you can actually be very incrementally responsive. You you often don't need to be a big thinker. You just need to keep debugging your way and troubleshooting your way, and it gets you to a certain kind of stable firm, that there is a certain firefighting that happens, and you'll keep solving one small problem after another. It keeps the firm going. It doesn't get you great leaps of firm, but it keeps the firm going. Now that's not true in the world of public policy. There is no meaningful stock price. Okay, the stock market index is absolutely not a vote on how well the economy is faring or how well the government is faring. It is a complicated beast. I'm happy to discuss separately under a different F of finance, but nobody should mistake the stock market index as a report card about what's going on in the economy. As an example, we had COVID, it was a terrible catastrophe, and the US Fed cut rates sharply, RBI cut rates sharply, stock prices went up. It was really about a new interest rate for computing NPVs. It was not about the firms were being run much better. So I don't want to diss on the stock price that it is some non informative nonsense. There is a lot of sense and sanity in what stock prices do, but they do not report a state of health of",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 256.68,
@@ -6581,15 +6549,7 @@
           "startTime": 387.89,
           "endTime": 388.05,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 388.05,
-      "endTime": 389.79,
-      "text": "the economy.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 388.05,
@@ -6601,15 +6561,7 @@
           "startTime": 388.29,
           "endTime": 389.79,
           "confidence": 0.9818
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 389.89,
-      "endTime": 471.17,
-      "text": "Another measure that people like to use is the GDP data at its best. It is a quarterly data flow which comes out with a considerable lag. Unfortunately in India many many difficulties have arisen in GDP measurement. Our good friend Rajeshwarish and Gupto has been quite clever and insightful in understanding that landscape and in telling those stories well. And unfortunately, you know, that's not a measure that directly informs what is going on. Similarly, many other things are not measured properly. So when you are in the world of public policy and you're thinking of the country, you're thinking of the economy of India. It's a little bit of flying blind that we really don't know. We don't know what is going on. And then you don't get feedback loops, that you don't know what's going on. You could be making mistakes and they just can uh emanate out into the world and perpetuate damage week after week and month after month, and you don't know what is going on. So that's the first fundamental difference between the world of public policy and the world of the firms. Firms can work well and have a better chance at working well because there are feedback loops and they get slapped into shape. When a firm misbehaves within a matter of months you can see the impact on market share, on revenues, on profits, on",
-      "words": [
+        },
         {
           "word": "Another",
           "startTime": 389.89,
@@ -8019,15 +7971,7 @@
           "startTime": 470.69,
           "endTime": 471.17,
           "confidence": 0.9934
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 471.17,
-      "endTime": 472.69,
-      "text": "stock prices. But you",
-      "words": [
+        },
         {
           "word": "stock",
           "startTime": 471.17,
@@ -8051,15 +7995,7 @@
           "startTime": 472.53,
           "endTime": 472.69,
           "confidence": 0.8893
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 472.69,
-      "endTime": 474.87,
-      "text": "have no such feedback loops in government.",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 472.69,
@@ -11583,8 +11519,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 647.89,
-      "endTime": 663.73,
-      "text": "And elections are once every five years it's too far away to shape the activities of uh government. And elections are mildly related to performance. We are still a country where base passions are disproportionately important in winning elections.",
+      "endTime": 664.85,
+      "text": "And elections are once every five years it's too far away to shape the activities of uh government. And elections are mildly related to performance. We are still a country where base passions are disproportionately important in winning elections. And conversely, elections",
       "words": [
         {
           "word": "And",
@@ -11819,15 +11755,7 @@
           "startTime": 663.01,
           "endTime": 663.73,
           "confidence": 0.986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 663.73,
-      "endTime": 672.93,
-      "text": "And conversely, elections are actually all the time because state elections, local elections are always happening. And they uh lead a drive towards short termism. Not you're not going to do anything long",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 663.73,
@@ -11845,7 +11773,15 @@
           "startTime": 664.53,
           "endTime": 664.85,
           "confidence": 0.9977
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 664.85,
+      "endTime": 672.93,
+      "text": "are actually all the time because state elections, local elections are always happening. And they uh lead a drive towards short termism. Not you're not going to do anything long",
+      "words": [
         {
           "word": "are",
           "startTime": 664.85,
@@ -19413,8 +19349,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1101.46,
-      "endTime": 1147.21,
-      "text": "coercive creature. And I want to double click on a couple of aspects of this. One is the important aspect of voluntary action. Why is that important? Because every voluntary interaction between two people creates what John Strussel calls a double thank you moment. Both people are better off. It is a positive sum game. So in that world where firms are working with other firms and customers and contractors, literally every voluntary action is leading to a double thank you moment and the value in society going up. that is how societies prosper and economies grow. And you do not have that in the State because there is no need for you to make somebody happy, to give him a reason to say thank you. You take what you want as you want, and uh you know, that doesn't do uh much for society just the way that is fundamentally set up. And the second point",
+      "endTime": 1235.25,
+      "text": "coercive creature. And I want to double click on a couple of aspects of this. One is the important aspect of voluntary action. Why is that important? Because every voluntary interaction between two people creates what John Strussel calls a double thank you moment. Both people are better off. It is a positive sum game. So in that world where firms are working with other firms and customers and contractors, literally every voluntary action is leading to a double thank you moment and the value in society going up. that is how societies prosper and economies grow. And you do not have that in the State because there is no need for you to make somebody happy, to give him a reason to say thank you. You take what you want as you want, and uh you know, that doesn't do uh much for society just the way that is fundamentally set up. And the second point is that I think of Uh, you know, and this is a loose metaphor and I'm thinking aloud, so forgive me if it is uh um not precise enough. But I think of what is happening in society between firms and customers as a conversation. You are a firm, I am a firm. I'm going to the customer and saying I will serve you in this way. You go to him and say, You know what, I can serve you better than him. Come to me. And then the customer goes to you. And then within this firm, within me, one cell says to another cell, one employee says to another cell, You know what? Let's tweak our design. Let's do this instead of that. And you are driven by self interest because you're using market share to kind of do that. So what's happening in the marketplace is a beautiful series of conversations, a lot of it carried out through crisis. A beautiful series of conversations that helps everybody serve others better, understand themselves better, self actualize better, et cetera, et cetera. And in the state you don't have that. There is no need to have a conversation. You got, you know, whatever you you have the monopoly on violence, you have the monopoly on money, whatever you want, that's a game in town, and that changes your incentives. So the same person in t at the head of a firm will be operating to very different incentives at the head of government. And as Lord Acton said, power corrupts, absolute power corrupts, absolutely. So Ajay, what's the fourth point, the fourth way in which firms and countries are different?",
       "words": [
         {
           "word": "coercive",
@@ -20357,15 +20293,7 @@
           "startTime": 1146.73,
           "endTime": 1147.21,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1147.21,
-      "endTime": 1149.63,
-      "text": "is that I think of",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 1147.21,
@@ -20395,15 +20323,7 @@
           "startTime": 1149.13,
           "endTime": 1149.63,
           "confidence": 0.9847
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1149.93,
-      "endTime": 1235.25,
-      "text": "Uh, you know, and this is a loose metaphor and I'm thinking aloud, so forgive me if it is uh um not precise enough. But I think of what is happening in society between firms and customers as a conversation. You are a firm, I am a firm. I'm going to the customer and saying I will serve you in this way. You go to him and say, You know what, I can serve you better than him. Come to me. And then the customer goes to you. And then within this firm, within me, one cell says to another cell, one employee says to another cell, You know what? Let's tweak our design. Let's do this instead of that. And you are driven by self interest because you're using market share to kind of do that. So what's happening in the marketplace is a beautiful series of conversations, a lot of it carried out through crisis. A beautiful series of conversations that helps everybody serve others better, understand themselves better, self actualize better, et cetera, et cetera. And in the state you don't have that. There is no need to have a conversation. You got, you know, whatever you you have the monopoly on violence, you have the monopoly on money, whatever you want, that's a game in town, and that changes your incentives. So the same person in t at the head of a firm will be operating to very different incentives at the head of government. And as Lord Acton said, power corrupts, absolute power corrupts, absolutely. So Ajay, what's the fourth point, the fourth way in which firms and countries are different?",
-      "words": [
+        },
         {
           "word": "Uh,",
           "startTime": 1149.93,
@@ -22065,8 +21985,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1235.25,
-      "endTime": 1286.97,
-      "text": "The fourth thing we should think about is greater complexity. You have already talked about it, and you know you you're fundamentally on track. The richness and complexity of society and of government are just at a different level of uh challenge compared to the easy, simple thing called a firm. A large firm. is an easy organization compared to the size of government. Government is spread across many, many departments, many, many offices, spread all over the country. Each one is doing something, they often have different objectives and they are po all pulling and pushing in their own way. The level of complexity of government is just unimaginable. It's a completely different level of complexity compared to anything we've seen at firms. I have a little bit of knowledge and exposure",
+      "endTime": 1326.06,
+      "text": "The fourth thing we should think about is greater complexity. You have already talked about it, and you know you you're fundamentally on track. The richness and complexity of society and of government are just at a different level of uh challenge compared to the easy, simple thing called a firm. A large firm. is an easy organization compared to the size of government. Government is spread across many, many departments, many, many offices, spread all over the country. Each one is doing something, they often have different objectives and they are po all pulling and pushing in their own way. The level of complexity of government is just unimaginable. It's a completely different level of complexity compared to anything we've seen at firms. I have a little bit of knowledge and exposure to both worlds. And so I I know this vivid sense that in firms I sort of feel that this is nice, this is clean, this is solvable, we can do this. Whereas with government, it is like, my God, this is too hard. This is impossibly complicated. And you have to really scale back. your ambition of even measuring and understanding leave alone meaningfully influencing and changing the nature of government. Just the numbers, the magnitudes, the richness of the various parts of government, all interacting with each other and interacting with the society. Firms are easy in comparison.",
       "words": [
         {
           "word": "The",
@@ -22865,15 +22785,7 @@
           "startTime": 1286.49,
           "endTime": 1286.97,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1286.97,
-      "endTime": 1288.49,
-      "text": "to both worlds.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1286.97,
@@ -22891,15 +22803,7 @@
           "startTime": 1287.45,
           "endTime": 1288.49,
           "confidence": 0.9426
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1288.49,
-      "endTime": 1326.06,
-      "text": "And so I I know this vivid sense that in firms I sort of feel that this is nice, this is clean, this is solvable, we can do this. Whereas with government, it is like, my God, this is too hard. This is impossibly complicated. And you have to really scale back. your ambition of even measuring and understanding leave alone meaningfully influencing and changing the nature of government. Just the numbers, the magnitudes, the richness of the various parts of government, all interacting with each other and interacting with the society. Firms are easy in comparison.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1288.49,
@@ -25829,8 +25733,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1437.73,
-      "endTime": 1476.65,
-      "text": "This is deeply related to the phrase bias for action. Okay, this is a very popular phrase in the startup or venture capital or private equity community. And I've grown to be a little uncomfortable with the phrase. Not even in the world of business. Does it make to shoot does it make sense to shoot first and ask questions afterwards. Okay. Thinking is precious, is always precious. And uh I think great firms are born out of a great deal of thinking and effort and like this quick and dirty that we'll run to market and we'll get something out. It's just a superficial approach, it doesn't get you very far. In the world of government and public policy, it is",
+      "endTime": 1549.1,
+      "text": "This is deeply related to the phrase bias for action. Okay, this is a very popular phrase in the startup or venture capital or private equity community. And I've grown to be a little uncomfortable with the phrase. Not even in the world of business. Does it make to shoot does it make sense to shoot first and ask questions afterwards. Okay. Thinking is precious, is always precious. And uh I think great firms are born out of a great deal of thinking and effort and like this quick and dirty that we'll run to market and we'll get something out. It's just a superficial approach, it doesn't get you very far. In the world of government and public policy, it is truly dangerous. Governments are complex creatures. You have to think what's the market failure, what is the lowest cost intervention, how will I reshape the incentives of the people in a way that will address the market failure, you know, not try to like give people a subsidy if you'll hire more people. Okay, so that's that's like you're not solving the problem and it's not going to work, it's not going to deliver any meaningful results. And uh it it government is faced with the problem of public choice theory that your own organization is uh built on sand because the people in the organization are actually not working for the uh stated institutional objectives of the organization. So to find the path to action is very difficult. To find a path to an important action that will Check the boxes that will be grounded in evidence that will be negotiated in the political economy. These are long time horizons. Nothing meaningful gets done quickly. And there are people who want that rush of quick and it is often considered a private sector orientation and I think it's not a very useful way",
       "words": [
         {
           "word": "This",
@@ -26563,15 +26467,7 @@
           "startTime": 1476.49,
           "endTime": 1476.65,
           "confidence": 0.9496
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1476.65,
-      "endTime": 1478.17,
-      "text": "truly dangerous.",
-      "words": [
+        },
         {
           "word": "truly",
           "startTime": 1476.65,
@@ -26583,15 +26479,7 @@
           "startTime": 1476.97,
           "endTime": 1478.17,
           "confidence": 0.9915
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1478.17,
-      "endTime": 1522.13,
-      "text": "Governments are complex creatures. You have to think what's the market failure, what is the lowest cost intervention, how will I reshape the incentives of the people in a way that will address the market failure, you know, not try to like give people a subsidy if you'll hire more people. Okay, so that's that's like you're not solving the problem and it's not going to work, it's not going to deliver any meaningful results. And uh it it government is faced with the problem of public choice theory that your own organization is uh built on sand because the people in the organization are actually not working for the uh stated institutional objectives of the organization. So to find the path",
-      "words": [
+        },
         {
           "word": "Governments",
           "startTime": 1478.17,
@@ -27323,15 +27211,7 @@
           "startTime": 1521.49,
           "endTime": 1522.13,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1522.13,
-      "endTime": 1523.65,
-      "text": "to action",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1522.13,
@@ -27343,15 +27223,7 @@
           "startTime": 1522.77,
           "endTime": 1523.65,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1523.65,
-      "endTime": 1551.93,
-      "text": "is very difficult. To find a path to an important action that will Check the boxes that will be grounded in evidence that will be negotiated in the political economy. These are long time horizons. Nothing meaningful gets done quickly. And there are people who want that rush of quick and it is often considered a private sector orientation and I think it's not a very useful way be a useful part of public life.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 1523.65,
@@ -27759,7 +27631,15 @@
           "startTime": 1548.6,
           "endTime": 1549.1,
           "confidence": 0.9985
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1549.85,
+      "endTime": 1614.25,
+      "text": "be a useful part of public life. We've had this discussion before, and this is a fundamental way I agree with you in which you in which you can't take your thinking from a world of firms to a world of the state. But where I'll disagree with you is that in the world of firms, it's bias for action is absolutely necessary. I can't disagree more strongly with that. All the lessons that I have learned from uh you know watching people like you know reading the essays of Paul Graham or seeing what has happened in the startup world in the last 15 years. Or you know, pretty much all the great companies of today started out doing one thing. and then iterating and pivoting and doing something else and doing and it is learning by doing. So I think where we are both on agreement is that when you are seeing like a state, no bias for action. When you're seeing like an individual Bias for action. And I think we just disagreed on seeing like a firm should there be a bias for action. I understand the role of deep thought. We should always ask why we should always go to first principles. But nevertheless, I would say that a bias for action is essential because no firm emerges pristine out of a plan that was made in a small",
+      "words": [
         {
           "word": "be",
           "startTime": 1549.85,
@@ -27801,15 +27681,7 @@
           "startTime": 1551.21,
           "endTime": 1551.93,
           "confidence": 0.9082
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1551.93,
-      "endTime": 1614.25,
-      "text": "We've had this discussion before, and this is a fundamental way I agree with you in which you in which you can't take your thinking from a world of firms to a world of the state. But where I'll disagree with you is that in the world of firms, it's bias for action is absolutely necessary. I can't disagree more strongly with that. All the lessons that I have learned from uh you know watching people like you know reading the essays of Paul Graham or seeing what has happened in the startup world in the last 15 years. Or you know, pretty much all the great companies of today started out doing one thing. and then iterating and pivoting and doing something else and doing and it is learning by doing. So I think where we are both on agreement is that when you are seeing like a state, no bias for action. When you're seeing like an individual Bias for action. And I think we just disagreed on seeing like a firm should there be a bias for action. I understand the role of deep thought. We should always ask why we should always go to first principles. But nevertheless, I would say that a bias for action is essential because no firm emerges pristine out of a plan that was made in a small",
-      "words": [
+        },
         {
           "word": "We've",
           "startTime": 1551.93,
@@ -29177,8 +29049,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1614.25,
-      "endTime": 1656.52,
-      "text": "free change. We're digressing from the main body of this episode, but it's an interesting and important discussion. Let's play this game of feedback loops. It is so great. A firm sees its stock price, they see their market share, they see their profits. And so for a month or two, they know that they have lost share. Okay, they have lost profitability. Something is wrong. Now, do you want a one hour meeting where a bunch of people argue around a table and choose an action and go uh help a leather in chasing that action? Or do you want to be more thinking about it? Do you want to think about only this two month problem? Or is this two month problem a reflection of deeper difficulties in the very long term? approach of the firm and there are deeper changes that need to be executed. So I think these are important questions. No, I'm saying",
+      "endTime": 1656.12,
+      "text": "free change. We're digressing from the main body of this episode, but it's an interesting and important discussion. Let's play this game of feedback loops. It is so great. A firm sees its stock price, they see their market share, they see their profits. And so for a month or two, they know that they have lost share. Okay, they have lost profitability. Something is wrong. Now, do you want a one hour meeting where a bunch of people argue around a table and choose an action and go uh help a leather in chasing that action? Or do you want to be more thinking about it? Do you want to think about only this two month problem? Or is this two month problem a reflection of deeper difficulties in the very long term? approach of the firm and there are deeper changes that need to be executed. So I think these are important questions. No,",
       "words": [
         {
           "word": "free",
@@ -30115,7 +29987,15 @@
           "startTime": 1655.96,
           "endTime": 1656.12,
           "confidence": 0.7117
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1656.12,
+      "endTime": 1681.02,
+      "text": "I'm saying it's uh one, it's not a binary. It's not either or you can do the thinking and and the the the great uh business minds of today like a Jeff Bezos definitely had a bias for action, but definitely was also a deep thinker, one of the great thinkers of our times. So um you know I think that you can do both. What you're warning against is shorttermism, where you react. You're always reflexively reacting to something or the other. No you don't need to do that. But you need to actual flavor",
+      "words": [
         {
           "word": "I'm",
           "startTime": 1656.12,
@@ -30127,15 +30007,7 @@
           "startTime": 1656.28,
           "endTime": 1656.52,
           "confidence": 0.9118
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1656.52,
-      "endTime": 1679.48,
-      "text": "it's uh one, it's not a binary. It's not either or you can do the thinking and and the the the great uh business minds of today like a Jeff Bezos definitely had a bias for action, but definitely was also a deep thinker, one of the great thinkers of our times. So um you know I think that you can do both. What you're warning against is shorttermism, where you react. You're always reflexively reacting to something or the other. No you don't need to do that. But you need",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 1656.52,
@@ -30681,15 +30553,7 @@
           "startTime": 1679.4,
           "endTime": 1679.48,
           "confidence": 0.9578
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1679.48,
-      "endTime": 1699.62,
-      "text": "to actual flavor that uh you know just push all that aside, we gotta get along with this. And five people will argue, they'll typically do a political argument of what is in whose interest and some decision will be made and now we'll go and roll it out. And that is just, you know, not an i exciting way to progress even in the world of private",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1679.48,
@@ -30707,7 +30571,15 @@
           "startTime": 1680.52,
           "endTime": 1681.02,
           "confidence": 0.9325
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1681.86,
+      "endTime": 1699.62,
+      "text": "that uh you know just push all that aside, we gotta get along with this. And five people will argue, they'll typically do a political argument of what is in whose interest and some decision will be made and now we'll go and roll it out. And that is just, you know, not an i exciting way to progress even in the world of private",
+      "words": [
         {
           "word": "that",
           "startTime": 1681.86,
@@ -39107,8 +38979,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2117.94,
-      "endTime": 2221.38,
-      "text": "joint. There's a lot of buzz around like a China model. Uh there is nothing of Fortune 500 company CEO wants to do more than to fly into a third world country, shake hands with a strong man, and make a deal. Okay, and there is just a lot of attraction for this. And people seem to think that's a nice, strong, decisive government. We are open for business. And this should make us embarrassed when people say things like this. But many people in the private sector revere this kind of behavior and I think that you know we should shift gears and understand. And exactly as you said, there's actually a gentle segue of organizational complexity. If you're a small firm, fine, you be a hustler, you know, you go from morning to night in different coffee shops. You're a three man firm, you keep on making one deal after another, fine. But as you become a large firm, you will inevitably have to start developing more of policies and manuals and rules and you know there is not unlimited give for every conversation to be a deal making in an unrestricted way. And then you become a state. The state is the most complex of all organizations. The only reasonable way is to live by rules and not deals. The state is bound by Article 14. If you're a constitutional democracy, you are obliged to do equal treatment. The state cannot give me a different deal and give you a different deal. So again, you get rules and not deals. Finally, the effectiveness of a state is entirely about reshaping incentives. You don't want a state to be muscular and come into the economy and, you know, make steel or make a payment system. I mean, that's just not the business of a state. The job of the state is to establish rules and then private people will flourish. Private people will build firms and organizations and complexity in the environment of a stable and predictable set of rules. And I would say private",
+      "endTime": 2219.83,
+      "text": "joint. There's a lot of buzz around like a China model. Uh there is nothing of Fortune 500 company CEO wants to do more than to fly into a third world country, shake hands with a strong man, and make a deal. Okay, and there is just a lot of attraction for this. And people seem to think that's a nice, strong, decisive government. We are open for business. And this should make us embarrassed when people say things like this. But many people in the private sector revere this kind of behavior and I think that you know we should shift gears and understand. And exactly as you said, there's actually a gentle segue of organizational complexity. If you're a small firm, fine, you be a hustler, you know, you go from morning to night in different coffee shops. You're a three man firm, you keep on making one deal after another, fine. But as you become a large firm, you will inevitably have to start developing more of policies and manuals and rules and you know there is not unlimited give for every conversation to be a deal making in an unrestricted way. And then you become a state. The state is the most complex of all organizations. The only reasonable way is to live by rules and not deals. The state is bound by Article 14. If you're a constitutional democracy, you are obliged to do equal treatment. The state cannot give me a different deal and give you a different deal. So again, you get rules and not deals. Finally, the effectiveness of a state is entirely about reshaping incentives. You don't want a state to be muscular and come into the economy and, you know, make steel or make a payment system. I mean, that's just not the business of a state. The job of the state is to establish rules and then private people will flourish. Private people will build firms and organizations and complexity in the environment of a stable and predictable set of rules.",
       "words": [
         {
           "word": "joint.",
@@ -41161,7 +41033,15 @@
           "startTime": 2219.33,
           "endTime": 2219.83,
           "confidence": 0.9917
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2220.34,
+      "endTime": 2234.9,
+      "text": "And I would say private people will flourish and society will flourish. And I'm saying society will flourish because people often hear the word private and they've been, you know, conditioned in ways that private means bad, evil capitalist people. But it's us, it's you and me, it's everyone watching this.",
+      "words": [
         {
           "word": "And",
           "startTime": 2220.34,
@@ -41191,15 +41071,7 @@
           "startTime": 2221.06,
           "endTime": 2221.38,
           "confidence": 0.9963
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2221.38,
-      "endTime": 2234.9,
-      "text": "people will flourish and society will flourish. And I'm saying society will flourish because people often hear the word private and they've been, you know, conditioned in ways that private means bad, evil capitalist people. But it's us, it's you and me, it's everyone watching this.",
-      "words": [
+        },
         {
           "word": "people",
           "startTime": 2221.38,
@@ -51049,8 +50921,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2765.56,
-      "endTime": 2780.34,
-      "text": "How many minutes? Very close. How many minutes round it up. Twelve minutes, fourteen minutes. Okay, fifteen minutes is where you should round it up. Fifteen minutes of fame. So what is X?",
+      "endTime": 2798.76,
+      "text": "How many minutes? Very close. How many minutes round it up. Twelve minutes, fourteen minutes. Okay, fifteen minutes is where you should round it up. Fifteen minutes of fame. So what is X? Andy Warhol's conception. Warhol is X. So Warhol is a unit of hype, and uh uh it's fifteen minutes, and Warhol once said that everyone in the world will be famous for fifteen minutes, which is why we decided to be a Pandra minute versus so we can be famous for a little longer.",
       "words": [
         {
           "word": "How",
@@ -51249,15 +51121,7 @@
           "startTime": 2779.22,
           "endTime": 2780.34,
           "confidence": 0.7901
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2780.34,
-      "endTime": 2782.02,
-      "text": "Andy Warhol's conception.",
-      "words": [
+        },
         {
           "word": "Andy",
           "startTime": 2780.34,
@@ -51275,15 +51139,7 @@
           "startTime": 2781.46,
           "endTime": 2782.02,
           "confidence": 0.9371
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2782.02,
-      "endTime": 2798.76,
-      "text": "Warhol is X. So Warhol is a unit of hype, and uh uh it's fifteen minutes, and Warhol once said that everyone in the world will be famous for fifteen minutes, which is why we decided to be a Pandra minute versus so we can be famous for a little longer.",
-      "words": [
+        },
         {
           "word": "Warhol",
           "startTime": 2782.02,
@@ -51595,8 +51451,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2800.07,
-      "endTime": 2802.79,
-      "text": "On that same note, Amit, can I challenge you?",
+      "endTime": 2810.77,
+      "text": "On that same note, Amit, can I challenge you? Usk. No no. What is a millihelen?",
       "words": [
         {
           "word": "On",
@@ -51651,15 +51507,7 @@
           "startTime": 2802.07,
           "endTime": 2802.79,
           "confidence": 0.9078
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2802.79,
-      "endTime": 2807.65,
-      "text": "Usk. No no.",
-      "words": [
+        },
         {
           "word": "Usk.",
           "startTime": 2802.79,
@@ -51677,15 +51525,7 @@
           "startTime": 2806.15,
           "endTime": 2807.65,
           "confidence": 0.5748
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2808.47,
-      "endTime": 2810.77,
-      "text": "What is a millihelen?",
-      "words": [
+        },
         {
           "word": "What",
           "startTime": 2808.47,
@@ -51715,8 +51555,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2811.11,
-      "endTime": 2815.35,
-      "text": "What is a millihelen? Helen could make a thousand ship",
+      "endTime": 2817.49,
+      "text": "What is a millihelen? Helen could make a thousand ship sail, something like that.",
       "words": [
         {
           "word": "What",
@@ -51777,15 +51617,7 @@
           "startTime": 2815.03,
           "endTime": 2815.35,
           "confidence": 0.955
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2815.35,
-      "endTime": 2823.81,
-      "text": "sail, something like that. The beauty that launched a thousand ships. So millihelen is the beauty that will launch one ship.",
-      "words": [
+        },
         {
           "word": "sail,",
           "startTime": 2815.35,
@@ -51809,7 +51641,15 @@
           "startTime": 2815.99,
           "endTime": 2817.49,
           "confidence": 0.7482
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2818.23,
+      "endTime": 2823.81,
+      "text": "The beauty that launched a thousand ships. So millihelen is the beauty that will launch one ship.",
+      "words": [
         {
           "word": "The",
           "startTime": 2818.23,
@@ -67267,8 +67107,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3630.26,
-      "endTime": 3647.67,
-      "text": "It's by Bogdanich and Forsyth. I'm being cautious in recommending it because I feel the book is a bit mean, it's a bit one-sided. But it does give us insights into the difficulties of you know bringing a consulting firm and a consulting approach into",
+      "endTime": 3646.23,
+      "text": "It's by Bogdanich and Forsyth. I'm being cautious in recommending it because I feel the book is a bit mean, it's a bit one-sided. But it does give us insights into the difficulties of you know bringing a consulting firm and a consulting",
       "words": [
         {
           "word": "It's",
@@ -67527,7 +67367,15 @@
           "startTime": 3645.51,
           "endTime": 3646.23,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3646.23,
+      "endTime": 3898.37,
+      "text": "approach into complex problems of public policy. So I want to recommend this beautiful book I uh read while I was on a flight from here to uh DC, where I recorded a bunch of episodes. And this is a book by David Brooks called How to Know a Person. And it's a beautiful book. It really resonated with me because a lot of the stuff in that book is stuff that I have been talking about and we have been discussing and stuff that I learned from doing my long form podcasts. So there is a lot about the power of long conversations, the power of learning to listen, the power of uh sort of showing a genuine interest in the other person, having an intentionality in building friendships and so on and so forth. And part of the reason I resonated with it is that Brooks himself came to it uh, you know, rather late in life. uh that uh I think he describes that he first went to Oprah maybe seven years ago on the Oprah show and did that show and then he went back on Oprah after six, seven years and Oprah said, My God, how much you've changed. So it's a change that kind of happened in middle age and it's a change that was driven both by self awareness and the awareness of other people that self awareness gives you. So uh it's a beautiful book, really uh resonant. And th there's a particular passage in me and I'll just mention it. You know, in the past on this show I mentioned Alice Monroe's short stories and what she means to me. And there was um this recent news that broke about how her daughter from her first husband said that her second husband uh had been uh abusing her when she was nine years old and all of that, and Alice Munro turned a blind eye and didn't do anything. And for people who love Munro's work, um i it you know, complicated emotions kind of came about. And some people just rush to judgment and all of that. And but the world is really complicated. So when I heard it I didn't know what to make of it. Now I separate art from artists. They're different. It's not a a big deal for me to do that. So and everybody will, you know, do it in you know, respond to it in their personal way. There are some people I will never read because I know too much about them, like Pablo Naruda. But with Monroe, her art is what it is, and yeah, she did this. But how does one think about it? And there is something in Brooke's book which kind of spoke to that. It is not about this, obviously the book was written long ago. But he refers to another great book I've recommended on the show, Fears Attachments by Vivian Gonick. And in fierce attachments, there is this constant tussle between Gonic and her mother, and Gonic keeps writing about her mother and her and the tussle and whatever. And you have two people almost living at cross purposes, understanding each other completely, and yet not understanding each other at all. And it is deeply complex, and you're like, Oh my God. And Brooks talks about that relationship as a way of demonstrating the complexity of human relationships and human beings and why we should not necessarily always jump to the jump to judgment. That this function is almost a natural quality of many relationships because Everybody's messed up in different ways, right? And I read that and I just like what happened was before I got on the flight, our friend Shuti Raj Gopaland kind of messaged me. She's an Alice Munro fan and she was like, What's going on? And she was disturbed by it, obviously. And I was also disturbed by it and I was thinking about it. And then I decided on the flight that I'm not going to pass judgment on Monroe right now. And it doesn't really matter because she's gone and it's not like I'm having dinner with her. So it doesn't matter one way or the other. But um while I will continue loving her work. I am going to withhold judgment on this entirely and not think about it. Because the world is too complex. We know one story. We don't know the other story. We don't know the other stories. It is incredibly messed up. Um, you know, uh Munro clearly did something that was, you know, in her minimizing her daughter's grief and uh saying that I can't enj endanger this relationship now, did something that was clearly wrong at many levels. But we don't know what's going on inside her head or inside the heads of all the people concerned. Uh, so fierce attachments is also uh, you know, therefore a recommendation I've recommended it before. But I think, you know, books like this and thinkers like Brooks and you know, his columns, all his other books, uh are important books for us to read because they make us think about our own lives, think about what's happening in the world a little better. So it's it's always that's why reading is such a joy that, you know, the full tapestry of life unfolds upon you.",
+      "words": [
         {
           "word": "approach",
           "startTime": 3646.23,
@@ -67539,15 +67387,7 @@
           "startTime": 3647.11,
           "endTime": 3647.67,
           "confidence": 0.9505
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3647.67,
-      "endTime": 3898.37,
-      "text": "complex problems of public policy. So I want to recommend this beautiful book I uh read while I was on a flight from here to uh DC, where I recorded a bunch of episodes. And this is a book by David Brooks called How to Know a Person. And it's a beautiful book. It really resonated with me because a lot of the stuff in that book is stuff that I have been talking about and we have been discussing and stuff that I learned from doing my long form podcasts. So there is a lot about the power of long conversations, the power of learning to listen, the power of uh sort of showing a genuine interest in the other person, having an intentionality in building friendships and so on and so forth. And part of the reason I resonated with it is that Brooks himself came to it uh, you know, rather late in life. uh that uh I think he describes that he first went to Oprah maybe seven years ago on the Oprah show and did that show and then he went back on Oprah after six, seven years and Oprah said, My God, how much you've changed. So it's a change that kind of happened in middle age and it's a change that was driven both by self awareness and the awareness of other people that self awareness gives you. So uh it's a beautiful book, really uh resonant. And th there's a particular passage in me and I'll just mention it. You know, in the past on this show I mentioned Alice Monroe's short stories and what she means to me. And there was um this recent news that broke about how her daughter from her first husband said that her second husband uh had been uh abusing her when she was nine years old and all of that, and Alice Munro turned a blind eye and didn't do anything. And for people who love Munro's work, um i it you know, complicated emotions kind of came about. And some people just rush to judgment and all of that. And but the world is really complicated. So when I heard it I didn't know what to make of it. Now I separate art from artists. They're different. It's not a a big deal for me to do that. So and everybody will, you know, do it in you know, respond to it in their personal way. There are some people I will never read because I know too much about them, like Pablo Naruda. But with Monroe, her art is what it is, and yeah, she did this. But how does one think about it? And there is something in Brooke's book which kind of spoke to that. It is not about this, obviously the book was written long ago. But he refers to another great book I've recommended on the show, Fears Attachments by Vivian Gonick. And in fierce attachments, there is this constant tussle between Gonic and her mother, and Gonic keeps writing about her mother and her and the tussle and whatever. And you have two people almost living at cross purposes, understanding each other completely, and yet not understanding each other at all. And it is deeply complex, and you're like, Oh my God. And Brooks talks about that relationship as a way of demonstrating the complexity of human relationships and human beings and why we should not necessarily always jump to the jump to judgment. That this function is almost a natural quality of many relationships because Everybody's messed up in different ways, right? And I read that and I just like what happened was before I got on the flight, our friend Shuti Raj Gopaland kind of messaged me. She's an Alice Munro fan and she was like, What's going on? And she was disturbed by it, obviously. And I was also disturbed by it and I was thinking about it. And then I decided on the flight that I'm not going to pass judgment on Monroe right now. And it doesn't really matter because she's gone and it's not like I'm having dinner with her. So it doesn't matter one way or the other. But um while I will continue loving her work. I am going to withhold judgment on this entirely and not think about it. Because the world is too complex. We know one story. We don't know the other story. We don't know the other stories. It is incredibly messed up. Um, you know, uh Munro clearly did something that was, you know, in her minimizing her daughter's grief and uh saying that I can't enj endanger this relationship now, did something that was clearly wrong at many levels. But we don't know what's going on inside her head or inside the heads of all the people concerned. Uh, so fierce attachments is also uh, you know, therefore a recommendation I've recommended it before. But I think, you know, books like this and thinkers like Brooks and you know, his columns, all his other books, uh are important books for us to read because they make us think about our own lives, think about what's happening in the world a little better. So it's it's always that's why reading is such a joy that, you know, the full tapestry of life unfolds upon you.",
-      "words": [
+        },
         {
           "word": "complex",
           "startTime": 3647.67,

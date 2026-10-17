@@ -5,7 +5,7 @@
     "durationSeconds": 3336,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -15,7 +15,7 @@
   },
   "segments": [
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 15.89,
       "endTime": 17.01,
       "text": "Welcome to",
@@ -89,8 +89,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 22.61,
-      "endTime": 26.61,
-      "text": "I mean, why do we keep on fumbling like this? Were you supposed to go first, or was I supposed to",
+      "endTime": 27.09,
+      "text": "I mean, why do we keep on fumbling like this? Were you supposed to go first, or was I supposed to go first?",
       "words": [
         {
           "word": "I",
@@ -217,15 +217,7 @@
           "startTime": 26.53,
           "endTime": 26.61,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 26.61,
-      "endTime": 35.01,
-      "text": "go first? So uh gentle listener, both of us wanted the other one to go first, and we ended up kind of fighting over it. Not really a fight, but it's a good question. Why do we keep fighting?",
-      "words": [
+        },
         {
           "word": "go",
           "startTime": 26.61,
@@ -237,7 +229,15 @@
           "startTime": 26.77,
           "endTime": 27.09,
           "confidence": 0.9163
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 27.09,
+      "endTime": 168.42,
+      "text": "So uh gentle listener, both of us wanted the other one to go first, and we ended up kind of fighting over it. Not really a fight, but it's a good question. Why do we keep fighting? And why do we fight? Why do we fight? And it's actually something I want to uh I I want to address a part of it in this episode. Now. Here is a trope I go on and on about that the world is deeply complex and you we cannot possibly make sense of all of it. So w the way of making sense of it is we tell simple stories about the world to ourselves and to each other, and that's how we make sense of it. Stories help us make sense of the world. Now the thing is here it is inevitable that if we are telling stories, one, our simple stories will often not coordinate with each other, and therefore we will fight. because uh you know, uh your story doesn't match my story and eh, the world is like this, the world is like that. While the world could be both or neither. And the second thing to note is sometimes both our simple stories are wrong. And they conflict with reality itself. And the reason for this is that we were hardwired. Our instincts were shaped in prehistoric times when the world looked very different. We were in small tribes, hunter-gatherers, et cetera, et cetera. The world was very different, and there were a number of instincts that we internalized, ways of telling stories about the world, which were useful, but not entirely correct. And today when we live in a much more complex world in a much more complex environment, They don't work for us anymore. They don't capture the truth, but they remain with us as instincts. And those are what you know people call cognitive biases or fallacies. So today's episode, uh, I want to talk about five such common categories of fallacies that I find myself making all the time instinctively, and then I have to correct myself that, hey, boss, no, you're thinking about it wrong. Just sink a little deeper, take a step back. But it's natural to do that because all our brains are wired like that. So inspired by this marvelous book you'll see now on the screen, Economic Facts and Fallacies by Thomas Saver, one of my intellectual hero is a great thinker of uh the last century and this one, he's still going strong uh at ninety plus. So, you know, this book lays out in its opening chapters five not just fallacies, but sort of foundational fallacies. A lot of other fallacies emerge from them. And I want to talk about it because I think to be better human beings we need to understand our own frailties in terms of all these ways in which we are bired. And it's not that by understanding these we will necessarily stop fighting, but I think it'll make our thinking clearer and it'll make us less humble about the nature of the",
+      "words": [
         {
           "word": "So",
           "startTime": 27.09,
@@ -459,15 +459,7 @@
           "startTime": 34.37,
           "endTime": 35.01,
           "confidence": 0.9191
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 35.01,
-      "endTime": 36.53,
-      "text": "And why do we fight?",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 35.01,
@@ -497,15 +489,7 @@
           "startTime": 36.13,
           "endTime": 36.53,
           "confidence": 0.9347
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 36.53,
-      "endTime": 168.42,
-      "text": "Why do we fight? And it's actually something I want to uh I I want to address a part of it in this episode. Now. Here is a trope I go on and on about that the world is deeply complex and you we cannot possibly make sense of all of it. So w the way of making sense of it is we tell simple stories about the world to ourselves and to each other, and that's how we make sense of it. Stories help us make sense of the world. Now the thing is here it is inevitable that if we are telling stories, one, our simple stories will often not coordinate with each other, and therefore we will fight. because uh you know, uh your story doesn't match my story and eh, the world is like this, the world is like that. While the world could be both or neither. And the second thing to note is sometimes both our simple stories are wrong. And they conflict with reality itself. And the reason for this is that we were hardwired. Our instincts were shaped in prehistoric times when the world looked very different. We were in small tribes, hunter-gatherers, et cetera, et cetera. The world was very different, and there were a number of instincts that we internalized, ways of telling stories about the world, which were useful, but not entirely correct. And today when we live in a much more complex world in a much more complex environment, They don't work for us anymore. They don't capture the truth, but they remain with us as instincts. And those are what you know people call cognitive biases or fallacies. So today's episode, uh, I want to talk about five such common categories of fallacies that I find myself making all the time instinctively, and then I have to correct myself that, hey, boss, no, you're thinking about it wrong. Just sink a little deeper, take a step back. But it's natural to do that because all our brains are wired like that. So inspired by this marvelous book you'll see now on the screen, Economic Facts and Fallacies by Thomas Saver, one of my intellectual hero is a great thinker of uh the last century and this one, he's still going strong uh at ninety plus. So, you know, this book lays out in its opening chapters five not just fallacies, but sort of foundational fallacies. A lot of other fallacies emerge from them. And I want to talk about it because I think to be better human beings we need to understand our own frailties in terms of all these ways in which we are bired. And it's not that by understanding these we will necessarily stop fighting, but I think it'll make our thinking clearer and it'll make us less humble about the nature of the",
-      "words": [
+        },
         {
           "word": "Why",
           "startTime": 36.53,
@@ -5385,8 +5369,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 300.82,
-      "endTime": 613.3,
-      "text": "To be honest, these are not my big ideas. These are big ideas that influence me, and these are the ideas of other great thinkers. And I chose to, you know, look at uh Thomas Savil's book, which I mentioned as uh providing a framework for this. And the first of the fallacies involves hunting. Ask how it involves hunting. How does your first fallacy involve hunting? I love it how you follow my instructions and ask me all the questions I want. It involves hunting because there's the thing. We are in prehistoric times. Our tribe went out, even I are in the same tribe, uh, perhaps competing to be future alpha male. But anyway, we go out with a tribe, we hunt, we kill a deer, the deer is right there, and gradually bits of meat are being taken away, and there's a particularly good chunk of flesh, which I really want because you know I like protein. So I really want that chunk, but you want it too. Right. And the thing is, if I take that chunk of meat, you can't have it, and if you take it, I can't have it. The more I take, the lesser is for you. And it is true in that context of the deer we just hunted, right? But and therefore we get this instinct which is which I would now call, which Saval calls a zero sum fallacy. Right? We think we are playing a zero sum game, that for me to win, you have to lose. You know, for the rich to get richer, the poorer must get poorer. That's an instinctive kind of thought. Now, what we've discussed many times before here, and b both of us have written hundreds of columns about and all of that, is that that is not how the world works. The world works in positive some ways. And there's a great illustration of that. We've spoken about even on everything is everything, but I'm going to say it again because I love it so much. This comes from John Strossel, one of my favorite columnists ever. And Strossel gives an example of what happens when you go to a coffee shop. To get a cup of coffee, right? Now don't get all snubbish on me and say I make the best coffee at home. I don't go to your Starbucks. But no. Let's say you go to Starbucks, you order coffee, the coffee is handed to you, you hand the money over, you say thank you, the other person says thank you. And Strossels calls this the double thank you moment, right? What does it illustrate? It illustrates that you made a voluntary transaction and both of you are better off. And the truth is all voluntary transactions leave both people better off. It is not negative sum, it is positive sum. We both of you benefit. Now we had a great earlier episode about the value of freedom, which in a sense was also an economic history piece. And there we showed this particular chart that you'll show on the screen now. This is a growth in world GDP. Flat for many centuries suddenly shoots up. Why does it shoot up? Because the number of double thank you moments go up. Because this is you have the industrial revolution happening, you have more people to transact with because of travel. Initially with railways and then across the seas and all that. And you have an explosion of free markets, right? More people transacting, more double thank you moments, the value in the world goes up, the innovation goes up. How in a world of double thank you moments, the only way that I can profit is by making you better off. You know, the pursuit of profit is uh to me the greatest form of philanthropy. It's an incentive towards doing good for others. Right. And this is uh the the this shows the fallacy of you know the the zero sum fallacy as it were. And yet, instinctively, we think in a zero-sum way. If you look at most modern statism, it is all about thinking in zero-sum ways. One of my bugbears, and we'll talk about it more in the next episode, is how people keep going on and on about inequality. And they assume inequality and poverty are the same thing, because the assumption is, hey, the rich are if the gap between the rich and the poor is increasing, it must mean the poor are getting poorer. But no, we live in a positive sum world. It is possible for both of them to be doing better at the same time. while inequality increases. You know, what has happened since 1991? India's uh you know poverty has gone down, hundreds of millions of people have come out of poverty and our inequality has increased. What we need to focus on as a poor country is poverty. I'll rant more about this in the next episode. It also forms a little bit part of that. But you know this is a fundamental way in which you see the zero sum fallacy. And this is why uh you know economists get so frustrated talking about the trade off between redistribution and growth. If you treat the world as a fixed pie, then you think the problem of solving poverty is you redistribute, take from the rich, give to the poor. That's a terrible way to solve the problem because you change the incentives for the rich to work harder. You change the incentives for the poor to work harder. You know, they say give a man a fish and feed him for a day, teach him how to fish and feed him for a lifetime. Right? So your zero sum thinking actually gets in the way. Redistribution always has this trade-off with growth. And what a poor country needs is more and more growth. Because we live in a positive sum world. So this is just something that uh this fallacy bugs me so much, we see it all around us. And here is the consequence of falling for the zero sum fallacy. The consequence is that when the state interferes, not realizing that every transaction leaves both people better off, the danger there is that you're reducing the number of transactions. When you reduce the number of transactions, the amount of value in the world goes down. All the value that would have been created had you allowed freedom to flourish is no longer there. And therefore it it it it comes in the way of prosperity and it uh you know perpetuates uh poverty. You know, w one of our mutual friends, uh Kumar Ranand, came up with this phrase, PPP, perpetually planned poverty. This is what statism d does, and this is what zero sum thinking",
+      "endTime": 317.48,
+      "text": "To be honest, these are not my big ideas. These are big ideas that influence me, and these are the ideas of other great thinkers. And I chose to, you know, look at uh Thomas Savil's book, which I mentioned as uh providing a framework for this. And the first of the fallacies involves hunting. Ask how it involves hunting.",
       "words": [
         {
           "word": "To",
@@ -5747,7 +5731,15 @@
           "startTime": 316.98,
           "endTime": 317.48,
           "confidence": 0.991
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 317.89,
+      "endTime": 319.17,
+      "text": "How does your first fallacy involve",
+      "words": [
         {
           "word": "How",
           "startTime": 317.89,
@@ -5783,7 +5775,15 @@
           "startTime": 318.93,
           "endTime": 319.17,
           "confidence": 0.9971
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 319.17,
+      "endTime": 613.3,
+      "text": "hunting? I love it how you follow my instructions and ask me all the questions I want. It involves hunting because there's the thing. We are in prehistoric times. Our tribe went out, even I are in the same tribe, uh, perhaps competing to be future alpha male. But anyway, we go out with a tribe, we hunt, we kill a deer, the deer is right there, and gradually bits of meat are being taken away, and there's a particularly good chunk of flesh, which I really want because you know I like protein. So I really want that chunk, but you want it too. Right. And the thing is, if I take that chunk of meat, you can't have it, and if you take it, I can't have it. The more I take, the lesser is for you. And it is true in that context of the deer we just hunted, right? But and therefore we get this instinct which is which I would now call, which Saval calls a zero sum fallacy. Right? We think we are playing a zero sum game, that for me to win, you have to lose. You know, for the rich to get richer, the poorer must get poorer. That's an instinctive kind of thought. Now, what we've discussed many times before here, and b both of us have written hundreds of columns about and all of that, is that that is not how the world works. The world works in positive some ways. And there's a great illustration of that. We've spoken about even on everything is everything, but I'm going to say it again because I love it so much. This comes from John Strossel, one of my favorite columnists ever. And Strossel gives an example of what happens when you go to a coffee shop. To get a cup of coffee, right? Now don't get all snubbish on me and say I make the best coffee at home. I don't go to your Starbucks. But no. Let's say you go to Starbucks, you order coffee, the coffee is handed to you, you hand the money over, you say thank you, the other person says thank you. And Strossels calls this the double thank you moment, right? What does it illustrate? It illustrates that you made a voluntary transaction and both of you are better off. And the truth is all voluntary transactions leave both people better off. It is not negative sum, it is positive sum. We both of you benefit. Now we had a great earlier episode about the value of freedom, which in a sense was also an economic history piece. And there we showed this particular chart that you'll show on the screen now. This is a growth in world GDP. Flat for many centuries suddenly shoots up. Why does it shoot up? Because the number of double thank you moments go up. Because this is you have the industrial revolution happening, you have more people to transact with because of travel. Initially with railways and then across the seas and all that. And you have an explosion of free markets, right? More people transacting, more double thank you moments, the value in the world goes up, the innovation goes up. How in a world of double thank you moments, the only way that I can profit is by making you better off. You know, the pursuit of profit is uh to me the greatest form of philanthropy. It's an incentive towards doing good for others. Right. And this is uh the the this shows the fallacy of you know the the zero sum fallacy as it were. And yet, instinctively, we think in a zero-sum way. If you look at most modern statism, it is all about thinking in zero-sum ways. One of my bugbears, and we'll talk about it more in the next episode, is how people keep going on and on about inequality. And they assume inequality and poverty are the same thing, because the assumption is, hey, the rich are if the gap between the rich and the poor is increasing, it must mean the poor are getting poorer. But no, we live in a positive sum world. It is possible for both of them to be doing better at the same time. while inequality increases. You know, what has happened since 1991? India's uh you know poverty has gone down, hundreds of millions of people have come out of poverty and our inequality has increased. What we need to focus on as a poor country is poverty. I'll rant more about this in the next episode. It also forms a little bit part of that. But you know this is a fundamental way in which you see the zero sum fallacy. And this is why uh you know economists get so frustrated talking about the trade off between redistribution and growth. If you treat the world as a fixed pie, then you think the problem of solving poverty is you redistribute, take from the rich, give to the poor. That's a terrible way to solve the problem because you change the incentives for the rich to work harder. You change the incentives for the poor to work harder. You know, they say give a man a fish and feed him for a day, teach him how to fish and feed him for a lifetime. Right? So your zero sum thinking actually gets in the way. Redistribution always has this trade-off with growth. And what a poor country needs is more and more growth. Because we live in a positive sum world. So this is just something that uh this fallacy bugs me so much, we see it all around us. And here is the consequence of falling for the zero sum fallacy. The consequence is that when the state interferes, not realizing that every transaction leaves both people better off, the danger there is that you're reducing the number of transactions. When you reduce the number of transactions, the amount of value in the world goes down. All the value that would have been created had you allowed freedom to flourish is no longer there. And therefore it it it it comes in the way of prosperity and it uh you know perpetuates uh poverty. You know, w one of our mutual friends, uh Kumar Ranand, came up with this phrase, PPP, perpetually planned poverty. This is what statism d does, and this is what zero sum thinking",
+      "words": [
         {
           "word": "hunting?",
           "startTime": 319.17,
@@ -13287,8 +13287,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 677.52,
-      "endTime": 724.58,
-      "text": "Well, and I want to add a couple of things. And one of them, I'm gonna be a little vain. I'm gonna name a law of economics after myself because I keep talking about it and no one seems to get it, which is I have written pieces about how when you interfere with free markets, inevitably it amounts to a redistribution of wealth from the poor to the rich, from the poor to the rich. So I have a column linked in the show notes, you can read that. And that takes the example of tariffs. That if you have tariffs, you're reducing the amount of competition so the poor consumers at large get less value or pay more money for uh which otherwise would not happen. And where is that wealth that they are missing out on redistributed to being redistributed to the narrow interest groups that, you know, ask for that tariff to be there in the first place. And so one most interference in free markets leads to a redistribution from the poor to the rich.",
+      "endTime": 778.77,
+      "text": "Well, and I want to add a couple of things. And one of them, I'm gonna be a little vain. I'm gonna name a law of economics after myself because I keep talking about it and no one seems to get it, which is I have written pieces about how when you interfere with free markets, inevitably it amounts to a redistribution of wealth from the poor to the rich, from the poor to the rich. So I have a column linked in the show notes, you can read that. And that takes the example of tariffs. That if you have tariffs, you're reducing the amount of competition so the poor consumers at large get less value or pay more money for uh which otherwise would not happen. And where is that wealth that they are missing out on redistributed to being redistributed to the narrow interest groups that, you know, ask for that tariff to be there in the first place. And so one most interference in free markets leads to a redistribution from the poor to the rich. And and I also want to take it to a third dimension. I started by speaking of economics, you spoke of culture. I also want to now bring in the personal dimension of how I look at it. You know, too often what happens is growing up in scarcity, growing up in a poor country, we behave in crabby ways. Where we're we you know, we are jealous of the success of others, we don't help others too much. Uh you know, we behave in selfish and constrained and mean ways. And what I have learned through life is that no, you need to be generous, you need to help others wherever you can. You are not losing something if somebody else. is better off in some way. And I think that generosity of spirit in a normative way will eventually come back and help you. But even if it didn't, in and of itself, it is good. You know, uh our personal interactions the the big world around us is also deeply positive, some. And I feel that you will simply be a better human being if you internalize that instead of thinking in zero sum",
       "words": [
         {
           "word": "Well,",
@@ -14369,15 +14369,7 @@
           "startTime": 724.08,
           "endTime": 724.58,
           "confidence": 0.8869
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 725.36,
-      "endTime": 726.88,
-      "text": "And and I also want to take it to",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 725.36,
@@ -14431,15 +14423,7 @@
           "startTime": 726.72,
           "endTime": 726.88,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 726.88,
-      "endTime": 778.77,
-      "text": "a third dimension. I started by speaking of economics, you spoke of culture. I also want to now bring in the personal dimension of how I look at it. You know, too often what happens is growing up in scarcity, growing up in a poor country, we behave in crabby ways. Where we're we you know, we are jealous of the success of others, we don't help others too much. Uh you know, we behave in selfish and constrained and mean ways. And what I have learned through life is that no, you need to be generous, you need to help others wherever you can. You are not losing something if somebody else. is better off in some way. And I think that generosity of spirit in a normative way will eventually come back and help you. But even if it didn't, in and of itself, it is good. You know, uh our personal interactions the the big world around us is also deeply positive, some. And I feel that you will simply be a better human being if you internalize that instead of thinking in zero sum",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 726.88,
@@ -16783,8 +16767,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 857.86,
-      "endTime": 942.99,
-      "text": "So our next big idea is a fallacy of composition, and I'll read out Saval's definition because it's really so spot on that I can't resist. What logicians call the fallacy of composition is a belief that what is true of a part is true of the whole. A baseball fan at a ballpark can see the game better by standing up. But if all the fans stand up, they will not all see better. Many economic policies involve the fallacy of composition, as politicians come to the aid of some particular group, industry, state, or special interest, representing the benefits to them as if they were net benefits to society, rather than essentially robbing Peter to pay Paul. Stock quote. And I think about why this evolved. All of us have this, and I think this would also have been really useful for us. For example, one thing that I have learned from you is that snakes are by and large good. Snakes are, in fact, awesome. There is one particular snake and you can elaborate on that, which is a mean bastard, much as seagulls. But otherwise snakes are awesome. Number one, most snakes will not mess with you unless you mess with them. And number two, the vast majority of snakes are non-poisonous. And yet Uh it is natural for us, it is instinctive on us to recoil from snakes. And it is a useful instinct. Now I would argue that we are committing the fallacy of composition that just because some snakes are venomous, we are avoiding all of them, so unfair on snakes. But I would uh say that it you know, in this particular instance, it is a useful instinct to have. I understand why it came about. But when applied to the wider world, it's a",
+      "endTime": 944.03,
+      "text": "So our next big idea is a fallacy of composition, and I'll read out Saval's definition because it's really so spot on that I can't resist. What logicians call the fallacy of composition is a belief that what is true of a part is true of the whole. A baseball fan at a ballpark can see the game better by standing up. But if all the fans stand up, they will not all see better. Many economic policies involve the fallacy of composition, as politicians come to the aid of some particular group, industry, state, or special interest, representing the benefits to them as if they were net benefits to society, rather than essentially robbing Peter to pay Paul. Stock quote. And I think about why this evolved. All of us have this, and I think this would also have been really useful for us. For example, one thing that I have learned from you is that snakes are by and large good. Snakes are, in fact, awesome. There is one particular snake and you can elaborate on that, which is a mean bastard, much as seagulls. But otherwise snakes are awesome. Number one, most snakes will not mess with you unless you mess with them. And number two, the vast majority of snakes are non-poisonous. And yet Uh it is natural for us, it is instinctive on us to recoil from snakes. And it is a useful instinct. Now I would argue that we are committing the fallacy of composition that just because some snakes are venomous, we are avoiding all of them, so unfair on snakes. But I would uh say that it you know, in this particular instance, it is a useful instinct to have. I understand why it came about. But when applied to the wider world, it's a problem.",
       "words": [
         {
           "word": "So",
@@ -18603,21 +18587,21 @@
           "startTime": 942.83,
           "endTime": 942.99,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 942.99,
-      "endTime": 1150.47,
-      "text": "problem. The fallacy of composition is all over economics, and I think of it as the heart. the distinction between thinking like an individual or thinking like a firm versus thinking at the level of an economy. Uh so here's an example of how to see it, that uh there is a shortage in the market, there is a shortage of tomatoes in the market. We've talked about this in uh our uh everything is everything episode on uh agriculture. There's a shortage of tomatoes in the market. So I think that I will jump ahead and I will sow tomatoes and I will lavish input expenditures on growing tomatoes and I'll make a ton of money. But the trouble is what may be true for me in the small doesn't work when a million people think the same. When a million farmers step forward in response to the same prices and also grow tomatoes, what you in fact end up with is a glut in the market. And the price of tomatoes goes to zero. And then you get angry farmers. On the roadside pouring truck fulls of tomatoes on the ground because the price has gone so far down that it isn't worth transporting them. Okay, so this is a simple example where this comes up. All over uh economics, we see the problem of surges of investment, that there was a tremendous shortage of semiconductor chips. Then every idiot in the world thought that I too can build a semiconductor fab. And I guarantee you, within a year or two, there's going to be such a glut, there's going to be such an oversupply of semiconductor chips that we will start getting bankruptcies of the people making semiconductor chips. So this is a recurring theme. And this interacts with public policy in the sense that governments might often take behavior that might be considered good or virtuous at the level of one person or one company, and then try to legislate it and use state power, use state coercion to force many people to behave like that. But by the time many people start behaving like that, it has larger systemic consequences and you get unanticipated consequences. This is a case of bad thinking. This is a case of the failure of reasoning. And you know, it behoves the thinker, it behoves the analyst to use this as a formal toolkit. That it may be wise for one individual to do this, it may be wise for one firm to do this, but if everybody does it, what is going to happen? That's a very different matter. Uh one day in the future, Mr. Varma, we're going to record an everything is everything episode that is called a country is not a company. And these are the sorts of cool pieces of logic that go into that. That many people are practical and successful and have been in a business and think that the government is just another organization. And so I can carry over a lot of knowledge from the world of business to the world of government, then actually it doesn't happen a whole lot. Thinking public policy is very different. For two reasons. One is questions linked to the fallacy of composition, because by the time you start talking about an entire economy doing things in a certain way, it has different implications. And the other is the poison of coercive power in the private sector, in a firm, you don't have much coercive power. Whereas when you're a government, you are dealing with the poison every day of coercive power. It requires a different uh set of solutions. But this is my take on fallacy of composition.",
-      "words": [
+        },
         {
           "word": "problem.",
           "startTime": 942.99,
           "endTime": 944.03,
           "confidence": 0.8469
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 944.03,
+      "endTime": 1150.47,
+      "text": "The fallacy of composition is all over economics, and I think of it as the heart. the distinction between thinking like an individual or thinking like a firm versus thinking at the level of an economy. Uh so here's an example of how to see it, that uh there is a shortage in the market, there is a shortage of tomatoes in the market. We've talked about this in uh our uh everything is everything episode on uh agriculture. There's a shortage of tomatoes in the market. So I think that I will jump ahead and I will sow tomatoes and I will lavish input expenditures on growing tomatoes and I'll make a ton of money. But the trouble is what may be true for me in the small doesn't work when a million people think the same. When a million farmers step forward in response to the same prices and also grow tomatoes, what you in fact end up with is a glut in the market. And the price of tomatoes goes to zero. And then you get angry farmers. On the roadside pouring truck fulls of tomatoes on the ground because the price has gone so far down that it isn't worth transporting them. Okay, so this is a simple example where this comes up. All over uh economics, we see the problem of surges of investment, that there was a tremendous shortage of semiconductor chips. Then every idiot in the world thought that I too can build a semiconductor fab. And I guarantee you, within a year or two, there's going to be such a glut, there's going to be such an oversupply of semiconductor chips that we will start getting bankruptcies of the people making semiconductor chips. So this is a recurring theme. And this interacts with public policy in the sense that governments might often take behavior that might be considered good or virtuous at the level of one person or one company, and then try to legislate it and use state power, use state coercion to force many people to behave like that. But by the time many people start behaving like that, it has larger systemic consequences and you get unanticipated consequences. This is a case of bad thinking. This is a case of the failure of reasoning. And you know, it behoves the thinker, it behoves the analyst to use this as a formal toolkit. That it may be wise for one individual to do this, it may be wise for one firm to do this, but if everybody does it, what is going to happen? That's a very different matter. Uh one day in the future, Mr. Varma, we're going to record an everything is everything episode that is called a country is not a company. And these are the sorts of cool pieces of logic that go into that. That many people are practical and successful and have been in a business and think that the government is just another organization. And so I can carry over a lot of knowledge from the world of business to the world of government, then actually it doesn't happen a whole lot. Thinking public policy is very different. For two reasons. One is questions linked to the fallacy of composition, because by the time you start talking about an entire economy doing things in a certain way, it has different implications. And the other is the poison of coercive power in the private sector, in a firm, you don't have much coercive power. Whereas when you're a government, you are dealing with the poison every day of coercive power. It requires a different uh set of solutions. But this is my take on fallacy of composition.",
+      "words": [
         {
           "word": "The",
           "startTime": 944.03,
@@ -24063,8 +24047,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1236.59,
-      "endTime": 1347.52,
-      "text": "is also Yeah, actually it's a g i it's it's sort of a flip of that, but don't also assume if you come across one bad economist, don't assume that every economist is bad. If you come across one economist who's a sociopath, and we know many economists who are sociopaths, Ajesha, I want to tell you that, but I know you're not one of them. You're a deeply emotional and empathetic person. So don't assume that every economist is necessarily uh like that. So uh which is why whenever I meet someone from academia, my instant uh sort of impression isn't negative about that individual, just because I have Met a lot of assholes from academia before. I'm like, no, let me not commit that particular fallacy. I will judge him on his own. And this also brings me to the personal that uh you know, there's a great tweet by Tim Urban that I want to read out. Whenever I get to know someone who seems perfect, I end up disappointed. Whenever I get to know someone who I think is the worst of the worst, I'm pleasantly surprised. Angels and demons aren't real. And as you can see from the uh you know graph on the screen. And when I say as you can see, I mean you, gentle reader. He can't see any graph on the screen. There's no screen, there's only me. That you know, there's a deviation to the mean. You meet someone terrible, but then eventually you end up realizing they're human, you meet someone who is awesome, and then you end up thinking that uh they are just normal. Though I still think you're awesome. So you might be an outlier there. And even in personal life, I think this is really important, especially in these times of social media where it's kind of tempting to look at one opinion where someone doesn't agree with you, and you instantly condemn them as evil, and that's become the standard. And I have to say that no, man, we are all human, we are all frail, and we are all beautiful. Right? All of these are true at the same time. And therefore I I think we should be less judgmental of people, uh possess a little more humility, and be more open to people, enjoy human beings for what they are. And just because you disagree with them on something that hey it's potato, not potato, you know, you don't immediately condemn them as a demon. We",
+      "endTime": 1348.68,
+      "text": "is also Yeah, actually it's a g i it's it's sort of a flip of that, but don't also assume if you come across one bad economist, don't assume that every economist is bad. If you come across one economist who's a sociopath, and we know many economists who are sociopaths, Ajesha, I want to tell you that, but I know you're not one of them. You're a deeply emotional and empathetic person. So don't assume that every economist is necessarily uh like that. So uh which is why whenever I meet someone from academia, my instant uh sort of impression isn't negative about that individual, just because I have Met a lot of assholes from academia before. I'm like, no, let me not commit that particular fallacy. I will judge him on his own. And this also brings me to the personal that uh you know, there's a great tweet by Tim Urban that I want to read out. Whenever I get to know someone who seems perfect, I end up disappointed. Whenever I get to know someone who I think is the worst of the worst, I'm pleasantly surprised. Angels and demons aren't real. And as you can see from the uh you know graph on the screen. And when I say as you can see, I mean you, gentle reader. He can't see any graph on the screen. There's no screen, there's only me. That you know, there's a deviation to the mean. You meet someone terrible, but then eventually you end up realizing they're human, you meet someone who is awesome, and then you end up thinking that uh they are just normal. Though I still think you're awesome. So you might be an outlier there. And even in personal life, I think this is really important, especially in these times of social media where it's kind of tempting to look at one opinion where someone doesn't agree with you, and you instantly condemn them as evil, and that's become the standard. And I have to say that no, man, we are all human, we are all frail, and we are all beautiful. Right? All of these are true at the same time. And therefore I I think we should be less judgmental of people, uh possess a little more humility, and be more open to people, enjoy human beings for what they are. And just because you disagree with them on something that hey it's potato, not potato, you know, you don't immediately condemn them as a demon. We should look for common ground.",
       "words": [
         {
           "word": "is",
@@ -26609,15 +26593,7 @@
           "startTime": 1347.36,
           "endTime": 1347.52,
           "confidence": 0.3299
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1347.52,
-      "endTime": 1366.94,
-      "text": "should look for common ground. Gentle reader, life is not a zero sum game. Don't make mistakes in the fallacy of composition. Okay, Amit, what's your third?",
-      "words": [
+        },
         {
           "word": "should",
           "startTime": 1347.52,
@@ -26647,7 +26623,15 @@
           "startTime": 1348.24,
           "endTime": 1348.68,
           "confidence": 0.958
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1357.74,
+      "endTime": 1366.94,
+      "text": "Gentle reader, life is not a zero sum game. Don't make mistakes in the fallacy of composition. Okay, Amit, what's your third?",
+      "words": [
         {
           "word": "Gentle",
           "startTime": 1357.74,
@@ -26785,8 +26769,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1366.94,
-      "endTime": 1617.75,
-      "text": "So my third I need to tell you a story before I tell you the third, and the story involves me in college. Now, when I was in college, I was extremely thin. This might seem hard to believe, but it's like thirty plus years ago. So I was extremely thin. And in fact, I was so thin that you could count the bones on my ribs, right? And this made me very conscious because I came from a boys' school and I came to Ferguson College Pune, and there were girls all around, and I was in arts where it was like uh an eighty twenty split or something, eighty percent girls and all that. So obviously one wanted to sort of be attractive to the girls, which was impossible. For me, I had given up on that. But the least I wanted was not to be the object of ridicule. And therefore, every day when I finish my classes, if I went to class at all, I would have two decisions. I could turn right and I could go towards a college canteen, or I could go left and I could go towards a tapri on the other side from the exit on the other side. And guess the heuristic on which I made my decision. No, no. Uh what is the heuristic by which I decide canteen or tapri? I don't know. The heuristic is the direction of the wind. Because if I walk against the wind, then it blows against my shirt and people can see the bones on my ribs. So where I would go tapri or canteen would depend on the direction of the wind. Now at this point I must point out that this is the late 1980s, early 1990s, gyms and all are not really part of the culture. So I have no idea what to do about this. Right? And there is another boy. Whose real name I will take, actually, I've not been in touch with him since then. Uh whose name is uh Ryan. Right? Ryan is a very religious, good Christian boy who has the same problem. He's incredibly thin, right? Bones on ribs and all of that. I don't think he cares so much about the girls, so he doesn't care. He'll go to Tapri or Canteen, depending on the mood, direction of wind doesn't matter for Ryan. So Ryan is also like this. So I am at least at peace thinking that, you know, there is another person like this, and that if the two of us pass a group of girls and they start giggling, which I mean in my imagination they would, they might be giggling at him and not at me, which is otherwise, you know, my obvious conclusion. So one day what happens is, and we are in the same block in the hostel, I am passing his room where I turn around and through the open door of Ryan's room I see a horrifying sight. Can you guess what it is? He's doing push ups. No, this is this goes against the ethical code, right? So instantly and unspoken ethical code that you know thin boys whose bones are visible don't do push-ups. You know? So anyway, so I uh wait for him to finish and then I said, Ryan, what are you doing? So he said, I'm doing push-ups. So I ask him, I can see that. Why are you doing push-ups? So then Ryan tells me, Amit, I masturbated. So I said, Ryan, what is the connection between masturbating and you're doing push-ups? So he says, Amit. And now he stands up and he looks me in the eye seriously. He says Amit, masturbation is a sin. Right? Let me remind you, he's a devout Christian. He says, Masturbation is a sin. And I have decided that every time I commit a sin, I will do X number of push-ups. And the number I have given for masturbation is 25 push-ups. So every time I masturbate, I will do 25 push-ups. And in my mind, I did Shashtang Pranam and I just left. I was like, okay, whatever, maybe he'll be normal tomorrow. Six months later. Ryan is buff, right? He is full body. He's like, you know, and this time what you know when we go through college and we pass girls and they giggle, they are giggling at the improbable presence of a Greek god in their midst. You know, that is essentially what is happening. He's incredible. And now I am the only person whose bones are visible. This is kind of where it is. But the story doesn't end here. The story continues because a few days later. Another uh friend of ours in uh the hostel, and I will not take his real name, but I'll take an approximation of it to Samaj Nevali Samu Jange. Let's call him Varun Kumar Sina. Varun Kumar Sina comes to me. He says Amit Bhai. Uh so I said Karu. He said private me gana. I said, and then we walk a little while away, and then he says Amit Kumar, I'm getting confused. He says Amit Baiya. I said, Poche Kya Bata. He said you body.",
+      "endTime": 1633.66,
+      "text": "So my third I need to tell you a story before I tell you the third, and the story involves me in college. Now, when I was in college, I was extremely thin. This might seem hard to believe, but it's like thirty plus years ago. So I was extremely thin. And in fact, I was so thin that you could count the bones on my ribs, right? And this made me very conscious because I came from a boys' school and I came to Ferguson College Pune, and there were girls all around, and I was in arts where it was like uh an eighty twenty split or something, eighty percent girls and all that. So obviously one wanted to sort of be attractive to the girls, which was impossible. For me, I had given up on that. But the least I wanted was not to be the object of ridicule. And therefore, every day when I finish my classes, if I went to class at all, I would have two decisions. I could turn right and I could go towards a college canteen, or I could go left and I could go towards a tapri on the other side from the exit on the other side. And guess the heuristic on which I made my decision. No, no. Uh what is the heuristic by which I decide canteen or tapri? I don't know. The heuristic is the direction of the wind. Because if I walk against the wind, then it blows against my shirt and people can see the bones on my ribs. So where I would go tapri or canteen would depend on the direction of the wind. Now at this point I must point out that this is the late 1980s, early 1990s, gyms and all are not really part of the culture. So I have no idea what to do about this. Right? And there is another boy. Whose real name I will take, actually, I've not been in touch with him since then. Uh whose name is uh Ryan. Right? Ryan is a very religious, good Christian boy who has the same problem. He's incredibly thin, right? Bones on ribs and all of that. I don't think he cares so much about the girls, so he doesn't care. He'll go to Tapri or Canteen, depending on the mood, direction of wind doesn't matter for Ryan. So Ryan is also like this. So I am at least at peace thinking that, you know, there is another person like this, and that if the two of us pass a group of girls and they start giggling, which I mean in my imagination they would, they might be giggling at him and not at me, which is otherwise, you know, my obvious conclusion. So one day what happens is, and we are in the same block in the hostel, I am passing his room where I turn around and through the open door of Ryan's room I see a horrifying sight. Can you guess what it is? He's doing push ups. No, this is this goes against the ethical code, right? So instantly and unspoken ethical code that you know thin boys whose bones are visible don't do push-ups. You know? So anyway, so I uh wait for him to finish and then I said, Ryan, what are you doing? So he said, I'm doing push-ups. So I ask him, I can see that. Why are you doing push-ups? So then Ryan tells me, Amit, I masturbated. So I said, Ryan, what is the connection between masturbating and you're doing push-ups? So he says, Amit. And now he stands up and he looks me in the eye seriously. He says Amit, masturbation is a sin. Right? Let me remind you, he's a devout Christian. He says, Masturbation is a sin. And I have decided that every time I commit a sin, I will do X number of push-ups. And the number I have given for masturbation is 25 push-ups. So every time I masturbate, I will do 25 push-ups. And in my mind, I did Shashtang Pranam and I just left. I was like, okay, whatever, maybe he'll be normal tomorrow. Six months later. Ryan is buff, right? He is full body. He's like, you know, and this time what you know when we go through college and we pass girls and they giggle, they are giggling at the improbable presence of a Greek god in their midst. You know, that is essentially what is happening. He's incredible. And now I am the only person whose bones are visible. This is kind of where it is. But the story doesn't end here. The story continues because a few days later. Another uh friend of ours in uh the hostel, and I will not take his real name, but I'll take an approximation of it to Samaj Nevali Samu Jange. Let's call him Varun Kumar Sina. Varun Kumar Sina comes to me. He says Amit Bhai. Uh so I said Karu. He said private me gana. I said, and then we walk a little while away, and then he says Amit Kumar, I'm getting confused. He says Amit Baiya. I said, Poche Kya Bata. He said you body. Who Chine Pala Bilkulap Kitaratha Buramat Mani. Bil Kulapitaratha Dublapatla Use body kasabanai Mujani Banani Casabana Use Nebody So I said uh it's really simple, bro. You want a body like that? So he said yes, I'm a yes. I said you have to",
       "words": [
         {
           "word": "So",
@@ -32067,15 +32051,7 @@
           "startTime": 1617.25,
           "endTime": 1617.75,
           "confidence": 0.7502
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1618.3,
-      "endTime": 1619.82,
-      "text": "Who Chine Pala Bilkulap",
-      "words": [
+        },
         {
           "word": "Who",
           "startTime": 1618.3,
@@ -32099,15 +32075,7 @@
           "startTime": 1619.34,
           "endTime": 1619.82,
           "confidence": 0.487
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1619.82,
-      "endTime": 1633.66,
-      "text": "Kitaratha Buramat Mani. Bil Kulapitaratha Dublapatla Use body kasabanai Mujani Banani Casabana Use Nebody So I said uh it's really simple, bro. You want a body like that? So he said yes, I'm a yes. I said you have to",
-      "words": [
+        },
         {
           "word": "Kitaratha",
           "startTime": 1619.82,
@@ -32367,8 +32335,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1635.42,
-      "endTime": 1812.69,
-      "text": "Right. And what is the lesson here? The lesson here is that deliberately out of a sense of humor, I committed a fallacy called the post hoc. Ergo Proctor Hawk. Now what that fallacy means, a post hoc fallacy, is that something happened, something happened after it. Therefore the first thing caused the second thing, right? So Ryan uh masturbated and then he got a big body. So therefore to get a big body you have to masturbate. Masturbation causes a big body. Now it's a fallacy. There's a similar fallacy called ironically, come Hawk Ergo Proctor Hawk, right? So uh it's it's I love the name because of this the the uh main activity in in the story, right? And that means when two things happen simultaneously, you assume that one causes the other, and that is also a fallacy. Now for the post hoc fallacy, that X cause Y, Michael uh Crichton has a great name for this. Wet streets cause rain fallacy. Right? So you have wet streets and it's raining, and you say wet streets cause the rain, where you get the causation the other way around. So this is the opposite of, you know, this is you get the causation completely, Ulta, and again, uh it's a fallacy, it's a post-hoc fallacy. And in a sense, I can imagine how this evolved, right? Because you're living in a really simple universe when you're in a hunter-gatherer tribe. You hear a noise inside a bush and a tiger emerges, or whatever. You know, you do something, you immediately get the action. It's easy for you to attribute causation and to you know tell those simple stories that we need to tell to make sense of the world. And by the way, all religion emerged out of those simple stories as well. You know, what caused rain, you can't think of something you did. So either it is a god or it is a ritual which sometimes causes rain, so confirmation bias, et cetera, et cetera, without going there. This is sort of uh a classic um uh fallacy that comes up all the time, that we believe that if something happened, there must be a reason for it. And then we will build a story and we will say that that is the reason. And often it is, you know, not the reason. Like uh Savil in his book gives a great example um of the great depression, right? I meant to say example of the great depression, but I said great example of the great depression because you know that is uh how language uh messes with us. And his thing was that people say there was a stock market crash in 1929 that caused the great depression. And Saval breaks it down. He says, Yeah, okay, there was a stock market crash, but in the year that followed, the peak of unemployment was at 9%. And by June 1930, it was basically 6.5%. And at around that time, the government decided to intervene. First, there was a Snootes Holly tariff, and then there's a whole bunch of government interventions, and then it explodes. And the case that he makes convincingly with a lot of data, I think Amity Schleze also has a book on it, if I remember correctly, is that it it wasn't the stock market crash. It was a whole bunch of interventions which led to the problem. And as an example, He says that look in 1989 we had a stock market crash as well. But then you have a couple of decades of uh, you know, great economic growth happening after that. So it's it's it's convenient to blame something because the world is complex and we can't really figure out. But you know, the causation isn't always so simple. And",
+      "endTime": 1817.49,
+      "text": "Right. And what is the lesson here? The lesson here is that deliberately out of a sense of humor, I committed a fallacy called the post hoc. Ergo Proctor Hawk. Now what that fallacy means, a post hoc fallacy, is that something happened, something happened after it. Therefore the first thing caused the second thing, right? So Ryan uh masturbated and then he got a big body. So therefore to get a big body you have to masturbate. Masturbation causes a big body. Now it's a fallacy. There's a similar fallacy called ironically, come Hawk Ergo Proctor Hawk, right? So uh it's it's I love the name because of this the the uh main activity in in the story, right? And that means when two things happen simultaneously, you assume that one causes the other, and that is also a fallacy. Now for the post hoc fallacy, that X cause Y, Michael uh Crichton has a great name for this. Wet streets cause rain fallacy. Right? So you have wet streets and it's raining, and you say wet streets cause the rain, where you get the causation the other way around. So this is the opposite of, you know, this is you get the causation completely, Ulta, and again, uh it's a fallacy, it's a post-hoc fallacy. And in a sense, I can imagine how this evolved, right? Because you're living in a really simple universe when you're in a hunter-gatherer tribe. You hear a noise inside a bush and a tiger emerges, or whatever. You know, you do something, you immediately get the action. It's easy for you to attribute causation and to you know tell those simple stories that we need to tell to make sense of the world. And by the way, all religion emerged out of those simple stories as well. You know, what caused rain, you can't think of something you did. So either it is a god or it is a ritual which sometimes causes rain, so confirmation bias, et cetera, et cetera, without going there. This is sort of uh a classic um uh fallacy that comes up all the time, that we believe that if something happened, there must be a reason for it. And then we will build a story and we will say that that is the reason. And often it is, you know, not the reason. Like uh Savil in his book gives a great example um of the great depression, right? I meant to say example of the great depression, but I said great example of the great depression because you know that is uh how language uh messes with us. And his thing was that people say there was a stock market crash in 1929 that caused the great depression. And Saval breaks it down. He says, Yeah, okay, there was a stock market crash, but in the year that followed, the peak of unemployment was at 9%. And by June 1930, it was basically 6.5%. And at around that time, the government decided to intervene. First, there was a Snootes Holly tariff, and then there's a whole bunch of government interventions, and then it explodes. And the case that he makes convincingly with a lot of data, I think Amity Schleze also has a book on it, if I remember correctly, is that it it wasn't the stock market crash. It was a whole bunch of interventions which led to the problem. And as an example, He says that look in 1989 we had a stock market crash as well. But then you have a couple of decades of uh, you know, great economic growth happening after that. So it's it's it's convenient to blame something because the world is complex and we can't really figure out. But you know, the causation isn't always so simple. And unfortunately, when it comes to economics, we just see this happening all the",
       "words": [
         {
           "word": "Right.",
@@ -36215,15 +36183,7 @@
           "startTime": 1812.45,
           "endTime": 1812.69,
           "confidence": 0.9751
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1812.69,
-      "endTime": 1814.21,
-      "text": "unfortunately, when it comes to",
-      "words": [
+        },
         {
           "word": "unfortunately,",
           "startTime": 1812.69,
@@ -36253,15 +36213,7 @@
           "startTime": 1813.97,
           "endTime": 1814.21,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1814.21,
-      "endTime": 1817.49,
-      "text": "economics, we just see this happening all the",
-      "words": [
+        },
         {
           "word": "economics,",
           "startTime": 1814.21,
@@ -38899,8 +38851,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1975.82,
-      "endTime": 2039.62,
-      "text": "Beautifully said. I love the you know, press a button, ten hours later, a biscuit comes. I'm gonna keto diet, so if I press a button, I don't want a biscuit to come ever. Bacon strips, another matter. Now, I there's a great metaphor that expresses just this complexity. And I got it from Shruti Raj Gopalan many years back, our mutual friend Shruti, though she might have been quoting Don Budrow. I forget now, I have a vague memory. But I love the metaphor. And the metaphor is that imagine that you want to find out whether dropping a coin in water. raises the level of the water or not. Right? Now As a physics experiment is super easy to do. You go inside a lab, everything is controlled, and you just have a beaker, you have water, you have a coin, everything else is controlled, you m you have measuring instruments, and you'll come up with the right answer, and causality will be there. Now imagine you are doing this in a crowded swimming pool. It's a big swimming pool, it is incredibly crowded, people are splashing around in it, it is windy and it is raining at the same time. And now you're trying to do the experiment dropping a coin to see if the water level rises. Basically, what you get the data you get out of it will most of the time be garbage in such an environment.",
+      "endTime": 2094.64,
+      "text": "Beautifully said. I love the you know, press a button, ten hours later, a biscuit comes. I'm gonna keto diet, so if I press a button, I don't want a biscuit to come ever. Bacon strips, another matter. Now, I there's a great metaphor that expresses just this complexity. And I got it from Shruti Raj Gopalan many years back, our mutual friend Shruti, though she might have been quoting Don Budrow. I forget now, I have a vague memory. But I love the metaphor. And the metaphor is that imagine that you want to find out whether dropping a coin in water. raises the level of the water or not. Right? Now As a physics experiment is super easy to do. You go inside a lab, everything is controlled, and you just have a beaker, you have water, you have a coin, everything else is controlled, you m you have measuring instruments, and you'll come up with the right answer, and causality will be there. Now imagine you are doing this in a crowded swimming pool. It's a big swimming pool, it is incredibly crowded, people are splashing around in it, it is windy and it is raining at the same time. And now you're trying to do the experiment dropping a coin to see if the water level rises. Basically, what you get the data you get out of it will most of the time be garbage in such an environment. And then and and this is a lot of uh sort of social science studies where you know in economics it is very nebulous to establish causation because you in the real world you simply can't control for everything, which is why economists, you know, love the story of what happened after the war with North and South Korea and uh East and West Germany. It is almost like a controlled experiment of the impact of free markets. And you know, spoiler alert, free markets won, you know, West Germany did well, uh, South Korea did well, right? But actually in the real world, it is almost impossible to run things like that. So people will run all kinds of experiments. And then confirmation bias will kick in and then they will say, Oh, this was the conclusion I had and it's been validated by this. And you know, it it's it's extremely dicey, and therefore we should have great humility and we should be super cautious because in a world there are like a million things happening that could cause X to happen, and attributing causation is dangerous.",
       "words": [
         {
           "word": "Beautifully",
@@ -40359,15 +40311,7 @@
           "startTime": 2039.12,
           "endTime": 2039.62,
           "confidence": 0.9191
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2040.02,
-      "endTime": 2042.02,
-      "text": "And then and and this is a",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2040.02,
@@ -40409,15 +40353,7 @@
           "startTime": 2041.78,
           "endTime": 2042.02,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2042.02,
-      "endTime": 2094.64,
-      "text": "lot of uh sort of social science studies where you know in economics it is very nebulous to establish causation because you in the real world you simply can't control for everything, which is why economists, you know, love the story of what happened after the war with North and South Korea and uh East and West Germany. It is almost like a controlled experiment of the impact of free markets. And you know, spoiler alert, free markets won, you know, West Germany did well, uh, South Korea did well, right? But actually in the real world, it is almost impossible to run things like that. So people will run all kinds of experiments. And then confirmation bias will kick in and then they will say, Oh, this was the conclusion I had and it's been validated by this. And you know, it it's it's extremely dicey, and therefore we should have great humility and we should be super cautious because in a world there are like a million things happening that could cause X to happen, and attributing causation is dangerous.",
-      "words": [
+        },
         {
           "word": "lot",
           "startTime": 2042.02,
@@ -42635,8 +42571,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2159.6,
-      "endTime": 2210.43,
-      "text": "That makes the uh problem. That the people who have been inside that industry have done fabulously well, but they will tend to misattribute the success of their firms upon their actions and their decisions. So it's good to be sterile and say, look, if I had done absolutely nothing and I had bought the shares of 10 companies in my industry, how would I have far? That is the baseline where you just happen to pick an industry that by dumb luck you were doing software, by dumb luck you were doing seafood. That's the baseline. On top of that, the outperformance is your contribution over and beyond the performance of the industry. And this is something most people don't see. The world, the society attributes all firm success to the CEO, and I think that is wrong. And",
+      "endTime": 2209.71,
+      "text": "That makes the uh problem. That the people who have been inside that industry have done fabulously well, but they will tend to misattribute the success of their firms upon their actions and their decisions. So it's good to be sterile and say, look, if I had done absolutely nothing and I had bought the shares of 10 companies in my industry, how would I have far? That is the baseline where you just happen to pick an industry that by dumb luck you were doing software, by dumb luck you were doing seafood. That's the baseline. On top of that, the outperformance is your contribution over and beyond the performance of the industry. And this is something most people don't see. The world, the society attributes all firm success to the CEO, and I think that is wrong.",
       "words": [
         {
           "word": "That",
@@ -43471,21 +43407,21 @@
           "startTime": 2209.07,
           "endTime": 2209.71,
           "confidence": 0.9945
-        },
-        {
-          "word": "And",
-          "startTime": 2209.71,
-          "endTime": 2210.43,
-          "confidence": 0.943
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2210.43,
+      "startTime": 2209.71,
       "endTime": 2271.49,
-      "text": "this also brings me to my personal lesson from this fallacy, and this is something we spoke about in our poker episode as well, which is that you know 98% of what happens to each of us is sheer dumb luck. We don't control that shit. We'll give causation. But basically you got lucky. Don't let it get to your head. Or similarly, you might say that hey, I'm a Nikamma, I made all these mistakes and you know I got screwed. But you don't need to let it uh get you down as well. Sometimes, you know, the the the the the things that we do, they play out in the long term. It's a long game. So all you can do is, you know, not build stories about I am good, therefore good things happened, or I am bad, therefore bad things happened. But instead just keep doing the right thing as you can, keep doing whatever you define your dharma as. And just Keto diet. Keto diet, there you go. Plus one meal a day, which is my magic formula for now, because I want to be like Ryan. Which Ryan do I want to be like? Any of the two. But I just want to get closer to that. So so yeah, that's my personal takeaway from",
+      "text": "And this also brings me to my personal lesson from this fallacy, and this is something we spoke about in our poker episode as well, which is that you know 98% of what happens to each of us is sheer dumb luck. We don't control that shit. We'll give causation. But basically you got lucky. Don't let it get to your head. Or similarly, you might say that hey, I'm a Nikamma, I made all these mistakes and you know I got screwed. But you don't need to let it uh get you down as well. Sometimes, you know, the the the the the things that we do, they play out in the long term. It's a long game. So all you can do is, you know, not build stories about I am good, therefore good things happened, or I am bad, therefore bad things happened. But instead just keep doing the right thing as you can, keep doing whatever you define your dharma as. And just Keto diet. Keto diet, there you go. Plus one meal a day, which is my magic formula for now, because I want to be like Ryan. Which Ryan do I want to be like? Any of the two. But I just want to get closer to that. So so yeah, that's my personal takeaway from",
       "words": [
+        {
+          "word": "And",
+          "startTime": 2209.71,
+          "endTime": 2210.43,
+          "confidence": 0.943
+        },
         {
           "word": "this",
           "startTime": 2210.43,
@@ -47961,8 +47897,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2425.68,
-      "endTime": 2434.06,
-      "text": "happen. Gentle readers see how optimistic Amit is he says, we have learned this lesson in India. I worry that you know mostly you",
+      "endTime": 2490.6,
+      "text": "happen. Gentle readers see how optimistic Amit is he says, we have learned this lesson in India. I worry that you know mostly you wouldn't have learned this lesson. Yeah. So I I feel this goes all the way to selfish gene that the monkey on the prairie was optimizing something and she was optimizing for herself. And you know that you can never push out the energy, the purpose, the zeal of each person for building their own life, liberty, and happiness. And you know, every attempt at controlling from above. Just tends to not work because there will always be the individual who says, No, that's not where my interests lie, and people will go pursue their own interests. And nobody is able to figure out the complexity of a world and a model where individuals are solving maximizations, and then you know what is the optimal uh things to do. That's just that's a bureaucratic fantasy. It's been tried and it's failed every single time. So, you know, the sooner we get out of this, the better.",
       "words": [
         {
           "word": "happen.",
@@ -48107,15 +48043,7 @@
           "startTime": 2433.9,
           "endTime": 2434.06,
           "confidence": 0.5085
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2434.06,
-      "endTime": 2435.98,
-      "text": "wouldn't have learned this lesson.",
-      "words": [
+        },
         {
           "word": "wouldn't",
           "startTime": 2434.06,
@@ -48145,15 +48073,7 @@
           "startTime": 2435.02,
           "endTime": 2435.98,
           "confidence": 0.8532
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2435.98,
-      "endTime": 2490.6,
-      "text": "Yeah. So I I feel this goes all the way to selfish gene that the monkey on the prairie was optimizing something and she was optimizing for herself. And you know that you can never push out the energy, the purpose, the zeal of each person for building their own life, liberty, and happiness. And you know, every attempt at controlling from above. Just tends to not work because there will always be the individual who says, No, that's not where my interests lie, and people will go pursue their own interests. And nobody is able to figure out the complexity of a world and a model where individuals are solving maximizations, and then you know what is the optimal uh things to do. That's just that's a bureaucratic fantasy. It's been tried and it's failed every single time. So, you know, the sooner we get out of this, the better.",
-      "words": [
+        },
         {
           "word": "Yeah.",
           "startTime": 2435.98,
@@ -52221,8 +52141,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2652.42,
-      "endTime": 2697.89,
-      "text": "account. Milton Friedman has always pushed this as a no-free lunch idea, that too many people jump to the notion that government money is free or government money is infinite. And everybody wants to spend more government money on their favorite idea. So, you know, I consider it a hallmark of health expertise in India that the plea of a sophisticated health expert in India should be to cut down government spending on health care. That is intellectual clarity and good knowledge, because for two reasons, one is the government spends very poorly, the other is that actually prevention is better than cure. And you need to reorient the Indian health system fundamentally away from healthcare in favor of public health, which is",
+      "endTime": 2698.45,
+      "text": "account. Milton Friedman has always pushed this as a no-free lunch idea, that too many people jump to the notion that government money is free or government money is infinite. And everybody wants to spend more government money on their favorite idea. So, you know, I consider it a hallmark of health expertise in India that the plea of a sophisticated health expert in India should be to cut down government spending on health care. That is intellectual clarity and good knowledge, because for two reasons, one is the government spends very poorly, the other is that actually prevention is better than cure. And you need to reorient the Indian health system fundamentally away from healthcare in favor of public health, which is preventive",
       "words": [
         {
           "word": "account.",
@@ -52961,21 +52881,21 @@
           "startTime": 2697.65,
           "endTime": 2697.89,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2697.89,
-      "endTime": 2716.53,
-      "text": "preventive things. And at this point, I will tell the our gentle readers that public health, healthcare, spend more on public health, et cetera, what's going on here. I will link to an episode of the scene in the unseen where Ajay was my guest and he described this in detail. So you can dig into it there, and we will do future episodes on healthcare on everything is everything. So just keep watching.",
-      "words": [
+        },
         {
           "word": "preventive",
           "startTime": 2697.89,
           "endTime": 2698.45,
           "confidence": 0.9765
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2698.45,
+      "endTime": 2716.53,
+      "text": "things. And at this point, I will tell the our gentle readers that public health, healthcare, spend more on public health, et cetera, what's going on here. I will link to an episode of the scene in the unseen where Ajay was my guest and he described this in detail. So you can dig into it there, and we will do future episodes on healthcare on everything is everything. So just keep watching.",
+      "words": [
         {
           "word": "things.",
           "startTime": 2698.45,
@@ -61475,8 +61395,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3141.65,
-      "endTime": 3158.09,
-      "text": "Economists also talk about scarcity and incentives, which gets to the heart of it. Like I think about economics as a study of human behavior. You know, just as literature's great job, art's job is to reveal the human condition. I think economics gives us frames and tools to think about it, and that's so useful for me. So I can't wait to read this book.",
+      "endTime": 3317.94,
+      "text": "Economists also talk about scarcity and incentives, which gets to the heart of it. Like I think about economics as a study of human behavior. You know, just as literature's great job, art's job is to reveal the human condition. I think economics gives us frames and tools to think about it, and that's so useful for me. So I can't wait to read this book. What's your recommendation for today? So it's actually on the theme of fighting, but moving away from fallacies for a moment. My recommendation, and I've forgotten, dear listener, if I've recommended it before on everything is everything, so forgive me if I do. We are now in forty something episodes, but it's a great book anyway. It's called The Three Languages of Politics by Arnold Kling. I don't think you'll ever recommend it. Great. So let me recommend it now. It's a magnificent book, slim book. You could read it in an hour. So in the three languages of politics, Kling, who used to uh you know, uh be a great blogger once upon a time, has a newsletter now you must subscribe to. Kling makes this fundamental point. He says most of the time in our discourse, we are fighting because we are talking past each other. Right? And he looks at the three big ideological tribes in the US. And he says the thing is all of those three ideological tribes have different first principles as a core value. Remember you spoke of values earlier. They have different first principles that are core value. And if you don't recognize that and speak to that, dialogue is impossible. For example, he says that for liberals, and these are the left liberals, you could say left wingers of America, that value is equality. or equality or equity. For conservatives, that value is tradition. And for libertarians, or what uh you know, we would call ourselves classical liberals, that value is freedom. Right. So uh, you know, when you have a conversation between two people from different tribes, if they are coming from different first principles and arrive, you know, taking different routes to arriving where they are uh arriving, it is no point if I'm a freedom person of talking to your hey, this reduces freedom, this does that, et cetera, et cetera, because you care about equality or tradition, as a case may be, and vice versa. So one way to get past the fighting that we do, this ideological bickering that has become so common, is to recognize the other person's for core first principle, which is also to recognize that other person's humanity. Because all of these three values are useful and important. And then to chat. So, for example, if I am talking with a left winger about a particularly statist intervention, I will not go and say this reduces human freedom, right? I will instead think that their value is equality. And I will talk about how this actually hurts the poor, right? And equally, uh, you know, you adapt your approach, but you uh have to and that is how you really find the term you used earlier, common ground. We need common ground. So uh, you know, Kling's book, The Three Languages of Politics, is incredibly useful in understanding this. And I vaguely remember either on his newsletter or some essay he wrote, he had a follow-up on this where he added nuances to this. If I find it, we'll link it in the show notes. But it's a great",
       "words": [
         {
           "word": "Economists",
@@ -61873,15 +61793,7 @@
           "startTime": 3157.81,
           "endTime": 3158.09,
           "confidence": 0.9956
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3167.55,
-      "endTime": 3169.31,
-      "text": "What's your recommendation for today?",
-      "words": [
+        },
         {
           "word": "What's",
           "startTime": 3167.55,
@@ -61911,15 +61823,7 @@
           "startTime": 3168.75,
           "endTime": 3169.31,
           "confidence": 0.9619
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3169.31,
-      "endTime": 3317.94,
-      "text": "So it's actually on the theme of fighting, but moving away from fallacies for a moment. My recommendation, and I've forgotten, dear listener, if I've recommended it before on everything is everything, so forgive me if I do. We are now in forty something episodes, but it's a great book anyway. It's called The Three Languages of Politics by Arnold Kling. I don't think you'll ever recommend it. Great. So let me recommend it now. It's a magnificent book, slim book. You could read it in an hour. So in the three languages of politics, Kling, who used to uh you know, uh be a great blogger once upon a time, has a newsletter now you must subscribe to. Kling makes this fundamental point. He says most of the time in our discourse, we are fighting because we are talking past each other. Right? And he looks at the three big ideological tribes in the US. And he says the thing is all of those three ideological tribes have different first principles as a core value. Remember you spoke of values earlier. They have different first principles that are core value. And if you don't recognize that and speak to that, dialogue is impossible. For example, he says that for liberals, and these are the left liberals, you could say left wingers of America, that value is equality. or equality or equity. For conservatives, that value is tradition. And for libertarians, or what uh you know, we would call ourselves classical liberals, that value is freedom. Right. So uh, you know, when you have a conversation between two people from different tribes, if they are coming from different first principles and arrive, you know, taking different routes to arriving where they are uh arriving, it is no point if I'm a freedom person of talking to your hey, this reduces freedom, this does that, et cetera, et cetera, because you care about equality or tradition, as a case may be, and vice versa. So one way to get past the fighting that we do, this ideological bickering that has become so common, is to recognize the other person's for core first principle, which is also to recognize that other person's humanity. Because all of these three values are useful and important. And then to chat. So, for example, if I am talking with a left winger about a particularly statist intervention, I will not go and say this reduces human freedom, right? I will instead think that their value is equality. And I will talk about how this actually hurts the poor, right? And equally, uh, you know, you adapt your approach, but you uh have to and that is how you really find the term you used earlier, common ground. We need common ground. So uh, you know, Kling's book, The Three Languages of Politics, is incredibly useful in understanding this. And I vaguely remember either on his newsletter or some essay he wrote, he had a follow-up on this where he added nuances to this. If I find it, we'll link it in the show notes. But it's a great",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 3169.31,

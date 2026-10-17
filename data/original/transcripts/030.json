@@ -5,7 +5,7 @@
     "durationSeconds": 3108,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 15.16,
-      "endTime": 104.55,
-      "text": "Gentle reader, welcome to Everything Is Everything. I'm Amit, this is my good friend Ajay, and you will notice that we are outdoors today. You know, you could say that there are the three of us, right? And why is this so? It is because we are decluttering. We have done away with the house. We will not have a roof over our heads anymore. What a great life. What a great life. But the reason we, of course, thought of this is uh that we are part of this secret society. And on that secret society, uh the subject of decluttering. kind of came up. Now what is decluttering? Uh we you know, we've all heard of minimalism and uh living the minimal life, et cetera, et cetera. And uh to me decluttering the the concept of it, the philosophy of it is best summed up by Chuck Palanyuk's quote, the things you own end up owning you. Right, and the idea is that if we carry too many things, everything that we have literally becomes baggage for us. And if we can strip our life of those things and keep it simple and keep it easy, then our mind also is untluttered and we can live accordingly. There's a gentleman Joshua Fields Melbourne, who is part of this group called the Minimalists. I think we have a podcast also. And he says to live a happy life you don't need to add anything, you need to subtract. And he created something called the minimalism game. And the idea of that game is that uh say you and I enter a pact. It's a thirty day pact. On day one, both of us throw away one thing each. The next day we give away two things each. The next day three things each. And so on down the line. And apparently I am told it gets really tough in the second week. Uh you know and so that is the whole",
+      "endTime": 105.03,
+      "text": "Gentle reader, welcome to Everything Is Everything. I'm Amit, this is my good friend Ajay, and you will notice that we are outdoors today. You know, you could say that there are the three of us, right? And why is this so? It is because we are decluttering. We have done away with the house. We will not have a roof over our heads anymore. What a great life. What a great life. But the reason we, of course, thought of this is uh that we are part of this secret society. And on that secret society, uh the subject of decluttering. kind of came up. Now what is decluttering? Uh we you know, we've all heard of minimalism and uh living the minimal life, et cetera, et cetera. And uh to me decluttering the the concept of it, the philosophy of it is best summed up by Chuck Palanyuk's quote, the things you own end up owning you. Right, and the idea is that if we carry too many things, everything that we have literally becomes baggage for us. And if we can strip our life of those things and keep it simple and keep it easy, then our mind also is untluttered and we can live accordingly. There's a gentleman Joshua Fields Melbourne, who is part of this group called the Minimalists. I think we have a podcast also. And he says to live a happy life you don't need to add anything, you need to subtract. And he created something called the minimalism game. And the idea of that game is that uh say you and I enter a pact. It's a thirty day pact. On day one, both of us throw away one thing each. The next day we give away two things each. The next day three things each. And so on down the line. And apparently I am told it gets really tough in the second week. Uh you know and so that is the whole Perhaps a",
       "words": [
         {
           "word": "Gentle",
@@ -2011,15 +2011,7 @@
           "startTime": 103.99,
           "endTime": 104.55,
           "confidence": 0.9972
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 104.55,
-      "endTime": 107.35,
-      "text": "Perhaps a line? He who dies with the least toys",
-      "words": [
+        },
         {
           "word": "Perhaps",
           "startTime": 104.55,
@@ -2031,7 +2023,15 @@
           "startTime": 104.95,
           "endTime": 105.03,
           "confidence": 0.7222
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 105.03,
+      "endTime": 108.07,
+      "text": "line? He who dies with the least toys wins.",
+      "words": [
         {
           "word": "line?",
           "startTime": 105.03,
@@ -2079,21 +2079,21 @@
           "startTime": 106.87,
           "endTime": 107.35,
           "confidence": 0.9471
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 107.35,
-      "endTime": 129.86,
-      "text": "wins. He who dies with the least toys wins, but it also matters where you start. Uh so we thought that hey, you know it's it's intriguing, but both of us have complicated feelings about it. It is attractive, we understand the thought behind it, but in our own lives, uh what are the philosophies that we practice towards recluttering? And uh both of us had thoughts on it, so we thought, hey, let's do an episode",
-      "words": [
+        },
         {
           "word": "wins.",
           "startTime": 107.35,
           "endTime": 108.07,
           "confidence": 0.7954
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 108.07,
+      "endTime": 129.86,
+      "text": "He who dies with the least toys wins, but it also matters where you start. Uh so we thought that hey, you know it's it's intriguing, but both of us have complicated feelings about it. It is attractive, we understand the thought behind it, but in our own lives, uh what are the philosophies that we practice towards recluttering? And uh both of us had thoughts on it, so we thought, hey, let's do an episode",
+      "words": [
         {
           "word": "He",
           "startTime": 108.07,
@@ -2555,8 +2555,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 137.72,
-      "endTime": 155.18,
-      "text": "I find this to be a very interesting subject. It has one leg Old notions of spiritualism, you know, the dream of being a monk who basically owns nothing and it has real beauty. And now you get these modern tech bros talking declutter.",
+      "endTime": 178.86,
+      "text": "I find this to be a very interesting subject. It has one leg Old notions of spiritualism, you know, the dream of being a monk who basically owns nothing and it has real beauty. And now you get these modern tech bros talking declutter. So I find it a very interesting mixture of an old world and old idea of you know distancing yourself from the material world all the way to a modern tech bro idea that I want intensity, I want to protect my brain, and I want to do some things. With passion. So I see these two different strands of thought in the question of decluttering.",
       "words": [
         {
           "word": "I",
@@ -2821,15 +2821,7 @@
           "startTime": 154.38,
           "endTime": 155.18,
           "confidence": 0.9518
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 155.18,
-      "endTime": 157.1,
-      "text": "So I find it a very interesting",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 155.18,
@@ -2871,15 +2863,7 @@
           "startTime": 156.22,
           "endTime": 157.1,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 157.1,
-      "endTime": 177.66,
-      "text": "mixture of an old world and old idea of you know distancing yourself from the material world all the way to a modern tech bro idea that I want intensity, I want to protect my brain, and I want to do some things. With passion. So I see these two different strands of thought in the question of",
-      "words": [
+        },
         {
           "word": "mixture",
           "startTime": 157.1,
@@ -3227,21 +3211,21 @@
           "startTime": 177.34,
           "endTime": 177.66,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 177.66,
-      "endTime": 193.58,
-      "text": "decluttering. Sergei, let me tell you something. Back in the day when Monk said let us leave a life which is sparse and a w you know away from material things, they did not have a kindle. They did not have a fender strata. Easy for them to say. They perhaps did not even have air conditioning. So what is there to lose? The",
-      "words": [
+        },
         {
           "word": "decluttering.",
           "startTime": 177.66,
           "endTime": 178.86,
           "confidence": 0.9391
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 178.86,
+      "endTime": 193.58,
+      "text": "Sergei, let me tell you something. Back in the day when Monk said let us leave a life which is sparse and a w you know away from material things, they did not have a kindle. They did not have a fender strata. Easy for them to say. They perhaps did not even have air conditioning. So what is there to lose? The",
+      "words": [
         {
           "word": "Sergei,",
           "startTime": 178.86,
@@ -4285,8 +4269,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 228.57,
-      "endTime": 1103.5,
-      "text": "So firstly I have to point out that I am not a you know, a wise person with Gyan to give on this matter or an expert in minimalism or anything of that sort. But I have been struggling with issues of accumulation and clutter and what are the things in our lives for a while. Because I like to collect things. I have thousands of books. There's a condition called Sundoku, where you have more books than you actually read. And I think that's a wonderful thing because it opens up a surface area of serendipity that uh you are always surrounded by things you haven't read. So who knows what you could discover. Uh I got to thinking about it seriously a couple of years back. My dad died died during the second wave of Covid. So we had to clear away his house. And he had thousands and thousands of books and the house was full of clutter. So there were all kinds of curios, there were trunks, there were hazard furniture, hazar fancy things, and a whole bunch of books. And I simply did not have space in my own house for all of those books. So I could not have taken them. So I took three mutual friends of ours, Mohit Satyan and Satsuya Shrai Kumaranand. I took them there. I said, U You guys pick whatever books you want, I'll pick whatever books I want to keep. we'll chuck away the rest. And my notion for thinking about what books I want to I'm going to keep is stuff that I would like to read and is not available anywhere, even as a downloadable PDF. So I simply cannot get it. Otherwise it is so rare. I'll keep it. Otherwise everything else, beautiful modern library books, every men's library books, I'll kind of uh chuck them all. The one thing that I had to keep was he had this uh fifty volume Great Books of the Western World. And for the last ten years he had been telling me that, you know, at any age of you know, take it with you. And I was like that Bombay, Bombay apartments, real estate. You know, it would cost way more in real estate occupation than it would than the books themselves cost. So I always refused. And after he died I felt that, you know, I should keep I should keep it with me. So I have it with me. When I shifted house recently, I gave away hundreds of books, but uh I brought that set with me and it's kinda there. I'll never read it. I do most of my reading on Kindle. Uh but so it's an artifact, but it is there for sentiment. But see what struck me about my father's house was that everything was pretty much junk. And it was not just junk to me, it was probably junk to him for most of his life as well. But we accumulate, accumulate, accumulate. And I got to thinking about my own life. And I thought that my own mind is like my father's house. It is full of junk, it is full of accumulated crap and it gets in the way. And it is a waste of real estate. Right? Like in his house at the end, it was so cluttered that despite living in a bungalow, he was retired IS officer, despite living in a huge bungalow with many rooms, he was basically living in half a room. Everything else was full of things. You know, and that felt like just an enormous um uh sort of waste to me. And I decided that, okay, I need to declutter my mind as well. You know, perhaps not in as drastic and immediate a way as we did his house, because you know, you can't just pick things out of your brain and throw them away, but I need to declutter it. And I also started thinking recently about how I feel the burden of many wasted years. A lot of things that I wanted to do, a lot of things that I wanted to be, and never quite got there. And I was wonder and I was thinking about why that was, and one reason was just a clutter of preoccupations all around me. And I've been thinking more and more recently about this great quote by Annie Dillard. How we live our days is how we live our lives. And you know, this is a great lesson for anybody watching if you think about it deeply. Because we go through life and we are always focused on the macro. This is a grand goal, th these are the things we will do. But actually, what is there today That is your life. Your life is an accumulation of these days. If you can figure out how you live your day and you can live each day in a good way, then you have a good life. Otherwise you don't. There is really nothing else. There is nothing beyond that. So my sort of um resolution for twenty twenty four and going beyond is to live more in the present and live more in the micro. And a lot of this has to do with decluttering of different types. And the one kind of decluttering that I want to do is I want to declutter my mind of preoccupations that you're always thinking of stuff that are not really important, right? But they're always flitting in and out of your mind. And if you have fifty things by fighting for attention in your mind, the one or two things that should really matter to you, you can't kinda get them done. So I want to sort of declutter my mind in terms of being able to think about the things that really matter to me. And this I hope will also extend to little things like what do you do every day. Like I would make to do lists with ten things and get completely freaked out and panic and not be able to do the simplest one. And now I've decided that every day I'm going to tell myself that I will do one thing today. Right? I will do one thing today. And once I have done that one thing, everything is a bonus, but I will chill. I will be happy. Right? So that one thing for today is shooting these episodes. We're shooting three episodes today. So uh that is one so that is number one. And declutter preoccupations. And the other one is that it's not just about things, lose toxic people. People suck away energy. You want to be with people who make you a better version of yourself, who want to aspire who who make you aspire to want to be like some facet of themselves. And it's really important to avoid toxic people, to avoid people with neg negativity, negative energy, who are always blaming others, you know, uh who are entitled, et cetera, et cetera. So you want to cut away the negativity. Right. I remember when I was uh you know, uh in my twenties in the late nineteen nineties, a friend of mine who's now a c kind of celebrated and controversial novelist. We we were good friends and we were walking on the streets of Bombay in Tardio, we had just come out of dinner at O Calcutta there. And he said, You know, Amit, every time a friend of mine does well, a part of me dies. Now he was just trying to be clever, but there are so many people like this. And I was just stunned. I just stood and I was like, What the fuck? And I was stunned by that. But I I kinda realised that there are so many people like that who will smile and they will pretend they're wishing you well, but they're not really doing that. And I think you need to strip those people out of your life, strip negativity out of your life. I have curated my Twitter feed to keep negativity out. Um I have left all WhatsApp groups where all day people would just gossip about others and they would have coat tweets uh making fun of others and snarking on others and I don't see the point in that. You know, it becomes popular even for podcasters. You know, there are YouTube podcasters people will make fun of that oh so and so is so shallow or whatever. I don't see the point in that. You think that person is shallow, you know inspire yourself to do something better. Why shit on others all the time? See the good things in the world around you. So In that sense, it's a decluttering exercise in terms of toxic people and in terms of unnecessary preoccupations. But at the same time, it's not really a decluttering of things in the sense that I have realized that I don't have material attachments anymore, in the sense that everything is in the cloud. I do all my reading on Kindle, all my writing, obviously, all my creation kinda goes there. So I am attached to material things. Like I love this little old Acer laptop of mine, which I've been using for a couple of years. But if it conks off today, I'll just order another one because all my data is in the cloud. It is not a problem to me. Right? So I like indulging in some physical things like uh for the last Year I've become a connoisseur of shower gels. So you talk to me about shower gels, I will give you huge amounts of gyan. I know as much about shower gels as you know about Ukraine, uh and it just it it's just a trivi it makes me trivially nice to just, you know, get into the bathroom every day, undress myself, turn on the shower, and look at all those thirteen shower gels and decide. You know? And I think that's fine. I would not uh you know scoff objects like that, but at the same time I'm not attached. Every material thing that I have is replaceable. What is not replaceable is time. It is a scarcity of time that uh, you know, people like you and I at our advancing age kind of uh have to worry about. And what really matters and all these are cliches, but ultimately experiences and relationships, those are the wealth of life and not things. But at the same time I won't spurn things and say, Oh, I don't want this, I'm living a monk's life and you know, I think there's a certain kind of false virtu in that. And there is also a danger because there are times when we need to embrace messiness. So the economist and writer Tim Howford, also a fellow two time winner of the Bastia Prize, he has his great book called Messy. Right, and he begins Messie with this fantastic anecdote. And Messie, by the way, is M E S S Y, uh not the footballer, but you know Messiness, that Messie. And he has a fantastic anecdote. On january twenty seventh, nineteen seventy five, I think it was, a gentleman named Keith Jarrett. Have you heard of him? Great pianist. A great pianist known for uh you know very unusual work, improvising, jazz, all of that. Uh, shows up in Cologne to perform at a concert. The concert is being organized by a girl called Veera Brandis. Veera Brandis is seventeen years old, even younger than our very own Nomsita, right, who is nineteen. So Veera Brandis uh is the youngest concert organizer in Europe. And this is her big break, and she has booked out this concert hall. She's got the great Keith Jarrett, who is a legend, who's a living legend. And once it's the show's been publicized, everything is sold out. The whole town is coming to see him. Jarrett shows up on the afternoon of the show. He goes to see which is the piano that is there, and he plays it a little bit, walks all around it, plays all the keys, and then his manager does the same thing. And then his manager turns to Veera and tells her that he can't perform. You gotta get another piano. He's not performing on this. Now what had happened was that h his demand is for a particular kind of piano which is suited to the way he plays. Uh Veera had told the concert hall, they said, Okay, we got it. I think it was a bosendorfer or something. And they couldn't get that piano, so they got a mini version of it. So it was like a half piano. Right? It is not something Jared is going to perform in. So Vera now being extremely uh industrious and um uh you know Jogaru tries to figure out other piano. She tries to see if a normal grand piano can be brought there. But it's raining by now. It's pouring down, and that piano would have to come through the streets. The local tuner says, No way that piano's gonna survive the journey. This is the only piano that there is. Keith Jarrett goes outside, she sits in the car and uh he says I'm going. And the crowds are beginning to come in. And Vera Brandis goes and she sort of knocks on his window and she's in tears and she's only seventeen and he realizes that. And he says, You know what? For you I'll play. But that's it. You know? And he goes out there. And the piano is such that if you play it, the sound doesn't reach the balcony. You kinda have to bang at it a bit and all the keys aren't working and it's a bit messy. The concert is called it's in Cologne. It's called the c Cologne uh concert, I think. It sold three and a half million copies. The largest selling j jazz solo album ever, the largest selling piano album ever, if I remember correctly. And this is and and the playing is brilliant, it's considered masterful. And he's essentially playing for the first time. He's never played that particular instrument, right? So he's improvising. He has to hit things harder because the sound has to get there. He has less range to work with, and he improvises and it's a masterpiece. Tim's thesis is this, that he was taken out of his comfort zone. He suddenly had to deal with the shit that is happening, right? And in this moment came this uh g incredible sort of creativity. And he gave himself to it, and this is what happened, this moment of genius. And had he just been in his comfort zone, he could have been an autopilot and just played the stuff that he always plays and et cetera, et cetera. But he was taken out of his comfort zone. It was messy. Right. It i it wasn't the things he would normally expect. And that spurred him to do things. And here I think is another danger, that if we curate our lives too much, so everything is in our comfort zone. We are listening to voices that are familiar to us, that we already agree with, we are surrounded by you know, everything is in its place, everything is a routine. Routines are great. I crave routines because I crave discipline. But at the same time you need that little uh you know bit of unpredictability. So now what I'm going to do is I'm going to pick up this diary here. This is a marvelous diary given by our uh uh collaborators, Nam Sita and Vaishnav. And uh I don't normally have a diary like this, right? And this is a diary full of rough patched pages, and they have made me promise that I will write in it every day. And you know what, I will. And the thing is, my writing in this every day. will be qualitatively different from any writing that I do anywhere else on a laptop or whatever. Because it is physical, I'm having to move my hand, the speed is different, the mind works differently. So I'm going to embrace this and I'm going to write in it every day, starting now. And Hufford in his book also uh cites these researchers, uh Harvard Gruber and Sarah Davis, who found that creative people are often working on multiple projects at the same time. Right. Uh an example being Darwin. Darwin wasn't just into biology and whatever. He he was working in a bunch of different fields at the same time. And all creative people, you'll have different projects. Especially in the modern age, where you don't have to be in a box. Sometimes you could be shooting a YouTube show, sometime you could be songwriting, sometime you could be writing and directing a musical play. And I have specific people in mind when I say this. Uh so you know uh and this is where creativity comes from, that you're doing different things all the time. You have embraced a certain mess. You are not just uh uh settling for a comfort zone. Ki roj same thing, Karenge. In other words, to use a phrase that you introduced me to Ajesha, you're not below the API. You're above the API. So this is in a sense an argument for mess. That I gave you my reasons for decluttering because a lot of the clutter that I had accumulated of concepts of false dreams that were tied around achievements uh of perhaps toxic people, a lot of those were harming me. and to declutter them and focus on what really matters is great. But at the same time one should not be too comfortable. If you're a creative person, you want to push yourself, you want to take chances, you want to take risks. That's important. So that is uh my very messy way of thinking about the subject of decluttering.",
+      "endTime": 1103.82,
+      "text": "So firstly I have to point out that I am not a you know, a wise person with Gyan to give on this matter or an expert in minimalism or anything of that sort. But I have been struggling with issues of accumulation and clutter and what are the things in our lives for a while. Because I like to collect things. I have thousands of books. There's a condition called Sundoku, where you have more books than you actually read. And I think that's a wonderful thing because it opens up a surface area of serendipity that uh you are always surrounded by things you haven't read. So who knows what you could discover. Uh I got to thinking about it seriously a couple of years back. My dad died died during the second wave of Covid. So we had to clear away his house. And he had thousands and thousands of books and the house was full of clutter. So there were all kinds of curios, there were trunks, there were hazard furniture, hazar fancy things, and a whole bunch of books. And I simply did not have space in my own house for all of those books. So I could not have taken them. So I took three mutual friends of ours, Mohit Satyan and Satsuya Shrai Kumaranand. I took them there. I said, U You guys pick whatever books you want, I'll pick whatever books I want to keep. we'll chuck away the rest. And my notion for thinking about what books I want to I'm going to keep is stuff that I would like to read and is not available anywhere, even as a downloadable PDF. So I simply cannot get it. Otherwise it is so rare. I'll keep it. Otherwise everything else, beautiful modern library books, every men's library books, I'll kind of uh chuck them all. The one thing that I had to keep was he had this uh fifty volume Great Books of the Western World. And for the last ten years he had been telling me that, you know, at any age of you know, take it with you. And I was like that Bombay, Bombay apartments, real estate. You know, it would cost way more in real estate occupation than it would than the books themselves cost. So I always refused. And after he died I felt that, you know, I should keep I should keep it with me. So I have it with me. When I shifted house recently, I gave away hundreds of books, but uh I brought that set with me and it's kinda there. I'll never read it. I do most of my reading on Kindle. Uh but so it's an artifact, but it is there for sentiment. But see what struck me about my father's house was that everything was pretty much junk. And it was not just junk to me, it was probably junk to him for most of his life as well. But we accumulate, accumulate, accumulate. And I got to thinking about my own life. And I thought that my own mind is like my father's house. It is full of junk, it is full of accumulated crap and it gets in the way. And it is a waste of real estate. Right? Like in his house at the end, it was so cluttered that despite living in a bungalow, he was retired IS officer, despite living in a huge bungalow with many rooms, he was basically living in half a room. Everything else was full of things. You know, and that felt like just an enormous um uh sort of waste to me. And I decided that, okay, I need to declutter my mind as well. You know, perhaps not in as drastic and immediate a way as we did his house, because you know, you can't just pick things out of your brain and throw them away, but I need to declutter it. And I also started thinking recently about how I feel the burden of many wasted years. A lot of things that I wanted to do, a lot of things that I wanted to be, and never quite got there. And I was wonder and I was thinking about why that was, and one reason was just a clutter of preoccupations all around me. And I've been thinking more and more recently about this great quote by Annie Dillard. How we live our days is how we live our lives. And you know, this is a great lesson for anybody watching if you think about it deeply. Because we go through life and we are always focused on the macro. This is a grand goal, th these are the things we will do. But actually, what is there today That is your life. Your life is an accumulation of these days. If you can figure out how you live your day and you can live each day in a good way, then you have a good life. Otherwise you don't. There is really nothing else. There is nothing beyond that. So my sort of um resolution for twenty twenty four and going beyond is to live more in the present and live more in the micro. And a lot of this has to do with decluttering of different types. And the one kind of decluttering that I want to do is I want to declutter my mind of preoccupations that you're always thinking of stuff that are not really important, right? But they're always flitting in and out of your mind. And if you have fifty things by fighting for attention in your mind, the one or two things that should really matter to you, you can't kinda get them done. So I want to sort of declutter my mind in terms of being able to think about the things that really matter to me. And this I hope will also extend to little things like what do you do every day. Like I would make to do lists with ten things and get completely freaked out and panic and not be able to do the simplest one. And now I've decided that every day I'm going to tell myself that I will do one thing today. Right? I will do one thing today. And once I have done that one thing, everything is a bonus, but I will chill. I will be happy. Right? So that one thing for today is shooting these episodes. We're shooting three episodes today. So uh that is one so that is number one. And declutter preoccupations. And the other one is that it's not just about things, lose toxic people. People suck away energy. You want to be with people who make you a better version of yourself, who want to aspire who who make you aspire to want to be like some facet of themselves. And it's really important to avoid toxic people, to avoid people with neg negativity, negative energy, who are always blaming others, you know, uh who are entitled, et cetera, et cetera. So you want to cut away the negativity. Right. I remember when I was uh you know, uh in my twenties in the late nineteen nineties, a friend of mine who's now a c kind of celebrated and controversial novelist. We we were good friends and we were walking on the streets of Bombay in Tardio, we had just come out of dinner at O Calcutta there. And he said, You know, Amit, every time a friend of mine does well, a part of me dies. Now he was just trying to be clever, but there are so many people like this. And I was just stunned. I just stood and I was like, What the fuck? And I was stunned by that. But I I kinda realised that there are so many people like that who will smile and they will pretend they're wishing you well, but they're not really doing that. And I think you need to strip those people out of your life, strip negativity out of your life. I have curated my Twitter feed to keep negativity out. Um I have left all WhatsApp groups where all day people would just gossip about others and they would have coat tweets uh making fun of others and snarking on others and I don't see the point in that. You know, it becomes popular even for podcasters. You know, there are YouTube podcasters people will make fun of that oh so and so is so shallow or whatever. I don't see the point in that. You think that person is shallow, you know inspire yourself to do something better. Why shit on others all the time? See the good things in the world around you. So In that sense, it's a decluttering exercise in terms of toxic people and in terms of unnecessary preoccupations. But at the same time, it's not really a decluttering of things in the sense that I have realized that I don't have material attachments anymore, in the sense that everything is in the cloud. I do all my reading on Kindle, all my writing, obviously, all my creation kinda goes there. So I am attached to material things. Like I love this little old Acer laptop of mine, which I've been using for a couple of years. But if it conks off today, I'll just order another one because all my data is in the cloud. It is not a problem to me. Right? So I like indulging in some physical things like uh for the last Year I've become a connoisseur of shower gels. So you talk to me about shower gels, I will give you huge amounts of gyan. I know as much about shower gels as you know about Ukraine, uh and it just it it's just a trivi it makes me trivially nice to just, you know, get into the bathroom every day, undress myself, turn on the shower, and look at all those thirteen shower gels and decide. You know? And I think that's fine. I would not uh you know scoff objects like that, but at the same time I'm not attached. Every material thing that I have is replaceable. What is not replaceable is time. It is a scarcity of time that uh, you know, people like you and I at our advancing age kind of uh have to worry about. And what really matters and all these are cliches, but ultimately experiences and relationships, those are the wealth of life and not things. But at the same time I won't spurn things and say, Oh, I don't want this, I'm living a monk's life and you know, I think there's a certain kind of false virtu in that. And there is also a danger because there are times when we need to embrace messiness. So the economist and writer Tim Howford, also a fellow two time winner of the Bastia Prize, he has his great book called Messy. Right, and he begins Messie with this fantastic anecdote. And Messie, by the way, is M E S S Y, uh not the footballer, but you know Messiness, that Messie. And he has a fantastic anecdote. On january twenty seventh, nineteen seventy five, I think it was, a gentleman named Keith Jarrett. Have you heard of him? Great pianist. A great pianist known for uh you know very unusual work, improvising, jazz, all of that. Uh, shows up in Cologne to perform at a concert. The concert is being organized by a girl called Veera Brandis. Veera Brandis is seventeen years old, even younger than our very own Nomsita, right, who is nineteen. So Veera Brandis uh is the youngest concert organizer in Europe. And this is her big break, and she has booked out this concert hall. She's got the great Keith Jarrett, who is a legend, who's a living legend. And once it's the show's been publicized, everything is sold out. The whole town is coming to see him. Jarrett shows up on the afternoon of the show. He goes to see which is the piano that is there, and he plays it a little bit, walks all around it, plays all the keys, and then his manager does the same thing. And then his manager turns to Veera and tells her that he can't perform. You gotta get another piano. He's not performing on this. Now what had happened was that h his demand is for a particular kind of piano which is suited to the way he plays. Uh Veera had told the concert hall, they said, Okay, we got it. I think it was a bosendorfer or something. And they couldn't get that piano, so they got a mini version of it. So it was like a half piano. Right? It is not something Jared is going to perform in. So Vera now being extremely uh industrious and um uh you know Jogaru tries to figure out other piano. She tries to see if a normal grand piano can be brought there. But it's raining by now. It's pouring down, and that piano would have to come through the streets. The local tuner says, No way that piano's gonna survive the journey. This is the only piano that there is. Keith Jarrett goes outside, she sits in the car and uh he says I'm going. And the crowds are beginning to come in. And Vera Brandis goes and she sort of knocks on his window and she's in tears and she's only seventeen and he realizes that. And he says, You know what? For you I'll play. But that's it. You know? And he goes out there. And the piano is such that if you play it, the sound doesn't reach the balcony. You kinda have to bang at it a bit and all the keys aren't working and it's a bit messy. The concert is called it's in Cologne. It's called the c Cologne uh concert, I think. It sold three and a half million copies. The largest selling j jazz solo album ever, the largest selling piano album ever, if I remember correctly. And this is and and the playing is brilliant, it's considered masterful. And he's essentially playing for the first time. He's never played that particular instrument, right? So he's improvising. He has to hit things harder because the sound has to get there. He has less range to work with, and he improvises and it's a masterpiece. Tim's thesis is this, that he was taken out of his comfort zone. He suddenly had to deal with the shit that is happening, right? And in this moment came this uh g incredible sort of creativity. And he gave himself to it, and this is what happened, this moment of genius. And had he just been in his comfort zone, he could have been an autopilot and just played the stuff that he always plays and et cetera, et cetera. But he was taken out of his comfort zone. It was messy. Right. It i it wasn't the things he would normally expect. And that spurred him to do things. And here I think is another danger, that if we curate our lives too much, so everything is in our comfort zone. We are listening to voices that are familiar to us, that we already agree with, we are surrounded by you know, everything is in its place, everything is a routine. Routines are great. I crave routines because I crave discipline. But at the same time you need that little uh you know bit of unpredictability. So now what I'm going to do is I'm going to pick up this diary here. This is a marvelous diary given by our uh uh collaborators, Nam Sita and Vaishnav. And uh I don't normally have a diary like this, right? And this is a diary full of rough patched pages, and they have made me promise that I will write in it every day. And you know what, I will. And the thing is, my writing in this every day. will be qualitatively different from any writing that I do anywhere else on a laptop or whatever. Because it is physical, I'm having to move my hand, the speed is different, the mind works differently. So I'm going to embrace this and I'm going to write in it every day, starting now. And Hufford in his book also uh cites these researchers, uh Harvard Gruber and Sarah Davis, who found that creative people are often working on multiple projects at the same time. Right. Uh an example being Darwin. Darwin wasn't just into biology and whatever. He he was working in a bunch of different fields at the same time. And all creative people, you'll have different projects. Especially in the modern age, where you don't have to be in a box. Sometimes you could be shooting a YouTube show, sometime you could be songwriting, sometime you could be writing and directing a musical play. And I have specific people in mind when I say this. Uh so you know uh and this is where creativity comes from, that you're doing different things all the time. You have embraced a certain mess. You are not just uh uh settling for a comfort zone. Ki roj same thing, Karenge. In other words, to use a phrase that you introduced me to Ajesha, you're not below the API. You're above the API. So this is in a sense an argument for mess. That I gave you my reasons for decluttering because a lot of the clutter that I had accumulated of concepts of false dreams that were tied around achievements uh of perhaps toxic people, a lot of those were harming me. and to declutter them and focus on what really matters is great. But at the same time one should not be too comfortable. If you're a creative person, you want to push yourself, you want to take chances, you want to take risks. That's important. So that is uh my very messy way of thinking about the subject of decluttering. Can I",
       "words": [
         {
           "word": "So",
@@ -22563,15 +22547,7 @@
           "startTime": 1102.14,
           "endTime": 1103.5,
           "confidence": 0.923
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1103.5,
-      "endTime": 1182.1,
-      "text": "Can I ask a follow up question on a very mundane aspect of this? You described your father's big house in Chandigar? That's correct? And uh you live in a tiny house in Bombay, as do I. And uh how does that change your views on these things? Uh I've seen how in New York, uh my nephew Hemen has a very small flat in New York, but it has driven him to extremes of declutter. So he thinks very hard before buying anything because the house is small. Uh a uh I get amused when people talk about affordable housing and talk about some minimum notion of how big a affordable house for poor people should be. I'd like to say go visit New York sometime. And he's got a very small house and that immediately has created a budget constraint. So the idea of buying things, accumulating things, has been sublimated by him into extreme thought and care that by default I will not own things. only occasionally I will buy a thing if it really fits my life and I have a tiny budget constraint of space. So the shortage of space has driven him to be more intentional around acquiring things. Is that a useful way to think about",
-      "words": [
+        },
         {
           "word": "Can",
           "startTime": 1103.5,
@@ -22583,7 +22559,15 @@
           "startTime": 1103.66,
           "endTime": 1103.82,
           "confidence": 0.9984
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1103.82,
+      "endTime": 1182.1,
+      "text": "ask a follow up question on a very mundane aspect of this? You described your father's big house in Chandigar? That's correct? And uh you live in a tiny house in Bombay, as do I. And uh how does that change your views on these things? Uh I've seen how in New York, uh my nephew Hemen has a very small flat in New York, but it has driven him to extremes of declutter. So he thinks very hard before buying anything because the house is small. Uh a uh I get amused when people talk about affordable housing and talk about some minimum notion of how big a affordable house for poor people should be. I'd like to say go visit New York sometime. And he's got a very small house and that immediately has created a budget constraint. So the idea of buying things, accumulating things, has been sublimated by him into extreme thought and care that by default I will not own things. only occasionally I will buy a thing if it really fits my life and I have a tiny budget constraint of space. So the shortage of space has driven him to be more intentional around acquiring things. Is that a useful way to think about",
+      "words": [
         {
           "word": "ask",
           "startTime": 1103.82,
@@ -28031,8 +28015,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1383.0,
-      "endTime": 1453.08,
-      "text": "it's a bunch of algorithms. So first of all I share the principle, I share the ethos. Uh I feel there's a very trivial and direct aspect that we own things we end up having to uh get distracted with our minds on caring for them, on protecting them from extremes of depreciation, things fall apart, they have to be repaired, books have to be taken care of, and all that is a tax on the mind. So from that simple principle, owning less things is better. Then I'd rather always own less. So let's think of a couple of steps in an algorithm and these may be ideas that others may find useful. So the starting point of the uh decluttering problem, in my opinion, is that in India we have had a period of high economic growth coupled with an explosion of cheap Chinese manufacturing. And so all of a sudden within a short twenty years, we've gone from a relative scarcity to a relative uh plenty of many things. So I feel our cultural thumb rules and our default algorithms about choosing what to buy and choosing what to",
+      "endTime": 1469.24,
+      "text": "it's a bunch of algorithms. So first of all I share the principle, I share the ethos. Uh I feel there's a very trivial and direct aspect that we own things we end up having to uh get distracted with our minds on caring for them, on protecting them from extremes of depreciation, things fall apart, they have to be repaired, books have to be taken care of, and all that is a tax on the mind. So from that simple principle, owning less things is better. Then I'd rather always own less. So let's think of a couple of steps in an algorithm and these may be ideas that others may find useful. So the starting point of the uh decluttering problem, in my opinion, is that in India we have had a period of high economic growth coupled with an explosion of cheap Chinese manufacturing. And so all of a sudden within a short twenty years, we've gone from a relative scarcity to a relative uh plenty of many things. So I feel our cultural thumb rules and our default algorithms about choosing what to buy and choosing what to keep are a little off. So because something dramatic happened from about nineteen ninety one to about twenty eleven, that m most uh things were in short supply in nineteen ninety one and things were ridiculously cheap and our incomes had all gone up by twenty eleven.",
       "words": [
         {
           "word": "it's",
@@ -29185,15 +29169,7 @@
           "startTime": 1452.92,
           "endTime": 1453.08,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1453.08,
-      "endTime": 1455.8,
-      "text": "keep are a little off. So",
-      "words": [
+        },
         {
           "word": "keep",
           "startTime": 1453.08,
@@ -29229,15 +29205,7 @@
           "startTime": 1455.4,
           "endTime": 1455.8,
           "confidence": 0.9695
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1455.8,
-      "endTime": 1469.24,
-      "text": "because something dramatic happened from about nineteen ninety one to about twenty eleven, that m most uh things were in short supply in nineteen ninety one and things were ridiculously cheap and our incomes had all gone up by twenty eleven.",
-      "words": [
+        },
         {
           "word": "because",
           "startTime": 1455.8,
@@ -29489,8 +29457,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1469.24,
-      "endTime": 1484.12,
-      "text": "So there is one thing that was in abundance in nineteen ninety one, but we had have has become very scarce now. Which is mangoes. The days of our youth. Okay, never mind, carry on. I didn't understand. Our youth. We have grown older. Anyway, continue. So",
+      "endTime": 1483.8,
+      "text": "So there is one thing that was in abundance in nineteen ninety one, but we had have has become very scarce now. Which is mangoes. The days of our youth. Okay, never mind, carry on. I didn't understand. Our youth. We have grown older. Anyway, continue.",
       "words": [
         {
           "word": "So",
@@ -29767,21 +29735,21 @@
           "startTime": 1482.68,
           "endTime": 1483.8,
           "confidence": 0.9349
-        },
-        {
-          "word": "So",
-          "startTime": 1483.8,
-          "endTime": 1484.12,
-          "confidence": 0.943
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1484.12,
-      "endTime": 1501.56,
-      "text": "I think that there is a particularly big declutter problem in India. Because in a short time span, two things happened together. The trade barriers came down and Indian growth happened. So suddenly we are all rich and we get the wonders of Amazon and AliExpress. Gentle reader, if you have not used",
+      "startTime": 1483.8,
+      "endTime": 2053.71,
+      "text": "So I think that there is a particularly big declutter problem in India. Because in a short time span, two things happened together. The trade barriers came down and Indian growth happened. So suddenly we are all rich and we get the wonders of Amazon and AliExpress. Gentle reader, if you have not used AliExpress, you should. And uh suddenly we are full of things and we have way too many things and we have more things than our traditional thumb rules would have uh dealt with. So here are some thoughts on how we can do better. Okay, so first is on the subject of buying. I actually have a peculiar thumb rule around buying electronics and computer toys, and I know you do too. My logic runs in the following steps. The first is that there is a bewildering universe of interesting computer and electronic gadgets and toys and devices. And it is never good enough to read a review, it is never good enough to watch a YouTube review. You have to experience these things partly for the knowledge because it's important to understand the world and partly to feel the fit that does this device fit my life. And some things may be a perfectly nice device, but they don't fit your life. Now my claim is that once you have found a particular device that fits your life, The consumer surplus that we get out of it is so massive that it pays for a large number of mistakes. Okay, so here's an example. This is my wristwatch. It's a Casio wristwatch. It I seem to think it costs 1100 rupees. Okay now, 1100 rupees for my favorite wristwatch is like nothing. But I've been through many watches to get to this. And so my mental model is my willingness to pay for this is very high. I actually only paid 1100. Gentle reader, that gap. between what you paid and what you're willing to pay is called consumer surplus. So I got a big gift, I got a big consumer surplus in this Casio watch. And that pays for a lot of mistakes. Okay, and so this applies all through in all the things that we have. The modern world has given a bounty of nice cheap things, but to discover those cheap things you have to experiment. So that's a very consumerist and uh uh openness to experience personality trait rule that if you see things and hear of things that are kinda interesting, take the plunge, take the risk, buy it, experiment with it. Partly you learn about science and technology and product design and be ready to ruthlessly be a grim reaper, and I'll come to that in a moment. Okay The second thought in the world of buy things is I see some people buying things in order to flaunt them in front of others and I just think that's a shame. I mean what kind of life are you leading if you know you want possessions and you want people and you want lines on the resume to show other people you know with a grand waste of life. So it's like be selfish, live for yourself, and that's a better life. Okay. So then if you do not buy clothes, I'm gonna take clothes as a specific example, shoes. If you do not buy clothes for the purpose of impressing others. then what's the correct algorithm. So I think like your baseline to cheap functional clothes which are like ubiquitous. And then maybe you think a little bit on some dimensions that maybe some things look good. So I think the world of fashion does contain really creative people who are making us look better and it's not all a con. It's not only a case of three dollar wine. There's actually some genuine knowledge in the world of fashion. The second is the world of technical clothes. So for example, I am very big on hiking. And I've discovered that when you're out in the mountains, you know, the correct Merino wool inner and the correct uh hiking pants are functionally superior and that's a nice thing to have. And a third dimension is that I like things that just last and last. That once I buy it, I don't want it to degrade on me. It's like don't fail on me, just stay there for years and years. So I'm a funny person, my body size is exactly what it was when I graduated from college. So nothing has changed. So I'm able to wear pants that were thirty years old. and they fit me perfectly. So then I want things that are not going to fall apart because I don't want to think about buying anything. Okay, so these are like interesting rules around buying that I'm not buying anything to impress other people. So I value things that will last, that will have some technical characteristics. And yes, I think vanity is a crime that I'm guilty of. So it's nice to have things that look good. Okay, so these are three dimensions in which one thinks rules around buying. Okay. Now you have to add a grim reaper on top of this because if you just keep on buying, you'll fill up the house with junk in no time. So here are some thoughts and principles on buying. Um so I admire some people like our friend Vishhal Nevatya, who has a twelve shirts rule that he will only own twelve shirts. If a thirteenth shirt appears, one shirt has to go. So he has that cold logic and the ability to be disciplined that he will only own twelve shirts. And that's great. I mean it's a very healthy and sensible place to be that There are only twelve shirts in his house and so one in, one out. You solve your sources and sink's problem, he'll never accumulate junk because he'll only own twelve shirts. It's great. It's a nice wise rule uh to apply. I have thought a lot about gifting things away, and I have an algorithm on the rules for gifting things away. Okay, so here are some thoughts. So step one. As we are children and we start growing up, all of us will inevitably at some point start feeling the glory of the world of life, of the world of biology, okay, of every leaf and every blade of grass and every fungus and every virus. There's something magical and there's something wonderful. Okay. And so you know, you you admire and respect the atoms and the molecules that come together as every piece of life. There's something glorious and magical about that statistically improbable collection of atoms and molecules that has come together to become a plant, to become a mongoose. There's something glorious in each of these things. Every virus, every fungus, every algae is something beautiful, is something to treasure and respect. And at some point I feel for all of us our minds open up to this kind of biophilia, the phrase that was coined by Edmund O Wilson, and it's great once you start looking at the world. Then I traveled backwards through uh The Blind Watchmaker by Richard Dawkins, who tells a story that if you were on a beach and you saw a watch lying in the sand, I'm now using my words. You would think that that watch is a statistically improbable collection of atoms, and you would think there's a maker, there's something special, there's something very unusual in a bunch of atoms that is fabricated to become a watch, and then he goes off into the human eye. The human eye is amazing, it's improbable, but while a watch has a creator, the eye has no creator, because we're all creatures of evolution, of natural selection. There was no design, there is no designer. Okay? But I flip that around that You respect the I as a statistically improbable grouping of atoms and molecules. Well, so is the watch. The watch is a statistically improbable grouping of atoms and molecules and it's come together and it's something magical that it's here and it knows how to do certain things and you know, it would be so nice if it would do the things that it was intended to. And that's what brings me to gifting things away. So I feel that if I'm not using something then I should gift it away. That you know those things have come to exist. We each of us almost without noticing are buying great marvels of fabrication. We are buying miracles. If you take them back in a time machine, each of these things is a miracle. So I just feel bad when things are not used. Now apply a sank cost principle that look, I bought it, I paid some money for it, it's over. There's no decision there. It's gone. So how much you paid for it is irrelevant. That sunk cost principle. Now you are there. You're owing it, and if you're not using it, then give it away. Okay, that somebody else will use it. So I think about am I using it, am I not using it? I think about is there another person who will actually use it? I think of my altruism towards that person. And uh then, you know, wherever possible I'm just giving things away because we should be fair and respectful of the atoms that came together to be these marvelous fabrications that surround our life. So that's the algorithm for things leaving you. So I recklessly buy things electronics, gadgets, you know, like at a price point like two thousand rupees, five thousand rupees, I don't even notice because amazing wonders of billions of transistors are available at these kinds of price points. So I buy them, I experiment with them, I learn them, I read manuals, I'll try to hack in the prom and after that when I decide this is not for me, I gift it away. So that is my recipe on getting rid of things so that one owns fewer things. So this is a story about how to think about giving things away that It's good to keep giving things away. So one owns a few things and my rule is if I'm actually using something, then I'll own it. And if I'm not using it, generally, you know, I'll try to get rid of it or give it to somebody else who will actually use it. So I don't like putting things into landfills, but I like giving things to somebody who will use them. And it's I think I've done my duty to the thing when I've given it away to somebody who will actually use it.",
       "words": [
+        {
+          "word": "So",
+          "startTime": 1483.8,
+          "endTime": 1484.12,
+          "confidence": 0.943
+        },
         {
           "word": "I",
           "startTime": 1484.12,
@@ -30099,15 +30067,7 @@
           "startTime": 1501.32,
           "endTime": 1501.56,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1501.56,
-      "endTime": 1503.96,
-      "text": "AliExpress, you should.",
-      "words": [
+        },
         {
           "word": "AliExpress,",
           "startTime": 1501.56,
@@ -30125,15 +30085,7 @@
           "startTime": 1502.92,
           "endTime": 1503.96,
           "confidence": 0.8794
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1503.96,
-      "endTime": 1511.85,
-      "text": "And uh suddenly we are full of things and we have way too many things and we have more things than our traditional thumb rules would have",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1503.96,
@@ -30295,15 +30247,7 @@
           "startTime": 1511.53,
           "endTime": 1511.85,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1511.85,
-      "endTime": 1513.85,
-      "text": "uh dealt with.",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 1511.85,
@@ -30321,15 +30265,7 @@
           "startTime": 1513.21,
           "endTime": 1513.85,
           "confidence": 0.9458
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1513.85,
-      "endTime": 1614.81,
-      "text": "So here are some thoughts on how we can do better. Okay, so first is on the subject of buying. I actually have a peculiar thumb rule around buying electronics and computer toys, and I know you do too. My logic runs in the following steps. The first is that there is a bewildering universe of interesting computer and electronic gadgets and toys and devices. And it is never good enough to read a review, it is never good enough to watch a YouTube review. You have to experience these things partly for the knowledge because it's important to understand the world and partly to feel the fit that does this device fit my life. And some things may be a perfectly nice device, but they don't fit your life. Now my claim is that once you have found a particular device that fits your life, The consumer surplus that we get out of it is so massive that it pays for a large number of mistakes. Okay, so here's an example. This is my wristwatch. It's a Casio wristwatch. It I seem to think it costs 1100 rupees. Okay now, 1100 rupees for my favorite wristwatch is like nothing. But I've been through many watches to get to this. And so my mental model is my willingness to pay for this is very high. I actually only paid 1100. Gentle reader, that gap. between what you paid and what you're willing to pay is called consumer surplus. So I got a big gift, I got a big consumer surplus in this Casio watch. And that pays for a lot of mistakes. Okay, and so this applies all through in all the things that we have. The modern world has given a bounty of nice cheap things, but to discover",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1513.85,
@@ -32129,15 +32065,7 @@
           "startTime": 1614.41,
           "endTime": 1614.81,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1614.81,
-      "endTime": 1617.29,
-      "text": "those cheap things you have to experiment.",
-      "words": [
+        },
         {
           "word": "those",
           "startTime": 1614.81,
@@ -32179,15 +32107,7 @@
           "startTime": 1616.33,
           "endTime": 1617.29,
           "confidence": 0.9683
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1617.29,
-      "endTime": 1638.95,
-      "text": "So that's a very consumerist and uh uh openness to experience personality trait rule that if you see things and hear of things that are kinda interesting, take the plunge, take the risk, buy it, experiment with it. Partly you learn about science and technology and product design and be ready to ruthlessly be a grim reaper, and I'll",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1617.29,
@@ -32541,15 +32461,7 @@
           "startTime": 1638.79,
           "endTime": 1638.95,
           "confidence": 0.9871
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1638.95,
-      "endTime": 1640.95,
-      "text": "come to that in a moment. Okay",
-      "words": [
+        },
         {
           "word": "come",
           "startTime": 1638.95,
@@ -32591,15 +32503,7 @@
           "startTime": 1640.31,
           "endTime": 1640.95,
           "confidence": 0.7041
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1640.95,
-      "endTime": 1808.63,
-      "text": "The second thought in the world of buy things is I see some people buying things in order to flaunt them in front of others and I just think that's a shame. I mean what kind of life are you leading if you know you want possessions and you want people and you want lines on the resume to show other people you know with a grand waste of life. So it's like be selfish, live for yourself, and that's a better life. Okay. So then if you do not buy clothes, I'm gonna take clothes as a specific example, shoes. If you do not buy clothes for the purpose of impressing others. then what's the correct algorithm. So I think like your baseline to cheap functional clothes which are like ubiquitous. And then maybe you think a little bit on some dimensions that maybe some things look good. So I think the world of fashion does contain really creative people who are making us look better and it's not all a con. It's not only a case of three dollar wine. There's actually some genuine knowledge in the world of fashion. The second is the world of technical clothes. So for example, I am very big on hiking. And I've discovered that when you're out in the mountains, you know, the correct Merino wool inner and the correct uh hiking pants are functionally superior and that's a nice thing to have. And a third dimension is that I like things that just last and last. That once I buy it, I don't want it to degrade on me. It's like don't fail on me, just stay there for years and years. So I'm a funny person, my body size is exactly what it was when I graduated from college. So nothing has changed. So I'm able to wear pants that were thirty years old. and they fit me perfectly. So then I want things that are not going to fall apart because I don't want to think about buying anything. Okay, so these are like interesting rules around buying that I'm not buying anything to impress other people. So I value things that will last, that will have some technical characteristics. And yes, I think vanity is a crime that I'm guilty of. So it's nice to have things that look good. Okay, so these are three dimensions in which one thinks rules around buying. Okay. Now you have to add a grim reaper on top of this because if you just keep on buying, you'll fill up the house with junk in no time. So here are some thoughts and principles on buying. Um so I admire some people like our friend Vishhal Nevatya, who has a twelve shirts rule that he will only own twelve shirts. If a thirteenth shirt appears, one shirt has to go. So he has that cold logic and the ability to be disciplined that he will only own twelve shirts. And that's great. I mean it's a very healthy and sensible place to be that There are only twelve shirts in his house and so one in, one out. You solve your sources and sink's problem, he'll never accumulate junk because he'll only own twelve shirts. It's great. It's a nice wise rule uh to apply. I have thought a lot about gifting things away, and I have an algorithm on the rules for gifting things",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 1640.95,
@@ -36043,15 +35947,7 @@
           "startTime": 1808.39,
           "endTime": 1808.63,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1808.63,
-      "endTime": 1810.71,
-      "text": "away. Okay, so here are some thoughts.",
-      "words": [
+        },
         {
           "word": "away.",
           "startTime": 1808.63,
@@ -36093,15 +35989,7 @@
           "startTime": 1810.07,
           "endTime": 1810.71,
           "confidence": 0.9764
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1810.71,
-      "endTime": 1987.58,
-      "text": "So step one. As we are children and we start growing up, all of us will inevitably at some point start feeling the glory of the world of life, of the world of biology, okay, of every leaf and every blade of grass and every fungus and every virus. There's something magical and there's something wonderful. Okay. And so you know, you you admire and respect the atoms and the molecules that come together as every piece of life. There's something glorious and magical about that statistically improbable collection of atoms and molecules that has come together to become a plant, to become a mongoose. There's something glorious in each of these things. Every virus, every fungus, every algae is something beautiful, is something to treasure and respect. And at some point I feel for all of us our minds open up to this kind of biophilia, the phrase that was coined by Edmund O Wilson, and it's great once you start looking at the world. Then I traveled backwards through uh The Blind Watchmaker by Richard Dawkins, who tells a story that if you were on a beach and you saw a watch lying in the sand, I'm now using my words. You would think that that watch is a statistically improbable collection of atoms, and you would think there's a maker, there's something special, there's something very unusual in a bunch of atoms that is fabricated to become a watch, and then he goes off into the human eye. The human eye is amazing, it's improbable, but while a watch has a creator, the eye has no creator, because we're all creatures of evolution, of natural selection. There was no design, there is no designer. Okay? But I flip that around that You respect the I as a statistically improbable grouping of atoms and molecules. Well, so is the watch. The watch is a statistically improbable grouping of atoms and molecules and it's come together and it's something magical that it's here and it knows how to do certain things and you know, it would be so nice if it would do the things that it was intended to. And that's what brings me to gifting things away. So I feel that if I'm not using something then I should gift it away. That you know those things have come to exist. We each of us almost without noticing are buying great marvels of fabrication. We are buying miracles. If you take them back in a time machine, each of these things is a miracle. So I just feel bad when things are not used. Now apply a sank cost principle that look, I bought it, I paid some money for it, it's over. There's no decision there. It's gone. So how much you paid for it is irrelevant. That sunk cost principle. Now you are there. You're owing it, and if you're not using it, then give it away. Okay, that somebody else will use it. So I think about am I using it, am I not using it? I think about is there another person who will actually use it? I think of my altruism towards that person. And uh then, you know, wherever possible I'm just giving things away because we should be fair and",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1810.71,
@@ -39401,15 +39289,7 @@
           "startTime": 1987.18,
           "endTime": 1987.58,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1987.58,
-      "endTime": 1989.26,
-      "text": "respectful of",
-      "words": [
+        },
         {
           "word": "respectful",
           "startTime": 1987.58,
@@ -39421,15 +39301,7 @@
           "startTime": 1988.86,
           "endTime": 1989.26,
           "confidence": 0.9934
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1989.26,
-      "endTime": 2046.39,
-      "text": "the atoms that came together to be these marvelous fabrications that surround our life. So that's the algorithm for things leaving you. So I recklessly buy things electronics, gadgets, you know, like at a price point like two thousand rupees, five thousand rupees, I don't even notice because amazing wonders of billions of transistors are available at these kinds of price points. So I buy them, I experiment with them, I learn them, I read manuals, I'll try to hack in the prom and after that when I decide this is not for me, I gift it away. So that is my recipe on getting rid of things so that one owns fewer things. So this is a story about how to think about giving things away that It's good to keep giving things away. So one owns a few things and my rule is if I'm actually using something, then I'll own it. And if I'm not using it, generally, you know, I'll try to get rid of it or give it to somebody else who will actually use it. So I don't like putting things into landfills, but I like giving things to somebody who",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1989.26,
@@ -40611,15 +40483,7 @@
           "startTime": 2046.23,
           "endTime": 2046.39,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2046.39,
-      "endTime": 2047.91,
-      "text": "will use them. And it's",
-      "words": [
+        },
         {
           "word": "will",
           "startTime": 2046.39,
@@ -40649,15 +40513,7 @@
           "startTime": 2047.43,
           "endTime": 2047.91,
           "confidence": 0.9781
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2047.91,
-      "endTime": 2053.71,
-      "text": "I think I've done my duty to the thing when I've given it away to somebody who will actually use it.",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 2047.91,
@@ -40789,8 +40645,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2054.07,
-      "endTime": 2133.37,
-      "text": "I have a question for you. And you know, while you were talking about the beauty of nature and every blade of grass and etc., I suddenly thought of the phrase every grain of sand, great Dillon song. So apropos of nothing, it's not really relevant to this, but I'll you know read out a beautiful passage from there. I hear the ancient footsteps like the motion of the sea. Sometimes I turn there someone there, other times it's only me. I'm hanging in the balance of a perfect finish plan, like every sparrow falling, like every grain of sand. Right? And while I share Uh your you know, the your conviction that everything that is there in nature is miraculous, is beautiful, is something to be celebrated. I don't feel the same way about all human made things. Because again Sturgeon's law kicks in. Sturgeon's law is ninety percent, ninety five percent of everything is crap. Right? And Tyler Cowvin had this um uh great rule about gifting books, where he said that if I don't like a book, I won't gift it away. Because if I if I think it's a bad book, why should I uh uh you know make someone worse off by giving it to them. And uh I kind of have that dilemma because publishers keep sending me books all the time. And uh and thank you for that. Many of them are great, so keep sending them. But um uh many of them are not great. And I don't I won't I I don't want them, but I don't want to you know, give them to someone because why should I burden somebody else? Because other people may read one book a year, two books a year. Why would I give them a bad book that they might read? That's a fair point. No, I and on my",
+      "endTime": 2133.85,
+      "text": "I have a question for you. And you know, while you were talking about the beauty of nature and every blade of grass and etc., I suddenly thought of the phrase every grain of sand, great Dillon song. So apropos of nothing, it's not really relevant to this, but I'll you know read out a beautiful passage from there. I hear the ancient footsteps like the motion of the sea. Sometimes I turn there someone there, other times it's only me. I'm hanging in the balance of a perfect finish plan, like every sparrow falling, like every grain of sand. Right? And while I share Uh your you know, the your conviction that everything that is there in nature is miraculous, is beautiful, is something to be celebrated. I don't feel the same way about all human made things. Because again Sturgeon's law kicks in. Sturgeon's law is ninety percent, ninety five percent of everything is crap. Right? And Tyler Cowvin had this um uh great rule about gifting books, where he said that if I don't like a book, I won't gift it away. Because if I if I think it's a bad book, why should I uh uh you know make someone worse off by giving it to them. And uh I kind of have that dilemma because publishers keep sending me books all the time. And uh and thank you for that. Many of them are great, so keep sending them. But um uh many of them are not great. And I don't I won't I I don't want them, but I don't want to you know, give them to someone because why should I burden somebody else? Because other people may read one book a year, two books a year. Why would I give them a bad book that they might read? That's a fair point. No, I and on my experience",
       "words": [
         {
           "word": "I",
@@ -42681,21 +42537,21 @@
           "startTime": 2133.21,
           "endTime": 2133.37,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2133.37,
-      "endTime": 2175.26,
-      "text": "experience where I'm generally already filtering at the point of buying. Yeah. And I told you my concept of statistically improbable collections of atoms. Mostly I'm just thinking about electronics. That I buy electronics, I will understand it, I will play with it, I will hack in it, and then if it doesn't fit my life, I'll give it away. So but the attempt at decluttering. So I have a few core things that I use with great delight and happiness. And many of them are just very simple. I I mentioned this simple Cassio watch. I think it's the perfect watch. And I'm happy to talk about why, but that's a separate debate. Okay. So this is a first element of logic on the algorithm for buying and the algorithm for getting rid of",
-      "words": [
+        },
         {
           "word": "experience",
           "startTime": 2133.37,
           "endTime": 2133.85,
           "confidence": 0.9977
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2133.85,
+      "endTime": 2259.99,
+      "text": "where I'm generally already filtering at the point of buying. Yeah. And I told you my concept of statistically improbable collections of atoms. Mostly I'm just thinking about electronics. That I buy electronics, I will understand it, I will play with it, I will hack in it, and then if it doesn't fit my life, I'll give it away. So but the attempt at decluttering. So I have a few core things that I use with great delight and happiness. And many of them are just very simple. I I mentioned this simple Cassio watch. I think it's the perfect watch. And I'm happy to talk about why, but that's a separate debate. Okay. So this is a first element of logic on the algorithm for buying and the algorithm for getting rid of things. Okay. Now I want to go further into notions of declutter, exactly as you did, that uh decluttering is relevant for things, but actually it's triply relevant at higher uh planes of existence. Uh it's declutter your mind and you know the scarcest thing in the world is our cognitive burden. So uh s I like to have the superpower of living in a pig stye. Because if you are obsessed with living in a neat and clean environment, then that exerts a burden on you cognitively. Whereas I can work in any dirty settings. I can sit on a floor, I can sit on the ground, on a railway station, inside a train, and I I'm fine, I can read, I can think, I can write, I can function anywhere. So I have no hang ups. about the kind of surrounding and the environment that I have, which is just a way of protecting my mind, because otherwise my mind is tormented to try to find a clean and neat environment in which only then I can start thinking. But I want to be at full power thinking and doing my life of thinking and creating with no preconditions. That you know, my heroes have sat in concentration camps and written poetry. So I want to be in that league. But you should be able to live in jail and in solitary confinement and write symphonies. That to me is the dream of what a human being should be that there should be no",
+      "words": [
         {
           "word": "where",
           "startTime": 2133.85,
@@ -43499,29 +43355,13 @@
           "startTime": 2175.02,
           "endTime": 2175.26,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2175.26,
-      "endTime": 2176.76,
-      "text": "things.",
-      "words": [
+        },
         {
           "word": "things.",
           "startTime": 2175.26,
           "endTime": 2176.76,
           "confidence": 0.9583
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2176.86,
-      "endTime": 2201.91,
-      "text": "Okay. Now I want to go further into notions of declutter, exactly as you did, that uh decluttering is relevant for things, but actually it's triply relevant at higher uh planes of existence. Uh it's declutter your mind and you know the scarcest thing in the world is our cognitive burden. So uh s I like to have the superpower of living in a pig",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 2176.86,
@@ -43911,15 +43751,7 @@
           "startTime": 2201.51,
           "endTime": 2201.91,
           "confidence": 0.959
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2201.91,
-      "endTime": 2203.43,
-      "text": "stye. Because if",
-      "words": [
+        },
         {
           "word": "stye.",
           "startTime": 2201.91,
@@ -43937,15 +43769,7 @@
           "startTime": 2203.11,
           "endTime": 2203.43,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2203.43,
-      "endTime": 2259.99,
-      "text": "you are obsessed with living in a neat and clean environment, then that exerts a burden on you cognitively. Whereas I can work in any dirty settings. I can sit on a floor, I can sit on the ground, on a railway station, inside a train, and I I'm fine, I can read, I can think, I can write, I can function anywhere. So I have no hang ups. about the kind of surrounding and the environment that I have, which is just a way of protecting my mind, because otherwise my mind is tormented to try to find a clean and neat environment in which only then I can start thinking. But I want to be at full power thinking and doing my life of thinking and creating with no preconditions. That you know, my heroes have sat in concentration camps and written poetry. So I want to be in that league. But you should be able to live in jail and in solitary confinement and write symphonies. That to me is the dream of what a human being should be that there should be no",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 2203.43,
@@ -45177,8 +45001,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2264.79,
-      "endTime": 2269.75,
-      "text": "Establishing dreams and objectives of what is worthy and what is uh",
+      "endTime": 2269.51,
+      "text": "Establishing dreams and objectives of what is worthy and what is",
       "words": [
         {
           "word": "Establishing",
@@ -45245,21 +45069,21 @@
           "startTime": 2268.95,
           "endTime": 2269.51,
           "confidence": 0.9902
-        },
-        {
-          "word": "uh",
-          "startTime": 2269.51,
-          "endTime": 2269.75,
-          "confidence": 0.7248
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2269.75,
+      "startTime": 2269.51,
       "endTime": 2290.38,
-      "text": "the aspiration. But have you ever written poetry? Bad poetry. So tell me something. In an earlier episode you mentioned that one of the things that you try to do is you try to make as many hours in the day for reading as possible. So kind of tell me to your journey towards decluttering the mind and figuring out what are the important things and how you got there. I",
+      "text": "uh the aspiration. But have you ever written poetry? Bad poetry. So tell me something. In an earlier episode you mentioned that one of the things that you try to do is you try to make as many hours in the day for reading as possible. So kind of tell me to your journey towards decluttering the mind and figuring out what are the important things and how you got there. I",
       "words": [
+        {
+          "word": "uh",
+          "startTime": 2269.51,
+          "endTime": 2269.75,
+          "confidence": 0.7248
+        },
         {
           "word": "the",
           "startTime": 2269.75,
@@ -45691,8 +45515,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2290.38,
-      "endTime": 2299.9,
-      "text": "I'll actually come to that in a moment. Um I'll do this in reverse order. First I just want to touch upon what you said as people, and then finally I want to come to sort of",
+      "endTime": 2395.62,
+      "text": "I'll actually come to that in a moment. Um I'll do this in reverse order. First I just want to touch upon what you said as people, and then finally I want to come to sort of the projects, the life experience. Uh on people, uh Robin Dunbar, uh has uh the concept of Dunbar's number and uh his idea is that we are cognitively incapable of having a meaningful connection with m more than about 150 people and in fact out of that uh we we ten on average we put forty percent of our emotional energy on five people and uh we add another twenty percent of time for another fifteen people. So in twenty people we've actually used up two thirds of our intellectual and emotional energy. So actually we don't have a whole lot of mind space to be around a lot of people, to be around many people. I feel that so much of social mores and internet morays are constructed around inefficiently low levels of engagement with people and you know we seem to fritter ourselves with a large number of seconds spent with people where like really they're not our five fifteen. And I feel it's better to declutter in that that really you're only down to five fifteen, and the rest of life has to fit into that forty or thirty three and you know, maybe you're a more obsessive person then it's seventy percent of your time is spent on your five fifteen. So you're like we should just accept that we are with our five fifteen people, and we are going to lavish our lives and our attention on them and that's all there is and there will be nothing more and you know stop FOMOing about the grass is greener on the other side. This is there",
       "words": [
         {
           "word": "I'll",
@@ -45915,15 +45739,7 @@
           "startTime": 2299.66,
           "endTime": 2299.9,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2299.9,
-      "endTime": 2301.18,
-      "text": "the projects, the life",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 2299.9,
@@ -45947,15 +45763,7 @@
           "startTime": 2300.86,
           "endTime": 2301.18,
           "confidence": 0.9933
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2301.18,
-      "endTime": 2326.07,
-      "text": "experience. Uh on people, uh Robin Dunbar, uh has uh the concept of Dunbar's number and uh his idea is that we are cognitively incapable of having a meaningful connection with m more than about 150 people and in fact out of that uh we we ten on average we put forty percent of our emotional energy",
-      "words": [
+        },
         {
           "word": "experience.",
           "startTime": 2301.18,
@@ -46297,15 +46105,7 @@
           "startTime": 2325.59,
           "endTime": 2326.07,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2326.07,
-      "endTime": 2328.95,
-      "text": "on five people and uh we",
-      "words": [
+        },
         {
           "word": "on",
           "startTime": 2326.07,
@@ -46341,15 +46141,7 @@
           "startTime": 2328.63,
           "endTime": 2328.95,
           "confidence": 0.9293
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2328.95,
-      "endTime": 2395.62,
-      "text": "add another twenty percent of time for another fifteen people. So in twenty people we've actually used up two thirds of our intellectual and emotional energy. So actually we don't have a whole lot of mind space to be around a lot of people, to be around many people. I feel that so much of social mores and internet morays are constructed around inefficiently low levels of engagement with people and you know we seem to fritter ourselves with a large number of seconds spent with people where like really they're not our five fifteen. And I feel it's better to declutter in that that really you're only down to five fifteen, and the rest of life has to fit into that forty or thirty three and you know, maybe you're a more obsessive person then it's seventy percent of your time is spent on your five fifteen. So you're like we should just accept that we are with our five fifteen people, and we are going to lavish our lives and our attention on them and that's all there is and there will be nothing more and you know stop FOMOing about the grass is greener on the other side. This is there",
-      "words": [
+        },
         {
           "word": "add",
           "startTime": 2328.95,
@@ -47659,8 +47451,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2398.58,
-      "endTime": 2414.42,
-      "text": "This is all that will be there and just be devoted and focus on those five fifteen people. Finally I come to projects. You know, our life is our projects, it's the things that we do, is the crazy ideas that we nurture. So I have an opinion and I",
+      "endTime": 2556.78,
+      "text": "This is all that will be there and just be devoted and focus on those five fifteen people. Finally I come to projects. You know, our life is our projects, it's the things that we do, is the crazy ideas that we nurture. So I have an opinion and I think this may be useful to many people out there. We start many projects, we should start many projects. Uh to be creative is to not be regimented. Okay? So y there should be no boss, there should be no orders, there should be no regimentation. Then we should keep on coming up with one more mad idea that hmm, why don't I try to do X? So there should be a ideation process, there should be uh discovery process by which many new ideas pop up and one is playing with them, one is experimenting with them in a creative mode and one is not regimented and one is not obeying orders and one has fair control over time. These are all healthy and desirable uh life designs for everybody in the modern world. Okay? When I was young, I used to beat myself up because there are so many projects I have begun which I have not completed. And I used to really feel the burden, I used to feel a sense of uh discipline that oh my god I've begun this it's halfway done and I should really take it through and I should finish it. Now that I'm old and wise, I don't give a damn about all those projects. Okay, I'm ruthlessly comfortable about having half finished things left behind. The lines from a song uh in Dark Side of the Moon, uh plans that either come to naught or half a page of scribble lines. I have lots and lots of half page of scribble lines and I'm okay, I'm all Zen with this. Now here's the fancy way to be zen. Let me give you the theory. I call it the innovation funnel. Okay, it's a bit akin to a sales funnel. Okay. So if anybody has ever been in sales, you know there's a sales funnel, there's many customers at a low priority at a low probability, then some of them graduate to warm and then some of them go into intensity and get completed. So I feel similarly about ideas that we flirt with a lot of mad ideas. We should experiment with a lot of mad ideas. And then we should try it and we should choose a few good ones to go further into. And in some ways, you know, instinctively we do that. And there's nothing harmful in that. There's nothing wrong in that. It's like it's okay. And the rest is A, Sankos principle. And B, if you didn't explore all that, you'd never find the good ones. You know, I mean before you find your prince, you've got to kiss a hundred frogs. So there are many, many frogs. And out of them, Out of them we choose some and they come to stage",
       "words": [
         {
           "word": "This",
@@ -47961,29 +47753,13 @@
           "startTime": 2414.18,
           "endTime": 2414.42,
           "confidence": 0.9869
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2414.42,
-      "endTime": 2414.66,
-      "text": "think",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 2414.42,
           "endTime": 2414.66,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2414.66,
-      "endTime": 2415.14,
-      "text": "this may",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 2414.66,
@@ -47995,15 +47771,7 @@
           "startTime": 2414.9,
           "endTime": 2415.14,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2415.14,
-      "endTime": 2417.48,
-      "text": "be useful to many people out there.",
-      "words": [
+        },
         {
           "word": "be",
           "startTime": 2415.14,
@@ -48045,15 +47813,7 @@
           "startTime": 2416.98,
           "endTime": 2417.48,
           "confidence": 0.7433
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2418.89,
-      "endTime": 2556.78,
-      "text": "We start many projects, we should start many projects. Uh to be creative is to not be regimented. Okay? So y there should be no boss, there should be no orders, there should be no regimentation. Then we should keep on coming up with one more mad idea that hmm, why don't I try to do X? So there should be a ideation process, there should be uh discovery process by which many new ideas pop up and one is playing with them, one is experimenting with them in a creative mode and one is not regimented and one is not obeying orders and one has fair control over time. These are all healthy and desirable uh life designs for everybody in the modern world. Okay? When I was young, I used to beat myself up because there are so many projects I have begun which I have not completed. And I used to really feel the burden, I used to feel a sense of uh discipline that oh my god I've begun this it's halfway done and I should really take it through and I should finish it. Now that I'm old and wise, I don't give a damn about all those projects. Okay, I'm ruthlessly comfortable about having half finished things left behind. The lines from a song uh in Dark Side of the Moon, uh plans that either come to naught or half a page of scribble lines. I have lots and lots of half page of scribble lines and I'm okay, I'm all Zen with this. Now here's the fancy way to be zen. Let me give you the theory. I call it the innovation funnel. Okay, it's a bit akin to a sales funnel. Okay. So if anybody has ever been in sales, you know there's a sales funnel, there's many customers at a low priority at a low probability, then some of them graduate to warm and then some of them go into intensity and get completed. So I feel similarly about ideas that we flirt with a lot of mad ideas. We should experiment with a lot of mad ideas. And then we should try it and we should choose a few good ones to go further into. And in some ways, you know, instinctively we do that. And there's nothing harmful in that. There's nothing wrong in that. It's like it's okay. And the rest is A, Sankos principle. And B, if you didn't explore all that, you'd never find the good ones. You know, I mean before you find your prince, you've got to kiss a hundred frogs. So there are many, many frogs. And out of them, Out of them we choose some and they come to stage",
-      "words": [
+        },
         {
           "word": "We",
           "startTime": 2418.89,
@@ -53505,8 +53265,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2690.55,
-      "endTime": 2829.69,
-      "text": "This is a massive superpower and I'm so like uh incredibly jealous of this because it is exactly this kind of focus and discipline I'd like I'd like to double click on it and say a couple of things. One is uh you know, you reminded me of this interview of Jonathan Ive where he was uh you know remembering Steve Jobs and he said in the nineties when Jobs joined Appleback and uh he met Ive and they were this the the uh discussing designs and all of that, he told Ive that you have to learn to say no to things that you love. Right? Learning to say no is trivial. We can all say no to things we don't like and learn to say no to things that you love. Because his point is there might be ten things you want to do madly at at any moment in time. But you have to f pick one and say no to the others, no matter how much you love them, because if you keep flirting with them all, you will never settle down, as it were, to take that metaphor too far. That's you know uh something that came to mind. But the other thing that came to mind is that there is a danger in this. That I completely agree with you, that the way that we keep our creative uh faculties going is you uh you know you dive into that well and you play with a whole bunch of ideas. But this can also become a rationalization for uh expert procrastinators like myself, where you can say that okay, I'm I'm marinating my ideas or uh you know, et cetera, et cetera. And you never actually get down to doing anything. So I think that for people like me. what really becomes important is that it doesn't matter which of those hundred ideas you take up, but fracking frickin' hell take up something and do it. You know, the doing is important because often what happens is you'll have a hundred ideas which sound good at the idea stage, but are all difficult to implement. and then we will avoid the difficulty of that implementation and we will rationalise it by saying that, you know, et cetera, et cetera. And I I think that's a trap that I would like to urge gentle readers to avoid, partly because I've fallen in in it all my life myself. You know, pro you have to get past procrastination and part of doing that is to be able to take what is a beautiful idea, to know that you will mess up most of it, but The doing of it is what matters, and the doing of it is where you really learn to do better and et cetera, et cetera. So uh you know, so I I more and more I have uh I I feel that we must have a bias towards action more than anything else. Which ties in with everything you're saying, except that your insane level of focus, you know, I I I can only wish that I have it one day. How do",
+      "endTime": 2829.29,
+      "text": "This is a massive superpower and I'm so like uh incredibly jealous of this because it is exactly this kind of focus and discipline I'd like I'd like to double click on it and say a couple of things. One is uh you know, you reminded me of this interview of Jonathan Ive where he was uh you know remembering Steve Jobs and he said in the nineties when Jobs joined Appleback and uh he met Ive and they were this the the uh discussing designs and all of that, he told Ive that you have to learn to say no to things that you love. Right? Learning to say no is trivial. We can all say no to things we don't like and learn to say no to things that you love. Because his point is there might be ten things you want to do madly at at any moment in time. But you have to f pick one and say no to the others, no matter how much you love them, because if you keep flirting with them all, you will never settle down, as it were, to take that metaphor too far. That's you know uh something that came to mind. But the other thing that came to mind is that there is a danger in this. That I completely agree with you, that the way that we keep our creative uh faculties going is you uh you know you dive into that well and you play with a whole bunch of ideas. But this can also become a rationalization for uh expert procrastinators like myself, where you can say that okay, I'm I'm marinating my ideas or uh you know, et cetera, et cetera. And you never actually get down to doing anything. So I think that for people like me. what really becomes important is that it doesn't matter which of those hundred ideas you take up, but fracking frickin' hell take up something and do it. You know, the doing is important because often what happens is you'll have a hundred ideas which sound good at the idea stage, but are all difficult to implement. and then we will avoid the difficulty of that implementation and we will rationalise it by saying that, you know, et cetera, et cetera. And I I think that's a trap that I would like to urge gentle readers to avoid, partly because I've fallen in in it all my life myself. You know, pro you have to get past procrastination and part of doing that is to be able to take what is a beautiful idea, to know that you will mess up most of it, but The doing of it is what matters, and the doing of it is where you really learn to do better and et cetera, et cetera. So uh you know, so I I more and more I have uh I I feel that we must have a bias towards action more than anything else. Which ties in with everything you're saying, except that your insane level of focus, you know, I I I can only wish that I have it one day.",
       "words": [
         {
           "word": "This",
@@ -56687,7 +56447,15 @@
           "startTime": 2828.33,
           "endTime": 2829.29,
           "confidence": 0.9844
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2829.29,
+      "endTime": 2851.7,
+      "text": "How do you manage you are shipping one seen and the unseen every week and you're shipping one Everything is everything every week. Um Gentle Reader, my contribution is thirty percent. Okay, so he does seventy percent of everything is everything. So how are you able to handle these two shipping one product every week of two shows?",
+      "words": [
         {
           "word": "How",
           "startTime": 2829.29,
@@ -56699,15 +56467,7 @@
           "startTime": 2829.53,
           "endTime": 2829.69,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2829.69,
-      "endTime": 2847.22,
-      "text": "you manage you are shipping one seen and the unseen every week and you're shipping one Everything is everything every week. Um Gentle Reader, my contribution is thirty percent. Okay, so he does seventy percent of everything is everything. So how are you able to handle these",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 2829.69,
@@ -56989,29 +56749,13 @@
           "startTime": 2846.9,
           "endTime": 2847.22,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2847.22,
-      "endTime": 2848.72,
-      "text": "two",
-      "words": [
+        },
         {
           "word": "two",
           "startTime": 2847.22,
           "endTime": 2848.72,
           "confidence": 0.9653
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2848.9,
-      "endTime": 2850.9,
-      "text": "shipping one product every week of two",
-      "words": [
+        },
         {
           "word": "shipping",
           "startTime": 2848.9,
@@ -57053,21 +56797,21 @@
           "startTime": 2850.66,
           "endTime": 2850.9,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2850.9,
-      "endTime": 2921.82,
-      "text": "shows? Badly. Uh one reason is the reason that I do it and it seems productive is a weekly deadline. There are many things I want to do even more, but there's no deadline, there's nothing. So it's very hard to get that discipline going, and that is something I want to fix. But the other lesson I've learnt about myself is that if I've done three sixty five episodes of the Seen and the Unseen, it sounds like a marathon, but actually it is three hundred and sixty five sprints. that whenever a recording comes around I'm not sleeping for two days before it and then I'm recovering for two days after it and it is a mad sprint and I just I wipe myself out doing that sprint and then I rest and then there's another sprint and it's a series of sprints and that's deeply unhealthy. What it should be, what I want it to be, is a continuous marathon where every day you have habits. You put in the work. You sit and write for one hour, you sit and read for two hours, y you know, you do all of that. And then that builds up to a marathon and you're never really sprinting. Maybe you kind of you know uh this is very Bengali of me, no the way I'm doing this. So anyway. So uh uh reader here to have the rarest Chubby Bengali running on his",
-      "words": [
+        },
         {
           "word": "shows?",
           "startTime": 2850.9,
           "endTime": 2851.7,
           "confidence": 0.9783
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2851.7,
+      "endTime": 2921.82,
+      "text": "Badly. Uh one reason is the reason that I do it and it seems productive is a weekly deadline. There are many things I want to do even more, but there's no deadline, there's nothing. So it's very hard to get that discipline going, and that is something I want to fix. But the other lesson I've learnt about myself is that if I've done three sixty five episodes of the Seen and the Unseen, it sounds like a marathon, but actually it is three hundred and sixty five sprints. that whenever a recording comes around I'm not sleeping for two days before it and then I'm recovering for two days after it and it is a mad sprint and I just I wipe myself out doing that sprint and then I rest and then there's another sprint and it's a series of sprints and that's deeply unhealthy. What it should be, what I want it to be, is a continuous marathon where every day you have habits. You put in the work. You sit and write for one hour, you sit and read for two hours, y you know, you do all of that. And then that builds up to a marathon and you're never really sprinting. Maybe you kind of you know uh this is very Bengali of me, no the way I'm doing this. So anyway. So uh uh reader here to have the rarest Chubby Bengali running on his",
+      "words": [
         {
           "word": "Badly.",
           "startTime": 2851.7,
@@ -59651,8 +59395,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2982.86,
-      "endTime": 2985.02,
-      "text": "Don't do it. Gentle reader, I want you to buy a",
+      "endTime": 3008.3,
+      "text": "Don't do it. Gentle reader, I want you to buy a book. It is called To Have or To Be by Eric Fromm. It's a 1976 book. It was a pioneer in this field, in these questions, about graduating from the simple consumerism that many of us have discovered only in the last 20, 30 years. To a better sense of why are we here and what is the meaning of our",
       "words": [
         {
           "word": "Don't",
@@ -59719,15 +59463,7 @@
           "startTime": 2984.94,
           "endTime": 2985.02,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2985.02,
-      "endTime": 2986.62,
-      "text": "book. It is",
-      "words": [
+        },
         {
           "word": "book.",
           "startTime": 2985.02,
@@ -59745,15 +59481,7 @@
           "startTime": 2986.3,
           "endTime": 2986.62,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2986.62,
-      "endTime": 2994.38,
-      "text": "called To Have or To Be by Eric Fromm. It's a 1976 book. It was a pioneer in this",
-      "words": [
+        },
         {
           "word": "called",
           "startTime": 2986.62,
@@ -59867,15 +59595,7 @@
           "startTime": 2994.06,
           "endTime": 2994.38,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2994.38,
-      "endTime": 2996.92,
-      "text": "field, in these questions,",
-      "words": [
+        },
         {
           "word": "field,",
           "startTime": 2994.38,
@@ -59899,15 +59619,7 @@
           "startTime": 2995.42,
           "endTime": 2996.92,
           "confidence": 0.8338
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2997.02,
-      "endTime": 3008.3,
-      "text": "about graduating from the simple consumerism that many of us have discovered only in the last 20, 30 years. To a better sense of why are we here and what is the meaning of our",
-      "words": [
+        },
         {
           "word": "about",
           "startTime": 2997.02,
@@ -61145,8 +60857,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3060.89,
-      "endTime": 3063.78,
-      "text": "and you Amit? What's your recommendation for us to do it? So my",
+      "endTime": 3064.34,
+      "text": "and you Amit? What's your recommendation for us to do it? So my recommendation",
       "words": [
         {
           "word": "and",
@@ -61225,21 +60937,21 @@
           "startTime": 3063.7,
           "endTime": 3063.78,
           "confidence": 0.9872
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3063.78,
-      "endTime": 3106.99,
-      "text": "recommendation for the day is a beautiful book of short stories by Ken Lu. It's spelt L I U, but I think it's pronounced Lu, called Paper Menagerie. And uh the title story in that is a masterpiece. It's uh I always you know, when I start my writing course, I sent it to my students after the first webinar and say that, you know, I was talking about simplicity. Read this. And we're speaking of declutter in a sense that is decluttered language. That there is nothing there that doesn't belong there. It's really simple language, it's beautiful, it's poetic, it's musical, but there's nothing that you can't understand and you'll be weeping at the end of it. It's just a magnificent story. So we will link it from the show notes and I will send it to you and you will be weeping at the end of this. So when we record our next episode, gentle reader, Ajay's eyes will be red. That's what I will do to him.",
-      "words": [
+        },
         {
           "word": "recommendation",
           "startTime": 3063.78,
           "endTime": 3064.34,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3064.34,
+      "endTime": 3106.99,
+      "text": "for the day is a beautiful book of short stories by Ken Lu. It's spelt L I U, but I think it's pronounced Lu, called Paper Menagerie. And uh the title story in that is a masterpiece. It's uh I always you know, when I start my writing course, I sent it to my students after the first webinar and say that, you know, I was talking about simplicity. Read this. And we're speaking of declutter in a sense that is decluttered language. That there is nothing there that doesn't belong there. It's really simple language, it's beautiful, it's poetic, it's musical, but there's nothing that you can't understand and you'll be weeping at the end of it. It's just a magnificent story. So we will link it from the show notes and I will send it to you and you will be weeping at the end of this. So when we record our next episode, gentle reader, Ajay's eyes will be red. That's what I will do to him.",
+      "words": [
         {
           "word": "for",
           "startTime": 3064.34,

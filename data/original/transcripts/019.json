@@ -5,7 +5,7 @@
     "durationSeconds": 3214,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -1823,8 +1823,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 146.82,
-      "endTime": 198.55,
-      "text": "I'll bring them together and I'll also bring in Azimov and Clark. Why not? Because there is a science fictional element to it in the way that I'm going to describe. Now, what is expected value? You know, geeks like us will often say, hey, that's a plus EV decision. What do we mean by a plus uh EV decision? And I want to talk a bit about that. Now imagine you have a coin and it's perfectly weighted on both sides. So fifty percent it'll come heads, fifty percent it'll come tails, not like the Sholey coin, but a proper uh legit coin. And uh I offer you this deal that we will spin the coin a hundred times, and every time it is heads, I will give you fifty one pse. Every time it is tails, you will give me forty-nine pes. What is your reaction to this? It's a great deal. I'll take it. It's a great deal. Let's quantify why it's a great deal. It's very obviously it's a great deal. But why is it a great deal? Now",
+      "endTime": 218.62,
+      "text": "I'll bring them together and I'll also bring in Azimov and Clark. Why not? Because there is a science fictional element to it in the way that I'm going to describe. Now, what is expected value? You know, geeks like us will often say, hey, that's a plus EV decision. What do we mean by a plus uh EV decision? And I want to talk a bit about that. Now imagine you have a coin and it's perfectly weighted on both sides. So fifty percent it'll come heads, fifty percent it'll come tails, not like the Sholey coin, but a proper uh legit coin. And uh I offer you this deal that we will spin the coin a hundred times, and every time it is heads, I will give you fifty one pse. Every time it is tails, you will give me forty-nine pes. What is your reaction to this? It's a great deal. I'll take it. It's a great deal. Let's quantify why it's a great deal. It's very obviously it's a great deal. But why is it a great deal? Now if you look at it mathematically, What happens is that the odds are that you know 50 times it'll be heads, and I give you 51 pesos each time, 50 times it'll be tails, you give me 49 each time. Your total profit over a hundred throws is equal to a hundred pes, or one grand rupee. I don't even know if they have one pesa coins now. Why are we talking peso? But I",
       "words": [
         {
           "word": "I'll",
@@ -2923,15 +2923,7 @@
           "startTime": 198.15,
           "endTime": 198.55,
           "confidence": 0.9696
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 198.55,
-      "endTime": 200.41,
-      "text": "if you look at it mathematically,",
-      "words": [
+        },
         {
           "word": "if",
           "startTime": 198.55,
@@ -2967,15 +2959,7 @@
           "startTime": 199.91,
           "endTime": 200.41,
           "confidence": 0.8562
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 201.1,
-      "endTime": 218.62,
-      "text": "What happens is that the odds are that you know 50 times it'll be heads, and I give you 51 pesos each time, 50 times it'll be tails, you give me 49 each time. Your total profit over a hundred throws is equal to a hundred pes, or one grand rupee. I don't even know if they have one pesa coins now. Why are we talking peso? But I",
-      "words": [
+        },
         {
           "word": "What",
           "startTime": 201.1,
@@ -3451,8 +3435,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 220.46,
-      "endTime": 606.01,
-      "text": "coins. You have seen okay, well done. In your time. Yeah. So uh your total profit here over a hundred throws is a hundred pesos, and you divide that by a hundred. Your expected value for one throw is one pse. Right? So it is a profitable decision for you to do this by the grand total of one pse, that is your EV. Now here is the interesting thing. You should take this uh bet because your EV is plus one pese, but it is not necessary. The outcome won't give you one pse. You flip it once, either you win 51 pes or you lose 49. Now let's say you lose 49, because half the time it's going to come tails. You're going to have people pointing at you and saying, What a bad decision. You made such a blunder. You lost 49 per se. While actually you made the right decision, but got the right outcome. Even if you flip it a hundred times. Got the wrong outcome. Yeah, got the wrong outcome. Even if you flip it a hundred times, you're sort of in a uh you could still end up with a bad outcome. Even though you're plus EV by a fair amount, uh, you know, you could easily have like uh ten tails in a row. Right. And as we discussed in an earlier episode, it might seem to some people that ten tails in a row means a coin is weighted. Not necessarily, because there is a law of truly large numbers that any uh unlikely event given a large enough sample size is bound to happen. I wrote a column about this once called Unlikely is inevitable. And um so and and so therefore you have those crazy runs and you might actually lose a lot of money. Many, many pess over uh, you know, a hundred coin uh flip. uh over a hundred flips, but that doesn't mean you made the wrong decision. But the world will judge you on that wrong decision. Now the way I I'll bring science fiction into this is that every time you flip a coin, right, imagine the world splits into two, two parallel universes. In one it is heads, in one it is tails. Then you flip it again. And now it flips into further parallel universes. And in one you have the sequence H H, H T, T T, TH, right? You have four parallel universes. And so on down the line, across a hundred flips. And which parallel universe you happen to be in is pure luck. There is one universe somewhere extremely unlikely to form where with an evenly weighted coin there are actually a hundred heads in a row. And if you get trillions of throws, you will have hundred tails in a row, 100 heads in a row happening at different points in time. So it's important to sort of appreciate uh the randomness of this. And expected value is something that I really came to appreciate when I started playing poker, right now. Uh for uh you know those uh gentle readers who uh are not into poker apologies, I won't get too technical, but Here is uh but I'll just explain it with really simple numbers. Let us say we are in a situation where on the river there is a um, you know, um not on the river, sorry, let's say we are in a particular situation on the flop where my opponent goes all in with a hundred rupees into a pot of hundred, right? So now there are two hundred rupees into the pot, the original hundred and the hundred he put in. I have to call hundred. And I have a flush draw and I'm getting two to one odds, right? Because I have to call 100 into a pot of two hundred. And what this means is that for my call to be justified, I have to be right one third of the time. And if I have a flush draw, I will be right exactly one third of the time, more or less, right? So uh if b you know, my expected value in that pot of three hundred, which the pot will have when I put in my hundred, is exactly hundred, and therefore it is a breakeven call for me. But if along with my flush draw I have, let's say a gut shot straight draw, you know, a couple of further outs. Then that percentage goes up to 42%. So I'm going to win 42% of the time, not uh 23% of the time. And now it is a profitable call for me. I'm putting in 100 to win a little bit more than 100. And this is how we would typically think in terms of expected value when we uh talk about a particular hand. And this is a very simple and simplistic example, but you get what I'm saying. Now, in poker, you're not just calling your betting and your raising. And when you're um uh raising someone, for example, there is not uh you're taking two kinds of equity into account. One is what is the probability the other person will fold and I'll win the money in the pot, and what is the probability if they call that I will actually win the pot, and all the math has to come together for your raise to be profitable. Now we'll talk about poker in detail in another episode as we've decided to do. Let's not uh sort of go in there. But my great realization from my years of playing poker was That while it's a game of skill, the quantum of luck is extremely high. Like the analogy I give is that, you know, if I play a hundred games of tennis with Nadal, I'll lose all of them. If I play a hundred games of chess with Magnus Carlson, even though I'm a good recreational player, I'll lose all of them. But if you take the best player, poker player in the world and make him play a beginner, it'll be more like fifty-one for 49 if you're just playing hands. So there is skill. But it takes a long sample size for that skill to express itself. So poker players are taught that don't be results oriented. Just try to make the right decisions and don't think about uh the results. And my big learning, and this is kind of a life lesson as well, is that luck plays a far greater role in our lives than we realise. So too often what will happen is good things will happen to us, maybe the location where you're born. the so the geographical location, the social location, the location where you're born, or maybe you get lucky in different ways and you let it get to your head and you you think, hey, I am so good, and that makes you arrogant and affects the way you treat others and affects how hard you work. And equally you could just get really unlucky where you do the right things, but bad shit happens, and then you let that get you down, you become defeatist, you know, and y again you let that affect the things that you do and that you know, there's a part dependents there. And I think it's really important to sort of appreciate the role of luck in our lives and realize that everything is probabilistic, right? And uh therefore to only sweat what you can control and not worry about what you can't control. And uh, you know, so that is sort of a big life lesson that I kind of think about that after something has happened, it has hundred percent happened or zero percent happened. But before anything happens, it is probabilistic. There is a universe of possibilities. There are so many parallel universes about to split up with every decision that you make. So you cannot ev evaluate anything that you do on the basis of how it worked out. You can only have a set of rules by which you live your life. And follow that set of rules and not sweat too much about results.",
+      "endTime": 606.41,
+      "text": "coins. You have seen okay, well done. In your time. Yeah. So uh your total profit here over a hundred throws is a hundred pesos, and you divide that by a hundred. Your expected value for one throw is one pse. Right? So it is a profitable decision for you to do this by the grand total of one pse, that is your EV. Now here is the interesting thing. You should take this uh bet because your EV is plus one pese, but it is not necessary. The outcome won't give you one pse. You flip it once, either you win 51 pes or you lose 49. Now let's say you lose 49, because half the time it's going to come tails. You're going to have people pointing at you and saying, What a bad decision. You made such a blunder. You lost 49 per se. While actually you made the right decision, but got the right outcome. Even if you flip it a hundred times. Got the wrong outcome. Yeah, got the wrong outcome. Even if you flip it a hundred times, you're sort of in a uh you could still end up with a bad outcome. Even though you're plus EV by a fair amount, uh, you know, you could easily have like uh ten tails in a row. Right. And as we discussed in an earlier episode, it might seem to some people that ten tails in a row means a coin is weighted. Not necessarily, because there is a law of truly large numbers that any uh unlikely event given a large enough sample size is bound to happen. I wrote a column about this once called Unlikely is inevitable. And um so and and so therefore you have those crazy runs and you might actually lose a lot of money. Many, many pess over uh, you know, a hundred coin uh flip. uh over a hundred flips, but that doesn't mean you made the wrong decision. But the world will judge you on that wrong decision. Now the way I I'll bring science fiction into this is that every time you flip a coin, right, imagine the world splits into two, two parallel universes. In one it is heads, in one it is tails. Then you flip it again. And now it flips into further parallel universes. And in one you have the sequence H H, H T, T T, TH, right? You have four parallel universes. And so on down the line, across a hundred flips. And which parallel universe you happen to be in is pure luck. There is one universe somewhere extremely unlikely to form where with an evenly weighted coin there are actually a hundred heads in a row. And if you get trillions of throws, you will have hundred tails in a row, 100 heads in a row happening at different points in time. So it's important to sort of appreciate uh the randomness of this. And expected value is something that I really came to appreciate when I started playing poker, right now. Uh for uh you know those uh gentle readers who uh are not into poker apologies, I won't get too technical, but Here is uh but I'll just explain it with really simple numbers. Let us say we are in a situation where on the river there is a um, you know, um not on the river, sorry, let's say we are in a particular situation on the flop where my opponent goes all in with a hundred rupees into a pot of hundred, right? So now there are two hundred rupees into the pot, the original hundred and the hundred he put in. I have to call hundred. And I have a flush draw and I'm getting two to one odds, right? Because I have to call 100 into a pot of two hundred. And what this means is that for my call to be justified, I have to be right one third of the time. And if I have a flush draw, I will be right exactly one third of the time, more or less, right? So uh if b you know, my expected value in that pot of three hundred, which the pot will have when I put in my hundred, is exactly hundred, and therefore it is a breakeven call for me. But if along with my flush draw I have, let's say a gut shot straight draw, you know, a couple of further outs. Then that percentage goes up to 42%. So I'm going to win 42% of the time, not uh 23% of the time. And now it is a profitable call for me. I'm putting in 100 to win a little bit more than 100. And this is how we would typically think in terms of expected value when we uh talk about a particular hand. And this is a very simple and simplistic example, but you get what I'm saying. Now, in poker, you're not just calling your betting and your raising. And when you're um uh raising someone, for example, there is not uh you're taking two kinds of equity into account. One is what is the probability the other person will fold and I'll win the money in the pot, and what is the probability if they call that I will actually win the pot, and all the math has to come together for your raise to be profitable. Now we'll talk about poker in detail in another episode as we've decided to do. Let's not uh sort of go in there. But my great realization from my years of playing poker was That while it's a game of skill, the quantum of luck is extremely high. Like the analogy I give is that, you know, if I play a hundred games of tennis with Nadal, I'll lose all of them. If I play a hundred games of chess with Magnus Carlson, even though I'm a good recreational player, I'll lose all of them. But if you take the best player, poker player in the world and make him play a beginner, it'll be more like fifty-one for 49 if you're just playing hands. So there is skill. But it takes a long sample size for that skill to express itself. So poker players are taught that don't be results oriented. Just try to make the right decisions and don't think about uh the results. And my big learning, and this is kind of a life lesson as well, is that luck plays a far greater role in our lives than we realise. So too often what will happen is good things will happen to us, maybe the location where you're born. the so the geographical location, the social location, the location where you're born, or maybe you get lucky in different ways and you let it get to your head and you you think, hey, I am so good, and that makes you arrogant and affects the way you treat others and affects how hard you work. And equally you could just get really unlucky where you do the right things, but bad shit happens, and then you let that get you down, you become defeatist, you know, and y again you let that affect the things that you do and that you know, there's a part dependents there. And I think it's really important to sort of appreciate the role of luck in our lives and realize that everything is probabilistic, right? And uh therefore to only sweat what you can control and not worry about what you can't control. And uh, you know, so that is sort of a big life lesson that I kind of think about that after something has happened, it has hundred percent happened or zero percent happened. But before anything happens, it is probabilistic. There is a universe of possibilities. There are so many parallel universes about to split up with every decision that you make. So you cannot ev evaluate anything that you do on the basis of how it worked out. You can only have a set of rules by which you live your life. And follow that set of rules and not sweat too much about results. Yeah.",
       "words": [
         {
           "word": "coins.",
@@ -11751,21 +11735,21 @@
           "startTime": 605.53,
           "endTime": 606.01,
           "confidence": 0.9815
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 606.01,
-      "endTime": 911.36,
-      "text": "Yeah. I want to say three things. So I have a pithy phrase that uh says what you just said. Uh, I always like to say, don't judge a policy by an outcome. Okay, so we as humans don't understand probability. We make mistakes in our reasoning, and exposed after the coin is tossed, we say, Oh, that was such a bad decision because it came out tails. And that's just completely wrong. A policy should be judged on its expected value. And many a decision will go wrong because of dumb luck. So we need to constantly maintain that separation. So this thing about trying to have either regret or a wrong level of extremist updating on your views about the appropriate policy is a decision-making flaw, is an analytical flaw that we see in a lot of the world. After something goes wrong, people say, Oh, because that policy was wrong. Uh, my second idea in this is that uh you are correctly emphasizing the role of luck in the world, and it runs exactly opposite to the great man theory. Okay, so there is a guy we consider to be a great CEO, just happened to be in the software industry at the right years. Okay, so the analogy I make uh when I was leaving college, I used to talk. Each other to other people at my age leaving college. And I would say, you know, suppose you were given a choice between buying a bunch of shares in some industries. Do you think that's speculative? Yes, it's speculative. Will steel do well? Will software do well? Okay, so you've got a 30-year play on how a couple of other industries are going to shape up. And you know, there is a large dose of luck in getting it right. There is skill, and there is a large dose of luck. Because frankly, the world is unknowable and things are going to happen that will surprise us. And I have always emphasized that when we each of us pick a trade, when somebody joins a company, when somebody joins an industry, you're hitching your fortune to that star. You are speculating with your greatest asset, and that is the asset of your human capital. So basically, you're placing a bet with your most important asset, your human capital, and you're speculating. So if you think that I'm so uh risk averse that I will never trade in the stock market, excuse me, you're trading with your biggest undiversifiable asset, which is your own human capital, when you choose a workplace, when you choose an industry. And then there is dumb luck in the affairs of men that some people land up in an industry that just happens to work out well. So in the 80s, who could have known that Indian pharma was gonna go great? In the 80s, who could have known that Indian software was going to go great? By dumb luck, some people chose those careers and they look great. And then the entire hype cycle of the media comes in and we lionized those people, we venerate those people, we run into the mistake of great man theory that oh, this guy is a genius. Actually, it is just the forces of luck in our life. The third thing I want to talk about is coin tosses. Okay, so uh It is a digression, but who can resist? Coin tosses are the classic random lottery with a Banooli probability 0.5, 0.5. That's how it's supposed to be. Many years ago, Johnny Johnny von Neumann, okay, Johnny to all his good friends. There's only one Johnny in the world, and that's Johnny von Neumann. Many years ago, Johnny tried hard to break into this uncertainty. Those were the years of the great debates. uh between Einstein and the others on the place of probability at the heart of physics. And Johnny wondered that is the randomness of a coin toss something truly random about the world, or it is our failure to compute? Okay, we just have to solve the equations and we can figure out a coin because it's after all a boring deterministic object. There is no deep quantum mechanics in a coin. It's just The hardship of working out Newtonian mechanics of a coin flip. And Johnny worked hard on devising some formulas and some heuristics and managed to get a significant edge. Where I think conceptually his idea was that if you knew some initial facts about the coin, you could make a prediction to the tune of about 0.66, 0.33 about which side it will fall. Okay, more recently, uh, I think it is Percy Diakonis who led a global project where Uh researchers from all over the world toss coins from all over the world, like millions of times, physical coins, and count it. Okay, and here's a quick summary that if you the coin is heads and you toss it, there's a roughly 51% chance of it landing heads. So there you go. That whenever you want to cheat at important life decisions, offer to the blocks around you, let's toss the coin, and I've given you a slight edge.",
-      "words": [
+        },
         {
           "word": "Yeah.",
           "startTime": 606.01,
           "endTime": 606.41,
           "confidence": 0.8591
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 606.41,
+      "endTime": 911.36,
+      "text": "I want to say three things. So I have a pithy phrase that uh says what you just said. Uh, I always like to say, don't judge a policy by an outcome. Okay, so we as humans don't understand probability. We make mistakes in our reasoning, and exposed after the coin is tossed, we say, Oh, that was such a bad decision because it came out tails. And that's just completely wrong. A policy should be judged on its expected value. And many a decision will go wrong because of dumb luck. So we need to constantly maintain that separation. So this thing about trying to have either regret or a wrong level of extremist updating on your views about the appropriate policy is a decision-making flaw, is an analytical flaw that we see in a lot of the world. After something goes wrong, people say, Oh, because that policy was wrong. Uh, my second idea in this is that uh you are correctly emphasizing the role of luck in the world, and it runs exactly opposite to the great man theory. Okay, so there is a guy we consider to be a great CEO, just happened to be in the software industry at the right years. Okay, so the analogy I make uh when I was leaving college, I used to talk. Each other to other people at my age leaving college. And I would say, you know, suppose you were given a choice between buying a bunch of shares in some industries. Do you think that's speculative? Yes, it's speculative. Will steel do well? Will software do well? Okay, so you've got a 30-year play on how a couple of other industries are going to shape up. And you know, there is a large dose of luck in getting it right. There is skill, and there is a large dose of luck. Because frankly, the world is unknowable and things are going to happen that will surprise us. And I have always emphasized that when we each of us pick a trade, when somebody joins a company, when somebody joins an industry, you're hitching your fortune to that star. You are speculating with your greatest asset, and that is the asset of your human capital. So basically, you're placing a bet with your most important asset, your human capital, and you're speculating. So if you think that I'm so uh risk averse that I will never trade in the stock market, excuse me, you're trading with your biggest undiversifiable asset, which is your own human capital, when you choose a workplace, when you choose an industry. And then there is dumb luck in the affairs of men that some people land up in an industry that just happens to work out well. So in the 80s, who could have known that Indian pharma was gonna go great? In the 80s, who could have known that Indian software was going to go great? By dumb luck, some people chose those careers and they look great. And then the entire hype cycle of the media comes in and we lionized those people, we venerate those people, we run into the mistake of great man theory that oh, this guy is a genius. Actually, it is just the forces of luck in our life. The third thing I want to talk about is coin tosses. Okay, so uh It is a digression, but who can resist? Coin tosses are the classic random lottery with a Banooli probability 0.5, 0.5. That's how it's supposed to be. Many years ago, Johnny Johnny von Neumann, okay, Johnny to all his good friends. There's only one Johnny in the world, and that's Johnny von Neumann. Many years ago, Johnny tried hard to break into this uncertainty. Those were the years of the great debates. uh between Einstein and the others on the place of probability at the heart of physics. And Johnny wondered that is the randomness of a coin toss something truly random about the world, or it is our failure to compute? Okay, we just have to solve the equations and we can figure out a coin because it's after all a boring deterministic object. There is no deep quantum mechanics in a coin. It's just The hardship of working out Newtonian mechanics of a coin flip. And Johnny worked hard on devising some formulas and some heuristics and managed to get a significant edge. Where I think conceptually his idea was that if you knew some initial facts about the coin, you could make a prediction to the tune of about 0.66, 0.33 about which side it will fall. Okay, more recently, uh, I think it is Percy Diakonis who led a global project where Uh researchers from all over the world toss coins from all over the world, like millions of times, physical coins, and count it. Okay, and here's a quick summary that if you the coin is heads and you toss it, there's a roughly 51% chance of it landing heads. So there you go. That whenever you want to cheat at important life decisions, offer to the blocks around you, let's toss the coin, and I've given you a slight edge.",
+      "words": [
         {
           "word": "I",
           "startTime": 606.41,
@@ -23699,8 +23683,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1285.51,
-      "endTime": 1307.11,
-      "text": "Above the API. Most of us aren't Okay, Amit, that's a lot of fun. By way of introduction, we could talk about probability for hours, maybe some calculus as well, maybe some computer science as well. But now shut up and give us cricket. I",
+      "endTime": 1306.95,
+      "text": "Above the API. Most of us aren't Okay, Amit, that's a lot of fun. By way of introduction, we could talk about probability for hours, maybe some calculus as well, maybe some computer science as well. But now shut up and give us cricket.",
       "words": [
         {
           "word": "Above",
@@ -23965,21 +23949,21 @@
           "startTime": 1306.23,
           "endTime": 1306.95,
           "confidence": 0.9771
-        },
-        {
-          "word": "I",
-          "startTime": 1306.95,
-          "endTime": 1307.11,
-          "confidence": 0.928
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1307.11,
-      "endTime": 1654.86,
-      "text": "can't shut up and give you cricket, I have to talk, but I get what you're saying. So here's the deal. I uh I was a cricket writer for many years, right? And I I I would commission other cricket writers as well as an edit editor. And one of the things I realized about cricket, and this is more as true of writers as of fans, sadly, because writers really should know better, is we're too quick to pass judgment. Something goes wrong, and we straight away pass judgment and say that hey, you know, uh so-and-so captain made a mistake or the batsman played a stupid shot and et cetera, et cetera. And a common example of this is let us say that you have a batsman and at one crucial point in an innings, he tries to hit a six. And he skies the ball, right? Now you have three possible outcomes I put before you. One is the ball goes for six. It affects the bowlers also. It puts them off their length. Uh, it changes the momentum of the game as such, though some could argue there's no such thing as momentum, it's a post factor construction. But regardless, the six could work in various ways and turn the game around. The other is that he is caught in the outfield and he's out, and that's a crucial wicket. He might even be the last recognized batsman. The third outcome is that the ball hits a bird in the sky and then drops down on a fielder's head and the bird and the fielder die. Right? So these are three possible outcomes. I think you would agree with me that the third outcome is incredibly unlikely, but it is nevertheless a non-zero possibility, right? But to get back to the serious subject of the first two outcomes, often what will happen is that uh he'll get caught. And then everyone in the media will say, What an irresponsible guy. He let his country down, take se kill ta, strike rotate kartaha, et cetera, et cetera. Why did he hit that ball as if every decision is not essentially instinctive, and so on and so forth. And that is one set of reactions. And Anna, and if he hits a six, then the set of reactions is, Oh, you know, he's taking the attack to the opposition, and all those old cliches come into play, and you know, what a brave attacking batsman he rescued our side, and all of that happens. And my point is, regardless of the outcome, often you cannot judge the correctness of his action from whether he hit that six or whether he got out. Perhaps at that moment aggression was a right way forward, the only way forward, and he just got unlucky and he got caught. Or perhaps at that moment he needed to preserve his wicket, and there was no value in aggression, and he played an impetuous shot and hit a six. He should not be castigated for the first, he should not be congratulated for the second. And we often sort of don't realize this because we don't think enough in terms of expected value in cricket and really think about what the data means. Now, data can often seem bland and colorless, but data informs how every major sport is played. For example, data is really big in football, right? I remember reading a few years ago at a time I wrote this piece, What Cricket Can Learn from Poker. I'll link it from uh the we'll link it from the show notes. And in that I pointed out how at the time I wrote the piece a few years ago, uh, you know. Lionel Messi, when he went for goal from outside the penalty box, had a 12.1% chance of getting a goal. And when he tried a direct free kick, he had an 8% chance. And if he tried to pass to one of his teammates, the odds would be different. And everything is broken down with lanularity, and managers know this, coaches know this, players know this. So at a moment in time, like say today, if Manchester City is playing and Jack Greelish is just Harland in the box, but he can shoot from outside the box. Now he may not know the numbers, but the coach knows the number and it's been drilled into him what he's got to do. And there is an expected value of Greelish going for uh for goal there and there is an expected value of him passing to Harland, and for which you have to calculate the probability of the pass going through and Harland converting. And these guys know exactly what the probabilities are. It is broken down to a science. In fact, there is this new uh trend in football. It's not exactly new, but it's become ubiquitous, which is playing out from the back. You know, it comes from there's a Croyfield school of thought and Pep Guardiola took it over in Barcelona and now it's really become common. Where when Guardiola came to Manchester City he uh, you know, insisted on getting rid of their old goalkeeper who was so good he actually played for England because he was old school. He couldn't play out from the back. Today your goalkeeper has to be a sort of a sweeper as well, the last line of attack and defense. And this whole logic of play out from the back can look ridiculous, uh, you know, when you end up giving the ball away with a bad pass. And that sometimes happens. But on the whole it is plus E V. And the which is why all great managers and coaches today in w want goalkeepers to play out from the back. The old skill old school goalkeeper who essentially stayed in the box and just had to stop shots, uh, is not valued anymore, no matter how good he may be at this particular skill. So we have similar data for pretty much every uh sport. Cricket. Until recently and I'll talk about that later, but until recently has been a bit of a problem because cricket consists of so many disparate playing situations. Every game of football is more or less fundamentally the same. You know, you have the field, the field is what it is, all the dimensions and sizes are exact. But cricket, if you look at, say, Australia on the fourth day of a match at a sp turning track in Motera in Amitabh, which is known as a dust bowl, you know, and if they are chasing 250 with eight wickets in hand uh against a left arm spinner and a leg spinner and a part time off spinner, it's a unique situation. You don't have a large enough sample size for the data to be meaningful over the course of history. Now, I believe that that has changed fundamentally with 2020. Because 2020 is a very standardized kind of format. The pitches are pretty standardized, the conditions are standardized, and it's changed the way the game is played, obviously, but also the way that we should, you know, think about the game. And that's what I'm gonna talk",
+      "startTime": 1306.95,
+      "endTime": 1655.5,
+      "text": "I can't shut up and give you cricket, I have to talk, but I get what you're saying. So here's the deal. I uh I was a cricket writer for many years, right? And I I I would commission other cricket writers as well as an edit editor. And one of the things I realized about cricket, and this is more as true of writers as of fans, sadly, because writers really should know better, is we're too quick to pass judgment. Something goes wrong, and we straight away pass judgment and say that hey, you know, uh so-and-so captain made a mistake or the batsman played a stupid shot and et cetera, et cetera. And a common example of this is let us say that you have a batsman and at one crucial point in an innings, he tries to hit a six. And he skies the ball, right? Now you have three possible outcomes I put before you. One is the ball goes for six. It affects the bowlers also. It puts them off their length. Uh, it changes the momentum of the game as such, though some could argue there's no such thing as momentum, it's a post factor construction. But regardless, the six could work in various ways and turn the game around. The other is that he is caught in the outfield and he's out, and that's a crucial wicket. He might even be the last recognized batsman. The third outcome is that the ball hits a bird in the sky and then drops down on a fielder's head and the bird and the fielder die. Right? So these are three possible outcomes. I think you would agree with me that the third outcome is incredibly unlikely, but it is nevertheless a non-zero possibility, right? But to get back to the serious subject of the first two outcomes, often what will happen is that uh he'll get caught. And then everyone in the media will say, What an irresponsible guy. He let his country down, take se kill ta, strike rotate kartaha, et cetera, et cetera. Why did he hit that ball as if every decision is not essentially instinctive, and so on and so forth. And that is one set of reactions. And Anna, and if he hits a six, then the set of reactions is, Oh, you know, he's taking the attack to the opposition, and all those old cliches come into play, and you know, what a brave attacking batsman he rescued our side, and all of that happens. And my point is, regardless of the outcome, often you cannot judge the correctness of his action from whether he hit that six or whether he got out. Perhaps at that moment aggression was a right way forward, the only way forward, and he just got unlucky and he got caught. Or perhaps at that moment he needed to preserve his wicket, and there was no value in aggression, and he played an impetuous shot and hit a six. He should not be castigated for the first, he should not be congratulated for the second. And we often sort of don't realize this because we don't think enough in terms of expected value in cricket and really think about what the data means. Now, data can often seem bland and colorless, but data informs how every major sport is played. For example, data is really big in football, right? I remember reading a few years ago at a time I wrote this piece, What Cricket Can Learn from Poker. I'll link it from uh the we'll link it from the show notes. And in that I pointed out how at the time I wrote the piece a few years ago, uh, you know. Lionel Messi, when he went for goal from outside the penalty box, had a 12.1% chance of getting a goal. And when he tried a direct free kick, he had an 8% chance. And if he tried to pass to one of his teammates, the odds would be different. And everything is broken down with lanularity, and managers know this, coaches know this, players know this. So at a moment in time, like say today, if Manchester City is playing and Jack Greelish is just Harland in the box, but he can shoot from outside the box. Now he may not know the numbers, but the coach knows the number and it's been drilled into him what he's got to do. And there is an expected value of Greelish going for uh for goal there and there is an expected value of him passing to Harland, and for which you have to calculate the probability of the pass going through and Harland converting. And these guys know exactly what the probabilities are. It is broken down to a science. In fact, there is this new uh trend in football. It's not exactly new, but it's become ubiquitous, which is playing out from the back. You know, it comes from there's a Croyfield school of thought and Pep Guardiola took it over in Barcelona and now it's really become common. Where when Guardiola came to Manchester City he uh, you know, insisted on getting rid of their old goalkeeper who was so good he actually played for England because he was old school. He couldn't play out from the back. Today your goalkeeper has to be a sort of a sweeper as well, the last line of attack and defense. And this whole logic of play out from the back can look ridiculous, uh, you know, when you end up giving the ball away with a bad pass. And that sometimes happens. But on the whole it is plus E V. And the which is why all great managers and coaches today in w want goalkeepers to play out from the back. The old skill old school goalkeeper who essentially stayed in the box and just had to stop shots, uh, is not valued anymore, no matter how good he may be at this particular skill. So we have similar data for pretty much every uh sport. Cricket. Until recently and I'll talk about that later, but until recently has been a bit of a problem because cricket consists of so many disparate playing situations. Every game of football is more or less fundamentally the same. You know, you have the field, the field is what it is, all the dimensions and sizes are exact. But cricket, if you look at, say, Australia on the fourth day of a match at a sp turning track in Motera in Amitabh, which is known as a dust bowl, you know, and if they are chasing 250 with eight wickets in hand uh against a left arm spinner and a leg spinner and a part time off spinner, it's a unique situation. You don't have a large enough sample size for the data to be meaningful over the course of history. Now, I believe that that has changed fundamentally with 2020. Because 2020 is a very standardized kind of format. The pitches are pretty standardized, the conditions are standardized, and it's changed the way the game is played, obviously, but also the way that we should, you know, think about the game. And that's what I'm gonna talk about now.",
       "words": [
+        {
+          "word": "I",
+          "startTime": 1306.95,
+          "endTime": 1307.11,
+          "confidence": 0.928
+        },
         {
           "word": "can't",
           "startTime": 1307.11,
@@ -31317,15 +31301,7 @@
           "startTime": 1654.62,
           "endTime": 1654.86,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1654.86,
-      "endTime": 1705.38,
-      "text": "about now. Okay, I just want to say one thing uh in response when you were talking about A six and the change in the tempo of the game. I just had a research idea, gentle reader. If this has not already been done, it seems to me that this can be an event study. Okay, so imagine you define a six as an event. Okay, and then you think of one ball later, two balls later, three balls later. Does the expected number of runs change? Does the probability of somebody going out change? And that way we can measure. the extent to which a six messes with the mind of the b bowler and the mind of the batsman. Um I'm co-author of an open source R package that is called event studies. So if you're gonna build this paper, talk to me.",
-      "words": [
+        },
         {
           "word": "about",
           "startTime": 1654.86,
@@ -31337,7 +31313,15 @@
           "startTime": 1655.02,
           "endTime": 1655.5,
           "confidence": 0.9841
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1655.5,
+      "endTime": 1704.42,
+      "text": "Okay, I just want to say one thing uh in response when you were talking about A six and the change in the tempo of the game. I just had a research idea, gentle reader. If this has not already been done, it seems to me that this can be an event study. Okay, so imagine you define a six as an event. Okay, and then you think of one ball later, two balls later, three balls later. Does the expected number of runs change? Does the probability of somebody going out change? And that way we can measure. the extent to which a six messes with the mind of the b bowler and the mind of the batsman. Um I'm co-author of an open source R package that is called event studies. So if you're gonna build this paper, talk to",
+      "words": [
         {
           "word": "Okay,",
           "startTime": 1655.5,
@@ -32189,21 +32173,21 @@
           "startTime": 1704.26,
           "endTime": 1704.42,
           "confidence": 0.9991
-        },
-        {
-          "word": "me.",
-          "startTime": 1704.42,
-          "endTime": 1705.38,
-          "confidence": 0.903
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1705.38,
-      "endTime": 1845.78,
-      "text": "Okay. I mean papers are now being inspired by my talk on cricket. But let's talk about T twenty cricket. When T twenty cricket came about, uh, it changed the game in a very fundamental way, and no one noticed, right? And here's the fundamental shift in the game. And as an economist also, you would appreciate this. In 50, let me compare it to uh one day cricket, 50 overs. Uh in ODI cricket, you have 11 resources in terms of batsmen and bowlers, and you have 50 overs. In T twenty cricket, you have the same 11 resources, but you have only 20 overs, right? What does this do? This means the you can bring in the concept of opportunity cost here and talk about the opportunity cost of every delivery. Now there is an increased scarcity in deliveries, and you have the same number of resources of uh wickets at your disposal, you know, per capita, you would uh argue therefore that it has gone up. And what this means is that the cost of a dot ball, a ball of which no run is scored, is much higher, and the value of a wicket is lower. Right. And therefore from this we can come to the conclusion that the expected value of aggression goes up. It is much more than in any other form of the game. Now, when uh teams first started playing T twenty cricket, they reflexively adopted the same grammar of one day cricket to T twenties. And the grammar was that you pinch it at the start, then you have a period of consolidation and building the innings, and then you slog at the end. And they took the same grammar to T20 cricket, where you know pinch it in the first four overs, especially with field restrictions and all that, then you consolidate for a while, then you slog at the end. And my argument, and I wrote this in a 2014 piece where I coined the term frontloading. And my argument was that if you take the changed relationship between the number of overs and the resources you have, the right approach is to frontload, which is to attack all the way. that you do not need that period of building. You can just attack all the way through, and it makes sense given the resources you have. And very often it was frustrating to me when a team would finish their innings having lost only two or three wickets. And that would indicate to me, no matter what the score was, that would indicate to me that they had not been aggressive enough. You're not using your resources well",
+      "startTime": 1704.42,
+      "endTime": 1844.11,
+      "text": "me. Okay. I mean papers are now being inspired by my talk on cricket. But let's talk about T twenty cricket. When T twenty cricket came about, uh, it changed the game in a very fundamental way, and no one noticed, right? And here's the fundamental shift in the game. And as an economist also, you would appreciate this. In 50, let me compare it to uh one day cricket, 50 overs. Uh in ODI cricket, you have 11 resources in terms of batsmen and bowlers, and you have 50 overs. In T twenty cricket, you have the same 11 resources, but you have only 20 overs, right? What does this do? This means the you can bring in the concept of opportunity cost here and talk about the opportunity cost of every delivery. Now there is an increased scarcity in deliveries, and you have the same number of resources of uh wickets at your disposal, you know, per capita, you would uh argue therefore that it has gone up. And what this means is that the cost of a dot ball, a ball of which no run is scored, is much higher, and the value of a wicket is lower. Right. And therefore from this we can come to the conclusion that the expected value of aggression goes up. It is much more than in any other form of the game. Now, when uh teams first started playing T twenty cricket, they reflexively adopted the same grammar of one day cricket to T twenties. And the grammar was that you pinch it at the start, then you have a period of consolidation and building the innings, and then you slog at the end. And they took the same grammar to T20 cricket, where you know pinch it in the first four overs, especially with field restrictions and all that, then you consolidate for a while, then you slog at the end. And my argument, and I wrote this in a 2014 piece where I coined the term frontloading. And my argument was that if you take the changed relationship between the number of overs and the resources you have, the right approach is to frontload, which is to attack all the way. that you do not need that period of building. You can just attack all the way through, and it makes sense given the resources you have. And very often it was frustrating to me when a team would finish their innings having lost only two or three wickets. And that would indicate to me, no matter what the score was, that would indicate to me that they had not been aggressive enough. You're not using your resources",
       "words": [
+        {
+          "word": "me.",
+          "startTime": 1704.42,
+          "endTime": 1705.38,
+          "confidence": 0.903
+        },
         {
           "word": "Okay.",
           "startTime": 1705.38,
@@ -34897,21 +34881,21 @@
           "startTime": 1843.61,
           "endTime": 1844.11,
           "confidence": 0.9999
-        },
-        {
-          "word": "well",
-          "startTime": 1845.54,
-          "endTime": 1845.78,
-          "confidence": 0.5184
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1845.78,
-      "endTime": 1848.02,
-      "text": "enough. You left money on the table.",
+      "startTime": 1845.54,
+      "endTime": 1847.46,
+      "text": "well enough. You left money on the",
       "words": [
+        {
+          "word": "well",
+          "startTime": 1845.54,
+          "endTime": 1845.78,
+          "confidence": 0.5184
+        },
         {
           "word": "enough.",
           "startTime": 1845.78,
@@ -34947,21 +34931,21 @@
           "startTime": 1847.38,
           "endTime": 1847.46,
           "confidence": 0.9998
-        },
-        {
-          "word": "table.",
-          "startTime": 1847.46,
-          "endTime": 1848.02,
-          "confidence": 0.9014
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1848.02,
-      "endTime": 1989.22,
-      "text": "You essentially you left money on the table and your grammar kind of had to change and and and the whole game essentially had to change. And teams took a long time to adjust to this. Like some teams did, like West Indies famously in 2016, they won the T twenty World Cup by frontloading, right? And they of course had an awesome team of hitters but they would just keep hitting, even if wickets fell, one wicket, two wickets, three wickets, they would just keep hitting. Now not all teams had that kind of balance where you have so many good stroke players. But my argument was that typically the conventional thinking was if you have a good innings building kind of player, Uh, you know, like a Joe Root or a Coli or whatever, you send them in at three and they do the innings building phase, and then you have the hitters at the end. Whereas in T20, my argument was that you send your hitters first. And then if you lose wickets and you have to consolidate, then you have your builders do that later. Extremely counterintuitive. I got abused for this. I've like written countless columns over the last 10 years talking about the change grammar of the game, and all completely ignored, even most teams didn't get it. Like I remember at one point, and this is sort of an interesting uh Uh a validation of the way I felt. In 2016, uh I had retired from poker by then, but a lot of poker players I knew would dabble in cricket betting, which I have never done and do not advise. It is illegal in India, so kindly, gentle reader, don't do it. Uh but this friend came to me and he said, you know, you're so good that you understand cricket. Give me some tip. IPL Ryakaru, right? This is before the 2016 IPL. So I said always every man just bet on the side batting second. And he was like, Mother, what does that mean? You know, he expected some really deep, nuanced insight and all that. I said, No, no, just bet bet on the side batting second, no matter what the price you're stuck at. So he ignored me and he called me after the 14th match, and he said, Yaramit Kyakaru. So I said, if you had followed my advice, you would have made a lot of money by now. Because 13 of those 14 matches were won by the side batting uh second. And one, I think, with um uh you know, uh losing an average of three point four wickets, so one by a long way, something like that, and uh in an average of seventeen point something overs. So one easily by the side batting second. Now here's the deal, and here's why I came up with my advice to him. It is obviously natural that the side biting second has a little bit of an info informational advantage. Uh there's an asymmetry there because they know exactly how many they need to score. So that's a",
+      "startTime": 1847.46,
+      "endTime": 2112.23,
+      "text": "table. You essentially you left money on the table and your grammar kind of had to change and and and the whole game essentially had to change. And teams took a long time to adjust to this. Like some teams did, like West Indies famously in 2016, they won the T twenty World Cup by frontloading, right? And they of course had an awesome team of hitters but they would just keep hitting, even if wickets fell, one wicket, two wickets, three wickets, they would just keep hitting. Now not all teams had that kind of balance where you have so many good stroke players. But my argument was that typically the conventional thinking was if you have a good innings building kind of player, Uh, you know, like a Joe Root or a Coli or whatever, you send them in at three and they do the innings building phase, and then you have the hitters at the end. Whereas in T20, my argument was that you send your hitters first. And then if you lose wickets and you have to consolidate, then you have your builders do that later. Extremely counterintuitive. I got abused for this. I've like written countless columns over the last 10 years talking about the change grammar of the game, and all completely ignored, even most teams didn't get it. Like I remember at one point, and this is sort of an interesting uh Uh a validation of the way I felt. In 2016, uh I had retired from poker by then, but a lot of poker players I knew would dabble in cricket betting, which I have never done and do not advise. It is illegal in India, so kindly, gentle reader, don't do it. Uh but this friend came to me and he said, you know, you're so good that you understand cricket. Give me some tip. IPL Ryakaru, right? This is before the 2016 IPL. So I said always every man just bet on the side batting second. And he was like, Mother, what does that mean? You know, he expected some really deep, nuanced insight and all that. I said, No, no, just bet bet on the side batting second, no matter what the price you're stuck at. So he ignored me and he called me after the 14th match, and he said, Yaramit Kyakaru. So I said, if you had followed my advice, you would have made a lot of money by now. Because 13 of those 14 matches were won by the side batting uh second. And one, I think, with um uh you know, uh losing an average of three point four wickets, so one by a long way, something like that, and uh in an average of seventeen point something overs. So one easily by the side batting second. Now here's the deal, and here's why I came up with my advice to him. It is obviously natural that the side biting second has a little bit of an info informational advantage. Uh there's an asymmetry there because they know exactly how many they need to score. So that's a small advantage, but in my opinion, that advantage should result in a skew of about 55, 45, or max 60, 40, not the massive skew that we saw. Why was there this massive skew? Because teams were underestimating the power score. Now the power score is a kind of score that is required to, you know, uh uh to I would say win or lose fifty percent of the time. You know, it's a par score, that's what you need to get. And teams batting first consistently underestimated this. So I remember Virat Kohli was captain of uh uh the Bangalore uh franchise, and he would constra like at least three matches I remember in that run of uh 14 games uh across all the teams, where um Virat batted first, lost the game, and And implicitly blamed his bowlers and said, Oh, but we got the power score. While actually, the way I was calculating that got much less than the power score. Because mentally they simply hadn't adjusted to what the power score should be, and they were thinking along an older sort of paradigm. Now, this has significantly corrected itself in the years since, because obviously you live and learn, but we see teams still making uh those sort of errors. And this also sort of brought me to the realization that the way traditional cricket writers look at cricket statistics as completely wrong. There was a time where a batsman's average would be a really big deal. My point here was that the average or the aggregate no longer matters. The strike rate is the most important thing. And here's why if there is a batsman who goes out there and makes say 90 runs, but at a slower than uh par strike rate, you know, if your power strike rate requires you to say um score for that particular game at 140 And you uh make ninety runs at the strike rate of one thirty, that means you have increased the burden on the rest of your team to make up for your shabbiness. Right? So my new sort of proposed metric for this, which as far as I know no one uses, is the batsman strike rate minus the strike rate required by the team to get to the power score. And if that is a positive number, then that batsman is an asset to the team. That's",
       "words": [
+        {
+          "word": "table.",
+          "startTime": 1847.46,
+          "endTime": 1848.02,
+          "confidence": 0.9014
+        },
         {
           "word": "You",
           "startTime": 1848.02,
@@ -38093,15 +38077,7 @@
           "startTime": 1989.14,
           "endTime": 1989.22,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1989.22,
-      "endTime": 1990.82,
-      "text": "small advantage, but in my opinion,",
-      "words": [
+        },
         {
           "word": "small",
           "startTime": 1989.22,
@@ -38137,15 +38113,7 @@
           "startTime": 1990.42,
           "endTime": 1990.82,
           "confidence": 0.9701
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1990.82,
-      "endTime": 2112.07,
-      "text": "that advantage should result in a skew of about 55, 45, or max 60, 40, not the massive skew that we saw. Why was there this massive skew? Because teams were underestimating the power score. Now the power score is a kind of score that is required to, you know, uh uh to I would say win or lose fifty percent of the time. You know, it's a par score, that's what you need to get. And teams batting first consistently underestimated this. So I remember Virat Kohli was captain of uh uh the Bangalore uh franchise, and he would constra like at least three matches I remember in that run of uh 14 games uh across all the teams, where um Virat batted first, lost the game, and And implicitly blamed his bowlers and said, Oh, but we got the power score. While actually, the way I was calculating that got much less than the power score. Because mentally they simply hadn't adjusted to what the power score should be, and they were thinking along an older sort of paradigm. Now, this has significantly corrected itself in the years since, because obviously you live and learn, but we see teams still making uh those sort of errors. And this also sort of brought me to the realization that the way traditional cricket writers look at cricket statistics as completely wrong. There was a time where a batsman's average would be a really big deal. My point here was that the average or the aggregate no longer matters. The strike rate is the most important thing. And here's why if there is a batsman who goes out there and makes say 90 runs, but at a slower than uh par strike rate, you know, if your power strike rate requires you to say um score for that particular game at 140 And you uh make ninety runs at the strike rate of one thirty, that means you have increased the burden on the rest of your team to make up for your shabbiness. Right? So my new sort of proposed metric for this, which as far as I know no one uses, is the batsman strike rate minus the strike rate required by the team to get to the power score. And if that is a positive number, then that batsman is an asset to the team.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1990.82,
@@ -40527,21 +40495,21 @@
           "startTime": 2111.59,
           "endTime": 2112.07,
           "confidence": 0.6648
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2112.07,
-      "endTime": 2118.47,
-      "text": "That's a number that changes at every ball. No, no, I should recalculate the required run rate and every ball.",
-      "words": [
+        },
         {
           "word": "That's",
           "startTime": 2112.07,
           "endTime": 2112.23,
           "confidence": 0.9453
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2112.23,
+      "endTime": 2118.47,
+      "text": "a number that changes at every ball. No, no, I should recalculate the required run rate and every ball.",
+      "words": [
         {
           "word": "a",
           "startTime": 2112.23,
@@ -45261,8 +45229,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2359.85,
-      "endTime": 2364.33,
-      "text": "So this is sparked of two further thoughts, but I will now come from companies back to cricket, and",
+      "endTime": 2834.68,
+      "text": "So this is sparked of two further thoughts, but I will now come from companies back to cricket, and one of them is that notions of expected value can change over time. For example, through the fifties, sixties, seventies, India was basically losing everything it played, especially if you played test matches abroad. So the approach of a batsman like Sunil Gavaskar was the team's probably going to lose anyway. Let me just get my individual landmark, no matter what it takes. And that kind of became a default approach. And you could even argue that it was kind of plus EV for him, because uh, you know, at least people are feeling national pride that oh, so and so batsman made so many runs and you're gonna lose anyway. So there is the downside is much um uh much more limited. And I think this became, unfortunately, uh something that remained in Indian mentality, where we value individual records and especially arbitrary like reaching hundred or um you know getting five wickets more than other countries do. Where for other countries it everything is about the team, much more so than it is for us. And we've had instances through our cricketing history of people only caring about individual landmarks. And to talk uh to to uh respond to what you said about selectors, the issue there is that. Selectors are often from are often executives. They are from that older school, right? So number one, they probably don't realize changed incentives enough and changed realities enough and are in those reflexive modes of thought. And number two, uh, it is much safer for a selector when everyone thinks like that to pick a guy who will get a good average and say, picked him in Satar Ranto Banae. Rather than pick a guy who could potentially throw his wicket away, throw his wicket away by playing correctly, but getting unlucky in three innings in a row, and then you say, Why are you picking that guy? He's irresponsible. What is wrong with the selectors? So the safer option might often be to go in a particular way. And I want to segue from this to talking about the lag in people understanding how the fundamental nature of a game has changed. Now, for example, when one day cricket uh first came about, if you remember back in the seventies and you were, you know, around to watch it then, uh I was just a little child. But um Uh if if you remember what happened is that just as I was complaining about people adapting the grammar of ODI cricket to T20s, people then adapted the grammar of test cricket into ODIs, right? So 200 would be like a almost like a par score over 60 overs. In the 75 World Cup, Gavaskar famously made 36 knot out batting 60 overs. And his defense of it was I didn't play every ball of the 60 overs. But which is fair enough, because your mindset is still not taken into account the scarcity of uh deliveries that you have to play. So there was this massive lag uh that ODI cricket took to catch up. You know, it started catching up, perhaps, you know, if you remember the ninety one World Cup, a New Zealand sent Mark Great Batch out as a pinch hitter to hit early on. Before that, teams would build all the way and slog at the end. Now suddenly it became fashionable that you do some pinch hiting at the start, then you build, then you slog. You know, in the ninety six world cup, obviously uh Jaysurya and Kalikalu with Hardnay just attacked from the start. But the middleovers were still consolidation. An interesting thing happened about uh seven or eight years ago, which is that teams began to realize, and England realized first, that not only are we underestimating the expected value of aggression in T20 cricket, we are underestimating the value of aggression in one-day cricket. Right? So before that period, scores of 300 were common in in the subcontinent, but otherwise not outside. England started frontloading in ODIs. Of course, they had a a good cohort of uh uh excellent aggressive batsmen, but they started frontloading where they would attack all the way through, even if they lose a couple of wickets and attack. And 300 plus scores became common outside the subcontinent, it almost became regular, where earlier it was an anomaly. And you know, that kind of culminated in uh their victory in the 2019 World Cup. And of course they were lucky in that specific final game and all of that. But in my mind, it was just magnificent that they won, because and I wrote columns about it at the time, that they were the first to recognize that the ODI game for the last three decades had actually been played wrong. That we weren't aggressive enough. And they were sort of the first to realize this and bring that realization to bear. And then what they have done over the last um uh coup three years is this this phrase has come into being called baseball, coined as it happens by an ex-colleague of mine from my crook in four days, Andrew Miller. And the phrase refers to Brendan McCullum, who was their coach in Test cricket, uh, who's a great New Zealand batsman who was their coach and he's known as Baz, so Bass Ball. And uh their approach towards test cricket now involves way more aggression, where they have run rates of more than four and over. And uh the idea being that they accumulate runs quicker and that gives them more time to get the other team out and uh you know get results which would otherwise have been draws. And it's a very nuanced approach to the extent that uh Brendan McKillam hates the term baseball. At one point he said, I don't really like that silly term. I don't have any idea what baseball is. It's not just all crash and burn, stop quote. And to the media from outside, it might seem that is only increased aggression, but no it's not. What I think they've got right is expected value. That they're finally looking at the data, they're looking, they're thinking in a probabilistic way, and they're getting expected value. And a great example of a demonstration of how aggressive cricket doesn't always mean aggressive batting comes from a test match that South Africa played against India in Delhi in December 2015. The 6th of December was the fourth day of that test match, and South Africa went in. Uh in the middle of that day, uh they went into bat needing about four hundred and thirty one runs to win in a day and a half. And they correctly figured that it's impossible on this kind of pitch against these kind of ballers, we're not going to manage. Right? So the expected value of aggression is pretty much zero. The risk to reward ratio is not worth it because there's no reward if you take a risk. And the expected value of just preserving your wicket is massive. Over here, there is no cost to a dot ball, and the value of a wicket is infinite. And what this meant was that Hashim Amla made twenty five runs in about two hundred and forty four balls or something. I forget the exact thing at a strike rate of ten and one of the most aggressive batsmen of all time, ABD Williars, made forty three runs in I think two hundred and ninety three balls, right and people couldn't believe it that these are natural stroke players. What the hell are they doing? What the hell is going on? But to me, they just calculated the expected value and did the right thing for their team, even if it looked stupid, even if people said, What the hell are you doing? This is not how you play. They c calculated that and they did the right thing. And I think baseball does that. Where baseball most of the time will recognize that aggression is the right way forward, but it is not all crash and burn, as Brendan McCullum says. Right? There's a lot more thinking to it. And unfortunately cricket analysts and writers don't really get it, and audiences don't get it uh either. So my plea to all sort of cricket uh watchers, cricket lovers watching this would be that don't be in a hurry to rush to judgment when you see something happen on the cricket field that you like or you don't like. Right? There is a reason why it's happened, there is thinking behind it, there's there is probabilistic thinking. So often you do the right things for the right reasons, but end up with a uh wrong outcome. And so often it's the other way around. And this doesn't mean that all decisions are the right decisions and you can never criticize. But I think applying this probabilistic lens helps us not only be better cricket fans, but helps us live our lives better. And we can stop being hard on ourselves for things that go wrong, and we can stop judging others all the time, right? And uh just uh essentially be far more equanimous and not try to control",
       "words": [
         {
           "word": "So",
@@ -45377,15 +45345,7 @@
           "startTime": 2364.09,
           "endTime": 2364.33,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2364.33,
-      "endTime": 2366.41,
-      "text": "one of them is that notions",
-      "words": [
+        },
         {
           "word": "one",
           "startTime": 2364.33,
@@ -45421,15 +45381,7 @@
           "startTime": 2365.77,
           "endTime": 2366.41,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2366.41,
-      "endTime": 2399.43,
-      "text": "of expected value can change over time. For example, through the fifties, sixties, seventies, India was basically losing everything it played, especially if you played test matches abroad. So the approach of a batsman like Sunil Gavaskar was the team's probably going to lose anyway. Let me just get my individual landmark, no matter what it takes. And that kind of became a default approach. And you could even argue that it was kind of plus EV for him, because uh, you know, at least people are feeling national pride that oh, so and so batsman made so many runs and you're gonna lose anyway. So there is the downside is much um uh much more limited.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 2366.41,
@@ -46131,15 +46083,7 @@
           "startTime": 2398.71,
           "endTime": 2399.43,
           "confidence": 0.913
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2399.43,
-      "endTime": 2400.97,
-      "text": "And I think this",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2399.43,
@@ -46163,15 +46107,7 @@
           "startTime": 2400.65,
           "endTime": 2400.97,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2400.97,
-      "endTime": 2834.68,
-      "text": "became, unfortunately, uh something that remained in Indian mentality, where we value individual records and especially arbitrary like reaching hundred or um you know getting five wickets more than other countries do. Where for other countries it everything is about the team, much more so than it is for us. And we've had instances through our cricketing history of people only caring about individual landmarks. And to talk uh to to uh respond to what you said about selectors, the issue there is that. Selectors are often from are often executives. They are from that older school, right? So number one, they probably don't realize changed incentives enough and changed realities enough and are in those reflexive modes of thought. And number two, uh, it is much safer for a selector when everyone thinks like that to pick a guy who will get a good average and say, picked him in Satar Ranto Banae. Rather than pick a guy who could potentially throw his wicket away, throw his wicket away by playing correctly, but getting unlucky in three innings in a row, and then you say, Why are you picking that guy? He's irresponsible. What is wrong with the selectors? So the safer option might often be to go in a particular way. And I want to segue from this to talking about the lag in people understanding how the fundamental nature of a game has changed. Now, for example, when one day cricket uh first came about, if you remember back in the seventies and you were, you know, around to watch it then, uh I was just a little child. But um Uh if if you remember what happened is that just as I was complaining about people adapting the grammar of ODI cricket to T20s, people then adapted the grammar of test cricket into ODIs, right? So 200 would be like a almost like a par score over 60 overs. In the 75 World Cup, Gavaskar famously made 36 knot out batting 60 overs. And his defense of it was I didn't play every ball of the 60 overs. But which is fair enough, because your mindset is still not taken into account the scarcity of uh deliveries that you have to play. So there was this massive lag uh that ODI cricket took to catch up. You know, it started catching up, perhaps, you know, if you remember the ninety one World Cup, a New Zealand sent Mark Great Batch out as a pinch hitter to hit early on. Before that, teams would build all the way and slog at the end. Now suddenly it became fashionable that you do some pinch hiting at the start, then you build, then you slog. You know, in the ninety six world cup, obviously uh Jaysurya and Kalikalu with Hardnay just attacked from the start. But the middleovers were still consolidation. An interesting thing happened about uh seven or eight years ago, which is that teams began to realize, and England realized first, that not only are we underestimating the expected value of aggression in T20 cricket, we are underestimating the value of aggression in one-day cricket. Right? So before that period, scores of 300 were common in in the subcontinent, but otherwise not outside. England started frontloading in ODIs. Of course, they had a a good cohort of uh uh excellent aggressive batsmen, but they started frontloading where they would attack all the way through, even if they lose a couple of wickets and attack. And 300 plus scores became common outside the subcontinent, it almost became regular, where earlier it was an anomaly. And you know, that kind of culminated in uh their victory in the 2019 World Cup. And of course they were lucky in that specific final game and all of that. But in my mind, it was just magnificent that they won, because and I wrote columns about it at the time, that they were the first to recognize that the ODI game for the last three decades had actually been played wrong. That we weren't aggressive enough. And they were sort of the first to realize this and bring that realization to bear. And then what they have done over the last um uh coup three years is this this phrase has come into being called baseball, coined as it happens by an ex-colleague of mine from my crook in four days, Andrew Miller. And the phrase refers to Brendan McCullum, who was their coach in Test cricket, uh, who's a great New Zealand batsman who was their coach and he's known as Baz, so Bass Ball. And uh their approach towards test cricket now involves way more aggression, where they have run rates of more than four and over. And uh the idea being that they accumulate runs quicker and that gives them more time to get the other team out and uh you know get results which would otherwise have been draws. And it's a very nuanced approach to the extent that uh Brendan McKillam hates the term baseball. At one point he said, I don't really like that silly term. I don't have any idea what baseball is. It's not just all crash and burn, stop quote. And to the media from outside, it might seem that is only increased aggression, but no it's not. What I think they've got right is expected value. That they're finally looking at the data, they're looking, they're thinking in a probabilistic way, and they're getting expected value. And a great example of a demonstration of how aggressive cricket doesn't always mean aggressive batting comes from a test match that South Africa played against India in Delhi in December 2015. The 6th of December was the fourth day of that test match, and South Africa went in. Uh in the middle of that day, uh they went into bat needing about four hundred and thirty one runs to win in a day and a half. And they correctly figured that it's impossible on this kind of pitch against these kind of ballers, we're not going to manage. Right? So the expected value of aggression is pretty much zero. The risk to reward ratio is not worth it because there's no reward if you take a risk. And the expected value of just preserving your wicket is massive. Over here, there is no cost to a dot ball, and the value of a wicket is infinite. And what this meant was that Hashim Amla made twenty five runs in about two hundred and forty four balls or something. I forget the exact thing at a strike rate of ten and one of the most aggressive batsmen of all time, ABD Williars, made forty three runs in I think two hundred and ninety three balls, right and people couldn't believe it that these are natural stroke players. What the hell are they doing? What the hell is going on? But to me, they just calculated the expected value and did the right thing for their team, even if it looked stupid, even if people said, What the hell are you doing? This is not how you play. They c calculated that and they did the right thing. And I think baseball does that. Where baseball most of the time will recognize that aggression is the right way forward, but it is not all crash and burn, as Brendan McCullum says. Right? There's a lot more thinking to it. And unfortunately cricket analysts and writers don't really get it, and audiences don't get it uh either. So my plea to all sort of cricket uh watchers, cricket lovers watching this would be that don't be in a hurry to rush to judgment when you see something happen on the cricket field that you like or you don't like. Right? There is a reason why it's happened, there is thinking behind it, there's there is probabilistic thinking. So often you do the right things for the right reasons, but end up with a uh wrong outcome. And so often it's the other way around. And this doesn't mean that all decisions are the right decisions and you can never criticize. But I think applying this probabilistic lens helps us not only be better cricket fans, but helps us live our lives better. And we can stop being hard on ourselves for things that go wrong, and we can stop judging others all the time, right? And uh just uh essentially be far more equanimous and not try to control",
-      "words": [
+        },
         {
           "word": "became,",
           "startTime": 2400.97,
@@ -55519,8 +55455,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2882.74,
-      "endTime": 2891.54,
-      "text": "Okay, Amit, we're at the end of the fun conversation. Now let's do recommendations. Tell us what cool things should we be reading.",
+      "endTime": 2891.94,
+      "text": "Okay, Amit, we're at the end of the fun conversation. Now let's do recommendations. Tell us what cool things should we be reading. Yeah,",
       "words": [
         {
           "word": "Okay,",
@@ -55659,21 +55595,21 @@
           "startTime": 2890.9,
           "endTime": 2891.54,
           "confidence": 0.9242
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2891.54,
-      "endTime": 3002.93,
-      "text": "Yeah, so uh the book I want to recommend is Super Focasting. By Philip Tetlock and a co-author. And it's a magnificent book because I remember the time I read it many years ago, I was thinking about writing a book myself about all the lessons Red Poker taught me about thinking probabilistically. And this might seem unrelated, but super forecasting is actually a masterful primer on thinking probabilistically. And I felt that it says so much that uh, you know, even if I come at the same area from another context, the context of poker, it's really not required. It's just such a brilliant book. And I have of course followed uh Tedlock on Twitter after that and followed his work and uh just an absolutely uh brilliant thinker. So super forecasting is kind of but i it's about a lot more than about forecasting. It's about the It's about looking at the world through a probabilistic lens and having the humility to always keep updating your priors and examining your biases. Like what typically happens is that, and something that the book brings out very well, is that we have all these experts on TV and YouTube and Twitter and everywhere. And experts are incentivized to exude certainty. This will happen. That will happen. That's definitely right. That's definitely wrong. And the world is deeply complex. And if you think probabilistically certainty is hard to come by. You're always being nuanced and uh, you know, uh refusing to be certain when there is no need to be certain. And therefore most of the experts we value and who get a lot of fair time. are fundamentally wrong and we should not pay attention to them. So how should you think about the world? Super forecasting is a great guide, but my uh sort of um uh summary of that is that think in probabilistic ways and always have the humility to accept that there is more information out there than you can compute. Compute it the best you can and be probabilistic and keep updating uh your knowledge.",
-      "words": [
+        },
         {
           "word": "Yeah,",
           "startTime": 2891.54,
           "endTime": 2891.94,
           "confidence": 0.7964
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2891.94,
+      "endTime": 3002.93,
+      "text": "so uh the book I want to recommend is Super Focasting. By Philip Tetlock and a co-author. And it's a magnificent book because I remember the time I read it many years ago, I was thinking about writing a book myself about all the lessons Red Poker taught me about thinking probabilistically. And this might seem unrelated, but super forecasting is actually a masterful primer on thinking probabilistically. And I felt that it says so much that uh, you know, even if I come at the same area from another context, the context of poker, it's really not required. It's just such a brilliant book. And I have of course followed uh Tedlock on Twitter after that and followed his work and uh just an absolutely uh brilliant thinker. So super forecasting is kind of but i it's about a lot more than about forecasting. It's about the It's about looking at the world through a probabilistic lens and having the humility to always keep updating your priors and examining your biases. Like what typically happens is that, and something that the book brings out very well, is that we have all these experts on TV and YouTube and Twitter and everywhere. And experts are incentivized to exude certainty. This will happen. That will happen. That's definitely right. That's definitely wrong. And the world is deeply complex. And if you think probabilistically certainty is hard to come by. You're always being nuanced and uh, you know, uh refusing to be certain when there is no need to be certain. And therefore most of the experts we value and who get a lot of fair time. are fundamentally wrong and we should not pay attention to them. So how should you think about the world? Super forecasting is a great guide, but my uh sort of um uh summary of that is that think in probabilistic ways and always have the humility to accept that there is more information out there than you can compute. Compute it the best you can and be probabilistic and keep updating uh your knowledge.",
+      "words": [
         {
           "word": "so",
           "startTime": 2891.94,
@@ -57773,8 +57709,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3002.95,
-      "endTime": 3039.22,
-      "text": "As an economist, it is my occupational hazard That uh people would ask me uh what's gonna happen to the stock market, or what's gonna happen to the exchange rate, or what's gonna happen to the dollar, euro, or something. And it is bracing to say, I don't know. And that is the meaning of living in randomness, living with randomness, that actually understanding finance. is learning to respect the uncertainty of that beast. And everybody that claims that I know X is going to happen is actually not getting the process",
+      "endTime": 3040.66,
+      "text": "As an economist, it is my occupational hazard That uh people would ask me uh what's gonna happen to the stock market, or what's gonna happen to the exchange rate, or what's gonna happen to the dollar, euro, or something. And it is bracing to say, I don't know. And that is the meaning of living in randomness, living with randomness, that actually understanding finance. is learning to respect the uncertainty of that beast. And everybody that claims that I know X is going to happen is actually not getting the process deeply enough. But",
       "words": [
         {
           "word": "As",
@@ -58327,15 +58263,7 @@
           "startTime": 3038.42,
           "endTime": 3039.22,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3039.22,
-      "endTime": 3069.54,
-      "text": "deeply enough. But the truth is with a gun to your head, you could come out with an answer, but that answer would be probabilistic. That is 70% this, 20% this, 10% this, et cetera, et cetera. Which is meaningless to people, you know? Like a lot of forecasters in 2016 got castigated for get getting it wrong. Because they said the probability of Trump winning was really low, and hey, look what happened, Trump won. But they didn't necessarily get it wrong. Correct. Even if they said Trump is twenty percent to win, two out of eight times he's going to win. Yeah. You",
-      "words": [
+        },
         {
           "word": "deeply",
           "startTime": 3039.22,
@@ -58353,7 +58281,15 @@
           "startTime": 3040.42,
           "endTime": 3040.66,
           "confidence": 0.6006
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3040.66,
+      "endTime": 3069.94,
+      "text": "the truth is with a gun to your head, you could come out with an answer, but that answer would be probabilistic. That is 70% this, 20% this, 10% this, et cetera, et cetera. Which is meaningless to people, you know? Like a lot of forecasters in 2016 got castigated for get getting it wrong. Because they said the probability of Trump winning was really low, and hey, look what happened, Trump won. But they didn't necessarily get it wrong. Correct. Even if they said Trump is twenty percent to win, two out of eight times he's going to win. Yeah. You know?",
+      "words": [
         {
           "word": "the",
           "startTime": 3040.66,
@@ -58965,21 +58901,21 @@
           "startTime": 3069.38,
           "endTime": 3069.54,
           "confidence": 0.7422
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3069.54,
-      "endTime": 3117.86,
-      "text": "know? Uh I want to comment on the social reality of uh India, okay, whether in government or in the world of business. I feel that the nature of the conversation between economists and the real world is a bit dysfunctional. The real world wants the economists to be a super forecaster. And All too often knowing economics involves either saying, I don't know. It's a coin toss. It could be 50-50. And then people start getting unhappy that you don't know what you're supposed to know, or you're not being helpful, or you're holding out and not giving us your insights. So I feel that it's just important to get out of that dysfunctional conversation into a more interesting conversation about what are the forces at work, how might things work out. And not try to get into the game of",
-      "words": [
+        },
         {
           "word": "know?",
           "startTime": 3069.54,
           "endTime": 3069.94,
           "confidence": 0.7715
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3069.94,
+      "endTime": 3117.86,
+      "text": "Uh I want to comment on the social reality of uh India, okay, whether in government or in the world of business. I feel that the nature of the conversation between economists and the real world is a bit dysfunctional. The real world wants the economists to be a super forecaster. And All too often knowing economics involves either saying, I don't know. It's a coin toss. It could be 50-50. And then people start getting unhappy that you don't know what you're supposed to know, or you're not being helpful, or you're holding out and not giving us your insights. So I feel that it's just important to get out of that dysfunctional conversation into a more interesting conversation about what are the forces at work, how might things work out. And not try to get into the game of",
+      "words": [
         {
           "word": "Uh",
           "startTime": 3069.94,
@@ -60567,8 +60503,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3162.55,
-      "endTime": 3165.43,
-      "text": "So Ajay, what's your recommendation for the day?",
+      "endTime": 3164.47,
+      "text": "So Ajay, what's your recommendation for the",
       "words": [
         {
           "word": "So",
@@ -60611,21 +60547,21 @@
           "startTime": 3164.39,
           "endTime": 3164.47,
           "confidence": 0.999
-        },
-        {
-          "word": "day?",
-          "startTime": 3164.47,
-          "endTime": 3165.43,
-          "confidence": 0.9629
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 3165.43,
+      "startTime": 3164.47,
       "endTime": 3199.62,
-      "text": "I want to recommend a book by uh Avinash Dikshit and Barry Nal Buf. It's called thinking strategically. Okay. Um, I want to clarify the word strategically. They are drawing on game theory and thinking strategically in the sense of John von Neumann. Uh what they have tried to do is take the body of knowledge and bring it closer to real world applications. It's a great book, I think. You know, everybody dealing with reality, grappling with reality will benefit from using this book.",
+      "text": "day? I want to recommend a book by uh Avinash Dikshit and Barry Nal Buf. It's called thinking strategically. Okay. Um, I want to clarify the word strategically. They are drawing on game theory and thinking strategically in the sense of John von Neumann. Uh what they have tried to do is take the body of knowledge and bring it closer to real world applications. It's a great book, I think. You know, everybody dealing with reality, grappling with reality will benefit from using this book.",
       "words": [
+        {
+          "word": "day?",
+          "startTime": 3164.47,
+          "endTime": 3165.43,
+          "confidence": 0.9629
+        },
         {
           "word": "I",
           "startTime": 3165.43,

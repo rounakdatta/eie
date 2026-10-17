@@ -5,7 +5,7 @@
     "durationSeconds": 4328,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -1129,8 +1129,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 69.5,
-      "endTime": 78.78,
-      "text": "I have of course introspected at length about what went wrong. Shall we come back to this at the end? Because I think it's good to locate that in some bigger",
+      "endTime": 79.74,
+      "text": "I have of course introspected at length about what went wrong. Shall we come back to this at the end? Because I think it's good to locate that in some bigger principles.",
       "words": [
         {
           "word": "I",
@@ -1317,21 +1317,21 @@
           "startTime": 78.22,
           "endTime": 78.78,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 78.78,
-      "endTime": 96.14,
-      "text": "principles. Let's zoom out and get the wider story in. So let's talk about hiking. When did you I I know you've been a hiker for a long time and a hiking evangelist almost, which is that you are a person who evangelises hiking and not that while hiking you evangelize. So tell me a little bit about your love affair with hiking, when did it",
-      "words": [
+        },
         {
           "word": "principles.",
           "startTime": 78.78,
           "endTime": 79.74,
           "confidence": 0.9709
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 79.74,
+      "endTime": 96.14,
+      "text": "Let's zoom out and get the wider story in. So let's talk about hiking. When did you I I know you've been a hiker for a long time and a hiking evangelist almost, which is that you are a person who evangelises hiking and not that while hiking you evangelize. So tell me a little bit about your love affair with hiking, when did it",
+      "words": [
         {
           "word": "Let's",
           "startTime": 79.74,
@@ -1727,8 +1727,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 96.14,
-      "endTime": 159.9,
-      "text": "start? Uh I've been hiking forever. Um I grew up around the books of Jim Corbett and uh books about the first ascent of Mount Everest and such like. And so, you know, mountains and forests always seem like the greatest thing in the world to me. So uh here's a counterfactual that imagine you take one of the great books of the world for whom the bell tolls, and you put it in a purely urban setting. I think the oomph is lost. I mean the fact that it happens in mountains and forests is just so much more interesting. So I just think mountains and forests is a good thing. And uh I've been going out into the mountains from age 13 and I've just consistently gone back. So this has just been part of my life and uh I've taken it seriously as something that one should do and many people kind of give up in their teens and twenties, but I just kept going. I never stopped.",
+      "endTime": 159.02,
+      "text": "start? Uh I've been hiking forever. Um I grew up around the books of Jim Corbett and uh books about the first ascent of Mount Everest and such like. And so, you know, mountains and forests always seem like the greatest thing in the world to me. So uh here's a counterfactual that imagine you take one of the great books of the world for whom the bell tolls, and you put it in a purely urban setting. I think the oomph is lost. I mean the fact that it happens in mountains and forests is just so much more interesting. So I just think mountains and forests is a good thing. And uh I've been going out into the mountains from age 13 and I've just consistently gone back. So this has just been part of my life and uh I've taken it seriously as something that one should do and many people kind of give up in their teens and twenties, but I just kept going. I never",
       "words": [
         {
           "word": "start?",
@@ -2749,21 +2749,21 @@
           "startTime": 158.78,
           "endTime": 159.02,
           "confidence": 0.9998
-        },
-        {
-          "word": "stopped.",
-          "startTime": 159.02,
-          "endTime": 159.9,
-          "confidence": 0.9641
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 159.9,
+      "startTime": 159.02,
       "endTime": 165.58,
-      "text": "Was your um love for hiking part of a turn towards nature itself? So it wasn't",
+      "text": "stopped. Was your um love for hiking part of a turn towards nature itself? So it wasn't",
       "words": [
+        {
+          "word": "stopped.",
+          "startTime": 159.02,
+          "endTime": 159.9,
+          "confidence": 0.9641
+        },
         {
           "word": "Was",
           "startTime": 159.9,
@@ -20391,8 +20391,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1108.45,
-      "endTime": 1140.75,
-      "text": "You still have your fingers. No, the thing is that even though I uh you know what you uh say sounds coldly rational at this moment in time, the point is it's a little bit like drinking. People say I know when to stop, but the your judgment gets more and more impaired as you go along and you miss that critical point. And I would imagine that everyone who g tries any of these dangerous things uh ha already has a bias for risk, already has a sort of appetite for risk taking. They've already decided that they're gonna go out there and do stuff. And I would imagine that then it becomes hard. To send no at any point in it. There are",
+      "endTime": 1140.11,
+      "text": "You still have your fingers. No, the thing is that even though I uh you know what you uh say sounds coldly rational at this moment in time, the point is it's a little bit like drinking. People say I know when to stop, but the your judgment gets more and more impaired as you go along and you miss that critical point. And I would imagine that everyone who g tries any of these dangerous things uh ha already has a bias for risk, already has a sort of appetite for risk taking. They've already decided that they're gonna go out there and do stuff. And I would imagine that then it becomes hard. To send no at any point in",
       "words": [
         {
           "word": "You",
@@ -21125,7 +21125,15 @@
           "startTime": 1140.03,
           "endTime": 1140.11,
           "confidence": 0.6619
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1140.11,
+      "endTime": 1217.22,
+      "text": "it. There are two parts to this. One is that I think a lot of people suffer from some cost fallacy. You prepare for years, I want to go to Kanchan Janga and reach Gochala 3, and you train, and maybe there's a performative act aspect. You want to show people on Facebook that I reached Kochala 3 and you suffer from some cost fallacy. So these are all the stupid reasons. Okay. So. We should be cold, we should not suffer from some cause fallacy. Life is not lived as a performance to show other people we should do things for the human being inside us. There's no audience for all these things. That's one part to it. The second part to it is that as you go high up the mountains, the amount of oxygen in the air goes down. So it becomes harder to think and make good decisions. Not at Gochala One levels, that's not a serious problem. But for the people at The last camp at Everest, there's something called the dead zone, where about I seem to think 7500 meters. Every day that you are above seven thousand five hundred meters, you're basically at risk because it is beyond the design spec of the human body. And you've got a limited time there and decision making is impaired, everything is impaired. So you've just got to be above seventy five hundred meters as little as",
+      "words": [
         {
           "word": "it.",
           "startTime": 1140.11,
@@ -21143,15 +21151,7 @@
           "startTime": 1140.67,
           "endTime": 1140.75,
           "confidence": 0.995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1140.75,
-      "endTime": 1217.22,
-      "text": "two parts to this. One is that I think a lot of people suffer from some cost fallacy. You prepare for years, I want to go to Kanchan Janga and reach Gochala 3, and you train, and maybe there's a performative act aspect. You want to show people on Facebook that I reached Kochala 3 and you suffer from some cost fallacy. So these are all the stupid reasons. Okay. So. We should be cold, we should not suffer from some cause fallacy. Life is not lived as a performance to show other people we should do things for the human being inside us. There's no audience for all these things. That's one part to it. The second part to it is that as you go high up the mountains, the amount of oxygen in the air goes down. So it becomes harder to think and make good decisions. Not at Gochala One levels, that's not a serious problem. But for the people at The last camp at Everest, there's something called the dead zone, where about I seem to think 7500 meters. Every day that you are above seven thousand five hundred meters, you're basically at risk because it is beyond the design spec of the human body. And you've got a limited time there and decision making is impaired, everything is impaired. So you've just got to be above seventy five hundred meters as little as",
-      "words": [
+        },
         {
           "word": "two",
           "startTime": 1140.75,
@@ -34159,8 +34159,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1837.28,
-      "endTime": 1962.37,
-      "text": "racket. Magnificent. Magnificent. Well done. Yeah. So and we've seen it happen to so many great ideas, actually, in my head. Here's my second story. My second story uh is about the great chess grandmaster Tigran Petrosian, pioneer of the exchange sacrifice. And Petrosian was a great grandmaster in the 60s and uh 70s, 50s, 60s, and 70s. And he also turned deaf. So at one point, this is an aside, not my main Petrosian story, but at one point he was in a losing position and his opponent, who was a young buck who respected him greatly, offered him a draw, and he didn't hear him and he went on to lose. But regardless, he was partly deaf. So Petrussian was once playing a game and his opponent badly wanted a draw. Presumably maybe it's the last day of an interzonal, none of them has anything to gain, he just wants to go home. Maybe he'll get a grandmaster known with half a point, whatever. His opponent wants a draw. So he is sort of testing the waters to see if Petrosian would agree. So he leans forward and he asked Petrosian after the game is started, today you're not allowed to talk to the other person of un unless you're offering a draw. But he leans forward and he asked Petrosian, Are you playing to win? So Petrosian says no. So then he thinks for a while and now he's happy because if he's not playing to win. So he says, Are you playing to draw? So Petrosian says Petrussian says no. So then he's like, Okay, so why are you playing then? And Petrocian says I'm playing to play. I love this. This should be everybody's philosophy for life, that it is not about the win, it is not about the result. I'm playing to play. I'm hiking to hike. I'm walking to walk. Nothing else kind of matters. So I want to uh you know, so is this sort of have you seen the journey in people as well, where you s eventu you begin something and it it's it's not just about hiking, I think it's a metaphor for life. that often you do things because you really enjoy doing them. You become good at it. And maybe you take it up as a profession, maybe it's a private passion, but at some point it can enter this competitive territory and validation in the eyes of others on you. And maybe some some day you're fortunate enough to go back to it and to be able to play to",
+      "endTime": 1903.06,
+      "text": "racket. Magnificent. Magnificent. Well done. Yeah. So and we've seen it happen to so many great ideas, actually, in my head. Here's my second story. My second story uh is about the great chess grandmaster Tigran Petrosian, pioneer of the exchange sacrifice. And Petrosian was a great grandmaster in the 60s and uh 70s, 50s, 60s, and 70s. And he also turned deaf. So at one point, this is an aside, not my main Petrosian story, but at one point he was in a losing position and his opponent, who was a young buck who respected him greatly, offered him a draw, and he didn't hear him and he went on to lose. But regardless, he was partly deaf. So Petrussian was once playing a game and his opponent badly wanted a draw. Presumably maybe it's the last day of an interzonal, none of them has anything to gain, he just wants to go home. Maybe he'll get a grandmaster known with half a point, whatever. His opponent wants a draw. So he is sort of testing the waters to see if Petrosian would agree. So he leans forward and he asked Petrosian after the game is started, today you're not allowed to talk to the other person of un unless you're offering a draw. But he leans forward and he asked Petrosian, Are you playing to win? So Petrosian says",
       "words": [
         {
           "word": "racket.",
@@ -35547,13 +35547,29 @@
           "startTime": 1902.74,
           "endTime": 1903.06,
           "confidence": 0.999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1903.06,
+      "endTime": 1904.42,
+      "text": "no.",
+      "words": [
         {
           "word": "no.",
           "startTime": 1903.06,
           "endTime": 1904.42,
           "confidence": 0.8955
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1904.42,
+      "endTime": 1911.78,
+      "text": "So then he thinks for a while and now he's happy because if he's not playing to win. So he says, Are you playing to draw? So Petrosian says Petrussian says",
+      "words": [
         {
           "word": "So",
           "startTime": 1904.42,
@@ -35739,13 +35755,29 @@
           "startTime": 1911.54,
           "endTime": 1911.78,
           "confidence": 0.9977
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1911.78,
+      "endTime": 1912.98,
+      "text": "no.",
+      "words": [
         {
           "word": "no.",
           "startTime": 1911.78,
           "endTime": 1912.98,
           "confidence": 0.7419
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1912.98,
+      "endTime": 1962.37,
+      "text": "So then he's like, Okay, so why are you playing then? And Petrocian says I'm playing to play. I love this. This should be everybody's philosophy for life, that it is not about the win, it is not about the result. I'm playing to play. I'm hiking to hike. I'm walking to walk. Nothing else kind of matters. So I want to uh you know, so is this sort of have you seen the journey in people as well, where you s eventu you begin something and it it's it's not just about hiking, I think it's a metaphor for life. that often you do things because you really enjoy doing them. You become good at it. And maybe you take it up as a profession, maybe it's a private passion, but at some point it can enter this competitive territory and validation in the eyes of others on you. And maybe some some day you're fortunate enough to go back to it and to be able to play to",
+      "words": [
         {
           "word": "So",
           "startTime": 1912.98,
@@ -45481,8 +45513,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2441.38,
-      "endTime": 2445.54,
-      "text": "This is why, Ajesha, you should be overweight like me, because then you're carrying a lower",
+      "endTime": 2481.45,
+      "text": "This is why, Ajesha, you should be overweight like me, because then you're carrying a lower percentage. I don't recommend it. Okay, I'm just kidding. Add to that advice, because so far what you've done is you made me feel incredibly inspired that I should go out there and I should instantly experience this world. But at the same time, uh, you know, your earlier advice was uh you know, stay cold. You know, be cold and rational. And tell me about all the things that can go wrong. What are all the do's and the don'ts, what are the heuristics I'm using in in terms of all the decisions I make.",
       "words": [
         {
           "word": "This",
@@ -45579,15 +45611,7 @@
           "startTime": 2445.22,
           "endTime": 2445.54,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2445.54,
-      "endTime": 2447.86,
-      "text": "percentage. I don't recommend it.",
-      "words": [
+        },
         {
           "word": "percentage.",
           "startTime": 2445.54,
@@ -45617,15 +45641,7 @@
           "startTime": 2447.46,
           "endTime": 2447.86,
           "confidence": 0.6381
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2447.86,
-      "endTime": 2481.45,
-      "text": "Okay, I'm just kidding. Add to that advice, because so far what you've done is you made me feel incredibly inspired that I should go out there and I should instantly experience this world. But at the same time, uh, you know, your earlier advice was uh you know, stay cold. You know, be cold and rational. And tell me about all the things that can go wrong. What are all the do's and the don'ts, what are the heuristics I'm using in in terms of all the decisions I make.",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 2447.86,
@@ -46923,8 +46939,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2530.85,
-      "endTime": 2536.21,
-      "text": "And by row we mean the English row. Just to clarify what is the other",
+      "endTime": 2534.91,
+      "text": "And by row we mean the English row. Just to clarify",
       "words": [
         {
           "word": "And",
@@ -46991,7 +47007,15 @@
           "startTime": 2533.41,
           "endTime": 2534.91,
           "confidence": 0.9798
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2534.93,
+      "endTime": 2806.32,
+      "text": "what is the other Hindi rule. Oh okay. Yeah. So you do need to row or uh run uh for 10, 20, 30 minutes and you know you need to basically have a decent level of fitness. And all too often I have seen people on these trails in abject misery, in pure pain. I feel bad for them. I really feel sad for them. Here's the typical recipes of what goes wrong. So like behind Dharam Shala, I see people try to go up to threeund. Okay, it's a standard trick, it's an easy trick. Most of the people going up are like grossly underprepared for it. They haven't thought about it. And so you do need to do basics like have some proper footwear. Okay? Like people are wearing party clothes and going out hiking and it's just it's uncomfortable. It's going to get you into trouble. And so little bit of thought and care and preparation should be done. On the religious tourism side, the recipe that I see is that typically there'll be a family elder who is deeply motivated around. Pilgrimage considerations to try to go up to some great site. As I said, when I went to Gangotri, I saw this over and over. And that person would have managed to persuade several people from the family that chalo we'll go. And your grandparents were agricultural workers and they had the strength that comes from that. But in today's world, if you're sitting on your butt watching Netflix and eating processed food, you're not ready. And I've just seen people being so unhappy. It is torture to have to go climb a mountain when you haven't thought about it and you haven't watched this video and like mentally prepared yourself and you know develop some amount of fitness and a little bit of kit. So I would really say that you know do it with a little bit of caution and people are recklessly going into the mountains thinking that this is casual. Uh I think it's also the fault of YouTube. Like too many miraculous things are seen on YouTube and people think that hell yay, I can do this. And actually you can't. And so for many people I just say a little more caution and a little more prep. So think more and be prepared and don't randomly go into the mountains because you think this is so cool or everybody does it. So like I see so many young men walking in the mountain with cans of beer and You know, like that doesn't work. You do need to bring a certain asceticism and discipline into the project. Don't go in randomly. Okay. My second and third are pleading. Please, please, please, please, please, please, please, please, please. Don't let her. Okay, there is nobody there to clean up this stuff. And don't play music. Okay. Noise pollution is disgusting. People go up the mountain to find peace and quiet. All too often you have stupid young people going up with Bluetooth speakers and boom boxes and in the silence of the mountains, it communicates for hundreds of meters. It destroys experience for innumerable other people. Like just don't do it. It is disgusting when people go up the mountains with Bluetooth speakers or play their own cell phones. And like if you're going to go into the mountains, please respect the silence. And it is so silent that the noise that you make, your loud Exuberant talking and singing and Bluetoothing is audible for hundreds of meters. So if you go to the mountains, please engage engage in hushed whispers because your entire experience will change. You will experience nature better. The birds in the wildlife will come to you more if you are speaking in whispers. So that's just like don't let her don't be disgusting and don't make noise that is disgusting. On this thing, I have a third little thing. Uh wet wipes are absolutely great. They're a immense help for hygiene, but people should remember, please buy all cotton wet wipes. Because if you use artifici and you're going to throw it in the mountains, and most people are not disciplined enough to bring back your waste. So you should bring back all your plastic waste. Then I'd like to say that if you have artificial fabric in your wet wipes, then you've got to bring it back because it's plastic. Okay, we should understand. Nylon and polyester and and so on are plastics. And then you gotta bring it back because otherwise it's going to pollute the mountains for a thousand years. Or take the effort by cotton wet wipes, because then it's biodegradable and it's okay to toss it in the mountains, and you are not littering in the",
+      "words": [
         {
           "word": "what",
           "startTime": 2534.93,
@@ -47015,15 +47039,7 @@
           "startTime": 2535.33,
           "endTime": 2536.21,
           "confidence": 0.9888
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2536.21,
-      "endTime": 2806.32,
-      "text": "Hindi rule. Oh okay. Yeah. So you do need to row or uh run uh for 10, 20, 30 minutes and you know you need to basically have a decent level of fitness. And all too often I have seen people on these trails in abject misery, in pure pain. I feel bad for them. I really feel sad for them. Here's the typical recipes of what goes wrong. So like behind Dharam Shala, I see people try to go up to threeund. Okay, it's a standard trick, it's an easy trick. Most of the people going up are like grossly underprepared for it. They haven't thought about it. And so you do need to do basics like have some proper footwear. Okay? Like people are wearing party clothes and going out hiking and it's just it's uncomfortable. It's going to get you into trouble. And so little bit of thought and care and preparation should be done. On the religious tourism side, the recipe that I see is that typically there'll be a family elder who is deeply motivated around. Pilgrimage considerations to try to go up to some great site. As I said, when I went to Gangotri, I saw this over and over. And that person would have managed to persuade several people from the family that chalo we'll go. And your grandparents were agricultural workers and they had the strength that comes from that. But in today's world, if you're sitting on your butt watching Netflix and eating processed food, you're not ready. And I've just seen people being so unhappy. It is torture to have to go climb a mountain when you haven't thought about it and you haven't watched this video and like mentally prepared yourself and you know develop some amount of fitness and a little bit of kit. So I would really say that you know do it with a little bit of caution and people are recklessly going into the mountains thinking that this is casual. Uh I think it's also the fault of YouTube. Like too many miraculous things are seen on YouTube and people think that hell yay, I can do this. And actually you can't. And so for many people I just say a little more caution and a little more prep. So think more and be prepared and don't randomly go into the mountains because you think this is so cool or everybody does it. So like I see so many young men walking in the mountain with cans of beer and You know, like that doesn't work. You do need to bring a certain asceticism and discipline into the project. Don't go in randomly. Okay. My second and third are pleading. Please, please, please, please, please, please, please, please, please. Don't let her. Okay, there is nobody there to clean up this stuff. And don't play music. Okay. Noise pollution is disgusting. People go up the mountain to find peace and quiet. All too often you have stupid young people going up with Bluetooth speakers and boom boxes and in the silence of the mountains, it communicates for hundreds of meters. It destroys experience for innumerable other people. Like just don't do it. It is disgusting when people go up the mountains with Bluetooth speakers or play their own cell phones. And like if you're going to go into the mountains, please respect the silence. And it is so silent that the noise that you make, your loud Exuberant talking and singing and Bluetoothing is audible for hundreds of meters. So if you go to the mountains, please engage engage in hushed whispers because your entire experience will change. You will experience nature better. The birds in the wildlife will come to you more if you are speaking in whispers. So that's just like don't let her don't be disgusting and don't make noise that is disgusting. On this thing, I have a third little thing. Uh wet wipes are absolutely great. They're a immense help for hygiene, but people should remember, please buy all cotton wet wipes. Because if you use artifici and you're going to throw it in the mountains, and most people are not disciplined enough to bring back your waste. So you should bring back all your plastic waste. Then I'd like to say that if you have artificial fabric in your wet wipes, then you've got to bring it back because it's plastic. Okay, we should understand. Nylon and polyester and and so on are plastics. And then you gotta bring it back because otherwise it's going to pollute the mountains for a thousand years. Or take the effort by cotton wet wipes, because then it's biodegradable and it's okay to toss it in the mountains, and you are not littering in the",
-      "words": [
+        },
         {
           "word": "Hindi",
           "startTime": 2536.21,
@@ -54803,8 +54819,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2963.38,
-      "endTime": 2994.69,
-      "text": "All of this is so wise that it seems to me that's uh it's actually good advice not just for the mountains, not just for trekking, but in our everyday lives. I mean the reason you're having to give this advice in the first place is that we are disgusting in our everyday lives and we carry those habits uh there. You know, I have a question for you and I'm slightly offended also, that is where this question comes from. You said, you know, that uh young people today and I uh uh you were pointing at me, they sit on their butts and they watch Netflix. My question for you is on whose butt should I sit. I'll sit on my butt only,",
+      "endTime": 2995.57,
+      "text": "All of this is so wise that it seems to me that's uh it's actually good advice not just for the mountains, not just for trekking, but in our everyday lives. I mean the reason you're having to give this advice in the first place is that we are disgusting in our everyday lives and we carry those habits uh there. You know, I have a question for you and I'm slightly offended also, that is where this question comes from. You said, you know, that uh young people today and I uh uh you were pointing at me, they sit on their butts and they watch Netflix. My question for you is on whose butt should I sit. I'll sit on my butt only, no? So",
       "words": [
         {
           "word": "All",
@@ -55555,15 +55571,7 @@
           "startTime": 2994.45,
           "endTime": 2994.69,
           "confidence": 0.9022
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2994.69,
-      "endTime": 3000.13,
-      "text": "no? So I want to tell you a story that uh our good friend KP Krishna and I",
-      "words": [
+        },
         {
           "word": "no?",
           "startTime": 2994.69,
@@ -55575,7 +55583,15 @@
           "startTime": 2995.33,
           "endTime": 2995.57,
           "confidence": 0.9813
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2995.57,
+      "endTime": 3044.16,
+      "text": "I want to tell you a story that uh our good friend KP Krishna and I sit on the one else as well. Once went uh hiking to Pancha Chulli uh at the India-China border in Uttaranja. And uh our partners in this trip were a band of uh teenagers from Bangalore. Okay, boys and girls from Bangalore. Okay, now we are old. So we thought we will be the weakest link of the chain. In fact, we were the pretty strong by the standards of that group. And what I understood is that the life of a teenager today is basically sitting on your butt and doing video games and Netflix. The lack of fitness of teenagers that I saw was just outrageous. So it is really a new revelation for me. The idea that you can be young and not physically active.",
+      "words": [
         {
           "word": "I",
           "startTime": 2995.57,
@@ -55671,15 +55687,7 @@
           "startTime": 2999.41,
           "endTime": 3000.13,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3000.13,
-      "endTime": 3002.13,
-      "text": "sit on the one else as well.",
-      "words": [
+        },
         {
           "word": "sit",
           "startTime": 3000.13,
@@ -55721,15 +55729,7 @@
           "startTime": 3001.33,
           "endTime": 3002.13,
           "confidence": 0.7416
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3002.13,
-      "endTime": 3044.16,
-      "text": "Once went uh hiking to Pancha Chulli uh at the India-China border in Uttaranja. And uh our partners in this trip were a band of uh teenagers from Bangalore. Okay, boys and girls from Bangalore. Okay, now we are old. So we thought we will be the weakest link of the chain. In fact, we were the pretty strong by the standards of that group. And what I understood is that the life of a teenager today is basically sitting on your butt and doing video games and Netflix. The lack of fitness of teenagers that I saw was just outrageous. So it is really a new revelation for me. The idea that you can be young and not physically active.",
-      "words": [
+        },
         {
           "word": "Once",
           "startTime": 3002.13,
@@ -56461,8 +56461,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3044.16,
-      "endTime": 3073.1,
-      "text": "I was kidding, you don't need to get so serious about it. But h here's a question. You ought your full phrase was sitting on your butt watching Netflix and eating processed food. Now I uh entirely agree that processed food are evil and should be avoided, and we've done a great episode on nutrition and diabetes, which we'll also link from the show notes. But tell me about the you know, the don'ts and the do's with regards to actually what you eat and what you consume on hiking, because you're burning so many calories in a day. What should be your approach towards food? So",
+      "endTime": 3073.18,
+      "text": "I was kidding, you don't need to get so serious about it. But h here's a question. You ought your full phrase was sitting on your butt watching Netflix and eating processed food. Now I uh entirely agree that processed food are evil and should be avoided, and we've done a great episode on nutrition and diabetes, which we'll also link from the show notes. But tell me about the you know, the don'ts and the do's with regards to actually what you eat and what you consume on hiking, because you're burning so many calories in a day. What should be your approach towards food? So for",
       "words": [
         {
           "word": "I",
@@ -57105,21 +57105,21 @@
           "startTime": 3072.86,
           "endTime": 3073.1,
           "confidence": 0.9669
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3073.1,
-      "endTime": 3177.88,
-      "text": "for a while I was a little complacent. Around food thinking like, hey, I'm going through 2000, 3000 calories of exercise a day. Then I should get liberty to do anything I want and I should get license to do anything I want. Then I started hiking with the CGM, and it was a bit of a revelation, it was a bit of an eye opener, that actually you're hungry, and then if you eat maggy noodles, you will blow up your body, meaning even under mountaineering conditions, you have to be cautious. eating white rice and Maida and Maggi noodles and so like you have to be careful even in the mountains. Most notably we have to be careful around dinner time, because after dinner you're not burning. And we tend to relax and become complacent that oh I've done so much work all day. So I can relax a little and be unhealthy in my dinner. And that's not correct because actually after you have walked all day you're going to be at zero effort in the evening and night. And so particularly at dinner, you have to be cautious in what you eat. Another lesson that I have understood is that you do need a little bit of protein. So fundamentally eating dal and eggs works, but you do have to take effort to be sure to be eating eggs. Because there are s there is some evidence that eating eggs, uh eating protein while hiking also helps. So you don't have to go overboard about it, but you do need a certain amount of protein when hiking. You will often run short of micronutrients. So one has to think a little of because everything is cooked food along the way, so one has to think about ways to get a little more micronutrients.",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 3073.1,
           "endTime": 3073.18,
           "confidence": 0.996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3073.18,
+      "endTime": 3176.38,
+      "text": "a while I was a little complacent. Around food thinking like, hey, I'm going through 2000, 3000 calories of exercise a day. Then I should get liberty to do anything I want and I should get license to do anything I want. Then I started hiking with the CGM, and it was a bit of a revelation, it was a bit of an eye opener, that actually you're hungry, and then if you eat maggy noodles, you will blow up your body, meaning even under mountaineering conditions, you have to be cautious. eating white rice and Maida and Maggi noodles and so like you have to be careful even in the mountains. Most notably we have to be careful around dinner time, because after dinner you're not burning. And we tend to relax and become complacent that oh I've done so much work all day. So I can relax a little and be unhealthy in my dinner. And that's not correct because actually after you have walked all day you're going to be at zero effort in the evening and night. And so particularly at dinner, you have to be cautious in what you eat. Another lesson that I have understood is that you do need a little bit of protein. So fundamentally eating dal and eggs works, but you do have to take effort to be sure to be eating eggs. Because there are s there is some evidence that eating eggs, uh eating protein while hiking also helps. So you don't have to go overboard about it, but you do need a certain amount of protein when hiking. You will often run short of micronutrients. So one has to think a little of because everything is cooked food along the way, so one has to think about ways to get a little more",
+      "words": [
         {
           "word": "a",
           "startTime": 3073.18,
@@ -58949,21 +58949,21 @@
           "startTime": 3176.22,
           "endTime": 3176.38,
           "confidence": 1.0
-        },
-        {
-          "word": "micronutrients.",
-          "startTime": 3176.38,
-          "endTime": 3177.88,
-          "confidence": 0.9919
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 3177.9,
+      "startTime": 3176.38,
       "endTime": 3180.6,
-      "text": "Tell me about what can go wrong.",
+      "text": "micronutrients. Tell me about what can go wrong.",
       "words": [
+        {
+          "word": "micronutrients.",
+          "startTime": 3176.38,
+          "endTime": 3177.88,
+          "confidence": 0.9919
+        },
         {
           "word": "Tell",
           "startTime": 3177.9,
@@ -62445,8 +62445,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3357.63,
-      "endTime": 3614.91,
-      "text": "Yeah. So first let me tell the story and then. I have taken many lessons away from it. In the Sayadris, there is a beautiful mountain top that is called Tung, T-U-N-G. Okay? Find it on Google Earth. And you will see that as you look north from Tung, there is a lake in front. And so we had done uh one uh up and down mountain climb in the day, and then we did a second up and down mountain climb in the day, and that was Tung. So we reached to the top of Tung and we looked down and we saw the lakeside where we were going to pitch tent, and it was coming to be the end of the day. Okay. My mistake was I started becoming relaxed, thinking, oh, it's pretty much done. Like the bulk of our day is finished. We've done like a thousand meters up and five hundred meters down, and now it gets easier. Okay, so we got back out of Tung. And there was a chai shop there. And my mental model was we're finished. Now that was wrong, with a little bit of thought and care. So first the principle should be that you never relax. It's never done until you're finished pitching your tent. Second is if I'd done a little more homework, I'd have understood looking in Google Earth, I'd an have understood the elevation of the tent, the elevation of the uh the elevation of the lake at the lake side of the tent. the elevation of the base of the climb and the elevation of Tung. And I would have known that there's actually three hundred meters of a descent to go. So we ain't done. So instead we dawdled, we had a fresh lime soda, the sun went down, we were relaxed. Because we were thinking now just a kilometer or two of flat walk and we are at the lakeside, and that was wrong. So then a little late in the game, with the light going down, we embarked saying now we'll find our lakeside uh location and we'll pitch tent. And It was actually a descent of further three hundred meters. Okay, so going down three hundred meters to like a thousand feet is non-trivial. And we were mentally not ready for that. I was wrong that I was too relaxed and too casual saying, Oh, the difficult stuff of the day is done. And you know, one needs a certain self-aware approach when walking in the mountains. You can never let your guard down. You know, you have to think, you have to be there with full presence and energy. And I was actually in a mode of it's evening and I'm done. I've done my thousand meters up. And now there's just some trivial walk in front of me. Then we s we got a little lost, which is okay, it's part of life. Getting lost is normal. And there was a pipe leading down to the lake, and we made an elementary physic error. We thought, okay, let's just follow the pipe, it'll take us to the lake. Okay, a moment's reflection will show you that the humans build the pipe where the distance is the shortest, and that will be the steepest. Place and so generally you don't want to go where pipes go. You want to find a human friendly walking route, which is an easier route. Okay, and then the last bit is dumb luck that I fell. But I feel like my mistakes on not being conscious of what is the elevation of the lake. Look it up on Google Earth before going. What is the elevation of the base of climb of Tung? Look it up on Google Earth before going. One should know what you're doing on each day, and I had not done my homework, I had been lazy. Okay, have a sense of where you're going to pitch tent. Okay, and so then we got lost and so it was poor planning and my lack of awareness of what we were doing in the day. And be aware, if there's a pipe, that's generally a bad idea. Don't go down a pipe. So I feel like it was evening, it was starting to become dark, and I had let down my guard and that created the conditions and I'm Then there is the last dose of bad luck. something went wrong and I felt that that last piece of bad luck you can never predict. You can never predict the tactic. So my notes to self are that do a little more homework, understand every day what is the project that we are going to do. Google Earth is the greatest joy in the world. You can understand every track before you go and be there with all presence and all knowledge and energy all the way till the tent is actually up. Never relax until the tent is up.",
+      "endTime": 3379.25,
+      "text": "Yeah. So first let me tell the story and then. I have taken many lessons away from it. In the Sayadris, there is a beautiful mountain top that is called Tung, T-U-N-G. Okay? Find it on Google Earth. And you will see that as you look north from Tung, there is a lake in front. And so we had done uh one",
       "words": [
         {
           "word": "Yeah.",
@@ -62819,13 +62819,29 @@
           "startTime": 3378.21,
           "endTime": 3379.25,
           "confidence": 0.9971
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 3379.25,
+      "endTime": 3380.29,
+      "text": "uh",
+      "words": [
         {
           "word": "uh",
           "startTime": 3379.25,
           "endTime": 3380.29,
           "confidence": 0.6685
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3380.29,
+      "endTime": 3614.91,
+      "text": "up and down mountain climb in the day, and then we did a second up and down mountain climb in the day, and that was Tung. So we reached to the top of Tung and we looked down and we saw the lakeside where we were going to pitch tent, and it was coming to be the end of the day. Okay. My mistake was I started becoming relaxed, thinking, oh, it's pretty much done. Like the bulk of our day is finished. We've done like a thousand meters up and five hundred meters down, and now it gets easier. Okay, so we got back out of Tung. And there was a chai shop there. And my mental model was we're finished. Now that was wrong, with a little bit of thought and care. So first the principle should be that you never relax. It's never done until you're finished pitching your tent. Second is if I'd done a little more homework, I'd have understood looking in Google Earth, I'd an have understood the elevation of the tent, the elevation of the uh the elevation of the lake at the lake side of the tent. the elevation of the base of the climb and the elevation of Tung. And I would have known that there's actually three hundred meters of a descent to go. So we ain't done. So instead we dawdled, we had a fresh lime soda, the sun went down, we were relaxed. Because we were thinking now just a kilometer or two of flat walk and we are at the lakeside, and that was wrong. So then a little late in the game, with the light going down, we embarked saying now we'll find our lakeside uh location and we'll pitch tent. And It was actually a descent of further three hundred meters. Okay, so going down three hundred meters to like a thousand feet is non-trivial. And we were mentally not ready for that. I was wrong that I was too relaxed and too casual saying, Oh, the difficult stuff of the day is done. And you know, one needs a certain self-aware approach when walking in the mountains. You can never let your guard down. You know, you have to think, you have to be there with full presence and energy. And I was actually in a mode of it's evening and I'm done. I've done my thousand meters up. And now there's just some trivial walk in front of me. Then we s we got a little lost, which is okay, it's part of life. Getting lost is normal. And there was a pipe leading down to the lake, and we made an elementary physic error. We thought, okay, let's just follow the pipe, it'll take us to the lake. Okay, a moment's reflection will show you that the humans build the pipe where the distance is the shortest, and that will be the steepest. Place and so generally you don't want to go where pipes go. You want to find a human friendly walking route, which is an easier route. Okay, and then the last bit is dumb luck that I fell. But I feel like my mistakes on not being conscious of what is the elevation of the lake. Look it up on Google Earth before going. What is the elevation of the base of climb of Tung? Look it up on Google Earth before going. One should know what you're doing on each day, and I had not done my homework, I had been lazy. Okay, have a sense of where you're going to pitch tent. Okay, and so then we got lost and so it was poor planning and my lack of awareness of what we were doing in the day. And be aware, if there's a pipe, that's generally a bad idea. Don't go down a pipe. So I feel like it was evening, it was starting to become dark, and I had let down my guard and that created the conditions and I'm Then there is the last dose of bad luck. something went wrong and I felt that that last piece of bad luck you can never predict. You can never predict the tactic. So my notes to self are that do a little more homework, understand every day what is the project that we are going to do. Google Earth is the greatest joy in the world. You can understand every track before you go and be there with all presence and all knowledge and energy all the way till the tent is actually up. Never relax until the tent is up.",
+      "words": [
         {
           "word": "up",
           "startTime": 3380.29,
@@ -67487,8 +67503,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3615.55,
-      "endTime": 3639.07,
-      "text": "Google Earth is not the greatest joy on earth. It's bacon. But never nevertheless, you know what you told me uh reminded me of an insight I got from this great book called Traffic by Tom Vanderbilt. And one of the TILs I got from that is that uh most accidents happen when you're really close to home. And why does that happen? Because you're almost home, so your brain switches off and you're not as alert as you should be, because hey, it's familiar terrain and you're kind of doing it reflexively.",
+      "endTime": 3638.27,
+      "text": "Google Earth is not the greatest joy on earth. It's bacon. But never nevertheless, you know what you told me uh reminded me of an insight I got from this great book called Traffic by Tom Vanderbilt. And one of the TILs I got from that is that uh most accidents happen when you're really close to home. And why does that happen? Because you're almost home, so your brain switches off and you're not as alert as you should be, because hey, it's familiar terrain and you're kind of doing it",
       "words": [
         {
           "word": "Google",
@@ -68041,21 +68057,21 @@
           "startTime": 3638.11,
           "endTime": 3638.27,
           "confidence": 0.9644
-        },
-        {
-          "word": "reflexively.",
-          "startTime": 3638.27,
-          "endTime": 3639.07,
-          "confidence": 0.8378
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 3639.07,
-      "endTime": 3667.01,
-      "text": "Precisely where I was. So when I psychoanalyze myself. My mistake was I just relaxed. That oh we're done, we came down Tung, we had our fresh lime soda. Now there's supposed to be a trivial one or two kilometer walk to the lakeside. And from the top of Tung, there's a flattening of perspective. So what I saw was deceiving me because we're so high up that the top of Tung is I think eleven hundred meters. So I I just got a flattening of the view and I got wrong. picture of what was gonna come next. You know that's a",
+      "startTime": 3638.27,
+      "endTime": 3666.53,
+      "text": "reflexively. Precisely where I was. So when I psychoanalyze myself. My mistake was I just relaxed. That oh we're done, we came down Tung, we had our fresh lime soda. Now there's supposed to be a trivial one or two kilometer walk to the lakeside. And from the top of Tung, there's a flattening of perspective. So what I saw was deceiving me because we're so high up that the top of Tung is I think eleven hundred meters. So I I just got a flattening of the view and I got wrong. picture of what was gonna come next.",
       "words": [
+        {
+          "word": "reflexively.",
+          "startTime": 3638.27,
+          "endTime": 3639.07,
+          "confidence": 0.8378
+        },
         {
           "word": "Precisely",
           "startTime": 3639.07,
@@ -68649,7 +68665,15 @@
           "startTime": 3666.05,
           "endTime": 3666.53,
           "confidence": 0.6836
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3666.53,
+      "endTime": 3699.12,
+      "text": "You know that's a metaphor for so many things. It's a metaphor for writing an article or a book or whatever. That from, you know, a sky high view it seems easy. It seems the last bit is flat. But the further you go, the you realize that it's tougher, tougher, tougher, and you can absolutely, you know, never switch off till the task is done. And even after you do switch off, don't eat too much for dinner. That's the lesson in all this. So Ajay, what are your recommendations for this week?",
+      "words": [
         {
           "word": "You",
           "startTime": 3666.53,
@@ -68673,15 +68697,7 @@
           "startTime": 3666.93,
           "endTime": 3667.01,
           "confidence": 0.9825
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3667.01,
-      "endTime": 3699.12,
-      "text": "metaphor for so many things. It's a metaphor for writing an article or a book or whatever. That from, you know, a sky high view it seems easy. It seems the last bit is flat. But the further you go, the you realize that it's tougher, tougher, tougher, and you can absolutely, you know, never switch off till the task is done. And even after you do switch off, don't eat too much for dinner. That's the lesson in all this. So Ajay, what are your recommendations for this week?",
-      "words": [
+        },
         {
           "word": "metaphor",
           "startTime": 3667.01,
@@ -73789,8 +73805,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3916.66,
-      "endTime": 3967.58,
-      "text": "Um so there are simple day packs which are basically just like any simple cheap backpack. There's no fuss around a simple day pack. For bigger projects, the thumb rule to use is you need a 75-liter backpack. This will accommodate a sleeping bag, your clothes, other stuff for a big project. So target a 75-liter backpack. I have the volt 75, but there are many others. But I feel people are of a make often making a mistake of too small or too big. So 75 liters uh is a good point. Um I should talk about women and hiking. Uh women and hiking is an absolutely great idea. It really does good things for the sense of freedom and empowerment and the ability to deal with adversity and conquer. So I totally recommend it. I have seen over the years a great",
+      "endTime": 3997.31,
+      "text": "Um so there are simple day packs which are basically just like any simple cheap backpack. There's no fuss around a simple day pack. For bigger projects, the thumb rule to use is you need a 75-liter backpack. This will accommodate a sleeping bag, your clothes, other stuff for a big project. So target a 75-liter backpack. I have the volt 75, but there are many others. But I feel people are of a make often making a mistake of too small or too big. So 75 liters uh is a good point. Um I should talk about women and hiking. Uh women and hiking is an absolutely great idea. It really does good things for the sense of freedom and empowerment and the ability to deal with adversity and conquer. So I totally recommend it. I have seen over the years a great increase of uh women in the mountains, of uh women in the crew and uh in sick in there are uh companies that are offering all girl crews and so on. So I totally recommend it for women. Just that uh the backpack for a woman is a little bit different from the backpack for a guy. So think about women's backpacks. In everything else it is reasonably unisex, but uh to fit the body of a woman, the woman's backpack is a little",
       "words": [
         {
           "word": "Um",
@@ -74655,29 +74671,13 @@
           "startTime": 3966.94,
           "endTime": 3967.58,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3967.58,
-      "endTime": 3969.08,
-      "text": "increase",
-      "words": [
+        },
         {
           "word": "increase",
           "startTime": 3967.58,
           "endTime": 3969.08,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3969.34,
-      "endTime": 3997.31,
-      "text": "of uh women in the mountains, of uh women in the crew and uh in sick in there are uh companies that are offering all girl crews and so on. So I totally recommend it for women. Just that uh the backpack for a woman is a little bit different from the backpack for a guy. So think about women's backpacks. In everything else it is reasonably unisex, but uh to fit the body of a woman, the woman's backpack is a little",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 3969.34,
@@ -76951,8 +76951,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4093.31,
-      "endTime": 4102.99,
-      "text": "Dayhiking is very trivial. Take the backpack lying around in your house. As I said, five apples and two liters of water. You're done. You got a day hike. So day hiking is very easy.",
+      "endTime": 4103.23,
+      "text": "Dayhiking is very trivial. Take the backpack lying around in your house. As I said, five apples and two liters of water. You're done. You got a day hike. So day hiking is very easy. And by",
       "words": [
         {
           "word": "Dayhiking",
@@ -77163,15 +77163,7 @@
           "startTime": 4102.51,
           "endTime": 4102.99,
           "confidence": 0.7853
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4102.99,
-      "endTime": 4106.51,
-      "text": "And by apples you mean the fruit, not iPad and MacBook and the",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 4102.99,
@@ -77183,7 +77175,15 @@
           "startTime": 4103.15,
           "endTime": 4103.23,
           "confidence": 0.9982
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4103.23,
+      "endTime": 4106.51,
+      "text": "apples you mean the fruit, not iPad and MacBook and the",
+      "words": [
         {
           "word": "apples",
           "startTime": 4103.23,
@@ -80879,8 +80879,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4282.19,
-      "endTime": 4325.06,
-      "text": "So first on the cast, the cast has no redeeming features. You know, you should never be isolated like this. Just every small thing is a pain and I I have no good things to say about living with a cast. Um about the hiking, I feel, you know, I cannot imagine myself without this. As I said, I've been hiking for 45 years. And going back to nature, going back to the mountains is just at core. And I I often say that if I had not been an economist, I would be a biologist. I have that level of interest and connection to nature. So I just cannot envision a life without that. So in short, I don't",
+      "endTime": 4324.66,
+      "text": "So first on the cast, the cast has no redeeming features. You know, you should never be isolated like this. Just every small thing is a pain and I I have no good things to say about living with a cast. Um about the hiking, I feel, you know, I cannot imagine myself without this. As I said, I've been hiking for 45 years. And going back to nature, going back to the mountains is just at core. And I I often say that if I had not been an economist, I would be a biologist. I have that level of interest and connection to nature. So I just cannot envision a life without that. So in short, I",
       "words": [
         {
           "word": "So",
@@ -81595,21 +81595,21 @@
           "startTime": 4324.18,
           "endTime": 4324.66,
           "confidence": 0.9975
-        },
-        {
-          "word": "don't",
-          "startTime": 4324.66,
-          "endTime": 4325.06,
-          "confidence": 0.9762
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 4325.06,
+      "startTime": 4324.66,
       "endTime": 4326.42,
-      "text": "know. Everything is",
+      "text": "don't know. Everything is",
       "words": [
+        {
+          "word": "don't",
+          "startTime": 4324.66,
+          "endTime": 4325.06,
+          "confidence": 0.9762
+        },
         {
           "word": "know.",
           "startTime": 4325.06,

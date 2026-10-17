@@ -5,7 +5,7 @@
     "durationSeconds": 4701,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 14.73,
-      "endTime": 23.93,
-      "text": "Welcome, gentle reader, to this episode of Everything Is Everything. We're so happy that you are here with us. But Amit, why are you sad today?",
+      "endTime": 23.05,
+      "text": "Welcome, gentle reader, to this episode of Everything Is Everything. We're so happy that you are here with us. But Amit, why are you sad",
       "words": [
         {
           "word": "Welcome,",
@@ -169,21 +169,21 @@
           "startTime": 22.73,
           "endTime": 23.05,
           "confidence": 0.9999
-        },
-        {
-          "word": "today?",
-          "startTime": 23.05,
-          "endTime": 23.93,
-          "confidence": 0.9646
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 23.93,
+      "startTime": 23.05,
       "endTime": 25.53,
-      "text": "I'm sad because I'm sitting",
+      "text": "today? I'm sad because I'm sitting",
       "words": [
+        {
+          "word": "today?",
+          "startTime": 23.05,
+          "endTime": 23.93,
+          "confidence": 0.9646
+        },
         {
           "word": "I'm",
           "startTime": 23.93,
@@ -231,10 +231,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 27.37,
-      "endTime": 28.65,
-      "text": "Where else would you rather",
+      "endTime": 123.99,
+      "text": "Where else would you rather be? No no. I would rather be here in your esteemed company. But let me explain what I mean by sitting here. At which point I will ask you a question. What is the biggest problem of any self respecting Bengali? The problem is gravity. You see, what happens is that as we grow older and age comes upon us, we are beset by a certain weightiness. And this is not a weightiness and intellectual weightiness, the worries of the world. No no no no no. It is a weightiness of the body, something as banal as that. And we're body roundness index. The body roundness index, as you correctly introduced me to a day or two ago, I think only to be able to cast a slur upon me without, you know, sounding rude. And here's the thing, that we are weighed down by gravity. And sometimes you know, there is this phrase that has been used by our economist friends slouching towards utopia. And that's very Bengali. Utopia, of course, is a the the urge for utopia is a disease of the mind. But the slouching is a problem of the body. And gravity has a part to play in it. Now imagine a counterfactual that there was no gravity. We would not have to slouch. We could stand tall and proud. I would not be sitting here, I could be floating here, which is a rather nice thought, wouldn't you say? So I have a proposal, Ajesha, which as someone familiar with the power of the state, you will surely approve of. We should use the coercive power of the state to outlaw gravity. Gravity is not a good thing. And surely w you know the state has a power through laws, through legislation, to change the way the world works. We are aware of this matter. So can we please outlaw gravity? Can you please write an application for me in triplicate?",
       "words": [
         {
           "word": "Where",
@@ -265,15 +265,7 @@
           "startTime": 28.41,
           "endTime": 28.65,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 28.65,
-      "endTime": 123.99,
-      "text": "be? No no. I would rather be here in your esteemed company. But let me explain what I mean by sitting here. At which point I will ask you a question. What is the biggest problem of any self respecting Bengali? The problem is gravity. You see, what happens is that as we grow older and age comes upon us, we are beset by a certain weightiness. And this is not a weightiness and intellectual weightiness, the worries of the world. No no no no no. It is a weightiness of the body, something as banal as that. And we're body roundness index. The body roundness index, as you correctly introduced me to a day or two ago, I think only to be able to cast a slur upon me without, you know, sounding rude. And here's the thing, that we are weighed down by gravity. And sometimes you know, there is this phrase that has been used by our economist friends slouching towards utopia. And that's very Bengali. Utopia, of course, is a the the urge for utopia is a disease of the mind. But the slouching is a problem of the body. And gravity has a part to play in it. Now imagine a counterfactual that there was no gravity. We would not have to slouch. We could stand tall and proud. I would not be sitting here, I could be floating here, which is a rather nice thought, wouldn't you say? So I have a proposal, Ajesha, which as someone familiar with the power of the state, you will surely approve of. We should use the coercive power of the state to outlaw gravity. Gravity is not a good thing. And surely w you know the state has a power through laws, through legislation, to change the way the world works. We are aware of this matter. So can we please outlaw gravity? Can you please write an application for me in triplicate?",
-      "words": [
+        },
         {
           "word": "be?",
           "startTime": 28.65,
@@ -9127,8 +9119,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 509.06,
-      "endTime": 656.04,
-      "text": "So can I introduce some jargon here? Uh so economists are very bad people because We repurpose ordinary English words and endow them with specialized technical meanings and then they are jargon. So I wish to introduce the word the resource allocation. Okay. Sounds bland. The is a very common word, resource allocation, and it doesn't quite convey the grandeur of what is ought to be conveyed. Uh the resource allocation for economists is uh uh sufficiently precise description of how all production in the country takes place. Okay, so for example, imagine if you take IPencil, okay, and gentle reader, you must read that small essay. It is a small essay, but it is amazing. Okay, so imagine if you take IPencil and imagine if you convert it into a list of marching orders. Some guy has to cut the trees, do this, cut the trees, give them to this transportation guy. The transportation guy will take them to this place where there'll be a lumber mill, blah, blah, blah. Okay, so imagine the complete specification of all the productive activities of the economy, all the economic activities of an economy. If you could write this down as a document, that would be called the resource allocation. And now you directly see the link to central planning. Okay, so central planning is the dream. that there will actually be a planning commission which will write down these details. It will send an instruction to steel authority of India Limited that, dude, I want you to make steel, but we don't have good coal. You're supposed to use shitty coal. Lignite will be used even though the standard process for making steel requires anthracite and like that. Every detail of the production process was sought to be written down by planning commissions and other central planning entities and Lord knows there is a great streak of central planning, for example in Indian finance today. Indian Finance is a list of tens of thousands of pages of documents that are written by financial regulators which pin down everything. They tell you every detail of products, processes, financial firms. This is how they have to behave. Okay. It is one big PSU being run by the financial regulators who control everything. So you don't have a normal market process. You don't have the creativity, the imagination of the",
+      "endTime": 712.33,
+      "text": "So can I introduce some jargon here? Uh so economists are very bad people because We repurpose ordinary English words and endow them with specialized technical meanings and then they are jargon. So I wish to introduce the word the resource allocation. Okay. Sounds bland. The is a very common word, resource allocation, and it doesn't quite convey the grandeur of what is ought to be conveyed. Uh the resource allocation for economists is uh uh sufficiently precise description of how all production in the country takes place. Okay, so for example, imagine if you take IPencil, okay, and gentle reader, you must read that small essay. It is a small essay, but it is amazing. Okay, so imagine if you take IPencil and imagine if you convert it into a list of marching orders. Some guy has to cut the trees, do this, cut the trees, give them to this transportation guy. The transportation guy will take them to this place where there'll be a lumber mill, blah, blah, blah. Okay, so imagine the complete specification of all the productive activities of the economy, all the economic activities of an economy. If you could write this down as a document, that would be called the resource allocation. And now you directly see the link to central planning. Okay, so central planning is the dream. that there will actually be a planning commission which will write down these details. It will send an instruction to steel authority of India Limited that, dude, I want you to make steel, but we don't have good coal. You're supposed to use shitty coal. Lignite will be used even though the standard process for making steel requires anthracite and like that. Every detail of the production process was sought to be written down by planning commissions and other central planning entities and Lord knows there is a great streak of central planning, for example in Indian finance today. Indian Finance is a list of tens of thousands of pages of documents that are written by financial regulators which pin down everything. They tell you every detail of products, processes, financial firms. This is how they have to behave. Okay. It is one big PSU being run by the financial regulators who control everything. So you don't have a normal market process. You don't have the creativity, the imagination of the market system. Okay, so the same things you said, I will just dress them up in jargon, that there is a central planning pathway to the resource allocation, for example, as seen in Indian Finance today, or there is the decentralized self-organizing system where millions of independent autonomous makers pursue their own self-interest and they decipher the organization of a finishly complex document, tens of thousands of pages, literally millions of pages of instructions of who has to do what are solved by the self organizing system of just people looking at each other, negotiating self interest. The only thing that crosses the cell wall of the firm is the price. And all the magic of the market economy happens. So the price system discovers the resource allocation and it does a darn good job at",
       "words": [
         {
           "word": "So",
@@ -11505,15 +11497,7 @@
           "startTime": 655.72,
           "endTime": 656.04,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 656.04,
-      "endTime": 658.2,
-      "text": "market system. Okay, so",
-      "words": [
+        },
         {
           "word": "market",
           "startTime": 656.04,
@@ -11537,15 +11521,7 @@
           "startTime": 657.4,
           "endTime": 658.2,
           "confidence": 0.9978
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 658.2,
-      "endTime": 712.33,
-      "text": "the same things you said, I will just dress them up in jargon, that there is a central planning pathway to the resource allocation, for example, as seen in Indian Finance today, or there is the decentralized self-organizing system where millions of independent autonomous makers pursue their own self-interest and they decipher the organization of a finishly complex document, tens of thousands of pages, literally millions of pages of instructions of who has to do what are solved by the self organizing system of just people looking at each other, negotiating self interest. The only thing that crosses the cell wall of the firm is the price. And all the magic of the market economy happens. So the price system discovers the resource allocation and it does a darn good job at",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 658.2,
@@ -12569,8 +12545,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 739.66,
-      "endTime": 801.86,
-      "text": "In the f in this and the following few chapters we're gonna chat about a bunch of such interventions where people mess with prices, and the first broad category I wanna talk about is the most common and obvious one, which is price caps, right? Where a politician will say, you know, this is something that is important. We must control it for the sake of our people and poor people can't afford it. So they'll put a price cap and they'll say it can only cost so much. Now I had written a column for the Times of India. We'll link it from the show notes. And the example I use was this, that let us say that one day uh our dear leader wakes up and decides that everyone should have cars. We want to be an advanced country. OECD, whatever it stands for. OECD Hot. Right. But that is the mode I'm in right now. OECD Hot. So how do you do it? How do you make cars affordable for everyone? Because clearly in India not uh they're not. So he says that we shall put a price cap on cars. They will henceforth cost only 10,000 rupees, right? Now, dear reader, imagine what happens if there is a ridiculous legislation like that, that every car has to be 10,000 rupees, right? Number one",
+      "endTime": 800.98,
+      "text": "In the f in this and the following few chapters we're gonna chat about a bunch of such interventions where people mess with prices, and the first broad category I wanna talk about is the most common and obvious one, which is price caps, right? Where a politician will say, you know, this is something that is important. We must control it for the sake of our people and poor people can't afford it. So they'll put a price cap and they'll say it can only cost so much. Now I had written a column for the Times of India. We'll link it from the show notes. And the example I use was this, that let us say that one day uh our dear leader wakes up and decides that everyone should have cars. We want to be an advanced country. OECD, whatever it stands for. OECD Hot. Right. But that is the mode I'm in right now. OECD Hot. So how do you do it? How do you make cars affordable for everyone? Because clearly in India not uh they're not. So he says that we shall put a price cap on cars. They will henceforth cost only 10,000 rupees, right? Now, dear reader, imagine what happens if there is a ridiculous legislation like that, that every car has to be 10,000 rupees, right? Number",
       "words": [
         {
           "word": "In",
@@ -13927,21 +13903,21 @@
           "startTime": 800.58,
           "endTime": 800.98,
           "confidence": 0.9895
-        },
-        {
-          "word": "one",
-          "startTime": 800.98,
-          "endTime": 801.86,
-          "confidence": 0.9842
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 801.86,
+      "startTime": 800.98,
       "endTime": 825.91,
-      "text": "I just want to interrupt. Pause to fully see the horror of it. There is a law which uses the coercip of the state to criminalize or otherwise penalize a transaction between consenting adults. where the price of the car transacted is different from ten thousand rupees. That is the meaning of a government price control. Which imposes rupees ten thousand as the price of the And this is something",
+      "text": "one I just want to interrupt. Pause to fully see the horror of it. There is a law which uses the coercip of the state to criminalize or otherwise penalize a transaction between consenting adults. where the price of the car transacted is different from ten thousand rupees. That is the meaning of a government price control. Which imposes rupees ten thousand as the price of the And this is something",
       "words": [
+        {
+          "word": "one",
+          "startTime": 800.98,
+          "endTime": 801.86,
+          "confidence": 0.9842
+        },
         {
           "word": "I",
           "startTime": 801.86,
@@ -19127,8 +19103,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1049.78,
-      "endTime": 1069.7,
-      "text": "My my good friend uh a journalist was in the beat of the cement and steel ministries in the early nineteen eighties when uh the price control on cement and the price control on steel was abolished. And it may seem incredible to people in India today, but can you imagine a world where the government",
+      "endTime": 1154.33,
+      "text": "My my good friend uh a journalist was in the beat of the cement and steel ministries in the early nineteen eighties when uh the price control on cement and the price control on steel was abolished. And it may seem incredible to people in India today, but can you imagine a world where the government controlled the price of cement and the government controlled th the price of steel. So of course there were incredible shortages all around. And uh for anybody to do things in the real world that involved cement and steel, it's called construction. For anybody who had to do construction, it was a battle of getting cement and steel or often ending up with substandard cement. So there is a direct line from that substandard cement of buildings of the 50s and 60s, leading to building collapses later because buildings were just done in a shabby way, either with substandard cement or with inadequate cement when you're mixing for the concrete. And uh this journalist uh friend of mine was telling me that when the announcement came that there would be the elimination of the price control, the entire government building had a sense of loss that they had had experienced a personal catastrophe because their importance was just knocked out. Now suddenly the market economy was going to figure out cement and steel and nobody needed the government anymore. They had this aura of a catastrophe like some family member has died. That was the mood in the entire building that you know, in a sensible country you don't need a ministry of steel, you don't need a ministry of cement. You know, why do we even have these things? So India is full of these kinds of examples. And at this point I want to talk about something that helps",
       "words": [
         {
           "word": "My",
@@ -19465,15 +19441,7 @@
           "startTime": 1069.22,
           "endTime": 1069.7,
           "confidence": 0.9946
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1069.7,
-      "endTime": 1073.3,
-      "text": "controlled the price of cement and the government controlled th the",
-      "words": [
+        },
         {
           "word": "controlled",
           "startTime": 1069.7,
@@ -19539,15 +19507,7 @@
           "startTime": 1073.14,
           "endTime": 1073.3,
           "confidence": 0.9942
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1073.3,
-      "endTime": 1096.94,
-      "text": "price of steel. So of course there were incredible shortages all around. And uh for anybody to do things in the real world that involved cement and steel, it's called construction. For anybody who had to do construction, it was a battle of getting cement and steel or often ending up with substandard cement. So there is a direct line from that substandard cement of buildings of the",
-      "words": [
+        },
         {
           "word": "price",
           "startTime": 1073.3,
@@ -19955,15 +19915,7 @@
           "startTime": 1096.78,
           "endTime": 1096.94,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1096.94,
-      "endTime": 1097.58,
-      "text": "50s and",
-      "words": [
+        },
         {
           "word": "50s",
           "startTime": 1096.94,
@@ -19975,15 +19927,7 @@
           "startTime": 1097.34,
           "endTime": 1097.58,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1097.58,
-      "endTime": 1154.09,
-      "text": "60s, leading to building collapses later because buildings were just done in a shabby way, either with substandard cement or with inadequate cement when you're mixing for the concrete. And uh this journalist uh friend of mine was telling me that when the announcement came that there would be the elimination of the price control, the entire government building had a sense of loss that they had had experienced a personal catastrophe because their importance was just knocked out. Now suddenly the market economy was going to figure out cement and steel and nobody needed the government anymore. They had this aura of a catastrophe like some family member has died. That was the mood in the entire building that you know, in a sensible country you don't need a ministry of steel, you don't need a ministry of cement. You know, why do we even have these things? So India is full of these kinds of examples. And at this point I want to talk about something that",
-      "words": [
+        },
         {
           "word": "60s,",
           "startTime": 1097.58,
@@ -20997,21 +20941,21 @@
           "startTime": 1153.85,
           "endTime": 1154.09,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1154.09,
-      "endTime": 1308.74,
-      "text": "helps clarify the role prices really play. Like if you're wondering, okay, what goes on? How how does the whole system work? Uh you know, one uh sort of analogue I use to describe all of this is Uber search pricing. Now Uber search pricing has been villainized and uh you know uh is price gouging and this and that and you know, people have tried to outlaw it and et cetera, et cetera. But I think You know, conceptually it is miraculous because it mimics the way the economy works. Now here's what happens. Let us say that at a given point in time, there are two hundred Ubers and two hundred people who want an Uber, right? That's your demand supply thing and it it's it's that's the equilibrium you are at at the beginning of my thought experiment. Then suddenly There are only a hundred cabs and there are two hundred people who want those cabs. Demand supply has shifted, as economic theory would predict, therefore the price goes up because b you know b in Uber search pricing system, the demand is higher, so you're pricing yourself higher. Now At this point, a natural reaction to someone might be to say that hey, this is just ridiculous. It's a private corporate taking advantage. They're not actually spending so much money on their petrol or whatever. If they were taking hundred rupees earlier, they should take a hundred rupees now. Why is it 150 rupees or whatever it is? And therefore the government might say, Let us do a price cap, right? And they do a price cap. And what the price cap does when they keep the prices at the earlier level is uh those hundred caps uh go to go in terms of first come, first serve. So I want to go out casually for something. I can take an auto, I can take an Uber, I just take an Uber. But if the price was higher, I would not have taken that Uber. Equally, somebody wants to go to the hospital urgently or they have a flight to catch, they are willing to pay more. They can't because now there is a shortage, they are all gone. This literally happened to a friend of mine when I think in Delhi for a while they experimented with uh a price cap on Ubirds, and my friend missed a flight because he didn't know that there is a price cap, and he actually knows economic theory well enough to have figured out that like oh my god, that there might be a shortage, or to sort of account for it. Now, the question here is you might say that, Amit, what is the point of the price going up? What is a big deal? And number one, there is a short term effect that people who need it more, uh you know, like going to a hospital or an airport who are willing to pay more, who value it more. Are willing to pay a higher price. That is effect number one. Effect number two is information and incentives. Let's say you're an idle Uber driver. You are sitting at a katter. Maybe if you're Bengali, you're going to have an afternoon nap at that point. But then you see the search price, and it becomes an incentive for you. That what is this? You know, normally I make hundred bucks, but now I can get two hundred bucks for",
-      "words": [
+        },
         {
           "word": "helps",
           "startTime": 1154.09,
           "endTime": 1154.33,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1154.33,
+      "endTime": 1490.42,
+      "text": "clarify the role prices really play. Like if you're wondering, okay, what goes on? How how does the whole system work? Uh you know, one uh sort of analogue I use to describe all of this is Uber search pricing. Now Uber search pricing has been villainized and uh you know uh is price gouging and this and that and you know, people have tried to outlaw it and et cetera, et cetera. But I think You know, conceptually it is miraculous because it mimics the way the economy works. Now here's what happens. Let us say that at a given point in time, there are two hundred Ubers and two hundred people who want an Uber, right? That's your demand supply thing and it it's it's that's the equilibrium you are at at the beginning of my thought experiment. Then suddenly There are only a hundred cabs and there are two hundred people who want those cabs. Demand supply has shifted, as economic theory would predict, therefore the price goes up because b you know b in Uber search pricing system, the demand is higher, so you're pricing yourself higher. Now At this point, a natural reaction to someone might be to say that hey, this is just ridiculous. It's a private corporate taking advantage. They're not actually spending so much money on their petrol or whatever. If they were taking hundred rupees earlier, they should take a hundred rupees now. Why is it 150 rupees or whatever it is? And therefore the government might say, Let us do a price cap, right? And they do a price cap. And what the price cap does when they keep the prices at the earlier level is uh those hundred caps uh go to go in terms of first come, first serve. So I want to go out casually for something. I can take an auto, I can take an Uber, I just take an Uber. But if the price was higher, I would not have taken that Uber. Equally, somebody wants to go to the hospital urgently or they have a flight to catch, they are willing to pay more. They can't because now there is a shortage, they are all gone. This literally happened to a friend of mine when I think in Delhi for a while they experimented with uh a price cap on Ubirds, and my friend missed a flight because he didn't know that there is a price cap, and he actually knows economic theory well enough to have figured out that like oh my god, that there might be a shortage, or to sort of account for it. Now, the question here is you might say that, Amit, what is the point of the price going up? What is a big deal? And number one, there is a short term effect that people who need it more, uh you know, like going to a hospital or an airport who are willing to pay more, who value it more. Are willing to pay a higher price. That is effect number one. Effect number two is information and incentives. Let's say you're an idle Uber driver. You are sitting at a katter. Maybe if you're Bengali, you're going to have an afternoon nap at that point. But then you see the search price, and it becomes an incentive for you. That what is this? You know, normally I make hundred bucks, but now I can get two hundred bucks for this. And so the supply goes up. You are being incentivized to join the supply and to serve the needs of other people. It's double thank you moments all around. And the supply goes up and when the supply goes up, the price eventually comes back to a regular kind of level. So Without a customer who is stranded, communicating with a driver who is having an afternoon siesta, you know, they the they match e each other's need, they help each other out, they make each other e uh other b better off, because you allowed the price system to function. And further, if you go one level beyond into the long term, what it does is that people who are in other professions, maybe someone is an apprentice carpenter and he's kind of slow at the mobility that affords him, and he says, Boss, I should become an Uber driver. There is money in this, right? And there will be money in it as long as the demand for Ubers is more than the demand for the kind of carpentry which he can take advantage of. And that's perfectly legitimate. It is the wants and desires of a society getting reorganized according to what the society wants. How do you know that? Only prices. That is the only thing that kind of tells you. And therefore I just feel that prices are such a miraculous mechanism. You don't want to mess with it. You know, let me share a bleeding heart moment of mine with you. When I was in college, there was an earthquake in an interior part of uh Maharashtra, right? And I remember that um uh filled with the desire to be of some help, any help, Um uh you know, I asked some friends of mine who were paramedics said, You need any help in this you volunteer, you come with us in an ambulance. We'll drive through all the uh relevant areas, Latour and all those places. And so I drove with them interesting experiences in the three days. And at one point we stopped at a village where one side of the village everything had kind of fallen down and there was nothing. And on the other side there was there was one grocery store. And there were people complaining that oh my god, these people are charging so much money. Right. And this is terrible. It should be outlawed. And my initial thought was how dare they you know, these evil capitalists. I used to read Marx in those days. And that was my initial instinct. Today I can look back and say that no, man, let the price system work the way it is. If the prices go up, it becomes more likely that there will be more supplies coming to that village. It will be more likely that the households there will economize. Instead of just holding up on bread, oh teen packet layout, you know, you go easy. You say no. What we need right now is uh half a packet, uh you know, share it with the neighbor and uh you know, split the cost because it's too freaking expensive. And you know, the price system kind of takes care of that. And in an emergency the government should, of course, pitch in and spend its own money to make things better for those who are affected in a disaster. But when you interfere with prices, it just creates a huge problem. Letting prices adjust in real time to me is miraculous. You know over search pricing do that. Airline websites will often do that as the prices go up and down. And I feel that that's incredibly useful. Those are not numbers. Those are people talking to each other. It is how we learn about each other's needs and fulfill them.",
+      "words": [
         {
           "word": "clarify",
           "startTime": 1154.33,
@@ -24509,15 +24453,7 @@
           "startTime": 1308.58,
           "endTime": 1308.74,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1308.74,
-      "endTime": 1310.26,
-      "text": "this. And so the supply goes",
-      "words": [
+        },
         {
           "word": "this.",
           "startTime": 1308.74,
@@ -24553,15 +24489,7 @@
           "startTime": 1310.02,
           "endTime": 1310.26,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1310.26,
-      "endTime": 1490.42,
-      "text": "up. You are being incentivized to join the supply and to serve the needs of other people. It's double thank you moments all around. And the supply goes up and when the supply goes up, the price eventually comes back to a regular kind of level. So Without a customer who is stranded, communicating with a driver who is having an afternoon siesta, you know, they the they match e each other's need, they help each other out, they make each other e uh other b better off, because you allowed the price system to function. And further, if you go one level beyond into the long term, what it does is that people who are in other professions, maybe someone is an apprentice carpenter and he's kind of slow at the mobility that affords him, and he says, Boss, I should become an Uber driver. There is money in this, right? And there will be money in it as long as the demand for Ubers is more than the demand for the kind of carpentry which he can take advantage of. And that's perfectly legitimate. It is the wants and desires of a society getting reorganized according to what the society wants. How do you know that? Only prices. That is the only thing that kind of tells you. And therefore I just feel that prices are such a miraculous mechanism. You don't want to mess with it. You know, let me share a bleeding heart moment of mine with you. When I was in college, there was an earthquake in an interior part of uh Maharashtra, right? And I remember that um uh filled with the desire to be of some help, any help, Um uh you know, I asked some friends of mine who were paramedics said, You need any help in this you volunteer, you come with us in an ambulance. We'll drive through all the uh relevant areas, Latour and all those places. And so I drove with them interesting experiences in the three days. And at one point we stopped at a village where one side of the village everything had kind of fallen down and there was nothing. And on the other side there was there was one grocery store. And there were people complaining that oh my god, these people are charging so much money. Right. And this is terrible. It should be outlawed. And my initial thought was how dare they you know, these evil capitalists. I used to read Marx in those days. And that was my initial instinct. Today I can look back and say that no, man, let the price system work the way it is. If the prices go up, it becomes more likely that there will be more supplies coming to that village. It will be more likely that the households there will economize. Instead of just holding up on bread, oh teen packet layout, you know, you go easy. You say no. What we need right now is uh half a packet, uh you know, share it with the neighbor and uh you know, split the cost because it's too freaking expensive. And you know, the price system kind of takes care of that. And in an emergency the government should, of course, pitch in and spend its own money to make things better for those who are affected in a disaster. But when you interfere with prices, it just creates a huge problem. Letting prices adjust in real time to me is miraculous. You know over search pricing do that. Airline websites will often do that as the prices go up and down. And I feel that that's incredibly useful. Those are not numbers. Those are people talking to each other. It is how we learn about each other's needs and fulfill them.",
-      "words": [
+        },
         {
           "word": "up.",
           "startTime": 1310.26,
@@ -48737,8 +48665,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2569.16,
-      "endTime": 2731.74,
-      "text": "in India as well. Two, three different things going on. So let's go step by step. First, roughly speaking, there's a minimum wage of about 13,000 rupees. And we know that that is not a free market price because across the border in Bangladesh, the wage is 8,000 rupees. So we know that in India to have a minimum wage of 13,000 is not correct because you know Bangladesh is a comparable economy to India. Fact, in some ways they're doing a little better than India. So 8,000 is on the higher side of what a reasonable price would be. On top of that, there's a bunch of mandatory entitlements. So the overall cost in the formal sector for hiring a person, the lowest levels is about rupees 17,000 a month, which is a high price compared to the market equilibrium outcome, which ought to be much lower. There is a next problem going on, which is that the minimum wage is used. in the number that is calculated for the payment of the NREGS. So we have an excessively high minimum wage, which is paid out as a welfare program. And it hits both ways, that on one hand, the firms are being told that look, you can't really hire low wage people in India and you know go to Bangladesh, go to Vietnam, go to other places, because in this country you have to come and pay a much higher wage. So you will college grads on shop floors as the Indian automobile industry, but it's difficult to hire unskilled people into factories in India because of these minimum wage. You'll put that kind of work elsewhere. But at the same time, the minimum wage is also being paid to people through NREGS and that's creating these expectations. It's got an anchoring effect that it encourages people that no, if you don't get this kind of money, I should not even accept a job. And people are getting a certain amount of money through government welfare programs. So that is damaging the labor supply as well. So we are messing with the market from both sides through that one number. So the minimum wage feeds into the NREGS, the minimum wage feeds into the ability of employers to obtain low cost labor. And what do you expect? You get the outcome that the theory would predict. in the form of one of the world's lowest employment rates. So if you divide the number of people working upon the working age population, then India essentially has the lowest rates in the world. It's lower than Bangladesh, lower than Pakistan, lower than Saudi Arabia. And where does that come from? And this is the complex of government interventions, a combination of supply side interventions where the incentive to work is damaged. And demand side interventions where the ability to hire is",
+      "endTime": 2731.42,
+      "text": "in India as well. Two, three different things going on. So let's go step by step. First, roughly speaking, there's a minimum wage of about 13,000 rupees. And we know that that is not a free market price because across the border in Bangladesh, the wage is 8,000 rupees. So we know that in India to have a minimum wage of 13,000 is not correct because you know Bangladesh is a comparable economy to India. Fact, in some ways they're doing a little better than India. So 8,000 is on the higher side of what a reasonable price would be. On top of that, there's a bunch of mandatory entitlements. So the overall cost in the formal sector for hiring a person, the lowest levels is about rupees 17,000 a month, which is a high price compared to the market equilibrium outcome, which ought to be much lower. There is a next problem going on, which is that the minimum wage is used. in the number that is calculated for the payment of the NREGS. So we have an excessively high minimum wage, which is paid out as a welfare program. And it hits both ways, that on one hand, the firms are being told that look, you can't really hire low wage people in India and you know go to Bangladesh, go to Vietnam, go to other places, because in this country you have to come and pay a much higher wage. So you will college grads on shop floors as the Indian automobile industry, but it's difficult to hire unskilled people into factories in India because of these minimum wage. You'll put that kind of work elsewhere. But at the same time, the minimum wage is also being paid to people through NREGS and that's creating these expectations. It's got an anchoring effect that it encourages people that no, if you don't get this kind of money, I should not even accept a job. And people are getting a certain amount of money through government welfare programs. So that is damaging the labor supply as well. So we are messing with the market from both sides through that one number. So the minimum wage feeds into the NREGS, the minimum wage feeds into the ability of employers to obtain low cost labor. And what do you expect? You get the outcome that the theory would predict. in the form of one of the world's lowest employment rates. So if you divide the number of people working upon the working age population, then India essentially has the lowest rates in the world. It's lower than Bangladesh, lower than Pakistan, lower than Saudi Arabia. And where does that come from? And this is the complex of government interventions, a combination of supply side interventions where the incentive to work is damaged. And demand side interventions where the ability to hire",
       "words": [
         {
           "word": "in",
@@ -51619,21 +51547,21 @@
           "startTime": 2730.7,
           "endTime": 2731.42,
           "confidence": 0.9994
-        },
-        {
-          "word": "is",
-          "startTime": 2731.42,
-          "endTime": 2731.74,
-          "confidence": 0.9988
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2731.74,
-      "endTime": 2752.46,
-      "text": "interfered with. And I want to make a couple of points here. One point is that let's say you're saying it's 17,000. Now someone may well argue, I would have argued 20 years ago, that you know what is that? Like, for example, if you're recommending that someone be hired at twelve thousand, that is terrible. It's like slavery. But the point is, number one, it's not slavery, it's voluntary, and number two, think of the option.",
+      "startTime": 2731.42,
+      "endTime": 2841.77,
+      "text": "is interfered with. And I want to make a couple of points here. One point is that let's say you're saying it's 17,000. Now someone may well argue, I would have argued 20 years ago, that you know what is that? Like, for example, if you're recommending that someone be hired at twelve thousand, that is terrible. It's like slavery. But the point is, number one, it's not slavery, it's voluntary, and number two, think of the option. The option is not utopia. If that person was not working at a job which is worth twelve thousand or working at a sweatshop or whatever it is, that person would ha b be facing a worse option. And therefore you have to, in the real world, figure out the options that people have. The second thing I want to point out is what is happening in Bangladesh. What is happening in Bangladesh is a labor intensive manufacturing boom that is leading to GDP per capita growing up and those who are earning eight thousand yesterday were are earning ten thousand today and will earn thirteen thousand tomorrow, and the whole economy is advancing while we are stuck and there are these large levels of unemployment. And i it is simply happening because uh uh you know of wrong minded thinking where you begin with the intention. that hey this is the intention, but you do not have the intellectual rigor to think of the inevitable outcome. Like even NREGS, you know, so many people will support that because they'll say, ah it's a welfare program, we should do it. As a short term anesthetic, a program like that, I can understand. But what it has done is there is a crowding out effect in the labor workforce. Uh you know, it has a kind of anchoring effects that you spoke about. It distorts the labor market. And all of that is stuff that we need to um you know consider. In our last episode you speak of structural reforms versus parametric reforms. And You know, all these are parametric reforms, what you might do with the NREGS and all that. We need structural reforms, we need a growing eco economy. That growing economy will come with economic freedom, and for that you have to let prices play themselves",
       "words": [
+        {
+          "word": "is",
+          "startTime": 2731.42,
+          "endTime": 2731.74,
+          "confidence": 0.9988
+        },
         {
           "word": "interfered",
           "startTime": 2731.74,
@@ -52095,15 +52023,7 @@
           "startTime": 2751.74,
           "endTime": 2752.46,
           "confidence": 0.9513
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2752.46,
-      "endTime": 2753.76,
-      "text": "The option is not utopia.",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 2752.46,
@@ -52133,15 +52053,7 @@
           "startTime": 2753.26,
           "endTime": 2753.76,
           "confidence": 0.897
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2754.2,
-      "endTime": 2768.95,
-      "text": "If that person was not working at a job which is worth twelve thousand or working at a sweatshop or whatever it is, that person would ha b be facing a worse option. And therefore you have to, in the real world, figure out the options that people have. The second",
-      "words": [
+        },
         {
           "word": "If",
           "startTime": 2754.2,
@@ -52447,15 +52359,7 @@
           "startTime": 2768.79,
           "endTime": 2768.95,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2768.95,
-      "endTime": 2770.71,
-      "text": "thing I want to point out is what is happening in",
-      "words": [
+        },
         {
           "word": "thing",
           "startTime": 2768.95,
@@ -52521,15 +52425,7 @@
           "startTime": 2770.63,
           "endTime": 2770.71,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2770.71,
-      "endTime": 2841.77,
-      "text": "Bangladesh. What is happening in Bangladesh is a labor intensive manufacturing boom that is leading to GDP per capita growing up and those who are earning eight thousand yesterday were are earning ten thousand today and will earn thirteen thousand tomorrow, and the whole economy is advancing while we are stuck and there are these large levels of unemployment. And i it is simply happening because uh uh you know of wrong minded thinking where you begin with the intention. that hey this is the intention, but you do not have the intellectual rigor to think of the inevitable outcome. Like even NREGS, you know, so many people will support that because they'll say, ah it's a welfare program, we should do it. As a short term anesthetic, a program like that, I can understand. But what it has done is there is a crowding out effect in the labor workforce. Uh you know, it has a kind of anchoring effects that you spoke about. It distorts the labor market. And all of that is stuff that we need to um you know consider. In our last episode you speak of structural reforms versus parametric reforms. And You know, all these are parametric reforms, what you might do with the NREGS and all that. We need structural reforms, we need a growing eco economy. That growing economy will come with economic freedom, and for that you have to let prices play themselves",
-      "words": [
+        },
         {
           "word": "Bangladesh.",
           "startTime": 2770.71,
@@ -65641,8 +65537,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3482.25,
-      "endTime": 3487.29,
-      "text": "Okay, Amit. Next chapter. What are the pieces of how governments make mistakes with prices? So",
+      "endTime": 3487.69,
+      "text": "Okay, Amit. Next chapter. What are the pieces of how governments make mistakes with prices? So my next",
       "words": [
         {
           "word": "Okay,",
@@ -65739,15 +65635,7 @@
           "startTime": 3487.05,
           "endTime": 3487.29,
           "confidence": 0.988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3487.29,
-      "endTime": 3691.91,
-      "text": "my next chapter is about import tariffs. And at one level it might seem it's not really a distortion in prices. You're just stopping who sells to you. You're kind of choosing the producer. But here's how you think about it. Let us say that there is a local manufacturer who's selling me something for hundred bucks. Someone from China is selling it to me for ninety rupees, right? Same quality. So I will go to that person from China. But then the local manufacturers get together and they tell the government that boss you have to protect local industry. We are Indians and therefore the government puts a tariff of twenty rupees on the Chinese guy and his ninety rupees good is now hundred and ten rupees and therefore we economize and we buy the thing for hundred bucks. So number of things happening here. One is instead of paying ninety for something, I'm paying hundred for it, and I don't even know. This is unseen. I don't know that I'm paying ten rupees more for it. But I end up paying ten rupees more for it. Now, had that ten rupees stayed with me, I would have put it out in the economy only. And then all the pool ten rupees that uh we would have saved from buying that particular product, they go into the economy, they create jobs, they create opportunities. So it is all going into the local economy only. And there is dynamism happening there, the money is being put to use. Now that is unseen. What is seen is that local manufacturer has the shit together. What is unseen is that. And this is in fact w what really happened here is that the ten rupees of all the dispersed consumers were gathered together and given to this interest group. Which is where I once, you know, came up with what I call Verma's law. Every interference in free markets leads to a redistribution of wealth from the poor to the rich. From the poor to the rich. This is the best example of that. The poor consumers at large, you know, are having money taken away from them and put into the pockets of rich states. who have gotten together to lobby the government. Let us say you don't care about consumers, right? You're an evil capitalist and you're more focused on the other side of things. It is bad for the economy as a whole, it is bad for firms, because think about the incentives. Your local guy no longer has to compete with China on price, and he doesn't even have to compete on quality, right? Because the other margin on which China could have beaten you is uh something for the same price but better quality. The local guy doesn't have to compete. He is protected by the government and he knows that, you know, it's good. He doesn't have to lift his game. Now the more competition there is, the more we have to lift our game, the harder we have to try, the more we have to find creative ways of doing things. You know, which is why we had an excellent episode on I eighteen and internationalization, where you pointed out that an firm which is an Indian firm which is competing internationally will by default become better at what it does because it is competing with all those players. So similarly, if you just allowed our local play to compete with everybody out there, including from China, from wherever, right, what would then happen is that they would lift their game. they would become better, there would be better processes in place, there would be better thinking in place, they would learn much more, and all of that would seep into the rest of the economy and we would be a more vibrant economy with more energy in our firms and producing higher quality goods and services, which we could then even export and it would kick off a virtuous cycle. And we're not allowing even that to happen. So I want you to know this Ajesha. I don't know how you feel about this matter. I hate tariffs. I fucking hate import tariffs and you know, quite apart from the matter that companies don't like trade with each other, it is individuals and double thank you moments. If I'm trading with someone in China And we are having a double thank you movement. What the F is anyone's problem? So I hate tariffs. Uh",
-      "words": [
+        },
         {
           "word": "my",
           "startTime": 3487.29,
@@ -65759,7 +65647,15 @@
           "startTime": 3487.45,
           "endTime": 3487.69,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3487.69,
+      "endTime": 3691.91,
+      "text": "chapter is about import tariffs. And at one level it might seem it's not really a distortion in prices. You're just stopping who sells to you. You're kind of choosing the producer. But here's how you think about it. Let us say that there is a local manufacturer who's selling me something for hundred bucks. Someone from China is selling it to me for ninety rupees, right? Same quality. So I will go to that person from China. But then the local manufacturers get together and they tell the government that boss you have to protect local industry. We are Indians and therefore the government puts a tariff of twenty rupees on the Chinese guy and his ninety rupees good is now hundred and ten rupees and therefore we economize and we buy the thing for hundred bucks. So number of things happening here. One is instead of paying ninety for something, I'm paying hundred for it, and I don't even know. This is unseen. I don't know that I'm paying ten rupees more for it. But I end up paying ten rupees more for it. Now, had that ten rupees stayed with me, I would have put it out in the economy only. And then all the pool ten rupees that uh we would have saved from buying that particular product, they go into the economy, they create jobs, they create opportunities. So it is all going into the local economy only. And there is dynamism happening there, the money is being put to use. Now that is unseen. What is seen is that local manufacturer has the shit together. What is unseen is that. And this is in fact w what really happened here is that the ten rupees of all the dispersed consumers were gathered together and given to this interest group. Which is where I once, you know, came up with what I call Verma's law. Every interference in free markets leads to a redistribution of wealth from the poor to the rich. From the poor to the rich. This is the best example of that. The poor consumers at large, you know, are having money taken away from them and put into the pockets of rich states. who have gotten together to lobby the government. Let us say you don't care about consumers, right? You're an evil capitalist and you're more focused on the other side of things. It is bad for the economy as a whole, it is bad for firms, because think about the incentives. Your local guy no longer has to compete with China on price, and he doesn't even have to compete on quality, right? Because the other margin on which China could have beaten you is uh something for the same price but better quality. The local guy doesn't have to compete. He is protected by the government and he knows that, you know, it's good. He doesn't have to lift his game. Now the more competition there is, the more we have to lift our game, the harder we have to try, the more we have to find creative ways of doing things. You know, which is why we had an excellent episode on I eighteen and internationalization, where you pointed out that an firm which is an Indian firm which is competing internationally will by default become better at what it does because it is competing with all those players. So similarly, if you just allowed our local play to compete with everybody out there, including from China, from wherever, right, what would then happen is that they would lift their game. they would become better, there would be better processes in place, there would be better thinking in place, they would learn much more, and all of that would seep into the rest of the economy and we would be a more vibrant economy with more energy in our firms and producing higher quality goods and services, which we could then even export and it would kick off a virtuous cycle. And we're not allowing even that to happen. So I want you to know this Ajesha. I don't know how you feel about this matter. I hate tariffs. I fucking hate import tariffs and you know, quite apart from the matter that companies don't like trade with each other, it is individuals and double thank you moments. If I'm trading with someone in China And we are having a double thank you movement. What the F is anyone's problem? So I hate tariffs. Uh",
+      "words": [
         {
           "word": "chapter",
           "startTime": 3487.69,
@@ -72741,8 +72637,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3820.87,
-      "endTime": 4118.15,
-      "text": "I have some thoughts on this. The first is that exactly as we discussed around the Ukraine war, that after the second world war, for some time there was a memory of what happened. And uh Angela Merkel has this great line. She says that we will know the future of Germany when the generations with no memory of the second world war come of age and they develop their own political philosophy, and then we will know whether they have got the right lessons or not. And every generation has to fight its own battles and like today's battle for everybody in the world is to think more deeply about Russia's invasion of Ukraine and its consequences for the whole world. That, you know, are such irredentist claims to be accepted and tolerated? Or is there going to be a pushback by the democracies against this kind of behavior by Russia, by China, and so on. I feel similarly about the economics, that there was a time when interventionist states were raging all over the world and it worked out very badly. And bit by bit people got the point, people got the message. And you know the great debates of Hayek and Friedman and others, they managed to persuade people and we got a great age of prosperity. But in that great age of prosperity people lost sight and they lost a connection. with where we came from. So it's like a sorcerer's apprentice problem that, you know, this thing works, but you don't know why it works. And then you can slip into that trivial human instinct of, oh the government should do this and oh the government should do that. It takes a certain kind of intellectualism to think deeply about how the world works and what is the place of the price system. So this is my working hypothesis on how to think about it that You know, every ten, twenty, thirty years you need governments to do activism and collapse on their faces. And then hopefully there is enough intellectualism around to diagnose those things and learn lessons from that. You know, or maybe there isn't. Then we're in for a much darker time. So you know, we did an episode on pension reforms. So it seems like twenty five years later the broader community hasn't learned the lessons. And we are back to guarantees and the whole mess of pension reform seems to be back with us all over again. And then you have to start with uh calculating what is the implicit pension debt and start persuading people all over again. My uh second idea for this space is this sort of philosophy of the post uh fall of the Berlin Wall, which was the ascendant uh political compromise of the world in that age, was this idea that on one hand There is a furnace that makes prosperity, which is the market economy. And then a government may choose to tax that market economy and use it for helping poor people through direct transfers, but you don't interfere with the furnace. And that furnace is the price system that let the market discover prices. That is the single engine of growth, the engine of prosperity. And for example, in my story today about natural gas, okay, more power. to the Europeans that they got this, that in that time of crisis, they did not come up with a more interventionist solution. They allowed the prices to go to infinity. They solved the problem of heating for poor people by giving direct fiscal subsidies. And then the price system did its magic because those high prices generated a supply response and everything got solved. So, uh in that spirit, Shruti Raja Gopalan and I have sometimes spoken about what is the wisdom, what is the sanity of a political system. It's about the ability to stomach large price fluctuations. Okay, that's it. That's what it boils down to. Maturity. Wisdom lies in creating a world of freedom where prices fluctuate and then being quiet. and doing nothing using state power when prices go up or prices go down. That is the way nature works. It is the law of gravity that things will happen. There will be fluctuations in tastes and technology and some far away war and some cyclone and some drought and prices will fluctuate. But the fluctuating of prices is the sound of the resource allocation getting refashed. And if you try to shut off that sound, then you will interfere the rebuilding of a resource allocation that is commensurate with what is required in the world today. So that is maturity in a political system and God knows we have a long way to go before we find that here in India. We have a long way to go,",
+      "endTime": 4116.62,
+      "text": "I have some thoughts on this. The first is that exactly as we discussed around the Ukraine war, that after the second world war, for some time there was a memory of what happened. And uh Angela Merkel has this great line. She says that we will know the future of Germany when the generations with no memory of the second world war come of age and they develop their own political philosophy, and then we will know whether they have got the right lessons or not. And every generation has to fight its own battles and like today's battle for everybody in the world is to think more deeply about Russia's invasion of Ukraine and its consequences for the whole world. That, you know, are such irredentist claims to be accepted and tolerated? Or is there going to be a pushback by the democracies against this kind of behavior by Russia, by China, and so on. I feel similarly about the economics, that there was a time when interventionist states were raging all over the world and it worked out very badly. And bit by bit people got the point, people got the message. And you know the great debates of Hayek and Friedman and others, they managed to persuade people and we got a great age of prosperity. But in that great age of prosperity people lost sight and they lost a connection. with where we came from. So it's like a sorcerer's apprentice problem that, you know, this thing works, but you don't know why it works. And then you can slip into that trivial human instinct of, oh the government should do this and oh the government should do that. It takes a certain kind of intellectualism to think deeply about how the world works and what is the place of the price system. So this is my working hypothesis on how to think about it that You know, every ten, twenty, thirty years you need governments to do activism and collapse on their faces. And then hopefully there is enough intellectualism around to diagnose those things and learn lessons from that. You know, or maybe there isn't. Then we're in for a much darker time. So you know, we did an episode on pension reforms. So it seems like twenty five years later the broader community hasn't learned the lessons. And we are back to guarantees and the whole mess of pension reform seems to be back with us all over again. And then you have to start with uh calculating what is the implicit pension debt and start persuading people all over again. My uh second idea for this space is this sort of philosophy of the post uh fall of the Berlin Wall, which was the ascendant uh political compromise of the world in that age, was this idea that on one hand There is a furnace that makes prosperity, which is the market economy. And then a government may choose to tax that market economy and use it for helping poor people through direct transfers, but you don't interfere with the furnace. And that furnace is the price system that let the market discover prices. That is the single engine of growth, the engine of prosperity. And for example, in my story today about natural gas, okay, more power. to the Europeans that they got this, that in that time of crisis, they did not come up with a more interventionist solution. They allowed the prices to go to infinity. They solved the problem of heating for poor people by giving direct fiscal subsidies. And then the price system did its magic because those high prices generated a supply response and everything got solved. So, uh in that spirit, Shruti Raja Gopalan and I have sometimes spoken about what is the wisdom, what is the sanity of a political system. It's about the ability to stomach large price fluctuations. Okay, that's it. That's what it boils down to. Maturity. Wisdom lies in creating a world of freedom where prices fluctuate and then being quiet. and doing nothing using state power when prices go up or prices go down. That is the way nature works. It is the law of gravity that things will happen. There will be fluctuations in tastes and technology and some far away war and some cyclone and some drought and prices will fluctuate. But the fluctuating of prices is the sound of the resource allocation getting refashed. And if you try to shut off that sound, then you will interfere the rebuilding of a resource allocation that is commensurate with what is required in the world today. So that is maturity in a political system and God knows we have a long way to go before we find that here in India.",
       "words": [
         {
           "word": "I",
@@ -77567,7 +77463,15 @@
           "startTime": 4116.12,
           "endTime": 4116.62,
           "confidence": 0.96
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4117.27,
+      "endTime": 4174.94,
+      "text": "We have a long way to go, though. We had it once. We had a golden period between uh ninety one and twenty eleven. We've had many episodes on it. Um and uh but you know, earlier when we were chatting about this episode and what we're gonna talk about, this exact approach that you mentioned, you spoke of Tony Blair and Bill Clinton as exemplars of it. And they are centrist democrats in a sense, like Clinton being a centrist democrat and um uh you know uh Blair also uh a man of the Labour Party. And so the thing is that this is something that actually politicians in the West kinda had a consensus on whether you're democrat or republican, you are like don't really interfere with markets. And then the arguments could be how much welfareism should we do, or how much this should we do, how much that should we do. It is a tweaking and which interest groups you serve because they were both slave to different related interest groups. But let the market function because that is a lesson that we had learned. And when I look at the rhetoric coming even out of American politics today, I despair and I wonder if you're sliding backwards.",
+      "words": [
         {
           "word": "We",
           "startTime": 4117.27,
@@ -77609,15 +77513,7 @@
           "startTime": 4117.99,
           "endTime": 4118.15,
           "confidence": 0.7355
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4118.15,
-      "endTime": 4144.87,
-      "text": "though. We had it once. We had a golden period between uh ninety one and twenty eleven. We've had many episodes on it. Um and uh but you know, earlier when we were chatting about this episode and what we're gonna talk about, this exact approach that you mentioned, you spoke of Tony Blair and Bill Clinton as exemplars of it. And they are centrist democrats in a sense, like Clinton being a centrist democrat and um uh you know uh Blair also uh a man of the Labour Party. And",
-      "words": [
+        },
         {
           "word": "though.",
           "startTime": 4118.15,
@@ -78163,15 +78059,7 @@
           "startTime": 4144.47,
           "endTime": 4144.87,
           "confidence": 0.8375
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4144.87,
-      "endTime": 4147.11,
-      "text": "so the thing is that this is something that",
-      "words": [
+        },
         {
           "word": "so",
           "startTime": 4144.87,
@@ -78225,15 +78113,7 @@
           "startTime": 4146.87,
           "endTime": 4147.11,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4147.11,
-      "endTime": 4174.94,
-      "text": "actually politicians in the West kinda had a consensus on whether you're democrat or republican, you are like don't really interfere with markets. And then the arguments could be how much welfareism should we do, or how much this should we do, how much that should we do. It is a tweaking and which interest groups you serve because they were both slave to different related interest groups. But let the market function because that is a lesson that we had learned. And when I look at the rhetoric coming even out of American politics today, I despair and I wonder if you're sliding backwards.",
-      "words": [
+        },
         {
           "word": "actually",
           "startTime": 4147.11,
@@ -81291,8 +81171,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4314.84,
-      "endTime": 4318.5,
-      "text": "So Amit, do you have recommendations for all of us today? So I have",
+      "endTime": 4318.74,
+      "text": "So Amit, do you have recommendations for all of us today? So I have uh",
       "words": [
         {
           "word": "So",
@@ -81377,21 +81257,21 @@
           "startTime": 4318.1,
           "endTime": 4318.5,
           "confidence": 0.9967
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4318.5,
-      "endTime": 4353.61,
-      "text": "uh I've I've given a bunch of recommendations during this episode. Uh I'll give you one more recommendation. It's an uh article written by a very good friend of mine. I don't know if you're aware of him. Uh but your awareness of him may d depend on your your level of self awareness. Because this is Ajesha I'm talking about great piece called Price is Fast and Slow. Uh wonderful piece. I'd uh recommend gentle readers please read the full thing. I wanted to discuss it during this episode, but it's already kinda gotten long and it didn't fit into this narrative. But please uh uh do read it. That's my uh recommendation from the day apart from the ones you've already mentioned. What are your recommendations?",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 4318.5,
           "endTime": 4318.74,
           "confidence": 0.9017
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4318.74,
+      "endTime": 4350.81,
+      "text": "I've I've given a bunch of recommendations during this episode. Uh I'll give you one more recommendation. It's an uh article written by a very good friend of mine. I don't know if you're aware of him. Uh but your awareness of him may d depend on your your level of self awareness. Because this is Ajesha I'm talking about great piece called Price is Fast and Slow. Uh wonderful piece. I'd uh recommend gentle readers please read the full thing. I wanted to discuss it during this episode, but it's already kinda gotten long and it didn't fit into this narrative. But please uh uh do read it. That's my uh recommendation from the day apart from the ones you've already mentioned.",
+      "words": [
         {
           "word": "I've",
           "startTime": 4318.74,
@@ -82129,7 +82009,15 @@
           "startTime": 4350.34,
           "endTime": 4350.81,
           "confidence": 0.9833
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4352.25,
+      "endTime": 4380.67,
+      "text": "What are your recommendations? So I want to recommend two books. One book is Slouching Towards Utopia by Brad DeLong, which gives us a better structural understanding of that old economic policy consensus before we got to the world of Trump and Putin and Xi Jinping and the right wing authoritarians. And the second book I want to recommend is a beautiful book from my childhood. It is called Milton Friedman Price Theory. Okay. So some things are just done right by the old masters and we should go back there and study.",
+      "words": [
         {
           "word": "What",
           "startTime": 4352.25,
@@ -82153,15 +82041,7 @@
           "startTime": 4352.65,
           "endTime": 4353.61,
           "confidence": 0.9814
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4353.61,
-      "endTime": 4380.67,
-      "text": "So I want to recommend two books. One book is Slouching Towards Utopia by Brad DeLong, which gives us a better structural understanding of that old economic policy consensus before we got to the world of Trump and Putin and Xi Jinping and the right wing authoritarians. And the second book I want to recommend is a beautiful book from my childhood. It is called Milton Friedman Price Theory. Okay. So some things are just done right by the old masters and we should go back there and study.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 4353.61,

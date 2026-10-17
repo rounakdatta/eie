@@ -5,7 +5,7 @@
     "durationSeconds": 3703,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -373,8 +373,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 88.35,
-      "endTime": 161.44,
-      "text": "Tell us about it. These are both great slogans. As you all can see from this photograph of Ajay and me, we're wearing a t-shirt that says Katur Ribhaji, which was uh which is not we don't have official merchandise yet, so at some point perhaps. But this was made by my good friend Nareen Shinoi, uh inspired by uh some a story he heard in an episode uh that I'm waiting to tell you about. Tell us a story, Amit. So here's a story. I did an episode recently with Jerry Pinto, an episode of The Scene and the Unseen, which was eight and a half hours long, fantastic oral history, what a great guy. And he told me this brilliant story about a gentleman named Abe Faria, which um inspired me and a lot of others who heard the episode. Now here's the deal. Uh Abe Faria was born Jose Custodio de Faria in 1756 in Candolim. W uh when Goa was a Portuguese colony. And he was like a child prodigy. His father was a priest, his mother was a nun, but Tolvarino, Hanky Panky, uh they joined the church after having him and they were separated. And his father, you know, treated him like a child prodigy, took him around the world to get him educated and all that. And by the time he was in his teens, this young man who would later be known as Abe Faria was uh, you know,",
+      "endTime": 277.04,
+      "text": "Tell us about it. These are both great slogans. As you all can see from this photograph of Ajay and me, we're wearing a t-shirt that says Katur Ribhaji, which was uh which is not we don't have official merchandise yet, so at some point perhaps. But this was made by my good friend Nareen Shinoi, uh inspired by uh some a story he heard in an episode uh that I'm waiting to tell you about. Tell us a story, Amit. So here's a story. I did an episode recently with Jerry Pinto, an episode of The Scene and the Unseen, which was eight and a half hours long, fantastic oral history, what a great guy. And he told me this brilliant story about a gentleman named Abe Faria, which um inspired me and a lot of others who heard the episode. Now here's the deal. Uh Abe Faria was born Jose Custodio de Faria in 1756 in Candolim. W uh when Goa was a Portuguese colony. And he was like a child prodigy. His father was a priest, his mother was a nun, but Tolvarino, Hanky Panky, uh they joined the church after having him and they were separated. And his father, you know, treated him like a child prodigy, took him around the world to get him educated and all that. And by the time he was in his teens, this young man who would later be known as Abe Faria was uh, you know, known all across the planet. What year is this? He was born in 1756. Wow. So around yeah, so before the Battle of Plasse. There you go. So he was known throughout that time as this guy who gave these brilliant sermons, these brilliant speeches. And the Queen of Portugal heard about it. So he was invited to Lisbon along with his father to speak before the Queen herself. So imagine this August gathering, though I don't know if it was August, but it was an August gathering and everybody is there and the Queen is there. in her green silk emerald dress with her sequins and intricate patterns. All the royalty of Lisbon is there, you know, in their breeches and their gowns, with magnificent smiles and frowns, and they're all waiting for this young boy to start speaking. And this young boy is out there on the stage. Don't interrupt the story. This young boy is out there on the stage, and the queen is there. Besides the queen there is his father, Senior Faria, and all the royalty. And essentially everybody in the world who is important to this young lad is out there in the audience, staring at him, from the sea of darkness, or glistening eyes, or however you imagine it, and the boy freezes. No words come to him. And then at that point his father, noticing that the boy has frozen, leans forward and whispers loud loudly at him Puta, he saglibhaji, kathor rebhaji, kathor rebhaji, kathor rebhaji Right and what is this? What is he saying? This is Konkani, and forgive me if I got any aspect of it wrong, but essentially what his father is saying is, All these are vegetables. Cut the vegetables, cut the vegetables, cut the vegetables. Right. And there is a profound reminder in this that ultimately whatever we do in our lives, it boils down to cutting j cutting the vegetables, to building a habit, to root routine, and just sort of uh you know, going through that. And I I I want to elaborate a lot more on this in detail, but you were about to say something. Go ahead.",
       "words": [
         {
           "word": "Tell",
@@ -1857,15 +1857,7 @@
           "startTime": 161.04,
           "endTime": 161.44,
           "confidence": 0.9631
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 161.44,
-      "endTime": 164.64,
-      "text": "known all across the planet. What year",
-      "words": [
+        },
         {
           "word": "known",
           "startTime": 161.44,
@@ -1907,15 +1899,7 @@
           "startTime": 164.4,
           "endTime": 164.64,
           "confidence": 0.9957
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 164.64,
-      "endTime": 169.28,
-      "text": "is this? He was born in 1756. Wow. So around yeah, so",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 164.64,
@@ -1987,15 +1971,7 @@
           "startTime": 168.8,
           "endTime": 169.28,
           "confidence": 0.7573
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 169.28,
-      "endTime": 171.28,
-      "text": "before the Battle of Plasse.",
-      "words": [
+        },
         {
           "word": "before",
           "startTime": 169.28,
@@ -2025,15 +2001,7 @@
           "startTime": 169.92,
           "endTime": 171.28,
           "confidence": 0.7341
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 171.28,
-      "endTime": 277.04,
-      "text": "There you go. So he was known throughout that time as this guy who gave these brilliant sermons, these brilliant speeches. And the Queen of Portugal heard about it. So he was invited to Lisbon along with his father to speak before the Queen herself. So imagine this August gathering, though I don't know if it was August, but it was an August gathering and everybody is there and the Queen is there. in her green silk emerald dress with her sequins and intricate patterns. All the royalty of Lisbon is there, you know, in their breeches and their gowns, with magnificent smiles and frowns, and they're all waiting for this young boy to start speaking. And this young boy is out there on the stage. Don't interrupt the story. This young boy is out there on the stage, and the queen is there. Besides the queen there is his father, Senior Faria, and all the royalty. And essentially everybody in the world who is important to this young lad is out there in the audience, staring at him, from the sea of darkness, or glistening eyes, or however you imagine it, and the boy freezes. No words come to him. And then at that point his father, noticing that the boy has frozen, leans forward and whispers loud loudly at him Puta, he saglibhaji, kathor rebhaji, kathor rebhaji, kathor rebhaji Right and what is this? What is he saying? This is Konkani, and forgive me if I got any aspect of it wrong, but essentially what his father is saying is, All these are vegetables. Cut the vegetables, cut the vegetables, cut the vegetables. Right. And there is a profound reminder in this that ultimately whatever we do in our lives, it boils down to cutting j cutting the vegetables, to building a habit, to root routine, and just sort of uh you know, going through that. And I I I want to elaborate a lot more on this in detail, but you were about to say something. Go ahead.",
-      "words": [
+        },
         {
           "word": "There",
           "startTime": 171.28,
@@ -4363,8 +4331,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 292.32,
-      "endTime": 307.28,
-      "text": "I want to tell you something else about this young man. This young man then traveled the world. Uh he was involved in some kind of Pinto rebellion or something in India, so he had to leave India. It was Catholic versus Protestant, some random shit was happening. He left India, he goes to Europe,",
+      "endTime": 349.87,
+      "text": "I want to tell you something else about this young man. This young man then traveled the world. Uh he was involved in some kind of Pinto rebellion or something in India, so he had to leave India. It was Catholic versus Protestant, some random shit was happening. He left India, he goes to Europe, he takes part in the French Revolution. Right, this remarkable character takes part in the French Revolution and at one point he is imprisoned in this island and alone in a room in solitary confinement, wondering what to make of his life. He remembers his father saying to him, Kathor Rivhaji, Kathor Rivhaji, Kathor Rivhaji and he builds this mental framework and decides to become an expert in hypnotism. And he is known as one of the fathers of hypnotism. And this would be early eighteen hundreds. So you just uh imagine. And of course in Alexandra Duma's Count of Monte Cristo a character is named after him, yes, the same Abe Faria. So a a remarkable man born in nearby Candleim, who achieved so much.",
       "words": [
         {
           "word": "I",
@@ -4695,15 +4663,7 @@
           "startTime": 306.8,
           "endTime": 307.28,
           "confidence": 0.8593
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 307.28,
-      "endTime": 311.43,
-      "text": "he takes part in the French Revolution. Right, this remarkable character takes part in the",
-      "words": [
+        },
         {
           "word": "he",
           "startTime": 307.28,
@@ -4793,15 +4753,7 @@
           "startTime": 311.35,
           "endTime": 311.43,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 311.43,
-      "endTime": 349.87,
-      "text": "French Revolution and at one point he is imprisoned in this island and alone in a room in solitary confinement, wondering what to make of his life. He remembers his father saying to him, Kathor Rivhaji, Kathor Rivhaji, Kathor Rivhaji and he builds this mental framework and decides to become an expert in hypnotism. And he is known as one of the fathers of hypnotism. And this would be early eighteen hundreds. So you just uh imagine. And of course in Alexandra Duma's Count of Monte Cristo a character is named after him, yes, the same Abe Faria. So a a remarkable man born in nearby Candleim, who achieved so much.",
-      "words": [
+        },
         {
           "word": "French",
           "startTime": 311.43,
@@ -5473,8 +5425,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 353.57,
-      "endTime": 373.06,
-      "text": "Amit, let's deep dive into this. Okay, in some ways, all of us want to compose symphonies or write that great novel or find that blinding scientific paper. But what does it translate to as a practical everyday project? So you've thought a lot about this. Tell us your big ideas. So",
+      "endTime": 373.46,
+      "text": "Amit, let's deep dive into this. Okay, in some ways, all of us want to compose symphonies or write that great novel or find that blinding scientific paper. But what does it translate to as a practical everyday project? So you've thought a lot about this. Tell us your big ideas. So one of",
       "words": [
         {
           "word": "Amit,",
@@ -5787,15 +5739,7 @@
           "startTime": 372.74,
           "endTime": 373.06,
           "confidence": 0.9942
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 373.06,
-      "endTime": 667.77,
-      "text": "one of the things that I talk about when I talk to my writing students in the writing course I teach or when I'm to talk to w which I find has helped me a lot is understanding the trade-off between getting it done and getting it right. So whenever you embark upon any venture, you face this trade-off. And I have a bias towards action. I have a bias towards getting it done. Right. Uh i in the context of writing, I would say the first draft is where you get it done. Take a dump of the brain. Right. And I'll we'll probably do another video at some point on writing advice and writing processes and all of that. I won't go into that now. But With everything we do in life, there is this trade-off between getting it done and getting it right. And my point is that you have to get it done. Too often what we do is, uh, you know, we let the perfect be the enemy of the good. Or, uh, as policymakers would say, or in the words of uh my good friend Vinesitapati in his first episode with me, we had a one-hour discussion on writing. He said, Never let perfection be the enemy of production. Right. And to me, production is super important and it's not even a binary. How do you get it done? You get something done by uh how do you get something right? I'm sorry, you get something right by getting it done again and again and again. That's the first thing that you have to do. Think of Rodin. When Rodin conceived of the thinker, he didn't fashion it out of thin air. He took a block of stone and he edited the block of stone. And the what I say is that when you write a first draft, for example, you have that block of stone. And then you can work on getting it right, but you have to get it done first. I remember this famous experiment. I've if I remember uh exactly what it is, I'll link it from the show notes if I find it. Where um Uh a group of people was split into two halves. One half was told they have to make a pot at the end of a week, and they had the week to research how to make the pot and how to plan it and all of that. And the other group was told, make as many pots as you want, just go. Right? So the first group had a week to research the perfect um the pot, maybe to do online Coursera courses, how you know the art of clear pottery or whatever. And uh you read books about it, intellectually understand what makes for a perfect pot. The other group didn't have to bother with all this, they just had to get it done again and again and again. The best spots came from the second group, which just went out there, which iterated, which which got the job done. Another example I like to uh sort of give my writing students and my podcasting students also is something that I learned from Ali Abdal. Ali Abdal is this great YouTuber, does productivity videos, recommend him highly. When Ali Abdal reached a million subscribers, he did a video where he showed this fantastic graph that you see now. Right. This is a graph of his user base and how it grew over time. And as you can see, one, it's an exponential growth. But the most important point here is as he points out, is that after half a year, that's twenty six weeks, he made two videos a week. He reached his fiftieth video. That's when he reached his thousand subscribers. We already passed thousand subscribers already, but um well before this we were we were really lucky. But his point was that if I was going to be motivated by my subscriber count when I had a thousand subscribers, you know, no one would survive half a year before that because we all get into something and creators tend to overestimate the short term and underestimate the long term. Both are important. And so we tend to overestimate the short term. We think alright, we'll make a YouTube show, we'll have a million subs, we'll you know, we'll make so much money, blah, blah, blah. The point is it never happens because whenever you start something, You suck at the start. This is a fact of life. How do you get better? You get better by doing it again and again. If you are driven by validation, Then you will not get that validation because you suck and you'll stop doing it and you'll never get good. If you want to get good at some level, you have to ignore validation. You have to ignore the fact that you're bad at a particular point in time and you just have to plow ahead. There's another video by Ali Abdal which I love, which I'll again link from the show notes, where he gives advice to creators and he says, if you are on YouTube, and Ajaisha, I want you to listen to this carefully because it applies to us. And he says, if you are on YouTube, uh make two videos a week for two years. Right, that's 200 videos. And do not look at the metrics till then. Just do not. And this feeds into another piece of advice I give creators: that do something because you love it. Right? Don't get into that race to the bottom of where is a hole in the market, what do people want? What is trending? How can I please the algorithm? You know, when you do that, you lose your uniqueness. And if there is one thing that sets each of us apart from everyone else in the world, You know, it is us. You know, the only thing that separates me from the 8 billion people on this planet is me. So we have to be true to ourselves, do something we love, and we have to do it again and again and again. Only iteration takes you to excellence. So that is sort of uh like if I had to sum it up, uh the excellent Nike slogan, just do it. I like that. You know, that works for me. That uh have a bias towards action and you know, don't procrastinate too much. Just get out there, get the job done.",
-      "words": [
+        },
         {
           "word": "one",
           "startTime": 373.06,
@@ -5807,7 +5751,15 @@
           "startTime": 373.3,
           "endTime": 373.46,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 373.46,
+      "endTime": 667.77,
+      "text": "the things that I talk about when I talk to my writing students in the writing course I teach or when I'm to talk to w which I find has helped me a lot is understanding the trade-off between getting it done and getting it right. So whenever you embark upon any venture, you face this trade-off. And I have a bias towards action. I have a bias towards getting it done. Right. Uh i in the context of writing, I would say the first draft is where you get it done. Take a dump of the brain. Right. And I'll we'll probably do another video at some point on writing advice and writing processes and all of that. I won't go into that now. But With everything we do in life, there is this trade-off between getting it done and getting it right. And my point is that you have to get it done. Too often what we do is, uh, you know, we let the perfect be the enemy of the good. Or, uh, as policymakers would say, or in the words of uh my good friend Vinesitapati in his first episode with me, we had a one-hour discussion on writing. He said, Never let perfection be the enemy of production. Right. And to me, production is super important and it's not even a binary. How do you get it done? You get something done by uh how do you get something right? I'm sorry, you get something right by getting it done again and again and again. That's the first thing that you have to do. Think of Rodin. When Rodin conceived of the thinker, he didn't fashion it out of thin air. He took a block of stone and he edited the block of stone. And the what I say is that when you write a first draft, for example, you have that block of stone. And then you can work on getting it right, but you have to get it done first. I remember this famous experiment. I've if I remember uh exactly what it is, I'll link it from the show notes if I find it. Where um Uh a group of people was split into two halves. One half was told they have to make a pot at the end of a week, and they had the week to research how to make the pot and how to plan it and all of that. And the other group was told, make as many pots as you want, just go. Right? So the first group had a week to research the perfect um the pot, maybe to do online Coursera courses, how you know the art of clear pottery or whatever. And uh you read books about it, intellectually understand what makes for a perfect pot. The other group didn't have to bother with all this, they just had to get it done again and again and again. The best spots came from the second group, which just went out there, which iterated, which which got the job done. Another example I like to uh sort of give my writing students and my podcasting students also is something that I learned from Ali Abdal. Ali Abdal is this great YouTuber, does productivity videos, recommend him highly. When Ali Abdal reached a million subscribers, he did a video where he showed this fantastic graph that you see now. Right. This is a graph of his user base and how it grew over time. And as you can see, one, it's an exponential growth. But the most important point here is as he points out, is that after half a year, that's twenty six weeks, he made two videos a week. He reached his fiftieth video. That's when he reached his thousand subscribers. We already passed thousand subscribers already, but um well before this we were we were really lucky. But his point was that if I was going to be motivated by my subscriber count when I had a thousand subscribers, you know, no one would survive half a year before that because we all get into something and creators tend to overestimate the short term and underestimate the long term. Both are important. And so we tend to overestimate the short term. We think alright, we'll make a YouTube show, we'll have a million subs, we'll you know, we'll make so much money, blah, blah, blah. The point is it never happens because whenever you start something, You suck at the start. This is a fact of life. How do you get better? You get better by doing it again and again. If you are driven by validation, Then you will not get that validation because you suck and you'll stop doing it and you'll never get good. If you want to get good at some level, you have to ignore validation. You have to ignore the fact that you're bad at a particular point in time and you just have to plow ahead. There's another video by Ali Abdal which I love, which I'll again link from the show notes, where he gives advice to creators and he says, if you are on YouTube, and Ajaisha, I want you to listen to this carefully because it applies to us. And he says, if you are on YouTube, uh make two videos a week for two years. Right, that's 200 videos. And do not look at the metrics till then. Just do not. And this feeds into another piece of advice I give creators: that do something because you love it. Right? Don't get into that race to the bottom of where is a hole in the market, what do people want? What is trending? How can I please the algorithm? You know, when you do that, you lose your uniqueness. And if there is one thing that sets each of us apart from everyone else in the world, You know, it is us. You know, the only thing that separates me from the 8 billion people on this planet is me. So we have to be true to ourselves, do something we love, and we have to do it again and again and again. Only iteration takes you to excellence. So that is sort of uh like if I had to sum it up, uh the excellent Nike slogan, just do it. I like that. You know, that works for me. That uh have a bias towards action and you know, don't procrastinate too much. Just get out there, get the job done.",
+      "words": [
         {
           "word": "the",
           "startTime": 373.46,
@@ -12413,8 +12365,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 668.24,
-      "endTime": 789.47,
-      "text": "I want to say two, three things uh in this connection. Uh you were absolutely right in that we each of us go through a process of iterative refinement and we get better. However, it does also require a sense of a gradient of a hill that you're climbing, and it is possible to just keep doing the same thing over and over and being bad at it every single time. So if you ask me. A singular feature of the Indian labor market is that there's a large amount of very low quality people and very low quality output. Uh we celebrate and venerate double quotes Jugad, which to me is just a fancy name given for people who do things really badly and are willing to just let it go and have never achieved that perfectionism. So I just want to temper your sentences, you are taking for granted something that needs to also be explicitly stated side by side, which is that we have that inner struggle and that sense of quality. And you know, speaking for me, I feel that m my role in a lot of what I have done uh in India around me has just been to push those standards to say, no, this ain't good enough. Can we try harder? Can we try harder? And actually there are miracles of quality that can be achieved. And you know, at some point we will discuss uh these questions like credentialism. You don't need to be an IIT guy. There's all kinds of people who are capable of amazing things. But I feel that there is a need to wake up on the subject of quality and perfectionism. You need that also. And then we should not be paralyzed by that perfectionism. And in this, I want to talk about a story of you and me. In some sense, you and I are more than a year into the discussion of this show. Okay. So remember, by the time we were in Udaipur, we were like quite clear that this is going to happen and we were debating names for the",
+      "endTime": 789.87,
+      "text": "I want to say two, three things uh in this connection. Uh you were absolutely right in that we each of us go through a process of iterative refinement and we get better. However, it does also require a sense of a gradient of a hill that you're climbing, and it is possible to just keep doing the same thing over and over and being bad at it every single time. So if you ask me. A singular feature of the Indian labor market is that there's a large amount of very low quality people and very low quality output. Uh we celebrate and venerate double quotes Jugad, which to me is just a fancy name given for people who do things really badly and are willing to just let it go and have never achieved that perfectionism. So I just want to temper your sentences, you are taking for granted something that needs to also be explicitly stated side by side, which is that we have that inner struggle and that sense of quality. And you know, speaking for me, I feel that m my role in a lot of what I have done uh in India around me has just been to push those standards to say, no, this ain't good enough. Can we try harder? Can we try harder? And actually there are miracles of quality that can be achieved. And you know, at some point we will discuss uh these questions like credentialism. You don't need to be an IIT guy. There's all kinds of people who are capable of amazing things. But I feel that there is a need to wake up on the subject of quality and perfectionism. You need that also. And then we should not be paralyzed by that perfectionism. And in this, I want to talk about a story of you and me. In some sense, you and I are more than a year into the discussion of this show. Okay. So remember, by the time we were in Udaipur, we were like quite clear that this is going to happen and we were debating names for the show and so",
       "words": [
         {
           "word": "I",
@@ -14557,15 +14509,7 @@
           "startTime": 789.39,
           "endTime": 789.47,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 789.47,
-      "endTime": 791.95,
-      "text": "show and so on. That's August 2022. Yeah. And",
-      "words": [
+        },
         {
           "word": "show",
           "startTime": 789.47,
@@ -14583,7 +14527,15 @@
           "startTime": 789.79,
           "endTime": 789.87,
           "confidence": 0.9966
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 789.87,
+      "endTime": 793.89,
+      "text": "on. That's August 2022. Yeah. And that was a long time ago. And",
+      "words": [
         {
           "word": "on.",
           "startTime": 789.87,
@@ -14619,15 +14571,7 @@
           "startTime": 791.79,
           "endTime": 791.95,
           "confidence": 0.9605
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 791.95,
-      "endTime": 845.31,
-      "text": "that was a long time ago. And In a way, we could have jumped in with something messy, and every time we try to encourage each each other, like you know, shut up and get this going. And we didn't. Okay. We just yearned and yearned for Vertical. It's like, where would we be without Vertica? And uh it took us a long time to think it through and put all the pieces together, and then we got to app one. And I don't want to remotely pretend that we are done. We have a lot of learning to go. We'll make it better. I don't want to act cocky. But I just want to observe that actually you and I took a long time to get to Ep One because we had some dreams of quality and perfectionism in our minds. And we felt that our Jugaru, you know, messy Indian way of getting along and getting started didn't actually uh cut the bar. I'll I'll push back on that. And I'll",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 791.95,
@@ -14669,7 +14613,15 @@
           "startTime": 793.39,
           "endTime": 793.89,
           "confidence": 0.7856
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 794.29,
+      "endTime": 846.19,
+      "text": "In a way, we could have jumped in with something messy, and every time we try to encourage each each other, like you know, shut up and get this going. And we didn't. Okay. We just yearned and yearned for Vertical. It's like, where would we be without Vertica? And uh it took us a long time to think it through and put all the pieces together, and then we got to app one. And I don't want to remotely pretend that we are done. We have a lot of learning to go. We'll make it better. I don't want to act cocky. But I just want to observe that actually you and I took a long time to get to Ep One because we had some dreams of quality and perfectionism in our minds. And we felt that our Jugaru, you know, messy Indian way of getting along and getting started didn't actually uh cut the bar. I'll I'll push back on that. And I'll push back on that by",
+      "words": [
         {
           "word": "In",
           "startTime": 794.29,
@@ -15665,15 +15617,7 @@
           "startTime": 845.15,
           "endTime": 845.31,
           "confidence": 0.9961
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 845.31,
-      "endTime": 908.31,
-      "text": "push back on that by saying that. Um, you know, yes, Abraham Lincoln said, If you give me six hours to chop a tree, I'll spend five hours uh sharpening the axe, so preparation is required. However, all of this time between August last year and when we started the show, it wasn't as if we were preparing and sharpening the axe. We were proc I was procrastinating, not getting the job done, not doing any prep. We are s so we we are lucky that I was chatting with a producer friend of ours, Batika, and um we said, Hey, while you know, and and suddenly this brainstorming happened at Hey, you know, she's a professional, we can get her to do it, and that kick starts the whole thing, and then once it has momentum, we can figure it out. Um, but I would still say that we should have started when we conceived of it, not waited for too long, especially since it's YouTube. Like when I think back on my blogging days, you know, when I uh did India Uncut in the YOTEs. Now, of course, it's just a repository for my published pieces. But when I uh blogged, for those who don't know, around circa 2003-2004, I started a blog called India Uncut, became madly popular. I do five posts a day. So in the five years that I was active, I did about 8,000 posts. And the thing",
-      "words": [
+        },
         {
           "word": "push",
           "startTime": 845.31,
@@ -15703,7 +15647,15 @@
           "startTime": 846.03,
           "endTime": 846.19,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 846.19,
+      "endTime": 960.95,
+      "text": "saying that. Um, you know, yes, Abraham Lincoln said, If you give me six hours to chop a tree, I'll spend five hours uh sharpening the axe, so preparation is required. However, all of this time between August last year and when we started the show, it wasn't as if we were preparing and sharpening the axe. We were proc I was procrastinating, not getting the job done, not doing any prep. We are s so we we are lucky that I was chatting with a producer friend of ours, Batika, and um we said, Hey, while you know, and and suddenly this brainstorming happened at Hey, you know, she's a professional, we can get her to do it, and that kick starts the whole thing, and then once it has momentum, we can figure it out. Um, but I would still say that we should have started when we conceived of it, not waited for too long, especially since it's YouTube. Like when I think back on my blogging days, you know, when I uh did India Uncut in the YOTEs. Now, of course, it's just a repository for my published pieces. But when I uh blogged, for those who don't know, around circa 2003-2004, I started a blog called India Uncut, became madly popular. I do five posts a day. So in the five years that I was active, I did about 8,000 posts. And the thing there was that there was no anxiety about getting it perfect. It was me thinking aloud. And a lot of that writing will be embarrassing to me. But a lot of it is part of a journey I had to make to become a better writer and to become a better thinker. So I would still advise anyone that uh, you know, when in doubt, just jump. Just do it. Obviously, you don't immediately just want to, you know, you and I are brainstorming over beer and then we immediately shoot the first episode on our mobile phone. You don't want to be that quick about it. You want to put a little thought into it. I watched hundreds of videos, figured out what equipment I need to buy. I bought that equipment. I was also planning to do a solo vlog. I haven't started yet. So, sure, you know, all of that is um uh there, but I would still say that it's important to have a bias for action. However, In my next piece of advice to everyone who's listening, uh, I also want to say it at some times, just do it, doesn't quite cut",
+      "words": [
         {
           "word": "saying",
           "startTime": 846.19,
@@ -17137,15 +17089,7 @@
           "startTime": 907.75,
           "endTime": 908.31,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 908.31,
-      "endTime": 909.83,
-      "text": "there was that",
-      "words": [
+        },
         {
           "word": "there",
           "startTime": 908.31,
@@ -17163,15 +17107,7 @@
           "startTime": 909.51,
           "endTime": 909.83,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 909.83,
-      "endTime": 960.95,
-      "text": "there was no anxiety about getting it perfect. It was me thinking aloud. And a lot of that writing will be embarrassing to me. But a lot of it is part of a journey I had to make to become a better writer and to become a better thinker. So I would still advise anyone that uh, you know, when in doubt, just jump. Just do it. Obviously, you don't immediately just want to, you know, you and I are brainstorming over beer and then we immediately shoot the first episode on our mobile phone. You don't want to be that quick about it. You want to put a little thought into it. I watched hundreds of videos, figured out what equipment I need to buy. I bought that equipment. I was also planning to do a solo vlog. I haven't started yet. So, sure, you know, all of that is um uh there, but I would still say that it's important to have a bias for action. However, In my next piece of advice to everyone who's listening, uh, I also want to say it at some times, just do it, doesn't quite cut",
-      "words": [
+        },
         {
           "word": "there",
           "startTime": 909.83,
@@ -18405,8 +18341,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 969.19,
-      "endTime": 1038.42,
-      "text": "I will contradict myself for we we contain multitudes, as the great Walt Whitman once said. Here's the thing: my second slogan for this episode would be don't do it, just be it. Okay, what do I mean by this? I want you to first think of what is the best version of yourself. In fact I want you to first think what is the best version of yourself. What does that person do? That you don't do now? What does that person not do that you do uh do now? Imagine that. And I'll tell you why I'm asking you to imagine that. Too often what happens is that we think that building a habit is simply a question of deciding I am going to do this in doing it. For example, let's say I want to build a reading habit. So I say, okay, every evening between seven and eight, I'll read for an hour. Okay, so I show up tomorrow, I read for an hour, great, done it. I show up the next day, read for an hour, great, done it. Third day I kind of fall off the wagon. Fourth day I read a little bit, attention wonders, somebody is wrong on the internet, and obviously I have to correct them. And then gradually that fades away. And this affects my self-image. So I will then tell myself that yeah, I'm not a reading kind of person. I'm a Netflix kind of person, or if I'm adequately gregarious, as I'm sure you are a Netflix and chill kind of person. Right? But I tell myself I'm not a reader.",
+      "endTime": 1123.14,
+      "text": "I will contradict myself for we we contain multitudes, as the great Walt Whitman once said. Here's the thing: my second slogan for this episode would be don't do it, just be it. Okay, what do I mean by this? I want you to first think of what is the best version of yourself. In fact I want you to first think what is the best version of yourself. What does that person do? That you don't do now? What does that person not do that you do uh do now? Imagine that. And I'll tell you why I'm asking you to imagine that. Too often what happens is that we think that building a habit is simply a question of deciding I am going to do this in doing it. For example, let's say I want to build a reading habit. So I say, okay, every evening between seven and eight, I'll read for an hour. Okay, so I show up tomorrow, I read for an hour, great, done it. I show up the next day, read for an hour, great, done it. Third day I kind of fall off the wagon. Fourth day I read a little bit, attention wonders, somebody is wrong on the internet, and obviously I have to correct them. And then gradually that fades away. And this affects my self-image. So I will then tell myself that yeah, I'm not a reading kind of person. I'm a Netflix kind of person, or if I'm adequately gregarious, as I'm sure you are a Netflix and chill kind of person. Right? But I tell myself I'm not a reader. So what happened here was that I tried to do something, I failed to do it, it affected my self-image negatively and it sent me on a spiral where once I say I'm not a reader, I will stop reading and therefore that game is over. Instead, what I would recommend is think of the best version of you and what you want yourself to be. And if that best version of you includes a definition like, I'm a self-taught polymath, when I'm bored, I don't pick up the phone, I pick up a book. Now once you embrace that self-image, you know, once you own it, once you internalize it, what happens is that the good habits flow from there. Then you don't need to set a time. A time is good, but you don't need to set a time. Then when you're bored, automatically you remind yourself of who you are and you leave that phone alone and you pick up the book, right? Or the Kindle app on your phone as the case may be. But you get what I'm saying. And that creates a virtuous cycle. Where your self-image drives your habits and not the other way around. So this is something that I think about and it's actually when I think about it, I get like really low because the best version of me is very far from me. But I think owning certain aspects of it, that this is who I am. I don't need to tell myself I will read. I am a reader. If I don't read for one day, that doesn't mean anything. I am a reader, that's who I am. I will, you know, when I go to my friends' houses, the first thing I will check out is their bookshelves. Only then will I say hello to them. I don't do this, by the way. But uh, you know, so that's my second piece of advice. Don't do it, just",
       "words": [
         {
           "word": "I",
@@ -20045,15 +19981,7 @@
           "startTime": 1037.92,
           "endTime": 1038.42,
           "confidence": 0.9524
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1038.43,
-      "endTime": 1040.43,
-      "text": "So what happened here was",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1038.43,
@@ -20083,15 +20011,7 @@
           "startTime": 1040.03,
           "endTime": 1040.43,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1040.43,
-      "endTime": 1123.14,
-      "text": "that I tried to do something, I failed to do it, it affected my self-image negatively and it sent me on a spiral where once I say I'm not a reader, I will stop reading and therefore that game is over. Instead, what I would recommend is think of the best version of you and what you want yourself to be. And if that best version of you includes a definition like, I'm a self-taught polymath, when I'm bored, I don't pick up the phone, I pick up a book. Now once you embrace that self-image, you know, once you own it, once you internalize it, what happens is that the good habits flow from there. Then you don't need to set a time. A time is good, but you don't need to set a time. Then when you're bored, automatically you remind yourself of who you are and you leave that phone alone and you pick up the book, right? Or the Kindle app on your phone as the case may be. But you get what I'm saying. And that creates a virtuous cycle. Where your self-image drives your habits and not the other way around. So this is something that I think about and it's actually when I think about it, I get like really low because the best version of me is very far from me. But I think owning certain aspects of it, that this is who I am. I don't need to tell myself I will read. I am a reader. If I don't read for one day, that doesn't mean anything. I am a reader, that's who I am. I will, you know, when I go to my friends' houses, the first thing I will check out is their bookshelves. Only then will I say hello to them. I don't do this, by the way. But uh, you know, so that's my second piece of advice. Don't do it, just",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1040.43,
@@ -22053,8 +21973,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1123.14,
-      "endTime": 1150.69,
-      "text": "be it. What about the image that we show the world? It could run two ways. On one hand, there is an accountability mechanism in living up to that image. On the other hand, it could be the source of a nightmare of imposter syndrome. So What is the right balance of putting up something idealized in front of the world and then feeling the pressure to live up to it? Or Once again collapsing because that's a bridge too",
+      "endTime": 1151.17,
+      "text": "be it. What about the image that we show the world? It could run two ways. On one hand, there is an accountability mechanism in living up to that image. On the other hand, it could be the source of a nightmare of imposter syndrome. So What is the right balance of putting up something idealized in front of the world and then feeling the pressure to live up to it? Or Once again collapsing because that's a bridge too far.",
       "words": [
         {
           "word": "be",
@@ -22535,21 +22455,21 @@
           "startTime": 1150.45,
           "endTime": 1150.69,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1150.69,
-      "endTime": 1232.0,
-      "text": "far. That's a question that's occupied me all my life because I think the one fundamental anxiety all of us have is as human beings is the anxiety of what other people will think of us. And it really took me into middle age to kind of realize that no one is thinking of your boss. Everyone's got their heads up their own ass. No one gives a shit. Right? No one's watching you. No one is taking screenshots and waiting to put it on Twitter to shame you, or actually in my case, they are. But you know, so it's cool. And once you get past that anxiety, it then it's okay. Like I find it profoundly problematic that if we live too much of our lives on social media, Instagram, Facebook, where we compare our real selves with the projected selves of others. And where we try to project our uh our our own selves in such a way that we are in competition with those other projected selves. And that gets into a sort of a terrible kind of battle. I think at some point we need to kind of sit back and think about what do I want to be? Who is the best version of me? You know, what does that person do? What does that person not do? You know, and own that and uh uh you know, s begin sort of working towards that. And at this point I must point out that um, you know, do as I say, don't do as I do, because I struggle with these questions every day and work in progress and all of that. But it's a useful frame to think about stuff. And of course in the next piece of advice I'm going to contradict myself again. But uh before that, do you have anything to uh",
-      "words": [
+        },
         {
           "word": "far.",
           "startTime": 1150.69,
           "endTime": 1151.17,
           "confidence": 0.7181
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1151.17,
+      "endTime": 1499.97,
+      "text": "That's a question that's occupied me all my life because I think the one fundamental anxiety all of us have is as human beings is the anxiety of what other people will think of us. And it really took me into middle age to kind of realize that no one is thinking of your boss. Everyone's got their heads up their own ass. No one gives a shit. Right? No one's watching you. No one is taking screenshots and waiting to put it on Twitter to shame you, or actually in my case, they are. But you know, so it's cool. And once you get past that anxiety, it then it's okay. Like I find it profoundly problematic that if we live too much of our lives on social media, Instagram, Facebook, where we compare our real selves with the projected selves of others. And where we try to project our uh our our own selves in such a way that we are in competition with those other projected selves. And that gets into a sort of a terrible kind of battle. I think at some point we need to kind of sit back and think about what do I want to be? Who is the best version of me? You know, what does that person do? What does that person not do? You know, and own that and uh uh you know, s begin sort of working towards that. And at this point I must point out that um, you know, do as I say, don't do as I do, because I struggle with these questions every day and work in progress and all of that. But it's a useful frame to think about stuff. And of course in the next piece of advice I'm going to contradict myself again. But uh before that, do you have anything to uh add? Jumping to the third. So my third piece of uh advice for today um is don't be it, just do it. Okay, let me explain this. So I came across this great study recently by Claudia Muller and uh Carol Dweck. Again, we'll be linked from the show notes, and uh which I found out through an episode of the Huberman Lab podcast. So I will also link that from the show notes. Excellent podcast on the whole. This is a great episode. And What they found was that verbs matter, adjectives don't. Now what do I mean by this? I uh constantly in the context of writing, and we'll have a separate episode on writing at some point. I keep talking about focus on verbs, not adjectives. You know, there is this old saying of nouns, name the world, verbs activate them. Verbs are where the action is. And you want to avoid adjectives. Adjectives most of the time are lazy, they don't contain enough information. Sometimes they're necessary, but a lot of the time they're not. In this context, what do I mean? Here's a scene. What their study shows is that if you take a group of kids and you divide them into two uh uh you know two halves and you give them a common task, and then you praise one group uh based on attributes, where you tell kids, hey, you're so intelligent and etc. etc. But you praise the other half based on their effort, right? The group that is praised on their effort will continue to do better. So you tell a kid that, hey, you're so intelligent, then that person will kind of get carried away by that s sense of intelligence, there'll be a sense of entitlement or whatever the reasons are. But what the study found is that once you drive home those attributes into people, you're intelligent, you're smart, whatever, then they stop, um uh they stop doing as well in future tests. And sometimes they might even cheat. Because now that they've been told they're intelligent, they have to somehow crack the exam. Those that you grade on their effort where you say, Hey, you worked hard or hey, okay, you didn't get it, but you were persistent. I like that. Those that you grade on their effort, that is the uh where you use verbs, you tried, you worked, you persisted, you know, those are the ones that continue doing well. And move forward. And there is for me a profound lesson in this as well. And it it's a lesson that I look back with a touch of regret and sadness because I think for a lot of my life I kind of made too much of my um uh supposed intelligence and I you know, a lot of things came easy uh to me in my life just in terms of effort. If other people would have to study 20 hours for an exam, I could do it in like 20 minutes, right? And this is a great trap. Because A, you stop putting in the effort when the harder task comes because you've never gotten down to that. And B, you have this sense of entitlement often and you don't work as hard as you should. And ultimately we only improve by working hard. It's the effort that matters. So if if there are parents watching this, my advice to them would be that when you're talking to your kids, don't talk about how smart they are. Talk about uh the their values in terms of how hard they try, how persistent they are, how disciplined they are, the kind of habits they have. That's much better. That'll stay with them all their lives. But if you tell them how intelligent they are or how good looking they are and all of that, that will fail them. And and uh there are a lot of nuances to this test. Um uh you know, various uh g Battery of tests were given. There are a number of studies measuring this, and all of it bears it out that verbs matter. Like I remember an interview I read in the early 2000s, and I keep talking about this, but I've forgotten who it is. It sounds very Dravid-esque, but I it's not Dravid. It's some sports person. And I read it in the early 2000s, and I think read of so maybe somebody can find it. But uh I failed though, and I'm very good at searches. And what this this person was asked about talent, right? What was your greatest talent? And this is a top sports person. And what he said was that here's what my greatest talent was. If I would go running every day at five, but one day I wake up in the morning at five and I've got a cold and I'm not feeling well and I've achieved everything I had to, that year, my goal for the year is done, my holiday is coming up, it's raining outside, I just don't feel like going. I will still get up and go running in the rain. That's talent. And that's a beautiful story for me because we think of talent as these natural skills that you're born with, this natural genius. And if you're a sportsman, whatever that particular sport involves. But talent sometimes, uh, you know, can just be that quality which makes you dogged, which makes you go out there and do it and just get the job done.",
+      "words": [
         {
           "word": "That's",
           "startTime": 1151.17,
@@ -24415,15 +24335,7 @@
           "startTime": 1231.68,
           "endTime": 1232.0,
           "confidence": 0.9618
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1232.0,
-      "endTime": 1234.02,
-      "text": "add? Jumping to the third.",
-      "words": [
+        },
         {
           "word": "add?",
           "startTime": 1232.0,
@@ -24453,15 +24365,7 @@
           "startTime": 1233.52,
           "endTime": 1234.02,
           "confidence": 0.8077
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1239.28,
-      "endTime": 1498.85,
-      "text": "So my third piece of uh advice for today um is don't be it, just do it. Okay, let me explain this. So I came across this great study recently by Claudia Muller and uh Carol Dweck. Again, we'll be linked from the show notes, and uh which I found out through an episode of the Huberman Lab podcast. So I will also link that from the show notes. Excellent podcast on the whole. This is a great episode. And What they found was that verbs matter, adjectives don't. Now what do I mean by this? I uh constantly in the context of writing, and we'll have a separate episode on writing at some point. I keep talking about focus on verbs, not adjectives. You know, there is this old saying of nouns, name the world, verbs activate them. Verbs are where the action is. And you want to avoid adjectives. Adjectives most of the time are lazy, they don't contain enough information. Sometimes they're necessary, but a lot of the time they're not. In this context, what do I mean? Here's a scene. What their study shows is that if you take a group of kids and you divide them into two uh uh you know two halves and you give them a common task, and then you praise one group uh based on attributes, where you tell kids, hey, you're so intelligent and etc. etc. But you praise the other half based on their effort, right? The group that is praised on their effort will continue to do better. So you tell a kid that, hey, you're so intelligent, then that person will kind of get carried away by that s sense of intelligence, there'll be a sense of entitlement or whatever the reasons are. But what the study found is that once you drive home those attributes into people, you're intelligent, you're smart, whatever, then they stop, um uh they stop doing as well in future tests. And sometimes they might even cheat. Because now that they've been told they're intelligent, they have to somehow crack the exam. Those that you grade on their effort where you say, Hey, you worked hard or hey, okay, you didn't get it, but you were persistent. I like that. Those that you grade on their effort, that is the uh where you use verbs, you tried, you worked, you persisted, you know, those are the ones that continue doing well. And move forward. And there is for me a profound lesson in this as well. And it it's a lesson that I look back with a touch of regret and sadness because I think for a lot of my life I kind of made too much of my um uh supposed intelligence and I you know, a lot of things came easy uh to me in my life just in terms of effort. If other people would have to study 20 hours for an exam, I could do it in like 20 minutes, right? And this is a great trap. Because A, you stop putting in the effort when the harder task comes because you've never gotten down to that. And B, you have this sense of entitlement often and you don't work as hard as you should. And ultimately we only improve by working hard. It's the effort that matters. So if if there are parents watching this, my advice to them would be that when you're talking to your kids, don't talk about how smart they are. Talk about uh the their values in terms of how hard they try, how persistent they are, how disciplined they are, the kind of habits they have. That's much better. That'll stay with them all their lives. But if you tell them how intelligent they are or how good looking they are and all of that, that will fail them. And and uh there are a lot of nuances to this test. Um uh you know, various uh g Battery of tests were given. There are a number of studies measuring this, and all of it bears it out that verbs matter. Like I remember an interview I read in the early 2000s, and I keep talking about this, but I've forgotten who it is. It sounds very Dravid-esque, but I it's not Dravid. It's some sports person. And I read it in the early 2000s, and I think read of so maybe somebody can find it. But uh I failed though, and I'm very good at searches. And what this this person was asked about talent, right? What was your greatest talent? And this is a top sports person. And what he said was that here's what my greatest talent was. If I would go running every day at five, but one day I wake up in the morning at five and I've got a cold and I'm not feeling well and I've achieved everything I had to, that year, my goal for the year is done, my holiday is coming up, it's raining outside, I just don't feel like going. I will still get up and go running in the rain. That's talent. And that's a beautiful story for me because we think of talent as these natural skills that you're born with, this natural genius. And if you're a sportsman, whatever that particular sport involves. But talent sometimes, uh, you know, can just be that quality which makes you dogged, which makes you go out there and do it and just get the job",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1239.28,
@@ -30017,21 +29921,21 @@
           "startTime": 1498.53,
           "endTime": 1498.85,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1498.85,
-      "endTime": 1541.17,
-      "text": "done. I could not agree with you more. Uh I want to uh riff on something that we do a lot in India. At a early age we label children as smart or dumb. And that is a truly toxic thing that we do. And very often it is done around knowledge of mathematics. Okay. I am that lucky child that I just happened to blossom at the right age and suddenly everybody was painting a number on my forehead. But I've seen how harsh and stupid this is, in precisely the ways that you described, that if we are told that we are talented, then actually we're not running as hard. There's so much amazing knowledge and capability and possibilities",
-      "words": [
+        },
         {
           "word": "done.",
           "startTime": 1498.85,
           "endTime": 1499.97,
           "confidence": 0.992
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1499.97,
+      "endTime": 1640.28,
+      "text": "I could not agree with you more. Uh I want to uh riff on something that we do a lot in India. At a early age we label children as smart or dumb. And that is a truly toxic thing that we do. And very often it is done around knowledge of mathematics. Okay. I am that lucky child that I just happened to blossom at the right age and suddenly everybody was painting a number on my forehead. But I've seen how harsh and stupid this is, in precisely the ways that you described, that if we are told that we are talented, then actually we're not running as hard. There's so much amazing knowledge and capability and possibilities in everybody else. But in the relentless Indian way of sorting, we just denigrate all the others. And this is a very harmful thing. Um Nitin Pai and I are planning to write heretical things about the IIT JEEE exam and uh we should discuss that further. So I think that this is a truly important question. Uh People who work in the field of education have a very simple and important idea that different people blossom differently. There's no fixed age. It's an industrial revolution idea that we will create age-sorted classrooms, and every eight-standard child is challenged with the same curriculum and the same examinations. And that's really not a fair description of what humans are. Humans are unruly, unpredictable creatures and we all blossom in different dimensions at different rates. And the point should be to make the best of what is there rather than putting a label and then treating this as destiny. So it is really important to switch away from the word talent. It is one of the most harmful words. Instead, in my telling and I'd like to come back to this at the end, that two superpowers are curiosity and endurance. that it is that sense of purpose, it is what drives us, it is our ability to keep going. And not based on these simplistic notions of talent and not based on mundane practical goals. Because the problem with practical goals is that you'll actually achieve them.",
+      "words": [
         {
           "word": "I",
           "startTime": 1499.97,
@@ -30751,15 +30655,7 @@
           "startTime": 1540.37,
           "endTime": 1541.17,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1541.17,
-      "endTime": 1543.01,
-      "text": "in everybody else. But",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 1541.17,
@@ -30783,15 +30679,7 @@
           "startTime": 1542.69,
           "endTime": 1543.01,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1543.01,
-      "endTime": 1640.28,
-      "text": "in the relentless Indian way of sorting, we just denigrate all the others. And this is a very harmful thing. Um Nitin Pai and I are planning to write heretical things about the IIT JEEE exam and uh we should discuss that further. So I think that this is a truly important question. Uh People who work in the field of education have a very simple and important idea that different people blossom differently. There's no fixed age. It's an industrial revolution idea that we will create age-sorted classrooms, and every eight-standard child is challenged with the same curriculum and the same examinations. And that's really not a fair description of what humans are. Humans are unruly, unpredictable creatures and we all blossom in different dimensions at different rates. And the point should be to make the best of what is there rather than putting a label and then treating this as destiny. So it is really important to switch away from the word talent. It is one of the most harmful words. Instead, in my telling and I'd like to come back to this at the end, that two superpowers are curiosity and endurance. that it is that sense of purpose, it is what drives us, it is our ability to keep going. And not based on these simplistic notions of talent and not based on mundane practical goals. Because the problem with practical goals is that you'll actually achieve them.",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 1543.01,
@@ -32249,8 +32137,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1641.04,
-      "endTime": 1714.96,
-      "text": "That's that's a brilliant problem. It's like the dog that chases a car and finally catches it and whatcha gonna do then was it really worth it? And you know, uh I'd once written sort of uh a a piece about education where the metaphor I drew was with going to a supermarket. You go to a supermarket, you can choose between thousand brands of shampoo, thousand brands of biscuits, etcetera, etcetera. But in the fields that really count, we don't have that variety and that choice because markets don't for aren't allowed to function in the same way. Education being a case in point, you know, monkeys are good at climbing trees, fish are good at swimming in water. But you cannot test fish on how to climb trees. And the other point I wanna make is about this labelling. You call people intelligent, you call people stupid. And I think that that is so wrong. Because if you think about it, like I remember this great quote by I think either Christopher Hitchens or Dawkins, I forget who, who pointed out really well that uh, you know, every a everybody who believes in God is actually an atheist because they believe in one religion. There are thousands of religions there, atheists for all the other religions. Right? So in a similar sense, I I will postulate that we are all stupid, right? Uh you and I will know one or two or three things well. You pro possibly a little more than me, but nevertheless, we'll know a handful of things well. In everything",
+      "endTime": 1734.49,
+      "text": "That's that's a brilliant problem. It's like the dog that chases a car and finally catches it and whatcha gonna do then was it really worth it? And you know, uh I'd once written sort of uh a a piece about education where the metaphor I drew was with going to a supermarket. You go to a supermarket, you can choose between thousand brands of shampoo, thousand brands of biscuits, etcetera, etcetera. But in the fields that really count, we don't have that variety and that choice because markets don't for aren't allowed to function in the same way. Education being a case in point, you know, monkeys are good at climbing trees, fish are good at swimming in water. But you cannot test fish on how to climb trees. And the other point I wanna make is about this labelling. You call people intelligent, you call people stupid. And I think that that is so wrong. Because if you think about it, like I remember this great quote by I think either Christopher Hitchens or Dawkins, I forget who, who pointed out really well that uh, you know, every a everybody who believes in God is actually an atheist because they believe in one religion. There are thousands of religions there, atheists for all the other religions. Right? So in a similar sense, I I will postulate that we are all stupid, right? Uh you and I will know one or two or three things well. You pro possibly a little more than me, but nevertheless, we'll know a handful of things well. In everything else, in the vast majority of things, we are stupid. Right? And we should have A the humility to see right about ourselves, and B also the lack of arrogance not to judge others because they are not good at particular things that we value. But you know, they will be great at other things and we can learn from them. So that's a point that really resonates with me.",
       "words": [
         {
           "word": "That's",
@@ -33847,15 +33735,7 @@
           "startTime": 1714.64,
           "endTime": 1714.96,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1714.96,
-      "endTime": 1715.44,
-      "text": "else, in",
-      "words": [
+        },
         {
           "word": "else,",
           "startTime": 1714.96,
@@ -33867,15 +33747,7 @@
           "startTime": 1715.28,
           "endTime": 1715.44,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1715.44,
-      "endTime": 1734.49,
-      "text": "the vast majority of things, we are stupid. Right? And we should have A the humility to see right about ourselves, and B also the lack of arrogance not to judge others because they are not good at particular things that we value. But you know, they will be great at other things and we can learn from them. So that's a point that really resonates with me.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1715.44,
@@ -38163,8 +38035,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1916.02,
-      "endTime": 1995.97,
-      "text": "habits. Yesterday when we were speaking about CGM, I found a direct connection into this, that uh should you be on CGM all the time, nervously watching every meal, it's a lot of cognitive burden. So I feel that the literature on habits teaches us that habit formation is about two, three months at a time. So you have to put focus on one issue for about two, three months at a time. Where you're actively monitoring and then establish rules for living. Then after that, you're on autopilot, and you know, then you can go for quite a while without needing to look so hard. So I feel similarly that uh it takes focus, it makes demands on the list of things you're juggling, juggling in your head, and it does ri impose a cognitive burden. But I feel that we should fight the habit question one thing at a time, so you can't do six things at a time. You have to fight one thing at a time and it is solvable. Within two, three months you'll be in a new place. And then just like watch that out of the corner of your eye that it has turned into autopilot or has it wilted away? It should not just wilt away. It should not be a case of negligence and withering away. It should be a sustained habit, but that's not very costly after two, three months. And then you can embark on the next project of saying, I will refashion how I do this in this fashion.",
+      "endTime": 1996.45,
+      "text": "habits. Yesterday when we were speaking about CGM, I found a direct connection into this, that uh should you be on CGM all the time, nervously watching every meal, it's a lot of cognitive burden. So I feel that the literature on habits teaches us that habit formation is about two, three months at a time. So you have to put focus on one issue for about two, three months at a time. Where you're actively monitoring and then establish rules for living. Then after that, you're on autopilot, and you know, then you can go for quite a while without needing to look so hard. So I feel similarly that uh it takes focus, it makes demands on the list of things you're juggling, juggling in your head, and it does ri impose a cognitive burden. But I feel that we should fight the habit question one thing at a time, so you can't do six things at a time. You have to fight one thing at a time and it is solvable. Within two, three months you'll be in a new place. And then just like watch that out of the corner of your eye that it has turned into autopilot or has it wilted away? It should not just wilt away. It should not be a case of negligence and withering away. It should be a sustained habit, but that's not very costly after two, three months. And then you can embark on the next project of saying, I will refashion how I do this in this fashion. I want to ask",
       "words": [
         {
           "word": "habits.",
@@ -39731,15 +39603,7 @@
           "startTime": 1995.33,
           "endTime": 1995.97,
           "confidence": 0.9907
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1995.97,
-      "endTime": 1999.19,
-      "text": "I want to ask you about a habit you built and that you're glad you built.",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1995.97,
@@ -39763,7 +39627,15 @@
           "startTime": 1996.29,
           "endTime": 1996.45,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1996.45,
+      "endTime": 1999.19,
+      "text": "you about a habit you built and that you're glad you built.",
+      "words": [
         {
           "word": "you",
           "startTime": 1996.45,
@@ -41263,8 +41135,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2085.71,
-      "endTime": 2092.43,
-      "text": "Is the GTD mantra. Oh, okay. Getting things done was a David Allen book or something, wasn't it? Whatever. So uh my",
+      "endTime": 2574.99,
+      "text": "Is the GTD mantra. Oh, okay. Getting things done was a David Allen book or something, wasn't it? Whatever. So uh my tools. Uh I I want to talk about one tool in general, not because I want to recommend that tool. Uh uh in uh uh specifically, though I do recommend it, it's a great tool, but also because it's kind of helped me think about stuff and it's also an example of how the w way you work in shape the quality of your work and the c even the quantity of your work. So I use something called roam research for note taking. I keep getting asked about it, so I thought I might as well uh do a demo right now on how I use it. And I use it to prep for my episodes. I'll even show how we prepped for our last episode that we did last week on uh uh Freedom. So I'll show the notes of that if you don't mind. And uh also uh another one of our episodes. But I'll tell you a way of um taking notes when you read a book, for example. Okay, so what you see on the screen right now is a page I made for the writer Ghazala Wahab. I did this great um episode with her of the scene and the unseen on being Muslim in India, and she had written a book called Born a Muslim. So when I made notes for it, what I did was I took down all these chapter titles, what you're looking at right now, and that's my base level. Now Rome research allows nested entries. So you can just go one level deeper, deeper, deeper. For example, here I'm clicking on the introduction and here I've made a whole bunch of points, and I'm clicking on one of those points and I'm kind of going deeper into it. And um at one point, for example, I even took a note about Showdown Tell. for my uh writing students. Like for writing students I'll often tell them that um, you know, uh Uh never tell a reader something, show it to them. So instead of adjectives, use verbs. So she was writing about her grandfather, and she could have said, Oh, our grandfather was a loving man, loved his grandkids, all of that. Very banal, very generalized terms. But she brought it alive with this great sentence, which I noted down here, and you can see I'm clicking here. During winter he used to shell pine nuts during the day, so he could reward us with fistful of shell nuts in the evening. Right, a beautiful image of a grandfather spending all day shelling nuts so he can kind of give it to his kids. So anyway, so uh tons of notes for just this one chapter, as you can see. And this was her structure of the book. And for everything, I would, you know, take down um uh these pointers, uh put quotes whenever necessary. And because it's organized in this way, it allowed me to find something I want to find. Like before this, I would take notes by I'll add of like forty pages in Microsoft Word. But the problem with that is that if she mentions something like women in Islam, for example. and I'm scrolling up and down madly, you're doing control F and everything is all over the place. But here all I need to do is I need to click on that section. And if she's talking about something like double victimization, you know, I kinda click on that. If it's a quote I want to save. then I have like saved it as a quote. There's a separate quotes page where I save quotes I like. Other episodes are linked from there. So it kind of works wonderfully well. Now the next thing that I want to go to is an episode you and I did on Ukraine. So I want to talk about, you know, how the research for that panned out. So this is a page I made. Now at a surface level, there are really just sort of um three things. The first of them is really nothing. And uh so this what you see here is the uh you know the body of the thing. And I you know, I I had a bunch of general questions, I'm quoting Snyder, questions about the war, but you had a bunch of notes, which is noted here as Ajay notes. Now, here are all the chapters you have. So, guys, I want you to look at this. This is a work that Ajay put in. These are all the chapters that he prepared. And, you know, each chapter had a whole bunch of detailed notes like this with links. And uh so it is uh quite mind blowing in that sense. And you know, and I can just scroll all the way down and I can, you know, see all the chapters and at the end, uh like a good academic, even a list of sources for everything. So when you listen to that episode, You know, uh one realizes that it's not as if you decided a couple of days before the episode, let's talk about Ukraine, let me read up something. Instead, it was a lifetime's habit of reading. This was one of the rabbit holes you were interested in, and you actually kind of collated all this material together and you structured it out in this way, and we did it, and I find Rome invaluable for that. And finally, I want to come back to everything is everything, and I want to talk about the last episode. Which we titled Freedom Makes You Rich. And, you know, there again both of us did a sort of a structure where, you know, my introduction is my spiel about freedom, the Angus Madison chart. I've written that down. Pre-91 India. Now, uh some of this I didn't even use, you know. So in Ethos of the Time, for example, I have a Bhagavati quote, uh, I have, you know, uh I talk about Freedman's ninety-five memorandum. We didn't speak about it on the episode, but it's all there as expandable bullet pointers. There's a section of sort of narrow attitudes, all these different uh quotes are there. I bolded something that I, you know, wanted to be uh top of mind. And so my structure was part one pre-91 India, the the liberalization of ninety one, the lost decade, and the older days, which we actually didn't speak about much. We kind of changed the structure on the fly. And you separately wrote down your notes uh below that over here and had a whole bunch of points. And again, we didn't exactly speak about everything, but it was a good way of organizing our thought. And I I I I realized while doing that that um sort of Where I found Rome useful, uh, in both the bi-directional linking that I showed you from the quotes and also in terms of just the nested entries and the way that it flows, is that it helps me think in a more structured way. And this is really important. The form of our input and output matters. Like for example, if we are sitting and reading a physical book all day and we have nothing else to do. we'll absorb it in a particular way, our mind will flow in a particular rhythm. If we are scrolling, scrolling, swiping, swiping all day, you know, our mind will be in a much choppier rhythm. Attention spans will be shorter. And often the lives that you and I live are a combination of these two and we have to decide how to sort of apportion uh that time. Um, you know, my good friend Gotham John, in fact, at one time had this rule that between five and six in the evening is about the time that he would look at his smartphone for purposes other than phone calls. So if he's looking at Signal like you, he doesn't use WhatsApp only signal. If he's using Signal or whatever else he's doing, it'll only be in that window. If I message him at any other point in time, I should take it for granted he's not going to see it. So people decide how they're going to apportion their time. And I tried out various different tools. I think Notion is a great productivity tool, but I wanted more of uh, you know, a loosely organized uh uh sort of knowledge-taking system. Rome Research is fantastic for me, it's a game changer for me, it's based on the German system called Zettelkasten. Uh so it is a one tool that I use. Today I didn't want to talk about things that I haven't experienced viscerally or actually lived out in some way. So I didn't just want to do a you know a copy paste of advice from elsewhere. All of this is stuff I've deeply thought about, tried to implement in my life, succeeded at various points, even if at this particular time all of it isn't happening. I find Rome Research to be a game changer. Obsidian is something our friends at Takshashila, Nitinpay, Pranekutasane use really well. And uh that's free, in fact. Uh Rome is not, though that has a paid version also. So I would recommend not that you use this app or that app or whatever, but you realize that the brain is a messy instrument, right? Uh it's a messy machine, it's very impressionistic, it's not good for um knowledge gathering, for absorbing knowledge, it's it's a flawed machine. There's a course by Tiago Forte, How to Build a Second Brain, where he talks about how you use technology to augment what your brain gives you and have a second brain as it were. And uh to me that's a really interesting concept. And he hadn't discovered Rome then. I think he used Evernote as his main note taking tool and now he's learning Rome or whatever. I haven't really followed that. Many people urged him, hey, do you know, do it with Rome. Um but my advice would be this is stuff we need to think about. That all day we are taking in learnings that we do not retain. How do we do this? So one way for me is using Rome",
       "words": [
         {
           "word": "Is",
@@ -41397,15 +41269,7 @@
           "startTime": 2092.11,
           "endTime": 2092.43,
           "confidence": 0.9747
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2092.43,
-      "endTime": 2094.27,
-      "text": "tools. Uh I I want to talk",
-      "words": [
+        },
         {
           "word": "tools.",
           "startTime": 2092.43,
@@ -41447,15 +41311,7 @@
           "startTime": 2094.03,
           "endTime": 2094.27,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2094.27,
-      "endTime": 2525.3,
-      "text": "about one tool in general, not because I want to recommend that tool. Uh uh in uh uh specifically, though I do recommend it, it's a great tool, but also because it's kind of helped me think about stuff and it's also an example of how the w way you work in shape the quality of your work and the c even the quantity of your work. So I use something called roam research for note taking. I keep getting asked about it, so I thought I might as well uh do a demo right now on how I use it. And I use it to prep for my episodes. I'll even show how we prepped for our last episode that we did last week on uh uh Freedom. So I'll show the notes of that if you don't mind. And uh also uh another one of our episodes. But I'll tell you a way of um taking notes when you read a book, for example. Okay, so what you see on the screen right now is a page I made for the writer Ghazala Wahab. I did this great um episode with her of the scene and the unseen on being Muslim in India, and she had written a book called Born a Muslim. So when I made notes for it, what I did was I took down all these chapter titles, what you're looking at right now, and that's my base level. Now Rome research allows nested entries. So you can just go one level deeper, deeper, deeper. For example, here I'm clicking on the introduction and here I've made a whole bunch of points, and I'm clicking on one of those points and I'm kind of going deeper into it. And um at one point, for example, I even took a note about Showdown Tell. for my uh writing students. Like for writing students I'll often tell them that um, you know, uh Uh never tell a reader something, show it to them. So instead of adjectives, use verbs. So she was writing about her grandfather, and she could have said, Oh, our grandfather was a loving man, loved his grandkids, all of that. Very banal, very generalized terms. But she brought it alive with this great sentence, which I noted down here, and you can see I'm clicking here. During winter he used to shell pine nuts during the day, so he could reward us with fistful of shell nuts in the evening. Right, a beautiful image of a grandfather spending all day shelling nuts so he can kind of give it to his kids. So anyway, so uh tons of notes for just this one chapter, as you can see. And this was her structure of the book. And for everything, I would, you know, take down um uh these pointers, uh put quotes whenever necessary. And because it's organized in this way, it allowed me to find something I want to find. Like before this, I would take notes by I'll add of like forty pages in Microsoft Word. But the problem with that is that if she mentions something like women in Islam, for example. and I'm scrolling up and down madly, you're doing control F and everything is all over the place. But here all I need to do is I need to click on that section. And if she's talking about something like double victimization, you know, I kinda click on that. If it's a quote I want to save. then I have like saved it as a quote. There's a separate quotes page where I save quotes I like. Other episodes are linked from there. So it kind of works wonderfully well. Now the next thing that I want to go to is an episode you and I did on Ukraine. So I want to talk about, you know, how the research for that panned out. So this is a page I made. Now at a surface level, there are really just sort of um three things. The first of them is really nothing. And uh so this what you see here is the uh you know the body of the thing. And I you know, I I had a bunch of general questions, I'm quoting Snyder, questions about the war, but you had a bunch of notes, which is noted here as Ajay notes. Now, here are all the chapters you have. So, guys, I want you to look at this. This is a work that Ajay put in. These are all the chapters that he prepared. And, you know, each chapter had a whole bunch of detailed notes like this with links. And uh so it is uh quite mind blowing in that sense. And you know, and I can just scroll all the way down and I can, you know, see all the chapters and at the end, uh like a good academic, even a list of sources for everything. So when you listen to that episode, You know, uh one realizes that it's not as if you decided a couple of days before the episode, let's talk about Ukraine, let me read up something. Instead, it was a lifetime's habit of reading. This was one of the rabbit holes you were interested in, and you actually kind of collated all this material together and you structured it out in this way, and we did it, and I find Rome invaluable for that. And finally, I want to come back to everything is everything, and I want to talk about the last episode. Which we titled Freedom Makes You Rich. And, you know, there again both of us did a sort of a structure where, you know, my introduction is my spiel about freedom, the Angus Madison chart. I've written that down. Pre-91 India. Now, uh some of this I didn't even use, you know. So in Ethos of the Time, for example, I have a Bhagavati quote, uh, I have, you know, uh I talk about Freedman's ninety-five memorandum. We didn't speak about it on the episode, but it's all there as expandable bullet pointers. There's a section of sort of narrow attitudes, all these different uh quotes are there. I bolded something that I, you know, wanted to be uh top of mind. And so my structure was part one pre-91 India, the the liberalization of ninety one, the lost decade, and the older days, which we actually didn't speak about much. We kind of changed the structure on the fly. And you separately wrote down your notes uh below that over here and had a whole bunch of points. And again, we didn't exactly speak about everything, but it was a good way of organizing our thought. And I I I I realized while doing that that um sort of Where I found Rome useful, uh, in both the bi-directional linking that I showed you from the quotes and also in terms of just the nested entries and the way that it flows, is that it helps me think in a more structured way. And this is really important. The form of our input and output matters. Like for example, if we are sitting and reading a physical book all day and we have nothing else to do. we'll absorb it in a particular way, our mind will flow in a particular rhythm. If we are scrolling, scrolling, swiping, swiping all day, you know, our mind will be in a much choppier rhythm. Attention spans will be shorter. And often the lives that you and I live are a combination of these two and we have to decide how to sort of apportion uh that time. Um, you know, my good friend Gotham John, in fact, at one time had this rule that between five and six in the evening is about the time that he would look at his smartphone for purposes other than phone calls. So if he's looking at Signal like you, he doesn't use WhatsApp only signal. If he's using Signal or whatever else he's doing, it'll only be in that window. If I message him at any other point in time, I should take it for granted he's not going to see it. So people decide how they're going to apportion their time. And I tried out various different tools. I think Notion is a great productivity tool, but I wanted more of uh, you know, a loosely organized uh uh sort of knowledge-taking system. Rome Research is fantastic for me, it's a game changer for me, it's based on the German system called Zettelkasten. Uh so it is a one tool that I use. Today I didn't want to talk about things that I haven't experienced viscerally or actually lived out in some way. So I didn't just want to do a you know a copy paste of advice from elsewhere. All of this is stuff I've deeply thought about, tried to implement in my life, succeeded at various points, even if at this particular time all of it isn't happening. I find Rome Research to be a game changer. Obsidian is something our friends at Takshashila, Nitinpay, Pranekutasane use really well. And uh that's free, in fact. Uh Rome is not, though that has a paid version also.",
-      "words": [
+        },
         {
           "word": "about",
           "startTime": 2094.27,
@@ -50821,15 +50677,7 @@
           "startTime": 2524.8,
           "endTime": 2525.3,
           "confidence": 0.8795
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2525.62,
-      "endTime": 2527.14,
-      "text": "So I would recommend",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2525.62,
@@ -50853,15 +50701,7 @@
           "startTime": 2526.5,
           "endTime": 2527.14,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2527.14,
-      "endTime": 2574.99,
-      "text": "not that you use this app or that app or whatever, but you realize that the brain is a messy instrument, right? Uh it's a messy machine, it's very impressionistic, it's not good for um knowledge gathering, for absorbing knowledge, it's it's a flawed machine. There's a course by Tiago Forte, How to Build a Second Brain, where he talks about how you use technology to augment what your brain gives you and have a second brain as it were. And uh to me that's a really interesting concept. And he hadn't discovered Rome then. I think he used Evernote as his main note taking tool and now he's learning Rome or whatever. I haven't really followed that. Many people urged him, hey, do you know, do it with Rome. Um but my advice would be this is stuff we need to think about. That all day we are taking in learnings that we do not retain. How do we do this? So one way for me is using Rome",
-      "words": [
+        },
         {
           "word": "not",
           "startTime": 2527.14,
@@ -52931,8 +52771,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2638.91,
-      "endTime": 2666.32,
-      "text": "powerful tool as well. And what I would say is I'm really too lagnostic. In fact, a little fantasy I had a while back is I was thinking about my workflows. And I was thinking, okay, I use Rome for note-taking. I do need something else for productivity. Uh you know, Notion is a great app. I haven't really started using it. When I try to write a book or a screenplay, you know, you've got Final Draft for screenplays, you've got uh Scrivener for writing books and all of that. And all of these I find are, you",
+      "endTime": 2686.15,
+      "text": "powerful tool as well. And what I would say is I'm really too lagnostic. In fact, a little fantasy I had a while back is I was thinking about my workflows. And I was thinking, okay, I use Rome for note-taking. I do need something else for productivity. Uh you know, Notion is a great app. I haven't really started using it. When I try to write a book or a screenplay, you know, you've got Final Draft for screenplays, you've got uh Scrivener for writing books and all of that. And all of these I find are, you know, useful pocket calculators. Which could be Swiss knives or even smartphones in terms of capabilities if you augment them a little bit. So one little fantasy I've had ki kabi me up na banga because I have a sense of what is missing in all of these and that can be done. So who knows maybe I can do it one day and I'll get GPT-4 or GPT-5 to code it for me.",
       "words": [
         {
           "word": "powerful",
@@ -53527,15 +53367,7 @@
           "startTime": 2666.0,
           "endTime": 2666.32,
           "confidence": 0.9965
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2666.32,
-      "endTime": 2668.26,
-      "text": "know, useful pocket calculators.",
-      "words": [
+        },
         {
           "word": "know,",
           "startTime": 2666.32,
@@ -53559,15 +53391,7 @@
           "startTime": 2667.76,
           "endTime": 2668.26,
           "confidence": 0.9064
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2669.03,
-      "endTime": 2686.15,
-      "text": "Which could be Swiss knives or even smartphones in terms of capabilities if you augment them a little bit. So one little fantasy I've had ki kabi me up na banga because I have a sense of what is missing in all of these and that can be done. So who knows maybe I can do it one day and I'll get GPT-4 or GPT-5 to code it for me.",
-      "words": [
+        },
         {
           "word": "Which",
           "startTime": 2669.03,
@@ -55553,8 +55377,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2777.33,
-      "endTime": 3077.94,
-      "text": "forth. There is a technique of getting things done, of establishing objectives and getting things done. I also think a lot about uh the sources of effort, the sources of passion. These are a very big deal. Um for each of us, we may start out being motivated by an instrumental quest for certain simple things like passing an exam or getting a job or making some money or uh the Louis Vuitton bag of the credentials that you went to X Famous University or were published by Y Famous Journal of you got to do a book talk at X Festival. Okay. These are like tangible markers. The people who go to Paris for the joy of being able to show off in front of others saying, you know, I'm so cool. I've been to Paris. Okay. That's a a very simple thing that happens to most of us. And uh my sense is that it is a weak way to organize oneself. It's it's a poor operating system, most importantly, because it actually does not harness the mind. Okay, so uh I once uh was in a talk that Rahul Dravid was doing, and uh similar to what you said, uh he said that I did not think about such in Tendulkar, I only tried to be the best Rahul Dravid that I can be. Okay, that's a nice way of putting it. So the puzzle is what can you do in the operating system to get going? Okay, how do you find the energy, the morale, the zeal to keep going? And a very big deal in this is the question of time spans and longevity. If you define yourself around the project of getting three Louis Vuitton bags of three top journal publications, then what are you going to do when you got them? Okay, so once you've finished with getting those three papers, what is the meaning of life? Those questions are extremely important, particularly given the kind of longevity there is in this world. So uh I think that the great superpower in the world is the emotional capacity for uh curiosity and endurance and all this has to be around purpose. You've got to ask yourself, why am I here? What is my reason to be here in this world? And it will never be small practical things like getting a journal paper or making some money or, you know, doing practical householdy things. It just that's the way we humans are. Um in the world of research, I know one of the most toxic pieces of advice is journal orientation, that you're supposed to channel your curiosity into getting a pub, that it's all about the pub. And that is just so d narrowing. It it switches off curiosity. But the ultimate wellsprings of life are that curiosity. So uh Faisal Azmi and I have talked about this a lot and we've often understood that the secret source is curiosity and endurance. And we need to find the purpose through which we stay clever, we stay curious and we keep running for a long, long time. And then actually we can embark on grand journeys and we can really build uh powerful pieces of knowledge and insight and understanding into the world, which can be applied in many ways. Uh I the flip side of this is that I'm skeptical about a lot of the life experience as defined in conventional careers that more or less you do the same thing over and over. So when people lead the same life over and over again when you've written ten papers and you write the eleventh, you're actually not uh breaking new ground when you live the same life over and over. It the amassing of knowledge and experience actually doesn't happen. The clock of a year is not the same year. What happens in the same year of life experience is entirely about the engines of curiosity and endurance and being willing to challenge the status quo and do things differently. Um that's a sense in which conservatives and the people who prefer order and who want to keep the world as it is are actually at a bit of a disadvantage because there is a lack of challenge, there's a lack of questioning. And then you just end up doing the same thing over and over and then time doesn't help. You could be doing thirty years of the same thing over and over, and you've actually not been on a life journey of growing and becoming a bigger and better and more interesting person and figuring out the universe in interesting ways. And figuring out the universe is ultimately the game. I mean, at the end of the tunnel, actually everything is about figuring out the universe. So I",
+      "endTime": 3076.79,
+      "text": "forth. There is a technique of getting things done, of establishing objectives and getting things done. I also think a lot about uh the sources of effort, the sources of passion. These are a very big deal. Um for each of us, we may start out being motivated by an instrumental quest for certain simple things like passing an exam or getting a job or making some money or uh the Louis Vuitton bag of the credentials that you went to X Famous University or were published by Y Famous Journal of you got to do a book talk at X Festival. Okay. These are like tangible markers. The people who go to Paris for the joy of being able to show off in front of others saying, you know, I'm so cool. I've been to Paris. Okay. That's a a very simple thing that happens to most of us. And uh my sense is that it is a weak way to organize oneself. It's it's a poor operating system, most importantly, because it actually does not harness the mind. Okay, so uh I once uh was in a talk that Rahul Dravid was doing, and uh similar to what you said, uh he said that I did not think about such in Tendulkar, I only tried to be the best Rahul Dravid that I can be. Okay, that's a nice way of putting it. So the puzzle is what can you do in the operating system to get going? Okay, how do you find the energy, the morale, the zeal to keep going? And a very big deal in this is the question of time spans and longevity. If you define yourself around the project of getting three Louis Vuitton bags of three top journal publications, then what are you going to do when you got them? Okay, so once you've finished with getting those three papers, what is the meaning of life? Those questions are extremely important, particularly given the kind of longevity there is in this world. So uh I think that the great superpower in the world is the emotional capacity for uh curiosity and endurance and all this has to be around purpose. You've got to ask yourself, why am I here? What is my reason to be here in this world? And it will never be small practical things like getting a journal paper or making some money or, you know, doing practical householdy things. It just that's the way we humans are. Um in the world of research, I know one of the most toxic pieces of advice is journal orientation, that you're supposed to channel your curiosity into getting a pub, that it's all about the pub. And that is just so d narrowing. It it switches off curiosity. But the ultimate wellsprings of life are that curiosity. So uh Faisal Azmi and I have talked about this a lot and we've often understood that the secret source is curiosity and endurance. And we need to find the purpose through which we stay clever, we stay curious and we keep running for a long, long time. And then actually we can embark on grand journeys and we can really build uh powerful pieces of knowledge and insight and understanding into the world, which can be applied in many ways. Uh I the flip side of this is that I'm skeptical about a lot of the life experience as defined in conventional careers that more or less you do the same thing over and over. So when people lead the same life over and over again when you've written ten papers and you write the eleventh, you're actually not uh breaking new ground when you live the same life over and over. It the amassing of knowledge and experience actually doesn't happen. The clock of a year is not the same year. What happens in the same year of life experience is entirely about the engines of curiosity and endurance and being willing to challenge the status quo and do things differently. Um that's a sense in which conservatives and the people who prefer order and who want to keep the world as it is are actually at a bit of a disadvantage because there is a lack of challenge, there's a lack of questioning. And then you just end up doing the same thing over and over and then time doesn't help. You could be doing thirty years of the same thing over and over, and you've actually not been on a life journey of growing and becoming a bigger and better and more interesting person and figuring out the universe in interesting ways. And figuring out the universe is ultimately the game. I mean, at the end of the tunnel, actually everything is about figuring out the universe.",
       "words": [
         {
           "word": "forth.",
@@ -60397,7 +60221,15 @@
           "startTime": 3076.29,
           "endTime": 3076.79,
           "confidence": 0.996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3077.46,
+      "endTime": 3109.7,
+      "text": "So I have a nuance to add and a question to ask. And the nuance is this, Ki boss, it is not only academics who want pubs. I was once in Europe, it was a hot sunny day, beer pinata, maybe pub dunra tayer. So not only academics, but that aside, my question for you is this. And the question is that I want you to kind of make it concrete for me and help me understand how your sense of purpose in life evolved. Like what did you want when you were twenty? And how has that kind of changed? And you know, tell me a bit about your journey if you",
+      "words": [
         {
           "word": "So",
           "startTime": 3077.46,
@@ -60409,15 +60241,7 @@
           "startTime": 3077.7,
           "endTime": 3077.94,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3077.94,
-      "endTime": 3110.26,
-      "text": "have a nuance to add and a question to ask. And the nuance is this, Ki boss, it is not only academics who want pubs. I was once in Europe, it was a hot sunny day, beer pinata, maybe pub dunra tayer. So not only academics, but that aside, my question for you is this. And the question is that I want you to kind of make it concrete for me and help me understand how your sense of purpose in life evolved. Like what did you want when you were twenty? And how has that kind of changed? And you know, tell me a bit about your journey if you can.",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 3077.94,
@@ -61083,21 +60907,21 @@
           "startTime": 3109.62,
           "endTime": 3109.7,
           "confidence": 0.9993
-        },
-        {
-          "word": "can.",
-          "startTime": 3109.7,
-          "endTime": 3110.26,
-          "confidence": 0.9465
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 3110.26,
+      "startTime": 3109.7,
       "endTime": 3147.15,
-      "text": "In certain fundamental ways, I was always at this. What happened over the years is the distractions fell away. So all the stuff I'm describing of, you know, credentialism and l having a good looking resume and things to show other people and getting the pubs and getting the books out and you know, all those good looking things you show other people. What my journey has been about understanding base instinct of trying to good look good in front of other people and pushing those aside so that I stay connected to the core and in some weird way I've basically been the same since I was a teenager.",
+      "text": "can. In certain fundamental ways, I was always at this. What happened over the years is the distractions fell away. So all the stuff I'm describing of, you know, credentialism and l having a good looking resume and things to show other people and getting the pubs and getting the books out and you know, all those good looking things you show other people. What my journey has been about understanding base instinct of trying to good look good in front of other people and pushing those aside so that I stay connected to the core and in some weird way I've basically been the same since I was a teenager.",
       "words": [
+        {
+          "word": "can.",
+          "startTime": 3109.7,
+          "endTime": 3110.26,
+          "confidence": 0.9465
+        },
         {
           "word": "In",
           "startTime": 3110.26,
@@ -61763,8 +61587,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3147.15,
-      "endTime": 3162.51,
-      "text": "You know, so it's a weird thing. A question that I sometimes ask people in our circles is of all the guests on the scene and the unseen, who do you think is most likely to win the Nobel Prize? And obviously the uh standard answer is going to be our good friend Kartak Multi Tharan, brilliant economist, and he's clearly on that track. And I remember",
+      "endTime": 3193.33,
+      "text": "You know, so it's a weird thing. A question that I sometimes ask people in our circles is of all the guests on the scene and the unseen, who do you think is most likely to win the Nobel Prize? And obviously the uh standard answer is going to be our good friend Kartak Multi Tharan, brilliant economist, and he's clearly on that track. And I remember I once told you that My honest answer would be that I my my heuristic for this is who is the most brilliant person I know. And on on my show it was don't want to embarrass you, uh but it was you. So I when I told you this, you said, No man, I'm not on that track. It's not gonna happen. And w with great sadness, I kinda agree with you. It's not gonna happen because you're not playing that game. That's a different game. And you know, people who do play that game, like Karthik doing amazing work and more power to them. But you're playing a kind of a different kind of game where you've defined purpose differently, and I find that really interesting.",
       "words": [
         {
           "word": "You",
@@ -62167,15 +61991,7 @@
           "startTime": 3162.03,
           "endTime": 3162.51,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3162.51,
-      "endTime": 3164.19,
-      "text": "I once told you that",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 3162.51,
@@ -62205,15 +62021,7 @@
           "startTime": 3163.71,
           "endTime": 3164.19,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3164.61,
-      "endTime": 3193.33,
-      "text": "My honest answer would be that I my my heuristic for this is who is the most brilliant person I know. And on on my show it was don't want to embarrass you, uh but it was you. So I when I told you this, you said, No man, I'm not on that track. It's not gonna happen. And w with great sadness, I kinda agree with you. It's not gonna happen because you're not playing that game. That's a different game. And you know, people who do play that game, like Karthik doing amazing work and more power to them. But you're playing a kind of a different kind of game where you've defined purpose differently, and I find that really interesting.",
-      "words": [
+        },
         {
           "word": "My",
           "startTime": 3164.61,
@@ -65517,8 +65325,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3334.23,
-      "endTime": 3644.47,
-      "text": "I think of productivity tools, I actually have uh a single big idea, and that big idea is Unix and the command line. Okay, so most of us uh use computers around a graphical user interface. We are used to pointing and clicking. And uh the most important operating systems in the world today are all Unix. So whether you use an Apple Macintosh or uh Google Chromebook or Android or a Kindle. or a Linux laptop, all these under the hood are actually Unix. There is only one holdout and that is Windows. But I'm after something stronger. I'm after the Unix command line. Uh you you get this black window which absolutely uh looks forbidding and you type commands into it in a command line interface. And in my view that is the most productive and most powerful environment you could be in. And I have been around computers for 40 years. I know many, many systems well. But at the end of the day, I just think that this is the most amazing tool chain that you could put together. The philosophy is there are many tools and we assemble the tools to perform a task. So if I want to dig out a fact or I want to process files in a certain way, in the Unix philosophy and the Unix command line, there are individual tools that are easy to string together. And then we get things done. So Unix is a very good way of doing work. Um in the modern world, it is fashionable to be recent and to be current. I actually think differently. Um, a lot of the old mature things are actually of very high quality. I already mentioned the editor Emacs, which has been around since the 60s. Okay, and there's a survivorship bias there, it's not easy. To have millions of passionate users in today's world saying this is the world's best editor, okay, even though it's been around forever. And the answer is that there are really great people, James Gosling, Richard Stallman, who have thought about this, have built it, have engineered it, to the point where I say to you that you know what? You could be writing hundred lines of Lisp code and building your own productivity world on top of Emacs. There is nothing like else like that in this world. So a lot of the Unix toolchain is old and mature and I consider that to be a great feature. So as an example, hiding inside that is a typesetting system called tech, which is written T-E-X, but it's pronounced tech. And tech is a professional grade typesetting system that is used by many publishers. So it's not a kindergarten thing that is a quick and dirty, you know, company newsletter thing, but actually you can typeset books. using tech, and many of the great books of the world are typeset with tech. But tech has another remarkable proposition. The main author, a man named Donald E. Knuth, honestly and truthfully lays claim to the world. He says, I believe tech is finished. Can you imagine? A software program that says, I'm finished. He says, I believe tech is finished. It has everything you would desire from a typesetting uh software And it has no recorded bugs. Now, can you imagine that level of maturity? Most of the world of software is just some rubbish layered on rubbish. Things are being torn up all the time. Things are full of bugs. There's really no great cogitation. Here you have one of the world's great thinkers who spent his whole life polishing away at building tech. And now that he's old, he says to all of us: he says, the code is all open and public. If you guys want to build something else, you're welcome to take this code. Just do me a favor after I'm gone, call it something else. He says, This is my Taj Mahal, I built this. And I believe it is complete. I do not believe there's a single feature that should be added to tech, and I believe it has no bugs. And literally there are no recorded bugs, there are no provable bug demos in tech at it any typical point in time. Once in a while a bug comes up, and when the bugs come up, Donald Knuth pays cash, he writes a check to people. Giving them a prize that you found a bug in tech. And of course, the people just put it on a frame and put it on their walls because you found a bug in tech. It is so great. It is so amazing. This is to give you a flavor of the stability, the maturity, the thinking that has gone into Unix and the command line. And also, right next to this is a whole philosophy. Unix is not just a computer tool. There is a whole Unix philosophy. There's a way of thinking, there's a way of thinking about the world. There's a way of thinking about computers. It remains the most fertile, the most powerful pathway to harnessing this volcano of possibilities. So it's not an accident. There was Unix and then there was TCP IP and there was the internet and there was the World Wide Web and all this stuff came out of that one set of ideas of Unix and the other day when you asked me who is the person who is the greatest man of the last fifty years and I said Ken Thompson because it is really his values and aesthetic sense that set this going. You know, so what",
+      "endTime": 3644.87,
+      "text": "I think of productivity tools, I actually have uh a single big idea, and that big idea is Unix and the command line. Okay, so most of us uh use computers around a graphical user interface. We are used to pointing and clicking. And uh the most important operating systems in the world today are all Unix. So whether you use an Apple Macintosh or uh Google Chromebook or Android or a Kindle. or a Linux laptop, all these under the hood are actually Unix. There is only one holdout and that is Windows. But I'm after something stronger. I'm after the Unix command line. Uh you you get this black window which absolutely uh looks forbidding and you type commands into it in a command line interface. And in my view that is the most productive and most powerful environment you could be in. And I have been around computers for 40 years. I know many, many systems well. But at the end of the day, I just think that this is the most amazing tool chain that you could put together. The philosophy is there are many tools and we assemble the tools to perform a task. So if I want to dig out a fact or I want to process files in a certain way, in the Unix philosophy and the Unix command line, there are individual tools that are easy to string together. And then we get things done. So Unix is a very good way of doing work. Um in the modern world, it is fashionable to be recent and to be current. I actually think differently. Um, a lot of the old mature things are actually of very high quality. I already mentioned the editor Emacs, which has been around since the 60s. Okay, and there's a survivorship bias there, it's not easy. To have millions of passionate users in today's world saying this is the world's best editor, okay, even though it's been around forever. And the answer is that there are really great people, James Gosling, Richard Stallman, who have thought about this, have built it, have engineered it, to the point where I say to you that you know what? You could be writing hundred lines of Lisp code and building your own productivity world on top of Emacs. There is nothing like else like that in this world. So a lot of the Unix toolchain is old and mature and I consider that to be a great feature. So as an example, hiding inside that is a typesetting system called tech, which is written T-E-X, but it's pronounced tech. And tech is a professional grade typesetting system that is used by many publishers. So it's not a kindergarten thing that is a quick and dirty, you know, company newsletter thing, but actually you can typeset books. using tech, and many of the great books of the world are typeset with tech. But tech has another remarkable proposition. The main author, a man named Donald E. Knuth, honestly and truthfully lays claim to the world. He says, I believe tech is finished. Can you imagine? A software program that says, I'm finished. He says, I believe tech is finished. It has everything you would desire from a typesetting uh software And it has no recorded bugs. Now, can you imagine that level of maturity? Most of the world of software is just some rubbish layered on rubbish. Things are being torn up all the time. Things are full of bugs. There's really no great cogitation. Here you have one of the world's great thinkers who spent his whole life polishing away at building tech. And now that he's old, he says to all of us: he says, the code is all open and public. If you guys want to build something else, you're welcome to take this code. Just do me a favor after I'm gone, call it something else. He says, This is my Taj Mahal, I built this. And I believe it is complete. I do not believe there's a single feature that should be added to tech, and I believe it has no bugs. And literally there are no recorded bugs, there are no provable bug demos in tech at it any typical point in time. Once in a while a bug comes up, and when the bugs come up, Donald Knuth pays cash, he writes a check to people. Giving them a prize that you found a bug in tech. And of course, the people just put it on a frame and put it on their walls because you found a bug in tech. It is so great. It is so amazing. This is to give you a flavor of the stability, the maturity, the thinking that has gone into Unix and the command line. And also, right next to this is a whole philosophy. Unix is not just a computer tool. There is a whole Unix philosophy. There's a way of thinking, there's a way of thinking about the world. There's a way of thinking about computers. It remains the most fertile, the most powerful pathway to harnessing this volcano of possibilities. So it's not an accident. There was Unix and then there was TCP IP and there was the internet and there was the World Wide Web and all this stuff came out of that one set of ideas of Unix and the other day when you asked me who is the person who is the greatest man of the last fifty years and I said Ken Thompson because it is really his values and aesthetic sense that set this going. You know, so what does a",
       "words": [
         {
           "word": "I",
@@ -71219,15 +71027,7 @@
           "startTime": 3644.31,
           "endTime": 3644.47,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3644.47,
-      "endTime": 3672.79,
-      "text": "does a Marathi programmer say to another Marathi programmer when he finds a flaw in a computer program? Tell me. Bug, bug. So anyway, bug is Marathi for C. You know? Uh and uh this is also fascinating that I'm going to ask you to maybe uh you know, the way I demonstrated Rome Research today, at some point in time you can uh give me and everyone who's watching uh gentle readers as you call them at the start of the episode. They are viewers and hopefully they are gentle. Gentle",
-      "words": [
+        },
         {
           "word": "does",
           "startTime": 3644.47,
@@ -71239,7 +71039,15 @@
           "startTime": 3644.71,
           "endTime": 3644.87,
           "confidence": 0.9992
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3644.87,
+      "endTime": 3704.15,
+      "text": "Marathi programmer say to another Marathi programmer when he finds a flaw in a computer program? Tell me. Bug, bug. So anyway, bug is Marathi for C. You know? Uh and uh this is also fascinating that I'm going to ask you to maybe uh you know, the way I demonstrated Rome Research today, at some point in time you can uh give me and everyone who's watching uh gentle readers as you call them at the start of the episode. They are viewers and hopefully they are gentle. Gentle readers. Good old-fashioned 19th century speak. Ha. So this is my plea to gentle readers. If gentle readers would like uh us to do that special episode on Unix where Ajay demonstrates all of it, please comment down below. Please also comment down below on what you think of the productivity advice. Do you have more productivity advice? Tell us your stories about uh, you know, how you fixed your problems in this domain. Don't forget to like and subscribe. And on that note, thank you. Thank you",
+      "words": [
         {
           "word": "Marathi",
           "startTime": 3644.87,
@@ -71779,15 +71587,7 @@
           "startTime": 3672.39,
           "endTime": 3672.79,
           "confidence": 0.9802
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3672.79,
-      "endTime": 3676.03,
-      "text": "readers. Good old-fashioned 19th century speak.",
-      "words": [
+        },
         {
           "word": "readers.",
           "startTime": 3672.79,
@@ -71823,15 +71623,7 @@
           "startTime": 3675.47,
           "endTime": 3676.03,
           "confidence": 0.9381
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3676.03,
-      "endTime": 3704.15,
-      "text": "Ha. So this is my plea to gentle readers. If gentle readers would like uh us to do that special episode on Unix where Ajay demonstrates all of it, please comment down below. Please also comment down below on what you think of the productivity advice. Do you have more productivity advice? Tell us your stories about uh, you know, how you fixed your problems in this domain. Don't forget to like and subscribe. And on that note, thank you. Thank you",
-      "words": [
+        },
         {
           "word": "Ha.",
           "startTime": 3676.03,

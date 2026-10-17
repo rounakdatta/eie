@@ -5,7 +5,7 @@
     "durationSeconds": 4817,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -1782,8 +1782,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 150.42,
-      "endTime": 205.01,
-      "text": "The best way to do this is in a historical journey. So we should go step by step and see how there was a felt need. There was a problem in the world that needed to be solved. And one by one, the solutions came. And that palimpsest of layered solutions is how we ended up in the modern finance of today. So this is actually a generic learn. It's a generic Uh knowledge technology, which is it's always important to see things in a historical context. It's very hard to understand physics if I give you a textbook. It's easier to understand physics. It actually makes sense if you play it in the journey of time, place it in history. Who were we? Where were we? What was the question that was the puzzle? And then how was that question solved? And that way, as we walk forward, suddenly it all makes sense. It becomes comprehensible. So I think that the best way is to Look at this in historical",
+      "endTime": 203.49,
+      "text": "The best way to do this is in a historical journey. So we should go step by step and see how there was a felt need. There was a problem in the world that needed to be solved. And one by one, the solutions came. And that palimpsest of layered solutions is how we ended up in the modern finance of today. So this is actually a generic learn. It's a generic Uh knowledge technology, which is it's always important to see things in a historical context. It's very hard to understand physics if I give you a textbook. It's easier to understand physics. It actually makes sense if you play it in the journey of time, place it in history. Who were we? Where were we? What was the question that was the puzzle? And then how was that question solved? And that way, as we walk forward, suddenly it all makes sense. It becomes comprehensible. So I think that the best way is to",
       "words": [
         {
           "word": "The",
@@ -2780,7 +2780,15 @@
           "startTime": 203.04,
           "endTime": 203.49,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 203.81,
+      "endTime": 206.51,
+      "text": "Look at this in historical terms.",
+      "words": [
         {
           "word": "Look",
           "startTime": 203.81,
@@ -2810,15 +2818,7 @@
           "startTime": 204.45,
           "endTime": 205.01,
           "confidence": 0.9978
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 205.01,
-      "endTime": 206.51,
-      "text": "terms.",
-      "words": [
+        },
         {
           "word": "terms.",
           "startTime": 205.01,
@@ -3194,8 +3194,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 235.12,
-      "endTime": 264.69,
-      "text": "And uh there's a famous line uh which says Wall Street tells Main Street what to do. Okay, so Main Street is a metaphor for the real sector businesses. You could be building a coffee shop, you could be a Sony Alpha camera maker, and these businesses loom large in our imagination. We think they're important. We think they are good and real and earthy. They create the things that we can touch and feel. This chair is made by a real",
+      "endTime": 327.67,
+      "text": "And uh there's a famous line uh which says Wall Street tells Main Street what to do. Okay, so Main Street is a metaphor for the real sector businesses. You could be building a coffee shop, you could be a Sony Alpha camera maker, and these businesses loom large in our imagination. We think they're important. We think they are good and real and earthy. They create the things that we can touch and feel. This chair is made by a real person. The unseen, the invisible, is what we don't see, which is the invisible levers of the financial system that creates the conditions by which the chair is made, and indeed guides self-interested people that you know what, you should be making chairs and not these antique. Uh boxes from Rajasthan from the 19th century, where frankly today nobody wants these kinds of wooden things anymore. Okay, those calls are made by the financial system. So the financial system in the term in the jargon of uh PC Mahalanabis occupies the commanding heights of the economy. He would, of course, turn in his metaphorical grave when it was put like this. But finance. is the essence of the information processing and the reasoning of the modern economy and finance sends out the incentives and then a whole bunch of people run around Building the firms, building the products and technologies that are guided by what finance",
       "words": [
         {
           "word": "And",
@@ -3688,29 +3688,13 @@
           "startTime": 264.21,
           "endTime": 264.69,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 264.69,
-      "endTime": 266.19,
-      "text": "person.",
-      "words": [
+        },
         {
           "word": "person.",
           "startTime": 264.69,
           "endTime": 266.19,
           "confidence": 0.946
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 266.29,
-      "endTime": 280.13,
-      "text": "The unseen, the invisible, is what we don't see, which is the invisible levers of the financial system that creates the conditions by which the chair is made, and indeed guides self-interested people that you know what, you should be making chairs",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 266.29,
@@ -3962,15 +3946,7 @@
           "startTime": 279.49,
           "endTime": 280.13,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 280.13,
-      "endTime": 282.07,
-      "text": "and not these antique.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 280.13,
@@ -3994,15 +3970,7 @@
           "startTime": 281.57,
           "endTime": 282.07,
           "confidence": 0.8656
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 282.96,
-      "endTime": 290.0,
-      "text": "Uh boxes from Rajasthan from the 19th century, where frankly today nobody wants these kinds of wooden",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 282.96,
@@ -4104,15 +4072,7 @@
           "startTime": 289.44,
           "endTime": 290.0,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 290.0,
-      "endTime": 291.6,
-      "text": "things anymore. Okay,",
-      "words": [
+        },
         {
           "word": "things",
           "startTime": 290.0,
@@ -4130,15 +4090,7 @@
           "startTime": 291.04,
           "endTime": 291.6,
           "confidence": 0.5662
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 291.6,
-      "endTime": 328.47,
-      "text": "those calls are made by the financial system. So the financial system in the term in the jargon of uh PC Mahalanabis occupies the commanding heights of the economy. He would, of course, turn in his metaphorical grave when it was put like this. But finance. is the essence of the information processing and the reasoning of the modern economy and finance sends out the incentives and then a whole bunch of people run around Building the firms, building the products and technologies that are guided by what finance thinks. May",
-      "words": [
+        },
         {
           "word": "those",
           "startTime": 291.6,
@@ -4672,7 +4624,15 @@
           "startTime": 327.19,
           "endTime": 327.67,
           "confidence": 0.9706
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 327.67,
+      "endTime": 353.11,
+      "text": "thinks. May I ask here that isn't there a feedback loop? Like the way you just said it, and I know you didn't mean it uh so uh simplistically, but it's not that finance well, Wall Street is guiding Main Street what to do. Wall Street is also deciding where what Main Street should do, decide, depending on what Main Street wants. Because after all, uh you know, finance will go where Finance will act on incentives and it will go where there is money to be made, right? If I",
+      "words": [
         {
           "word": "thinks.",
           "startTime": 327.67,
@@ -4684,15 +4644,7 @@
           "startTime": 328.31,
           "endTime": 328.47,
           "confidence": 0.9392
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 328.47,
-      "endTime": 353.11,
-      "text": "I ask here that isn't there a feedback loop? Like the way you just said it, and I know you didn't mean it uh so uh simplistically, but it's not that finance well, Wall Street is guiding Main Street what to do. Wall Street is also deciding where what Main Street should do, decide, depending on what Main Street wants. Because after all, uh you know, finance will go where Finance will act on incentives and it will go where there is money to be made, right? If I",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 328.47,
@@ -5232,8 +5184,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 353.11,
-      "endTime": 404.72,
-      "text": "may resort to a cricket analogy, finance is the selector. So there is a large supply of players, and finance does the choosing. And finance has to do that complex probabilistic thinking of who will deliver the right strike rate under what circumstances and finance is the selector. So Think of Main Street as throwing up a lot of possibilities that you know what, I can make headphones. You know what? I'm a company that makes electric vehicles. You know, I think that uh internal combustion engines are actually viable for 20 more years. Or you know what? I think internal combustion engines are passe, and we should right now be doing the electric transition. These are all rival views of the world. They are embodied in real sector firms. And all these real sector firms turn around and go to the great God of finance and say, fund me. And finance chooses.",
+      "endTime": 403.92,
+      "text": "may resort to a cricket analogy, finance is the selector. So there is a large supply of players, and finance does the choosing. And finance has to do that complex probabilistic thinking of who will deliver the right strike rate under what circumstances and finance is the selector. So Think of Main Street as throwing up a lot of possibilities that you know what, I can make headphones. You know what? I'm a company that makes electric vehicles. You know, I think that uh internal combustion engines are actually viable for 20 more years. Or you know what? I think internal combustion engines are passe, and we should right now be doing the electric transition. These are all rival views of the world. They are embodied in real sector firms. And all these real sector firms turn around and go to the great God of finance and say, fund me. And finance",
       "words": [
         {
           "word": "may",
@@ -6146,21 +6098,21 @@
           "startTime": 403.44,
           "endTime": 403.92,
           "confidence": 0.98
-        },
-        {
-          "word": "chooses.",
-          "startTime": 403.92,
-          "endTime": 404.72,
-          "confidence": 0.9615
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 404.72,
+      "startTime": 403.92,
       "endTime": 417.52,
-      "text": "And finance chooses based on expected value to your jargon from a previous episode that hey, I think this is the expected value of betting on electric vehicles because the demand will be so much 10 years from now. And so it is real world feeding into And these",
+      "text": "chooses. And finance chooses based on expected value to your jargon from a previous episode that hey, I think this is the expected value of betting on electric vehicles because the demand will be so much 10 years from now. And so it is real world feeding into And these",
       "words": [
+        {
+          "word": "chooses.",
+          "startTime": 403.92,
+          "endTime": 404.72,
+          "confidence": 0.9615
+        },
         {
           "word": "And",
           "startTime": 404.72,
@@ -6460,8 +6412,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 417.52,
-      "endTime": 460.58,
-      "text": "are speculative bets. And then there will be an innovator and inventor who comes along and says, Here, I have a new idea. Point they have to pass through is finance because finance has to agree that yeah this is plausible. And the greatness of finance is finance is speculative. They don't want to just be boring that I want you to have a 20-year track record. Finance knows how to bet on new ideas. Finance knows how to take chances on new people, on new ideas, on new technologies, on completely new product segments that don't exist. Finance does all this, and that is the essence that speculative. decision making inside financial firms, they're peering into the unknown and taking risk. But we just have to",
+      "endTime": 462.12,
+      "text": "are speculative bets. And then there will be an innovator and inventor who comes along and says, Here, I have a new idea. Point they have to pass through is finance because finance has to agree that yeah this is plausible. And the greatness of finance is finance is speculative. They don't want to just be boring that I want you to have a 20-year track record. Finance knows how to bet on new ideas. Finance knows how to take chances on new people, on new ideas, on new technologies, on completely new product segments that don't exist. Finance does all this, and that is the essence that speculative. decision making inside financial firms, they're peering into the unknown and taking risk. But we just have to be clear, finance chooses.",
       "words": [
         {
           "word": "are",
@@ -7224,43 +7176,19 @@
           "startTime": 460.5,
           "endTime": 460.58,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 460.58,
-      "endTime": 460.66,
-      "text": "be",
-      "words": [
+        },
         {
           "word": "be",
           "startTime": 460.58,
           "endTime": 460.66,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 460.66,
-      "endTime": 461.14,
-      "text": "clear,",
-      "words": [
+        },
         {
           "word": "clear,",
           "startTime": 460.66,
           "endTime": 461.14,
           "confidence": 0.8856
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 461.14,
-      "endTime": 477.78,
-      "text": "finance chooses. And just as the the complexity of the real world becomes more and more apparent with time, and you find the complexity increasing with globalization and new technology and all that, finance is also really different now from where it was a thousand years ago, for example. So and",
-      "words": [
+        },
         {
           "word": "finance",
           "startTime": 461.14,
@@ -7272,7 +7200,15 @@
           "startTime": 461.62,
           "endTime": 462.12,
           "confidence": 0.8726
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 462.82,
+      "endTime": 491.7,
+      "text": "And just as the the complexity of the real world becomes more and more apparent with time, and you find the complexity increasing with globalization and new technology and all that, finance is also really different now from where it was a thousand years ago, for example. So and a thousand years ago, I could possibly understand what the world of finance was. Today, you know, I will look at bonds and derivatives and different financial institutions and fintech and this and that, and I have no clue what's going on. So I want you to take me on the journey from there to here.",
+      "words": [
         {
           "word": "And",
           "startTime": 462.82,
@@ -7566,15 +7502,7 @@
           "startTime": 477.46,
           "endTime": 477.78,
           "confidence": 0.9873
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 477.78,
-      "endTime": 479.3,
-      "text": "a thousand years ago, I could",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 477.78,
@@ -7610,15 +7538,7 @@
           "startTime": 479.06,
           "endTime": 479.3,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 479.3,
-      "endTime": 482.18,
-      "text": "possibly understand what the world of finance was.",
-      "words": [
+        },
         {
           "word": "possibly",
           "startTime": 479.3,
@@ -7666,15 +7586,7 @@
           "startTime": 481.62,
           "endTime": 482.18,
           "confidence": 0.9661
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 482.18,
-      "endTime": 484.02,
-      "text": "Today, you know, I will look at bonds",
-      "words": [
+        },
         {
           "word": "Today,",
           "startTime": 482.18,
@@ -7722,15 +7634,7 @@
           "startTime": 483.54,
           "endTime": 484.02,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 484.02,
-      "endTime": 492.26,
-      "text": "and derivatives and different financial institutions and fintech and this and that, and I have no clue what's going on. So I want you to take me on the journey from there to here. Perfect. Let's",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 484.02,
@@ -7934,7 +7838,15 @@
           "startTime": 491.3,
           "endTime": 491.7,
           "confidence": 0.9027
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 491.7,
+      "endTime": 1150.28,
+      "text": "Perfect. Let's start a thousand years ago. Okay, and finance was very simple, really. It was simple money lending into people that you knew with unlimited liability. Okay, let me spell out the words. Step one, there was no arm's length transactions. If you were going to lend money to me, you really needed to know me. Okay, and second, there was unlimited liability, meaning I was on the hawk for whatever I borrowed. There was no way for me to walk away. Saying that, oops, you know what, my business failed and I'm not going to pay you. And uh it is a medieval conception that there were debtors' prisons, that people were sent to jail for failing to repay on debt. Okay. So this is a primitive notion of finance. This is where it all started. Then came uh the pressures of the modern world, the demands of the real economy. Okay, the world started becoming more complicated, and there were demands from The modern economy. Uh in Europe, the great challenge was the problem of trading with the east. Okay. Um since all digressions are allowed, I have to say that as a child, I never understood why people would be so crazy for pepper. Okay, like what's the big deal that you'll get on a ship and wander around the world with like a 25% chance of dying on every voyage. You know, I could live without pepper. I could just have salt on my omelet. It's not a crisis to not have pepper. So it's very interesting and important to ask why were the spices from the east so important that people would literally choose to die to get those spices? And the quick answer is that the agricultural carrying capacity of Europe had reached the point where you could no longer live through winter without stored meat from summer. So the population density of Europe. Had reached a level where the only way to survive in winter was by storing meat from the summer into the winter. And meat would rot. So you had exactly two choices. You would either eat rotten meat, which is subjectively not a pleasant experience, um, and you would then suffer disease and die. Uh, or you could have spices uh in order to preserve the meat. So it was that fundamental. It was life and death. Uh then in 1453 the Ottoman Empire conquered Istanbul and uh that cut off the land route for spices from Asia, importantly from India, to Europe. So 1453 is the critical year at which the great chase began, that the survival of the people of Europe needed finding a sea route to India, because the land route was cut off. And that gave us a great age of exploration. And then we started getting the ships and uh the brilliant, brilliant Portuguese systematically worked their way through uh uh the almost the edge of South America, back down the Cape of Good Hope, and then up to Madagascar, where lo and behold, they landed on a Malay. Okay, and the Malay knew how to ride the monsoon currents and get to Kore Code. Okay. So that was uh the beginning of the spice trade. Now it's important to see that well after the age of exploration, they had a very complex problem, which was it is not easy to get the ship across to India and back. So as I said, there was a 25% chance that a ship would be destroyed in a cyclone Uh attacked by pirates, something or the other would go wrong. So you would have heard the English word when my ship comes in, which is a phrase that denotes when I'm going to make tons of money, when I'm going to make it big. That's the phrase, when my ship comes in. Because if your ship came in, you were very rich. But there was a very high chance that your ship would not come in. Now this was a financial puzzle. That imagine you and I are betting a large amount of money to outfit a ship, hire a crew, send it out to India, where uh they would show up in Cori Code and they would try to sell somewheres and fill up the ship with pepper and uh cardamom and other wonders from Kerala and try to go back to Europe. But there is a 25% chance of a payoff of zero. So With a 75% chance you make it big, but with a 25% chance, you're wiped out. You lose everything. That is the kind of complexity. And it became difficult for any one individual to put in all the money required to take these very large bets. You have to remember that Europe was not very rich then. So putting together the money to build a ship and outfit a ship and hire the workers on the ship was a considerable expense compared to the low level of income of that age. In this puzzle came the first great financial innovations, the pressures to come up with financial innovations. Okay, there were two key innovations that came about in that age. A first innovation was uh the joint stock company. So instead of having one people, two people, five people pooling money, can we open up to thousands of people pooling money? So each one places a bet, takes a risk, if it works, they do well. But if it doesn't, it goes to zero. But the amount of money that has been put on the lottery is relatively small. Okay. So households are able to participate in these risky enterprises, but the bet size that each person places is something that you can afford to lose. Okay. So this was the first level of the financial innovation. So shares and share markets and trading, all that stuff began around this real sector problem that you wanted to distribute the risk of this risky project not across two, five, ten people, but across two hundred, five hundred, one thousand people. And that required the concept of shares. The second important innovation was the limited liability company. Okay, so now these companies would borrow, but they had a very peculiar concept of borrowing, which is that you know what? If it works, I'm going to pay you back. But if it doesn't, I'm just going to declare bankruptcy. And the debtors, uh, the lenders have to just grin and bear it. The lenders get nothing. They get the carcass of the company. They get nothing. They do not have the ability to go up upstream to the shareholders of the company and demand money out of them. And you see, these two things are intimately connected. I'm uh I'm buying thousand rupees of shares of Hindustan liver. Then I want my liability to end there. Then if the company goes bad, I don't expect you to come after my assets. So these two are intimately connected. That we want to create conditions for investment by large numbers of people. Then side by side with them, we have to give them limited liability. Saying, look, you're taking a risk. If it works, great. If it doesn't work at worst, your liability is limited to the amount of money that you put in at the start of the venture. Beyond that, nobody's going to come after you for anything else. Okay? And At this stage itself, what you've got is deep and powerful financial innovations. And if I may say, these have not crept deep into the Indian mind yet. You will endlessly find important people, powerful people in India making rookie mistakes around these things. For example, regulators get unhappy when the price of a share goes to zero. Okay, but hey, that is risk. That is the meaning of being an equity market. You will lose money. Every now and then a business will go bad and you will lose money. So this notion of consumer protection that we want to make sure that people don't make losses. This is just ignorance on the part of the policymakers and the journalists and a whole bunch of people who whine when an enterprise fails and shareholders get wiped out. Well, go on into the story of the debt. Every now and then an enterprise will fail. It is normal, it is healthy. In any normal capitalistic economy, it should be that people try things and firms fail. If you're not missing any flights, you're going to early. Okay? It is in the nature of modern capitalism that you're going to try many things and some will fail. And failure is normal and failure is healthy. But in India, we somehow have this notion that when a company fails to pay on its debts. the lenders feel entitled to bubble up to the promoter and say, but the promoter is rich and I will demand money from the promoter. And this is just wrong. That's violating the essence of the concept of a limited liability company. So in Indian populism, you will very readily hear people saying things like There are poor companies, but there is never a poor promoter. Or the company has failed to pay back on its debt, but the promoter is uh living the high life in town, driving around in a Mercedes Benz, being photographed on the beach in Goa. This is just populism. There is absolutely nothing wrong in the legal structure of a limited liability company. The company borrows. You don't want to lend to the company, you don't lend to the company. You make your call, you figure out. Is this a risk that is acceptable? But then after that, it stops there. That it is normal and okay for the equity guys to lose everything when a company fails. And it is normal and okay for the debt guys to lose a lot because they'll get the carcass of the company, they'll get some recovery rates. I find it striking that 17th century business and commercial concepts in the UK. in many ways are missing in India today. You find so many people who slip into this populist notions of hating the promoters, the of uh going after helping the small guy who has lost money when a company went bankrupt. So I digress, but the point I want to make is how amazing these concepts were, how remarkable these concepts were, and that we should respect the cultural capability of a society. to rebuild these relationships to go away from the old world of unlimited liability and debtor's prison to this new world of limited liability and a coldness that look we'll take risks Things will go wrong. Sometimes lenders will lose money, sometimes shareholders will lose money. It's part of the game. That's how we organize ourselves as society to mobilize large pools of money and take risks in complex",
+      "words": [
         {
           "word": "Perfect.",
           "startTime": 491.7,
@@ -7946,15 +7858,7 @@
           "startTime": 492.02,
           "endTime": 492.26,
           "confidence": 0.9267
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 492.26,
-      "endTime": 536.44,
-      "text": "start a thousand years ago. Okay, and finance was very simple, really. It was simple money lending into people that you knew with unlimited liability. Okay, let me spell out the words. Step one, there was no arm's length transactions. If you were going to lend money to me, you really needed to know me. Okay, and second, there was unlimited liability, meaning I was on the hawk for whatever I borrowed. There was no way for me to walk away. Saying that, oops, you know what, my business failed and I'm not going to pay you. And uh it is a medieval conception that there were debtors' prisons, that people were sent to jail for failing to repay on debt. Okay. So this is a primitive notion of finance. This is where it all",
-      "words": [
+        },
         {
           "word": "start",
           "startTime": 492.26,
@@ -8764,29 +8668,13 @@
           "startTime": 536.12,
           "endTime": 536.44,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 536.44,
-      "endTime": 537.94,
-      "text": "started.",
-      "words": [
+        },
         {
           "word": "started.",
           "startTime": 536.44,
           "endTime": 537.94,
           "confidence": 0.962
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 537.96,
-      "endTime": 555.41,
-      "text": "Then came uh the pressures of the modern world, the demands of the real economy. Okay, the world started becoming more complicated, and there were demands from The modern economy. Uh in Europe, the great challenge was the problem of trading with the east. Okay.",
-      "words": [
+        },
         {
           "word": "Then",
           "startTime": 537.96,
@@ -9056,15 +8944,7 @@
           "startTime": 554.69,
           "endTime": 555.41,
           "confidence": 0.7364
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 555.41,
-      "endTime": 557.73,
-      "text": "Um since",
-      "words": [
+        },
         {
           "word": "Um",
           "startTime": 555.41,
@@ -9076,15 +8956,7 @@
           "startTime": 557.09,
           "endTime": 557.73,
           "confidence": 0.7472
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 557.73,
-      "endTime": 649.0,
-      "text": "all digressions are allowed, I have to say that as a child, I never understood why people would be so crazy for pepper. Okay, like what's the big deal that you'll get on a ship and wander around the world with like a 25% chance of dying on every voyage. You know, I could live without pepper. I could just have salt on my omelet. It's not a crisis to not have pepper. So it's very interesting and important to ask why were the spices from the east so important that people would literally choose to die to get those spices? And the quick answer is that the agricultural carrying capacity of Europe had reached the point where you could no longer live through winter without stored meat from summer. So the population density of Europe. Had reached a level where the only way to survive in winter was by storing meat from the summer into the winter. And meat would rot. So you had exactly two choices. You would either eat rotten meat, which is subjectively not a pleasant experience, um, and you would then suffer disease and die. Uh, or you could have spices uh in order to preserve the meat. So it was that fundamental. It was life and death. Uh then in 1453 the Ottoman Empire conquered Istanbul and uh that cut off the land route for spices from Asia, importantly from India, to Europe.",
-      "words": [
+        },
         {
           "word": "all",
           "startTime": 557.73,
@@ -10518,15 +10390,7 @@
           "startTime": 648.12,
           "endTime": 649.0,
           "confidence": 0.9628
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 649.0,
-      "endTime": 650.44,
-      "text": "So 1453",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 649.0,
@@ -10538,15 +10402,7 @@
           "startTime": 649.4,
           "endTime": 650.44,
           "confidence": 0.9491
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 650.44,
-      "endTime": 673.62,
-      "text": "is the critical year at which the great chase began, that the survival of the people of Europe needed finding a sea route to India, because the land route was cut off. And that gave us a great age of exploration. And then we started getting the ships and uh the brilliant, brilliant Portuguese systematically worked their way",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 650.44,
@@ -10894,15 +10750,7 @@
           "startTime": 673.06,
           "endTime": 673.62,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 673.62,
-      "endTime": 675.7,
-      "text": "through uh uh",
-      "words": [
+        },
         {
           "word": "through",
           "startTime": 673.62,
@@ -10920,15 +10768,7 @@
           "startTime": 675.14,
           "endTime": 675.7,
           "confidence": 0.5112
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 675.7,
-      "endTime": 703.57,
-      "text": "the almost the edge of South America, back down the Cape of Good Hope, and then up to Madagascar, where lo and behold, they landed on a Malay. Okay, and the Malay knew how to ride the monsoon currents and get to Kore Code. Okay. So that was uh the beginning of the spice trade. Now it's important to see that well after the age of exploration, they had a very complex problem, which",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 675.7,
@@ -11372,29 +11212,13 @@
           "startTime": 703.25,
           "endTime": 703.57,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 703.57,
-      "endTime": 705.07,
-      "text": "was",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 703.57,
           "endTime": 705.07,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 705.09,
-      "endTime": 729.4,
-      "text": "it is not easy to get the ship across to India and back. So as I said, there was a 25% chance that a ship would be destroyed in a cyclone Uh attacked by pirates, something or the other would go wrong. So you would have heard the English word when my ship comes in, which is a phrase that denotes when I'm going to make tons of money, when I'm going to make it",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 705.09,
@@ -11844,15 +11668,7 @@
           "startTime": 729.16,
           "endTime": 729.4,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 729.4,
-      "endTime": 732.52,
-      "text": "big. That's the phrase, when my ship",
-      "words": [
+        },
         {
           "word": "big.",
           "startTime": 729.4,
@@ -11894,15 +11710,7 @@
           "startTime": 732.2,
           "endTime": 732.52,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 732.52,
-      "endTime": 891.51,
-      "text": "comes in. Because if your ship came in, you were very rich. But there was a very high chance that your ship would not come in. Now this was a financial puzzle. That imagine you and I are betting a large amount of money to outfit a ship, hire a crew, send it out to India, where uh they would show up in Cori Code and they would try to sell somewheres and fill up the ship with pepper and uh cardamom and other wonders from Kerala and try to go back to Europe. But there is a 25% chance of a payoff of zero. So With a 75% chance you make it big, but with a 25% chance, you're wiped out. You lose everything. That is the kind of complexity. And it became difficult for any one individual to put in all the money required to take these very large bets. You have to remember that Europe was not very rich then. So putting together the money to build a ship and outfit a ship and hire the workers on the ship was a considerable expense compared to the low level of income of that age. In this puzzle came the first great financial innovations, the pressures to come up with financial innovations. Okay, there were two key innovations that came about in that age. A first innovation was uh the joint stock company. So instead of having one people, two people, five people pooling money, can we open up to thousands of people pooling money? So each one places a bet, takes a risk, if it works, they do well. But if it doesn't, it goes to zero. But the amount of money that has been put on the lottery is relatively small. Okay. So households are able to participate in these risky enterprises, but the bet size that each person places is something that you can afford to lose. Okay. So this was the first level of the financial innovation. So shares and share markets and trading, all that stuff began around this real sector problem that you wanted to distribute the risk of this risky project not across two, five, ten people, but across two hundred, five hundred, one thousand people. And that required the concept of shares. The second important innovation was the limited liability company. Okay, so now these companies would borrow, but they had a very peculiar concept of borrowing, which is that you know what? If it works, I'm going to pay you back. But if it doesn't, I'm just going to declare bankruptcy. And the debtors, uh, the lenders have to just grin and bear it. The lenders get nothing. They get the carcass of the company. They get nothing. They do not have the ability to go up",
-      "words": [
+        },
         {
           "word": "comes",
           "startTime": 732.52,
@@ -14710,15 +14518,7 @@
           "startTime": 890.87,
           "endTime": 891.51,
           "confidence": 0.995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 891.51,
-      "endTime": 893.27,
-      "text": "upstream to the",
-      "words": [
+        },
         {
           "word": "upstream",
           "startTime": 891.51,
@@ -14736,15 +14536,7 @@
           "startTime": 893.03,
           "endTime": 893.27,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 893.27,
-      "endTime": 942.87,
-      "text": "shareholders of the company and demand money out of them. And you see, these two things are intimately connected. I'm uh I'm buying thousand rupees of shares of Hindustan liver. Then I want my liability to end there. Then if the company goes bad, I don't expect you to come after my assets. So these two are intimately connected. That we want to create conditions for investment by large numbers of people. Then side by side with them, we have to give them limited liability. Saying, look, you're taking a risk. If it works, great. If it doesn't work at worst, your liability is limited to the amount of money that you put in at the start of the venture. Beyond that, nobody's going to come after you for anything else. Okay? And At this stage itself, what you've got is deep and powerful financial innovations. And if I may say, these",
-      "words": [
+        },
         {
           "word": "shareholders",
           "startTime": 893.27,
@@ -15656,15 +15448,7 @@
           "startTime": 942.23,
           "endTime": 942.87,
           "confidence": 0.882
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 942.87,
-      "endTime": 947.59,
-      "text": "have not crept deep into the Indian mind",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 942.87,
@@ -15712,15 +15496,7 @@
           "startTime": 947.27,
           "endTime": 947.59,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 947.59,
-      "endTime": 1150.28,
-      "text": "yet. You will endlessly find important people, powerful people in India making rookie mistakes around these things. For example, regulators get unhappy when the price of a share goes to zero. Okay, but hey, that is risk. That is the meaning of being an equity market. You will lose money. Every now and then a business will go bad and you will lose money. So this notion of consumer protection that we want to make sure that people don't make losses. This is just ignorance on the part of the policymakers and the journalists and a whole bunch of people who whine when an enterprise fails and shareholders get wiped out. Well, go on into the story of the debt. Every now and then an enterprise will fail. It is normal, it is healthy. In any normal capitalistic economy, it should be that people try things and firms fail. If you're not missing any flights, you're going to early. Okay? It is in the nature of modern capitalism that you're going to try many things and some will fail. And failure is normal and failure is healthy. But in India, we somehow have this notion that when a company fails to pay on its debts. the lenders feel entitled to bubble up to the promoter and say, but the promoter is rich and I will demand money from the promoter. And this is just wrong. That's violating the essence of the concept of a limited liability company. So in Indian populism, you will very readily hear people saying things like There are poor companies, but there is never a poor promoter. Or the company has failed to pay back on its debt, but the promoter is uh living the high life in town, driving around in a Mercedes Benz, being photographed on the beach in Goa. This is just populism. There is absolutely nothing wrong in the legal structure of a limited liability company. The company borrows. You don't want to lend to the company, you don't lend to the company. You make your call, you figure out. Is this a risk that is acceptable? But then after that, it stops there. That it is normal and okay for the equity guys to lose everything when a company fails. And it is normal and okay for the debt guys to lose a lot because they'll get the carcass of the company, they'll get some recovery rates. I find it striking that 17th century business and commercial concepts in the UK. in many ways are missing in India today. You find so many people who slip into this populist notions of hating the promoters, the of uh going after helping the small guy who has lost money when a company went bankrupt. So I digress, but the point I want to make is how amazing these concepts were, how remarkable these concepts were, and that we should respect the cultural capability of a society. to rebuild these relationships to go away from the old world of unlimited liability and debtor's prison to this new world of limited liability and a coldness that look we'll take risks Things will go wrong. Sometimes lenders will lose money, sometimes shareholders will lose money. It's part of the game. That's how we organize ourselves as society to mobilize large pools of money and take risks in complex",
-      "words": [
+        },
         {
           "word": "yet.",
           "startTime": 947.59,
@@ -19098,8 +18874,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1150.28,
-      "endTime": 1176.71,
-      "text": "ventures. So I want to double down on aspects of this, but uh you know, paraphrase it in simple language so you can tell me if I've understood correctly. But before that I want to say that if a history of the world is written, it could easily be called from pepper to pepper pig. I didn't understand the second. You haven't heard of Peppa Pig. I'm sorry, no. Okay, fine. What can I say? We'll I will send you links after this and introduce you to that magic. But so here's",
+      "endTime": 1193.83,
+      "text": "ventures. So I want to double down on aspects of this, but uh you know, paraphrase it in simple language so you can tell me if I've understood correctly. But before that I want to say that if a history of the world is written, it could easily be called from pepper to pepper pig. I didn't understand the second. You haven't heard of Peppa Pig. I'm sorry, no. Okay, fine. What can I say? We'll I will send you links after this and introduce you to that magic. But so here's so I'm I'll I' I'll I'll paraphrase why the innovation is important, and and you tell me if I've understood it correctly, which is that earlier you put all your money into one ship, and if that ship goes down, you're screwed, you're completely finished, and uh you can even go to debtor's prison if you borrowed money to do it. Step one,",
       "words": [
         {
           "word": "ventures.",
@@ -19652,15 +19428,7 @@
           "startTime": 1176.15,
           "endTime": 1176.71,
           "confidence": 0.8128
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1176.71,
-      "endTime": 1178.79,
-      "text": "so I'm I'll I' I'll I'll paraphrase",
-      "words": [
+        },
         {
           "word": "so",
           "startTime": 1176.71,
@@ -19702,15 +19470,7 @@
           "startTime": 1178.15,
           "endTime": 1178.79,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1178.79,
-      "endTime": 1193.83,
-      "text": "why the innovation is important, and and you tell me if I've understood it correctly, which is that earlier you put all your money into one ship, and if that ship goes down, you're screwed, you're completely finished, and uh you can even go to debtor's prison if you borrowed money to do it. Step one,",
-      "words": [
+        },
         {
           "word": "why",
           "startTime": 1178.79,
@@ -21886,8 +21646,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1282.8,
-      "endTime": 1361.04,
-      "text": "Uh there has been a decline in the quality of thinking in India that I felt that for some time people were starting to grapple with these modern concepts. But all too often these days we get this. uh relapse into these two kinds of extremes. One kind of extreme is there is the word consumer protection, which is wrongly used. Okay, like I know a lot about consumer protection and consumer protection is not the idea that the buyer of shares should not lose money. Okay. That is just the populism of people who don't understand and appreciate the world of capitalism. And the other is this idea that liability should be unlimited, that if a promoter should be fully responsible for all the borrowing of a limited liability company set up by the promoter. There should be personal guarantees by the promoter inside the company and so on. This is just an ever present populism. There's a whole new wave of investigation agencies that have now become some of the most important play in Indian finance. And these are people who really have no knowledge and experience in the world of finance. And these are the ways in which Their thinking is that thousand-year-old thinking of unlimited liability and debtors prison and attaching blame. And all progress in the",
+      "endTime": 1361.68,
+      "text": "Uh there has been a decline in the quality of thinking in India that I felt that for some time people were starting to grapple with these modern concepts. But all too often these days we get this. uh relapse into these two kinds of extremes. One kind of extreme is there is the word consumer protection, which is wrongly used. Okay, like I know a lot about consumer protection and consumer protection is not the idea that the buyer of shares should not lose money. Okay. That is just the populism of people who don't understand and appreciate the world of capitalism. And the other is this idea that liability should be unlimited, that if a promoter should be fully responsible for all the borrowing of a limited liability company set up by the promoter. There should be personal guarantees by the promoter inside the company and so on. This is just an ever present populism. There's a whole new wave of investigation agencies that have now become some of the most important play in Indian finance. And these are people who really have no knowledge and experience in the world of finance. And these are the ways in which Their thinking is that thousand-year-old thinking of unlimited liability and debtors prison and attaching blame. And all progress in the world comes from",
       "words": [
         {
           "word": "Uh",
@@ -23214,15 +22974,7 @@
           "startTime": 1360.96,
           "endTime": 1361.04,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1361.04,
-      "endTime": 1369.04,
-      "text": "world comes from people who take risks. So if you disensitive disincentivize people from taking risks, then you're sort of uh screwed. There is",
-      "words": [
+        },
         {
           "word": "world",
           "startTime": 1361.04,
@@ -23240,7 +22992,15 @@
           "startTime": 1361.52,
           "endTime": 1361.68,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1361.68,
+      "endTime": 1369.04,
+      "text": "people who take risks. So if you disensitive disincentivize people from taking risks, then you're sort of uh screwed. There is",
+      "words": [
         {
           "word": "people",
           "startTime": 1361.68,
@@ -23372,8 +23132,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1369.04,
-      "endTime": 1490.92,
-      "text": "another notion in which you fundamentally quicken the pace of capitalism by going down this route. And the idea runs like this, that the insight of modern finance is. You want a separation between the money and the ideas. So in the old world, without finance, if you have an idea, but you don't have the money, too bad. Okay, you won't be able to do anything with it. In the world of modern finance, if you have the idea, and even if you don't have the money, you're able to synthesize it, you're able to pull together equity and debt financing from other people, and then you are able to play it. And this is a recurrent theme. When we talk derivatives, we're going to come back to it. The essence of the idea is The role in shaping resource allocation in the real economy and in shaping prices in the financial economy should go to the people with the knowledge and not the people who have inherited family wealth. So that separation is a very important principle, which really quickened the pace of capitalism. The great economist John Hicks was one of the pioneers in understanding these things, and he has this beautiful observation where he says that the industrial revolution. was as much about the stock market as it was about the steam engine. So our engineering and scientific mind tends to admire the machine of the steam engine that was built by James Watt. But equally there is magic in that invisible machine of the stock market and its ways of coordinating large amounts of capital, creating incentives, dispersing risk. And creating a world of finance that is as required to build an industrial revolution. And when I was younger, I used to take these things for granted. Now that I have seen the difficulties of modern India, I feel we need to do this kind of episode because these basics are actually broken. And in so many ways, we in India are suffering from a thousand-year-old cultural",
+      "endTime": 1492.54,
+      "text": "another notion in which you fundamentally quicken the pace of capitalism by going down this route. And the idea runs like this, that the insight of modern finance is. You want a separation between the money and the ideas. So in the old world, without finance, if you have an idea, but you don't have the money, too bad. Okay, you won't be able to do anything with it. In the world of modern finance, if you have the idea, and even if you don't have the money, you're able to synthesize it, you're able to pull together equity and debt financing from other people, and then you are able to play it. And this is a recurrent theme. When we talk derivatives, we're going to come back to it. The essence of the idea is The role in shaping resource allocation in the real economy and in shaping prices in the financial economy should go to the people with the knowledge and not the people who have inherited family wealth. So that separation is a very important principle, which really quickened the pace of capitalism. The great economist John Hicks was one of the pioneers in understanding these things, and he has this beautiful observation where he says that the industrial revolution. was as much about the stock market as it was about the steam engine. So our engineering and scientific mind tends to admire the machine of the steam engine that was built by James Watt. But equally there is magic in that invisible machine of the stock market and its ways of coordinating large amounts of capital, creating incentives, dispersing risk. And creating a world of finance that is as required to build an industrial revolution. And when I was younger, I used to take these things for granted. Now that I have seen the difficulties of modern India, I feel we need to do this kind of episode because these basics are actually broken. And in so many ways, we in India are suffering from a thousand-year-old cultural baggage around basics.",
       "words": [
         {
           "word": "another",
@@ -25426,15 +25186,7 @@
           "startTime": 1490.28,
           "endTime": 1490.92,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1490.92,
-      "endTime": 1500.56,
-      "text": "baggage around basics. Let's go on to the next step of the evolution. We've got stock markets, limited liability, um, uh, you know, the joint stock company, what else? The",
-      "words": [
+        },
         {
           "word": "baggage",
           "startTime": 1490.92,
@@ -25452,7 +25204,15 @@
           "startTime": 1492.04,
           "endTime": 1492.54,
           "confidence": 0.9889
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1494.08,
+      "endTime": 1500.56,
+      "text": "Let's go on to the next step of the evolution. We've got stock markets, limited liability, um, uh, you know, the joint stock company, what else? The",
+      "words": [
         {
           "word": "Let's",
           "startTime": 1494.08,
@@ -25620,8 +25380,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1500.56,
-      "endTime": 1951.36,
-      "text": "next great thing that started happening was trading. Okay. You we've got to re remember none of this was designed. Okay, so think like evolution. Mother evolution did not design the eye, the eye evolved incrementally. So, like that. Uh in the journey, you first had the problem of the ships that go to India. That was addressed by limited liability and joint stock companies and large numbers of shareholders. But the moment you have large number of shareholders, a large number of bondholders, that very natural next step is to say, you know what? I had the shares of this ship, but for whatever reason, I don't want them anymore. Can I not sell them to you? That's a perfectly reasonable and sensible idea. And then you got trading. So then you got the stock exchange. People would start trading these claims with each other. And that was another magical advance. The key insight here is standardized fungible products that can be traded. So if we try to trade non-standard products, then it's very painful. It's like a real estate market. You know, no two flats are exactly the same, no two buildings are exactly the same, no two pieces of land are exactly the same. It's a messy artisanal market, and there's all kinds of asymmetric information and There will never be a good real estate market. But if you take a company like Infosys and cut it up into a billion shares, suddenly you've got one billion identical widgets, each of which is a share of Infosys. And they are owned and controlled by many, many different people. And they trade, and people are buying and selling those things. And you get two pieces of magic out of that. First, you get the luxury of liquidity. So the holder of the share. has complete confidence that if anything happens and I require money next week, I'll be able to sell my shark and I'll get the money with probability one. So that was a miraculous moment. Because prior to this, there were no liquid assets in the world. Everything was messy. I mean, you know, gold, Again, it's messy. Like it's not an easy matter selling gold. You have to end up having to melt it down, and there are concerns about purity. Uh anybody who has actually tried to sell jewelry at a store knows the horrendous discounts that jewellers impose upon the buyer. So there's a narrow class of gold products that can be sold at par, and that's in the modern world. In the olden days, I'm sure it was messier. There was an endless battle of adulteration of gold. So it was a revolution in world history, the idea that here's a share and I can reliably sell it tomorrow. There is no possibility that I will not be able to sell it tomorrow. And then came the institutional development of sophisticated machinery inside the exchange, so that in a few days I'll get my money with probability one. And these were Miraculous developments because they created a new concept of liquidity. Side by side with that, now suddenly there was a price. So the prices started fluctuating. So imagine when my ship gets in day by day, as my ship makes progress, as some fleeting bits of information come back, the price of the associated shares would fluctuate. So famously, uh Reuters became a very, very uh successful. Was it an organization? Was it a person? Because they used uh pigeons to be the first to transmit information from the battle of Waterloo back to London, where that information could be used for trading, because it was make or break, like would Britain win or lose in the battle of Waterloo? And they were the first people to move that information to a financial trading venue. And in India, the aunts the people will start whining saying you got unfair access to information. That was the innovation, that was their contribution, that they actually created a novel pathway to that information. And that is how that information started going into prices. So the idea of a market where many, many people speculate and there is a publicly visible price, and everybody's information is pooled into the price. And You see the price, and either you hold your peace, or if you disagree, put your money where your mouth is. You think it's too cheap, buy the stuff. You think it's too expensive, sell the stuff. Now then the innovation start tumbling along. You think it's too costly, sell the stuff. But I don't own the stuff. So how will I sell it? Great. We'll innovate. We will invent a concept of short selling, where I'll borrow the shares because I think they're too expensive. I'll sell them on the market. And if I'm right, a few days later their price will be lower. Back from the market and return it to my lender. Okay, brilliant. Now I found a way to express my view that the share is overpriced. So now I want short selling in order to express my view that the share is overpriced. So then you get that equal of freedom of speech that I can express my views if a security is too cheap, I can express my views if a security is too expensive. Once again, sadly, large numbers of important, powerful people in India will demonize the word short selling. Somehow short selling is a bad thing. And this this is failures on basic literacy around finance. These were the innovations that came around trading. So the moment you built a joint stock company, then the next stage was to start trading the fungible shares. And the moment you said trading. Then we started getting these deep concepts that I obtain liquidity and I obtain a publicly traded price. The price is visible to all, the price would appear in a newspaper. So for a negligible price, everybody knows the price, meaning you don't have to pay money to find out the price. This price is a public good. It's an information system, it's a statistical system. The whole world knows the share price of Infosys. It's a statistical system giving a dashboard. It's a readout of what's happening to Infosys today. And it can be used in many, many ways. The prices of software companies are doing very well. Maybe you'll get excited and say, you know what, I could do that. I'll start one more software company. So that's how Wall Street tells Main Street what to do. Wall Street makes these prices, and every entreprene is looking at these prices, wondering, you know what? These blokes put thousand crore to build this company, and it's turned into 5,000 crore of wealth. And that's nice. They've made 4,000 crore of wealth, starting from 1000. And that's a journey that's not hard to replicate. I could do that. So come, let's do it. Okay, that's the thought process about how looking at the share price is constantly uh engaging with the minds of entrepreneurs saying, You know what, I could do that. You know what, I could do that. Or there are bad industries where the valuation of the market is very poor. Then the market is shouting blokes. Don't do that, don't go there, don't start new companies there. This is better than the planning commission built by Mahalanabis. Okay, these are the commanding heights of the economy where private people in a self-organizing system are talking to each other every day, interacting with each other through the price system, and there is no overt coordination. But then there's a whole bunch of spectators who take that public good of the price and turn around and make their own business decisions. That do I want to build one more factory? Do I want to invest to grow a biscuit business? Do I want to invest to grow a cement business? It's all done. by looking at the God of the stock",
+      "endTime": 1952.16,
+      "text": "next great thing that started happening was trading. Okay. You we've got to re remember none of this was designed. Okay, so think like evolution. Mother evolution did not design the eye, the eye evolved incrementally. So, like that. Uh in the journey, you first had the problem of the ships that go to India. That was addressed by limited liability and joint stock companies and large numbers of shareholders. But the moment you have large number of shareholders, a large number of bondholders, that very natural next step is to say, you know what? I had the shares of this ship, but for whatever reason, I don't want them anymore. Can I not sell them to you? That's a perfectly reasonable and sensible idea. And then you got trading. So then you got the stock exchange. People would start trading these claims with each other. And that was another magical advance. The key insight here is standardized fungible products that can be traded. So if we try to trade non-standard products, then it's very painful. It's like a real estate market. You know, no two flats are exactly the same, no two buildings are exactly the same, no two pieces of land are exactly the same. It's a messy artisanal market, and there's all kinds of asymmetric information and There will never be a good real estate market. But if you take a company like Infosys and cut it up into a billion shares, suddenly you've got one billion identical widgets, each of which is a share of Infosys. And they are owned and controlled by many, many different people. And they trade, and people are buying and selling those things. And you get two pieces of magic out of that. First, you get the luxury of liquidity. So the holder of the share. has complete confidence that if anything happens and I require money next week, I'll be able to sell my shark and I'll get the money with probability one. So that was a miraculous moment. Because prior to this, there were no liquid assets in the world. Everything was messy. I mean, you know, gold, Again, it's messy. Like it's not an easy matter selling gold. You have to end up having to melt it down, and there are concerns about purity. Uh anybody who has actually tried to sell jewelry at a store knows the horrendous discounts that jewellers impose upon the buyer. So there's a narrow class of gold products that can be sold at par, and that's in the modern world. In the olden days, I'm sure it was messier. There was an endless battle of adulteration of gold. So it was a revolution in world history, the idea that here's a share and I can reliably sell it tomorrow. There is no possibility that I will not be able to sell it tomorrow. And then came the institutional development of sophisticated machinery inside the exchange, so that in a few days I'll get my money with probability one. And these were Miraculous developments because they created a new concept of liquidity. Side by side with that, now suddenly there was a price. So the prices started fluctuating. So imagine when my ship gets in day by day, as my ship makes progress, as some fleeting bits of information come back, the price of the associated shares would fluctuate. So famously, uh Reuters became a very, very uh successful. Was it an organization? Was it a person? Because they used uh pigeons to be the first to transmit information from the battle of Waterloo back to London, where that information could be used for trading, because it was make or break, like would Britain win or lose in the battle of Waterloo? And they were the first people to move that information to a financial trading venue. And in India, the aunts the people will start whining saying you got unfair access to information. That was the innovation, that was their contribution, that they actually created a novel pathway to that information. And that is how that information started going into prices. So the idea of a market where many, many people speculate and there is a publicly visible price, and everybody's information is pooled into the price. And You see the price, and either you hold your peace, or if you disagree, put your money where your mouth is. You think it's too cheap, buy the stuff. You think it's too expensive, sell the stuff. Now then the innovation start tumbling along. You think it's too costly, sell the stuff. But I don't own the stuff. So how will I sell it? Great. We'll innovate. We will invent a concept of short selling, where I'll borrow the shares because I think they're too expensive. I'll sell them on the market. And if I'm right, a few days later their price will be lower. Back from the market and return it to my lender. Okay, brilliant. Now I found a way to express my view that the share is overpriced. So now I want short selling in order to express my view that the share is overpriced. So then you get that equal of freedom of speech that I can express my views if a security is too cheap, I can express my views if a security is too expensive. Once again, sadly, large numbers of important, powerful people in India will demonize the word short selling. Somehow short selling is a bad thing. And this this is failures on basic literacy around finance. These were the innovations that came around trading. So the moment you built a joint stock company, then the next stage was to start trading the fungible shares. And the moment you said trading. Then we started getting these deep concepts that I obtain liquidity and I obtain a publicly traded price. The price is visible to all, the price would appear in a newspaper. So for a negligible price, everybody knows the price, meaning you don't have to pay money to find out the price. This price is a public good. It's an information system, it's a statistical system. The whole world knows the share price of Infosys. It's a statistical system giving a dashboard. It's a readout of what's happening to Infosys today. And it can be used in many, many ways. The prices of software companies are doing very well. Maybe you'll get excited and say, you know what, I could do that. I'll start one more software company. So that's how Wall Street tells Main Street what to do. Wall Street makes these prices, and every entreprene is looking at these prices, wondering, you know what? These blokes put thousand crore to build this company, and it's turned into 5,000 crore of wealth. And that's nice. They've made 4,000 crore of wealth, starting from 1000. And that's a journey that's not hard to replicate. I could do that. So come, let's do it. Okay, that's the thought process about how looking at the share price is constantly uh engaging with the minds of entrepreneurs saying, You know what, I could do that. You know what, I could do that. Or there are bad industries where the valuation of the market is very poor. Then the market is shouting blokes. Don't do that, don't go there, don't start new companies there. This is better than the planning commission built by Mahalanabis. Okay, these are the commanding heights of the economy where private people in a self-organizing system are talking to each other every day, interacting with each other through the price system, and there is no overt coordination. But then there's a whole bunch of spectators who take that public good of the price and turn around and make their own business decisions. That do I want to build one more factory? Do I want to invest to grow a biscuit business? Do I want to invest to grow a cement business? It's all done. by looking at the God of the stock price.",
       "words": [
         {
           "word": "next",
@@ -33704,21 +33464,21 @@
           "startTime": 1950.96,
           "endTime": 1951.36,
           "confidence": 0.9564
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1951.36,
-      "endTime": 2045.64,
-      "text": "price. The great chess player Levon Aronian once said something which I found really beautiful, where he referred to a chess game as a conversation Right, and if you think about it, it is really a conversation because in every game two people are discussing competing ideas of uh, you know, what is going on on the board. And the way you describe the stock market, and indeed any market is like that, is exactly like that. When you think about it, it it is so beautiful. It is a symphony of voices expressing opinions. And if you think a stock is too expensive and if I think a stock is too cheap, we have a trade where we both feel we are better off. And there is something so delightful there. And uh, you know, and Short selling is exactly of that nature, where you feel that hey, you guys are overvaluing it too much, I'm gonna take action and et cetera, et cetera. And it's an important part of the conversation. So you know, when people blame short sellers when things go wrong, I feel they're just shooting the messenger, uh, you know, which is um uh sort of pretty horrible. And at this point, we'll give a middle of the episode recco because you know, who can resist it, which is Frederick Hayek's great essay, The Use of Knowledge in Society, and we'll link it from the show notes, it's a masterpiece, perhaps the most important essay of the last century. It is about how prices work, that prices are information, that central planners like Prashantuda, you know, never say anything against Bengalis unless they are planners. What planners can never understand is that they simply have no way near the kind of information to run a society. But society has all of that information expressed in the beautiful system of prices.",
-      "words": [
+        },
         {
           "word": "price.",
           "startTime": 1951.36,
           "endTime": 1952.16,
           "confidence": 0.9413
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1952.16,
+      "endTime": 2045.64,
+      "text": "The great chess player Levon Aronian once said something which I found really beautiful, where he referred to a chess game as a conversation Right, and if you think about it, it is really a conversation because in every game two people are discussing competing ideas of uh, you know, what is going on on the board. And the way you describe the stock market, and indeed any market is like that, is exactly like that. When you think about it, it it is so beautiful. It is a symphony of voices expressing opinions. And if you think a stock is too expensive and if I think a stock is too cheap, we have a trade where we both feel we are better off. And there is something so delightful there. And uh, you know, and Short selling is exactly of that nature, where you feel that hey, you guys are overvaluing it too much, I'm gonna take action and et cetera, et cetera. And it's an important part of the conversation. So you know, when people blame short sellers when things go wrong, I feel they're just shooting the messenger, uh, you know, which is um uh sort of pretty horrible. And at this point, we'll give a middle of the episode recco because you know, who can resist it, which is Frederick Hayek's great essay, The Use of Knowledge in Society, and we'll link it from the show notes, it's a masterpiece, perhaps the most important essay of the last century. It is about how prices work, that prices are information, that central planners like Prashantuda, you know, never say anything against Bengalis unless they are planners. What planners can never understand is that they simply have no way near the kind of information to run a society. But society has all of that information expressed in the beautiful system of prices.",
+      "words": [
         {
           "word": "The",
           "startTime": 1952.16,
@@ -39392,8 +39152,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2241.73,
-      "endTime": 2404.92,
-      "text": "When these institutions came up, I have glossed over some of the steps. Okay, I magically presumed that when I go to the exchange and I try to sell my shares. I will surely be able to sell them. That's called a liquid market. These are not things to take for granted. And second, that the machinery of the market will work perfectly. That a few days later I will uh supply my money and I will get the share, or I will supply my share and I will get the money, that these things will work frictionlessly. So in the sense of uh the early literature on institution building, there arose these institutions of a stock exchange, of a clearinghouse. Which facilitated this safe trading between strangers. So it doesn't come out of thin air, it requires institutions. And we needed to develop that institutional complexity to be able to enable safe trading between strangers. And again, in the UK, the exchange, the clearinghouse, all these things got developed, and that's how these things started working. Now, that said, all said and done. Finance, these financial markets do occasionally go off into crazy territory, and it is just it's part of the beast. There's I think there's no deep answer to solving this. Occasionally these things happen. So by and large, the financial system works reasonably well. By and large, financial prices work reasonably well. They occasionally things go wrong, and that's part of the game. And I know no way to avoid that problem of things going occasionally wrong. In defense of the financial system, I want to say that sometimes the level of uncertainty that you're peering into is just phenomenal. So, for example, take early days of the internet. Okay. So you're looking at the ear internet stocks. Are these worth 10x, 100x, 1000 X, 10,000 X compared to where they are right now? Who knows? Who knows what's going to happen? So I feel it's very easy to poo poo these things with the benefit of hindsight. When you're standing there at that moment. Figuring out what might happen in the future, very often there is a reasonable view of phenomenal upside. So I think it's the problem that exposed things look easy. So what people look back upon as saying, this is nonsense, this made no sense. How were we so foolish to have thought this, yeah, that's with hindsight, that's 2020. But when you're standing there in the moment, often there are huge levels of uncertainty around possibilities that could be sky high. And then prices can go up by a lot. And again, that's how. The market economy works. So I feel some of this is just uh people who are not sufficiently appreciating the richness of",
+      "endTime": 3426.56,
+      "text": "When these institutions came up, I have glossed over some of the steps. Okay, I magically presumed that when I go to the exchange and I try to sell my shares. I will surely be able to sell them. That's called a liquid market. These are not things to take for granted. And second, that the machinery of the market will work perfectly. That a few days later I will uh supply my money and I will get the share, or I will supply my share and I will get the money, that these things will work frictionlessly. So in the sense of uh the early literature on institution building, there arose these institutions of a stock exchange, of a clearinghouse. Which facilitated this safe trading between strangers. So it doesn't come out of thin air, it requires institutions. And we needed to develop that institutional complexity to be able to enable safe trading between strangers. And again, in the UK, the exchange, the clearinghouse, all these things got developed, and that's how these things started working. Now, that said, all said and done. Finance, these financial markets do occasionally go off into crazy territory, and it is just it's part of the beast. There's I think there's no deep answer to solving this. Occasionally these things happen. So by and large, the financial system works reasonably well. By and large, financial prices work reasonably well. They occasionally things go wrong, and that's part of the game. And I know no way to avoid that problem of things going occasionally wrong. In defense of the financial system, I want to say that sometimes the level of uncertainty that you're peering into is just phenomenal. So, for example, take early days of the internet. Okay. So you're looking at the ear internet stocks. Are these worth 10x, 100x, 1000 X, 10,000 X compared to where they are right now? Who knows? Who knows what's going to happen? So I feel it's very easy to poo poo these things with the benefit of hindsight. When you're standing there at that moment. Figuring out what might happen in the future, very often there is a reasonable view of phenomenal upside. So I think it's the problem that exposed things look easy. So what people look back upon as saying, this is nonsense, this made no sense. How were we so foolish to have thought this, yeah, that's with hindsight, that's 2020. But when you're standing there in the moment, often there are huge levels of uncertainty around possibilities that could be sky high. And then prices can go up by a lot. And again, that's how. The market economy works. So I feel some of this is just uh people who are not sufficiently appreciating the richness of this world. Okay, shall I continue on my global story of financial story. Okay, so so far I introduced limited liability companies borrowing uh fungible securities trading at the share market. Okay, so this was the basic machinery, and this trading of fungible objects actually readily scales up. You can take debt, cut it up into pieces, and it's called a bond. You can trade currencies. Okay, so there's a whole bunch of things. You can trade standardized commodities like gold. So creating uh systematic fungible traded things was a breakthrough that we got liquidity and we got the price discovery of the speculative market. So this stuff worked very well. Okay uh this uh takes us through to uh The early modern times. So by now, I feel we've got a reasonable description of late 19th century finance. Okay, then when we come to the 20th century, by this time, we started getting fairly big and complex banks. Banks are an interesting complex technology. Uh you have recently done a conversation with our good friend Harsh Vardan around banks. Harsh is a deep thinker, he thinks deeply about banks. Banks are a Pretty interesting and in some ways magical, in some ways, fundamentally fragile institution where they take on huge levels of leverage. They create an illusion of liquidity out of thin air. They create an illusion of holding long dated assets while having short dated liabilities out of thin air. And there is a tension between how magical and wonderful is the thing that they create, namely The illusion of liquidity, the illusion of uh maturity, transformation of being able to invest in long-dated assets. It sounds really great and magical, but it also in a way is broken at the core. So banks are not robust and rugged organizations. And the economist Martin Miller has a famous line. He describes banking as a disaster-prone 19th century industry. Because the world history of banks is just failure upon failure upon failure, that banks tend to blow up, it tends to become a mess. And banking becomes deeply political because by and large, most of the time politicians don't want to countenance uh grandmothers and dentists losing their money when a bank goes bust. So if only you could be cold in a world and say to households, That sorry, your bank went bust. You should have exercised diligence and thought more about the bank that you invested in. If you could do that, all the problems of banking will be solved. Most of the time, most political systems are unable to do that. And then you get into real problems. So banking adds value in many good times. And every banking system just goes through one paroxy of grief after another every 20, 30 years. So once again, I'm not Uh optimist that this problem can be solved. There are deep human reasons why this problem won't be solved. Uh we we will have to go through one mess after another for a long, long time. So that is the next layer in the puzzle, which is banking. And then we come to modern times when a whole bunch of miracles started happening, and we get to modern finance. So, roughly speaking, you know, if you stand in 1947. Then this is the nature of finance that there is stock market, bond market, trading liquidity. It's a global game. There's London, there's New York, there is Bombay. These are all integrated markets. There are banks and they're financing uh the financial sector is financing the real sector. All this finance is a good, healthy, important industry standing at the end of the second world war, and it is doing all these things. And then came the explosions of technology. We got technologies of uh communication, we got technologies of computation, and we got great explosions of human knowledge. And all these have come together to give you modern finance. Okay, so modern finance is three pieces. First is simple communications, right? You connected up London and Bombay, and so now suddenly trading happens everywhere. So um Ravi Narayan, one of the founding team of NSE, had a beautiful line. He used to say that when the first Satellite communications for NSE trading came to a small town in India, it was comparable to a railway line coming to that small town for the first time. It was a revolution. Suddenly you were connected into the main Indian market. You were not a hick town trying to place some long distance trunk calls to a Bombay broker. Who was on the market, who had access to the market. Suddenly everybody was an equal first class participant. And that was a magic of satellite uh communications that was used by NSE. NSE was a pioneer globally in electronic trading and satellite communication when these things were brought to India. So there's just a telecommunication piece where finance is the business of bits and bytes. And Modern telecom has basically started moving information all around everywhere. Today we use trading on a mobile phone. It would have seemed miraculous only a short while ago, but that is the nature of what modern telecom has done. The second thing that has happened is computation. We've got the ability to process a great deal of information and calculate, calculate, calculate. So finance is filled with Calculations ranging from uh mundane to profound. The mundane stuff is just keeping books, keeping score, uh doing settlement, keeping accounts, processing information, all this stuff has just been magical. The way finance works today with computers is just supremely productive and efficient compared with the bad old days when people worked with pieces of paper. So the information, the cognitive power of the unaided human mind was really very limited. And that same human mind is able to do the same tasks of finance so much better because now we have uh information. There's a beautiful literature in the world of banking, which tells a story of the transition from relationship banking to model-based banking. And let me just tell that story. In the olden days, you had an account with your local bank and uh you would drop by and have chai with your bank manager. And the bank manager would know you and your family and your friends. Okay? So when you went to that bank manager and asked for the loan, the bank manager knew you well. And it was a relationship that had private information in the minds of the bank manager. And the bank manager would use that information to make a call on whether to give you a loan or not. And that worked very badly for underprivileged people who did not have that social relationship with bank managers. most bank managers practiced statistical discrimination and also outright other kinds of ugly discrimination. So, you know, basically in India, uh women, Muslims, lower caste people were treated badly by the mainline financial system. Okay, so that was the old world. Now a key part of this story is that actually it was very expensive to hire a sophisticated, skilled Manager who would look at the person and learn the entire family tree of that person and develop a judgment that their word is sound and make the yes-no decision about giving a loan. So while it was done, it was also very expensive because you had to put an expensive resource on understanding that person. All this has been replaced by models. Today, statistical models consume information about the person and make a prediction for the probability of default. And this has basically exploded the ability of a lender to go reach out to people where there's really no great relationship and it is more evidence based. There are models that predict the probability of default. So you want to get a home loan, you want to get a car loan. Uh there are credit bureaus that will keep track of your past payment success or payment default. So the models are able to look at the person and make a decision. And it is very low cost. You don't need an expensive resource. So it works at smaller ticket sizes. It spreads all over the country. These are miraculous gains that came from the injection of information and information processing. So this is the second pillar of modern finance, the use of information and information processing. A third pillar of modern finance was the knowledge produced by the economists. The one of the great success stories of modern economics. is the contribution made by economists in building theoretical structures where knowledge and understanding about portfolios, about risk, about diversification, about international diversification was built, and that has turned around from the academia and come back into the real world. So there is just immense bodies of knowledge that have been created that have steadily come back and fed into the real world. that is really the only piece of modern economics. There are a few others. Like Amazon hires a lot of economists who use microeconomics in trying to figure out how to make more money when selling us stuff. That is indeed another great success story of economics. But if you think about most parts of economics, I think the greatest success of high intellectual constructs being built in the world of economics Applied into practical real world systems where there are literally models that run on computers and feedback into the lives of real people. That is in finance. And the greatest flowering of that is financial derivatives. Financial derivatives are a system of side bets on the main bets. So your main bet is a share price, your main bet is a currency, your main bet is a bond price. Now you build a system of side bets on that. So Two people don't own the share, but they make a bet with each other. I think the share price will go up. I think the share price will go up. So what we've done is we've extended the information processing game away from being restricted to the owners of the shares and the people with the capital to buy the shares to people on the side who actually don't have the wealth to buy large amount of these shares. But are able to take amplified bets. So that has extended the uh ability of the people with the ideas, with the knowledge, but without the capital to contribute and participate in the process of speculative price discovery. Derivatives have always been around in some ways. There are stories that go deep back in India, which tell us about the presence of derivatives. So I remember uh on the Bombay Stock Exchange, there Uh is a speech done by some white guy who tells a story from the late 19th century where the quotation runs something like this that the natives are as good as anybody in the world on trading in put and call options. Okay, so like in the 19th century in Bombay, they're trading put and call options. Similarly, there are stories from Greece in the sixth century where there are some kinds of derivatives contracts on olive oil. Okay, so derivatives have in a way been around forever. the fuel, the rocket fuel that brought everything together was telecommunications, computation, and the models. So the economics knowledge, all this came together and has created an explosive rise of the modern derivatives industry. So In the world of the bond market, there is a beautiful phrase that is called the bond currency derivatives nexus. Okay. Where there is a bond market, there's a currency market, and there are the derivatives on the currencies and the derivatives on the bonds, and all these are tied together as one market because every price shakes every other. It's like a single carpet, it's a single tapestry that everything is interconnected. You tug at one end and everything moves together, and there are trades, trades, trades which bind everything together. So there is really one body of information of the bond price, the exchange rate, and a whole bunch of the derivatives of these two. This whole thing is called the bond currency derivatives nexus. Once again, you know, we're in a disappointing situation in India. People who don't like derivative trading, who think that bonds and currencies are separate markets, are different things, just, you know, basic economics and finance knowledge has not permeated, and we are an underdeveloped country because of the lack of this kind of information, or this kind of knowledge. And uh one of the most pure uh renditions of modernity in this field is algorithmic trading, where the way it works is that imagine stage one. You're the brains of the shop, right? You're the genius uh poker uh intellectual. So you come up with ideas, you tell that bloke that uh find out whichever is the team that plays second and bet on them. Okay, what you've just written is an algorithm. Okay what you've written is a rule that generates trades that is handed over to a clerk who is expected to shut up and do the trade. Okay now. Why have a clerk? So in the 21st century, we want to live above the API and not below the API. So these instructions are turned into code. And when that code runs, that code is spurring away. It's just endlessly watching the match, watching the match, watching the match. The moment the coin is tossed, okay, and you know whether Sri Lanka gets through or Zimbabwe gets through, at that instant, one millisecond later. It sends in a trade saying, I'm betting that Zimbabwe will win. Why? Because he lost the toss. Oh, sorry, he chose to chase and not set. Okay. So what you've just done is you've done the process of the design of the algorithm, which is always a human intellectual idea. And then the mundane implementation of that can and should be delegated to a program and not a clerk. Because we don't want to waste human labor doing these things. Okay? Human beings should compose symphonies. Human beings should not be doing mundane clerical work below the API. This is callmic trading. So again, there's a whole bunch of ignorance around these words, and there are people who just get angry, oh, how can a computer trade? Or will the AI put us out of business? And those kinds of things, or just an instinctive. distrust and hostility towards too many clever people eating away at my livelihood. All these factors come together and there is like this toxic hostility towards modern ideas, whether they're derivatives or algorithmic trading, and so on. Um let me do something politically incorrect. Uh there's a phrase in finance that is called Which means straight through processing. Okay, so the idea is that you do a trade and then end to end all the steps happen automatically without human intervention. So uh this was humorously for a long time, it was humorously called sack the peasants. Okay, the idea was get people out of doing mundane clerical things. Okay, so automate everything. So then the humans are doing the intellectual functions. So we should not Caricature of the AI that oh the AI is now making the decisions like some science fiction movie. The AI is a clerk. He's running a program written by the humans. The humans are in charge. It is a human that has to imagine what is a trade you want to do. The computer can never figure out why it wants to trade. It doesn't want money, it doesn't want profit, it doesn't want anything. It's just a dumb computer. What the computer is is a great clerk. He lives below the API, it will obey, it will obey, it will obey, it will be consistent. It won't take a break to have chai, it won't have a bad hair day, it will be millisecond, split second, precision. The program will run, that configuration of facts will come together, boom, a trade will take place. No more and no less. That is what is algorithmic trading.",
       "words": [
         {
           "word": "When",
@@ -42184,15 +41944,7 @@
           "startTime": 2404.76,
           "endTime": 2404.92,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2404.92,
-      "endTime": 2409.96,
-      "text": "this world. Okay, shall I continue on my global story of financial story.",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 2404.92,
@@ -42270,15 +42022,7 @@
           "startTime": 2409.64,
           "endTime": 2409.96,
           "confidence": 0.7093
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2409.96,
-      "endTime": 2447.52,
-      "text": "Okay, so so far I introduced limited liability companies borrowing uh fungible securities trading at the share market. Okay, so this was the basic machinery, and this trading of fungible objects actually readily scales up. You can take debt, cut it up into pieces, and it's called a bond. You can trade currencies. Okay, so there's a whole bunch of things. You can trade standardized commodities like gold. So creating uh systematic fungible traded things was a breakthrough that we got liquidity and we got the price discovery of the speculative market. So this stuff worked",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 2409.96,
@@ -42854,15 +42598,7 @@
           "startTime": 2446.96,
           "endTime": 2447.52,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2447.52,
-      "endTime": 2449.12,
-      "text": "very well. Okay",
-      "words": [
+        },
         {
           "word": "very",
           "startTime": 2447.52,
@@ -42880,15 +42616,7 @@
           "startTime": 2448.48,
           "endTime": 2449.12,
           "confidence": 0.8795
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2449.12,
-      "endTime": 3207.89,
-      "text": "uh this uh takes us through to uh The early modern times. So by now, I feel we've got a reasonable description of late 19th century finance. Okay, then when we come to the 20th century, by this time, we started getting fairly big and complex banks. Banks are an interesting complex technology. Uh you have recently done a conversation with our good friend Harsh Vardan around banks. Harsh is a deep thinker, he thinks deeply about banks. Banks are a Pretty interesting and in some ways magical, in some ways, fundamentally fragile institution where they take on huge levels of leverage. They create an illusion of liquidity out of thin air. They create an illusion of holding long dated assets while having short dated liabilities out of thin air. And there is a tension between how magical and wonderful is the thing that they create, namely The illusion of liquidity, the illusion of uh maturity, transformation of being able to invest in long-dated assets. It sounds really great and magical, but it also in a way is broken at the core. So banks are not robust and rugged organizations. And the economist Martin Miller has a famous line. He describes banking as a disaster-prone 19th century industry. Because the world history of banks is just failure upon failure upon failure, that banks tend to blow up, it tends to become a mess. And banking becomes deeply political because by and large, most of the time politicians don't want to countenance uh grandmothers and dentists losing their money when a bank goes bust. So if only you could be cold in a world and say to households, That sorry, your bank went bust. You should have exercised diligence and thought more about the bank that you invested in. If you could do that, all the problems of banking will be solved. Most of the time, most political systems are unable to do that. And then you get into real problems. So banking adds value in many good times. And every banking system just goes through one paroxy of grief after another every 20, 30 years. So once again, I'm not Uh optimist that this problem can be solved. There are deep human reasons why this problem won't be solved. Uh we we will have to go through one mess after another for a long, long time. So that is the next layer in the puzzle, which is banking. And then we come to modern times when a whole bunch of miracles started happening, and we get to modern finance. So, roughly speaking, you know, if you stand in 1947. Then this is the nature of finance that there is stock market, bond market, trading liquidity. It's a global game. There's London, there's New York, there is Bombay. These are all integrated markets. There are banks and they're financing uh the financial sector is financing the real sector. All this finance is a good, healthy, important industry standing at the end of the second world war, and it is doing all these things. And then came the explosions of technology. We got technologies of uh communication, we got technologies of computation, and we got great explosions of human knowledge. And all these have come together to give you modern finance. Okay, so modern finance is three pieces. First is simple communications, right? You connected up London and Bombay, and so now suddenly trading happens everywhere. So um Ravi Narayan, one of the founding team of NSE, had a beautiful line. He used to say that when the first Satellite communications for NSE trading came to a small town in India, it was comparable to a railway line coming to that small town for the first time. It was a revolution. Suddenly you were connected into the main Indian market. You were not a hick town trying to place some long distance trunk calls to a Bombay broker. Who was on the market, who had access to the market. Suddenly everybody was an equal first class participant. And that was a magic of satellite uh communications that was used by NSE. NSE was a pioneer globally in electronic trading and satellite communication when these things were brought to India. So there's just a telecommunication piece where finance is the business of bits and bytes. And Modern telecom has basically started moving information all around everywhere. Today we use trading on a mobile phone. It would have seemed miraculous only a short while ago, but that is the nature of what modern telecom has done. The second thing that has happened is computation. We've got the ability to process a great deal of information and calculate, calculate, calculate. So finance is filled with Calculations ranging from uh mundane to profound. The mundane stuff is just keeping books, keeping score, uh doing settlement, keeping accounts, processing information, all this stuff has just been magical. The way finance works today with computers is just supremely productive and efficient compared with the bad old days when people worked with pieces of paper. So the information, the cognitive power of the unaided human mind was really very limited. And that same human mind is able to do the same tasks of finance so much better because now we have uh information. There's a beautiful literature in the world of banking, which tells a story of the transition from relationship banking to model-based banking. And let me just tell that story. In the olden days, you had an account with your local bank and uh you would drop by and have chai with your bank manager. And the bank manager would know you and your family and your friends. Okay? So when you went to that bank manager and asked for the loan, the bank manager knew you well. And it was a relationship that had private information in the minds of the bank manager. And the bank manager would use that information to make a call on whether to give you a loan or not. And that worked very badly for underprivileged people who did not have that social relationship with bank managers. most bank managers practiced statistical discrimination and also outright other kinds of ugly discrimination. So, you know, basically in India, uh women, Muslims, lower caste people were treated badly by the mainline financial system. Okay, so that was the old world. Now a key part of this story is that actually it was very expensive to hire a sophisticated, skilled Manager who would look at the person and learn the entire family tree of that person and develop a judgment that their word is sound and make the yes-no decision about giving a loan. So while it was done, it was also very expensive because you had to put an expensive resource on understanding that person. All this has been replaced by models. Today, statistical models consume information about the person and make a prediction for the probability of default. And this has basically exploded the ability of a lender to go reach out to people where there's really no great relationship and it is more evidence based. There are models that predict the probability of default. So you want to get a home loan, you want to get a car loan. Uh there are credit bureaus that will keep track of your past payment success or payment default. So the models are able to look at the person and make a decision. And it is very low cost. You don't need an expensive resource. So it works at smaller ticket sizes. It spreads all over the country. These are miraculous gains that came from the injection of information and information processing. So this is the second pillar of modern finance, the use of information and information processing. A third pillar of modern finance was the knowledge produced by the economists. The one of the great success stories of modern economics. is the contribution made by economists in building theoretical structures where knowledge and understanding about portfolios, about risk, about diversification, about international diversification was built, and that has turned around from the academia and come back into the real world. So there is just immense bodies of knowledge that have been created that have steadily come back and fed into the real world. that is really the only piece of modern economics. There are a few others. Like Amazon hires a lot of economists who use microeconomics in trying to figure out how to make more money when selling us stuff. That is indeed another great success story of economics. But if you think about most parts of economics, I think the greatest success of high intellectual constructs being built in the world of economics Applied into practical real world systems where there are literally models that run on computers and feedback into the lives of real people. That is in finance. And the greatest flowering of that is financial derivatives. Financial derivatives are a system of side bets on the main bets. So your main bet is a share price, your main bet is a currency, your main bet is a bond price. Now you build a system of side bets on that. So Two people don't own the share, but they make a bet with each other. I think the share price will go up. I think the share price will go up. So what we've done is we've extended the information processing game away from being restricted to the owners of the shares and the people with the capital to buy the shares to people on the side who actually don't have the wealth to buy large amount of these shares. But are able to take amplified bets. So that has extended the uh ability of the people with the ideas, with the knowledge, but without the capital to contribute and participate in the process of speculative price discovery. Derivatives have always been around in some ways. There are stories that go deep back in India, which tell us about the presence of derivatives. So I remember uh on the Bombay Stock Exchange, there Uh is a speech done by some white guy who tells a story from the late 19th century where the quotation runs something like this that the natives are as good as anybody in the world on trading in put and call options. Okay, so like in the 19th century in Bombay, they're trading put and call options. Similarly, there are stories from Greece in the sixth century where there are some kinds of derivatives contracts on olive oil. Okay, so derivatives have in a way been around forever. the fuel, the rocket fuel that brought everything together was telecommunications, computation, and the models. So the economics knowledge, all this came together and has created an explosive rise of the modern derivatives industry. So In the world of the bond market, there is a beautiful phrase that is called the bond currency derivatives nexus. Okay. Where there is a bond market, there's a currency market, and there are the derivatives on the currencies and the derivatives on the bonds, and all these are tied together as one market because every price shakes every other. It's like a single carpet, it's a single tapestry that everything is interconnected. You tug at one end and everything moves together, and there are trades, trades, trades which bind everything together. So there is really one body of information of the bond price, the exchange rate, and a whole bunch of the derivatives of these two. This whole thing is called the bond currency derivatives nexus. Once again, you know, we're in a disappointing situation in India. People who don't like derivative trading, who think that bonds and currencies are separate markets, are different things, just, you know, basic economics and finance knowledge has not permeated, and we are an underdeveloped country because of the lack of this kind of",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 2449.12,
@@ -54882,15 +54610,7 @@
           "startTime": 3207.65,
           "endTime": 3207.89,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3207.89,
-      "endTime": 3209.41,
-      "text": "information, or this kind",
-      "words": [
+        },
         {
           "word": "information,",
           "startTime": 3207.89,
@@ -54914,15 +54634,7 @@
           "startTime": 3209.25,
           "endTime": 3209.41,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3209.41,
-      "endTime": 3246.58,
-      "text": "of knowledge. And uh one of the most pure uh renditions of modernity in this field is algorithmic trading, where the way it works is that imagine stage one. You're the brains of the shop, right? You're the genius uh poker uh intellectual. So you come up with ideas, you tell that bloke that uh find out whichever is the team that plays second and bet on them. Okay, what you've just written is an algorithm. Okay what you've written is a rule that generates trades that is handed over to a clerk who is expected",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 3209.41,
@@ -55498,15 +55210,7 @@
           "startTime": 3246.1,
           "endTime": 3246.58,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3246.58,
-      "endTime": 3250.2,
-      "text": "to shut up and do the trade. Okay now.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 3246.58,
@@ -55560,15 +55264,7 @@
           "startTime": 3249.7,
           "endTime": 3250.2,
           "confidence": 0.8912
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3250.77,
-      "endTime": 3344.15,
-      "text": "Why have a clerk? So in the 21st century, we want to live above the API and not below the API. So these instructions are turned into code. And when that code runs, that code is spurring away. It's just endlessly watching the match, watching the match, watching the match. The moment the coin is tossed, okay, and you know whether Sri Lanka gets through or Zimbabwe gets through, at that instant, one millisecond later. It sends in a trade saying, I'm betting that Zimbabwe will win. Why? Because he lost the toss. Oh, sorry, he chose to chase and not set. Okay. So what you've just done is you've done the process of the design of the algorithm, which is always a human intellectual idea. And then the mundane implementation of that can and should be delegated to a program and not a clerk. Because we don't want to waste human labor doing these things. Okay? Human beings should compose symphonies. Human beings should not be doing mundane clerical work below the API. This is callmic trading. So again, there's a whole bunch of ignorance around these words, and there are people who just get angry, oh, how can a computer trade? Or will the AI put us out of business? And those kinds of things, or just an instinctive. distrust and hostility towards too many clever people eating away at my livelihood. All these factors come together and there is like this toxic hostility towards modern ideas, whether they're derivatives or algorithmic trading, and so on.",
-      "words": [
+        },
         {
           "word": "Why",
           "startTime": 3250.77,
@@ -57116,29 +56812,13 @@
           "startTime": 3343.67,
           "endTime": 3344.15,
           "confidence": 0.97
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3344.15,
-      "endTime": 3345.65,
-      "text": "Um",
-      "words": [
+        },
         {
           "word": "Um",
           "startTime": 3344.15,
           "endTime": 3345.65,
           "confidence": 0.5691
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3347.35,
-      "endTime": 3426.56,
-      "text": "let me do something politically incorrect. Uh there's a phrase in finance that is called Which means straight through processing. Okay, so the idea is that you do a trade and then end to end all the steps happen automatically without human intervention. So uh this was humorously for a long time, it was humorously called sack the peasants. Okay, the idea was get people out of doing mundane clerical things. Okay, so automate everything. So then the humans are doing the intellectual functions. So we should not Caricature of the AI that oh the AI is now making the decisions like some science fiction movie. The AI is a clerk. He's running a program written by the humans. The humans are in charge. It is a human that has to imagine what is a trade you want to do. The computer can never figure out why it wants to trade. It doesn't want money, it doesn't want profit, it doesn't want anything. It's just a dumb computer. What the computer is is a great clerk. He lives below the API, it will obey, it will obey, it will obey, it will be consistent. It won't take a break to have chai, it won't have a bad hair day, it will be millisecond, split second, precision. The program will run, that configuration of facts will come together, boom, a trade will take place. No more and no less. That is what is algorithmic trading.",
-      "words": [
+        },
         {
           "word": "let",
           "startTime": 3347.35,
@@ -59768,8 +59448,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3483.08,
-      "endTime": 3490.34,
-      "text": "the the This book came first. One year after that, there was an economist guy called Nicholas Dunbar who wrote a book on LTCM. I think it's the better of",
+      "endTime": 3490.9,
+      "text": "the the This book came first. One year after that, there was an economist guy called Nicholas Dunbar who wrote a book on LTCM. I think it's the better of the two books.",
       "words": [
         {
           "word": "the",
@@ -59950,15 +59630,7 @@
           "startTime": 3490.26,
           "endTime": 3490.34,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3490.34,
-      "endTime": 3535.35,
-      "text": "the two books. It's the better of the two books. So regardless, we'll have both in the show notes. And my question for you is that I get and I completely agree with the huge net benefit of all this. After all, it's come out of the needs of society. It's the wonders of technology that have sort of enabled this. It's incentivized uh risk taking and building companies and all of human progress has in a sense uh been founded on this bedrock. But my question is, what can go wrong? Right? What can go wrong and how do we safeguard against it? Because at various points, like of course boom and bust is part of the regular cycle, creative destruction is a healthy process. But however we have seen in finance that things do often go extremely wrong, uh, what can go wrong? How do we safeguard against it?",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 3490.34,
@@ -59976,7 +59648,15 @@
           "startTime": 3490.5,
           "endTime": 3490.9,
           "confidence": 0.9469
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3490.9,
+      "endTime": 3535.35,
+      "text": "It's the better of the two books. So regardless, we'll have both in the show notes. And my question for you is that I get and I completely agree with the huge net benefit of all this. After all, it's come out of the needs of society. It's the wonders of technology that have sort of enabled this. It's incentivized uh risk taking and building companies and all of human progress has in a sense uh been founded on this bedrock. But my question is, what can go wrong? Right? What can go wrong and how do we safeguard against it? Because at various points, like of course boom and bust is part of the regular cycle, creative destruction is a healthy process. But however we have seen in finance that things do often go extremely wrong, uh, what can go wrong? How do we safeguard against it?",
+      "words": [
         {
           "word": "It's",
           "startTime": 3490.9,
@@ -60870,8 +60550,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3535.35,
-      "endTime": 3539.59,
-      "text": "So the first thing that can go wrong is that a society",
+      "endTime": 3700.24,
+      "text": "So the first thing that can go wrong is that a society can have uh uh hostility. towards the emergence of finance and it can stifle the emergence of finance, and then you've really got a millstone around the neck around the emergence of the market economy. So that by and large is where India is that where we have gone wrong is we have failed to create the intellectual power so that state power is used to damage the emergence of finance. So that is the first thing that can go wrong, which is you can have no finance. So it's a Ludite vision It's as bad as banning numerically controlled lates. It is as bad as banning this machine or that machine. So the first thing that can go wrong is that a society can fail to see the integral connections between the emergence of a market economy and state power can be used in a coercive way to damage the emergence of finance. And that is what has happened in India. So that is part one of what can go wrong. For the rest, there is a standard script of public economics that, like in many other areas, there is market failure. Okay. So there are public goods problems in finance, and you need state for that. There is asymmetric information in finance, and you need regulation for that. There are externalities in finance, and you need state for that. So like that, the standard machinery of public economics does apply. And It can and should be logically applied to work out a list of market failures and then a list of state interventions that address those market failures. So all over the world, you need the presence of the state and you need financial regulation and a bunch of other service functions that are led by the state that are done by public policy. And it's difficult to create those, and it takes a lot of knowledge and capability to create those. So finance cannot exist in a vacuum. It's a set of complex institutions that is under girded by the presence of the state. And the state does many things that make finance possible. And you know, it would take more hours to tell that full story. But right now I just want to register that. So you can ban finance, that doesn't work. Or if you just do pure laser fair, that doesn't work either. You need state capability and then you need that level of knowledge. About finance in the drafting of laws and in building those government organizations where it will not degenerate into banning things and doing the populism of trying to protect small investors or the populism of hating rich people. So I will come up with another",
       "words": [
         {
           "word": "So",
@@ -60944,15 +60624,7 @@
           "startTime": 3538.63,
           "endTime": 3539.59,
           "confidence": 0.9916
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3539.59,
-      "endTime": 3542.71,
-      "text": "can have uh",
-      "words": [
+        },
         {
           "word": "can",
           "startTime": 3539.59,
@@ -60970,15 +60642,7 @@
           "startTime": 3541.99,
           "endTime": 3542.71,
           "confidence": 0.7689
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3542.71,
-      "endTime": 3699.6,
-      "text": "uh hostility. towards the emergence of finance and it can stifle the emergence of finance, and then you've really got a millstone around the neck around the emergence of the market economy. So that by and large is where India is that where we have gone wrong is we have failed to create the intellectual power so that state power is used to damage the emergence of finance. So that is the first thing that can go wrong, which is you can have no finance. So it's a Ludite vision It's as bad as banning numerically controlled lates. It is as bad as banning this machine or that machine. So the first thing that can go wrong is that a society can fail to see the integral connections between the emergence of a market economy and state power can be used in a coercive way to damage the emergence of finance. And that is what has happened in India. So that is part one of what can go wrong. For the rest, there is a standard script of public economics that, like in many other areas, there is market failure. Okay. So there are public goods problems in finance, and you need state for that. There is asymmetric information in finance, and you need regulation for that. There are externalities in finance, and you need state for that. So like that, the standard machinery of public economics does apply. And It can and should be logically applied to work out a list of market failures and then a list of state interventions that address those market failures. So all over the world, you need the presence of the state and you need financial regulation and a bunch of other service functions that are led by the state that are done by public policy. And it's difficult to create those, and it takes a lot of knowledge and capability to create those. So finance cannot exist in a vacuum. It's a set of complex institutions that is under girded by the presence of the state. And the state does many things that make finance possible. And you know, it would take more hours to tell that full story. But right now I just want to register that. So you can ban finance, that doesn't work. Or if you just do pure laser fair, that doesn't work either. You need state capability and then you need that level of knowledge. About finance in the drafting of laws and in building those government organizations where it will not degenerate into banning things and doing the populism of trying to protect small investors or the populism of hating rich people. So I will",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 3542.71,
@@ -63672,15 +63336,7 @@
           "startTime": 3699.44,
           "endTime": 3699.6,
           "confidence": 0.9886
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3699.6,
-      "endTime": 3718.15,
-      "text": "come up with another mid-episode recommendation here, uh which or deals with market failures and when the state should step in and what is the uh proper role of the state. It's uh it's an obscure book. I don't know if you know these authors. Let me try and remember the names. Vijay Kelkar and Ajay Shah, it's a book called In Service of the Republic. Have you ever heard of it? Some",
-      "words": [
+        },
         {
           "word": "come",
           "startTime": 3699.6,
@@ -63704,7 +63360,15 @@
           "startTime": 3700.0,
           "endTime": 3700.24,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3700.24,
+      "endTime": 3718.15,
+      "text": "mid-episode recommendation here, uh which or deals with market failures and when the state should step in and what is the uh proper role of the state. It's uh it's an obscure book. I don't know if you know these authors. Let me try and remember the names. Vijay Kelkar and Ajay Shah, it's a book called In Service of the Republic. Have you ever heard of it? Some",
+      "words": [
         {
           "word": "mid-episode",
           "startTime": 3700.24,
@@ -65516,8 +65180,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3807.36,
-      "endTime": 4405.44,
-      "text": "I think you can't think of the economy and therefore you can't think of finance without understanding society. And uh let me talk about this in the context of the Middle East. Recently I got the opportunity to do a long episode of the scene and the unseen with the great Timur Quran, one of the great thinkers of our times, an absolute giant, and someone who's taught you personally, I think in the late 1980s, right? When you were studying in California. And uh I wanted to speak to Timur Quran because he uh had come up with the concept of preference falsification and preference cascades, which are spoken about quite often in this great he's he wrote this great and seminal book called Private Truths, Public Lies. So, you know, after we did episode one of Everything Is Everything, we mentioned him. He reached out to me with a long DM, very generous DM. And I obviously took the opportunity and said, Sir, shope ajao. You know, not in Hindi, of course, because uh brilliant as he is, I'd not sure he understands Hindi. But he agreed to come on the show. And I thought we'll talk a lot about reference falsification and I started then you know, I and obviously I'm going to read all his other books if I've called him on the show. And I was blown away by the rest of his work. There is a brilliant book called The Long Divergence, and one could say that a part two of that is this recent book that came out called Freedoms Relayed, right? And they are books about Islam in the Middle East. And I was blown away, and it speaks exactly to this subject, right? Now the central question of the long divergences is that circa uh uh uh a thousand AD, the Middle East economically was very similar to Europe. You had a similar kind of i economy, the same kind of vibrancy, the same kind of markets, the same kind of institutions, right? But after that, as has been well documented, the Middle East kind of stayed stagnant stagnant, whereas Europe zoomed ahead and uh, you know, reached an entirely new level of prosperity. And it was only in the middle of the 19th century that the Middle East started catch up. Now, what could possibly be the reasons for this? Uh, three common hypotheses are uh you know suggested by people. Timur Quran considers them false and demolishes all of them in his books, so I'll just urge people to read the books. But in short, this is what they are. Hypothesis one is that Islam is hostile to commerce. And uh uh Timur shows with great data that that is absolutely not the case. Uh uh Middle Eastern Muslims were dominating trade emporia for a long time, including in the Middle Ages, in places like East Africa or the Middle East itself, parts of Asia, and so on. So this is a false explanation. Explanation number two, that uh Islam doesn't allow innovation or it doesn't happen in the Middle East. Now this is also false because as Timur shows, uh there was tremendous innovation in terms of government institutions and uh, you know, ways of taxation and all of that. There was great innovation there. It is not that they were fundamentally not innovative. Hypothesis number three Which is often advanced by the great historian Bernard Lewis. Uh and so many of us have learned about the Middle East from him, and he's indeed a great historian. And uh Lewis's theory, among others, is that the Middle East slash Islam was fundamentally uncurious about the rest of the world. And as Timur points out, this is nonsense. It's just not true. They were very curious. They were curious, for example, about the military, they were curious about a variety of subjects, but As he says, you know, they would constantly get military textbooks and learn more and more and stay up to date, but they never got economic textbooks. So these are the three reasons that scholars postulated, and all of these are false. So why did the Middle East fall behind? And there are a bunch of reasons, and one of them, and they're all ironic reasons. Reason number one is their inheritance law. Right. Now people today have this unfortunate impression of Islam as being fundamentally backward in some way and Islamic people being socially backward. Circa one thousand AD, uh the Middle East had more progressive laws than Europe. And one example of this is inheritance, right? A lot of northern Europe, uh, including um you know the Scandinavian countries, parts of England, Northern France, Belgium, Holland, Switzerland, they had something called Primo Genitor, where the inheritance law was that the eldest son gets everything. So very unfair. Only one son gets everything. Daughters get nothing. You know? So daughters routinely are just completely left out. And that is their law and it's you would agree it's a shitty law. The Middle East had a much more equitable inheritance law where it was divided among family, so two thirds of the wealth would go to extended family, and the remaining would be divided among sons and daughters. Now daughters got half of what the sons got, which in under the modern lens is not fair, but at least they got something, right? Now you would imagine key fine, this is great. Progressive law, what's the problem? Here's the problem. You know, Islam per se has no law which determines how many people can be in a partnership. or how long it can last, right? I'm talking about a company, uh that kind of partnership. But w the inheritance law messed up the incentives. Because if you formed a partnership and w uh your partner died, what that would mean is that the his shared so widely spread around that the company was basically dead and you were screwed. And what this meant was it put a disincentive on long lasting companies. So partnerships would be formed for specific tasks. So if uh, you know, you and I want to partner to, for example, do a podcast, I'm thinking off the top of my head, if you and I want to do a video show like this one, uh we would draw up a new contract for each episode rather than draw up a contract saying, and this is how it works and all of that. We simply would not. Because if one of us dies, then everything uh kind of gets uh messy, and I hope both of us live a long time and we don't actually have to go through any of that. But you get what I'm saying. So one Duration is a problem. Partnerships tended to be very small. The vast majority of partnerships are only two people. And because of this, the joint stock company also doesn't come up. That great innov innovation that you mentioned earlier. Because the incentives are against it, partnerships aren't lasting. What do you invest in? And because a joint stock company cannot get formed, that entire ecosystem of beautiful institutions around it, like great complex laws, like modern accounting, those don't come into play either. Right. So you have small and ephemeral and simple companies. I think these are more or less Timothy's words, small, simple, ephemeral companies that last for a time and they die out. Now what happens in Northern Europe? You know, where primogen uh uh primo genitor, primogenitor, whatever, I'm not good at pronunciations, is in vogue where the eldest son gets everything. Shitty law, completely unfair, but at least you know that there is a successor. You can plan for the future. The future is something definite. And there partnerships last longer, the incentives are different, eventually joint stock companies form, eventually the whole infrastructure and ecosystem around them takes place, and it kickstarts their economies and takes them to an entirely different place. Now this is example one. of how a social institution puts you behind economically, right? A second example is something which when I think of it, is such a marvelous innovation, right? It is something called a WAF. Now what is a WAF? You know people in India would be familiar with the term because you would have heard of the WAF board and all of that. Now a WAF is a private institution. Rich man in the Middle East, you know, you can't really leave your money to your kids properly or whatever, and the Sultan isn't taxing you, but he says, Hey, so this is what we do, this is our arrangement. You set up a WAF, it's got a particular public purpose. You put you give your money to that, that public purpose will be forever served by your money, and the ambit will be your public good. So I think of it as quote unquote the voluntary private provision of public goods. It's like fucking miraculous. There's no coercion, there's no taxation, the voluntary private provision of public goods, right? It's such a beautiful social arrangement, so innovative. And it works for a long time. But then it kind of begins uh to fall apart. Why does it begin to fall apart? Because the particular purpose for of a work f is set. You cannot change it, right? And that initially that's a feature. that if it's given for a good cause, is used for a good cause, it's not subverted. But later on it becomes a problem. For example, Timur gives us an example of this great caravan Sarai, which is like an inn, a roadside inn, founded on the silk route in I think in the mid-1200s. And the idea is you serve travelers, you give them water, you give them food. By the 1600s, the silk route is gone, in the sense no one's using it anymore. But you're not allowed to shift the funds out of the caravans, right? So they are kind of stuck there. It's what Hernando the Soto would call debt capital, right? You have a similar situation where you could set up a WAF for um, you know, building fountains. And there is indeed the mystery of capital. So mid-episode recommendation, uh Hernando De Soto is a mystery of capital. So uh uh another example of this is that you set up a work and the idea is we will build water fountains, right? So initially it's a feature. You're you're providing water to all the people, you're building thirty water fountains per year. But as the centuries go by, you have piped water coming in, which becomes ubiquitous. So you do not anymore need water fountains. Instead you need to strengthen the piped water infrastructure. But you cannot divert these funds there, because these funds are tied up in making water fountains. So what happened therefore was that there was this ossification where you had a whole bunch of works which were no longer relevant, but all the capital was tied up there. And uh and and therefore it was just a dead weight where you know in in other societies it would have been immediately reallocated and used for other things and et cetera, et cetera. And here it's just kinda lying there. And uh uh and this is",
+      "endTime": 4478.66,
+      "text": "I think you can't think of the economy and therefore you can't think of finance without understanding society. And uh let me talk about this in the context of the Middle East. Recently I got the opportunity to do a long episode of the scene and the unseen with the great Timur Quran, one of the great thinkers of our times, an absolute giant, and someone who's taught you personally, I think in the late 1980s, right? When you were studying in California. And uh I wanted to speak to Timur Quran because he uh had come up with the concept of preference falsification and preference cascades, which are spoken about quite often in this great he's he wrote this great and seminal book called Private Truths, Public Lies. So, you know, after we did episode one of Everything Is Everything, we mentioned him. He reached out to me with a long DM, very generous DM. And I obviously took the opportunity and said, Sir, shope ajao. You know, not in Hindi, of course, because uh brilliant as he is, I'd not sure he understands Hindi. But he agreed to come on the show. And I thought we'll talk a lot about reference falsification and I started then you know, I and obviously I'm going to read all his other books if I've called him on the show. And I was blown away by the rest of his work. There is a brilliant book called The Long Divergence, and one could say that a part two of that is this recent book that came out called Freedoms Relayed, right? And they are books about Islam in the Middle East. And I was blown away, and it speaks exactly to this subject, right? Now the central question of the long divergences is that circa uh uh uh a thousand AD, the Middle East economically was very similar to Europe. You had a similar kind of i economy, the same kind of vibrancy, the same kind of markets, the same kind of institutions, right? But after that, as has been well documented, the Middle East kind of stayed stagnant stagnant, whereas Europe zoomed ahead and uh, you know, reached an entirely new level of prosperity. And it was only in the middle of the 19th century that the Middle East started catch up. Now, what could possibly be the reasons for this? Uh, three common hypotheses are uh you know suggested by people. Timur Quran considers them false and demolishes all of them in his books, so I'll just urge people to read the books. But in short, this is what they are. Hypothesis one is that Islam is hostile to commerce. And uh uh Timur shows with great data that that is absolutely not the case. Uh uh Middle Eastern Muslims were dominating trade emporia for a long time, including in the Middle Ages, in places like East Africa or the Middle East itself, parts of Asia, and so on. So this is a false explanation. Explanation number two, that uh Islam doesn't allow innovation or it doesn't happen in the Middle East. Now this is also false because as Timur shows, uh there was tremendous innovation in terms of government institutions and uh, you know, ways of taxation and all of that. There was great innovation there. It is not that they were fundamentally not innovative. Hypothesis number three Which is often advanced by the great historian Bernard Lewis. Uh and so many of us have learned about the Middle East from him, and he's indeed a great historian. And uh Lewis's theory, among others, is that the Middle East slash Islam was fundamentally uncurious about the rest of the world. And as Timur points out, this is nonsense. It's just not true. They were very curious. They were curious, for example, about the military, they were curious about a variety of subjects, but As he says, you know, they would constantly get military textbooks and learn more and more and stay up to date, but they never got economic textbooks. So these are the three reasons that scholars postulated, and all of these are false. So why did the Middle East fall behind? And there are a bunch of reasons, and one of them, and they're all ironic reasons. Reason number one is their inheritance law. Right. Now people today have this unfortunate impression of Islam as being fundamentally backward in some way and Islamic people being socially backward. Circa one thousand AD, uh the Middle East had more progressive laws than Europe. And one example of this is inheritance, right? A lot of northern Europe, uh, including um you know the Scandinavian countries, parts of England, Northern France, Belgium, Holland, Switzerland, they had something called Primo Genitor, where the inheritance law was that the eldest son gets everything. So very unfair. Only one son gets everything. Daughters get nothing. You know? So daughters routinely are just completely left out. And that is their law and it's you would agree it's a shitty law. The Middle East had a much more equitable inheritance law where it was divided among family, so two thirds of the wealth would go to extended family, and the remaining would be divided among sons and daughters. Now daughters got half of what the sons got, which in under the modern lens is not fair, but at least they got something, right? Now you would imagine key fine, this is great. Progressive law, what's the problem? Here's the problem. You know, Islam per se has no law which determines how many people can be in a partnership. or how long it can last, right? I'm talking about a company, uh that kind of partnership. But w the inheritance law messed up the incentives. Because if you formed a partnership and w uh your partner died, what that would mean is that the his shared so widely spread around that the company was basically dead and you were screwed. And what this meant was it put a disincentive on long lasting companies. So partnerships would be formed for specific tasks. So if uh, you know, you and I want to partner to, for example, do a podcast, I'm thinking off the top of my head, if you and I want to do a video show like this one, uh we would draw up a new contract for each episode rather than draw up a contract saying, and this is how it works and all of that. We simply would not. Because if one of us dies, then everything uh kind of gets uh messy, and I hope both of us live a long time and we don't actually have to go through any of that. But you get what I'm saying. So one Duration is a problem. Partnerships tended to be very small. The vast majority of partnerships are only two people. And because of this, the joint stock company also doesn't come up. That great innov innovation that you mentioned earlier. Because the incentives are against it, partnerships aren't lasting. What do you invest in? And because a joint stock company cannot get formed, that entire ecosystem of beautiful institutions around it, like great complex laws, like modern accounting, those don't come into play either. Right. So you have small and ephemeral and simple companies. I think these are more or less Timothy's words, small, simple, ephemeral companies that last for a time and they die out. Now what happens in Northern Europe? You know, where primogen uh uh primo genitor, primogenitor, whatever, I'm not good at pronunciations, is in vogue where the eldest son gets everything. Shitty law, completely unfair, but at least you know that there is a successor. You can plan for the future. The future is something definite. And there partnerships last longer, the incentives are different, eventually joint stock companies form, eventually the whole infrastructure and ecosystem around them takes place, and it kickstarts their economies and takes them to an entirely different place. Now this is example one. of how a social institution puts you behind economically, right? A second example is something which when I think of it, is such a marvelous innovation, right? It is something called a WAF. Now what is a WAF? You know people in India would be familiar with the term because you would have heard of the WAF board and all of that. Now a WAF is a private institution. Rich man in the Middle East, you know, you can't really leave your money to your kids properly or whatever, and the Sultan isn't taxing you, but he says, Hey, so this is what we do, this is our arrangement. You set up a WAF, it's got a particular public purpose. You put you give your money to that, that public purpose will be forever served by your money, and the ambit will be your public good. So I think of it as quote unquote the voluntary private provision of public goods. It's like fucking miraculous. There's no coercion, there's no taxation, the voluntary private provision of public goods, right? It's such a beautiful social arrangement, so innovative. And it works for a long time. But then it kind of begins uh to fall apart. Why does it begin to fall apart? Because the particular purpose for of a work f is set. You cannot change it, right? And that initially that's a feature. that if it's given for a good cause, is used for a good cause, it's not subverted. But later on it becomes a problem. For example, Timur gives us an example of this great caravan Sarai, which is like an inn, a roadside inn, founded on the silk route in I think in the mid-1200s. And the idea is you serve travelers, you give them water, you give them food. By the 1600s, the silk route is gone, in the sense no one's using it anymore. But you're not allowed to shift the funds out of the caravans, right? So they are kind of stuck there. It's what Hernando the Soto would call debt capital, right? You have a similar situation where you could set up a WAF for um, you know, building fountains. And there is indeed the mystery of capital. So mid-episode recommendation, uh Hernando De Soto is a mystery of capital. So uh uh another example of this is that you set up a work and the idea is we will build water fountains, right? So initially it's a feature. You're you're providing water to all the people, you're building thirty water fountains per year. But as the centuries go by, you have piped water coming in, which becomes ubiquitous. So you do not anymore need water fountains. Instead you need to strengthen the piped water infrastructure. But you cannot divert these funds there, because these funds are tied up in making water fountains. So what happened therefore was that there was this ossification where you had a whole bunch of works which were no longer relevant, but all the capital was tied up there. And uh and and therefore it was just a dead weight where you know in in other societies it would have been immediately reallocated and used for other things and et cetera, et cetera. And here it's just kinda lying there. And uh uh and this is like I took so much time to kind of let this sink in. Because here's what happened, you know, Islam in the Middle East came up with progressive social laws. That was so much better than Europe. And in many other senses, they had better laws. However, an unintended consequence of those laws led to them remaining economically backward. And some could argue, and this is not a link made by Timur, so I'm just speculating, but some could argue that that economic backwardness then led to them becoming socially backward as well. And uh, you know, uh the g going into extreme directions and so on. And in fact, Timur's book, The Long Divergences about the economic impact. And uh his book Freedoms Relate is more about the political impact of this. So I I I I I just find that ironic, incredibly fascinating. And there is no lesson, there is no prescriptive lesson here in terms of what to do. It but it uh there's a lesson here in terms of appreciating the complexity of the world. And uh sort of um how these little accidents of history can lead you upon these strange parts of part dependence and can have these kind of outcomes.",
       "words": [
         {
           "word": "I",
@@ -76960,29 +76624,13 @@
           "startTime": 4404.8,
           "endTime": 4405.44,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4405.44,
-      "endTime": 4406.94,
-      "text": "like",
-      "words": [
+        },
         {
           "word": "like",
           "startTime": 4405.44,
           "endTime": 4406.94,
           "confidence": 0.9705
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4407.52,
-      "endTime": 4478.66,
-      "text": "I took so much time to kind of let this sink in. Because here's what happened, you know, Islam in the Middle East came up with progressive social laws. That was so much better than Europe. And in many other senses, they had better laws. However, an unintended consequence of those laws led to them remaining economically backward. And some could argue, and this is not a link made by Timur, so I'm just speculating, but some could argue that that economic backwardness then led to them becoming socially backward as well. And uh, you know, uh the g going into extreme directions and so on. And in fact, Timur's book, The Long Divergences about the economic impact. And uh his book Freedoms Relate is more about the political impact of this. So I I I I I just find that ironic, incredibly fascinating. And there is no lesson, there is no prescriptive lesson here in terms of what to do. It but it uh there's a lesson here in terms of appreciating the complexity of the world. And uh sort of um how these little accidents of history can lead you upon these strange parts of part dependence and can have these kind of outcomes.",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 4407.52,
@@ -78862,8 +78510,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4533.19,
-      "endTime": 4718.76,
-      "text": "So my first two uh besides all the made episode recommendations, I'd recommend you read all these three great books by Timur Kuran. Private Truths, Public Lives is of course about preference falsification. It's a seminal book, but the long divergence and freedoms delayed is are such rich books in terms of the history, even if you have no interest on Islam or the Middle East, just in understanding how incentives work on human beings and uh how societies function. These are great books. And another recommendation I'd like to give, because it's a related recommendation in a sense in the broader theme. is a Patan unarmed by Mukulika Banerjee. Right? Now I had done an episode last year with Mukulika Banerjee. We'll link that from the show notes. And her story is this. In the late nineteen eighties, she's kind of finishing her MA or whatever her further studies are and she's wondering if she should do a PhD. And she asked this person for advice, that should I do a PhD? And this person says, only do a PHD if there is a question that keeps you awake at night. You know? And if if there is a question that keeps you awake at night, then study it, figure it out, solve that problem. And the question that is keeping her up at night is this. There is this brilliant political party, this group called the Kudai Kitmadkar, Right, the Kudai Kidmat Gar was uh founded in the early part of the century. It was led by this brilliant man called Khan of Dur Gafar Khan, also known as Bhatya Khan. They believed in Frontier Gandhi. Known as Frontier Gandhi. And they believed in nonviolence. And after partition they were wiped out. Because they were against partition and they were against the ideas that Pakistan was founded on. So they were basically wiped out and they were finished. And Mukulika's central question which kept her up at night was the Patans have such there's this stereotype around the Patans that they are violent people. How did this nonviolent movement emerge from there? So she spent y she spent ten years writing the book, she spent time travelling through North West Frontier provinces, going from village to village to find uh, you know, elders who had once been in the Kudai Kid Madgar forty years ago. And I and I believe Sharuk Khan's father was uh once in the Kudai Kid Mankar, if I'm not mistaken. And here is what she found, and this is a remarkable conclusion. What she found is that yes, everything you say about the Patans being a warrior tribe and all of that is true. But their ideas of nonviolence didn't were not imported from the West. They did not come from Gandhi, they were inherent. That is how their society would organize each other. They were organic and they emerged from within. Right, and this is like a profound finding that hits at the all the stereotypes that people have of Islam. And in fact a book came out around two thousand and one, you know. So uh unfortunately didn't get the kind of wide readership that it deserved. But it is a marvelous book and I think about it because when I think about Timur Quran's books also addressing stereotypes about Islam, I find the Pathan Unarmed is another book that did that for me. And it had a great anecdote that speaks to me in the current times, right? Mukulika was basically traveling with a guide from village to village in the Northwest Frontier pro uh province, trying to find old men who had once been in the Kudai Kid Madgar. And it would be very vague, like she'd find someone and they'd say, Ya, yeah, I",
+      "endTime": 4771.13,
+      "text": "So my first two uh besides all the made episode recommendations, I'd recommend you read all these three great books by Timur Kuran. Private Truths, Public Lives is of course about preference falsification. It's a seminal book, but the long divergence and freedoms delayed is are such rich books in terms of the history, even if you have no interest on Islam or the Middle East, just in understanding how incentives work on human beings and uh how societies function. These are great books. And another recommendation I'd like to give, because it's a related recommendation in a sense in the broader theme. is a Patan unarmed by Mukulika Banerjee. Right? Now I had done an episode last year with Mukulika Banerjee. We'll link that from the show notes. And her story is this. In the late nineteen eighties, she's kind of finishing her MA or whatever her further studies are and she's wondering if she should do a PhD. And she asked this person for advice, that should I do a PhD? And this person says, only do a PHD if there is a question that keeps you awake at night. You know? And if if there is a question that keeps you awake at night, then study it, figure it out, solve that problem. And the question that is keeping her up at night is this. There is this brilliant political party, this group called the Kudai Kitmadkar, Right, the Kudai Kidmat Gar was uh founded in the early part of the century. It was led by this brilliant man called Khan of Dur Gafar Khan, also known as Bhatya Khan. They believed in Frontier Gandhi. Known as Frontier Gandhi. And they believed in nonviolence. And after partition they were wiped out. Because they were against partition and they were against the ideas that Pakistan was founded on. So they were basically wiped out and they were finished. And Mukulika's central question which kept her up at night was the Patans have such there's this stereotype around the Patans that they are violent people. How did this nonviolent movement emerge from there? So she spent y she spent ten years writing the book, she spent time travelling through North West Frontier provinces, going from village to village to find uh, you know, elders who had once been in the Kudai Kid Madgar forty years ago. And I and I believe Sharuk Khan's father was uh once in the Kudai Kid Mankar, if I'm not mistaken. And here is what she found, and this is a remarkable conclusion. What she found is that yes, everything you say about the Patans being a warrior tribe and all of that is true. But their ideas of nonviolence didn't were not imported from the West. They did not come from Gandhi, they were inherent. That is how their society would organize each other. They were organic and they emerged from within. Right, and this is like a profound finding that hits at the all the stereotypes that people have of Islam. And in fact a book came out around two thousand and one, you know. So uh unfortunately didn't get the kind of wide readership that it deserved. But it is a marvelous book and I think about it because when I think about Timur Quran's books also addressing stereotypes about Islam, I find the Pathan Unarmed is another book that did that for me. And it had a great anecdote that speaks to me in the current times, right? Mukulika was basically traveling with a guide from village to village in the Northwest Frontier pro uh province, trying to find old men who had once been in the Kudai Kid Madgar. And it would be very vague, like she'd find someone and they'd say, Ya, yeah, I think in that village, so many miles away, there is Abdullah. I don't know if he's alive. I last met him 20 years ago, it was stuff like that. And she was going, and what she found was that the staple food there was beef that was cheap. And but every household would have a chicken which was very expensive and they would only keep it for special guests. And every time Mukulika went, you know, no matter how poor the household was, out of Mahmar Navaji they would give her the chicken. And she started to feel guilty that this is the most expensive thing and I should not have it. So despite being a Hindu, she started eating beef. Right, and she ate beef for the rest of her trip. And then she went back to India and she told her mother, who is like a devout Hindu practicing Hindu beliefs every day, she told her mother about this, and her mother thought for some time and said, Right. And that speaks to the core of something that is also in our culture. And I and I worry sometimes that we might lose right today.",
       "words": [
         {
           "word": "So",
@@ -82680,15 +82328,7 @@
           "startTime": 4718.68,
           "endTime": 4718.76,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4718.76,
-      "endTime": 4720.28,
-      "text": "think in that village, so many miles",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 4718.76,
@@ -82730,15 +82370,7 @@
           "startTime": 4720.04,
           "endTime": 4720.28,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4720.28,
-      "endTime": 4771.13,
-      "text": "away, there is Abdullah. I don't know if he's alive. I last met him 20 years ago, it was stuff like that. And she was going, and what she found was that the staple food there was beef that was cheap. And but every household would have a chicken which was very expensive and they would only keep it for special guests. And every time Mukulika went, you know, no matter how poor the household was, out of Mahmar Navaji they would give her the chicken. And she started to feel guilty that this is the most expensive thing and I should not have it. So despite being a Hindu, she started eating beef. Right, and she ate beef for the rest of her trip. And then she went back to India and she told her mother, who is like a devout Hindu practicing Hindu beliefs every day, she told her mother about this, and her mother thought for some time and said, Right. And that speaks to the core of something that is also in our culture. And I and I worry sometimes that we might lose right today.",
-      "words": [
+        },
         {
           "word": "away,",
           "startTime": 4720.28,

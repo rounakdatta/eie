@@ -5,7 +5,7 @@
     "durationSeconds": 4132,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 14.84,
-      "endTime": 95.51,
-      "text": "Welcome to Everything Is Everything. I'm Amit. This is Ajay. And you might think from the subject of this video that he is going to be dry and so on, but there is going to be plenty of revelry, there is going to be quiet joy, there is going to be poetry, there is going to be song, and there will be instructions for dancing. What a good life. It's a good life, and I want to begin with a poem. It's a poem by Robert Bly. It's called Taking the Hands. Taking the hands of someone you love, you see their delicate cages. Tiny birds are singing in the secluded prairies and in the deep valleys of the hand still digesting. It's beautiful. It is beautiful. So, you know the reason I read that poem out is that it's both a great poem, and it also sort of conveys a universe that can be contained in something small. And I want to talk today about love. And I want to talk in particular about something that I know you have deep abiding passion for, that makes you excited, like a young schoolboy discovering whatever makes young schoolboys happy for the first time. So tell me about one of the great loves of your life, maps. Maps are great, maps",
+      "endTime": 92.36,
+      "text": "Welcome to Everything Is Everything. I'm Amit. This is Ajay. And you might think from the subject of this video that he is going to be dry and so on, but there is going to be plenty of revelry, there is going to be quiet joy, there is going to be poetry, there is going to be song, and there will be instructions for dancing. What a good life. It's a good life, and I want to begin with a poem. It's a poem by Robert Bly. It's called Taking the Hands. Taking the hands of someone you love, you see their delicate cages. Tiny birds are singing in the secluded prairies and in the deep valleys of the hand still digesting. It's beautiful. It is beautiful. So, you know the reason I read that poem out is that it's both a great poem, and it also sort of conveys a universe that can be contained in something small. And I want to talk today about love. And I want to talk in particular about something that I know you have deep abiding passion for, that makes you excited, like a young schoolboy discovering whatever makes young schoolboys happy for the first time. So tell me about one of the great loves of your life, maps.",
       "words": [
         {
           "word": "Welcome",
@@ -1315,7 +1315,15 @@
           "startTime": 91.86,
           "endTime": 92.36,
           "confidence": 0.6495
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 94.47,
+      "endTime": 351.28,
+      "text": "Maps are great, maps are beautiful. Let me just talk about why maps are so interesting and so important. You know, in a way in the modern world, we're all blase. We're used to maps. You know, we're ubiquitously surrounded by maps, often very good maps. I want to take you back to the Middle Ages. You are Emperor Akbar, you are Emperor Aurangzeb. Okay, two great administrators of world history. And you actually don't know much about the country that you rule. Okay, now think of a thousand practical problems. How do you go from A to B? Who knows? You just keep on asking some local trackers on the way, and they say, Yeah, go this way, go that way, but there is no ability to envision and plan and evaluate the cost benefit of a route of a transportation mechanism. Where do you ford a river? How do you go up a mountain range? How do you wage an offensive war? How do you wage a defensive war? Where do you build a road? what is a nice place where maybe there can be a settlement. Okay. There are just thousands of questions and frankly, you're just in the dark. What you have is a large amount of local knowledge held in a deeply local way in local languages. And then you get a Chinese whispers in its communication, because you know there it will be in a local language. It has to be turned into the lingua franca. There will be all kinds of confusion when Tulu is translated into Persian. And both sides are confused about what they're asking. The person says, I want to find a good place to get water for my horses. And the person thinks the question was, Where can the horses ford the river? Okay. So there's just this complete mess of local information. And with local information, you're always solving local optimizations. You're not able to see the bird's eye picture of what is going on. You're not able to judge revenue potential. Okay, you're not able to understand how to tax the country. So The country is just some vague dark world of confusion and uncertainty, and everything is done through inefficient human to human contact, particularly with a large number of languages, as is the case with India, where the natives have knowledge and they are loath to give it to you, or they want to rent for it, or they want to deliberately mislead the traveler or the merchant or whatever. So that is the state of confusion and chaos that reigns. So into this world came the magic of map. And I've always felt that rush of looking at a map, and suddenly you know that suddenly the world is laid bare and you are able to see everything. And there are many, many kinds of maps. It can be a physical map, it can be a topo sheet, it can be a transportation map emphasizing railway lines and roads, and I don't want to pretend that there is only one map. There are many many kinds of maps. Maps do is they abruptly take you from darkness to the light. That you don't know, you'll bumble around in a confused way, asking some people, and suddenly you look at a map and boom, you know the answer. And we can envisage travel, we can make plans, we can make calculations. There's a whole array of good things that flow from a simple piece of a printed object. That's a map. So just from childhood. I have felt that rush again and again of seeing a good map. Suddenly, in the hands of a good map, you meticulously know the reality. And then there are bad maps. Then you kind of think, yeah, vaguely, somewhere here there is this something, but actually I don't know. So you really want that fine precision. So for example, when you're hiking in the mountains, you really want a 10-meter, 20-meter topo sheet. One is to 10,000 maps, one is to 20,000 maps. So in a one is to 20,000 map. One centimeter is 0.2 kilometers, it's 200 meters. So imagine each one centimeter on the map is 200 meters, or in a one is to 10,000 map, each one centimeter is a hundred meters. Okay. Now suddenly you can vividly understand where you are. You move every 100, 200 meters, you revise your judgment, ideally learn how to use a compass, and then you know where you are, and every step of the way you are able to look at the map, and the map is your guide. You don't need a human guide, a local tracker, you don't need the local knowledge. Suddenly you can be from far away",
+      "words": [
         {
           "word": "Maps",
           "startTime": 94.47,
@@ -1339,15 +1347,7 @@
           "startTime": 95.19,
           "endTime": 95.51,
           "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 95.51,
-      "endTime": 116.23,
-      "text": "are beautiful. Let me just talk about why maps are so interesting and so important. You know, in a way in the modern world, we're all blase. We're used to maps. You know, we're ubiquitously surrounded by maps, often very good maps. I want to take you back to the Middle Ages. You are Emperor Akbar, you are Emperor Aurangzeb. Okay, two great administrators of world",
-      "words": [
+        },
         {
           "word": "are",
           "startTime": 95.51,
@@ -1743,15 +1743,7 @@
           "startTime": 115.91,
           "endTime": 116.23,
           "confidence": 0.995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 116.23,
-      "endTime": 117.99,
-      "text": "history. And you",
-      "words": [
+        },
         {
           "word": "history.",
           "startTime": 116.23,
@@ -1769,15 +1761,7 @@
           "startTime": 117.67,
           "endTime": 117.99,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 117.99,
-      "endTime": 119.75,
-      "text": "actually don't know much about the",
-      "words": [
+        },
         {
           "word": "actually",
           "startTime": 117.99,
@@ -1813,15 +1797,7 @@
           "startTime": 119.51,
           "endTime": 119.75,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 119.75,
-      "endTime": 121.37,
-      "text": "country that you rule.",
-      "words": [
+        },
         {
           "word": "country",
           "startTime": 119.75,
@@ -1845,15 +1821,7 @@
           "startTime": 120.87,
           "endTime": 121.37,
           "confidence": 0.9925
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 121.96,
-      "endTime": 137.48,
-      "text": "Okay, now think of a thousand practical problems. How do you go from A to B? Who knows? You just keep on asking some local trackers on the way, and they say, Yeah, go this way, go that way, but there is no ability to envision and plan and evaluate the cost benefit",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 121.96,
@@ -2171,15 +2139,7 @@
           "startTime": 136.68,
           "endTime": 137.48,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 137.48,
-      "endTime": 139.32,
-      "text": "of a route of a",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 137.48,
@@ -2209,15 +2169,7 @@
           "startTime": 139.16,
           "endTime": 139.32,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 139.32,
-      "endTime": 164.5,
-      "text": "transportation mechanism. Where do you ford a river? How do you go up a mountain range? How do you wage an offensive war? How do you wage a defensive war? Where do you build a road? what is a nice place where maybe there can be a settlement. Okay. There are just thousands of questions and frankly, you're just in the dark. What you have is a large amount of local knowledge held in a deeply local way in local",
-      "words": [
+        },
         {
           "word": "transportation",
           "startTime": 139.32,
@@ -2697,15 +2649,7 @@
           "startTime": 164.02,
           "endTime": 164.5,
           "confidence": 0.9971
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 164.5,
-      "endTime": 166.66,
-      "text": "languages. And",
-      "words": [
+        },
         {
           "word": "languages.",
           "startTime": 164.5,
@@ -2717,15 +2661,7 @@
           "startTime": 166.18,
           "endTime": 166.66,
           "confidence": 0.9886
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 166.66,
-      "endTime": 219.72,
-      "text": "then you get a Chinese whispers in its communication, because you know there it will be in a local language. It has to be turned into the lingua franca. There will be all kinds of confusion when Tulu is translated into Persian. And both sides are confused about what they're asking. The person says, I want to find a good place to get water for my horses. And the person thinks the question was, Where can the horses ford the river? Okay. So there's just this complete mess of local information. And with local information, you're always solving local optimizations. You're not able to see the bird's eye picture of what is going on. You're not able to judge revenue potential. Okay, you're not able to understand how to tax the country. So The country is just some vague dark world of confusion and uncertainty, and everything is done through inefficient human to human contact,",
-      "words": [
+        },
         {
           "word": "then",
           "startTime": 166.66,
@@ -3655,15 +3591,7 @@
           "startTime": 218.92,
           "endTime": 219.72,
           "confidence": 0.9733
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 219.72,
-      "endTime": 221.4,
-      "text": "particularly with a",
-      "words": [
+        },
         {
           "word": "particularly",
           "startTime": 219.72,
@@ -3681,15 +3609,7 @@
           "startTime": 221.0,
           "endTime": 221.4,
           "confidence": 0.6345
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 221.4,
-      "endTime": 245.75,
-      "text": "large number of languages, as is the case with India, where the natives have knowledge and they are loath to give it to you, or they want to rent for it, or they want to deliberately mislead the traveler or the merchant or whatever. So that is the state of confusion and chaos that reigns. So into this world came the magic of map. And I've always felt that rush",
-      "words": [
+        },
         {
           "word": "large",
           "startTime": 221.4,
@@ -4109,15 +4029,7 @@
           "startTime": 244.95,
           "endTime": 245.75,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 245.75,
-      "endTime": 248.47,
-      "text": "of looking at a map, and suddenly you",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 245.75,
@@ -4165,15 +4077,7 @@
           "startTime": 248.31,
           "endTime": 248.47,
           "confidence": 0.9917
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 248.47,
-      "endTime": 351.84,
-      "text": "know that suddenly the world is laid bare and you are able to see everything. And there are many, many kinds of maps. It can be a physical map, it can be a topo sheet, it can be a transportation map emphasizing railway lines and roads, and I don't want to pretend that there is only one map. There are many many kinds of maps. Maps do is they abruptly take you from darkness to the light. That you don't know, you'll bumble around in a confused way, asking some people, and suddenly you look at a map and boom, you know the answer. And we can envisage travel, we can make plans, we can make calculations. There's a whole array of good things that flow from a simple piece of a printed object. That's a map. So just from childhood. I have felt that rush again and again of seeing a good map. Suddenly, in the hands of a good map, you meticulously know the reality. And then there are bad maps. Then you kind of think, yeah, vaguely, somewhere here there is this something, but actually I don't know. So you really want that fine precision. So for example, when you're hiking in the mountains, you really want a 10-meter, 20-meter topo sheet. One is to 10,000 maps, one is to 20,000 maps. So in a one is to 20,000 map. One centimeter is 0.2 kilometers, it's 200 meters. So imagine each one centimeter on the map is 200 meters, or in a one is to 10,000 map, each one centimeter is a hundred meters. Okay. Now suddenly you can vividly understand where you are. You move every 100, 200 meters, you revise your judgment, ideally learn how to use a compass, and then you know where you are, and every step of the way you are able to look at the map, and the map is your guide. You don't need a human guide, a local tracker, you don't need the local knowledge. Suddenly you can be from far away and you",
-      "words": [
+        },
         {
           "word": "know",
           "startTime": 248.47,
@@ -6231,7 +6135,15 @@
           "startTime": 350.72,
           "endTime": 351.28,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 351.28,
+      "endTime": 354.24,
+      "text": "and you know what is going on. That is just so thrilling.",
+      "words": [
         {
           "word": "and",
           "startTime": 351.28,
@@ -6243,15 +6155,7 @@
           "startTime": 351.6,
           "endTime": 351.84,
           "confidence": 0.9765
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 351.84,
-      "endTime": 354.24,
-      "text": "know what is going on. That is just so thrilling.",
-      "words": [
+        },
         {
           "word": "know",
           "startTime": 351.84,
@@ -6493,8 +6397,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 361.35,
-      "endTime": 442.64,
-      "text": "And you know, that's that's like uh a beautiful st story of the magic of maps. And at this moment, you know, I had promised earlier a song, I had promised instructions for dancing, and I'll have both of them coming at you. Where uh you know, there's this beautiful song I just discovered by a band called Magnetic Fields. Uh a songwriter called Stephen Merritt, and he's uh written this song called The Book of Love. And these are some of the lyrics, and I'll tell you why I'm reading these out because it seems to have nothing to do with maps. The book of love is long and boring. No one can lift the damn thing. It's full of charts and facts and figures and instructions for dancing. The book of love has music in it. In fact, that's where music comes from. Some of it is just transcendental. Some of it is just really dumb. The book of love is long and boring and written very long ago, is full of flowers and heart shade boxes and things we are all too young to know. Right. And the reason I'm reading this out is that the book of love is still as mysterious as it was six hundred years ago, right? And the world was mysterious and like you pointed out, there was a time where people thought the earth was flat. There was a time where you had no idea, you know, the concept of we take for granted things like the concepts of countries and continents and we've just normalized all of that shit. And there was a time where we didn't know all of that, and I just find that uh, you know, so utterly Um",
+      "endTime": 441.83,
+      "text": "And you know, that's that's like uh a beautiful st story of the magic of maps. And at this moment, you know, I had promised earlier a song, I had promised instructions for dancing, and I'll have both of them coming at you. Where uh you know, there's this beautiful song I just discovered by a band called Magnetic Fields. Uh a songwriter called Stephen Merritt, and he's uh written this song called The Book of Love. And these are some of the lyrics, and I'll tell you why I'm reading these out because it seems to have nothing to do with maps. The book of love is long and boring. No one can lift the damn thing. It's full of charts and facts and figures and instructions for dancing. The book of love has music in it. In fact, that's where music comes from. Some of it is just transcendental. Some of it is just really dumb. The book of love is long and boring and written very long ago, is full of flowers and heart shade boxes and things we are all too young to know. Right. And the reason I'm reading this out is that the book of love is still as mysterious as it was six hundred years ago, right? And the world was mysterious and like you pointed out, there was a time where people thought the earth was flat. There was a time where you had no idea, you know, the concept of we take for granted things like the concepts of countries and continents and we've just normalized all of that shit. And there was a time where we didn't know all of that, and I just find that uh, you know, so utterly",
       "words": [
         {
           "word": "And",
@@ -8241,21 +8145,21 @@
           "startTime": 441.33,
           "endTime": 441.83,
           "confidence": 0.9993
-        },
-        {
-          "word": "Um",
-          "startTime": 442.32,
-          "endTime": 442.64,
-          "confidence": 0.3975
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 442.64,
-      "endTime": 448.16,
-      "text": "wonderful It has been so transform. Like the book of love is as much a mystery today as it",
+      "startTime": 442.32,
+      "endTime": 474.08,
+      "text": "Um wonderful It has been so transform. Like the book of love is as much a mystery today as it ever was. But in our understanding of the spatial world, I'm trying to remember there was a traveller who met Shah Jahan, and Shah Jahan was more or less convinced that most of the world is ruled by him. Because they just had no idea that he was kinda away. There's an Afghanistan and there is something beyond the Himalayas, but basically they had no clue about what is the world. And suddenly maps just bring Precision and clarity and you know where you are.",
       "words": [
+        {
+          "word": "Um",
+          "startTime": 442.32,
+          "endTime": 442.64,
+          "confidence": 0.3975
+        },
         {
           "word": "wonderful",
           "startTime": 442.64,
@@ -8369,15 +8273,7 @@
           "startTime": 448.0,
           "endTime": 448.16,
           "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 448.16,
-      "endTime": 450.24,
-      "text": "ever was. But in",
-      "words": [
+        },
         {
           "word": "ever",
           "startTime": 448.16,
@@ -8401,15 +8297,7 @@
           "startTime": 449.92,
           "endTime": 450.24,
           "confidence": 0.9917
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 450.24,
-      "endTime": 474.08,
-      "text": "our understanding of the spatial world, I'm trying to remember there was a traveller who met Shah Jahan, and Shah Jahan was more or less convinced that most of the world is ruled by him. Because they just had no idea that he was kinda away. There's an Afghanistan and there is something beyond the Himalayas, but basically they had no clue about what is the world. And suddenly maps just bring Precision and clarity and you know where you are.",
-      "words": [
+        },
         {
           "word": "our",
           "startTime": 450.24,
@@ -9689,8 +9577,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 526.84,
-      "endTime": 722.68,
-      "text": "So uh maps came with the British uh as early as 1767, that is just a scant ten years after the Battle of Plassey. Robert Clive had commissioned map making. So it was part of that British capability of how to think about government. If you're going to own some land, you're going to tax some land, you want a map. And so as early as 1767, Robert Clive initiated mapping work in the territory that they controlled, some Bengal, some Bihar, and map making started in India pretty much for the first time. There were some vague doodles in the previous years, but it's really so while there was some trigonometry knowledge in India, it never came together to become map making knowledge in India. And this was brought by the British. And as British power expanded, the map making, the surveying went with them, and they kept enlarging the zone of light where maps were created. Of course, the great explosion came when George Everest went about a gigantic survey of the full country. So that was the first time when they started saying to themselves that we want a single consistent. Maps data set, and you always should view maps as data, which can have a physical representation, but that's just a painting made out of some data. So at heart, maps is data. It's a list of coordinates which have certain properties. So George Everest built the teams that went all around the country. I think it was they had a concept of a 30 kilometer by 30 kilometer by 30 kilometer triangle, and they built these interlocking triangles covering the whole country. As part of that, they discovered that. The place that we now call Mount Everest was the highest point of India. And so British India was very big compared to modern India. And they went around the entire country building these maps. The institution that is called the Survey of India came up and they started printing maps and they were doing the whole spectrum of maps. They were doing topo sheets, they were doing more transportation-oriented maps, they were doing big maps that cover the whole country. The whole spectrum of maps came out. And then you can think how. piddly cost. You just print a physical map, you charge hundred rupees, five hundred rupees for its printed manifestation. But to get to that level of knowledge is very, very costly because you have to go walk around the whole country and survey the whole country. After that, the marginal cost of a map is like nothing. And so in that sense maps is a public good. It was one of the early public goods produced by the British in India. It's non-rival and non-excludable. My use of the maps database And the map in no way intrudes on your use of the map's database. I mean, yeah, technically one physical map can be in front of me, you can't use it. But printing maps is cheap. Like you can just make millions of maps. You can mass produce the printing of maps. And it's non excludable. Once the maps out there, you know, they can just keep on going from one person to another. There is no shortage, and there is no way to exclude everybody from the light that maps bring. So it was one of the early achievements of the British. administration. Um digressions permitted? Of course,",
+      "endTime": 1117.43,
+      "text": "So uh maps came with the British uh as early as 1767, that is just a scant ten years after the Battle of Plassey. Robert Clive had commissioned map making. So it was part of that British capability of how to think about government. If you're going to own some land, you're going to tax some land, you want a map. And so as early as 1767, Robert Clive initiated mapping work in the territory that they controlled, some Bengal, some Bihar, and map making started in India pretty much for the first time. There were some vague doodles in the previous years, but it's really so while there was some trigonometry knowledge in India, it never came together to become map making knowledge in India. And this was brought by the British. And as British power expanded, the map making, the surveying went with them, and they kept enlarging the zone of light where maps were created. Of course, the great explosion came when George Everest went about a gigantic survey of the full country. So that was the first time when they started saying to themselves that we want a single consistent. Maps data set, and you always should view maps as data, which can have a physical representation, but that's just a painting made out of some data. So at heart, maps is data. It's a list of coordinates which have certain properties. So George Everest built the teams that went all around the country. I think it was they had a concept of a 30 kilometer by 30 kilometer by 30 kilometer triangle, and they built these interlocking triangles covering the whole country. As part of that, they discovered that. The place that we now call Mount Everest was the highest point of India. And so British India was very big compared to modern India. And they went around the entire country building these maps. The institution that is called the Survey of India came up and they started printing maps and they were doing the whole spectrum of maps. They were doing topo sheets, they were doing more transportation-oriented maps, they were doing big maps that cover the whole country. The whole spectrum of maps came out. And then you can think how. piddly cost. You just print a physical map, you charge hundred rupees, five hundred rupees for its printed manifestation. But to get to that level of knowledge is very, very costly because you have to go walk around the whole country and survey the whole country. After that, the marginal cost of a map is like nothing. And so in that sense maps is a public good. It was one of the early public goods produced by the British in India. It's non-rival and non-excludable. My use of the maps database And the map in no way intrudes on your use of the map's database. I mean, yeah, technically one physical map can be in front of me, you can't use it. But printing maps is cheap. Like you can just make millions of maps. You can mass produce the printing of maps. And it's non excludable. Once the maps out there, you know, they can just keep on going from one person to another. There is no shortage, and there is no way to exclude everybody from the light that maps bring. So it was one of the early achievements of the British. administration. Um digressions permitted? Of course, digressions encouraged. Okay. In Masurri, there was a beautiful thing which was called Everest House. Okay so when George Everest had to choose a place to live, he chose a beautiful spot in Masouri and, you know, he would have chosen the most amazing spot. I seem to remember there were tigers roaming in the valley in front of that spot in those days. And uh Many years later, it basically just became a run-down old white marble house. There were some legal dispute surrounding it, and it was just uh easily accessed to the whole public. Anybody could just go there, but it was in a state of decay and disrepair. And I actually loved that place. I thought it was absolutely atmospheric. Like if you could go and sit there and start thinking. and dreaming and imagining. You could feel what it m was like to be George Everest, to have built the first map of this country, and then to be living in that bungalow on the edge of that valley and the forest. It was just absolutely atmospheric. My mind would just go wild with the feeling of that place. I say all this in past tense because uh the last time I was there there was some ugly and tasteless construction being done to turn it into a museum by some government agencies. These things should really be done by people who have taste. So unfortunately, it was just ugly. But for those who have seen it before, you may remember, and I just want to connect it to the man George Everest who led this amazing project on building the first maps for India. So that's the brief backstory. Starting from Robert Clive in 1767 to the mid-nineteenth century, the British mapped India, the British built the survey of India, they had these beautiful maps, and for everybody in the country, it was a trivial price to buy decent quality maps, good maps by world standards became available, and once every few decades the British went out and surveyed the whole country again. You need to do these things over and over. Not just because human structures change, like railway stations and roads and populations, but also because rivers change their course and so on. So there is such a thing as a map database going out of date. It does need to go back to the reality and get in touch with the reality. And that is a very costly affair. You have to send human beings with theodolites all around the country. But the British managed to do that over and over and over. So that's the early history of the maps in India. In free India things did not work out so well. I seem to think in many regions map surveying really stopped. So I believe there are many regions in India where the last survey is from 1934 or something, they've never really done the surveys after that. And by the time I came to the age of yearning for maps, I discovered some very irritating things. The survey of India, first of all, many of the surveys were outdated. Uh second of all, they did not have one is to 10,000 or 1 is to 20,000 for the whole country. They had like one is to 200,000. So watch in a one is to 200,000 map, three, four, five, one centimeter is two kilometers. Okay, so it's nice. But it doesn't have that real feeling. Like you're walking in a land, you want one is to ten thousand, one is to two hundred uh twenty thousand with 10 meter contour lines, 20 meter contour lines, then you get that feeling that. You know, I've I've got an alien spaceship using which I can see the land, I can visualize the land, and I can choose what I'm doing next. The one is to two hundred thousand topo sheets that the survey of India was selling were nice, but just unsatisfying. And to add insult to injury, they had some weird rule, which maybe they still have, that Some hundred kilometers from the border of India, including the coastline of India, the sale of maps is prohibited because terrorists will use those maps. Okay? Now, excuse me, all the survey of India maps are there in the museum in London. So any self-respecting terrorist will go to London and get those maps. So what you end up doing is shooting yourself in the foot. So the people of India were deprived of this public good. Like you're taking my tax money, you're making these maps, but then you're saying, No, we will refuse to sell these maps in India for security considerations. Um I have a spectacular retort to something you said earlier in a previous ancient episode, but I shall be clueless and say it here. You were talking about deaths from nuclear power and deaths from coal and how coal is a truly dangerous technology. Okay, and my retort would be that we in India would do a lot better if we worried about deaths from terrorism and more about deaths from coal. Okay, this is an example of that. It's just very wasteful. Now, you know, I was living in Bombay. So all the cool maps for me were cut off because we're at the coast. You try hiking in the Himalayas, all the cool maps are cut off because it's near the border. So you know the survey of India was just like a really ineffective organization. They were not surveying the country regularly. And in any case, whatever treasure trove of maps they have was not there for the people. Remember, a public good is for the people. It's not there for the state. We don't give a damn about what the state has in their pocket. The state exists to serve the people. If the people don't have maps, what use is it? Okay, if the people are in the dark, what use is it? The map are for the people, so that the people can make plans. Maybe you want to buy some land. Maybe you want to think about how you will construct something. You need to see maps. You need to see topo sheets. And without that, you're just walking around the country, which is a very inefficient technology. So this is the prehistory of maps and what is just unsatisfactory about the survey of India. I don't want to single out the survey of India too much for criticism. As always, I will say, gentle reader, there is a general problem in India. You're an underdeveloped country, we are a developing country, everything works badly. Okay so monetary policy works badly, the police work badly, the judiciary works badly, the military works badly, the Survey of India works badly, the statistical system works badly. I don't mean to single out the survey of India as being out of line. But it's a part of this underdevelopment that there is low state capacity, there is just a lack of simple, sensible behavior on such a fundamental thing, which is",
       "words": [
         {
           "word": "So",
@@ -13159,15 +13047,7 @@
           "startTime": 722.44,
           "endTime": 722.68,
           "confidence": 0.8601
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 722.68,
-      "endTime": 724.6,
-      "text": "digressions encouraged. Okay.",
-      "words": [
+        },
         {
           "word": "digressions",
           "startTime": 722.68,
@@ -13185,15 +13065,7 @@
           "startTime": 724.04,
           "endTime": 724.6,
           "confidence": 0.745
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 724.6,
-      "endTime": 766.72,
-      "text": "In Masurri, there was a beautiful thing which was called Everest House. Okay so when George Everest had to choose a place to live, he chose a beautiful spot in Masouri and, you know, he would have chosen the most amazing spot. I seem to remember there were tigers roaming in the valley in front of that spot in those days. And uh Many years later, it basically just became a run-down old white marble house. There were some legal dispute surrounding it, and it was just uh easily accessed to the whole public. Anybody could just go there, but it was in a state of decay",
-      "words": [
+        },
         {
           "word": "In",
           "startTime": 724.6,
@@ -13835,15 +13707,7 @@
           "startTime": 765.84,
           "endTime": 766.72,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 766.72,
-      "endTime": 768.72,
-      "text": "and disrepair.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 766.72,
@@ -13855,15 +13719,7 @@
           "startTime": 767.28,
           "endTime": 768.72,
           "confidence": 0.9632
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 768.72,
-      "endTime": 771.2,
-      "text": "And I actually loved that place. I",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 768.72,
@@ -13905,15 +13761,7 @@
           "startTime": 771.04,
           "endTime": 771.2,
           "confidence": 0.9859
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 771.2,
-      "endTime": 773.76,
-      "text": "thought it was absolutely atmospheric.",
-      "words": [
+        },
         {
           "word": "thought",
           "startTime": 771.2,
@@ -13943,15 +13791,7 @@
           "startTime": 772.56,
           "endTime": 773.76,
           "confidence": 0.9851
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 773.76,
-      "endTime": 810.9,
-      "text": "Like if you could go and sit there and start thinking. and dreaming and imagining. You could feel what it m was like to be George Everest, to have built the first map of this country, and then to be living in that bungalow on the edge of that valley and the forest. It was just absolutely atmospheric. My mind would just go wild with the feeling of that place. I say all this in past tense because uh the last time I was there there was some ugly and tasteless construction being done to turn it into a museum by some government",
-      "words": [
+        },
         {
           "word": "Like",
           "startTime": 773.76,
@@ -14569,15 +14409,7 @@
           "startTime": 810.26,
           "endTime": 810.9,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 810.9,
-      "endTime": 813.06,
-      "text": "agencies. These things",
-      "words": [
+        },
         {
           "word": "agencies.",
           "startTime": 810.9,
@@ -14595,15 +14427,7 @@
           "startTime": 812.74,
           "endTime": 813.06,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 813.06,
-      "endTime": 821.38,
-      "text": "should really be done by people who have taste. So unfortunately, it was just ugly. But for those who have seen it before, you may remember, and I just want to connect",
-      "words": [
+        },
         {
           "word": "should",
           "startTime": 813.06,
@@ -14795,15 +14619,7 @@
           "startTime": 820.98,
           "endTime": 821.38,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 821.38,
-      "endTime": 822.9,
-      "text": "it to the man George",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 821.38,
@@ -14833,15 +14649,7 @@
           "startTime": 822.42,
           "endTime": 822.9,
           "confidence": 0.9776
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 822.9,
-      "endTime": 897.44,
-      "text": "Everest who led this amazing project on building the first maps for India. So that's the brief backstory. Starting from Robert Clive in 1767 to the mid-nineteenth century, the British mapped India, the British built the survey of India, they had these beautiful maps, and for everybody in the country, it was a trivial price to buy decent quality maps, good maps by world standards became available, and once every few decades the British went out and surveyed the whole country again. You need to do these things over and over. Not just because human structures change, like railway stations and roads and populations, but also because rivers change their course and so on. So there is such a thing as a map database going out of date. It does need to go back to the reality and get in touch with the reality. And that is a very costly affair. You have to send human beings with theodolites all around the country. But the British managed to do that over and over and over. So that's the early history of the maps in India. In free India things did not work out so well. I seem to think in many regions map surveying really stopped. So I believe there are many regions in India where the last survey is from 1934 or something, they've never really done the surveys",
-      "words": [
+        },
         {
           "word": "Everest",
           "startTime": 822.9,
@@ -16221,15 +16029,7 @@
           "startTime": 896.72,
           "endTime": 897.44,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 897.44,
-      "endTime": 899.68,
-      "text": "after that. And",
-      "words": [
+        },
         {
           "word": "after",
           "startTime": 897.44,
@@ -16247,15 +16047,7 @@
           "startTime": 898.72,
           "endTime": 899.68,
           "confidence": 0.9902
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 899.68,
-      "endTime": 952.21,
-      "text": "by the time I came to the age of yearning for maps, I discovered some very irritating things. The survey of India, first of all, many of the surveys were outdated. Uh second of all, they did not have one is to 10,000 or 1 is to 20,000 for the whole country. They had like one is to 200,000. So watch in a one is to 200,000 map, three, four, five, one centimeter is two kilometers. Okay, so it's nice. But it doesn't have that real feeling. Like you're walking in a land, you want one is to ten thousand, one is to two hundred uh twenty thousand with 10 meter contour lines, 20 meter contour lines, then you get that feeling that. You know, I've I've got an alien spaceship using which I can see the land, I can visualize the land, and I can choose what I'm doing next. The one is to two hundred thousand topo sheets that the survey of India was selling were nice, but just",
-      "words": [
+        },
         {
           "word": "by",
           "startTime": 899.68,
@@ -17281,29 +17073,13 @@
           "startTime": 951.73,
           "endTime": 952.21,
           "confidence": 0.991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 952.21,
-      "endTime": 953.71,
-      "text": "unsatisfying.",
-      "words": [
+        },
         {
           "word": "unsatisfying.",
           "startTime": 952.21,
           "endTime": 953.71,
           "confidence": 0.9759
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 953.81,
-      "endTime": 957.17,
-      "text": "And to add insult to injury, they",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 953.81,
@@ -17345,15 +17121,7 @@
           "startTime": 956.85,
           "endTime": 957.17,
           "confidence": 0.9601
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 957.17,
-      "endTime": 959.89,
-      "text": "had some weird rule, which maybe",
-      "words": [
+        },
         {
           "word": "had",
           "startTime": 957.17,
@@ -17389,15 +17157,7 @@
           "startTime": 959.09,
           "endTime": 959.89,
           "confidence": 0.7961
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 959.89,
-      "endTime": 1071.39,
-      "text": "they still have, that Some hundred kilometers from the border of India, including the coastline of India, the sale of maps is prohibited because terrorists will use those maps. Okay? Now, excuse me, all the survey of India maps are there in the museum in London. So any self-respecting terrorist will go to London and get those maps. So what you end up doing is shooting yourself in the foot. So the people of India were deprived of this public good. Like you're taking my tax money, you're making these maps, but then you're saying, No, we will refuse to sell these maps in India for security considerations. Um I have a spectacular retort to something you said earlier in a previous ancient episode, but I shall be clueless and say it here. You were talking about deaths from nuclear power and deaths from coal and how coal is a truly dangerous technology. Okay, and my retort would be that we in India would do a lot better if we worried about deaths from terrorism and more about deaths from coal. Okay, this is an example of that. It's just very wasteful. Now, you know, I was living in Bombay. So all the cool maps for me were cut off because we're at the coast. You try hiking in the Himalayas, all the cool maps are cut off because it's near the border. So you know the survey of India was just like a really ineffective organization. They were not surveying the country regularly. And in any case, whatever treasure trove of maps they have was not there for the people. Remember, a public good is for the people. It's not there for the state. We don't give a damn about what the state has in their pocket. The state exists to serve the people. If the people don't have maps, what use is it? Okay, if the people are in the dark, what use is it? The map are for the people, so that the people can make plans. Maybe you want to buy some land. Maybe you want to think about how you will construct something. You need to see maps. You need to see topo sheets. And without that, you're just walking around the country, which is a",
-      "words": [
+        },
         {
           "word": "they",
           "startTime": 959.89,
@@ -19683,15 +19443,7 @@
           "startTime": 1071.01,
           "endTime": 1071.39,
           "confidence": 0.9819
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1071.76,
-      "endTime": 1073.52,
-      "text": "very inefficient technology.",
-      "words": [
+        },
         {
           "word": "very",
           "startTime": 1071.76,
@@ -19709,15 +19461,7 @@
           "startTime": 1072.88,
           "endTime": 1073.52,
           "confidence": 0.9765
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1073.52,
-      "endTime": 1117.43,
-      "text": "So this is the prehistory of maps and what is just unsatisfactory about the survey of India. I don't want to single out the survey of India too much for criticism. As always, I will say, gentle reader, there is a general problem in India. You're an underdeveloped country, we are a developing country, everything works badly. Okay so monetary policy works badly, the police work badly, the judiciary works badly, the military works badly, the Survey of India works badly, the statistical system works badly. I don't mean to single out the survey of India as being out of line. But it's a part of this underdevelopment that there is low state capacity, there is just a lack of simple, sensible behavior on such a fundamental thing, which is",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1073.52,
@@ -24335,8 +24079,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1297.36,
-      "endTime": 1355.24,
-      "text": "commitment. And since we all stand on the shoulders of giants, it could well be said that Indian map makers since Everest have climbed Mount Everest. So, Ajay, you know, we've spoken about centuries past, we've spoken about the nineteenth century, the twentieth century, but you know, heavier in the twenty first century, technology exploding all around us. And I'm reminded of something a friend of mine said, which just, you know, made me sit back on my chair and go, What the fuck? I didn't think of that. And here's what he said. He said that people in the generation who are born today will never know what it is to be lost. GPS, etcetera. And that's a mind blowing thought to me. They will never know what it is to be a lost. And in a sense, that is also a lost, but let's not go there. But bring me up to date with what is happening uh with maps and with technology. The old",
+      "endTime": 1354.92,
+      "text": "commitment. And since we all stand on the shoulders of giants, it could well be said that Indian map makers since Everest have climbed Mount Everest. So, Ajay, you know, we've spoken about centuries past, we've spoken about the nineteenth century, the twentieth century, but you know, heavier in the twenty first century, technology exploding all around us. And I'm reminded of something a friend of mine said, which just, you know, made me sit back on my chair and go, What the fuck? I didn't think of that. And here's what he said. He said that people in the generation who are born today will never know what it is to be lost. GPS, etcetera. And that's a mind blowing thought to me. They will never know what it is to be a lost. And in a sense, that is also a lost, but let's not go there. But bring me up to date with what is happening uh with maps and with technology. The",
       "words": [
         {
           "word": "commitment.",
@@ -25333,21 +25077,21 @@
           "startTime": 1354.68,
           "endTime": 1354.92,
           "confidence": 0.968
-        },
-        {
-          "word": "old",
-          "startTime": 1354.92,
-          "endTime": 1355.24,
-          "confidence": 0.9892
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1355.24,
-      "endTime": 1401.38,
-      "text": "world that I have described to you contains a very dark and difficult message that you need British levels of state capability to have quiet humdrum, day after day, thousands of people walking around the country with their theodolites, accurately jotting down coordinates, doing their trigonometry with conscientious. Okay? You could just say like sorry, there is no other way to achieve modernity. Now some incredible technological transformations took place which made all this a whole lot easier. Okay so I just want to briefly describe those technologies. The first of them is GPS. Okay so The United States Department of Defense has put up a network of satellites, which is a public good for the whole",
+      "startTime": 1354.92,
+      "endTime": 1595.78,
+      "text": "old world that I have described to you contains a very dark and difficult message that you need British levels of state capability to have quiet humdrum, day after day, thousands of people walking around the country with their theodolites, accurately jotting down coordinates, doing their trigonometry with conscientious. Okay? You could just say like sorry, there is no other way to achieve modernity. Now some incredible technological transformations took place which made all this a whole lot easier. Okay so I just want to briefly describe those technologies. The first of them is GPS. Okay so The United States Department of Defense has put up a network of satellites, which is a public good for the whole world. So just to be absolutely clear, many people think that GPS cover is kind of like mobile phone cover. It is not. There are 44 GPS satellites in the sky circling the earth at all times. All they do is shout. They only broadcast. That's all. And they don't know the existence of a handset. They don't know that a handset exists. The handset is hearing two, three, five. Satellites and working out its own position. Okay, it's it's just a beautiful, brilliant, clever idea that the US DOD takes responsibility for keeping those satellites aloft. They're low earth satellites, so they get friction from the atmosphere. So every year, I think five or ten satellites crash and burn through the atmosphere, and the US DOD launches five or ten new satellites to keep the system going. Okay, so at all times there are 44 satellites in the sky. Now this is magical. You're standing anywhere in the world. 10 meter precision, uh, an estimate of your X and Y. Unfortunately, the elevation estimate is less precise. But this is a breakthrough. This is more accurate than most theodolite trigonometry that a human map maker could make. So suddenly the cost and complexity of walking around the country and taking readings went down dramatically. Okay, as long as Uncle Sam is paying for The public good of GPS, we are all happy beneficiaries. So that was idea number one. The second revolutionary idea was satellite imagery. Satellites in the sky taking photographs of the earth, which can be a foundation on which you will paint a map. So just think as children, we would have that opaque, semi-opaque paper. I don't know what it's called, tissue paper, no. Translucent. Translucent paper. But you would pay place the paper on top of something and then sketch with a pencil on that. Basically imagine doing that, that you've got a photograph taken by a satellite, and then you place that semi-transparent paper on it and you start painting. You can start painting the roads, you can start painting the buildings, suddenly you've got a first draft of a map. Without needing to survey the earth, you just look down from the sky. You need some strong points where the precise trigonometric alignments are done. Modern satellites are incredibly accurate. When you get the frame, you are given very accurate latitude, longitude for the four corners of the frame. Okay, so that's a revolution. All you need is a bird in the sky and you take photos. You'll say, I'm a poor country, I don't have my own birds, no problem. Lots of rich countries have put up these birds, they're taking photographs, they're gifting away the photographs as public goods. So a profusion of good maps are uh of good photographs available from the sky, and it can be used readily to make a first cut of maps. This is the innovation number two. The innovation number three is an amazing piece of satellite technology, which is called SAR. SAR stands for synthetic aperture radar. Okay. One day, Amit, if you will indulge me, I want to do an entire episode on the magic of synthetic aperture radar. It's mind-blowingly great. It is just one of the happiest things in the world. Today I will not get distracted to explain SAR.",
       "words": [
+        {
+          "word": "old",
+          "startTime": 1354.92,
+          "endTime": 1355.24,
+          "confidence": 0.9892
+        },
         {
           "word": "world",
           "startTime": 1355.24,
@@ -26049,15 +25793,7 @@
           "startTime": 1401.06,
           "endTime": 1401.38,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1401.38,
-      "endTime": 1404.02,
-      "text": "world. So just",
-      "words": [
+        },
         {
           "word": "world.",
           "startTime": 1401.38,
@@ -26075,15 +25811,7 @@
           "startTime": 1403.54,
           "endTime": 1404.02,
           "confidence": 0.9325
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1404.02,
-      "endTime": 1428.71,
-      "text": "to be absolutely clear, many people think that GPS cover is kind of like mobile phone cover. It is not. There are 44 GPS satellites in the sky circling the earth at all times. All they do is shout. They only broadcast. That's all. And they don't know the existence of a handset. They don't know that a handset exists. The handset is hearing two, three, five. Satellites and working out its own position.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1404.02,
@@ -26527,15 +26255,7 @@
           "startTime": 1428.15,
           "endTime": 1428.71,
           "confidence": 0.9458
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1428.71,
-      "endTime": 1431.11,
-      "text": "Okay, it's it's just a beautiful,",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 1428.71,
@@ -26571,15 +26291,7 @@
           "startTime": 1430.07,
           "endTime": 1431.11,
           "confidence": 0.9872
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1431.11,
-      "endTime": 1439.51,
-      "text": "brilliant, clever idea that the US DOD takes responsibility for keeping those satellites aloft. They're low earth satellites, so they get friction",
-      "words": [
+        },
         {
           "word": "brilliant,",
           "startTime": 1431.11,
@@ -26711,15 +26423,7 @@
           "startTime": 1438.63,
           "endTime": 1439.51,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1439.51,
-      "endTime": 1441.59,
-      "text": "from the atmosphere.",
-      "words": [
+        },
         {
           "word": "from",
           "startTime": 1439.51,
@@ -26737,15 +26441,7 @@
           "startTime": 1440.47,
           "endTime": 1441.59,
           "confidence": 0.9765
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1441.59,
-      "endTime": 1457.59,
-      "text": "So every year, I think five or ten satellites crash and burn through the atmosphere, and the US DOD launches five or ten new satellites to keep the system going. Okay, so at all times there are 44 satellites in the sky. Now this is magical. You're standing anywhere in the world. 10 meter",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1441.59,
@@ -27069,15 +26765,7 @@
           "startTime": 1457.11,
           "endTime": 1457.59,
           "confidence": 0.9912
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1457.59,
-      "endTime": 1459.27,
-      "text": "precision, uh,",
-      "words": [
+        },
         {
           "word": "precision,",
           "startTime": 1457.59,
@@ -27089,15 +26777,7 @@
           "startTime": 1458.87,
           "endTime": 1459.27,
           "confidence": 0.5846
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1459.27,
-      "endTime": 1558.95,
-      "text": "an estimate of your X and Y. Unfortunately, the elevation estimate is less precise. But this is a breakthrough. This is more accurate than most theodolite trigonometry that a human map maker could make. So suddenly the cost and complexity of walking around the country and taking readings went down dramatically. Okay, as long as Uncle Sam is paying for The public good of GPS, we are all happy beneficiaries. So that was idea number one. The second revolutionary idea was satellite imagery. Satellites in the sky taking photographs of the earth, which can be a foundation on which you will paint a map. So just think as children, we would have that opaque, semi-opaque paper. I don't know what it's called, tissue paper, no. Translucent. Translucent paper. But you would pay place the paper on top of something and then sketch with a pencil on that. Basically imagine doing that, that you've got a photograph taken by a satellite, and then you place that semi-transparent paper on it and you start painting. You can start painting the roads, you can start painting the buildings, suddenly you've got a first draft of a map. Without needing to survey the earth, you just look down from the sky. You need some strong points where the precise trigonometric alignments are done. Modern satellites are incredibly accurate. When you get the frame, you are given very accurate latitude, longitude for the four corners of the frame. Okay, so that's a revolution. All you need is a bird in the sky and you take photos. You'll say, I'm a poor country, I don't have my own birds, no problem. Lots of rich countries have put up these birds, they're taking photographs, they're gifting away the photographs as public goods. So a profusion",
-      "words": [
+        },
         {
           "word": "an",
           "startTime": 1459.27,
@@ -28885,15 +28565,7 @@
           "startTime": 1558.23,
           "endTime": 1558.95,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1558.95,
-      "endTime": 1560.87,
-      "text": "of good maps are uh",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1558.95,
@@ -28923,15 +28595,7 @@
           "startTime": 1560.39,
           "endTime": 1560.87,
           "confidence": 0.7622
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1560.87,
-      "endTime": 1573.89,
-      "text": "of good photographs available from the sky, and it can be used readily to make a first cut of maps. This is the innovation number two. The innovation number three is an amazing piece of satellite",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1560.87,
@@ -29147,15 +28811,7 @@
           "startTime": 1573.09,
           "endTime": 1573.89,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1573.89,
-      "endTime": 1575.65,
-      "text": "technology, which is",
-      "words": [
+        },
         {
           "word": "technology,",
           "startTime": 1573.89,
@@ -29173,15 +28829,7 @@
           "startTime": 1575.41,
           "endTime": 1575.65,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1575.65,
-      "endTime": 1595.78,
-      "text": "called SAR. SAR stands for synthetic aperture radar. Okay. One day, Amit, if you will indulge me, I want to do an entire episode on the magic of synthetic aperture radar. It's mind-blowingly great. It is just one of the happiest things in the world. Today I will not get distracted to explain SAR.",
-      "words": [
+        },
         {
           "word": "called",
           "startTime": 1575.65,
@@ -29699,8 +29347,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1602.98,
-      "endTime": 1607.22,
-      "text": "line, it will show you the 3D imagery of a building. So",
+      "endTime": 1673.03,
+      "text": "line, it will show you the 3D imagery of a building. So you're looking from a satellite. You're looking from a satellite, it takes multiple images from multiple locations. It shoots radar at the earth. And it listens to the bounce, and it can basically it was originally military technology for discerning a tank sized object, and so it can discern any building sized object. Suddenly you're getting 3D imagery of the world where every building is visible in the SAR imagery. Finally, there is a satellite innovation which is called a DEM Digital Elevation Map. Here, what's going on is the satellite shoots a radar beam at the earth and listens for the reflection, and it gets a fair estimate. Of the elevation of the place. So suddenly you've got your 3D mapping of the world done because you're able to look from the sky. Suddenly the ability to make maps just exploded. You did not need to walk around the world for doing a whole bunch of things, or you could use Android phones walking around the world and their GPS traces to create maps and all this added up to a technological",
       "words": [
         {
           "word": "line,",
@@ -29773,15 +29421,7 @@
           "startTime": 1606.98,
           "endTime": 1607.22,
           "confidence": 0.9933
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1607.22,
-      "endTime": 1610.26,
-      "text": "you're looking from a satellite. You're looking",
-      "words": [
+        },
         {
           "word": "you're",
           "startTime": 1607.22,
@@ -29823,15 +29463,7 @@
           "startTime": 1609.86,
           "endTime": 1610.26,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1610.26,
-      "endTime": 1662.39,
-      "text": "from a satellite, it takes multiple images from multiple locations. It shoots radar at the earth. And it listens to the bounce, and it can basically it was originally military technology for discerning a tank sized object, and so it can discern any building sized object. Suddenly you're getting 3D imagery of the world where every building is visible in the SAR imagery. Finally, there is a satellite innovation which is called a DEM Digital Elevation Map. Here, what's going on is the satellite shoots a radar beam at the earth and listens for the reflection, and it gets a fair estimate. Of the elevation of the place. So suddenly you've got your 3D mapping of the world done because you're able to look from the sky. Suddenly the ability to make maps just exploded. You did not need to walk around the world for doing a whole bunch of things, or",
-      "words": [
+        },
         {
           "word": "from",
           "startTime": 1610.26,
@@ -30743,15 +30375,7 @@
           "startTime": 1661.91,
           "endTime": 1662.39,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1662.39,
-      "endTime": 1664.15,
-      "text": "you could use",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 1662.39,
@@ -30769,15 +30393,7 @@
           "startTime": 1663.19,
           "endTime": 1664.15,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1664.15,
-      "endTime": 1673.03,
-      "text": "Android phones walking around the world and their GPS traces to create maps and all this added up to a technological",
-      "words": [
+        },
         {
           "word": "Android",
           "startTime": 1664.15,
@@ -32531,8 +32147,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1748.96,
-      "endTime": 1752.72,
-      "text": "Barun was saying this was before Android phones, they were using Garmin handheld",
+      "endTime": 1762.14,
+      "text": "Barun was saying this was before Android phones, they were using Garmin handheld GPS units to walk around the ground, get the coordinates, then stick the coordinates into Google Earth. Uh I want to talk about Google Earth slightly later. Okay. Sure.",
       "words": [
         {
           "word": "Barun",
@@ -32611,15 +32227,7 @@
           "startTime": 1752.24,
           "endTime": 1752.72,
           "confidence": 0.9754
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1752.72,
-      "endTime": 1754.96,
-      "text": "GPS units to walk",
-      "words": [
+        },
         {
           "word": "GPS",
           "startTime": 1752.72,
@@ -32643,15 +32251,7 @@
           "startTime": 1754.64,
           "endTime": 1754.96,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1754.96,
-      "endTime": 1762.14,
-      "text": "around the ground, get the coordinates, then stick the coordinates into Google Earth. Uh I want to talk about Google Earth slightly later. Okay. Sure.",
-      "words": [
+        },
         {
           "word": "around",
           "startTime": 1754.96,
@@ -33031,8 +32631,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1782.56,
-      "endTime": 1829.65,
-      "text": "simplest, you could just say that Survey of India, you can rethink your processes, your people, your capabilities, utilizing all these technologies. You could use satellite imagery, you could use digital elevation maps, you could use SAR. And you can use GPS in the field, and then your map making technology can improve greatly. Yeah, we could do that. But the trouble is then we'll be holding our breath, waiting for an Indian government agency to become accountable and to transform its own processes. And this is part of the larger underdevelopment problem of India, that it's very difficult to get government agencies to do good things under Indian conditions. We are a poor country. So we have low levels of state capability. All government organizations have difficulties and you know have low levels of capabilities. It would take a generation",
+      "endTime": 2181.28,
+      "text": "simplest, you could just say that Survey of India, you can rethink your processes, your people, your capabilities, utilizing all these technologies. You could use satellite imagery, you could use digital elevation maps, you could use SAR. And you can use GPS in the field, and then your map making technology can improve greatly. Yeah, we could do that. But the trouble is then we'll be holding our breath, waiting for an Indian government agency to become accountable and to transform its own processes. And this is part of the larger underdevelopment problem of India, that it's very difficult to get government agencies to do good things under Indian conditions. We are a poor country. So we have low levels of state capability. All government organizations have difficulties and you know have low levels of capabilities. It would take a generation for enlightened, brilliant, visionary leaders in the survey of India to do this kind of transformation. And then you also get to more basic questions that, you know, do you get George Everest kind of excited? Elites that will take interest in a dowdy organization like Survey of India. Okay, that also becomes a problem. Like who is there to fight for Survey of India as a critical important piece of public infrastructure in a world of running welfare programs, you don't take these kinds of things seriously. So under Indian socialism, these things don't get prioritized. What is remarkable about the world is that some important systems have emerged, and I'm going to describe three of those systems. There are actually many others. Whereby de facto the problem of the people of India has been solved. Okay? The people of India are now in a map paradise the likes of which we have never seen before. We are today better off compared to George Everest in terms of the kind of maps that we have. Okay, this is sheer joy and happiness. So let me run through piece by piece. Step one, Google Maps. Okay. Google Maps is a madly great map. How is it made? Partly the people inside Google use satellite imagery produced by first world countries. Okay, again, the Indian Israel does not release map images. Okay, developing country. You take taxpayer money, photograph the country, but keep the map secret. Okay. Developing country. The map is for the enlightenment of the state. It is not done as a service for the people. So the release of photographs is done by first world space organizations, no problem. So Google is able to get that. The second stage is Google has human beings, by the way. I believe there is a some 5, 10,000 people sitting in Hyderabad building a map of the whole world, working for Google. Okay, doing these processes of starting with satellite imagery and drawing lines for where you see a road, where you see a building, all these things are being done whereby Google builds the map. Uh, you may have heard of a cool person in India named Sanjay Jain. He was a pioneer at Google. In getting Google to up their game, they had started out thinking that where in the United States the government releases the map data, we are done. Where in the UK, the government releases the map data, we are done. But that approach doesn't scale to countries like India, where the govern does not release the map data. Either they don't have it or they don't release it. So they upped their game saying, No, we will make the map for the whole world. And they wrote the software. I think it was called MapMaker, Sanjay Jayan and others wrote the software. And then a large facility was built in Hyderabad where the Google Maps map is made for the whole world, okay, sitting in India. And what it does is it starts at satellite imagery, and so you're able to see many things. You paint some roads, you paint where is a bridge, where is the current river, all those things are visible from the photographs from space. The second magic that Google gets is by default, your Android phone keeps tell, I am here, I am here, I am here. It's not a nice thing. Okay, gentle reader, please run, not walk, and switch off the location tracking in your Android phone. It is a surveillance device when you are not in a great democracy. Okay? But by default it is on and latitude, longitude of the phone keeps getting transmitted back to Mother Google. And then Google is able to see you're walking on a road, then it must be that there is a road there. So by watching hundreds of traces, it's able to figure it knows your velocity. If you were moving at 60 kPH, hmm, that's a motorable road. Like that. By just watching all the phones, it gets a large amount of GPS traces, and they're able to use that to strengthen. Google Maps. Finally, there are individuals who are allowed to contribute into Google Maps. So I mean I know Google is a for-profit company, but I'm just such a grateful user of Google Maps. So I keep on contributing that I see a restaurant here that you did not know on your maps, or you think this building is here, the GPS location is wrong. I am telling you here is the correct location. And they've made a easy user-friendly location by which like millions of people all over the world are constantly contributing. So Google Maps is an amazing map. The likes of which has not existed in India before. And it is given for free to users as of today. Okay, we hope that it will stay free for a long, long time. And then as long as Google Maps is free, it just generates a phenomenal consumer surplus for every user. Okay, I remember I wrote a blog article saying did the Indian GDP just go up by 0.1% when Google released Google Maps navigation in India? So again, we all take it for granted today. It is mind blowing. You are at point A, you need to go to point B. You say to Google, take me there. I want to walk, or I want to drive, or I want to use public transport. And it solves the traveling salesman problem, and it takes you there. Is this mind blowing or what? I mean, imagine in the bad old days if you and I landed up in an alien city, what would we do? It was so painful getting around. Today, we're fully ready. We could land up in any city. and using Google Maps we can get around. It is just miraculous in terms of you know pricing open the landscape. Otherwise you always needed a local interlocutor and local interlocutors either suffered from a Chinese whispers or would like to get a rent or are resentful and don't want to give you the correct information. And that was just such a big friction. So it it kept each neighborhood trapped in its local people. Whereas when maps come about, suddenly it's an open access system where anybody can do their stuff. So you don't need to be a local it is a way of banging away at the nativism that otherwise every region Suffers from So that is Pillar One. It is Google Maps. It is absolutely fantastic.",
       "words": [
         {
           "word": "simplest,",
@@ -33879,29 +33479,13 @@
           "startTime": 1828.37,
           "endTime": 1829.65,
           "confidence": 0.9603
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1829.65,
-      "endTime": 1831.15,
-      "text": "for",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 1829.65,
           "endTime": 1831.15,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1831.25,
-      "endTime": 1865.12,
-      "text": "enlightened, brilliant, visionary leaders in the survey of India to do this kind of transformation. And then you also get to more basic questions that, you know, do you get George Everest kind of excited? Elites that will take interest in a dowdy organization like Survey of India. Okay, that also becomes a problem. Like who is there to fight for Survey of India as a critical important piece of public infrastructure in a world of running welfare programs, you don't take these kinds of things seriously. So under Indian socialism, these things don't get",
-      "words": [
+        },
         {
           "word": "enlightened,",
           "startTime": 1831.25,
@@ -34471,15 +34055,7 @@
           "startTime": 1864.88,
           "endTime": 1865.12,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1865.12,
-      "endTime": 1867.12,
-      "text": "prioritized. What",
-      "words": [
+        },
         {
           "word": "prioritized.",
           "startTime": 1865.12,
@@ -34491,15 +34067,7 @@
           "startTime": 1866.8,
           "endTime": 1867.12,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1867.12,
-      "endTime": 2010.77,
-      "text": "is remarkable about the world is that some important systems have emerged, and I'm going to describe three of those systems. There are actually many others. Whereby de facto the problem of the people of India has been solved. Okay? The people of India are now in a map paradise the likes of which we have never seen before. We are today better off compared to George Everest in terms of the kind of maps that we have. Okay, this is sheer joy and happiness. So let me run through piece by piece. Step one, Google Maps. Okay. Google Maps is a madly great map. How is it made? Partly the people inside Google use satellite imagery produced by first world countries. Okay, again, the Indian Israel does not release map images. Okay, developing country. You take taxpayer money, photograph the country, but keep the map secret. Okay. Developing country. The map is for the enlightenment of the state. It is not done as a service for the people. So the release of photographs is done by first world space organizations, no problem. So Google is able to get that. The second stage is Google has human beings, by the way. I believe there is a some 5, 10,000 people sitting in Hyderabad building a map of the whole world, working for Google. Okay, doing these processes of starting with satellite imagery and drawing lines for where you see a road, where you see a building, all these things are being done whereby Google builds the map. Uh, you may have heard of a cool person in India named Sanjay Jain. He was a pioneer at Google. In getting Google to up their game, they had started out thinking that where in the United States the government releases the map data, we are done. Where in the UK, the government releases the map data, we are done. But that approach doesn't scale to countries like India, where the govern does not release the map data. Either they don't have it or they don't release it. So they upped their game saying, No, we will make the map for the whole world. And they wrote the software. I think it was called MapMaker, Sanjay Jayan and others wrote the software. And then a large facility was built in Hyderabad where the Google Maps map is made for the whole world, okay, sitting in India. And what it does is it starts at satellite imagery, and so you're able to see many things. You paint some roads, you paint where is a bridge, where is the current river, all those things are visible from the photographs from space. The second magic that Google",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 1867.12,
@@ -37205,15 +36773,7 @@
           "startTime": 2010.21,
           "endTime": 2010.77,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2010.77,
-      "endTime": 2012.85,
-      "text": "gets is",
-      "words": [
+        },
         {
           "word": "gets",
           "startTime": 2010.77,
@@ -37225,15 +36785,7 @@
           "startTime": 2011.65,
           "endTime": 2012.85,
           "confidence": 0.9967
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2012.85,
-      "endTime": 2090.5,
-      "text": "by default, your Android phone keeps tell, I am here, I am here, I am here. It's not a nice thing. Okay, gentle reader, please run, not walk, and switch off the location tracking in your Android phone. It is a surveillance device when you are not in a great democracy. Okay? But by default it is on and latitude, longitude of the phone keeps getting transmitted back to Mother Google. And then Google is able to see you're walking on a road, then it must be that there is a road there. So by watching hundreds of traces, it's able to figure it knows your velocity. If you were moving at 60 kPH, hmm, that's a motorable road. Like that. By just watching all the phones, it gets a large amount of GPS traces, and they're able to use that to strengthen. Google Maps. Finally, there are individuals who are allowed to contribute into Google Maps. So I mean I know Google is a for-profit company, but I'm just such a grateful user of Google Maps. So I keep on contributing that I see a restaurant here that you did not know on your maps, or you think this building is here, the GPS location is wrong. I am telling you here is the correct location. And they've made a easy user-friendly location by which like millions of people all over the world are constantly contributing. So Google Maps is an amazing map. The likes of which has not existed in India",
-      "words": [
+        },
         {
           "word": "by",
           "startTime": 2012.85,
@@ -38751,15 +38303,7 @@
           "startTime": 2090.1,
           "endTime": 2090.5,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2090.5,
-      "endTime": 2092.34,
-      "text": "before. And it",
-      "words": [
+        },
         {
           "word": "before.",
           "startTime": 2090.5,
@@ -38777,15 +38321,7 @@
           "startTime": 2092.1,
           "endTime": 2092.34,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2092.34,
-      "endTime": 2181.28,
-      "text": "is given for free to users as of today. Okay, we hope that it will stay free for a long, long time. And then as long as Google Maps is free, it just generates a phenomenal consumer surplus for every user. Okay, I remember I wrote a blog article saying did the Indian GDP just go up by 0.1% when Google released Google Maps navigation in India? So again, we all take it for granted today. It is mind blowing. You are at point A, you need to go to point B. You say to Google, take me there. I want to walk, or I want to drive, or I want to use public transport. And it solves the traveling salesman problem, and it takes you there. Is this mind blowing or what? I mean, imagine in the bad old days if you and I landed up in an alien city, what would we do? It was so painful getting around. Today, we're fully ready. We could land up in any city. and using Google Maps we can get around. It is just miraculous in terms of you know pricing open the landscape. Otherwise you always needed a local interlocutor and local interlocutors either suffered from a Chinese whispers or would like to get a rent or are resentful and don't want to give you the correct information. And that was just such a big friction. So it it kept each neighborhood trapped in its local people. Whereas when maps come about, suddenly it's an open access system where anybody can do their stuff. So you don't need to be a local it is a way of banging away at the nativism that otherwise every region Suffers from So that is Pillar One. It is Google Maps. It is absolutely fantastic.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2092.34,
@@ -42957,8 +42493,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2291.46,
-      "endTime": 2506.29,
-      "text": "So you know, George Everest was a mind blowing revolution compared to the great administrators Akbar and Orangzeb. And we are in a different heaven compared to George Everest. Um I want to digress slightly. Actually, have a problem with Google Maps in that it often doesn't give you a strategic sense. Many kinds of boundaries are not shown properly. Like you can't persuade Google Maps to show you a district boundary. So if the abstraction of interest to you is a district, then it's not a useful map. So again, every map is a model of the world that is useful for certain things, and then you want different models of the world that are useful for different things. When uh I was growing up. At the start of my house, we had a wall-sized map, meaning I was short and the map was twice my height. And my what my father did was at the time survey of India had four sheets which made up India. So the imagine four big maps, and when you pasted the four together, you got a full India. So there was a wooden board that was placed on the wall, and the four sheets were pasted on the wall. And it was just a delight that. I just constantly would look at that and try to get a sense of the land and understand each river and try to mug up the names of every district and every place name and think of what is an optimal route from here to there. It was a treat. Now ever since I have looked for a good modern high quality wall sized map of India. And I have not found one. And gentle reader, if you can guide me on what is a nice wall-sized map of India that I can put up on my wall that, you know, is well done, meaning I think also I'm no longer willing to accept a survey of India quality map. Now I want like a nice modern, you know, national geographic quality map or a Rand McNally quality map, and I've just not been able to find a good wall-sized map of India. But I digress. Okay, so you need different maps for different things, and Google Maps does a lot and it does it very well, and it is transformative for certain applications. The second system that I want to talk about is Google Earth. and we had lightly touched upon it in the context of our hiking episode. And I just want to say to everybody, please use Google Earth. Please install the desktop version of Google Earth. It is delight. It is paradise. There is so many things you can do with Google Earth that will just leave you transfixed. You need a big screen, you know, get like a thirty-two inch screen and put a big map of the place you are and zoom on it, get into terrain mode. You they don't show topole sheets, they don't quite show contour lines, but it is just a delight to look at Google Earth and look at the world in different ways. Watch it give you three D visualizations and sort of aerial flybys. You can be rotating around Nanda Devi, visualizing where the plutonium might be hiding. Okay, that's what Google Earth can do, and that's the system number two. Once again, so far it is freeware. I think people should be willing to pay a lot of money for it, but currently it is freeware. I just want to be technical around the word public good. Google the Google Maps data is available through an API interface to every Software developer of the world. So if you are building Uber, you are able to plug into Google bracket, which is more than can be said about the survey of India, which has no data sets and no APIs. Okay, they don't release data sets, they don't give you API access. Google gives you the API access and they charge good money for it. So at this point, it stops being a public",
+      "endTime": 2576.44,
+      "text": "So you know, George Everest was a mind blowing revolution compared to the great administrators Akbar and Orangzeb. And we are in a different heaven compared to George Everest. Um I want to digress slightly. Actually, have a problem with Google Maps in that it often doesn't give you a strategic sense. Many kinds of boundaries are not shown properly. Like you can't persuade Google Maps to show you a district boundary. So if the abstraction of interest to you is a district, then it's not a useful map. So again, every map is a model of the world that is useful for certain things, and then you want different models of the world that are useful for different things. When uh I was growing up. At the start of my house, we had a wall-sized map, meaning I was short and the map was twice my height. And my what my father did was at the time survey of India had four sheets which made up India. So the imagine four big maps, and when you pasted the four together, you got a full India. So there was a wooden board that was placed on the wall, and the four sheets were pasted on the wall. And it was just a delight that. I just constantly would look at that and try to get a sense of the land and understand each river and try to mug up the names of every district and every place name and think of what is an optimal route from here to there. It was a treat. Now ever since I have looked for a good modern high quality wall sized map of India. And I have not found one. And gentle reader, if you can guide me on what is a nice wall-sized map of India that I can put up on my wall that, you know, is well done, meaning I think also I'm no longer willing to accept a survey of India quality map. Now I want like a nice modern, you know, national geographic quality map or a Rand McNally quality map, and I've just not been able to find a good wall-sized map of India. But I digress. Okay, so you need different maps for different things, and Google Maps does a lot and it does it very well, and it is transformative for certain applications. The second system that I want to talk about is Google Earth. and we had lightly touched upon it in the context of our hiking episode. And I just want to say to everybody, please use Google Earth. Please install the desktop version of Google Earth. It is delight. It is paradise. There is so many things you can do with Google Earth that will just leave you transfixed. You need a big screen, you know, get like a thirty-two inch screen and put a big map of the place you are and zoom on it, get into terrain mode. You they don't show topole sheets, they don't quite show contour lines, but it is just a delight to look at Google Earth and look at the world in different ways. Watch it give you three D visualizations and sort of aerial flybys. You can be rotating around Nanda Devi, visualizing where the plutonium might be hiding. Okay, that's what Google Earth can do, and that's the system number two. Once again, so far it is freeware. I think people should be willing to pay a lot of money for it, but currently it is freeware. I just want to be technical around the word public good. Google the Google Maps data is available through an API interface to every Software developer of the world. So if you are building Uber, you are able to plug into Google bracket, which is more than can be said about the survey of India, which has no data sets and no APIs. Okay, they don't release data sets, they don't give you API access. Google gives you the API access and they charge good money for it. So at this point, it stops being a public good. So API access to Google again is a revolution. Because you can build amazing things on it. At this point, it stopped being a public good. It is Google. It is a system. So I've described system one, Google Maps, end user access free, API access unfree. A system Google Earth. Don't use it just as earth.google.com. Install the desktop version. Again, end user access free. I believe the entire thing is available as API access. I believe it's for a fee. Okay, so that's where we are. Then in a way, the fact that Google Maps is free has really made you start rethinking and questioning this whole public good that somebody collects tax money and surveys India and uses all these great technologies. Will they recruit Sanjay Jain? Will they build a map maker? Okay, will they release the data into the public domain? Will there be an API access? Will there be an amazing app? Will they do navigation? It's like an end run around the entire state capacity problem. of getting the survey of India to work. And we've just got these amazing things, at least as of now, they are free. There's no guarantee tomorrow Google can start charging for these. But where we are",
       "words": [
         {
           "word": "So",
@@ -47105,15 +46641,7 @@
           "startTime": 2505.97,
           "endTime": 2506.29,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2506.29,
-      "endTime": 2507.89,
-      "text": "good. So API",
-      "words": [
+        },
         {
           "word": "good.",
           "startTime": 2506.29,
@@ -47131,15 +46659,7 @@
           "startTime": 2507.33,
           "endTime": 2507.89,
           "confidence": 0.9836
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2507.89,
-      "endTime": 2515.25,
-      "text": "access to Google again is a revolution. Because you can build amazing things on it. At this point, it stopped being a public good. It is Google. It is",
-      "words": [
+        },
         {
           "word": "access",
           "startTime": 2507.89,
@@ -47313,29 +46833,13 @@
           "startTime": 2515.01,
           "endTime": 2515.25,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2515.25,
-      "endTime": 2515.49,
-      "text": "a",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 2515.25,
           "endTime": 2515.49,
           "confidence": 0.9978
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2515.49,
-      "endTime": 2576.44,
-      "text": "system. So I've described system one, Google Maps, end user access free, API access unfree. A system Google Earth. Don't use it just as earth.google.com. Install the desktop version. Again, end user access free. I believe the entire thing is available as API access. I believe it's for a fee. Okay, so that's where we are. Then in a way, the fact that Google Maps is free has really made you start rethinking and questioning this whole public good that somebody collects tax money and surveys India and uses all these great technologies. Will they recruit Sanjay Jain? Will they build a map maker? Okay, will they release the data into the public domain? Will there be an API access? Will there be an amazing app? Will they do navigation? It's like an end run around the entire state capacity problem. of getting the survey of India to work. And we've just got these amazing things, at least as of now, they are free. There's no guarantee tomorrow Google can start charging for these. But where we are",
-      "words": [
+        },
         {
           "word": "system.",
           "startTime": 2515.49,
@@ -48409,8 +47913,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2576.44,
-      "endTime": 2594.04,
-      "text": "is a revolution you mentioned uh Uber using you know plugging into Google Earth and using the data. I just want to tell you that if Uber was using Survey of India data, if they had access to it, you know, you and I would be traveling by train. So you know thank God for that. Okay.",
+      "endTime": 2594.28,
+      "text": "is a revolution you mentioned uh Uber using you know plugging into Google Earth and using the data. I just want to tell you that if Uber was using Survey of India data, if they had access to it, you know, you and I would be traveling by train. So you know thank God for that. Okay. And",
       "words": [
         {
           "word": "is",
@@ -48753,21 +48257,21 @@
           "startTime": 2593.64,
           "endTime": 2594.04,
           "confidence": 0.5386
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2594.04,
-      "endTime": 2599.04,
-      "text": "And finally I want to talk about Open street maps. Okay?",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2594.04,
           "endTime": 2594.28,
           "confidence": 0.9411
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2594.28,
+      "endTime": 3232.53,
+      "text": "finally I want to talk about Open street maps. Okay? So some people, I'm apologize, I don't remember the names by heart. Some people woke up and said, you know, it's not good for the universe if a commercial company, Google, achieves this commanding position with a near monopoly on the most amazing maps of the world. So the combination of Google, their map maker software, their facility in Hyderabad, making maps for the whole world. and their ability to watch every Android phone, extract GPS traces, and continuously improve the map. It's a killer combination. Nobody else can match that, but really you don't want a Google monopoly in this space. So some people started imagining, could you do it differently? Imagine that there was a map database that was fulce. Okay? So just like we have the dream of free software and open source software, We talked about it in the Unix episode. Like that. Can we imagine a world where the map data is free software created by a bunch of volunteers? Okay? Now they got a head start because in first world countries, the Survey of India equivalent works well. It actually generates high quality data, and because they have good institutions, that data is released. Okay? So same issues. Like Survey of India doesn't release its corresponding agencies in advanced economies, they release Isro does not release, NASA releases same problems, okay, underdevelopment, liberal democracy, okay, that all those problems. So a project began which is called OSM, OpenStreetMaps, which got seeded initially by a large amount of these beautiful high-quality maps. The map databases, not their physical representation, the map databases that are released by first world agencies that are supposed to survey the country. and they take taxpayer money, they make a map database and they release the data as public domain. Anybody can download it. You and I can go into the United States Tiger database and just download the whole database. They don't want your name, password. Okay? Every civil servant of the Indian government, please observe, when you release data, don't ask for a name and password. The end user just downloads that data. It was made with taxpayer money, and it is a public good because everybody benefits. It's non-rival, it's non-excludable. That's the way you should think about statistics in a government system that you use taxpayer money to create some data and then release it and let the universe do whatever they want with that data. It is for private organizations to take that data, make a map, print the map, sell the map, make a commercial app, write an Uber, whatever. Private people should do whatever they want with these maps without restriction. So OSM was able to get a head start by first covering all the advanced economies. So basically all the OECD countries, you get good maps data, which went into OSM. At this point, already OSM was adding value because it had a single consistent API covering the data sets of many, many countries. So the project started gathering some momentum. Then OSM started adopt the same strategy of the open source software world. Saying, look, let's have volunteers everywhere in the world who will start contributing. So you and I can start contributing. You and I can walk around our block and make data that is given to the OSM database. Okay, so one by one, all over the world, individuals and volunteers started springing up. Saying, even if you are in a country where the government does not release high-quality map data, we the people are able to make map. Data and we the people are able to start contributing to OSM. Many places in India we have OSM volunteers organizing OSM mapping parties where they get together with their GPS phones and cycles and they ride around and make GPS traces, mark POIs points of interest, submit it all to the OSM database, and end the day with a lot of laughter and pizza. This is a great project that people should do these things and people should keep on building these maps. And OSM is the true public good. Okay, it is the true digital public good. Okay, the world is filled with propaganda and wrong uses of the words digital public good. Open source software is a digital public good. Okay? It is non-rival and non-excludable. My use of the Linux kernel does not in any way diminish your use of the Linux kernel. And you cannot even theoretically exclude a newborn child from the glories of Linux. That Linux source code sitting on a website is a public good. Same for the OSM data. The OSM data is public domain. It is sitting on websites. It is available for download. It is non-rival, it is non-excludable, it is the digital public good. Okay? Many, many places wrongly use the words digital public good. This is a digital public good. So I'm so excited. OSM is a revolution. It is a true public good, and it's been done by the people. The people came together and woke up and said, You know what? I'd like to have good maps. It's the energy of the people. It is not based on the state. There is no coercion involved. There is no taxation involved. We are not waiting for the government to say we are 200 kilometers from your coast. So you cannot release a map, or we are not waiting for the government that, oh, 1934 survey was a long time ago in 2025, we should survey this piece of land. We the people have woken up. And we are building this open source database, and we're using all the new technologies, satellite imagery, uh digital elevation maps, SAR imagery, and so on, admittedly built out of first world public goods. Okay, so the rich countries have the correct public administration DNA that they coerce the people, they extract taxpayer money. They've created a global public good called GPS. They've created the global public goods of putting satellites in the air, taking photographs, releasing imagery, releasing SAR imagery, releasing DEMs. But today for us in India, all that stuff is available. It's done. It's paid for by the taxpayer in the rich countries, and we can get going on making OSM maps and also consuming and using OSM. So OSM is something revolutionary. And my last little story is a commercial story surrounding OSM. to take you back. Do you remember when Apple first did iTunes? Okay, and the first, what were they called? iPods, right? When the first iPods came out. At the time Apple had a proprietary file format for the music. Okay? They felt that they could make a play for the monopoly of the world's music. So they picked a proprietary file format for music. So it was truly offensive. Like you would pay money to buy music from the Apple music store, but the file sitting on your disc was not yours because you couldn't decrypt it. You could only use it in an Apple supplied device, an iPod. You couldn't go anywhere else. You were locked in. Okay, this is really bad behavior by Apple. The rest of the computer industry woke up and saw saying this is really dangerous. Okay? Apple is dangerous. They're a very powerful, very successful corporation. We cannot let this happen. Like you just cannot allow music to be locked into a proprietary format controlled by Apple. So the whole industry spoke with each other on phone, they confabulated and they agreed that we're just going to build rival systems using the MP3 format. And MP3 is an open format. You can get the full spec. Anybody can read and write MP3 files. There is nothing secret. So every other large game in the music business switched to MP3 files. And then the consumers got angry at Apple saying, Hey, Paying money to buy this album, and you can't lock me in to only Apple equipment. So Apple was forced to back off and switch to MP3 files. Okay, so that is how MP3 was protected, and we got an open standard as the backbone, as the layer of the entire music business of the world. And that attempt at one proprietary monopoly was disabled by all the other rivals. That if one firm becomes too powerful, the others get an incentive to cooperate. Something similar has started happening with OSM. So once Google started becoming too successful, and Google Maps just became so amazing and so great, and you've already heard me gushing about Google Maps and Google Earth. And that led to the gnashing of teeth and biting of nails at Microsoft and Amazon and dot dot dot. So they all came together and said, hell, we're just going to use OSM. So they started using the OSM database. They started putting corporate resources to put data back into OSM. So when some Amazon deliveries happen, those GPS traces are being used to illuminate the OSM data. And so now many, many corporations have come together to both be users of OSM, which is good because only by having sophisticated users will you fix up systems. You know, a system that does not have smart users doesn't get that challenge. It doesn't get the unhappy users, the complaints, the bug reports, the feature demands. And also these organizations are all putting in large-scale corporate resources to strengthen the OSM database. So that's my last novel system of the day, and that is OSM. So I've just taken you through this journey that we start at Robert Clive and 1767, and then George Everest and the first mapping of India. And then you get into this boring. Economics and public administration of public good, non-rival, non-excludable, state capacity. What are we going to do? You're stuck. Okay, and then I'll if you had asked me at that point, I would be this old guy with white hair pontificating that the journey to economic development generally takes about 100 years. So we can hope that in 21-25 India will have a good quality survey of India. Okay, which is the way it is. Because of the scientific and engineering advances of satellite imagery of GPS, of DEM, of SAR, suddenly the landscape changed completely. And then we got Google Maps, Google Earth, OSM. And now the landscape is completely different. Like we in India are getting the glory of all these public goods without recourse to our taxpayer money or the limited state capacity and the malfunctioning organizations of the Indian state. This is just Chandi. This is so great.",
+      "words": [
         {
           "word": "finally",
           "startTime": 2594.28,
@@ -48827,15 +48331,7 @@
           "startTime": 2598.56,
           "endTime": 2599.04,
           "confidence": 0.572
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2599.04,
-      "endTime": 2600.24,
-      "text": "So some",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2599.04,
@@ -48847,15 +48343,7 @@
           "startTime": 2599.6,
           "endTime": 2600.24,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2600.24,
-      "endTime": 2689.25,
-      "text": "people, I'm apologize, I don't remember the names by heart. Some people woke up and said, you know, it's not good for the universe if a commercial company, Google, achieves this commanding position with a near monopoly on the most amazing maps of the world. So the combination of Google, their map maker software, their facility in Hyderabad, making maps for the whole world. and their ability to watch every Android phone, extract GPS traces, and continuously improve the map. It's a killer combination. Nobody else can match that, but really you don't want a Google monopoly in this space. So some people started imagining, could you do it differently? Imagine that there was a map database that was fulce. Okay? So just like we have the dream of free software and open source software, We talked about it in the Unix episode. Like that. Can we imagine a world where the map data is free software created by a bunch of volunteers? Okay? Now they got a head start because in first world countries, the Survey of India equivalent works well. It actually generates high quality data, and because they have good institutions, that data is released. Okay? So same issues. Like Survey of India doesn't release its corresponding agencies in advanced economies, they release Isro does not release, NASA releases same problems, okay, underdevelopment, liberal democracy, okay, that all those",
-      "words": [
+        },
         {
           "word": "people,",
           "startTime": 2600.24,
@@ -50247,15 +49735,7 @@
           "startTime": 2688.93,
           "endTime": 2689.25,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2689.25,
-      "endTime": 2691.41,
-      "text": "problems. So a",
-      "words": [
+        },
         {
           "word": "problems.",
           "startTime": 2689.25,
@@ -50273,15 +49753,7 @@
           "startTime": 2691.17,
           "endTime": 2691.41,
           "confidence": 0.9971
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2691.41,
-      "endTime": 2857.28,
-      "text": "project began which is called OSM, OpenStreetMaps, which got seeded initially by a large amount of these beautiful high-quality maps. The map databases, not their physical representation, the map databases that are released by first world agencies that are supposed to survey the country. and they take taxpayer money, they make a map database and they release the data as public domain. Anybody can download it. You and I can go into the United States Tiger database and just download the whole database. They don't want your name, password. Okay? Every civil servant of the Indian government, please observe, when you release data, don't ask for a name and password. The end user just downloads that data. It was made with taxpayer money, and it is a public good because everybody benefits. It's non-rival, it's non-excludable. That's the way you should think about statistics in a government system that you use taxpayer money to create some data and then release it and let the universe do whatever they want with that data. It is for private organizations to take that data, make a map, print the map, sell the map, make a commercial app, write an Uber, whatever. Private people should do whatever they want with these maps without restriction. So OSM was able to get a head start by first covering all the advanced economies. So basically all the OECD countries, you get good maps data, which went into OSM. At this point, already OSM was adding value because it had a single consistent API covering the data sets of many, many countries. So the project started gathering some momentum. Then OSM started adopt the same strategy of the open source software world. Saying, look, let's have volunteers everywhere in the world who will start contributing. So you and I can start contributing. You and I can walk around our block and make data that is given to the OSM database. Okay, so one by one, all over the world, individuals and volunteers started springing up. Saying, even if you are in a country where the government does not release high-quality map data, we the people are able to make map. Data and we the people are able to start contributing to OSM. Many places in India we have OSM volunteers organizing OSM mapping parties where they get together with their GPS phones and cycles and they ride around and make GPS traces, mark POIs points of interest, submit it all to the OSM database, and end the day with a lot of laughter and pizza. This is a great project that people should do these things and people should keep on building these maps. And OSM is the true public good. Okay, it is the true digital public good. Okay, the world is filled with propaganda and wrong uses of the words digital public good. Open source software is a digital",
-      "words": [
+        },
         {
           "word": "project",
           "startTime": 2691.41,
@@ -53179,15 +52651,7 @@
           "startTime": 2856.8,
           "endTime": 2857.28,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2857.28,
-      "endTime": 2858.88,
-      "text": "public good. Okay?",
-      "words": [
+        },
         {
           "word": "public",
           "startTime": 2857.28,
@@ -53205,15 +52669,7 @@
           "startTime": 2858.24,
           "endTime": 2858.88,
           "confidence": 0.5352
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2858.88,
-      "endTime": 3008.34,
-      "text": "It is non-rival and non-excludable. My use of the Linux kernel does not in any way diminish your use of the Linux kernel. And you cannot even theoretically exclude a newborn child from the glories of Linux. That Linux source code sitting on a website is a public good. Same for the OSM data. The OSM data is public domain. It is sitting on websites. It is available for download. It is non-rival, it is non-excludable, it is the digital public good. Okay? Many, many places wrongly use the words digital public good. This is a digital public good. So I'm so excited. OSM is a revolution. It is a true public good, and it's been done by the people. The people came together and woke up and said, You know what? I'd like to have good maps. It's the energy of the people. It is not based on the state. There is no coercion involved. There is no taxation involved. We are not waiting for the government to say we are 200 kilometers from your coast. So you cannot release a map, or we are not waiting for the government that, oh, 1934 survey was a long time ago in 2025, we should survey this piece of land. We the people have woken up. And we are building this open source database, and we're using all the new technologies, satellite imagery, uh digital elevation maps, SAR imagery, and so on, admittedly built out of first world public goods. Okay, so the rich countries have the correct public administration DNA that they coerce the people, they extract taxpayer money. They've created a global public good called GPS. They've created the global public goods of putting satellites in the air, taking photographs, releasing imagery, releasing SAR imagery, releasing DEMs. But today for us in India, all that stuff is available. It's done. It's paid for by the taxpayer in the rich countries, and we can get going on making OSM maps and also consuming and using OSM. So OSM is something revolutionary. And my last little story is a commercial story surrounding OSM. to take you back. Do you remember when Apple first did iTunes? Okay, and the first, what were they called? iPods, right? When the first iPods came out. At the time Apple had a proprietary file format for the music. Okay? They felt that they could make a play for the monopoly of the world's music. So they picked a proprietary file format for music. So it was truly offensive. Like you would pay money to buy music from the Apple music store, but the file sitting on your disc",
-      "words": [
+        },
         {
           "word": "It",
           "startTime": 2858.88,
@@ -55865,15 +55321,7 @@
           "startTime": 3007.84,
           "endTime": 3008.34,
           "confidence": 0.6317
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3008.71,
-      "endTime": 3011.11,
-      "text": "was not yours because you couldn't decrypt it.",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 3008.71,
@@ -55921,15 +55369,7 @@
           "startTime": 3010.63,
           "endTime": 3011.11,
           "confidence": 0.9198
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3011.11,
-      "endTime": 3018.63,
-      "text": "You could only use it in an Apple supplied device, an iPod. You couldn't go anywhere else. You were locked in. Okay, this is really bad behavior by",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 3011.11,
@@ -56097,15 +55537,7 @@
           "startTime": 3018.31,
           "endTime": 3018.63,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3018.63,
-      "endTime": 3020.31,
-      "text": "Apple. The",
-      "words": [
+        },
         {
           "word": "Apple.",
           "startTime": 3018.63,
@@ -56117,15 +55549,7 @@
           "startTime": 3019.99,
           "endTime": 3020.31,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3020.31,
-      "endTime": 3233.01,
-      "text": "rest of the computer industry woke up and saw saying this is really dangerous. Okay? Apple is dangerous. They're a very powerful, very successful corporation. We cannot let this happen. Like you just cannot allow music to be locked into a proprietary format controlled by Apple. So the whole industry spoke with each other on phone, they confabulated and they agreed that we're just going to build rival systems using the MP3 format. And MP3 is an open format. You can get the full spec. Anybody can read and write MP3 files. There is nothing secret. So every other large game in the music business switched to MP3 files. And then the consumers got angry at Apple saying, Hey, Paying money to buy this album, and you can't lock me in to only Apple equipment. So Apple was forced to back off and switch to MP3 files. Okay, so that is how MP3 was protected, and we got an open standard as the backbone, as the layer of the entire music business of the world. And that attempt at one proprietary monopoly was disabled by all the other rivals. That if one firm becomes too powerful, the others get an incentive to cooperate. Something similar has started happening with OSM. So once Google started becoming too successful, and Google Maps just became so amazing and so great, and you've already heard me gushing about Google Maps and Google Earth. And that led to the gnashing of teeth and biting of nails at Microsoft and Amazon and dot dot dot. So they all came together and said, hell, we're just going to use OSM. So they started using the OSM database. They started putting corporate resources to put data back into OSM. So when some Amazon deliveries happen, those GPS traces are being used to illuminate the OSM data. And so now many, many corporations have come together to both be users of OSM, which is good because only by having sophisticated users will you fix up systems. You know, a system that does not have smart users doesn't get that challenge. It doesn't get the unhappy users, the complaints, the bug reports, the feature demands. And also these organizations are all putting in large-scale corporate resources to strengthen the OSM database. So that's my last novel system of the day, and that is OSM. So I've just taken you through this journey that we start at Robert Clive and 1767, and then George Everest and the first mapping of India. And then you get into this boring. Economics and public administration of public good, non-rival, non-excludable, state capacity. What are we going to do? You're stuck. Okay, and then I'll if you had asked me at that point, I would be this old guy with white hair pontificating that the journey to economic development generally takes about 100 years. So we can hope that in 21-25 India will have a good quality survey of India. Okay, which is the way it is. Because of the scientific and engineering advances of satellite imagery of GPS, of DEM, of SAR, suddenly the landscape changed completely. And then we got Google Maps, Google Earth, OSM. And now the landscape is completely different. Like we in India are getting the glory of all these public goods without recourse to our taxpayer money or the limited state capacity and the malfunctioning organizations of the Indian state. This is just Chandi. This is so great. I'm very",
-      "words": [
+        },
         {
           "word": "rest",
           "startTime": 3020.31,
@@ -59599,7 +59023,15 @@
           "startTime": 3232.05,
           "endTime": 3232.53,
           "confidence": 0.9548
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3232.53,
+      "endTime": 3272.16,
+      "text": "I'm very happy. This is just Chandi. You know, maps help us go through space. You've just taken me across time. And I also want to take you across time, but not too far back. Last week we did an episode about stories that should be films. And I just thought of another one when you were talking about OSM, right? The film is called Awesome for obvious reasons. The film is called Awesome, and essentially the setup is that there are two volunteers for OSM who meet at one of these volunteer meetups and they decide to go out map making together, and that is the start of the story. Obviously shit happens, things go wrong, but they come back together in the end because what is the movie called Ajesh? It's called Awesome. I just told you.",
+      "words": [
         {
           "word": "I'm",
           "startTime": 3232.53,
@@ -59611,15 +59043,7 @@
           "startTime": 3232.77,
           "endTime": 3233.01,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3233.01,
-      "endTime": 3272.16,
-      "text": "happy. This is just Chandi. You know, maps help us go through space. You've just taken me across time. And I also want to take you across time, but not too far back. Last week we did an episode about stories that should be films. And I just thought of another one when you were talking about OSM, right? The film is called Awesome for obvious reasons. The film is called Awesome, and essentially the setup is that there are two volunteers for OSM who meet at one of these volunteer meetups and they decide to go out map making together, and that is the start of the story. Obviously shit happens, things go wrong, but they come back together in the end because what is the movie called Ajesh? It's called Awesome. I just told you.",
-      "words": [
+        },
         {
           "word": "happy.",
           "startTime": 3233.01,
@@ -60557,8 +59981,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3285.49,
-      "endTime": 3333.51,
-      "text": "What do you think? It's an incredible fun story, it's also an inspiring story, and it is also a cautionary tale. And the cautionary tale is that too many of us take the world as it is for granted. Things are a particular way, things function in a particular way. We have a frame for looking at the world, an ideological map or an intellectual map. And we think it is a fixed thing across time and it's always going to be this way, right? So again, we think of public goods and we think ya ha mapmaking to see me a thana and therefore the government has to do it, therefore they have to tax us. We take for granted also in India. We are apathetic. We take for granted that the state will do everything, and we also take for granted that the state is moribund, and we don't question and we don't get angry. And one of the realizations I've had in the last few years, like I often at the end of the scene and the unseen, I would often ask my guest, what gives you hope and what gives you despair. And",
+      "endTime": 3426.75,
+      "text": "What do you think? It's an incredible fun story, it's also an inspiring story, and it is also a cautionary tale. And the cautionary tale is that too many of us take the world as it is for granted. Things are a particular way, things function in a particular way. We have a frame for looking at the world, an ideological map or an intellectual map. And we think it is a fixed thing across time and it's always going to be this way, right? So again, we think of public goods and we think ya ha mapmaking to see me a thana and therefore the government has to do it, therefore they have to tax us. We take for granted also in India. We are apathetic. We take for granted that the state will do everything, and we also take for granted that the state is moribund, and we don't question and we don't get angry. And one of the realizations I've had in the last few years, like I often at the end of the scene and the unseen, I would often ask my guest, what gives you hope and what gives you despair. And my personal answer to that is though I am full of despair for the state of the world. the one thing that gives me hope is technological advancement. Because I think technology can g uh you know build the sort of liberal world we believe in, and I mean in the classical liberal sense, technology can empower individuals in a way that political movements have failed to do. And this is a classic example of that in the particular domain of maps. And honestly in so many other domains, like our smartphone, for all the potential there for surveillance and things going wrong, and for all that it's a distraction machine, even an addiction machine. The fact is that there are so many things within our smartphone which empower us, which give us freedom, which give us power. And I'm blown away by that. So for me, this whole story fits into that larger story beautifully. That do not take the world for granted, do not assume You know, the the the old ways of thinking about the world, the state will do everything and blah blah blah. They're not necessarily true. You know, individual entrepreneurs thinking creatively about the world are doing these amazing things. Like I constantly keep telling myself that, you know, just look at everything around you. Look at what is in your phone. You know, look at the cameras we are using and the sound we are using. Just look at the lives that we live. It is full of miracle upon miracle upon miracle. The emperors of the past could not have dreamed of this. You know, the science fiction writers of the past uh would have failed to think of many of these things. That's a world we are living in. And that that's the one thing that gives me hope.",
       "words": [
         {
           "word": "What",
@@ -61741,15 +61165,7 @@
           "startTime": 3333.35,
           "endTime": 3333.51,
           "confidence": 0.9889
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3333.51,
-      "endTime": 3335.43,
-      "text": "my personal answer to that is though I",
-      "words": [
+        },
         {
           "word": "my",
           "startTime": 3333.51,
@@ -61797,15 +61213,7 @@
           "startTime": 3335.27,
           "endTime": 3335.43,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3335.43,
-      "endTime": 3426.75,
-      "text": "am full of despair for the state of the world. the one thing that gives me hope is technological advancement. Because I think technology can g uh you know build the sort of liberal world we believe in, and I mean in the classical liberal sense, technology can empower individuals in a way that political movements have failed to do. And this is a classic example of that in the particular domain of maps. And honestly in so many other domains, like our smartphone, for all the potential there for surveillance and things going wrong, and for all that it's a distraction machine, even an addiction machine. The fact is that there are so many things within our smartphone which empower us, which give us freedom, which give us power. And I'm blown away by that. So for me, this whole story fits into that larger story beautifully. That do not take the world for granted, do not assume You know, the the the old ways of thinking about the world, the state will do everything and blah blah blah. They're not necessarily true. You know, individual entrepreneurs thinking creatively about the world are doing these amazing things. Like I constantly keep telling myself that, you know, just look at everything around you. Look at what is in your phone. You know, look at the cameras we are using and the sound we are using. Just look at the lives that we live. It is full of miracle upon miracle upon miracle. The emperors of the past could not have dreamed of this. You know, the science fiction writers of the past uh would have failed to think of many of these things. That's a world we are living in. And that that's the one thing that gives me hope.",
-      "words": [
+        },
         {
           "word": "am",
           "startTime": 3335.43,
@@ -63819,8 +63227,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3441.73,
-      "endTime": 3465.94,
-      "text": "I just want to put one cautionary tale. The first instinct of the Indian state, when faced with this uh million mutinies of people going and making progress on building their own maps, has been to try to ban it. The Indian state has tried to have the use of government coercive power on trying to prevent private people from making their own maps, of trying to",
+      "endTime": 3538.53,
+      "text": "I just want to put one cautionary tale. The first instinct of the Indian state, when faced with this uh million mutinies of people going and making progress on building their own maps, has been to try to ban it. The Indian state has tried to have the use of government coercive power on trying to prevent private people from making their own maps, of trying to prevent Google Street View from having photographs of every street in the whole country. And of course, it's like the coal and terrorism problem. Instead of solving the problem of coal, the government will say terrorism. And then suddenly, you know, you can ban anything under the excuse of terrorism. So some of the There have been hiccups in this journey that I have not dwelt on, but they're just about the state power and the arrogance of the state saying, Who are you? I can do this. And because I can do it, and I won't, I will use the coercive power of the state and prevent you from doing it. And this has just popped up again and again. So everything you say is true, and a large dose of liberal philosophy as in pushing back against the coercive power of the state is also required. Because otherwise, the first instinct of the government is to push back and say, I will interfere with your ability to purchase satellite imagery from a foreign vendor. Okay? Rather than saying, I will give you free imagery made with taxpayer data. No, no, no, that's not how they will think. I will prevent you from getting satellite imagery made by a foreign vendor.",
       "words": [
         {
           "word": "I",
@@ -64223,15 +63631,7 @@
           "startTime": 3465.7,
           "endTime": 3465.94,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3465.94,
-      "endTime": 3467.94,
-      "text": "prevent Google",
-      "words": [
+        },
         {
           "word": "prevent",
           "startTime": 3465.94,
@@ -64243,15 +63643,7 @@
           "startTime": 3467.3,
           "endTime": 3467.94,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3467.94,
-      "endTime": 3510.39,
-      "text": "Street View from having photographs of every street in the whole country. And of course, it's like the coal and terrorism problem. Instead of solving the problem of coal, the government will say terrorism. And then suddenly, you know, you can ban anything under the excuse of terrorism. So some of the There have been hiccups in this journey that I have not dwelt on, but they're just about the state power and the arrogance of the state saying, Who are you? I can do this. And because I can do it, and I won't, I will use the coercive power of the state and prevent you from doing it. And this has just popped up again and again. So everything you say is true, and a large dose of liberal philosophy",
-      "words": [
+        },
         {
           "word": "Street",
           "startTime": 3467.94,
@@ -65043,15 +64435,7 @@
           "startTime": 3508.95,
           "endTime": 3510.39,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3510.39,
-      "endTime": 3511.99,
-      "text": "as in pushing",
-      "words": [
+        },
         {
           "word": "as",
           "startTime": 3510.39,
@@ -65069,15 +64453,7 @@
           "startTime": 3511.35,
           "endTime": 3511.99,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3511.99,
-      "endTime": 3538.69,
-      "text": "back against the coercive power of the state is also required. Because otherwise, the first instinct of the government is to push back and say, I will interfere with your ability to purchase satellite imagery from a foreign vendor. Okay? Rather than saying, I will give you free imagery made with taxpayer data. No, no, no, that's not how they will think. I will prevent you from getting satellite imagery made by a foreign vendor. And",
-      "words": [
+        },
         {
           "word": "back",
           "startTime": 3511.99,
@@ -65527,21 +64903,21 @@
           "startTime": 3537.81,
           "endTime": 3538.53,
           "confidence": 0.9758
-        },
-        {
-          "word": "And",
-          "startTime": 3538.53,
-          "endTime": 3538.69,
-          "confidence": 0.9694
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 3538.69,
+      "startTime": 3538.53,
       "endTime": 3620.92,
-      "text": "you know, I often think, and just thinking aloud and going down that route, across the last few months, maybe the last three or four years, something that I've been thinking about deeply across domains is a crumbling of the mainstream. You see it in media where once there was a consensus on the truth, once the means of production were in the hands of a few, there were gatekeepers. And today that mainstream has crumbled. And there is a negative side to it in that we have narrative battles all around us and et cetera, et cetera. But the means of production are with everyone. So without putting a value judgment on it, the mainstream has crumbled. You see it happening in entertainment, you see it across domains. And sometimes I wonder if in the way that we live our lives, it's also happening in the context of nation states. Like we look at maps, the one thing that depresses me about maps, are the lines on a map which delineate the you know, the political nation states that are there. All of those lines, firstly, all of those lines are temporary. They are man made and they're temporary, that's what we've seen through history. Nothing is permanent. You know, I've uh different guests of mine on my show in different episodes have spoken about other conceptual maps. You know, you could do a maps with you know languages and dialects, you could do a maps that look at cuisines. You know, when you are out in nature, When you're b uh b trekking, you know, you don't know a line on a map. You see the beautiful land around you, you see the green grass, you see the high mountains.",
+      "text": "And you know, I often think, and just thinking aloud and going down that route, across the last few months, maybe the last three or four years, something that I've been thinking about deeply across domains is a crumbling of the mainstream. You see it in media where once there was a consensus on the truth, once the means of production were in the hands of a few, there were gatekeepers. And today that mainstream has crumbled. And there is a negative side to it in that we have narrative battles all around us and et cetera, et cetera. But the means of production are with everyone. So without putting a value judgment on it, the mainstream has crumbled. You see it happening in entertainment, you see it across domains. And sometimes I wonder if in the way that we live our lives, it's also happening in the context of nation states. Like we look at maps, the one thing that depresses me about maps, are the lines on a map which delineate the you know, the political nation states that are there. All of those lines, firstly, all of those lines are temporary. They are man made and they're temporary, that's what we've seen through history. Nothing is permanent. You know, I've uh different guests of mine on my show in different episodes have spoken about other conceptual maps. You know, you could do a maps with you know languages and dialects, you could do a maps that look at cuisines. You know, when you are out in nature, When you're b uh b trekking, you know, you don't know a line on a map. You see the beautiful land around you, you see the green grass, you see the high mountains.",
       "words": [
+        {
+          "word": "And",
+          "startTime": 3538.53,
+          "endTime": 3538.69,
+          "confidence": 0.9694
+        },
         {
           "word": "you",
           "startTime": 3538.69,
@@ -68127,8 +67503,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3666.16,
-      "endTime": 3671.52,
-      "text": "I have rarely seen you so excited. You really want this exam, don't you? Let's do it. Let's do it.",
+      "endTime": 3675.5,
+      "text": "I have rarely seen you so excited. You really want this exam, don't you? Let's do it. Let's do it. Even if I get zero on five. Let's do it.",
       "words": [
         {
           "word": "I",
@@ -68249,15 +67625,7 @@
           "startTime": 3671.04,
           "endTime": 3671.52,
           "confidence": 0.9448
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3671.52,
-      "endTime": 3673.44,
-      "text": "Even if I get zero on five.",
-      "words": [
+        },
         {
           "word": "Even",
           "startTime": 3671.52,
@@ -68299,15 +67667,7 @@
           "startTime": 3672.8,
           "endTime": 3673.44,
           "confidence": 0.9236
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3673.44,
-      "endTime": 3675.5,
-      "text": "Let's do it.",
-      "words": [
+        },
         {
           "word": "Let's",
           "startTime": 3673.44,
@@ -68969,8 +68329,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3733.49,
-      "endTime": 3740.69,
-      "text": "fulfill I was thinking like dispersion of malaria, dispersion of yellow fever.",
+      "endTime": 3740.93,
+      "text": "fulfill I was thinking like dispersion of malaria, dispersion of yellow fever. No",
       "words": [
         {
           "word": "fulfill",
@@ -69043,21 +68403,21 @@
           "startTime": 3739.89,
           "endTime": 3740.69,
           "confidence": 0.8894
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3740.69,
-      "endTime": 3753.35,
-      "text": "No no this is a map from 1984. Oh okay. George Ogles 1984. So as you can now see on the screen, I have revealed the words Oceania, Eurasia, Eastia, so many those words would have kind of.",
-      "words": [
+        },
         {
           "word": "No",
           "startTime": 3740.69,
           "endTime": 3740.93,
           "confidence": 0.7696
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3740.93,
+      "endTime": 3753.35,
+      "text": "no this is a map from 1984. Oh okay. George Ogles 1984. So as you can now see on the screen, I have revealed the words Oceania, Eurasia, Eastia, so many those words would have kind of.",
+      "words": [
         {
           "word": "no",
           "startTime": 3740.93,
@@ -69329,8 +68689,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3760.69,
-      "endTime": 3821.84,
-      "text": "What we are done with fiction. The first two were fiction. The next three are not. And uh this is a fantastic map. Uh the intensity of the color colors uh depicts uh that you know it happens more in those places. As you can see, India is a deep green. You can keep looking at it and give some guesses. I want the listeners to think about this also, because um there is much illumination in this. And this is, by the way, something that we should be proud of, the fact that we are deep green here. Shall I give you a clue? Yes, please. Yes. The fact that India is deep green and we are you know so far ahead on this. It fills me with joy. How did you get to that from what I just said?",
+      "endTime": 3852.1,
+      "text": "What we are done with fiction. The first two were fiction. The next three are not. And uh this is a fantastic map. Uh the intensity of the color colors uh depicts uh that you know it happens more in those places. As you can see, India is a deep green. You can keep looking at it and give some guesses. I want the listeners to think about this also, because um there is much illumination in this. And this is, by the way, something that we should be proud of, the fact that we are deep green here. Shall I give you a clue? Yes, please. Yes. The fact that India is deep green and we are you know so far ahead on this. It fills me with joy. How did you get to that from what I just said? Why would I celebrate fertility rate even it's good? There should be more people. No. I spoke in three different languages. This is linguistic diversity and India has the most linguistic diversity and I. India is glorious. Yeah. Here you go. And India is worse off here. India is close to um India does very badly here and it's a matter of shame for us. So that's a clue I'm gonna give you",
       "words": [
         {
           "word": "What",
@@ -70177,15 +69537,7 @@
           "startTime": 3820.34,
           "endTime": 3821.84,
           "confidence": 0.8314
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3822.42,
-      "endTime": 3824.1,
-      "text": "Why would I celebrate fertility",
-      "words": [
+        },
         {
           "word": "Why",
           "startTime": 3822.42,
@@ -70215,15 +69567,7 @@
           "startTime": 3823.54,
           "endTime": 3824.1,
           "confidence": 0.9737
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3824.1,
-      "endTime": 3852.1,
-      "text": "rate even it's good? There should be more people. No. I spoke in three different languages. This is linguistic diversity and India has the most linguistic diversity and I. India is glorious. Yeah. Here you go. And India is worse off here. India is close to um India does very badly here and it's a matter of shame for us. So that's a clue I'm gonna give you",
-      "words": [
+        },
         {
           "word": "rate",
           "startTime": 3824.1,
@@ -70637,8 +69981,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3852.44,
-      "endTime": 3865.5,
-      "text": "this is a very generic pattern of underdevelopment. It could be women's LFP, it could be women's age at marriage, it could be, you know, any women autonomy type measures. Actually, no, Saudi Arabia is in good shape.",
+      "endTime": 3873.68,
+      "text": "this is a very generic pattern of underdevelopment. It could be women's LFP, it could be women's age at marriage, it could be, you know, any women autonomy type measures. Actually, no, Saudi Arabia is in good shape. It is more economics. It is income related because Saudi Arabia is in good",
       "words": [
         {
           "word": "this",
@@ -70867,15 +70211,7 @@
           "startTime": 3865.16,
           "endTime": 3865.5,
           "confidence": 0.9622
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3870.24,
-      "endTime": 3871.76,
-      "text": "It is more economics. It is",
-      "words": [
+        },
         {
           "word": "It",
           "startTime": 3870.24,
@@ -70911,15 +70247,7 @@
           "startTime": 3871.6,
           "endTime": 3871.76,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3871.76,
-      "endTime": 3873.68,
-      "text": "income related because Saudi Arabia is in good",
-      "words": [
+        },
         {
           "word": "income",
           "startTime": 3871.76,
@@ -71877,8 +71205,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3937.99,
-      "endTime": 3961.51,
-      "text": "In particular men of the age of Nam Sata. It's about 19 year old. No, I don't get it. It's just nature. It's just nineteen year old males of height distributed around the world and India, of course, did poorly not some aspect of height may come from genetics, but a significant aspect of it really comes from nutrition and health. Almost nothing",
+      "endTime": 3962.47,
+      "text": "In particular men of the age of Nam Sata. It's about 19 year old. No, I don't get it. It's just nature. It's just nineteen year old males of height distributed around the world and India, of course, did poorly not some aspect of height may come from genetics, but a significant aspect of it really comes from nutrition and health. Almost nothing from genetics",
       "words": [
         {
           "word": "In",
@@ -72257,15 +71585,7 @@
           "startTime": 3960.55,
           "endTime": 3961.51,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3961.51,
-      "endTime": 3970.58,
-      "text": "from genetics because there are plenty papers where you take people with Indian DNA living in an advanced economy and they have the exact same Average height",
-      "words": [
+        },
         {
           "word": "from",
           "startTime": 3961.51,
@@ -72277,7 +71597,15 @@
           "startTime": 3961.75,
           "endTime": 3962.47,
           "confidence": 0.9941
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3962.47,
+      "endTime": 3968.89,
+      "text": "because there are plenty papers where you take people with Indian DNA living in an advanced economy and they have the exact same",
+      "words": [
         {
           "word": "because",
           "startTime": 3962.47,
@@ -72415,7 +71743,15 @@
           "startTime": 3968.39,
           "endTime": 3968.89,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3969.62,
+      "endTime": 3983.06,
+      "text": "Average height in uh the new country. Exactly. In fact, one of my cousins, my mom's twin son, who is a few months older than me, Halo Chagor, is uh much stronger than me. Right. And it's just and he grew up in the US and he's lived there all his time. It's about",
+      "words": [
         {
           "word": "Average",
           "startTime": 3969.62,
@@ -72427,15 +71763,7 @@
           "startTime": 3970.02,
           "endTime": 3970.58,
           "confidence": 0.9963
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3970.58,
-      "endTime": 3983.06,
-      "text": "in uh the new country. Exactly. In fact, one of my cousins, my mom's twin son, who is a few months older than me, Halo Chagor, is uh much stronger than me. Right. And it's just and he grew up in the US and he's lived there all his time. It's about",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 3970.58,
@@ -72753,8 +72081,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3983.06,
-      "endTime": 3988.1,
-      "text": "nutrition and the uh infectious disease experience in the years with the",
+      "endTime": 3996.19,
+      "text": "nutrition and the uh infectious disease experience in the years with the HGH with the human growth hormone. So each illness that you have knocks out the opportunity for using the HGH for some period of time.",
       "words": [
         {
           "word": "nutrition",
@@ -72827,15 +72155,7 @@
           "startTime": 3987.78,
           "endTime": 3988.1,
           "confidence": 0.9332
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3988.1,
-      "endTime": 3989.54,
-      "text": "HGH with the human growth",
-      "words": [
+        },
         {
           "word": "HGH",
           "startTime": 3988.1,
@@ -72865,15 +72185,7 @@
           "startTime": 3989.22,
           "endTime": 3989.54,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3989.54,
-      "endTime": 3996.19,
-      "text": "hormone. So each illness that you have knocks out the opportunity for using the HGH for some period of time.",
-      "words": [
+        },
         {
           "word": "hormone.",
           "startTime": 3989.54,
@@ -72999,8 +72311,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3996.45,
-      "endTime": 4019.95,
-      "text": "And there is something I have no data for, but I saw it once when I first came to Bombay in the mid 1990s when I first came to Bombay. I remember traveling on the local train and I realized something that kind of disturbed me a lot, and um and I don't know if data backs it up, but it's just anecdotal and it was stark. And it is that the people in first class were taller than the people in second class. Yeah. In general, which has to do with childhood depression and all of those.",
+      "endTime": 4020.69,
+      "text": "And there is something I have no data for, but I saw it once when I first came to Bombay in the mid 1990s when I first came to Bombay. I remember traveling on the local train and I realized something that kind of disturbed me a lot, and um and I don't know if data backs it up, but it's just anecdotal and it was stark. And it is that the people in first class were taller than the people in second class. Yeah. In general, which has to do with childhood depression and all of those. Yeah. So",
       "words": [
         {
           "word": "And",
@@ -73589,15 +72901,7 @@
           "startTime": 4018.45,
           "endTime": 4019.95,
           "confidence": 0.7142
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4019.97,
-      "endTime": 4028.44,
-      "text": "Yeah. So I have a personal uh observation on this. Uh when I was young, when I was at college I was tall compared to the",
-      "words": [
+        },
         {
           "word": "Yeah.",
           "startTime": 4019.97,
@@ -73609,7 +72913,15 @@
           "startTime": 4020.37,
           "endTime": 4020.69,
           "confidence": 0.8928
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4020.69,
+      "endTime": 4046.36,
+      "text": "I have a personal uh observation on this. Uh when I was young, when I was at college I was tall compared to the distribution. Today I'm short compared with uh twenty year olds and twenty-five year olds. So that's the economic development and the improvements of India within my life. That I've gone from being a reasonably tall person to being a reasonably short person. Isn't",
+      "words": [
         {
           "word": "I",
           "startTime": 4020.69,
@@ -73753,15 +73065,7 @@
           "startTime": 4028.2,
           "endTime": 4028.44,
           "confidence": 0.9964
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4028.44,
-      "endTime": 4030.44,
-      "text": "distribution. Today",
-      "words": [
+        },
         {
           "word": "distribution.",
           "startTime": 4028.44,
@@ -73773,15 +73077,7 @@
           "startTime": 4029.72,
           "endTime": 4030.44,
           "confidence": 0.9913
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4030.44,
-      "endTime": 4046.36,
-      "text": "I'm short compared with uh twenty year olds and twenty-five year olds. So that's the economic development and the improvements of India within my life. That I've gone from being a reasonably tall person to being a reasonably short person. Isn't",
-      "words": [
+        },
         {
           "word": "I'm",
           "startTime": 4030.44,

@@ -5,7 +5,7 @@
     "durationSeconds": 4799,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 43.95,
-      "endTime": 50.19,
-      "text": "Everything is everything. Um Amit, have you noticed how we're such a polyglot show?",
+      "endTime": 49.31,
+      "text": "Everything is everything. Um Amit, have you noticed how we're such a polyglot",
       "words": [
         {
           "word": "Everything",
@@ -97,21 +97,21 @@
           "startTime": 48.35,
           "endTime": 49.31,
           "confidence": 0.9983
-        },
-        {
-          "word": "show?",
-          "startTime": 49.31,
-          "endTime": 50.19,
-          "confidence": 0.975
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 50.19,
+      "startTime": 49.31,
       "endTime": 58.91,
-      "text": "Okay, first of all, we're not quite the newest show in town. Uh because this is what episode 13, lucky number. But why are we polyglot? Kindly explain.",
+      "text": "show? Okay, first of all, we're not quite the newest show in town. Uh because this is what episode 13, lucky number. But why are we polyglot? Kindly explain.",
       "words": [
+        {
+          "word": "show?",
+          "startTime": 49.31,
+          "endTime": 50.19,
+          "confidence": 0.975
+        },
         {
           "word": "Okay,",
           "startTime": 50.19,
@@ -6331,8 +6331,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 366.78,
-      "endTime": 389.58,
-      "text": "and gentle reader, if you wonder how come these two unlikely characters, Amit Parma and Ajayeshah, are collaborating on this podcast, here is an insight. When the Bob Dylan Nobel Prize happened, at that split second, I had exactly those ideas. Proposition one, that yeah, that is literature, and proposition two. Dylan before Springsteen. It should have",
+      "endTime": 428.27,
+      "text": "and gentle reader, if you wonder how come these two unlikely characters, Amit Parma and Ajayeshah, are collaborating on this podcast, here is an insight. When the Bob Dylan Nobel Prize happened, at that split second, I had exactly those ideas. Proposition one, that yeah, that is literature, and proposition two. Dylan before Springsteen. It should have been the other way around. Let me just narrate my story and my experiences uh on this journey. Um I think many people in India have an exposure to some of the Western music canon. Uh people tend to know about Pink Floyd, about Led Zepp, about U2, but Bruce Springsteen is relatively less known. So I think it's fun to tell that story and it might uh trigger ideas for many people. I was in a hostel at college and I'm very grateful to some seniors who purchased uh the LP, the vinyl of uh Born in the USA Which year",
       "words": [
         {
           "word": "and",
@@ -6675,15 +6675,7 @@
           "startTime": 389.5,
           "endTime": 389.58,
           "confidence": 0.8385
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 389.58,
-      "endTime": 391.72,
-      "text": "been the other way around.",
-      "words": [
+        },
         {
           "word": "been",
           "startTime": 389.58,
@@ -6713,15 +6705,7 @@
           "startTime": 390.22,
           "endTime": 391.72,
           "confidence": 0.9088
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 392.06,
-      "endTime": 429.39,
-      "text": "Let me just narrate my story and my experiences uh on this journey. Um I think many people in India have an exposure to some of the Western music canon. Uh people tend to know about Pink Floyd, about Led Zepp, about U2, but Bruce Springsteen is relatively less known. So I think it's fun to tell that story and it might uh trigger ideas for many people. I was in a hostel at college and I'm very grateful to some seniors who purchased uh the LP, the vinyl of uh Born in the USA Which year was this? 1921?",
-      "words": [
+        },
         {
           "word": "Let",
           "startTime": 392.06,
@@ -7303,7 +7287,15 @@
           "startTime": 428.11,
           "endTime": 428.27,
           "confidence": 0.955
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 428.27,
+      "endTime": 432.75,
+      "text": "was this? 1921? 1984. Okay. It's like carry on, I can't help that.",
+      "words": [
         {
           "word": "was",
           "startTime": 428.27,
@@ -7321,15 +7313,7 @@
           "startTime": 428.59,
           "endTime": 429.39,
           "confidence": 0.8365
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 429.39,
-      "endTime": 432.75,
-      "text": "1984. Okay. It's like carry on, I can't help that.",
-      "words": [
+        },
         {
           "word": "1984.",
           "startTime": 429.39,
@@ -23645,8 +23629,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1331.18,
-      "endTime": 1510.98,
-      "text": "I I haven't yet uh heard that. So what you see in those songs is that you can't do What works for a three-minute song. You have to vary it around, and the style has to change several times to sustain a long song. And so for example, Let Zeppelin uh Stairway to Heaven starts at an ALAP and then it builds from there. What is different and surprising to me is that Jungle Land does this in reverse. It starts at a wall of sound sound, and then there is that guitar solo, and then it switches into that. amazing saxophone piece, what Bruce Springsteen calls the world's greatest saxophone solo. And then it stops. There is that little jazz sound of the saxophone and the piano. And then it turns around and he does the alap at the end. And it's just it is so amazing. And I've wondered about this. I've thought about it. Could you have done it differently? And I think no, that they've they've got they've nailed it. They've done it exactly right. That The material that has been placed at the tail requires that soft, wistful, helpless, quiet sound, and it wouldn't have worked to do it differently. And it's just it's a wonder that uh they got it and that they put this together. Um finally, I just want to talk about 2005. Uh, there is a song Devils and Dust, which was written in the context of the American invasion of Iraq. And uh I remember Bruce Springsteen saying that he'd spent a whole lifetime in this craft and he knew how to write a song. That there is a song that just writes itself. It is inexorable. It is dancing in the dark. It is my hometown. Those other songs that just work. on their own energy downbound train. And he says Devils and Dust was like that, that once you got the idea, it was just a whole life of the craft. And the song wrote itself in a very short time and it's one of those sweet and perfect songs. And I remember being shocked that at 2005 he was not young anymore. And uh the song just absolutely works. So I feel like this has been a part of my life in so many ways. Um, I have noticed the writing, I have noticed the craft. For me, in the journey away from precise technical writing to beauty in uh written English, Bruce Springsteen has been an enormous influence in understanding beauty and in understanding To write and in showing me sentences that just light up, and I'm I'm just wondering, like, wow, how did you do that? And I've spent hours and hours wondering that why does that work and how does that work? And so he's been a great influence for me on thinking about writing, also. Um, there's a song by Roger Waters, uh, where he talks",
+      "endTime": 1556.22,
+      "text": "I I haven't yet uh heard that. So what you see in those songs is that you can't do What works for a three-minute song. You have to vary it around, and the style has to change several times to sustain a long song. And so for example, Let Zeppelin uh Stairway to Heaven starts at an ALAP and then it builds from there. What is different and surprising to me is that Jungle Land does this in reverse. It starts at a wall of sound sound, and then there is that guitar solo, and then it switches into that. amazing saxophone piece, what Bruce Springsteen calls the world's greatest saxophone solo. And then it stops. There is that little jazz sound of the saxophone and the piano. And then it turns around and he does the alap at the end. And it's just it is so amazing. And I've wondered about this. I've thought about it. Could you have done it differently? And I think no, that they've they've got they've nailed it. They've done it exactly right. That The material that has been placed at the tail requires that soft, wistful, helpless, quiet sound, and it wouldn't have worked to do it differently. And it's just it's a wonder that uh they got it and that they put this together. Um finally, I just want to talk about 2005. Uh, there is a song Devils and Dust, which was written in the context of the American invasion of Iraq. And uh I remember Bruce Springsteen saying that he'd spent a whole lifetime in this craft and he knew how to write a song. That there is a song that just writes itself. It is inexorable. It is dancing in the dark. It is my hometown. Those other songs that just work. on their own energy downbound train. And he says Devils and Dust was like that, that once you got the idea, it was just a whole life of the craft. And the song wrote itself in a very short time and it's one of those sweet and perfect songs. And I remember being shocked that at 2005 he was not young anymore. And uh the song just absolutely works. So I feel like this has been a part of my life in so many ways. Um, I have noticed the writing, I have noticed the craft. For me, in the journey away from precise technical writing to beauty in uh written English, Bruce Springsteen has been an enormous influence in understanding beauty and in understanding To write and in showing me sentences that just light up, and I'm I'm just wondering, like, wow, how did you do that? And I've spent hours and hours wondering that why does that work and how does that work? And so he's been a great influence for me on thinking about writing, also. Um, there's a song by Roger Waters, uh, where he talks about being able to it it he he says that uh I see myself in every stranger's eyes. And for me, that journey of growing up, right? When we are young, we are all self-centered. We only see ourselves. I think looking at the lives of others and being able to see ourselves in them, that's a journey that all of us go through. And that's what great literature does. And I think for me, Bruce Springsteen was a vital part of that. His stories, his songs are stories. His songs are he takes you into the lives of people. There are just Little people, ordinary people, there is beauty and magic in the lives of everybody. And uh he he helped me to open my eyes and see",
       "words": [
         {
           "word": "I",
@@ -26605,15 +26589,7 @@
           "startTime": 1510.02,
           "endTime": 1510.98,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1510.98,
-      "endTime": 1513.46,
-      "text": "about being able to it",
-      "words": [
+        },
         {
           "word": "about",
           "startTime": 1510.98,
@@ -26643,15 +26619,7 @@
           "startTime": 1513.14,
           "endTime": 1513.46,
           "confidence": 0.8416
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1513.46,
-      "endTime": 1552.86,
-      "text": "it he he says that uh I see myself in every stranger's eyes. And for me, that journey of growing up, right? When we are young, we are all self-centered. We only see ourselves. I think looking at the lives of others and being able to see ourselves in them, that's a journey that all of us go through. And that's what great literature does. And I think for me, Bruce Springsteen was a vital part of that. His stories, his songs are stories. His songs are he takes you into the lives of people. There are just Little people, ordinary people, there is beauty and magic in the lives of everybody. And uh",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 1513.46,
@@ -27335,15 +27303,7 @@
           "startTime": 1552.54,
           "endTime": 1552.86,
           "confidence": 0.6579
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1552.86,
-      "endTime": 1556.22,
-      "text": "he he helped me to open my eyes and see",
-      "words": [
+        },
         {
           "word": "he",
           "startTime": 1552.86,
@@ -27407,10 +27367,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 1556.22,
-      "endTime": 1557.5,
-      "text": "that. And it's so",
+      "endTime": 1576.4,
+      "text": "that. And it's so beautiful that you know that an artist takes one particular journey. But all his listeners, you know, will take different journeys of their own. And and their work carries a different meaning uh from from the I mean I mean truly, when the art has left the artist, it is no longer off the artist. It's it's just a separate thing that's uh uh out there in the world.",
       "words": [
         {
           "word": "that.",
@@ -27435,15 +27395,7 @@
           "startTime": 1557.34,
           "endTime": 1557.5,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1557.5,
-      "endTime": 1576.4,
-      "text": "beautiful that you know that an artist takes one particular journey. But all his listeners, you know, will take different journeys of their own. And and their work carries a different meaning uh from from the I mean I mean truly, when the art has left the artist, it is no longer off the artist. It's it's just a separate thing that's uh uh out there in the world.",
-      "words": [
+        },
         {
           "word": "beautiful",
           "startTime": 1557.5,
@@ -27863,8 +27815,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1582.46,
-      "endTime": 1588.94,
-      "text": "Tell me your story. What have you understood? What have you thought? What has Bruce Springsteen meant to you?",
+      "endTime": 1590.32,
+      "text": "Tell me your story. What have you understood? What have you thought? What has Bruce Springsteen meant to you? So I",
       "words": [
         {
           "word": "Tell",
@@ -27979,15 +27931,7 @@
           "startTime": 1587.58,
           "endTime": 1588.94,
           "confidence": 0.935
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1588.94,
-      "endTime": 2160.13,
-      "text": "So I Don't kind of have a coherent narrative the way you uh do. I've listened to a lot of music. Springsteen was a part of my growing up, a part of my emotional landscape as well. Though I I would not be able to take a particular song and say this meant that to me. But I've thought a lot about his work and his craft in recent years, which is why I've just come to admire him so much as a great writer and just my favorite songwriter of all time by a long margin. So I want to talk about four broad aspects of uh uh Bruce Springsteen. One, the effort that he made. The songs that he wrote, the language that he used, and the change that he embraced. And to talk about the effort, like what do I mean by effort and intentionality and all these things that I'm getting at? I want to sort of recommend, and and this could easily be my big recommendation of the episode, his great autobiography called Born to Run, because what else could it be called? And in his autobiography, he writes of a time where he was seven years old. and he really wanted a guitar because he heard something somewhere or he saw a photography, was struck by it, and his mom couldn't afford to buy him a guitar. So she went to a place and they rented a guitar for him. And for a few days the boy tried to play the rented guitar, just simply could not figure it out. And the day came for him to give that rented guitar back, right? And at that point, Springsteen writes, he takes a guitar out to the yard and all the kids are gathered around him and he writes. The sunny morning I had to return the guitar. I stood in front of six or so of the neighborhood guys and gals in my backyard. I gave my first and last show for quite a while. I held the guitar, I shook it, I shouted at it, I banged on it, I sang voodoo nonsense. I did everything but play it, all to their laughter and great amusement. I sucked. It was a joyful and silly ass pantomime. That afternoon, sad but a little relieved, I dropped the guitar off back at DL's music. It was over for now. But for a moment, just a moment, in front of those kids in my backyard. I'll smell blood. Stop quote. Right? And then there's a story where later on he manages to actually get a guitar, but he hasn't learned to tune it yet. So with the strings in whatever s state of untuning they are in, he, you know, writes a few tunes and he's playing in front of the mirror and he thinks he's really cool. And then he goes to someone and that person teaches him how to tune a guitar and tunes it for him. And then he realizes that everything he did before that was rubbish. And this is such a great metaphor for how step by step by step we learn so much about the craft. And Then just to take a brief step away from this theme of effort and intentionality, I also wanted to talk about this moment of magic in his life which he describes in Bonto Run, and he writes I went back on a daily basis. Uh this is to a record store where he used to look for records when, you know, those little wine uh vinyl things would be there and I think there they were venile singles or something. There was no store in his town big enough to actually be a record store, but there was some other store which kept a bunch of the small vinyl records. So he speaks about how he once discovered it. He would go back every day and then I went back on a daily basis until I saw it, the album cover, the greatest album cover of all time, tied with Highway 61 Revisited. All it said. was meet the Beatles. That was exactly what I wanted to do. Those four half-shadowed faces, Rock'n'Rolls, Mount Rushmore, and the hair, the hair, what did it mean? It was a surprise, a shock. Right? And you can you you you've just seen the cover on the screen and it is an iconic cover, but I can see it from a distance and I can say, ha, nice looking cover, a Chafo Tolia, if you know a little bit of the history. But to read his words and imagine that shock of recognition. uh uh on on a boy's face, uh you know, where there is something that is both completely new and yet something that kind of speaks to him. And from that point on, all he wants to do is music. He picks up that record, listens to the Beatles, discovers Van Morrison later, discovers Dylan later. He's out playing. He has a band called the Castiles. He has a band called The Steel Mill. And in the early seventies there is a story where the Steel Mill go to San Francisco and they go to an audition in some place. And the first couple of bands kind of are mediocre. So you know, the st steel mill goes out there, they they rock the show, they think they've done it. And then Springsteen sees a band come on after him that is just way better in musicianship and all of that. And they just knock the socks off and uh Steel Mill don't get the gig. And later on, Springsteen writes about that. I came up against some real talent and held my own, but the band that took us out at the family dog stayed with me. They had something we didn't, a certain level of sophisticated musicality. They were better than us and that didn't sit well with me. It's not that I didn't expect to come up against superior talent. That happens. It's the way God planned it. I was fast, but like the old gunslingers knew, there's always someone faster. And if you can do it better than me, you earn my respect and admiration and you inspire me to work harder. I wasn't afraid of that. I was concerned with not maximizing my own abilities, not having a broad or intelligent enough vision of what I was capable of. I was all I had. I had only one talent. I was not a natural genius. I would have to use every ounce of what was in me. Every ounce of what was in me. I love this phrase. Every ounce of what was in me, my cunning, my musical skills, my showmanship, my intellect, my heart, my willingness, right night after night, to push myself harder, to work with more intensity than the next guy, just to survive untended in the world I lived in. As I sat there in the black, I knew when we got back home there would have to be some changes made. Right. And then you see him going back, and then you gradually see the shift from Steel Mill to the Bruce Springsteen band to Bruce Springsteen and the East Street band, and that happens over a period of time, and we can talk at length about that. But what strikes me is that this guy, you know, the 17-year-old kid didn't know what he was doing, but he knew he had the desire and the passion and was willing to work at it. This guy in this band called Steel Mill, which has such a local following, they go out to tour um uh you know California. and he comes up against better talent, better musical talent. And he realizes that hey, they're better at that than us. But he says, but he knows that he wants to keep going. He wants to keep working. And you see that element of work throughout. Like we talk of rock and roll stars. We see they made it at twenty-three. We don't realize they might have been at it since they were seven or whatever. You know, the Beatles spent years and years, it did hundreds and thousands of shows in Hamburg before they, you know, got their first album out and managed to reach a certain level. It takes so much work. You see Mozart doing great symphonies at 17 or whatever. He was composing since five, for God's sake, right? And And and you see that effort in Springsteen's career and how it's not all natural bursts of genius. It's not like that. There's so much work. Like there's a story from the first album they signed for Columbia Records. Mike Apple was still their uh uh producer and indeed the manager. And uh in fact he got them that first gig. Incredibly passionate man. He took Dylan to John Hammond. And uh there's this famous story. He took Dylan to John Hammond uh at Columbia and walked um Springsteen in the door. Uh took did I say took Dylan there? Took Springsteen there. And he walked Springsteen in the door, and John Hammond is there, and Mike Apple is there, and Springsteen is there, and he didn't bring his kit. So he bought a secondhand guitar and he's carrying it over his shoulder, right? This is a young Springsteen. And uh Mike Apple then says to John Hammond, Hey, listen, man, you discovered Dylan, show us it was not a fluke, right? Listen to this guy. And Springsteen in his head is cringing. He's like, What are you doing? Shut the fuck up, right? But Springsteen performs and he uh kind of gets a deal in his first two albums. Three record deal. Three-record deal. And the first album is Greetings from Asbury Park, right? And um and he writes about that in his book after they turned it into Columbia. We turned it in and Life Davis handed it back, saying there were no hits, nothing that could be played on the radio. I went to the beach and wrote Spirit in the Night, came home and busted out my rhyming dictionary and wrote Blinded by the Light, two of the best things on the record. I was able to find Clarence, a great Clarence Clemence. I was able to find Clarence who'd been missing in action since that first night in The Prince, and I got his cool saxophone on these last two cards. It made a big difference. This was a most fully realized version of the sound I had in my head that I would get on my first album. So again, he's been told there's no hits. Now typically many artist types would say suit but I commercial nay nay, I want to be true to my art. Springsteen doesn't do that. He says, Fuck it, you want to hit, I'll write you a hit. And he goes out there and he writes the best songs on the album. Happens again. It happens again in 1984 with that album through which you discovered him, Born in the USA, where John Landau tells him that after the whole album is done, whole album minus Dancing in the Dark, that boss, we need a hit. And then he goes back to the room and he's like, What the fuck? He's like, I've done so much work, you're saying you need a hit. What shit is this? And he sits down. And he writes Dancing in the Dark. A masterpiece, and again, like something I'll come come to later. And you've already mentioned it's a song with levels, it's a song with you know lyrics that are actually pretty depressive, but set to an upbeat uh tune, you know. As much of an anachronism in a sense as the title song was Born in the USA was a protest song. Some people treated it as a yay, Born in the USA MAGA song, right? And uh I and I'll read out these uh lovely words from Dancing in the Dark because you can imagine Swingsteen in his hotel room, 10 minutes he's pissed off at John Landau. Then he says, Fuck it. What do I feel like right now? I'll turn it into song. Right? And he writes this and I'm just reading the lyrics out because you know, who would dare to sing? I get up in the evening and I ain't got nothing to say. I come home in the morning, I go to bed feeling the same way. I ain't nothing but tired. Man, I'm just tired and bored with myself. Hey there, baby. I could use just a little help. You can't start a fire, you can't start a fire without a spark. This gun's for higher. Even if it's just dancing in the dark.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1588.94,
@@ -27999,7 +27943,15 @@
           "startTime": 1589.82,
           "endTime": 1590.32,
           "confidence": 0.9901
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1591.3,
+      "endTime": 2160.13,
+      "text": "Don't kind of have a coherent narrative the way you uh do. I've listened to a lot of music. Springsteen was a part of my growing up, a part of my emotional landscape as well. Though I I would not be able to take a particular song and say this meant that to me. But I've thought a lot about his work and his craft in recent years, which is why I've just come to admire him so much as a great writer and just my favorite songwriter of all time by a long margin. So I want to talk about four broad aspects of uh uh Bruce Springsteen. One, the effort that he made. The songs that he wrote, the language that he used, and the change that he embraced. And to talk about the effort, like what do I mean by effort and intentionality and all these things that I'm getting at? I want to sort of recommend, and and this could easily be my big recommendation of the episode, his great autobiography called Born to Run, because what else could it be called? And in his autobiography, he writes of a time where he was seven years old. and he really wanted a guitar because he heard something somewhere or he saw a photography, was struck by it, and his mom couldn't afford to buy him a guitar. So she went to a place and they rented a guitar for him. And for a few days the boy tried to play the rented guitar, just simply could not figure it out. And the day came for him to give that rented guitar back, right? And at that point, Springsteen writes, he takes a guitar out to the yard and all the kids are gathered around him and he writes. The sunny morning I had to return the guitar. I stood in front of six or so of the neighborhood guys and gals in my backyard. I gave my first and last show for quite a while. I held the guitar, I shook it, I shouted at it, I banged on it, I sang voodoo nonsense. I did everything but play it, all to their laughter and great amusement. I sucked. It was a joyful and silly ass pantomime. That afternoon, sad but a little relieved, I dropped the guitar off back at DL's music. It was over for now. But for a moment, just a moment, in front of those kids in my backyard. I'll smell blood. Stop quote. Right? And then there's a story where later on he manages to actually get a guitar, but he hasn't learned to tune it yet. So with the strings in whatever s state of untuning they are in, he, you know, writes a few tunes and he's playing in front of the mirror and he thinks he's really cool. And then he goes to someone and that person teaches him how to tune a guitar and tunes it for him. And then he realizes that everything he did before that was rubbish. And this is such a great metaphor for how step by step by step we learn so much about the craft. And Then just to take a brief step away from this theme of effort and intentionality, I also wanted to talk about this moment of magic in his life which he describes in Bonto Run, and he writes I went back on a daily basis. Uh this is to a record store where he used to look for records when, you know, those little wine uh vinyl things would be there and I think there they were venile singles or something. There was no store in his town big enough to actually be a record store, but there was some other store which kept a bunch of the small vinyl records. So he speaks about how he once discovered it. He would go back every day and then I went back on a daily basis until I saw it, the album cover, the greatest album cover of all time, tied with Highway 61 Revisited. All it said. was meet the Beatles. That was exactly what I wanted to do. Those four half-shadowed faces, Rock'n'Rolls, Mount Rushmore, and the hair, the hair, what did it mean? It was a surprise, a shock. Right? And you can you you you've just seen the cover on the screen and it is an iconic cover, but I can see it from a distance and I can say, ha, nice looking cover, a Chafo Tolia, if you know a little bit of the history. But to read his words and imagine that shock of recognition. uh uh on on a boy's face, uh you know, where there is something that is both completely new and yet something that kind of speaks to him. And from that point on, all he wants to do is music. He picks up that record, listens to the Beatles, discovers Van Morrison later, discovers Dylan later. He's out playing. He has a band called the Castiles. He has a band called The Steel Mill. And in the early seventies there is a story where the Steel Mill go to San Francisco and they go to an audition in some place. And the first couple of bands kind of are mediocre. So you know, the st steel mill goes out there, they they rock the show, they think they've done it. And then Springsteen sees a band come on after him that is just way better in musicianship and all of that. And they just knock the socks off and uh Steel Mill don't get the gig. And later on, Springsteen writes about that. I came up against some real talent and held my own, but the band that took us out at the family dog stayed with me. They had something we didn't, a certain level of sophisticated musicality. They were better than us and that didn't sit well with me. It's not that I didn't expect to come up against superior talent. That happens. It's the way God planned it. I was fast, but like the old gunslingers knew, there's always someone faster. And if you can do it better than me, you earn my respect and admiration and you inspire me to work harder. I wasn't afraid of that. I was concerned with not maximizing my own abilities, not having a broad or intelligent enough vision of what I was capable of. I was all I had. I had only one talent. I was not a natural genius. I would have to use every ounce of what was in me. Every ounce of what was in me. I love this phrase. Every ounce of what was in me, my cunning, my musical skills, my showmanship, my intellect, my heart, my willingness, right night after night, to push myself harder, to work with more intensity than the next guy, just to survive untended in the world I lived in. As I sat there in the black, I knew when we got back home there would have to be some changes made. Right. And then you see him going back, and then you gradually see the shift from Steel Mill to the Bruce Springsteen band to Bruce Springsteen and the East Street band, and that happens over a period of time, and we can talk at length about that. But what strikes me is that this guy, you know, the 17-year-old kid didn't know what he was doing, but he knew he had the desire and the passion and was willing to work at it. This guy in this band called Steel Mill, which has such a local following, they go out to tour um uh you know California. and he comes up against better talent, better musical talent. And he realizes that hey, they're better at that than us. But he says, but he knows that he wants to keep going. He wants to keep working. And you see that element of work throughout. Like we talk of rock and roll stars. We see they made it at twenty-three. We don't realize they might have been at it since they were seven or whatever. You know, the Beatles spent years and years, it did hundreds and thousands of shows in Hamburg before they, you know, got their first album out and managed to reach a certain level. It takes so much work. You see Mozart doing great symphonies at 17 or whatever. He was composing since five, for God's sake, right? And And and you see that effort in Springsteen's career and how it's not all natural bursts of genius. It's not like that. There's so much work. Like there's a story from the first album they signed for Columbia Records. Mike Apple was still their uh uh producer and indeed the manager. And uh in fact he got them that first gig. Incredibly passionate man. He took Dylan to John Hammond. And uh there's this famous story. He took Dylan to John Hammond uh at Columbia and walked um Springsteen in the door. Uh took did I say took Dylan there? Took Springsteen there. And he walked Springsteen in the door, and John Hammond is there, and Mike Apple is there, and Springsteen is there, and he didn't bring his kit. So he bought a secondhand guitar and he's carrying it over his shoulder, right? This is a young Springsteen. And uh Mike Apple then says to John Hammond, Hey, listen, man, you discovered Dylan, show us it was not a fluke, right? Listen to this guy. And Springsteen in his head is cringing. He's like, What are you doing? Shut the fuck up, right? But Springsteen performs and he uh kind of gets a deal in his first two albums. Three record deal. Three-record deal. And the first album is Greetings from Asbury Park, right? And um and he writes about that in his book after they turned it into Columbia. We turned it in and Life Davis handed it back, saying there were no hits, nothing that could be played on the radio. I went to the beach and wrote Spirit in the Night, came home and busted out my rhyming dictionary and wrote Blinded by the Light, two of the best things on the record. I was able to find Clarence, a great Clarence Clemence. I was able to find Clarence who'd been missing in action since that first night in The Prince, and I got his cool saxophone on these last two cards. It made a big difference. This was a most fully realized version of the sound I had in my head that I would get on my first album. So again, he's been told there's no hits. Now typically many artist types would say suit but I commercial nay nay, I want to be true to my art. Springsteen doesn't do that. He says, Fuck it, you want to hit, I'll write you a hit. And he goes out there and he writes the best songs on the album. Happens again. It happens again in 1984 with that album through which you discovered him, Born in the USA, where John Landau tells him that after the whole album is done, whole album minus Dancing in the Dark, that boss, we need a hit. And then he goes back to the room and he's like, What the fuck? He's like, I've done so much work, you're saying you need a hit. What shit is this? And he sits down. And he writes Dancing in the Dark. A masterpiece, and again, like something I'll come come to later. And you've already mentioned it's a song with levels, it's a song with you know lyrics that are actually pretty depressive, but set to an upbeat uh tune, you know. As much of an anachronism in a sense as the title song was Born in the USA was a protest song. Some people treated it as a yay, Born in the USA MAGA song, right? And uh I and I'll read out these uh lovely words from Dancing in the Dark because you can imagine Swingsteen in his hotel room, 10 minutes he's pissed off at John Landau. Then he says, Fuck it. What do I feel like right now? I'll turn it into song. Right? And he writes this and I'm just reading the lyrics out because you know, who would dare to sing? I get up in the evening and I ain't got nothing to say. I come home in the morning, I go to bed feeling the same way. I ain't nothing but tired. Man, I'm just tired and bored with myself. Hey there, baby. I could use just a little help. You can't start a fire, you can't start a fire without a spark. This gun's for higher. Even if it's just dancing in the dark.",
+      "words": [
         {
           "word": "Don't",
           "startTime": 1591.3,
@@ -45807,8 +45759,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2384.78,
-      "endTime": 2470.27,
-      "text": "And he says Everybody's kinda heard this. The music will come into your head as as I read these out. Got a wife and kids in Baltimore, Jack. I went out for a ride and I never went back. Like a river that don't know where it's flowing. I took a wrong turn and I just kept going. Everybody's got a hungry heart. Everybody's got a hungry heart. Lay down your money and you play your part. Everybody's got a ha ha ha ha hungry heart. Right? And so simple. And one of and I'll talk about the simplicity a little later, but one of The things that I keep telling my writing students that I keep reminding myself is that such great simplicity comes after years and years of putting in the work. One way of looking at it is that he wrote this song in 10 minutes. Another way of thinking about it is that it took 30 years to write the song. And you know, and uh and there's a lot of work that that kind of went in, like when they were recording Bon to Run, at one point he speaks about this. Three-day stint, 72 hours, where they had three side-by-side studios at the same time. Right? Ekma jungle land vocals, another song is being mixed, you know, different songs being worked on, you know, uh things being taken apart, put back together, painstaking. So that's the end of this like particular chapter. Where I just want to point out to everyone who wants to be an artist or creator of any sorts that boss, it takes work, it takes intentionality. When you start. You're at seventeen-year-old kid with a guitar, you can't play in front of your neighborhood boys, you know? But this is a journey.",
+      "endTime": 2484.67,
+      "text": "And he says Everybody's kinda heard this. The music will come into your head as as I read these out. Got a wife and kids in Baltimore, Jack. I went out for a ride and I never went back. Like a river that don't know where it's flowing. I took a wrong turn and I just kept going. Everybody's got a hungry heart. Everybody's got a hungry heart. Lay down your money and you play your part. Everybody's got a ha ha ha ha hungry heart. Right? And so simple. And one of and I'll talk about the simplicity a little later, but one of The things that I keep telling my writing students that I keep reminding myself is that such great simplicity comes after years and years of putting in the work. One way of looking at it is that he wrote this song in 10 minutes. Another way of thinking about it is that it took 30 years to write the song. And you know, and uh and there's a lot of work that that kind of went in, like when they were recording Bon to Run, at one point he speaks about this. Three-day stint, 72 hours, where they had three side-by-side studios at the same time. Right? Ekma jungle land vocals, another song is being mixed, you know, different songs being worked on, you know, uh things being taken apart, put back together, painstaking. So that's the end of this like particular chapter. Where I just want to point out to everyone who wants to be an artist or creator of any sorts that boss, it takes work, it takes intentionality. When you start. You're at seventeen-year-old kid with a guitar, you can't play in front of your neighborhood boys, you know? But this is a journey. You're at episode thirteen of Everything Is Everything. When you start, you're at episode thirteen of Everything Is Everything. Yeah. When we who knows where we'll be. Are you comparing us to Springsteen? Don't you dare do that? At eight seventeen. No, no.",
       "words": [
         {
           "word": "And",
@@ -47621,15 +47573,7 @@
           "startTime": 2469.23,
           "endTime": 2470.27,
           "confidence": 0.988
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2470.27,
-      "endTime": 2472.03,
-      "text": "You're at episode thirteen of",
-      "words": [
+        },
         {
           "word": "You're",
           "startTime": 2470.27,
@@ -47659,15 +47603,7 @@
           "startTime": 2471.79,
           "endTime": 2472.03,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2472.03,
-      "endTime": 2484.67,
-      "text": "Everything Is Everything. When you start, you're at episode thirteen of Everything Is Everything. Yeah. When we who knows where we'll be. Are you comparing us to Springsteen? Don't you dare do that? At eight seventeen. No, no.",
-      "words": [
+        },
         {
           "word": "Everything",
           "startTime": 2472.03,
@@ -47901,8 +47837,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2484.67,
-      "endTime": 2658.06,
-      "text": "Um I I want to uh Tell two stories here. One is that uh the great physicist S. Chandrashekar has a beautiful book called Truth and Beauty. And uh it's it's a lovely slim book. I recommend everybody should read this book, in that he talks a lot about the craft and the journey of learning how to do it. And he notices how at the end of his life, before writing the Ninth Symphony, Beethoven is writing to a friend. He says, now. I know how to write music. So at the end of this entire life of writing everything else, he's saying, I feel ready. I now I know how to write music. And he writes, you know, one of the greatest achievements of mankind, the Ninth Symphony of Beethoven. And I felt something similar when I heard Devils and Dust for the first time. I just felt that journey, that this guy has been at it all his life, and this thing, it's just it is so perfect. Everything about one life has come together in the perfection of devils and dust. And oddly enough, there is an interview in which Bruce Springsteen says more or less the same thing. He says, I've been at this all my life, and this is my craft. I know how to do this. Um another little story I want to tell is again about the prodigality. I think the hallmark of being a creator is that level of obsession and the creativity that You have to be at it all the time and many, many ideas will come along. You you you it should happen that you are prolifically producing, you should be building a lot of stuff. It shouldn't be that you make one taj mahal, you have to make hundred because the others will fall by the wayside. You know, it it's it's like making should be the passion, it should come out of your heart. You need to do it a lot. Uh, to use jargon from chess or poker, it's volume. you've got to do a lot of volume because only then out of that the iterative refinement comes that you get better and better. So volume counts and you have to produce a lot. So one little story. One fine day Bruce Springsteen wrote a song. Okay. It's called Fire. Okay. You may have heard it. Driving in my car, turn on the radio, um, I'm holding you close, you just say no. Okay. It's a beautiful little uh slightly humorous song. And he had this vision That the right person to sing this song is Elvis Presley. Okay? So he think, listen to the lilt of the song, that it's really a Elvis Presley song. And so he got hold of Elvis Presley's phone number and he called him. Okay, Elvis Presley didn't pick up the phone, it went into an answering machine. Okay? Oh, ye young reader, please go Google what is an answering machine. Um and so Bruce Wingstein sang the song into an answering machine and dictated the lyrics there. And uh Elvis Presley ignored him and it never went anywhere. He tried to say to Elvis, I wrote this song for you. It'll be so great for you to do this song.",
+      "endTime": 2721.6,
+      "text": "Um I I want to uh Tell two stories here. One is that uh the great physicist S. Chandrashekar has a beautiful book called Truth and Beauty. And uh it's it's a lovely slim book. I recommend everybody should read this book, in that he talks a lot about the craft and the journey of learning how to do it. And he notices how at the end of his life, before writing the Ninth Symphony, Beethoven is writing to a friend. He says, now. I know how to write music. So at the end of this entire life of writing everything else, he's saying, I feel ready. I now I know how to write music. And he writes, you know, one of the greatest achievements of mankind, the Ninth Symphony of Beethoven. And I felt something similar when I heard Devils and Dust for the first time. I just felt that journey, that this guy has been at it all his life, and this thing, it's just it is so perfect. Everything about one life has come together in the perfection of devils and dust. And oddly enough, there is an interview in which Bruce Springsteen says more or less the same thing. He says, I've been at this all my life, and this is my craft. I know how to do this. Um another little story I want to tell is again about the prodigality. I think the hallmark of being a creator is that level of obsession and the creativity that You have to be at it all the time and many, many ideas will come along. You you you it should happen that you are prolifically producing, you should be building a lot of stuff. It shouldn't be that you make one taj mahal, you have to make hundred because the others will fall by the wayside. You know, it it's it's like making should be the passion, it should come out of your heart. You need to do it a lot. Uh, to use jargon from chess or poker, it's volume. you've got to do a lot of volume because only then out of that the iterative refinement comes that you get better and better. So volume counts and you have to produce a lot. So one little story. One fine day Bruce Springsteen wrote a song. Okay. It's called Fire. Okay. You may have heard it. Driving in my car, turn on the radio, um, I'm holding you close, you just say no. Okay. It's a beautiful little uh slightly humorous song. And he had this vision That the right person to sing this song is Elvis Presley. Okay? So he think, listen to the lilt of the song, that it's really a Elvis Presley song. And so he got hold of Elvis Presley's phone number and he called him. Okay, Elvis Presley didn't pick up the phone, it went into an answering machine. Okay? Oh, ye young reader, please go Google what is an answering machine. Um and so Bruce Wingstein sang the song into an answering machine and dictated the lyrics there. And uh Elvis Presley ignored him and it never went anywhere. He tried to say to Elvis, I wrote this song for you. It'll be so great for you to do this song. And Elvis ignored him. Then he gifted this song away to the Pointer Sisters, who turned it into a number one hit. And, you know, many years later, Bruce Springsteen produced it himself in some live versions, and his version is the best. And I just want to say that that was very influential for me personally. I learned one thing, which is just gift your stuff away. Don't try to hold everything, don't try to hang on to everything. If our life is to mean anything, there will be plenty of knowledge, there'll be plenty of ideas, and you know, these the body that we own is the creature through which those ideas go out into the world. So let the ideas matter and let the ideas go out, and it isn't about this body. So all my life. I have got many, many research ideas and I freely gift them away. I give them to other people. I don't worry like, am I getting that paper? So it's better to keep on inventing and giving things away rather than trying to protect oneself that, oh, this is my idea. I'll write it in a notebook. One day I'll",
       "words": [
         {
           "word": "Um",
@@ -51215,15 +51151,7 @@
           "startTime": 2657.74,
           "endTime": 2658.06,
           "confidence": 0.8154
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2658.06,
-      "endTime": 2659.74,
-      "text": "And Elvis ignored him.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2658.06,
@@ -51247,15 +51175,7 @@
           "startTime": 2659.26,
           "endTime": 2659.74,
           "confidence": 0.9827
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2659.74,
-      "endTime": 2690.75,
-      "text": "Then he gifted this song away to the Pointer Sisters, who turned it into a number one hit. And, you know, many years later, Bruce Springsteen produced it himself in some live versions, and his version is the best. And I just want to say that that was very influential for me personally. I learned one thing, which is just gift your stuff away. Don't try to hold everything, don't try to hang on to everything. If our life is to mean anything, there will be plenty of knowledge, there'll be plenty of ideas, and you",
-      "words": [
+        },
         {
           "word": "Then",
           "startTime": 2659.74,
@@ -51831,29 +51751,13 @@
           "startTime": 2690.43,
           "endTime": 2690.75,
           "confidence": 0.9565
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2690.75,
-      "endTime": 2692.25,
-      "text": "know,",
-      "words": [
+        },
         {
           "word": "know,",
           "startTime": 2690.75,
           "endTime": 2692.25,
           "confidence": 0.7673
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2692.51,
-      "endTime": 2721.6,
-      "text": "these the body that we own is the creature through which those ideas go out into the world. So let the ideas matter and let the ideas go out, and it isn't about this body. So all my life. I have got many, many research ideas and I freely gift them away. I give them to other people. I don't worry like, am I getting that paper? So it's better to keep on inventing and giving things away rather than trying to protect oneself that, oh, this is my idea. I'll write it in a notebook. One day I'll",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 2692.51,
@@ -52961,8 +52865,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2749.25,
-      "endTime": 2877.47,
-      "text": "So now we get to the songs, and my next two sections are about that. You know, we already spoke about the effort he made. Now I want to talk about the songs he wrote and the language he used. And then later we'll talk about the change he embraced, which is also about the songs. And the thing about Springsteen's songs is that for his music, he is taking the stuff of everyday life, the life that he's living in a small town and the life that is around him. And in a sense, you know, you might think that, oh, it's homogenous. He's born somewhere in a town in Middle America. It is what it is, it is one thing. It is not one thing. Everything in everything there are multitudes. And he is there, uh, also in the midst of change happening all around him. Like he has these great lines from Bon to Run where he says I had friends who were real drug experimenting radicals, and then I had my construction worker brother in law, who, with the exception of bashing a few long hairs like myself, had no sixties experience whatsoever. He remained his whole life a man of the fifties. I was a faux hippie. Free love was alright, but the counterculture stood by definition an opposition to the conservative blue-collar experience I'd had. I felt caught between two camps and I didn't really fit in either, or maybe I just fit in both. And his life in a sense is a melding of the both. It is being surrounded by an old world and it is again immersing himself partly by an act of will and intention into a sort of a new world. And the beautiful thing about him is that he is not looking at stories from myth or grand narratives or grand tales and etcetera etc. to kind of craft his work. Eventually he is turning to the people around him, to his sister, to his mother, to his father, to his all his small town friends. For example, he writes about his sister in the book. My sister Virginia became pregnant at 17 and no one realized it until she was six months along. In her senior year, she dropped out of high school, was tutored at home, and married her boyfriend and the father of her child, Mickey Shave. Mickey was an arrogant, leather jacketed, bull riding, fighter, greaser from Lakewood and eventually all around great guy. Virginia, who had never boiled water, washed a dish, or swept a floor, became the toughest. She had soul, intelligence, humor, and beauty. In months her life changed. She became a hardcore Irish working woman. Mickey worked in construction. Which song",
+      "endTime": 2876.08,
+      "text": "So now we get to the songs, and my next two sections are about that. You know, we already spoke about the effort he made. Now I want to talk about the songs he wrote and the language he used. And then later we'll talk about the change he embraced, which is also about the songs. And the thing about Springsteen's songs is that for his music, he is taking the stuff of everyday life, the life that he's living in a small town and the life that is around him. And in a sense, you know, you might think that, oh, it's homogenous. He's born somewhere in a town in Middle America. It is what it is, it is one thing. It is not one thing. Everything in everything there are multitudes. And he is there, uh, also in the midst of change happening all around him. Like he has these great lines from Bon to Run where he says I had friends who were real drug experimenting radicals, and then I had my construction worker brother in law, who, with the exception of bashing a few long hairs like myself, had no sixties experience whatsoever. He remained his whole life a man of the fifties. I was a faux hippie. Free love was alright, but the counterculture stood by definition an opposition to the conservative blue-collar experience I'd had. I felt caught between two camps and I didn't really fit in either, or maybe I just fit in both. And his life in a sense is a melding of the both. It is being surrounded by an old world and it is again immersing himself partly by an act of will and intention into a sort of a new world. And the beautiful thing about him is that he is not looking at stories from myth or grand narratives or grand tales and etcetera etc. to kind of craft his work. Eventually he is turning to the people around him, to his sister, to his mother, to his father, to his all his small town friends. For example, he writes about his sister in the book. My sister Virginia became pregnant at 17 and no one realized it until she was six months along. In her senior year, she dropped out of high school, was tutored at home, and married her boyfriend and the father of her child, Mickey Shave. Mickey was an arrogant, leather jacketed, bull riding, fighter, greaser from Lakewood and eventually all around great guy. Virginia, who had never boiled water, washed a dish, or swept a floor, became the toughest. She had soul, intelligence, humor, and beauty. In months her life changed. She became a hardcore Irish working woman. Mickey worked in construction.",
       "words": [
         {
           "word": "So",
@@ -55717,7 +55621,15 @@
           "startTime": 2875.58,
           "endTime": 2876.08,
           "confidence": 0.9972
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2876.99,
+      "endTime": 2880.45,
+      "text": "Which song did this inspire? I got a job working in construction.",
+      "words": [
         {
           "word": "Which",
           "startTime": 2876.99,
@@ -55729,15 +55641,7 @@
           "startTime": 2877.23,
           "endTime": 2877.47,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2877.47,
-      "endTime": 2880.45,
-      "text": "did this inspire? I got a job working in construction.",
-      "words": [
+        },
         {
           "word": "did",
           "startTime": 2877.47,
@@ -55803,8 +55707,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2882.22,
-      "endTime": 3157.3,
-      "text": "In the Yeah, exactly. So me and Mary we met in high school when she was just seventeen. And later on in the same song, I got a job working construction for the Johnstown Company. Right? This is a river. Is is great song. He he's got these uh I I I'll just read out this entire first section because it's brilliant. We me and Mary we met in high school when she was just seventeen and then later then I got Mary pregnant and man that was all she wrote. And for my 19th birthday, I got a union card and a wedding coat. We went down to the courthouse and the judge put it all to rest. No wedding day smiles, no walk down the aisle. No flowers, no wedding dress. You know. And you can almost if you heard the song, you can hear the next stanza because it just takes over and it has a a momentum of its um uh of its own. And not just his sister, his father. And that's a very fraught relationship. His father at uh one point thought uh you know gave into paranoia. He you know, he thought the world is plotting against him. He he thought that the love songs on the radio were a government ploy so that people would get married and pay more taxes. I'm presuming there are greater taxes uh involved there. And uh again there's a beautiful passage where he writes about his father at one point. One evening my father was giving me a few boxing lessons in the living room. I was flattered, excited by his attention and eager to learn. Things were going well. And then he threw a few open palm punches to my face that landed. just a little too hard. It stung. I wasn't hurt, but a line had been crossed. I knew something was being communicated. We had slipped into the dark netherland beyond father and son. I sensed what was being said. I was an intruder, a stranger, a competitor in our home, and a fearful disappointment. My heart broke and I crumpled. He walked away in disgust. Stop quote. And he writes a lot about his father in his book, including about the later years, you know, when they are kind of not at loggerheads all the time. And this is there in his song also, like one of his most beautiful songs, Independence Day, and I'll just sort of read these lines out. Well Papa go to bed now. It's getting late. Nothing we can say can change anything now. Because there's just different people coming down here and now they see things in different ways. And soon everything we've known will just be swept away. So say goodbye. It's Independence Day. Papa now I know the things you wanted that you could not say. But won't you just say goodbye? It's Independence Day. I swear I never meant to take those things away. Right. And now what I want to read out for you is a description, uh again from his autobiography Born to Run, about the town he grew up in. And as I go through this description, you will get flashes from all his songs. Taxi driver, assembly line worker, auto worker, jail guard, bus driver, truck driver, these are just a few of the many jobs my pop worked to hold all during his life. My sisters and I grew up in blue collar neighborhoods, somewhat integrated, filled with factory workers, cops, firemen, long distance truck drivers. I never saw a man leave a house in a jacket and tie unless it was Sunday or he was in trouble. If you came knocking at our door with a suit on, you were immediately under suspicion. You wanted something. They were good neighbors filled with eccentricity and kindness and basically decent. You were creeps just like everywhere else. And you had your houses where you could tell something bad was going on. Stop quote. And he also talks about his craft in this book and you know why in a songwriting he makes himself so vulnerable. And he says, Most of my writing is emotionally autobiographical. I've learned you've got to pull up the things that mean something to you in order for them to mean anything to your audience. That's where the proof is. That's how they know you're not kidding. And an example for this, like th there are just so many examples through all his songs where he takes something personal and it can mean something to you. Like at one point he writes in Darkness on the edge of town, you know the The album, which I mean, this song is such just such great lyrics. And he writes, Tonight I'll be on that hill because I can't stop. I'll be on that hill with everything I got. Lives on the line where dreams are found and lost. I'll be there on time and I'll pay the cost for wanting things that can only be found in the darkness and the edge of town. In the darkness of the edge of town. Right? Just beautiful, simple language, and everyone relates, you know. So he is being specific in his writing, but Anyone can relate from anywhere. And and this point about how you write about something that is in your life, it's true only to you, but it's also universal. It's true to everything else. Time and again it comes out. It comes out in Independence Day. It comes out in this song. It comes out, for example, on a song which is about uh uh you know a relatively uh non-metaphysical subject like uh lust, for example. There's he's got a great song called I'm on fire, where the lines go. At night I wake up with a sheet soaking wet and a freight train running through the middle of my head. Only you can cool my desire. Oh, oh, oh, I'm on fire. Oh, oh, I'm on fire, repeated a couple of times. Uh",
+      "endTime": 3200.94,
+      "text": "In the Yeah, exactly. So me and Mary we met in high school when she was just seventeen. And later on in the same song, I got a job working construction for the Johnstown Company. Right? This is a river. Is is great song. He he's got these uh I I I'll just read out this entire first section because it's brilliant. We me and Mary we met in high school when she was just seventeen and then later then I got Mary pregnant and man that was all she wrote. And for my 19th birthday, I got a union card and a wedding coat. We went down to the courthouse and the judge put it all to rest. No wedding day smiles, no walk down the aisle. No flowers, no wedding dress. You know. And you can almost if you heard the song, you can hear the next stanza because it just takes over and it has a a momentum of its um uh of its own. And not just his sister, his father. And that's a very fraught relationship. His father at uh one point thought uh you know gave into paranoia. He you know, he thought the world is plotting against him. He he thought that the love songs on the radio were a government ploy so that people would get married and pay more taxes. I'm presuming there are greater taxes uh involved there. And uh again there's a beautiful passage where he writes about his father at one point. One evening my father was giving me a few boxing lessons in the living room. I was flattered, excited by his attention and eager to learn. Things were going well. And then he threw a few open palm punches to my face that landed. just a little too hard. It stung. I wasn't hurt, but a line had been crossed. I knew something was being communicated. We had slipped into the dark netherland beyond father and son. I sensed what was being said. I was an intruder, a stranger, a competitor in our home, and a fearful disappointment. My heart broke and I crumpled. He walked away in disgust. Stop quote. And he writes a lot about his father in his book, including about the later years, you know, when they are kind of not at loggerheads all the time. And this is there in his song also, like one of his most beautiful songs, Independence Day, and I'll just sort of read these lines out. Well Papa go to bed now. It's getting late. Nothing we can say can change anything now. Because there's just different people coming down here and now they see things in different ways. And soon everything we've known will just be swept away. So say goodbye. It's Independence Day. Papa now I know the things you wanted that you could not say. But won't you just say goodbye? It's Independence Day. I swear I never meant to take those things away. Right. And now what I want to read out for you is a description, uh again from his autobiography Born to Run, about the town he grew up in. And as I go through this description, you will get flashes from all his songs. Taxi driver, assembly line worker, auto worker, jail guard, bus driver, truck driver, these are just a few of the many jobs my pop worked to hold all during his life. My sisters and I grew up in blue collar neighborhoods, somewhat integrated, filled with factory workers, cops, firemen, long distance truck drivers. I never saw a man leave a house in a jacket and tie unless it was Sunday or he was in trouble. If you came knocking at our door with a suit on, you were immediately under suspicion. You wanted something. They were good neighbors filled with eccentricity and kindness and basically decent. You were creeps just like everywhere else. And you had your houses where you could tell something bad was going on. Stop quote. And he also talks about his craft in this book and you know why in a songwriting he makes himself so vulnerable. And he says, Most of my writing is emotionally autobiographical. I've learned you've got to pull up the things that mean something to you in order for them to mean anything to your audience. That's where the proof is. That's how they know you're not kidding. And an example for this, like th there are just so many examples through all his songs where he takes something personal and it can mean something to you. Like at one point he writes in Darkness on the edge of town, you know the The album, which I mean, this song is such just such great lyrics. And he writes, Tonight I'll be on that hill because I can't stop. I'll be on that hill with everything I got. Lives on the line where dreams are found and lost. I'll be there on time and I'll pay the cost for wanting things that can only be found in the darkness and the edge of town. In the darkness of the edge of town. Right? Just beautiful, simple language, and everyone relates, you know. So he is being specific in his writing, but Anyone can relate from anywhere. And and this point about how you write about something that is in your life, it's true only to you, but it's also universal. It's true to everything else. Time and again it comes out. It comes out in Independence Day. It comes out in this song. It comes out, for example, on a song which is about uh uh you know a relatively uh non-metaphysical subject like uh lust, for example. There's he's got a great song called I'm on fire, where the lines go. At night I wake up with a sheet soaking wet and a freight train running through the middle of my head. Only you can cool my desire. Oh, oh, oh, I'm on fire. Oh, oh, I'm on fire, repeated a couple of times. Uh so you know, so that is something that's sort of uh uh that makes his songs work so well. And then the the next aspect is of course the language, which I'll come to. But before that, it it really strikes me that, you know, people like I'll often get people doing my writing course saying, What do I write about? You know, and I'm like, it's okay, you know. Look around you. And that is the stuff with which you make uh with with which you make art and you and and you can turn that into great inspiring work. And that's what Rayleigh Springsteen did. You know, a lot of the stuff that he's writing about, it isn't, you know, earth shattering, mind-blowing, or whatever. You know, his sister gets pregnant and gets married, he writes about that. He can't get along with his dad, he writes about that, he writes about all of these stuff which all of us experience. And there's such magic in it.",
       "words": [
         {
           "word": "In",
@@ -61925,15 +61829,7 @@
           "startTime": 3156.82,
           "endTime": 3157.3,
           "confidence": 0.8301
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3157.3,
-      "endTime": 3159.38,
-      "text": "so you know, so that is",
-      "words": [
+        },
         {
           "word": "so",
           "startTime": 3157.3,
@@ -61969,15 +61865,7 @@
           "startTime": 3159.06,
           "endTime": 3159.38,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3159.38,
-      "endTime": 3200.94,
-      "text": "something that's sort of uh uh that makes his songs work so well. And then the the next aspect is of course the language, which I'll come to. But before that, it it really strikes me that, you know, people like I'll often get people doing my writing course saying, What do I write about? You know, and I'm like, it's okay, you know. Look around you. And that is the stuff with which you make uh with with which you make art and you and and you can turn that into great inspiring work. And that's what Rayleigh Springsteen did. You know, a lot of the stuff that he's writing about, it isn't, you know, earth shattering, mind-blowing, or whatever. You know, his sister gets pregnant and gets married, he writes about that. He can't get along with his dad, he writes about that, he writes about all of these stuff which all of us experience. And there's such magic in it.",
-      "words": [
+        },
         {
           "word": "something",
           "startTime": 3159.38,
@@ -65281,8 +65169,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3318.96,
-      "endTime": 3328.16,
-      "text": "Also the juxtaposition, you know. After that longish sentence, I'm always looking for that snap short sentence, that that power of four words, five words.",
+      "endTime": 3328.48,
+      "text": "Also the juxtaposition, you know. After that longish sentence, I'm always looking for that snap short sentence, that that power of four words, five words. And see",
       "words": [
         {
           "word": "Also",
@@ -65433,15 +65321,7 @@
           "startTime": 3327.76,
           "endTime": 3328.16,
           "confidence": 0.955
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3328.16,
-      "endTime": 3512.94,
-      "text": "And see the poetry, it's ending in a mute sound, like I say. God giving you another shot. You know, the answer, my friend, is blowing in the wind. Great poets know how you end a line matters. You know? So that's uh incredible. And in in so much of his work, he's not just using really simple language, which everyone understands, but he's going a level deeper. Than you expect. Like I'll read out this verse from Secret Garden, which is such a great song, and you begin to wonder what it's about when you get here. Very writes, She'll let you in a house if you come knocking late at night. She'll let you in her mouth if the words you say are right. If you pay the price, she'll let you deep inside. But there's a secret garden she hides. Right now, at this point, the song seems really carnal, and you think the secret garden is, you know, the obvious thing. Even though the music is kind of very elevated, it's it's kind of going to a uh different sort of place. But then the song turns and it's about something else. Entirely a and the way it ends, she'll lead you down the path, there'll be tenderness in the air, she'll let you come just far enough so you know she's really there. And she'll look at you and smile and her eyes will say, She's got a secret garden where everything you want, where everything you need will always stay a million miles away. And what this song is really about is about how you can never truly know another person, how there are recesses within each of us that no one else can ever really grasp. And another great example of this where a song goes from one place to another place is uh from Tunnel of Love, uh, you know, Brilliant This Guy is, which is also such a great video if you look at it, just simplicity, you know, the camera going closer and closer. And that begins with the words, So tell me what I see when I look in your eyes. Is that you, baby, or just a brilliant disguise? Right and he's talking about the masks that we all wear. And then he ends with he ends by turning it around and turning the gaze on himself, where he says, Now look at me, baby, struggling to do everything right, and then it all falls apart when out go the lights. I'm just a lonely pilgrim. I walk this world in wealth. I want to know if it's you I don't trust, cause I damn sure don't trust myself. So when you look at me, you better look hard and look twice. Is that me, baby? Or just a brilliant disguise? Right? And and this is just so stunning. And and you see this in all his music. Of course in, you know, You're Missing, which we've spoken about. And pretty much Every album since Darkness of the uh Edge of Town, you know. I do find, you know, much as he took so much work, six months to write Born to Run and all of that, some of those lyrics don't work for me in the same way. But it's a young man, he's in his twenties for a while. It's 24. Yeah. And it's a young man beginning to find his voice. But then when he does, by the late 20s, like what shit were we doing at in our late 20s? We were writing really bad shit. Yeah, and look at look at where this man reached. He takes that journey, he pays his dues, he plays everywhere with the castiles and the steel mill and the Bruce Wingsteen band, and finally has Bruce Springsteen in the East Street band. And he reaches this uh sort of glorious uh place where uh he reaches out to so many people with such great songwriting that sometimes we don't even realize as great songwriting. It just feels so natural. But yet you hear a line of one of those songs and the whole song is playing in your head because that line has got its own momentum. Uh",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 3328.16,
@@ -65453,7 +65333,15 @@
           "startTime": 3328.32,
           "endTime": 3328.48,
           "confidence": 0.9938
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3328.48,
+      "endTime": 3512.94,
+      "text": "the poetry, it's ending in a mute sound, like I say. God giving you another shot. You know, the answer, my friend, is blowing in the wind. Great poets know how you end a line matters. You know? So that's uh incredible. And in in so much of his work, he's not just using really simple language, which everyone understands, but he's going a level deeper. Than you expect. Like I'll read out this verse from Secret Garden, which is such a great song, and you begin to wonder what it's about when you get here. Very writes, She'll let you in a house if you come knocking late at night. She'll let you in her mouth if the words you say are right. If you pay the price, she'll let you deep inside. But there's a secret garden she hides. Right now, at this point, the song seems really carnal, and you think the secret garden is, you know, the obvious thing. Even though the music is kind of very elevated, it's it's kind of going to a uh different sort of place. But then the song turns and it's about something else. Entirely a and the way it ends, she'll lead you down the path, there'll be tenderness in the air, she'll let you come just far enough so you know she's really there. And she'll look at you and smile and her eyes will say, She's got a secret garden where everything you want, where everything you need will always stay a million miles away. And what this song is really about is about how you can never truly know another person, how there are recesses within each of us that no one else can ever really grasp. And another great example of this where a song goes from one place to another place is uh from Tunnel of Love, uh, you know, Brilliant This Guy is, which is also such a great video if you look at it, just simplicity, you know, the camera going closer and closer. And that begins with the words, So tell me what I see when I look in your eyes. Is that you, baby, or just a brilliant disguise? Right and he's talking about the masks that we all wear. And then he ends with he ends by turning it around and turning the gaze on himself, where he says, Now look at me, baby, struggling to do everything right, and then it all falls apart when out go the lights. I'm just a lonely pilgrim. I walk this world in wealth. I want to know if it's you I don't trust, cause I damn sure don't trust myself. So when you look at me, you better look hard and look twice. Is that me, baby? Or just a brilliant disguise? Right? And and this is just so stunning. And and you see this in all his music. Of course in, you know, You're Missing, which we've spoken about. And pretty much Every album since Darkness of the uh Edge of Town, you know. I do find, you know, much as he took so much work, six months to write Born to Run and all of that, some of those lyrics don't work for me in the same way. But it's a young man, he's in his twenties for a while. It's 24. Yeah. And it's a young man beginning to find his voice. But then when he does, by the late 20s, like what shit were we doing at in our late 20s? We were writing really bad shit. Yeah, and look at look at where this man reached. He takes that journey, he pays his dues, he plays everywhere with the castiles and the steel mill and the Bruce Wingsteen band, and finally has Bruce Springsteen in the East Street band. And he reaches this uh sort of glorious uh place where uh he reaches out to so many people with such great songwriting that sometimes we don't even realize as great songwriting. It just feels so natural. But yet you hear a line of one of those songs and the whole song is playing in your head because that line has got its own momentum. Uh",
+      "words": [
         {
           "word": "the",
           "startTime": 3328.48,
@@ -70441,8 +70329,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3559.49,
-      "endTime": 3824.24,
-      "text": "person. And it feels effortless, but it's 30 years of work, 40 years of work, 50 years of work. However old he is at the time he wrote that song, that's what kind of goes into it. So, you know, for my last chapter on uh Bruce Springsteen, do I have more to say and I'll s say it after. I mean, I could just really go on forever. But I want to talk about an aspect that you spoke about, which is the change he embraced. That's my fourth uh uh sort of theme. Because Springsteen was very determined not to be one of those musicians who's always playing cover versions of himself. Right, which is why you referred to the thrill you got from his live records and uh and what he would also do in his live performances is he wouldn't just go out there and sing hit after hit. He'd talk in between. I remember when I was a kid, the first time I was really entranced and blown away by Springsteen and this I must have heard this in the eighties or the early nineties, is he was playing a live version of Growing Up, one of his early songs. And before that he spoke for what seemed like half an hour. And I you know, you like fuck, it was just so entrancing and so brilliant. And every performance was something new. He wasn't playing covers of himself. Every night he was a different uh sort of Bro Springsteen. And I remember in the late nineties and early two thousands, I discovered the same kind of joy when I would hear bootleg uh live albums of Pearl Jam. You know, another great band, and that they're all of their live albums are just so incredible. Uh and um and uh Springsteen himself once said, Songs shift their meanings when you sing them. They shift their meanings in time. They shift their meanings with who you sing them with. And he'll say this about brilliant this guy's, but it kind of applies to everything where he was always working. You know, there are so many versions of the river, for example. You know, Niels Rovgren, who played guitar and dad, said that he you know they played for days. They're just 30, 40, 50 versions of it which exist somewhere. And there's a famous story about uh, you know, and thank God it didn't work out, but when Bon to Run was uh happening, uh John Landau had, you know, taught him the art of, you know, making everything crisp, editing craft and all of that. And at one point then he uh got carried away and he said, Yeah, edit can I crisp. And he went to Backstreets and he wanted to take out the piano in uh interlude at the s the piano bit at the beginning and at the end. And Landau thankfully made him see better sense. And that, of course, is by uh Roy Bitten, also known as a professor, the only person in the band who had a college degree at the time, though. Max Weinberg later got it in the late 80s. And uh uh and that stays in and it's so beautiful. And Greel Marcus, when he reviewed the album, Greel Marcus, of course. genius uh music uh writer, I think he wrote a book on Dylan as well. And Grail Marcus, uh reviewing the album, wrote about that song. Backstage begins with music so stately, so heartbreaking that it might be the prelude to a rock and roll version of the Iliad. A rock and roll version of the Iliad, you know? And I heard it again, uh, you know, after I I read these words by Marcus, and I was like, fuck, you know, this is what I've always felt, but I hadn't put it into words until Marcus kind of did. It is both intimate and epic, you know, it's it's that kind of feeling. In fact, sometimes I wish the that went on forever and the guidance starts singing. And uh and again, similarly, uh the song from Nebraska, which is such a great stripped down album, uh Atlantic City. And Atlantic City, you know, when he composed it, he wrote a note to Landa, who's producing it, that this is a song for the full band. Get the band. Band Kisatkarenge, rock and roll sound. They got the band, they did some takes. It wasn't working. And then eventually what you hear, I think, is a demo version only. Just Springsteen and a guitar singing. And it's it's just again, uh so masterful that um And you know, if any of you dear listeners have stopped listening to this fifteen times because you've gone to listen to a song fifteen times, that's perfectly fine by us. That's what we would do too. Atlantic City is again such a masterpiece. And throughout his career, he's kind of doing this. He's always moving. You know, like Nebraska and Born in the USA were actually supposed to be one album. Then they thought, hey, should we make it a double like the river? One is acoustic, one is then they said, no. You know, Nebraska's got to be on its own. It comes out with without any fanfare. They don't tour for it because they've just finished a tour for the river. And then later, uh, you know, Born in the USA uh comes out, and uh those two were meant to be uh sort of uh together. And that is what is beautiful, the sense of constant movement. In fact, when you said earlier, you referred to her prodigal, their uh output was Bruce Pinchin and the E Street Band. Uh and I just sort of read prodigality and I thought, what a waste. Because if there is an album where they're picking fifteen songs but then not putting fifteen out there, in today's YouTube age they'd probably be life jamming those and A",
+      "endTime": 3837.76,
+      "text": "person. And it feels effortless, but it's 30 years of work, 40 years of work, 50 years of work. However old he is at the time he wrote that song, that's what kind of goes into it. So, you know, for my last chapter on uh Bruce Springsteen, do I have more to say and I'll s say it after. I mean, I could just really go on forever. But I want to talk about an aspect that you spoke about, which is the change he embraced. That's my fourth uh uh sort of theme. Because Springsteen was very determined not to be one of those musicians who's always playing cover versions of himself. Right, which is why you referred to the thrill you got from his live records and uh and what he would also do in his live performances is he wouldn't just go out there and sing hit after hit. He'd talk in between. I remember when I was a kid, the first time I was really entranced and blown away by Springsteen and this I must have heard this in the eighties or the early nineties, is he was playing a live version of Growing Up, one of his early songs. And before that he spoke for what seemed like half an hour. And I you know, you like fuck, it was just so entrancing and so brilliant. And every performance was something new. He wasn't playing covers of himself. Every night he was a different uh sort of Bro Springsteen. And I remember in the late nineties and early two thousands, I discovered the same kind of joy when I would hear bootleg uh live albums of Pearl Jam. You know, another great band, and that they're all of their live albums are just so incredible. Uh and um and uh Springsteen himself once said, Songs shift their meanings when you sing them. They shift their meanings in time. They shift their meanings with who you sing them with. And he'll say this about brilliant this guy's, but it kind of applies to everything where he was always working. You know, there are so many versions of the river, for example. You know, Niels Rovgren, who played guitar and dad, said that he you know they played for days. They're just 30, 40, 50 versions of it which exist somewhere. And there's a famous story about uh, you know, and thank God it didn't work out, but when Bon to Run was uh happening, uh John Landau had, you know, taught him the art of, you know, making everything crisp, editing craft and all of that. And at one point then he uh got carried away and he said, Yeah, edit can I crisp. And he went to Backstreets and he wanted to take out the piano in uh interlude at the s the piano bit at the beginning and at the end. And Landau thankfully made him see better sense. And that, of course, is by uh Roy Bitten, also known as a professor, the only person in the band who had a college degree at the time, though. Max Weinberg later got it in the late 80s. And uh uh and that stays in and it's so beautiful. And Greel Marcus, when he reviewed the album, Greel Marcus, of course. genius uh music uh writer, I think he wrote a book on Dylan as well. And Grail Marcus, uh reviewing the album, wrote about that song. Backstage begins with music so stately, so heartbreaking that it might be the prelude to a rock and roll version of the Iliad. A rock and roll version of the Iliad, you know? And I heard it again, uh, you know, after I I read these words by Marcus, and I was like, fuck, you know, this is what I've always felt, but I hadn't put it into words until Marcus kind of did. It is both intimate and epic, you know, it's it's that kind of feeling. In fact, sometimes I wish the that went on forever and the guidance starts singing. And uh and again, similarly, uh the song from Nebraska, which is such a great stripped down album, uh Atlantic City. And Atlantic City, you know, when he composed it, he wrote a note to Landa, who's producing it, that this is a song for the full band. Get the band. Band Kisatkarenge, rock and roll sound. They got the band, they did some takes. It wasn't working. And then eventually what you hear, I think, is a demo version only. Just Springsteen and a guitar singing. And it's it's just again, uh so masterful that um And you know, if any of you dear listeners have stopped listening to this fifteen times because you've gone to listen to a song fifteen times, that's perfectly fine by us. That's what we would do too. Atlantic City is again such a masterpiece. And throughout his career, he's kind of doing this. He's always moving. You know, like Nebraska and Born in the USA were actually supposed to be one album. Then they thought, hey, should we make it a double like the river? One is acoustic, one is then they said, no. You know, Nebraska's got to be on its own. It comes out with without any fanfare. They don't tour for it because they've just finished a tour for the river. And then later, uh, you know, Born in the USA uh comes out, and uh those two were meant to be uh sort of uh together. And that is what is beautiful, the sense of constant movement. In fact, when you said earlier, you referred to her prodigal, their uh output was Bruce Pinchin and the E Street Band. Uh and I just sort of read prodigality and I thought, what a waste. Because if there is an album where they're picking fifteen songs but then not putting fifteen out there, in today's YouTube age they'd probably be life jamming those and A lot of those have started coming out. They started coming out, but you know, in the sense that I think in the modern age they could have taken on a life of its own. But of course we don't know where uh, you know, w if Springsteen would have evolved in the directions he did in the modern age.",
       "words": [
         {
           "word": "person.",
@@ -76503,15 +76391,7 @@
           "startTime": 3824.16,
           "endTime": 3824.24,
           "confidence": 0.5642
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3824.24,
-      "endTime": 3825.76,
-      "text": "lot of those have started coming out.",
-      "words": [
+        },
         {
           "word": "lot",
           "startTime": 3824.24,
@@ -76553,15 +76433,7 @@
           "startTime": 3825.36,
           "endTime": 3825.76,
           "confidence": 0.9436
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3825.76,
-      "endTime": 3837.76,
-      "text": "They started coming out, but you know, in the sense that I think in the modern age they could have taken on a life of its own. But of course we don't know where uh, you know, w if Springsteen would have evolved in the directions he did in the modern age.",
-      "words": [
+        },
         {
           "word": "They",
           "startTime": 3825.76,
@@ -76879,8 +76751,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3837.76,
-      "endTime": 3856.29,
-      "text": "The scarcity of the old world created a few focal points where all of us that shared culture. So Independence Day means something to you and Independence Day means something to me. Whereas if our attention had been fragmented over many more points, our culture would not have been the same. So I want to",
+      "endTime": 3856.69,
+      "text": "The scarcity of the old world created a few focal points where all of us that shared culture. So Independence Day means something to you and Independence Day means something to me. Whereas if our attention had been fragmented over many more points, our culture would not have been the same. So I want to ask you",
       "words": [
         {
           "word": "The",
@@ -77211,15 +77083,7 @@
           "startTime": 3856.05,
           "endTime": 3856.29,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3856.29,
-      "endTime": 3966.72,
-      "text": "ask you about a couple of things. And one is about the band, the East Street Band, and we love the band uh so much. And at one point he made this decision that, uh, you know, rather than uh have a band which has a name like the Beatles or whatever and everything is democratic, he said that can go to hell very fast. And he also didn't want a band where he would Be the main guy, and there's a backup band, and they don't have names. And he didn't want that either. He kind of got this in-between way, and they've stayed together all of these uh years, more or less. You know, Steve Van Zandt left in the 80s, Niels of Knight and Krame, but then Van Zandt also came back to perform with the E Street Band in the early 80s, if I remember correctly. And and and he writes about all of these guys so beautifully in his uh autobiography. Like for uh Danny Federici, you know, he had this immortal line that he had the shortest highway between his fingers and his heart. There, which is uh sort of um uh you know such a uh great way to put it. And there's also this great quote. And I want to, you know, read out the quote and then I want to ask you what you think of it. In the beginning, I knew I wanted something more than a solo act and less than a one-man, one-vote democratic band. I'd been there and it didn't fit me. Democracy in rock bands, with very few exceptions, is often a ticking time bomb. The examples are many, beginning and ending with the Beatles. Still, I wanted good musicians, friends, and personalities I could bounce off. I wanted the neighborhood, the block. That's where all great rock bands came from, and there's something about that common blood of or even just the image, the dream of it that stirs emotion and camaraderie amongst your audience. You're not looking for the best players, you're looking for the right players who click into something unique. And I'll read that line out again. You're not looking for the best players. You're looking for the right players who click into something you unique. And that to me is very interesting because you look at all the great bands. Like Ringo Starr was a terrible drummer. In fact, in a lot of the Beatles track, it's actually Paul doing the drumming. In fact, in some tracks, it's Paul playing the guitar and not George. You know? I think",
-      "words": [
+        },
         {
           "word": "ask",
           "startTime": 3856.29,
@@ -77231,7 +77095,15 @@
           "startTime": 3856.53,
           "endTime": 3856.69,
           "confidence": 0.9987
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3856.69,
+      "endTime": 3966.72,
+      "text": "about a couple of things. And one is about the band, the East Street Band, and we love the band uh so much. And at one point he made this decision that, uh, you know, rather than uh have a band which has a name like the Beatles or whatever and everything is democratic, he said that can go to hell very fast. And he also didn't want a band where he would Be the main guy, and there's a backup band, and they don't have names. And he didn't want that either. He kind of got this in-between way, and they've stayed together all of these uh years, more or less. You know, Steve Van Zandt left in the 80s, Niels of Knight and Krame, but then Van Zandt also came back to perform with the E Street Band in the early 80s, if I remember correctly. And and and he writes about all of these guys so beautifully in his uh autobiography. Like for uh Danny Federici, you know, he had this immortal line that he had the shortest highway between his fingers and his heart. There, which is uh sort of um uh you know such a uh great way to put it. And there's also this great quote. And I want to, you know, read out the quote and then I want to ask you what you think of it. In the beginning, I knew I wanted something more than a solo act and less than a one-man, one-vote democratic band. I'd been there and it didn't fit me. Democracy in rock bands, with very few exceptions, is often a ticking time bomb. The examples are many, beginning and ending with the Beatles. Still, I wanted good musicians, friends, and personalities I could bounce off. I wanted the neighborhood, the block. That's where all great rock bands came from, and there's something about that common blood of or even just the image, the dream of it that stirs emotion and camaraderie amongst your audience. You're not looking for the best players, you're looking for the right players who click into something unique. And I'll read that line out again. You're not looking for the best players. You're looking for the right players who click into something you unique. And that to me is very interesting because you look at all the great bands. Like Ringo Starr was a terrible drummer. In fact, in a lot of the Beatles track, it's actually Paul doing the drumming. In fact, in some tracks, it's Paul playing the guitar and not George. You know? I think",
+      "words": [
         {
           "word": "about",
           "startTime": 3856.69,
@@ -80077,8 +79949,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3974.72,
-      "endTime": 4001.76,
-      "text": "Somehow Paul seems a little bit too modest and self effacing to say something like that, but I've heard that line and it's it's kind of uh absolutely uh true. I think Mark Waugh said a similar thing about Steve not even being the best uh batsman in the family. Uh you know. Uh you know what Mark Wars' nickname is, by the way? It's Afghanistan. You know why? No. He's a forgotten war. So anyway, so a completely uh unplanned uh sort of uh digression into um uh cricket there. But so",
+      "endTime": 4027.17,
+      "text": "Somehow Paul seems a little bit too modest and self effacing to say something like that, but I've heard that line and it's it's kind of uh absolutely uh true. I think Mark Waugh said a similar thing about Steve not even being the best uh batsman in the family. Uh you know. Uh you know what Mark Wars' nickname is, by the way? It's Afghanistan. You know why? No. He's a forgotten war. So anyway, so a completely uh unplanned uh sort of uh digression into um uh cricket there. But so what do you what do you think about this aspect of it? Because on the one hand you want to surround yourself with the best possible people, right? Because the looking glass self and all that. Uh you know, I I I think you've earlier um uh said on the show, you've quoted one of your friends about how we are just a linear collection of the people that we hang out with, which is very true. But on the other hand, it is not just about hanging out with the best people, it is about hanging out with the right people. Oh, absolutely.",
       "words": [
         {
           "word": "Somehow",
@@ -80637,15 +80509,7 @@
           "startTime": 4001.52,
           "endTime": 4001.76,
           "confidence": 0.9941
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4001.76,
-      "endTime": 4005.28,
-      "text": "what do you what do you think about this aspect of it? Because on the one hand you",
-      "words": [
+        },
         {
           "word": "what",
           "startTime": 4001.76,
@@ -80753,15 +80617,7 @@
           "startTime": 4005.12,
           "endTime": 4005.28,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4005.28,
-      "endTime": 4027.65,
-      "text": "want to surround yourself with the best possible people, right? Because the looking glass self and all that. Uh you know, I I I think you've earlier um uh said on the show, you've quoted one of your friends about how we are just a linear collection of the people that we hang out with, which is very true. But on the other hand, it is not just about hanging out with the best people, it is about hanging out with the right people. Oh, absolutely. So I want to",
-      "words": [
+        },
         {
           "word": "want",
           "startTime": 4005.28,
@@ -81277,7 +81133,15 @@
           "startTime": 4026.77,
           "endTime": 4027.17,
           "confidence": 0.9696
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4027.17,
+      "endTime": 4160.98,
+      "text": "So I want to say two, three things. Uh, first is I said a moment ago that uh when you look at the journey of Pink Floyd or Led Zeppelin or the Beatles, they're very short journeys because it depends on all those individuals coming together and being willing to be together and sharing power and sharing that fame. An incredible success is very corrosive, it is very difficult. for people to hang together after achieving incredible success. Just you watch how much you're gonna hate me one day. Um so similarly, Simon and Garf and Kell were torn apart by Bridge Over Trouble Water. It doesn't make any sense. It it is their incredible moment. It's where they got everything right. But at that point they started resenting each other. No, no, no, I did 53% of it and you did 47. So when you have that Equality and sharing, it does create its own problems. So that's my one part of the idea that uh you get to walk on a long journey together when you don't have those constraints of people fitting together. So that's where I get his sense of not one man, one vote, but not session musicians, of something in between. And I can see the role for that. And I I'm not here to judge different teams, different groups, different people find different power structures. But you know, there is something very wrong. in a bunch of people being together and agreeing that we'll all share equity equally, or uh m more amusingly, when they say we'll take turns being CEO. Um so these kinds of things uh really don't make too much sense. Uh the the second piece in this is I entirely agree that uh the right uh team members are not the greatest exponents of their trade. Okay, so it isn't the world's best drummer and the world's best guitarist that come together to make the best band. It isn't the world's best marketing guy and the world's best uh uh technologist who come together and make a company. What you really, really need is some sense of a shared journey, some shared values, some shared purpose, some capital of the human connection to fall back on in order to overcome incompleteness of contracts and to be able to handle adversity and worse, to handle success.",
+      "words": [
         {
           "word": "So",
           "startTime": 4027.17,
@@ -81301,15 +81165,7 @@
           "startTime": 4027.57,
           "endTime": 4027.65,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4027.65,
-      "endTime": 4056.82,
-      "text": "say two, three things. Uh, first is I said a moment ago that uh when you look at the journey of Pink Floyd or Led Zeppelin or the Beatles, they're very short journeys because it depends on all those individuals coming together and being willing to be together and sharing power and sharing that fame. An incredible success is very corrosive, it is very difficult. for people to hang together after achieving incredible success. Just you watch how much you're gonna hate me one",
-      "words": [
+        },
         {
           "word": "say",
           "startTime": 4027.65,
@@ -81813,29 +81669,13 @@
           "startTime": 4056.66,
           "endTime": 4056.82,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4056.82,
-      "endTime": 4058.32,
-      "text": "day.",
-      "words": [
+        },
         {
           "word": "day.",
           "startTime": 4056.82,
           "endTime": 4058.32,
           "confidence": 0.9365
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4058.66,
-      "endTime": 4160.98,
-      "text": "Um so similarly, Simon and Garf and Kell were torn apart by Bridge Over Trouble Water. It doesn't make any sense. It it is their incredible moment. It's where they got everything right. But at that point they started resenting each other. No, no, no, I did 53% of it and you did 47. So when you have that Equality and sharing, it does create its own problems. So that's my one part of the idea that uh you get to walk on a long journey together when you don't have those constraints of people fitting together. So that's where I get his sense of not one man, one vote, but not session musicians, of something in between. And I can see the role for that. And I I'm not here to judge different teams, different groups, different people find different power structures. But you know, there is something very wrong. in a bunch of people being together and agreeing that we'll all share equity equally, or uh m more amusingly, when they say we'll take turns being CEO. Um so these kinds of things uh really don't make too much sense. Uh the the second piece in this is I entirely agree that uh the right uh team members are not the greatest exponents of their trade. Okay, so it isn't the world's best drummer and the world's best guitarist that come together to make the best band. It isn't the world's best marketing guy and the world's best uh uh technologist who come together and make a company. What you really, really need is some sense of a shared journey, some shared values, some shared purpose, some capital of the human connection to fall back on in order to overcome incompleteness of contracts and to be able to handle adversity and worse, to handle success.",
-      "words": [
+        },
         {
           "word": "Um",
           "startTime": 4058.66,
@@ -84455,8 +84295,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4199.39,
-      "endTime": 4301.18,
-      "text": "And don't they have anything better to do? And uh and also uh a little bit of trivia for you, you know, uh Born to Run. Darkness at the Edge of Town, The River, all huge successes. But until 1982, well after all of these, Springsteen did not make a single Pesa because he was paying back taxes. Because in 75 he got put on the cover of Time and Newsweek and uh famous out you know, after the Landau uh court took over and then Bon to Run uh came out and all of that. Just a single at the time, not the album. And he got on the cover of those magazines. And then the tax authorities came knocking, saying, Hey, you've been around for so many years, you've made so much money, give the back taxes. While all this time they were kind of going hand to mouth. Like at one point, they went to this. Uh uh the Steel Mill, um the earlier w uh avatar of uh Bruce's band, the steel mill went to this random club in Asbury, I think, and over there, um and there no club was uh allowing them to play. So they decided they'll roam the area, they'll find a club where nobody goes, and they found a club where nobody goes. And they went there and they told that guy, Look, nobody comes here. So we'll perform here and we'll charge a dollar per head for everybody walking in, and presumably then they'll buy it food and drinks and whatever, and we keep that dollar, and are you okay with it? So the guy said, Okay, fine. So then they did that. And the first night, 15 people came and there were five band members. They took $3 each after playing for 10 hours or whatever the hell it was. You know? So it was that kind of hand-to-mouth existence. You're kind of moving from place to place, you're itinerant. And suddenly these guys come and they say taxes. And Bruce is broke. The E Street Band is broke. You know, they got a hit record, they got no money out of it. So eventually till 1982, you know, Bruce is paying off all of that until the back taxes is gone and they can finally keep making some money. So if born in the USA isn't a hate. You know, if it flops and if he never makes an album again, he's basically broke at that point. And that's just a crazy thought. So",
+      "endTime": 4300.94,
+      "text": "And don't they have anything better to do? And uh and also uh a little bit of trivia for you, you know, uh Born to Run. Darkness at the Edge of Town, The River, all huge successes. But until 1982, well after all of these, Springsteen did not make a single Pesa because he was paying back taxes. Because in 75 he got put on the cover of Time and Newsweek and uh famous out you know, after the Landau uh court took over and then Bon to Run uh came out and all of that. Just a single at the time, not the album. And he got on the cover of those magazines. And then the tax authorities came knocking, saying, Hey, you've been around for so many years, you've made so much money, give the back taxes. While all this time they were kind of going hand to mouth. Like at one point, they went to this. Uh uh the Steel Mill, um the earlier w uh avatar of uh Bruce's band, the steel mill went to this random club in Asbury, I think, and over there, um and there no club was uh allowing them to play. So they decided they'll roam the area, they'll find a club where nobody goes, and they found a club where nobody goes. And they went there and they told that guy, Look, nobody comes here. So we'll perform here and we'll charge a dollar per head for everybody walking in, and presumably then they'll buy it food and drinks and whatever, and we keep that dollar, and are you okay with it? So the guy said, Okay, fine. So then they did that. And the first night, 15 people came and there were five band members. They took $3 each after playing for 10 hours or whatever the hell it was. You know? So it was that kind of hand-to-mouth existence. You're kind of moving from place to place, you're itinerant. And suddenly these guys come and they say taxes. And Bruce is broke. The E Street Band is broke. You know, they got a hit record, they got no money out of it. So eventually till 1982, you know, Bruce is paying off all of that until the back taxes is gone and they can finally keep making some money. So if born in the USA isn't a hate. You know, if it flops and if he never makes an album again, he's basically broke at that point. And that's just a crazy thought.",
       "words": [
         {
           "word": "And",
@@ -87007,21 +86847,21 @@
           "startTime": 4300.54,
           "endTime": 4300.94,
           "confidence": 0.9927
-        },
-        {
-          "word": "So",
-          "startTime": 4300.94,
-          "endTime": 4301.18,
-          "confidence": 0.9759
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 4301.18,
+      "startTime": 4300.94,
       "endTime": 4310.8,
-      "text": "when everybody criticizes the Indian income tax authorities, I think this is a great retort on the part of the taxmen that taxmen everywhere can be pretty cruel.",
+      "text": "So when everybody criticizes the Indian income tax authorities, I think this is a great retort on the part of the taxmen that taxmen everywhere can be pretty cruel.",
       "words": [
+        {
+          "word": "So",
+          "startTime": 4300.94,
+          "endTime": 4301.18,
+          "confidence": 0.9759
+        },
         {
           "word": "when",
           "startTime": 4301.18,
@@ -90013,8 +89853,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4451.73,
-      "endTime": 4458.53,
-      "text": "books. But what's that other book than Notebook, The Proof? The Third Lie. What an interesting title.",
+      "endTime": 4461.39,
+      "text": "books. But what's that other book than Notebook, The Proof? The Third Lie. What an interesting title. Yeah. So have you heard of Agatha Christoph? No.",
       "words": [
         {
           "word": "books.",
@@ -90117,15 +89957,7 @@
           "startTime": 4457.81,
           "endTime": 4458.53,
           "confidence": 0.9712
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4458.53,
-      "endTime": 4659.17,
-      "text": "Yeah. So have you heard of Agatha Christoph? No. So let me tell you a little story. And that is a story of, you know, um uh how I picked up the book and what it means to me. I have uh a writing student in my writing course. I've had more than twenty two hundred people do the course, but one of them, and I haven't taken a permission, so I won't name her here, but she asked me once in a QA kind of thing that listen, my first language isn't uh English. It's Hindi and I'm having trouble with English, and uh what do I do? Right. And I had looked at her writing when she had, you know, submitted writing for an exercise I gave. And what I found was that the English indeed felt like someone's second language. But there was a tremendous spark there. Suddenly there would be like a phrase which would be like, Fuck, what happened here? Like this person really has the goods, you know. So I was trying to kind of encourage her to just keep working and all of that. And as an example of learning a language from scratch and doing something with it, I pointed to Jumpa Lairi, who learnt Italian as an adult and then wrote a uh book in it. And Jumpa Lairi has this great interview with Tyler Kavan, uh, in conversations with Tyler. And when Jumpa was asked about how she did this and what were her inspirations, she spoke of this woman called Agatha Christoph. Right? And Agada Christoph is, I think, a Hungarian writer. And if I get some minor details wrong, forgive me, but the broad narrative is um what it is. Uh uh she was a Hungarian writer who, because of the war or whatever, at some point had to flee to France. And she was twenty one years old and she learned French from scratch. And she wrote these three novels, which are called the Notebook Trilogy, in French. And these are translations, but like really good translations apparently. And To me a and these are masterpieces. Like I read the notebook, it's a fucking example. It it is like a benchmark in how you master a language and write in it. And the beautiful thing about it is the sparseness, the economy, the elegance. Every word is fulfilling a function. And it is just perfect, and there's nothing else. Like some people, when they learn a language in which they don't really, uh which is not the native language, like a Nabakov, for example, the tendency might be you get flamboyant, you learn all these new words, these new tools, you're using them, you're throwing them everywhere. With her, is the other way around. She's stripping down the language to what is essential, and then she's stripping down life and her story to what is essential, and she's putting them together. And it is so powerful. I mean, it is all. I mean it it's like Nebraska to you know go back to Bruce. So again, something that I'd recommend you these are three separate novels. You get them in an omnibus uh edition. And uh therefore um you know and I recommended this to my writing student. Uh and what she did was very interesting and very, very inspiring because I would not have this kind of work ethic. And and it's very interesting. It sounds really weird, but I get why she was doing it. She took the book and then by hand she started writing it sentences down. You know, to get the rhythm of the book into her head and to understand how Agada Kristoph did what she did. Now it might seem like a pointless exercise, you know, Kutka Lekuna, why are you copying? But I I get exactly what she was doing. She was getting that rhythms and you know, she was therefore by that process of writing it down by hand, the same sentences that are on the page, she's looking at the language with that geeray that granularity that, you know, uh gives it a different resonance with her. So that's my recommendation. So, Ajay, what are you recommending for us?",
-      "words": [
+        },
         {
           "word": "Yeah.",
           "startTime": 4458.53,
@@ -90179,7 +90011,15 @@
           "startTime": 4461.01,
           "endTime": 4461.39,
           "confidence": 0.973
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4461.7,
+      "endTime": 4659.17,
+      "text": "So let me tell you a little story. And that is a story of, you know, um uh how I picked up the book and what it means to me. I have uh a writing student in my writing course. I've had more than twenty two hundred people do the course, but one of them, and I haven't taken a permission, so I won't name her here, but she asked me once in a QA kind of thing that listen, my first language isn't uh English. It's Hindi and I'm having trouble with English, and uh what do I do? Right. And I had looked at her writing when she had, you know, submitted writing for an exercise I gave. And what I found was that the English indeed felt like someone's second language. But there was a tremendous spark there. Suddenly there would be like a phrase which would be like, Fuck, what happened here? Like this person really has the goods, you know. So I was trying to kind of encourage her to just keep working and all of that. And as an example of learning a language from scratch and doing something with it, I pointed to Jumpa Lairi, who learnt Italian as an adult and then wrote a uh book in it. And Jumpa Lairi has this great interview with Tyler Kavan, uh, in conversations with Tyler. And when Jumpa was asked about how she did this and what were her inspirations, she spoke of this woman called Agatha Christoph. Right? And Agada Christoph is, I think, a Hungarian writer. And if I get some minor details wrong, forgive me, but the broad narrative is um what it is. Uh uh she was a Hungarian writer who, because of the war or whatever, at some point had to flee to France. And she was twenty one years old and she learned French from scratch. And she wrote these three novels, which are called the Notebook Trilogy, in French. And these are translations, but like really good translations apparently. And To me a and these are masterpieces. Like I read the notebook, it's a fucking example. It it is like a benchmark in how you master a language and write in it. And the beautiful thing about it is the sparseness, the economy, the elegance. Every word is fulfilling a function. And it is just perfect, and there's nothing else. Like some people, when they learn a language in which they don't really, uh which is not the native language, like a Nabakov, for example, the tendency might be you get flamboyant, you learn all these new words, these new tools, you're using them, you're throwing them everywhere. With her, is the other way around. She's stripping down the language to what is essential, and then she's stripping down life and her story to what is essential, and she's putting them together. And it is so powerful. I mean, it is all. I mean it it's like Nebraska to you know go back to Bruce. So again, something that I'd recommend you these are three separate novels. You get them in an omnibus uh edition. And uh therefore um you know and I recommended this to my writing student. Uh and what she did was very interesting and very, very inspiring because I would not have this kind of work ethic. And and it's very interesting. It sounds really weird, but I get why she was doing it. She took the book and then by hand she started writing it sentences down. You know, to get the rhythm of the book into her head and to understand how Agada Kristoph did what she did. Now it might seem like a pointless exercise, you know, Kutka Lekuna, why are you copying? But I I get exactly what she was doing. She was getting that rhythms and you know, she was therefore by that process of writing it down by hand, the same sentences that are on the page, she's looking at the language with that geeray that granularity that, you know, uh gives it a different resonance with her. So that's my recommendation. So, Ajay, what are you recommending for us?",
+      "words": [
         {
           "word": "So",
           "startTime": 4461.7,

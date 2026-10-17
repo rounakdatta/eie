@@ -5,7 +5,7 @@
     "durationSeconds": 4442,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -16,8 +16,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 60.39,
-      "endTime": 87.35,
-      "text": "Welcome to Everything Is Everything. I'm sitting here with my good friend Ajay Shah. I'm Amit, as you know, and in the background there is a young cat which is mewing, and I needed to clarify that because it sounds like the wailing of all the dispossessed and the hungry and the starving through these many, many years of India's tormented journey. But that journey is fine now, right? We gained political independence in forty seven, we had the reforms in ninety one. Ajay, is everything well with the world",
+      "endTime": 87.78,
+      "text": "Welcome to Everything Is Everything. I'm sitting here with my good friend Ajay Shah. I'm Amit, as you know, and in the background there is a young cat which is mewing, and I needed to clarify that because it sounds like the wailing of all the dispossessed and the hungry and the starving through these many, many years of India's tormented journey. But that journey is fine now, right? We gained political independence in forty seven, we had the reforms in ninety one. Ajay, is everything well with the world now?",
       "words": [
         {
           "word": "Welcome",
@@ -558,21 +558,21 @@
           "startTime": 87.11,
           "endTime": 87.35,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 87.35,
-      "endTime": 111.91,
-      "text": "now? There was a freedom movement that got us to the ejection of colonial rule in forty-seven. But it's striking that actually in many ways freedom did not come to the people in the period after 1947. So there is something very disappointing that we were supposed to have played a freedom movement and actually we ended up with less freedom in many",
-      "words": [
+        },
         {
           "word": "now?",
           "startTime": 87.35,
           "endTime": 87.78,
           "confidence": 0.9918
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 89.67,
+      "endTime": 111.91,
+      "text": "There was a freedom movement that got us to the ejection of colonial rule in forty-seven. But it's striking that actually in many ways freedom did not come to the people in the period after 1947. So there is something very disappointing that we were supposed to have played a freedom movement and actually we ended up with less freedom in many",
+      "words": [
         {
           "word": "There",
           "startTime": 89.67,
@@ -2154,8 +2154,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 176.68,
-      "endTime": 268.79,
-      "text": "I wanna get into the weeds with you later and I'm looking to get a lot of illumination uh from you on this. Uh so much of this episode is going to be about India's journey towards freedom. Um where we've taken a few baby steps forwards, we've taken a few baby steps backwards, and we'll talk about that journey. But before that as a whole, I want to talk about the importance of freedom to me and the way I like to reframe it, because freedom is such a misuse words and there are so many ways in which it can be interpreted and used. I like to think in terms of consent, but in many ways you can, you know, it it you can use it interchangeably with freedom. Where I and this is a book I am planning to write seriously at some point, where I'm asking myself sort of two questions. Right? And one question is, How should I live in this world? And the other question is, how should the state relate to society? Uh how should we all relate to each other? And most people would think these questions are in different domains. One is a question of personal ethics and the other is a question of political philosophy. But to me the answer is the same. The answer is consent. that consent is everything and coercion is uh the ultimate evil, and You know, you can use freedom interchangeably as a word for this. And at one level you can get at it deontologically as the philosophers would say, but I don't want to use jargon, but you can come at it as a first principle and say consent is good for its own sake. If individual autonomy is to matter, if our lives are to have meaning, then consent matters and therefore you can you know, you can go all the way back to John Locke and his right to self ownership and arri how we arrive at all our rights um through that. But ev but",
+      "endTime": 382.26,
+      "text": "I wanna get into the weeds with you later and I'm looking to get a lot of illumination uh from you on this. Uh so much of this episode is going to be about India's journey towards freedom. Um where we've taken a few baby steps forwards, we've taken a few baby steps backwards, and we'll talk about that journey. But before that as a whole, I want to talk about the importance of freedom to me and the way I like to reframe it, because freedom is such a misuse words and there are so many ways in which it can be interpreted and used. I like to think in terms of consent, but in many ways you can, you know, it it you can use it interchangeably with freedom. Where I and this is a book I am planning to write seriously at some point, where I'm asking myself sort of two questions. Right? And one question is, How should I live in this world? And the other question is, how should the state relate to society? Uh how should we all relate to each other? And most people would think these questions are in different domains. One is a question of personal ethics and the other is a question of political philosophy. But to me the answer is the same. The answer is consent. that consent is everything and coercion is uh the ultimate evil, and You know, you can use freedom interchangeably as a word for this. And at one level you can get at it deontologically as the philosophers would say, but I don't want to use jargon, but you can come at it as a first principle and say consent is good for its own sake. If individual autonomy is to matter, if our lives are to have meaning, then consent matters and therefore you can you know, you can go all the way back to John Locke and his right to self ownership and arri how we arrive at all our rights um through that. But ev but I find that You know, that is one way to make the point about why freedom is important, but I think you can arrive at it from another direction. Where you can talk about how freedom is always consequentially good. Where you can tom you know, you can go to consequentialism and say that freedom has the best outcome for society, freedom has the best outcome for individuals. And obviously within all of this there is what I call the grand liberal paradox that to enjoy our rights, we need a state to take care of those rights, and the existence of the state means we are giving away some of those rights. The state has a monopoly on violence, it takes taxes and blah blah blah. So leave that aside for the moment. But the value of freedom in our lives I think is often understated because of the fundamental reason that we think of the world as a fixed pie. And we intuitively, perhaps because our brains evolved in times where we lived in small tribes, in times of scarcity, but intuitively we think of the world in a zero-sum way. If I am to get richer, you must get poorer. If I am to get something, I must take it from you. But the world is not like that. And there is a brilliant chart and a series of charts that illustrates this which you'll see on the screen now. This is by Angus Madison and it is a chart of world GDP growth through history. And suddenly around the time eighteen hundred, you see global GDP growth just absolutely shoot up. Right. And why is that happening? That's happening because of the industrial revolution, which is and the globalization that ensures, which is enabling voluntary transactions. And I've spoken in an earlier episode where we spoke about Basia and Hayek and had so much fun. I've spoken about the double thank you moment. This is John Strossel's formulation. The double thank you moment is if you are say um uh selling uh coffee. Uh at a coffee shop and I am a customer. When I hand you the money, I say thank you. When you hand me the coffee, you say thank you. Both of us benefited from the transaction.",
       "words": [
         {
           "word": "I",
@@ -4226,15 +4226,7 @@
           "startTime": 268.63,
           "endTime": 268.79,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 268.79,
-      "endTime": 271.96,
-      "text": "I find that You know, that is one way to",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 268.79,
@@ -4294,15 +4286,7 @@
           "startTime": 271.8,
           "endTime": 271.96,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 271.96,
-      "endTime": 307.34,
-      "text": "make the point about why freedom is important, but I think you can arrive at it from another direction. Where you can talk about how freedom is always consequentially good. Where you can tom you know, you can go to consequentialism and say that freedom has the best outcome for society, freedom has the best outcome for individuals. And obviously within all of this there is what I call the grand liberal paradox that to enjoy our rights, we need a state to take care of those rights, and the existence of the state means we are giving away some of those rights. The state has a monopoly on violence, it takes taxes and blah blah blah. So leave that aside for the moment.",
-      "words": [
+        },
         {
           "word": "make",
           "startTime": 271.96,
@@ -5046,15 +5030,7 @@
           "startTime": 306.84,
           "endTime": 307.34,
           "confidence": 0.889
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 307.48,
-      "endTime": 309.08,
-      "text": "But the value of",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 307.48,
@@ -5078,15 +5054,7 @@
           "startTime": 308.92,
           "endTime": 309.08,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 309.08,
-      "endTime": 382.26,
-      "text": "freedom in our lives I think is often understated because of the fundamental reason that we think of the world as a fixed pie. And we intuitively, perhaps because our brains evolved in times where we lived in small tribes, in times of scarcity, but intuitively we think of the world in a zero-sum way. If I am to get richer, you must get poorer. If I am to get something, I must take it from you. But the world is not like that. And there is a brilliant chart and a series of charts that illustrates this which you'll see on the screen now. This is by Angus Madison and it is a chart of world GDP growth through history. And suddenly around the time eighteen hundred, you see global GDP growth just absolutely shoot up. Right. And why is that happening? That's happening because of the industrial revolution, which is and the globalization that ensures, which is enabling voluntary transactions. And I've spoken in an earlier episode where we spoke about Basia and Hayek and had so much fun. I've spoken about the double thank you moment. This is John Strossel's formulation. The double thank you moment is if you are say um uh selling uh coffee. Uh at a coffee shop and I am a customer. When I hand you the money, I say thank you. When you hand me the coffee, you say thank you. Both of us benefited from the transaction.",
-      "words": [
+        },
         {
           "word": "freedom",
           "startTime": 309.08,
@@ -6568,8 +6536,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 382.26,
-      "endTime": 421.25,
-      "text": "There is a science and engineering view that the Industrial Revolution came to the UK because they got to Newton, who was born in 1642, and the steam engine, which was 1776, and the motive force is attributed to science and engineering. How would you respond to that? Because there are parts of the world, you know, in China and other countries where there are people who are willing to make the bargain that we should take the package of modern science and technology. But apart from that, we can just be as thuggish as we like. I think",
+      "endTime": 420.93,
+      "text": "There is a science and engineering view that the Industrial Revolution came to the UK because they got to Newton, who was born in 1642, and the steam engine, which was 1776, and the motive force is attributed to science and engineering. How would you respond to that? Because there are parts of the world, you know, in China and other countries where there are people who are willing to make the bargain that we should take the package of modern science and technology. But apart from that, we can just be as thuggish as we like.",
       "words": [
         {
           "word": "There",
@@ -7152,7 +7120,15 @@
           "startTime": 420.21,
           "endTime": 420.93,
           "confidence": 0.9378
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 420.93,
+      "endTime": 698.5,
+      "text": "I think science and technology enabled all of this. It enabled globalization, it enabled us to trade. For example, s through science and technology you got the railways. But through railways you had the tremendous trade. But the point I was getting at is that every voluntary transaction leaves both people better off. And therefore the more voluntary transactions there are, the more the wealth of the world goes up. And look at the chart again, Angus Madison's chart. You know, that's exactly what you see happening. This is the overall wealth of the world group going up, which tells you it's not a zero sum world. You know, it's almost as if by magic that The wealth of the world is a particular way you and I exchange things and s suddenly we are both better off. To me that's magical and that's a magic of trade, that's a magic of voluntary action. Now look at these other charts right here, you know, which shows that happening to uh you know in a countrywise kind of breakup. In fact, if you look at the shirt third chart right here, what you'll see here is you see China, you know, Deng takes over. Sure, no freedom, all of that. We've argued about it in a previous episode, but market friendly, allowing voluntary transactions among the people without granting political freedom and all of that. But still look at the chart. Look at India's growth since ninety two. And as you'll elaborate later since 1977 in a certain way. It's a very complicated story. We'll get into the weeds later. But my broader point is that if you look at these charts again, what you'll see is that economic freedom correlates to prosperity. And that is a big freaking deal. Like just to take an example, uh our mutual friend Nitin Pai likes to give uh a stat that he likes to give that is after we liberalized in ninety one, One every one percent growth in GDP meant that three million people came out of poverty. He earlier used to say two million, now he's revised his assumptions to three million. That's a staggering humanitarian good. And obviously one you know, there are many things flawed with GDP. There are many nuances there. But broadly, that's a staggering humanitarian good that we brought 300, 400 million people out of poverty after the ninety-one reforms and Again, there are nuances. One could argue that the course for for that was laid earlier and we can talk about that. But throughout the world, this has been the case. So much so that one can almost understand Francis Fukuyama asking the question when the Soviet Union collapsed, is this the end of history? And there was a question mark to that, and by end of history, he didn't mean end as in it is over, but end as in the end and means kind of end. That is this the aim of history, that we live in liberal democracies and we are all prosperous and successful. And obviously the world is complicated and uh you know uh history continued. down its merry way. But uh th underscoring the value of freedom is really important because I find that it so many like seventy percent uh of India has been born after the Berlin Wall collapsed. Right? We have forgotten those lessons. So many young people in the world today were born after that time. They have forgotten the horrors of socialism and communism, and they underestimate the power of freedom and the lessons we should have learned. And some will of course point to the welfare economies of this Scandinavia and say, look, freedom hai. But A, you still have a great deal of freedom there when it comes to starting a business, ease of doing business, the way people live their lives, personal and social freedoms are great. And B, all of them became rich when they were basically free markets. And once They had brought their standard of living to a certain level, then they could do their welfare statism and it didn't really matter so much. Um and that's a point that unfortunately we need to keep underscoring because again, to repeat, it is not intuitive. There are two counter intuitive elements here. One is that the world is a positive sum game, it is not a fixed pie, it is not zero-sum. And we somehow think of the world, we are wired to think of the world in zero-sum ways. And the other point is that We are also wired to think in this kind of top-down mindset that everything beautiful that exists must be planned and made by someone. You know, you could say religion itself is an example of this delusion. But actually that's not the case. Economists have this beautiful term spontaneous order. Languages, uh, you know, economies, societies, natural selection itself does not need a central planner or a designer. You know, uh and and many of them are the products of human action and not human design, as Adam Ferguson would say. So I just wanted to lay out this broad picture which I know you'll agree with about the importance of freedom in every domain and how much it means. And of course, even beyond all of this, it means a lot to me at a basic moral um uh level. Uh even if you are to argue in terms of consequences and we you know we need to see how the goo how we can get the greatest good for all, even there I would argue that is freedom which gives you that, and no matter what else you value, freedom is the root.",
+      "words": [
         {
           "word": "I",
           "startTime": 420.93,
@@ -7164,15 +7140,7 @@
           "startTime": 421.09,
           "endTime": 421.25,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 421.25,
-      "endTime": 698.5,
-      "text": "science and technology enabled all of this. It enabled globalization, it enabled us to trade. For example, s through science and technology you got the railways. But through railways you had the tremendous trade. But the point I was getting at is that every voluntary transaction leaves both people better off. And therefore the more voluntary transactions there are, the more the wealth of the world goes up. And look at the chart again, Angus Madison's chart. You know, that's exactly what you see happening. This is the overall wealth of the world group going up, which tells you it's not a zero sum world. You know, it's almost as if by magic that The wealth of the world is a particular way you and I exchange things and s suddenly we are both better off. To me that's magical and that's a magic of trade, that's a magic of voluntary action. Now look at these other charts right here, you know, which shows that happening to uh you know in a countrywise kind of breakup. In fact, if you look at the shirt third chart right here, what you'll see here is you see China, you know, Deng takes over. Sure, no freedom, all of that. We've argued about it in a previous episode, but market friendly, allowing voluntary transactions among the people without granting political freedom and all of that. But still look at the chart. Look at India's growth since ninety two. And as you'll elaborate later since 1977 in a certain way. It's a very complicated story. We'll get into the weeds later. But my broader point is that if you look at these charts again, what you'll see is that economic freedom correlates to prosperity. And that is a big freaking deal. Like just to take an example, uh our mutual friend Nitin Pai likes to give uh a stat that he likes to give that is after we liberalized in ninety one, One every one percent growth in GDP meant that three million people came out of poverty. He earlier used to say two million, now he's revised his assumptions to three million. That's a staggering humanitarian good. And obviously one you know, there are many things flawed with GDP. There are many nuances there. But broadly, that's a staggering humanitarian good that we brought 300, 400 million people out of poverty after the ninety-one reforms and Again, there are nuances. One could argue that the course for for that was laid earlier and we can talk about that. But throughout the world, this has been the case. So much so that one can almost understand Francis Fukuyama asking the question when the Soviet Union collapsed, is this the end of history? And there was a question mark to that, and by end of history, he didn't mean end as in it is over, but end as in the end and means kind of end. That is this the aim of history, that we live in liberal democracies and we are all prosperous and successful. And obviously the world is complicated and uh you know uh history continued. down its merry way. But uh th underscoring the value of freedom is really important because I find that it so many like seventy percent uh of India has been born after the Berlin Wall collapsed. Right? We have forgotten those lessons. So many young people in the world today were born after that time. They have forgotten the horrors of socialism and communism, and they underestimate the power of freedom and the lessons we should have learned. And some will of course point to the welfare economies of this Scandinavia and say, look, freedom hai. But A, you still have a great deal of freedom there when it comes to starting a business, ease of doing business, the way people live their lives, personal and social freedoms are great. And B, all of them became rich when they were basically free markets. And once They had brought their standard of living to a certain level, then they could do their welfare statism and it didn't really matter so much. Um and that's a point that unfortunately we need to keep underscoring because again, to repeat, it is not intuitive. There are two counter intuitive elements here. One is that the world is a positive sum game, it is not a fixed pie, it is not zero-sum. And we somehow think of the world, we are wired to think of the world in zero-sum ways. And the other point is that We are also wired to think in this kind of top-down mindset that everything beautiful that exists must be planned and made by someone. You know, you could say religion itself is an example of this delusion. But actually that's not the case. Economists have this beautiful term spontaneous order. Languages, uh, you know, economies, societies, natural selection itself does not need a central planner or a designer. You know, uh and and many of them are the products of human action and not human design, as Adam Ferguson would say. So I just wanted to lay out this broad picture which I know you'll agree with about the importance of freedom in every domain and how much it means. And of course, even beyond all of this, it means a lot to me at a basic moral um uh level. Uh even if you are to argue in terms of consequences and we you know we need to see how the goo how we can get the greatest good for all, even there I would argue that is freedom which gives you that, and no matter what else you value, freedom is the root.",
-      "words": [
+        },
         {
           "word": "science",
           "startTime": 421.25,
@@ -12938,8 +12906,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 698.5,
-      "endTime": 747.14,
-      "text": "Another way we see this is that uh people may make their peace with conditions of unfreedom. Okay? So we humans are survivors. We will survive in a concentration camp. When that individual agency is taken away, then the dynamism is lost. People stop thinking, people stop creating the culture, the arts, the science, the business, all these things go into a dull despondence. And what you need for a poor country like India is the opposite of that. What we need is an effervescence. of optimism, of creativity, of invention, of people starting a business, of people coming up with a new business model. And freedom lies at the heart of all these",
+      "endTime": 748.64,
+      "text": "Another way we see this is that uh people may make their peace with conditions of unfreedom. Okay? So we humans are survivors. We will survive in a concentration camp. When that individual agency is taken away, then the dynamism is lost. People stop thinking, people stop creating the culture, the arts, the science, the business, all these things go into a dull despondence. And what you need for a poor country like India is the opposite of that. What we need is an effervescence. of optimism, of creativity, of invention, of people starting a business, of people coming up with a new business model. And freedom lies at the heart of all these things.",
       "words": [
         {
           "word": "Another",
@@ -13624,21 +13592,21 @@
           "startTime": 746.9,
           "endTime": 747.14,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 747.14,
-      "endTime": 766.11,
-      "text": "things. So Ajay, I'm gonna ask you to um, you know, begin a grand narrative of the day of India. Sort of take me through your sense of India through the centuries as it were, and uh you know, bring me to independent India and then we can start talking about that.",
-      "words": [
+        },
         {
           "word": "things.",
           "startTime": 747.14,
           "endTime": 748.64,
           "confidence": 0.9773
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 752.34,
+      "endTime": 766.11,
+      "text": "So Ajay, I'm gonna ask you to um, you know, begin a grand narrative of the day of India. Sort of take me through your sense of India through the centuries as it were, and uh you know, bring me to independent India and then we can start talking about that.",
+      "words": [
         {
           "word": "So",
           "startTime": 752.34,
@@ -13950,8 +13918,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 767.05,
-      "endTime": 974.28,
-      "text": "Uh here is a uh quick summary of many, many books. Okay. So uh we let's start at really old days. Uh there is a lot of excitement when Angus Madison and others have described India as the largest GDP in some ways at some points in time. But it's important to remember that those were pre-industrial times, so output was agricultural. India is blessed with good weather, large number of people. And so it looks like the GDP in India was pretty high. It must be clarified that that GDP was at abysmal levels. So it was not a great world for anybody anywhere in the world. But in terms of aggregate GDP, India looks good. Okay, it was not a golden age. There were levels of poverty and deprivation and cruelty. That were in India that were out of the world. There was very little political development, there was no rule of law. Okay, so that is the old India. Then under colonial rule, uh, I am transfixed at the explosions that took place in the 1860s and 1870s. Okay, in a very real sense, that is the beginning of modernity in India, and there is a whole bunch of events that came together. The most important was 1869 when the Suez Canal started working and the physical distance between London and Bombay came down dramatically. Earlier, a ship from London would go around the Cape of Good Hope, and once you're going that far, you could even go all the way to Calcutta. After the Suez Canal, it became dramatically shorter. You came out of London, went through the Straits of Gibraltar, went through the Mediterranean, came into the Red Sea, and boom, you are at Bombay. So it was a revolution in India's connectivity into global trade. Also, around that time, there were many, many important technological innovations that came into India for the first time, most notably the telegraph and the railroad. Uh the when in the 1860s that first telegraph connections came to Bombay, and there was a four-hour delay. to get a message from London to Bombay and vice versa, which you will agree is pretty miraculous in that age. So you know cotton speculators would be able to talk to each other and these markets started getting globally integrated, it seems amazing. Then we should look at the institutional infrastructure that makes the modern market economy possible. There was a revolutionary set of developments which took place in the UK, the Companies Act, Contract Act, the Evidence Act, all these pieces came to India. Within just a couple of years after the Companies Act happening in London, it came to Bombay. In eighteen seventy four we got the Bombay Stock Exchange. And this entire ferment in Bombay got an explosive moment in the form of the civil war in the United States, where supplies of cotton from America to the UK were interrupted. And an entire cotton trade was invented in India. where cotton was grown in Gujarat and Maharashtra and it was shipped through Bombay to London. So this was an explosive moment for the Indian economy. It's hard to emphasize what a break this was as",
+      "endTime": 989.79,
+      "text": "Uh here is a uh quick summary of many, many books. Okay. So uh we let's start at really old days. Uh there is a lot of excitement when Angus Madison and others have described India as the largest GDP in some ways at some points in time. But it's important to remember that those were pre-industrial times, so output was agricultural. India is blessed with good weather, large number of people. And so it looks like the GDP in India was pretty high. It must be clarified that that GDP was at abysmal levels. So it was not a great world for anybody anywhere in the world. But in terms of aggregate GDP, India looks good. Okay, it was not a golden age. There were levels of poverty and deprivation and cruelty. That were in India that were out of the world. There was very little political development, there was no rule of law. Okay, so that is the old India. Then under colonial rule, uh, I am transfixed at the explosions that took place in the 1860s and 1870s. Okay, in a very real sense, that is the beginning of modernity in India, and there is a whole bunch of events that came together. The most important was 1869 when the Suez Canal started working and the physical distance between London and Bombay came down dramatically. Earlier, a ship from London would go around the Cape of Good Hope, and once you're going that far, you could even go all the way to Calcutta. After the Suez Canal, it became dramatically shorter. You came out of London, went through the Straits of Gibraltar, went through the Mediterranean, came into the Red Sea, and boom, you are at Bombay. So it was a revolution in India's connectivity into global trade. Also, around that time, there were many, many important technological innovations that came into India for the first time, most notably the telegraph and the railroad. Uh the when in the 1860s that first telegraph connections came to Bombay, and there was a four-hour delay. to get a message from London to Bombay and vice versa, which you will agree is pretty miraculous in that age. So you know cotton speculators would be able to talk to each other and these markets started getting globally integrated, it seems amazing. Then we should look at the institutional infrastructure that makes the modern market economy possible. There was a revolutionary set of developments which took place in the UK, the Companies Act, Contract Act, the Evidence Act, all these pieces came to India. Within just a couple of years after the Companies Act happening in London, it came to Bombay. In eighteen seventy four we got the Bombay Stock Exchange. And this entire ferment in Bombay got an explosive moment in the form of the civil war in the United States, where supplies of cotton from America to the UK were interrupted. And an entire cotton trade was invented in India. where cotton was grown in Gujarat and Maharashtra and it was shipped through Bombay to London. So this was an explosive moment for the Indian economy. It's hard to emphasize what a break this was as compared with everything that came before. It's like the entire institutional package and the technological capability of the Industrial Revolution was seeded into India all at once. Okay, and in many ways this journey progressed relatively well.",
       "words": [
         {
           "word": "Uh",
@@ -17168,29 +17136,13 @@
           "startTime": 974.04,
           "endTime": 974.28,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 974.28,
-      "endTime": 974.76,
-      "text": "compared",
-      "words": [
+        },
         {
           "word": "compared",
           "startTime": 974.28,
           "endTime": 974.76,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 974.76,
-      "endTime": 991.85,
-      "text": "with everything that came before. It's like the entire institutional package and the technological capability of the Industrial Revolution was seeded into India all at once. Okay, and in many ways this journey progressed relatively well. Till nineteen thirteen. So",
-      "words": [
+        },
         {
           "word": "with",
           "startTime": 974.76,
@@ -17406,7 +17358,15 @@
           "startTime": 989.32,
           "endTime": 989.79,
           "confidence": 0.8612
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 990.09,
+      "endTime": 1112.3,
+      "text": "Till nineteen thirteen. So a couple of things here. One is that much as the Indian cotton industry did well because of the American Civil War, um in America there was an explosion in the Midwest when uh a bunch of factories were set up for making ice. Do you know why? No. Okay, the reason for that is that in India there was a huge problem of malaria. And the way to deal with malaria was a substance called quinine. And quinine was given as a precautionary thing. However, quinine could not be had on its own, it was bitter and ugly. So it was put put put into tonic water, and gin and tonic became a popular cocktail in India. And if you had to have gin and tonic, you needed ice with it. Now these are this is the 19th century. No fridges. Where will the ice come from? America will make the ice. So the wonders of global capitalism. And on what you were saying, I also want to uh quote uh your friend uh Tirthankaroy, the great uh uh uh the great Indian historian. And Vinesitapati sent me this essay and uh so credit to him for that. Berthi Thunker writes at the end of this fabulous essay which I'll link from the show notes, uh he writes The Empire created an open economy, open to trade, capital flows and settlement. For the imperialists, keeping India open to trade, investment, and migration served British economic interest. But that does not amount to saying that openness was damaging to Indian economic interests. The two interests were broadly compatible until the nineteen twenties and diverged around the time of the Great Depression. But when world trade again recovered from World War II, India had left the stage. In the colonial era, openness contributed to the emergence of a robust industrial capitalism centered in the port cities. It helped the growth of a sophisticated education system. The cosmopolitanism was sustained by the free movement of people, skills, and knowledge. It is certainly possible to criticize individual factors, uh individual items of factor payment, but economic nationalists fundamentally misread these flows by calling these drain. They were the price India paid to tap into a mobile market for skills and capital. Exactly what you were saying.",
+      "words": [
         {
           "word": "Till",
           "startTime": 990.09,
@@ -17430,15 +17390,7 @@
           "startTime": 991.29,
           "endTime": 991.85,
           "confidence": 0.9248
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 991.85,
-      "endTime": 1112.3,
-      "text": "a couple of things here. One is that much as the Indian cotton industry did well because of the American Civil War, um in America there was an explosion in the Midwest when uh a bunch of factories were set up for making ice. Do you know why? No. Okay, the reason for that is that in India there was a huge problem of malaria. And the way to deal with malaria was a substance called quinine. And quinine was given as a precautionary thing. However, quinine could not be had on its own, it was bitter and ugly. So it was put put put into tonic water, and gin and tonic became a popular cocktail in India. And if you had to have gin and tonic, you needed ice with it. Now these are this is the 19th century. No fridges. Where will the ice come from? America will make the ice. So the wonders of global capitalism. And on what you were saying, I also want to uh quote uh your friend uh Tirthankaroy, the great uh uh uh the great Indian historian. And Vinesitapati sent me this essay and uh so credit to him for that. Berthi Thunker writes at the end of this fabulous essay which I'll link from the show notes, uh he writes The Empire created an open economy, open to trade, capital flows and settlement. For the imperialists, keeping India open to trade, investment, and migration served British economic interest. But that does not amount to saying that openness was damaging to Indian economic interests. The two interests were broadly compatible until the nineteen twenties and diverged around the time of the Great Depression. But when world trade again recovered from World War II, India had left the stage. In the colonial era, openness contributed to the emergence of a robust industrial capitalism centered in the port cities. It helped the growth of a sophisticated education system. The cosmopolitanism was sustained by the free movement of people, skills, and knowledge. It is certainly possible to criticize individual factors, uh individual items of factor payment, but economic nationalists fundamentally misread these flows by calling these drain. They were the price India paid to tap into a mobile market for skills and capital. Exactly what you were saying.",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 991.85,
@@ -19742,8 +19694,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1112.58,
-      "endTime": 1187.13,
-      "text": "So I feel that the the breathtaking developments which took place in the eighteen sixties and eighteen seventies have not been adequately recognized in India, not least because I feel the nationalists have oversold their case. Okay. So I mean I do not pine for colonial rule, but we should be cold and clear in understanding history and understanding the events that took place. So this period ran till 1913. So this first uh modernization of India, which coincides with what internationally is called the first globalization, was roughly 1869 to 1913. Then came a long dark period because of the First World War and the Great Depression and the Second World War and within India the unrest of the freedom movement and the horrors of partition. So from nineteen thirteen to nineteen forty seven, many things went very badly for India and uh It was also a period where the British took many policy decisions that were inimical to the interests of the Indian economy. For example, the restrictions on trade and capital flows came as a wartime measure in",
+      "endTime": 1237.09,
+      "text": "So I feel that the the breathtaking developments which took place in the eighteen sixties and eighteen seventies have not been adequately recognized in India, not least because I feel the nationalists have oversold their case. Okay. So I mean I do not pine for colonial rule, but we should be cold and clear in understanding history and understanding the events that took place. So this period ran till 1913. So this first uh modernization of India, which coincides with what internationally is called the first globalization, was roughly 1869 to 1913. Then came a long dark period because of the First World War and the Great Depression and the Second World War and within India the unrest of the freedom movement and the horrors of partition. So from nineteen thirteen to nineteen forty seven, many things went very badly for India and uh It was also a period where the British took many policy decisions that were inimical to the interests of the Indian economy. For example, the restrictions on trade and capital flows came as a wartime measure in 1939. Okay, so the loss of freedom began as wartime measures in uh British rule and what has been normalized today. By the way, while I'm on this subject, I just want to The audiences back to a breathtaking fact. Did you know that before 1914 there were no passports anywhere in the world? Meaning there were no passport requirements. The royalty would write passports to each other asking for preferential treatment for their friends, but for the people, the freedom to travel, the freedom to migrate was just there. It was an inalienable human right. Similarly, there were no capital controls until Adolf Hitler first introduced capital controls in Germany. So the freedoms of that period are breathtaking when compared to the unfreedom that we have all normalized too.",
       "words": [
         {
           "word": "So",
@@ -20830,15 +20782,7 @@
           "startTime": 1186.97,
           "endTime": 1187.13,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1187.13,
-      "endTime": 1188.73,
-      "text": "1939. Okay,",
-      "words": [
+        },
         {
           "word": "1939.",
           "startTime": 1187.13,
@@ -20850,15 +20794,7 @@
           "startTime": 1188.33,
           "endTime": 1188.73,
           "confidence": 0.5849
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1188.73,
-      "endTime": 1237.25,
-      "text": "so the loss of freedom began as wartime measures in uh British rule and what has been normalized today. By the way, while I'm on this subject, I just want to The audiences back to a breathtaking fact. Did you know that before 1914 there were no passports anywhere in the world? Meaning there were no passport requirements. The royalty would write passports to each other asking for preferential treatment for their friends, but for the people, the freedom to travel, the freedom to migrate was just there. It was an inalienable human right. Similarly, there were no capital controls until Adolf Hitler first introduced capital controls in Germany. So the freedoms of that period are breathtaking when compared to the unfreedom that we have all normalized too. Yeah,",
-      "words": [
+        },
         {
           "word": "so",
           "startTime": 1188.73,
@@ -21626,21 +21562,21 @@
           "startTime": 1236.53,
           "endTime": 1237.09,
           "confidence": 0.4871
-        },
-        {
-          "word": "Yeah,",
-          "startTime": 1237.09,
-          "endTime": 1237.25,
-          "confidence": 0.8301
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 1237.25,
+      "startTime": 1237.09,
       "endTime": 1239.71,
-      "text": "exactly. That's what I was about to say.",
+      "text": "Yeah, exactly. That's what I was about to say.",
       "words": [
+        {
+          "word": "Yeah,",
+          "startTime": 1237.09,
+          "endTime": 1237.25,
+          "confidence": 0.8301
+        },
         {
           "word": "exactly.",
           "startTime": 1237.25,
@@ -21694,8 +21630,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1245.81,
-      "endTime": 1354.95,
-      "text": "Oh, and then let me make this even more spicy. One of the clauses of the Treaty of Versailles was the restoration of passport-free travel. Okay, and international conferences were convened all the way into the sixties on how to get back to passport passport free travel. And the spoiler of that was Soviet Russia, which wanted to imprison its own citizens, which never wanted Russian people to leave because, you know, they would never come back. So Soviet Russia blocked every movement on trying to restore passport free travel and Only now we have the beginning of the restoration of that old freedom in limited ways in the form of the European Union. The European Union is that great development of globalization where the people move freely between France, Germany, and Belgium and UK. Oh, scratch that, not UK, uh, without passports. That's the restoration of the customary freedoms that we had a hundred years ago. Okay, so then we get got to that terrible period in India's history where uh many things went wrong. Okay, and then came freedom in 1947. Um, in terms of the outcomes, per capita GDP growth did pretty well from 1947 to 1962. Um, in my opinion, this has a lot to do with just the reduction of social tension and conflict. We've just been through the strife of the freedom movement. Remember a Second World War lapping at the eastern edges of India? Uh one minor character, Subhash Chandra Bose, threatening armed conflict in India. Uh and of course the horrors of partition. So that was not an environment in which people felt safe about the people.",
+      "endTime": 1400.74,
+      "text": "Oh, and then let me make this even more spicy. One of the clauses of the Treaty of Versailles was the restoration of passport-free travel. Okay, and international conferences were convened all the way into the sixties on how to get back to passport passport free travel. And the spoiler of that was Soviet Russia, which wanted to imprison its own citizens, which never wanted Russian people to leave because, you know, they would never come back. So Soviet Russia blocked every movement on trying to restore passport free travel and Only now we have the beginning of the restoration of that old freedom in limited ways in the form of the European Union. The European Union is that great development of globalization where the people move freely between France, Germany, and Belgium and UK. Oh, scratch that, not UK, uh, without passports. That's the restoration of the customary freedoms that we had a hundred years ago. Okay, so then we get got to that terrible period in India's history where uh many things went wrong. Okay, and then came freedom in 1947. Um, in terms of the outcomes, per capita GDP growth did pretty well from 1947 to 1962. Um, in my opinion, this has a lot to do with just the reduction of social tension and conflict. We've just been through the strife of the freedom movement. Remember a Second World War lapping at the eastern edges of India? Uh one minor character, Subhash Chandra Bose, threatening armed conflict in India. Uh and of course the horrors of partition. So that was not an environment in which people felt safe about the people. Okay. Subhash Chandra Bose, some other Okay, fine. So scratch the Subhash Chandra Bhose. And uh That is an environment where private sector confidence was likely to be weak and so there was a reduction in uh the growth momentum of that period. And in 1947, when there was that political certainty that there is a Republic of India and you know, the prestige of the Indian constitution of Nehru and Patel and others, it was a glorious generation and that created confidence and many people got back to action and there was decent GDP growth. In the period from 47 to uh 62. It was also a period in which things went very badly in terms of the fundamental strategy of growth.",
       "words": [
         {
           "word": "Oh,",
@@ -23346,15 +23282,7 @@
           "startTime": 1353.45,
           "endTime": 1354.95,
           "confidence": 0.1243
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1355.85,
-      "endTime": 1357.85,
-      "text": "Okay. Subhash Chandra Bose, some other Okay,",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 1355.85,
@@ -23396,15 +23324,7 @@
           "startTime": 1357.69,
           "endTime": 1357.85,
           "confidence": 0.5363
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1357.85,
-      "endTime": 1359.37,
-      "text": "fine. So scratch the Subhash Chandra",
-      "words": [
+        },
         {
           "word": "fine.",
           "startTime": 1357.85,
@@ -23440,15 +23360,7 @@
           "startTime": 1358.97,
           "endTime": 1359.37,
           "confidence": 0.9497
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1359.37,
-      "endTime": 1360.97,
-      "text": "Bhose. And",
-      "words": [
+        },
         {
           "word": "Bhose.",
           "startTime": 1359.37,
@@ -23460,15 +23372,7 @@
           "startTime": 1360.57,
           "endTime": 1360.97,
           "confidence": 0.7378
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1360.97,
-      "endTime": 1400.74,
-      "text": "uh That is an environment where private sector confidence was likely to be weak and so there was a reduction in uh the growth momentum of that period. And in 1947, when there was that political certainty that there is a Republic of India and you know, the prestige of the Indian constitution of Nehru and Patel and others, it was a glorious generation and that created confidence and many people got back to action and there was decent GDP growth. In the period from 47 to uh 62. It was also a period in which things went very badly in terms of the fundamental strategy of growth.",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 1360.97,
@@ -24122,8 +24026,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1400.74,
-      "endTime": 1523.29,
-      "text": "Back to you. Back to me. So uh you know, before I sort of continue the narrative, I also want to uh point out that I've been chatting with Viney Sitapati, who wrote a great book on Narsimarau and the BGP before Modi. And uh a point he made um Where that impressed me a lot is that we should think of the liberalization of ninety one as a re-liberalization of ninety one. His point is that it was Nehru's Fabian Socialism and Central Planning that was a break from the past. You've already pointed out one piece of the puzzle, which is, you know, uh how Bombay, Calcutta, the port cities were booming under the British as they wired into global trade. The other piece of the puzzle that uh Vinnay cites is from this magnificent book that, you know, many of the Mughal uh historians I've spoken to on this show uh adore, which is In the Persianate uh age by Richard Eaton. Yes. And in that, Eaton talks about how W like one India share of the world GDP, as you pointed out, purely by dint of uh population was really high at one point in time under them. But at the same time the decline possibly started because of global trade, because there was so much global trade coming in at the ports and the power went to the edges where the ports were and that centralized power kind of began to decline. That's a fascinating uh uh narrative. I don't want to talk too much about that yet because I need to, you know, study that a bit more. But let's come back to forty-seven and when we talk about going uh what went wrong, I want to shift back to a frame that I learnt about from a writer both of us admire, William Easterly. William Easterly wrote this paper in circa two thousand and six or two thousand and eight for ADB, and I'll quote from that. So in this paper, Easterly says, quote, Historically poverty has never been ended by central planners. It is only ended by searchers, both economic and political, who explore solutions by trial and error, have a way to get feedback on the ones that work, and then expand the ones that work, all of this in an unplanned spontaneous way. Examples of searchers are of firms in private markets and democratically accountable politicians. Uh stock code. So basically markets and this feedback mechanism and all that. The beautiful",
+      "endTime": 1522.81,
+      "text": "Back to you. Back to me. So uh you know, before I sort of continue the narrative, I also want to uh point out that I've been chatting with Viney Sitapati, who wrote a great book on Narsimarau and the BGP before Modi. And uh a point he made um Where that impressed me a lot is that we should think of the liberalization of ninety one as a re-liberalization of ninety one. His point is that it was Nehru's Fabian Socialism and Central Planning that was a break from the past. You've already pointed out one piece of the puzzle, which is, you know, uh how Bombay, Calcutta, the port cities were booming under the British as they wired into global trade. The other piece of the puzzle that uh Vinnay cites is from this magnificent book that, you know, many of the Mughal uh historians I've spoken to on this show uh adore, which is In the Persianate uh age by Richard Eaton. Yes. And in that, Eaton talks about how W like one India share of the world GDP, as you pointed out, purely by dint of uh population was really high at one point in time under them. But at the same time the decline possibly started because of global trade, because there was so much global trade coming in at the ports and the power went to the edges where the ports were and that centralized power kind of began to decline. That's a fascinating uh uh narrative. I don't want to talk too much about that yet because I need to, you know, study that a bit more. But let's come back to forty-seven and when we talk about going uh what went wrong, I want to shift back to a frame that I learnt about from a writer both of us admire, William Easterly. William Easterly wrote this paper in circa two thousand and six or two thousand and eight for ADB, and I'll quote from that. So in this paper, Easterly says, quote, Historically poverty has never been ended by central planners. It is only ended by searchers, both economic and political, who explore solutions by trial and error, have a way to get feedback on the ones that work, and then expand the ones that work, all of this in an unplanned spontaneous way. Examples of searchers are of firms in private markets and democratically accountable politicians. Uh stock code. So basically markets and this feedback mechanism and all that.",
       "words": [
         {
           "word": "Back",
@@ -26638,7 +26542,15 @@
           "startTime": 1522.25,
           "endTime": 1522.81,
           "confidence": 0.8119
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1522.81,
+      "endTime": 1526.09,
+      "text": "The beautiful phrase which we always talk about discovery, not",
+      "words": [
         {
           "word": "The",
           "startTime": 1522.81,
@@ -26650,15 +26562,7 @@
           "startTime": 1522.89,
           "endTime": 1523.29,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1523.29,
-      "endTime": 1526.09,
-      "text": "phrase which we always talk about discovery, not",
-      "words": [
+        },
         {
           "word": "phrase",
           "startTime": 1523.29,
@@ -30708,8 +30612,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1742.23,
-      "endTime": 1857.57,
-      "text": "back at that period in a somewhat different way? Um I'm puzzled about the following propositions. In 1947, while everything you describe about the ideology was there, the scale of intervention in into the economy was relatively modest. Okay? So the uh civil service quality was extremely high. We've never had a better civil service in India than was present in 1947. And the scale of intervention into the society was relatively mild. The level of freedom was relatively high, and we were off to the races with a reasonably decentralized economy where people were calling the shots and the people were deciding many things. Gradually the uh loss of freedom began. Okay, day after day, the restrictions started coming in, state agencies started flexing their muscles and controlling the lives of the people more and more. What I find puzzling and disappointing is how long this took. Before any self-correction came about. It is okay to be wrong. It is not okay to be impervious to the evidence. It is tragic and disappointing for that intellectual community who I continue to respect in many ways. These were some of the smartest people you could have got. But they responded to failure by intensification. There was a commitment to ideology which is disappointing. And it seems that every time there was a failure, you know, there would be these debates around a Hindu rate of growth. And the answer was to remain locked in that ideology and to insist that the floggings will continue until the morale improves. And to me that is just tragic and a failure. That it's okay to make mistakes. It's not okay to refuse to change course. That pragmatism was lost in the commitment to an ideology. I wanna",
+      "endTime": 1858.02,
+      "text": "back at that period in a somewhat different way? Um I'm puzzled about the following propositions. In 1947, while everything you describe about the ideology was there, the scale of intervention in into the economy was relatively modest. Okay? So the uh civil service quality was extremely high. We've never had a better civil service in India than was present in 1947. And the scale of intervention into the society was relatively mild. The level of freedom was relatively high, and we were off to the races with a reasonably decentralized economy where people were calling the shots and the people were deciding many things. Gradually the uh loss of freedom began. Okay, day after day, the restrictions started coming in, state agencies started flexing their muscles and controlling the lives of the people more and more. What I find puzzling and disappointing is how long this took. Before any self-correction came about. It is okay to be wrong. It is not okay to be impervious to the evidence. It is tragic and disappointing for that intellectual community who I continue to respect in many ways. These were some of the smartest people you could have got. But they responded to failure by intensification. There was a commitment to ideology which is disappointing. And it seems that every time there was a failure, you know, there would be these debates around a Hindu rate of growth. And the answer was to remain locked in that ideology and to insist that the floggings will continue until the morale improves. And to me that is just tragic and a failure. That it's okay to make mistakes. It's not okay to refuse to change course. That pragmatism was lost in the commitment to an ideology. I wanna make",
       "words": [
         {
           "word": "back",
@@ -32474,21 +32378,21 @@
           "startTime": 1857.33,
           "endTime": 1857.57,
           "confidence": 0.823
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1857.57,
-      "endTime": 1963.32,
-      "text": "make Two points. And one is a really broader point. And it's about a debate which is, I think, at the heart of India today and what we need to think about. And that is a constant tussle between state and society. It's something I've discussed in many of my episodes of The Seen and the Unseen. Last night I was chatting with uh Vinnesi Tapati on the phone and he also brought it up. And I agree with him that this is at the core of the break of nineteen forty-seven. That um couple of things happened. One is you think of um, you know, our early leaders, those who framed our constitution and others, you know, sitting in Delhi where the country seems to be falling apart, right? All around them. So obviously there is an urge to centralize, there is an urge to make sure that the center does indeed hold. Right. Well a and indeed I I sometimes think of the next few months that follow what Sadhar Patel and VP Menon did as a kind of a fast track colonization of India. What the British took it two, three hundred years to do, we did in a matter of a couple of years, and I have a great episode on VP Menon on that, which I link from the show notes as well. And um so there was that centralizing impulse for a political reason, number one. Number two, there was a centralizing impulse for a social reason. Where someone like Ambedkar, one of our great thinkers, a giant of the twentieth century, looks around him. And says that listen, we can't be too decentralized, because villages are dens of localism, ignorance, etcetera, etcetera Essentially they're riddled with caste, which is, you know, one of our original sins. And therefore if you just say decentralized and all of that, it's not gonna happen. We'll all slowly go to hell. So you need a transformative constitution, as it were, you know, which is a phrase I kind of despise because it carries with it, you know, connotations of so much state coercion uh and so much social engineering which can never work and which hasn't worked and we know it cannot.",
-      "words": [
+        },
         {
           "word": "make",
           "startTime": 1857.57,
           "endTime": 1858.02,
           "confidence": 0.9947
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1859.17,
+      "endTime": 2110.94,
+      "text": "Two points. And one is a really broader point. And it's about a debate which is, I think, at the heart of India today and what we need to think about. And that is a constant tussle between state and society. It's something I've discussed in many of my episodes of The Seen and the Unseen. Last night I was chatting with uh Vinnesi Tapati on the phone and he also brought it up. And I agree with him that this is at the core of the break of nineteen forty-seven. That um couple of things happened. One is you think of um, you know, our early leaders, those who framed our constitution and others, you know, sitting in Delhi where the country seems to be falling apart, right? All around them. So obviously there is an urge to centralize, there is an urge to make sure that the center does indeed hold. Right. Well a and indeed I I sometimes think of the next few months that follow what Sadhar Patel and VP Menon did as a kind of a fast track colonization of India. What the British took it two, three hundred years to do, we did in a matter of a couple of years, and I have a great episode on VP Menon on that, which I link from the show notes as well. And um so there was that centralizing impulse for a political reason, number one. Number two, there was a centralizing impulse for a social reason. Where someone like Ambedkar, one of our great thinkers, a giant of the twentieth century, looks around him. And says that listen, we can't be too decentralized, because villages are dens of localism, ignorance, etcetera, etcetera Essentially they're riddled with caste, which is, you know, one of our original sins. And therefore if you just say decentralized and all of that, it's not gonna happen. We'll all slowly go to hell. So you need a transformative constitution, as it were, you know, which is a phrase I kind of despise because it carries with it, you know, connotations of so much state coercion uh and so much social engineering which can never work and which hasn't worked and we know it cannot. But that is You understand that impulse, you know, that you simply cannot leave it to our basist instincts as reflected in village life, what Ambedkar had seen and experienced himself. So you understand his sense that okay, to build a great society, we must centralize, we must direct it from the top down, we must teach them how to think. Um I I say teach them how to think because our friend Madhav Khosla talks about how the constitution was a pedagogic exercise as much as an uh, you know, exercise for setting roles, right? So these are two political structures. social and then there was economic, where again Nero is coming from uh a point of saying that, hey, you know, um uh b ca the East India Company failed us, profit is a dirty word, capitalism, I hate these Banya capitalists, blah blah blah. And therefore this and and there is in all of these people, and they're all elites in a sense, right? And there is in all of these people this sense that we are above the people and we will forge a better world. They know not what they are doing. And I think that there was uh a certain folly here. I think in a sense today's b you know that that that arrogance has been consequential, that society has caught up with politics today, and again let's not get into current day politics. But I think there was a mistake there by those who wanted liberal values and a free society, to say that that can only be imposed from the top down, whereas I continue to believe, though it would have been difficult to see then or argue then, that it can only happen from the bottom up. So that is one, the social level. And two, at the economic level, what it did, Nehru's move towards central planning and some of the policies that I'll ask you to expand on, is that it created this environment where dissenters were completely shut out, the profit motive was shut out. Like P. Chidhamburam, someone you know well, you've worked with uh him, once said, uh quote, India suspected capitalists, it suspected the profit motive, and it tried to nail it down, block it, and thought that all growth would come from government planning. By the late nineteen eighties, Korea was a miracle economy and India was a stagnant slow trot. kind of economy. The whole idea that there was a big market out there did not strike Indian planners. Stop quote. And this is what strikes me, that when you say that okay, we reached five percent growth rate from forty seven to sixty two, approximately five percent or whatever, uh the thing is it's great in comparison to the years immediately before because you had the Second World War, you had so much social drive. It is terrible when you consider the counterfactuals of what happened in South East Asia, where Korea went, and all because of freedom, freedom, freedom, because they understood the power of consent.",
+      "words": [
         {
           "word": "Two",
           "startTime": 1859.17,
@@ -34732,15 +34636,7 @@
           "startTime": 1962.82,
           "endTime": 1963.32,
           "confidence": 0.8983
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1963.88,
-      "endTime": 1965.42,
-      "text": "But that is",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 1963.88,
@@ -34758,15 +34654,7 @@
           "startTime": 1964.92,
           "endTime": 1965.42,
           "confidence": 0.9833
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1965.96,
-      "endTime": 2110.94,
-      "text": "You understand that impulse, you know, that you simply cannot leave it to our basist instincts as reflected in village life, what Ambedkar had seen and experienced himself. So you understand his sense that okay, to build a great society, we must centralize, we must direct it from the top down, we must teach them how to think. Um I I say teach them how to think because our friend Madhav Khosla talks about how the constitution was a pedagogic exercise as much as an uh, you know, exercise for setting roles, right? So these are two political structures. social and then there was economic, where again Nero is coming from uh a point of saying that, hey, you know, um uh b ca the East India Company failed us, profit is a dirty word, capitalism, I hate these Banya capitalists, blah blah blah. And therefore this and and there is in all of these people, and they're all elites in a sense, right? And there is in all of these people this sense that we are above the people and we will forge a better world. They know not what they are doing. And I think that there was uh a certain folly here. I think in a sense today's b you know that that that arrogance has been consequential, that society has caught up with politics today, and again let's not get into current day politics. But I think there was a mistake there by those who wanted liberal values and a free society, to say that that can only be imposed from the top down, whereas I continue to believe, though it would have been difficult to see then or argue then, that it can only happen from the bottom up. So that is one, the social level. And two, at the economic level, what it did, Nehru's move towards central planning and some of the policies that I'll ask you to expand on, is that it created this environment where dissenters were completely shut out, the profit motive was shut out. Like P. Chidhamburam, someone you know well, you've worked with uh him, once said, uh quote, India suspected capitalists, it suspected the profit motive, and it tried to nail it down, block it, and thought that all growth would come from government planning. By the late nineteen eighties, Korea was a miracle economy and India was a stagnant slow trot. kind of economy. The whole idea that there was a big market out there did not strike Indian planners. Stop quote. And this is what strikes me, that when you say that okay, we reached five percent growth rate from forty seven to sixty two, approximately five percent or whatever, uh the thing is it's great in comparison to the years immediately before because you had the Second World War, you had so much social drive. It is terrible when you consider the counterfactuals of what happened in South East Asia, where Korea went, and all because of freedom, freedom, freedom, because they understood the power of consent.",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 1965.96,
@@ -39018,8 +38906,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2177.77,
-      "endTime": 2208.37,
-      "text": "there. India was a precocious p political project. Uh in a country in nineteen forty-seven where women's literacy was six percent, there was the audacity of thinking that we'll have universal suffrage. And there were many skeptics, as they should be. It is odd and weird that in such an unprepared country. You know, we are trying to do a complex constitution building project, uh republic, as it were, trying to come about in a place where, you know,",
+      "endTime": 2207.97,
+      "text": "there. India was a precocious p political project. Uh in a country in nineteen forty-seven where women's literacy was six percent, there was the audacity of thinking that we'll have universal suffrage. And there were many skeptics, as they should be. It is odd and weird that in such an unprepared country. You know, we are trying to do a complex constitution building project, uh republic, as it were, trying to come about in a place where,",
       "words": [
         {
           "word": "there.",
@@ -39482,7 +39370,15 @@
           "startTime": 2207.41,
           "endTime": 2207.97,
           "confidence": 0.7188
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2207.97,
+      "endTime": 2223.65,
+      "text": "you know, really A and with all credit to our founders, if if I may interrupt, they got this one thing really right. You know, we've been kind of criticizing, you know, Nehru and and the other makers of the constitution and all of that, but they did so much right in building those institutions and keeping us free and secular, is it's a big deal.",
+      "words": [
         {
           "word": "you",
           "startTime": 2207.97,
@@ -39494,15 +39390,7 @@
           "startTime": 2208.13,
           "endTime": 2208.37,
           "confidence": 0.9603
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2208.37,
-      "endTime": 2223.65,
-      "text": "really A and with all credit to our founders, if if I may interrupt, they got this one thing really right. You know, we've been kind of criticizing, you know, Nehru and and the other makers of the constitution and all of that, but they did so much right in building those institutions and keeping us free and secular, is it's a big deal.",
-      "words": [
+        },
         {
           "word": "really",
           "startTime": 2208.37,
@@ -39892,8 +39780,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2223.65,
-      "endTime": 2333.73,
-      "text": "That the optimism around that political project was severely challenged. by the 1962 to 1977 project. And many people thought that this is going to turn into yet another disgusting third world authoritarian country, or worse, that this country will collapse into civil war. So let's walk just a quick sketch of the events. 1962 was the China War. 1964 Nehru died. In 65 there was a war with Pakistan. Were two consecutive droughts, there was famine in the country. India was begging for food aid from the United States, the PL 480. Then came the 71 War. While the 71 war was a nationalist wet dream, it was also an enormous economic burden for a poor country. It was expensive to do these things. In 1969, Indera Gandhi nationalized the banks, and there was a whole wave of economic Repression like the Foreign Exchange Regulation Act, the Ferah of 1973, okay, and all of which led to an economic collapse in the early 70s. It is striking to see how quickly the euphoria of the Bangladesh war and Indira Gandhi's mind-blowing Lok Sabha victory turned into an abysmal economic collapse, double-digit inflation, the JP agitation, and then we got to the emergency. So this is the terrifying period that the economic growth was in bad shape. The conduct of the state turned from bad to horrendous and there was a collapse of freedom. There was the decline into",
+      "endTime": 2387.69,
+      "text": "That the optimism around that political project was severely challenged. by the 1962 to 1977 project. And many people thought that this is going to turn into yet another disgusting third world authoritarian country, or worse, that this country will collapse into civil war. So let's walk just a quick sketch of the events. 1962 was the China War. 1964 Nehru died. In 65 there was a war with Pakistan. Were two consecutive droughts, there was famine in the country. India was begging for food aid from the United States, the PL 480. Then came the 71 War. While the 71 war was a nationalist wet dream, it was also an enormous economic burden for a poor country. It was expensive to do these things. In 1969, Indera Gandhi nationalized the banks, and there was a whole wave of economic Repression like the Foreign Exchange Regulation Act, the Ferah of 1973, okay, and all of which led to an economic collapse in the early 70s. It is striking to see how quickly the euphoria of the Bangladesh war and Indira Gandhi's mind-blowing Lok Sabha victory turned into an abysmal economic collapse, double-digit inflation, the JP agitation, and then we got to the emergency. So this is the terrifying period that the economic growth was in bad shape. The conduct of the state turned from bad to horrendous and there was a collapse of freedom. There was the decline into the emergency. And the critics of the Indian project could wag their fingers and say, We told you so. This is a dumb idea that a free India which will try to become a republic and have a one-man one vote uh will just not work, and it is the fate of poor countries to turn into disgusting authoritarian countries. Populists will always win. Remember, the first uh Prime Minister of India who is classified by political scientists as a populist was Indira Gandhi. And uh this was the period where really our optimism in the entire Indian dream was shaken and there were many serious people who thought that this is not gonna work. We're just gonna become another disgusting authoritarian third world country",
       "words": [
         {
           "word": "That",
@@ -41328,15 +41216,7 @@
           "startTime": 2333.17,
           "endTime": 2333.73,
           "confidence": 0.9922
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2333.73,
-      "endTime": 2335.41,
-      "text": "the emergency.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 2333.73,
@@ -41348,15 +41228,7 @@
           "startTime": 2334.05,
           "endTime": 2335.41,
           "confidence": 0.9688
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2335.41,
-      "endTime": 2387.69,
-      "text": "And the critics of the Indian project could wag their fingers and say, We told you so. This is a dumb idea that a free India which will try to become a republic and have a one-man one vote uh will just not work, and it is the fate of poor countries to turn into disgusting authoritarian countries. Populists will always win. Remember, the first uh Prime Minister of India who is classified by political scientists as a populist was Indira Gandhi. And uh this was the period where really our optimism in the entire Indian dream was shaken and there were many serious people who thought that this is not gonna work. We're just gonna become another disgusting authoritarian third world country",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2335.41,
@@ -46260,8 +46132,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2592.82,
-      "endTime": 2677.37,
-      "text": "Uh just on the history of ideas, uh Yes, of course, Indra Gandhi is responsible for a lot of the terrible things there. But as with Nairu, she reflected that climate of opinion. I think of it as a failure of the Indian intellectual class. It was the intellectuals who were seduced by state power and central planning and the Soviet model and all that. It was the leftism of Indian intellectuals as a class which created the conditions in which these excesses could happen. Um And also around Indira Gandhi, I I love the line that uh it was only Sanjay Gandhi's mother who could have declared the emergency, and it was only Jawaharlal Nehru's daughter who could have declared elections. So there was something in her mind which prevented her from going full third world tyrant. And uh we now know because of the uh leaked information that has come out from that period that was flowing in the diplomatic bag. It was clear to many, many people that Indera Gandhi was embarrassed about the emergency, and it was only a question of when and the elections would take place. And when the elections took place in 1977, there were truly free and fair elections. There was no intimidation of opposition parties, there was no messing with election booths, and so on. So We lucked out in that episode. Okay. We went to the brink of catastrophic. We also lucked",
+      "endTime": 2676.73,
+      "text": "Uh just on the history of ideas, uh Yes, of course, Indra Gandhi is responsible for a lot of the terrible things there. But as with Nairu, she reflected that climate of opinion. I think of it as a failure of the Indian intellectual class. It was the intellectuals who were seduced by state power and central planning and the Soviet model and all that. It was the leftism of Indian intellectuals as a class which created the conditions in which these excesses could happen. Um And also around Indira Gandhi, I I love the line that uh it was only Sanjay Gandhi's mother who could have declared the emergency, and it was only Jawaharlal Nehru's daughter who could have declared elections. So there was something in her mind which prevented her from going full third world tyrant. And uh we now know because of the uh leaked information that has come out from that period that was flowing in the diplomatic bag. It was clear to many, many people that Indera Gandhi was embarrassed about the emergency, and it was only a question of when and the elections would take place. And when the elections took place in 1977, there were truly free and fair elections. There was no intimidation of opposition parties, there was no messing with election booths, and so on. So We lucked out in that episode. Okay. We went to the brink of catastrophic.",
       "words": [
         {
           "word": "Uh",
@@ -47696,7 +47568,15 @@
           "startTime": 2675.85,
           "endTime": 2676.73,
           "confidence": 0.8408
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2676.73,
+      "endTime": 2685.21,
+      "text": "We also lucked out because she actually thought she would win the elections when she called them and Sanjay Gandhi did not want her to call the elections. He wanted to her to win the election. It's a",
+      "words": [
         {
           "word": "We",
           "startTime": 2676.73,
@@ -47714,15 +47594,7 @@
           "startTime": 2677.05,
           "endTime": 2677.37,
           "confidence": 0.9727
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2677.37,
-      "endTime": 2685.21,
-      "text": "out because she actually thought she would win the elections when she called them and Sanjay Gandhi did not want her to call the elections. He wanted to her to win the election. It's a",
-      "words": [
+        },
         {
           "word": "out",
           "startTime": 2677.37,
@@ -49034,8 +48906,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2757.03,
-      "endTime": 3171.94,
-      "text": "Yeah so if the the best ideas always incubated far away The further away you are from power, the more clearly you see. So these people started a gentle process of turning the ship. And there are very important staffing decisions which had to be done in in order to bring in fresh ideas. And slowly the uh liberalization of the economy began, they would seem like small, trifling measures in some sense today, but in that age they were important. And I want to locate these around the words private sector confidence. Always and always and always there is only one source of economic growth and that is the private sector. And when the private sector feels good about the future, then the private sector responds by committing themselves Building firms. So the heart and soul of the story is always the hours per day that the leadership cadder of the private sector commits themselves to the project of building firms, to the extent to which their kids are committed to the same project, to the extent to which their money is being put back into the project. Okay, so the heart and soul of all Indian progress is a sense of optimism and trust in the eyes of the private sector. So the long night. of the 62 to 77 period ended and the private sector started cautiously trusting again and getting back into building businesses and taking interest in improving their organizations. And that kicked off growth surprisingly quickly. Uh 1979 is a date that is stuck in my head because when you do the careful econometrics, the date at which growth acceleration is announced in the econometric work is 1979. So some things were begun in 77 and they rapidly had an impact. And in 1979 it was visible as an acceleration of GDP growth. And then Indira Gandhi came back to power and she actually carried these ideas further. She didn't go back to her old style socialism. And then when Rajiv Gandhi became PM, again he was a more modern person. He started pushing in many important directions And so there was a s sustained clarity around that period. Late in the uh 1980s, there was a big fiscal balance of payments disaster which led up to the 91 program. Now, in the same period from 77 onwards, we also got a blossoming of Indian economic thinking. So I said that Nehru and Indira Gandhi and her period contained an intellectual landscape that was fundamentally leftist. was basically inspired in a Marxian or a Soviet view of the world. That started changing in many important ways. Manmon Singh's PhD thesis in 1964 was famously one of the first intellectual products which questioned export pessimism from India. At the time people believed that because our skins are brown we'll never be able to export. And Manmon Singh was one of the early people to say no. It's about incentives, it's about prices, it's about exchange rates. And it is possible for India to export and export well. And it is not uh something weird about India that this is infeasible. So a new set of ideas started bubbling in. Uh for example, Monte Carluvalia came to work for Rajiv Gandhi. Okay, these kinds of people carried new ideas. Uh of course I've heard a lot about this period from Vijay Kelkar, who had come to work in the Planning Commission, and at first Very leftist and communist views, but over the years he also started questioning many of those things, and I've had the joy and the luxury of speaking with him in detail about his journey of ideas and about questioning the world. I think in that period a lot of the Indian Indian intellectual elite was just simply embarrassed by the success in East Asia. And again, you gotta place this in perspective. In 1947, if there was a country where things were supposed to go well, it was India. Okay, this is the country of Gandhiji and Tagore and Ramanujan and Nehru and just, you know, outrageously great people. So nowhere else amongst poor countries did you have that kind of intellectual capital? Did you c have that kind of proud elite that could actually plug into this global state-of-the-art knowledge and do a rapid catch-up to British levels of per capita GDP? If there was a place to do it, it was India. And it was deeply embarrassing for the Indian elite that actually East Asia ran ahead of India. And I think they got slapped in the face, and the better amongst them started asking first principles questions that, you know, this ain't working. Uh I want to emphasize Arun Shuri in this process. Arun Shuri does not get enough recognition. He was a deeply grounded scholar in India. And many things that are attributed to Western scholars worldwide had actually been discovered and understood and articulated by Arun Shuri here in India first. And so these kinds of people really understood the venality and failure of the Indian Socialist Project, of building agencies that will terrorize people and put people in jail and take bribes and all that. So there was a community, there was a literature. of thinking people, of interesting people, who bit by bit started r reducing the chokehold on the economy. And that took place from 77 onwards through the 80s. Their first cut was the domestic economy. So they did not touch the external side a whole lot. But many mistakes of public policy within the country were addressed through the 70s and 80s and they did give gains through that period. And then the big thing that changed with 91 was reducing tariff barriers and improving the convertibility on the current account and a little bit of openness on the capital account. So all these things they l built on each other. Whenever we see grand social phenomena, it will never happen that there's a one-shot event or a s one single explanation. The world evolves through many, many actions And then a new mood gets established in the eyes of the private sector. Always and always we should focus that. What is the confidence of the private sector? Does the private sector feel optimistic about where India is going? Does the private sector feel safe about what is happening in the country? Then the private sector responds by bon bountifully investing, committing their emotions and people into building",
+      "endTime": 3174.28,
+      "text": "Yeah so if the the best ideas always incubated far away The further away you are from power, the more clearly you see. So these people started a gentle process of turning the ship. And there are very important staffing decisions which had to be done in in order to bring in fresh ideas. And slowly the uh liberalization of the economy began, they would seem like small, trifling measures in some sense today, but in that age they were important. And I want to locate these around the words private sector confidence. Always and always and always there is only one source of economic growth and that is the private sector. And when the private sector feels good about the future, then the private sector responds by committing themselves Building firms. So the heart and soul of the story is always the hours per day that the leadership cadder of the private sector commits themselves to the project of building firms, to the extent to which their kids are committed to the same project, to the extent to which their money is being put back into the project. Okay, so the heart and soul of all Indian progress is a sense of optimism and trust in the eyes of the private sector. So the long night. of the 62 to 77 period ended and the private sector started cautiously trusting again and getting back into building businesses and taking interest in improving their organizations. And that kicked off growth surprisingly quickly. Uh 1979 is a date that is stuck in my head because when you do the careful econometrics, the date at which growth acceleration is announced in the econometric work is 1979. So some things were begun in 77 and they rapidly had an impact. And in 1979 it was visible as an acceleration of GDP growth. And then Indira Gandhi came back to power and she actually carried these ideas further. She didn't go back to her old style socialism. And then when Rajiv Gandhi became PM, again he was a more modern person. He started pushing in many important directions And so there was a s sustained clarity around that period. Late in the uh 1980s, there was a big fiscal balance of payments disaster which led up to the 91 program. Now, in the same period from 77 onwards, we also got a blossoming of Indian economic thinking. So I said that Nehru and Indira Gandhi and her period contained an intellectual landscape that was fundamentally leftist. was basically inspired in a Marxian or a Soviet view of the world. That started changing in many important ways. Manmon Singh's PhD thesis in 1964 was famously one of the first intellectual products which questioned export pessimism from India. At the time people believed that because our skins are brown we'll never be able to export. And Manmon Singh was one of the early people to say no. It's about incentives, it's about prices, it's about exchange rates. And it is possible for India to export and export well. And it is not uh something weird about India that this is infeasible. So a new set of ideas started bubbling in. Uh for example, Monte Carluvalia came to work for Rajiv Gandhi. Okay, these kinds of people carried new ideas. Uh of course I've heard a lot about this period from Vijay Kelkar, who had come to work in the Planning Commission, and at first Very leftist and communist views, but over the years he also started questioning many of those things, and I've had the joy and the luxury of speaking with him in detail about his journey of ideas and about questioning the world. I think in that period a lot of the Indian Indian intellectual elite was just simply embarrassed by the success in East Asia. And again, you gotta place this in perspective. In 1947, if there was a country where things were supposed to go well, it was India. Okay, this is the country of Gandhiji and Tagore and Ramanujan and Nehru and just, you know, outrageously great people. So nowhere else amongst poor countries did you have that kind of intellectual capital? Did you c have that kind of proud elite that could actually plug into this global state-of-the-art knowledge and do a rapid catch-up to British levels of per capita GDP? If there was a place to do it, it was India. And it was deeply embarrassing for the Indian elite that actually East Asia ran ahead of India. And I think they got slapped in the face, and the better amongst them started asking first principles questions that, you know, this ain't working. Uh I want to emphasize Arun Shuri in this process. Arun Shuri does not get enough recognition. He was a deeply grounded scholar in India. And many things that are attributed to Western scholars worldwide had actually been discovered and understood and articulated by Arun Shuri here in India first. And so these kinds of people really understood the venality and failure of the Indian Socialist Project, of building agencies that will terrorize people and put people in jail and take bribes and all that. So there was a community, there was a literature. of thinking people, of interesting people, who bit by bit started r reducing the chokehold on the economy. And that took place from 77 onwards through the 80s. Their first cut was the domestic economy. So they did not touch the external side a whole lot. But many mistakes of public policy within the country were addressed through the 70s and 80s and they did give gains through that period. And then the big thing that changed with 91 was reducing tariff barriers and improving the convertibility on the current account and a little bit of openness on the capital account. So all these things they l built on each other. Whenever we see grand social phenomena, it will never happen that there's a one-shot event or a s one single explanation. The world evolves through many, many actions And then a new mood gets established in the eyes of the private sector. Always and always we should focus that. What is the confidence of the private sector? Does the private sector feel optimistic about where India is going? Does the private sector feel safe about what is happening in the country? Then the private sector responds by bon bountifully investing, committing their emotions and people into building organizations in India, and then the growth follows.",
       "words": [
         {
           "word": "Yeah",
@@ -55552,15 +55424,7 @@
           "startTime": 3171.3,
           "endTime": 3171.94,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3171.94,
-      "endTime": 3225.96,
-      "text": "organizations in India, and then the growth follows. There's a great quote by Abraham Lincoln about if I have six hours to cut a tree, I'll spend the first five sharpening the axe. And it seems to me that I can uh read into this a lesson that we must all sharpen our axes, even if we even if we'll never cut a tree. But we have to do it because when the opportunity comes, then we can do something with it. And I've had an episode with Vinnasi Tapati or Narsimarav, another great figure of this period. And what strikes me when I read about these people, you know, and Shruti's uh the 1991 project at the Mercita Center that has chronicles and oral histories of so many of these people, and they always fill me with awe because it is not as if in nineteen ninety-one they got together and said crisis. No, for a decade and a half before that they were working away, playing a long game, you know, building ideas and that and building each other. And building each other. And and and and that's",
-      "words": [
+        },
         {
           "word": "organizations",
           "startTime": 3171.94,
@@ -55608,7 +55472,15 @@
           "startTime": 3173.78,
           "endTime": 3174.28,
           "confidence": 0.996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3174.66,
+      "endTime": 3225.96,
+      "text": "There's a great quote by Abraham Lincoln about if I have six hours to cut a tree, I'll spend the first five sharpening the axe. And it seems to me that I can uh read into this a lesson that we must all sharpen our axes, even if we even if we'll never cut a tree. But we have to do it because when the opportunity comes, then we can do something with it. And I've had an episode with Vinnasi Tapati or Narsimarav, another great figure of this period. And what strikes me when I read about these people, you know, and Shruti's uh the 1991 project at the Mercita Center that has chronicles and oral histories of so many of these people, and they always fill me with awe because it is not as if in nineteen ninety-one they got together and said crisis. No, for a decade and a half before that they were working away, playing a long game, you know, building ideas and that and building each other. And building each other. And and and and that's",
+      "words": [
         {
           "word": "There's",
           "startTime": 3174.66,
@@ -58004,8 +57876,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3307.41,
-      "endTime": 3312.21,
-      "text": "And if I may say so, just as we should remember those who fought that fight, we should also remember those who did not.",
+      "endTime": 3312.85,
+      "text": "And if I may say so, just as we should remember those who fought that fight, we should also remember those who did not. Yes. The",
       "words": [
         {
           "word": "And",
@@ -58150,15 +58022,7 @@
           "startTime": 3311.81,
           "endTime": 3312.21,
           "confidence": 0.9547
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3312.21,
-      "endTime": 3420.81,
-      "text": "Yes. The b the vast majority, the mainstream, were just the appeasers. They they collaborated with the British and uh we should respect and admire the people who were willing to sign on to such journeys. Exactly the same story played out nineteen sixty two to nineteen seventy seven. I was born in nineteen sixty six and I have extensively had the opportunity to talk about this period with my elders. And this is the same story. Of course there was despondence. There were many people who gave up and left the country. Okay. And every person had to make that call that Do you want to commit your life to this country? Do you want to commit your life to the project of studying this country? And there was no hope inside. You never knew when the nightmare was going to end. And in fact, it looked like year after year the nightmare just got worse. Okay, from the 62 war to another 65 war to two consecutive droughts to bank nationalization to double-digit inflation, the JP Andolan. The emergency. It just seemed to get worse and worse. Uh for a good, decent, upstanding uh participant of the Indian freedom movement, it was just grotesque seeing the rise of the populist nationalist Indira Gandhi. It was just grotesque seeing the freedoms being stripped away. But the point is, the best of us chose to dig in to stay. to build knowledge and to build community. And it was done in a non purposive way. Manmoon Singh did not return to India after his PhD in nineteen sixty four with the promise that you will one day become a finance minister or you will one day become a prime minister. He had no idea. Nobody would have bet. On a million to one odds that this was going to",
-      "words": [
+        },
         {
           "word": "Yes.",
           "startTime": 3312.21,
@@ -58170,7 +58034,15 @@
           "startTime": 3312.69,
           "endTime": 3312.85,
           "confidence": 0.7794
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3312.85,
+      "endTime": 3420.81,
+      "text": "b the vast majority, the mainstream, were just the appeasers. They they collaborated with the British and uh we should respect and admire the people who were willing to sign on to such journeys. Exactly the same story played out nineteen sixty two to nineteen seventy seven. I was born in nineteen sixty six and I have extensively had the opportunity to talk about this period with my elders. And this is the same story. Of course there was despondence. There were many people who gave up and left the country. Okay. And every person had to make that call that Do you want to commit your life to this country? Do you want to commit your life to the project of studying this country? And there was no hope inside. You never knew when the nightmare was going to end. And in fact, it looked like year after year the nightmare just got worse. Okay, from the 62 war to another 65 war to two consecutive droughts to bank nationalization to double-digit inflation, the JP Andolan. The emergency. It just seemed to get worse and worse. Uh for a good, decent, upstanding uh participant of the Indian freedom movement, it was just grotesque seeing the rise of the populist nationalist Indira Gandhi. It was just grotesque seeing the freedoms being stripped away. But the point is, the best of us chose to dig in to stay. to build knowledge and to build community. And it was done in a non purposive way. Manmoon Singh did not return to India after his PhD in nineteen sixty four with the promise that you will one day become a finance minister or you will one day become a prime minister. He had no idea. Nobody would have bet. On a million to one odds that this was going to",
+      "words": [
         {
           "word": "b",
           "startTime": 3312.85,
@@ -60562,8 +60434,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3456.57,
-      "endTime": 3492.49,
-      "text": "I have an anecdote here for our viewers about uh Vijay Kelkar, your co-author. Um great book in service of the Republic. In fact the book is in service of the Republic. And when you guys recorded with me, if you remember that we were recording in a studio in car and there was a break, and uh uh Mr. Kalkar went to the toilet and when he came back, he pointed his finger at me and he said, Amit. I want you to I want to give you one piece of advice. So I thought, okay, it's some great piece of wisdom is going to come at me and I said, Yes sir, yes sir, tell me. So he said, every time you pass a toilet, enter it. So that is, you know, the wise passing on their uh uh wisdom to younger",
+      "endTime": 3493.93,
+      "text": "I have an anecdote here for our viewers about uh Vijay Kelkar, your co-author. Um great book in service of the Republic. In fact the book is in service of the Republic. And when you guys recorded with me, if you remember that we were recording in a studio in car and there was a break, and uh uh Mr. Kalkar went to the toilet and when he came back, he pointed his finger at me and he said, Amit. I want you to I want to give you one piece of advice. So I thought, okay, it's some great piece of wisdom is going to come at me and I said, Yes sir, yes sir, tell me. So he said, every time you pass a toilet, enter it. So that is, you know, the wise passing on their uh uh wisdom to younger folks.",
       "words": [
         {
           "word": "I",
@@ -61428,21 +61300,21 @@
           "startTime": 3492.09,
           "endTime": 3492.49,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3492.49,
-      "endTime": 3517.34,
-      "text": "folks. So in similar fashion, I feel that people should not ask for uh fate to step out of the page of history and shake her and shake your hand. People should just be quiet and dig in and work hard and you have no right to ask for any reward. But it is our job to build knowledge and build community and we have no telling which way the world will go.",
-      "words": [
+        },
         {
           "word": "folks.",
           "startTime": 3492.49,
           "endTime": 3493.93,
           "confidence": 0.9576
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3493.93,
+      "endTime": 3517.34,
+      "text": "So in similar fashion, I feel that people should not ask for uh fate to step out of the page of history and shake her and shake your hand. People should just be quiet and dig in and work hard and you have no right to ask for any reward. But it is our job to build knowledge and build community and we have no telling which way the world will go.",
+      "words": [
         {
           "word": "So",
           "startTime": 3493.93,

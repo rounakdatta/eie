@@ -5,7 +5,7 @@
     "durationSeconds": 3359,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -3019,8 +3019,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 149.93,
-      "endTime": 363.77,
-      "text": "There is undoubtedly a supply chain of ideas and uh various pieces of the story are all important. So I don't wish to demean any component of the supply chain of ideas. I think it's interesting and important to think about the place of papers and the place of books. The great economist Ed Glacier has a lovely pithy line. He says, read books for ideas, read papers for techniques. Okay. Which is sort of one way to see the social sciences that in constructing papers in the world of the social sciences, we have taken a stab at a level of persuasiveness which is pretty high and that ends up being narrow, it ends up being involuted, it has its place. But it's not the full picture that the very pursuit for rigor has in induced rigor mortis. And you also need to nurture the space of big ideas and books are the platform where that is happening. blog articles is where that is happening. YouTube shows and podcasts is where that is happening. But there is a more feeling, freewheeling, more eclectic approach, not fighting to dot every I and cross every T and to go after an idea and be willing to speculate and be a world builder and be a system builder. And I feel everybody needs a combination of both. You need a certain amount of world building, you need a certain amount of precise, careful, detailed data work. So this is my first thought that all of us need both. Some people are in the belly of the beast, they're in the knowledge economy, they're in the m institutional apparatus through which knowledge is produced. And in the early years of that we are always taught shut up and read papers, shut up and write papers, be narrow, don't think more, like just be a galley slave like everybody else. And I just say to those people that your life will be better if you are more interested in the big ideas and the whole journey of the human race and of human knowledge, because that is the beautiful thing about existence. And we are all little participants of something big and beautiful. The next thing I'd like to say is the problem of memorization. Many, many people say to me, look, I'm not going to remember a whole lot, so why should I bother to read? And my answers are in two parts. The first is that the more you know, the more you will retain. It it's a bloody vicious cycle, it feeds on itself. There is a feedback loop there. So when we go into some new knowledge for the first time, we just dimly parse it and we understand a very limited amount of it and very little of it sticks. But the more you know, then you actually have a lot of context and then a few new pieces of reasoning come in and then they stick to your brain nicely. And so in fact the learning process has rec increasing returns to scale. And in my opinion this uh fuses beautifully with the emerging world of higher and higher health span. You can only imagine what human beings will be like when the health span goes to ninety five and hundred and five. Those people will be computers of a different order altogether. Like what they have known, what they have seen, what they have cogitated will be something new in world history. We've never had people at that level of knowledge and clarity and perspective in the entire history",
+      "endTime": 453.9,
+      "text": "There is undoubtedly a supply chain of ideas and uh various pieces of the story are all important. So I don't wish to demean any component of the supply chain of ideas. I think it's interesting and important to think about the place of papers and the place of books. The great economist Ed Glacier has a lovely pithy line. He says, read books for ideas, read papers for techniques. Okay. Which is sort of one way to see the social sciences that in constructing papers in the world of the social sciences, we have taken a stab at a level of persuasiveness which is pretty high and that ends up being narrow, it ends up being involuted, it has its place. But it's not the full picture that the very pursuit for rigor has in induced rigor mortis. And you also need to nurture the space of big ideas and books are the platform where that is happening. blog articles is where that is happening. YouTube shows and podcasts is where that is happening. But there is a more feeling, freewheeling, more eclectic approach, not fighting to dot every I and cross every T and to go after an idea and be willing to speculate and be a world builder and be a system builder. And I feel everybody needs a combination of both. You need a certain amount of world building, you need a certain amount of precise, careful, detailed data work. So this is my first thought that all of us need both. Some people are in the belly of the beast, they're in the knowledge economy, they're in the m institutional apparatus through which knowledge is produced. And in the early years of that we are always taught shut up and read papers, shut up and write papers, be narrow, don't think more, like just be a galley slave like everybody else. And I just say to those people that your life will be better if you are more interested in the big ideas and the whole journey of the human race and of human knowledge, because that is the beautiful thing about existence. And we are all little participants of something big and beautiful. The next thing I'd like to say is the problem of memorization. Many, many people say to me, look, I'm not going to remember a whole lot, so why should I bother to read? And my answers are in two parts. The first is that the more you know, the more you will retain. It it's a bloody vicious cycle, it feeds on itself. There is a feedback loop there. So when we go into some new knowledge for the first time, we just dimly parse it and we understand a very limited amount of it and very little of it sticks. But the more you know, then you actually have a lot of context and then a few new pieces of reasoning come in and then they stick to your brain nicely. And so in fact the learning process has rec increasing returns to scale. And in my opinion this uh fuses beautifully with the emerging world of higher and higher health span. You can only imagine what human beings will be like when the health span goes to ninety five and hundred and five. Those people will be computers of a different order altogether. Like what they have known, what they have seen, what they have cogitated will be something new in world history. We've never had people at that level of knowledge and clarity and perspective in the entire history of humankind. So there's something there for chipping away and your retention will improve. But just remembering and retaining is not the game. Uh the best way to read a paper is to think about it as an argument that you are arguing with the author and literally every one or two paras in my mind I'm sort of constructing disagreements or an alternative approach and that goes by the modern crude vulgar phrase active learning. Okay, so I call it active learning when it comes to reading papers. But read a paper like a conversation, like argue with the author. And for me personally, the one of the biggest and wildest experiences of reading a book where literally every page I was just like bubbling and bursting dialogue and argument and talking to the author was seeing like a state. And that doesn't mean that book is perfect. It just means it came to me at a moment in my life and my journey where it's like I was primed and ready for it. And I I just remember literally page after page my mind would be bursting with the conversation. Like sometimes I'm disagreeing with him. Sometimes I am just so unhappy because where he's going is completely antithetic to what I used to think then. And sometimes I was offering alternative arguments. Isn't this an alternative explanation? But that way of reading which is a conversation and an argument is really something that is far more powerful than sort of a passive reading or an Indian road memory examination orientation that I got",
       "words": [
         {
           "word": "There",
@@ -6633,15 +6633,7 @@
           "startTime": 363.29,
           "endTime": 363.77,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 363.77,
-      "endTime": 365.29,
-      "text": "of humankind.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 363.77,
@@ -6653,15 +6645,7 @@
           "startTime": 364.17,
           "endTime": 365.29,
           "confidence": 0.9508
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 365.29,
-      "endTime": 453.9,
-      "text": "So there's something there for chipping away and your retention will improve. But just remembering and retaining is not the game. Uh the best way to read a paper is to think about it as an argument that you are arguing with the author and literally every one or two paras in my mind I'm sort of constructing disagreements or an alternative approach and that goes by the modern crude vulgar phrase active learning. Okay, so I call it active learning when it comes to reading papers. But read a paper like a conversation, like argue with the author. And for me personally, the one of the biggest and wildest experiences of reading a book where literally every page I was just like bubbling and bursting dialogue and argument and talking to the author was seeing like a state. And that doesn't mean that book is perfect. It just means it came to me at a moment in my life and my journey where it's like I was primed and ready for it. And I I just remember literally page after page my mind would be bursting with the conversation. Like sometimes I'm disagreeing with him. Sometimes I am just so unhappy because where he's going is completely antithetic to what I used to think then. And sometimes I was offering alternative arguments. Isn't this an alternative explanation? But that way of reading which is a conversation and an argument is really something that is far more powerful than sort of a passive reading or an Indian road memory examination orientation that I got",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 365.29,
@@ -33287,8 +33271,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1719.58,
-      "endTime": 1824.76,
-      "text": "This is all extremely fascinating. Uh it is good and important for all of us to put the processes of knowledge under the microscope, that There are not some great people, some Harvard IIT people who are going to make knowledge, and we are supposed to humbly accept that these great uh brand names are to be trusted with the way in which they manage themselves. In fact, there are many difficulties in this world, as we have done in one episode on the knowledge economy. In history, there were thinkers about the world and they were called philosophers and there were no disciplinary boundaries. Then came the universities who set up departments. and there came the modern scientials. And now suddenly there was a whole HR problem about hiring people and firing people and promoting people, which created tremendous incentive distortions in each field. So then the senior professors of each department started saying that we want you to prove yourself by publishing in AB C D journals. And those journals were the little clubhouse of that discipline. And it created a narrowing of the vision of the nature that you describe. I've also observed that uh all too often we lose sight about means and ends, about questions versus methods. So in economics there is a great vulnerability to go to lurch from one fad to another. And I'll come back uh on the issues of why. But what tends to happen is that some fad becomes uh very successful and they gain control of the journals. And then effectively through their control of the journals, they're controlling the",
+      "endTime": 2626.29,
+      "text": "This is all extremely fascinating. Uh it is good and important for all of us to put the processes of knowledge under the microscope, that There are not some great people, some Harvard IIT people who are going to make knowledge, and we are supposed to humbly accept that these great uh brand names are to be trusted with the way in which they manage themselves. In fact, there are many difficulties in this world, as we have done in one episode on the knowledge economy. In history, there were thinkers about the world and they were called philosophers and there were no disciplinary boundaries. Then came the universities who set up departments. and there came the modern scientials. And now suddenly there was a whole HR problem about hiring people and firing people and promoting people, which created tremendous incentive distortions in each field. So then the senior professors of each department started saying that we want you to prove yourself by publishing in AB C D journals. And those journals were the little clubhouse of that discipline. And it created a narrowing of the vision of the nature that you describe. I've also observed that uh all too often we lose sight about means and ends, about questions versus methods. So in economics there is a great vulnerability to go to lurch from one fad to another. And I'll come back uh on the issues of why. But what tends to happen is that some fad becomes uh very successful and they gain control of the journals. And then effectively through their control of the journals, they're controlling the appointments. Because to get appointed, to get promoted, you need those journal pubs. And then suddenly every single academic has to either exit the academic business or they have to fall in line and conform with the fad of the day. And I just think this is extremely harmful. The people who control the journals who are part of like each fad tend to consider themselves to be above all practical concerns, but realistically we are all people and people respond to incentives and the people who control journals respond to incentives. And there is a natural bias in favor of the papers that make your own literature look good. So diverse views are often not published. The journal referees and editors are not really quite Respectful of curiosity and inquiry, and instead demand that you must fit in a certain kind of uniform before you come into the clubhouse. And I feel this has been deeply harmful. And this is the source of the narrowness of disciplinary inquiry. That how can you go to this clubhouse of this journal with a more eclectic approach of taking interest in the world and studying the world that would not survive. this disciplinary focus of departments and journals and incentives. So this has all been extremely harmful. Now at the same time a lot of people recognize that. So for as long as I can remember, the leaders of universities have understood that the narrow disciplinary emphasis is a problem and they've always tried to foster interdisciplinary research. So at there is the danger that this is just cliched and they are mouthing something but they're not actually living it. And we do have to be concerned about the extent to which that is true. But I think a lot of people have understood that by hiding in one department and chipping away at the work of the department, you're often not going to give insights into the world. Now, when you bring up these ideas with the economists, they will say that we have two rooms in the house inside the economics departments. On one hand, we are tool building. So we're doing work of the nature of developing theory and of the nature of developing statistical methods. Okay? And that typically tends to be done in the econ department. And then we put it to work in taking interest in the real world in a business school or in a department of public policy. So public policy schools and business schools tend to be more real world oriented, and economics then views itself as a little more pure science, where they want to develop theoretical models. and they want to uh develop the statistical methods. The problem with this worldview is that of course there is a large chunk of economics which doesn't fit either of these two heads, that there is many, many pieces of applied economics which is not what business schools do and which is not what schools of public policy do and you know really it belongs more In economics departments. So I feel that the economics defense that, you know, actually we have two rooms in the house and we also have people who look at the world. A it's not adequate because in terms of the resource allocation, there is just too little going on by way of looking at the world in a honest way with a fresh set of eyes, taking interest in the world. And uh they have not solved the problems of how to do truly interdisciplinary work of the kind that you described. There has been again and again a piece of economics where that it becomes methodological purity. So there was a time when randomized control trials were the thing. There was a time when instrumental variables was the thing. There was a time when experimental economics w was the thing. And I frankly get distressed at each of these. I feel that the best way to approach the world is to be curious and interested in the world and then synthesize a useful toolkit that is feasible and relevant and applicable to the questions at hand. That I feel every time we face the world we should innovate and create an appropriate tool chain that is good for the questions that we face. Our loyalty should be two questions. But again and again in economics it just becomes methodological purity that if you are not doing real business cycles, it is not real microeconomics. If you are not doing DSGE models, it is not real macroeconomics, and so on. And this is just like very childish. And the sooner we get past these kinds of behaviors, the better it is. What we need ultimately are the big thinkers, and then a supply chain surrounding the big thinkers, where the big thinkers put a flag in the ground around big complex arguments, and then an array of detailed work happens. in uh working out those ideas. And in economics we have we are no longer conducive to big ideas. We're just a very narrow discipline. Okay. Now turning to the questions of data, statistics and the ethnographic method. Um there is a beautiful sentence that I'd like to bring up. Uh statistics are human beings with the tears washed away. Beautiful. Okay. And I feel that there are many concerns about how uh the more ethnographic approach works on this. So let me run through a few issues. One idea is that if you become even remotely loyal to your subject, then it hinders objectivity. Okay, so for example, I constantly worry about myself that I'm so loyal to India. I care so much about India that I feel it interferes with my objectivity. Like, you know, I'm rooting for us and that is a problem. And I recognize That it is a problem. And I feel it's better to be cold and objective. You know, I mean, if I studied Cambodia, I feel I'd be a good scholar. Studying India is dangerous because Oh, you're still a good scholar. Yeah, but I I'm self-aware that understanding social phenomena is very difficult. The mind is a slippery thing, and you can just slip into some propaganda and some narrative battles that make me feel good. because I have somehow a loyalty to traditional Indian culture or the respect of my forefathers, or because I'm rooting for us and I want us to succeed. And these are all very dangerous places to be that if you carry a sense of cultural pride, it is a really damaging thing for objectivity. We should understand the world as it is. And so in that spirit, it is a very good thing to emphasize the data. and not see the tears. Okay, so I think there's a lot to be said for objectivity. Because me too, that when I go closer to the people and particularly to the experience of mass deprivation in India, it's the blood rushes to your head and it's very difficult to keep your head straight, and I struggle with this and I run away, I take refuge in data. So that is one part of it, that it's very difficult to protect yourself and stay cold and logical and analytical, and that's our only hope. Like we'll never get anywhere through emotions. We will only get through uh th using the methods of objectivity and the scientific method and evidence. And then this brings me to the exact counterpoint, which is go out of your room and bloody talk to the people. Okay, that that is so important it cannot be understated. For me personally, I've never put it into any formal research methodology or research technique. Okay? So for me, research papers are formal set piece battles. Okay? It's like you start, there's a question, you come up with a cool way to go about it, you build the work, you write the paper, you publish the paper. Okay? It's a set piece battle. But somehow, you know, I've had the good fortune that all along I always knew that the real insights are out there with the people and you have to be talking to the people. So I never bring the people into the project. But my life design is that you should talk to the people that are in the economy. So as an example, I believe one of the best places to live in India, to study the Indian economy, is Bombay. Because Bombay contains the uh non financial firms and the financial firms and the everyday conversations you have with practitioners in Bombay are rich with insights. You will learn firms, you will learn finance, which is the heart and soul of the journey to growth. And you will get a real world practical experience of what are they thinking, what are their compulsions. When you see something in the data, what was going on in their heads, why do they think they did what they did? Which of course doesn't mean that that's the correct explanation of what they did. As Milton Friedman taught us, the person playing billiards will never say that I thought about Newton's laws, but they behave as if they thought using Newton's laws. So you know one should be careful to draw the lines. But I have always made it my business to engage with non financial firms, to engage with financial firms, to talk to people face to face, to have many, many years of the development of trust, so that people stop giving you their press releases and start talking more honestly about what is the world as they see it and what are the problems that they face and how their constraints lead to their decision making, with some modicum of truth or, as I say, the truth as they know it, which need not be the truth truth. Similarly, It's important to talk to officials, it's important to talk to politicians. Uh uh on previous shows I've said that it's important to do a factory visit or a field visit wherever you get an opportunity. So I've had a glorious experience where once I was given the privilege of a four hour walk in a mall where the head marketing of a government's firm explained the government business to me. Okay, and and these are peak experiences in terms of learning the world. So we should take every opportunity we can. to go closer to the world because that brings common sense. It gives you a sense of the world and you obtain a set of hypotheses about what might be going on and then you turn around and do the clean data work. Finally I want to put a little bit of jargon on things that you said. I want to introduce the words internal validity and external validity. Internal validity is where I went and I studied one village and my paper makes some claims about that village. And are those claims true or false? That is called internal validity. And you could be correct for one village or you could be wrong for that village. External validity is an entirely different matter. It is about the extent to which we are able to take claims on a larger scale. Just because something is happening in one village, it doesn't mean it's happening in other villages or it is happening in the overall country. What average claims would you make about the overall country? That's a very different proposition from a paper that you might write about one village. And it's important to maintain a separation between the two. Um I was reading a paper recently on the subject of an e-filing system in uh one country. Okay? And there were all kinds of claims being made that e-filing did this. And as I was reading the paper, I was thinking, no, it was not just the e-filing that did it. E-filing is always a part of a complex reform and there are 500 subtle details of law, public administration, invisible infrastructure, culture, and norms, which intermediate the real world ramifications about how an official talks to a private person in the context of an e-filing system. The reductionist mistake we make in economics is we think e-filing did it. Well, actually a hundred things were going on and all of them came together in the context of an filing system to create that outcome. And the dang is that if we only look at the data sets, then we tend to miss that. And if we only get drowned in one village, then we normalize that reality, we normalize the invisible infrastructure, the social norms, the moraise, the invisible constraints, the climate, the agricultural practices of that village. And we then s overemphasise our claims about intervention X having generated effect. Y. It's not the intervention that did it, it is the intervention in all that context. And this is where I'm a great admirer and a user of a more old fashioned tradition in economics, which is longitudinal data or panel data. You observe the same firms over and over operating all over the country. You observe the same households over and over, all over the country. And then when you Expose these to statistical analysis, you get overall average claims about India, which I find are the most useful statements to go, and of course they are averages. Of course, Gujarat will be different from Maharashtra. If you're interested in Gujarat, you should be studying the data in Gujarat and so on. But it is interesting and important to construct average statements about India, and I love to do that using longitudinal data. I think it's one of the great tools for understanding the world.",
       "words": [
         {
           "word": "This",
@@ -34915,15 +34899,7 @@
           "startTime": 1824.68,
           "endTime": 1824.76,
           "confidence": 0.9941
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1824.76,
-      "endTime": 1826.44,
-      "text": "appointments. Because",
-      "words": [
+        },
         {
           "word": "appointments.",
           "startTime": 1824.76,
@@ -34935,15 +34911,7 @@
           "startTime": 1825.96,
           "endTime": 1826.44,
           "confidence": 0.9852
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1826.44,
-      "endTime": 2144.24,
-      "text": "to get appointed, to get promoted, you need those journal pubs. And then suddenly every single academic has to either exit the academic business or they have to fall in line and conform with the fad of the day. And I just think this is extremely harmful. The people who control the journals who are part of like each fad tend to consider themselves to be above all practical concerns, but realistically we are all people and people respond to incentives and the people who control journals respond to incentives. And there is a natural bias in favor of the papers that make your own literature look good. So diverse views are often not published. The journal referees and editors are not really quite Respectful of curiosity and inquiry, and instead demand that you must fit in a certain kind of uniform before you come into the clubhouse. And I feel this has been deeply harmful. And this is the source of the narrowness of disciplinary inquiry. That how can you go to this clubhouse of this journal with a more eclectic approach of taking interest in the world and studying the world that would not survive. this disciplinary focus of departments and journals and incentives. So this has all been extremely harmful. Now at the same time a lot of people recognize that. So for as long as I can remember, the leaders of universities have understood that the narrow disciplinary emphasis is a problem and they've always tried to foster interdisciplinary research. So at there is the danger that this is just cliched and they are mouthing something but they're not actually living it. And we do have to be concerned about the extent to which that is true. But I think a lot of people have understood that by hiding in one department and chipping away at the work of the department, you're often not going to give insights into the world. Now, when you bring up these ideas with the economists, they will say that we have two rooms in the house inside the economics departments. On one hand, we are tool building. So we're doing work of the nature of developing theory and of the nature of developing statistical methods. Okay? And that typically tends to be done in the econ department. And then we put it to work in taking interest in the real world in a business school or in a department of public policy. So public policy schools and business schools tend to be more real world oriented, and economics then views itself as a little more pure science, where they want to develop theoretical models. and they want to uh develop the statistical methods. The problem with this worldview is that of course there is a large chunk of economics which doesn't fit either of these two heads, that there is many, many pieces of applied economics which is not what business schools do and which is not what schools of public policy do and you know really it belongs more In economics departments. So I feel that the economics defense that, you know, actually we have two rooms in the house and we also have people who look at the world. A it's not adequate because in terms of the resource allocation, there is just too little going on by way of looking at the world in a honest way with a fresh set of eyes, taking interest in the world. And uh they have not solved the problems of how to do truly interdisciplinary work of the kind that you described. There has been again and again a piece of economics where that it becomes methodological purity. So there was a time when randomized control trials were the thing. There was a time when instrumental variables was the thing. There was a time when experimental economics w was the thing. And I frankly get distressed at each of these. I feel that the best way to approach the world is to be curious and interested in the world and then synthesize a useful toolkit that is feasible and relevant and applicable to the questions at hand. That I feel every time we face the world we should innovate and create an appropriate tool chain that is good for the questions that we face. Our loyalty should be two questions. But again and again in economics it just becomes methodological purity that if you are not doing real business cycles, it is not real microeconomics. If you are not doing DSGE models, it is not real macroeconomics, and so on. And this is just like very childish. And the sooner we get past these kinds of behaviors, the better it is. What we need ultimately are the big thinkers, and then a supply chain surrounding the big thinkers, where the big thinkers put a flag in the ground around big complex arguments, and then an array of detailed work happens. in uh working out those ideas. And in economics we have we are no longer conducive to big ideas. We're just a very narrow discipline. Okay. Now turning to the questions of data, statistics and the ethnographic method. Um there is a beautiful sentence that I'd like to bring up. Uh statistics are human beings with the tears washed",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1826.44,
@@ -40277,15 +40245,7 @@
           "startTime": 2143.84,
           "endTime": 2144.24,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2144.24,
-      "endTime": 2146.16,
-      "text": "away. Beautiful.",
-      "words": [
+        },
         {
           "word": "away.",
           "startTime": 2144.24,
@@ -40297,15 +40257,7 @@
           "startTime": 2145.6,
           "endTime": 2146.16,
           "confidence": 0.8654
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2146.16,
-      "endTime": 2277.39,
-      "text": "Okay. And I feel that there are many concerns about how uh the more ethnographic approach works on this. So let me run through a few issues. One idea is that if you become even remotely loyal to your subject, then it hinders objectivity. Okay, so for example, I constantly worry about myself that I'm so loyal to India. I care so much about India that I feel it interferes with my objectivity. Like, you know, I'm rooting for us and that is a problem. And I recognize That it is a problem. And I feel it's better to be cold and objective. You know, I mean, if I studied Cambodia, I feel I'd be a good scholar. Studying India is dangerous because Oh, you're still a good scholar. Yeah, but I I'm self-aware that understanding social phenomena is very difficult. The mind is a slippery thing, and you can just slip into some propaganda and some narrative battles that make me feel good. because I have somehow a loyalty to traditional Indian culture or the respect of my forefathers, or because I'm rooting for us and I want us to succeed. And these are all very dangerous places to be that if you carry a sense of cultural pride, it is a really damaging thing for objectivity. We should understand the world as it is. And so in that spirit, it is a very good thing to emphasize the data. and not see the tears. Okay, so I think there's a lot to be said for objectivity. Because me too, that when I go closer to the people and particularly to the experience of mass deprivation in India, it's the blood rushes to your head and it's very difficult to keep your head straight, and I struggle with this and I run away, I take refuge in data. So that is one part of it, that it's very difficult to protect yourself and stay cold and logical and analytical, and that's our only hope. Like we'll never get anywhere through emotions. We will only get through uh th using the methods of objectivity and the scientific method and",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 2146.16,
@@ -42459,29 +42411,13 @@
           "startTime": 2277.15,
           "endTime": 2277.39,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2277.39,
-      "endTime": 2278.89,
-      "text": "evidence.",
-      "words": [
+        },
         {
           "word": "evidence.",
           "startTime": 2277.39,
           "endTime": 2278.89,
           "confidence": 0.8945
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2279.55,
-      "endTime": 2412.03,
-      "text": "And then this brings me to the exact counterpoint, which is go out of your room and bloody talk to the people. Okay, that that is so important it cannot be understated. For me personally, I've never put it into any formal research methodology or research technique. Okay? So for me, research papers are formal set piece battles. Okay? It's like you start, there's a question, you come up with a cool way to go about it, you build the work, you write the paper, you publish the paper. Okay? It's a set piece battle. But somehow, you know, I've had the good fortune that all along I always knew that the real insights are out there with the people and you have to be talking to the people. So I never bring the people into the project. But my life design is that you should talk to the people that are in the economy. So as an example, I believe one of the best places to live in India, to study the Indian economy, is Bombay. Because Bombay contains the uh non financial firms and the financial firms and the everyday conversations you have with practitioners in Bombay are rich with insights. You will learn firms, you will learn finance, which is the heart and soul of the journey to growth. And you will get a real world practical experience of what are they thinking, what are their compulsions. When you see something in the data, what was going on in their heads, why do they think they did what they did? Which of course doesn't mean that that's the correct explanation of what they did. As Milton Friedman taught us, the person playing billiards will never say that I thought about Newton's laws, but they behave as if they thought using Newton's laws. So you know one should be careful to draw the lines. But I have always made it my business to engage with non financial firms, to engage with financial firms, to talk to people face to face, to have many, many years of the development of trust, so that people stop giving you their press releases and start talking more honestly about what is the world as they see it and what are the problems that they face and how their constraints lead to their decision making, with some modicum of truth or, as I say, the truth as they know it, which need not be the",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2279.55,
@@ -44953,15 +44889,7 @@
           "startTime": 2411.95,
           "endTime": 2412.03,
           "confidence": 0.9917
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2412.03,
-      "endTime": 2413.97,
-      "text": "truth truth. Similarly,",
-      "words": [
+        },
         {
           "word": "truth",
           "startTime": 2412.03,
@@ -44979,15 +44907,7 @@
           "startTime": 2413.47,
           "endTime": 2413.97,
           "confidence": 0.9325
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2414.56,
-      "endTime": 2626.29,
-      "text": "It's important to talk to officials, it's important to talk to politicians. Uh uh on previous shows I've said that it's important to do a factory visit or a field visit wherever you get an opportunity. So I've had a glorious experience where once I was given the privilege of a four hour walk in a mall where the head marketing of a government's firm explained the government business to me. Okay, and and these are peak experiences in terms of learning the world. So we should take every opportunity we can. to go closer to the world because that brings common sense. It gives you a sense of the world and you obtain a set of hypotheses about what might be going on and then you turn around and do the clean data work. Finally I want to put a little bit of jargon on things that you said. I want to introduce the words internal validity and external validity. Internal validity is where I went and I studied one village and my paper makes some claims about that village. And are those claims true or false? That is called internal validity. And you could be correct for one village or you could be wrong for that village. External validity is an entirely different matter. It is about the extent to which we are able to take claims on a larger scale. Just because something is happening in one village, it doesn't mean it's happening in other villages or it is happening in the overall country. What average claims would you make about the overall country? That's a very different proposition from a paper that you might write about one village. And it's important to maintain a separation between the two. Um I was reading a paper recently on the subject of an e-filing system in uh one country. Okay? And there were all kinds of claims being made that e-filing did this. And as I was reading the paper, I was thinking, no, it was not just the e-filing that did it. E-filing is always a part of a complex reform and there are 500 subtle details of law, public administration, invisible infrastructure, culture, and norms, which intermediate the real world ramifications about how an official talks to a private person in the context of an e-filing system. The reductionist mistake we make in economics is we think e-filing did it. Well, actually a hundred things were going on and all of them came together in the context of an filing system to create that outcome. And the dang is that if we only look at the data sets, then we tend to miss that. And if we only get drowned in one village, then we normalize that reality, we normalize the invisible infrastructure, the social norms, the moraise, the invisible constraints, the climate, the agricultural practices of that village. And we then s overemphasise our claims about intervention X having generated effect. Y. It's not the intervention that did it, it is the intervention in all that context. And this is where I'm a great admirer and a user of a more old fashioned tradition in economics, which is longitudinal data or panel data. You observe the same firms over and over operating all over the country. You observe the same households over and over, all over the country. And then when you Expose these to statistical analysis, you get overall average claims about India, which I find are the most useful statements to go, and of course they are averages. Of course, Gujarat will be different from Maharashtra. If you're interested in Gujarat, you should be studying the data in Gujarat and so on. But it is interesting and important to construct average statements about India, and I love to do that using longitudinal data. I think it's one of the great tools for understanding the world.",
-      "words": [
+        },
         {
           "word": "It's",
           "startTime": 2414.56,
@@ -55893,8 +55813,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2989.23,
-      "endTime": 3249.58,
-      "text": "So here are a bunch of ideas that we should bring to this. There are narrow papers that can be important because there's a precise question that is being processed. In this, you have to have one important bullshirt. When a person writes a paper on Tamil Nad, but puts up a title that does not contain the word Tamil Nad, then this is a guy grabbing for fame and glory. And you should be more skeptical about their work. Okay this is a disease in the advanced economies where papers on America don't believe in putting the word America in the title. So in fact that's a paper about a narrow specific locale and the results don't generalize. And I absolutely do not share the arrogance of the economists who believe that they're creating universal truth. Actually every locale is different, and authenticity is very important. So I feel that we should not accept grandiose titles which make claims that are s universal and actually the work is one particular data set is one particular locale. And when an author is self aware and writing a more modest title and a more modest abstract. It speaks well for the human qualities of the author. Otherwise, you know, they're just like frat boys running for tenure and you've got to be more careful around that. So that's one trick on how to process this landscape and read more carefully. The second is it's important to always have a mix of complex, big ideas, integrations of knowledge that are motivated by an interest in the world, along with the more narrow technical papers. And this can be papers and books. on the complex integrating views. So we always need the people who will read literature and perform that sense making function of putting it together and pulling together a story of the world. And that will be called speculative and it may not publish in the famous journals who who claim that we are pursuing rigor. But actually you very badly need that. Otherwise only by reading those narrow papers it's harder to grok the world. Now for me personally I've reached a point where in many, many fields I have a picture in my head. I have a sense of the world. Okay so you know, you and I have produced dozens of episodes of Everything Is Everything, where we each of us have like a fully coherent point of view on one field after another. Then in that field we are entitled to go read one narrow paper at a time. But if the reader is starting out into a new subject, then it's wise to first like get that big picture through reading about the overall scene rather than just diving into the narrow technical papers. These these kinds of uh approach of mixing narrow and uh open ended and speculative is a good mix, but then the problem that will come is many people don't have the uh training and the intuition on reading research papers. So I have an opinion for that. Google Scholar is your friend, everybody should spend more time with Google Scholar. I claim everybody should spend more time with Google Scholar. The thing is that even if you don't understand the technical inards of a paper, in time you will get the rhythm, you will get the feel, okay? It is a thumri and it is an art form, and you'll get familiar with what is a thumri, and then you will start learning that oh this is what is going on. So even in a field where you have no ability to grok the technical intricacies of a paper. It's always good to go to the original papers, you know, get the abstract, get the introduction, start comprehending the methodology, skim the results, read the discussion. So the basic engine of papers, we had a EIE episode on how to write a paper is IMRD, introduction, methodology, results, discussion. This is how papers are done, except in some foolish fields where they don't do that. But uh once you get that rhythm, you will be able to suck something out of the introduction, you'll be able to get something out of the methodology, you'll get something out of the results, and you'll generally parse the discussion. So going more to the papers is a good thing, even if it feels disconcerting at first. Speaking for me personally, I am able to read papers in a very large number of disciplines, and that's been part of my recipe that My first port of call for running searches is not Google, is not Google Germany. It",
+      "endTime": 3252.36,
+      "text": "So here are a bunch of ideas that we should bring to this. There are narrow papers that can be important because there's a precise question that is being processed. In this, you have to have one important bullshirt. When a person writes a paper on Tamil Nad, but puts up a title that does not contain the word Tamil Nad, then this is a guy grabbing for fame and glory. And you should be more skeptical about their work. Okay this is a disease in the advanced economies where papers on America don't believe in putting the word America in the title. So in fact that's a paper about a narrow specific locale and the results don't generalize. And I absolutely do not share the arrogance of the economists who believe that they're creating universal truth. Actually every locale is different, and authenticity is very important. So I feel that we should not accept grandiose titles which make claims that are s universal and actually the work is one particular data set is one particular locale. And when an author is self aware and writing a more modest title and a more modest abstract. It speaks well for the human qualities of the author. Otherwise, you know, they're just like frat boys running for tenure and you've got to be more careful around that. So that's one trick on how to process this landscape and read more carefully. The second is it's important to always have a mix of complex, big ideas, integrations of knowledge that are motivated by an interest in the world, along with the more narrow technical papers. And this can be papers and books. on the complex integrating views. So we always need the people who will read literature and perform that sense making function of putting it together and pulling together a story of the world. And that will be called speculative and it may not publish in the famous journals who who claim that we are pursuing rigor. But actually you very badly need that. Otherwise only by reading those narrow papers it's harder to grok the world. Now for me personally I've reached a point where in many, many fields I have a picture in my head. I have a sense of the world. Okay so you know, you and I have produced dozens of episodes of Everything Is Everything, where we each of us have like a fully coherent point of view on one field after another. Then in that field we are entitled to go read one narrow paper at a time. But if the reader is starting out into a new subject, then it's wise to first like get that big picture through reading about the overall scene rather than just diving into the narrow technical papers. These these kinds of uh approach of mixing narrow and uh open ended and speculative is a good mix, but then the problem that will come is many people don't have the uh training and the intuition on reading research papers. So I have an opinion for that. Google Scholar is your friend, everybody should spend more time with Google Scholar. I claim everybody should spend more time with Google Scholar. The thing is that even if you don't understand the technical inards of a paper, in time you will get the rhythm, you will get the feel, okay? It is a thumri and it is an art form, and you'll get familiar with what is a thumri, and then you will start learning that oh this is what is going on. So even in a field where you have no ability to grok the technical intricacies of a paper. It's always good to go to the original papers, you know, get the abstract, get the introduction, start comprehending the methodology, skim the results, read the discussion. So the basic engine of papers, we had a EIE episode on how to write a paper is IMRD, introduction, methodology, results, discussion. This is how papers are done, except in some foolish fields where they don't do that. But uh once you get that rhythm, you will be able to suck something out of the introduction, you'll be able to get something out of the methodology, you'll get something out of the results, and you'll generally parse the discussion. So going more to the papers is a good thing, even if it feels disconcerting at first. Speaking for me personally, I am able to read papers in a very large number of disciplines, and that's been part of my recipe that My first port of call for running searches is not Google, is not Google Germany. It is Google Scholar.",
       "words": [
         {
           "word": "So",
@@ -60593,15 +60513,7 @@
           "startTime": 3249.34,
           "endTime": 3249.58,
           "confidence": 0.9624
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3249.58,
-      "endTime": 3323.36,
-      "text": "is Google Scholar. Give us a recommendation today. So my recommendation is nothing to do with the subject of the episode, but everything to do with the subject of this episode, because everything is everything. This is a great book called The Story of Art by E. H. Gombrich. And uh you know As the title says, it's a story of art and it's a book I dip into every once in a while. It tells stories about works of art, which explain the context, which explain exactly w what was going on, which explains why it was a survivor that benefited from survivor bias and all of that. And you know, many of us look at art as something arcane, like my relationship with art always is that I don't really understand it. I'll respond to it at a certain visceral kind of level. Something looks good, something looks bad, but I don't really get it, get it. And you know, this great magnificent book gives you the story of art through many many centuries and is just a masterpiece in the story of art, Ajesha is also the story of thinking. It is also the story of the human mind. It is also the story of stories. So yeah, pick up this book. What's your recommendation?",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 3249.58,
@@ -60619,7 +60531,15 @@
           "startTime": 3250.86,
           "endTime": 3252.36,
           "confidence": 0.8095
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3262.14,
+      "endTime": 3320.48,
+      "text": "Give us a recommendation today. So my recommendation is nothing to do with the subject of the episode, but everything to do with the subject of this episode, because everything is everything. This is a great book called The Story of Art by E. H. Gombrich. And uh you know As the title says, it's a story of art and it's a book I dip into every once in a while. It tells stories about works of art, which explain the context, which explain exactly w what was going on, which explains why it was a survivor that benefited from survivor bias and all of that. And you know, many of us look at art as something arcane, like my relationship with art always is that I don't really understand it. I'll respond to it at a certain visceral kind of level. Something looks good, something looks bad, but I don't really get it, get it. And you know, this great magnificent book gives you the story of art through many many centuries and is just a masterpiece in the story of art, Ajesha is also the story of thinking. It is also the story of the human mind. It is also the story of stories. So yeah, pick up this",
+      "words": [
         {
           "word": "Give",
           "startTime": 3262.14,
@@ -61885,13 +61805,29 @@
           "startTime": 3320.24,
           "endTime": 3320.48,
           "confidence": 0.9862
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 3320.48,
+      "endTime": 3321.76,
+      "text": "book.",
+      "words": [
         {
           "word": "book.",
           "startTime": 3320.48,
           "endTime": 3321.76,
           "confidence": 0.8031
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3321.76,
+      "endTime": 3323.36,
+      "text": "What's your recommendation?",
+      "words": [
         {
           "word": "What's",
           "startTime": 3321.76,

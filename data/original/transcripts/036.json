@@ -5,7 +5,7 @@
     "durationSeconds": 4600,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -1989,8 +1989,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 134.18,
-      "endTime": 157.62,
-      "text": "in the people or a change in the state. Okay, they're two different things. So in every society in the world, there is the state and the people. And the state should ideally be the agent of the people, all too often it's upside down. The state becomes a ruler. So it's interesting and important to ask what is the process of change in the state and what is the process of",
+      "endTime": 279.06,
+      "text": "in the people or a change in the state. Okay, they're two different things. So in every society in the world, there is the state and the people. And the state should ideally be the agent of the people, all too often it's upside down. The state becomes a ruler. So it's interesting and important to ask what is the process of change in the state and what is the process of change in the people. And for most of us in India, I would just say that By default, we tend to make a mistake that we are excessively statist. We tend to think of only Sarkar. We tend to think of government. We tend to define the words state and the people and mix them up and we think of them as one and the same. Okay? So we say silly things like India won the world cup. Like, excuse me, some guys weren't the won the world cup. It had nothing to do with either the people or the state. So this conflating. Of Vishwanath and Anand and the people and the state. It's good to unbundle these. The three separate things. Some bloke won some sports match. There is the people of India and there is the state. It's good to separate them. And then if you think of a better world, you think of a better society. If you think of purposive action to make the world a better place, then a very important site of that activity is the people. Okay. And because we're so statist, we only think of the state. But actually. most of the good things happen in the people. Almost all the truth and beauty and creativity happens in the people. So it's in the society that all the rot lies, okay, that the crushing of freedom, the almost casual behavior that erupts all too often in the Indian society. All these are social ills and they're equally important or they're five times more important. A fundamental idea for us should always be how can we the people do things ourselves? How can we form the culture, the associations, the networks, the relationships, the firms, the clubs, so that good things happen in the society. We shouldn't always run to the mybab. So if anything, the state is less important than the people, and I just want to encourage everybody to get their priorities",
       "words": [
         {
           "word": "in",
@@ -2423,15 +2423,7 @@
           "startTime": 157.46,
           "endTime": 157.62,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 157.62,
-      "endTime": 160.74,
-      "text": "change in the people. And",
-      "words": [
+        },
         {
           "word": "change",
           "startTime": 157.62,
@@ -2461,15 +2453,7 @@
           "startTime": 159.46,
           "endTime": 160.74,
           "confidence": 0.9824
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 160.74,
-      "endTime": 216.45,
-      "text": "for most of us in India, I would just say that By default, we tend to make a mistake that we are excessively statist. We tend to think of only Sarkar. We tend to think of government. We tend to define the words state and the people and mix them up and we think of them as one and the same. Okay? So we say silly things like India won the world cup. Like, excuse me, some guys weren't the won the world cup. It had nothing to do with either the people or the state. So this conflating. Of Vishwanath and Anand and the people and the state. It's good to unbundle these. The three separate things. Some bloke won some sports match. There is the people of India and there is the state. It's good to separate them. And then if you think of a better world, you think of a better society. If you think of purposive action to make the world a better place, then a very important site of that activity",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 160.74,
@@ -3525,15 +3509,7 @@
           "startTime": 215.65,
           "endTime": 216.45,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 216.45,
-      "endTime": 217.97,
-      "text": "is the people.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 216.45,
@@ -3551,15 +3527,7 @@
           "startTime": 217.17,
           "endTime": 217.97,
           "confidence": 0.9612
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 217.97,
-      "endTime": 278.58,
-      "text": "Okay. And because we're so statist, we only think of the state. But actually. most of the good things happen in the people. Almost all the truth and beauty and creativity happens in the people. So it's in the society that all the rot lies, okay, that the crushing of freedom, the almost casual behavior that erupts all too often in the Indian society. All these are social ills and they're equally important or they're five times more important. A fundamental idea for us should always be how can we the people do things ourselves? How can we form the culture, the associations, the networks, the relationships, the firms, the clubs, so that good things happen in the society. We shouldn't always run to the mybab. So if anything, the state is less important than the people, and I just want to encourage everybody to get their",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 217.97,
@@ -4441,21 +4409,21 @@
           "startTime": 278.42,
           "endTime": 278.58,
           "confidence": 0.9896
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 278.58,
-      "endTime": 549.58,
-      "text": "priorities right. So you know you uh mentioned that the state should be the agent of the people, but it is often the other way around. So I've remembered this great Bertal Brecht poem called The Solution, which I will now read out for you, which is about exactly that. The solution. After the uprising of the 17th of June, the secretary of the writers union had leaflets distributed on the Stalin Ali, which stated that the people had squandered the confidence of the government and could only win it back by redoubled work. Would it not in that case be simpler for the government to dissolve the people and elect another? Right? Great uh s sort of poem by Bert Albrecht and in India we have it again the wrong way around where the state rules us instead of serving us, blah blah blah. And I I want to sort of double click on that theme of how does change come, does it come from society or does it come from the state? Because it is of great relevance to us in the sense that at the very birth of this republic, we began by making the assumption that change will happen in a t in a top down way. We, you know, brought to life a constitution which um Ambedkar himself described as only um as a mere topsoil. where he accepted that society is deeply illiberal, but we'll have a relatively liberal constitution and keep them in check, and that was sort of the thought of it. And and the way many people have sort of written about the constitution later again has that same tr uh top down kind of vision. You know, our friend Madhav Khosla who did an episode of The Seen and the Unseen with me talks about, you know, the pedagogic uh effect of the constitution, as if the people need to be taught how to live. You know, it has been described as a transformative constitution. And I object to all of this because what we now know, and obviously you and I can say this with hindsight, but what we now know is that it c the it can never work from the top down. And Gandhi, I think, was wrong about many things, but one thing that he was certainly right about is that change has to come from within society, it has to come from the bottom up. And I think many people stopped trying to build a that better world where they brought that constitution into being because their thinking was, hey, we got the British out and now we'll uh you know change whatever needs to be changed in India from the top down with the constitution with the Mai Babab Sarkar. And today any reasonable person would know and understand that that doesn't work, even though it might have been fashionable thinking in that time. And the other thing that I think about and have thought about a lot in the last few years is that there was a time and I have changed and sort of refined my thinking a little bit. But there was a time I used to think that people like you and your colleagues in the policy world would not achieve anything. My thinking was that look, if you want change, then you uh attack the demand end of the political marketplace, not the supply end of the political marketplace. And the state, of course, is at the supply end. You know, supply responds to demand. If you can make the people want something different, if that clamor comes from within society, give us more freedom or give us whatever. You know, it is more likely to happen. Uh otherwise you're trying to change it from the supply end, it's spin breaks. Like I said, I've modified that position a great deal. I think even small incremental changes at that supply end can have a massive impact on society. And you need both, not one. And another unrelated context in which I think of it is people correctly and here it's a question of getting the description right and the prescription wrong. People correctly will talk about all the things that are going wrong in technologies and say we need to regulate the tech giants because it is, you know, they are um uh you know, they're using us as data, they're addiction machines, et cetera, et cetera. I agree with all of that. The description is correct. But the prescription they commonly come up with is regulate them. And I could not disagree more with that. Because once you open yourself up to the principle that the state will tell private companies what to do and what algorithm to use, things can go very, very wrong. Because imagine that power uh in the hands of the worst person you can think of, and not some benevolent person who wants the good of everyone. That is what will happen. So w when uh I think of those problems that uh you know have po possibly been exacerbated by social media, like our tribalism, like the echo chambers we form, like the polarization of our discourse. My belief is that these are social problems and must be solved from within by society. Now, I don't have a particular magic bullet solution to any of these, but I think it is dangerous as we do in India to always think of a state as a route to get there.",
-      "words": [
+        },
         {
           "word": "priorities",
           "startTime": 278.58,
           "endTime": 279.06,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 279.06,
+      "endTime": 549.58,
+      "text": "right. So you know you uh mentioned that the state should be the agent of the people, but it is often the other way around. So I've remembered this great Bertal Brecht poem called The Solution, which I will now read out for you, which is about exactly that. The solution. After the uprising of the 17th of June, the secretary of the writers union had leaflets distributed on the Stalin Ali, which stated that the people had squandered the confidence of the government and could only win it back by redoubled work. Would it not in that case be simpler for the government to dissolve the people and elect another? Right? Great uh s sort of poem by Bert Albrecht and in India we have it again the wrong way around where the state rules us instead of serving us, blah blah blah. And I I want to sort of double click on that theme of how does change come, does it come from society or does it come from the state? Because it is of great relevance to us in the sense that at the very birth of this republic, we began by making the assumption that change will happen in a t in a top down way. We, you know, brought to life a constitution which um Ambedkar himself described as only um as a mere topsoil. where he accepted that society is deeply illiberal, but we'll have a relatively liberal constitution and keep them in check, and that was sort of the thought of it. And and the way many people have sort of written about the constitution later again has that same tr uh top down kind of vision. You know, our friend Madhav Khosla who did an episode of The Seen and the Unseen with me talks about, you know, the pedagogic uh effect of the constitution, as if the people need to be taught how to live. You know, it has been described as a transformative constitution. And I object to all of this because what we now know, and obviously you and I can say this with hindsight, but what we now know is that it c the it can never work from the top down. And Gandhi, I think, was wrong about many things, but one thing that he was certainly right about is that change has to come from within society, it has to come from the bottom up. And I think many people stopped trying to build a that better world where they brought that constitution into being because their thinking was, hey, we got the British out and now we'll uh you know change whatever needs to be changed in India from the top down with the constitution with the Mai Babab Sarkar. And today any reasonable person would know and understand that that doesn't work, even though it might have been fashionable thinking in that time. And the other thing that I think about and have thought about a lot in the last few years is that there was a time and I have changed and sort of refined my thinking a little bit. But there was a time I used to think that people like you and your colleagues in the policy world would not achieve anything. My thinking was that look, if you want change, then you uh attack the demand end of the political marketplace, not the supply end of the political marketplace. And the state, of course, is at the supply end. You know, supply responds to demand. If you can make the people want something different, if that clamor comes from within society, give us more freedom or give us whatever. You know, it is more likely to happen. Uh otherwise you're trying to change it from the supply end, it's spin breaks. Like I said, I've modified that position a great deal. I think even small incremental changes at that supply end can have a massive impact on society. And you need both, not one. And another unrelated context in which I think of it is people correctly and here it's a question of getting the description right and the prescription wrong. People correctly will talk about all the things that are going wrong in technologies and say we need to regulate the tech giants because it is, you know, they are um uh you know, they're using us as data, they're addiction machines, et cetera, et cetera. I agree with all of that. The description is correct. But the prescription they commonly come up with is regulate them. And I could not disagree more with that. Because once you open yourself up to the principle that the state will tell private companies what to do and what algorithm to use, things can go very, very wrong. Because imagine that power uh in the hands of the worst person you can think of, and not some benevolent person who wants the good of everyone. That is what will happen. So w when uh I think of those problems that uh you know have po possibly been exacerbated by social media, like our tribalism, like the echo chambers we form, like the polarization of our discourse. My belief is that these are social problems and must be solved from within by society. Now, I don't have a particular magic bullet solution to any of these, but I think it is dangerous as we do in India to always think of a state as a route to get there.",
+      "words": [
         {
           "word": "right.",
           "startTime": 279.06,
@@ -10017,8 +9985,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 550.24,
-      "endTime": 562.28,
-      "text": "Actually after somewhere thing. So let's play a couple of elements of this. I think at foundational values, it can only come from the people. That it is the people that have to wake up.",
+      "endTime": 815.42,
+      "text": "Actually after somewhere thing. So let's play a couple of elements of this. I think at foundational values, it can only come from the people. That it is the people that have to wake up. And speak up and live the life of greater freedom and greater openness of mind. There is no other way because you know the state is not going to meaningfully move the needle in on those issues until the people change their position. So, for example, all over the world, uh movements on decriminalization of homosexuality and gay marriage really happened when the State and the representative political systems followed the people. That the opinion polls showed the people moving. And in democracies, the views of the people matter. Okay? I mean, Mr. Putin is going doubling down on homophobic laws because he doesn't care for the views of the people. But if the views of the people mattered, then over the years, as there has been a greater space and openness of ideas, the states have followed, and you can see that vividly. across how many countries have moved positions on these things. So there I I'm fully with you. I have a subtle disagreement on uh more practical questions of policy. Let's take our favorite subject, globalization. Okay. So it is an absolutely fundamental principle in economics that more opening up to the external world is a good thing. Okay, that free movement of goods, services, ideas, people, capital, all these things are healthy and beneficial for the country. If you have more foreign companies operating in your country, they bring better products, they bring knowledge, they hire people who get taught the technology, the management, the processes of how those companies work, and in time this knowledge gets diffused into the country. This is a very strong idea in the world of the thinkers. It is not comparably well established in the world of the people. It is very easy for a demagogue to appeal to nationalism and say anti-foreigner, and you'll always get some mileage. So progress on these kinds of things tends to be an elite project. It tends to be a top-down project. What tends to happen, as was the case in India, is that we had a stall of the economy, we hit a wall In the late 80s, it became crystal clear that the autarchic ways of the Indian state of interfering with cross-border activities were working badly, and all over East Asia and other parts of the world, a more open approach to globalization was working better. And then through the thinkers and the politicians, these ideas started turning into reality. And this is the intellectual capacity of the leaders who are of course part of that world. So when you look back at the world of Vajpai and Yashwan Senna and Jaswan Singh and Manmon Singh and Chidambaram and uh Narasimarau, there was an intellectual capability in that group of people where they basically got these messages. It is very easy for a feeble mind To slip into anti-foreigner. So anti-foreigner comes readily. Capital controls, government will ban this, government will control this. You know, these things come instinctively. So this is an example where it is actually an elite project of developing the diagnosis for addressing a political need the growth had stalled. Okay. So when growth stalls, you get that widespread misery in the country as we see today. But then it is an elite project. to diagnose that and to come up with a batch of recipes. So I think all these things have to be in play. And I don't want to claim primacy for anyone. You need all these things to make a good society. We need the people who will work in depth one person at a time and persuade people. You need people who will work in the world of public policy. And there will be sometimes the citizenry screaming around certain policy restrictions. Sometimes it will be an elite project of persuading people that you know this really doesn't work. We need to change course. So I'm not trying to diss anybody. I'm saying all these are important projects of the change",
       "words": [
         {
           "word": "Actually",
@@ -10229,15 +10197,7 @@
           "startTime": 561.92,
           "endTime": 562.28,
           "confidence": 0.872
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 562.78,
-      "endTime": 564.94,
-      "text": "And speak",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 562.78,
@@ -10249,15 +10209,7 @@
           "startTime": 564.3,
           "endTime": 564.94,
           "confidence": 0.997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 564.94,
-      "endTime": 571.02,
-      "text": "up and live the life of greater freedom and greater openness of mind.",
-      "words": [
+        },
         {
           "word": "up",
           "startTime": 564.94,
@@ -10335,15 +10287,7 @@
           "startTime": 570.46,
           "endTime": 571.02,
           "confidence": 0.9312
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 571.02,
-      "endTime": 572.86,
-      "text": "There is no other way because",
-      "words": [
+        },
         {
           "word": "There",
           "startTime": 571.02,
@@ -10379,15 +10323,7 @@
           "startTime": 572.38,
           "endTime": 572.86,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 572.86,
-      "endTime": 693.17,
-      "text": "you know the state is not going to meaningfully move the needle in on those issues until the people change their position. So, for example, all over the world, uh movements on decriminalization of homosexuality and gay marriage really happened when the State and the representative political systems followed the people. That the opinion polls showed the people moving. And in democracies, the views of the people matter. Okay? I mean, Mr. Putin is going doubling down on homophobic laws because he doesn't care for the views of the people. But if the views of the people mattered, then over the years, as there has been a greater space and openness of ideas, the states have followed, and you can see that vividly. across how many countries have moved positions on these things. So there I I'm fully with you. I have a subtle disagreement on uh more practical questions of policy. Let's take our favorite subject, globalization. Okay. So it is an absolutely fundamental principle in economics that more opening up to the external world is a good thing. Okay, that free movement of goods, services, ideas, people, capital, all these things are healthy and beneficial for the country. If you have more foreign companies operating in your country, they bring better products, they bring knowledge, they hire people who get taught the technology, the management, the processes of how those companies work, and in time this knowledge gets diffused into the country. This is a very strong idea in the world of the thinkers. It is not comparably well established in the world of the people. It is very easy for a demagogue to appeal to nationalism and say anti-foreigner, and you'll always get some mileage. So progress on these kinds of things tends to be an elite project. It tends to be a top-down project. What tends to happen, as was the case in India,",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 572.86,
@@ -12295,15 +12231,7 @@
           "startTime": 692.45,
           "endTime": 693.17,
           "confidence": 0.9598
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 693.17,
-      "endTime": 695.65,
-      "text": "is that we had",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 693.17,
@@ -12327,15 +12255,7 @@
           "startTime": 695.33,
           "endTime": 695.65,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 695.65,
-      "endTime": 768.94,
-      "text": "a stall of the economy, we hit a wall In the late 80s, it became crystal clear that the autarchic ways of the Indian state of interfering with cross-border activities were working badly, and all over East Asia and other parts of the world, a more open approach to globalization was working better. And then through the thinkers and the politicians, these ideas started turning into reality. And this is the intellectual capacity of the leaders who are of course part of that world. So when you look back at the world of Vajpai and Yashwan Senna and Jaswan Singh and Manmon Singh and Chidambaram and uh Narasimarau, there was an intellectual capability in that group of people where they basically got these messages. It is very easy for a feeble mind To slip into anti-foreigner. So anti-foreigner comes readily. Capital controls, government will ban this, government will control this. You know, these things come instinctively. So this is an example where it is actually an elite project of developing the diagnosis for addressing a political",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 695.65,
@@ -13391,15 +13311,7 @@
           "startTime": 768.38,
           "endTime": 768.94,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 768.94,
-      "endTime": 771.34,
-      "text": "need the growth had stalled. Okay. So",
-      "words": [
+        },
         {
           "word": "need",
           "startTime": 768.94,
@@ -13441,15 +13353,7 @@
           "startTime": 771.1,
           "endTime": 771.34,
           "confidence": 0.9937
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 771.34,
-      "endTime": 782.08,
-      "text": "when growth stalls, you get that widespread misery in the country as we see today. But then it is an elite project. to diagnose that and to come up with a batch of recipes. So I think all",
-      "words": [
+        },
         {
           "word": "when",
           "startTime": 771.34,
@@ -13677,15 +13581,7 @@
           "startTime": 781.84,
           "endTime": 782.08,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 782.08,
-      "endTime": 783.6,
-      "text": "these things have to be",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 782.08,
@@ -13715,15 +13611,7 @@
           "startTime": 783.44,
           "endTime": 783.6,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 783.6,
-      "endTime": 815.1,
-      "text": "in play. And I don't want to claim primacy for anyone. You need all these things to make a good society. We need the people who will work in depth one person at a time and persuade people. You need people who will work in the world of public policy. And there will be sometimes the citizenry screaming around certain policy restrictions. Sometimes it will be an elite project of persuading people that you know this really doesn't work. We need to change course. So I'm not trying to diss anybody. I'm saying all these are important projects of the",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 783.6,
@@ -14323,21 +14211,21 @@
           "startTime": 814.94,
           "endTime": 815.1,
           "confidence": 0.9967
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 815.1,
-      "endTime": 1021.04,
-      "text": "change makers. My sense is to I mean I agree with you entirely. I mean I I don't think you were really disagreeing with me in that sense. I uh everyone has a role to play. And I guess my lament is that while all of these um uh you know different Agents of reform have failed us in a sense, I think by and large, barring a certain period, the elite have failed us. Uh by and large, these ideas haven't gone out um uh into the public. But I think that there are still some elite reformers I can look at and some vestiges of an elite project which made this move towards change. And my lament is that in popular culture we don't have enough of them. But it can be done. You mentioned globalization in the context of globalization. I would l now like to play you, dear reader, a famous song that is about the glory of globalization. Here you go. So, Ajay, you know, Martin Luther King once said that the arc of the moral universe is long, but it bends towards justice. And implicit in that is um, you know, a sense that in the long run we will progress. We are going in the right direction, whether it is justice or freedom or whatever. Uh, you know, even if it's really slow, like there's another famous saying about how paradigms change one funeral at a time. Meaning you you can't often convince other people, but over the generation you may have change. And the assumption you and I made, and certainly I made, and I was wrong. Is that in the long run we go towards progress. You look at um uh you know, what Francis Fukuyama called the end of history, though he did it with the question mark and all of that in nineteen eighty nine, where the Soviet Union's gone, the Berlin Wall has broken down, and suddenly we are in an age of liberal democracy and things seem great and we're all gonna be free, globalization is on the march. Even India starts opening up, right? And today a lot of those things have reversed and turned around. Authoritarian governments are on the rise everywhere. uh and so on and so forth. I hardly need to elaborate. But certainly uh you know we are not necessarily progressing. And I wonder that when we make an assumption of progress, it's actually not a scientific assumption, because if you think about it, the sample size on which you be uh base that conclusion is a very small sample size. How many years, how many centuries have there been? Why should we necessarily uh progress? I used to think of the Enlightenment Project as a way in which we mitigate our hardware, in which we bring nurture to counter nature, we use culture to uh you know, combat our genes, and obviously we are hardwired for many contradictory things. Some of them are good, some of them are bad. Uh the good ones, Stephen Pinker would possibly term the better angels of our nature. And my assumption was that all right, we are the one animal who where we can rewire ourselves and that yes, as you have said in the last episode, we are indeed monkeys. But we are monkeys who can change and become something better. And I wonder about that, because much as you know, we can amplify the better angels of our natures, we can also, you know, give reign to our worse demons. We often see a lot of what social media does, for example, as amplifying our worst instincts of tribalism, of othering people, et cetera, et cetera. Um so w what is your sense about like how should we think about progress?",
-      "words": [
+        },
         {
           "word": "change",
           "startTime": 815.1,
           "endTime": 815.42,
           "confidence": 0.9223
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 815.42,
+      "endTime": 1021.04,
+      "text": "makers. My sense is to I mean I agree with you entirely. I mean I I don't think you were really disagreeing with me in that sense. I uh everyone has a role to play. And I guess my lament is that while all of these um uh you know different Agents of reform have failed us in a sense, I think by and large, barring a certain period, the elite have failed us. Uh by and large, these ideas haven't gone out um uh into the public. But I think that there are still some elite reformers I can look at and some vestiges of an elite project which made this move towards change. And my lament is that in popular culture we don't have enough of them. But it can be done. You mentioned globalization in the context of globalization. I would l now like to play you, dear reader, a famous song that is about the glory of globalization. Here you go. So, Ajay, you know, Martin Luther King once said that the arc of the moral universe is long, but it bends towards justice. And implicit in that is um, you know, a sense that in the long run we will progress. We are going in the right direction, whether it is justice or freedom or whatever. Uh, you know, even if it's really slow, like there's another famous saying about how paradigms change one funeral at a time. Meaning you you can't often convince other people, but over the generation you may have change. And the assumption you and I made, and certainly I made, and I was wrong. Is that in the long run we go towards progress. You look at um uh you know, what Francis Fukuyama called the end of history, though he did it with the question mark and all of that in nineteen eighty nine, where the Soviet Union's gone, the Berlin Wall has broken down, and suddenly we are in an age of liberal democracy and things seem great and we're all gonna be free, globalization is on the march. Even India starts opening up, right? And today a lot of those things have reversed and turned around. Authoritarian governments are on the rise everywhere. uh and so on and so forth. I hardly need to elaborate. But certainly uh you know we are not necessarily progressing. And I wonder that when we make an assumption of progress, it's actually not a scientific assumption, because if you think about it, the sample size on which you be uh base that conclusion is a very small sample size. How many years, how many centuries have there been? Why should we necessarily uh progress? I used to think of the Enlightenment Project as a way in which we mitigate our hardware, in which we bring nurture to counter nature, we use culture to uh you know, combat our genes, and obviously we are hardwired for many contradictory things. Some of them are good, some of them are bad. Uh the good ones, Stephen Pinker would possibly term the better angels of our nature. And my assumption was that all right, we are the one animal who where we can rewire ourselves and that yes, as you have said in the last episode, we are indeed monkeys. But we are monkeys who can change and become something better. And I wonder about that, because much as you know, we can amplify the better angels of our natures, we can also, you know, give reign to our worse demons. We often see a lot of what social media does, for example, as amplifying our worst instincts of tribalism, of othering people, et cetera, et cetera. Um so w what is your sense about like how should we think about progress?",
+      "words": [
         {
           "word": "makers.",
           "startTime": 815.42,
@@ -18165,8 +18053,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1022.1,
-      "endTime": 1047.66,
-      "text": "So it uh you have to choose the timescales on which you want to play and you can get reasonably different answers. Here are some phases where I felt in a certain way. When you think of the scientific revolution, it is just magic that you know nature and her mysteries lay hidden in the night. God said let Newton be and all was light. It is almost magical how we went",
+      "endTime": 1730.84,
+      "text": "So it uh you have to choose the timescales on which you want to play and you can get reasonably different answers. Here are some phases where I felt in a certain way. When you think of the scientific revolution, it is just magic that you know nature and her mysteries lay hidden in the night. God said let Newton be and all was light. It is almost magical how we went from uh Newton through to Maxwell's equations through to modern physics to relativity. Okay, that there's a period there. Where the world opened up and suddenly we could see. And in that same period, we got Darwin as well. So suddenly in field after field, it felt like we had got eyes for the first time, that we we were blind ignoramuses before that, and suddenly the power of ra reason has been gifted to us. It felt magical. But when you look in other aspects of life, it's not that clear. that there is a simple idea of progress. In more recent years, it has come to me as a great shock that the childhood story that we are told that humans were some savages who were hunter-gatherers and then they graduated to agriculture. Okay, and that agriculture was seen as progress. And then from agriculture came the industrial revolution. Okay, this is a story we're told as children. Modern thinking has moved in many ways against this view. And in fact, in many many ways, the life of the people got worse with not better with agriculture. This is not widely known and it needs to be stated very clear that the hunter-gatherer life is a bit of a paradise. People were free, the women were free, and health was good, the male skeleton attained six feet, okay, and the female skeleton is like five feet seven. These are not things you get back until the 20th century. And with the rise of agriculture, it's like all hell broke loose. We got disease, the male height, the female height shrunk, we got social control of human beings, we got the destruction of the happiness of women, women became property, women became controlled, we got social regulation of women, we really lost out on the entire life experience of women. And grain was central to the creation of early states. And early states were pretty disgusting projects because there was no Magna Carta, there was no rule of law. So it was just state oppressing the people. So when the state went after the people, it was taxation and conscription. Okay, two nightmares that were brought by the state. The state wasn't a sensible creature that worked for the people. It wasn't an agent of the people. It was a ruling class which created the monopoly of violence and had uh caprice and Vimsi in how it inflicted violence on the people, which sadly is a description of many states in the world that we see around us today. And that was the creation of agriculture. So by all accounts, life got terrible with agriculture. Agriculture was not progress. So if you think of a long darkness from the discovery of agriculture in Babylon about 5000 years ago, to the emergence of modern liberal democracy, probably 19th century UK. It is just a dark regress in that period. If you had to choose a year to be born into, you would always choose a hunter gatherer period. That was a better life. We were free. Okay, we were healthier, and there was no state there to oppress us, to tax us, to conscript us. Getting conscripted to go into a war is a horrible thing. So it took me time to appreciate how r wrong our childhood programming was. Similarly it is by reading James C. Scott. that I understood that for a lot of people in history, the project was to be far away from a state. That when a state came up and it grabbed territory, the response of the people was to run away. Why do you want a state that will inflict violence on you, that will conscript you, that will tax you? What good is that? Run away. So the people tried to run away. And so you get this whole concept that states care to grab people. They want people to oppress, not territory. This whole lines on maps is a silly modern idea. Actually, what every tyrant wants is more people because if you control more people, you can oppress them. And the people will exert their best interests and exit, meaning they will vote with their feet and try to leave the bad states. It is better to live in a state of anarchy where there is no state. than to live with a tyrannical state. Again, this is all very disturbing and it is not consistent with the simple idea of progress. Okay. And then you get to the twentieth century. So you know in a way the great idea of liberal democracy was put to test in the twentieth century. And you know, you and I are old enough to remember how terrible that period was and it is not a done deal that you know we had the First World War, the Second World War, we had the Russian Revolution, we had Nazi rule, Nazi stands for nationalist socialism. It's like the two bad ideas fused into one. And in some parts after the second world war, Europe blossomed, many parts of the world blossomed, but the threat of communism was alive and well, and there was no tell when things could go explosively bad, when you know another country could suddenly turn communist or We were presented with the threat of nuclear war and a global destruction. And so it was that in 1989, when the USSR collapsed, it was an incredible moment of hope all around the world. For everybody in the world, whether you are the people of the USSR or the people of Eastern Europe or the people of Western Europe, or people like us living in India. It was a moment of hope. Saying this long nightmare of the 20th century has ended, and now You know, we're done with this stupid warfare where some people are trying to make a communist country. And now common sense will prevail, good sense will prevail, everybody will become a modern market economy located in a liberal democracy. Okay. For some time there was this hope that it would happen everywhere. But here we are in 2024. And this is not true. It didn't happen. And by many measures uh there has been a decline of democracy and the possibility of progress all over the world, country after country is experiencing that polite but brutal phrase, democratic backsliding, which is when your quality of democracy goes down. This is happening all across the world on a large scale. There's a variety of measures, you can quibble about the measures, but nobody can doubt that the extent of freedom, openness, fairness in the political system has gone down in country after country. And so I want to appeal to the twentieth century and choose a correct time frame. I choose the time frame of one life. Because I say selfishly that's what we care about, right? So Imagine gentle reader you are twenty and you have one life in front of you. Or imagine gentle reader you are sixty and you have the rest of your life in front of you. That's our planning horizon. That's a life you gotta look at. So now take a random sample of the twenty year olds of the twentieth century, take a random sample of the sixty year olds of the twentieth century. And you know what? For large fractions of the people, the rest of their life actually went terrible. And you know, for me it has become a guiding principle. Social and political catastrophe is always possible. There's one thing we learn from the 20th century, it is that political and social catastrophe is always possible. So you should never get lulled into the notion of progress. There are no guarantees. When progress happens, it's nice, but there are no guarantees. Or look at us in India. When in 1947 we had one of the most amazing post-colonial settings of the whole world. There was no other country that had people like Gandhiji and Nehru and Tagore and Ramanujan. Okay? Like we were the star pupil of what post-colonial experience was supposed to be. And you know, look at where we've come. So there are no guarantees and progress is not certain. So I just want to say that uh it is important and essential that we should dream of progress. and we should wonder how can the world become better, we should care about the world becoming better, we have skin in the game. But we should not get lulled into thinking that it's locked in and it's going to happen and we're sure and you just have some millennial fervour that no, no, it's going to happen, there'll be some minor ups and downs. No. Like imagine you're standing in Germany after the first world war, there was an immense flowering of freedom With the Weimar Republic starting from 1918, it turned into Adolf Hitler in 1933. Okay? Imagine you're standing in the Soviet Union and the collapse of the Soviet Union in 1989, you're thinking everything is going to be great, we're finished, this nightmare of communism has ended, the country broke up into pieces, so wonderful, Estonia is free, Latvia is free, Ukraine is free. Okay, this thing, the whole nightmare of the 20th century is ended and We are starting over, we'll get it right this time. No, you didn't get it right this time. And you know, Russia collapsed into Putin. And even Poland almost went wrong. I mean now Poland is coming back to its feet. Hungary in the center of Europe is turning into one of the most disgusting countries of the whole world. So there are no guarantees. Things can go very wrong. Think of China. 1978 Deng Xiaoping began a program and you know he was trying his best. He was a very smart person, but all in all, his program did not work. In 2012, you got Xi Jinping, and it is a return to concentration of power, to absolutist one man rule, a crushing of freedom, a destruction of all the pieces that made China great. And today the entire Chinese story is up in confusion and turmoil, and there is no telling what is the way out for China. How will they ever find their feet again, even if Xi Jinping vanishes from the stage tomorrow. There is just no telling about how to get back to the path of becoming. a good strong civilized country with uh people and state coming together and finding their peace. And there are wonderful stories why South Korea, Japan, Taiwan, you know, found their feet. Everything became great. These are wonderful countries that really got the people and the state. Everything has come together and it has risen. But I'm just saying there are no sure things. So I feel that we should be skeptical about the word progress. We should strive for it, we should endeavor for it, whether the unit of change is a person or a small community of a few people, or change on a bigger scale. We have skin in the game. It is both good values and self-interest to try to make the world a better place, to try to make our little world a better place. As Gandhiji said, uh be the change that you want to see in the world. Okay. it has to always start with us. So I'm not dissing the project of change, but I just want us to be a little cold and careful and nervous about the world.",
       "words": [
         {
           "word": "So",
@@ -18599,15 +18487,7 @@
           "startTime": 1047.1,
           "endTime": 1047.66,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1047.66,
-      "endTime": 1050.78,
-      "text": "from uh Newton through",
-      "words": [
+        },
         {
           "word": "from",
           "startTime": 1047.66,
@@ -18631,15 +18511,7 @@
           "startTime": 1050.3,
           "endTime": 1050.78,
           "confidence": 0.995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1050.78,
-      "endTime": 1136.34,
-      "text": "to Maxwell's equations through to modern physics to relativity. Okay, that there's a period there. Where the world opened up and suddenly we could see. And in that same period, we got Darwin as well. So suddenly in field after field, it felt like we had got eyes for the first time, that we we were blind ignoramuses before that, and suddenly the power of ra reason has been gifted to us. It felt magical. But when you look in other aspects of life, it's not that clear. that there is a simple idea of progress. In more recent years, it has come to me as a great shock that the childhood story that we are told that humans were some savages who were hunter-gatherers and then they graduated to agriculture. Okay, and that agriculture was seen as progress. And then from agriculture came the industrial revolution. Okay, this is a story we're told as children. Modern thinking has moved in many ways against this view. And in fact, in many many ways, the life of the people got worse with not better with agriculture. This is not widely known and it needs to be stated very clear that the hunter-gatherer life is a bit of a paradise. People were free, the women were free, and health was good, the male skeleton attained",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1050.78,
@@ -19977,15 +19849,7 @@
           "startTime": 1135.7,
           "endTime": 1136.34,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1136.34,
-      "endTime": 1138.1,
-      "text": "six feet, okay, and the",
-      "words": [
+        },
         {
           "word": "six",
           "startTime": 1136.34,
@@ -20015,15 +19879,7 @@
           "startTime": 1137.94,
           "endTime": 1138.1,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1138.1,
-      "endTime": 1494.32,
-      "text": "female skeleton is like five feet seven. These are not things you get back until the 20th century. And with the rise of agriculture, it's like all hell broke loose. We got disease, the male height, the female height shrunk, we got social control of human beings, we got the destruction of the happiness of women, women became property, women became controlled, we got social regulation of women, we really lost out on the entire life experience of women. And grain was central to the creation of early states. And early states were pretty disgusting projects because there was no Magna Carta, there was no rule of law. So it was just state oppressing the people. So when the state went after the people, it was taxation and conscription. Okay, two nightmares that were brought by the state. The state wasn't a sensible creature that worked for the people. It wasn't an agent of the people. It was a ruling class which created the monopoly of violence and had uh caprice and Vimsi in how it inflicted violence on the people, which sadly is a description of many states in the world that we see around us today. And that was the creation of agriculture. So by all accounts, life got terrible with agriculture. Agriculture was not progress. So if you think of a long darkness from the discovery of agriculture in Babylon about 5000 years ago, to the emergence of modern liberal democracy, probably 19th century UK. It is just a dark regress in that period. If you had to choose a year to be born into, you would always choose a hunter gatherer period. That was a better life. We were free. Okay, we were healthier, and there was no state there to oppress us, to tax us, to conscript us. Getting conscripted to go into a war is a horrible thing. So it took me time to appreciate how r wrong our childhood programming was. Similarly it is by reading James C. Scott. that I understood that for a lot of people in history, the project was to be far away from a state. That when a state came up and it grabbed territory, the response of the people was to run away. Why do you want a state that will inflict violence on you, that will conscript you, that will tax you? What good is that? Run away. So the people tried to run away. And so you get this whole concept that states care to grab people. They want people to oppress, not territory. This whole lines on maps is a silly modern idea. Actually, what every tyrant wants is more people because if you control more people, you can oppress them. And the people will exert their best interests and exit, meaning they will vote with their feet and try to leave the bad states. It is better to live in a state of anarchy where there is no state. than to live with a tyrannical state. Again, this is all very disturbing and it is not consistent with the simple idea of progress. Okay. And then you get to the twentieth century. So you know in a way the great idea of liberal democracy was put to test in the twentieth century. And you know, you and I are old enough to remember how terrible that period was and it is not a done deal that you know we had the First World War, the Second World War, we had the Russian Revolution, we had Nazi rule, Nazi stands for nationalist socialism. It's like the two bad ideas fused into one. And in some parts after the second world war, Europe blossomed, many parts of the world blossomed, but the threat of communism was alive and well, and there was no tell when things could go explosively bad, when you know another country could suddenly turn communist or We were presented with the threat of nuclear war and a global destruction. And so it was that in 1989, when the USSR collapsed, it was an incredible moment of hope all around the world. For everybody in the world, whether you are the people of the USSR or the people of Eastern Europe or the people of Western Europe, or people like us living in India. It was a moment of hope. Saying this long nightmare of the 20th century has ended, and now You know, we're done with this stupid warfare where some people are trying to make a communist country. And now common sense will prevail, good sense will prevail, everybody will become a modern market economy located in a liberal democracy. Okay. For some time there was this hope that it would happen everywhere. But here we are in 2024. And this is not true. It didn't happen. And by many measures uh there has been a decline of democracy and the possibility of progress all over the world, country after country is experiencing that polite but brutal phrase, democratic backsliding, which is when your quality of democracy goes down. This is happening all across the world on a large scale. There's a variety of measures, you can quibble about the measures, but nobody can doubt that the extent of freedom, openness, fairness in the political system has gone down in country after country. And so I want to appeal to the twentieth century and choose a correct time frame. I choose the time frame of one life. Because I say selfishly that's what we care about, right? So Imagine gentle reader you are twenty and you have one life in front of you. Or imagine gentle reader you are sixty and you have the rest of your life in front of you. That's our planning horizon. That's a life you gotta look at. So now take a random sample of the twenty year olds of the twentieth century, take a random sample of the sixty year olds of the twentieth century. And you know what? For large",
-      "words": [
+        },
         {
           "word": "female",
           "startTime": 1138.1,
@@ -26065,29 +25921,13 @@
           "startTime": 1493.52,
           "endTime": 1494.32,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1494.32,
-      "endTime": 1495.82,
-      "text": "fractions",
-      "words": [
+        },
         {
           "word": "fractions",
           "startTime": 1494.32,
           "endTime": 1495.82,
           "confidence": 0.9955
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1495.84,
-      "endTime": 1577.1,
-      "text": "of the people, the rest of their life actually went terrible. And you know, for me it has become a guiding principle. Social and political catastrophe is always possible. There's one thing we learn from the 20th century, it is that political and social catastrophe is always possible. So you should never get lulled into the notion of progress. There are no guarantees. When progress happens, it's nice, but there are no guarantees. Or look at us in India. When in 1947 we had one of the most amazing post-colonial settings of the whole world. There was no other country that had people like Gandhiji and Nehru and Tagore and Ramanujan. Okay? Like we were the star pupil of what post-colonial experience was supposed to be. And you know, look at where we've come. So there are no guarantees and progress is not certain. So I just want to say that uh it is important and essential that we should dream of progress. and we should wonder how can the world become better, we should care about the world becoming better, we have skin in the game. But we should not get lulled into thinking that it's locked in and it's going to happen and we're sure and you just have some millennial fervour that no, no, it's going to happen, there'll be some minor ups and downs. No. Like imagine you're standing",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1495.84,
@@ -27485,29 +27325,13 @@
           "startTime": 1576.62,
           "endTime": 1577.1,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1577.1,
-      "endTime": 1578.6,
-      "text": "in",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 1577.1,
           "endTime": 1578.6,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1579.02,
-      "endTime": 1704.43,
-      "text": "Germany after the first world war, there was an immense flowering of freedom With the Weimar Republic starting from 1918, it turned into Adolf Hitler in 1933. Okay? Imagine you're standing in the Soviet Union and the collapse of the Soviet Union in 1989, you're thinking everything is going to be great, we're finished, this nightmare of communism has ended, the country broke up into pieces, so wonderful, Estonia is free, Latvia is free, Ukraine is free. Okay, this thing, the whole nightmare of the 20th century is ended and We are starting over, we'll get it right this time. No, you didn't get it right this time. And you know, Russia collapsed into Putin. And even Poland almost went wrong. I mean now Poland is coming back to its feet. Hungary in the center of Europe is turning into one of the most disgusting countries of the whole world. So there are no guarantees. Things can go very wrong. Think of China. 1978 Deng Xiaoping began a program and you know he was trying his best. He was a very smart person, but all in all, his program did not work. In 2012, you got Xi Jinping, and it is a return to concentration of power, to absolutist one man rule, a crushing of freedom, a destruction of all the pieces that made China great. And today the entire Chinese story is up in confusion and turmoil, and there is no telling what is the way out for China. How will they ever find their feet again, even if Xi Jinping vanishes from the stage tomorrow. There is just no telling about how to get back to the path of becoming. a good strong civilized country with uh people and state coming together and finding their peace. And there are wonderful stories why South Korea, Japan, Taiwan, you know, found their feet. Everything became great. These are wonderful countries that really got the people and the state. Everything has come together and it has risen. But I'm just saying there are no sure things. So I feel that we should be skeptical about the word progress. We should strive for it, we should endeavor for it, whether the unit of change is a person or a small community of a few people, or change on a bigger",
-      "words": [
+        },
         {
           "word": "Germany",
           "startTime": 1579.02,
@@ -29835,15 +29659,7 @@
           "startTime": 1704.11,
           "endTime": 1704.43,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1704.43,
-      "endTime": 1706.11,
-      "text": "scale. We have",
-      "words": [
+        },
         {
           "word": "scale.",
           "startTime": 1704.43,
@@ -29861,15 +29677,7 @@
           "startTime": 1705.87,
           "endTime": 1706.11,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1706.11,
-      "endTime": 1730.84,
-      "text": "skin in the game. It is both good values and self-interest to try to make the world a better place, to try to make our little world a better place. As Gandhiji said, uh be the change that you want to see in the world. Okay. it has to always start with us. So I'm not dissing the project of change, but I just want us to be a little cold and careful and nervous about the world.",
-      "words": [
+        },
         {
           "word": "skin",
           "startTime": 1706.11,
@@ -33713,8 +33521,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1905.47,
-      "endTime": 1920.29,
-      "text": "It is important to have a theory of change around the working of the state. And I have intensively studied this subject by watching many many projects of policy reform and also the kind of projects where I was",
+      "endTime": 2203.73,
+      "text": "It is important to have a theory of change around the working of the state. And I have intensively studied this subject by watching many many projects of policy reform and also the kind of projects where I was a participant or I was present in the room. So I think of a policy pipeline that runs from left to right. And left to right is a sequence, it is an ordering that you can't jump the steps. You've got to go left to right and that straight away is a cautionary story because all too often people go wrong, they try to jump to the end and they haven't done the early stages. Okay, so let's start. It starts at data. Okay. All change starts at data. If you don't have data, then you are vulnerable to ignorance worse, you're vulnerable to spectacle. Okay. So there is a bunch of people in this world who are able to create spectacle and will just paint any nonsense picture. And we will all be vulnerable to that. We will be deluded. So the process of change, the beginning starts at data, that the first step. in any society is the measurement. That you gotta know what's going on. If you don't know what's going on, it's game over. And you will never be able to identify problems. You will never be able to embark on any feedback loops of progress if data is not done. So the first task is of establishing data. One after another we need pillars of measurement. If there is a field you care deeply about, your job is to first build measurement systems. So for example, if you believe that air quality in India is important very well, you need to put in about a generation of time, meaning about 25 years of time, to build a proper measurement system around air quality. Okay. And you'll say, but we can't wait 25 years and I will say, yeah, what to do. Okay so you can't short circuit this, meaning no amount of moral fervour or urgency can substitute for data. Without the early stages of this pipeline which are more knowledge intensive. we get into this caricature that there is a crisis. Something must be done. X is something. Let's go do it. So there is a great bait and switch that happens in the world that when there is a great moral panic that oh my God, we've got to solve X, that is the time when the most cruel, oppressive things are rushed through by the state because the people are deluded and in a moment of fear they just want some authority figure to tell them that Hush now, child, I'm telling you what to do. Okay, people don't want to stand on their own feet and be responsible for their own life and be responsible for thinking. People are too willing to accept propaganda, to accept spectacle as a substitute for truth. So the starting point has to be data and we have to build measurement systems. And this takes long time. And one of the realizations is that in less developed countries, oftentimes a government run measurement system doesn't work too well. Because it is easy to snuff out government led measurement. So it's good to think of many many ways to do measurement that will actually create information in society that is not within either the problem of state capacity, where governments will fumble and fail and will honestly do an incompetent job, or will snuff out measures that paint the government in poor light. In this, I want to draw the attention of everybody to the glory called satellite imagery. Okay? The bird in the sky sees the damn truth. It's a revolution in observation. Yes, you can't observe everything through satellite imagery, but there is a explosion going on. There is a great world opening up. Um unsurprisingly it is very difficult to get your hands on imagery from the Indian Isro, but without any friction There's beautiful great amounts of data being released by various satellite providers, both public and private, elsewhere in the world, and they see India, and there's tons of data that can be obtained about India, about Bangladesh, about Sri Lanka, about Mozambique, about every country of your interest. So that's a very important revolution that expresses the essence of the kind of thing one would like. I'm not implying. that satellite imagery substitutes all human-based data. You do need human-based data, but this gives you a flavor that satellite based imagery is a way to bypass the government. Neither do you need state capacity in the government, that you know, do we have an ISRO that has the wisdom to create and release imagery for free download by users all over the world. Unfortunately currently the answer is no. But there are others in the world who are doing that. So you can go and get that. And the other is the ability of uh government in a poorly working country to snuff out or distort the data that is not to their liking.",
       "words": [
         {
           "word": "It",
@@ -33949,15 +33757,7 @@
           "startTime": 1919.97,
           "endTime": 1920.29,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1920.29,
-      "endTime": 1921.97,
-      "text": "a participant",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 1920.29,
@@ -33969,15 +33769,7 @@
           "startTime": 1921.25,
           "endTime": 1921.97,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1921.97,
-      "endTime": 2030.58,
-      "text": "or I was present in the room. So I think of a policy pipeline that runs from left to right. And left to right is a sequence, it is an ordering that you can't jump the steps. You've got to go left to right and that straight away is a cautionary story because all too often people go wrong, they try to jump to the end and they haven't done the early stages. Okay, so let's start. It starts at data. Okay. All change starts at data. If you don't have data, then you are vulnerable to ignorance worse, you're vulnerable to spectacle. Okay. So there is a bunch of people in this world who are able to create spectacle and will just paint any nonsense picture. And we will all be vulnerable to that. We will be deluded. So the process of change, the beginning starts at data, that the first step. in any society is the measurement. That you gotta know what's going on. If you don't know what's going on, it's game over. And you will never be able to identify problems. You will never be able to embark on any feedback loops of progress if data is not done. So the first task is of establishing data. One after another we need pillars of measurement. If there is a field you care deeply about, your job is to first build measurement systems. So for example, if you believe that air quality in India is important very well, you need to put in about a generation of time, meaning about 25 years of time, to build a proper measurement system around air quality. Okay. And you'll say, but we can't wait 25 years and I will say, yeah, what to do. Okay so you can't short circuit this, meaning no amount of moral fervour or urgency can substitute for data. Without the early stages of this pipeline which are more knowledge intensive. we get into this caricature that there is a crisis. Something must be done. X is something. Let's go do",
-      "words": [
+        },
         {
           "word": "or",
           "startTime": 1921.97,
@@ -36047,29 +35839,13 @@
           "startTime": 2030.5,
           "endTime": 2030.58,
           "confidence": 0.9926
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2030.58,
-      "endTime": 2032.08,
-      "text": "it.",
-      "words": [
+        },
         {
           "word": "it.",
           "startTime": 2030.58,
           "endTime": 2032.08,
           "confidence": 0.9222
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2032.98,
-      "endTime": 2202.77,
-      "text": "So there is a great bait and switch that happens in the world that when there is a great moral panic that oh my God, we've got to solve X, that is the time when the most cruel, oppressive things are rushed through by the state because the people are deluded and in a moment of fear they just want some authority figure to tell them that Hush now, child, I'm telling you what to do. Okay, people don't want to stand on their own feet and be responsible for their own life and be responsible for thinking. People are too willing to accept propaganda, to accept spectacle as a substitute for truth. So the starting point has to be data and we have to build measurement systems. And this takes long time. And one of the realizations is that in less developed countries, oftentimes a government run measurement system doesn't work too well. Because it is easy to snuff out government led measurement. So it's good to think of many many ways to do measurement that will actually create information in society that is not within either the problem of state capacity, where governments will fumble and fail and will honestly do an incompetent job, or will snuff out measures that paint the government in poor light. In this, I want to draw the attention of everybody to the glory called satellite imagery. Okay? The bird in the sky sees the damn truth. It's a revolution in observation. Yes, you can't observe everything through satellite imagery, but there is a explosion going on. There is a great world opening up. Um unsurprisingly it is very difficult to get your hands on imagery from the Indian Isro, but without any friction There's beautiful great amounts of data being released by various satellite providers, both public and private, elsewhere in the world, and they see India, and there's tons of data that can be obtained about India, about Bangladesh, about Sri Lanka, about Mozambique, about every country of your interest. So that's a very important revolution that expresses the essence of the kind of thing one would like. I'm not implying. that satellite imagery substitutes all human-based data. You do need human-based data, but this gives you a flavor that satellite based imagery is a way to bypass the government. Neither do you need state capacity in the government, that you know, do we have an ISRO that has the wisdom to create and release imagery for free download by users all over the world. Unfortunately currently the answer is no. But there are others in the world who are doing that. So you can go and get that. And the other is the ability of uh government in a poorly working country to snuff out or distort the data that is not to their",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2032.98,
@@ -38913,21 +38689,21 @@
           "startTime": 2202.53,
           "endTime": 2202.77,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2202.77,
-      "endTime": 2208.21,
-      "text": "liking. Very quickly give me an example of an insight that you've got from satellite imagery.",
-      "words": [
+        },
         {
           "word": "liking.",
           "startTime": 2202.77,
           "endTime": 2203.73,
           "confidence": 0.9182
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2203.73,
+      "endTime": 2208.21,
+      "text": "Very quickly give me an example of an insight that you've got from satellite imagery.",
+      "words": [
         {
           "word": "Very",
           "startTime": 2203.73,
@@ -39309,8 +39085,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2225.04,
-      "endTime": 2233.36,
-      "text": "The satellite sees the earth on a pixel size of half kilometer by half kilometer. It takes a photograph at 130",
+      "endTime": 2362.98,
+      "text": "The satellite sees the earth on a pixel size of half kilometer by half kilometer. It takes a photograph at 130 a.m. Okay. Now at 130 a.m., the lights there are the lights of street lights and petrol stations and the lights at the border of a commercial complex and so on. So the lights at 130 are correlated with prosperity. The bird in the sky gets you a monthly picture of prosperity at a half K by half K pixel level. It's an unimaginable level of precision in seeing economic prosperity in India. That's one example. There are hundreds of examples. This is a field where we have worked. We are at the global frontier of improving the NASA methods on how to process this nighttime light's data. So this is a field I know well. But there are innumerable other stories. Anyway, back to the pipeline. The first step is data. If you don't have data, it's game over. You will just have opinion, you will have impression, and the guy with the biggest megaphone will win. So everybody will have nonsense, and the guy with the biggest megaphone will win. And generally the modern world is structured so that the worst guy has the megaphone. So you will surely have wrong impressions. Like whatever is common knowledge is generally wrong. Okay, in almost any field, when you get the microscope going. Everything that is loudly stated by all famous people is wrong. Okay, so fame is a curse. It interferes with information. Okay, the next stage is research. So then you need the mad people who will study that data and develop knowledge about the world, who will develop deep insights into the world. This is generally classified into correlations and causation, and both are important. Okay, so I absolutely do not this mere correlations. That's just the foolishness of some part of the economics profession that somehow mere correlations are considered uninteresting. Correlations are incredibly useful and incredibly important. You need to know how to interpret them. You need to be cautious in the interpretation, but it's very interesting to know facts about the world, to know correlations about the world, and to develop insight into the world. There are many many paths to insight. In",
       "words": [
         {
           "word": "The",
@@ -39437,15 +39213,7 @@
           "startTime": 2232.64,
           "endTime": 2233.36,
           "confidence": 0.9634
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2233.36,
-      "endTime": 2235.2,
-      "text": "a.m. Okay.",
-      "words": [
+        },
         {
           "word": "a.m.",
           "startTime": 2233.36,
@@ -39457,15 +39225,7 @@
           "startTime": 2234.8,
           "endTime": 2235.2,
           "confidence": 0.5316
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2235.2,
-      "endTime": 2362.98,
-      "text": "Now at 130 a.m., the lights there are the lights of street lights and petrol stations and the lights at the border of a commercial complex and so on. So the lights at 130 are correlated with prosperity. The bird in the sky gets you a monthly picture of prosperity at a half K by half K pixel level. It's an unimaginable level of precision in seeing economic prosperity in India. That's one example. There are hundreds of examples. This is a field where we have worked. We are at the global frontier of improving the NASA methods on how to process this nighttime light's data. So this is a field I know well. But there are innumerable other stories. Anyway, back to the pipeline. The first step is data. If you don't have data, it's game over. You will just have opinion, you will have impression, and the guy with the biggest megaphone will win. So everybody will have nonsense, and the guy with the biggest megaphone will win. And generally the modern world is structured so that the worst guy has the megaphone. So you will surely have wrong impressions. Like whatever is common knowledge is generally wrong. Okay, in almost any field, when you get the microscope going. Everything that is loudly stated by all famous people is wrong. Okay, so fame is a curse. It interferes with information. Okay, the next stage is research. So then you need the mad people who will study that data and develop knowledge about the world, who will develop deep insights into the world. This is generally classified into correlations and causation, and both are important. Okay, so I absolutely do not this mere correlations. That's just the foolishness of some part of the economics profession that somehow mere correlations are considered uninteresting. Correlations are incredibly useful and incredibly important. You need to know how to interpret them. You need to be cautious in the interpretation, but it's very interesting to know facts about the world, to know correlations about the world, and to develop insight into the world. There are many many paths to insight. In",
-      "words": [
+        },
         {
           "word": "Now",
           "startTime": 2235.2,
@@ -41999,8 +41759,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2382.58,
-      "endTime": 2538.02,
-      "text": "that's the next stage. That there is data, data everywhere, but not a thought to think. And then there is the research stage, which churns that raw refinery, the unprocessed data. Okay. So the pipe that comes out of the CMIE is the crude oil. And then the research stage is what is the refinery. And that's where you create useful products and that is knowledge. And that knowledge can feed back to understanding the world for purposes all across the landscape, including the state. Now you come to the third stage, saying we have good data, we have good research insights, we understand the world, and we have identified a malady in the world, it has to be a market failure. Okay, meaning other things are not the business of the state, but we have identified a market failure, and we have started thinking, you know what, how could we do something about this? Can there be purpose of state action which will do something about this? Okay, and again, at that level of sophistication of the data and the research. We would hope that there is an intellectual community that is able to just, you know, brush aside a whole bunch of things that are not market failure, that don't come to me with your pet peeve, don't come to me with your personal value system. Okay, don't come to me saying there are so many homosexuals in this country. Okay, that's not a market failure. That is the personal judgment of whatever people want to do. People should be free to live their life. Okay. That takes us to market failure. Now, in this, what you want is the lowest. coercion, the lowest cost ways in which a state intervention can be feasibled. That will help. So what you want is an imaginative creative phase of inventing solutions. And what is a good solution? A good solution is one that substantively gets the job done while costing the least, and I always want to use the word cost as in either money or coercion. And remember all tax money is made out of coercion. So it's not different. Ultimately the poison is coercion. The poison that the state drips on the people is coercion. So you want to use coercion as little as possible. So for the least input of coercion under reasonable assumptions of state capacity, which is a euphemism for reasonable assumptions about state incapacity. Can we get the job done? Can we substantively get the job done? Maybe not 100%. Can we get it 60% done? Okay. This is the puzzle at stage three. That is, can we imagine solutions? Can we imagine designs of state intervention that are feasible, that don't impose ridiculous levels of coercion that will not just bog down with unintended consequences? And you need very creative. thinkers who will imagine those solutions.",
+      "endTime": 2537.3,
+      "text": "that's the next stage. That there is data, data everywhere, but not a thought to think. And then there is the research stage, which churns that raw refinery, the unprocessed data. Okay. So the pipe that comes out of the CMIE is the crude oil. And then the research stage is what is the refinery. And that's where you create useful products and that is knowledge. And that knowledge can feed back to understanding the world for purposes all across the landscape, including the state. Now you come to the third stage, saying we have good data, we have good research insights, we understand the world, and we have identified a malady in the world, it has to be a market failure. Okay, meaning other things are not the business of the state, but we have identified a market failure, and we have started thinking, you know what, how could we do something about this? Can there be purpose of state action which will do something about this? Okay, and again, at that level of sophistication of the data and the research. We would hope that there is an intellectual community that is able to just, you know, brush aside a whole bunch of things that are not market failure, that don't come to me with your pet peeve, don't come to me with your personal value system. Okay, don't come to me saying there are so many homosexuals in this country. Okay, that's not a market failure. That is the personal judgment of whatever people want to do. People should be free to live their life. Okay. That takes us to market failure. Now, in this, what you want is the lowest. coercion, the lowest cost ways in which a state intervention can be feasibled. That will help. So what you want is an imaginative creative phase of inventing solutions. And what is a good solution? A good solution is one that substantively gets the job done while costing the least, and I always want to use the word cost as in either money or coercion. And remember all tax money is made out of coercion. So it's not different. Ultimately the poison is coercion. The poison that the state drips on the people is coercion. So you want to use coercion as little as possible. So for the least input of coercion under reasonable assumptions of state capacity, which is a euphemism for reasonable assumptions about state incapacity. Can we get the job done? Can we substantively get the job done? Maybe not 100%. Can we get it 60% done? Okay. This is the puzzle at stage three. That is, can we imagine solutions? Can we imagine designs of state intervention that are feasible, that don't impose ridiculous levels of coercion that will not just bog down with unintended consequences? And you need very creative. thinkers who will imagine those",
       "words": [
         {
           "word": "that's",
@@ -44893,21 +44653,21 @@
           "startTime": 2537.06,
           "endTime": 2537.3,
           "confidence": 0.9997
-        },
-        {
-          "word": "solutions.",
-          "startTime": 2537.3,
-          "endTime": 2538.02,
-          "confidence": 0.9496
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2538.02,
+      "startTime": 2537.3,
       "endTime": 2555.94,
-      "text": "Quick note for the gentle reader that we've actually done three episodes on the nature of the state, which will be linked from the show notes. And the second of those is actually about exactly about this, right? How do we think about policy? What should the state do? What should the state not do. So if you want an elaboration on some of what Ajay is talking about, that's a place to go to",
+      "text": "solutions. Quick note for the gentle reader that we've actually done three episodes on the nature of the state, which will be linked from the show notes. And the second of those is actually about exactly about this, right? How do we think about policy? What should the state do? What should the state not do. So if you want an elaboration on some of what Ajay is talking about, that's a place to go to",
       "words": [
+        {
+          "word": "solutions.",
+          "startTime": 2537.3,
+          "endTime": 2538.02,
+          "confidence": 0.9496
+        },
         {
           "word": "Quick",
           "startTime": 2538.02,
@@ -45363,8 +45123,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2555.94,
-      "endTime": 2580.45,
-      "text": "an imaginative stage of thinking of solutions. And I have one non-obvious comment to make here. The machinery of formal universities Which is the subject of another episode of Everything Is Everything. Fixing the Knowledge Society. Fixing the Knowledge Society. The machinery of universities as presently constructed does not do this step. It's just it's mysterious. That imagining policy solutions is not the subject of the academy. Somehow they pushed it out",
+      "endTime": 2581.17,
+      "text": "an imaginative stage of thinking of solutions. And I have one non-obvious comment to make here. The machinery of formal universities Which is the subject of another episode of Everything Is Everything. Fixing the Knowledge Society. Fixing the Knowledge Society. The machinery of universities as presently constructed does not do this step. It's just it's mysterious. That imagining policy solutions is not the subject of the academy. Somehow they pushed it out like Yeah,",
       "words": [
         {
           "word": "an",
@@ -45797,15 +45557,7 @@
           "startTime": 2580.29,
           "endTime": 2580.45,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2580.45,
-      "endTime": 2590.37,
-      "text": "like Yeah, and of course the academy doesn't, you know, won't engage in policy solutions because that would mean they have to engage with the real world. And as we discussed, that is not their remit anymore.",
-      "words": [
+        },
         {
           "word": "like",
           "startTime": 2580.45,
@@ -45817,7 +45569,15 @@
           "startTime": 2581.01,
           "endTime": 2581.17,
           "confidence": 0.8104
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2581.17,
+      "endTime": 2590.37,
+      "text": "and of course the academy doesn't, you know, won't engage in policy solutions because that would mean they have to engage with the real world. And as we discussed, that is not their remit anymore.",
+      "words": [
         {
           "word": "and",
           "startTime": 2581.17,
@@ -46033,8 +45793,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2590.37,
-      "endTime": 2757.19,
-      "text": "So that is stage three, that you need to imagine multiple rival solutions. If a country is told there is no alternative, if you're told there's only one solution, you're being shortchanged by the intellectual. There should always be many rival ideas. It's healthy, it is appropriate. I may have a belief that X is a solution to something, but if there is not vigorous contestation in the world of ideas where other people have other solutions and we argue it out in good faith, if that argument doesn't take place, then you're getting shabby ideas. Okay. So when there is only one game in town, you have surely a bad thing going. Okay, so we've flown from data to research to imaginative policy solutions to the next stage, which is there should be a public debate around these things. Okay, that there should be vibrant public debate where many people are arguing in a free and frank manner. And this basically comes out of both the strength of the intellectual community and you know the number of thinkers that you have in the country and the freedom of speech. Because if you have a chilling Environment where freedom of speech is proscribed, then people will just shrug and you know, they will pursue their own self-interest and let it go. Like why fight? If I'll get into trouble, why will I complain? So what you need is a cantankerous complaining environment in the public sphere where people are vigorously contesting ideas and criticizing the status quo. If you don't criticize the world, how will you ever make it better? Okay, so that is part four that we need a vigorous public debate. Okay, and this leads to many, many policy proposals which are starting to bubble up. And this is where the phrase overturn window comes up that you need to widen the overturn window that more and more people need to become comfortable that yeah, you know, X is a decent idea, it should be considered, or some part of X needs to be taken in. At this point, generally in India or in the India of old, when we were a kinder, gentler policy environment, there would often be a government expert committee. The job of government expert committees was to sift through this debate and examine rival views and find a middle road and mainstream a certain consensus. So again and again, government committee reports have listened to a debate and have generally supported more heretical ideas and made them more normal. Okay. So the job of government committees is that you need wise people, older people, people with the with two feet. one foot in the intellectual world, one foot in the establishment, in the world of doing, who are able to listen to these debates and shortlist some feasible solutions and to help legitimize and make acceptable some of the more unusual ideas that were otherwise seen as oh that is too radical, that could never be done, that is so new.",
+      "endTime": 2756.78,
+      "text": "So that is stage three, that you need to imagine multiple rival solutions. If a country is told there is no alternative, if you're told there's only one solution, you're being shortchanged by the intellectual. There should always be many rival ideas. It's healthy, it is appropriate. I may have a belief that X is a solution to something, but if there is not vigorous contestation in the world of ideas where other people have other solutions and we argue it out in good faith, if that argument doesn't take place, then you're getting shabby ideas. Okay. So when there is only one game in town, you have surely a bad thing going. Okay, so we've flown from data to research to imaginative policy solutions to the next stage, which is there should be a public debate around these things. Okay, that there should be vibrant public debate where many people are arguing in a free and frank manner. And this basically comes out of both the strength of the intellectual community and you know the number of thinkers that you have in the country and the freedom of speech. Because if you have a chilling Environment where freedom of speech is proscribed, then people will just shrug and you know, they will pursue their own self-interest and let it go. Like why fight? If I'll get into trouble, why will I complain? So what you need is a cantankerous complaining environment in the public sphere where people are vigorously contesting ideas and criticizing the status quo. If you don't criticize the world, how will you ever make it better? Okay, so that is part four that we need a vigorous public debate. Okay, and this leads to many, many policy proposals which are starting to bubble up. And this is where the phrase overturn window comes up that you need to widen the overturn window that more and more people need to become comfortable that yeah, you know, X is a decent idea, it should be considered, or some part of X needs to be taken in. At this point, generally in India or in the India of old, when we were a kinder, gentler policy environment, there would often be a government expert committee. The job of government expert committees was to sift through this debate and examine rival views and find a middle road and mainstream a certain consensus. So again and again, government committee reports have listened to a debate and have generally supported more heretical ideas and made them more normal. Okay. So the job of government committees is that you need wise people, older people, people with the with two feet. one foot in the intellectual world, one foot in the establishment, in the world of doing, who are able to listen to these debates and shortlist some feasible solutions and to help legitimize and make acceptable some of the more unusual ideas that were otherwise seen as oh that is too radical, that could never be done, that is so",
       "words": [
         {
           "word": "So",
@@ -49077,21 +48837,21 @@
           "startTime": 2756.62,
           "endTime": 2756.78,
           "confidence": 0.9994
-        },
-        {
-          "word": "new.",
-          "startTime": 2756.78,
-          "endTime": 2757.19,
-          "confidence": 0.9502
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2757.47,
+      "startTime": 2756.78,
       "endTime": 2824.41,
-      "text": "I want to quickly for our gentle readers demystify the term the Overton window for those who may not have heard it before. The Overton window essentially is that you know is how you define and how you look at what is acceptable within the discourse today. Uh that you can uh you know, you can go to this extreme and that extreme and that is your overton window, but you can't go on that side or this side. Those are really extreme views. And what uh the phrase comes from shifting the overton window is where you gradually shift the bounds of what is acceptable discourse. more and more to one side. For example, thirty years ago, you know, gay marriage would not be on the agenda. It was completely outside the Overton window. Today, thank God it is, and some day it might uh you know, even be just commonplace and b uh one w there would be no debate about it at all. Similarly I often joke with people that I shifted the Overton window of duration and podcasts. Because once I started doing my five hours, six hours episodes, you know, peop people thought it's okay, we can now do two hours, three hours, and so on. Back in the day when I started, one hour was considered a deep dive. But now one hour is like a miniature. So I will take credit for that, but continue.",
+      "text": "new. I want to quickly for our gentle readers demystify the term the Overton window for those who may not have heard it before. The Overton window essentially is that you know is how you define and how you look at what is acceptable within the discourse today. Uh that you can uh you know, you can go to this extreme and that extreme and that is your overton window, but you can't go on that side or this side. Those are really extreme views. And what uh the phrase comes from shifting the overton window is where you gradually shift the bounds of what is acceptable discourse. more and more to one side. For example, thirty years ago, you know, gay marriage would not be on the agenda. It was completely outside the Overton window. Today, thank God it is, and some day it might uh you know, even be just commonplace and b uh one w there would be no debate about it at all. Similarly I often joke with people that I shifted the Overton window of duration and podcasts. Because once I started doing my five hours, six hours episodes, you know, peop people thought it's okay, we can now do two hours, three hours, and so on. Back in the day when I started, one hour was considered a deep dive. But now one hour is like a miniature. So I will take credit for that, but continue.",
       "words": [
+        {
+          "word": "new.",
+          "startTime": 2756.78,
+          "endTime": 2757.19,
+          "confidence": 0.9502
+        },
         {
           "word": "I",
           "startTime": 2757.47,
@@ -50549,8 +50309,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2825.15,
-      "endTime": 2897.04,
-      "text": "After the stage of the public debate, you come to the government committee reports, and then you come to decisions. Most important decisions are encoded into laws. In a good country, Elected legislators write laws. In a bad country, the joint secretary writes the law. But any which way, these are the people who own the country. And you know, so the in the Indian administrative state, legislators don't do much. It is the joint secretary that drafts the law. So all these inputs go to that internal decision process and some decisions are made. And finally, you want to come to the implementation stage. In the implementation stage, two things happen. An idea is translated into a law. So, for example, it is one thing to think inflation targeting, it is another to turn it into a law. It is one thing to think new pension system, it is another to turn it into a law. Okay, so as an aside my personal journey, I thought about the new pension system, but at the time I was clueless and I did not know what it meant in terms of its legal scaffolding. So while I was a spectator while the law was being drafted, I actually didn't know anything. I was clueless. By the time we got to inflate, I had the full legal knowledge. So I was able to walk that full mapping from monetary economics to the",
+      "endTime": 3127.92,
+      "text": "After the stage of the public debate, you come to the government committee reports, and then you come to decisions. Most important decisions are encoded into laws. In a good country, Elected legislators write laws. In a bad country, the joint secretary writes the law. But any which way, these are the people who own the country. And you know, so the in the Indian administrative state, legislators don't do much. It is the joint secretary that drafts the law. So all these inputs go to that internal decision process and some decisions are made. And finally, you want to come to the implementation stage. In the implementation stage, two things happen. An idea is translated into a law. So, for example, it is one thing to think inflation targeting, it is another to turn it into a law. It is one thing to think new pension system, it is another to turn it into a law. Okay, so as an aside my personal journey, I thought about the new pension system, but at the time I was clueless and I did not know what it meant in terms of its legal scaffolding. So while I was a spectator while the law was being drafted, I actually didn't know anything. I was clueless. By the time we got to inflate, I had the full legal knowledge. So I was able to walk that full mapping from monetary economics to the drafting of a certain agreement to the drafting of a law. By that time I had the knowledge of how to draft a law. The last step in implementation is the organization design. That if a law has been drafted, how will you build a government organization? that will actually meaningfully be able to discharge this law. By default, a government organization is just a waste of money and random casual attacks on private people using coercive power. How do you not do that? How do you create efficiency? How do you create accountability? How do you create checks and balances? How do you create a government organization that will actually deliver on the objectives of a law? That is the last stage of the implementation. So this then is the policy pipeline. How does the state change? It changes in every field through a journey of data research, imaginative people who dream of rival solutions of which are the market failures and how can they be efficiently addressed, a public debate around these rival solutions, an internal government committee process and a decision process through which more and more novel ideas. Get normalized and legitimized and turn into decisions, and an implementation phase of drafting laws and designing government organizations that will implement laws. And as you can see, this is a wildly heterogeneous range of knowledge. Data is a knowledge of how to measure, how to build a statistical system, how to observe. Research is knowledge of statistics, economics, other social sciences. Imagining policy solutions is really public policy, public administration knowledge. Public debate is the podcasters and YouTubers of the world and the op ed writers of the world. Government committees is a mix of high intellectualism and real-world knowledge about how government works and how the world works. Then you get to the Indian administrative state where the joint secretary writes the law. That's a different skill. Then there is The drafting of law. That's a different skill. Okay. So to understand the idea of inflation targeting and to accurately draft a well-drafted law to do that is exotic skill in India. Most drafting of laws in India is really poorly done. Most lawyers in India don't know how to draft law. And then you get to the organization design, organization behavior of how to design an organization, how to get the management system of an organization right. This is closer to like organization design work that like a pain consulting or a McKinsey would do. Okay. All this knowledge adds up to the knowledge of how the state works and what is the process of change in the state. And there is no running away from this pipeline. If you don't have the data, you don't have the research. If you don't have the research, you are just proposing solutions based on your political preferences and not on understanding of the world. If you don't have multiple rival solutions, there can be no public debate. If you don't have freedom of speech, if you don't have thinkers, there can be no public debate. If there is no vibrant public debate, there was no competitive marketplace of ideas, and then some shabby ideas will come through to the government committee process. If you don't have a government committee process, you will not have that nurturing of radical ideas and normalizing them, of sifting through debates and coming up with a governmentish agreement that you know one, two, three are feasible ideas. And if all this does not go to the joint secretary who has to write a law, then she will write a bad law. Okay, and if you don't know how to draft laws well, you'll get shabby laws and it dies there. And if you don't know how to build organizations properly that will have check and balance, it dies there. All this is needed and it runs from left to right. So Does it take twenty five years? Yes, but there is no other way. Let",
       "words": [
         {
           "word": "After",
@@ -51991,15 +51751,7 @@
           "startTime": 2896.88,
           "endTime": 2897.04,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2897.04,
-      "endTime": 2898.64,
-      "text": "drafting of a",
-      "words": [
+        },
         {
           "word": "drafting",
           "startTime": 2897.04,
@@ -52017,15 +51769,7 @@
           "startTime": 2898.4,
           "endTime": 2898.64,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2898.64,
-      "endTime": 3127.28,
-      "text": "certain agreement to the drafting of a law. By that time I had the knowledge of how to draft a law. The last step in implementation is the organization design. That if a law has been drafted, how will you build a government organization? that will actually meaningfully be able to discharge this law. By default, a government organization is just a waste of money and random casual attacks on private people using coercive power. How do you not do that? How do you create efficiency? How do you create accountability? How do you create checks and balances? How do you create a government organization that will actually deliver on the objectives of a law? That is the last stage of the implementation. So this then is the policy pipeline. How does the state change? It changes in every field through a journey of data research, imaginative people who dream of rival solutions of which are the market failures and how can they be efficiently addressed, a public debate around these rival solutions, an internal government committee process and a decision process through which more and more novel ideas. Get normalized and legitimized and turn into decisions, and an implementation phase of drafting laws and designing government organizations that will implement laws. And as you can see, this is a wildly heterogeneous range of knowledge. Data is a knowledge of how to measure, how to build a statistical system, how to observe. Research is knowledge of statistics, economics, other social sciences. Imagining policy solutions is really public policy, public administration knowledge. Public debate is the podcasters and YouTubers of the world and the op ed writers of the world. Government committees is a mix of high intellectualism and real-world knowledge about how government works and how the world works. Then you get to the Indian administrative state where the joint secretary writes the law. That's a different skill. Then there is The drafting of law. That's a different skill. Okay. So to understand the idea of inflation targeting and to accurately draft a well-drafted law to do that is exotic skill in India. Most drafting of laws in India is really poorly done. Most lawyers in India don't know how to draft law. And then you get to the organization design, organization behavior of how to design an organization, how to get the management system of an organization right. This is closer to like organization design work that like a pain consulting or a McKinsey would do. Okay. All this knowledge adds up to the knowledge of how the state works and what is the process of change in the state. And there is no running away from this pipeline. If you don't have the data, you don't have the research. If you don't have the research, you are just proposing solutions based on your political preferences and not on understanding of the world. If you don't have multiple rival solutions, there can be no public debate. If you don't have freedom of speech, if you don't have thinkers, there can be no public debate. If there is no vibrant public debate, there was no competitive marketplace of ideas, and then some shabby ideas will come through to the government committee process. If you don't have a government committee process, you will not have that nurturing of radical ideas and normalizing them, of sifting through debates and coming up with a governmentish agreement that you know one, two, three are feasible ideas. And if all this does not go to the joint secretary who has to write a law, then she will write a bad law. Okay, and if you don't know how to draft laws well, you'll get shabby laws and it dies there. And if you don't know how to build organizations properly that will have check and balance, it dies there. All this is needed and it runs from left to right. So Does it take twenty five years? Yes, but there is no other",
-      "words": [
+        },
         {
           "word": "certain",
           "startTime": 2898.64,
@@ -56033,15 +55777,7 @@
           "startTime": 3127.12,
           "endTime": 3127.28,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3127.28,
-      "endTime": 3151.06,
-      "text": "way. Let me ask a provocative question. When I think of the ninety one reforms. Even if you know some of these ideas were in the pipeline and were being discussed by all the reformers we spoke up in the reformers episode, there was no public consultation. In fact, it all happened fairly quickly, and um and and so on and so forth. And a lot of the good reforms actually have happened fairly quickly without going through all these stages. I don't agree.",
-      "words": [
+        },
         {
           "word": "way.",
           "startTime": 3127.28,
@@ -56053,7 +55789,15 @@
           "startTime": 3127.76,
           "endTime": 3127.92,
           "confidence": 0.8835
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3127.92,
+      "endTime": 3151.06,
+      "text": "me ask a provocative question. When I think of the ninety one reforms. Even if you know some of these ideas were in the pipeline and were being discussed by all the reformers we spoke up in the reformers episode, there was no public consultation. In fact, it all happened fairly quickly, and um and and so on and so forth. And a lot of the good reforms actually have happened fairly quickly without going through all these stages. I don't agree.",
+      "words": [
         {
           "word": "me",
           "startTime": 3127.92,
@@ -59115,8 +58859,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3296.5,
-      "endTime": 3298.02,
-      "text": "So far, I was talking about the",
+      "endTime": 3346.78,
+      "text": "So far, I was talking about the state. But we began this episode saying no, the people actually are more important. The society is more important. Okay, we should not get wired into the statism. Okay. The I said that. The greatest problem of the modern world is the role of spectacle, that whether it is celebrities or governments, they have an ability to hijack our minds, and it is our job to be self-conscious and to push back. Okay and the state has a very high footprint in our life, but actually it is the people that matter more. All the wealth is created by the people, all the art is created by the people. all the truth and the beauty and the creativity lies in the people. I mean the state can ideally help ensure that there is safety in the streets, and sometimes it does not even do that. They",
       "words": [
         {
           "word": "So",
@@ -59159,15 +58903,7 @@
           "startTime": 3297.78,
           "endTime": 3298.02,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3298.02,
-      "endTime": 3299.62,
-      "text": "state. But",
-      "words": [
+        },
         {
           "word": "state.",
           "startTime": 3298.02,
@@ -59179,15 +58915,7 @@
           "startTime": 3299.14,
           "endTime": 3299.62,
           "confidence": 0.9358
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3299.62,
-      "endTime": 3322.1,
-      "text": "we began this episode saying no, the people actually are more important. The society is more important. Okay, we should not get wired into the statism. Okay. The I said that. The greatest problem of the modern world is the role of spectacle, that whether it is celebrities or governments, they have an ability to hijack our minds, and it is our job to be self-conscious",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 3299.62,
@@ -59583,15 +59311,7 @@
           "startTime": 3321.3,
           "endTime": 3322.1,
           "confidence": 0.9833
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3322.1,
-      "endTime": 3323.86,
-      "text": "and to push back. Okay",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 3322.1,
@@ -59621,15 +59341,7 @@
           "startTime": 3323.3,
           "endTime": 3323.86,
           "confidence": 0.6774
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3323.86,
-      "endTime": 3346.78,
-      "text": "and the state has a very high footprint in our life, but actually it is the people that matter more. All the wealth is created by the people, all the art is created by the people. all the truth and the beauty and the creativity lies in the people. I mean the state can ideally help ensure that there is safety in the streets, and sometimes it does not even do that. They",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 3323.86,
@@ -64269,8 +63981,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3582.1,
-      "endTime": 3675.31,
-      "text": "time. So you know, right after this recording, I am going to ask you for ten diet cooks. So you change your views by ten percent and give me one. Isn't that cunning of me? Sojay, I have another question for you. There is um uh s a sort of a famous quote that I love coming back to from Kashikasi by Kashinath Singh and I'll give the family friendly version of it here, where he says Bharma Jay Dunya, Ham Bajai Harmonia. Right, and the essence of that is the world is going to hell, but I'm going to play my harmonium. That is, I'm going to do what is good for me. I'm going to you know, all the beautiful things that you speak of art, beauty, creativity, cinema, literature I'm gonna indulge in all of it, I'm gonna make sure I'm prosperous, my loved ones have a good life. Why should I care about the world? When progress cannot be taken for granted, when so much effort comes to naught, why should I dedicate my life to something where uh you know you only have one life, which is an uh a scarcity you can not do anything about. Now one way of thinking about that is that people who are inclined to be like that, and I often am sometimes when I look at the state of the world, there's nothing you can say to them. What you can say t b who you can address, Are the people who have that sense of purpose who are saying that I want to make a change, but I want to figure out. I don't want to, you know, every day I have fifty reasons to get disheartened. How do I continue? What can I do? So um I'd like your thoughts on that. Yeah.",
+      "endTime": 3633.41,
+      "text": "time. So you know, right after this recording, I am going to ask you for ten diet cooks. So you change your views by ten percent and give me one. Isn't that cunning of me? Sojay, I have another question for you. There is um uh s a sort of a famous quote that I love coming back to from Kashikasi by Kashinath Singh and I'll give the family friendly version of it here, where he says Bharma Jay Dunya, Ham Bajai Harmonia. Right, and the essence of that is the world is going to hell, but I'm going to play my harmonium. That is, I'm going to do what is good for me. I'm going to you know, all the beautiful things that you speak of art, beauty, creativity, cinema, literature I'm gonna indulge in all of it, I'm gonna make sure I'm prosperous, my loved ones have a good life. Why should I care about the world? When progress cannot",
       "words": [
         {
           "word": "time.",
@@ -65243,7 +64955,15 @@
           "startTime": 3633.09,
           "endTime": 3633.41,
           "confidence": 0.9772
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 3633.41,
+      "endTime": 3633.97,
+      "text": "be taken for",
+      "words": [
         {
           "word": "be",
           "startTime": 3633.41,
@@ -65261,7 +64981,15 @@
           "startTime": 3633.81,
           "endTime": 3633.97,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3633.97,
+      "endTime": 3659.79,
+      "text": "granted, when so much effort comes to naught, why should I dedicate my life to something where uh you know you only have one life, which is an uh a scarcity you can not do anything about. Now one way of thinking about that is that people who are inclined to be like that, and I often am sometimes when I look at the state of the world, there's nothing you can say to them. What you can say t b who you can address, Are the people who have that sense of purpose who are saying",
+      "words": [
         {
           "word": "granted,",
           "startTime": 3633.97,
@@ -65843,7 +65571,15 @@
           "startTime": 3659.63,
           "endTime": 3659.79,
           "confidence": 0.9994
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 3659.79,
+      "endTime": 3661.23,
+      "text": "that I want to make",
+      "words": [
         {
           "word": "that",
           "startTime": 3659.79,
@@ -65873,7 +65609,15 @@
           "startTime": 3661.07,
           "endTime": 3661.23,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3661.23,
+      "endTime": 3674.67,
+      "text": "a change, but I want to figure out. I don't want to, you know, every day I have fifty reasons to get disheartened. How do I continue? What can I do? So um I'd like your thoughts on that.",
+      "words": [
         {
           "word": "a",
           "startTime": 3661.23,
@@ -66107,21 +65851,21 @@
           "startTime": 3674.35,
           "endTime": 3674.67,
           "confidence": 0.8408
-        },
-        {
-          "word": "Yeah.",
-          "startTime": 3674.67,
-          "endTime": 3675.31,
-          "confidence": 0.7993
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 3675.31,
+      "startTime": 3674.67,
       "endTime": 3680.91,
-      "text": "Um You may not be interested in the dialectic, but the dialectic is interested in",
+      "text": "Yeah. Um You may not be interested in the dialectic, but the dialectic is interested in",
       "words": [
+        {
+          "word": "Yeah.",
+          "startTime": 3674.67,
+          "endTime": 3675.31,
+          "confidence": 0.7993
+        },
         {
           "word": "Um",
           "startTime": 3675.31,
@@ -66327,8 +66071,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3687.86,
-      "endTime": 3847.22,
-      "text": "You may not be interested in the world, but the world is interested in you. There you go. Okay. So first I just want to paint a plain self-interest that you have skin in the game because you and your loved ones are in this world. You and your loved ones are in this society. And if the world goes to hell, you will lead a terrible life. Okay. So if you were in uh Weimar, Germany in 1918, your number one job was to try to stave off uh the nationalists and in 1933, when the election results came out and Hitler won, your job was to take you and your loved ones and run away from the country. Okay. So this is sheer self-interest that you want to know about the world, you want to understand the world, you want to have a theory about the world. And if you don't have a theory about the world, you will just be one of the people that will get crushed when terrible things happen in the world. So I will start by saying that you may not have any great. altruism reaching out beyond yourself and your loved ones. But still it is efficient to know about the world. It is efficient to care about the world. It is efficient to know politics and form a theory of the world so that you will know in 1933 it is time to leave. And it is efficient to expend stupendous amounts of time and effort on staving off the horrors of what is happening in the world today. So that's my answer to the cynic. But let's turn to the uh next part of it, which is how? Like what can you do? Um I feel that a lot of genuinely good, sensible, idealistic people are uh making the mistake of burning out too quickly by going and banging their head against some mad bugger's wall and having their skull smashed in the process. And that doesn't work. And part of that, one of the reasons for that is because they have the wrong theory of change. If you believe in the idea of progress, if you believe the world is going to get better, then You feel like look, let's just pitch in and push and it'll get fixed. And I'm saying, no, be cautious. Like think more about what is the world that you operate in. That go to neither of the two extremes, that do not smash your head against that mad bugger's wall, but do you do not recede into apathy. And as I said, even if you have zero altruism in your heart, you have self-interest. And self-interest means you have to understand the world, the society, the politics, the state, because you are a little bread crumb in the eyes of that society and that state, and they will chew you over if you don't act and if you don't think and make plans and decide. So I feel the first step is to think deeply about",
+      "endTime": 4144.56,
+      "text": "You may not be interested in the world, but the world is interested in you. There you go. Okay. So first I just want to paint a plain self-interest that you have skin in the game because you and your loved ones are in this world. You and your loved ones are in this society. And if the world goes to hell, you will lead a terrible life. Okay. So if you were in uh Weimar, Germany in 1918, your number one job was to try to stave off uh the nationalists and in 1933, when the election results came out and Hitler won, your job was to take you and your loved ones and run away from the country. Okay. So this is sheer self-interest that you want to know about the world, you want to understand the world, you want to have a theory about the world. And if you don't have a theory about the world, you will just be one of the people that will get crushed when terrible things happen in the world. So I will start by saying that you may not have any great. altruism reaching out beyond yourself and your loved ones. But still it is efficient to know about the world. It is efficient to care about the world. It is efficient to know politics and form a theory of the world so that you will know in 1933 it is time to leave. And it is efficient to expend stupendous amounts of time and effort on staving off the horrors of what is happening in the world today. So that's my answer to the cynic. But let's turn to the uh next part of it, which is how? Like what can you do? Um I feel that a lot of genuinely good, sensible, idealistic people are uh making the mistake of burning out too quickly by going and banging their head against some mad bugger's wall and having their skull smashed in the process. And that doesn't work. And part of that, one of the reasons for that is because they have the wrong theory of change. If you believe in the idea of progress, if you believe the world is going to get better, then You feel like look, let's just pitch in and push and it'll get fixed. And I'm saying, no, be cautious. Like think more about what is the world that you operate in. That go to neither of the two extremes, that do not smash your head against that mad bugger's wall, but do you do not recede into apathy. And as I said, even if you have zero altruism in your heart, you have self-interest. And self-interest means you have to understand the world, the society, the politics, the state, because you are a little bread crumb in the eyes of that society and that state, and they will chew you over if you don't act and if you don't think and make plans and decide. So I feel the first step is to think deeply about this grim, realistic, difficult view of the world and pace yourself. So I feel it's important to find the moral philosophy of being able to stay engaged with these things for a long, long time. That you'll burn out if you try to quickly, and you'll burn out if you believe the world will rapidly get fixed. The world will not rapidly get fixed. And then you need staying power. So you need emotional endurance, and we need to have realistic expectations around what we can do, what we can achieve, and the kind of change that will happen in the world, and be realistic about it and not have crazy notions that I got X done. Okay. This is a vast world, it's a cast of thousands. And everybody matters and we matter and it is our job to be good and to chip away in that. So the first message that I feel all of us need to think about is the case for endurance. The highest superpower is the ability to keep going. And that is related to don't ask for anything, don't ask for a reward, don't ask for success. The people that try to be transactional about it that look, I put in so much effort, this should happen. Hey, screw you, you are nothing. Like you are nobody. You have no right to ask anything. Yeah. So then do things in a non purposive way and say, look, this is my dharma, this is my responsibility. I'm obliged to put in the effort. Beyond that, you know what results will come out? One can't control, one can't predict, you know, we are all pebbles in the avalanche and we have to rescale ourselves to accept failure and defeat and bad outcomes. It's part of the world. And then don't be em embittered and then don't get angry and don't turn around and exit that space. So that's the environment of sanity and care that don't ask for anything in return and rescale your mind and find the emotion capacity to be able to keep going for a long, long time. Then on this subject I think that it's very important to find fellow travelers. I feel we in the Indian elite are still at the early stages of understanding the word community. We're still at the early stages of developing community. We're still at a crude credentialist transactional stage of you know some people kind of peripherally knowing each other. A big project is developing the bonds of values and trust and the depth of relationships where people actually know each other and actually trust each other and will be good to each other, will be kind to each other. This community project is supremely important. And you know, we each of us we need our fellow travelers through which we'll be able to play this journey for a long, long time. And you know, there will be ups and downs, and we should practice the Western way of war, which is that you always take the war diaries and turn around and write histories and celebrate the successes and excoriate the failures and cry together about the failures and keep going. You don't collapse. In a mess, and you don't do silly triumphalism that oh we are so great, oh we are so great. You know, you've got to honestly diagnose problems and talk about failures with each other, meaning you have to be the person that tells me that I'm full of shit. That's the only way it'll ever work. You know, so in our closest communities, we need to build the world of truth, the world of trust. But we are able to honestly talk to each other and dispassionately look back. Look, we tried something, we were wrong. We went about it like this. That was wrong. We should have done this differently. If I could go back and do that differently, how would I do it differently? I feel that's a really great question. We should ask ourselves that kind of question all the time. That if I could write a letter that went in a time machine to the me of a certain year, what would I say? That's a great exercise in introspection because it forces us to think, what did I do? Because by default, we are all trapped in ourselves. You know, we have our egos are saying, Oh, I did everything right. The world did everything wrong. I was perfect. I did the right things. It's very important to say, look, I'm giving you a bloody time machine. Write a letter to yourself. What will you do differently? Suddenly, you know, it wakes up the mind that you know what, X was a mistake, we should have done this differently. Great, keep going. Tell me about the 16 mistakes. And you know, with hindsight you'll realize almost everything we do is wrong. And you know, only out of that doing and that debate and discourse and a lot of crying, you'll come to the conclusion that yeah, we should have done many things differently. And that is the engine of knowledge. That is the journey to knowledge. When we get into these feedback loops of doing something, failing, discussing, debating, understanding, then we as individuals, we as a community become stronger and in the future we are able to act better, we are able to think better. And that's a big missing link in India. We are a country where there is just too much childish triumphalism, Oh, I'm so great, I did this, this is so perfect, or this is so bad. There is no middle roads of discussion and argument and the subtlety of how would we have done things",
       "words": [
         {
           "word": "You",
@@ -69407,15 +69151,7 @@
           "startTime": 3846.58,
           "endTime": 3847.22,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3847.22,
-      "endTime": 3850.18,
-      "text": "this grim, realistic, difficult",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 3847.22,
@@ -69439,15 +69175,7 @@
           "startTime": 3849.54,
           "endTime": 3850.18,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3850.18,
-      "endTime": 3983.49,
-      "text": "view of the world and pace yourself. So I feel it's important to find the moral philosophy of being able to stay engaged with these things for a long, long time. That you'll burn out if you try to quickly, and you'll burn out if you believe the world will rapidly get fixed. The world will not rapidly get fixed. And then you need staying power. So you need emotional endurance, and we need to have realistic expectations around what we can do, what we can achieve, and the kind of change that will happen in the world, and be realistic about it and not have crazy notions that I got X done. Okay. This is a vast world, it's a cast of thousands. And everybody matters and we matter and it is our job to be good and to chip away in that. So the first message that I feel all of us need to think about is the case for endurance. The highest superpower is the ability to keep going. And that is related to don't ask for anything, don't ask for a reward, don't ask for success. The people that try to be transactional about it that look, I put in so much effort, this should happen. Hey, screw you, you are nothing. Like you are nobody. You have no right to ask anything. Yeah. So then do things in a non purposive way and say, look, this is my dharma, this is my responsibility. I'm obliged to put in the effort. Beyond that, you know what results will come out? One can't control, one can't predict, you know, we are all pebbles in the avalanche and we have to rescale ourselves to accept failure and defeat and bad outcomes. It's part of the world. And then don't be em embittered and then don't get angry and don't turn around and exit that space. So that's the environment of sanity and care that don't ask for anything in return and rescale your mind and find the emotion capacity to be able to keep going for a long, long time. Then on this subject I think that it's very important to find fellow travelers. I feel we in the Indian elite are still at the early stages of understanding the word community. We're still at the early stages of developing community. We're still at a crude credentialist transactional stage of you know some people kind of peripherally knowing",
-      "words": [
+        },
         {
           "word": "view",
           "startTime": 3850.18,
@@ -71907,15 +71635,7 @@
           "startTime": 3983.17,
           "endTime": 3983.49,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3983.49,
-      "endTime": 3985.25,
-      "text": "each other. A",
-      "words": [
+        },
         {
           "word": "each",
           "startTime": 3983.49,
@@ -71933,15 +71653,7 @@
           "startTime": 3985.01,
           "endTime": 3985.25,
           "confidence": 0.986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3985.25,
-      "endTime": 3997.73,
-      "text": "big project is developing the bonds of values and trust and the depth of relationships where people actually know each other and actually trust each other and will be good to each other, will be kind to each",
-      "words": [
+        },
         {
           "word": "big",
           "startTime": 3985.25,
@@ -72169,15 +71881,7 @@
           "startTime": 3997.49,
           "endTime": 3997.73,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3997.73,
-      "endTime": 3999.57,
-      "text": "other. This community",
-      "words": [
+        },
         {
           "word": "other.",
           "startTime": 3997.73,
@@ -72195,15 +71899,7 @@
           "startTime": 3998.45,
           "endTime": 3999.57,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3999.57,
-      "endTime": 4144.56,
-      "text": "project is supremely important. And you know, we each of us we need our fellow travelers through which we'll be able to play this journey for a long, long time. And you know, there will be ups and downs, and we should practice the Western way of war, which is that you always take the war diaries and turn around and write histories and celebrate the successes and excoriate the failures and cry together about the failures and keep going. You don't collapse. In a mess, and you don't do silly triumphalism that oh we are so great, oh we are so great. You know, you've got to honestly diagnose problems and talk about failures with each other, meaning you have to be the person that tells me that I'm full of shit. That's the only way it'll ever work. You know, so in our closest communities, we need to build the world of truth, the world of trust. But we are able to honestly talk to each other and dispassionately look back. Look, we tried something, we were wrong. We went about it like this. That was wrong. We should have done this differently. If I could go back and do that differently, how would I do it differently? I feel that's a really great question. We should ask ourselves that kind of question all the time. That if I could write a letter that went in a time machine to the me of a certain year, what would I say? That's a great exercise in introspection because it forces us to think, what did I do? Because by default, we are all trapped in ourselves. You know, we have our egos are saying, Oh, I did everything right. The world did everything wrong. I was perfect. I did the right things. It's very important to say, look, I'm giving you a bloody time machine. Write a letter to yourself. What will you do differently? Suddenly, you know, it wakes up the mind that you know what, X was a mistake, we should have done this differently. Great, keep going. Tell me about the 16 mistakes. And you know, with hindsight you'll realize almost everything we do is wrong. And you know, only out of that doing and that debate and discourse and a lot of crying, you'll come to the conclusion that yeah, we should have done many things differently. And that is the engine of knowledge. That is the journey to knowledge. When we get into these feedback loops of doing something, failing, discussing, debating, understanding, then we as individuals, we as a community become stronger and in the future we are able to act better, we are able to think better. And that's a big missing link in India. We are a country where there is just too much childish triumphalism, Oh, I'm so great, I did this, this is so perfect, or this is so bad. There is no middle roads of discussion and argument and the subtlety of how would we have done things",
-      "words": [
+        },
         {
           "word": "project",
           "startTime": 3999.57,
@@ -76841,10 +76537,10 @@
       ]
     },
     {
-      "speaker": "Ajay Shah",
+      "speaker": "Amit Varma",
       "startTime": 4224.88,
-      "endTime": 4226.24,
-      "text": "I don't know.",
+      "endTime": 4245.3,
+      "text": "I don't know. Let me give you a clue. It is someone who achieved such spectacular, staggering things at a very young age that you would not imagine that someone like this is talking about perseverance and saying I'm not smart. And he's one of your heroes. No, I don't know. You have mentioned him in previous episodes. This is getting harder.",
       "words": [
         {
           "word": "I",
@@ -76863,15 +76559,7 @@
           "startTime": 4225.36,
           "endTime": 4226.24,
           "confidence": 0.9498
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4226.24,
-      "endTime": 4244.32,
-      "text": "Let me give you a clue. It is someone who achieved such spectacular, staggering things at a very young age that you would not imagine that someone like this is talking about perseverance and saying I'm not smart. And he's one of your heroes. No, I don't know. You have mentioned him in previous episodes. This",
-      "words": [
+        },
         {
           "word": "Let",
           "startTime": 4226.24,
@@ -77207,15 +76895,7 @@
           "startTime": 4244.08,
           "endTime": 4244.32,
           "confidence": 0.619
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4244.32,
-      "endTime": 4245.3,
-      "text": "is getting harder.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 4244.32,
@@ -77371,8 +77051,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4256.8,
-      "endTime": 4272.8,
-      "text": "So uh it is said of Einstein that at age sixteen, he put his mind to one problem where he started thinking that if I was riding a beam of light, what would the world look like? And he just stayed on that one problem for years and years, and one fine day he it reached special",
+      "endTime": 4271.52,
+      "text": "So uh it is said of Einstein that at age sixteen, he put his mind to one problem where he started thinking that if I was riding a beam of light, what would the world look like? And he just stayed on that one problem for years and years, and one fine day",
       "words": [
         {
           "word": "So",
@@ -77691,7 +77371,15 @@
           "startTime": 4271.2,
           "endTime": 4271.52,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4271.52,
+      "endTime": 4319.41,
+      "text": "he it reached special relativity. What a mind blowing question to begin with. And Confucius one said, It doesn't matter how slowly you go, as long as you don't stop. So which is another o to uh s sort of perseverance. And Vivian Green once said something beautiful where she said that don't wait for the storms to pass, learn to dance in the rain. You know, so how important is it to sort of um you know, what are the ways in which You've adjusted your own mindset. You had phases where you've been in government, you've been phases where you're out of government, you've been you had phases where, you know, you've been an insider, you've been an outsider. Um how have you so and and you've been in different parts of the ecosystem at different times. You know, how important is it to keep improvising? Because one part",
+      "words": [
         {
           "word": "he",
           "startTime": 4271.52,
@@ -77715,15 +77403,7 @@
           "startTime": 4272.4,
           "endTime": 4272.8,
           "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4272.8,
-      "endTime": 4325.99,
-      "text": "relativity. What a mind blowing question to begin with. And Confucius one said, It doesn't matter how slowly you go, as long as you don't stop. So which is another o to uh s sort of perseverance. And Vivian Green once said something beautiful where she said that don't wait for the storms to pass, learn to dance in the rain. You know, so how important is it to sort of um you know, what are the ways in which You've adjusted your own mindset. You had phases where you've been in government, you've been phases where you're out of government, you've been you had phases where, you know, you've been an insider, you've been an outsider. Um how have you so and and you've been in different parts of the ecosystem at different times. You know, how important is it to keep improvising? Because one part of perseverance is stick with it. Another part of perseverance is don't be rigid, look around, learn to dance in the rain.",
-      "words": [
+        },
         {
           "word": "relativity.",
           "startTime": 4272.8,
@@ -78605,13 +78285,29 @@
           "startTime": 4319.17,
           "endTime": 4319.41,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 4319.41,
+      "endTime": 4319.57,
+      "text": "of",
+      "words": [
         {
           "word": "of",
           "startTime": 4319.41,
           "endTime": 4319.57,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4319.57,
+      "endTime": 4325.99,
+      "text": "perseverance is stick with it. Another part of perseverance is don't be rigid, look around, learn to dance in the rain.",
+      "words": [
         {
           "word": "perseverance",
           "startTime": 4319.57,
@@ -80977,8 +80673,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4456.85,
-      "endTime": 4459.33,
-      "text": "Saj, what's your recommendation for this episode?",
+      "endTime": 4458.69,
+      "text": "Saj, what's your recommendation for this",
       "words": [
         {
           "word": "Saj,",
@@ -81015,21 +80711,21 @@
           "startTime": 4458.53,
           "endTime": 4458.69,
           "confidence": 0.9997
-        },
-        {
-          "word": "episode?",
-          "startTime": 4458.69,
-          "endTime": 4459.33,
-          "confidence": 0.9898
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 4459.33,
+      "startTime": 4458.69,
       "endTime": 4511.26,
-      "text": "Uh my recommendation for today is a book by James C. Scott, which is called Weapons of the Week. Okay, so uh I talked about how everything taught to us in childhood about the transition from a hunter gatherer life to an agricultural life was actually a terrible decline. That is modern thinking, and that's jointly in the book Against the Grain that we have recommended in this show before, and Weapons of the Week. So this whole vision that s states have emerged to tax and conscript the people. And for a lot of people it's better to say like hell no and keep the State away from their life. And this is there's more than a shadow of this in a large part of the Indian society, where people just want to keep far, far away from the government in any way, shape, or form.",
+      "text": "episode? Uh my recommendation for today is a book by James C. Scott, which is called Weapons of the Week. Okay, so uh I talked about how everything taught to us in childhood about the transition from a hunter gatherer life to an agricultural life was actually a terrible decline. That is modern thinking, and that's jointly in the book Against the Grain that we have recommended in this show before, and Weapons of the Week. So this whole vision that s states have emerged to tax and conscript the people. And for a lot of people it's better to say like hell no and keep the State away from their life. And this is there's more than a shadow of this in a large part of the Indian society, where people just want to keep far, far away from the government in any way, shape, or form.",
       "words": [
+        {
+          "word": "episode?",
+          "startTime": 4458.69,
+          "endTime": 4459.33,
+          "confidence": 0.9898
+        },
         {
           "word": "Uh",
           "startTime": 4459.33,
@@ -82183,8 +81879,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4531.01,
-      "endTime": 4534.93,
-      "text": "And Ametaras, what is your fun book recommendation for today?",
+      "endTime": 4534.21,
+      "text": "And Ametaras, what is your fun book recommendation for",
       "words": [
         {
           "word": "And",
@@ -82239,21 +81935,21 @@
           "startTime": 4534.05,
           "endTime": 4534.21,
           "confidence": 0.9997
-        },
-        {
-          "word": "today?",
-          "startTime": 4534.21,
-          "endTime": 4534.93,
-          "confidence": 0.8086
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 4534.93,
+      "startTime": 4534.21,
       "endTime": 4597.97,
-      "text": "I'm not sure it is fun, but nor is it, you know, related to our episode. It's not about the state and it's not about, you know, perseverance or anything um like that. My favourite living writer is this great short story writer called Alice Monroe. uh remarkable writer. You know, all her stories are really set in a particular province of Canada. But they capture the human condition so beautiful, that she's beloved all over the world, won the Nobel Prize a few years ago, just shows that literature everywhere speaks to everyone. And two particular books of short stories I will recommend are Runaway. and hate ship, courtship, friendship, love ship, marriage. Both are masterpieces. And uh my favorite short story of all time, perhaps, which is just magnificent, is uh the short story called The Bear Came Over the Mountain and we will link it from the show notes because it was published in the New Yorker and you can read it for free. Uh so again, you know, Move away from thought of the state and change and economics and politics and et cetera, et cetera, and just immerse yourself in a good work of fiction because every good work of fiction is about",
+      "text": "today? I'm not sure it is fun, but nor is it, you know, related to our episode. It's not about the state and it's not about, you know, perseverance or anything um like that. My favourite living writer is this great short story writer called Alice Monroe. uh remarkable writer. You know, all her stories are really set in a particular province of Canada. But they capture the human condition so beautiful, that she's beloved all over the world, won the Nobel Prize a few years ago, just shows that literature everywhere speaks to everyone. And two particular books of short stories I will recommend are Runaway. and hate ship, courtship, friendship, love ship, marriage. Both are masterpieces. And uh my favorite short story of all time, perhaps, which is just magnificent, is uh the short story called The Bear Came Over the Mountain and we will link it from the show notes because it was published in the New Yorker and you can read it for free. Uh so again, you know, Move away from thought of the state and change and economics and politics and et cetera, et cetera, and just immerse yourself in a good work of fiction because every good work of fiction is about",
       "words": [
+        {
+          "word": "today?",
+          "startTime": 4534.21,
+          "endTime": 4534.93,
+          "confidence": 0.8086
+        },
         {
           "word": "I'm",
           "startTime": 4534.93,

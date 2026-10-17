@@ -5,7 +5,7 @@
     "durationSeconds": 4143,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -229,8 +229,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 50.9,
-      "endTime": 68.82,
-      "text": "The word rolling today makes some sense to us because there were cans, there were canisters of film, and the physical machinery of uh movie photography involved those rotating cylinders. Today, all Uh video capture is digital, but",
+      "endTime": 95.8,
+      "text": "The word rolling today makes some sense to us because there were cans, there were canisters of film, and the physical machinery of uh movie photography involved those rotating cylinders. Today, all Uh video capture is digital, but these words just go on. So I was just thinking 100 years from now, thousand years from now, will these same terms be used? I'm reminded of a Jerry Purnell book, uh, The Mote in God's Eye, where uh they are talking to each other about the phrase 2020. And it's a world in which uh enough genetic engineering has taken place and everybody has perfect vision, but the phrase 2020 has persisted.",
       "words": [
         {
           "word": "The",
@@ -459,15 +459,7 @@
           "startTime": 68.5,
           "endTime": 68.82,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 68.82,
-      "endTime": 72.02,
-      "text": "these words just go on. So I was just thinking",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 68.82,
@@ -527,15 +519,7 @@
           "startTime": 71.22,
           "endTime": 72.02,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 72.02,
-      "endTime": 95.8,
-      "text": "100 years from now, thousand years from now, will these same terms be used? I'm reminded of a Jerry Purnell book, uh, The Mote in God's Eye, where uh they are talking to each other about the phrase 2020. And it's a world in which uh enough genetic engineering has taken place and everybody has perfect vision, but the phrase 2020 has persisted.",
-      "words": [
+        },
         {
           "word": "100",
           "startTime": 72.02,
@@ -1851,8 +1835,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 138.06,
-      "endTime": 152.46,
-      "text": "and perhaps when enough years go by, you'd be able to think from scratch. So think again, think of the metaphor, Steve Jobs idea of pinching on a screen. Is it something fundamentally human or you know, will it be gone",
+      "endTime": 154.94,
+      "text": "and perhaps when enough years go by, you'd be able to think from scratch. So think again, think of the metaphor, Steve Jobs idea of pinching on a screen. Is it something fundamentally human or you know, will it be gone a hundred years from now? And it's also interesting",
       "words": [
         {
           "word": "and",
@@ -2099,15 +2083,7 @@
           "startTime": 151.98,
           "endTime": 152.46,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 152.46,
-      "endTime": 192.38,
-      "text": "a hundred years from now? And it's also interesting how like in a sense a QWETI keyboard. Is almost like a random thing. That is not the optimal way of arranging uh uh keys for typing. But that has now become the default because once you've set a particular way of doing something, once you've set a convention, we're kind of stuck there. And that's a relatively harmless way. But I think of more harmful ways, and it's something I'm uh I want to expand on in detail as you know, perhaps at book length, but about how we are stuck often in sort of uh forms of the past, even though uh those forms originated because of particular reasons and we've now outgrown them. But that is a subject for uh perhaps more episodes uh down the line.",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 152.46,
@@ -2161,7 +2137,15 @@
           "startTime": 154.62,
           "endTime": 154.94,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 154.94,
+      "endTime": 192.38,
+      "text": "how like in a sense a QWETI keyboard. Is almost like a random thing. That is not the optimal way of arranging uh uh keys for typing. But that has now become the default because once you've set a particular way of doing something, once you've set a convention, we're kind of stuck there. And that's a relatively harmless way. But I think of more harmful ways, and it's something I'm uh I want to expand on in detail as you know, perhaps at book length, but about how we are stuck often in sort of uh forms of the past, even though uh those forms originated because of particular reasons and we've now outgrown them. But that is a subject for uh perhaps more episodes uh down the line.",
+      "words": [
         {
           "word": "how",
           "startTime": 154.94,
@@ -2947,8 +2931,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 192.38,
-      "endTime": 200.86,
-      "text": "Evolution shaped the optimal speed at which uh the human mind changes its models.",
+      "endTime": 223.5,
+      "text": "Evolution shaped the optimal speed at which uh the human mind changes its models. Okay, so the uh process of the world created a certain pace of change. And over a million years, over ten million years, uh there were certain optimizations that took place on how quickly you take to a new thing. Those features about us are deep and may well be like that for a long, long",
       "words": [
         {
           "word": "Evolution",
@@ -3033,15 +3017,7 @@
           "startTime": 199.9,
           "endTime": 200.86,
           "confidence": 0.9392
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 200.86,
-      "endTime": 204.46,
-      "text": "Okay, so the uh process of the",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 200.86,
@@ -3083,15 +3059,7 @@
           "startTime": 204.22,
           "endTime": 204.46,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 204.46,
-      "endTime": 210.38,
-      "text": "world created a certain pace of change. And over a million years, over ten million",
-      "words": [
+        },
         {
           "word": "world",
           "startTime": 204.46,
@@ -3181,15 +3149,7 @@
           "startTime": 209.98,
           "endTime": 210.38,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 210.38,
-      "endTime": 211.98,
-      "text": "years, uh",
-      "words": [
+        },
         {
           "word": "years,",
           "startTime": 210.38,
@@ -3201,15 +3161,7 @@
           "startTime": 211.34,
           "endTime": 211.98,
           "confidence": 0.9628
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 211.98,
-      "endTime": 219.82,
-      "text": "there were certain optimizations that took place on how quickly you take to a new thing. Those features about us are",
-      "words": [
+        },
         {
           "word": "there",
           "startTime": 211.98,
@@ -3335,15 +3287,7 @@
           "startTime": 219.5,
           "endTime": 219.82,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 219.82,
-      "endTime": 221.34,
-      "text": "deep and",
-      "words": [
+        },
         {
           "word": "deep",
           "startTime": 219.82,
@@ -3355,15 +3299,7 @@
           "startTime": 220.7,
           "endTime": 221.34,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 221.34,
-      "endTime": 223.5,
-      "text": "may well be like that for a long, long",
-      "words": [
+        },
         {
           "word": "may",
           "startTime": 221.34,
@@ -3437,8 +3373,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 228.7,
-      "endTime": 232.62,
-      "text": "So, Amit, tell us what is your cool idea for today? So,",
+      "endTime": 232.38,
+      "text": "So, Amit, tell us what is your cool idea for today?",
       "words": [
         {
           "word": "So,",
@@ -3505,21 +3441,21 @@
           "startTime": 231.74,
           "endTime": 232.38,
           "confidence": 0.852
-        },
-        {
-          "word": "So,",
-          "startTime": 232.38,
-          "endTime": 232.62,
-          "confidence": 0.9363
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 232.62,
-      "endTime": 626.35,
-      "text": "my cool idea, in a sense, uh has to do with uh why you and I spend so much time together and how odd it is that we are in Kharjat and not in some other city at this kind of uh moment in time, and how yet it is not surprising. Uh and I I I want to specifically think about how talent congregates in certain places like the software professionals in Silicon Valley, filmmakers in Bombay, all of that. But before that, I want to tell you a story. Um when uh a couple of years back when Abijit Banerji and Esther Duflo got the Nobel Prize with Michael Kramer, uh Abhijit's publishers at Juggernaut said, Why don't you fly to Delhi? He's just won the Nobel Prize, he can come on your podcast. Now he's coming on my podcast on the very week that I ha he had won the Nobel Prize would have been a big uh You know, it it would have been uh nice. So I said, Cool, I need two hours of his time. Those days I did two hour episodes. I I think I said I I I said I needed two or three hours. Um I asked for three hours, I said minimum two. They said no, no, he's very busy, he'll only give you one hour and so on and so forth. And I'll and I said no. So I turned down a Nobel Prize winner uh coming on the show. And my logic was that if I get just one hour. I will get to uh I I'll have to ask him the standard stuff about RCTs and all of that, etc., etc. But you give me two hours with him, three hours with him. And today of course I would insist on five hours or nothing. Uh if if I did that, I could go back to before I was born and to before he was born, uh, and talk about, for example, the nineteen sixties, when my father was a student in Presidency College and he was taught by Deepak Banerjee, who was Abhidit's father. And how much my father how highly my father used to think of Deepak Banerjee. And I could start there and then I could, you know, ask him about his dad, ask him about his years in Presidency College and later in GNU and later in Harvard and so on. And that's a kind of conversation I really love to have, where you can get a sense of the soul of a person and not reduce him down to one thing that they're in the public eye for. And I did write a column for Times of India on that. And the point I made in my column was really about talent and how um uh you know uh uh creative people and competent people and uh tend to congregate in certain clusters. And my reference for that was uh a paper written by one of uh Banerjee's um um uh co-Nobel Prize winners at the time, Michael Kremer. Now, a controversial point I made in that piece was that uh Banerjee had gone To Presidency College, then to JNU and then to Harvard. And my point was it was Howard that was critical for his development. And for that, I turned to Kramer's paper, which is a seminal 1993 paper called The Oring Theory of Economic Development. And Kramer in his paper takes the uh the example of the famous O-ring. Like in in the in the 1986 Challenger uh exploration, the disaster, the space shuttle that exploded, it was a $3.2 billion project. And the reason uh the shuttle exploded was because of a $10 O ring, you know? So One little flimsy $10 thing kind of uh failed to function the way it should and everything fell apart and etc. etc. And the point there is not the trivial point that you know your chain is as strong as his weakest link. Of course, we know that. There was a greater point in there about the interplay between talent, productivity, and wages, right? And Kremer gives an example of this, and I don't know how eloquent I'll be in describing this, so I'll we'll also link down to a marginal revolution video on this subject by Tyler Calvin, which is fantastic and which explains this in detail. But his point is this: let us say you have 10 people in a room who are all excellent and are performing at a level of excellence, which is 0.99, right? And then uh you look at their productivity when the 10 of them work together. At the end of that, what you have, if you sort of multiply by 10, which is what he was using for each of these calculations, you get a number of 9.05. If they are slightly less talented, if it's not 0.99 but 0.95, which is also incredibly talented, you get a total output of 5.99. And if they are 0.9, you know, uh uh better than 90% of humanity or whatever, if they are 0.9 each, you get 3.49. Right. So a small difference in talent leads to a massive difference in output and productivity and so on. And therefore the incentives are such that if you are a staggeringly um uh competent or qualified or talented person, you need to be around other staggeringly talented and qualified people to to get a full expression of um uh you know to get a full expression of your abilities. And uh a few episodes back in episode five, we spoke about Oppenheimer, right? Now Oppenheimer School, college, he's unhappy, he's not fitting in anywhere, tries to poison his physics teacher with uh uh you know, with putting some poison in an apple. And but then he goes to the un the University of Gottingen. He's taught by Max Bonn, who you coined the term quantum mechanics. He has classmates of the caliber of Dirac and John von Newman, and he goes to an entirely different level. And the whole point of this is that congregations of talent in a certain sense uh are inevitable because that's the way the incentives are aligned, and what it also means. is that someone who is at a skill level of 0.99 can get much can get paid twice or thrice someone at a skill level of 0.95. Because it appears that there isn't much of a difference. But there's a huge difference. This is especially so in two use cases. One is where the quality of the work matters more than the quantity. For example, if you want to write a great novel, you're better off with one great novelist than three mediocre novelists working together. And that's where quality comes in. And two, if you have a complicated task with, say, you know, 10,000 links in the chain, you don't need an O-ring anywhere. Everybody has to be absolutely top quality and performing well. And therefore, this is a one of the uh ways in which going to Harvard, for example, is important. I mean, of course, uh completely sympathize with the view that what these great colleges give you is really credentialism. I have been to Harvard. It it has a signaling effect. And of course they do sorting for bright minds to begin with. All of those things are true. But equally the value of going there is that they've selected for bright minds. You're meeting some of uh the finest minds out there wherever you are. Uh if you're lucky in a particular place in time like Gottingen, it can uh g you know just have an exponential explosion of talent and uh so on. And that's um uh uh uh one a reason that these kind of congregations happen and therefore as",
+      "startTime": 232.38,
+      "endTime": 810.54,
+      "text": "So, my cool idea, in a sense, uh has to do with uh why you and I spend so much time together and how odd it is that we are in Kharjat and not in some other city at this kind of uh moment in time, and how yet it is not surprising. Uh and I I I want to specifically think about how talent congregates in certain places like the software professionals in Silicon Valley, filmmakers in Bombay, all of that. But before that, I want to tell you a story. Um when uh a couple of years back when Abijit Banerji and Esther Duflo got the Nobel Prize with Michael Kramer, uh Abhijit's publishers at Juggernaut said, Why don't you fly to Delhi? He's just won the Nobel Prize, he can come on your podcast. Now he's coming on my podcast on the very week that I ha he had won the Nobel Prize would have been a big uh You know, it it would have been uh nice. So I said, Cool, I need two hours of his time. Those days I did two hour episodes. I I think I said I I I said I needed two or three hours. Um I asked for three hours, I said minimum two. They said no, no, he's very busy, he'll only give you one hour and so on and so forth. And I'll and I said no. So I turned down a Nobel Prize winner uh coming on the show. And my logic was that if I get just one hour. I will get to uh I I'll have to ask him the standard stuff about RCTs and all of that, etc., etc. But you give me two hours with him, three hours with him. And today of course I would insist on five hours or nothing. Uh if if I did that, I could go back to before I was born and to before he was born, uh, and talk about, for example, the nineteen sixties, when my father was a student in Presidency College and he was taught by Deepak Banerjee, who was Abhidit's father. And how much my father how highly my father used to think of Deepak Banerjee. And I could start there and then I could, you know, ask him about his dad, ask him about his years in Presidency College and later in GNU and later in Harvard and so on. And that's a kind of conversation I really love to have, where you can get a sense of the soul of a person and not reduce him down to one thing that they're in the public eye for. And I did write a column for Times of India on that. And the point I made in my column was really about talent and how um uh you know uh uh creative people and competent people and uh tend to congregate in certain clusters. And my reference for that was uh a paper written by one of uh Banerjee's um um uh co-Nobel Prize winners at the time, Michael Kremer. Now, a controversial point I made in that piece was that uh Banerjee had gone To Presidency College, then to JNU and then to Harvard. And my point was it was Howard that was critical for his development. And for that, I turned to Kramer's paper, which is a seminal 1993 paper called The Oring Theory of Economic Development. And Kramer in his paper takes the uh the example of the famous O-ring. Like in in the in the 1986 Challenger uh exploration, the disaster, the space shuttle that exploded, it was a $3.2 billion project. And the reason uh the shuttle exploded was because of a $10 O ring, you know? So One little flimsy $10 thing kind of uh failed to function the way it should and everything fell apart and etc. etc. And the point there is not the trivial point that you know your chain is as strong as his weakest link. Of course, we know that. There was a greater point in there about the interplay between talent, productivity, and wages, right? And Kremer gives an example of this, and I don't know how eloquent I'll be in describing this, so I'll we'll also link down to a marginal revolution video on this subject by Tyler Calvin, which is fantastic and which explains this in detail. But his point is this: let us say you have 10 people in a room who are all excellent and are performing at a level of excellence, which is 0.99, right? And then uh you look at their productivity when the 10 of them work together. At the end of that, what you have, if you sort of multiply by 10, which is what he was using for each of these calculations, you get a number of 9.05. If they are slightly less talented, if it's not 0.99 but 0.95, which is also incredibly talented, you get a total output of 5.99. And if they are 0.9, you know, uh uh better than 90% of humanity or whatever, if they are 0.9 each, you get 3.49. Right. So a small difference in talent leads to a massive difference in output and productivity and so on. And therefore the incentives are such that if you are a staggeringly um uh competent or qualified or talented person, you need to be around other staggeringly talented and qualified people to to get a full expression of um uh you know to get a full expression of your abilities. And uh a few episodes back in episode five, we spoke about Oppenheimer, right? Now Oppenheimer School, college, he's unhappy, he's not fitting in anywhere, tries to poison his physics teacher with uh uh you know, with putting some poison in an apple. And but then he goes to the un the University of Gottingen. He's taught by Max Bonn, who you coined the term quantum mechanics. He has classmates of the caliber of Dirac and John von Newman, and he goes to an entirely different level. And the whole point of this is that congregations of talent in a certain sense uh are inevitable because that's the way the incentives are aligned, and what it also means. is that someone who is at a skill level of 0.99 can get much can get paid twice or thrice someone at a skill level of 0.95. Because it appears that there isn't much of a difference. But there's a huge difference. This is especially so in two use cases. One is where the quality of the work matters more than the quantity. For example, if you want to write a great novel, you're better off with one great novelist than three mediocre novelists working together. And that's where quality comes in. And two, if you have a complicated task with, say, you know, 10,000 links in the chain, you don't need an O-ring anywhere. Everybody has to be absolutely top quality and performing well. And therefore, this is a one of the uh ways in which going to Harvard, for example, is important. I mean, of course, uh completely sympathize with the view that what these great colleges give you is really credentialism. I have been to Harvard. It it has a signaling effect. And of course they do sorting for bright minds to begin with. All of those things are true. But equally the value of going there is that they've selected for bright minds. You're meeting some of uh the finest minds out there wherever you are. Uh if you're lucky in a particular place in time like Gottingen, it can uh g you know just have an exponential explosion of talent and uh so on. And that's um uh uh uh one a reason that these kind of congregations happen and therefore as a policy You know, if you want to attract bright people, if you want to get great work out, then the focus is to figure out how to make this happen, how to get the incentives absolutely right. There's another uh there's a writer called Richard Florida who coined a term called the creative class. Now, his theory is also interesting and orthogonal to this, uh, doesn't draw from this. And Florida's uh coined the term called the creative class. I think his first book on this subject was an early 2000s book called Rise of the Creative Class. He wrote a couple of other books since. And his point was that economic growth follows. Creative uh congregation happens. So cities which are full of say entrepreneurs and um you know artists, filmmakers, uh poets and Gay people, lesbian people, where there is that kind of diversity, there is much more openness, there is a much greater flourishing of talent, and therefore the capital also comes there. Because again, one consequence of talent coming together is that capital then chases that talent, and then it becomes a virtuous cycle in that particular place, and equally it can become a vicious cycle in that particular place. So I I find all of this to be a great insight and it's aligned with a concept we spoke about the other day, the looking glass self, that we shape ourselves based on the reflections of others and the company we keep actually shapes who we are. And uh, you know, that is why that's why I like to sit with you, because it can only make me a better thinker and a better person. But that's also why it's it's vitally important why software engineers will tend to go to Silicon Valley and filmmakers will tend to come to Bombay. And there are network effects in play there as well. That, you know, all the entrepreneurs know that the best coders are in Silicon Valley, and all the best coders know that uh, you know, all the startups are going to be uh uh based there. So again, virtuous cycle in that particular place. And it's it's an important question for all of us to answer, especially in India. It's something important for us to think about. That, you know, we used to talk in earlier decades when I was growing up, a popular term was brain drain, that our kids will go to IIT and then they'll go abroad. And I think that's a great thing for those kids. They're all making individual rational choices. They should do that. The question then is that why are they having to go abroad? What can we do to create centers of excellence here so that people feel inspired, people feel happy? Like in a filmmaking sense, if you're filmmaking in India today and if you're Hindi speaking, you come to Bollywood, other languages you might go to the other centers. But you know, everybody is here. If you make a film, where do you go? Bombay is a logical place because that's where you can choose among the best editors, that's where there are the cheapest studios, that's where you can choose among the best technicians, everything is there. And that's how these congregations happen. And I think in India, and especially, you know, you've been in policy uh for so long, you've been in uh uh you know, worked with government for so long. And that's I think something that we need to get right. And right now we are having the opposite effect, frankly. We are chasing good people away. And the good people who do stay are staying in a sense almost despite the odds, and that's something we need to think about seriously. I have a few thoughts uh in",
       "words": [
+        {
+          "word": "So,",
+          "startTime": 232.38,
+          "endTime": 232.62,
+          "confidence": 0.9363
+        },
         {
           "word": "my",
           "startTime": 232.62,
@@ -11427,15 +11363,7 @@
           "startTime": 626.11,
           "endTime": 626.35,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 626.35,
-      "endTime": 628.66,
-      "text": "a policy You know, if you want to",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 626.35,
@@ -11483,15 +11411,7 @@
           "startTime": 628.5,
           "endTime": 628.66,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 628.66,
-      "endTime": 812.38,
-      "text": "attract bright people, if you want to get great work out, then the focus is to figure out how to make this happen, how to get the incentives absolutely right. There's another uh there's a writer called Richard Florida who coined a term called the creative class. Now, his theory is also interesting and orthogonal to this, uh, doesn't draw from this. And Florida's uh coined the term called the creative class. I think his first book on this subject was an early 2000s book called Rise of the Creative Class. He wrote a couple of other books since. And his point was that economic growth follows. Creative uh congregation happens. So cities which are full of say entrepreneurs and um you know artists, filmmakers, uh poets and Gay people, lesbian people, where there is that kind of diversity, there is much more openness, there is a much greater flourishing of talent, and therefore the capital also comes there. Because again, one consequence of talent coming together is that capital then chases that talent, and then it becomes a virtuous cycle in that particular place, and equally it can become a vicious cycle in that particular place. So I I find all of this to be a great insight and it's aligned with a concept we spoke about the other day, the looking glass self, that we shape ourselves based on the reflections of others and the company we keep actually shapes who we are. And uh, you know, that is why that's why I like to sit with you, because it can only make me a better thinker and a better person. But that's also why it's it's vitally important why software engineers will tend to go to Silicon Valley and filmmakers will tend to come to Bombay. And there are network effects in play there as well. That, you know, all the entrepreneurs know that the best coders are in Silicon Valley, and all the best coders know that uh, you know, all the startups are going to be uh uh based there. So again, virtuous cycle in that particular place. And it's it's an important question for all of us to answer, especially in India. It's something important for us to think about. That, you know, we used to talk in earlier decades when I was growing up, a popular term was brain drain, that our kids will go to IIT and then they'll go abroad. And I think that's a great thing for those kids. They're all making individual rational choices. They should do that. The question then is that why are they having to go abroad? What can we do to create centers of excellence here so that people feel inspired, people feel happy? Like in a filmmaking sense, if you're filmmaking in India today and if you're Hindi speaking, you come to Bollywood, other languages you might go to the other centers. But you know, everybody is here. If you make a film, where do you go? Bombay is a logical place because that's where you can choose among the best editors, that's where there are the cheapest studios, that's where you can choose among the best technicians, everything is there. And that's how these congregations happen. And I think in India, and especially, you know, you've been in policy uh for so long, you've been in uh uh you know, worked with government for so long. And that's I think something that we need to get right. And right now we are having the opposite effect, frankly. We are chasing good people away. And the good people who do stay are staying in a sense almost despite the odds, and that's something we need to think about seriously. I have a few thoughts uh in continuation of this.",
-      "words": [
+        },
         {
           "word": "attract",
           "startTime": 628.66,
@@ -15283,7 +15203,15 @@
           "startTime": 810.3,
           "endTime": 810.54,
           "confidence": 0.9983
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 810.54,
+      "endTime": 1302.38,
+      "text": "continuation of this. Um the multiplication that you were doing of One minus alpha raised to N. Um, it's very important to think about the problem that is at hand. At the other extreme, the entire concept of mass manufacturing uh with standardized parts was a way to solve that problem. A car contains 10,000 parts, but it works flawlessly because there is an extreme level of precision engineering that has gone into it. Each ball bearing is guaranteed to be inside very tight tolerances. So then it all becomes plug compatible, and then you can separate those pieces out. So I think that's an interesting insight that there's an analog and a digital. When you are in a digital world, it's extremely high precision, a one is a one and a zero is a zero. Uh uh ball bearing is a ball bearing, and there are no uh surprises in putting these things together. So I think that's one piece of the puzzle that we are able to. Achieve great ladders of complexity when we are guaranteed this plug compatibility. Uh in software, we do that a lot around creating APIs, and then there is an API call, and that damn thing had better just work. And I don't want to know how it was done. And that's how we uh protect ourselves from that complexity. So, this is the first thing to think about that the world is shades of gray. I think maybe a movie is an example of a problem where there are hundreds of people who come together. To build a movie and the relationships between each worker and each producer are highly imprecise and poorly defined. So that's the opposite of what I'm describing as a car or a tank or a plane where there are guaranteed components or in software where there is an API call and it has to work and it's testable, it's a black box. So then you can separate out two people and they don't need to talk to each other because there's a defined interface around which they will connect. My second idea is that there has been a great deal of improvement on cross-border collaboration on global teams. I have been part of many teams, so I want to tell you a funny story. Uh, my good friend Ahim Zaileis is a statistician in Vienna. Uh, he and Ila Patnaik and I wrote our first paper without having ever met. Okay, we just uh struck up a conversation over mailing lists and the internet. And we realized we were chasing different pieces of a correlated puzzle, and we came together to solve it. And we got a beautiful paper done, in my opinion, one of the nice papers of my life. And only later we met and we started talking, and it was great. But we got all the way to our first paper without even video calls, just on email and SVN. So we were collaborating on an internet scale, and we were able to do very interesting things. Now, in that I have two things to add, one that is fairly well known, one that is less known. The fairly well known is you do need human rapport. Okay. So I think all remote teams are doing this combination of meeting up occasionally and then going off into your cave and doing things alone. So the r play of distance work, of work from home, of people from India connecting up into global teams. There has been this evolution where Keep people come together and you've got to understand each other. And I've got to know that you will always talk trash and I've got to not get rattled and not get worried about the things that you say. And then I know that 15 seconds later you'll come back to a serious note. But if you've never met in person, humor is so dangerous it can just be misunderstood, or then we are all automatons, you know, we are writing uh horrible chat GPT language and it has no human flavor, which is also dull and uninteresting. My third uh comment in that is I feel that there are real limitations in contracting. So imagine if you break up a creative process into two parts. Part one is that you and I agree we're gonna work together and you know we are on the decision making process, the resource allocation process, the sharing that you will do this part, I will do this part. Okay. So there is a uh planning and management and uh an agreement stage where either orally or in writing, we're arriving at a contract. And then we will go off into our respective caves and implement. I think that the early stage really requires people to know each other and to trust each other. And I feel that today a lot of the magic Of London and New York and Cambridge, Massachusetts, lies in the fact that there are these congregations of people who are able to create coalitions of working together, either contractually or non-contractually. And then afterwards, the word work can happen in a more remote way and it can happen all over the world. So I just want to go back to the question of how daunting is it, how difficult is it for a person to build a life. Away from the uh uh areas of congregation. And I want to start at Ramanujan. Okay, so Ramanujan was in a remote corner of Tamil Nad, and then came his breakthrough, where he went to work with Hardy. And you cannot imagine the story of Ramanujan playing out without his going to Hardy. So that's one example where something amazing was built and developed by Ramanujan on his own. He did not become despondent. Saying that because I'm not at Cambridge, I can't create. Okay, Ramanujan started rebuilding the mathematics of the 19th century because he was completely cut off from the mathematics of the world. Okay, and then it did happen to him that he got connected into the mathematics of the 20th century. So that's an example where amazing things happened. At a distance. And then there are so many examples of people who have been away from the brainstream, uh, from the mainstream and have actually built themselves and fostered knowledge and innovation. One of the ideas at the University of Chicago in the early years was that because it was away from the great universities of the East Coast, it was actually able to foster independence of thinking and a distinctive point of view. And You know, a lot of the greatness of U Chicago in the 20th century came because it was not part of the fashion and there was greater room for free thinking. When you go to the humanities and the social sciences, it is particularly important to have authenticity in science, technology, engineering management in STEM. There is greater universality and People all over the world are pursuing similar problems. But when you come to understanding human beings and human society in the humanities and the social sciences, then being inside your subject and being closer to your subject matters greatly. So there again, I feel that it is enormously better to be in India and try to study in India. to try to study India rather than being far away, because your sources and materials are at hand. So I feel that being in India, you are constantly inside your subject matter and you're invisibly picking up knowledge every day. So I've had the occasion of being abroad uh for a variety of stints and I felt a certain emptiness coming about because I was away from my subject and my source matter. I think that there are many, many aspects where that congregation happens and is powerful, and yet we should not see it as make or break. There are many, many aspects in which actually there is plenty of upside and people will create, people will invent, and uh great things can happen almost",
+      "words": [
         {
           "word": "continuation",
           "startTime": 810.54,
@@ -15301,15 +15229,7 @@
           "startTime": 811.66,
           "endTime": 812.38,
           "confidence": 0.9271
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 812.38,
-      "endTime": 1221.73,
-      "text": "Um the multiplication that you were doing of One minus alpha raised to N. Um, it's very important to think about the problem that is at hand. At the other extreme, the entire concept of mass manufacturing uh with standardized parts was a way to solve that problem. A car contains 10,000 parts, but it works flawlessly because there is an extreme level of precision engineering that has gone into it. Each ball bearing is guaranteed to be inside very tight tolerances. So then it all becomes plug compatible, and then you can separate those pieces out. So I think that's an interesting insight that there's an analog and a digital. When you are in a digital world, it's extremely high precision, a one is a one and a zero is a zero. Uh uh ball bearing is a ball bearing, and there are no uh surprises in putting these things together. So I think that's one piece of the puzzle that we are able to. Achieve great ladders of complexity when we are guaranteed this plug compatibility. Uh in software, we do that a lot around creating APIs, and then there is an API call, and that damn thing had better just work. And I don't want to know how it was done. And that's how we uh protect ourselves from that complexity. So, this is the first thing to think about that the world is shades of gray. I think maybe a movie is an example of a problem where there are hundreds of people who come together. To build a movie and the relationships between each worker and each producer are highly imprecise and poorly defined. So that's the opposite of what I'm describing as a car or a tank or a plane where there are guaranteed components or in software where there is an API call and it has to work and it's testable, it's a black box. So then you can separate out two people and they don't need to talk to each other because there's a defined interface around which they will connect. My second idea is that there has been a great deal of improvement on cross-border collaboration on global teams. I have been part of many teams, so I want to tell you a funny story. Uh, my good friend Ahim Zaileis is a statistician in Vienna. Uh, he and Ila Patnaik and I wrote our first paper without having ever met. Okay, we just uh struck up a conversation over mailing lists and the internet. And we realized we were chasing different pieces of a correlated puzzle, and we came together to solve it. And we got a beautiful paper done, in my opinion, one of the nice papers of my life. And only later we met and we started talking, and it was great. But we got all the way to our first paper without even video calls, just on email and SVN. So we were collaborating on an internet scale, and we were able to do very interesting things. Now, in that I have two things to add, one that is fairly well known, one that is less known. The fairly well known is you do need human rapport. Okay. So I think all remote teams are doing this combination of meeting up occasionally and then going off into your cave and doing things alone. So the r play of distance work, of work from home, of people from India connecting up into global teams. There has been this evolution where Keep people come together and you've got to understand each other. And I've got to know that you will always talk trash and I've got to not get rattled and not get worried about the things that you say. And then I know that 15 seconds later you'll come back to a serious note. But if you've never met in person, humor is so dangerous it can just be misunderstood, or then we are all automatons, you know, we are writing uh horrible chat GPT language and it has no human flavor, which is also dull and uninteresting. My third uh comment in that is I feel that there are real limitations in contracting. So imagine if you break up a creative process into two parts. Part one is that you and I agree we're gonna work together and you know we are on the decision making process, the resource allocation process, the sharing that you will do this part, I will do this part. Okay. So there is a uh planning and management and uh an agreement stage where either orally or in writing, we're arriving at a contract. And then we will go off into our respective caves and implement. I think that the early stage really requires people to know each other and to trust each other. And I feel that today a lot of the magic Of London and New York and Cambridge, Massachusetts, lies in the fact that there are these congregations of people who are able to create coalitions of working together, either contractually or non-contractually. And then afterwards, the word work can happen in a more remote way and it can happen all over the world. So I just want to go back to the question of how daunting is it, how difficult is it for a person to build a life. Away from the uh uh areas of congregation. And I want to start at Ramanujan. Okay, so Ramanujan was in a remote corner of Tamil Nad, and then came his breakthrough, where he went to work with Hardy. And you cannot imagine the story of Ramanujan playing out without his going to Hardy. So that's one example where something amazing was built and developed by Ramanujan on his own. He did not become despondent. Saying that because I'm not at Cambridge, I can't create. Okay, Ramanujan started rebuilding the mathematics of the 19th century because he was completely cut off from the mathematics of the world. Okay, and then it did happen to him that he got connected into the mathematics of the 20th century. So that's an example where amazing things happened. At a distance. And then there are so many examples of people who have been away from the brainstream, uh, from the mainstream and have actually built themselves and fostered knowledge and innovation. One of the ideas at the University of Chicago in the early years was that because it was away from the great universities of the East Coast, it was actually able to foster independence of thinking and a distinctive point of view. And You know, a lot of the greatness of U Chicago in the 20th century came because it was not part of the fashion and there was greater room for free thinking. When you go to the humanities and the social sciences, it is particularly important to have",
-      "words": [
+        },
         {
           "word": "Um",
           "startTime": 812.38,
@@ -22251,15 +22171,7 @@
           "startTime": 1221.41,
           "endTime": 1221.73,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1221.73,
-      "endTime": 1223.97,
-      "text": "authenticity in",
-      "words": [
+        },
         {
           "word": "authenticity",
           "startTime": 1221.73,
@@ -22271,15 +22183,7 @@
           "startTime": 1223.33,
           "endTime": 1223.97,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1223.97,
-      "endTime": 1302.38,
-      "text": "science, technology, engineering management in STEM. There is greater universality and People all over the world are pursuing similar problems. But when you come to understanding human beings and human society in the humanities and the social sciences, then being inside your subject and being closer to your subject matters greatly. So there again, I feel that it is enormously better to be in India and try to study in India. to try to study India rather than being far away, because your sources and materials are at hand. So I feel that being in India, you are constantly inside your subject matter and you're invisibly picking up knowledge every day. So I've had the occasion of being abroad uh for a variety of stints and I felt a certain emptiness coming about because I was away from my subject and my source matter. I think that there are many, many aspects where that congregation happens and is powerful, and yet we should not see it as make or break. There are many, many aspects in which actually there is plenty of upside and people will create, people will invent, and uh great things can happen almost",
-      "words": [
+        },
         {
           "word": "science,",
           "startTime": 1223.97,
@@ -23467,8 +23371,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1302.38,
-      "endTime": 1481.95,
-      "text": "anywhere. So I have a Ramanujan like example, and in fact you were speaking earlier that you know you thought of Ramanujan because we last night over dinner we were discussing Vishyanand. Right. And Vish Anand is an outlier of that sort. And I use the term outlier carefully. Uh, let me I want to put in context for everyone who is sort of viewing this. Uh what a staggering mind and what a staggering genius Anand is in terms of what he actually managed to achieve. And to put that into perspective, let's talk about uh, you know, a system that was put together to have great minds congregate and learn in a systematic way, which was the Soviet school of chess. Right now, uh Uh decades ago there used to be a gentleman named Nikolai Khrilenko, who was a top Soviet functionary, who once said We must finish once and for all with the neutrality of chess. We must condemn once and for all the formula chess for the sake of chess, like the formula art for art sake. We must organize shock brigades of chess players and big begin immediate realization of a five-year plan for chess. Stockwell. And I think he must have said this in the thirties, but he could not have said this in a future decade because Stalin got rid of him in 1938. He was purged. Right? Five-year plan for chess. Now, this is a well-known thing that in the Soviet Union they wanted to show that they were superior to other nations, other civilizations, etcetera. And their way of doing that was by showing a dominance in chess as one way of, you know, this is a game of the brain and all that. So chess was taught in schools, the way math is taught in schools. Uh, and that's the way the whole system was built. And what that did was you had a massive sample size of kids exposed to chess. So it was easy to pick out talent from there and write from there all the way to the GM level, um, you know, you had systematic training and all of that. And the Soviet school of chess, however, doesn't refer to this system as it were, a physical school or university, it refers to a way of thinking about chess where they figured out all the heuristics and they taught all their kids how to think about the game strategically, positionally, etc. etc. And a great example of this, I wrote this feature on Vishwanathanand a few years ago for um uh ESPN and uh th there was a great example of this which my good friend our good friend Devangshu Data had given me. Devangshu played serious chess uh at the national level for India in the 1980s very close friend of Anand as well and uh this is what Devangshu said to me when he was talking about his early experience as a player. He said when I started playing East Europeans in the 1980s The difference in chess culture was stark. We knew so much less it wasn't funny. To take an analogy, it was like putting a bunch of talented kids with a basic knowledge of say self-taught HSC level maths into direct competition with people who had postgrad math degrees. We'd struggle through the opening and hit the middle game and start wondering what to do. And then in the post mortem, the opponent would say, Oh, my trainer taught us that with this structure you have to play this way. And you'd be like, shit. Which means they were putting it. I want to uh",
+      "endTime": 1480.59,
+      "text": "anywhere. So I have a Ramanujan like example, and in fact you were speaking earlier that you know you thought of Ramanujan because we last night over dinner we were discussing Vishyanand. Right. And Vish Anand is an outlier of that sort. And I use the term outlier carefully. Uh, let me I want to put in context for everyone who is sort of viewing this. Uh what a staggering mind and what a staggering genius Anand is in terms of what he actually managed to achieve. And to put that into perspective, let's talk about uh, you know, a system that was put together to have great minds congregate and learn in a systematic way, which was the Soviet school of chess. Right now, uh Uh decades ago there used to be a gentleman named Nikolai Khrilenko, who was a top Soviet functionary, who once said We must finish once and for all with the neutrality of chess. We must condemn once and for all the formula chess for the sake of chess, like the formula art for art sake. We must organize shock brigades of chess players and big begin immediate realization of a five-year plan for chess. Stockwell. And I think he must have said this in the thirties, but he could not have said this in a future decade because Stalin got rid of him in 1938. He was purged. Right? Five-year plan for chess. Now, this is a well-known thing that in the Soviet Union they wanted to show that they were superior to other nations, other civilizations, etcetera. And their way of doing that was by showing a dominance in chess as one way of, you know, this is a game of the brain and all that. So chess was taught in schools, the way math is taught in schools. Uh, and that's the way the whole system was built. And what that did was you had a massive sample size of kids exposed to chess. So it was easy to pick out talent from there and write from there all the way to the GM level, um, you know, you had systematic training and all of that. And the Soviet school of chess, however, doesn't refer to this system as it were, a physical school or university, it refers to a way of thinking about chess where they figured out all the heuristics and they taught all their kids how to think about the game strategically, positionally, etc. etc. And a great example of this, I wrote this feature on Vishwanathanand a few years ago for um uh ESPN and uh th there was a great example of this which my good friend our good friend Devangshu Data had given me. Devangshu played serious chess uh at the national level for India in the 1980s very close friend of Anand as well and uh this is what Devangshu said to me when he was talking about his early experience as a player. He said when I started playing East Europeans in the 1980s The difference in chess culture was stark. We knew so much less it wasn't funny. To take an analogy, it was like putting a bunch of talented kids with a basic knowledge of say self-taught HSC level maths into direct competition with people who had postgrad math degrees. We'd struggle through the opening and hit the middle game and start wondering what to do. And then in the post mortem, the opponent would say, Oh, my trainer taught us that with this structure you have to play this way. And you'd be like, shit. Which means they were putting",
       "words": [
         {
           "word": "anywhere.",
@@ -27123,7 +27027,15 @@
           "startTime": 1480.43,
           "endTime": 1480.59,
           "confidence": 0.6045
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1480.59,
+      "endTime": 1522.08,
+      "text": "it. I want to uh continue on this. With a inside joke in the field of chess. Uh, the inside joke is the phrase, as every Russian schoolboy knows. Okay. This is a phrase that chess people understand that things that may appear deep and complex to you and me are actually common knowledge to Russian schoolboys. And it's a phrase that has actually gone far beyond chess into many other contexts to convey this huge gap between the people who've been picking up this stuff in the hands of a talented coach or a parent from childhood. And in middle age or in the peak of their performance, they have an edge that others can only dimly perceive. Yeah. So This was",
+      "words": [
         {
           "word": "it.",
           "startTime": 1480.59,
@@ -27153,15 +27065,7 @@
           "startTime": 1481.39,
           "endTime": 1481.95,
           "confidence": 0.9235
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1481.95,
-      "endTime": 1521.52,
-      "text": "continue on this. With a inside joke in the field of chess. Uh, the inside joke is the phrase, as every Russian schoolboy knows. Okay. This is a phrase that chess people understand that things that may appear deep and complex to you and me are actually common knowledge to Russian schoolboys. And it's a phrase that has actually gone far beyond chess into many other contexts to convey this huge gap between the people who've been picking up this stuff in the hands of a talented coach or a parent from childhood. And in middle age or in the peak of their performance, they have an edge that others can only dimly perceive. Yeah. So",
-      "words": [
+        },
         {
           "word": "continue",
           "startTime": 1481.95,
@@ -27857,15 +27761,7 @@
           "startTime": 1521.02,
           "endTime": 1521.52,
           "confidence": 0.6691
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1521.76,
-      "endTime": 1584.69,
-      "text": "This was the Soviet school of chess. All your top grandmasters were from the Soviet Union, which is why you know the Fisher Spasky match of 1973 is so seminal because you had an American player come and just a brilliant genius, of course, on his own, and actually get to the top. But otherwise the Soviets dominated, and even after the Soviet Union broke up, your Soviet bloc players were still kind of dominant. And along comes Anand in the late 80s when the Soviet Union still stands and he's this young teenager. And again, Uh but what was important for Anand was in his formative years, he was in, I think, the Philippines and uh so not in India, where they had a regular chess program on TV. And from what I remember, you know, they'd give puzzles at the end of every program, and he would always send the right answer and get a lot of books and all of that. And I if I remember correctly, once they called him and said, Look, you're winning everything, just stop entering, we'll give you all the chess books you want once and for all. But anyway, so he came back from India with that backing, and then of course he later went on to become an inspi inspirational for generations of Indian players, and now India is a chess superpower, and that's something we can uh maybe discuss in the future and discuss separately.",
-      "words": [
+        },
         {
           "word": "This",
           "startTime": 1521.76,
@@ -27877,7 +27773,15 @@
           "startTime": 1521.92,
           "endTime": 1522.08,
           "confidence": 0.9993
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1522.08,
+      "endTime": 1674.03,
+      "text": "the Soviet school of chess. All your top grandmasters were from the Soviet Union, which is why you know the Fisher Spasky match of 1973 is so seminal because you had an American player come and just a brilliant genius, of course, on his own, and actually get to the top. But otherwise the Soviets dominated, and even after the Soviet Union broke up, your Soviet bloc players were still kind of dominant. And along comes Anand in the late 80s when the Soviet Union still stands and he's this young teenager. And again, Uh but what was important for Anand was in his formative years, he was in, I think, the Philippines and uh so not in India, where they had a regular chess program on TV. And from what I remember, you know, they'd give puzzles at the end of every program, and he would always send the right answer and get a lot of books and all of that. And I if I remember correctly, once they called him and said, Look, you're winning everything, just stop entering, we'll give you all the chess books you want once and for all. But anyway, so he came back from India with that backing, and then of course he later went on to become an inspi inspirational for generations of Indian players, and now India is a chess superpower, and that's something we can uh maybe discuss in the future and discuss separately. But he was he was at such an incredible disadvantage. Because he didn't have the training that people in the Soviet school did. He had incredible powers of calculation, incredible intuition that he was building gradually, but he didn't have an advantage of that base. And for him to dominate, to become one of the top players in the world, and much later to become world champion, the the metaphor I draw for it is like someone taking a Maruti 800 into a Formula One race and winning the damn thing. Like it is just a staggering achievement. It's like winning Wimbledon today with a wooden racket. Uh a and uh uh a Ramanujan kind of example where he didn't initially have that congregation, but then he built it later. Like you know, you pointed out la last night at dinner as well, that you know, f a a significant part of his playing life was in Spain and he had his team there, other masters, other grandmasters. Today, of course, you have those congregations online. But where I would push back is that I would say that yes, for the sake of morale, we should constantly tell ourselves that we don't need that to succeed. You know, we can succeed without congregations and all of that if we are as brilliant as Ramanujan or Anand. But one, very few people are, and two, uh there are uh countless Raman Ramanujans and Anand who have been lost to us who are unseen because they never even because they couldn't bug that. They couldn't uh y you know, they didn't even uh manage to sort of get that far. So I see them as outliers, almost as exceptions, uh that sort of uh prove the rule. I don't",
+      "words": [
         {
           "word": "the",
           "startTime": 1522.08,
@@ -29341,15 +29245,7 @@
           "startTime": 1583.65,
           "endTime": 1584.69,
           "confidence": 0.9731
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1584.69,
-      "endTime": 1586.45,
-      "text": "But he was he was at",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 1584.69,
@@ -29385,15 +29281,7 @@
           "startTime": 1586.29,
           "endTime": 1586.45,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1586.45,
-      "endTime": 1674.03,
-      "text": "such an incredible disadvantage. Because he didn't have the training that people in the Soviet school did. He had incredible powers of calculation, incredible intuition that he was building gradually, but he didn't have an advantage of that base. And for him to dominate, to become one of the top players in the world, and much later to become world champion, the the metaphor I draw for it is like someone taking a Maruti 800 into a Formula One race and winning the damn thing. Like it is just a staggering achievement. It's like winning Wimbledon today with a wooden racket. Uh a and uh uh a Ramanujan kind of example where he didn't initially have that congregation, but then he built it later. Like you know, you pointed out la last night at dinner as well, that you know, f a a significant part of his playing life was in Spain and he had his team there, other masters, other grandmasters. Today, of course, you have those congregations online. But where I would push back is that I would say that yes, for the sake of morale, we should constantly tell ourselves that we don't need that to succeed. You know, we can succeed without congregations and all of that if we are as brilliant as Ramanujan or Anand. But one, very few people are, and two, uh there are uh countless Raman Ramanujans and Anand who have been lost to us who are unseen because they never even because they couldn't bug that. They couldn't uh y you know, they didn't even uh manage to sort of get that far. So I see them as outliers, almost as exceptions, uh that sort of uh prove the rule. I don't",
-      "words": [
+        },
         {
           "word": "such",
           "startTime": 1586.45,
@@ -41251,8 +41139,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2201.71,
-      "endTime": 2266.42,
-      "text": "I I was just about to say that you do need those m that minimum critical mass and the economies of scale. To get together that minimum 10-20-man team without which there is no movie, then you're down to uh uh trivial production projects like some YouTube podcast with an eclectic name, everything is everything. Okay, that's what you can do with essentially no teams. But if you want to make a movie, you'd need a team that is bigger than that, and there is a minimum. Critical mass below which it just won't arise. So you do need those little agglomerations. You may not need a Bollywood scale agglomeration. So, you know, there may be no engineering culture in uh Bhopal, but there is an engineering culture in Pune. Okay, and so on. So there is a minimum economy of scale, at which point things can take off. So I'm in that middle road that you do need agglomerations. We need each other. Talking to each other is one of the most important things that happens to us. And I wouldn't overstate that giant sucking sound. I'm not reverential about Silicon Valley as the only place where all the bright ideas are congregated.",
+      "endTime": 2265.54,
+      "text": "I I was just about to say that you do need those m that minimum critical mass and the economies of scale. To get together that minimum 10-20-man team without which there is no movie, then you're down to uh uh trivial production projects like some YouTube podcast with an eclectic name, everything is everything. Okay, that's what you can do with essentially no teams. But if you want to make a movie, you'd need a team that is bigger than that, and there is a minimum. Critical mass below which it just won't arise. So you do need those little agglomerations. You may not need a Bollywood scale agglomeration. So, you know, there may be no engineering culture in uh Bhopal, but there is an engineering culture in Pune. Okay, and so on. So there is a minimum economy of scale, at which point things can take off. So I'm in that middle road that you do need agglomerations. We need each other. Talking to each other is one of the most important things that happens to us. And I wouldn't overstate that giant sucking sound. I'm not reverential about Silicon Valley as the only place where all the bright ideas are",
       "words": [
         {
           "word": "I",
@@ -42471,21 +42359,21 @@
           "startTime": 2265.38,
           "endTime": 2265.54,
           "confidence": 0.9991
-        },
-        {
-          "word": "congregated.",
-          "startTime": 2265.54,
-          "endTime": 2266.42,
-          "confidence": 0.9956
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 2266.42,
+      "startTime": 2265.54,
       "endTime": 2286.28,
-      "text": "We need a million Silicon Valleys, which is what but you know what? You know, you're a very nice guy. You've been very nice to me. But uh we should also be nice to our producer and collaborator and partner in crime, Vartika. And you just kind of I think made her feel so bad because you were like, Ai ti bombe pahj gai karjat. You know, which is karjat ko beihy bombe.",
+      "text": "congregated. We need a million Silicon Valleys, which is what but you know what? You know, you're a very nice guy. You've been very nice to me. But uh we should also be nice to our producer and collaborator and partner in crime, Vartika. And you just kind of I think made her feel so bad because you were like, Ai ti bombe pahj gai karjat. You know, which is karjat ko beihy bombe.",
       "words": [
+        {
+          "word": "congregated.",
+          "startTime": 2265.54,
+          "endTime": 2266.42,
+          "confidence": 0.9956
+        },
         {
           "word": "We",
           "startTime": 2266.42,
@@ -43425,8 +43313,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2312.72,
-      "endTime": 2412.27,
-      "text": "Um, I was there. Uh this is uh in McLeod Gunge. uh which is just about the Haramshala. Uh I visited the Tibet Museum and it is a really great museum. I encourage everybody to go there. Lots of museums in India are not done well. This one is done well and it tells the history of Tibet and it does a fantastic job. It has the artifacts, you can see objects and it really triggers off the mind. But equally interesting was the fact that it sits inside a complex of government buildings. Okay, and that government is called the Central Tibet Administration, okay, which I found incredibly interesting. This is a government in exile. Okay, you read about these things in the history books. There was a French government in exile that was in London during the Second World War, and things like that. But here you have a living, breathing. Government in exile. So that's my reason, too, for everybody. Please visit McLeod Ganj and walk around the lanes of the CTA. It's a government in exile. And it makes you think about government. As an Indian, I was so happy and I was so proud that India has been kind to Tibetan refugees and that this Central Tibet uh administration is sitting on Indian soil, and I feel You know, our first human impulse should always be to be kind to refugees and take in refugees. And I'm so proud that we as India have been good to these people in many ways all through these decades, even sometimes when it has been quite costly",
+      "endTime": 3196.42,
+      "text": "Um, I was there. Uh this is uh in McLeod Gunge. uh which is just about the Haramshala. Uh I visited the Tibet Museum and it is a really great museum. I encourage everybody to go there. Lots of museums in India are not done well. This one is done well and it tells the history of Tibet and it does a fantastic job. It has the artifacts, you can see objects and it really triggers off the mind. But equally interesting was the fact that it sits inside a complex of government buildings. Okay, and that government is called the Central Tibet Administration, okay, which I found incredibly interesting. This is a government in exile. Okay, you read about these things in the history books. There was a French government in exile that was in London during the Second World War, and things like that. But here you have a living, breathing. Government in exile. So that's my reason, too, for everybody. Please visit McLeod Ganj and walk around the lanes of the CTA. It's a government in exile. And it makes you think about government. As an Indian, I was so happy and I was so proud that India has been kind to Tibetan refugees and that this Central Tibet uh administration is sitting on Indian soil, and I feel You know, our first human impulse should always be to be kind to refugees and take in refugees. And I'm so proud that we as India have been good to these people in many ways all through these decades, even sometimes when it has been quite costly for the country. But then it got me thinking that uh currently the CTA is funded by donations, they have no coercive power. They have no taxation. So they've got all these tidy structures. There is a building, it's a ministry of finance, it's a ministry of home. I think they call it Department of Home and Department of Finance. And uh they're funded by donations, they have no coercive power, they play some role in organizing the global Tibetan community. But it is a wannabe state. And I wondered. Is this useful training wheels to actually become a state one day? Okay, so imagine that one day uh Tibet becomes free. Is CTA the institutional raw material around which you could envision this becoming uh the raw material around which a new government in Tibet can come across, can come about? Okay, at first it sounds interesting and it sounds plausible, and that may be why. The Chinese get so irritated that there are these structures in India. I thought a bit about it and uh I have uh uh two, three things to say. Okay, so step one. I think that no amount of being a wannabe state-like structure with these nice tidy buildings for what is actually a philanthropic organization funded by uh donations. No amount of these structures are a real training wheel. For the problem of coercive power. Coercive power is a poison. You're fundamentally a nice guy when you're asking for donations and you're performing some activities and you have no coercive power. And it may even run in the wrong direction because it may lull the persons inside these organizations into a certain isomorphic mimicry, into a certain complacence that, yeah, yeah, we're ready. We've got a department of finance, we've got a department for home. And we know how to do this stuff and we are all ready. And so I'm not impressed or convinced that this is a meaningful prep. You you don't develop state capability without actually fighting with the battle of the evil that is coercive power. Until that you're just a nice guy, and it's very nice easy to be a good organization. Uh the That leads to the second question, which is very well, when big things happen uh on the international scale. So when you think on the scale of a hundred years, when you think on the scale of a thousand years, countries are ephemeral, countries come and go. The border is nothing sacred, it's a line on the map and things change. So, how has it worked? How has it been where? Uh, new states have come up and new states have fared well, versus new states have come up and new states have fared badly. Okay. New states have fared badly over and over and over. So if you look back at the great post-colonial experiment all over the world, many poor countries got freedom for the first time. And by and large, it worked out badly. Uh it worked out really badly where there had been a freedom movement armed with guns. Okay, and as you have said about Gandhiji. He got one big thing right, which was ahimsa, that uh you respond to violence by turning the other cheek. And that was one simple piece of magic that we in India got at the outset. We see so many other countries where there was a violent military movement to try to obtain freedom, and that goes badly because once again, once you've unleashed the violence, it doesn't go away. And it changes the people. It leads for the wrong kind of person to bubble up to the top. So, in a well-functioning state, what you want is a certain kind of decency. You want a philosopher king. And violent movements bubble up successful military generals who are rarely philosopher kings. So the countries that just got started with a military movement generally did badly. Okay, very well. Can we point to some examples where a new country Its act together and did rather well, or where there was a great change in the uh arrangement of the nation and the boundaries, and it all worked out very well. And the best stories of this nature are in Eastern Europe. So the easiest of all the transitions was East Germany. When East Germany merged into West Germany, it inherited all the West German institutions. So it got everything on a platter. They had understood. liberal democracy, which is not just a business of having elections every five years. It is about constitutionalism, it is about a constitutional morality, it is about the rule of law, it is about checks and balances, it is about being imbued with a certain decency and creating the arrangements through which a certain kind of person bubbles up into positions of power and influence. And all these difficult things had been figured out in West Germany. So East Germany got this on a red carpet, and literally overnight, East Germany got that institutional package and East Germany flourished. Now it remains true that East Germany is the backwaters of unified Germany. Okay, so these things don't go away. The inequality between East Germany and West Germany has not gone away. So it's a bit like A North India, South India problem. That problem will be there for a long, long time. The north of Italy has been cosmopolitan and advanced and prosperous. And the south of Italy has been a hinterland and mafia violence and so on for hundreds of years. So these problems don't go away quickly. But East Germany fully graduated into the German institutional package and got a giant leap away from the cruelty and impoverishment. Of the old East Germany into a modern, prosperous, decent, civilized country. So that is number one. Okay? Then you look at the rest of Eastern Europe and the Baltic republics. They also did extremely well. And now this is more interesting because they did not get the institutional package from a West Germany. They had to actually build these institutions from scratch. And what helped them, in my opinion, was three things. One was that they had lived in communism and they knew how bad that was. So they wanted to run far away from it. I remember once I was in Warsaw and I heard this story where they uh took the building that was the office of the Communist Party, okay, which was the biggest and most powerful structure of the entire city. And they turned it into the stock exchange because they were making a statement that we are finished with this stuff and we now want to learn to be a capitalist country. And it also helped greatly that they all became members of the European Union. And the European Union carries with it 20,000 pages of draft laws and treaty restrictions. So, in a way, they were correled and there are certain mistakes they could not make. So uh East Europe really triumphed by and large, uh, with two main exceptions. Hungary is still doing pretty badly, Poland is doing medium bad, but the rest of the countries have really blossomed and They're doing great. And so that was another place where there was a fundamental regime change, and these countries in many cases came to life from scratch and found their feet and developed very beautiful, modern, capable, advanced, civilized, liberal democratic states. So these are the success stories. And then of course you have the very big failure story, and that is Russia. So uh we talk a lot about the abrupt. Economic liberalization of Russia, where uh Jeff Sachs and others tried to push a big leap of privatizing the companies and asking markets to come to exist overnight, but not enough attention was paid to the state. And there's no running away from that. You need the state, you need liberal democracy, you need freedom, and freedom is coded into laws and state institutions. If you have Unchecked state violence in those state institutions, then it's never going to work. So when you think of China, really the best hope for China is that the institutional DNA and capability of Taiwan will play a role in China's future, not the CTA. I don't think the CTA will be a great part of what will happen to China in the deep future. Finally, turning to India. There's a small version of this story that has actually played out many times, which is how do you establish a new government organization? Okay, and all government organizations are coercive creatures. So you're gonna wield coercive power, how will you do it? So imagine somebody says, for the first time, I'm going to set up the FSSAI, the food safety uh regulator of India. If you pass a law and one fine day you suddenly create an organization of five people and one PewN. And the law is notified, and these people are wielding coercive power, it tends to go badly because an immense burden is placed upon a fledgling agency, and the load-bearing capacity is inadequate, and that creates an organizational route. That organization goes into firefighting from day three and it never recovers from the firefighting. It is just one big mess because it fails to have the rule of law in the beginning. Then you get all the wrong incentives of the people lobbying and pushing to do special favors at a transaction level, and that becomes an institutional DNA. That kind of discretionary power then attracts the wrong people. You get the wrong kind of appointments. So even if in the early days there were some really wonderful people in that organization, it goes downhill. As that institution flexes its muscles. Exercising coercive power, it gets the wrong kind of people at the leadership, and the quality of that institution goes downhill. So there's a similar training wheels question that how would you launch a brand new organization in India that is going to wield coercive power? Most Indian experiences of this nature have worked out badly. But I think we do know a bit about how to think about this and how to do it. And it is a bit of a CTA. Uh, I think that. The direct idea is to understand that building an organization takes time. In India, it has been understood that building a bridge takes time. Okay, so when we want to launch a bridge, we will have some project management. There'll be many, many people who will do various pieces, and then two years later, five years later, a minister will come for the ribbon cutting. But nobody expects. a zero day lag between the decision to have a bridge and the bridge. I think we should think of a government organization similarly, that when you decide to have a food safety regulator, we should recognize that it's like building a bridge. It will need an organization. It will need organizational design. It will need drafting processes. It will need training of all the individuals to live within those processes. It will need building IT systems. It will need very careful review 20 times to understand: have we got enough check and balance on all the aspects of coercive power? Then notify a little bit of power. Start doing a few trivial, low complexity kinds of transactions, and then notify the full law where the full thing is up and running. This is the structured systematic process through which new organizations should be started. For those who are interested, the closest we got to this kind of planning was in the early establishment of the IBBI, the Insolvency and Bankruptcy Board of India, where uh Dr. M. Sahu and then Ravi Narayan. led the process of writing that project plan, of writing a good project plan through which over a two-year period you would get the high quality bankruptcy regulator. Unfortunately this was not used much. In reality, the law was notified and overnight five people were expected to perform. So it's not a great story after that document was built. But that document is particularly important because it's a project plan of how to create an organization that will wield some coercive power. And that's a big milestone in India's",
       "words": [
         {
           "word": "Um,",
@@ -45041,15 +44929,7 @@
           "startTime": 2411.31,
           "endTime": 2412.27,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2412.27,
-      "endTime": 2414.19,
-      "text": "for the country.",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 2412.27,
@@ -45067,15 +44947,7 @@
           "startTime": 2412.99,
           "endTime": 2414.19,
           "confidence": 0.995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2414.19,
-      "endTime": 2417.07,
-      "text": "But then it got me thinking that",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 2414.19,
@@ -45117,29 +44989,13 @@
           "startTime": 2416.43,
           "endTime": 2417.07,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2417.07,
-      "endTime": 2418.57,
-      "text": "uh",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 2417.07,
           "endTime": 2418.57,
           "confidence": 0.6987
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2418.67,
-      "endTime": 2565.2,
-      "text": "currently the CTA is funded by donations, they have no coercive power. They have no taxation. So they've got all these tidy structures. There is a building, it's a ministry of finance, it's a ministry of home. I think they call it Department of Home and Department of Finance. And uh they're funded by donations, they have no coercive power, they play some role in organizing the global Tibetan community. But it is a wannabe state. And I wondered. Is this useful training wheels to actually become a state one day? Okay, so imagine that one day uh Tibet becomes free. Is CTA the institutional raw material around which you could envision this becoming uh the raw material around which a new government in Tibet can come across, can come about? Okay, at first it sounds interesting and it sounds plausible, and that may be why. The Chinese get so irritated that there are these structures in India. I thought a bit about it and uh I have uh uh two, three things to say. Okay, so step one. I think that no amount of being a wannabe state-like structure with these nice tidy buildings for what is actually a philanthropic organization funded by uh donations. No amount of these structures are a real training wheel. For the problem of coercive power. Coercive power is a poison. You're fundamentally a nice guy when you're asking for donations and you're performing some activities and you have no coercive power. And it may even run in the wrong direction because it may lull the persons inside these organizations into a certain isomorphic mimicry, into a certain complacence that, yeah, yeah, we're ready. We've got a department of finance, we've got a department for home. And we know how to do this stuff and we are all ready. And so I'm not impressed or convinced that this is a meaningful prep. You you don't develop state capability without actually fighting with the battle of the evil that is coercive power. Until that you're just a nice guy, and it's very nice",
-      "words": [
+        },
         {
           "word": "currently",
           "startTime": 2418.67,
@@ -47227,15 +47083,7 @@
           "startTime": 2564.8,
           "endTime": 2565.2,
           "confidence": 0.5857
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2565.2,
-      "endTime": 2567.12,
-      "text": "easy to be a good",
-      "words": [
+        },
         {
           "word": "easy",
           "startTime": 2565.2,
@@ -47265,15 +47113,7 @@
           "startTime": 2566.48,
           "endTime": 2567.12,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2567.12,
-      "endTime": 2625.98,
-      "text": "organization. Uh the That leads to the second question, which is very well, when big things happen uh on the international scale. So when you think on the scale of a hundred years, when you think on the scale of a thousand years, countries are ephemeral, countries come and go. The border is nothing sacred, it's a line on the map and things change. So, how has it worked? How has it been where? Uh, new states have come up and new states have fared well, versus new states have come up and new states have fared badly. Okay. New states have fared badly over and over and over. So if you look back at the great post-colonial experiment all over the world, many poor countries got freedom for the first time. And by and large, it worked out badly. Uh it worked out really badly where there had been a freedom movement armed with guns. Okay, and as you have said about Gandhiji. He got one big thing right, which",
-      "words": [
+        },
         {
           "word": "organization.",
           "startTime": 2567.12,
@@ -48299,15 +48139,7 @@
           "startTime": 2625.66,
           "endTime": 2625.98,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2625.98,
-      "endTime": 2628.54,
-      "text": "was ahimsa, that uh",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 2625.98,
@@ -48331,15 +48163,7 @@
           "startTime": 2628.06,
           "endTime": 2628.54,
           "confidence": 0.9023
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2628.54,
-      "endTime": 3196.42,
-      "text": "you respond to violence by turning the other cheek. And that was one simple piece of magic that we in India got at the outset. We see so many other countries where there was a violent military movement to try to obtain freedom, and that goes badly because once again, once you've unleashed the violence, it doesn't go away. And it changes the people. It leads for the wrong kind of person to bubble up to the top. So, in a well-functioning state, what you want is a certain kind of decency. You want a philosopher king. And violent movements bubble up successful military generals who are rarely philosopher kings. So the countries that just got started with a military movement generally did badly. Okay, very well. Can we point to some examples where a new country Its act together and did rather well, or where there was a great change in the uh arrangement of the nation and the boundaries, and it all worked out very well. And the best stories of this nature are in Eastern Europe. So the easiest of all the transitions was East Germany. When East Germany merged into West Germany, it inherited all the West German institutions. So it got everything on a platter. They had understood. liberal democracy, which is not just a business of having elections every five years. It is about constitutionalism, it is about a constitutional morality, it is about the rule of law, it is about checks and balances, it is about being imbued with a certain decency and creating the arrangements through which a certain kind of person bubbles up into positions of power and influence. And all these difficult things had been figured out in West Germany. So East Germany got this on a red carpet, and literally overnight, East Germany got that institutional package and East Germany flourished. Now it remains true that East Germany is the backwaters of unified Germany. Okay, so these things don't go away. The inequality between East Germany and West Germany has not gone away. So it's a bit like A North India, South India problem. That problem will be there for a long, long time. The north of Italy has been cosmopolitan and advanced and prosperous. And the south of Italy has been a hinterland and mafia violence and so on for hundreds of years. So these problems don't go away quickly. But East Germany fully graduated into the German institutional package and got a giant leap away from the cruelty and impoverishment. Of the old East Germany into a modern, prosperous, decent, civilized country. So that is number one. Okay? Then you look at the rest of Eastern Europe and the Baltic republics. They also did extremely well. And now this is more interesting because they did not get the institutional package from a West Germany. They had to actually build these institutions from scratch. And what helped them, in my opinion, was three things. One was that they had lived in communism and they knew how bad that was. So they wanted to run far away from it. I remember once I was in Warsaw and I heard this story where they uh took the building that was the office of the Communist Party, okay, which was the biggest and most powerful structure of the entire city. And they turned it into the stock exchange because they were making a statement that we are finished with this stuff and we now want to learn to be a capitalist country. And it also helped greatly that they all became members of the European Union. And the European Union carries with it 20,000 pages of draft laws and treaty restrictions. So, in a way, they were correled and there are certain mistakes they could not make. So uh East Europe really triumphed by and large, uh, with two main exceptions. Hungary is still doing pretty badly, Poland is doing medium bad, but the rest of the countries have really blossomed and They're doing great. And so that was another place where there was a fundamental regime change, and these countries in many cases came to life from scratch and found their feet and developed very beautiful, modern, capable, advanced, civilized, liberal democratic states. So these are the success stories. And then of course you have the very big failure story, and that is Russia. So uh we talk a lot about the abrupt. Economic liberalization of Russia, where uh Jeff Sachs and others tried to push a big leap of privatizing the companies and asking markets to come to exist overnight, but not enough attention was paid to the state. And there's no running away from that. You need the state, you need liberal democracy, you need freedom, and freedom is coded into laws and state institutions. If you have Unchecked state violence in those state institutions, then it's never going to work. So when you think of China, really the best hope for China is that the institutional DNA and capability of Taiwan will play a role in China's future, not the CTA. I don't think the CTA will be a great part of what will happen to China in the deep future. Finally, turning to India. There's a small version of this story that has actually played out many times, which is how do you establish a new government organization? Okay, and all government organizations are coercive creatures. So you're gonna wield coercive power, how will you do it? So imagine somebody says, for the first time, I'm going to set up the FSSAI, the food safety uh regulator of India. If you pass a law and one fine day you suddenly create an organization of five people and one PewN. And the law is notified, and these people are wielding coercive power, it tends to go badly because an immense burden is placed upon a fledgling agency, and the load-bearing capacity is inadequate, and that creates an organizational route. That organization goes into firefighting from day three and it never recovers from the firefighting. It is just one big mess because it fails to have the rule of law in the beginning. Then you get all the wrong incentives of the people lobbying and pushing to do special favors at a transaction level, and that becomes an institutional DNA. That kind of discretionary power then attracts the wrong people. You get the wrong kind of appointments. So even if in the early days there were some really wonderful people in that organization, it goes downhill. As that institution flexes its muscles. Exercising coercive power, it gets the wrong kind of people at the leadership, and the quality of that institution goes downhill. So there's a similar training wheels question that how would you launch a brand new organization in India that is going to wield coercive power? Most Indian experiences of this nature have worked out badly. But I think we do know a bit about how to think about this and how to do it. And it is a bit of a CTA. Uh, I think that. The direct idea is to understand that building an organization takes time. In India, it has been understood that building a bridge takes time. Okay, so when we want to launch a bridge, we will have some project management. There'll be many, many people who will do various pieces, and then two years later, five years later, a minister will come for the ribbon cutting. But nobody expects. a zero day lag between the decision to have a bridge and the bridge. I think we should think of a government organization similarly, that when you decide to have a food safety regulator, we should recognize that it's like building a bridge. It will need an organization. It will need organizational design. It will need drafting processes. It will need training of all the individuals to live within those processes. It will need building IT systems. It will need very careful review 20 times to understand: have we got enough check and balance on all the aspects of coercive power? Then notify a little bit of power. Start doing a few trivial, low complexity kinds of transactions, and then notify the full law where the full thing is up and running. This is the structured systematic process through which new organizations should be started. For those who are interested, the closest we got to this kind of planning was in the early establishment of the IBBI, the Insolvency and Bankruptcy Board of India, where uh Dr. M. Sahu and then Ravi Narayan. led the process of writing that project plan, of writing a good project plan through which over a two-year period you would get the high quality bankruptcy regulator. Unfortunately this was not used much. In reality, the law was notified and overnight five people were expected to perform. So it's not a great story after that document was built. But that document is particularly important because it's a project plan of how to create an organization that will wield some coercive power. And that's a big milestone in India's",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 2628.54,
@@ -58121,8 +57945,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3229.98,
-      "endTime": 3244.54,
-      "text": "when Charles de Gaulle led uh the French government in exile in London, I don't know this adequately, but I doubt if he tried to set up a department of health and all that. He was just focused on one thing, that how to free get to a free France. Yeah,",
+      "endTime": 3244.22,
+      "text": "when Charles de Gaulle led uh the French government in exile in London, I don't know this adequately, but I doubt if he tried to set up a department of health and all that. He was just focused on one thing, that how to free get to a free France.",
       "words": [
         {
           "word": "when",
@@ -58423,21 +58247,21 @@
           "startTime": 3243.5,
           "endTime": 3244.22,
           "confidence": 0.9774
-        },
-        {
-          "word": "Yeah,",
-          "startTime": 3244.22,
-          "endTime": 3244.54,
-          "confidence": 0.8934
         }
       ]
     },
     {
       "speaker": "Amit Varma",
-      "startTime": 3244.54,
+      "startTime": 3244.22,
       "endTime": 3300.4,
-      "text": "because the business of government is so incredibly messy with so many different stakeholders that it becomes a huge problem. And when you speak of the importance of actually engaging with reality. I would imagine that then institution building within a country would get easier as you go along because you get better at it. You're engaging with reality all the time. But in the narrative that um uh you laid out, uh what I seem to get is that institution building in India has consistently been horrible. And maybe you have a few exceptions and they work out, but it's consistently been horrible. And I would imagine that to inevitably be the case because of the way the incentives are aligned, number one, and the the way that power inevitably corrupts. And therefore I would imagine, and I'm putting this as perhaps a provocative question, that is it then an inevitability that all institutions must degrade from wherever they are, no matter how noble they become the uh no matter how noble the beginnings? No.",
+      "text": "Yeah, because the business of government is so incredibly messy with so many different stakeholders that it becomes a huge problem. And when you speak of the importance of actually engaging with reality. I would imagine that then institution building within a country would get easier as you go along because you get better at it. You're engaging with reality all the time. But in the narrative that um uh you laid out, uh what I seem to get is that institution building in India has consistently been horrible. And maybe you have a few exceptions and they work out, but it's consistently been horrible. And I would imagine that to inevitably be the case because of the way the incentives are aligned, number one, and the the way that power inevitably corrupts. And therefore I would imagine, and I'm putting this as perhaps a provocative question, that is it then an inevitability that all institutions must degrade from wherever they are, no matter how noble they become the uh no matter how noble the beginnings? No.",
       "words": [
+        {
+          "word": "Yeah,",
+          "startTime": 3244.22,
+          "endTime": 3244.54,
+          "confidence": 0.8934
+        },
         {
           "word": "because",
           "startTime": 3244.54,
@@ -62617,8 +62441,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3480.27,
-      "endTime": 3513.02,
-      "text": "Yeah, I mean, I just feel that, you know, uh Two things. One is that power inevitably corrupts and the rules of the game are written in such a way that our um uh our state is designed to rule us and not serve us. It is really a continuation of the colonial state. And those are the rules of the game. That is a constitution, that is a system we are under, and it's it seems mighty hard to change. And my second sort of point would be that you are full of hope. In the sense that you are kind of saying that things are so bad, it can only get better. You know, and and and and I buy that, and we should be full of hope because And",
+      "endTime": 3513.18,
+      "text": "Yeah, I mean, I just feel that, you know, uh Two things. One is that power inevitably corrupts and the rules of the game are written in such a way that our um uh our state is designed to rule us and not serve us. It is really a continuation of the colonial state. And those are the rules of the game. That is a constitution, that is a system we are under, and it's it seems mighty hard to change. And my second sort of point would be that you are full of hope. In the sense that you are kind of saying that things are so bad, it can only get better. You know, and and and and I buy that, and we should be full of hope because And I'm",
       "words": [
         {
           "word": "Yeah,",
@@ -63411,21 +63235,21 @@
           "startTime": 3512.86,
           "endTime": 3513.02,
           "confidence": 0.546
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3513.02,
-      "endTime": 3580.6,
-      "text": "I'm also full of hope in the sense that this is an intellectual project. Okay. One hundred years ago, a whole bunch of people, the uh chattering classes like you and me, used to sit around and argue about a hypothetical word when the British left, what was free India going to look like? Okay, and in that intellectual project, they made many mistakes. They did not understand the concept of a state. They thought that the state will be led by good people like Gandhiji and Nehru. Okay, they were wrong. The state will attract the most venal persons, particularly when the state commands coercive power. And today we we should be on that intellectual journey of understanding those checks and balances. And As those capabilities deepen in the country, okay, it turns into a program for action. There will be a day in the future where there will be the public outcry saying agency X is failing badly. How do we do better? At that point, there should be the knowledge and the community about solving these problems. So we are in that RD phase of figuring out what a successful, prosperous India would look like.",
-      "words": [
+        },
         {
           "word": "I'm",
           "startTime": 3513.02,
           "endTime": 3513.18,
           "confidence": 0.9919
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3513.18,
+      "endTime": 3580.6,
+      "text": "also full of hope in the sense that this is an intellectual project. Okay. One hundred years ago, a whole bunch of people, the uh chattering classes like you and me, used to sit around and argue about a hypothetical word when the British left, what was free India going to look like? Okay, and in that intellectual project, they made many mistakes. They did not understand the concept of a state. They thought that the state will be led by good people like Gandhiji and Nehru. Okay, they were wrong. The state will attract the most venal persons, particularly when the state commands coercive power. And today we we should be on that intellectual journey of understanding those checks and balances. And As those capabilities deepen in the country, okay, it turns into a program for action. There will be a day in the future where there will be the public outcry saying agency X is failing badly. How do we do better? At that point, there should be the knowledge and the community about solving these problems. So we are in that RD phase of figuring out what a successful, prosperous India would look like.",
+      "words": [
         {
           "word": "also",
           "startTime": 3513.18,
@@ -65095,8 +64919,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3611.22,
-      "endTime": 3615.86,
-      "text": "Very well, Amit. We've we are at the end of our fun conversation of today. What's your recommendation",
+      "endTime": 3616.02,
+      "text": "Very well, Amit. We've we are at the end of our fun conversation of today. What's your recommendation this",
       "words": [
         {
           "word": "Very",
@@ -65205,21 +65029,21 @@
           "startTime": 3615.3,
           "endTime": 3615.86,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3615.86,
-      "endTime": 3851.84,
-      "text": "this week? So in previous weeks I've spoken about uh you know Frederick Bastia, my uh great hero, and uh after whom Freddie is named, and he's also named after Freddie Hayek. So like two two Freddies, he carries both of them within him. And my other great hero, apart from Bastia in terms of lucid writing, is George Orwell. Who I think, like Bastia, also died at 49, if I'm not mistaken, which is my age right now. So may I somehow reach the end of December, I'll be very happy. Uh but um uh but what I want to recommend of Orwell is not any of his famous novels, Animal Farm or 1984, but his collected essays. Like one of my treasured volumes is a volume of his collected essays, which uh really is also a chronologically uh which is also a chronological look at Orwell the thinker. Because what it does is it has him in it has his work in chronological order, all the articles he wrote, all the book reviews he wrote, et cetera, et cetera. So in the last years of his life and he's feverishly working, he's like the classic newspaper hack where he's doing like three pieces a week, four pieces a week, except that he's not a hack. He's a great lucid writer. You know, whenever as an editor, whenever an uh young writer would come and write for me, I would ask him to reach George Orwell's great essay Politics in the English Language, which is such a primer on clear writing. And I I love it so much. And Orwell's essays are a demonstration of that clear writing. So one little thing that I do whenever I get stuck, whenever I would get stuck, I don't write so much these days, but whenever I'd I'd get stuck writing a column or meeting a deadline, and my brain would be like, Mush, nothing is coming to my head. Lord help me, I'm sinking into quicksand. I'd pick up Orwell's book and I'd read two or three pieces, and it doesn't matter what they are about. Right? It doesn't matter what they're about or what the subject is or what the context is or even whether I agree with him. It's the clarity of his language, the way he uses words, the rhythms uh that he builds that You know, would free something within me. So I'd read like a few pages of Orwell, and then I would find that my thinking would become better, my language would become better. And I want to make a point here that Orwell makes and that I keep making to my writing students, and this is super important, which is that writing and thinking are related, right? And they're not related in the obvious way that if you're a clear thinker, you are likely to be a clear writer. Of course, you're likely. But they're really it works the other way around as well. That if you force yourself to write clearly. you are forced to think better because you cannot hide behind, you know, abstract words or vague jargon or, you know, the way uh many academics do. Like whenever I read something full of obfuscatory language, I know that person is full of shit. Right? Because if you have something of value to say, you will be able to see it clearly. If you are a clear thinker, you will be able to write clearly. And writing is such a great way to sort of also sharpen your own thinking. Like when I sit down to write a piece, it tells me what are the holes in my argument, what are the gaps in my knowledge? What do I need to do to get better? Sometimes I will change my mind or I will sharpen my thinking while I am writing. You know, Joan Didian once said, I don't know what I think until I write it down. Right. And such a amazing essay. You know, Deedra McCloskey said that it is not that you have to I'm I forget his exact words for I'm paraphrasing, but Deedra McCloskey, great economist, great writer, once said that it is you i i it's not that research has to come before the writing. The writing is research. Right. And this is not just true of nonfiction writing, where you're making an argument and you all figure out that, oh, these is the information I have to get. It's true of fiction writing, it's true of personal essays. Writing can be such a great process of self-discovery. And this is something that Orwell understands so well that writing and thinking are so clearly related. And because he was such a powerful, clear thinker all his life and a powerful, clear writer all his life, they feed into each other in a virtuous cycle. So that's my recommendation for the week.",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 3615.86,
           "endTime": 3616.02,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3616.02,
+      "endTime": 3851.84,
+      "text": "week? So in previous weeks I've spoken about uh you know Frederick Bastia, my uh great hero, and uh after whom Freddie is named, and he's also named after Freddie Hayek. So like two two Freddies, he carries both of them within him. And my other great hero, apart from Bastia in terms of lucid writing, is George Orwell. Who I think, like Bastia, also died at 49, if I'm not mistaken, which is my age right now. So may I somehow reach the end of December, I'll be very happy. Uh but um uh but what I want to recommend of Orwell is not any of his famous novels, Animal Farm or 1984, but his collected essays. Like one of my treasured volumes is a volume of his collected essays, which uh really is also a chronologically uh which is also a chronological look at Orwell the thinker. Because what it does is it has him in it has his work in chronological order, all the articles he wrote, all the book reviews he wrote, et cetera, et cetera. So in the last years of his life and he's feverishly working, he's like the classic newspaper hack where he's doing like three pieces a week, four pieces a week, except that he's not a hack. He's a great lucid writer. You know, whenever as an editor, whenever an uh young writer would come and write for me, I would ask him to reach George Orwell's great essay Politics in the English Language, which is such a primer on clear writing. And I I love it so much. And Orwell's essays are a demonstration of that clear writing. So one little thing that I do whenever I get stuck, whenever I would get stuck, I don't write so much these days, but whenever I'd I'd get stuck writing a column or meeting a deadline, and my brain would be like, Mush, nothing is coming to my head. Lord help me, I'm sinking into quicksand. I'd pick up Orwell's book and I'd read two or three pieces, and it doesn't matter what they are about. Right? It doesn't matter what they're about or what the subject is or what the context is or even whether I agree with him. It's the clarity of his language, the way he uses words, the rhythms uh that he builds that You know, would free something within me. So I'd read like a few pages of Orwell, and then I would find that my thinking would become better, my language would become better. And I want to make a point here that Orwell makes and that I keep making to my writing students, and this is super important, which is that writing and thinking are related, right? And they're not related in the obvious way that if you're a clear thinker, you are likely to be a clear writer. Of course, you're likely. But they're really it works the other way around as well. That if you force yourself to write clearly. you are forced to think better because you cannot hide behind, you know, abstract words or vague jargon or, you know, the way uh many academics do. Like whenever I read something full of obfuscatory language, I know that person is full of shit. Right? Because if you have something of value to say, you will be able to see it clearly. If you are a clear thinker, you will be able to write clearly. And writing is such a great way to sort of also sharpen your own thinking. Like when I sit down to write a piece, it tells me what are the holes in my argument, what are the gaps in my knowledge? What do I need to do to get better? Sometimes I will change my mind or I will sharpen my thinking while I am writing. You know, Joan Didian once said, I don't know what I think until I write it down. Right. And such a amazing essay. You know, Deedra McCloskey said that it is not that you have to I'm I forget his exact words for I'm paraphrasing, but Deedra McCloskey, great economist, great writer, once said that it is you i i it's not that research has to come before the writing. The writing is research. Right. And this is not just true of nonfiction writing, where you're making an argument and you all figure out that, oh, these is the information I have to get. It's true of fiction writing, it's true of personal essays. Writing can be such a great process of self-discovery. And this is something that Orwell understands so well that writing and thinking are so clearly related. And because he was such a powerful, clear thinker all his life and a powerful, clear writer all his life, they feed into each other in a virtuous cycle. So that's my recommendation for the week.",
+      "words": [
         {
           "word": "week?",
           "startTime": 3616.02,

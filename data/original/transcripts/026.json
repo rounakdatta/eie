@@ -5,7 +5,7 @@
     "durationSeconds": 2838,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -749,8 +749,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 46.57,
-      "endTime": 78.81,
-      "text": "I only dimly understand it, but uh all of us who have ever dealt with a mic know that you constantly struggle to get the audio levels right. And uh these are magical mics discovered by Amit. This is the new state of the art mic by a firm called Rode, R O D E, where uh they capture the audio in 32 bit floats. And uh then there is absolutely no step of fighting to get the mic level right at the recording time,",
+      "endTime": 88.25,
+      "text": "I only dimly understand it, but uh all of us who have ever dealt with a mic know that you constantly struggle to get the audio levels right. And uh these are magical mics discovered by Amit. This is the new state of the art mic by a firm called Rode, R O D E, where uh they capture the audio in 32 bit floats. And uh then there is absolutely no step of fighting to get the mic level right at the recording time, and in post you can basically fix up the audio level. And so we've got a new level of human freedom. We can wave our arms around.",
       "words": [
         {
           "word": "I",
@@ -1261,15 +1261,7 @@
           "startTime": 78.33,
           "endTime": 78.81,
           "confidence": 0.5964
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 78.81,
-      "endTime": 82.73,
-      "text": "and in post you can basically fix up the audio",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 78.81,
@@ -1329,15 +1321,7 @@
           "startTime": 82.25,
           "endTime": 82.73,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 82.73,
-      "endTime": 90.09,
-      "text": "level. And so we've got a new level of human freedom. We can wave our arms around. And there is no ugliness in",
-      "words": [
+        },
         {
           "word": "level.",
           "startTime": 82.73,
@@ -1439,7 +1423,15 @@
           "startTime": 87.75,
           "endTime": 88.25,
           "confidence": 0.8508
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 88.57,
+      "endTime": 153.69,
+      "text": "And there is no ugliness in front of us. That is all the show was lacking. You and me waving our arms about now we can wave our arms about. This is Road Wireless Pro just came out, and the sort of analogy I use is that 32 bit float for audio is like um you know raw for photographs. You know, you can adjust exposure, et cetera, et cetera. Post facto, it captures all the information. It's the same with this. You're never gonna have an issue with something being too loud and clipping and all of those issues are gone. And I think about and this is something we were discussing the other day, about what a miracle it is that So much of the technology that twenty years ago would have been prohibit prohibitive, would not have allowed us to do what we're doing. It's now consumer grade. It's so cheap. Like all the podcasting equipment I use in my home studio and so on, including those beautiful mics we were using. The boom arms are ugly, but the mics 80 or 2100X close to my heart, I will keep using them for podcasting. The best dynamic mics and you know affordable for everyone. You missed an opportunity to plug a German philosopher. Okay let me kind of What German philosopher is this? What does Immanuel Kant's categorical imperative have to do with this? Uh",
+      "words": [
         {
           "word": "And",
           "startTime": 88.57,
@@ -1475,15 +1467,7 @@
           "startTime": 90.01,
           "endTime": 90.09,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 90.09,
-      "endTime": 143.05,
-      "text": "front of us. That is all the show was lacking. You and me waving our arms about now we can wave our arms about. This is Road Wireless Pro just came out, and the sort of analogy I use is that 32 bit float for audio is like um you know raw for photographs. You know, you can adjust exposure, et cetera, et cetera. Post facto, it captures all the information. It's the same with this. You're never gonna have an issue with something being too loud and clipping and all of those issues are gone. And I think about and this is something we were discussing the other day, about what a miracle it is that So much of the technology that twenty years ago would have been prohibit prohibitive, would not have allowed us to do what we're doing. It's now consumer grade. It's so cheap. Like all the podcasting equipment I use in my home studio and so on, including those beautiful mics we were using. The boom arms are ugly, but the mics 80 or 2100X close to my heart, I will keep using them for podcasting. The best dynamic mics and you know affordable for everyone. You missed",
-      "words": [
+        },
         {
           "word": "front",
           "startTime": 90.09,
@@ -2701,15 +2685,7 @@
           "startTime": 142.65,
           "endTime": 143.05,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 143.05,
-      "endTime": 144.65,
-      "text": "an opportunity to plug a German",
-      "words": [
+        },
         {
           "word": "an",
           "startTime": 143.05,
@@ -2745,15 +2721,7 @@
           "startTime": 144.25,
           "endTime": 144.65,
           "confidence": 0.9957
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 144.65,
-      "endTime": 153.69,
-      "text": "philosopher. Okay let me kind of What German philosopher is this? What does Immanuel Kant's categorical imperative have to do with this? Uh",
-      "words": [
+        },
         {
           "word": "philosopher.",
           "startTime": 144.65,
@@ -2897,8 +2865,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 153.69,
-      "endTime": 176.54,
-      "text": "this is about the proletariat owning the means of production. Okay? So you and I, humble slaves and producers, are no longer the subjects of the giant media companies. Here we are in the little world of I mean by uh media private limited where we have the complete means of production and our back end calls. And who says",
+      "endTime": 177.02,
+      "text": "this is about the proletariat owning the means of production. Okay? So you and I, humble slaves and producers, are no longer the subjects of the giant media companies. Here we are in the little world of I mean by uh media private limited where we have the complete means of production and our back end calls. And who says Immanuel",
       "words": [
         {
           "word": "this",
@@ -3259,21 +3227,21 @@
           "startTime": 176.3,
           "endTime": 176.54,
           "confidence": 0.9964
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 176.54,
-      "endTime": 220.22,
-      "text": "Immanuel can't? Now Immanuel can. And let me you know my favorite little story which I have said on the scene and the unseen, but never on everything is everything. Just to talk about how technology has got so much cheaper in terms of the means of production is of an editing software called Da Vinci Resolve. Now Da Vinci Resolve today is one of the big three editing software. It does great editing and it it does color grading. Now once upon a time it was known only for color grading. But that was then state of the art and now it's even more improved. But it wasn't free. Like today I have it free on my laptop and anyone can just download it for free. There's a paid version, but not necessary. The free version is so awesome. You can do the you know, state of the art editing and the best color grading. But once in two thousand and ten, when it was only color grading, guess how much it cost?",
-      "words": [
+        },
         {
           "word": "Immanuel",
           "startTime": 176.54,
           "endTime": 177.02,
           "confidence": 0.7723
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 177.02,
+      "endTime": 220.22,
+      "text": "can't? Now Immanuel can. And let me you know my favorite little story which I have said on the scene and the unseen, but never on everything is everything. Just to talk about how technology has got so much cheaper in terms of the means of production is of an editing software called Da Vinci Resolve. Now Da Vinci Resolve today is one of the big three editing software. It does great editing and it it does color grading. Now once upon a time it was known only for color grading. But that was then state of the art and now it's even more improved. But it wasn't free. Like today I have it free on my laptop and anyone can just download it for free. There's a paid version, but not necessary. The free version is so awesome. You can do the you know, state of the art editing and the best color grading. But once in two thousand and ten, when it was only color grading, guess how much it cost?",
+      "words": [
         {
           "word": "can't?",
           "startTime": 177.02,
@@ -5137,8 +5105,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 257.93,
-      "endTime": 264.49,
-      "text": "This is art. Um we should aspire to surround ourselves with",
+      "endTime": 294.14,
+      "text": "This is art. Um we should aspire to surround ourselves with objects of beauty, and great art has a way of lighting up your life. These shirts are from IndianColours.com. And uh this is a unique organization which works with artists in India and pays them royalty. So it's like the world of books. Where the author of the book gets a royalty. So you have these beautiful shirts and backed up by a novel business model",
       "words": [
         {
           "word": "This",
@@ -5205,15 +5173,7 @@
           "startTime": 264.25,
           "endTime": 264.49,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 264.49,
-      "endTime": 267.51,
-      "text": "objects of beauty, and",
-      "words": [
+        },
         {
           "word": "objects",
           "startTime": 264.49,
@@ -5237,15 +5197,7 @@
           "startTime": 266.01,
           "endTime": 267.51,
           "confidence": 0.9956
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 267.53,
-      "endTime": 288.62,
-      "text": "great art has a way of lighting up your life. These shirts are from IndianColours.com. And uh this is a unique organization which works with artists in India and pays them royalty. So it's like the world of books. Where the author of the book gets a royalty. So you have",
-      "words": [
+        },
         {
           "word": "great",
           "startTime": 267.53,
@@ -5551,15 +5503,7 @@
           "startTime": 288.38,
           "endTime": 288.62,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 288.62,
-      "endTime": 290.54,
-      "text": "these beautiful shirts and",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 288.62,
@@ -5583,15 +5527,7 @@
           "startTime": 290.22,
           "endTime": 290.54,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 290.54,
-      "endTime": 294.86,
-      "text": "backed up by a novel business model for the world",
-      "words": [
+        },
         {
           "word": "backed",
           "startTime": 290.54,
@@ -5633,7 +5569,15 @@
           "startTime": 293.58,
           "endTime": 294.14,
           "confidence": 0.9974
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 294.14,
+      "endTime": 319.77,
+      "text": "for the world of art. And the best part about it is most of us can't afford to buy fancy art hanging on the walls, who's gonna spend lakhs, but you know, these people just license art, put it on uh merchandise like cups and stoles and shirts and all of that and uh anyone can surround themselves with art, which I can see makes you very happy. But we will now have to move. I just show from a happy subject to a sad one.",
+      "words": [
         {
           "word": "for",
           "startTime": 294.14,
@@ -5651,15 +5595,7 @@
           "startTime": 294.54,
           "endTime": 294.86,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 294.86,
-      "endTime": 319.77,
-      "text": "of art. And the best part about it is most of us can't afford to buy fancy art hanging on the walls, who's gonna spend lakhs, but you know, these people just license art, put it on uh merchandise like cups and stoles and shirts and all of that and uh anyone can surround themselves with art, which I can see makes you very happy. But we will now have to move. I just show from a happy subject to a sad one.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 294.86,
@@ -9455,8 +9391,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 479.35,
-      "endTime": 485.53,
-      "text": "let's carry this uh forward. Uh Out of the previous episode and this one, we're building the",
+      "endTime": 586.38,
+      "text": "let's carry this uh forward. Uh Out of the previous episode and this one, we're building the basic toolkit on how to think about the state political philosophy and public policy. And this is just a fabulous toolkit. It is it's just an amazing piece of intellectual power to be able to look at the world through these eyes, and it contributes great insight everywhere we look. So we turn to the question point three, which is what should the state do? So we want a narrow scope of the state. We fundamentally want Uh flourishing of human freedom, but we know that the state is essential in certain things. How do you draw those lines? Left to itself, it could just become your philosophy versus mine or your political preferences versus mine, and that's a very unsatisfactory state of affairs. Is there something that we can agree upon? Is there something that has a technical core that is sound and makes sense? Okay, and here the economists have added tremendous value. The economists have built out this framework. called market failure, which works like this. So what they have figured out is step one, that freedom is the baseline, that by default human beings should be free, human beings should do whatever they want, human beings should swing their arms wildly and not be constrained by a boom arm required by a government regulator. Okay so freedom is the baseline. Then there is a class of situations where the pure freedom doesn't work out too well. And what is the meaning of doesn't work out too well? The economists have demonstrated that in this class of problems that is called market failure, there is actually a way for the state to make some people better off",
       "words": [
         {
           "word": "let's",
@@ -9559,15 +9495,7 @@
           "startTime": 485.29,
           "endTime": 485.53,
           "confidence": 0.9965
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 485.53,
-      "endTime": 488.01,
-      "text": "basic toolkit on how to think about",
-      "words": [
+        },
         {
           "word": "basic",
           "startTime": 485.53,
@@ -9609,15 +9537,7 @@
           "startTime": 487.53,
           "endTime": 488.01,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 488.01,
-      "endTime": 527.54,
-      "text": "the state political philosophy and public policy. And this is just a fabulous toolkit. It is it's just an amazing piece of intellectual power to be able to look at the world through these eyes, and it contributes great insight everywhere we look. So we turn to the question point three, which is what should the state do? So we want a narrow scope of the state. We fundamentally want Uh flourishing of human freedom, but we know that the state is essential in certain things. How do you draw those lines? Left to itself, it could just become your philosophy versus mine or your political preferences versus mine, and that's a very unsatisfactory",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 488.01,
@@ -10301,15 +10221,7 @@
           "startTime": 526.58,
           "endTime": 527.54,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 527.54,
-      "endTime": 529.46,
-      "text": "state of affairs. Is there something that",
-      "words": [
+        },
         {
           "word": "state",
           "startTime": 527.54,
@@ -10351,15 +10263,7 @@
           "startTime": 529.3,
           "endTime": 529.46,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 529.46,
-      "endTime": 543.66,
-      "text": "we can agree upon? Is there something that has a technical core that is sound and makes sense? Okay, and here the economists have added tremendous value. The economists have built out this framework. called market failure, which works like",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 529.46,
@@ -10599,15 +10503,7 @@
           "startTime": 543.5,
           "endTime": 543.66,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 543.66,
-      "endTime": 546.54,
-      "text": "this. So what they have figured out is",
-      "words": [
+        },
         {
           "word": "this.",
           "startTime": 543.66,
@@ -10655,15 +10551,7 @@
           "startTime": 545.82,
           "endTime": 546.54,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 546.54,
-      "endTime": 560.62,
-      "text": "step one, that freedom is the baseline, that by default human beings should be free, human beings should do whatever they want, human beings should swing their arms wildly and not be constrained by a boom arm required by a government regulator.",
-      "words": [
+        },
         {
           "word": "step",
           "startTime": 546.54,
@@ -10915,15 +10803,7 @@
           "startTime": 559.74,
           "endTime": 560.62,
           "confidence": 0.9757
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 560.62,
-      "endTime": 564.62,
-      "text": "Okay so freedom is the baseline. Then",
-      "words": [
+        },
         {
           "word": "Okay",
           "startTime": 560.62,
@@ -10965,15 +10845,7 @@
           "startTime": 563.74,
           "endTime": 564.62,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 564.62,
-      "endTime": 586.38,
-      "text": "there is a class of situations where the pure freedom doesn't work out too well. And what is the meaning of doesn't work out too well? The economists have demonstrated that in this class of problems that is called market failure, there is actually a way for the state to make some people better off",
-      "words": [
+        },
         {
           "word": "there",
           "startTime": 564.62,
@@ -11341,8 +11213,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 589.34,
-      "endTime": 630.22,
-      "text": "so it's very important to note we're not doing populism. We're not taking money from the rich and giving it to the poor. We're not doing Robin Hood. Market failure is a class of problems where there is an analytical and a technical possibility that the correct kind of state intervention is a free lunch because it will make some people in society better off without harming anybody at all. So that is really something all of us can agree on. That you know you don't get into class warfare. It is the very opposite of the great German philosopher who claimed that the history of mankind is a history of class warfare. The market failure worldview is about using the state in ways that does",
+      "endTime": 865.32,
+      "text": "so it's very important to note we're not doing populism. We're not taking money from the rich and giving it to the poor. We're not doing Robin Hood. Market failure is a class of problems where there is an analytical and a technical possibility that the correct kind of state intervention is a free lunch because it will make some people in society better off without harming anybody at all. So that is really something all of us can agree on. That you know you don't get into class warfare. It is the very opposite of the great German philosopher who claimed that the history of mankind is a history of class warfare. The market failure worldview is about using the state in ways that does not ignite class warfare. So if we can play this correctly and if we can do it correctly, there is a technical core. There are you know good analytical foundations which teach us that when there is market failure, there is an opportunity to design a state intervention that will make some people better off without harming anybody. Market failure, in turn, comes under four buckets. So one bucket is called market power, where there is a monopolist or an oligopolist. Once again, there is a widespread populist view in the world that we hate XYZ because they are a monopolist, because they're rich, powerful people, and we want to shop the fellows and we want to take away their money and we want to give it to other people. That's Robin Hood level thinking. That's not sophisticated. That's just populism. The economists know one better than that. The economists know ways in which everybody can be better off. when the government interferes with the working of a monopoly in certain ways. And that is indeed a good thing all of us would be able to sign on, including the monopolist. Okay? So we are not being Robin Hood. We are not harming the monopolist. And by the way, alongside that, sometimes economists will say, you know, this is a natural monopoly and really we benefit as society from the cost cutting that comes with a natural monopoly and you want to regulate the price. But beyond that, you don't want to break up or mess with a natural monopoly. So we should not view this through a populist lens. We should not view this through the envy and resentment towards the powerful people. So that's pillar one of market failure, that's market power. Pillar two is externalities, where there is a channel of influence from me to you or you to me that we did not contract. Externalities come in two kinds: positive and negative. In a positive externality, the classic one is I get educated, I get vaccinated, you become better off. I get educated, invisible, some knowledge spills over to you. I get a vaccine, invisible disease transmission to you goes down. We never contracted this, we never agreed that these benefits were going to flow, but there was a spillover. Now Market failure happens because when I think about myself and my decision to buy a vaccine, my decision to get educated, I will not price your benefits. I'll only think for me myself. So I will tend to underinvest in education. I will tend to underinvest in a vaccine because I only care about myself. Okay, and that's a market failure. That are we able to bring the interests of others to reshape my decision making. And that's the idea of a positive externality. Similarly, negative externalities. I smoke, you get cancer. I play loudspeakers, I destroy your health and peace. Okay. This is clearly a problem. The entire criminal justice system is a negative externality story. The f my freedom to move my fist should be limited not just by the absence of the boom arm, but by the proximity of your nose. Okay, that is negative externalities that we use state power to limit negative externalities and everybody becomes better off. So that's externalities. The third is asymmetric information. It is not reasonable for you and me as a consumer to go into the market and buy a medicine and do our own testing and figure out that the medicine is pure. Okay. So Purity of food, purity of medicines. Uh, this is a subject where there is a lot of value by government regulation. So the government will do the hard work of working with banks, pushing banks to make sure that there's a minimum level of safety. How would grandmothers and dentists know that my bank is sound? That's just an unreasonable ask. of demanding that everybody understand what their bank is like. Everybody understand that this restaurant has a clean kitchen, or that this restaurant does not use gutter oil. You know what is gutter oil? Okay, gentle reader, please Google gutter oil. It will blow your mind. Uh so",
       "words": [
         {
           "word": "so",
@@ -12099,15 +11971,7 @@
           "startTime": 629.74,
           "endTime": 630.22,
           "confidence": 0.8831
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 630.22,
-      "endTime": 633.34,
-      "text": "not ignite class warfare.",
-      "words": [
+        },
         {
           "word": "not",
           "startTime": 630.22,
@@ -12131,15 +11995,7 @@
           "startTime": 632.46,
           "endTime": 633.34,
           "confidence": 0.9789
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 633.34,
-      "endTime": 721.03,
-      "text": "So if we can play this correctly and if we can do it correctly, there is a technical core. There are you know good analytical foundations which teach us that when there is market failure, there is an opportunity to design a state intervention that will make some people better off without harming anybody. Market failure, in turn, comes under four buckets. So one bucket is called market power, where there is a monopolist or an oligopolist. Once again, there is a widespread populist view in the world that we hate XYZ because they are a monopolist, because they're rich, powerful people, and we want to shop the fellows and we want to take away their money and we want to give it to other people. That's Robin Hood level thinking. That's not sophisticated. That's just populism. The economists know one better than that. The economists know ways in which everybody can be better off. when the government interferes with the working of a monopoly in certain ways. And that is indeed a good thing all of us would be able to sign on, including the monopolist. Okay? So we are not being Robin Hood. We are not harming the monopolist. And by the way, alongside that, sometimes economists will say, you know, this is a natural monopoly and really we benefit as society from the cost cutting that comes with a natural monopoly and you want to regulate the price. But beyond that, you don't want to break up or mess with a natural monopoly. So we should not view this through a populist lens. We should not view this through the envy and resentment towards the powerful people. So that's pillar one of market failure, that's market power. Pillar two is",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 633.34,
@@ -13897,29 +13753,13 @@
           "startTime": 720.71,
           "endTime": 721.03,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 721.03,
-      "endTime": 722.53,
-      "text": "externalities,",
-      "words": [
+        },
         {
           "word": "externalities,",
           "startTime": 721.03,
           "endTime": 722.53,
           "confidence": 0.8417
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 722.79,
-      "endTime": 788.9,
-      "text": "where there is a channel of influence from me to you or you to me that we did not contract. Externalities come in two kinds: positive and negative. In a positive externality, the classic one is I get educated, I get vaccinated, you become better off. I get educated, invisible, some knowledge spills over to you. I get a vaccine, invisible disease transmission to you goes down. We never contracted this, we never agreed that these benefits were going to flow, but there was a spillover. Now Market failure happens because when I think about myself and my decision to buy a vaccine, my decision to get educated, I will not price your benefits. I'll only think for me myself. So I will tend to underinvest in education. I will tend to underinvest in a vaccine because I only care about myself. Okay, and that's a market failure. That are we able to bring the interests of others to reshape my decision making. And that's the idea of a positive externality. Similarly, negative externalities. I smoke, you get cancer. I play loudspeakers, I destroy your health and",
-      "words": [
+        },
         {
           "word": "where",
           "startTime": 722.79,
@@ -15041,15 +14881,7 @@
           "startTime": 788.74,
           "endTime": 788.9,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 788.9,
-      "endTime": 790.9,
-      "text": "peace. Okay. This is clearly",
-      "words": [
+        },
         {
           "word": "peace.",
           "startTime": 788.9,
@@ -15079,15 +14911,7 @@
           "startTime": 790.34,
           "endTime": 790.9,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 790.9,
-      "endTime": 808.26,
-      "text": "a problem. The entire criminal justice system is a negative externality story. The f my freedom to move my fist should be limited not just by the absence of the boom arm, but by the proximity of your nose. Okay, that is negative externalities that we use state power to limit negative externalities and everybody",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 790.9,
@@ -15417,15 +15241,7 @@
           "startTime": 807.86,
           "endTime": 808.26,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 808.26,
-      "endTime": 810.66,
-      "text": "becomes better off. So that's externalities. The",
-      "words": [
+        },
         {
           "word": "becomes",
           "startTime": 808.26,
@@ -15467,15 +15283,7 @@
           "startTime": 810.5,
           "endTime": 810.66,
           "confidence": 0.9906
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 810.66,
-      "endTime": 865.32,
-      "text": "third is asymmetric information. It is not reasonable for you and me as a consumer to go into the market and buy a medicine and do our own testing and figure out that the medicine is pure. Okay. So Purity of food, purity of medicines. Uh, this is a subject where there is a lot of value by government regulation. So the government will do the hard work of working with banks, pushing banks to make sure that there's a minimum level of safety. How would grandmothers and dentists know that my bank is sound? That's just an unreasonable ask. of demanding that everybody understand what their bank is like. Everybody understand that this restaurant has a clean kitchen, or that this restaurant does not use gutter oil. You know what is gutter oil? Okay, gentle reader, please Google gutter oil. It will blow your mind. Uh so",
-      "words": [
+        },
         {
           "word": "third",
           "startTime": 810.66,
@@ -16369,8 +16177,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 865.32,
-      "endTime": 873.58,
-      "text": "that's externality. And gentle reader, I suspect it will blow your guts as well. But continue. I don't know what it is, by the way, but from your expression.",
+      "endTime": 884.28,
+      "text": "that's externality. And gentle reader, I suspect it will blow your guts as well. But continue. I don't know what it is, by the way, but from your expression. Um, don't tell me, continue. It's it's just don't tell me, don't tell me, continue. Externalities. Okay, and the fourth is public goods. Public goods",
       "words": [
         {
           "word": "that's",
@@ -16545,29 +16353,13 @@
           "startTime": 873.08,
           "endTime": 873.58,
           "confidence": 0.8562
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 874.12,
-      "endTime": 875.62,
-      "text": "Um,",
-      "words": [
+        },
         {
           "word": "Um,",
           "startTime": 874.12,
           "endTime": 875.62,
           "confidence": 0.5567
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 875.72,
-      "endTime": 884.28,
-      "text": "don't tell me, continue. It's it's just don't tell me, don't tell me, continue. Externalities. Okay, and the fourth is public goods. Public goods",
-      "words": [
+        },
         {
           "word": "don't",
           "startTime": 875.72,
@@ -16717,8 +16509,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 884.28,
-      "endTime": 908.04,
-      "text": "are a beautiful thing. Uh they stand in technical jargon for things that are non-rival and non-exclusive. Again, the welfareist socialist impulse in India is anything that is good for the people is a public good, and that's just wrong. A public good is something that is non-rival and non-excludable. Non-rival means that. My consumption of the public good in no way diminishes your consumption",
+      "endTime": 1014.3,
+      "text": "are a beautiful thing. Uh they stand in technical jargon for things that are non-rival and non-exclusive. Again, the welfareist socialist impulse in India is anything that is good for the people is a public good, and that's just wrong. A public good is something that is non-rival and non-excludable. Non-rival means that. My consumption of the public good in no way diminishes your consumption of the public good. So when one young woman like Nomsita walks on the streets and benefits from the public good of safety, it in no way diminishes the overall supply of safety. Okay, that's non-rival and non-excludable. It is not even in theory possible to exclude a newborn child from the glory of that public safety. A public good. That's the narrow definition of a public good. And there is a lot of abuse of these words. Um, I had done a podcast conversation with Vasandhar based on two chapters out of the Kilkar and Shah book, where I just have a fundamental objection to the digital public good, because you know what is being done in India as the so-called digital public goods is generally not a public good. It's rival and excludable. So uh public goods are, for example, clean air. Okay. Step one, my breathing of clean air in no way diminishes the amount of clean air in the world. Thus it is non-tribal. And second, non-excludable. It is not even in theory possible to exclude a newborn child from breathing that glorious air. So the regulation of uh putting particulate matter into the air all over North India. is a public goods problem. And we would endorse the use of the coercive power of the state to tax the people, raise money, build organizations that will put 10,000 drones all over the sky in the Hindi heartland, find every fire and send the police to block every fire and give a ticket to each person lighting a fire all over North India. Okay? That's the kind of government intervention to block The fires all over North India, and that would create the public",
       "words": [
         {
           "word": "are",
@@ -17109,15 +16901,7 @@
           "startTime": 907.4,
           "endTime": 908.04,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 908.04,
-      "endTime": 909.8,
-      "text": "of the public good. So",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 908.04,
@@ -17147,15 +16931,7 @@
           "startTime": 909.24,
           "endTime": 909.8,
           "confidence": 0.9965
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 909.8,
-      "endTime": 921.08,
-      "text": "when one young woman like Nomsita walks on the streets and benefits from the public good of safety, it in no way diminishes the overall supply of safety.",
-      "words": [
+        },
         {
           "word": "when",
           "startTime": 909.8,
@@ -17323,15 +17099,7 @@
           "startTime": 920.52,
           "endTime": 921.08,
           "confidence": 0.9798
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 921.08,
-      "endTime": 922.6,
-      "text": "Okay, that's non-rival and",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 921.08,
@@ -17355,15 +17123,7 @@
           "startTime": 922.44,
           "endTime": 922.6,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 922.6,
-      "endTime": 928.76,
-      "text": "non-excludable. It is not even in theory possible to exclude a newborn child from the glory of that",
-      "words": [
+        },
         {
           "word": "non-excludable.",
           "startTime": 922.6,
@@ -17471,29 +17231,13 @@
           "startTime": 928.52,
           "endTime": 928.76,
           "confidence": 0.9638
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 928.76,
-      "endTime": 929.0,
-      "text": "public",
-      "words": [
+        },
         {
           "word": "public",
           "startTime": 928.76,
           "endTime": 929.0,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 929.0,
-      "endTime": 967.83,
-      "text": "safety. A public good. That's the narrow definition of a public good. And there is a lot of abuse of these words. Um, I had done a podcast conversation with Vasandhar based on two chapters out of the Kilkar and Shah book, where I just have a fundamental objection to the digital public good, because you know what is being done in India as the so-called digital public goods is generally not a public good. It's rival and excludable. So uh public goods are, for example, clean air. Okay. Step one, my breathing of clean air in no way diminishes the amount of clean air in the world. Thus",
-      "words": [
+        },
         {
           "word": "safety.",
           "startTime": 929.0,
@@ -18147,15 +17891,7 @@
           "startTime": 967.35,
           "endTime": 967.83,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 967.83,
-      "endTime": 970.47,
-      "text": "it is non-tribal. And second,",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 967.83,
@@ -18185,15 +17921,7 @@
           "startTime": 969.59,
           "endTime": 970.47,
           "confidence": 0.9897
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 970.47,
-      "endTime": 1000.33,
-      "text": "non-excludable. It is not even in theory possible to exclude a newborn child from breathing that glorious air. So the regulation of uh putting particulate matter into the air all over North India. is a public goods problem. And we would endorse the use of the coercive power of the state to tax the people, raise money, build organizations that will put 10,000 drones all over the sky in the Hindi heartland, find every fire and send the",
-      "words": [
+        },
         {
           "word": "non-excludable.",
           "startTime": 970.47,
@@ -18661,29 +18389,13 @@
           "startTime": 1000.17,
           "endTime": 1000.33,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1000.33,
-      "endTime": 1000.89,
-      "text": "police",
-      "words": [
+        },
         {
           "word": "police",
           "startTime": 1000.33,
           "endTime": 1000.89,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1000.89,
-      "endTime": 1014.3,
-      "text": "to block every fire and give a ticket to each person lighting a fire all over North India. Okay? That's the kind of government intervention to block The fires all over North India, and that would create the public",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1000.89,
@@ -18923,8 +18635,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1014.3,
-      "endTime": 1016.86,
-      "text": "good of clean air. So I've",
+      "endTime": 1016.22,
+      "text": "good of clean air.",
       "words": [
         {
           "word": "good",
@@ -18949,7 +18661,15 @@
           "startTime": 1015.34,
           "endTime": 1016.22,
           "confidence": 0.9664
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1016.22,
+      "endTime": 1037.87,
+      "text": "So I've described four categories: public goods, asymmetric information, externalities, and market power. These are green lighted by the economists as market failure. And so that basically gives us the toolkit that by default, freedom. If you see these four, maybe there is a state intervention that can help.",
+      "words": [
         {
           "word": "So",
           "startTime": 1016.22,
@@ -18961,15 +18681,7 @@
           "startTime": 1016.54,
           "endTime": 1016.86,
           "confidence": 0.9515
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1016.86,
-      "endTime": 1022.14,
-      "text": "described four categories: public goods, asymmetric information, externalities,",
-      "words": [
+        },
         {
           "word": "described",
           "startTime": 1016.86,
@@ -19017,15 +18729,7 @@
           "startTime": 1020.7,
           "endTime": 1022.14,
           "confidence": 0.9699
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1022.14,
-      "endTime": 1023.82,
-      "text": "and market power.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1022.14,
@@ -19043,15 +18747,7 @@
           "startTime": 1023.1,
           "endTime": 1023.82,
           "confidence": 0.9587
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1023.82,
-      "endTime": 1037.87,
-      "text": "These are green lighted by the economists as market failure. And so that basically gives us the toolkit that by default, freedom. If you see these four, maybe there is a state intervention that can help.",
-      "words": [
+        },
         {
           "word": "These",
           "startTime": 1023.82,
@@ -21493,8 +21189,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1141.3,
-      "endTime": 1167.58,
-      "text": "happens. And I'm going to talk more about that for a moment in a moment. But I also want to say something upside down. Suppose your values were such that you actually didn't care about freedom in in and of itself. Okay? That's not where I am. That's not where you are. But suppose you, gentle reader, actually don't give a damn about freedom, that you don't value freedom. Maybe you're a conservative. Maybe you value order. Maybe you value traditional culture where actually some",
+      "endTime": 1220.98,
+      "text": "happens. And I'm going to talk more about that for a moment in a moment. But I also want to say something upside down. Suppose your values were such that you actually didn't care about freedom in in and of itself. Okay? That's not where I am. That's not where you are. But suppose you, gentle reader, actually don't give a damn about freedom, that you don't value freedom. Maybe you're a conservative. Maybe you value order. Maybe you value traditional culture where actually some people should crush the freedom of others. Okay? I will, however, be the card carrying economist and say that this technology of baseline on freedom And limiting state intervention to the world of market failure, subject to some more caveats that I'm going to come to in a moment, is the path to prosperity. That's an objective claim that look, you want to get rich or not. Okay, so while it is entirely true that I believe every good and ethical philosophy is grounded in human freedom and human possibilities, even if not, if you just cared about money, even then. As a card carrying economist, I'm saying to you that society is flourish when freedom is a baseline and government intervention is limited to the class of market failures where there can be a successful implementation. And I will come to implementation considerations",
       "words": [
         {
           "word": "happens.",
@@ -22005,15 +21701,7 @@
           "startTime": 1167.34,
           "endTime": 1167.58,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1167.58,
-      "endTime": 1169.74,
-      "text": "people should crush the freedom of others.",
-      "words": [
+        },
         {
           "word": "people",
           "startTime": 1167.58,
@@ -22055,15 +21743,7 @@
           "startTime": 1169.18,
           "endTime": 1169.74,
           "confidence": 0.9613
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1169.74,
-      "endTime": 1186.89,
-      "text": "Okay? I will, however, be the card carrying economist and say that this technology of baseline on freedom And limiting state intervention to the world of market failure, subject to some more caveats that I'm going to come to in a moment, is the path",
-      "words": [
+        },
         {
           "word": "Okay?",
           "startTime": 1169.74,
@@ -22333,15 +22013,7 @@
           "startTime": 1186.57,
           "endTime": 1186.89,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1186.89,
-      "endTime": 1188.81,
-      "text": "to prosperity. That's an",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1186.89,
@@ -22365,15 +22037,7 @@
           "startTime": 1188.49,
           "endTime": 1188.81,
           "confidence": 0.9971
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1188.81,
-      "endTime": 1191.21,
-      "text": "objective claim that look, you want to get rich or",
-      "words": [
+        },
         {
           "word": "objective",
           "startTime": 1188.81,
@@ -22433,15 +22097,7 @@
           "startTime": 1190.89,
           "endTime": 1191.21,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1191.21,
-      "endTime": 1193.29,
-      "text": "not. Okay, so",
-      "words": [
+        },
         {
           "word": "not.",
           "startTime": 1191.21,
@@ -22459,15 +22115,7 @@
           "startTime": 1192.41,
           "endTime": 1193.29,
           "confidence": 0.9984
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1193.29,
-      "endTime": 1220.98,
-      "text": "while it is entirely true that I believe every good and ethical philosophy is grounded in human freedom and human possibilities, even if not, if you just cared about money, even then. As a card carrying economist, I'm saying to you that society is flourish when freedom is a baseline and government intervention is limited to the class of market failures where there can be a successful implementation. And I will come to implementation considerations",
-      "words": [
+        },
         {
           "word": "while",
           "startTime": 1193.29,
@@ -22923,8 +22571,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1220.98,
-      "endTime": 1311.82,
-      "text": "next. Exactly. I entirely agree with you. So like I was, in fact, at one point thinking of uh writing a book, which I never got down to it. Talking essentially about freedom, reframe this concern, talking about why it is Optimal from both the moral point of view and the utilitarian point of view. You know, it gives you the best results, but even if you don't care about results, you know, et cetera, et cetera. The other point I wanted to make is about language. That these terms are confusing. Like you pointed out, uh how people get confused about digital public goods when they're neither rival nor excludable to Caha uh, you know, uh public goods. And market failure is another such term. Now a public good doesn't mean something that is good for the public, right? Similarly, a market failure doesn't mean when the market fails to give you something you want. That I wanted a green cushion, I only found blu cushions at the store, it's a market failure. I'm taking a trivial example, but that's how people often think of it. So two things, two points here. One is we have to actually think about what a market failure is and with the way you you and I use it is in a slightly different sense. Just because a market doesn't give you doesn't w uh something that you want doesn't mean the state should now step in and uh sort of regulate that. And the other important point is that people keep talking about market failure, uh, often erroneously, to justify state intervention. No one talks of state failure. And public choice theory is a field, and one day I want to do a full episode on it, which essentially elaborates on why state failure is practically ubiquitous but market failure is",
+      "endTime": 1316.44,
+      "text": "next. Exactly. I entirely agree with you. So like I was, in fact, at one point thinking of uh writing a book, which I never got down to it. Talking essentially about freedom, reframe this concern, talking about why it is Optimal from both the moral point of view and the utilitarian point of view. You know, it gives you the best results, but even if you don't care about results, you know, et cetera, et cetera. The other point I wanted to make is about language. That these terms are confusing. Like you pointed out, uh how people get confused about digital public goods when they're neither rival nor excludable to Caha uh, you know, uh public goods. And market failure is another such term. Now a public good doesn't mean something that is good for the public, right? Similarly, a market failure doesn't mean when the market fails to give you something you want. That I wanted a green cushion, I only found blu cushions at the store, it's a market failure. I'm taking a trivial example, but that's how people often think of it. So two things, two points here. One is we have to actually think about what a market failure is and with the way you you and I use it is in a slightly different sense. Just because a market doesn't give you doesn't w uh something that you want doesn't mean the state should now step in and uh sort of regulate that. And the other important point is that people keep talking about market failure, uh, often erroneously, to justify state intervention. No one talks of state failure. And public choice theory is a field, and one day I want to do a full episode on it, which essentially elaborates on why state failure is practically ubiquitous but market failure is going to classify it under the title implementation constraints and we'll come back in the world.",
       "words": [
         {
           "word": "next.",
@@ -24779,15 +24427,7 @@
           "startTime": 1311.18,
           "endTime": 1311.82,
           "confidence": 0.9815
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1311.82,
-      "endTime": 1314.22,
-      "text": "going to classify it under the title implementation constraints and",
-      "words": [
+        },
         {
           "word": "going",
           "startTime": 1311.82,
@@ -24847,15 +24487,7 @@
           "startTime": 1314.06,
           "endTime": 1314.22,
           "confidence": 0.9969
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1314.22,
-      "endTime": 1316.44,
-      "text": "we'll come back in the world.",
-      "words": [
+        },
         {
           "word": "we'll",
           "startTime": 1314.22,
@@ -24897,8 +24529,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1317.34,
-      "endTime": 1350.66,
-      "text": "This is a bane of economics that in the field of economics we repurpose plain English words. Okay? We don't create fancy new technical terms as we do in science and mathematics. In economics we repurpose ordinary English words. So market failure, public good, adverse selection, uh moral hazard. Okay, all these things seem seductively accessible to people who haven't thought deeply about them. And I'll just say that be cautious that in economics these are used as technical terms. So just take the effort Of thoroughly understanding the precise meaning of",
+      "endTime": 1347.84,
+      "text": "This is a bane of economics that in the field of economics we repurpose plain English words. Okay? We don't create fancy new technical terms as we do in science and mathematics. In economics we repurpose ordinary English words. So market failure, public good, adverse selection, uh moral hazard. Okay, all these things seem seductively accessible to people who haven't thought deeply about them. And I'll just say that be cautious that in economics these are used as technical terms. So just take the effort",
       "words": [
         {
           "word": "This",
@@ -25409,7 +25041,15 @@
           "startTime": 1347.34,
           "endTime": 1347.84,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1348.18,
+      "endTime": 1468.55,
+      "text": "Of thoroughly understanding the precise meaning of these terms before using that. And even the confusion between rights and entitlements, for example, and liberal and progressive today often in some places mean the opposite of what they originally meant. The other minor point I want to make that that buttresses a larger point I was making earlier is about monopolies. You know, it's fashionable to talk about monopolies, but my sense is that uh you know. The way I look at it is monopolies are incredibly rare to combine a competitive marketplace. Most of the time you see something that is genuinely a monopoly, the state there is cronyism happen, the state has a has a hand. It has, you know, stopped uh ease of entry in some way or the other. Because after all, every businessman and uh people again, another mistake people make is they assume that business friendly is equal to market friendly. They're absolutely the opposite. Market friendly means you have competition, anyone can enter. Business friendly means the existing businesses who are there. They want to keep competitors out, which hurts consumers. So they're completely different terms. Now every big business will want to be a monopoly. And the way and they will lobby the government for it, and they will tell the government create tariffs, put regulations, this and that. And you want to kind of avoid that. So it it's it's sort of important to point out that wherever there is a monopoly, like I I have this mantra that I use, you know, and it consists of four words. It's a question I ask myself whenever I look at a problem out there in society. Where is the coercion? And where you identify the coercion, often, most of the time, in fact in my case always, you will find that the root of the problem is there. And where there is what appears to be a monopoly, firstly, it's either not a monopoly, you're defining it wrongly, you're making some category error, uh, or there is state intervention at hand. And the reason I'm saying this is not because I want to say there are no monopolies or whatever. Of course, there are there can be, as you, you know, as as you'll go on to mention, but simply because the world is full of people, especially the state is full of people who are looking To clam down on freedom using all of these as excuses, and it's important to be on the watch for them and set a really high bar of proof.",
+      "words": [
         {
           "word": "Of",
           "startTime": 1348.18,
@@ -25451,15 +25091,7 @@
           "startTime": 1350.5,
           "endTime": 1350.66,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1350.66,
-      "endTime": 1468.55,
-      "text": "these terms before using that. And even the confusion between rights and entitlements, for example, and liberal and progressive today often in some places mean the opposite of what they originally meant. The other minor point I want to make that that buttresses a larger point I was making earlier is about monopolies. You know, it's fashionable to talk about monopolies, but my sense is that uh you know. The way I look at it is monopolies are incredibly rare to combine a competitive marketplace. Most of the time you see something that is genuinely a monopoly, the state there is cronyism happen, the state has a has a hand. It has, you know, stopped uh ease of entry in some way or the other. Because after all, every businessman and uh people again, another mistake people make is they assume that business friendly is equal to market friendly. They're absolutely the opposite. Market friendly means you have competition, anyone can enter. Business friendly means the existing businesses who are there. They want to keep competitors out, which hurts consumers. So they're completely different terms. Now every big business will want to be a monopoly. And the way and they will lobby the government for it, and they will tell the government create tariffs, put regulations, this and that. And you want to kind of avoid that. So it it's it's sort of important to point out that wherever there is a monopoly, like I I have this mantra that I use, you know, and it consists of four words. It's a question I ask myself whenever I look at a problem out there in society. Where is the coercion? And where you identify the coercion, often, most of the time, in fact in my case always, you will find that the root of the problem is there. And where there is what appears to be a monopoly, firstly, it's either not a monopoly, you're defining it wrongly, you're making some category error, uh, or there is state intervention at hand. And the reason I'm saying this is not because I want to say there are no monopolies or whatever. Of course, there are there can be, as you, you know, as as you'll go on to mention, but simply because the world is full of people, especially the state is full of people who are looking To clam down on freedom using all of these as excuses, and it's important to be on the watch for them and set a really high bar of proof.",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 1350.66,
@@ -28021,8 +27653,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1475.53,
-      "endTime": 1488.6,
-      "text": "Okay, let's continue on our journey of the toolkit of public policy. So where we are, we've established that the state is the monopoly on violence, it's a coercive creature. And the appropriate role of the",
+      "endTime": 1788.46,
+      "text": "Okay, let's continue on our journey of the toolkit of public policy. So where we are, we've established that the state is the monopoly on violence, it's a coercive creature. And the appropriate role of the state is to play in the space of market failure. For the rest, freedom should be the default. By default, our worldview should be don't tell people what to do. And there is a narrow class of problems that are market failure problems. And so you're all strapped up and ready to go. You want to do public policy, you want to interfere in something in society, you want to intervene, you want to use the coercive power of the state in society where there is a market failure. And I want to say hold it there. Okay. Do not rush in where angels fear to tread. And this is around the problem of implementation failure. Okay. So just because there's a market failure, it doesn't mean that a state intervention will succeed. Okay. Very many times the state tries to march into something and it becomes a mess. So we should not jump to the conclusion that because there is a market failure, uh state intervention is the appropriate pathway to go. So now we should start thinking deeper about. The machinery about how will state intervention be organized. Can it work? Will it work? Will we succeed? Will we fail? In this, there is a nice toolkit on judging how difficult is a problem. Okay. So imagine you and I have a conversation over Chai, and you know, Amit Bhai is the dictator running the country, and uh we agree that XYZ is a market failure. And you wave your royal hand and you say, go intervene in the society and fix it. Okay, so then How do we achieve at a uh Chai conversation level assessment of how hard is this battle going to be? Okay, so I mean if I tell you to do an expeditionary force into the Middle East versus an expeditionary force into Japan, okay, it's obvious that an expeditionary force into Japan is harder because Japan is far away. Okay, whereas landing a division in the Middle East is easier because it's a short ride across over the Arabian Sea. Okay, so like that, do we have some simple toolkit to assess the complexity of a battle of public policy intervention? One that is so easy to employ that it belongs in every drawing room conversation in the country. And remarkably enough, the answer is yes. Okay. The first two parts of this were built by uh Pritchett and Wulcock 2004. So Lan Pritchett and Michael Bulcock wrote a paper in 2004 where they said, test one. Does it involve a large number of transactions? Okay, so if a government has to do many, many things with many, many people all over the country, that's more difficult. If a government just has to do a few things, if the number of decisions, the number of transactions is lower, then it's an easier thing. Whereas if the number of transactions is higher, if you have to pay welfare payments to millions of people, it's more difficult. Okay, so that's dimension one of complexity. High number of transactions makes it more difficult. Okay, then dimension two. Is there discretion? Okay, if there's a high amount of discretion for some frontline civil servant, then it's more difficult because there's going to be more corruption. If there is less amount of discretion, then it's easier. Okay, so to put these two together, for example, a government run vaccination program has a high number of transactions, but low amount of discretion. Okay, a polio vaccine, you just walk. In the slum or in the village and just put the polio drop on everybody. There is nothing, there is no Aadhar number, there's no tracking of identity, there's nothing, there's no discretion, there's no complexity. So that's an easy roll out because there is no discretion for the frontline operator. They just have to obey a manual and go roll out all over the country doing smallpox vaccinations, doing polio vaccinations. Okay, so that's two dimensions proposed by Woolcock and Pritchett. Kelkar and I have thought a lot about this and we think that. Two more dimensions in this are required. Dimension three, the stakes. Okay. So when a school teacher gets a job in a government school and doesn't show up to teach, she's stealing 15,000 rupees a month from the government because that's the wage of a school teacher. So what is at stake? 15,000 rupees. Okay, so yeah, people will try to steal that 15,000 rupees, but the amount of effort that will go into misbehavior will be relatively limited. At the other extreme, you have high stakes situations like in a criminal justice system where somebody's accused of a crime, and now the behavior of the policeman, the behavior of the public prosecutor, the behavior of the judge, in all these things, because the accused is facing a life and death consequence of going to jail, the stakes are sky high, and then the dangers of corruption and discretion just go to infinity. As the stakes go up, you take income tax, you take financial regulation, you take criminal justice system, you take judiciary, in all these things, the stakes are very high. So it is very, very difficult to build a rule of law environment where a policeman, a public prosecutor, a judge will be even handed treat everybody",
       "words": [
         {
           "word": "Okay,",
@@ -28239,15 +27871,7 @@
           "startTime": 1488.36,
           "endTime": 1488.6,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1488.6,
-      "endTime": 1490.44,
-      "text": "state is to play",
-      "words": [
+        },
         {
           "word": "state",
           "startTime": 1488.6,
@@ -28271,15 +27895,7 @@
           "startTime": 1489.96,
           "endTime": 1490.44,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1490.44,
-      "endTime": 1493.16,
-      "text": "in the space of market failure. For",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 1490.44,
@@ -28321,15 +27937,7 @@
           "startTime": 1492.84,
           "endTime": 1493.16,
           "confidence": 0.988
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1493.16,
-      "endTime": 1498.6,
-      "text": "the rest, freedom should be the default. By default, our worldview should be don't tell people what to",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1493.16,
@@ -28437,15 +28045,7 @@
           "startTime": 1498.44,
           "endTime": 1498.6,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1498.6,
-      "endTime": 1501.24,
-      "text": "do. And there is a narrow class of problems that are",
-      "words": [
+        },
         {
           "word": "do.",
           "startTime": 1498.6,
@@ -28511,15 +28111,7 @@
           "startTime": 1501.08,
           "endTime": 1501.24,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1501.24,
-      "endTime": 1503.4,
-      "text": "market failure problems. And",
-      "words": [
+        },
         {
           "word": "market",
           "startTime": 1501.24,
@@ -28543,15 +28135,7 @@
           "startTime": 1502.92,
           "endTime": 1503.4,
           "confidence": 0.992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1503.4,
-      "endTime": 1550.78,
-      "text": "so you're all strapped up and ready to go. You want to do public policy, you want to interfere in something in society, you want to intervene, you want to use the coercive power of the state in society where there is a market failure. And I want to say hold it there. Okay. Do not rush in where angels fear to tread. And this is around the problem of implementation failure. Okay. So just because there's a market failure, it doesn't mean that a state intervention will succeed. Okay. Very many times the state tries to march into something and it becomes a mess. So we should not jump to the conclusion that because there is a market failure, uh state intervention is the appropriate pathway to go. So now we should start thinking deeper about. The machinery about how will state intervention be organized. Can it work? Will it work? Will we",
-      "words": [
+        },
         {
           "word": "so",
           "startTime": 1503.4,
@@ -29475,15 +29059,7 @@
           "startTime": 1550.62,
           "endTime": 1550.78,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1550.78,
-      "endTime": 1552.7,
-      "text": "succeed? Will we fail? In",
-      "words": [
+        },
         {
           "word": "succeed?",
           "startTime": 1550.78,
@@ -29513,15 +29089,7 @@
           "startTime": 1552.38,
           "endTime": 1552.7,
           "confidence": 0.9944
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1552.7,
-      "endTime": 1608.81,
-      "text": "this, there is a nice toolkit on judging how difficult is a problem. Okay. So imagine you and I have a conversation over Chai, and you know, Amit Bhai is the dictator running the country, and uh we agree that XYZ is a market failure. And you wave your royal hand and you say, go intervene in the society and fix it. Okay, so then How do we achieve at a uh Chai conversation level assessment of how hard is this battle going to be? Okay, so I mean if I tell you to do an expeditionary force into the Middle East versus an expeditionary force into Japan, okay, it's obvious that an expeditionary force into Japan is harder because Japan is far away. Okay, whereas landing a division in the Middle East is easier because it's a short ride across over the Arabian Sea. Okay, so like that, do we have some simple toolkit",
-      "words": [
+        },
         {
           "word": "this,",
           "startTime": 1552.7,
@@ -30451,15 +30019,7 @@
           "startTime": 1607.61,
           "endTime": 1608.81,
           "confidence": 0.9969
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1608.81,
-      "endTime": 1610.41,
-      "text": "to assess the",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1608.81,
@@ -30477,15 +30037,7 @@
           "startTime": 1610.09,
           "endTime": 1610.41,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1610.41,
-      "endTime": 1622.01,
-      "text": "complexity of a battle of public policy intervention? One that is so easy to employ that it belongs in every drawing room conversation in the country. And remarkably enough, the answer is",
-      "words": [
+        },
         {
           "word": "complexity",
           "startTime": 1610.41,
@@ -30677,15 +30229,7 @@
           "startTime": 1621.69,
           "endTime": 1622.01,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1622.01,
-      "endTime": 1624.25,
-      "text": "yes. Okay. The",
-      "words": [
+        },
         {
           "word": "yes.",
           "startTime": 1622.01,
@@ -30703,15 +30247,7 @@
           "startTime": 1623.93,
           "endTime": 1624.25,
           "confidence": 0.9947
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1624.25,
-      "endTime": 1637.34,
-      "text": "first two parts of this were built by uh Pritchett and Wulcock 2004. So Lan Pritchett and Michael Bulcock wrote a paper in 2004 where they said, test one. Does it involve a large number of transactions?",
-      "words": [
+        },
         {
           "word": "first",
           "startTime": 1624.25,
@@ -30933,15 +30469,7 @@
           "startTime": 1636.54,
           "endTime": 1637.34,
           "confidence": 0.9107
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1637.34,
-      "endTime": 1639.42,
-      "text": "Okay, so if a government has to do",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 1637.34,
@@ -30989,15 +30517,7 @@
           "startTime": 1639.26,
           "endTime": 1639.42,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1639.42,
-      "endTime": 1660.78,
-      "text": "many, many things with many, many people all over the country, that's more difficult. If a government just has to do a few things, if the number of decisions, the number of transactions is lower, then it's an easier thing. Whereas if the number of transactions is higher, if you have to pay welfare payments to millions of people, it's more difficult. Okay, so that's dimension one of complexity. High number of transactions makes",
-      "words": [
+        },
         {
           "word": "many,",
           "startTime": 1639.42,
@@ -31441,15 +30961,7 @@
           "startTime": 1660.46,
           "endTime": 1660.78,
           "confidence": 0.9947
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1660.78,
-      "endTime": 1663.6,
-      "text": "it more difficult. Okay, then dimension two.",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 1660.78,
@@ -31491,15 +31003,7 @@
           "startTime": 1663.1,
           "endTime": 1663.6,
           "confidence": 0.8033
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1663.99,
-      "endTime": 1720.63,
-      "text": "Is there discretion? Okay, if there's a high amount of discretion for some frontline civil servant, then it's more difficult because there's going to be more corruption. If there is less amount of discretion, then it's easier. Okay, so to put these two together, for example, a government run vaccination program has a high number of transactions, but low amount of discretion. Okay, a polio vaccine, you just walk. In the slum or in the village and just put the polio drop on everybody. There is nothing, there is no Aadhar number, there's no tracking of identity, there's nothing, there's no discretion, there's no complexity. So that's an easy roll out because there is no discretion for the frontline operator. They just have to obey a manual and go roll out all over the country doing smallpox vaccinations, doing polio vaccinations. Okay, so that's two dimensions proposed by Woolcock and Pritchett. Kelkar and I have thought a lot about this and we think that. Two more dimensions in this are required.",
-      "words": [
+        },
         {
           "word": "Is",
           "startTime": 1663.99,
@@ -32525,15 +32029,7 @@
           "startTime": 1719.67,
           "endTime": 1720.63,
           "confidence": 0.9653
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1720.63,
-      "endTime": 1723.51,
-      "text": "Dimension three, the stakes. Okay.",
-      "words": [
+        },
         {
           "word": "Dimension",
           "startTime": 1720.63,
@@ -32563,15 +32059,7 @@
           "startTime": 1723.03,
           "endTime": 1723.51,
           "confidence": 0.5766
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1723.51,
-      "endTime": 1728.79,
-      "text": "So when a school teacher gets a job in a government school and doesn't show up to",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1723.51,
@@ -32673,15 +32161,7 @@
           "startTime": 1728.55,
           "endTime": 1728.79,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1728.79,
-      "endTime": 1730.71,
-      "text": "teach, she's stealing",
-      "words": [
+        },
         {
           "word": "teach,",
           "startTime": 1728.79,
@@ -32699,15 +32179,7 @@
           "startTime": 1730.15,
           "endTime": 1730.71,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1730.71,
-      "endTime": 1752.17,
-      "text": "15,000 rupees a month from the government because that's the wage of a school teacher. So what is at stake? 15,000 rupees. Okay, so yeah, people will try to steal that 15,000 rupees, but the amount of effort that will go into misbehavior will be relatively limited. At the other extreme, you have high stakes situations like in a criminal justice system where somebody's",
-      "words": [
+        },
         {
           "word": "15,000",
           "startTime": 1730.71,
@@ -33091,15 +32563,7 @@
           "startTime": 1751.77,
           "endTime": 1752.17,
           "confidence": 0.9279
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1752.17,
-      "endTime": 1753.77,
-      "text": "accused of a crime, and now",
-      "words": [
+        },
         {
           "word": "accused",
           "startTime": 1752.17,
@@ -33135,15 +32599,7 @@
           "startTime": 1753.53,
           "endTime": 1753.77,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1753.77,
-      "endTime": 1788.46,
-      "text": "the behavior of the policeman, the behavior of the public prosecutor, the behavior of the judge, in all these things, because the accused is facing a life and death consequence of going to jail, the stakes are sky high, and then the dangers of corruption and discretion just go to infinity. As the stakes go up, you take income tax, you take financial regulation, you take criminal justice system, you take judiciary, in all these things, the stakes are very high. So it is very, very difficult to build a rule of law environment where a policeman, a public prosecutor, a judge will be even handed treat everybody",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1753.77,
@@ -33859,8 +33315,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1792.3,
-      "endTime": 1797.5,
-      "text": "When the stakes are high, things are more difficult. When the stakes are low, the things are less difficult. Finally, fourth",
+      "endTime": 1889.55,
+      "text": "When the stakes are high, things are more difficult. When the stakes are low, the things are less difficult. Finally, fourth is secrecy. Wherever there is more secrecy, it will be more difficult. Okay. So wherever a government activity operates under complete transparency, there'll be more check and balance that more people will notice when there's misbehavior and malfeasance. So while there is a lot of admiration and respect for the military, it is also the case that the military is shrouded in secrecy. And that's likely to be the cover for a lot of state failure. And things are going to be done wrong and done badly inside military affairs. Famously, we have seen in Putin's invasion of Russia, once the shooting started, we realized that there were mind-blowing failures inside the Russian, which were all covered up in the normal pompous parades and nationalism and militarism. So that is the fourth dimension, that is secrecy. Wherever there is more secrecy, It is more difficult to build a government system that will achieve capability. So, in short, chai conversation by the great dictator Amit Bhai. Whenever a government intervention is proposed, Amit Bhai asks his people four questions. That is there a large number of transactions? Yes, no. Is there discretion in the frontline staff? Yes, no. Is there other stakes high, low? Effectively, yes, no. And is there secrecy? Yes, no. In these four zero one numbers, you've got a grip of the essence that some things are easy, some things are hard, straight away right there you know that am I facing an easy problem, am I facing a difficult problem?",
       "words": [
         {
           "word": "When",
@@ -33987,15 +33443,7 @@
           "startTime": 1797.02,
           "endTime": 1797.5,
           "confidence": 0.9935
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1797.5,
-      "endTime": 1800.14,
-      "text": "is secrecy. Wherever there is more secrecy,",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 1797.5,
@@ -34037,15 +33485,7 @@
           "startTime": 1799.58,
           "endTime": 1800.14,
           "confidence": 0.9848
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1800.14,
-      "endTime": 1848.08,
-      "text": "it will be more difficult. Okay. So wherever a government activity operates under complete transparency, there'll be more check and balance that more people will notice when there's misbehavior and malfeasance. So while there is a lot of admiration and respect for the military, it is also the case that the military is shrouded in secrecy. And that's likely to be the cover for a lot of state failure. And things are going to be done wrong and done badly inside military affairs. Famously, we have seen in Putin's invasion of Russia, once the shooting started, we realized that there were mind-blowing failures inside the Russian, which were all covered up in the normal pompous parades and nationalism and militarism. So that is the fourth dimension, that is secrecy. Wherever there is more secrecy,",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 1800.14,
@@ -34849,15 +34289,7 @@
           "startTime": 1847.58,
           "endTime": 1848.08,
           "confidence": 0.815
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1848.73,
-      "endTime": 1853.21,
-      "text": "It is more difficult to build a government system that will achieve capability. So, in",
-      "words": [
+        },
         {
           "word": "It",
           "startTime": 1848.73,
@@ -34947,15 +34379,7 @@
           "startTime": 1852.97,
           "endTime": 1853.21,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1853.21,
-      "endTime": 1873.05,
-      "text": "short, chai conversation by the great dictator Amit Bhai. Whenever a government intervention is proposed, Amit Bhai asks his people four questions. That is there a large number of transactions? Yes, no. Is there discretion in the frontline staff? Yes, no. Is there other stakes high, low? Effectively, yes,",
-      "words": [
+        },
         {
           "word": "short,",
           "startTime": 1853.21,
@@ -35249,15 +34673,7 @@
           "startTime": 1872.65,
           "endTime": 1873.05,
           "confidence": 0.9406
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1873.05,
-      "endTime": 1875.45,
-      "text": "no. And is there secrecy?",
-      "words": [
+        },
         {
           "word": "no.",
           "startTime": 1873.05,
@@ -35287,15 +34703,7 @@
           "startTime": 1874.73,
           "endTime": 1875.45,
           "confidence": 0.9503
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1875.45,
-      "endTime": 1888.01,
-      "text": "Yes, no. In these four zero one numbers, you've got a grip of the essence that some things are easy, some things are hard, straight away right there you know that am I facing an easy problem,",
-      "words": [
+        },
         {
           "word": "Yes,",
           "startTime": 1875.45,
@@ -35517,15 +34925,7 @@
           "startTime": 1887.61,
           "endTime": 1888.01,
           "confidence": 0.8249
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1888.01,
-      "endTime": 1925.1,
-      "text": "am I facing a difficult problem? Enormously impressive, but I have to tell you I'm also enormously offended because you keep saying the great dictator Amit Bhay. Let me tell you something. Mr. Shah is a great dictator. Mr. Shah with his authoritarian command over facts. Mr. Shah with his oppression of bad ideas. You are the problem here, let me tell you that. And by the way, you forgot, uh as Mr. Shah uh Shah stand to forget. You forgot one uh you know impressive aspect of your book where uh and um uh again extremely wise words where you pointed out that if there are ten ways to intervene. Choose the least oppressive, optimized for freedom. Yeah.",
-      "words": [
+        },
         {
           "word": "am",
           "startTime": 1888.01,
@@ -35561,7 +34961,15 @@
           "startTime": 1889.13,
           "endTime": 1889.55,
           "confidence": 0.7215
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1890.89,
+      "endTime": 1925.1,
+      "text": "Enormously impressive, but I have to tell you I'm also enormously offended because you keep saying the great dictator Amit Bhay. Let me tell you something. Mr. Shah is a great dictator. Mr. Shah with his authoritarian command over facts. Mr. Shah with his oppression of bad ideas. You are the problem here, let me tell you that. And by the way, you forgot, uh as Mr. Shah uh Shah stand to forget. You forgot one uh you know impressive aspect of your book where uh and um uh again extremely wise words where you pointed out that if there are ten ways to intervene. Choose the least oppressive, optimized for freedom. Yeah.",
+      "words": [
         {
           "word": "Enormously",
           "startTime": 1890.89,
@@ -36245,8 +35653,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1925.1,
-      "endTime": 1983.72,
-      "text": "So there's this very subtle thing that not enough people are worrying about, which is uh what is the least intrusive intervention. So suppose there's a market failure and you can solve it through 10 different methods. First of all, it behoves policymakers and the public policy community and the citizenry to consider are there five ways of doing this? There doesn't have to be only one way. And each of the different ways will generally have a different political economy around it. There'll be some gainers and losers and so on. And then the most important question to ask is that a good intervention is one that is that is the least intrusive in the lives of people. Okay, so again, the liberal dream, the liberal idea is that I should live my life on my terms. I should be lost in my reverie. I should live on my terms. I should not need to think or know about the state or anybody telling me do this, do that. So nobody should tell me what to do. That is the liberal dream. So a government that interferes more in the lives of people and that engages in bigger",
+      "endTime": 2074.04,
+      "text": "So there's this very subtle thing that not enough people are worrying about, which is uh what is the least intrusive intervention. So suppose there's a market failure and you can solve it through 10 different methods. First of all, it behoves policymakers and the public policy community and the citizenry to consider are there five ways of doing this? There doesn't have to be only one way. And each of the different ways will generally have a different political economy around it. There'll be some gainers and losers and so on. And then the most important question to ask is that a good intervention is one that is that is the least intrusive in the lives of people. Okay, so again, the liberal dream, the liberal idea is that I should live my life on my terms. I should be lost in my reverie. I should live on my terms. I should not need to think or know about the state or anybody telling me do this, do that. So nobody should tell me what to do. That is the liberal dream. So a government that interferes more in the lives of people and that engages in bigger intrusions is less good compared to a government that addresses market failure in more subtle ways, in more behind the scenes ways where less people and less intrusions are pushed into the lives of people. And again, there's a little bit of a cute economics technical idea that the lowest cost intrusion is found by going to the root cause. So When there is an air quality disaster all over North India, don't build hospitals. Solve it at the root cause, clean the air. Okay. So don't build bad roads and then put a trauma center at every highway exit. Build good roads. Okay, so go to the root cause. Solve things at the root cause. That's the lowest cost intervention that society will benefit from. But on top of this, I also think there is a political philosophy, there's a moral philosophy problem. when there are many different interventions, which one will you judge to be the least intrusive? So you know, for example, uh you will agree with any rule where I will say that if the state or a state employee touches a human body, that's a higher intervention than an intervention that does not touch a human body. An intervention that knocks on my door is worse than an intervention that does not knock on my door. An intervention that enters my house is less good compared to an intervention where the civil servant stands at my door. Okay, and so on. So we could think of many ways in which We could start developing a philosophy around what is more intrusive, what is less intrusive, and it's an important piece of our toolkit",
       "words": [
         {
           "word": "So",
@@ -37441,15 +36849,7 @@
           "startTime": 1983.24,
           "endTime": 1983.72,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1983.72,
-      "endTime": 1985.24,
-      "text": "intrusions is",
-      "words": [
+        },
         {
           "word": "intrusions",
           "startTime": 1983.72,
@@ -37461,15 +36861,7 @@
           "startTime": 1984.92,
           "endTime": 1985.24,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1985.24,
-      "endTime": 1994.6,
-      "text": "less good compared to a government that addresses market failure in more subtle ways, in more behind the scenes ways where less people and less",
-      "words": [
+        },
         {
           "word": "less",
           "startTime": 1985.24,
@@ -37619,15 +37011,7 @@
           "startTime": 1994.2,
           "endTime": 1994.6,
           "confidence": 0.979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1994.6,
-      "endTime": 1998.28,
-      "text": "intrusions are pushed into the lives of people. And again, there's a",
-      "words": [
+        },
         {
           "word": "intrusions",
           "startTime": 1994.6,
@@ -37699,15 +37083,7 @@
           "startTime": 1998.2,
           "endTime": 1998.28,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1998.28,
-      "endTime": 2009.53,
-      "text": "little bit of a cute economics technical idea that the lowest cost intrusion is found by going to the root cause. So When there is an air quality disaster all over North India, don't",
-      "words": [
+        },
         {
           "word": "little",
           "startTime": 1998.28,
@@ -37911,15 +37287,7 @@
           "startTime": 2009.13,
           "endTime": 2009.53,
           "confidence": 0.9949
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2009.53,
-      "endTime": 2011.69,
-      "text": "build hospitals. Solve",
-      "words": [
+        },
         {
           "word": "build",
           "startTime": 2009.53,
@@ -37937,15 +37305,7 @@
           "startTime": 2011.21,
           "endTime": 2011.69,
           "confidence": 0.997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2011.69,
-      "endTime": 2033.98,
-      "text": "it at the root cause, clean the air. Okay. So don't build bad roads and then put a trauma center at every highway exit. Build good roads. Okay, so go to the root cause. Solve things at the root cause. That's the lowest cost intervention that society will benefit from. But on top of this, I also think there is a political philosophy, there's a moral philosophy problem. when there are many different interventions, which one will you",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 2011.69,
@@ -38413,15 +37773,7 @@
           "startTime": 2033.82,
           "endTime": 2033.98,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2033.98,
-      "endTime": 2036.46,
-      "text": "judge to be the least intrusive? So you know,",
-      "words": [
+        },
         {
           "word": "judge",
           "startTime": 2033.98,
@@ -38475,15 +37827,7 @@
           "startTime": 2036.22,
           "endTime": 2036.46,
           "confidence": 0.7699
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2036.46,
-      "endTime": 2074.04,
-      "text": "for example, uh you will agree with any rule where I will say that if the state or a state employee touches a human body, that's a higher intervention than an intervention that does not touch a human body. An intervention that knocks on my door is worse than an intervention that does not knock on my door. An intervention that enters my house is less good compared to an intervention where the civil servant stands at my door. Okay, and so on. So we could think of many ways in which We could start developing a philosophy around what is more intrusive, what is less intrusive, and it's an important piece of our toolkit",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 2036.46,
@@ -39179,8 +38523,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2074.04,
-      "endTime": 2143.38,
-      "text": "that we should bring into this project. And I'll just single out and I'll say that, you know, when you talk about finding the root cause, what is also therefore important here is that government is as local and distributed as possible. So another example which I got from episodes on centrally sponsored schemes in public policy with Pranekotasane did an episode with Neila Kantanaris on his book on South India, is that the needs of the North and the South are so different. But the priorities of the North dictate public policy. For example, Kerala has a problem of diabetes and obesity. And by the way, gentle reader, check out her diabetes episode. We can conquer diabetes. Yes, we can. But uh you know the south has a problem with diabetes and uh uh obesity, whereas other parts of India in the North, uh and central India has ha has a problem with malnourishment. Like Bihar has a huge problem with that. And you would imagine that you have l b uh you know health budgets given to different states and locally it is decided what is the best way to tackle that particular problem. But when you have centrally sponsored government schemes, and I don't remember the name of the exact scheme, et cetera, et cetera, but all of these central schemes are designed in Delhi and they're calculated for solving the nearby problem and therefore not understanding local needs. So government should of course be as local as possible. I I want to",
+      "endTime": 2144.66,
+      "text": "that we should bring into this project. And I'll just single out and I'll say that, you know, when you talk about finding the root cause, what is also therefore important here is that government is as local and distributed as possible. So another example which I got from episodes on centrally sponsored schemes in public policy with Pranekotasane did an episode with Neila Kantanaris on his book on South India, is that the needs of the North and the South are so different. But the priorities of the North dictate public policy. For example, Kerala has a problem of diabetes and obesity. And by the way, gentle reader, check out her diabetes episode. We can conquer diabetes. Yes, we can. But uh you know the south has a problem with diabetes and uh uh obesity, whereas other parts of India in the North, uh and central India has ha has a problem with malnourishment. Like Bihar has a huge problem with that. And you would imagine that you have l b uh you know health budgets given to different states and locally it is decided what is the best way to tackle that particular problem. But when you have centrally sponsored government schemes, and I don't remember the name of the exact scheme, et cetera, et cetera, but all of these central schemes are designed in Delhi and they're calculated for solving the nearby problem and therefore not understanding local needs. So government should of course be as local as possible. I I want to introduce a beautiful principle",
       "words": [
         {
           "word": "that",
@@ -40717,15 +40061,7 @@
           "startTime": 2143.22,
           "endTime": 2143.38,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2143.38,
-      "endTime": 2161.11,
-      "text": "introduce a beautiful principle here and a buzzword. The principle is called the subsidiarity principle. And uh this is a one of the great ideas in economics, which asserts that every problem in government. should be placed at the lowest level of government where",
-      "words": [
+        },
         {
           "word": "introduce",
           "startTime": 2143.38,
@@ -40749,7 +40085,15 @@
           "startTime": 2144.26,
           "endTime": 2144.66,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2144.66,
+      "endTime": 2161.11,
+      "text": "here and a buzzword. The principle is called the subsidiarity principle. And uh this is a one of the great ideas in economics, which asserts that every problem in government. should be placed at the lowest level of government where",
+      "words": [
         {
           "word": "here",
           "startTime": 2144.66,
@@ -42895,8 +42239,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2274.57,
-      "endTime": 2293.29,
-      "text": "it. There's this great line from Yes Minister, or was it Yes Prime Minister? Both series written by Jonathan Lynn and Anthony J, which is, you know, uh we must do something, this is something, therefore we must do this. Right? So the two things to think of is that you don't always have to do something. And if you're doing something, is it the right thing to do is question one.",
+      "endTime": 2320.5,
+      "text": "it. There's this great line from Yes Minister, or was it Yes Prime Minister? Both series written by Jonathan Lynn and Anthony J, which is, you know, uh we must do something, this is something, therefore we must do this. Right? So the two things to think of is that you don't always have to do something. And if you're doing something, is it the right thing to do is question one. And nevertheless, do you need to do it is question two, because the capacity of government is limited. You can't try to solve every problem in the world. And in India we haven't solved the basic problems of rule of law and et cetera, et cetera. And there is that other economic concept of opportunity cost that comes into play. That listen, government has limited capacity, limited money, limited bandwidth. You need to think about what are the core priorities, and then you need to think about hey, we don't need to go in stepping in everywhere. And that",
       "words": [
         {
           "word": "it.",
@@ -43329,15 +42673,7 @@
           "startTime": 2292.81,
           "endTime": 2293.29,
           "confidence": 0.8119
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2293.29,
-      "endTime": 2295.21,
-      "text": "And nevertheless, do you need to do it is",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2293.29,
@@ -43391,15 +42727,7 @@
           "startTime": 2294.97,
           "endTime": 2295.21,
           "confidence": 0.8379
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2295.21,
-      "endTime": 2320.5,
-      "text": "question two, because the capacity of government is limited. You can't try to solve every problem in the world. And in India we haven't solved the basic problems of rule of law and et cetera, et cetera. And there is that other economic concept of opportunity cost that comes into play. That listen, government has limited capacity, limited money, limited bandwidth. You need to think about what are the core priorities, and then you need to think about hey, we don't need to go in stepping in everywhere. And that",
-      "words": [
+        },
         {
           "word": "question",
           "startTime": 2295.21,
@@ -43945,8 +43273,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2320.5,
-      "endTime": 2332.82,
-      "text": "brings me to the whole issue of learning by doing. Okay, how do states",
+      "endTime": 2471.1,
+      "text": "brings me to the whole issue of learning by doing. Okay, how do states emerge? Did the immense scope of the Swedish state emerge pristine into the world? Of course not. Okay, nobody can build the Swedish state overnight. It takes hundreds of years. So what we know from history is that in every advanced economy, the capability of running a state correctly took hundreds of years. Nothing got done quickly. It takes a long time to learn to do public management. That all the difficulties that we have enumerated make it very difficult to run a state correctly. So it's always wise to start with a very low scope, start with a few narrow problems, and maybe for one or two generations, just learn how to do those few things. So in uh Europe in the 17th, 18th, and 19th centuries, all that happened was that the state learned how to have a fiscal system so as to raise money for taxes. And uh wage war, which meant a surrounding machinery of the scientific and technological stuff around arms and contracting and all that. So basically that was all that was going on. The governments were about a public finance system, the so-called fiscus, and a war system. That's what they did. It took hundreds of years, but around that, they learned how to be a state. They learned HR. They learned contracting, they learned checks and balances, they learned how to control corruption, they learned how to solve principal agent problems, they learned how to keep the forgy guys in their barracks and not interfering inside a liberal democracy. Okay, all these rich, complex lessons, the hard-win lessons, were then available as state capability, which could then be applied to new problems such as vaccines. So It is important to do this learning by doing and then start with a narrow scope. Do a few things, learn how to be a state, which is my opinion for where we are in India. For 25 years, for 50 years, we have to learn how to do basics. And then at the end of that, depending on the political preferences of that society, you could think about whether you want to broaden the scope. So I take a pragmatic approach that I don't think it's a useful debate in India. To do more welfareism, to do less welfareism, you know, when there are burning basic problems like the police and the judiciary that are waiting to be",
       "words": [
         {
           "word": "brings",
@@ -44031,15 +43359,7 @@
           "startTime": 2332.42,
           "endTime": 2332.82,
           "confidence": 0.9747
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2332.82,
-      "endTime": 2336.58,
-      "text": "emerge? Did the immense scope",
-      "words": [
+        },
         {
           "word": "emerge?",
           "startTime": 2332.82,
@@ -44069,15 +43389,7 @@
           "startTime": 2335.94,
           "endTime": 2336.58,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2336.58,
-      "endTime": 2340.26,
-      "text": "of the Swedish state emerge pristine into the world?",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 2336.58,
@@ -44131,15 +43443,7 @@
           "startTime": 2339.86,
           "endTime": 2340.26,
           "confidence": 0.9811
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2340.26,
-      "endTime": 2343.7,
-      "text": "Of course not. Okay, nobody can build the Swedish",
-      "words": [
+        },
         {
           "word": "Of",
           "startTime": 2340.26,
@@ -44193,15 +43497,7 @@
           "startTime": 2343.06,
           "endTime": 2343.7,
           "confidence": 0.9973
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2343.7,
-      "endTime": 2419.24,
-      "text": "state overnight. It takes hundreds of years. So what we know from history is that in every advanced economy, the capability of running a state correctly took hundreds of years. Nothing got done quickly. It takes a long time to learn to do public management. That all the difficulties that we have enumerated make it very difficult to run a state correctly. So it's always wise to start with a very low scope, start with a few narrow problems, and maybe for one or two generations, just learn how to do those few things. So in uh Europe in the 17th, 18th, and 19th centuries, all that happened was that the state learned how to have a fiscal system so as to raise money for taxes. And uh wage war, which meant a surrounding machinery of the scientific and technological stuff around arms and contracting and all that. So basically that was all that was going on. The governments were about a public finance system, the so-called fiscus, and a war system. That's what they did. It took hundreds of years, but around that, they learned how to be a state. They learned HR. They learned contracting, they learned checks and balances, they learned how to control corruption, they learned how to solve principal agent",
-      "words": [
+        },
         {
           "word": "state",
           "startTime": 2343.7,
@@ -45491,15 +44787,7 @@
           "startTime": 2418.84,
           "endTime": 2419.24,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2419.24,
-      "endTime": 2421.08,
-      "text": "problems, they learned how to keep",
-      "words": [
+        },
         {
           "word": "problems,",
           "startTime": 2419.24,
@@ -45535,15 +44823,7 @@
           "startTime": 2420.6,
           "endTime": 2421.08,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2421.08,
-      "endTime": 2471.1,
-      "text": "the forgy guys in their barracks and not interfering inside a liberal democracy. Okay, all these rich, complex lessons, the hard-win lessons, were then available as state capability, which could then be applied to new problems such as vaccines. So It is important to do this learning by doing and then start with a narrow scope. Do a few things, learn how to be a state, which is my opinion for where we are in India. For 25 years, for 50 years, we have to learn how to do basics. And then at the end of that, depending on the political preferences of that society, you could think about whether you want to broaden the scope. So I take a pragmatic approach that I don't think it's a useful debate in India. To do more welfareism, to do less welfareism, you know, when there are burning basic problems like the police and the judiciary that are waiting to be",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 2421.08,
@@ -46503,8 +45783,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2471.1,
-      "endTime": 2498.3,
-      "text": "solved. And you know, you mentioned Sweden, so I want to kind of button here and talk about how people will often ask that look at the Sweden, look at the Scandinavian countries, you know, you talk about the importance of freedom, but welfare states and all of that, which is true. But couple of points I want to make there. Number one, that while they do have significant welfare states, they also have great individual liberty. They don't get in the way of the citizens. It is so easy to start a business in those countries relative to what it is here. Uh you know, so they don't intervene",
+      "endTime": 2524.94,
+      "text": "solved. And you know, you mentioned Sweden, so I want to kind of button here and talk about how people will often ask that look at the Sweden, look at the Scandinavian countries, you know, you talk about the importance of freedom, but welfare states and all of that, which is true. But couple of points I want to make there. Number one, that while they do have significant welfare states, they also have great individual liberty. They don't get in the way of the citizens. It is so easy to start a business in those countries relative to what it is here. Uh you know, so they don't intervene so much. That's important to note. And the second point is they became rich before they became welfareers. The great writer Johan Norberg has a bunch of writings on this. We'll link the relevant ones from the show notes where he talks about this in great detail about how they were in fact model free market economies of the side you and I Aja Sha would really enjoy. Uh and and after the they did that, then they had the luxury to, you know, build uh once the state capacity was there to do uh all of these things.",
       "words": [
         {
           "word": "solved.",
@@ -47165,15 +46445,7 @@
           "startTime": 2497.82,
           "endTime": 2498.3,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2498.3,
-      "endTime": 2499.82,
-      "text": "so much. That's important to note.",
-      "words": [
+        },
         {
           "word": "so",
           "startTime": 2498.3,
@@ -47209,15 +46481,7 @@
           "startTime": 2499.42,
           "endTime": 2499.82,
           "confidence": 0.9237
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2499.82,
-      "endTime": 2524.94,
-      "text": "And the second point is they became rich before they became welfareers. The great writer Johan Norberg has a bunch of writings on this. We'll link the relevant ones from the show notes where he talks about this in great detail about how they were in fact model free market economies of the side you and I Aja Sha would really enjoy. Uh and and after the they did that, then they had the luxury to, you know, build uh once the state capacity was there to do uh all of these things.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2499.82,
@@ -47781,8 +47045,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2524.94,
-      "endTime": 2530.97,
-      "text": "I always love to say. uh Swedish levels of the cashless economy",
+      "endTime": 2610.46,
+      "text": "I always love to say. uh Swedish levels of the cashless economy is backed by Swedish levels of rule of law. And so you know we should always worry about the rest of the environment in which a certain thing is being done. Okay, so I'm at the end of uh this main story and I just want to say to the gentle reader that between two episodes we've tried to give you the outlines of a toolkit on how to think about government, the state, the fundamental political foundations of why we bring this coercive creature into our life. It's not an NGO, it's not a nice guy, it's not a mother. It's a coercive creature with its own self-interest. And they seek to have power over us. And our problem is of finding that right balance where the state is addressing market failure and not interfering in our lives. And we need to understand that state intervention is messy and failure prone. And we need to cautiously explore some areas, some low complexity problems, where with a narrow scope for two generations, India can learn to become like Sweden of a hundred years ago. That would be a pretty good thing. And this is a general toolkit. It's a technology that can be applied into many other areas. And in a couple of future episodes, we will show this toolkit in action where we will take one problem after another and apply this kind of thinking. And it's just it's an elevated level of strategic",
       "words": [
         {
           "word": "I",
@@ -47855,15 +47119,7 @@
           "startTime": 2530.25,
           "endTime": 2530.97,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2530.97,
-      "endTime": 2532.65,
-      "text": "is backed by Swedish",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2530.97,
@@ -47887,15 +47143,7 @@
           "startTime": 2532.01,
           "endTime": 2532.65,
           "confidence": 0.9895
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2532.65,
-      "endTime": 2610.46,
-      "text": "levels of rule of law. And so you know we should always worry about the rest of the environment in which a certain thing is being done. Okay, so I'm at the end of uh this main story and I just want to say to the gentle reader that between two episodes we've tried to give you the outlines of a toolkit on how to think about government, the state, the fundamental political foundations of why we bring this coercive creature into our life. It's not an NGO, it's not a nice guy, it's not a mother. It's a coercive creature with its own self-interest. And they seek to have power over us. And our problem is of finding that right balance where the state is addressing market failure and not interfering in our lives. And we need to understand that state intervention is messy and failure prone. And we need to cautiously explore some areas, some low complexity problems, where with a narrow scope for two generations, India can learn to become like Sweden of a hundred years ago. That would be a pretty good thing. And this is a general toolkit. It's a technology that can be applied into many other areas. And in a couple of future episodes, we will show this toolkit in action where we will take one problem after another and apply this kind of thinking. And it's just it's an elevated level of strategic",
-      "words": [
+        },
         {
           "word": "levels",
           "startTime": 2532.65,
@@ -51119,8 +50367,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2723.83,
-      "endTime": 2740.55,
-      "text": "by James C. Scott. And this book is a rumination around the problem that it is hard for the state to see. You and I are individuals and we see certain things, we assess facts about the universe in a certain way. It's very difficult",
+      "endTime": 2783.19,
+      "text": "by James C. Scott. And this book is a rumination around the problem that it is hard for the state to see. You and I are individuals and we see certain things, we assess facts about the universe in a certain way. It's very difficult for institutions and bureaucracies to see further. When the state sees the people, it often inflicts cruelty and violence upon them. So it's a sceptical look at improving state legibility and for example around the whole digital debates, uh Kelker and I use the phrase premature state legibility, riffing on the word state legibility as used in saying like a state. So this is a great cautionary book which helps us think more about the individual and the state and their fraught relationship. And Amit, tell us your recommendation for",
       "words": [
         {
           "word": "by",
@@ -51391,15 +50639,7 @@
           "startTime": 2739.99,
           "endTime": 2740.55,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2740.55,
-      "endTime": 2744.31,
-      "text": "for institutions and bureaucracies to see",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 2740.55,
@@ -51435,15 +50675,7 @@
           "startTime": 2743.75,
           "endTime": 2744.31,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2744.31,
-      "endTime": 2756.5,
-      "text": "further. When the state sees the people, it often inflicts cruelty and violence upon them. So it's a sceptical look at improving state legibility and for example around",
-      "words": [
+        },
         {
           "word": "further.",
           "startTime": 2744.31,
@@ -51611,15 +50843,7 @@
           "startTime": 2755.86,
           "endTime": 2756.5,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2756.5,
-      "endTime": 2758.9,
-      "text": "the whole digital debates,",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 2756.5,
@@ -51643,15 +50867,7 @@
           "startTime": 2758.02,
           "endTime": 2758.9,
           "confidence": 0.7974
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2758.9,
-      "endTime": 2783.19,
-      "text": "uh Kelker and I use the phrase premature state legibility, riffing on the word state legibility as used in saying like a state. So this is a great cautionary book which helps us think more about the individual and the state and their fraught relationship. And Amit, tell us your recommendation for",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 2758.9,
@@ -51969,8 +51185,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2783.19,
-      "endTime": 2831.38,
-      "text": "today. So my recommendation for today is this book. Sikada by Sean Tan, great illustrator, great writer, great artist. This was uh, you know, recommended to me first in an episode I did with Priya Matthews and Gunjan Grova, um episode of The Scene and the Unseen on uh motherhood. And uh then I and this particular copy is borrowed from Namsita or Cinemat, as she calls herself, and editor. And it's just a marvelous book. I won't say anything about it. I'll just say look, I'm recommending it. Me, me, who doesn't recommend too many things actually, I do. But it's a great book. So check it out. And uh before we end, I also want to say that uh, you know, in the in the same vein of, you know, the way you talk about economics, I want to say that you, Ajaisha, are one of the greatest hosts of everything is everything. How did I become a host?",
+      "endTime": 2839.27,
+      "text": "today. So my recommendation for today is this book. Sikada by Sean Tan, great illustrator, great writer, great artist. This was uh, you know, recommended to me first in an episode I did with Priya Matthews and Gunjan Grova, um episode of The Scene and the Unseen on uh motherhood. And uh then I and this particular copy is borrowed from Namsita or Cinemat, as she calls herself, and editor. And it's just a marvelous book. I won't say anything about it. I'll just say look, I'm recommending it. Me, me, who doesn't recommend too many things actually, I do. But it's a great book. So check it out. And uh before we end, I also want to say that uh, you know, in the in the same vein of, you know, the way you talk about economics, I want to say that you, Ajaisha, are one of the greatest hosts of everything is everything. How did I become a host? You're one of the greatest hosts. Thank you for listening. Reminder, this is the audio version of Everything",
       "words": [
         {
           "word": "today.",
@@ -52937,15 +52153,7 @@
           "startTime": 2830.74,
           "endTime": 2831.38,
           "confidence": 0.9729
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2831.38,
-      "endTime": 2832.02,
-      "text": "You're one of the",
-      "words": [
+        },
         {
           "word": "You're",
           "startTime": 2831.38,
@@ -52969,15 +52177,7 @@
           "startTime": 2831.94,
           "endTime": 2832.02,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2832.02,
-      "endTime": 2839.27,
-      "text": "greatest hosts. Thank you for listening. Reminder, this is the audio version of Everything",
-      "words": [
+        },
         {
           "word": "greatest",
           "startTime": 2832.02,

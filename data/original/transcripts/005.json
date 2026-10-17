@@ -5,7 +5,7 @@
     "durationSeconds": 3228,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 54.28,
-      "endTime": 65.24,
-      "text": "Welcome to Everything Is Everything. My name is Amit. This is my co-host, Rajay. This is our co-host for this episode and the next one, Freddy. And we'll tell you later why he's called Freddy. So, Ajay, what's up, man?",
+      "endTime": 64.44,
+      "text": "Welcome to Everything Is Everything. My name is Amit. This is my co-host, Rajay. This is our co-host for this episode and the next one, Freddy. And we'll tell you later why he's called Freddy. So, Ajay, what's up,",
       "words": [
         {
           "word": "Welcome",
@@ -253,21 +253,21 @@
           "startTime": 64.12,
           "endTime": 64.44,
           "confidence": 0.9614
-        },
-        {
-          "word": "man?",
-          "startTime": 64.44,
-          "endTime": 65.24,
-          "confidence": 0.9959
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 65.24,
+      "startTime": 64.44,
       "endTime": 71.72,
-      "text": "Um, it's an interesting world. Have you had a chance to see uh Oppenheimer by Christopher Nolan yet?",
+      "text": "man? Um, it's an interesting world. Have you had a chance to see uh Oppenheimer by Christopher Nolan yet?",
       "words": [
+        {
+          "word": "man?",
+          "startTime": 64.44,
+          "endTime": 65.24,
+          "confidence": 0.9959
+        },
         {
           "word": "Um,",
           "startTime": 65.24,
@@ -381,8 +381,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 71.72,
-      "endTime": 270.3,
-      "text": "Now, you very well know that I'm not a Hollywood insider, so I haven't had a chance to see it because we're recording this a Thursday before it releases. However, the episode will be out when the film's already been on for a week. Uh and uh I still wouldn't have seen it by then. I'd be in Delhi where I'm recording like seven episodes in nine days or something like that. But I am Terrifically excited about it because I'm a big fan of Christopher Nolan and it kind of blows my mind that he's functioning within mainstream uh Hollywood. You know, I often tell people about how this is a golden age of world cinema, however much we bemoan the arts, because while the mainstream may do what it does, there is a Marvel cinematic universe and other such garbage. Not only is a great world cinema happening, uh, as you know, I've spoken about how the Mami Film Festival is such a highlight for me when it happens or when it used to happen. Uh, but I think mainstream Hollywood is also um uh you know giving opportunities to great filmmakers to do their thing. Nolan being a case in point. Now an interesting factoid about Oppenheimer is that for this film, Nolan broke with Warner Brothers, who have done his last few films and went with Universal because Warner Brothers has this policy of now releasing all their films. both on the big screen and HBO Max simultaneously. And Nolan is a stickler for the big screen experience. Now from this you'd imagine that, oh, he must be a Michael Bay kind of mainstream action film director, because there is this kind of dichotomy in people's minds now. and that all the intimate, dramatic, intense artistic films go to OTT and the big spectacular films go to the big cinema theaters, right? But Nolan, in a sense, straddles both worlds and, you know, he brings a sensibility of the artistic filmmaker, the intimate intimate drama, But he also cares about that cinematic experience. So I call him an otter at scale, as it were, you know. And uh the you know, each of his films in that sense is not following a template that is already successful and all of that. He's trying new things, but because he's built his credibility uh to the level where the studios trust him, he's able to do that. And there are other filmmakers like Denny Wilnov who does that, for example. And uh Wilnov once said of Nolan, Uh to keep his identity and create his own universe in that that large scope, to bring intellectual concepts and to bring them in that scope to the screen right now, it's very rare. And Vilner himself, if you think about it, is a director who does just that. You know, the first film of his I watched was Arrival. Now he made a bunch of indie films, got great success. First big studio film I think was Arrival and science fiction film. You know, I went with a mutual friend of ours, a good uh Madhu Menon. Hi Madhu went with the good Madhu Menon in Bangalore to see it in a hall when it released. And after 15 minutes, Madhu was like, This is so slow. What is happening? And blah blah blah. And I was I and I was just absolutely loving it to, you know, bring that kind of integrity and uh thought to a mainstream film was something I hadn't really expected. And he did the same thing later with Glade Runner 2049, which I thought was better than the original, which is saying a lot because the original is a masterpiece, which brings us back full circle because the original was by Ridley Scott. Uh and Ridley Scott was one of the inspirations of Christopher Nolan. So long answer to short question, yeah, I'm t looking forward to watching it. At the even at the time of release I wouldn't have seen it yet, but I love Nolan's work and I can't wait. I'm trepidated. Why are you trepidated?",
+      "endTime": 270.86,
+      "text": "Now, you very well know that I'm not a Hollywood insider, so I haven't had a chance to see it because we're recording this a Thursday before it releases. However, the episode will be out when the film's already been on for a week. Uh and uh I still wouldn't have seen it by then. I'd be in Delhi where I'm recording like seven episodes in nine days or something like that. But I am Terrifically excited about it because I'm a big fan of Christopher Nolan and it kind of blows my mind that he's functioning within mainstream uh Hollywood. You know, I often tell people about how this is a golden age of world cinema, however much we bemoan the arts, because while the mainstream may do what it does, there is a Marvel cinematic universe and other such garbage. Not only is a great world cinema happening, uh, as you know, I've spoken about how the Mami Film Festival is such a highlight for me when it happens or when it used to happen. Uh, but I think mainstream Hollywood is also um uh you know giving opportunities to great filmmakers to do their thing. Nolan being a case in point. Now an interesting factoid about Oppenheimer is that for this film, Nolan broke with Warner Brothers, who have done his last few films and went with Universal because Warner Brothers has this policy of now releasing all their films. both on the big screen and HBO Max simultaneously. And Nolan is a stickler for the big screen experience. Now from this you'd imagine that, oh, he must be a Michael Bay kind of mainstream action film director, because there is this kind of dichotomy in people's minds now. and that all the intimate, dramatic, intense artistic films go to OTT and the big spectacular films go to the big cinema theaters, right? But Nolan, in a sense, straddles both worlds and, you know, he brings a sensibility of the artistic filmmaker, the intimate intimate drama, But he also cares about that cinematic experience. So I call him an otter at scale, as it were, you know. And uh the you know, each of his films in that sense is not following a template that is already successful and all of that. He's trying new things, but because he's built his credibility uh to the level where the studios trust him, he's able to do that. And there are other filmmakers like Denny Wilnov who does that, for example. And uh Wilnov once said of Nolan, Uh to keep his identity and create his own universe in that that large scope, to bring intellectual concepts and to bring them in that scope to the screen right now, it's very rare. And Vilner himself, if you think about it, is a director who does just that. You know, the first film of his I watched was Arrival. Now he made a bunch of indie films, got great success. First big studio film I think was Arrival and science fiction film. You know, I went with a mutual friend of ours, a good uh Madhu Menon. Hi Madhu went with the good Madhu Menon in Bangalore to see it in a hall when it released. And after 15 minutes, Madhu was like, This is so slow. What is happening? And blah blah blah. And I was I and I was just absolutely loving it to, you know, bring that kind of integrity and uh thought to a mainstream film was something I hadn't really expected. And he did the same thing later with Glade Runner 2049, which I thought was better than the original, which is saying a lot because the original is a masterpiece, which brings us back full circle because the original was by Ridley Scott. Uh and Ridley Scott was one of the inspirations of Christopher Nolan. So long answer to short question, yeah, I'm t looking forward to watching it. At the even at the time of release I wouldn't have seen it yet, but I love Nolan's work and I can't wait. I'm trepidated. Why are you trepidated? Uh",
       "words": [
         {
           "word": "Now,",
@@ -4547,21 +4547,21 @@
           "startTime": 268.86,
           "endTime": 270.3,
           "confidence": 0.9824
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 270.3,
-      "endTime": 325.37,
-      "text": "Uh Oppenheimer means a lot to me. He's been part of my life and growing up in many ways. It is very hard to tell that story without resorting to caricature and really missing the essence of it. And I believe there is a long history of various movie makers that have tried to do justice to this story. So I worry that this attempt will also mess it up. That said, I have enormous respect for example for Dunkirk. That's another story where again I feel I know it very well. I feel deeply about it. I really understand that period and those people. And I felt the movie told that story well. So I'm scared of the movie being a mess. I'm scared of the movie hitting me too hard. I'm trepidated.",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 270.3,
           "endTime": 270.86,
           "confidence": 0.9139
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 270.86,
+      "endTime": 275.42,
+      "text": "Oppenheimer means a lot to me. He's been part of my life and growing up in many",
+      "words": [
         {
           "word": "Oppenheimer",
           "startTime": 270.86,
@@ -4663,13 +4663,29 @@
           "startTime": 274.94,
           "endTime": 275.42,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 275.42,
+      "endTime": 276.78,
+      "text": "ways.",
+      "words": [
         {
           "word": "ways.",
           "startTime": 275.42,
           "endTime": 276.78,
           "confidence": 0.9766
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 276.78,
+      "endTime": 325.37,
+      "text": "It is very hard to tell that story without resorting to caricature and really missing the essence of it. And I believe there is a long history of various movie makers that have tried to do justice to this story. So I worry that this attempt will also mess it up. That said, I have enormous respect for example for Dunkirk. That's another story where again I feel I know it very well. I feel deeply about it. I really understand that period and those people. And I felt the movie told that story well. So I'm scared of the movie being a mess. I'm scared of the movie hitting me too hard. I'm trepidated.",
+      "words": [
         {
           "word": "It",
           "startTime": 276.78,
@@ -7863,8 +7879,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 448.14,
-      "endTime": 1573.27,
-      "text": "Oppenheimer died when I was one year old, and that will come as a surprise to most people, but it is not ancient history. I am a visitor from the 20th century, and these things happened close to uh my time on this earth. Uh my father was a great observer of Oppenheimer. I got a lot of stories from him. Uh, there was a book in 1956 uh with the title Brighter Than a Thousand Suns by Robert Junk. And I read that book in childhood, I think age 10, age 12. I read the book several times and I really got into the story. And then many years later, uh, when I was a PhD student, I stumbled upon uh that spectacular book uh by Richard Rhodes, The Making of the Atomic Bomb. The book was done in 1986. I got it two, three years later, and it's a truly spectacular book. It is the best book on that subject. Uh, I think Hans Bethe said that nobody can tell this story better. But surprisingly, in the last few years, some facts have emerged about Oppenheimer's story, where actually there is now new archival material that can and should be used to write these histories better. So through my childhood and through my growing up, Oppenheimer as a person and the journey of his life meant a lot to me and It made me think about the world. Let me just quickly summarize that life. In I think almost everybody knows about Oppenheimer, but let me try uh to run over familiar territory. Um, Oppenheimer grew up in America and um made his way first to uh Britain doing some experimental physics, and then he went to that great temple of the physics and the mathematics of the early 20th century at the University of Gottingen. Most people today don't know this, but the great center of the science and the mathematics of the early 20th century was in Germany. It was the University of Gottingen. He was there in the 20s. He got his PhD, I think, in 1927. And uh he was a first-class participant of that golden age of physics where People were understanding modern physics for the first time. We were getting to quantum mechanics, we were understanding relativity, we were understanding uncertainty. There was the great debate around the idea that Einstein was always uncomfortable, that you can't put probability at the core. And gradually over the years, I think all of us got the point that no, the most you will get to is the distribution of. uh certain wave functions and you'll never be able to pin down the location of a particle. Uh all that stuff was happening. It was a very fertile age where the new ideas were being played out with ramifications all around the landscape. And then Oppenheimer went back to America and he was a joint appointment between Caltech and UC Berkeley, where partly he was doing physics and partly he was bringing up that next generation of students. He was legendary for being sound on the deep ideas and the mathematics of modern physics, but also of having the articulation. He understood it deeply and he was a clear thinker and he could talk about these things. He could explain them. And that is unusually important in the modern world. Human language is always a frail bridge of metaphors and we try to get complex ideas across. And he was remarkably good at doing that. Today, some of us don't adequately appreciate how much America was quite the backwater in those days. It is the Jewish exodus from Europe and more generally the uh movement of a lot of the great intellectuals of Europe to America that made America take off. In the early years of the 20th century, America was quite the backwater. So people like Oppenheimer were disproportionately important. in first establishing some communities of knowledge, of depth, of excellence, of the kind of people who would not be content writing a dinky incremental paper, but actually asking fundamental questions. Um and then came uh the Atom Bomb Project. Again, most of us know the story. Uh Leo Zillard in uh Britain stumbled on the big ideas that the whole thing could be made to work, that you could take the experiments of uh Lies Meitner from Germany and turned them into a working uranium bomb. And the moment he understood that, he was terrified that if Hitler got to this bomb first, then it would be a real catastrophe. And so he got through to Einstein, who wrote a letter to Roosevelt, that this is important and you need to get going on trying to build this bomb and you need to do it before Hitler gets to the bomb. And Roosevelt read that letter and understood it and then they kicked off the Manhattan Project. And at the tender age age of thirty-eight, Oppenheimer was made the head of that project. And uh it is hard to overstate his role and his importance in the project. Sometimes we think there is a certain inevitability about all that happened and it's not as clear as meets the eye. Oppenheimer was the right person at the right place at the right time. He brought all the pieces together. He was an experimentalist and a theorist and a gifted engineer. And all these things came together in the project. He was a charismatic figure who always lit up the room. Whenever he walked into a room, he lit up the room. There may be people in the room who knew many things better than him. But he had enough intellectual power to be able to add value to the conversation. And the conversation was always better when he was in the room. He he was able to inspire an entire generation of younger people to do amazing things around him. It's also hard to understand and emphasize just how hard that was and how gigantic that was. So here's a little story: uh Niels Bohr. Was in Europe and for a while had not been told about this project. And then when the project started being unfolded on him, he said, It's impossible, it can't be done. You'll have to turn the entire United States into a factory. And then he says, and you guys did. So the world's biggest factory ever built was built for the purpose of uranium enrichment. And then an even bigger facility was built. for processing plutonium. So these were challenges on a Titanic scale. And this team of a couple of thousand people, inspired and managed and led by Oppenheimer, actually took this through to the finish line. Um Oppenheimer was that interesting intellectual. He was not a narrow technician. He took interest in the world. So we in India should be suitably amazed and surprised that this is a character who essentially a hundred years ago took the trouble upon himself to learn Sanskrit. Okay. How often does that happen? I mean, uh, for an analogy, I'd challenge people in India to go learn Aramaic. Okay? We don't do that. It's very seldom that people who are comfortable and successful and immersed in a culture will go learn something drastically different. So here that range of knowledge Um all of us famously remember that quote that at the point where the first test of I think July 1945 worked, uh Oppenheimer says that he remembered lines from the Gita, which is where um uh Vishnu does this Vishwarup on Arjun, and uh the lines are something like uh I am become death, destroyer of the world. Oppenheimer brought that breadth of knowledge and depth of perspective in understanding these things, and that was the magic of what made him work. Um he came from a bohemian world, his he was a supporter of uh the Republicans in the Spanish Civil War in 1936. uh which was a conflict between the nationalists, the Nazis, and the Republicans. His brother was in the Communist Party. His wife was an interesting eclectic character. He uh had uh a lover who was deeply inside the Communist Party. And so he lived in that world of ideas and unconventional bohemian existence. And that was the energy, the creativity, the imagination, the intellectual charisma that managed to bring all that together. You cannot separate out these parts. So uh in in the language of the 60s, the line between hip and square, Oppenheimer was firmly hip, and that's the magic that makes it all happen. And then, of course, uh, no good deed goes unpunished. So uh Oppenheimer was the leader of this project. In a sense, when the United States government needed him. But once it was done and the bomb was exploded, then suddenly traditional power structures started asserting themselves. And uh uh I I believe that when Oppenheimer said to Truman that I think that I have blood on my hands for uh the use of the atom bomb at Hiroshima and Nagasaki, this made Truman very uncomfortable. Uh, Truman got into this power zone that I'm the president. I decided to use the bomb. Who are you? So you got into that sort of conflict about who got the credit and who did what. And then also uh the United States security establishment started getting nervous about legacy that would they be excoriated by future generations for having used the bomb. And it was very damaging for them when a person of the intellectual stature of uh Oppenheimer. was standing up in public and questioning some of those decisions. Similarly, when the time came to try to move forward to build a hydrogen bomb, Edward Teller was very enthusiastic to go do the next step. And as Teller honestly says it, it was just an intellectual curiosity. You had to try to know whether it could be done. Okay, Teller was driven by the idea that could you use a conventional nuclear fission bomb to ignite a fusion reaction where deuterium comes together and makes lithium. And Teller was just driven by the scientific curiosity. Oppenheimer, on the other hand, was starting to turn to the other side, saying, Really? Do you want to build a hydrogen bomb? He was not sure that you need it to do better than the destructive capacity of the nuclear bomb. The bomb that was dropped Uh Hiroshima and Nagasaki, these bombs were like 20 kilotons of TNT, which is enough to destroy an entire city. What is the gain from going to 200 and 2000 kilotons of TNT? So uh Oppenheimer was on the side of holding back and saying, we've built something monstrous. Now let's ask ourselves questions about how we will reign in this creature and how we will not let this generate a destruction of the world. Now, by that time, he had also accumulated the anger and hatred of a whole bunch of bureaucrats. And this is something we should reflect about because normal governments and bureaucratic formations have a way of disliking an articulate, charismatic, knowledgeable figure. Okay. So Oppenheimer had the curse of going into rooms and knowing more than anybody else. And also having that gift of being able to say things in a sweet, elegant fashion and persuading many people in the room. And too many times he had offended the gray, bloodless, powerful people who were on the losing side of these arguments. And so all this came together under the McCarthyism, where America went through a great paroxy of madness, of uh trying to find a communist uh hidden under every bed. And uh being incredibly cruel and harming some of the best people in the country. And the most famous person that was attacked was Oppenheimer. Uh the a trial was conducted of sorts, and uh there was all kinds of misbehavior and violations of the rule of law in this process. They uh dug out, including illegally, they dug out a whole bunch of personal information from Oppenheimer's past and they put it into the public domain through the machinery of the investigation and the trial. And that was basically character assassination. In today's language, we would call it information warfare. And he was thrown out of the public policy process and he went off to Princeton, where he lived out the rest of his life. Pithy summary of uh Oppenheimer's life. It's a fascinating, interesting, and important story. It makes us think about human beings, about character, about genius, about the pieces that come together to do amazing things like the Manhattan Project. Uh all of us may dream that you know one day I'll get to be part of something like a Manhattan Project. And this, of course, is the original. Uh Manhattan Project. Um, two more things on that. Uh, I recently came across uh two pieces which are equally stirring and remarkable, and it makes you think about the world. The first is that remarkably enough, in the last 10 years, a bunch of people got together and dug into the archives and uh facts that could now be extracted under freedom of information in the United States and dug out the ways in which the legal process surrounding Oppenheimer had been rigged and the authorities had cheated and violated the rule of law in their attack upon Oppenheimer. And this was carried all the way to Uh about two years ago, a rehabilitation of Oppenheimer, where the government has stood up and owned up that it made a mistake and it has reinstated his security clearance. Okay, the man is long gone, but this is very important. Okay, states are cruel, coercive creatures and make mistakes all the time. And this is a part of that process of uh creating a better machinery of the state. We in India don't think like this. We in India think that the state is cruel and every now and then the state will crucify many innocent people. And generally, you know, we always give the benefit of the doubt to anybody who's accused by the Indian state. But beyond that, we never expect the Indian state to make up and try to admit a mistake. So I was very impressed that being a first-world country means being a country where independent people are able to write letters and challenge the United States government. And get it to the point of standing up and officially speaking up and saying that we were wrong and we will retract those statements that were made about Oppenheimer and we will restore his security clearance. And we'll link to an article that describes this story. And I was also fascinated how today many of the actors of that story are the children and the grandchildren of that generation. So on both sides. Between the people who persecuted Oppenheimer and the physicists and the intellectuals of that age. It is the children and the grandchildren of that world who continue to be alive and carry those memories and carry those stories in their mind. And it is so interesting how these things matter. And again, when I look at India, I have often thought that we've lost those links into the future, we've into the past. We're very ahistorical today. The people we meet in positions of influence very often don't carry this institutional memory, which really runs over generations. And that is part of our problems of being ahistorical and not understanding the world deeply. Finally, uh the chief counsel who worked for Joe McCarthy, who uh tried to subpoena uh Robert Oppenheimer in 1954, or was it 56, was none other than Roy Cohn. Okay, now Roy Cohn is the evil genius, the mentor, the teacher, the philosopher, the guide of Donald J. Trump. And suddenly you see the threads of history intertwining with each other. That there is a sense in which that same nationalist, power-hungry, unethical culture of McCarthy and Roy Cohn. Is that same unethical culture of a Donald Trump today? And it is that same journey of people like Robert Oppenheimer going all the way to today, who are the people on the other sides. So I'd like to say to everybody that sometimes we think the world is in the grip of a culture war and we try to downplay that, or we sometimes think there are very fine people on both sides. I think that with the distance that we get from history. That's not a fair statement.",
+      "endTime": 835.98,
+      "text": "Oppenheimer died when I was one year old, and that will come as a surprise to most people, but it is not ancient history. I am a visitor from the 20th century, and these things happened close to uh my time on this earth. Uh my father was a great observer of Oppenheimer. I got a lot of stories from him. Uh, there was a book in 1956 uh with the title Brighter Than a Thousand Suns by Robert Junk. And I read that book in childhood, I think age 10, age 12. I read the book several times and I really got into the story. And then many years later, uh, when I was a PhD student, I stumbled upon uh that spectacular book uh by Richard Rhodes, The Making of the Atomic Bomb. The book was done in 1986. I got it two, three years later, and it's a truly spectacular book. It is the best book on that subject. Uh, I think Hans Bethe said that nobody can tell this story better. But surprisingly, in the last few years, some facts have emerged about Oppenheimer's story, where actually there is now new archival material that can and should be used to write these histories better. So through my childhood and through my growing up, Oppenheimer as a person and the journey of his life meant a lot to me and It made me think about the world. Let me just quickly summarize that life. In I think almost everybody knows about Oppenheimer, but let me try uh to run over familiar territory. Um, Oppenheimer grew up in America and um made his way first to uh Britain doing some experimental physics, and then he went to that great temple of the physics and the mathematics of the early 20th century at the University of Gottingen. Most people today don't know this, but the great center of the science and the mathematics of the early 20th century was in Germany. It was the University of Gottingen. He was there in the 20s. He got his PhD, I think, in 1927. And uh he was a first-class participant of that golden age of physics where People were understanding modern physics for the first time. We were getting to quantum mechanics, we were understanding relativity, we were understanding uncertainty. There was the great debate around the idea that Einstein was always uncomfortable, that you can't put probability at the core. And gradually over the years, I think all of us got the point that no, the most you will get to is the distribution of. uh certain wave functions and you'll never be able to pin down the location of a particle. Uh all that stuff was happening. It was a very fertile age where the new ideas were being played out with ramifications all around the landscape. And then Oppenheimer went back to America and he was a joint appointment between Caltech and UC Berkeley, where partly he was doing physics and partly he was bringing up that next generation of students. He was legendary for being sound on the deep ideas and the mathematics of modern physics, but also of having the articulation. He understood it deeply and he was a clear thinker and he could talk about these things. He could explain them. And that is unusually important in the modern world. Human language is always a frail bridge of metaphors and we try to get complex ideas across. And he was remarkably good at doing that. Today, some of us don't adequately appreciate how much America was quite the backwater in those days. It is the Jewish exodus from Europe and more generally the uh movement of a lot of the great intellectuals of Europe to America that made America take off. In the early years of the 20th century, America was quite the backwater. So people like Oppenheimer were disproportionately important. in first establishing some communities of knowledge, of depth, of excellence, of the kind of people who would not be content writing a dinky incremental paper, but actually asking fundamental questions. Um and then came uh the Atom Bomb Project. Again, most of us know the story. Uh Leo Zillard in uh Britain stumbled on the big ideas that the whole thing could be made to work, that you could take the experiments of uh Lies Meitner from Germany and turned them into a working uranium bomb. And the moment he understood that, he was terrified that if Hitler got to this bomb first, then it would be a real catastrophe. And so he got through to Einstein, who wrote a letter to Roosevelt, that this is important and you need to get going on trying to build this bomb and you need to do it before Hitler gets to the bomb. And Roosevelt read that letter and understood it and then they kicked off the Manhattan Project. And at the tender age age of thirty-eight, Oppenheimer was made the head of that project. And uh it is hard to overstate his role and his importance in the project. Sometimes we think there is a certain inevitability about all that happened and it's not as clear as meets the eye. Oppenheimer was the right person at the right place at the right time. He brought all the pieces together. He was an experimentalist and a theorist and a gifted engineer. And all these things came together in the project. He was a charismatic figure who always lit up the room. Whenever he walked into a room, he lit up the room. There may be people in the room who knew many things better than him. But he had enough intellectual power to be able to add value to the conversation. And the conversation was always better when he was in the room. He he was able to inspire an entire generation of younger people to do amazing things around",
       "words": [
         {
           "word": "Oppenheimer",
@@ -13835,13 +13851,29 @@
           "startTime": 835.34,
           "endTime": 835.98,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 835.98,
+      "endTime": 836.94,
+      "text": "him.",
+      "words": [
         {
           "word": "him.",
           "startTime": 835.98,
           "endTime": 836.94,
           "confidence": 0.7617
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 836.94,
+      "endTime": 1014.26,
+      "text": "It's also hard to understand and emphasize just how hard that was and how gigantic that was. So here's a little story: uh Niels Bohr. Was in Europe and for a while had not been told about this project. And then when the project started being unfolded on him, he said, It's impossible, it can't be done. You'll have to turn the entire United States into a factory. And then he says, and you guys did. So the world's biggest factory ever built was built for the purpose of uranium enrichment. And then an even bigger facility was built. for processing plutonium. So these were challenges on a Titanic scale. And this team of a couple of thousand people, inspired and managed and led by Oppenheimer, actually took this through to the finish line. Um Oppenheimer was that interesting intellectual. He was not a narrow technician. He took interest in the world. So we in India should be suitably amazed and surprised that this is a character who essentially a hundred years ago took the trouble upon himself to learn Sanskrit. Okay. How often does that happen? I mean, uh, for an analogy, I'd challenge people in India to go learn Aramaic. Okay? We don't do that. It's very seldom that people who are comfortable and successful and immersed in a culture will go learn something drastically different. So here that range of knowledge Um all of us famously remember that quote that at the point where the first test of I think July 1945 worked, uh Oppenheimer says that he remembered lines from the Gita, which is where um uh Vishnu does this Vishwarup on Arjun, and uh the lines are something like uh I am become death, destroyer of the world. Oppenheimer brought that breadth of knowledge and depth of perspective in understanding these things, and that was the magic of what made him work. Um he came from a bohemian world, his he was a supporter of uh the Republicans in the Spanish Civil War in 1936. uh which was a conflict between the nationalists, the Nazis, and the Republicans. His brother was in the Communist Party. His wife was an interesting eclectic character. He uh had uh a lover who was deeply inside the Communist Party. And so he lived in that world of ideas and unconventional bohemian existence. And that was the energy, the creativity, the imagination, the intellectual charisma that managed to bring",
+      "words": [
         {
           "word": "It's",
           "startTime": 836.94,
@@ -16295,13 +16327,29 @@
           "startTime": 1013.3,
           "endTime": 1014.26,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "other",
+      "startTime": 1014.26,
+      "endTime": 1014.58,
+      "text": "all",
+      "words": [
         {
           "word": "all",
           "startTime": 1014.26,
           "endTime": 1014.58,
           "confidence": 0.9975
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1014.58,
+      "endTime": 1573.27,
+      "text": "that together. You cannot separate out these parts. So uh in in the language of the 60s, the line between hip and square, Oppenheimer was firmly hip, and that's the magic that makes it all happen. And then, of course, uh, no good deed goes unpunished. So uh Oppenheimer was the leader of this project. In a sense, when the United States government needed him. But once it was done and the bomb was exploded, then suddenly traditional power structures started asserting themselves. And uh uh I I believe that when Oppenheimer said to Truman that I think that I have blood on my hands for uh the use of the atom bomb at Hiroshima and Nagasaki, this made Truman very uncomfortable. Uh, Truman got into this power zone that I'm the president. I decided to use the bomb. Who are you? So you got into that sort of conflict about who got the credit and who did what. And then also uh the United States security establishment started getting nervous about legacy that would they be excoriated by future generations for having used the bomb. And it was very damaging for them when a person of the intellectual stature of uh Oppenheimer. was standing up in public and questioning some of those decisions. Similarly, when the time came to try to move forward to build a hydrogen bomb, Edward Teller was very enthusiastic to go do the next step. And as Teller honestly says it, it was just an intellectual curiosity. You had to try to know whether it could be done. Okay, Teller was driven by the idea that could you use a conventional nuclear fission bomb to ignite a fusion reaction where deuterium comes together and makes lithium. And Teller was just driven by the scientific curiosity. Oppenheimer, on the other hand, was starting to turn to the other side, saying, Really? Do you want to build a hydrogen bomb? He was not sure that you need it to do better than the destructive capacity of the nuclear bomb. The bomb that was dropped Uh Hiroshima and Nagasaki, these bombs were like 20 kilotons of TNT, which is enough to destroy an entire city. What is the gain from going to 200 and 2000 kilotons of TNT? So uh Oppenheimer was on the side of holding back and saying, we've built something monstrous. Now let's ask ourselves questions about how we will reign in this creature and how we will not let this generate a destruction of the world. Now, by that time, he had also accumulated the anger and hatred of a whole bunch of bureaucrats. And this is something we should reflect about because normal governments and bureaucratic formations have a way of disliking an articulate, charismatic, knowledgeable figure. Okay. So Oppenheimer had the curse of going into rooms and knowing more than anybody else. And also having that gift of being able to say things in a sweet, elegant fashion and persuading many people in the room. And too many times he had offended the gray, bloodless, powerful people who were on the losing side of these arguments. And so all this came together under the McCarthyism, where America went through a great paroxy of madness, of uh trying to find a communist uh hidden under every bed. And uh being incredibly cruel and harming some of the best people in the country. And the most famous person that was attacked was Oppenheimer. Uh the a trial was conducted of sorts, and uh there was all kinds of misbehavior and violations of the rule of law in this process. They uh dug out, including illegally, they dug out a whole bunch of personal information from Oppenheimer's past and they put it into the public domain through the machinery of the investigation and the trial. And that was basically character assassination. In today's language, we would call it information warfare. And he was thrown out of the public policy process and he went off to Princeton, where he lived out the rest of his life. Pithy summary of uh Oppenheimer's life. It's a fascinating, interesting, and important story. It makes us think about human beings, about character, about genius, about the pieces that come together to do amazing things like the Manhattan Project. Uh all of us may dream that you know one day I'll get to be part of something like a Manhattan Project. And this, of course, is the original. Uh Manhattan Project. Um, two more things on that. Uh, I recently came across uh two pieces which are equally stirring and remarkable, and it makes you think about the world. The first is that remarkably enough, in the last 10 years, a bunch of people got together and dug into the archives and uh facts that could now be extracted under freedom of information in the United States and dug out the ways in which the legal process surrounding Oppenheimer had been rigged and the authorities had cheated and violated the rule of law in their attack upon Oppenheimer. And this was carried all the way to Uh about two years ago, a rehabilitation of Oppenheimer, where the government has stood up and owned up that it made a mistake and it has reinstated his security clearance. Okay, the man is long gone, but this is very important. Okay, states are cruel, coercive creatures and make mistakes all the time. And this is a part of that process of uh creating a better machinery of the state. We in India don't think like this. We in India think that the state is cruel and every now and then the state will crucify many innocent people. And generally, you know, we always give the benefit of the doubt to anybody who's accused by the Indian state. But beyond that, we never expect the Indian state to make up and try to admit a mistake. So I was very impressed that being a first-world country means being a country where independent people are able to write letters and challenge the United States government. And get it to the point of standing up and officially speaking up and saying that we were wrong and we will retract those statements that were made about Oppenheimer and we will restore his security clearance. And we'll link to an article that describes this story. And I was also fascinated how today many of the actors of that story are the children and the grandchildren of that generation. So on both sides. Between the people who persecuted Oppenheimer and the physicists and the intellectuals of that age. It is the children and the grandchildren of that world who continue to be alive and carry those memories and carry those stories in their mind. And it is so interesting how these things matter. And again, when I look at India, I have often thought that we've lost those links into the future, we've into the past. We're very ahistorical today. The people we meet in positions of influence very often don't carry this institutional memory, which really runs over generations. And that is part of our problems of being ahistorical and not understanding the world deeply. Finally, uh the chief counsel who worked for Joe McCarthy, who uh tried to subpoena uh Robert Oppenheimer in 1954, or was it 56, was none other than Roy Cohn. Okay, now Roy Cohn is the evil genius, the mentor, the teacher, the philosopher, the guide of Donald J. Trump. And suddenly you see the threads of history intertwining with each other. That there is a sense in which that same nationalist, power-hungry, unethical culture of McCarthy and Roy Cohn. Is that same unethical culture of a Donald Trump today? And it is that same journey of people like Robert Oppenheimer going all the way to today, who are the people on the other sides. So I'd like to say to everybody that sometimes we think the world is in the grip of a culture war and we try to downplay that, or we sometimes think there are very fine people on both sides. I think that with the distance that we get from history. That's not a fair statement.",
+      "words": [
         {
           "word": "that",
           "startTime": 1014.58,
@@ -32663,10 +32711,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "Ajay Shah",
       "startTime": 1966.73,
-      "endTime": 1968.81,
-      "text": "essence to a",
+      "endTime": 2094.01,
+      "text": "essence to a broader aspect. So look back at uh Robert Oppenheimer at age 38 being brought to lead the Manhattan Project and doing something spectacular with it. Whereas normally the world is organized around dull people. Okay. Most power is controlled in this world by people who are straight and narrow. Whereas the uh personal and professional uh uh eclectic uh person like Oppenheimer, the Maverick, this kind of person is treated as unsound and is held at a distance. And only in special moments the world seems to be able to use these people. So uh When we spoke on the podcast about the Russia-Ukraine war, I described the creativity and adaptation on the Ukrainian side. I described crazy people who built an Uber for artillery. They're able to do that because today they are Ukraine struggling for their survival in a war. Normally the bureaucracies of a military force just don't allow that. And that's in a sense the essence of the Oppenheimer story that when This kind of Maverick was brought into influence and around himself created that organization of 3,000 or 6,000 interesting people. And you can imagine the kind of people who would rally around his recruitment efforts when he would reach out and make the phone calls to people all over the world. What kind of people would he attract? He would look for the clever ones, he would not look for the obedient ones. And that's how they did this amazing thing called the Manhattan Project. And then after the war ended, the state did not need him. And then you got back to the worst instincts of the people who start complaining that, oh, this guy is unsound in so many ways. And do you know X about his personal life? And did you know he went and studied Sanskrit and he takes interest in Hinduism and things like that? And then you get the ugliness of the McCarthy and the Roy Cohn.",
       "words": [
         {
           "word": "essence",
@@ -32685,15 +32733,7 @@
           "startTime": 1968.49,
           "endTime": 1968.81,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1968.81,
-      "endTime": 2094.01,
-      "text": "broader aspect. So look back at uh Robert Oppenheimer at age 38 being brought to lead the Manhattan Project and doing something spectacular with it. Whereas normally the world is organized around dull people. Okay. Most power is controlled in this world by people who are straight and narrow. Whereas the uh personal and professional uh uh eclectic uh person like Oppenheimer, the Maverick, this kind of person is treated as unsound and is held at a distance. And only in special moments the world seems to be able to use these people. So uh When we spoke on the podcast about the Russia-Ukraine war, I described the creativity and adaptation on the Ukrainian side. I described crazy people who built an Uber for artillery. They're able to do that because today they are Ukraine struggling for their survival in a war. Normally the bureaucracies of a military force just don't allow that. And that's in a sense the essence of the Oppenheimer story that when This kind of Maverick was brought into influence and around himself created that organization of 3,000 or 6,000 interesting people. And you can imagine the kind of people who would rally around his recruitment efforts when he would reach out and make the phone calls to people all over the world. What kind of people would he attract? He would look for the clever ones, he would not look for the obedient ones. And that's how they did this amazing thing called the Manhattan Project. And then after the war ended, the state did not need him. And then you got back to the worst instincts of the people who start complaining that, oh, this guy is unsound in so many ways. And do you know X about his personal life? And did you know he went and studied Sanskrit and he takes interest in Hinduism and things like that? And then you get the ugliness of the McCarthy and the Roy Cohn.",
-      "words": [
+        },
         {
           "word": "broader",
           "startTime": 1968.81,
@@ -45003,8 +45043,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2659.4,
-      "endTime": 2685.27,
-      "text": "Marvelous description by poet laureate or physicists. And in a sense, every field has a poetry of its own. So, you know, uh quite fabulous. And I often say, you know, that, you know, uh my writing students will sometimes ask me about fiction and nonfiction and do you have different different approaches or different attitudes? And of course, yes, there are differences, but fundamentally, all writing is telling stories, you're building narratives, telling stories, capturing the reader. And if you do that well,",
+      "endTime": 2692.85,
+      "text": "Marvelous description by poet laureate or physicists. And in a sense, every field has a poetry of its own. So, you know, uh quite fabulous. And I often say, you know, that, you know, uh my writing students will sometimes ask me about fiction and nonfiction and do you have different different approaches or different attitudes? And of course, yes, there are differences, but fundamentally, all writing is telling stories, you're building narratives, telling stories, capturing the reader. And if you do that well, at one level it doesn't even matter what the subject is because the subject is everything, you know, everything is everything, as it were.",
       "words": [
         {
           "word": "Marvelous",
@@ -45509,15 +45549,7 @@
           "startTime": 2684.87,
           "endTime": 2685.27,
           "confidence": 0.9346
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2685.27,
-      "endTime": 2686.79,
-      "text": "at one level it doesn't even matter",
-      "words": [
+        },
         {
           "word": "at",
           "startTime": 2685.27,
@@ -45559,15 +45591,7 @@
           "startTime": 2686.55,
           "endTime": 2686.79,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2686.79,
-      "endTime": 2692.85,
-      "text": "what the subject is because the subject is everything, you know, everything is everything, as it were.",
-      "words": [
+        },
         {
           "word": "what",
           "startTime": 2686.79,
@@ -45767,8 +45791,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2701.19,
-      "endTime": 2911.69,
-      "text": "So what I'm gonna do is I'm gonna recommend a book which uh no doubt you've read, but I I just want everyone to read because it's a masterpiece. It's a book called The Power Broker by Robert Carro. Now Yeah, it's right there. Uh now Robert Carro was uh you know in the in the sixties he went with a particular I think he was a journalist, he went with a particular project to a publisher. He said, Oh, I'll take a few months to do it, nine months or ten months or whatever, I forget what. And it was a biography of a guy called Robert Moses. And the publisher said, Okay, fine, you know, a few months is fine, here's your advance, go do it. He took, I think, twelve or thirteen years to do it. Uh it's a million-word book almost. It got cut down to eight hundred thousand, and I'll talk a bit about that as well. And uh it's a masterpiece, won the Pulitzer Prize. And all of that. And then after that, and I'll come back to the Power Broker, but after that Robert Carrow uh, you know, uh was thinking about what do I write about, and I think his publisher suggested what was already on his mind, write a biography of Lyndon Johnson. And I think that project started in the late 70s and it is still going on. There have been a number of volumes, one volume is still left, and he actually took longer to write about Lyndon Johnson's years in the Senate than Lyndon Johnson spent in the Senate. Right. So this reminds me of, you know, the old uh Borges thing about how a map of the world needs to be as big as the world to be accurate. And of course it's out of date in the next instant because uh the world keeps changing. But fascinating rigor and a model of many people. Now I want to talk about the power broker a little bit more. The power broker is at one level. It's a biography of a guy called Robert Moses. Robert Moses was, I think, the parks commissioner of New York for many, many years, but he was essentially a bureaucrat who used the system Accumulate so much power that even top politicians like the governor of New York and all that would uh you know were under his sway and gathered a lot of bureaucratic power in that process. Now, that book to me is a biography of three things, not of one thing. One, it's a biography of Robert Moses, a man, fascinating man. It's a biography of New York City. Like modern New York City as you see it with its flyovers and tunnels and everything, whatever it is today, is in a sense um You know, uh happened in those decades where Moses was in charge, and his imagination of the city was a very top-down imagination. You know, so he would construct like a flyover or a bridge, and it didn't matter to him what the neighborhoods there were like, and etc. etc. And it was one vision of urban planning or city planning. And in fact, the 200, you know, when he submitted the million word book, um, a book length section was cut out which mainly dealt with Jane Jacobs. Now, Jane Jacobs wrote The Death and Life of Great American Cities, one of my intellectual heroes. Spoke so eloquently about cities and how cities should be allowed to grow organically. Cities are about people, not about buildings. Just an incredible thinker, always at opposition with Moses. And that whole story is fascinating. And I and I feel so sad about that because today you no longer have the constraints that there, of course, a single like the publishers. I think the publisher was Robert Gottlieb, if I'm not mistaken, but I've forgotten I could be wrong. But the publisher was also a legend, and he said, Listen, I can't interest what people in a two-volume biography of Moses. It has to be one volume and it has to therefore be this long because you know this is a paperweight, this is a binding, we can't go more than this. Today that conventional thinking wouldn't apply. Um, you know, an author today could dump the rest of uh the work on the internet for everyone to reach because um read because it's invaluable. But we lost that section. Does",
+      "endTime": 3023.38,
+      "text": "So what I'm gonna do is I'm gonna recommend a book which uh no doubt you've read, but I I just want everyone to read because it's a masterpiece. It's a book called The Power Broker by Robert Carro. Now Yeah, it's right there. Uh now Robert Carro was uh you know in the in the sixties he went with a particular I think he was a journalist, he went with a particular project to a publisher. He said, Oh, I'll take a few months to do it, nine months or ten months or whatever, I forget what. And it was a biography of a guy called Robert Moses. And the publisher said, Okay, fine, you know, a few months is fine, here's your advance, go do it. He took, I think, twelve or thirteen years to do it. Uh it's a million-word book almost. It got cut down to eight hundred thousand, and I'll talk a bit about that as well. And uh it's a masterpiece, won the Pulitzer Prize. And all of that. And then after that, and I'll come back to the Power Broker, but after that Robert Carrow uh, you know, uh was thinking about what do I write about, and I think his publisher suggested what was already on his mind, write a biography of Lyndon Johnson. And I think that project started in the late 70s and it is still going on. There have been a number of volumes, one volume is still left, and he actually took longer to write about Lyndon Johnson's years in the Senate than Lyndon Johnson spent in the Senate. Right. So this reminds me of, you know, the old uh Borges thing about how a map of the world needs to be as big as the world to be accurate. And of course it's out of date in the next instant because uh the world keeps changing. But fascinating rigor and a model of many people. Now I want to talk about the power broker a little bit more. The power broker is at one level. It's a biography of a guy called Robert Moses. Robert Moses was, I think, the parks commissioner of New York for many, many years, but he was essentially a bureaucrat who used the system Accumulate so much power that even top politicians like the governor of New York and all that would uh you know were under his sway and gathered a lot of bureaucratic power in that process. Now, that book to me is a biography of three things, not of one thing. One, it's a biography of Robert Moses, a man, fascinating man. It's a biography of New York City. Like modern New York City as you see it with its flyovers and tunnels and everything, whatever it is today, is in a sense um You know, uh happened in those decades where Moses was in charge, and his imagination of the city was a very top-down imagination. You know, so he would construct like a flyover or a bridge, and it didn't matter to him what the neighborhoods there were like, and etc. etc. And it was one vision of urban planning or city planning. And in fact, the 200, you know, when he submitted the million word book, um, a book length section was cut out which mainly dealt with Jane Jacobs. Now, Jane Jacobs wrote The Death and Life of Great American Cities, one of my intellectual heroes. Spoke so eloquently about cities and how cities should be allowed to grow organically. Cities are about people, not about buildings. Just an incredible thinker, always at opposition with Moses. And that whole story is fascinating. And I and I feel so sad about that because today you no longer have the constraints that there, of course, a single like the publishers. I think the publisher was Robert Gottlieb, if I'm not mistaken, but I've forgotten I could be wrong. But the publisher was also a legend, and he said, Listen, I can't interest what people in a two-volume biography of Moses. It has to be one volume and it has to therefore be this long because you know this is a paperweight, this is a binding, we can't go more than this. Today that conventional thinking wouldn't apply. Um, you know, an author today could dump the rest of uh the work on the internet for everyone to reach because um read because it's invaluable. But we lost that section. Does he not have his early drafts? Um, I am not sure of that, but what I do know is I've never been made available. So that 200 200,000 words on Jane Jacobs is a book on Jane Jacobs by one of the great greatest biographers who's ever lived. You know? So you'd love to read that. It's not there. So at one level, uh the first biography of Robert Moses, too, it's a biography of New York City, how it changes character, etc. etc. Everything that uh uh goes on there. And that's also a fascinating story. Because with every change, you sh you change the form of a city. You in a sense, you change the people of the city and the way they live and you change the culture. Wilton Churchill once said. That first ma uh humans design buildings, then the buildings design them. Something to that effect, right? We shape our buildings and our buildings shape us. Brilliant. So so we shape our buildings and then our buildings shape us. And so in that sense, this is not a trivial matter, what kind of buildings you're building, what kind of urban planning you're doing. And it's a great debate, the debate between a top-down planning and organic growth. Uh and at a third level. This is The Power Broker by Robert Carro is an incredible study of how power corrupts, how power corrupts and corrodes the soul. As you see, this brilliant idealistic man, Robert Moses, brilliant idealistic man. You read of him in the 20s and the 30s, you're like, wow, what a thinker, what a visionary. But how he's corrupted by power, how that affects his ego, the kind of politics that he plays, the effect he has on the lives of others. And it's magisterial. And It's a great book, not just for the content, but the sweep of the storytelling. It's a uh you know, it it it is in that sense, it is not just about Moses. It is not just about New York, it is not just about power, it's about all of us. Everything is everything. So it's a book that I would recommend that, you know, everyone should go out and read. It's a masterpiece. All",
       "words": [
         {
           "word": "So",
@@ -50287,15 +50311,7 @@
           "startTime": 2911.45,
           "endTime": 2911.69,
           "confidence": 0.9926
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2911.69,
-      "endTime": 2913.53,
-      "text": "he not have his early",
-      "words": [
+        },
         {
           "word": "he",
           "startTime": 2911.69,
@@ -50325,15 +50341,7 @@
           "startTime": 2912.97,
           "endTime": 2913.53,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2913.53,
-      "endTime": 2957.16,
-      "text": "drafts? Um, I am not sure of that, but what I do know is I've never been made available. So that 200 200,000 words on Jane Jacobs is a book on Jane Jacobs by one of the great greatest biographers who's ever lived. You know? So you'd love to read that. It's not there. So at one level, uh the first biography of Robert Moses, too, it's a biography of New York City, how it changes character, etc. etc. Everything that uh uh goes on there. And that's also a fascinating story. Because with every change, you sh you change the form of a city. You in a sense, you change the people of the city and the way they live and you change the culture. Wilton Churchill once said. That first ma uh humans design buildings, then the buildings design them. Something to that effect, right? We",
-      "words": [
+        },
         {
           "word": "drafts?",
           "startTime": 2913.53,
@@ -51221,15 +51229,7 @@
           "startTime": 2957.0,
           "endTime": 2957.16,
           "confidence": 0.9272
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2957.16,
-      "endTime": 2958.84,
-      "text": "shape our buildings and our buildings shape",
-      "words": [
+        },
         {
           "word": "shape",
           "startTime": 2957.16,
@@ -51271,15 +51271,7 @@
           "startTime": 2958.6,
           "endTime": 2958.84,
           "confidence": 0.9978
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2958.84,
-      "endTime": 3023.38,
-      "text": "us. Brilliant. So so we shape our buildings and then our buildings shape us. And so in that sense, this is not a trivial matter, what kind of buildings you're building, what kind of urban planning you're doing. And it's a great debate, the debate between a top-down planning and organic growth. Uh and at a third level. This is The Power Broker by Robert Carro is an incredible study of how power corrupts, how power corrupts and corrodes the soul. As you see, this brilliant idealistic man, Robert Moses, brilliant idealistic man. You read of him in the 20s and the 30s, you're like, wow, what a thinker, what a visionary. But how he's corrupted by power, how that affects his ego, the kind of politics that he plays, the effect he has on the lives of others. And it's magisterial. And It's a great book, not just for the content, but the sweep of the storytelling. It's a uh you know, it it it is in that sense, it is not just about Moses. It is not just about New York, it is not just about power, it's about all of us. Everything is everything. So it's a book that I would recommend that, you know, everyone should go out and read. It's a masterpiece. All",
-      "words": [
+        },
         {
           "word": "us.",
           "startTime": 2958.84,
@@ -52593,8 +52585,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3023.38,
-      "endTime": 3052.14,
-      "text": "too often in India, discussions on urban uh planning feature that excessive top-down central planning. Okay, the Indian middle class yearns for some authoritarian government to tell them what to do. And there will be a park here and there will be a metro here. And modern urban thinking is incredibly valuable and precious and a bit rare in India. Uh, the beautiful phrase by Jane Jacobs, the ballet of the",
+      "endTime": 3107.08,
+      "text": "too often in India, discussions on urban uh planning feature that excessive top-down central planning. Okay, the Indian middle class yearns for some authoritarian government to tell them what to do. And there will be a park here and there will be a metro here. And modern urban thinking is incredibly valuable and precious and a bit rare in India. Uh, the beautiful phrase by Jane Jacobs, the ballet of the streets. I remember how much I used to think about this at the time of the COVID lockdown. uh when you have a state in enforced lockdown. In a way you feel not that much has changed. But actually that entire ballet of the street is disrupted. I think we in India need to create a new philosophy around urban planning where we put these pieces together where we don't romanticize informality because we've seen plenty of Indian cities which are literally overgrown villages without any urban planning, and avoid the other end that is Chandigarh. So how do you find that middle road and what is a deeply grounded Indian life in this field is something we need to understand. And for that I think of this book as a fundamental input into our brains for what can go right and what can",
       "words": [
         {
           "word": "too",
@@ -53021,15 +53013,7 @@
           "startTime": 3051.98,
           "endTime": 3052.14,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3052.14,
-      "endTime": 3053.98,
-      "text": "streets. I remember",
-      "words": [
+        },
         {
           "word": "streets.",
           "startTime": 3052.14,
@@ -53047,15 +53031,7 @@
           "startTime": 3053.18,
           "endTime": 3053.98,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3053.98,
-      "endTime": 3107.08,
-      "text": "how much I used to think about this at the time of the COVID lockdown. uh when you have a state in enforced lockdown. In a way you feel not that much has changed. But actually that entire ballet of the street is disrupted. I think we in India need to create a new philosophy around urban planning where we put these pieces together where we don't romanticize informality because we've seen plenty of Indian cities which are literally overgrown villages without any urban planning, and avoid the other end that is Chandigarh. So how do you find that middle road and what is a deeply grounded Indian life in this field is something we need to understand. And for that I think of this book as a fundamental input into our brains for what can go right and what can",
-      "words": [
+        },
         {
           "word": "how",
           "startTime": 3053.98,

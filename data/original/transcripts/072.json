@@ -5,7 +5,7 @@
     "durationSeconds": 3484,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 14.73,
-      "endTime": 27.69,
-      "text": "Welcome, gentle reader, to this episode of Everything Is Everything. Here is my friend Amit Varma and I, and we are ready to entertain you and incite you to think in new",
+      "endTime": 71.28,
+      "text": "Welcome, gentle reader, to this episode of Everything Is Everything. Here is my friend Amit Varma and I, and we are ready to entertain you and incite you to think in new ways. Amit, you are more than just an atom in a kinetic theory of gases. While you are also that atom, you are one who contemplates the kinetic theory of gases. So you've been in the media and the creative game all your life, and then you have tried to engage in meta thinking about what is this world and how is it evolving, and you have been an observer offering insights along the way about how this world works. Readers, please go watch the EI episode, The Art of Podcasting. It's not just about podcasting. It's about how the world works and the way the modern media and creative economies have created this amazing construct.",
       "words": [
         {
           "word": "Welcome,",
@@ -211,15 +211,7 @@
           "startTime": 27.29,
           "endTime": 27.69,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 27.69,
-      "endTime": 29.69,
-      "text": "ways. Amit,",
-      "words": [
+        },
         {
           "word": "ways.",
           "startTime": 27.69,
@@ -231,15 +223,7 @@
           "startTime": 28.57,
           "endTime": 29.69,
           "confidence": 0.8062
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 29.69,
-      "endTime": 71.28,
-      "text": "you are more than just an atom in a kinetic theory of gases. While you are also that atom, you are one who contemplates the kinetic theory of gases. So you've been in the media and the creative game all your life, and then you have tried to engage in meta thinking about what is this world and how is it evolving, and you have been an observer offering insights along the way about how this world works. Readers, please go watch the EI episode, The Art of Podcasting. It's not just about podcasting. It's about how the world works and the way the modern media and creative economies have created this amazing construct.",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 29.69,
@@ -929,8 +913,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 72.97,
-      "endTime": 125.0,
-      "text": "I absolutely don't know what to do with the fact that you've called me an atom. If I was sexy, I would be an atom bomb. But be that as it uh may. Uh you know, it's interesting that you talk about getting meta, right? Um how I often learn a subject is I plunge into it first And then over time by doing this, by trying that, by thinking about what has happened, I kind of figure out what's going on. I get to the first principles and then I have a theory of what's happening and I can look at it, you know, in a higher order kind of way. But when I'm actually doing it, I really have no idea, no clue what's happening. And it takes a lot of experimentation and doing stuff before I gradually figure it out. So post facto, when I give Gyan, it seems like oh this man really knows what he's talking about. But I discovered all of this by just bumbling through, which is why you know the most important uh Value in the creator economy is a bias for action. Just do stuff and you'll learn from it. No, and I",
+      "endTime": 124.52,
+      "text": "I absolutely don't know what to do with the fact that you've called me an atom. If I was sexy, I would be an atom bomb. But be that as it uh may. Uh you know, it's interesting that you talk about getting meta, right? Um how I often learn a subject is I plunge into it first And then over time by doing this, by trying that, by thinking about what has happened, I kind of figure out what's going on. I get to the first principles and then I have a theory of what's happening and I can look at it, you know, in a higher order kind of way. But when I'm actually doing it, I really have no idea, no clue what's happening. And it takes a lot of experimentation and doing stuff before I gradually figure it out. So post facto, when I give Gyan, it seems like oh this man really knows what he's talking about. But I discovered all of this by just bumbling through, which is why you know the most important uh Value in the creator economy is a bias for action. Just do stuff and you'll learn from it.",
       "words": [
         {
           "word": "I",
@@ -2125,7 +2109,15 @@
           "startTime": 123.96,
           "endTime": 124.52,
           "confidence": 0.9566
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 124.52,
+      "endTime": 135.48,
+      "text": "No, and I fully respect that. But uh my sense was that in addition to being the atom bouncing around in the gas, you are the atom that is contemplating hmm, why are we bouncing around with these atoms",
+      "words": [
         {
           "word": "No,",
           "startTime": 124.52,
@@ -2143,15 +2135,7 @@
           "startTime": 124.92,
           "endTime": 125.0,
           "confidence": 0.9946
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 125.0,
-      "endTime": 135.48,
-      "text": "fully respect that. But uh my sense was that in addition to being the atom bouncing around in the gas, you are the atom that is contemplating hmm, why are we bouncing around with these atoms",
-      "words": [
+        },
         {
           "word": "fully",
           "startTime": 125.0,
@@ -3925,8 +3909,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 206.96,
-      "endTime": 218.43,
-      "text": "You're still waiting for your gold medal, but uh uh until the podcast comes to an end, you can't get the gold medal. You are the provisional gold at the moment. But actually I don't really see myself doing too many ten hour episodes, so you're probably there. But",
+      "endTime": 350.03,
+      "text": "You're still waiting for your gold medal, but uh uh until the podcast comes to an end, you can't get the gold medal. You are the provisional gold at the moment. But actually I don't really see myself doing too many ten hour episodes, so you're probably there. But here's a thought I had on this journey. And I wrote an essay called A Meditation on Form when I had reached like four hour episodes, five hour apps. Uh and I realized then that what I was doing was fundamentally different in more ways than just length. Right. When you do a five minute podcast, you can be super shallow. You don't even need to read the person's book or uh, you know, know much about them and and you know, five minutes is enough. If you're doing half an hour or one hour, maybe yes, then you need to read the book, think about it, get some questions ready. If you're doing three, four hours, you need to read all their books. If you're doing seven, eight hours, you need to read not only all their books, you need to know their field really well, you need to have a good sense of their life. And most importantly, you need to be prepared to listen. You know, the key value that I learned from doing those long episodes is that you simply never interrupt. Because the key to having a successful deep episode is that you allow the person to sink into their thoughts, to sink into their lives, and to talk freely. So, you know, Stephen Covey once said that we listen to respond, we don't listen to understand. And when you're doing one of those long conversations, you have to really listen to understand. There's no sense of the ego that should come into play. Most of us when we are in conversation, we are listening with the you know one part of our mind on what smart thing am I going to say next which will impress everybody, or how I will prove this person wrong. And that's a terrible way of looking at it. So now that quality of listening. creates a certain kind of content which is deeper, which is more relaxed. And that also, I think, uh changes a person. You know, I say form shapes, and content shapes character. So because of the form that you're working in, you do a certain kind of content and then that makes you engage in a particular way, which can make you a different kind of person when it's as extreme as ten our podcasts. Right? And it can also work the other way, that there is some content to which only a particular form is suited. And you have to figure out what you want to do. Right. If you want to just ask rapid fire questions, you need five minutes. If you want to go much deeper, you need a longer period of time. And this was the first realization to my starting to think in a deeper way about form in the context of the rest of the creator universe. And that's what I want to talk about now.",
       "words": [
         {
           "word": "You're",
@@ -4221,15 +4205,7 @@
           "startTime": 217.95,
           "endTime": 218.43,
           "confidence": 0.9859
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 218.43,
-      "endTime": 219.95,
-      "text": "here's a thought I had on",
-      "words": [
+        },
         {
           "word": "here's",
           "startTime": 218.43,
@@ -4265,15 +4241,7 @@
           "startTime": 219.79,
           "endTime": 219.95,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 219.95,
-      "endTime": 349.55,
-      "text": "this journey. And I wrote an essay called A Meditation on Form when I had reached like four hour episodes, five hour apps. Uh and I realized then that what I was doing was fundamentally different in more ways than just length. Right. When you do a five minute podcast, you can be super shallow. You don't even need to read the person's book or uh, you know, know much about them and and you know, five minutes is enough. If you're doing half an hour or one hour, maybe yes, then you need to read the book, think about it, get some questions ready. If you're doing three, four hours, you need to read all their books. If you're doing seven, eight hours, you need to read not only all their books, you need to know their field really well, you need to have a good sense of their life. And most importantly, you need to be prepared to listen. You know, the key value that I learned from doing those long episodes is that you simply never interrupt. Because the key to having a successful deep episode is that you allow the person to sink into their thoughts, to sink into their lives, and to talk freely. So, you know, Stephen Covey once said that we listen to respond, we don't listen to understand. And when you're doing one of those long conversations, you have to really listen to understand. There's no sense of the ego that should come into play. Most of us when we are in conversation, we are listening with the you know one part of our mind on what smart thing am I going to say next which will impress everybody, or how I will prove this person wrong. And that's a terrible way of looking at it. So now that quality of listening. creates a certain kind of content which is deeper, which is more relaxed. And that also, I think, uh changes a person. You know, I say form shapes, and content shapes character. So because of the form that you're working in, you do a certain kind of content and then that makes you engage in a particular way, which can make you a different kind of person when it's as extreme as ten our podcasts. Right? And it can also work the other way, that there is some content to which only a particular form is suited. And you have to figure out what you want to do. Right. If you want to just ask rapid fire questions, you need five minutes. If you want to go much deeper, you need a longer period of time. And this was the first realization to my starting to think in a deeper way about form in the context of the rest of the creator universe. And that's what I want to talk about",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 219.95,
@@ -7159,21 +7127,21 @@
           "startTime": 349.39,
           "endTime": 349.55,
           "confidence": 0.9969
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 349.55,
-      "endTime": 367.9,
-      "text": "now. Winston Churchill he said we make our buildings and then our buildings make us. Let's get going. Tell us your",
-      "words": [
+        },
         {
           "word": "now.",
           "startTime": 349.55,
           "endTime": 350.03,
           "confidence": 0.8839
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 350.03,
+      "endTime": 354.37,
+      "text": "Winston Churchill he said we make our buildings and then our buildings make us.",
+      "words": [
         {
           "word": "Winston",
           "startTime": 350.03,
@@ -7257,7 +7225,15 @@
           "startTime": 353.87,
           "endTime": 354.37,
           "confidence": 0.8607
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 366.86,
+      "endTime": 373.34,
+      "text": "Let's get going. Tell us your story. So let's first get started by talking about something you're listening to right now. What are you listening to right",
+      "words": [
         {
           "word": "Let's",
           "startTime": 366.86,
@@ -7293,15 +7269,7 @@
           "startTime": 367.74,
           "endTime": 367.9,
           "confidence": 0.9905
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 367.9,
-      "endTime": 373.34,
-      "text": "story. So let's first get started by talking about something you're listening to right now. What are you listening to right",
-      "words": [
+        },
         {
           "word": "story.",
           "startTime": 367.9,
@@ -7447,8 +7415,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 375.42,
-      "endTime": 921.04,
-      "text": "The twittering of birds, not twitter, the twittering of birds, or perhaps we should call the Xing of Birds right now. Now, let's think about bird sound, right? We know that different birds have different sounds, but we don't think about why. We assume they're just born that way. But actually everything is contingent and everything comes out of form. If you think of the bird song as content, it is a form of their environment which creates that particular sound. So if you go into the Amazon rain forest, right, the and uh where you have dense foliage, Oh the sound that you will often hear from birds which are in that dense foliage is repetitive sounds in a narrow frequency. And the idea of repetitive sounds in a narrow frequency is that if some of the sound gets blocked away because there are so many other things, they're basically just repeating the same thing and something or the other will happen. Like so many columnists, in fact. Uh equally if you have birds which are close to the forest floor, their bird cries will be lower pitched. Right, because they're less likely to get absorbed by the surroundings. There are water birds which, you know, tailor their cries or evolution tailor their cries, natural selection tailor their cries in such a way that they can go across water that they're acoustically suited to that. You know, birds which are uh sent sending their call over long distances will have a more buzzing kind of sound, which will kind of cut through that. So all of their sounds which we almost think about intuitively as something instinctive. This is just the way things are. are actually shaped by form, and that form is a natural environment in which they are. Like what you see on the screen now is a great uh chart by a guy called Bernie Krauss, which shows the different frequencies of different animals, birds and gibbons and so on and so forth. And Krauss also did this fantastic sort of experiment in California a long time back, where between two thousand and four and two thousand and fifteen, he took the soundscape of a particular um uh area at the same space a number of times over these eleven years And as you can as you will see now in the video, there was a drought at d that period of time and visibly people couldn't really make out the difference of how many species have died or fallen off or whatever. But the sound scape captured everything. Because the sounds of different species, you know, occupy different parts of whatever that kind of sound uh chart uh is called. And in fact uh the um um uh editor of the scene and the unseen, Gorov Chintamani, he often says that when he's editing the show, he can do a first cut just by looking at the waves. And and then actually listen to it at double speed and kinda get to work. Which is um uh uh really fascinating. So here's the video by Bernie Krause. So my point of talking about the birds is that this is fundamentally a rule of the natural kingdom, right? That form dictates everything. And It dictates music as well. There's a great book I've recommended before on the show How Music Works by David Byrne. And there he talks about how the places where music is typically performed determines the kind of music that comes up. So if you're sitting out in the open as we are now, the optimal kind of music is percussive music. Because that really goes over distances. You can, you know, make out the nuances of rhythm and so on and so forth. So a lot of primitive music, tribal music, is deeply percussive music because it's happening outdoors. Alas, it is the case that when Ganpati happens in Bombay, all the processions that are going out are also playing loud percussive music. which is not particularly pleasant uh to listen to. But the point of the matter is it is perfectly natural for them to play that kind of music in the open air. You will not hear kayals and tumries while you know people are marching to the be uh uh beach. So that is the early kind of music that you have. And then as music evolves into indoor spaces, it evolves differently. For example, Byrne talks about how if you take that percussive music, to the gothic churches of Europe where music uh performances were often conducted, they would be, in his words, sonic mush. Byrne writes in his book, the reverberation time in those spaces is very long, more than four seconds in most cases. So a note sung a few seconds ago hangs in the air and becomes part of the present sonic landscape. A composition with shifting musical keys would inevitably invite dissonance as notes overlapped and clashed, a real sonic pileup. So what evolved, what sounds best in this kind of space is modal in structure, often using very long notes. Slowly evolving melodies that LCO key changes work beautiful and reinforce the otherworldly imbians. Not only does this kind of music work well acoustically, it helps establish what we have come to think of as a spiritual aura. So a lot of the medieval uh music in Europe was really also harmonically simple. Because you cannot have harmonically complex where the reverberation is more than four minutes and nuances are getting lost, and you certainly can't have percussive music. And then as music in Europe starts evolving, you hear you hear different kinds of composers come up with different kinds of music. For example, Bach would often perform in a church which was much smaller than a cathedral with a pipe organ, and that one instrument was enough to take that space up. Then as the halls became larger and larger, you had the grand sounds of Gustav Mahler. So that's how the music is progressing. It doesn't necessarily mean that there is a hierarchy of forms. Now we we will often think of Western classical music is so much more evolved than the primitive, you know, the beating of the drums and so on and so forth. But actually there's no hierarchy, there's no value judgment. Particular kinds of music sound the way they do. because of circumstances. They are shaped by circumstance which we don't think about and we take for granted. Now this continues evolving into the twentieth century. Like one of my like one place that I have never been to, but if if you ask me, like, pick a place, pick a time where w you know, where you'd like to visit once. I'd pick a New York club called CBGB's and I'd like to be there in nineteen seventy five. And that was basically the birth of punk rock, but American punk in a sense, but also alternative rock. You had television and Patti Smith and the police performed there um at an early point in time. David Byrne also performed there with the talking heads, and he gives an example of CBGBs as the classic kind of alternative rock me when you away that classical music would not make sense at all. Right? CBGBs, as you'll see from this picture of it, was extremely crowded. There was furniture everywhere, there were chairs, there were people talking, there was other noise. And this was a feature, not a bug, because all of it meant that sound was absorbed and there was no reverberation. Like you've been to my home studio, my room is extremely messy, there are bookshelves and there are things lying all over the place. Which is again a feature, not a bug. It absorbs the sound, there is less reverb, and therefore is much easier to rec uh record. And this now means that you can have harmonically complex music, you can have different kinds of sounds happening uh you know, percussion is back in a big way. And the kind of music that is again coming out here is totally suited to that. And now if you think of bigger venues, if you think of arena rock, you never have funk in an a you know, in a large arena because it wouldn't make sense. The sounds would be uh too complex. What is more suited to that is metal. I saw this great interview recently of Mike Dawes, a great guitarist by um uh Rick Beato. And Rick Biatto asked him about Angus Young, you know the A C D C guitarist. And Dawes was like look, Angus Young was awesome. Right? People make fun of him because they're like only a s certain kind of sound and three four chords and blah blah blah. But if you consider the circumstances, right, A C D C is performing in these large arenas and you want to build that wall of sound. It's absolutely perfect. So again you look at the circumstance and rather than say this guy is good or that guy is bad or this kind of music is good, that kind of music is bad, you kind of look at uh uh you know, how that kind of music has come out from the circumstances. And they're all awesome because they're all adaptive. In a sense it's natural selection at play. You have different birds making different bird sounds, and you have different kinds of music come up in different kinds of circumstances. And in each of those genres, in each of those kinds, there'll be great musicians and they're the ones we'll remember. I have a question for",
+      "endTime": 919.06,
+      "text": "The twittering of birds, not twitter, the twittering of birds, or perhaps we should call the Xing of Birds right now. Now, let's think about bird sound, right? We know that different birds have different sounds, but we don't think about why. We assume they're just born that way. But actually everything is contingent and everything comes out of form. If you think of the bird song as content, it is a form of their environment which creates that particular sound. So if you go into the Amazon rain forest, right, the and uh where you have dense foliage, Oh the sound that you will often hear from birds which are in that dense foliage is repetitive sounds in a narrow frequency. And the idea of repetitive sounds in a narrow frequency is that if some of the sound gets blocked away because there are so many other things, they're basically just repeating the same thing and something or the other will happen. Like so many columnists, in fact. Uh equally if you have birds which are close to the forest floor, their bird cries will be lower pitched. Right, because they're less likely to get absorbed by the surroundings. There are water birds which, you know, tailor their cries or evolution tailor their cries, natural selection tailor their cries in such a way that they can go across water that they're acoustically suited to that. You know, birds which are uh sent sending their call over long distances will have a more buzzing kind of sound, which will kind of cut through that. So all of their sounds which we almost think about intuitively as something instinctive. This is just the way things are. are actually shaped by form, and that form is a natural environment in which they are. Like what you see on the screen now is a great uh chart by a guy called Bernie Krauss, which shows the different frequencies of different animals, birds and gibbons and so on and so forth. And Krauss also did this fantastic sort of experiment in California a long time back, where between two thousand and four and two thousand and fifteen, he took the soundscape of a particular um uh area at the same space a number of times over these eleven years And as you can as you will see now in the video, there was a drought at d that period of time and visibly people couldn't really make out the difference of how many species have died or fallen off or whatever. But the sound scape captured everything. Because the sounds of different species, you know, occupy different parts of whatever that kind of sound uh chart uh is called. And in fact uh the um um uh editor of the scene and the unseen, Gorov Chintamani, he often says that when he's editing the show, he can do a first cut just by looking at the waves. And and then actually listen to it at double speed and kinda get to work. Which is um uh uh really fascinating. So here's the video by Bernie Krause. So my point of talking about the birds is that this is fundamentally a rule of the natural kingdom, right? That form dictates everything. And It dictates music as well. There's a great book I've recommended before on the show How Music Works by David Byrne. And there he talks about how the places where music is typically performed determines the kind of music that comes up. So if you're sitting out in the open as we are now, the optimal kind of music is percussive music. Because that really goes over distances. You can, you know, make out the nuances of rhythm and so on and so forth. So a lot of primitive music, tribal music, is deeply percussive music because it's happening outdoors. Alas, it is the case that when Ganpati happens in Bombay, all the processions that are going out are also playing loud percussive music. which is not particularly pleasant uh to listen to. But the point of the matter is it is perfectly natural for them to play that kind of music in the open air. You will not hear kayals and tumries while you know people are marching to the be uh uh beach. So that is the early kind of music that you have. And then as music evolves into indoor spaces, it evolves differently. For example, Byrne talks about how if you take that percussive music, to the gothic churches of Europe where music uh performances were often conducted, they would be, in his words, sonic mush. Byrne writes in his book, the reverberation time in those spaces is very long, more than four seconds in most cases. So a note sung a few seconds ago hangs in the air and becomes part of the present sonic landscape. A composition with shifting musical keys would inevitably invite dissonance as notes overlapped and clashed, a real sonic pileup. So what evolved, what sounds best in this kind of space is modal in structure, often using very long notes. Slowly evolving melodies that LCO key changes work beautiful and reinforce the otherworldly imbians. Not only does this kind of music work well acoustically, it helps establish what we have come to think of as a spiritual aura. So a lot of the medieval uh music in Europe was really also harmonically simple. Because you cannot have harmonically complex where the reverberation is more than four minutes and nuances are getting lost, and you certainly can't have percussive music. And then as music in Europe starts evolving, you hear you hear different kinds of composers come up with different kinds of music. For example, Bach would often perform in a church which was much smaller than a cathedral with a pipe organ, and that one instrument was enough to take that space up. Then as the halls became larger and larger, you had the grand sounds of Gustav Mahler. So that's how the music is progressing. It doesn't necessarily mean that there is a hierarchy of forms. Now we we will often think of Western classical music is so much more evolved than the primitive, you know, the beating of the drums and so on and so forth. But actually there's no hierarchy, there's no value judgment. Particular kinds of music sound the way they do. because of circumstances. They are shaped by circumstance which we don't think about and we take for granted. Now this continues evolving into the twentieth century. Like one of my like one place that I have never been to, but if if you ask me, like, pick a place, pick a time where w you know, where you'd like to visit once. I'd pick a New York club called CBGB's and I'd like to be there in nineteen seventy five. And that was basically the birth of punk rock, but American punk in a sense, but also alternative rock. You had television and Patti Smith and the police performed there um at an early point in time. David Byrne also performed there with the talking heads, and he gives an example of CBGBs as the classic kind of alternative rock me when you away that classical music would not make sense at all. Right? CBGBs, as you'll see from this picture of it, was extremely crowded. There was furniture everywhere, there were chairs, there were people talking, there was other noise. And this was a feature, not a bug, because all of it meant that sound was absorbed and there was no reverberation. Like you've been to my home studio, my room is extremely messy, there are bookshelves and there are things lying all over the place. Which is again a feature, not a bug. It absorbs the sound, there is less reverb, and therefore is much easier to rec uh record. And this now means that you can have harmonically complex music, you can have different kinds of sounds happening uh you know, percussion is back in a big way. And the kind of music that is again coming out here is totally suited to that. And now if you think of bigger venues, if you think of arena rock, you never have funk in an a you know, in a large arena because it wouldn't make sense. The sounds would be uh too complex. What is more suited to that is metal. I saw this great interview recently of Mike Dawes, a great guitarist by um uh Rick Beato. And Rick Biatto asked him about Angus Young, you know the A C D C guitarist. And Dawes was like look, Angus Young was awesome. Right? People make fun of him because they're like only a s certain kind of sound and three four chords and blah blah blah. But if you consider the circumstances, right, A C D C is performing in these large arenas and you want to build that wall of sound. It's absolutely perfect. So again you look at the circumstance and rather than say this guy is good or that guy is bad or this kind of music is good, that kind of music is bad, you kind of look at uh uh you know, how that kind of music has come out from the circumstances. And they're all awesome because they're all adaptive. In a sense it's natural selection at play. You have different birds making different bird sounds, and you have different kinds of music come up in different kinds of circumstances. And in each of those genres, in each of those kinds, there'll be great musicians and they're the ones we'll remember.",
       "words": [
         {
           "word": "The",
@@ -17193,7 +17161,15 @@
           "startTime": 918.68,
           "endTime": 919.06,
           "confidence": 0.9904
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 920.0,
+      "endTime": 924.32,
+      "text": "I have a question for you. Why did the Beatles stop performing live",
+      "words": [
         {
           "word": "I",
           "startTime": 920.0,
@@ -17223,15 +17199,7 @@
           "startTime": 920.8,
           "endTime": 921.04,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 921.04,
-      "endTime": 924.32,
-      "text": "you. Why did the Beatles stop performing live",
-      "words": [
+        },
         {
           "word": "you.",
           "startTime": 921.04,
@@ -28199,8 +28167,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1451.6,
-      "endTime": 1460.74,
-      "text": "generations. But when we look back at the ear earlier transitions, the earlier transitions were much fewer from the 78 RPM to the 33 RPM.",
+      "endTime": 1525.39,
+      "text": "generations. But when we look back at the ear earlier transitions, the earlier transitions were much fewer from the 78 RPM to the 33 RPM. uh to the CD. It is interesting how few people really went against convention and experimented on form. So I can remember uh the song Echoes, which I think is the entire side two of the LP of metal by Pink Floyd. But that's an exception. Mostly people fit within a certain zone. So I I guess there are powerful conformist forces that want you to fit into a mainstream world. as has been established. So for example, uh I've read that in the early years of FM Radio, uh there was a perfect match between Dark Side of the Moon and FM Radio, because apparently you would play the entire album as one block, and then there would come the ads. So it just fit within the one hour conception of FM radio of that age, that you play some ads, play the entire Dark Side of the Moon, and then you play some ads, and that's a one hour block. it sort of fit conveniently into that world of FM radio.",
       "words": [
         {
           "word": "generations.",
@@ -28351,15 +28319,7 @@
           "startTime": 1460.24,
           "endTime": 1460.74,
           "confidence": 0.8442
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1461.2,
-      "endTime": 1463.44,
-      "text": "uh to the CD.",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 1461.2,
@@ -28383,15 +28343,7 @@
           "startTime": 1462.24,
           "endTime": 1463.44,
           "confidence": 0.7406
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1463.44,
-      "endTime": 1525.39,
-      "text": "It is interesting how few people really went against convention and experimented on form. So I can remember uh the song Echoes, which I think is the entire side two of the LP of metal by Pink Floyd. But that's an exception. Mostly people fit within a certain zone. So I I guess there are powerful conformist forces that want you to fit into a mainstream world. as has been established. So for example, uh I've read that in the early years of FM Radio, uh there was a perfect match between Dark Side of the Moon and FM Radio, because apparently you would play the entire album as one block, and then there would come the ads. So it just fit within the one hour conception of FM radio of that age, that you play some ads, play the entire Dark Side of the Moon, and then you play some ads, and that's a one hour block. it sort of fit conveniently into that world of FM radio.",
-      "words": [
+        },
         {
           "word": "It",
           "startTime": 1463.44,
@@ -30751,10 +30703,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "Ajay Shah",
       "startTime": 1594.36,
-      "endTime": 1595.88,
-      "text": "That was a tour",
+      "endTime": 1599.42,
+      "text": "That was a tour into the world of music. Now let's do this for books and writing.",
       "words": [
         {
           "word": "That",
@@ -30779,15 +30731,7 @@
           "startTime": 1595.48,
           "endTime": 1595.88,
           "confidence": 0.9948
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1595.88,
-      "endTime": 1601.87,
-      "text": "into the world of music. Now let's do this for books and writing. So writing it's",
-      "words": [
+        },
         {
           "word": "into",
           "startTime": 1595.88,
@@ -30865,7 +30809,15 @@
           "startTime": 1598.92,
           "endTime": 1599.42,
           "confidence": 0.9709
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1600.99,
+      "endTime": 1903.9,
+      "text": "So writing it's almost banal to say that till the printing press is nothing much really happening, right? Initially when you have oral storytelling, oral histories, it everything is limited by memory, right? So you have a game of Chinese whispers and stories get passed down in that way and there's not much you can do. Then eventually you have papyrus, you have scrolls you have early forms of writing, but even they are restrictive. Like the problem with scrolls is that you're literally, you know, you're pulling it out like a scroll and there's only so much you can put and it's cumbersome and there's only so much that really goes in there. The printing press obviously uh changes everything. Right, when early books start getting printed. Like what you see on the screen now is a book called Der Edelstein by Ulrich Boner, right and I really uh you know, uh like this guy Ulrich Boner. Uh apparently his uh wife used to say that every morning I wake up and I find that Boner has a boner. But leaving that aside, so this is what an early book would have looked like and it would evolve from here. The form here is not just a form in which the writing is reproduced, which is within the pages of a book, but also how is it distributed. You know, what h b w what's what's the economically feasible formula for getting writing out there. So early on you will recall a lot of the important writings of the sixteenth and seventeenth century are not books as such, but pamphlets. So it is pamphlets that are becoming uh prominent and then gradually books come. And then when books come, you have the scope for longer. narratives. You know. Like imagine Adam Smith thinking what he is thinking before the age of books. He would simply not be able to uh you know, not just write the books he did, but even have the thoughts he did. The fact that he can have the thoughts he did is that by writing, he is actually making himself a better thinker. He is going deeper and deeper and deeper into a subject. And the fact that he can build those layers of thoughts upon which he um you know builds other layers of thoughts is purely because the technology of writing exists. Right. So uh a a lot of it if you look at the progress of books has to do with printing technology and distribution. And once you have a certain kind of standardization there, we are stuck with a form determined by constraint. Like every book will have a floor and a ceiling. You can only be uh so thin, Uh, you know, uh a b a book below a certain size doesn't really make that much economic sense. It's got to be outstanding to justify it. Like Timothy Snyder's on Tyranny is some twelve thousand words or something. But you know, those kind of marky books by great writers can get there. But otherwise all the books you see today will be between hundred and three hundred pages. Right? And and this leads to This leads to great losses. Like w one of my favorite books is Robert Cairo's book, The Power Broker, which is such a masterful biography of a man called Robert Moses. It's a masterful biography of the city of New York. And it is also a study of how power can corrupt human beings. And initially he gave one million words to his publisher, Robert Gottlieb. And Robert Gottlieb was like one million words, will it even fit? He spoke to his printer guys and he said, What can we do? And they said, Look, the max we can actually put in without the book just falling apart is eight hundred thousand words. So there's a full two hundred thousand word section on Jane Jacobs, A Hero to Both You and Me, which was simply cut off. Right? And in modern times that section would still be uploaded by someone, it would be there, it would you know it would be a separate book on its own. But at that time I mean it's just gone. It's just lost to history. Right? And so when we think of books, for example, we think of that particular form. Ki doso page hoga, if I want to write a novel I have to write so much, I can't go too much less, I can't go too much more, et cetera, et cetera. Those constraints came into play. And those constraints are no longer really the case today. Now you look at the other evolving form that comes about because of the printing press, which is newspapers. Now this is really interesting because I've had two episodes of The Seen and the Unseen which paint pictures of newspapers in the 19th century. One of them is with Rahul Martin, where he talks about how a lot of newspapers in the 19th century in Europe in England were all about smut and gossip. So and so is doing this, so and so is sleeping with so and so. They did that stuff even at that time, okay? It's not a modern thing. So you had all this scurrilous gossip and so on uh happening in those newspapers. And I did this lovely episode with Swapna Little, one of my favorites. And she's written what I think is just one of my favorite books of history called The Broken Script. which is about Delhi between around eighteen oh one to eighteen fifty seven, you know, some fifty plus years period where a there's a lot of transition, a lot of things are changing. And what happens in that period is that newspapers become popular and newsletters become popular as it were. And two interesting things are happening. One is that for some bizarre reason, and I don't know how this ever happened and if it can ever come back, but poetry was super popular. Newspapers would publish shiri because people would buy newspapers to read them. Part of it, of course, was they'll put Zafford's poetry up because he's the emperor and all that. But other poems also. It was like something that you just did, it was something that is done. Unimaginable in the modern age.",
+      "words": [
         {
           "word": "So",
           "startTime": 1600.99,
@@ -30883,15 +30835,7 @@
           "startTime": 1601.71,
           "endTime": 1601.87,
           "confidence": 0.9101
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1601.87,
-      "endTime": 1903.26,
-      "text": "almost banal to say that till the printing press is nothing much really happening, right? Initially when you have oral storytelling, oral histories, it everything is limited by memory, right? So you have a game of Chinese whispers and stories get passed down in that way and there's not much you can do. Then eventually you have papyrus, you have scrolls you have early forms of writing, but even they are restrictive. Like the problem with scrolls is that you're literally, you know, you're pulling it out like a scroll and there's only so much you can put and it's cumbersome and there's only so much that really goes in there. The printing press obviously uh changes everything. Right, when early books start getting printed. Like what you see on the screen now is a book called Der Edelstein by Ulrich Boner, right and I really uh you know, uh like this guy Ulrich Boner. Uh apparently his uh wife used to say that every morning I wake up and I find that Boner has a boner. But leaving that aside, so this is what an early book would have looked like and it would evolve from here. The form here is not just a form in which the writing is reproduced, which is within the pages of a book, but also how is it distributed. You know, what h b w what's what's the economically feasible formula for getting writing out there. So early on you will recall a lot of the important writings of the sixteenth and seventeenth century are not books as such, but pamphlets. So it is pamphlets that are becoming uh prominent and then gradually books come. And then when books come, you have the scope for longer. narratives. You know. Like imagine Adam Smith thinking what he is thinking before the age of books. He would simply not be able to uh you know, not just write the books he did, but even have the thoughts he did. The fact that he can have the thoughts he did is that by writing, he is actually making himself a better thinker. He is going deeper and deeper and deeper into a subject. And the fact that he can build those layers of thoughts upon which he um you know builds other layers of thoughts is purely because the technology of writing exists. Right. So uh a a lot of it if you look at the progress of books has to do with printing technology and distribution. And once you have a certain kind of standardization there, we are stuck with a form determined by constraint. Like every book will have a floor and a ceiling. You can only be uh so thin, Uh, you know, uh a b a book below a certain size doesn't really make that much economic sense. It's got to be outstanding to justify it. Like Timothy Snyder's on Tyranny is some twelve thousand words or something. But you know, those kind of marky books by great writers can get there. But otherwise all the books you see today will be between hundred and three hundred pages. Right? And and this leads to This leads to great losses. Like w one of my favorite books is Robert Cairo's book, The Power Broker, which is such a masterful biography of a man called Robert Moses. It's a masterful biography of the city of New York. And it is also a study of how power can corrupt human beings. And initially he gave one million words to his publisher, Robert Gottlieb. And Robert Gottlieb was like one million words, will it even fit? He spoke to his printer guys and he said, What can we do? And they said, Look, the max we can actually put in without the book just falling apart is eight hundred thousand words. So there's a full two hundred thousand word section on Jane Jacobs, A Hero to Both You and Me, which was simply cut off. Right? And in modern times that section would still be uploaded by someone, it would be there, it would you know it would be a separate book on its own. But at that time I mean it's just gone. It's just lost to history. Right? And so when we think of books, for example, we think of that particular form. Ki doso page hoga, if I want to write a novel I have to write so much, I can't go too much less, I can't go too much more, et cetera, et cetera. Those constraints came into play. And those constraints are no longer really the case today. Now you look at the other evolving form that comes about because of the printing press, which is newspapers. Now this is really interesting because I've had two episodes of The Seen and the Unseen which paint pictures of newspapers in the 19th century. One of them is with Rahul Martin, where he talks about how a lot of newspapers in the 19th century in Europe in England were all about smut and gossip. So and so is doing this, so and so is sleeping with so and so. They did that stuff even at that time, okay? It's not a modern thing. So you had all this scurrilous gossip and so on uh happening in those newspapers. And I did this lovely episode with Swapna Little, one of my favorites. And she's written what I think is just one of my favorite books of history called The Broken Script. which is about Delhi between around eighteen oh one to eighteen fifty seven, you know, some fifty plus years period where a there's a lot of transition, a lot of things are changing. And what happens in that period is that newspapers become popular and newsletters become popular as it were. And two interesting things are happening. One is that for some bizarre reason, and I don't know how this ever happened and if it can ever come back, but poetry was super popular. Newspapers would publish shiri because people would buy newspapers to read them. Part of it, of course, was they'll put Zafford's poetry up because he's the emperor and all that. But other poems also. It was like something that you just did, it was something that is done. Unimaginable in the modern",
-      "words": [
+        },
         {
           "word": "almost",
           "startTime": 1601.87,
@@ -37269,21 +37213,21 @@
           "startTime": 1903.02,
           "endTime": 1903.26,
           "confidence": 0.9852
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1903.26,
-      "endTime": 1906.4,
-      "text": "age. Unimaginable that an emperor would compose poetry.",
-      "words": [
+        },
         {
           "word": "age.",
           "startTime": 1903.26,
           "endTime": 1903.9,
           "confidence": 0.8307
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1903.9,
+      "endTime": 1906.4,
+      "text": "Unimaginable that an emperor would compose poetry.",
+      "words": [
         {
           "word": "Unimaginable",
           "startTime": 1903.9,
@@ -44059,8 +44003,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2226.62,
-      "endTime": 2259.95,
-      "text": "In my life, I have found that I systematically learned one format at a time and achieve mastery of one and then start the next, so to speak. So first I learned how to write papers, then I learned how to write op eds, then I learned how to write blog articles, then I learned how to write books. And I found this a journey where There was always a couple of years where I was just deeply inside one format, but all those are now stored in my skull. And I can just at will turn to write a paper or turn to write an op ed. So all those capabilities are stored",
+      "endTime": 2260.11,
+      "text": "In my life, I have found that I systematically learned one format at a time and achieve mastery of one and then start the next, so to speak. So first I learned how to write papers, then I learned how to write op eds, then I learned how to write blog articles, then I learned how to write books. And I found this a journey where There was always a couple of years where I was just deeply inside one format, but all those are now stored in my skull. And I can just at will turn to write a paper or turn to write an op ed. So all those capabilities are stored in",
       "words": [
         {
           "word": "In",
@@ -44745,21 +44689,21 @@
           "startTime": 2259.55,
           "endTime": 2259.95,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2259.95,
-      "endTime": 2684.75,
-      "text": "in parallel. With great modesty, you left out the latest of the forms that you have learned, which is YouTube itself. Yes, everything is everything. So now I want to talk about the audiovisual medium. And again, a lot of this is kind of banal and obvious. You know, a cave painting can only show so much. You only have so much technology available to you, and you do what you can within that. And then you have the evolution of the other visual arts. Often if you're a coat painter in the middle centuries, you'll have uh, you know, patronage from a particular king or emperor. There's only so much you can do. Gradually you're expanding your vocabulary, different perspectives are coming into craft is uh kind of expanding. What I'm going to talk about is I'm going to leave all of that aside for a moment, leave aside photography for a moment, and talk about the audiovisual medium. Right. In the audiovisual medium when I was growing up and there was a period of time where I wanted to be a filmmaker as much as I wanted to be a writer. And you would think in terms of the ninety minute Hollywood film or the ninety minute Western film, which is the standard there, or maybe the three hour Bollywood film. as some of my friends would dream of. And those were the kind of forms you had. And later on, if you wanted to do something in the visual arts, you also then had t the twenty four minute T V show. If you remember back in the days Dud and the early T V channels, a half an hour TV show would basically be twenty four minutes of content, two commercial breaks of three minutes each. And you were restricted to those forms. And there's only so much you can do in that form. Like I often uh say that if you want to compare cinema and literature, Actually a feature film of ninety minutes is equal to a short story. It's not a novel. A novel can go really deep in many different directions, kinda many interlapping story in interlocking storylines and so on. But really, um a ninety minute film is really like a short story. There's one dominant narrative arc, there's one tension and uh you know, everything plays out within that. And all of this began to change with the rise of OTTs. Right? So people will often say short attention span. Short attention span. I call bullsh. How can we have a short attention span? Back in the day we used to watch films that were ninety minutes. Today we go on Netflix or Amazon Prime or Hotstar and we b there's some series going on that we love and we watch eight hours of it. You know? For those of us who have office, we miss office the next day. I don't have to. So uh, you know, we binge watch for hours and hours. It is absolutely not true that um short attention spans are a problem. And this opens up possibilities. Like the first time I saw my favorite TV show, The Wire, I was so blown away because it catered to none of the imperatives of traditional cinema. There was no attempt to hook you in any way. There was no attempt to emotionally manipulate you with a certain kind of background music. Like the only music you hear in the wire is something that is actually being played in the scene. There's no other manipulative music and b the action unfolds as at its own pace naturally. And you have fifteen, sixteen major characters. It is not just one main character and everyone else is a side character. And it unfolds slowly over seasons and becomes this entire universe. So in that sense it is novelistic, that for the first time, You know, what you can do in a three hundred page book, you can now do uh in cinema. And equally we have shorter forms happening, you know. Sure that there's a lot of gimmicky content that comes out on Instagram reels or TikTok and et cetera, et cetera. But you know, Sturgeon's Law, ninety five percent of everything is crap. I feel that there's also a lot of great art being created in these smaller media and that's important to note. And it takes you to a different place. Like I often um you uh like to talk about I I often like to compare the three different um forms of video. Imagine you're in a cinema theater, right? And y b you know the screen is of substantial distance away from you, and often the camera is the similar distance away from the actor. So you have your westerns and your car chases and all of those fit in perfectly well in that form. Then you shift to television where the screen is a couple of meters away from you. and equally the camera is ideally, optimally a couple of meters away from the character, so you have your friends and your Seinfeld and all your dramas, right? Um that's how they play out. And then you come to the YouTube video, where you could be holding a phone in your hand, And equally the camera is really close to whoever the YouTubers are. Like this white shot is pretty much the furthest away you'll get in any YouTube video. Otherwise it is a closeup, it is a face. Increasing intimacy. And to go back to audio for a moment, I take this metaphor to audio and I use it to talk about why uh podcasts are not simply radio on demand. They're the they're a different form. Because radio, because of the commercial imperatives, the license fees and so on, they they are broadcasting, they are catering to a larger audience. So there I think of five people in a car and there's a radio on, and it can't go too deep into one niche. It's gotta be quite broad, quite mainstream. Whereas a podcast is a voice in your head. And there is an intimacy with come comes with that. And when you have that intimacy, you can do different things. You can have different kinds of conversations. Right? Uh the ten and a half hour conversation uh that we had on the scene and the unseen is simply not possible on a uh a TV talk show, not just because of the time, right? A ten hour conversation is different from ten one hour conversations. It could not have been a series. It is different because the rhythm is different, the kind of engagement is different. And it is only possible because the constraints of form that once existed d uh you know don't exist anymore. Which is why I like to say that I and and b by the way, I did a nine hour fifty-three uh uh minutes episode, almost ten hours um episode with our friend Rajesh Vari Shang Gupta called The Life and Times of the Indian Economy. It's a seen unseen episode. Seen and scene has a YouTube channel, not many people see it there. I get one to ten percent of my views on YouTube. But that particular video has got more than fifty thousand views at the time of recording. Which is bizarre to me, because it's not even a video. It's basically a thumbnail is the only image, and then it's ten hours of two people talking, right? But the content is suited to the form, which is why people are switching on. That is why my longest episodes are so popular. So my first fundamental message of this episode is that no matter what creative form you are involved with, whether it is writing, whether it is music, whether it is the visual arts, Don't be constrained by the existing forms. There's nothing sacred about them and there's nothing better about them. Right? Those forms exist because of constraints that no longer exist. We can do what the hell we want and we should. And I think that can free you up. Equally, all the genres, all the types of music, the types of writing, the types of cinema exist because of circumstances. A bird of the forest floor sounds different from a bird in the open ocean. There's no value judgment there. There's nothing that is good or bad. Something speaks to you, something touches your heart, something is the kind of work that you want to do. You gotta get out there and do it and feel free to do it. Without judgment and without hesitation.",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 2259.95,
           "endTime": 2260.11,
           "confidence": 0.999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2260.11,
+      "endTime": 2684.75,
+      "text": "parallel. With great modesty, you left out the latest of the forms that you have learned, which is YouTube itself. Yes, everything is everything. So now I want to talk about the audiovisual medium. And again, a lot of this is kind of banal and obvious. You know, a cave painting can only show so much. You only have so much technology available to you, and you do what you can within that. And then you have the evolution of the other visual arts. Often if you're a coat painter in the middle centuries, you'll have uh, you know, patronage from a particular king or emperor. There's only so much you can do. Gradually you're expanding your vocabulary, different perspectives are coming into craft is uh kind of expanding. What I'm going to talk about is I'm going to leave all of that aside for a moment, leave aside photography for a moment, and talk about the audiovisual medium. Right. In the audiovisual medium when I was growing up and there was a period of time where I wanted to be a filmmaker as much as I wanted to be a writer. And you would think in terms of the ninety minute Hollywood film or the ninety minute Western film, which is the standard there, or maybe the three hour Bollywood film. as some of my friends would dream of. And those were the kind of forms you had. And later on, if you wanted to do something in the visual arts, you also then had t the twenty four minute T V show. If you remember back in the days Dud and the early T V channels, a half an hour TV show would basically be twenty four minutes of content, two commercial breaks of three minutes each. And you were restricted to those forms. And there's only so much you can do in that form. Like I often uh say that if you want to compare cinema and literature, Actually a feature film of ninety minutes is equal to a short story. It's not a novel. A novel can go really deep in many different directions, kinda many interlapping story in interlocking storylines and so on. But really, um a ninety minute film is really like a short story. There's one dominant narrative arc, there's one tension and uh you know, everything plays out within that. And all of this began to change with the rise of OTTs. Right? So people will often say short attention span. Short attention span. I call bullsh. How can we have a short attention span? Back in the day we used to watch films that were ninety minutes. Today we go on Netflix or Amazon Prime or Hotstar and we b there's some series going on that we love and we watch eight hours of it. You know? For those of us who have office, we miss office the next day. I don't have to. So uh, you know, we binge watch for hours and hours. It is absolutely not true that um short attention spans are a problem. And this opens up possibilities. Like the first time I saw my favorite TV show, The Wire, I was so blown away because it catered to none of the imperatives of traditional cinema. There was no attempt to hook you in any way. There was no attempt to emotionally manipulate you with a certain kind of background music. Like the only music you hear in the wire is something that is actually being played in the scene. There's no other manipulative music and b the action unfolds as at its own pace naturally. And you have fifteen, sixteen major characters. It is not just one main character and everyone else is a side character. And it unfolds slowly over seasons and becomes this entire universe. So in that sense it is novelistic, that for the first time, You know, what you can do in a three hundred page book, you can now do uh in cinema. And equally we have shorter forms happening, you know. Sure that there's a lot of gimmicky content that comes out on Instagram reels or TikTok and et cetera, et cetera. But you know, Sturgeon's Law, ninety five percent of everything is crap. I feel that there's also a lot of great art being created in these smaller media and that's important to note. And it takes you to a different place. Like I often um you uh like to talk about I I often like to compare the three different um forms of video. Imagine you're in a cinema theater, right? And y b you know the screen is of substantial distance away from you, and often the camera is the similar distance away from the actor. So you have your westerns and your car chases and all of those fit in perfectly well in that form. Then you shift to television where the screen is a couple of meters away from you. and equally the camera is ideally, optimally a couple of meters away from the character, so you have your friends and your Seinfeld and all your dramas, right? Um that's how they play out. And then you come to the YouTube video, where you could be holding a phone in your hand, And equally the camera is really close to whoever the YouTubers are. Like this white shot is pretty much the furthest away you'll get in any YouTube video. Otherwise it is a closeup, it is a face. Increasing intimacy. And to go back to audio for a moment, I take this metaphor to audio and I use it to talk about why uh podcasts are not simply radio on demand. They're the they're a different form. Because radio, because of the commercial imperatives, the license fees and so on, they they are broadcasting, they are catering to a larger audience. So there I think of five people in a car and there's a radio on, and it can't go too deep into one niche. It's gotta be quite broad, quite mainstream. Whereas a podcast is a voice in your head. And there is an intimacy with come comes with that. And when you have that intimacy, you can do different things. You can have different kinds of conversations. Right? Uh the ten and a half hour conversation uh that we had on the scene and the unseen is simply not possible on a uh a TV talk show, not just because of the time, right? A ten hour conversation is different from ten one hour conversations. It could not have been a series. It is different because the rhythm is different, the kind of engagement is different. And it is only possible because the constraints of form that once existed d uh you know don't exist anymore. Which is why I like to say that I and and b by the way, I did a nine hour fifty-three uh uh minutes episode, almost ten hours um episode with our friend Rajesh Vari Shang Gupta called The Life and Times of the Indian Economy. It's a seen unseen episode. Seen and scene has a YouTube channel, not many people see it there. I get one to ten percent of my views on YouTube. But that particular video has got more than fifty thousand views at the time of recording. Which is bizarre to me, because it's not even a video. It's basically a thumbnail is the only image, and then it's ten hours of two people talking, right? But the content is suited to the form, which is why people are switching on. That is why my longest episodes are so popular. So my first fundamental message of this episode is that no matter what creative form you are involved with, whether it is writing, whether it is music, whether it is the visual arts, Don't be constrained by the existing forms. There's nothing sacred about them and there's nothing better about them. Right? Those forms exist because of constraints that no longer exist. We can do what the hell we want and we should. And I think that can free you up. Equally, all the genres, all the types of music, the types of writing, the types of cinema exist because of circumstances. A bird of the forest floor sounds different from a bird in the open ocean. There's no value judgment there. There's nothing that is good or bad. Something speaks to you, something touches your heart, something is the kind of work that you want to do. You gotta get out there and do it and feel free to do it. Without judgment and without hesitation.",
+      "words": [
         {
           "word": "parallel.",
           "startTime": 2260.11,
@@ -62229,8 +62173,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3127.42,
-      "endTime": 3208.84,
-      "text": "Good question and the answer is that this is not the selection effect in play or the survivor bias in play. Right? A lot of the people who are making money in the creator economy today would never make it in the mainstream. Like I did an episode with the great journalist Shafali Bhat and she had a piece where she spoke about how in India today there are more than one lakh creators. I think one lakh twelve thousand at the time of publication, who are making between one and ten lakhs a month. That's a lot of people. This is not a one percent thing. One lakh people making uh you know between one and ten lakhs a month is substantial. And many of them, like for example, I would never have gone mainstream. And I have both a hundred true fans and a thousand true fans, as you know. And that would never have been possible. Uh uh, you know, if there was only the mainstream. I would have been lost somewhere considered a niche not worth exploring, and even my I myself would not have known that some of the niches I occupy today even exist. You know, you b figure it out by doing it again and again because you have the freedom uh to do it. You know, me and Nam Sita and Vaishnav are uh delightful crew of fans of the Peter Cat Recording Company. The Peter Cat Recording Company is never gonna be the Beatles in terms of scale. But uh, you know, for their uh devoted followers, they absolutely are. You know? They are awesome. And here's the interesting thing and here's a controversial thesis I might or might not have shared with you.",
+      "endTime": 3336.08,
+      "text": "Good question and the answer is that this is not the selection effect in play or the survivor bias in play. Right? A lot of the people who are making money in the creator economy today would never make it in the mainstream. Like I did an episode with the great journalist Shafali Bhat and she had a piece where she spoke about how in India today there are more than one lakh creators. I think one lakh twelve thousand at the time of publication, who are making between one and ten lakhs a month. That's a lot of people. This is not a one percent thing. One lakh people making uh you know between one and ten lakhs a month is substantial. And many of them, like for example, I would never have gone mainstream. And I have both a hundred true fans and a thousand true fans, as you know. And that would never have been possible. Uh uh, you know, if there was only the mainstream. I would have been lost somewhere considered a niche not worth exploring, and even my I myself would not have known that some of the niches I occupy today even exist. You know, you b figure it out by doing it again and again because you have the freedom uh to do it. You know, me and Nam Sita and Vaishnav are uh delightful crew of fans of the Peter Cat Recording Company. The Peter Cat Recording Company is never gonna be the Beatles in terms of scale. But uh, you know, for their uh devoted followers, they absolutely are. You know? They are awesome. And here's the interesting thing and here's a controversial thesis I might or might not have shared with you. My sense is that when you look at the data. Like number one, there are more people alive today than any other time in history, obviously. But also a far larger percentage of these people has the ability and the prosperity to create shit. You know? They have leisure time, they have the means of production uh at their back and call. And therefore my sense is that there are more active creators today And any time uh you know until the twenty first century, the all of that put together. And therefore, if you look at the sample size and if you also consider that their LLM of artistic influences is is also vastly greater, m uh then my sense is that we are living a golden age of all kinds of creative arts. We should have uh, you know, Beethoven's and Baches and Kumar Gandharvas all around us. We should have a Shakespeare in every nookar. Right. And so on and so forth. And my belief is that this is actually the case. Some of them unfortunately get loss stress tends to happen, but many of them are known only to their particular niche and not to the mainstream. And perhaps that's okay. Right. So in the end, I think that that kind of mainstream uh adulation and adoration where people are building temples for an Amitabh Bachan, we might have seen the last of that. But that kind of intimate creator economy where people f really feel like they know you and they care about you. I think that that is going to become more and more common. But to answer your question, this is not the survivor bias that creators like this are all around us. I'll often meet creators who are remarkably successful in what they do, and I have never heard of them. And as you might have known, it's Very common for me to be stopped at an airport by someone who will say thank you for what you do. And here's the interesting thing. Nobody around has a faintest clue I am. They're all looking and going, who's this guy? Right? But for this person, I'm Sharuk Khan. Right? Love by a few, like by many. And again, I'm not the only one. There are many, many people like this existing within a circle of people uh who love their work and therefore allowing them to be true to themselves and get beyond the tyranny of form.",
       "words": [
         {
           "word": "Good",
@@ -63989,15 +63933,7 @@
           "startTime": 3208.2,
           "endTime": 3208.84,
           "confidence": 0.9613
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3208.84,
-      "endTime": 3210.44,
-      "text": "My sense is that",
-      "words": [
+        },
         {
           "word": "My",
           "startTime": 3208.84,
@@ -64021,15 +63957,7 @@
           "startTime": 3209.8,
           "endTime": 3210.44,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3210.44,
-      "endTime": 3336.08,
-      "text": "when you look at the data. Like number one, there are more people alive today than any other time in history, obviously. But also a far larger percentage of these people has the ability and the prosperity to create shit. You know? They have leisure time, they have the means of production uh at their back and call. And therefore my sense is that there are more active creators today And any time uh you know until the twenty first century, the all of that put together. And therefore, if you look at the sample size and if you also consider that their LLM of artistic influences is is also vastly greater, m uh then my sense is that we are living a golden age of all kinds of creative arts. We should have uh, you know, Beethoven's and Baches and Kumar Gandharvas all around us. We should have a Shakespeare in every nookar. Right. And so on and so forth. And my belief is that this is actually the case. Some of them unfortunately get loss stress tends to happen, but many of them are known only to their particular niche and not to the mainstream. And perhaps that's okay. Right. So in the end, I think that that kind of mainstream uh adulation and adoration where people are building temples for an Amitabh Bachan, we might have seen the last of that. But that kind of intimate creator economy where people f really feel like they know you and they care about you. I think that that is going to become more and more common. But to answer your question, this is not the survivor bias that creators like this are all around us. I'll often meet creators who are remarkably successful in what they do, and I have never heard of them. And as you might have known, it's Very common for me to be stopped at an airport by someone who will say thank you for what you do. And here's the interesting thing. Nobody around has a faintest clue I am. They're all looking and going, who's this guy? Right? But for this person, I'm Sharuk Khan. Right? Love by a few, like by many. And again, I'm not the only one. There are many, many people like this existing within a circle of people uh who love their work and therefore allowing them to be true to themselves and get beyond the tyranny of form.",
-      "words": [
+        },
         {
           "word": "when",
           "startTime": 3210.44,
@@ -67491,8 +67419,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3390.11,
-      "endTime": 3399.64,
-      "text": "followers. So there are ten race to eight Potential followers that are ten rest of five creators. So there's still like an average of thousand each.",
+      "endTime": 3418.35,
+      "text": "followers. So there are ten race to eight Potential followers that are ten rest of five creators. So there's still like an average of thousand each. Okay. Do you have any recommendations either directly connected with this fascinating world? Or anything beautiful under the",
       "words": [
         {
           "word": "followers.",
@@ -67649,29 +67577,13 @@
           "startTime": 3399.32,
           "endTime": 3399.64,
           "confidence": 0.8765
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3399.64,
-      "endTime": 3401.14,
-      "text": "Okay.",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 3399.64,
           "endTime": 3401.14,
           "confidence": 0.807
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3411.56,
-      "endTime": 3419.07,
-      "text": "Do you have any recommendations either directly connected with this fascinating world? Or anything beautiful under the sun. I",
-      "words": [
+        },
         {
           "word": "Do",
           "startTime": 3411.56,
@@ -67773,7 +67685,15 @@
           "startTime": 3418.27,
           "endTime": 3418.35,
           "confidence": 0.9993
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3418.35,
+      "endTime": 3473.24,
+      "text": "sun. I love Meta thinkers. Uh and uh, you know, the music chapter of this particular episode has drawn a lot from meta thinkers like David Byrne, whose great book, How Music Works is a Masterpiece, so I gift it to everyone I meet. Uh then Ted Joyo's newsletter, he's also a deep meta thinker about music and the music business. Um you know, Rick Biato has a great music channel. I enjoy that a lot, though I I don't think he's done much meta thinking about form per se, but I I I love his work. And apart from that, there's one book that I'll recommend called The Design of Everyday Things by Don Norman. And it's a masterpiece. And to read that book is to realise that everything that we are surrounded by looks the way it is and works the way it is for particular reasons. And we normalize it completely, we take it for granted. This is the best chair in South Asia. So Ajay, what's your recommendation?",
+      "words": [
         {
           "word": "sun.",
           "startTime": 3418.35,
@@ -67785,15 +67705,7 @@
           "startTime": 3418.99,
           "endTime": 3419.07,
           "confidence": 0.9776
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3419.07,
-      "endTime": 3459.08,
-      "text": "love Meta thinkers. Uh and uh, you know, the music chapter of this particular episode has drawn a lot from meta thinkers like David Byrne, whose great book, How Music Works is a Masterpiece, so I gift it to everyone I meet. Uh then Ted Joyo's newsletter, he's also a deep meta thinker about music and the music business. Um you know, Rick Biato has a great music channel. I enjoy that a lot, though I I don't think he's done much meta thinking about form per se, but I I I love his work. And apart from that, there's one book that I'll recommend called The Design of Everyday Things by Don Norman. And it's a masterpiece. And to read that book is to realise that everything that we are surrounded by looks the way it is and works the way it is for particular reasons. And we normalize it completely, we take it for",
-      "words": [
+        },
         {
           "word": "love",
           "startTime": 3419.07,
@@ -68729,29 +68641,13 @@
           "startTime": 3459.0,
           "endTime": 3459.08,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3459.08,
-      "endTime": 3460.58,
-      "text": "granted.",
-      "words": [
+        },
         {
           "word": "granted.",
           "startTime": 3459.08,
           "endTime": 3460.58,
           "confidence": 0.9185
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3468.68,
-      "endTime": 3473.24,
-      "text": "This is the best chair in South Asia. So Ajay, what's your recommendation?",
-      "words": [
+        },
         {
           "word": "This",
           "startTime": 3468.68,
