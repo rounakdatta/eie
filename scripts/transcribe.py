@@ -237,7 +237,7 @@ def label(extractor, voices, audio, words, cache):
         centroids /= np.linalg.norm(centroids, axis=1, keepdims=True)
     sims = embeddings @ centroids.T
     pauses = np.r_[False, windows[1:, 0] > windows[:-1, 1]]
-    path = decode(sims, pauses)
+    path = decode_speakers(sims, pauses)
     centers = windows.mean(axis=1)
     labels, best = [], []
     for w in words:
@@ -253,7 +253,7 @@ def label(extractor, voices, audio, words, cache):
     return labels, float(np.mean(best)), drift, swapped
 
 
-def decode(sims, pauses):
+def decode_speakers(sims, pauses):
     """Most likely speaker per window (Viterbi): a change of speaker costs STICK, a third of that at a pause,
     so a few seconds of contrary evidence are needed to switch and one odd window can't flip a sentence."""
     ll = sims * SHARPNESS
