@@ -6,75 +6,87 @@
   "stories": [
     {
       "teller": "Amit Varma",
-      "topic": "The Controversial Pro-Divorce Column",
-      "summary": "Many years ago Amit wrote a column arguing that India's rising divorce rates were a damn good thing — because they signal women's empowerment, more women gaining the agency to leave bad marriages. The piece was controversial at the time but is the seed of an entire frame for measuring empowerment through unconventional metrics.",
-      "insight": "What looks like social decay can be moral progress in disguise. The 'rising rate of X' is meaningless without asking who used to be trapped in non-X — divorce rates, women in prisons, solo women travelers — all flip from 'bad' to 'good' once you put agency at the center."
-    },
-    {
-      "teller": "Amit Varma",
-      "topic": "Hamsini Hariharan's 'More Women in Prisons' Metric",
-      "summary": "On the Seen and Unseen episode 'Metrics of Empowerment,' Hamsini Hariharan proposed that more women in prisons is a fantastic metric of women's empowerment — it means more women have agency, more opportunity to commit crime, more presence in public life beyond the home. Nidhi Gupta added: look at how many families a 'large child' (eldest) is male, as a proxy for sex-selective stopping rules.",
-      "insight": "The most revealing metrics are the ones you'd never put on a dashboard. Empowerment is about exposure to the full set of human experiences — including the bad ones — not about being shielded from the world."
+      "topic": "The pro-divorce column and the hunt for odd empowerment metrics",
+      "summary": "Years ago Amit wrote a controversial column arguing that India's rising divorce rates were a good thing. That idea grew into a Seen and the Unseen episode, 'Metrics of Empowerment', where he and three friends looked for unusual data points that show how much agency women have. The ideas included solo travel by women, which Amit notes is rising. Nidhi Gupta suggested counting how many families have a male last child. Hamsini Hariharan suggested counting women in prisons. Another idea was how many men download BigBasket, which Amit then questions: in traditional homes the man may download the app only because he pays, then hands the phone to his wife to pick the groceries.",
+      "insight": "A number that sounds bad, like divorces or women in jail, can be a sign of freedom. A number that sounds good, like men ordering groceries, can hide the same old patriarchy. What matters is who is actually choosing.",
+      "quote": "Because to me, rising divorce rates are a sign of women's empowerment. It means more and more women are getting the agency and empowerment to leave bad marriages and it's fantastic."
     },
     {
       "teller": "Ajay Shah",
-      "topic": "The Pizza Decision-Tree Test for Agency",
-      "summary": "In the Life Lessons course, Ajay distinguishes who really has agency in a household by walking through the pizza order: who decides 'let's have pizza,' who decides 'let's order Domino's,' and who finally taps the app. If the menfolk decide the first two and instruct the woman to 'just order it,' the fact that her phone placed the order tells you nothing about her agency.",
-      "insight": "Surface-level digital traces (who tapped 'order') can completely hide the upstream power structure. To measure agency you have to disentangle the decision tree, not just count taps."
+      "topic": "Who really decided to order the pizza?",
+      "summary": "Responding to Amit's BigBasket caveat, Ajay recalls an example from their Life Lessons course. Ordering pizza involves a chain of decisions: someone decides 'let's have pizza', someone decides 'let's order Domino's', and someone places the order on the app. If the men make the first two decisions and tell the woman to place the order, her using the app shows nothing about her agency.",
+      "insight": "A digital record shows who tapped the button, not who made the decision. To measure agency you have to separate out each step of the decision.",
+      "quote": "So there is a decision that let's have pizza. There is the decision that let's order Domino's."
+    },
+    {
+      "teller": "Amit Varma",
+      "topic": "Office air conditioning was set for men in suits",
+      "summary": "Amit proposes a new metric: the default temperature of office air conditioning. When AC became common in offices in the 1950s and 60s, settings were designed for men in suits, and men prefer it colder because of different metabolic rates. This is the source of the familiar marital argument where the wife says she's cold and the husband says put on a sweater. He would like defaults to drift upward until both sexes are comfortable, though he admits he doesn't know how to measure this at scale.",
+      "insight": "Everyday infrastructure quietly builds in assumptions about who it serves. Watching those defaults change is a way to track social change.",
+      "quote": "when air conditioning became common in offices in the nineteen fifties and sixties, it was designed for men in suits."
     },
     {
       "teller": "Ajay Shah",
-      "topic": "The Air-Conditioner That Was Designed for Men in Suits",
-      "summary": "When air conditioning entered offices in the 1950s and 60s, default temperatures were calibrated for men in suits, ignoring that women have different metabolic rates. The result is the eternal married-couple argument — 'I'm cold' / 'put on a sweater' — and a default that quietly imposes a male body norm on shared workspaces. Ajay proposes the office AC default temperature as a slow-moving metric of gender equilibrium.",
-      "insight": "Infrastructure carries a frozen anthropology. The temperature on the wall is not a neutral fact; it's a 70-year-old cultural assumption about whose body the room is designed for."
-    },
-    {
-      "teller": "Ajay Shah",
-      "topic": "The Telephoto-Lens Pavement Camera",
-      "summary": "Ajay proposes a small project anyone can build today: stick a tele-lens camera outside a window pointed at a stretch of pavement, run modern image classifiers to count people and infer gender, and you immediately get two things — the female fraction of public-square users, and the way that fraction collapses as evening falls. He links this to crime-victimisation surveys where parents are asked what time their teenage daughter is allowed to be out.",
-      "insight": "The presence of women in public space at night is one of the cleanest scalar measures of how free a society actually is. With cheap cameras and open-source vision models, this is a measurement waiting to be built."
+      "topic": "A camera on the pavement to count women in public",
+      "summary": "Ajay describes a measurement idea he hasn't built yet but thinks is feasible. Point a telephoto camera at a stretch of pavement and use image classification to count passers-by and classify their gender. That gives two things: the share of people in public who are women, and how that share falls as evening comes in. He connects it to his work on crime victimisation surveys, which ask parents what time their teenage daughter should be home. That answer reflects both social norms and how safe parents think the streets are.",
+      "insight": "How many women are out in public, especially after dark, is a simple, continuous measure of how free a society is. With today's tools it is a small piece of software waiting to be written.",
+      "quote": "And then there could be these cameras all over the world just quietly purring and producing daily data for the presence of women in the public square."
     },
     {
       "teller": "Amit Varma",
-      "topic": "The 'Is Immoral to Have Children' Column and Why Parents Got Furious",
-      "summary": "Amit once wrote, partly to provoke, that it is immoral to have children — and parents got really pissed off. After reading Stephens-Davidowitz's data he finally understood why: people are seven times more likely to ask Google whether they will regret not having children than whether they will regret having them, but adults with children are 3.6 times more likely to tell Google they regret the decision than adults without. The reaction wasn't to the argument; it was to a hidden private regret being touched.",
-      "insight": "The strength of a backlash is often a clue to a hidden truth, not a hidden lie. Parenthood is durable, irreversible, and (for many) regretted in private — which is why public questioning of it draws disproportionate fury."
+      "topic": "Google saw Trump coming",
+      "summary": "Amit retells findings from Seth Stephens-Davidowitz. Four years before Trump's 2016 rise, Google showed many people searching for a racial slur alongside Obama's victory rather than 'first black president', concentrated in states that later voted a particular way. After the most recent US election, Stephens-Davidowitz wrote in The Economist that searches beat the polls. In states where people searched 'Trump Harris debate', Trump won. Where they searched 'Harris Trump debate', Harris won.",
+      "insight": "Small details of anonymous behaviour, even the order of words in a search, can reveal what surveys miss. It is the kind of signal humans would never think to look for but machines can find.",
+      "quote": "For example, he showed that in the states where people searched for the Trump Harris debate, Trump won. In the states where they searched for the Harris Trump debate, Harris won."
     },
     {
       "teller": "Amit Varma",
-      "topic": "The Twenty-Five-Year-Old Manosphere Detour",
-      "summary": "Twenty-five years ago Amit went down what would today be called the manosphere rabbit hole, fascinated by it as a window into human nature. He read Neil Strauss's The Game — a bestseller marketed as a pickup-artist handbook but which, beneath the manipulation, displayed a sharp understanding of how desire and validation work. That ecosystem has since metastasised into the Andrew Tate / Gumroad / Adolescence world.",
-      "insight": "Subcultures that society dismisses as creepy or fringe are often the first to articulate something real about a system's failure modes. Reading them seriously — without endorsing them — is part of how you map the social terrain."
+      "topic": "Comparing Google autocomplete in India and Australia",
+      "summary": "Amit tried the book's experiment himself, using Google autocomplete in an incognito window and switching his VPN between countries. When the book was written, India's top completion for 'my husband wants' was a request to be breastfed. Today it is 'serve his mistress', with breastfeeding at number two. The book reports that porn searches for women breastfeeding men are four times higher in India and Bangladesh than anywhere else, which Amit says he cannot explain. With the VPN set to Australia, the results included 'an open marriage', 'a second wife', 'an open marriage novel' and something far stranger. Ajay asks whether VPNs could compare Indian states, and Amit thinks that could be a research project.",
+      "insight": "Basic urges are shared, but culture shapes how they show up. Anyone can examine a country's private preoccupations from home for free.",
+      "quote": "porn searches for depictions of women breastfeeding men are four times higher in India and Bangladesh than in any other country in the world."
     },
     {
       "teller": "Amit Varma",
-      "topic": "The Bangalore Tinder Time-To-Home Study",
-      "summary": "Malini Goyal's book Unboxing Bengaluru measured how long it takes someone meeting on Tinder to end up at the other person's house in three Indian cities. Delhi: months. Mumbai: weeks. Bangalore: days. Causes are layered — Delhi is a low-trust society, Mumbai housing is a premium and people live with families, Bangalore singles tend to live alone — but the qualitative work that followed showed the punchline: among the apps' heavy users, promiscuity was off the charts and nobody was happy.",
-      "insight": "Frictionless matching plus low frictional cost of switching produces high-volume, low-investment encounters. With ten alternatives chatting in real time, no one puts in the work to repair a small fight — and a real relationship is mostly the work of repairing small fights."
-    },
-    {
-      "teller": "Ajay Shah",
-      "topic": "The Parade's End Quote on Why You Have to Live With Someone",
-      "summary": "Ajay reads a passage from Ford Madox Ford's Parade's End: 'You seduced a young woman in order to be able to finish your talks with her... You may not be in the mood when she is in the mood for the intimate conversation that means the final communion of your souls. You have to wait together for a week, for a year, for a lifetime, before the final intimate conversation may be attained.' His point: the reason couples cohabit isn't what people pretend; it's that the deepest conversation can only be reached by waiting through all the moods.",
-      "insight": "Long companionship is a search algorithm for a vanishingly rare moment of genuine communion — and that moment can't be scheduled, only waited into. Dating-app speed is precisely the wrong shape of time for finding it."
+      "topic": "Why parents were furious about his anti-children column",
+      "summary": "Amit once wrote a column, partly to provoke, arguing that it is immoral to have children, and many parents were angry. Everybody Lies helped him understand why. People are seven times more likely to ask Google whether they will regret not having children than whether they will regret having them. Yet adults with children are 3.6 times more likely to tell Google they regret their choice than adults without children.",
+      "insight": "Strong backlash can be a sign that an argument touched a private regret. What people say about parenthood in public and what they type alone can be very different.",
+      "quote": "Adults with children are three point six times more likely to tell Google they regret their decision than are adults without children."
     },
     {
       "teller": "Amit Varma",
-      "topic": "The Friend Who Wouldn't Date Within Her College",
-      "summary": "Amit recalls a quote from a survey: a young woman explained she went on dating apps rather than dating someone from her college because if it didn't work out she'd have to see him every day — and worse, see him with another girl every day. The dating app is, among other things, an instrument for the geographic disposability of failed relationships.",
-      "insight": "Dating apps don't just expand the pool — they offer a pre-built escape route. The willingness to date is partly a function of how cleanly you can exit, and modern matching is engineered to make exit nearly costless."
+      "topic": "From lonely misfit to friends found online",
+      "summary": "Amit describes growing up limited to communities of circumstance: you are born somewhere, go to the local school and work where you work. As someone whose interests nobody around him shared, he was a loner until early adulthood. The internet let him form communities of choice. Most of his friends today are people he met online, and he and Ajay, though both in Bombay, met through the internet (not, he adds, on a dating app).",
+      "insight": "For people who don't fit in locally, the internet's biggest gift was escaping the limits of geography. Dating apps apply the same shift to romance.",
+      "quote": "If I'm a weirdo of some sort or if I have interests that no one else shares, I'm basically a loner as I was till my early adulthood, in fact"
     },
     {
       "teller": "Amit Varma",
-      "topic": "Setting the VPN to Australia and Reading Search Autocompletes",
-      "summary": "Amit ran the Stephens-Davidowitz experiment himself — Google autocomplete in incognito, with ExpressVPN switched between locations. India's top 'my husband wants me to' completions today include 'serve his mistress' and (until recently) 'breastfeed his friends.' Australia's top completions include 'open marriage,' 'second wife,' and 'eat my poop.' The cultural fingerprint of a country sits naked in its searchbar.",
-      "insight": "The Google searchbar is the closest instrument we have to a global, anonymous, polygraph-grade window into private mental life. Ten minutes with autocomplete tells you more about a country than a week of polite interviews."
+      "topic": "The student who wouldn't date anyone from her college",
+      "summary": "Amit recalls a quote from a dating survey. A young woman explained that she used dating apps instead of dating classmates because if it didn't work out she would see the man every day, possibly with another girl. An app lets her date someone she will never run into again.",
+      "insight": "Part of what dating apps offer is an easy exit. Being able to leave without social cost makes people more willing to try, especially women who would otherwise be judged within a small circle.",
+      "quote": "Look, I have to go on a dating app because I don't want to date someone from my college because if it doesn't work out, I will have to see him every day, and I might even have to see him with another girl every day."
     },
     {
       "teller": "Amit Varma",
-      "topic": "The Bus Full of Men Who Want to Be Breastfed",
-      "summary": "After reading the Indian search data, Amit jokes that next time he's in a bus he'll look around and think, '30% of these men want to be breastfed, what the fuck, dude' — judging every guy in sight. Ajay's serious counter is that the analogy breaks down because Amit's social bubble is unrepresentative; the searches reflect the median Indian, who lives a very different life.",
-      "insight": "Anonymous-aggregate data forces you to confront that the median person is not a person you know. That confrontation is a corrective to elite empathy gaps — but only if you remember that the data describes society, not the next person you meet."
+      "topic": "A friend's real answer about age preferences",
+      "summary": "Dating studies say women look for men about their own age, while men of every age look for women in their early twenties (OkCupid found 21). Amit found this doubtful and asked a friend. She said women want to be seen with same-age men because it is socially acceptable, since a date at Starbucks with someone much older or younger looks odd. Personally, though, she prefers men who are either much older or much younger.",
+      "insight": "Even app data can reflect appearances. What people choose in public may be the socially safe choice rather than what they actually want.",
+      "quote": "she said that in her personal case she prefers to be with men who are either much older or much younger."
+    },
+    {
+      "teller": "Amit Varma",
+      "topic": "Amit's early trip into the manosphere",
+      "summary": "About twenty-five years ago, Amit got absorbed in what is now called the manosphere. He read Neil Strauss's The Game, a bestselling handbook for pickup artists that he calls basically a manual for manipulating women, but one that also showed a real understanding of human nature. That world has since grown into a large social-media industry, with advice books sold on places like Gumroad. Amit says the show Adolescence captured only a small part of it.",
+      "insight": "The manosphere grows out of real resentment among men who get little attention on dating apps. For many of them dating has become a game to win by any means rather than a search for love.",
+      "quote": "It's no longer about how to find love because they've just given up."
+    },
+    {
+      "teller": "Amit Varma",
+      "topic": "Months in Delhi, weeks in Mumbai, days in Bangalore",
+      "summary": "In Unboxing Bengaluru, Malini Goyal studied Tinder data from three cities, measuring how long people took to go to each other's homes after matching. It took months in Delhi, weeks in Mumbai and days in Bangalore. Amit lists possible reasons: Delhi is a low-trust society, housing in Mumbai is at a premium, and many singles in Bangalore live alone. When she then interviewed users, she found extreme promiscuity but nobody happy. People became jaded and stopped working through conflicts, because ten other matches were always chatting in real time.",
+      "insight": "Too much choice can undermine relationships. Building one means working through friction, and an app full of alternatives makes giving up easier than staying.",
+      "quote": "In Delhi it was a matter of months. In Mumbai it was a matter of weeks. In Bangalore it was a matter of days."
     }
   ],
   "recommendations": [
@@ -83,384 +95,431 @@
       "item": "Everybody Lies",
       "type": "book",
       "creator": "Seth Stephens-Davidowitz",
-      "context": "The book at the heart of Chapter 2, on what anonymised Google search data reveals about the human condition.",
-      "reason": "The seminal popular text on the idea that people are most truly themselves when searching anonymously online — turning the searchbar into a polygraph for the secret self. Source of the book's most-cited findings, from sexless marriages to gender-biased parenting Google queries."
+      "context": "The main source for the chapter on what anonymous search data reveals.",
+      "reason": "Amit calls it phenomenal because of its central idea: people are most honest when searching anonymously, so search data reveals human nature in a way surveys can't. Its findings range from sexless marriages to parents' gender bias."
     },
     {
       "recommender": "Amit Varma",
       "item": "The Truth About Ourselves",
       "type": "essay",
       "creator": "Amit Varma",
-      "context": "Amit's essay for Pragati on Everybody Lies.",
-      "reason": "His own working-out of why search data matters more than survey data — and a useful entry point to the chapter's argument."
+      "context": "His essay on Everybody Lies, written for Pragati when he edited it, linked in the show notes.",
+      "reason": "Many of the findings Amit reads out in the episode are quoted from this essay."
     },
     {
       "recommender": "Amit Varma",
-      "item": "Polls Get Elections Wrong. So Use Google",
+      "item": "Polls get elections wrong. So use Google",
       "type": "article",
       "creator": "Seth Stephens-Davidowitz",
-      "context": "Stephens-Davidowitz's column showing that in states where people searched for 'Trump-Harris debate' Trump won, and in states searching 'Harris-Trump debate' Harris won.",
-      "reason": "A vivid demonstration that word order in search queries beat televised polling. The kind of finding only an algorithm would surface, and once surfaced, never quite leaves you."
+      "context": "Stephens-Davidowitz's Economist column after the recent US election.",
+      "reason": "It shows search data beating polls: the word order 'Trump Harris debate' versus 'Harris Trump debate' tracked which candidate won each state."
     },
     {
       "recommender": "Amit Varma",
       "item": "We Should Celebrate Rising Divorce Rates",
-      "type": "article",
+      "type": "essay",
       "creator": "Amit Varma",
-      "context": "Amit's controversial column reframing rising divorce rates as a sign of women's empowerment.",
-      "reason": "The seed of the entire 'unconventional metrics of empowerment' frame that opens the episode."
+      "context": "His old controversial column that opens the episode.",
+      "reason": "It argues that rising divorce means more women can leave bad marriages, the starting point for looking at empowerment through unusual metrics."
     },
     {
       "recommender": "Amit Varma",
-      "item": "It Is Immoral to Have Children. Here's Why",
-      "type": "article",
+      "item": "It is immoral to have children. Here's why",
+      "type": "essay",
       "creator": "Amit Varma",
-      "context": "Amit's deliberately provocative antinatalism column.",
-      "reason": "Returned to here in light of Stephens-Davidowitz's finding that adults with children are 3.6x more likely to Google their regret than adults without — explaining why the column drew such ferocious personal hostility."
+      "context": "His deliberately provocative column, revisited alongside the data on parental regret.",
+      "reason": "He says the search data on regret finally explained why parents were so angry about it."
     },
     {
       "recommender": "Amit Varma",
-      "item": "Metrics of Empowerment (Episode 88, The Seen and the Unseen)",
+      "item": "Metrics of Empowerment — Ep 88 of The Seen and the Unseen",
       "type": "podcast episode",
-      "creator": "Amit Varma with Nidhi Gupta, Hamsini Hariharan and Devika Kher",
-      "context": "The original SU conversation that produced metrics like solo women travellers, eldest-child sex ratio, women in prisons, and the BigBasket-by-men proxy.",
-      "reason": "The source of most of Chapter 1's catalog of unconventional empowerment metrics."
+      "creator": "Amit Varma",
+      "context": "His episode with three friends on unusual data points about women's empowerment.",
+      "reason": "Amit calls it a great episode. It is the source of the metrics on women in prisons, male last children and solo travel."
     },
     {
       "recommender": "Amit Varma",
-      "item": "Women at Work (Episode 132, The Seen and the Unseen)",
+      "item": "Women at Work — Ep 132 of The Seen and the Unseen",
       "type": "podcast episode",
       "creator": "Amit Varma with Namita Bhandare",
-      "context": "A deep dive on women's labour-force participation in India.",
-      "reason": "Background reading for the puzzle Ajay raises: why FLFP went up and then dipped, partly because rising household income made it 'shameful' for the wife to keep working."
+      "context": "One of several episodes he links on women's participation in the workforce.",
+      "reason": "Background on why women's labour-force participation in India fell even as incomes rose."
     },
     {
       "recommender": "Amit Varma",
-      "item": "The Loneliness of the Indian Woman (Episode 259, The Seen and the Unseen)",
+      "item": "The Loneliness of the Indian Woman — Ep 259 of The Seen and the Unseen",
       "type": "podcast episode",
       "creator": "Amit Varma with Shrayana Bhattacharya",
-      "context": "Bhattacharya's Desperately Seeking Shah Rukh deep-dive.",
-      "reason": "Linked as core context for the broader theme of the interior lives of Indian women that the data in this episode is trying to surface."
+      "context": "Linked in the same discussion of women in the workforce.",
+      "reason": "More depth on the economic and social lives of Indian women."
     },
     {
       "recommender": "Amit Varma",
-      "item": "The Life and Work of Ashwini Deshpande (Episode 298, The Seen and the Unseen)",
+      "item": "The Life and Work of Ashwini Deshpande — Ep 298 of The Seen and the Unseen",
       "type": "podcast episode",
       "creator": "Amit Varma with Ashwini Deshpande",
-      "context": "Deshpande's labour economics on gender and caste.",
-      "reason": "Companion reading for the FLFP puzzle and broader empirical work on Indian women's economic lives."
+      "context": "Linked alongside the other workforce episodes.",
+      "reason": "An economist's view of the puzzle of women's labour-force participation in India."
     },
     {
       "recommender": "Ajay Shah",
       "item": "Crime Victimisation in India",
       "type": "book",
-      "creator": "Ajay Shah and co-editors",
-      "context": "An edited volume in the field Ajay has worked in.",
-      "reason": "Context for the survey question Ajay cites — what time parents say their teenage daughter is allowed home — as a measure of female empowerment and perceived public-space safety."
+      "creator": "Edited by Ajay Shah et al",
+      "context": "Ajay mentions his edited book while explaining crime victimisation surveys.",
+      "reason": "Source of the survey question about what time parents think their teenage daughter should be home, which he treats as a measure of women's empowerment."
     },
     {
-      "recommender": "Amit Varma",
+      "recommender": "Ajay Shah",
       "item": "Google Trends",
       "type": "tool",
       "creator": "Google",
-      "context": "trends.google.com — fixed-query strings you can run to watch the world's attention move in real time.",
-      "reason": "Amit's hands-on companion to Everybody Lies. The universally accessible version of search-data sociology — anyone can run it."
+      "context": "Ajay follows up on Amit's advice to run search experiments yourself.",
+      "reason": "You can save a search as a fixed URL and rerun it to see what the world is paying attention to over time."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "Google Autocomplete experiments (incognito window, optionally with a VPN)",
+      "type": "tool",
+      "creator": "Google",
+      "context": "Amit urges listeners to try the Everybody Lies experiment themselves.",
+      "reason": "In an incognito window autocomplete isn't biased by your history, and a VPN shows other countries' results. You don't need special access to Google's data to learn something."
     },
     {
       "recommender": "Amit Varma",
       "item": "Adolescence",
-      "type": "film",
-      "creator": "Jack Thorne and Stephen Graham",
-      "context": "The Netflix limited series dramatising how the manosphere reaches a teenage boy.",
-      "reason": "A small-window dramatisation of why incel grievances don't come from nowhere — they refract real Tinder-Gini-coefficient data through a young man's life. (The episode notes the show captures only a sliver of the broader manosphere ecosystem.)"
+      "type": "tv",
+      "creator": "Jack Thorne & Stephen Graham",
+      "context": "Brought up while discussing incels and the manosphere.",
+      "reason": "Amit calls it an awesome show that depicts a small part of the manosphere, which grows out of real resentment on dating apps."
     },
     {
       "recommender": "Amit Varma",
       "item": "The Game",
       "type": "book",
       "creator": "Neil Strauss",
-      "context": "The 2005 pickup-artist memoir/handbook that catalysed an entire ecosystem.",
-      "reason": "A bestseller that, beneath the manipulation, displayed a sharp folk understanding of human nature. Worth reading both as anthropology of the manosphere and as a lens on how validation economies work."
+      "context": "Recalled from his time exploring the manosphere 25 years ago.",
+      "reason": "It is a manipulative pickup-artist handbook but shows a real understanding of human nature, and helps explain where today's manosphere came from."
     },
     {
       "recommender": "Amit Varma",
-      "item": "Stay Away From Luxury Beliefs (Episode 46 of EIE)",
-      "type": "podcast episode",
-      "creator": "Amit Varma and Ajay Shah",
-      "context": "EIE's earlier episode on Rob Henderson's 'luxury beliefs' frame.",
-      "reason": "Background for Henderson's diagnosis (quoted at length here) of how dark-triad men plus dating-app affordances drive a defect-defect equilibrium between the sexes."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "Rob Henderson's tweet on dark-triad men and the dating-app defect-defect equilibrium",
-      "type": "article",
+      "item": "Rob Henderson's tweet on dark triad men and dating apps",
+      "type": "other",
       "creator": "Rob Henderson",
-      "context": "Henderson's long Twitter thread on how psychopathic men, exploited women, and ordinary men drive each other into mutual mistreatment on dating apps.",
-      "reason": "The single most-quoted text in Chapter 3 — Amit reads it out in full as the core explanation of why dating-app dynamics generate so much bitterness on every side."
+      "context": "Amit reads it out in full in the dating-apps chapter.",
+      "reason": "Amit calls it fantastic. It explains how a minority of manipulative men can push everyone on dating apps toward mutual mistreatment."
     },
     {
       "recommender": "Amit Varma",
-      "item": "The Romantic Recession Report",
-      "type": "article",
-      "creator": "Soulmatcher (2025)",
-      "context": "A 2025 industry report on declining trust and rising pessimism among singles.",
-      "reason": "Quantitative backing for Henderson's qualitative thesis: women losing trust in strangers, men feeling unfairly excluded, both opting out."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "The World in 2050 (Episode 106 of EIE)",
+      "item": "Stay Away From Luxury Beliefs — Ep 46 of Everything is Everything",
       "type": "podcast episode",
-      "creator": "Amit Varma and Ajay Shah",
-      "context": "EIE's earlier episode on long-run social transformation.",
-      "reason": "Where the larger 'unbundling marriage' question — how love, sex, companionship, parenthood get separated and re-organised — was previously discussed."
+      "creator": "Amit Varma & Ajay Shah",
+      "context": "Mentioned when introducing Rob Henderson, who coined the term 'luxury beliefs'.",
+      "reason": "Background on a thinker Amit says has thought deeply about this subject."
     },
     {
       "recommender": "Amit Varma",
-      "item": "Malini Goyal Is the Curious One (Episode 377, The Seen and the Unseen)",
+      "item": "The Romantic Recession report",
+      "type": "paper",
+      "context": "A 2024 survey cited in the dating-apps chapter.",
+      "reason": "It documents falling trust among singles: women avoiding dating strangers, and men feeling women don't give them a fair chance."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "Studies on dating trends (Pew 2023, SoulMatcher 2025, OkCupid 2017, GDI 2025, Tinder 2025, IJCHP 2024)",
+      "type": "paper",
+      "context": "Amit says he will link the studies behind his dating-app findings.",
+      "reason": "Sources for the findings on age preferences, swipe rates and the Tinder Gini coefficient."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "The World in 2050 — Ep 106 of Everything is Everything",
+      "type": "podcast episode",
+      "creator": "Amit Varma & Ajay Shah",
+      "context": "Mentioned while discussing marriage as a bundle that is coming apart.",
+      "reason": "Where they earlier discussed how society might organise relationships once love, sex, companionship and parenting are separated."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "Malini Goyal is the Curious One — Ep 377 of The Seen and the Unseen",
       "type": "podcast episode",
       "creator": "Amit Varma with Malini Goyal",
-      "context": "Amit's SU conversation with Malini Goyal.",
-      "reason": "Background for the Bangalore Tinder time-to-home finding that anchors the chapter on dating apps."
+      "context": "Malini Goyal is introduced as a former guest before her Tinder research.",
+      "reason": "Background on the author of the Tinder study of three cities."
     },
     {
       "recommender": "Amit Varma",
       "item": "Unboxing Bengaluru",
       "type": "book",
-      "creator": "Malini Goyal and Prashanth Prakash",
-      "context": "Goyal and Prakash's book on Bangalore.",
-      "reason": "Direct source of the Delhi-months / Mumbai-weeks / Bangalore-days Tinder finding and the qualitative follow-up showing the unhappiness behind the promiscuity."
+      "creator": "Malini Goyal & Prashanth Prakash",
+      "context": "Amit calls it an excellent book.",
+      "reason": "Its Tinder data and interviews show how dating differs across Delhi, Mumbai and Bangalore, and that the promiscuity on apps came with unhappiness."
     },
     {
       "recommender": "Amit Varma",
-      "item": "Finding Love in Modern India (Episode 401, The Seen and the Unseen)",
+      "item": "Finding Love in Modern India — Ep 401 of The Seen and the Unseen",
       "type": "podcast episode",
-      "creator": "Amit Varma with Samrat Bansal and Sanjana Ramachandran",
-      "context": "Amit's SU deep dive on the modern Indian dating landscape.",
-      "reason": "The fullest treatment of the chapter's central question: how Indian men and women actually experience dating apps differently."
+      "creator": "Amit Varma with Sanjana Ramachandran",
+      "context": "Amit calls it an excellent episode.",
+      "reason": "A detailed look at how hard dating apps are, and how they are hard in different ways for men and women."
     },
     {
       "recommender": "Amit Varma",
       "item": "Famous Last Questions",
       "type": "book",
       "creator": "Sanjana Ramachandran",
-      "context": "Ramachandran's book on finding love in modern India.",
-      "reason": "Source material for the lived experience of dating-app life, especially for women navigating the asymmetry."
+      "context": "Amit notes his guest has since written a book on finding love in modern India.",
+      "reason": "A longer treatment of modern Indian dating."
     },
     {
       "recommender": "Amit Varma",
       "item": "When Harry Met Sally",
       "type": "film",
       "creator": "Rob Reiner",
-      "context": "Nora Ephron and Rob Reiner's 1989 film with Billy Crystal and Meg Ryan, including the Katz's Deli scene Amit calls 'the greatest orgasm in movie history.'",
-      "reason": "The film whose central premise — 'men and women can't be friends because the sex part always gets in the way' — names the index The Economist proposed for the Facebook cross-gender friendship dataset (the WHMSI / WIMSY index)."
+      "context": "Introduces the chapter on whether men and women can be friends.",
+      "reason": "Amit loves it and calls it a charming film. Its premise that men and women can't be friends gave the Facebook friendship index its nickname."
     },
     {
       "recommender": "Ajay Shah",
-      "item": "The Facebook Study on Cross-Gender Social Ties",
-      "type": "article",
-      "creator": "Facebook research",
-      "context": "Study mapping 1.4 trillion links among 1.8 billion adult Facebook users, estimating closeness of each connection and producing a per-region cross-gender friendship index.",
-      "reason": "Ajay's pick for measurement enthusiasts: micro-level data down to the lowest GADM administrative units, suitable as a staple variable for researchers studying the gender geography of any city or district."
+      "item": "The Facebook study on Cross-Gender Social Ties",
+      "type": "paper",
+      "context": "A cross-gender friendship index built from 1.8 billion users and 1.4 trillion connections.",
+      "reason": "Ajay is excited because the data goes down to the smallest administrative units. He thinks researchers should use it as a standard measure of how separated men and women are in Indian cities and districts."
     },
     {
       "recommender": "Amit Varma",
-      "item": "Can Men and Women Be Just Friends?",
+      "item": "Can men and women be just friends?",
       "type": "article",
       "creator": "The Economist",
-      "context": "The Economist's piece naming the Facebook cross-gender index after When Harry Met Sally.",
-      "reason": "Where the 'WIMSY' framing is laid out — including India's surprisingly high score of 0.35."
+      "context": "Amit calls it a beautiful piece.",
+      "reason": "It explains the Facebook index and proposes naming it after When Harry Met Sally."
     },
     {
       "recommender": "Ajay Shah",
       "item": "Parade's End",
       "type": "book",
       "creator": "Ford Madox Ford",
-      "context": "Ford Madox Ford's tetralogy.",
-      "reason": "Source of Ajay's read-aloud passage on why long companionship is necessary to ever finish a real conversation — the romantic counterweight to the chapter's data on app-driven disposability."
+      "context": "Ajay reads a passage from it about whether men and women can talk without becoming lovers.",
+      "reason": "The passage argues that real intimate conversation needs years of living together. Amit's response: 'Beautiful. You have a romantic soul in you.'"
     },
     {
       "recommender": "Amit Varma",
       "item": "Gurwinder Bhogal quoting Christ Williamson on hiding your true self",
-      "type": "article",
+      "type": "other",
       "creator": "Gurwinder Bhogal",
-      "context": "A short piece on the cost of inauthenticity — if you don't reveal your true self, you can't be loved for who you are.",
-      "reason": "Amit cites this idea (also attributed to Paul Graham) to bridge from search-data inauthenticity to the deeper cost of self-suppression."
+      "context": "Linked in the show notes for Amit's point that you can't be loved if you hide who you are. On air he thinks Paul Graham may have said it.",
+      "reason": "It links search data, where people's hidden selves show up, to a point about why being authentic matters for being loved."
     },
     {
       "recommender": "Amit Varma",
-      "item": "The Nighttime Lights of Russia (Episode 116 of EIE)",
+      "item": "Novels of Georges Simenon",
+      "type": "book",
+      "creator": "Georges Simenon",
+      "context": "In his closing argument Amit calls Simenon one of his favourite novelists of all time.",
+      "reason": "Amit says Simenon's work keeps returning to the idea that no person can fully communicate himself to another, which he sees as one of humanity's great problems."
+    },
+    {
+      "recommender": "Ajay Shah",
+      "item": "The Nighttime Lights of Russia — Ep 116 of Everything is Everything",
       "type": "podcast episode",
-      "creator": "Amit Varma and Ajay Shah",
-      "context": "An earlier EIE episode on satellite-based measurement.",
-      "reason": "Referenced as the contrasting case to dating-app data: bird-in-the-sky measurement leaves North Korea unaffected, whereas dating apps simultaneously measure and transform the system."
+      "creator": "Amit Varma & Ajay Shah",
+      "context": "Ajay opens by recalling their episode on nighttime lights data.",
+      "reason": "Part of their series on measurement. Later in the episode he contrasts satellite measurement, which doesn't affect what it observes, with dating apps, which do."
     },
     {
-      "recommender": "Amit Varma",
-      "item": "What Our Genes and Phones Tell Us (Episode 117 of EIE)",
+      "recommender": "Ajay Shah",
+      "item": "What Our Genes and Phones Tell Us — Ep 117 of Everything is Everything",
       "type": "podcast episode",
-      "creator": "Amit Varma and Ajay Shah",
-      "context": "The previous EIE measurement episode.",
-      "reason": "Direct setup for this episode — episode 117 was so loaded with measurement findings that the men-and-women material was carved off into a separate show."
+      "creator": "Amit Varma & Ajay Shah",
+      "context": "The previous episode, about the 'digital exhaust' of modern life.",
+      "reason": "This episode was split off from it because they had too much material for one show."
     },
     {
-      "recommender": "Amit Varma",
+      "recommender": "Ajay Shah",
       "item": "Life Lessons",
       "type": "course",
-      "creator": "Amit Varma and Ajay Shah",
-      "context": "Amit and Ajay's online course at lifelessons.co.in.",
-      "reason": "Ajay's pizza-decision-tree example for parsing agency comes directly from the Life Lessons curriculum."
+      "creator": "Amit Varma & Ajay Shah",
+      "context": "Ajay's pizza example of agency comes from a discussion in the course.",
+      "reason": "The course is where they work through ideas like how to separate out who actually makes a decision."
     }
   ],
   "core_ideas": [
     {
-      "concept": "Unconventional Metrics of Empowerment",
-      "explanation": "Standard empowerment metrics (literacy, FLFP) miss the texture of agency. Unconventional ones reveal more: rising divorce rates, solo women travellers, the share of families whose eldest child is male, the number of women in prisons, men downloading grocery apps, default office AC temperatures, the female share of pavement traffic at 9pm. The pattern is that you measure agency by exposure to the full set of human possibilities — including failure, conflict, and crime — not by protection from them.",
-      "quote": "Rising divorce rates are a sign of women's empowerment. It means more and more women are getting the agency to leave bad marriages."
+      "concept": "Measure agency, not activity",
+      "explanation": "Good empowerment metrics ask who is choosing. Some numbers that sound bad signal freedom: rising divorce, more women in prison, more women travelling alone. Some that sound good can hide patriarchy: men downloading grocery apps or women placing pizza orders that men decided on. Office AC temperatures and the share of women on the street at night are other indirect measures.",
+      "quote": "More women in prisons is a good thing because it means more women have agency, more women have opportunity to commit crime and to go out in the world"
     },
     {
-      "concept": "The Three Selves and the Searchbar as Polygraph",
-      "explanation": "Borrowing from Garcia Marquez: the public self (known to all), the private self (known to a Dunbar-tiny inner circle), and the secret self (known to no one). Stephens-Davidowitz's insight is that when we search anonymously online, we behave as if no one is watching — so the secret self leaks. The searchbar becomes the only mass-scale instrument that captures it. 'Facebook is digital brag-to-my-friends-about-how-good-my-life-is serum'; Google is the opposite.",
-      "quote": "Garcia Marquez often talks about how we have three selves: the public self, the private self, and the secret self."
+      "concept": "Richer families pull women out of work",
+      "explanation": "Women's labour-force participation in India rose and then fell sharply, even as incomes grew. Amit stresses there are many causes. One is that once a family can afford it, a working wife is seen as hurting the family's honour, so women's earnings help raise the family's status and that status then keeps them at home.",
+      "quote": "many families when they reached a certain income level, it was felt that now the woman doesn't need to go out and work. That it affects the family honour if the woman is going out and working."
     },
     {
-      "concept": "Stated Preferences vs Revealed Preferences vs Search Preferences",
-      "explanation": "Economists already distinguish what people say (stated) from what they do (revealed). Search data introduces a third, even more honest layer: what people privately wonder. Only 25% of women admit in surveys to searching for porn; the actual number is far higher. Men make as many searches for how to perform oral sex on themselves as for how to give a woman an orgasm. These wonderings are not actions but they are not lies either — they reveal the architecture of private desire."
+      "concept": "Search data reveals the secret self",
+      "explanation": "Amit cites Gabriel García Márquez's idea that we have a public self, a private self known to a few intimates, and a secret self known to nobody. Stephens-Davidowitz's premise is that anonymous searching is where the secret self shows, because nobody is watching. On Facebook people present their best lives. Search data shows sexless marriages, regret and anxiety.",
+      "quote": "Gabriel Garcia Marquez often talks about how we have three selves, a public self, the private self, and the secret self, right?"
     },
     {
-      "concept": "Country-Level Cultural Fingerprints in Autocomplete",
-      "explanation": "Run Google autocomplete on 'my husband wants me to' from different VPN locations and you get a country's secret cultural fingerprint. India today: 'serve his mistress'; recently 'breastfeed his friends.' Australia: 'open marriage,' 'second wife,' 'eat my poop.' Indian porn searches for women breastfeeding men are 4x higher than any other country. The interpretive challenge is real (why? what cultural mechanism?) but the data is unmistakeable: each society sublimates its repressions into a unique pattern of search."
+      "concept": "What searches reveal about sex and intimacy",
+      "explanation": "The top complaint about marriage is lack of sex. Searches for 'sexless marriage' are 3.5 times more common than 'unhappy marriage', and complaints about a spouse not wanting sex are 16 times more common than about one not wanting to talk. The top complaint about boyfriends is that they won't have sex. Only 25% of men and 8% of women admit to searching for porn, yet more men search for porn than for weather. Amit stresses that searches and fantasies are not what people want in real life.",
+      "quote": "Searches for sexless marriage are three and a half times more common than unhappy marriage, and eight times more common than loveless marriage."
     },
     {
-      "concept": "The Gender Bias of Parents, Algorithmically Exposed",
-      "explanation": "Parents are 2.5x more likely to ask 'is my son gifted' than 'is my daughter gifted,' and 2x more likely to ask 'is my daughter overweight' than 'is my son overweight' — even though girls have larger vocabularies, are more likely to enter gifted programs, and 35% of boys vs 20% of girls are actually overweight. The bias is global; in India it is almost certainly worse. A bias too embarrassing to admit on a survey is exposed in a thousand small searches.",
-      "quote": "Facebook is digital brag-to-my-friends-about-how-good-my-life-is serum."
+      "concept": "Parents' hidden gender bias",
+      "explanation": "Parents are 2.5 times more likely to ask Google whether their son is gifted than their daughter. They ask whether their daughter is overweight about twice as often as their son. This contradicts the facts: young girls have larger vocabularies, are more often in gifted programmes, and about 28% of girls versus 25% of boys are overweight. Amit suspects the bias is worse in India.",
+      "quote": "Parents are two and a half times more likely to ask, is my son gifted than is my daughter gifted?"
     },
     {
-      "concept": "The Tinder Gini Coefficient",
-      "explanation": "Across the Tinder population, men face a 0.58 Gini coefficient on female attention — more unequal than 95% of countries' income distributions. Women swipe right on 5-14% of profiles; men swipe right on roughly 50%. Men are 6.2x more likely to like a given woman than vice versa. The result is a small fraction of attractive men collecting most of the female attention while the median man gets nothing — generating real bitterness, the modern incel population, and the manosphere ecosystem.",
-      "quote": "Women hold all the cards. Men are 6.2 times more likely to like a woman than vice versa."
+      "concept": "You can't be loved if you hide yourself",
+      "explanation": "Many people never show their true selves to anyone, and some don't admit them even to themselves. Searching is the only place it shows. Amit draws the consequence: people can only love what you let them see.",
+      "quote": "if you are not your authentic self, you can never be truly loved."
     },
     {
-      "concept": "Communities of Circumstance vs Communities of Choice",
-      "explanation": "Pre-internet life was a community of circumstance — geography and social caste fixed who you could meet, befriend, marry. The internet enabled communities of choice, where weirdos and minorities and the lonely can find each other. This is unambiguously good for LGBTQ people (a gay man born in 1960 could spend his whole life alone; one born in 2000 cannot). It also restructures romance: 60% of recent marriages start online. Most of Amit's friends today are people he met online."
+      "concept": "Data shows you the median Indian",
+      "explanation": "Everyone lives in a bubble, and society is too large to know firsthand. Aggregate data shows people unlike yourself. Ajay adds that it reflects the median Indian, who is very different from people like the hosts.",
+      "quote": "Whereas this data reflects the median Indian and you know the median Indian is a very different person from us."
     },
     {
-      "concept": "Selectivity Explosion: Hardware Is Old, Choice Set Is New",
-      "explanation": "Amit's response to the question 'what's actually changed since the dawn of modern man?' Hardwired desire (men: youth/beauty; women: status/affluence — biologists' framing, not endorsed normatively) has been stable for tens of thousands of years. What's new is that the choice set went from ~10 men/10 women (pre-internet circle) to ~1 million in your pocket (dating apps). Selection becomes ruthless; the top of the distribution is winner-take-all. Same instincts, drastically different equilibrium because the matching surface exploded.",
-      "quote": "The instincts were always the same because they are what they are, but the behaviours have changed."
+      "concept": "From communities of circumstance to communities of choice",
+      "explanation": "Before the internet, geography, school and work decided who you could meet, love or befriend. Dating apps remove that limit. You are unlikely ever to meet a single destined soulmate, but your chances of meeting someone good rise sharply. Women can date with more privacy and less judgement, and Amit cites a figure that 60% of recent marriages began online. The gain is biggest for LGBTQ people.",
+      "quote": "If you are a gay person say born in 1960, you could spend your whole life alone. If you're a gay person born in the year 2000 You're not gonna spend your whole life alone."
     },
     {
-      "concept": "Heisenberg Measurement: Dating Apps Both Reveal and Transform",
-      "explanation": "Ajay's framing: nighttime-lights satellite imagery reveals North Korea without affecting it. Dating-app data is the opposite — the act of measurement (the existence of dating apps) is itself the cause of the new behaviours being measured. You can't run the counterfactual; the instrument has rewritten the system. Any social-data tool that makes a behaviour newly observable should be presumed to also be reshaping that behaviour.",
-      "quote": "On one hand the phenomena are rendered observable by the dating apps. But the dating apps have completely changed the system as well."
+      "concept": "The Tinder Gini coefficient",
+      "explanation": "Women swipe right on about 5 to 14% of profiles and men on about 50%, and men are 6.2 times more likely to like a woman than the reverse. A few men get most of the attention while the median man gets almost none, and nearly all women get picked. The resulting resentment fuels incels and the manosphere.",
+      "quote": "There's a Tinder Gini coefficient of 0.58, which shows more inequality than 95% of the countries in the world."
     },
     {
-      "concept": "Henderson's Defect-Defect Equilibrium",
-      "explanation": "Rob Henderson's model of the dating-app social system: dark-triad men (psychopathy, narcissism, Machiavellianism) make up 10-20% of users but are excellent imposters who collect disproportionate sex partners while damaging the women they sleep with. Those women, traumatised, become wary and begin to behave in psychopathic and narcissistic ways themselves to even the score, especially against ordinary men. Those men become resentful and treat ordinary women the same way. Bad behavior drives out the good; the equilibrium is universal cold cynicism even though almost no one wanted it.",
-      "quote": "Bad behaviour drives out the good. A system tailor-made for psychopathic males predictably gives rise to a defect-defect equilibrium."
+      "concept": "Same instincts, far more choice",
+      "explanation": "Ajay asks what has changed, since desire hasn't changed in 65,000 years. Amit's answer: a biologist would say men are wired to seek youth and beauty and women status and affluence, and he stresses that this is a description, not an endorsement. When your choices came from a small social circle, ordinary men found partners. With a million profiles, everyone is extremely selective and goes for people they could never have met before. Amit concludes the instincts haven't changed but the behaviour has. He also notes that culture can soften the uglier parts of human nature.",
+      "quote": "I have much less scope to be selective. But I go to a dating app, I have a million people to choose from."
     },
     {
-      "concept": "The Sex Recession",
-      "explanation": "Despite (or because of) frictionless matching, Gen Z is having less sex than millennials. Three out of ten men in surveys report no sex in the last year; one in four women say the same. The Romantic Recession Report finds women avoiding strangers, men feeling 'women don't give us a fair chance.' The system that promised infinite romantic abundance has produced widespread voluntary opt-out — many young people are turning back toward family-formation values."
+      "concept": "Rob Henderson's defect-defect equilibrium",
+      "explanation": "Men high on the 'dark triad' traits of psychopathy, narcissism and Machiavellianism may be 10 to 20% of dating-app users, and they are good at faking romantic qualities. Women they mistreat protect themselves by turning cold and exploiting ordinary men. Those men then treat ordinary women the same way to get even. The apps' anonymity and superficiality spread this until everyone is cold and calculating.",
+      "quote": "Bad behavior drives out the good."
     },
     {
-      "concept": "Marriage as a Bundled Equilibrium That No Longer Holds",
-      "explanation": "Marriage evolved as an uneasy equilibrium when you knew few people and social norms were enforced — bundling love, sex, companionship, friendship, parenting into one institution that left both parties mildly satisfied / mildly unsatisfied but stable. When the choice set explodes and the social-norm enforcement weakens, the bundle starts to fall apart. The unbundling raises questions modern society has not solved: how do you organize relationships when each component can be obtained separately, with different partners, at different times?"
+      "concept": "Marriage as a bundle that is coming apart",
+      "explanation": "Marriage arose when people met few others and social norms were enforced. It was an uneasy arrangement that left both sexes partly unsatisfied but held together. It combines love, sex, companionship, friendship and parenting. In modern society that arrangement may no longer work, and nobody has figured out how to organise relationships once those parts separate. Amit suspects today's dating apps may one day look primitive.",
+      "quote": "marriage is a bundle of all of these things like love, sex, companionship, friendship, shared parenthood"
     },
     {
-      "concept": "The When Harry Met Sally Index (WIMSY)",
-      "explanation": "Facebook mapped 1.4 trillion social ties among 1.8 billion adults and produced a cross-gender friendship index, where 0 = total gender segregation and 1 = equal cross-gender and same-gender friend counts. The Economist proposed naming it after the Billy Crystal/Meg Ryan film whose premise is that men and women can't be just friends. India scores 0.35 — surprisingly high, given the social repression and male inability to talk to women. The data is broken out at sub-district resolution, making it a powerful new variable for measuring the social geography of gender."
+      "concept": "The sex recession",
+      "explanation": "Despite apps promising plenty of options, many people are dropping out. Gen Z has much less sex than millennials, and Amit says some are returning to family values. In one survey, three in ten men and one in four women said they hadn't had sex in a year. The Romantic Recession report describes falling trust: women avoid strangers and men feel shut out.",
+      "quote": "People are having less and less sex than they used to."
     },
     {
-      "concept": "Non-Authenticity Is Incompatible With Love",
-      "explanation": "Amit's bridge from search-data findings to ethics: if we are not our authentic selves in public, we cannot be truly loved — because no one can love what they have not been allowed to see. Stephens-Davidowitz finds many of us aren't even authentic to ourselves; we deny in our own minds what our searches expose. The cost of this hiddenness isn't just statistical bias in surveys — it's the foreclosure of intimacy."
+      "concept": "Measurement that changes what it measures",
+      "explanation": "A satellite photographing North Korea at night doesn't change North Korea. Dating apps are different. They made romantic behaviour visible in data for the first time, and in doing so they changed that behaviour. When a tool makes something newly measurable, ask whether it is also reshaping it.",
+      "quote": "So here the dating apps have simultaneously created observability, but then they have completely changed the system as well."
     },
     {
-      "concept": "Economists Are Working on the Wrong Problem",
-      "explanation": "Ajay's closing argument: technocratic public-policy economics — GDP-by-half-percent, inflation targeting — is essentially a lost game in India and not where the deep questions live. The deeper questions are about society itself: communication between humans, the impossibility of fully knowing another person, the gendered fissures revealed by data like this. A good economist's frameworks (psychology, sociology, anthropology, genetics, literature) should be redirected at the great mystery of humanity, not at marginal macro tweaks that won't be implemented anyway.",
-      "quote": "It is impossible for any one person to communicate himself to another person. We can never truly know another person — and at one level, we can never truly know ourselves."
+      "concept": "The When Harry Met Sally index",
+      "explanation": "Facebook mapped closeness across 1.4 trillion connections among 1.8 billion adults to build a cross-gender friendship index. Zero means men and women are completely segregated, and one means equal numbers of same-sex and opposite-sex friends. India scores 0.35, higher than Amit expected given how awkward Indian men are with women. Ajay calls the separation of the sexes in India a social crisis and wants researchers to use the district-level data.",
+      "quote": "The purdah that we have in India that the two genders stand apart is something that is just completely broken. It interferes with the emergence of the good society."
+    },
+    {
+      "concept": "Apply the economist's toolkit to human nature",
+      "explanation": "Amit's closing argument is that the right policies are already known and won't be implemented, so data-minded people are often working on the wrong problems. The deeper unsolved questions are about society and ourselves. He wants tools from psychology, sociology, anthropology, genetics, data, economics and literature applied to that question, citing Georges Simenon's theme that no one can fully communicate himself to another person.",
+      "quote": "But I think the deeper questions we need to solve are questions about society. We don't understand ourselves. We don't understand other people."
     }
   ],
   "jokes_and_cultural_references": [
     {
       "type": "humor",
-      "content": "Amit's opening line about Ajay: 'In this team the internal name for Amit Varma is the Energizer Bunny, because he goes on and on.' Cold open: 'We were joking earlier about how Ajay Shah comes in five seconds.'"
+      "content": "Ajay's opening dig: 'in this team the internal name for Amit Varma is the Energizer Bunny because he goes on and on.' Amit responds with a running gag about Ajay lasting only five seconds, which comes back all episode."
     },
     {
       "type": "humor",
-      "content": "Ajay on the phrase 'digital exhaust': 'Digital exhaust — which is basically a phone running out of battery.'"
+      "content": "Amit, explaining the private self: 'very few people now know that you only last five seconds. Which was private until now. Now it's public.'"
     },
     {
       "type": "humor",
-      "content": "Amit on porn-vs-weather searches: 'In fact, many more men search for porn than for weather — except you, I think you search a lot for weather. But you can't jerk off to clouds. So there's an understandable reason for that.'"
+      "content": "Amit's definition of Ajay's term 'digital exhaust': 'which is basically a phone running out of battery.'"
     },
     {
       "type": "humor",
-      "content": "Amit on judging strangers post-search-data: 'Next time I'm in a bus, I will look around and I will think, huh, 30% of these men want to be breastfed, what the fuck, dude. I'll be like judging every guy out there.'"
+      "content": "After noting that more men search for porn than for weather, Amit tells Ajay he must search a lot for weather: 'But you can't jerk off to clouds. So there's an understandable reason for that.'"
     },
     {
       "type": "humor",
-      "content": "Amit on the Australian autocomplete result 'my husband wants to eat my poop': 'I can only gather that Australians want to read books about the things that they are bothered about, because [their top result is] an open marriage novel.'"
+      "content": "On the Australian autocomplete results 'an open marriage' and 'an open marriage novel': 'from this I can only gather that Australians want to read books about the things that they are bothered about.'"
     },
     {
       "type": "humor",
-      "content": "Stephens-Davidowitz on female anxieties about vaginal smell — fish, vinegar, onions, ammonia, garlic, cheese, body odor, urine, bread, bleach, feces, sweat, metal, feet, garbage, rotten meat: 'We are all so busy judging our own bodies that there is little energy left over to judge other people.'"
+      "content": "Amit's favourite finding from the book, which he says shows two deep truths about men, 'the self obsession and the stupidity': men search as often for how to perform oral sex on themselves as for how to give women an orgasm."
     },
     {
       "type": "humor",
-      "content": "Amit on what oral-self-search reveals: 'Men make as many searches looking for ways to perform oral sex on themselves as they do how to give women an orgasm.' Two deep truths about men: self-obsession and stupidity."
+      "content": "Stephens-Davidowitz on the long list of women's anxieties about how their bodies smell: 'we are all so busy judging our own bodies that there is little energy left over to judge other people.'"
     },
     {
       "type": "humor",
-      "content": "Ajay on Ajay's cooperation with Tinder: 'Have you ever been on a dating app, Ajay?' / 'For about ten seconds.' / 'You lasted twice as long as one would expect. Well done.'"
+      "content": "On parental regret: 'So full buyer's remorse happening if you can call parenting buying.'"
     },
     {
       "type": "humor",
-      "content": "Amit, after Ajay reads the Parade's End passage in about fifteen seconds: 'If you add it to your act, you can last twenty seconds. And she'll also come when she hears you.'"
+      "content": "Amit after reading the search data: 'the next time I'm in a bus, I will look around me and I will think, huh, twenty percent of these men want to be breastfed. What the fuck, dude? I'll be like judging every guy out there.'"
     },
     {
       "type": "humor",
-      "content": "Amit on the WIMSY index name: 'I was calling it the WIMSY index till I realized that the I at the end of it stands for index. So it would be like calling it When Harry Met Sally Index Index, which we don't want to do.'"
+      "content": "Asked if he has used a dating app, Ajay says 'For about ten seconds.' Amit: 'So you lasted twice as long as one would expect. Well done. This used to be a family show till this episode.'"
     },
     {
       "type": "humor",
-      "content": "Amit on swiping right on Ajay: 'I would always swipe right on you. But anyway, if swipe right is the correct direction.'"
+      "content": "Amit on meeting Ajay online, 'though not on a dating app': 'Though I would always swipe right on you. But anyway, if swipe right is the correct direction.'"
+    },
+    {
+      "type": "humor",
+      "content": "On the name 'WHMSI': 'I was calling it the Whimsy Index till I realized that the I at the end of it stands for index. So it would be like calling it When Harry Met Sally Index Index, which we don't want to do.'"
+    },
+    {
+      "type": "humor",
+      "content": "After Ajay's Parade's End reading, Amit times it at about fifteen seconds and suggests Ajay add it to his 'act' to stretch the five-second gag."
     },
     {
       "type": "reference",
-      "content": "'Dance like no one's looking' — Amit's reframe of search behaviour: when we search online, we are expressing ourselves as if no one's looking."
+      "content": "Ajay defines the Gini coefficient on the spot, 'the area between the forty-five degree line and the cumulative distribution of income', before Amit applies it to Tinder."
     },
     {
       "type": "reference",
-      "content": "Gabriel Garcia Marquez's three selves: public, private, secret. Used as the architecture for why search data is uniquely valuable — it captures the secret self that survives no other instrument."
+      "content": "Gabriel García Márquez's three selves (public, private, secret). Amit adds that the private self is known to a handful of intimates, 'Dunbar's smaller number, not one fifty, but five', and the secret self is known to nobody 'except Google Baba'."
     },
     {
       "type": "reference",
-      "content": "When Harry Met Sally (Rob Reiner, 1989) — the Katz's Deli orgasm scene; Billy Crystal's premise that men and women can't be friends 'because the sex part always gets in the way.'"
+      "content": "'Dance like no one's looking': Amit's description of how we search online, as if nobody is watching."
     },
     {
       "type": "reference",
-      "content": "Ford Madox Ford, Parade's End: 'You seduced a young woman in order to be able to finish your talks with her... You have to wait together for a week, for a year, for a lifetime, before the final intimate conversation may be attained and exhausted.'"
+      "content": "Stephens-Davidowitz's line: 'Facebook is digital brag-to-my-friends-about-how-good-my-life-is serum,' where everyone seems happily married and on holiday in the Caribbean, while in reality people are ignoring calls from spouses they haven't slept with in years."
     },
     {
       "type": "reference",
-      "content": "Georges Simenon's lifelong theme that 'it is impossible for any one person to communicate himself to another person' — Ajay's lodestar for what literature has been trying to teach us, and what economists should be willing to take seriously."
+      "content": "When Harry Met Sally, written by Nora Ephron, directed by Rob Reiner, starring Billy Crystal and Meg Ryan. Amit calls its restaurant scene 'the greatest orgasm in movie history', admits a crush on Meg Ryan, and quotes the premise that men and women can't be friends because 'the sex part always gets in the way.'"
     },
     {
       "type": "reference",
-      "content": "'Hamara dil sagar ki tarah' / 'Our heart is like an ocean, mysterious and...' — episode closer, gesturing at the inexhaustibility of what data and literature alike are trying to map."
+      "content": "Ford Madox Ford's Parade's End, read by Ajay: 'You seduced a young woman in order to be able to finish your talks with her... You have to wait together for a week, for a year, for a lifetime, before the final intimate conversation may be attained and exhausted.'"
     },
     {
       "type": "reference",
-      "content": "'A long, long time ago, I can still remember' — Amit echoing Don McLean's American Pie in introducing the Metrics of Empowerment episode."
+      "content": "Ajay invokes the Heisenberg uncertainty principle to contrast dating apps with satellite photos of North Korea at night: the apps change the behaviour they measure."
     },
     {
       "type": "reference",
-      "content": "Rob Henderson's coinage 'luxury beliefs' and his dark-triad / defect-defect dating-app thread — quoted at length as the chapter's load-bearing diagnosis."
+      "content": "Rob Henderson, 'a guy who coined the term luxury beliefs', and his dark triad of psychopathy, narcissism and Machiavellianism applied to dating apps."
     },
     {
       "type": "reference",
-      "content": "Neil Strauss's The Game (2005) and the modern Gumroad-and-TikTok manosphere it spawned — name-checked as the lineage running through Andrew Tate-style content and the show Adolescence."
+      "content": "Georges Simenon, whom Amit calls one of his favourite novelists, on the theme running through all his work: 'it is impossible for any one person to communicate himself to another person.'"
     }
-  ]
+  ],
+  "source": {
+    "transcript": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
+    "speakers": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "model": "claude-opus-5-5",
+    "extracted": "2026-10-19"
+  }
 }
