@@ -14,7 +14,7 @@ from the YouTube video's, so times are shifted to the video's: the offset comes 
 the current transcript's word timings against the feed audio's loudness.
 
 It shares a 10 GiB container with interactive work, so it stays small (int8 model, 16-bit
-audio, 2 threads, run at nice 19) and exits with status 75 the moment the container's memory
+audio, 1 thread, run at nice 19) and exits with status 75 the moment the container's memory
 nears its cap: an OOM there kills every process in it. Run it under scripts/gently.py, which
 starts it again once memory recedes. `touch work/PAUSE` pauses between episodes; remove it to resume.
 
@@ -51,7 +51,9 @@ ASR = "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)"
 PARAKEET = "nvidia/parakeet-tdt-0.6b-v3"  # either build counts as transcribed
 LABELS = "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)"
 STICKY = "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding (sherpa-onnx)"  # before the third voice
-SR, THREADS, MAX_CHUNK = 16000, 2, 30.0
+SR, MAX_CHUNK = 16000, 30.0
+# One thread: the VPS hypervisor throttles the whole VM (CPU steal 17% -> 50%) when this keeps two busy.
+THREADS = int(os.environ.get("EIE_THREADS", 1))
 MEMORY_LIMIT = int(os.environ.get("EIE_MEMORY_LIMIT", 6.5 * 2**30))  # container anon + shmem; the cap is 10 GiB
 WIN, HOP = 1.5, 0.5  # voiceprint windows
 STICK, SHARPNESS = 6.0, 20.0  # decoding: cost of a change of speaker (lower at a pause), 1 / temperature
