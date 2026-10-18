@@ -23,6 +23,7 @@ key in work/.auth2api-key.
 """
 import collections
 import concurrent.futures
+import difflib
 import json
 import os
 import re
@@ -51,10 +52,11 @@ in a core idea's explanation.
 For each insight that a corrected passage shows to credit the wrong host, return a correction:
 - for a story (S), the field "teller" and the right host's full name;
 - for a recommendation (R), the field "recommender" and the right host's full name;
-- for a joke or reference (J), the field "content" and the whole text with only the host's name changed;
-- for a core idea (C), the field "explanation" and the whole text with only the host's name changed.
-Keep every other word as it is. Return no correction for an insight the passages don't bear on, or that is still
-right. Most insights need none."""
+- for a joke or reference (J), the field "content" and the whole text, changed only as far as it takes to credit
+  each line to the right host;
+- for a core idea (C), the field "explanation" and the whole text, changed the same way.
+Keep every quote and every other word as it is. Return no correction for an insight the passages don't bear on, or
+that is still right. Most insights need none."""
 AUDIT_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["corrections"], "properties": {
     "corrections": {"type": "array", "items": {
         "type": "object", "additionalProperties": False, "required": ["id", "field", "value", "reason"],
@@ -173,22 +175,34 @@ def audit(client, title, insights, words, labels, changed):
                                 output_config={"effort": "high", "format": {"type": "json_schema", "schema": AUDIT_SCHEMA}}
                                 ) as stream:
         message = stream.get_final_message()
-    kinds = {"S": "stories", "R": "recommendations", "J": "jokes_and_cultural_references", "C": "core_ideas"}
-    allowed = {"S": "teller", "R": "recommender", "J": "content", "C": "explanation"}
-    unnamed = lambda text: re.sub(r"\b(Amit|Ajay)( (Varma|Shah))?\b", "HOST", text)
     done = []
     for c in json.loads(next(b.text for b in message.content if b.type == "text"))["corrections"]:
-        m = re.fullmatch(r"([SRJC])0*(\d+)", c["id"].strip())
-        letter, i = (m[1], int(m[2])) if m else ("", 0)
-        items = insights.get(kinds.get(letter, ""), [])
-        x = items[i - 1] if 0 < i <= len(items) else None
-        ok = x is not None and c["field"] == allowed[letter] and (
-            c["value"] in HOSTS if c["field"] in ("teller", "recommender")
-            else unnamed(c["value"]) == unnamed(x[c["field"]]) and c["value"] != x[c["field"]])
-        if ok:
-            x[c["field"]] = c["value"]
+        ok = apply(insights, c)
         done.append(c | {"applied": ok})
     return done
+
+
+def apply(insights, c):
+    """Make one correction if it is what the audit may change: a host's name in a teller or recommender, or the
+    credit in a joke or core idea, with its quotes and nearly every other word kept. True if it was made."""
+    m = re.fullmatch(r"([SRJC])0*(\d+)", c["id"].strip())
+    letter, i = (m[1], int(m[2])) if m else ("", 0)
+    kind, field = {"S": ("stories", "teller"), "R": ("recommendations", "recommender"),
+                   "J": ("jokes_and_cultural_references", "content"), "C": ("core_ideas", "explanation")}.get(letter, ("", ""))
+    items = insights.get(kind, [])
+    x = items[i - 1] if 0 < i <= len(items) else None
+    if x is None or c["field"] != field or c["value"] == x.get(field):
+        return False
+    if field in ("teller", "recommender"):
+        ok = c["value"] in HOSTS
+    else:
+        plain = lambda text: re.sub(r"\b(Amit|Ajay)( (Varma|Shah))?('s)?\b", " ", text).lower().split()
+        quoted = lambda text: " ".join(re.findall(r"(?:(?<=\s)|^)'(.+?)'(?=[\s.,;:!?)]|$)", text)).lower().split()
+        ok = (difflib.SequenceMatcher(None, plain(x[field]), plain(c["value"]), autojunk=False).ratio() >= 0.8
+              and quoted(x[field]) == quoted(c["value"]))
+    if ok:
+        x[field] = c["value"]
+    return ok
 
 
 def adjudicate(client, n, again=False):
