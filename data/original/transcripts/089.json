@@ -5,7 +5,7 @@
     "durationSeconds": 5211,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -4614,8 +4614,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 229.57,
-      "endTime": 241.65,
-      "text": "I was a callow youth. I was stupid like all young people are. And uh as a growing early stage economist, I used to think there's so many stupid things going on in the world of",
+      "endTime": 283.14,
+      "text": "I was a callow youth. I was stupid like all young people are. And uh as a growing early stage economist, I used to think there's so many stupid things going on in the world of policy. And uh surely I will do better. Okay, and uh it I just vividly remember my collision with reality as a callow thirty-five year old, I showed up at the Ministry of Finance. Uh I was hired by Yashwan Sinna, a person that I admire enormously. I just consider him one of the great people of this country. And I was working closely with him. I was working intensively with him. And in a few days I got the message that my God, this job is tough. It is very, very hard to be a finance minister and there are no obvious mistakes. It's like there are no low hanging fruit, there are no five hundred dollar bills lying on the",
       "words": [
         {
           "word": "I",
@@ -4832,15 +4832,7 @@
           "startTime": 241.41,
           "endTime": 241.65,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 241.65,
-      "endTime": 248.29,
-      "text": "policy. And uh surely I will do better. Okay, and uh it I just",
-      "words": [
+        },
         {
           "word": "policy.",
           "startTime": 241.65,
@@ -4924,15 +4916,7 @@
           "startTime": 247.81,
           "endTime": 248.29,
           "confidence": 0.9952
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 248.29,
-      "endTime": 261.3,
-      "text": "vividly remember my collision with reality as a callow thirty-five year old, I showed up at the Ministry of Finance. Uh I was hired by Yashwan Sinna, a person that I admire enormously. I",
-      "words": [
+        },
         {
           "word": "vividly",
           "startTime": 248.29,
@@ -5136,15 +5120,7 @@
           "startTime": 261.14,
           "endTime": 261.3,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 261.3,
-      "endTime": 274.42,
-      "text": "just consider him one of the great people of this country. And I was working closely with him. I was working intensively with him. And in a few days I got the message that my God, this job is tough. It is very,",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 261.3,
@@ -5402,15 +5378,7 @@
           "startTime": 274.02,
           "endTime": 274.42,
           "confidence": 0.932
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 274.42,
-      "endTime": 283.14,
-      "text": "very hard to be a finance minister and there are no obvious mistakes. It's like there are no low hanging fruit, there are no five hundred dollar bills lying on the",
-      "words": [
+        },
         {
           "word": "very",
           "startTime": 274.42,
@@ -5646,8 +5614,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 285.57,
-      "endTime": 302.85,
-      "text": "My second uh funny story is uh I was uh at the Ministry of Finance in a meeting run by Ashok Lahiri, who was uh chief economic advisor, and there was some routine thing that used to happen, which is that the ministry of commerce would establish a target for India's",
+      "endTime": 366.5,
+      "text": "My second uh funny story is uh I was uh at the Ministry of Finance in a meeting run by Ashok Lahiri, who was uh chief economic advisor, and there was some routine thing that used to happen, which is that the ministry of commerce would establish a target for India's exports. Okay, and uh I was the Chota fellow in the room saying, excuse me, what does the Ministry of Commerce or any of us have to do with what India Exports and there again the word India is key. India is a collection of people, and those people export. And the Indian state has essentially nothing to do with the exporting decisions or the exporting success of individual firms. So what can the government do to control exports? Create enabling conditions. What exports will actually materialize? Who knows? That is something that happens in the society. It's not something for a government to plan or control or set a target for, because you know the word target is also like semi-offensive because, you know, maybe if you didn't get to your target, then in the mid-year some urgent meeting will take place and we will think of policy measures to boost exports, that kind of thing. And this episode is just questioning a whole bunch of these kinds of notions",
       "words": [
         {
           "word": "My",
@@ -5954,15 +5922,7 @@
           "startTime": 302.29,
           "endTime": 302.85,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 302.85,
-      "endTime": 305.09,
-      "text": "exports. Okay, and",
-      "words": [
+        },
         {
           "word": "exports.",
           "startTime": 302.85,
@@ -5980,15 +5940,7 @@
           "startTime": 304.77,
           "endTime": 305.09,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 305.09,
-      "endTime": 317.68,
-      "text": "uh I was the Chota fellow in the room saying, excuse me, what does the Ministry of Commerce or any of us have to do with what India Exports and there again the word India",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 305.09,
@@ -6198,15 +6150,7 @@
           "startTime": 316.96,
           "endTime": 317.68,
           "confidence": 0.9817
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 317.68,
-      "endTime": 322.88,
-      "text": "is key. India is a collection of people, and those people export.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 317.68,
@@ -6278,15 +6222,7 @@
           "startTime": 322.0,
           "endTime": 322.88,
           "confidence": 0.8669
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 322.88,
-      "endTime": 359.14,
-      "text": "And the Indian state has essentially nothing to do with the exporting decisions or the exporting success of individual firms. So what can the government do to control exports? Create enabling conditions. What exports will actually materialize? Who knows? That is something that happens in the society. It's not something for a government to plan or control or set a target for, because you know the word target is also like semi-offensive because, you know, maybe if you didn't get to your target, then in the mid-year some urgent meeting will take place and we will think of policy measures to boost",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 322.88,
@@ -6898,15 +6834,7 @@
           "startTime": 358.82,
           "endTime": 359.14,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 359.14,
-      "endTime": 362.18,
-      "text": "exports, that kind of thing. And this",
-      "words": [
+        },
         {
           "word": "exports,",
           "startTime": 359.14,
@@ -6948,15 +6876,7 @@
           "startTime": 361.86,
           "endTime": 362.18,
           "confidence": 0.9945
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 362.18,
-      "endTime": 366.5,
-      "text": "episode is just questioning a whole bunch of these kinds of notions",
-      "words": [
+        },
         {
           "word": "episode",
           "startTime": 362.18,
@@ -7034,8 +6954,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 366.5,
-      "endTime": 440.38,
-      "text": "of control. You spoke of the five hundred dollar bill. I want to tell you a little story. Have you heard the story about the Bengali economist who believed in rational markets and the Gujarati podcaster, right? Here's how it unfolds that the Bengali economist who believes in rational markets is walking a along the street when he sees a five hundred rupee bill, let us say uh r a five hundred rupee bill on the street, but he doesn't pick it up. And the reason he doesn't pick it up he assumes that if that bill was real, s you know, any rational person would have picked it up by now. And since nobody has picked it up, it can't possibly be real and therefore uh I'm just gonna walk past. So he walks past. Then the Gujarati YouTuber, uh hint hint, wink wink, comes along and he sees a bill and he says what does he say? He doesn't say money, he says content. And then he turns around and he puts on whatever selfie stick on his camera or whatever and he tries to shoot himself, discovering the five hundred dollar bill. When from behind Amitwarma comes in quickly takes it and goes away. So uh the story doesn't end well for either of our two protagonists, but one could argue that it is a function. The storyline running in my head was that the bill is super glued to the ground and there is another crew of uh uh",
+      "endTime": 432.38,
+      "text": "of control. You spoke of the five hundred dollar bill. I want to tell you a little story. Have you heard the story about the Bengali economist who believed in rational markets and the Gujarati podcaster, right? Here's how it unfolds that the Bengali economist who believes in rational markets is walking a along the street when he sees a five hundred rupee bill, let us say uh r a five hundred rupee bill on the street, but he doesn't pick it up. And the reason he doesn't pick it up he assumes that if that bill was real, s you know, any rational person would have picked it up by now. And since nobody has picked it up, it can't possibly be real and therefore uh I'm just gonna walk past. So he walks past. Then the Gujarati YouTuber, uh hint hint, wink wink, comes along and he sees a bill and he says what does he say? He doesn't say money, he says content. And then he turns around and he puts on whatever selfie stick on his camera or whatever and he tries to shoot himself, discovering the five hundred dollar bill. When from behind Amitwarma comes in quickly takes it and goes away. So uh the story doesn't end well for either of our two protagonists, but one could argue that it is a function.",
       "words": [
         {
           "word": "of",
@@ -8410,7 +8330,15 @@
           "startTime": 431.74,
           "endTime": 432.38,
           "confidence": 0.4681
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 432.38,
+      "endTime": 445.92,
+      "text": "The storyline running in my head was that the bill is super glued to the ground and there is another crew of uh uh what? Uh whiskey uh triceps show which is there to make fun of people trying to",
+      "words": [
         {
           "word": "The",
           "startTime": 432.38,
@@ -8554,15 +8482,7 @@
           "startTime": 439.5,
           "endTime": 440.38,
           "confidence": 0.5622
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 440.38,
-      "endTime": 445.92,
-      "text": "what? Uh whiskey uh triceps show which is there to make fun of people trying to",
-      "words": [
+        },
         {
           "word": "what?",
           "startTime": 440.38,
@@ -9056,8 +8976,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 491.06,
-      "endTime": 506.9,
-      "text": "So when you grow up as a child in this country, you see this entire firmament. There is a ministry of industry. Sounds like industrial policy to you. And uh no, there are very important things called textiles. So there's a ministry of",
+      "endTime": 693.15,
+      "text": "So when you grow up as a child in this country, you see this entire firmament. There is a ministry of industry. Sounds like industrial policy to you. And uh no, there are very important things called textiles. So there's a ministry of textiles, there's a ministry of chemicals, there's a ministry of steel, there's a ministry of IT. Okay, no, handlooms are very important. So that also needs special attention, and so on. So there are government activities in many, many industries, and they're all over the landscape. And all kinds of government power is used to try to influence these industries. And a lot of this is a dubious project. So let's uh put uh terminology on it and then let's put a conceptual framework on it. Right now I want to use some clear words. Uh industrial policy is the game of a government that picks winners. So the government looks at the world and thinks that this industry is good, this industry is bad, this technology is good, this technology is bad. this firm is good, this firm is bad. This place of production is good, this place of production is bad. Okay? All these kinds of allocative decisions about how the economy works. When these are placed in the hands of the government, it's called industrial policy. And here is a pla element in which you will see this quite vividly. In the world of business, in the world of the market economy, There are inevitably clusters. Clusters develop. There is a cluster called Silicon Valley. There is a cluster called Thirapur. Okay, Tirapur is a garment manufacturing paradise. Gujarat is a chemicals paradise. And that's very, very convenient that there is all kinds of skills, expertise, labor market, contractors, vendors. There's a whole ecosystem there, and that has a network effect and that sucks in more government people to Thirpur and so on. Many people look at that cluster and then they start thinking, could I make it happen? So the government starts saying that we will have a cluster on XXX at location Y Y Y. And that is crossing the line into industrial policy. That clusters do evolve, they evolve organically. Uh With the benefit of hindsight in every cluster you will see some elements of public policy. And in the last chapter today, I am going to come back to those kinds of inputs. But for the rest, there are many, many government attempts that go wrong. There are many, many government attempts that make absolutely no sense. Do you think you should have a drug manufacturing cluster in Himachal Pradesh? Because then this becomes equity. That oh, every state in India, every district in India should get some large. So this equity consideration of the government starts contaminating. These kinds of decisions, or there's a powerful politician who has a constituency who will announce that no, I want a government cluster. So the government will start saying, Yeah, we will make a government cluster happen. And again, we should be very skeptical about all this. So it is true that clusters develop, clusters matter, clusters shape productivity. It is not true that you can will these into existence. They emerge",
       "words": [
         {
           "word": "So",
@@ -9316,15 +9236,7 @@
           "startTime": 506.74,
           "endTime": 506.9,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 506.9,
-      "endTime": 512.02,
-      "text": "textiles, there's a ministry of chemicals, there's a ministry of steel, there's a ministry of IT. Okay,",
-      "words": [
+        },
         {
           "word": "textiles,",
           "startTime": 506.9,
@@ -9426,15 +9338,7 @@
           "startTime": 511.62,
           "endTime": 512.02,
           "confidence": 0.7779
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 512.02,
-      "endTime": 526.02,
-      "text": "no, handlooms are very important. So that also needs special attention, and so on. So there are government activities in many, many industries, and they're all over the landscape. And all kinds of government power is used to try to",
-      "words": [
+        },
         {
           "word": "no,",
           "startTime": 512.02,
@@ -9674,15 +9578,7 @@
           "startTime": 525.7,
           "endTime": 526.02,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 526.02,
-      "endTime": 535.18,
-      "text": "influence these industries. And a lot of this is a dubious project. So let's uh",
-      "words": [
+        },
         {
           "word": "influence",
           "startTime": 526.02,
@@ -9772,15 +9668,7 @@
           "startTime": 534.78,
           "endTime": 535.18,
           "confidence": 0.8318
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 535.18,
-      "endTime": 545.5,
-      "text": "put uh terminology on it and then let's put a conceptual framework on it. Right now I want to use some clear words. Uh industrial policy is the game of a government",
-      "words": [
+        },
         {
           "word": "put",
           "startTime": 535.18,
@@ -9972,15 +9860,7 @@
           "startTime": 544.86,
           "endTime": 545.5,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 545.5,
-      "endTime": 547.88,
-      "text": "that picks winners.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 545.5,
@@ -9998,15 +9878,7 @@
           "startTime": 546.38,
           "endTime": 547.88,
           "confidence": 0.9754
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 548.06,
-      "endTime": 693.15,
-      "text": "So the government looks at the world and thinks that this industry is good, this industry is bad, this technology is good, this technology is bad. this firm is good, this firm is bad. This place of production is good, this place of production is bad. Okay? All these kinds of allocative decisions about how the economy works. When these are placed in the hands of the government, it's called industrial policy. And here is a pla element in which you will see this quite vividly. In the world of business, in the world of the market economy, There are inevitably clusters. Clusters develop. There is a cluster called Silicon Valley. There is a cluster called Thirapur. Okay, Tirapur is a garment manufacturing paradise. Gujarat is a chemicals paradise. And that's very, very convenient that there is all kinds of skills, expertise, labor market, contractors, vendors. There's a whole ecosystem there, and that has a network effect and that sucks in more government people to Thirpur and so on. Many people look at that cluster and then they start thinking, could I make it happen? So the government starts saying that we will have a cluster on XXX at location Y Y Y. And that is crossing the line into industrial policy. That clusters do evolve, they evolve organically. Uh With the benefit of hindsight in every cluster you will see some elements of public policy. And in the last chapter today, I am going to come back to those kinds of inputs. But for the rest, there are many, many government attempts that go wrong. There are many, many government attempts that make absolutely no sense. Do you think you should have a drug manufacturing cluster in Himachal Pradesh? Because then this becomes equity. That oh, every state in India, every district in India should get some large. So this equity consideration of the government starts contaminating. These kinds of decisions, or there's a powerful politician who has a constituency who will announce that no, I want a government cluster. So the government will start saying, Yeah, we will make a government cluster happen. And again, we should be very skeptical about all this. So it is true that clusters develop, clusters matter, clusters shape productivity. It is not true that you can will these into existence. They emerge",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 548.06,
@@ -14226,8 +14098,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 789.17,
-      "endTime": 801.73,
-      "text": "Arithmetic that the GDP of the country is the sum total of the value added of all the firms. And a rich country is one that is filled up with firms that make a lot of GDP. And how do they do that? Because they have high",
+      "endTime": 935.66,
+      "text": "Arithmetic that the GDP of the country is the sum total of the value added of all the firms. And a rich country is one that is filled up with firms that make a lot of GDP. And how do they do that? Because they have high productivity. Okay, because your people are fixed. And the game is how do you get better firms that produce more per person? In a poor country, the GDP is low, the sum total of the value added of all the firms is low, the same people are working. So what's happening is the people are producing at low levels of productivity. And so this is just arithmetic that to succeed as a country, we need high GDP. I.e., the firms have to produce more. I.e., the firms have to be high productivity. So everything about economic development is how do you create the conditions under which the firms achieve high productivity? A successful, prosperous country is one where the firms are great, the firms are high productivity. A poor country is one where the firms are weak, where the firms have low. Activity. And so the story of economic development is centrally a story of firms. That we have to understand what are the incentives of firms. And again, there is nothing about the color of your skin, there's nothing about your latitude that enforces low productivity upon firms. We are the same human beings everywhere. Every human being in this planet, every firm in this planet has a short at improving themselves and achieving high productivity. So then the next question, why are some firms low productivity? Why are so many firms low productivity? Indians are not inferior. Okay? Sundar Pichai is an Indian. Tatyan Nadela is an Indian. So there's nothing wrong with Indians. What is wrong is with the incentive structure that the operating environment of the firm creates incentives that keep productivity down. And Our story as a country is learning how to build those complex firms through the intellectual development of people inside firms and improvements in the operating environment. And all this comes together and you get to high productivity firms, i.e., GDP growth. So this is the centrality that the firms are the story. And our conversation today about industrial policy is sort of related because there is an old socialist concept that the path to a great steel industry runs through a government. operating a ministry of steel and we just like to say not",
       "words": [
         {
           "word": "Arithmetic",
@@ -14510,15 +14382,7 @@
           "startTime": 801.41,
           "endTime": 801.73,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 801.73,
-      "endTime": 805.25,
-      "text": "productivity. Okay, because your people are fixed. And the",
-      "words": [
+        },
         {
           "word": "productivity.",
           "startTime": 801.73,
@@ -14572,15 +14436,7 @@
           "startTime": 804.93,
           "endTime": 805.25,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 805.25,
-      "endTime": 818.69,
-      "text": "game is how do you get better firms that produce more per person? In a poor country, the GDP is low, the sum total of the value added of all the firms is low, the same people are working. So what's happening is the people are producing at low",
-      "words": [
+        },
         {
           "word": "game",
           "startTime": 805.25,
@@ -14874,15 +14730,7 @@
           "startTime": 818.45,
           "endTime": 818.69,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 818.69,
-      "endTime": 822.77,
-      "text": "levels of productivity. And so this is just arithmetic that to succeed",
-      "words": [
+        },
         {
           "word": "levels",
           "startTime": 818.69,
@@ -14954,15 +14802,7 @@
           "startTime": 822.29,
           "endTime": 822.77,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 822.77,
-      "endTime": 824.61,
-      "text": "as a country, we need high GDP.",
-      "words": [
+        },
         {
           "word": "as",
           "startTime": 822.77,
@@ -15004,15 +14844,7 @@
           "startTime": 823.89,
           "endTime": 824.61,
           "confidence": 0.8561
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 824.61,
-      "endTime": 830.85,
-      "text": "I.e., the firms have to produce more. I.e., the firms have to be high productivity. So",
-      "words": [
+        },
         {
           "word": "I.e.,",
           "startTime": 824.61,
@@ -15108,15 +14940,7 @@
           "startTime": 830.37,
           "endTime": 830.85,
           "confidence": 0.9937
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 830.85,
-      "endTime": 897.1,
-      "text": "everything about economic development is how do you create the conditions under which the firms achieve high productivity? A successful, prosperous country is one where the firms are great, the firms are high productivity. A poor country is one where the firms are weak, where the firms have low. Activity. And so the story of economic development is centrally a story of firms. That we have to understand what are the incentives of firms. And again, there is nothing about the color of your skin, there's nothing about your latitude that enforces low productivity upon firms. We are the same human beings everywhere. Every human being in this planet, every firm in this planet has a short at improving themselves and achieving high productivity. So then the next question, why are some firms low productivity? Why are so many firms low productivity? Indians are not inferior. Okay? Sundar Pichai is an Indian. Tatyan Nadela is an Indian. So there's nothing wrong with Indians. What is wrong is with the incentive structure that the operating environment of the firm",
-      "words": [
+        },
         {
           "word": "everything",
           "startTime": 830.85,
@@ -16184,15 +16008,7 @@
           "startTime": 896.46,
           "endTime": 897.1,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 897.1,
-      "endTime": 901.2,
-      "text": "creates incentives that keep productivity down. And",
-      "words": [
+        },
         {
           "word": "creates",
           "startTime": 897.1,
@@ -16234,15 +16050,7 @@
           "startTime": 900.7,
           "endTime": 901.2,
           "confidence": 0.8849
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 901.63,
-      "endTime": 935.66,
-      "text": "Our story as a country is learning how to build those complex firms through the intellectual development of people inside firms and improvements in the operating environment. And all this comes together and you get to high productivity firms, i.e., GDP growth. So this is the centrality that the firms are the story. And our conversation today about industrial policy is sort of related because there is an old socialist concept that the path to a great steel industry runs through a government. operating a ministry of steel and we just like to say not",
-      "words": [
+        },
         {
           "word": "Our",
           "startTime": 901.63,
@@ -17066,8 +16874,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 959.62,
-      "endTime": 991.55,
-      "text": "There are four levers that are used by governments in their attempt at doing industrial policy. Okay, so you I earlier began saying that you want to pick winners and it may be of technology, it may be a firm, it may be an industry, and how is it done? There are four pathways. Case one, subsidies. Okay. Now a subsidy can be done in many different ways. It can be a tax break, It can be an explicit subsidy, it can be an indirect payment, you subsidize an input, you pay money directly, it all boils down to using public",
+      "endTime": 1152.27,
+      "text": "There are four levers that are used by governments in their attempt at doing industrial policy. Okay, so you I earlier began saying that you want to pick winners and it may be of technology, it may be a firm, it may be an industry, and how is it done? There are four pathways. Case one, subsidies. Okay. Now a subsidy can be done in many different ways. It can be a tax break, It can be an explicit subsidy, it can be an indirect payment, you subsidize an input, you pay money directly, it all boils down to using public money. Okay, so a subsidy is using public money. So government decides that uh we're going to have a uh beef export cluster that will work in XYZ district, and then we will subsidize the firms that will stand there and uh produce beef and export beef. Okay, it's a subsidy. or the government decides that uh software is a good industry, software is an important industry. So we'll give you an income tax break. That's a subsidy. So that's lever one. That all through the Indian state there are many, many like special cases. Case two, uh the use of coercive power. In a variety of ways, the coercive power of the state is used to favor some industries and disfavor others, or favor some technologies and disfavor others. So as an example, our friend Suyash has observed that the government chose UPI as the technology and the coercip of the state was used where income tax law was used and income tax inspectors are given the authority to find any shop that does not accept UPI and inflict a fine on them. So this is coercive resources being thrown behind a technology, namely UPI. Okay, so this is an example. Again, this is all over the place. There are all kinds of uses of coercion in India. In this uh show everything is everything. We have very many times talked about a fundamental idea. When you use government money, ultimately it is reigned in by budget considerations. You have some tax revenues, you'll run some deficit, and then many people are clamoring for that money, and there's a budget constraint. It's got to add up to hundred. In contrast, there is no limit to coercive power. There's no budget constraint of coercive power. Every day the Indian state shackles you some more. And there is no limit. Every day more coercive restrictions are initiated by the government. So coercion is literally all over the landscape and it is merely used in industrial policy. Okay, so let me show you one of the more amusing ones that I stumbled upon some years ago, and Lord knows it might still be around. It was a time when the Reserve Bank of India was doing capital controls about foreign borrowing. Okay, they've always had this idea that if you are Italian and I am Indian and I borrow from you, no. RBI will come interfere between us and put all kinds of restrictions that this is allowed, this is not allowed, you have to take this permission, and so on. I've never seen an economic reason for it. So one day there came up a restriction that external commercial borrowing shall be for nine industries",
       "words": [
         {
           "word": "There",
@@ -17674,15 +17482,7 @@
           "startTime": 991.23,
           "endTime": 991.55,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 991.55,
-      "endTime": 994.11,
-      "text": "money. Okay, so a subsidy is using public",
-      "words": [
+        },
         {
           "word": "money.",
           "startTime": 991.55,
@@ -17730,15 +17530,7 @@
           "startTime": 993.87,
           "endTime": 994.11,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 994.11,
-      "endTime": 1007.95,
-      "text": "money. So government decides that uh we're going to have a uh beef export cluster that will work in XYZ district, and then we will subsidize the firms that will stand there and uh produce",
-      "words": [
+        },
         {
           "word": "money.",
           "startTime": 994.11,
@@ -17948,15 +17740,7 @@
           "startTime": 1007.55,
           "endTime": 1007.95,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1007.95,
-      "endTime": 1010.45,
-      "text": "beef and export beef. Okay, it's a subsidy.",
-      "words": [
+        },
         {
           "word": "beef",
           "startTime": 1007.95,
@@ -18004,15 +17788,7 @@
           "startTime": 1009.95,
           "endTime": 1010.45,
           "confidence": 0.958
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1011.23,
-      "endTime": 1014.75,
-      "text": "or the government decides that uh software is a good industry,",
-      "words": [
+        },
         {
           "word": "or",
           "startTime": 1011.23,
@@ -18078,15 +17854,7 @@
           "startTime": 1014.27,
           "endTime": 1014.75,
           "confidence": 0.8049
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1014.75,
-      "endTime": 1020.67,
-      "text": "software is an important industry. So we'll give you an income tax break. That's a subsidy. So that's lever one. That all",
-      "words": [
+        },
         {
           "word": "software",
           "startTime": 1014.75,
@@ -18218,15 +17986,7 @@
           "startTime": 1020.51,
           "endTime": 1020.67,
           "confidence": 0.9808
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1020.67,
-      "endTime": 1152.27,
-      "text": "through the Indian state there are many, many like special cases. Case two, uh the use of coercive power. In a variety of ways, the coercive power of the state is used to favor some industries and disfavor others, or favor some technologies and disfavor others. So as an example, our friend Suyash has observed that the government chose UPI as the technology and the coercip of the state was used where income tax law was used and income tax inspectors are given the authority to find any shop that does not accept UPI and inflict a fine on them. So this is coercive resources being thrown behind a technology, namely UPI. Okay, so this is an example. Again, this is all over the place. There are all kinds of uses of coercion in India. In this uh show everything is everything. We have very many times talked about a fundamental idea. When you use government money, ultimately it is reigned in by budget considerations. You have some tax revenues, you'll run some deficit, and then many people are clamoring for that money, and there's a budget constraint. It's got to add up to hundred. In contrast, there is no limit to coercive power. There's no budget constraint of coercive power. Every day the Indian state shackles you some more. And there is no limit. Every day more coercive restrictions are initiated by the government. So coercion is literally all over the landscape and it is merely used in industrial policy. Okay, so let me show you one of the more amusing ones that I stumbled upon some years ago, and Lord knows it might still be around. It was a time when the Reserve Bank of India was doing capital controls about foreign borrowing. Okay, they've always had this idea that if you are Italian and I am Indian and I borrow from you, no. RBI will come interfere between us and put all kinds of restrictions that this is allowed, this is not allowed, you have to take this permission, and so on. I've never seen an economic reason for it. So one day there came up a restriction that external commercial borrowing shall be for nine industries",
-      "words": [
+        },
         {
           "word": "through",
           "startTime": 1020.67,
@@ -22906,8 +22666,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1279.84,
-      "endTime": 1295.92,
-      "text": "Uh for example, in the United States, the government released GPS for public use, meaning there was a coarse GPS that had always been available for public use. I think in 1993, Bill Clinton signed on delivering the high-resolution GPS data to the whole",
+      "endTime": 1500.02,
+      "text": "Uh for example, in the United States, the government released GPS for public use, meaning there was a coarse GPS that had always been available for public use. I think in 1993, Bill Clinton signed on delivering the high-resolution GPS data to the whole world. And people ran, not walked, and took to GPS. But there was no coercipown. The government didn't say that every phone shall have a GPS. Phone makers aspired for the day when GPS will be in every phone. Okay, so it is a very Indian malaise, the low trigger point for the use of coercive power, and we should watch out for it. Okay, so that is lever number two. That the government decides that certain technologies are good, and certain technologies are bad, certain industries are good, certain industries are bad, and you start rolling out a variety of uses of coercive power because you know. the government knows best and they're trying to channel the fate of the country. Pathway number three is uh around nationalism. Okay. So you will decide that we're going to pick winners and the winners are Indian firms. Okay, foreign or bad, Indian good. Okay? So this is a standard pathway which shows up many, many times. And of course in this you run into a problem of defining what is an Indian firm. Is an Indian firm a firm that is owned by Indians? Very well, ICICI Bank is 90% owned by foreigners. Is an Indian firm one which has an Indian CEO? Very well, Microsoft has an Indian CEO. Okay, and so on. So these things are slippery in the modern world of globalization. These things have very little meaning anymore. And it's just an archaic approach to look at this. It is important to underline the importance of foreign firms. I'm going to be explicitly favoring a role for foreign firms in India. Why? Because India is a poor country. The global state of the art high productivity resides inside foreign firms. And so it's actually important to have foreign firms operate here. If anything you want it upside down. You want more foreign firms here, because foreign firms command that highest knowledge. And it is good for India's journey if there are more foreign firms operating here. And it is to our benefit to grow the productivity in this country. Now in this you will get to the national security question. So we'll come to that separately and there will be concerns around Indian firms and national security and all that. But this is Pillar Three, which is sort of an ethno nationalism that something that we will favor Indian firms, foreigners are not welcome. Finally, lever number four, which is look, let's just give up on this entire pretense of having a market economy and we're just gonna build a public monopoly. Okay, so we'll have Air India as a monopoly, we'll have UPI as a monopoly, we'll have UID AI as a monopoly, we'll have some Bharat Belpei as a monopoly. We have a so various the government loves to create monopolies, and then the government is saying I am the entrepreneur. I am running the country. I am directly controlling resources. The technological choices are mine, and it's my national champion. It's my monopoly. And I will use state power to harm anybody else who tries to operate in this space, whether Indian or foreign. Okay, so that's the most extreme lever where you create a government monopoly. So these are the four tools of industrial policy: subsidies, uh coercive power, uh, ethnonationalism. and government",
       "words": [
         {
           "word": "Uh",
@@ -23172,15 +22932,7 @@
           "startTime": 1295.68,
           "endTime": 1295.92,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1295.92,
-      "endTime": 1303.28,
-      "text": "world. And people ran, not walked, and took to GPS. But there was no coercipown. The",
-      "words": [
+        },
         {
           "word": "world.",
           "startTime": 1295.92,
@@ -23276,15 +23028,7 @@
           "startTime": 1303.2,
           "endTime": 1303.28,
           "confidence": 0.9739
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1303.28,
-      "endTime": 1424.05,
-      "text": "government didn't say that every phone shall have a GPS. Phone makers aspired for the day when GPS will be in every phone. Okay, so it is a very Indian malaise, the low trigger point for the use of coercive power, and we should watch out for it. Okay, so that is lever number two. That the government decides that certain technologies are good, and certain technologies are bad, certain industries are good, certain industries are bad, and you start rolling out a variety of uses of coercive power because you know. the government knows best and they're trying to channel the fate of the country. Pathway number three is uh around nationalism. Okay. So you will decide that we're going to pick winners and the winners are Indian firms. Okay, foreign or bad, Indian good. Okay? So this is a standard pathway which shows up many, many times. And of course in this you run into a problem of defining what is an Indian firm. Is an Indian firm a firm that is owned by Indians? Very well, ICICI Bank is 90% owned by foreigners. Is an Indian firm one which has an Indian CEO? Very well, Microsoft has an Indian CEO. Okay, and so on. So these things are slippery in the modern world of globalization. These things have very little meaning anymore. And it's just an archaic approach to look at this. It is important to underline the importance of foreign firms. I'm going to be explicitly favoring a role for foreign firms in India. Why? Because India is a poor country. The global state of the art high productivity resides inside foreign firms. And so it's actually important to have foreign firms operate here. If anything you want it upside down. You want more foreign firms here, because foreign firms command that highest knowledge. And it is good for India's journey if there are more foreign firms operating here. And it is to our benefit to grow the productivity in",
-      "words": [
+        },
         {
           "word": "government",
           "startTime": 1303.28,
@@ -25288,15 +25032,7 @@
           "startTime": 1423.81,
           "endTime": 1424.05,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1424.05,
-      "endTime": 1426.37,
-      "text": "this country. Now",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 1424.05,
@@ -25314,15 +25050,7 @@
           "startTime": 1425.89,
           "endTime": 1426.37,
           "confidence": 0.996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1426.37,
-      "endTime": 1496.02,
-      "text": "in this you will get to the national security question. So we'll come to that separately and there will be concerns around Indian firms and national security and all that. But this is Pillar Three, which is sort of an ethno nationalism that something that we will favor Indian firms, foreigners are not welcome. Finally, lever number four, which is look, let's just give up on this entire pretense of having a market economy and we're just gonna build a public monopoly. Okay, so we'll have Air India as a monopoly, we'll have UPI as a monopoly, we'll have UID AI as a monopoly, we'll have some Bharat Belpei as a monopoly. We have a so various the government loves to create monopolies, and then the government is saying I am the entrepreneur. I am running the country. I am directly controlling resources. The technological choices are mine, and it's my national champion. It's my monopoly. And I will use state power to harm anybody else who tries to operate in this space, whether Indian or foreign. Okay, so that's the most extreme lever where you create a government monopoly. So these are the four tools of industrial policy: subsidies, uh coercive power,",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 1426.37,
@@ -26540,15 +26268,7 @@
           "startTime": 1495.06,
           "endTime": 1496.02,
           "confidence": 0.975
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1496.02,
-      "endTime": 1574.46,
-      "text": "uh, ethnonationalism. and government monopolies. And it strikes me that what's happening here is that the government is essentially trying to fulfill two roles at once in two of these different levers. In one, it is saying, I'm the venture capitalist, I'll decide Pesakardna. In the other, it is deciding I'm the entrepreneur. I'll build the business. Right? And the f fundamental mistake it makes is this, right? Yes, venture capital is great, yes, entrepreneurship is great, but they are great because you have many, many venture capitalists making many, many bets, and many of them will fail, and you can't possibly know in advance, and you need that ferment and that competition. for something to emerge. And similarly with entrepreneurship, you know, most entrepreneurs will fail. In fact all entrepreneurs will fail most of the time. And it it is because you have so many of them trying different things, thinking in different ways, responding to different kinds of local information, that you have a flourishing economy. That is a creative destruction of the marketplace. Right? That's where the animal spirits sort of really take shape. And the humris of the government to decide that, you know, we have the levers of power. Ham Dilly may bad decide that I will decide which are the which are the good places to put money. Poultry farming, yes, XYZ no, et cetera, et cetera.",
-      "words": [
+        },
         {
           "word": "uh,",
           "startTime": 1496.02,
@@ -26572,7 +26292,15 @@
           "startTime": 1499.46,
           "endTime": 1500.02,
           "confidence": 0.9752
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1500.02,
+      "endTime": 1574.46,
+      "text": "monopolies. And it strikes me that what's happening here is that the government is essentially trying to fulfill two roles at once in two of these different levers. In one, it is saying, I'm the venture capitalist, I'll decide Pesakardna. In the other, it is deciding I'm the entrepreneur. I'll build the business. Right? And the f fundamental mistake it makes is this, right? Yes, venture capital is great, yes, entrepreneurship is great, but they are great because you have many, many venture capitalists making many, many bets, and many of them will fail, and you can't possibly know in advance, and you need that ferment and that competition. for something to emerge. And similarly with entrepreneurship, you know, most entrepreneurs will fail. In fact all entrepreneurs will fail most of the time. And it it is because you have so many of them trying different things, thinking in different ways, responding to different kinds of local information, that you have a flourishing economy. That is a creative destruction of the marketplace. Right? That's where the animal spirits sort of really take shape. And the humris of the government to decide that, you know, we have the levers of power. Ham Dilly may bad decide that I will decide which are the which are the good places to put money. Poultry farming, yes, XYZ no, et cetera, et cetera.",
+      "words": [
         {
           "word": "monopolies.",
           "startTime": 1500.02,
@@ -32460,8 +32188,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1850.3,
-      "endTime": 1931.22,
-      "text": "When there is a private financial transaction that you will loan me one rupee or you will give me one rupee of equity capital, we're discussing one rupee. But when you discuss public money, it's an entirely different matter. Public money is coerced out of the people. Okay? Taxation has blood on it. Public money is coerced out of the people. You have to be far more respectful. Around the use of public money. And in fact, the people don't take kindly to being taxed. The people do everything they can to avoid being taxed. And their behaviors of distorting their life, of distorting the ways in which they organize firms, come at a cost to productivity. So when the government says, I will tax you in this fashion, the people reorganize their lives in ways that avoid that taxation. And that's a distortion. because you are less productive in the tax saving way of operating as compared to an unrestricted way of operating. And this comes at a cost to the country. And then there are the overheads of the record keeping of the income tax rates, of putting people in jail, of their lawyers, and the whole mess of companies running vast accounting and legal departments to deal with the taxmen. All this makes public money very, very expensive. So I want to introduce a technical here. It's called the marginal cost",
+      "endTime": 2035.29,
+      "text": "When there is a private financial transaction that you will loan me one rupee or you will give me one rupee of equity capital, we're discussing one rupee. But when you discuss public money, it's an entirely different matter. Public money is coerced out of the people. Okay? Taxation has blood on it. Public money is coerced out of the people. You have to be far more respectful. Around the use of public money. And in fact, the people don't take kindly to being taxed. The people do everything they can to avoid being taxed. And their behaviors of distorting their life, of distorting the ways in which they organize firms, come at a cost to productivity. So when the government says, I will tax you in this fashion, the people reorganize their lives in ways that avoid that taxation. And that's a distortion. because you are less productive in the tax saving way of operating as compared to an unrestricted way of operating. And this comes at a cost to the country. And then there are the overheads of the record keeping of the income tax rates, of putting people in jail, of their lawyers, and the whole mess of companies running vast accounting and legal departments to deal with the taxmen. All this makes public money very, very expensive. So I want to introduce a technical here. It's called the marginal cost of public funds. N CPF. It's one of the most important things to think about in economics. That when a government spends one rupee, what's the cost it's imposing upon the economy in terms of its impact on GDP? It's not like a government took one from the economy and gave one to somebody else, which kinda sounds neutral. It turns out that the marginal cost of public funds is three. That for each one the government takes from the economy, it has an adverse impact on GDP of about three. So public money is very expensive. And you have to use it for a few super high priority things, which basically is like public goods addressing market failure, you know, buy some F thirty-five planes. Public goods that is non-life non-rival, it's non-excl-excludable, everybody benefits, you do A small poximanization campaign, you know, those are public goods. Everybody benefits. That's the place where by spending one rupee you get ten. The gains to society from having defense, from having foreign policy are ten. And that justifies that one. Whereas when you're sending money to poultry farms or to textile companies, you know, really. it's very hard to justify that one is to three problem. So this is the second problem with subsidies that you're using government money and government money is sacred. Government money is precious. It should be used in the rarest of circumstances for all practical purposes. Address market failure, do public goods beyond that, it is seldom that you will see a bank for the buck of greater than three. Otherwise you should not be using public money. And that's a severe problem in the field of industrial policy because you just don't have the level of certainty that we will use public money here and the gains to society will be so high that it's going to be worth it, we will get this three is to one impact.",
       "words": [
         {
           "word": "When",
@@ -33866,15 +33594,7 @@
           "startTime": 1930.82,
           "endTime": 1931.22,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1931.22,
-      "endTime": 1933.3,
-      "text": "of public funds. N CPF.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1931.22,
@@ -33904,15 +33624,7 @@
           "startTime": 1932.58,
           "endTime": 1933.3,
           "confidence": 0.7356
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1933.3,
-      "endTime": 2005.7,
-      "text": "It's one of the most important things to think about in economics. That when a government spends one rupee, what's the cost it's imposing upon the economy in terms of its impact on GDP? It's not like a government took one from the economy and gave one to somebody else, which kinda sounds neutral. It turns out that the marginal cost of public funds is three. That for each one the government takes from the economy, it has an adverse impact on GDP of about three. So public money is very expensive. And you have to use it for a few super high priority things, which basically is like public goods addressing market failure, you know, buy some F thirty-five planes. Public goods that is non-life non-rival, it's non-excl-excludable, everybody benefits, you do A small poximanization campaign, you know, those are public goods. Everybody benefits. That's the place where by spending one rupee you get ten. The gains to society from having defense, from having foreign policy are ten. And that justifies that one. Whereas when you're sending money to poultry farms or to textile companies, you know, really. it's very hard to justify that one is to three problem. So this is the second problem with subsidies that you're using government money and government money is",
-      "words": [
+        },
         {
           "word": "It's",
           "startTime": 1933.3,
@@ -35214,15 +34926,7 @@
           "startTime": 2005.54,
           "endTime": 2005.7,
           "confidence": 0.9976
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2005.7,
-      "endTime": 2008.02,
-      "text": "sacred. Government money is precious. It should",
-      "words": [
+        },
         {
           "word": "sacred.",
           "startTime": 2005.7,
@@ -35264,15 +34968,7 @@
           "startTime": 2007.78,
           "endTime": 2008.02,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2008.02,
-      "endTime": 2035.29,
-      "text": "be used in the rarest of circumstances for all practical purposes. Address market failure, do public goods beyond that, it is seldom that you will see a bank for the buck of greater than three. Otherwise you should not be using public money. And that's a severe problem in the field of industrial policy because you just don't have the level of certainty that we will use public money here and the gains to society will be so high that it's going to be worth it, we will get this three is to one impact.",
-      "words": [
+        },
         {
           "word": "be",
           "startTime": 2008.02,
@@ -41364,8 +41060,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2351.17,
-      "endTime": 2451.38,
-      "text": "and uh people are very quick to jump to industrial policy because you think that I am here, I am operating in the private sector, I am so convinced about the future of lithium ion batteries that surely that guy in the Ministry of Industry should use state power to grow the Indian lithium ion battery industry. Okay and this is just wrong, and I would love to plead to everybody that Country is not a company. Don't bring your intuition or what you see in the private sector into public policy roles and the world of public policy. It's a completely different game. It has its own knowledge, its political economy, it's philosophy, it is public administration, it is checks and balances, it is rule of law, government is an entirely different theater, it's an entirely different arena. And one important thing I'd always say to any such enthusiast is don't assume that you are the guy who will be that joint secretary. Make the mistake that I am so smart, I'm so good, I know what's right for the world, bracket, you don't. Okay. And second, I'm the guy that will be the joint secretary. Bracket, you won't. Okay. Both stages of this reasoning are wrong. You may be a very smart private investor, a private decision maker committing to lithium ion batteries, but that doesn't mean that state power should be used in favor of lithium ion batteries. And second, you may be a very smart person, you know a lot about lithium batteries, but that doesn't mean that the guys in government who make those decisions are you. So both elements of that proposition are wrong. And in India, all too often we have these, you know, engineering and business types who jump to industrial policy that, you know, the government should do this, the government should",
+      "endTime": 2453.81,
+      "text": "and uh people are very quick to jump to industrial policy because you think that I am here, I am operating in the private sector, I am so convinced about the future of lithium ion batteries that surely that guy in the Ministry of Industry should use state power to grow the Indian lithium ion battery industry. Okay and this is just wrong, and I would love to plead to everybody that Country is not a company. Don't bring your intuition or what you see in the private sector into public policy roles and the world of public policy. It's a completely different game. It has its own knowledge, its political economy, it's philosophy, it is public administration, it is checks and balances, it is rule of law, government is an entirely different theater, it's an entirely different arena. And one important thing I'd always say to any such enthusiast is don't assume that you are the guy who will be that joint secretary. Make the mistake that I am so smart, I'm so good, I know what's right for the world, bracket, you don't. Okay. And second, I'm the guy that will be the joint secretary. Bracket, you won't. Okay. Both stages of this reasoning are wrong. You may be a very smart private investor, a private decision maker committing to lithium ion batteries, but that doesn't mean that state power should be used in favor of lithium ion batteries. And second, you may be a very smart person, you know a lot about lithium batteries, but that doesn't mean that the guys in government who make those decisions are you. So both elements of that proposition are wrong. And in India, all too often we have these, you know, engineering and business types who jump to industrial policy that, you know, the government should do this, the government should do that. And This is wrong and it should not be",
       "words": [
         {
           "word": "and",
@@ -43232,15 +42928,7 @@
           "startTime": 2451.22,
           "endTime": 2451.38,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2451.38,
-      "endTime": 2574.72,
-      "text": "do that. And This is wrong and it should not be done. Gentle readers, Ajay Shah is an engineer. No IT type, so let me kind of tell you. I also think and I'm thinking aloud here that there's a mentality problem, right? The mentality problem is that in India, because of the economy that we've had, like if you compare us to the rest of the world, in any good advanced economy, what you have is firms competing to serve customers the best, and all their talent and all their ingenuity goes into that. In India, because it's a protect protected economy where you're not competing with the world, but you're somehow competing to win your domestic marketplace. And for most of the decades of our independence, we've had uh a state that wields tremendous power and controls the economy effectively. The way to therefore get ahead in India has always been that you suck up to the state, you use the levers of the state, and either you become a crony directly or you try to influence it in all of these ways and say, sir, lithium future, lithium subsidy, China's problem, eh, etc., etc. And the mentality has become this kind of rent seeking mentality. Uh, you know, whereas most free markets in the rest of the world, uh y you don't do this. I mean you do do this. America has a huge problem with special interest. Jonathan Rouch has a great book called Government Send on this. uh h of how special interests have kind of taken over the American system. The book was written in the nineteen nineties and uh still true today. But In general and entrepreneur in the US begins by thinking of how do I provide enough value to the people so I make a ton of money and become a millionaire and that's a good way to think. Whereas in India it's like how can I, you know, influence a joint secretary or so and so to give me some special advantage so I can beat my local competitors and uh global market who wants to compete, what difference does it make? And we have an episode on firms where you talk about the importance of internationalization and, you know, uh the importance of exports. So gentle readers do check that out. But this also strikes me that there's also a mentality problem here that we have to somehow break through",
-      "words": [
+        },
         {
           "word": "do",
           "startTime": 2451.38,
@@ -43306,7 +42994,15 @@
           "startTime": 2453.65,
           "endTime": 2453.81,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2453.81,
+      "endTime": 2574.72,
+      "text": "done. Gentle readers, Ajay Shah is an engineer. No IT type, so let me kind of tell you. I also think and I'm thinking aloud here that there's a mentality problem, right? The mentality problem is that in India, because of the economy that we've had, like if you compare us to the rest of the world, in any good advanced economy, what you have is firms competing to serve customers the best, and all their talent and all their ingenuity goes into that. In India, because it's a protect protected economy where you're not competing with the world, but you're somehow competing to win your domestic marketplace. And for most of the decades of our independence, we've had uh a state that wields tremendous power and controls the economy effectively. The way to therefore get ahead in India has always been that you suck up to the state, you use the levers of the state, and either you become a crony directly or you try to influence it in all of these ways and say, sir, lithium future, lithium subsidy, China's problem, eh, etc., etc. And the mentality has become this kind of rent seeking mentality. Uh, you know, whereas most free markets in the rest of the world, uh y you don't do this. I mean you do do this. America has a huge problem with special interest. Jonathan Rouch has a great book called Government Send on this. uh h of how special interests have kind of taken over the American system. The book was written in the nineteen nineties and uh still true today. But In general and entrepreneur in the US begins by thinking of how do I provide enough value to the people so I make a ton of money and become a millionaire and that's a good way to think. Whereas in India it's like how can I, you know, influence a joint secretary or so and so to give me some special advantage so I can beat my local competitors and uh global market who wants to compete, what difference does it make? And we have an episode on firms where you talk about the importance of internationalization and, you know, uh the importance of exports. So gentle readers do check that out. But this also strikes me that there's also a mentality problem here that we have to somehow break through",
+      "words": [
         {
           "word": "done.",
           "startTime": 2453.81,
@@ -45712,8 +45408,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2582.02,
-      "endTime": 2585.46,
-      "text": "the discussion about subsidies in India takes",
+      "endTime": 2645.12,
+      "text": "the discussion about subsidies in India takes you to PLI, production linked incentives. Okay, so this is the new government effort. At uh paying out subsidies explicitly to some industries. Little bit of backstory. Subsidies to exports is not consistent with the WTO. So you can't have export-linked incentives. So it's got to be production linked incentives. That's where we are. And there are many important firms that are operating in India, most notably Apple. So first just let me put a bunch of biases on the table. It is a great achievement that Apple is here in India and producing on a meaningful scale. I believe the theory that in time this will make a difference to the vendor ecosystem in India. That Apple will bring the vendors that serve Apple, and then those vendors will work to higher tolerances if they used to traditionally be at hundred micron errors, now they will be at one micron errors and so on. So I get That entire argument, and I respect that",
       "words": [
         {
           "word": "the",
@@ -45756,15 +45452,7 @@
           "startTime": 2585.22,
           "endTime": 2585.46,
           "confidence": 0.9947
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2585.46,
-      "endTime": 2591.0,
-      "text": "you to PLI, production linked incentives. Okay, so this is the new government effort.",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 2585.46,
@@ -45848,15 +45536,7 @@
           "startTime": 2590.5,
           "endTime": 2591.0,
           "confidence": 0.9037
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2591.84,
-      "endTime": 2598.4,
-      "text": "At uh paying out subsidies explicitly to some industries. Little bit of backstory. Subsidies to",
-      "words": [
+        },
         {
           "word": "At",
           "startTime": 2591.84,
@@ -45946,15 +45626,7 @@
           "startTime": 2598.08,
           "endTime": 2598.4,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2598.4,
-      "endTime": 2610.48,
-      "text": "exports is not consistent with the WTO. So you can't have export-linked incentives. So it's got to be production linked incentives. That's where we are. And there",
-      "words": [
+        },
         {
           "word": "exports",
           "startTime": 2598.4,
@@ -46116,15 +45788,7 @@
           "startTime": 2610.16,
           "endTime": 2610.48,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2610.48,
-      "endTime": 2645.12,
-      "text": "are many important firms that are operating in India, most notably Apple. So first just let me put a bunch of biases on the table. It is a great achievement that Apple is here in India and producing on a meaningful scale. I believe the theory that in time this will make a difference to the vendor ecosystem in India. That Apple will bring the vendors that serve Apple, and then those vendors will work to higher tolerances if they used to traditionally be at hundred micron errors, now they will be at one micron errors and so on. So I get That entire argument, and I respect that",
-      "words": [
+        },
         {
           "word": "are",
           "startTime": 2610.48,
@@ -47032,8 +46696,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2660.0,
-      "endTime": 2669.36,
-      "text": "So now let's debate those subsidies. Here is an optimistic view of the subsidies, and then here is a list of concerns. Uh the optimistic view of the",
+      "endTime": 2828.24,
+      "text": "So now let's debate those subsidies. Here is an optimistic view of the subsidies, and then here is a list of concerns. Uh the optimistic view of the subsidies is that there are basic mistakes in indirect taxation in India. Okay. The return on equity to many kinds of economic activity gets whipped around by 50% and 100%, depending on small mistakes in indirect tax. This is something that I only started understanding in recent years. Ila Patnaik has been key to improving my knowledge of deeply understanding the investment decision and how sensitive it is to small mistakes. So you may think it's a 50 basis point tax, it's a 1% tax. The conceptual juxtaposition you should have on your mind is that the PAT margin for the average non-financial firm in India, the profit after tax divided by sales, is 6%. So you do all that huffing and puffing to make hundred, and out of that. PAT, the profit after tax is six. And then a small half one to three percent of taxation makes a vast difference to the profit after tax, and you divide by equity, and you get the return on equity. So from an investment point of view, apparently small or almost negligible errors in indirect taxation loom large and they make a big difference to the investment decision. Okay, so this is something that. really needs much more attention and Ila and I are working in this field and we'll have some products out. So I get that there are mistakes in Indian indirect taxation. And it is entirely fair for a firm like Apple to say to the Indian state, look, you guys are out of line that in any reasonable world I should be able to bring raw materials from all around the world into India. Produce in India, re-export outside with zero indirect taxation from the Indian state. If there is any indirect taxation by the Indian state, then that is not on. And in every good country in the world, the concept, the principle is you do not tax foreigners. So goods come into the country, they may suffer some indirect taxes, but when exports take place, all the burden of indirect tax is refunded to the exporter. That's how all the countries of the world work except India. And so there is a bunch of mistakes in indirect tax. And it is entirely wise and appropriate for Apple to say, sorry, why will I ever produce in India? You need to identify these disabilities and refund them to me. And I agree. However, there are a bunch of difficulties and a bunch",
       "words": [
         {
           "word": "So",
@@ -47202,15 +46866,7 @@
           "startTime": 2669.2,
           "endTime": 2669.36,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2669.36,
-      "endTime": 2679.28,
-      "text": "subsidies is that there are basic mistakes in indirect taxation in India. Okay. The return",
-      "words": [
+        },
         {
           "word": "subsidies",
           "startTime": 2669.36,
@@ -47300,15 +46956,7 @@
           "startTime": 2678.64,
           "endTime": 2679.28,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2679.28,
-      "endTime": 2828.24,
-      "text": "on equity to many kinds of economic activity gets whipped around by 50% and 100%, depending on small mistakes in indirect tax. This is something that I only started understanding in recent years. Ila Patnaik has been key to improving my knowledge of deeply understanding the investment decision and how sensitive it is to small mistakes. So you may think it's a 50 basis point tax, it's a 1% tax. The conceptual juxtaposition you should have on your mind is that the PAT margin for the average non-financial firm in India, the profit after tax divided by sales, is 6%. So you do all that huffing and puffing to make hundred, and out of that. PAT, the profit after tax is six. And then a small half one to three percent of taxation makes a vast difference to the profit after tax, and you divide by equity, and you get the return on equity. So from an investment point of view, apparently small or almost negligible errors in indirect taxation loom large and they make a big difference to the investment decision. Okay, so this is something that. really needs much more attention and Ila and I are working in this field and we'll have some products out. So I get that there are mistakes in Indian indirect taxation. And it is entirely fair for a firm like Apple to say to the Indian state, look, you guys are out of line that in any reasonable world I should be able to bring raw materials from all around the world into India. Produce in India, re-export outside with zero indirect taxation from the Indian state. If there is any indirect taxation by the Indian state, then that is not on. And in every good country in the world, the concept, the principle is you do not tax foreigners. So goods come into the country, they may suffer some indirect taxes, but when exports take place, all the burden of indirect tax is refunded to the exporter. That's how all the countries of the world work except India. And so there is a bunch of mistakes in indirect tax. And it is entirely wise and appropriate for Apple to say, sorry, why will I ever produce in India? You need to identify these disabilities and refund them to me. And I agree. However, there are a bunch of difficulties and a bunch",
-      "words": [
+        },
         {
           "word": "on",
           "startTime": 2679.28,
@@ -49746,8 +49394,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2830.48,
-      "endTime": 2891.09,
-      "text": "How difficult is it to fix these things at the root cause? Okay, I mean, this is tax policy. It emanates out of the government. Why should we be in this level of dysfunctionality where the government is making mistakes on indirect tax and then refunding Apple for the in indirect taxes that Apple has suffered? Why should we be there in steady state? Instead we should fix the indirect tax system. How hard is it? Okay? It's a matter of the usual public policy process. We have an EIE episode on the long road to change that you need to amass the data, do the research, run a public debate, get some two three government committee reports, get draft laws, debate them in public, get them done. Yeah, I recognize it can't be done in six weeks. Can it be done in six months, and surely it can be done in six years. So I want to disagree with the present Indian approach that we are merely doing PLI, but we are not solving those",
+      "endTime": 2982.51,
+      "text": "How difficult is it to fix these things at the root cause? Okay, I mean, this is tax policy. It emanates out of the government. Why should we be in this level of dysfunctionality where the government is making mistakes on indirect tax and then refunding Apple for the in indirect taxes that Apple has suffered? Why should we be there in steady state? Instead we should fix the indirect tax system. How hard is it? Okay? It's a matter of the usual public policy process. We have an EIE episode on the long road to change that you need to amass the data, do the research, run a public debate, get some two three government committee reports, get draft laws, debate them in public, get them done. Yeah, I recognize it can't be done in six weeks. Can it be done in six months, and surely it can be done in six years. So I want to disagree with the present Indian approach that we are merely doing PLI, but we are not solving those deeper problems. Second, if we engage with a firm like Apple and we claim saying that Apple is operating in India, I think we're setting our sights too low. Apple is an enormously powerful firm. they have the resources to hire a high quality policy team in Del, which is able to pound the corridors of power and be able to negotiate and present their bills and get paid. Okay, getting money out of government is non-trivial. Apple has the ability to do that. Most global firms are either small or are not sufficiently committed to India to bother. So if you put up this fixed cost that you need to put up a $10 million operation in Delhi, To do the government engagement. Okay, there are many, many firms in the world who will say, No, my activities in India are not big enough to justify putting down 10 million dollars a year to run a policy team in Delhi that will do that government engagement. So for this reason, when we take this uh deals based approach where there is a firm like Apple and the PLI comes about and Apple is able to negotiate with the government and actually get paid on time. That is indeed a win because we get Apple here. It would be even better to fix the underlying frameworks because there are thousands of global firms who would do more with India, who would choose to locate activity in India if those underlying foundational mistakes",
       "words": [
         {
           "word": "How",
@@ -50804,15 +50452,7 @@
           "startTime": 2890.85,
           "endTime": 2891.09,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2891.09,
-      "endTime": 2895.17,
-      "text": "deeper problems. Second, if we",
-      "words": [
+        },
         {
           "word": "deeper",
           "startTime": 2891.09,
@@ -50842,15 +50482,7 @@
           "startTime": 2894.61,
           "endTime": 2895.17,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2895.17,
-      "endTime": 2982.51,
-      "text": "engage with a firm like Apple and we claim saying that Apple is operating in India, I think we're setting our sights too low. Apple is an enormously powerful firm. they have the resources to hire a high quality policy team in Del, which is able to pound the corridors of power and be able to negotiate and present their bills and get paid. Okay, getting money out of government is non-trivial. Apple has the ability to do that. Most global firms are either small or are not sufficiently committed to India to bother. So if you put up this fixed cost that you need to put up a $10 million operation in Delhi, To do the government engagement. Okay, there are many, many firms in the world who will say, No, my activities in India are not big enough to justify putting down 10 million dollars a year to run a policy team in Delhi that will do that government engagement. So for this reason, when we take this uh deals based approach where there is a firm like Apple and the PLI comes about and Apple is able to negotiate with the government and actually get paid on time. That is indeed a win because we get Apple here. It would be even better to fix the underlying frameworks because there are thousands of global firms who would do more with India, who would choose to locate activity in India if those underlying foundational mistakes",
-      "words": [
+        },
         {
           "word": "engage",
           "startTime": 2895.17,
@@ -59648,8 +59280,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3425.95,
-      "endTime": 3470.36,
-      "text": "And I want to add that technology is actually evolving all the time. Right? Today's cutting edge is passe by midnight and obsolete by noon tomorrow, right? And you have to be at the cutting edge of the ecosystem to really understand this. There has to be that firmment where you're improvising, you're doing new things, you're figuring stuff out. And often like you pointed out, just cutting edge technology doesn't mean nothing. Great creativity even comes out of constraints, as our next episode will really be about. So on that note, we've plug the next episode. Let's go on to the next chapter. So, Ajib, let's move on to the third lever of industrial policy. Which is ethnonationalism,",
+      "endTime": 3468.3,
+      "text": "And I want to add that technology is actually evolving all the time. Right? Today's cutting edge is passe by midnight and obsolete by noon tomorrow, right? And you have to be at the cutting edge of the ecosystem to really understand this. There has to be that firmment where you're improvising, you're doing new things, you're figuring stuff out. And often like you pointed out, just cutting edge technology doesn't mean nothing. Great creativity even comes out of constraints, as our next episode will really be about. So on that note, we've plug the next episode. Let's go on to the next chapter. So, Ajib, let's move on to the third lever of industrial policy.",
       "words": [
         {
           "word": "And",
@@ -60346,7 +59978,15 @@
           "startTime": 3467.34,
           "endTime": 3468.3,
           "confidence": 0.944
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3468.3,
+      "endTime": 3492.46,
+      "text": "Which is ethnonationalism, a subset of which is protectionism. Where somehow your idea is that we will use the coercive power of the state against the activities of foreign firms, and that way somehow something good is going to happen for this country. And it's just all very strange to me. And I'm not even able to imagine the universe in which that could",
+      "words": [
         {
           "word": "Which",
           "startTime": 3468.3,
@@ -60364,15 +60004,7 @@
           "startTime": 3468.86,
           "endTime": 3470.36,
           "confidence": 0.9071
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3470.94,
-      "endTime": 3484.78,
-      "text": "a subset of which is protectionism. Where somehow your idea is that we will use the coercive power of the state against the activities of foreign firms, and that way somehow something good is going to happen for this country.",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 3470.94,
@@ -60612,15 +60244,7 @@
           "startTime": 3484.22,
           "endTime": 3484.78,
           "confidence": 0.9272
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3484.78,
-      "endTime": 3489.66,
-      "text": "And it's just all very strange to me. And",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 3484.78,
@@ -60674,15 +60298,7 @@
           "startTime": 3489.26,
           "endTime": 3489.66,
           "confidence": 0.8973
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3489.66,
-      "endTime": 3492.46,
-      "text": "I'm not even able to imagine the universe in which that could",
-      "words": [
+        },
         {
           "word": "I'm",
           "startTime": 3489.66,
@@ -60792,8 +60408,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3495.12,
-      "endTime": 3766.13,
-      "text": "How will you ever make Indian firms better by reducing the competitive pressure upon them from global firms? Okay? And it's kinda obvious that India is a poor country. A poor country is one with low productivity firms. The advanced economies of the world have high productivity firms. The tacit knowledge, the explicit engineering knowledge is all in those firms. When those firms operate more in India, operate more freely in India. Then that kind of knowledge will diffuse all over the Indian landscape. So it's just an incredible mistake to do protectionism or to disfavor foreign firms to have a non-level playing field. And many, many foreign firms feel that India is not a good place to operate because they will not be given a level playing field, because the Indian state will use its power. To favor local actors at the expense of foreign actors. And I just want to say that is not in the interests of the people of India. It may be in the interests of the owners and the leaders of those Indian firms. But that's not the same as maximizing the interests of the people of India. And the people of India are left in prolonging decades of poverty and misery because we are slowing down the process through which better productivity came into India. Now in this, there's one special case, which is around national security. Okay? So yeah, if you are the Indian army, you want to think very carefully. So you and I are cavalier in having a variety of Chinese equipment in this. For all you know, they may have backdoors in it and they're leaking information, which would not do for an Indian military with a fundamental uh crisis of dealing with war on the Himalayan border, uh at Doklam in Bhutan, at Galvan in Ladakh. Who knows what comes next. So for the Indian Army, it is a very different problem. And so they should solve it. And they should solve it for themselves. But that doesn't mean that you have to distort the entire Indian economy. You don't have to be anti-foreigner or anti-Chinese technology all over the Indian economy. You can be cautious about your technology sourcing and have military gear where you have a trusted components, uh supply chain running through and through. Then again, uh self-reliance may well not be optimal. Like really, are you going to build an entire fighter plane with all Indian components? It's not gonna happen. So we're going to need the relationships, we're going to need the partnerships whereby these kinds of things can be done. Okay? The Europeans are working on how to build millions of drones without Chinese backdoors. Okay, the Ukrainians are today one of the world's largest producers of drones and they can't use many Chinese components because China is partnering with Putin. So they are solving these problems. And what would be wise is for the Indian state to find these collaborations between like minded actors who are very focused on our conflict with China and they are also trying to avoid Chinese parts and do these deals. So again self-reliance may not be the most wise policy you may need to do partnerships. But I just want to say that you have to wall off the military problem from the economy problem. And in fact, the greatest path to military strength and successful foreign policy lies in eight percent GDP growth. Okay? Get a country with high GDP and everything becomes easier. So you know, in the immediate context, think of the entire mess around Vladimir Putin, etc. Just think how comforting it is that Russia is an Italy-sized GDP. Okay, so all in all, it is small change compared with the economic might of Europe. Meaning there are transition problems, there are critical components controlled by the United States, Europe will have to rebuild them themselves. But fundamentally, it's not a threat. Why? Because Europe is unimaginably richer than Russia. Whereas if that was not the case, it would be an entirely different situation, as is, for example, with the problem between India and China. So GDP growth is the key, and we will obtain GDP growth by having deep internationalization of the economy. So any industrial policy that hinders the internationalization of the economic activity in India and the presence and competition and activities of foreign firms operating",
+      "endTime": 3768.31,
+      "text": "How will you ever make Indian firms better by reducing the competitive pressure upon them from global firms? Okay? And it's kinda obvious that India is a poor country. A poor country is one with low productivity firms. The advanced economies of the world have high productivity firms. The tacit knowledge, the explicit engineering knowledge is all in those firms. When those firms operate more in India, operate more freely in India. Then that kind of knowledge will diffuse all over the Indian landscape. So it's just an incredible mistake to do protectionism or to disfavor foreign firms to have a non-level playing field. And many, many foreign firms feel that India is not a good place to operate because they will not be given a level playing field, because the Indian state will use its power. To favor local actors at the expense of foreign actors. And I just want to say that is not in the interests of the people of India. It may be in the interests of the owners and the leaders of those Indian firms. But that's not the same as maximizing the interests of the people of India. And the people of India are left in prolonging decades of poverty and misery because we are slowing down the process through which better productivity came into India. Now in this, there's one special case, which is around national security. Okay? So yeah, if you are the Indian army, you want to think very carefully. So you and I are cavalier in having a variety of Chinese equipment in this. For all you know, they may have backdoors in it and they're leaking information, which would not do for an Indian military with a fundamental uh crisis of dealing with war on the Himalayan border, uh at Doklam in Bhutan, at Galvan in Ladakh. Who knows what comes next. So for the Indian Army, it is a very different problem. And so they should solve it. And they should solve it for themselves. But that doesn't mean that you have to distort the entire Indian economy. You don't have to be anti-foreigner or anti-Chinese technology all over the Indian economy. You can be cautious about your technology sourcing and have military gear where you have a trusted components, uh supply chain running through and through. Then again, uh self-reliance may well not be optimal. Like really, are you going to build an entire fighter plane with all Indian components? It's not gonna happen. So we're going to need the relationships, we're going to need the partnerships whereby these kinds of things can be done. Okay? The Europeans are working on how to build millions of drones without Chinese backdoors. Okay, the Ukrainians are today one of the world's largest producers of drones and they can't use many Chinese components because China is partnering with Putin. So they are solving these problems. And what would be wise is for the Indian state to find these collaborations between like minded actors who are very focused on our conflict with China and they are also trying to avoid Chinese parts and do these deals. So again self-reliance may not be the most wise policy you may need to do partnerships. But I just want to say that you have to wall off the military problem from the economy problem. And in fact, the greatest path to military strength and successful foreign policy lies in eight percent GDP growth. Okay? Get a country with high GDP and everything becomes easier. So you know, in the immediate context, think of the entire mess around Vladimir Putin, etc. Just think how comforting it is that Russia is an Italy-sized GDP. Okay, so all in all, it is small change compared with the economic might of Europe. Meaning there are transition problems, there are critical components controlled by the United States, Europe will have to rebuild them themselves. But fundamentally, it's not a threat. Why? Because Europe is unimaginably richer than Russia. Whereas if that was not the case, it would be an entirely different situation, as is, for example, with the problem between India and China. So GDP growth is the key, and we will obtain GDP growth by having deep internationalization of the economy. So any industrial policy that hinders the internationalization of the economic activity in India and the presence and competition and activities of foreign firms operating in India is self destructive.",
       "words": [
         {
           "word": "How",
@@ -65222,15 +64838,7 @@
           "startTime": 3765.65,
           "endTime": 3766.13,
           "confidence": 0.9863
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3766.13,
-      "endTime": 3963.62,
-      "text": "in India is self destructive. Many, many, many, many, many, many, many Italian viewers are at this point deeply disappointed by you saying that Russia is an Italy sized GDP. And you know, our good friend Pai of the Takshishilo institution often says that the best foreign policy is a rising rising GDP. You have much more leverage, you have much more power, you have much more sec uh internal security. So completely agree with that. And I want to avoid committing the curse of knowledge. By once again repeating Uh my funders on something that you and I take for granted, take almost as axiomatic, which is why protectionism is a problem. And for me there are two reasons which uh, you know, absolutely stand out. We've spoken about both of them before in past episodes, but I'm going to quickly do that again. One is what happens when, say, there is an Indian company A and there is um an Italian company X. Let's give them some is that now. Italian company X, Italian company X is uh delivering better products either in terms of price or in terms of value. And uh uh Indian company A goes to the government and says, Protect us, national champions, you know, local industry, local entrepreneurs. So the Indian government puts a tariff on Italian company, so right their product becomes too expensive for us, and then we have no option but to buy product A. Now on the surface, the scene effect of this, if one may invoke the scene in the unseen, the scene effect of this is that you uh y you know, this led to something good happening to the Indian company A. But there are two unseen effects which are deep and very different from each other. One unseen effect is that it is a redistribution of wealth from the poor to the rich. The consumer consumers at large would either have got lower price or a higher value. but they have lost that. And that has effectively been redistributed to Indian firm A and no one sees this because, you know, the costs are dispersed and the benefits are concentrated, and then that uh, you know, all the Indian uh firms A can d then lobby the government and have more tariffs put on all the Italian firms out there, which is terrible. But the second effect which is what you're pointing to, is a deeper effect that even hurts Indian firm A. Indian firm A is no longer competing with the the best firms in the uh globe and therefore they don't have to lift their standards, they don't have to get best practices from outside, they don't have to, you know, give more value at lower prices. They play the same low equilibrium game as it were, and it becomes a vicious cycle, which is terrible. So you're not even helping the Indian company. You're hurting the consumer and you're hurting the Indian company. And protectionism is just so bizarre and stupid. So all of us need to see past the rhetoric And I know that, you know, protectionism is just one part of the problem of ethnonationalism, as you're pointing out. And we take it for granted that hey everyone knows is bad, but I thought that I should kind of, you know, point out why. The last of the four levers, as it were, government monopolies tell. So",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 3766.13,
@@ -65260,7 +64868,15 @@
           "startTime": 3767.81,
           "endTime": 3768.31,
           "confidence": 0.9509
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3776.02,
+      "endTime": 3963.62,
+      "text": "Many, many, many, many, many, many, many Italian viewers are at this point deeply disappointed by you saying that Russia is an Italy sized GDP. And you know, our good friend Pai of the Takshishilo institution often says that the best foreign policy is a rising rising GDP. You have much more leverage, you have much more power, you have much more sec uh internal security. So completely agree with that. And I want to avoid committing the curse of knowledge. By once again repeating Uh my funders on something that you and I take for granted, take almost as axiomatic, which is why protectionism is a problem. And for me there are two reasons which uh, you know, absolutely stand out. We've spoken about both of them before in past episodes, but I'm going to quickly do that again. One is what happens when, say, there is an Indian company A and there is um an Italian company X. Let's give them some is that now. Italian company X, Italian company X is uh delivering better products either in terms of price or in terms of value. And uh uh Indian company A goes to the government and says, Protect us, national champions, you know, local industry, local entrepreneurs. So the Indian government puts a tariff on Italian company, so right their product becomes too expensive for us, and then we have no option but to buy product A. Now on the surface, the scene effect of this, if one may invoke the scene in the unseen, the scene effect of this is that you uh y you know, this led to something good happening to the Indian company A. But there are two unseen effects which are deep and very different from each other. One unseen effect is that it is a redistribution of wealth from the poor to the rich. The consumer consumers at large would either have got lower price or a higher value. but they have lost that. And that has effectively been redistributed to Indian firm A and no one sees this because, you know, the costs are dispersed and the benefits are concentrated, and then that uh, you know, all the Indian uh firms A can d then lobby the government and have more tariffs put on all the Italian firms out there, which is terrible. But the second effect which is what you're pointing to, is a deeper effect that even hurts Indian firm A. Indian firm A is no longer competing with the the best firms in the uh globe and therefore they don't have to lift their standards, they don't have to get best practices from outside, they don't have to, you know, give more value at lower prices. They play the same low equilibrium game as it were, and it becomes a vicious cycle, which is terrible. So you're not even helping the Indian company. You're hurting the consumer and you're hurting the Indian company. And protectionism is just so bizarre and stupid. So all of us need to see past the rhetoric And I know that, you know, protectionism is just one part of the problem of ethnonationalism, as you're pointing out. And we take it for granted that hey everyone knows is bad, but I thought that I should kind of, you know, point out why. The last of the four levers, as it were, government monopolies tell. So",
+      "words": [
         {
           "word": "Many,",
           "startTime": 3776.02,
@@ -68698,8 +68314,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3963.62,
-      "endTime": 4069.39,
-      "text": "at at this point the bureaucrat is exasperated. These people are not worthy of us. Okay, and we tried and we tried. We tried to foster a good industry, but it just never happened. So let's just give up on this entire pretense and I'm gonna do it myself. It's like you know, I'm a joint secretary. I know this game better than any of the firms. So the government just creates a PSU. The government just creates a monopoly. And uh this is industrial policy. The government decides that, you know, bill payment is so important, there should be a PSU monopoly, which shall be the only bill payment company in the country. I can't imagine why I would ever make such an argument, but it is there in India and it keeps on happening. And every now and then there is a bureaucrat at her wits' end who decides to create one more PSU. And it's a sliding scale. First you have a PSU, the PSU does badly, then you start harming the private companies, then you just go to saying this is my monopoly. And this has happened again and again in Indian history. I used to think that it's over. That you know there was UTI was a public sector monopoly mutual fund. L I C was a public sector monopoly insurance company. Okay, Coal India was a public sector monopoly coal company. And I thought these were like silly things that were done because there was poor economic knowledge in India in those years. No, this stuff is alive and well, meaning new public sector companies are being created today, and coercive power of the state then gets used to make their life uh more feasible, and then they turn into national champions. And this curse is upon us and I cannot imagine any universe in which a public sector company or a uh public sector monopoly",
+      "endTime": 4072.61,
+      "text": "at at this point the bureaucrat is exasperated. These people are not worthy of us. Okay, and we tried and we tried. We tried to foster a good industry, but it just never happened. So let's just give up on this entire pretense and I'm gonna do it myself. It's like you know, I'm a joint secretary. I know this game better than any of the firms. So the government just creates a PSU. The government just creates a monopoly. And uh this is industrial policy. The government decides that, you know, bill payment is so important, there should be a PSU monopoly, which shall be the only bill payment company in the country. I can't imagine why I would ever make such an argument, but it is there in India and it keeps on happening. And every now and then there is a bureaucrat at her wits' end who decides to create one more PSU. And it's a sliding scale. First you have a PSU, the PSU does badly, then you start harming the private companies, then you just go to saying this is my monopoly. And this has happened again and again in Indian history. I used to think that it's over. That you know there was UTI was a public sector monopoly mutual fund. L I C was a public sector monopoly insurance company. Okay, Coal India was a public sector monopoly coal company. And I thought these were like silly things that were done because there was poor economic knowledge in India in those years. No, this stuff is alive and well, meaning new public sector companies are being created today, and coercive power of the state then gets used to make their life uh more feasible, and then they turn into national champions. And this curse is upon us and I cannot imagine any universe in which a public sector company or a uh public sector monopoly is a useful tool of industrial policy.",
       "words": [
         {
           "word": "at",
@@ -70632,15 +70248,7 @@
           "startTime": 4068.27,
           "endTime": 4069.39,
           "confidence": 0.9954
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4069.39,
-      "endTime": 4165.79,
-      "text": "is a useful tool of industrial policy. And I want to share a little story here, and uh again I speak about this often and like seventy percent of this country is born after liberalization. So I almost feel it is my duty to repeat stories of the years before that again and again. And the two sectors I often talk about when I talk about the power of free markets is telecom and airlines, right? So when we were in the nineteen eighties, I mean we had a telephone, I was born in a privileged household, my dad was a civil servant. But you used to have seven, eight year waiting periods to get a freaking telephone. You had a monopoly in MTNL. and you would have to wait seven, eight years and it was absolutely horrible. Similarly with airlines, I remember airline tickets in those days, if I remember correctly, used to cost pretty much the same as they do now, except that eight thousand rupees then was a heck of a lot. So even we You know, I used officer and family, even we simply couldn't afford to take a flight. You know, I am one of those people who remembers the excitement of the first flight and it was so rare and all of that. And the moment nineteen ninety one happened and those fields opened up, eventually MTN L and B S N L it's not that they were shut down, it's just that they became completely irrelevant. Um you know, you had Hazar competitors coming in, everything get cheaper, even in terms of entertainment, so many T V channels, you no longer need it to wash Dur Darshan. All the government monopolies, it was evident that you don't actually need them, that they're not serving a purpose. And we should think of this in terms of all the fields, all the sectors where we did not open up and where the you know, state still plays a really large role.",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 4069.39,
@@ -70682,7 +70290,15 @@
           "startTime": 4072.11,
           "endTime": 4072.61,
           "confidence": 0.9472
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4073.01,
+      "endTime": 4165.79,
+      "text": "And I want to share a little story here, and uh again I speak about this often and like seventy percent of this country is born after liberalization. So I almost feel it is my duty to repeat stories of the years before that again and again. And the two sectors I often talk about when I talk about the power of free markets is telecom and airlines, right? So when we were in the nineteen eighties, I mean we had a telephone, I was born in a privileged household, my dad was a civil servant. But you used to have seven, eight year waiting periods to get a freaking telephone. You had a monopoly in MTNL. and you would have to wait seven, eight years and it was absolutely horrible. Similarly with airlines, I remember airline tickets in those days, if I remember correctly, used to cost pretty much the same as they do now, except that eight thousand rupees then was a heck of a lot. So even we You know, I used officer and family, even we simply couldn't afford to take a flight. You know, I am one of those people who remembers the excitement of the first flight and it was so rare and all of that. And the moment nineteen ninety one happened and those fields opened up, eventually MTN L and B S N L it's not that they were shut down, it's just that they became completely irrelevant. Um you know, you had Hazar competitors coming in, everything get cheaper, even in terms of entertainment, so many T V channels, you no longer need it to wash Dur Darshan. All the government monopolies, it was evident that you don't actually need them, that they're not serving a purpose. And we should think of this in terms of all the fields, all the sectors where we did not open up and where the you know, state still plays a really large role.",
+      "words": [
         {
           "word": "And",
           "startTime": 4073.01,
@@ -72662,8 +72278,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4165.79,
-      "endTime": 4183.95,
-      "text": "Or or even fields that are closing down today. New PSUs are being created today. So it just blows my mind that we have not finished. We have not learned. We continue to create new PSUs every year, and we continue to lock out private firms from one industry after another every",
+      "endTime": 4257.7,
+      "text": "Or or even fields that are closing down today. New PSUs are being created today. So it just blows my mind that we have not finished. We have not learned. We continue to create new PSUs every year, and we continue to lock out private firms from one industry after another every year. And that is just something really harmful. It's heartbreaking thinking of the trajectory of Air India. Okay, Air India began as a private company owned by the Tata's. It was expropriated and grabbed by the government. It became a monopoly. Then the greatness of the policymakers, they opened up the airline industry to competition. So we got many, many airlines. And then we got to the state where the public sector Air India at its peak was bleeding, I believe, 35,000 crore rupees a year of government subsidy to keep it aloft. It was a zombie firm that only by continuous injection of taxpayer resources of our money. Of our money was Air India kept aloft. And then in a great achievement of the BJP government They've privatized Air India. It's gone back to the Tatars. Okay? That's a very good outcome. But it just makes you wonder, what if Air India had never been nationalized in the first place? What if it had been a private firm all through? What if the Indian airline industry had had multiple global rivals all along? Okay? Why does Lufthansa not run Bombay Delhi flights? Okay, and so on. So there is just so much of state coercion. that has gone into harming the country",
       "words": [
         {
           "word": "Or",
@@ -72976,15 +72592,7 @@
           "startTime": 4183.63,
           "endTime": 4183.95,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4183.95,
-      "endTime": 4187.37,
-      "text": "year. And that is just something really harmful.",
-      "words": [
+        },
         {
           "word": "year.",
           "startTime": 4183.95,
@@ -73032,15 +72640,7 @@
           "startTime": 4185.87,
           "endTime": 4187.37,
           "confidence": 0.9914
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4187.39,
-      "endTime": 4257.7,
-      "text": "It's heartbreaking thinking of the trajectory of Air India. Okay, Air India began as a private company owned by the Tata's. It was expropriated and grabbed by the government. It became a monopoly. Then the greatness of the policymakers, they opened up the airline industry to competition. So we got many, many airlines. And then we got to the state where the public sector Air India at its peak was bleeding, I believe, 35,000 crore rupees a year of government subsidy to keep it aloft. It was a zombie firm that only by continuous injection of taxpayer resources of our money. Of our money was Air India kept aloft. And then in a great achievement of the BJP government They've privatized Air India. It's gone back to the Tatars. Okay? That's a very good outcome. But it just makes you wonder, what if Air India had never been nationalized in the first place? What if it had been a private firm all through? What if the Indian airline industry had had multiple global rivals all along? Okay? Why does Lufthansa not run Bombay Delhi flights? Okay, and so on. So there is just so much of state coercion. that has gone into harming the country",
-      "words": [
+        },
         {
           "word": "It's",
           "startTime": 4187.39,
@@ -78512,8 +78112,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4518.06,
-      "endTime": 4526.38,
-      "text": "the words that I think we should focus on are that uh the job of policy is to enable winners, not",
+      "endTime": 4664.84,
+      "text": "the words that I think we should focus on are that uh the job of policy is to enable winners, not pick winners. Okay, so just the word enable winners. Hiding inside the private sector are all kinds of geniuses. You don't know who they are, you don't know where they are. Okay. They're all running, they're competing with each other, some of them will become great. The job of government is to create conditions where winning happens, where some great firms emerge with really high productivities. And the path to a great industrial sector lies in government effort in a series of areas, and let's just run through a few of them. Uh one of them is the entire higher education and the R D sector. Okay, so we have an episode on innovation policy. There is a case for some amount of public money to go into fostering extremities of scientific and engineering knowledge. in the universities. So that that raw material is sitting around in the country and those contracts are given to private firms. So private firms are being challenged to do crazy things like put a craft that manages to land on the surface of Venus. Okay, it's a n nonsensical objective. There is no conceivable benefit to humanity, but by challenging those private firms, we're creating knowledge. And then some of those private firms will turn around and say, Oh, I can make better spectacles for Amit using this technology. Okay, you can't predict where knowledge will go. So there are knowledge spillovers, so a contracting out approach to R D, where research grants, research contracts go out into the universities and into the private firms would foster extremities of knowledge. In an industry neutral way. So you know you need to do this in many, many industries. Then you should not have the joint secretary saying poultry farms good, nanotechnology bad. You should basically be funding a broad spectrum of things that we should be having research grants on how to double the size of an egg. Okay? We want rights law of eggs, but every doubling of egg production we want the size of an egg to double. Okay, and we should be funding nanotechnology research as well. You should not be doing industrial policy that I will choose which industry is correct and I will strategically place bets. Solar power good, wind power bad. Okay, we should not get into that. Okay. Then the next piece is the whole competition environment. Think about firms from startup to bankruptcy.",
       "words": [
         {
           "word": "the",
@@ -78640,15 +78240,7 @@
           "startTime": 4526.14,
           "endTime": 4526.38,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4526.38,
-      "endTime": 4530.16,
-      "text": "pick winners. Okay, so just the word enable winners.",
-      "words": [
+        },
         {
           "word": "pick",
           "startTime": 4526.38,
@@ -78702,15 +78294,7 @@
           "startTime": 4529.52,
           "endTime": 4530.16,
           "confidence": 0.7924
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4530.16,
-      "endTime": 4664.84,
-      "text": "Hiding inside the private sector are all kinds of geniuses. You don't know who they are, you don't know where they are. Okay. They're all running, they're competing with each other, some of them will become great. The job of government is to create conditions where winning happens, where some great firms emerge with really high productivities. And the path to a great industrial sector lies in government effort in a series of areas, and let's just run through a few of them. Uh one of them is the entire higher education and the R D sector. Okay, so we have an episode on innovation policy. There is a case for some amount of public money to go into fostering extremities of scientific and engineering knowledge. in the universities. So that that raw material is sitting around in the country and those contracts are given to private firms. So private firms are being challenged to do crazy things like put a craft that manages to land on the surface of Venus. Okay, it's a n nonsensical objective. There is no conceivable benefit to humanity, but by challenging those private firms, we're creating knowledge. And then some of those private firms will turn around and say, Oh, I can make better spectacles for Amit using this technology. Okay, you can't predict where knowledge will go. So there are knowledge spillovers, so a contracting out approach to R D, where research grants, research contracts go out into the universities and into the private firms would foster extremities of knowledge. In an industry neutral way. So you know you need to do this in many, many industries. Then you should not have the joint secretary saying poultry farms good, nanotechnology bad. You should basically be funding a broad spectrum of things that we should be having research grants on how to double the size of an egg. Okay? We want rights law of eggs, but every doubling of egg production we want the size of an egg to double. Okay, and we should be funding nanotechnology research as well. You should not be doing industrial policy that I will choose which industry is correct and I will strategically place bets. Solar power good, wind power bad. Okay, we should not get into that. Okay. Then the next piece is the whole competition environment. Think about firms from startup to bankruptcy.",
-      "words": [
+        },
         {
           "word": "Hiding",
           "startTime": 4530.16,
@@ -85668,8 +85252,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4911.7,
-      "endTime": 4996.75,
-      "text": "Okay, this is called SIPS. Santa Cruz Electronics Export Processing Zone. So in the 70s, some bureaucrats had an idea that in East Asia they are being so successful making radios and making other electronic parts and exporting them all over the world. Why can't we do this in India? And then in their diagnosis, they understood that one of the problems is customs duties. You would never make a radio in India, because if you import the transistors into India and pay 150% duty, and then make the radio in India, you would not be able to re-export it because these raw materials are so expensive. Okay? So there was an industrial policy initiative that in Bombay, in North Bombay, in the boondocks, like far away from Bombay. There was a chunk of land where they built a boundary wall. It is called Santa Cruz Electronics Export Processing Zone. There is a gate. Every truck coming in and out, the contents would be inspected. And special pathways were set up from the airport that imported electronic components would come probably with somebody riding with a shotgun on the truck to make sure nobody steals the transistors and uh smuggles them into the Indian market, takes them into seats. where somebody will assemble the radios. And then again the armor trucks containing those radios had to go out back to the plane to export them because those radios could not come into India. You know that would be smuggling. Okay? All this work was done",
+      "endTime": 5086.11,
+      "text": "Okay, this is called SIPS. Santa Cruz Electronics Export Processing Zone. So in the 70s, some bureaucrats had an idea that in East Asia they are being so successful making radios and making other electronic parts and exporting them all over the world. Why can't we do this in India? And then in their diagnosis, they understood that one of the problems is customs duties. You would never make a radio in India, because if you import the transistors into India and pay 150% duty, and then make the radio in India, you would not be able to re-export it because these raw materials are so expensive. Okay? So there was an industrial policy initiative that in Bombay, in North Bombay, in the boondocks, like far away from Bombay. There was a chunk of land where they built a boundary wall. It is called Santa Cruz Electronics Export Processing Zone. There is a gate. Every truck coming in and out, the contents would be inspected. And special pathways were set up from the airport that imported electronic components would come probably with somebody riding with a shotgun on the truck to make sure nobody steals the transistors and uh smuggles them into the Indian market, takes them into seats. where somebody will assemble the radios. And then again the armor trucks containing those radios had to go out back to the plane to export them because those radios could not come into India. You know that would be smuggling. Okay? All this work was done and seeps was built. Okay? Now the genius of the Indian firms saw the opportunity that you've given me some freedom now. Okay I'm free to import, I'm free to export. Wow and then the organic process of discovery and not design, started thinking, oh, if you allow me to import, what would I do? If you allow me to export, what would I do? And two great industries emerged out of SIPS. The first of them is diamond polishing. The second of them is computer software. Indian entrepreneurs figured that, oh, I could bring diamonds, rough diamonds from South Africa and Antwerp. in these same protected mechanisms into SEPs. I'll hire cheap Indian labor, they'll polish the diamond, we'll take it back and we'll send it out. Great, I've got a new industry. I'm a diamond polishing industry. India today polishes like 55% of the number of diamonds of the world. And second, oh I can import computers. So firms were able to import computer hardware into Sire Indian programmers which started building software. And exporting that software. And that was one of the early sites where the Indian software industry happened. So what do we learn out of this? That you can't predict, you can't control, but adding freedom is always a good thing. Increasing freedom is always a good thing. The firms will surprise us in what they will do with the",
       "words": [
         {
           "word": "Okay,",
@@ -87200,15 +86784,7 @@
           "startTime": 4996.19,
           "endTime": 4996.75,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4996.75,
-      "endTime": 5004.11,
-      "text": "and seeps was built. Okay? Now the genius of the Indian firms",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 4996.75,
@@ -87280,15 +86856,7 @@
           "startTime": 5002.67,
           "endTime": 5004.11,
           "confidence": 0.9972
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5004.11,
-      "endTime": 5086.11,
-      "text": "saw the opportunity that you've given me some freedom now. Okay I'm free to import, I'm free to export. Wow and then the organic process of discovery and not design, started thinking, oh, if you allow me to import, what would I do? If you allow me to export, what would I do? And two great industries emerged out of SIPS. The first of them is diamond polishing. The second of them is computer software. Indian entrepreneurs figured that, oh, I could bring diamonds, rough diamonds from South Africa and Antwerp. in these same protected mechanisms into SEPs. I'll hire cheap Indian labor, they'll polish the diamond, we'll take it back and we'll send it out. Great, I've got a new industry. I'm a diamond polishing industry. India today polishes like 55% of the number of diamonds of the world. And second, oh I can import computers. So firms were able to import computer hardware into Sire Indian programmers which started building software. And exporting that software. And that was one of the early sites where the Indian software industry happened. So what do we learn out of this? That you can't predict, you can't control, but adding freedom is always a good thing. Increasing freedom is always a good thing. The firms will surprise us in what they will do with the",
-      "words": [
+        },
         {
           "word": "saw",
           "startTime": 5004.11,

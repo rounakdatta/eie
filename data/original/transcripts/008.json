@@ -5,7 +5,7 @@
     "durationSeconds": 4143,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -60783,8 +60783,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3391.36,
-      "endTime": 3400.59,
-      "text": "But I just want to say this in a positive way. In India, better rules will matter. So it's a matter of writing those laws in better ways. Yeah, but except except that. The",
+      "endTime": 3398.32,
+      "text": "But I just want to say this in a positive way. In India, better rules will matter. So it's a matter of writing those laws in better ways.",
       "words": [
         {
           "word": "But",
@@ -60953,7 +60953,15 @@
           "startTime": 3397.76,
           "endTime": 3398.32,
           "confidence": 0.9728
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3398.32,
+      "endTime": 3408.19,
+      "text": "Yeah, but except except that. The constitution is what we have. The laws are what we have, right? Right? If the constitution was to be amended today by those in power, it would be amended in fact in a worse direction.",
+      "words": [
         {
           "word": "Yeah,",
           "startTime": 3398.32,
@@ -60989,15 +60997,7 @@
           "startTime": 3400.35,
           "endTime": 3400.59,
           "confidence": 0.9803
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3400.59,
-      "endTime": 3408.19,
-      "text": "constitution is what we have. The laws are what we have, right? Right? If the constitution was to be amended today by those in power, it would be amended in fact in a worse direction.",
-      "words": [
+        },
         {
           "word": "constitution",
           "startTime": 3400.59,

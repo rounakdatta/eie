@@ -5,7 +5,7 @@
     "durationSeconds": 3367,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -5364,8 +5364,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 346.91,
-      "endTime": 421.96,
-      "text": "Third, the great economist Albert O. Hirschman. Actually, he's way more than an economist. He's a thinker, he's a political philosopher, he led the world's best life. Okay, everybody should read his book, The Worldly Philosophy. No, the book the biography of Hushman, the worldly philosopher, if you want to lead a good life, that's a life you want to lead. Okay. He came up with this idea of linkages. He argued in two steps. First, that manufacturing is a game of linkages. I build a factory, it will buy some raw materials, and the things I produce will set the stage for somebody else to build ten factories. Okay? So there's just something deeply interlinked about manufacturing. So when you get going with a couple of candles of light, suddenly you create the possibility of many other things happening. I in modern jargon I would call it positive externalities that by my putting up a factory, I am helping other people sell their stuff. And I'm creating conditions for others to buy my stuff. Harshman went so far as to say that there is a case for state action. And get a couple of these candles going. Because then it'll light up the landscape, and then many other lights will start and they will all interconnect and you'll get to a humming economy. Okay. That may not be the way we think today,",
+      "endTime": 575.55,
+      "text": "Third, the great economist Albert O. Hirschman. Actually, he's way more than an economist. He's a thinker, he's a political philosopher, he led the world's best life. Okay, everybody should read his book, The Worldly Philosophy. No, the book the biography of Hushman, the worldly philosopher, if you want to lead a good life, that's a life you want to lead. Okay. He came up with this idea of linkages. He argued in two steps. First, that manufacturing is a game of linkages. I build a factory, it will buy some raw materials, and the things I produce will set the stage for somebody else to build ten factories. Okay? So there's just something deeply interlinked about manufacturing. So when you get going with a couple of candles of light, suddenly you create the possibility of many other things happening. I in modern jargon I would call it positive externalities that by my putting up a factory, I am helping other people sell their stuff. And I'm creating conditions for others to buy my stuff. Harshman went so far as to say that there is a case for state action. And get a couple of these candles going. Because then it'll light up the landscape, and then many other lights will start and they will all interconnect and you'll get to a humming economy. Okay. That may not be the way we think today, but again, I'm discussing 60s. Okay. Hm man called this unbalanced growth. Where he said there is a case for state power to deliberately induce unbalanced growth. Because when you get that unbalanced growth where a couple of factories and industries have come up, and the rest of the economy is actually not ready for them. The capitalist forces will create the incentives for all the remaining pieces to come up, and that's how development happens. So don't go the 200-year path of slowly incrementally waiting for things to happen. Use state power and get a couple of things going. Okay. So this is the third big idea of Hirschman. Finally, the fourth big idea is by the great economist Hollis Channeri, who was a great empirical development person at the World Bank. Empirical regularities in development. Okay, they assembled the world's first high quality multi-country data sets around development, spanning both rich countries and poor countries, going as far back as you could. And uh along with his co-authors, he argued that there is a concept called structural transformation. This is introduced by Shannary. And in that structural transformation, the share of manufacturing in GDP goes up, the share of manufacturing in employment goes up. And in every successful uh country where economic growth has happened, there has been a waste station, which is a manufacturing led GDP. It turns out that later on countries turn around and become services economies. The United States is not a manufacturing economy, Norway is not a manufacturing economy, but in their history, in their journey of economic development, they got a surge to twenty forty fifty percent of GDP as manufacturing, and then it subsided. And Shenery argued that this is a systematic regularity. This is how all countries work. Okay. So I've showed you four pieces. Calder, the idea that high manufacturing growth is correlated with high GDP growth. The second, rights law, the idea that manufacturing is a site where experience curves happen and you get productivity growth. Third, uh Hirshman and linkages. That manufacturing is a web of many many factories, and that's what's unique and great about manufacturing. And fourth, Shenery, the claim that there is a systematic empirical regularity called structural transformation, and that this is the journey of many, many countries. The US did this, the UK did this, Norway did this, Germany did this, South Korea did this, Japan",
       "words": [
         {
           "word": "Third,",
@@ -6770,15 +6770,7 @@
           "startTime": 421.56,
           "endTime": 421.96,
           "confidence": 0.967
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 421.96,
-      "endTime": 425.16,
-      "text": "but again, I'm discussing 60s. Okay. Hm",
-      "words": [
+        },
         {
           "word": "but",
           "startTime": 421.96,
@@ -6820,15 +6812,7 @@
           "startTime": 424.6,
           "endTime": 425.16,
           "confidence": 0.4039
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 425.16,
-      "endTime": 575.55,
-      "text": "man called this unbalanced growth. Where he said there is a case for state power to deliberately induce unbalanced growth. Because when you get that unbalanced growth where a couple of factories and industries have come up, and the rest of the economy is actually not ready for them. The capitalist forces will create the incentives for all the remaining pieces to come up, and that's how development happens. So don't go the 200-year path of slowly incrementally waiting for things to happen. Use state power and get a couple of things going. Okay. So this is the third big idea of Hirschman. Finally, the fourth big idea is by the great economist Hollis Channeri, who was a great empirical development person at the World Bank. Empirical regularities in development. Okay, they assembled the world's first high quality multi-country data sets around development, spanning both rich countries and poor countries, going as far back as you could. And uh along with his co-authors, he argued that there is a concept called structural transformation. This is introduced by Shannary. And in that structural transformation, the share of manufacturing in GDP goes up, the share of manufacturing in employment goes up. And in every successful uh country where economic growth has happened, there has been a waste station, which is a manufacturing led GDP. It turns out that later on countries turn around and become services economies. The United States is not a manufacturing economy, Norway is not a manufacturing economy, but in their history, in their journey of economic development, they got a surge to twenty forty fifty percent of GDP as manufacturing, and then it subsided. And Shenery argued that this is a systematic regularity. This is how all countries work. Okay. So I've showed you four pieces. Calder, the idea that high manufacturing growth is correlated with high GDP growth. The second, rights law, the idea that manufacturing is a site where experience curves happen and you get productivity growth. Third, uh Hirshman and linkages. That manufacturing is a web of many many factories, and that's what's unique and great about manufacturing. And fourth, Shenery, the claim that there is a systematic empirical regularity called structural transformation, and that this is the journey of many, many countries. The US did this, the UK did this, Norway did this, Germany did this, South Korea did this, Japan",
-      "words": [
+        },
         {
           "word": "man",
           "startTime": 425.16,
@@ -10576,8 +10560,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 673.52,
-      "endTime": 686.56,
-      "text": "So I think the theory is convincing, but it was put into practice. And practice didn't quite turn out the way these economists would have expected. So elaborate on that. Yeah. So this thing didn't work. Here are the",
+      "endTime": 682.8,
+      "text": "So I think the theory is convincing, but it was put into practice. And practice didn't quite turn out the way these economists would have expected. So elaborate on that. Yeah.",
       "words": [
         {
           "word": "So",
@@ -10764,7 +10748,15 @@
           "startTime": 682.16,
           "endTime": 682.8,
           "confidence": 0.753
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 682.8,
+      "endTime": 730.86,
+      "text": "So this thing didn't work. Here are the two essential ideas why this entire approach of using state power to foster manufacturing is a bad idea. The first problem is that Herschman was completely right on linkages, but the linkages went all over the world. So the word country really faded away. We now live in a truly global world. The buzzword today is GVC, global value chains. Production happens everywhere. There is no German car. The seats are made in Czechoslovakia. Oops. The seats are made in the Czech Republic. The uh wiring comes from Romania, the uh automobile operating systems uh software comes from KPIT, Pune,",
+      "words": [
         {
           "word": "So",
           "startTime": 682.8,
@@ -10812,15 +10804,7 @@
           "startTime": 686.24,
           "endTime": 686.56,
           "confidence": 0.7953
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 686.56,
-      "endTime": 730.86,
-      "text": "two essential ideas why this entire approach of using state power to foster manufacturing is a bad idea. The first problem is that Herschman was completely right on linkages, but the linkages went all over the world. So the word country really faded away. We now live in a truly global world. The buzzword today is GVC, global value chains. Production happens everywhere. There is no German car. The seats are made in Czechoslovakia. Oops. The seats are made in the Czech Republic. The uh wiring comes from Romania, the uh automobile operating systems uh software comes from KPIT, Pune,",
-      "words": [
+        },
         {
           "word": "two",
           "startTime": 686.56,
@@ -11458,8 +11442,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 733.05,
-      "endTime": 773.16,
-      "text": "Cards are made all over the world and there is no country anymore. So in that sense, the word linkage is really stopped fitting into the footprint of any one country's policymaking. Instead, the correct prescription to understand this complexity was get out of the way of anything that interferes with globalization. Okay, every friction, small and large, against deeply integrating into the world is damaging for your own country. Okay? We in the previous episode we discussed passports, visas. Prevention of Money Laundering Act, Enforcement Directorate, cross border payments, current account restrictions, capital account restrictions, just everything that interferes with your country",
+      "endTime": 884.88,
+      "text": "Cards are made all over the world and there is no country anymore. So in that sense, the word linkage is really stopped fitting into the footprint of any one country's policymaking. Instead, the correct prescription to understand this complexity was get out of the way of anything that interferes with globalization. Okay, every friction, small and large, against deeply integrating into the world is damaging for your own country. Okay? We in the previous episode we discussed passports, visas. Prevention of Money Laundering Act, Enforcement Directorate, cross border payments, current account restrictions, capital account restrictions, just everything that interferes with your country deeply embraced into the world economy is a barrier. So and then yeah, there are her linkages, but they're really global. So it's not something that operates at the level of one country. The second thing that went wrong was that industrial policy and state intervention don't work. Okay, this whole thing about picking winners does not work. There is a role for the state, which is to lay foundations and then be neutral. The state can't uh tip the scales that this industry is good or this industry is bad, or manufacturing is good and services is bad, or manufacturing is good and agriculture is bad. Whenever those kinds of things have arisen, they've really come to grief. So in the previous episode, we showed 12 areas. where the Indian economy works badly for manufacturing. Yes, all those things should be fixed. We've done an EI episode around agriculture, where we show many things that the Indian state does badly for agriculture. And all those things should be fixed. But nobody should act like a central planner that agriculture is somehow, you know, a low grade, low priority, and manufacturing is somehow special and precious and excellent. And that we will be the central planner, we will have a target for manufacturing exports. Okay? Things like that. Um amusing side story. Early on when I joined the Ministry of Finance, I was in a meeting, which is an annual meeting where you're supposed to figure out the export's target. Okay? And I was like the only child in the room saying, like who in this room does any exporting? Exporting is done by private people. Who are people in this room to make up a target? How is it your target? Like your target should be what rules did I get out of the way so that private people can export? It is not a target for the government to think that we know how much",
       "words": [
         {
           "word": "Cards",
@@ -12078,15 +12062,7 @@
           "startTime": 772.44,
           "endTime": 773.16,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 773.16,
-      "endTime": 776.28,
-      "text": "deeply embraced into the world economy is",
-      "words": [
+        },
         {
           "word": "deeply",
           "startTime": 773.16,
@@ -12128,15 +12104,7 @@
           "startTime": 776.04,
           "endTime": 776.28,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 776.28,
-      "endTime": 820.35,
-      "text": "a barrier. So and then yeah, there are her linkages, but they're really global. So it's not something that operates at the level of one country. The second thing that went wrong was that industrial policy and state intervention don't work. Okay, this whole thing about picking winners does not work. There is a role for the state, which is to lay foundations and then be neutral. The state can't uh tip the scales that this industry is good or this industry is bad, or manufacturing is good and services is bad, or manufacturing is good and agriculture is bad. Whenever those kinds of things have arisen, they've really come to grief. So in the previous episode, we showed 12 areas. where the Indian economy works badly",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 776.28,
@@ -12898,15 +12866,7 @@
           "startTime": 819.55,
           "endTime": 820.35,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 820.35,
-      "endTime": 824.35,
-      "text": "for manufacturing. Yes, all those things should be fixed.",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 820.35,
@@ -12960,15 +12920,7 @@
           "startTime": 823.47,
           "endTime": 824.35,
           "confidence": 0.9918
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 824.35,
-      "endTime": 860.12,
-      "text": "We've done an EI episode around agriculture, where we show many things that the Indian state does badly for agriculture. And all those things should be fixed. But nobody should act like a central planner that agriculture is somehow, you know, a low grade, low priority, and manufacturing is somehow special and precious and excellent. And that we will be the central planner, we will have a target for manufacturing exports. Okay? Things like that. Um amusing side story. Early on when I joined the Ministry of Finance, I was in a meeting, which is an annual meeting where you're supposed to figure out the export's",
-      "words": [
+        },
         {
           "word": "We've",
           "startTime": 824.35,
@@ -13604,15 +13556,7 @@
           "startTime": 859.4,
           "endTime": 860.12,
           "confidence": 0.9168
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 860.12,
-      "endTime": 862.28,
-      "text": "target. Okay?",
-      "words": [
+        },
         {
           "word": "target.",
           "startTime": 860.12,
@@ -13624,15 +13568,7 @@
           "startTime": 861.64,
           "endTime": 862.28,
           "confidence": 0.5556
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 862.28,
-      "endTime": 884.88,
-      "text": "And I was like the only child in the room saying, like who in this room does any exporting? Exporting is done by private people. Who are people in this room to make up a target? How is it your target? Like your target should be what rules did I get out of the way so that private people can export? It is not a target for the government to think that we know how much",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 862.28,
@@ -14198,8 +14134,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 888.72,
-      "endTime": 1029.4,
-      "text": "They treated me like uh Nadan Balak and they said like when you grow up and become a real policymaker, you will understand the importance of target. Deepest point around what is wrong with this manufacturing obsession is that these are correlations that are not exploitable. Okay, so Shannary saw some correlations. Calder saw some correlations. Just because you see a correlation, it's not exploitable. And actually, that's something we have done repeatedly in EIE. We did an episode on education where the entire global delusion around schooling. was based on a correlation that you saw in England, there was lots of schooling. So Nehru thought we need lots of schooling in India. Okay? That's not correct. Like you need to become a rich country, and by the way, rich countries will have hundred percent schooling. But to start to put schooling first and to start claiming that human development is of essence for growth. This is not correct. You what is of essence to growth is peace, easy taxes, and a tolerable administration of justice. Then the private sector will build complex high productivity firms and that gets you to growth. And along the way, many things will change. It's a hundred year journey. Nothing is going to get done quickly. Similarly, we did an episode on infrastructure where we said like look everybody in India obsesses on infrastructure. We are all convinced more infrastructure is always a good thing. And there is a certain kind of private self-interest thing. I am always a beneficiary when there is a better road in front of my house. Like start thinking carefully around this. You get diminishing returns. A great Bombay Delhi Road makes sense. A great Bombay Nagpur Road makes less sense. And very large amounts of money are right now being put into a good highway from Bombay to Nagpur. And we showed the evidence that when fiber optic cables and telecom liberalization happened all over India, the theory was correct. We got the services export revolution. When considerable amount of infrastructure assets have come up around the country, they haven't actually solved the problem of manufacturing production or exports. So, you know, you should question your theory. You should not just assume that more infrastructure is always good. And again, it's a correlation. Rich countries have good infrastructure. It doesn't mean better infrastructure makes you rich. Maybe. I mean, it depends. You have to think about what are the choke points. Similarly, digital",
+      "endTime": 1108.59,
+      "text": "They treated me like uh Nadan Balak and they said like when you grow up and become a real policymaker, you will understand the importance of target. Deepest point around what is wrong with this manufacturing obsession is that these are correlations that are not exploitable. Okay, so Shannary saw some correlations. Calder saw some correlations. Just because you see a correlation, it's not exploitable. And actually, that's something we have done repeatedly in EIE. We did an episode on education where the entire global delusion around schooling. was based on a correlation that you saw in England, there was lots of schooling. So Nehru thought we need lots of schooling in India. Okay? That's not correct. Like you need to become a rich country, and by the way, rich countries will have hundred percent schooling. But to start to put schooling first and to start claiming that human development is of essence for growth. This is not correct. You what is of essence to growth is peace, easy taxes, and a tolerable administration of justice. Then the private sector will build complex high productivity firms and that gets you to growth. And along the way, many things will change. It's a hundred year journey. Nothing is going to get done quickly. Similarly, we did an episode on infrastructure where we said like look everybody in India obsesses on infrastructure. We are all convinced more infrastructure is always a good thing. And there is a certain kind of private self-interest thing. I am always a beneficiary when there is a better road in front of my house. Like start thinking carefully around this. You get diminishing returns. A great Bombay Delhi Road makes sense. A great Bombay Nagpur Road makes less sense. And very large amounts of money are right now being put into a good highway from Bombay to Nagpur. And we showed the evidence that when fiber optic cables and telecom liberalization happened all over India, the theory was correct. We got the services export revolution. When considerable amount of infrastructure assets have come up around the country, they haven't actually solved the problem of manufacturing production or exports. So, you know, you should question your theory. You should not just assume that more infrastructure is always good. And again, it's a correlation. Rich countries have good infrastructure. It doesn't mean better infrastructure makes you rich. Maybe. I mean, it depends. You have to think about what are the choke points. Similarly, digital public goods. Okay? It's true that. Governments in rich countries use computers more than governments in poor countries. But by putting more computers into a third world country's government, you're not making progress. So these are all correlations where sloppy thinking turns it into a causal claim and a theory of change, and vast amount of people and resources and energy gets mobilized. And I want to claim manufacturing is one more such. The obsession that path to growth runs inexorably through manufacturing is that kind of correlation. It was true in Channer's data sets, but the world has changed and we'll come to that in more detail. And it's very dangerous to do industrial policy. Once a policymaker starts thinking that I know that manufacturing is good and I will take effort to create the correct subsidies and disfavor agriculture and disfavor services because I want manufacturing to grow, because I want exports to grow. Like look, if you subsidize something, it will grow But that's not growth. Okay, like it is fake exports to make it on the back of a subsidiary. It is fake manufacturing to make it on the back of a subsidi. What has to happen is it has to emerge organically from the self-organizing system where self-interested people are building manufacturing because they believe it is optimal for themselves.",
       "words": [
         {
           "word": "They",
@@ -16690,15 +16626,7 @@
           "startTime": 1029.08,
           "endTime": 1029.4,
           "confidence": 0.9898
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1029.4,
-      "endTime": 1031.86,
-      "text": "public goods. Okay? It's true that.",
-      "words": [
+        },
         {
           "word": "public",
           "startTime": 1029.4,
@@ -16734,15 +16662,7 @@
           "startTime": 1031.4,
           "endTime": 1031.86,
           "confidence": 0.8056
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1032.32,
-      "endTime": 1108.59,
-      "text": "Governments in rich countries use computers more than governments in poor countries. But by putting more computers into a third world country's government, you're not making progress. So these are all correlations where sloppy thinking turns it into a causal claim and a theory of change, and vast amount of people and resources and energy gets mobilized. And I want to claim manufacturing is one more such. The obsession that path to growth runs inexorably through manufacturing is that kind of correlation. It was true in Channer's data sets, but the world has changed and we'll come to that in more detail. And it's very dangerous to do industrial policy. Once a policymaker starts thinking that I know that manufacturing is good and I will take effort to create the correct subsidies and disfavor agriculture and disfavor services because I want manufacturing to grow, because I want exports to grow. Like look, if you subsidize something, it will grow But that's not growth. Okay, like it is fake exports to make it on the back of a subsidiary. It is fake manufacturing to make it on the back of a subsidi. What has to happen is it has to emerge organically from the self-organizing system where self-interested people are building manufacturing because they believe it is optimal for themselves.",
-      "words": [
+        },
         {
           "word": "Governments",
           "startTime": 1032.32,
@@ -19936,8 +19856,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1205.39,
-      "endTime": 1308.24,
-      "text": "so in the previous episode, we took the stance, we want manufacturing to work, what holds it back? Okay, and we showed twelve areas where the Indian state is creating conditions that are harmful for manufacturing, and all those should be solved. But by the time you get to subsidies, okay, if you fake an exchange rate, then the most incompetent manufacturer in India will be globally competitive. That is where you get into trouble. We have an EIE episode on Floating exchange rates, that it is the market that should choose the exchange rate. A government can always distort an exchange rate at great cost. But that's actually a fake export. It's not the real exports that came out of your strength. So you get to claim a headline that we got exports growth. But again, now you're mixing up cause and effect. Like you want to be a high productivity country so that your firms are so good that they are able to export. You don't want people to export on the back of government subsidies. That's really a transfer from poor people in the country. those exporters. Why does that make sense? While we are on the subject, you have to address the East Asian miracle. Okay so many people are really taken by the East Asian miracle, and I would go so far as to say taken in by the East Asian miracle. And it was at a certain point in time that a certain kind of developmental dictatorship happened and they pushed manufacturing and they got growth. It's a unique kind of country where you get that kind of developmental dictatorship. I wouldn't wish it on my worst enemies. As I always say, that if China is so great, how come your kid doesn't want to migrate to China? Okay, so those are bad countries and those are not admirable examples that you really want to look up",
+      "endTime": 1335.0,
+      "text": "so in the previous episode, we took the stance, we want manufacturing to work, what holds it back? Okay, and we showed twelve areas where the Indian state is creating conditions that are harmful for manufacturing, and all those should be solved. But by the time you get to subsidies, okay, if you fake an exchange rate, then the most incompetent manufacturer in India will be globally competitive. That is where you get into trouble. We have an EIE episode on Floating exchange rates, that it is the market that should choose the exchange rate. A government can always distort an exchange rate at great cost. But that's actually a fake export. It's not the real exports that came out of your strength. So you get to claim a headline that we got exports growth. But again, now you're mixing up cause and effect. Like you want to be a high productivity country so that your firms are so good that they are able to export. You don't want people to export on the back of government subsidies. That's really a transfer from poor people in the country. those exporters. Why does that make sense? While we are on the subject, you have to address the East Asian miracle. Okay so many people are really taken by the East Asian miracle, and I would go so far as to say taken in by the East Asian miracle. And it was at a certain point in time that a certain kind of developmental dictatorship happened and they pushed manufacturing and they got growth. It's a unique kind of country where you get that kind of developmental dictatorship. I wouldn't wish it on my worst enemies. As I always say, that if China is so great, how come your kid doesn't want to migrate to China? Okay, so those are bad countries and those are not admirable examples that you really want to look up to or emulate. And also the world has changed. So like for example, Hirschman's linkages. You have to look at the modern world today and understand the map. of production and productivity today. We have to care about high productivity firms. That's of essence. And you can come at that objective in many different ways and it no longer centers around a traditional conception of manufacturing and we'll go further",
       "words": [
         {
           "word": "so",
@@ -21876,15 +21796,7 @@
           "startTime": 1308.0,
           "endTime": 1308.24,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1308.24,
-      "endTime": 1312.72,
-      "text": "to or emulate. And also the world has changed. So like for",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1308.24,
@@ -21956,15 +21868,7 @@
           "startTime": 1312.64,
           "endTime": 1312.72,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1312.72,
-      "endTime": 1335.0,
-      "text": "example, Hirschman's linkages. You have to look at the modern world today and understand the map. of production and productivity today. We have to care about high productivity firms. That's of essence. And you can come at that objective in many different ways and it no longer centers around a traditional conception of manufacturing and we'll go further",
-      "words": [
+        },
         {
           "word": "example,",
           "startTime": 1312.72,
@@ -28366,8 +28270,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1699.04,
-      "endTime": 1757.66,
-      "text": "Okay. The third idea is That earlier we were so obsessed with manufacturing because manufacturing was tradable. Okay, you could trade manufacturing in the world market. When I was young, my father used to tell me that haircuts are not tradable. Okay, widgets are tradable, and that's the glory of widgets. Because you plug into the world economy, you get open global competition. So you get the pressure of competition, you also get scale that you're selling to the whole world. So there's unbelievable economies of scale. Once again, rights law, that you produce very large quantities, you go down those experience curves, you gain productivity. Okay, so that was the old story around manufacturing, that manufacturing was special because it was tradable. And you know, the like a ball bearing is a dense compact piece of value that gets put on a ship. Wheat is a low value thing that you can put on a ship, but the costs of transportation are considerable per kg of wheat. Not so with a ball bearing, not so with a John Deere tractor. A John Deere tractor is like a million dollar piece of equipment that is worth",
+      "endTime": 1940.5,
+      "text": "Okay. The third idea is That earlier we were so obsessed with manufacturing because manufacturing was tradable. Okay, you could trade manufacturing in the world market. When I was young, my father used to tell me that haircuts are not tradable. Okay, widgets are tradable, and that's the glory of widgets. Because you plug into the world economy, you get open global competition. So you get the pressure of competition, you also get scale that you're selling to the whole world. So there's unbelievable economies of scale. Once again, rights law, that you produce very large quantities, you go down those experience curves, you gain productivity. Okay, so that was the old story around manufacturing, that manufacturing was special because it was tradable. And you know, the like a ball bearing is a dense compact piece of value that gets put on a ship. Wheat is a low value thing that you can put on a ship, but the costs of transportation are considerable per kg of wheat. Not so with a ball bearing, not so with a John Deere tractor. A John Deere tractor is like a million dollar piece of equipment that is worth shipping all around the world. Well, these arguments changed. around both agriculture and services. Services. Okay? We got fiber optic cables all over the world. And if anything, there is more internationalization in services than there is in manufacturing. It is subject to constraints. There are foolish countries that have restrictions on accountants, on lawyers, on capital flows, on current account, on you know, like you can't have a lawyer from Mozambique Uh pleading in Bombay and so on. So I mean there are foolish countries that throw up barriers to globalization. But if you are able to solve the cobwebs of your brain, services today are more tradable than goods because of the availability of modern fiber optic cables. The world's great financial markets are fully global. There is an exchange in Chicago. Orders from the whole world come to that exchange in Chicago. This is something that is really not possible 50 years ago. But today we fully understand that. The financial exchange is a factory that produces financial transactions. And these things operate on a global scale. There they have no limitation to any one country or geography. If there are limitations, they're only in our minds. There's nothing in the business that makes them so. Number four is just restating where we are that industrial policy works badly. So when governments tried to go after favoring manufacturing, it generally worked out badly. I mean for every one Japanese Miti that did some good things. I can show you 50 other examples where industrial policy went wrong. So when this came to reality it never quite worked out as well as you would hope. And finally I want to show you a table. This is the same table that we had in the previous episode and you're seeing the table on the screen. And what you see is India is the poster child. The whole world is looking up in amazement at what has happened in India. India is the ground zero where the old development theory around manufacturing is being destroyed. And look at the table. Over a 10-year period, India got just 38% growth in goods exports. This is nominal dollars. So I said to you after you adjust for United States inflation, it's really about half percent growth per year, which is nothing. But over the same 10 years, India got 126% growth in services exports. This is a miracle. This is something new, which the old development thinkers had never thought about. Every step of the way on the emergence of services exports in India, the development thinkers were carping and criticizing India that no, this is not right. you have to go through structural transformation, you have to go through a manufacturing waste station and mercifully they never actually got to do large scale distortionary policies to harm services or to put big public money into subsidies for manufacturing. Okay. So once again, as you said a moment ago, we're all for removing state impediments to manufacturing. But trying to do industrial policy to somehow think that manufacturing good, agriculture bad, services bad, that is truly",
       "words": [
         {
           "word": "Okay.",
@@ -29544,15 +29448,7 @@
           "startTime": 1757.18,
           "endTime": 1757.66,
           "confidence": 0.8192
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1757.66,
-      "endTime": 1760.62,
-      "text": "shipping all around the world. Well,",
-      "words": [
+        },
         {
           "word": "shipping",
           "startTime": 1757.66,
@@ -29588,15 +29484,7 @@
           "startTime": 1759.98,
           "endTime": 1760.62,
           "confidence": 0.9134
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1760.62,
-      "endTime": 1896.38,
-      "text": "these arguments changed. around both agriculture and services. Services. Okay? We got fiber optic cables all over the world. And if anything, there is more internationalization in services than there is in manufacturing. It is subject to constraints. There are foolish countries that have restrictions on accountants, on lawyers, on capital flows, on current account, on you know, like you can't have a lawyer from Mozambique Uh pleading in Bombay and so on. So I mean there are foolish countries that throw up barriers to globalization. But if you are able to solve the cobwebs of your brain, services today are more tradable than goods because of the availability of modern fiber optic cables. The world's great financial markets are fully global. There is an exchange in Chicago. Orders from the whole world come to that exchange in Chicago. This is something that is really not possible 50 years ago. But today we fully understand that. The financial exchange is a factory that produces financial transactions. And these things operate on a global scale. There they have no limitation to any one country or geography. If there are limitations, they're only in our minds. There's nothing in the business that makes them so. Number four is just restating where we are that industrial policy works badly. So when governments tried to go after favoring manufacturing, it generally worked out badly. I mean for every one Japanese Miti that did some good things. I can show you 50 other examples where industrial policy went wrong. So when this came to reality it never quite worked out as well as you would hope. And finally I want to show you a table. This is the same table that we had in the previous episode and you're seeing the table on the screen. And what you see is India is the poster child. The whole world is looking up in amazement at what has happened in India. India is the ground zero where the old development theory around manufacturing is being destroyed. And look at the table. Over a 10-year period, India got just 38% growth in goods exports. This is nominal dollars. So I said to you after you adjust for United States inflation, it's really about half percent growth per year, which is nothing. But over the same 10 years, India got 126%",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 1760.62,
@@ -31948,15 +31836,7 @@
           "startTime": 1894.88,
           "endTime": 1896.38,
           "confidence": 0.9616
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1896.4,
-      "endTime": 1898.72,
-      "text": "growth in services exports.",
-      "words": [
+        },
         {
           "word": "growth",
           "startTime": 1896.4,
@@ -31980,15 +31860,7 @@
           "startTime": 1898.0,
           "endTime": 1898.72,
           "confidence": 0.9913
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1898.72,
-      "endTime": 1940.5,
-      "text": "This is a miracle. This is something new, which the old development thinkers had never thought about. Every step of the way on the emergence of services exports in India, the development thinkers were carping and criticizing India that no, this is not right. you have to go through structural transformation, you have to go through a manufacturing waste station and mercifully they never actually got to do large scale distortionary policies to harm services or to put big public money into subsidies for manufacturing. Okay. So once again, as you said a moment ago, we're all for removing state impediments to manufacturing. But trying to do industrial policy to somehow think that manufacturing good, agriculture bad, services bad, that is truly",
-      "words": [
+        },
         {
           "word": "This",
           "startTime": 1898.72,
@@ -32872,8 +32744,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1956.52,
-      "endTime": 1993.28,
-      "text": "story I want to tell is about Bombay as an international financial center. Okay? This story runs back to just one thing was a finance minister. Uh he was in the room with Rakesh Mohan and me. And he said, Have you guys thought about uh Bombay as a global producer of financial services? And he said, I know this will take twenty-five years, but you have to play for twenty five years. And Bombay must challenge London. Okay? London is the world's financial center. Immense amounts of GDP are made by being the financial center for the world. And why can't Bombay do that as",
+      "endTime": 2593.78,
+      "text": "story I want to tell is about Bombay as an international financial center. Okay? This story runs back to just one thing was a finance minister. Uh he was in the room with Rakesh Mohan and me. And he said, Have you guys thought about uh Bombay as a global producer of financial services? And he said, I know this will take twenty-five years, but you have to play for twenty five years. And Bombay must challenge London. Okay? London is the world's financial center. Immense amounts of GDP are made by being the financial center for the world. And why can't Bombay do that as well? And this was Imagine it came from the minister. It came from just one thing. We had not thought about this by ourselves. And we were, of course, uh happy and delighted to go down these tracks. This thought process led to uh our dear friend Percy Mistri, one of the great thinkers and doers of the world who led a government committee project, which was called Bombay as an International Financial Center. This report came out in 2007. And in this report This idea is worked out in considerable detail. Okay. So now let's do it in two stages. There is a first stage where JP Morgan puts 60,000 employees into India. Okay. So this is JP Morgan. They're working in New York, they're working in London, and they're getting tasks done by workers in India. Okay. And we are all for it. It's great. Okay. So global value chain. So you cut the production process into many, many pieces. And there are low skill people, high skilled people, there are all kinds of jobs. We are thrilled that JP Morgan has probably sixty thousand people in India. Maybe it has gone up already. And uh this is absolutely great. The entire world's financial firms have got the memo that India is the land of English speakers who can do accounting, who can do insurance claims processing, who can do computer programming, who can do mathematics, who can do complex finance, who can be the supporting teams for the highest level work that gets done in London and New York. It's happening here and it's great. And this is building up to that higher level of quality. But can you have The product as an Indian product, as a product produced and delivered out of India. Let's pause to think about that. When you and I want to trade uh futures between the dollar yen, we go to Chicago, we send an order to Chicago, we take a two-month position on a futures or an options. Okay? This is a quintessential international finance transaction. So this involves two kinds of problems. The first problem is, of course, you need the basics to be done correctly. Don't give me current account restrictions, difficulties on moving money around the world. Give me global payment systems that I plug into. Don't give me obscure things built by an Indian payments monopoly, which is really not a global standard and can't interoperate with the world. Make me fully global. I want to be plugged in to global systems. Give me no frictions to take money out of the country. Give me a sensible tax regime. Give me an income tax and an enforcement directorate that is fully comfortable with my activities all over the world. Okay, so this is part one. But then part two. Think deeply about having 1,000 crore in a dollar yen futures position which has a maturity of two months. For those two months, you are at vulnerability to the successful delivery. The promise made in Chicago. Okay? Chicago is running an institutional apparatus. They're running a whole act of complexity, of checks and balances, of problems, of legal challenges, of conflicts. They've got a whole machinery of private institutions backstoped by regulators and law, whereby you and I go to sleep with full confidence that our 1000 crore. is going to correctly fly for two months under the institutional machinery of Chicago and the j dollar yen futures will work out as promised. Okay? Percy taught me this. Percy said the quality of the financial product is the quality of its institutional environment. That's different from goods. Okay? So we have this road mic here. We really don't care where it was made. Its history is how it was made. Once that's finished, it has some objective characteristics. There are objective testable characteristics. We buy the mic, then we verify that it has certain tech technical characteristics, and after that we are done. We have no connection to its point of production. That's not the way financial services work. For those two months we are vulnerable to all the features about how Chicago works. What the factory is producing is an institutional complexity. So there is no way in which you can produce a dollar yen futures in India and have a buyer in Chicago feel safe for two months without solving their entire institutional richness and complexity. So that's the bar. The bar is very high. It's not just about technology, okay? So as a young naive person, I was very comfortable and very proud that at NSE we had the best computer technology in the world, and so we were ready to do this for others in the world and per se. Taught me all this. He said, No, hold on, you need much more. Meaning it's great. That there was a time when NSE had an edge. Today the West has caught up. Okay, there is no great edge today at NSE. But there was a time when NSE had a significant edge. And we used to think that, you know, this could be turned into something very big on a global scale. And it was Percy who showed us this complexity and this richness. I want to take you further into two elements of this. In 2019, actually, There was a situation where foreign participants on the NSE had a payment delay because of some stupid dispute between NSE and SEBI and something, something. So Giant Swarma has a great blog article on this. And when I read this event, I just remembered Perse all over again that yeah, you need institutional richness. You can't have a payment failure at NSE. It doesn't matter why it happened. And there needs to be this. intelligence and knowledge and logic and capability at SEBI and NSE. The show must go on. Under no circumstances do you ever delay a payment to a customer, particularly a foreign customer. On that day the foreigner is thinking, Okay, you're a third world country and you know I can't trust payments to come out of an Indian exchange correctly. And then you know you have to take twenty five years to rebuild that confidence and that goodwill. So here's another beautiful analogy that I feel explains the essence of this. We have 1K Day Stadium, okay? We have Brebon Stadium. Imagine we build the world's best stadiums and we have the most amazing facilities. But you know the umpires are thora shady. Okay? How will the world's best cricket teams feel about coming and playing in 1 KD Stadium? It's not the technical characteristics of the stadium. The umpires are key. You have to have correct umpires. Otherwise, people are just going to say, No, I don't trust you. I'm not gonna feel comfortable. Why will I play? Okay, so this British idea that The British organized Wimbledon and foreigners always win at Wimbledon. Okay, that's the glory of Britain. They built the rule of law. They built the rules of the game. They got the trust of the world that British common law will always deliver. That the unwritten British Constitution prevents the excesses of state power. That you get safety, that you get peace, easy taxes, and the tolerable administration of justice. That is the way in which you sell. The services product. It's not about machines, it's not about something objective. So to get to the top of the services production game is an institutional challenge. We have to build India. Okay, and that's what we did in the Perse Mystery report of 2007, that ultimately led up to FSLRC. That what we need is a legal and institutional transformation of financial regulation to take the lovely raw material of Bombay. So Bombay is great. The hallmark of a great financial center is that you throw a stone at any building in Bombay, you throw a stone at any residential building in Bombay, and you will hit some derivatives trader. Okay? So everybody is doing conversations about trading derivatives. I know you hang out with the people who do conversations about poker, but I hang out with the people who do conversations about derivatives trading. Okay, and Bombay is rich with that human capital. There are people in coffee shops doing complex financial deals. Okay, that is the essence of a financial center. We have that human capital, the networks, the bargaining, the deal making, the repeated games. You you trust me in an oral conversation, I will not lie to you. This is the machinery out of which a great financial center is made. And JP Morgan and Goldman Sachs are putting large amount of global complexity work into Bombay. That's great. So Bombay has all the raw materials. In the Perse Mystery report, we argued you've got to get your financial regulation right, and then Bombay has to actually become a good livable city. Because to become a truly great financial center, you want 100,000 expats at the highest paying jobs from the whole world to come and relocate to Bombay. And so, for example, when they walk into police station, they need an interface to the police station in English. Okay, things like that. You have to design an expat friendly city. So there are many barriers for India to rise to the top, but this is one world that we need to think about. And just one thing, started this journey about 25 years ago. We got till FSLRC. Okay, so we've got the draft law. But then everything got derailed. Okay, you and I did, and everything is everything episode called the journey of Indian Finance. Okay, we're badly stuck. The next generation needs to pick up the pieces and get back on that journey of building a great Bombay, which is a city that you would like to live in. And of getting the law and the financial regulation right so that a Chicago buyer of thousand crore of dollar yen futures in India should feel comfortable, should feel safe, that the Indian system will actually deliver on the perfect performance of the futures over the two month period.",
       "words": [
         {
           "word": "story",
@@ -33510,15 +33382,7 @@
           "startTime": 1993.12,
           "endTime": 1993.28,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1993.28,
-      "endTime": 1995.64,
-      "text": "well? And this was Imagine",
-      "words": [
+        },
         {
           "word": "well?",
           "startTime": 1993.28,
@@ -33548,15 +33412,7 @@
           "startTime": 1995.16,
           "endTime": 1995.64,
           "confidence": 0.9867
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1995.64,
-      "endTime": 2024.24,
-      "text": "it came from the minister. It came from just one thing. We had not thought about this by ourselves. And we were, of course, uh happy and delighted to go down these tracks. This thought process led to uh our dear friend Percy Mistri, one of the great thinkers and doers of the world who led a government committee project, which was called Bombay as an International Financial Center. This report came out in 2007. And in this report This idea is worked out in",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 1995.64,
@@ -34066,15 +33922,7 @@
           "startTime": 2024.08,
           "endTime": 2024.24,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2024.24,
-      "endTime": 2028.56,
-      "text": "considerable detail. Okay. So now let's do it in two stages.",
-      "words": [
+        },
         {
           "word": "considerable",
           "startTime": 2024.24,
@@ -34140,15 +33988,7 @@
           "startTime": 2027.52,
           "endTime": 2028.56,
           "confidence": 0.9922
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2028.56,
-      "endTime": 2120.43,
-      "text": "There is a first stage where JP Morgan puts 60,000 employees into India. Okay. So this is JP Morgan. They're working in New York, they're working in London, and they're getting tasks done by workers in India. Okay. And we are all for it. It's great. Okay. So global value chain. So you cut the production process into many, many pieces. And there are low skill people, high skilled people, there are all kinds of jobs. We are thrilled that JP Morgan has probably sixty thousand people in India. Maybe it has gone up already. And uh this is absolutely great. The entire world's financial firms have got the memo that India is the land of English speakers who can do accounting, who can do insurance claims processing, who can do computer programming, who can do mathematics, who can do complex finance, who can be the supporting teams for the highest level work that gets done in London and New York. It's happening here and it's great. And this is building up to that higher level of quality. But can you have The product as an Indian product, as a product produced and delivered out of India. Let's pause to think about that. When you and I want to trade uh futures between the dollar yen, we go to Chicago, we send an order to Chicago, we take a two-month position on a futures or an options. Okay? This is a quintessential international finance",
-      "words": [
+        },
         {
           "word": "There",
           "startTime": 2028.56,
@@ -35612,15 +35452,7 @@
           "startTime": 2119.95,
           "endTime": 2120.43,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2120.43,
-      "endTime": 2124.93,
-      "text": "transaction. So this involves two kinds of problems.",
-      "words": [
+        },
         {
           "word": "transaction.",
           "startTime": 2120.43,
@@ -35668,15 +35500,7 @@
           "startTime": 2124.43,
           "endTime": 2124.93,
           "confidence": 0.9733
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2125.28,
-      "endTime": 2157.24,
-      "text": "The first problem is, of course, you need the basics to be done correctly. Don't give me current account restrictions, difficulties on moving money around the world. Give me global payment systems that I plug into. Don't give me obscure things built by an Indian payments monopoly, which is really not a global standard and can't interoperate with the world. Make me fully global. I want to be plugged in to global systems. Give me no frictions to take money out of the country. Give me a sensible tax regime. Give me an income tax and an enforcement directorate that is fully comfortable with my activities",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 2125.28,
@@ -36312,15 +36136,7 @@
           "startTime": 2156.68,
           "endTime": 2157.24,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2157.24,
-      "endTime": 2161.72,
-      "text": "all over the world. Okay, so this is part one. But then part two. Think",
-      "words": [
+        },
         {
           "word": "all",
           "startTime": 2157.24,
@@ -36410,15 +36226,7 @@
           "startTime": 2161.32,
           "endTime": 2161.72,
           "confidence": 0.9968
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2161.72,
-      "endTime": 2171.16,
-      "text": "deeply about having 1,000 crore in a dollar yen futures position which has a maturity of two",
-      "words": [
+        },
         {
           "word": "deeply",
           "startTime": 2161.72,
@@ -36520,15 +36328,7 @@
           "startTime": 2170.92,
           "endTime": 2171.16,
           "confidence": 0.8246
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2171.16,
-      "endTime": 2176.12,
-      "text": "months. For those two months, you",
-      "words": [
+        },
         {
           "word": "months.",
           "startTime": 2171.16,
@@ -36564,15 +36364,7 @@
           "startTime": 2175.48,
           "endTime": 2176.12,
           "confidence": 0.9965
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2176.12,
-      "endTime": 2237.1,
-      "text": "are at vulnerability to the successful delivery. The promise made in Chicago. Okay? Chicago is running an institutional apparatus. They're running a whole act of complexity, of checks and balances, of problems, of legal challenges, of conflicts. They've got a whole machinery of private institutions backstoped by regulators and law, whereby you and I go to sleep with full confidence that our 1000 crore. is going to correctly fly for two months under the institutional machinery of Chicago and the j dollar yen futures will work out as promised. Okay? Percy taught me this. Percy said the quality of the financial product is the quality of its institutional environment. That's different from goods. Okay? So we have this road mic here. We really don't care where it was",
-      "words": [
+        },
         {
           "word": "are",
           "startTime": 2176.12,
@@ -37340,15 +37132,7 @@
           "startTime": 2236.86,
           "endTime": 2237.1,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2237.1,
-      "endTime": 2239.28,
-      "text": "made. Its history",
-      "words": [
+        },
         {
           "word": "made.",
           "startTime": 2237.1,
@@ -37366,15 +37150,7 @@
           "startTime": 2238.78,
           "endTime": 2239.28,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2240.08,
-      "endTime": 2279.29,
-      "text": "is how it was made. Once that's finished, it has some objective characteristics. There are objective testable characteristics. We buy the mic, then we verify that it has certain tech technical characteristics, and after that we are done. We have no connection to its point of production. That's not the way financial services work. For those two months we are vulnerable to all the features about how Chicago works. What the factory is producing is an institutional complexity. So there is no way in which you can produce a dollar yen futures in India and have a buyer in Chicago feel safe for two months without solving their",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2240.08,
@@ -38022,15 +37798,7 @@
           "startTime": 2278.97,
           "endTime": 2279.29,
           "confidence": 0.8333
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2279.29,
-      "endTime": 2282.41,
-      "text": "entire institutional richness and complexity. So that's the",
-      "words": [
+        },
         {
           "word": "entire",
           "startTime": 2279.29,
@@ -38078,15 +37846,7 @@
           "startTime": 2282.33,
           "endTime": 2282.41,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2282.41,
-      "endTime": 2593.78,
-      "text": "bar. The bar is very high. It's not just about technology, okay? So as a young naive person, I was very comfortable and very proud that at NSE we had the best computer technology in the world, and so we were ready to do this for others in the world and per se. Taught me all this. He said, No, hold on, you need much more. Meaning it's great. That there was a time when NSE had an edge. Today the West has caught up. Okay, there is no great edge today at NSE. But there was a time when NSE had a significant edge. And we used to think that, you know, this could be turned into something very big on a global scale. And it was Percy who showed us this complexity and this richness. I want to take you further into two elements of this. In 2019, actually, There was a situation where foreign participants on the NSE had a payment delay because of some stupid dispute between NSE and SEBI and something, something. So Giant Swarma has a great blog article on this. And when I read this event, I just remembered Perse all over again that yeah, you need institutional richness. You can't have a payment failure at NSE. It doesn't matter why it happened. And there needs to be this. intelligence and knowledge and logic and capability at SEBI and NSE. The show must go on. Under no circumstances do you ever delay a payment to a customer, particularly a foreign customer. On that day the foreigner is thinking, Okay, you're a third world country and you know I can't trust payments to come out of an Indian exchange correctly. And then you know you have to take twenty five years to rebuild that confidence and that goodwill. So here's another beautiful analogy that I feel explains the essence of this. We have 1K Day Stadium, okay? We have Brebon Stadium. Imagine we build the world's best stadiums and we have the most amazing facilities. But you know the umpires are thora shady. Okay? How will the world's best cricket teams feel about coming and playing in 1 KD Stadium? It's not the technical characteristics of the stadium. The umpires are key. You have to have correct umpires. Otherwise, people are just going to say, No, I don't trust you. I'm not gonna feel comfortable. Why will I play? Okay, so this British idea that The British organized Wimbledon and foreigners always win at Wimbledon. Okay, that's the glory of Britain. They built the rule of law. They built the rules of the game. They got the trust of the world that British common law will always deliver. That the unwritten British Constitution prevents the excesses of state power. That you get safety, that you get peace, easy taxes, and the tolerable administration of justice. That is the way in which you sell. The services product. It's not about machines, it's not about something objective. So to get to the top of the services production game is an institutional challenge. We have to build India. Okay, and that's what we did in the Perse Mystery report of 2007, that ultimately led up to FSLRC. That what we need is a legal and institutional transformation of financial regulation to take the lovely raw material of Bombay. So Bombay is great. The hallmark of a great financial center is that you throw a stone at any building in Bombay, you throw a stone at any residential building in Bombay, and you will hit some derivatives trader. Okay? So everybody is doing conversations about trading derivatives. I know you hang out with the people who do conversations about poker, but I hang out with the people who do conversations about derivatives trading. Okay, and Bombay is rich with that human capital. There are people in coffee shops doing complex financial deals. Okay, that is the essence of a financial center. We have that human capital, the networks, the bargaining, the deal making, the repeated games. You you trust me in an oral conversation, I will not lie to you. This is the machinery out of which a great financial center is made. And JP Morgan and Goldman Sachs are putting large amount of global complexity work into Bombay. That's great. So Bombay has all the raw materials. In the Perse Mystery report, we argued you've got to get your financial regulation right, and then Bombay has to actually become a good livable city. Because to become a truly great financial center, you want 100,000 expats at the highest paying jobs from the whole world to come and relocate to Bombay. And so, for example, when they walk into police station, they need an interface to the police station in English. Okay, things like that. You have to design an expat friendly city. So there are many barriers for India to rise to the top, but this is one world that we need to think about. And just one thing, started this journey about 25 years ago. We got till FSLRC. Okay, so we've got the draft law. But then everything got derailed. Okay, you and I did, and everything is everything episode called the journey of Indian Finance. Okay, we're badly stuck. The next generation needs to pick up the pieces and get back on that journey of building a great Bombay, which is a city that you would like to live in. And of getting the law and the financial regulation right so that a Chicago buyer of thousand crore of dollar yen futures in India should feel comfortable, should feel safe, that the Indian system will actually deliver on the perfect performance of the futures over the two month period.",
-      "words": [
+        },
         {
           "word": "bar.",
           "startTime": 2282.41,
@@ -43882,8 +43642,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2594.27,
-      "endTime": 2621.47,
-      "text": "I have two things to say. Number one, everything that you just said also reminded me of this phrase which I first learned from you, which will appear in the title of a future seminal book you are going to write, Invisible Infrastructure. Right? I think that's at the crux of some of it, that the advanced economies have this invisible infrastructure which makes everything run smoothly. And we need that also. You can't just build a stadium. You have to build that whole system around it. And I I want to bring up the word norms. Okay? Umpires",
+      "endTime": 2618.19,
+      "text": "I have two things to say. Number one, everything that you just said also reminded me of this phrase which I first learned from you, which will appear in the title of a future seminal book you are going to write, Invisible Infrastructure. Right? I think that's at the crux of some of it, that the advanced economies have this invisible infrastructure which makes everything run smoothly. And we need that also. You can't just build a stadium. You have to build that whole system around it.",
       "words": [
         {
           "word": "I",
@@ -44406,7 +44166,15 @@
           "startTime": 2617.55,
           "endTime": 2618.19,
           "confidence": 0.937
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2618.19,
+      "endTime": 2648.45,
+      "text": "And I I want to bring up the word norms. Okay? Umpires are not made just by law. They're made by people. They're made by respect. An umpire should feel embarrassed when they go home in the evening and their friends say to them, What the hell were you doing? Okay? Norms are what make judges behave better. Okay? Blog articles by researchers who criticize the orders of a judge make judges behave better. You need that entire culture of respect and quality where there is an endless striving to do better. It's not just in the laws.",
+      "words": [
         {
           "word": "And",
           "startTime": 2618.19,
@@ -44478,15 +44246,7 @@
           "startTime": 2620.75,
           "endTime": 2621.47,
           "confidence": 0.9868
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2621.47,
-      "endTime": 2648.45,
-      "text": "are not made just by law. They're made by people. They're made by respect. An umpire should feel embarrassed when they go home in the evening and their friends say to them, What the hell were you doing? Okay? Norms are what make judges behave better. Okay? Blog articles by researchers who criticize the orders of a judge make judges behave better. You need that entire culture of respect and quality where there is an endless striving to do better. It's not just in the laws.",
-      "words": [
+        },
         {
           "word": "are",
           "startTime": 2621.47,
@@ -46330,8 +46090,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2727.74,
-      "endTime": 2740.8,
-      "text": "think manufacturing is the essential pathway to prosperity and growth and success and all that, I want to take one little number to you. Okay? That is the area of the Netherlands. The Netherlands has the area of",
+      "endTime": 2752.0,
+      "text": "think manufacturing is the essential pathway to prosperity and growth and success and all that, I want to take one little number to you. Okay? That is the area of the Netherlands. The Netherlands has the area of Haryana. The Netherlands has the area of Kerala. Okay? And the Netherlands is the third largest exporter of food in the world. They export $140 billion of food",
       "words": [
         {
           "word": "think",
@@ -46560,15 +46320,7 @@
           "startTime": 2740.56,
           "endTime": 2740.8,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2740.8,
-      "endTime": 2745.6,
-      "text": "Haryana. The Netherlands has the area of Kerala. Okay?",
-      "words": [
+        },
         {
           "word": "Haryana.",
           "startTime": 2740.8,
@@ -46622,15 +46374,7 @@
           "startTime": 2745.12,
           "endTime": 2745.6,
           "confidence": 0.635
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2745.6,
-      "endTime": 2752.0,
-      "text": "And the Netherlands is the third largest exporter of food in the world. They export $140 billion of food",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2745.6,
@@ -46782,8 +46526,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2753.44,
-      "endTime": 2760.32,
-      "text": "so I just want to blow up this conception that agriculture is something low grade. Agriculture is only low grade if your imagination is",
+      "endTime": 2831.39,
+      "text": "so I just want to blow up this conception that agriculture is something low grade. Agriculture is only low grade if your imagination is low grade. Okay? Agriculture is as much a sight of productivity growth as anybody else. Okay. So if you think of indoor agriculture, agricultural robots, genetic engineering, okay? There is no limit to complexity and capability developing in agriculture. You should not think about your peasant. So don't think that this will be done by unskilled peasants. This will be done by highly skilled people. It is very complex, understanding how to operate in modern agriculture. The work that is done in the Netherlands is amazing. It is very rich. It is very complex. And yeah, in India we think that can I use labor more because my the pro cost of my labor is lower. So the trade-off between having an agricultural robot versus having a human, you would rethink it from scratch. But area of Haryana, 140 billion dollars a year of food exports. Third largest food exporter of the world. Don't ever tell me that agriculture is a dull ditchwater subject. If Haryana is weak, it is only because of policies. It we have an episode on agriculture. You die, and so do I,",
       "words": [
         {
           "word": "so",
@@ -46928,15 +46672,7 @@
           "startTime": 2760.16,
           "endTime": 2760.32,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2760.32,
-      "endTime": 2762.32,
-      "text": "low grade. Okay?",
-      "words": [
+        },
         {
           "word": "low",
           "startTime": 2760.32,
@@ -46954,15 +46690,7 @@
           "startTime": 2761.52,
           "endTime": 2762.32,
           "confidence": 0.6797
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2762.32,
-      "endTime": 2808.32,
-      "text": "Agriculture is as much a sight of productivity growth as anybody else. Okay. So if you think of indoor agriculture, agricultural robots, genetic engineering, okay? There is no limit to complexity and capability developing in agriculture. You should not think about your peasant. So don't think that this will be done by unskilled peasants. This will be done by highly skilled people. It is very complex, understanding how to operate in modern agriculture. The work that is done in the Netherlands is amazing. It is very rich. It is very complex. And yeah, in India we think that can I use labor more because my the pro cost of my labor is lower. So the trade-off between having an agricultural robot versus having a human, you would rethink it from",
-      "words": [
+        },
         {
           "word": "Agriculture",
           "startTime": 2762.32,
@@ -47742,15 +47470,7 @@
           "startTime": 2808.08,
           "endTime": 2808.32,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2808.32,
-      "endTime": 2810.7,
-      "text": "scratch. But",
-      "words": [
+        },
         {
           "word": "scratch.",
           "startTime": 2808.32,
@@ -47762,15 +47482,7 @@
           "startTime": 2809.2,
           "endTime": 2810.7,
           "confidence": 0.9323
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2810.88,
-      "endTime": 2831.39,
-      "text": "area of Haryana, 140 billion dollars a year of food exports. Third largest food exporter of the world. Don't ever tell me that agriculture is a dull ditchwater subject. If Haryana is weak, it is only because of policies. It we have an episode on agriculture. You die, and so do I,",
-      "words": [
+        },
         {
           "word": "area",
           "startTime": 2810.88,
@@ -48930,8 +48642,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2878.99,
-      "endTime": 2964.68,
-      "text": "So anybody who says that agriculture is dull as ditch water and India has to graduate to manufacturing, I say to you, you haven't thought enough about agriculture. You have a 1950s conception of agriculture. Okay? Little Netherlands, the area of Haryana, the area of Kerala, is the world's third largest food exporter. And earns $140 billion out of exports of food. So this is a place for productivity growth. Once again, all the machinery. You can build firms, you can build complexity, you can build productivity growth. To transport leaches from Bihar to Tokyo is complex. And the way the world economy works is you're paid for complexity. Okay, you're not paid to do trivial things. So if you foolishly grow wheat under the benign influence of the PDS, you're not going to get paid a return for that. You're going to get paid a return for brilliance, for complexity, for imagination, for invention. And there is no reason to think that food is inferior. Okay, and by the way, this stuff is already happening in India. The Indian food exports are like $43 billion, whereas the Indian textile and apparel exports are $34 billion. Okay, so there you go. You've already got a labor-intensive sector, food, where India is exporting more than the garment and apparel sector. So you know, if you obsess in an industrial policy way that we've got to do government exports, we've got to do government exports,",
+      "endTime": 3031.48,
+      "text": "So anybody who says that agriculture is dull as ditch water and India has to graduate to manufacturing, I say to you, you haven't thought enough about agriculture. You have a 1950s conception of agriculture. Okay? Little Netherlands, the area of Haryana, the area of Kerala, is the world's third largest food exporter. And earns $140 billion out of exports of food. So this is a place for productivity growth. Once again, all the machinery. You can build firms, you can build complexity, you can build productivity growth. To transport leaches from Bihar to Tokyo is complex. And the way the world economy works is you're paid for complexity. Okay, you're not paid to do trivial things. So if you foolishly grow wheat under the benign influence of the PDS, you're not going to get paid a return for that. You're going to get paid a return for brilliance, for complexity, for imagination, for invention. And there is no reason to think that food is inferior. Okay, and by the way, this stuff is already happening in India. The Indian food exports are like $43 billion, whereas the Indian textile and apparel exports are $34 billion. Okay, so there you go. You've already got a labor-intensive sector, food, where India is exporting more than the garment and apparel sector. So you know, if you obsess in an industrial policy way that we've got to do government exports, we've got to do government exports, you're missing something. Okay? It is not a subject for industrial policy. Okay, some private people on their own figured out a liche trade that you should grow lichies in Bihar and transport them to It was done by private people. It was not done by government. And the job of the government is to do some basics and get out of the way. So we've talked about food and agriculture. We've talked about manufacturing, we've talked about services. And you know, we just say that look, be level-handed. This is not the world of a government that will be the great leader that will choose which is correct and which is bad at the appropriate stage of development of the economy, that will pick winners. that will tax the people and subsidize some favored sectors and lead India to shining growth and prosperity. This whole idea of a developmental state where a government is going to lead us and guide us and tell us what to do is truly harmful. What we need for the government is to do the basics. Okay, if you will do peace, easy taxes, and a tolerable administration of justice, we've got a lot done.",
       "words": [
         {
           "word": "So",
@@ -50390,15 +50102,7 @@
           "startTime": 2963.88,
           "endTime": 2964.68,
           "confidence": 0.9395
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2964.68,
-      "endTime": 2969.24,
-      "text": "you're missing something. Okay? It is not a subject for industrial policy.",
-      "words": [
+        },
         {
           "word": "you're",
           "startTime": 2964.68,
@@ -50470,15 +50174,7 @@
           "startTime": 2968.44,
           "endTime": 2969.24,
           "confidence": 0.9837
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2969.24,
-      "endTime": 3031.48,
-      "text": "Okay, some private people on their own figured out a liche trade that you should grow lichies in Bihar and transport them to It was done by private people. It was not done by government. And the job of the government is to do some basics and get out of the way. So we've talked about food and agriculture. We've talked about manufacturing, we've talked about services. And you know, we just say that look, be level-handed. This is not the world of a government that will be the great leader that will choose which is correct and which is bad at the appropriate stage of development of the economy, that will pick winners. that will tax the people and subsidize some favored sectors and lead India to shining growth and prosperity. This whole idea of a developmental state where a government is going to lead us and guide us and tell us what to do is truly harmful. What we need for the government is to do the basics. Okay, if you will do peace, easy taxes, and a tolerable administration of justice, we've got a lot done.",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 2969.24,
@@ -53382,8 +53078,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3126.04,
-      "endTime": 3212.8,
-      "text": "first is to be very cautious about correlations and causality. Okay, and this is a recurring theme in EIE. We've done an EIE education episode and EIE infrastructure episode, and EIE Uh digital public goods episode. This is one more of that. This is the EIE manufacturing episode. Saying just because something happened in the advanced economies in their development journey, and there are some crude correlations that you see in the world today, that doesn't mean they're exploitable. And that in a way is the essence of the EIE development episode. That you need to think more and don't get Taken by these simple correlations. The simple correlations are not exploitable. The second is a general warning around industrial policy, around uh developmental state, around a leadership role for the state in the affairs of society. Okay, that is a wrong approach. We have an EI episode on agriculture, which is basically about Getting a price system to work, get the government out of the way on agriculture. Then entrepreneurs will figure out that they can grow lychis in Bihar and sell them in Tokyo. You don't need the government to figure out that lychee can be grown in Bihar. What you need for the government is to get out of the way and do some basic public goods. And uh that's a story on agriculture. In the previous episode last week, we showed twelve areas of what holds back manufacturing in India, including seven of them, which are the subject of a state government. Which should be the economic growth strategy of",
+      "endTime": 3293.49,
+      "text": "first is to be very cautious about correlations and causality. Okay, and this is a recurring theme in EIE. We've done an EIE education episode and EIE infrastructure episode, and EIE Uh digital public goods episode. This is one more of that. This is the EIE manufacturing episode. Saying just because something happened in the advanced economies in their development journey, and there are some crude correlations that you see in the world today, that doesn't mean they're exploitable. And that in a way is the essence of the EIE development episode. That you need to think more and don't get Taken by these simple correlations. The simple correlations are not exploitable. The second is a general warning around industrial policy, around uh developmental state, around a leadership role for the state in the affairs of society. Okay, that is a wrong approach. We have an EI episode on agriculture, which is basically about Getting a price system to work, get the government out of the way on agriculture. Then entrepreneurs will figure out that they can grow lychis in Bihar and sell them in Tokyo. You don't need the government to figure out that lychee can be grown in Bihar. What you need for the government is to get out of the way and do some basic public goods. And uh that's a story on agriculture. In the previous episode last week, we showed twelve areas of what holds back manufacturing in India, including seven of them, which are the subject of a state government. Which should be the economic growth strategy of each of the states of India. Okay? And that is all about the role of the state, saying, yes, you should do this also. You need to similarly create enabling conditions for services also. Services is the shining hero of the Indian growth story. Okay, the only difference between India and Pakistan and Bangladesh is that we figured out services exports. Okay, so that we had a small, highly educated elite which is generating $300 billion a year by exporting services. So you should not favor any of these. You should not think that there's a leadership role for the government, that there will be a wise central planner who will choose that now we need manufacturing. I want to recommend a great man, Albert O. Hushman. Okay, just everybody, please take interest, please pay attention. I spent this episode criticizing his linkage's work, and that's okay. Okay. I mean, people are not obliged to be precisely correct uh fifty years later. I mean the linkage is just shifted across the boundary of the country. There's nothing wrong in what he said. And he's just an interesting person, he's a lovely person. So we should read his biography, we should read his books. He's just one of the great people. For me, I love him as much as I love James C. Scott.",
       "words": [
         {
           "word": "first",
@@ -54968,15 +54664,7 @@
           "startTime": 3212.64,
           "endTime": 3212.8,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3212.8,
-      "endTime": 3215.36,
-      "text": "each of the states of India. Okay? And",
-      "words": [
+        },
         {
           "word": "each",
           "startTime": 3212.8,
@@ -55024,15 +54712,7 @@
           "startTime": 3215.2,
           "endTime": 3215.36,
           "confidence": 0.9964
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3215.36,
-      "endTime": 3293.49,
-      "text": "that is all about the role of the state, saying, yes, you should do this also. You need to similarly create enabling conditions for services also. Services is the shining hero of the Indian growth story. Okay, the only difference between India and Pakistan and Bangladesh is that we figured out services exports. Okay, so that we had a small, highly educated elite which is generating $300 billion a year by exporting services. So you should not favor any of these. You should not think that there's a leadership role for the government, that there will be a wise central planner who will choose that now we need manufacturing. I want to recommend a great man, Albert O. Hushman. Okay, just everybody, please take interest, please pay attention. I spent this episode criticizing his linkage's work, and that's okay. Okay. I mean, people are not obliged to be precisely correct uh fifty years later. I mean the linkage is just shifted across the boundary of the country. There's nothing wrong in what he said. And he's just an interesting person, he's a lovely person. So we should read his biography, we should read his books. He's just one of the great people. For me, I love him as much as I love James C. Scott.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 3215.36,

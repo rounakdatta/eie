@@ -5,7 +5,7 @@
     "durationSeconds": 4114,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 22.97,
-      "endTime": 167.78,
-      "text": "Gentle readers, welcome to Everything Is Everything. I'm Amit, and this is my good friend Ajay. And today we are going to talk about Papers and you're gonna give a master class on how to write a paper. But our gentle readers will become gentle writers. So gentle readers will become gentle writers. But before that, I have a larger question. And to get to the question, I want to quote my good friend Larry White. Larry White was on the scene in the unseen episode, which released earlier this week, and when I went to DC I recorded with him. And uh uh and the episode is a master class on free banking, which he's an expert on and he has great novel insights. But uh the quote is from his fantastic book. A clash of economic ideas. Commercial forests produce trees which go to sawmills to be turned into lumber, which factories then embody in furniture for ultimate consumers. Hayek and Kane's remarks suggest a similar structure to intellectual production. High level economic researchers produce abstract ideas, which applied economic researchers turn into less abstract policy ideas, which journalists and intellectuals then embody in mass market books, opette pieces, and radio and television commentary for the consumption of policy makers and the public. Stopquote. And my question to you is about this um the idea producing factory as it were, that you know, in a lot of science in particular, and even in a lot of economics and so on, you'll have an idea start in a lonely place with some lonely researcher or thinker far away from the general public is working, working, crafting out an idea, that becomes a paper, that goes to other researchers, that then goes out into the wider world. commentators like myself take it up and then eventually it reaches the wider public and perhaps it even becomes uh policy either directly through um uh you know the supply end of the political marketplace or because of public demand after the ideas are widespread enough. So that's a broad idea. And We have discussed in a past episode Fixing the Knowledge Society that part of this pipeline is broken. That a lot of academia has become a circle game with academics talking to each other, writing obscure subjects, following fashions of the day that don't really matter and don't relate to the real world. So give me a sense of the ecosystem of papers. Like this sort of um Um pipeline envisaged by Keynes and Hayek. Is it s something that still applies today? Has it changed in subtle ways? Are there parts of the pipeline that are broken?",
+      "endTime": 34.84,
+      "text": "Gentle readers, welcome to Everything Is Everything. I'm Amit, and this is my good friend Ajay. And today we are going to talk about Papers and you're gonna give a master class on how to write a paper. But",
       "words": [
         {
           "word": "Gentle",
@@ -253,7 +253,15 @@
           "startTime": 34.6,
           "endTime": 34.84,
           "confidence": 0.8782
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 34.84,
+      "endTime": 37.0,
+      "text": "our gentle readers will become gentle writers.",
+      "words": [
         {
           "word": "our",
           "startTime": 34.84,
@@ -295,7 +303,15 @@
           "startTime": 36.44,
           "endTime": 37.0,
           "confidence": 0.8659
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 37.0,
+      "endTime": 167.78,
+      "text": "So gentle readers will become gentle writers. But before that, I have a larger question. And to get to the question, I want to quote my good friend Larry White. Larry White was on the scene in the unseen episode, which released earlier this week, and when I went to DC I recorded with him. And uh uh and the episode is a master class on free banking, which he's an expert on and he has great novel insights. But uh the quote is from his fantastic book. A clash of economic ideas. Commercial forests produce trees which go to sawmills to be turned into lumber, which factories then embody in furniture for ultimate consumers. Hayek and Kane's remarks suggest a similar structure to intellectual production. High level economic researchers produce abstract ideas, which applied economic researchers turn into less abstract policy ideas, which journalists and intellectuals then embody in mass market books, opette pieces, and radio and television commentary for the consumption of policy makers and the public. Stopquote. And my question to you is about this um the idea producing factory as it were, that you know, in a lot of science in particular, and even in a lot of economics and so on, you'll have an idea start in a lonely place with some lonely researcher or thinker far away from the general public is working, working, crafting out an idea, that becomes a paper, that goes to other researchers, that then goes out into the wider world. commentators like myself take it up and then eventually it reaches the wider public and perhaps it even becomes uh policy either directly through um uh you know the supply end of the political marketplace or because of public demand after the ideas are widespread enough. So that's a broad idea. And We have discussed in a past episode Fixing the Knowledge Society that part of this pipeline is broken. That a lot of academia has become a circle game with academics talking to each other, writing obscure subjects, following fashions of the day that don't really matter and don't relate to the real world. So give me a sense of the ecosystem of papers. Like this sort of um Um pipeline envisaged by Keynes and Hayek. Is it s something that still applies today? Has it changed in subtle ways? Are there parts of the pipeline that are broken?",
+      "words": [
         {
           "word": "So",
           "startTime": 37.0,
@@ -15421,8 +15437,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 897.83,
-      "endTime": 917.67,
-      "text": "And also for the readers, even if you were never gonna write an article It is good to know the sociology of how this machine works, what is this beast, because then it'll improve your ability to read, to engage in critical thinking, to shrug off some of the showboating that the author is doing, you know, they need to get published, it's okay.",
+      "endTime": 920.07,
+      "text": "And also for the readers, even if you were never gonna write an article It is good to know the sociology of how this machine works, what is this beast, because then it'll improve your ability to read, to engage in critical thinking, to shrug off some of the showboating that the author is doing, you know, they need to get published, it's okay. Like come move on, like tell me your actual",
       "words": [
         {
           "word": "And",
@@ -15807,15 +15823,7 @@
           "startTime": 917.35,
           "endTime": 917.67,
           "confidence": 0.8182
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 917.67,
-      "endTime": 942.78,
-      "text": "Like come move on, like tell me your actual story. If there's one phrase that embodies the name of Oshua, Everything is Everything, that phrase is the sociology of how this machine works. So, Aj, let's get started. How should I think of the task of writing a paper? What are its elements?",
-      "words": [
+        },
         {
           "word": "Like",
           "startTime": 917.67,
@@ -15869,7 +15877,15 @@
           "startTime": 919.75,
           "endTime": 920.07,
           "confidence": 0.9994
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 920.07,
+      "endTime": 942.78,
+      "text": "story. If there's one phrase that embodies the name of Oshua, Everything is Everything, that phrase is the sociology of how this machine works. So, Aj, let's get started. How should I think of the task of writing a paper? What are its elements?",
+      "words": [
         {
           "word": "story.",
           "startTime": 920.07,
@@ -19021,8 +19037,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1101.14,
-      "endTime": 1187.0,
-      "text": "I don't share the snobbery of the people who lay claim to being the gatekeepers and know what are the important questions. Linking back to our previous episode on the Mavericks and the uh upstarts that played a phenomenal role in each of them, there was a certain skepticism about what are you even doing? We don't understand this at all, why are you wasting your time? This is what the establishment always says. And I I just want us to be careful that there tend to be many discussions around what is important. I have a radical view on this that researchers don't uh allocate their time foolishly. Okay? We are all uh careful about how we uh protect our time and our resources. And if people will put in a lot of trouble in doing a research project, then third parties should be a little respectful of that and say, Okay, fine, you think it's important. Maybe I don't see it from your shoes. I don't fully understand why you think it's important. Maybe there is a class of people and situations where it is very important. I think many readers in the modern knowledge ecosystem are too quick to apply judgment that oh that's an unimportant question. So I think we should just be cautious. about dissing other people's work because w I think it's not important. So the I say the core is you do need clarity. Like be clear on what is a question you're",
+      "endTime": 1222.86,
+      "text": "I don't share the snobbery of the people who lay claim to being the gatekeepers and know what are the important questions. Linking back to our previous episode on the Mavericks and the uh upstarts that played a phenomenal role in each of them, there was a certain skepticism about what are you even doing? We don't understand this at all, why are you wasting your time? This is what the establishment always says. And I I just want us to be careful that there tend to be many discussions around what is important. I have a radical view on this that researchers don't uh allocate their time foolishly. Okay? We are all uh careful about how we uh protect our time and our resources. And if people will put in a lot of trouble in doing a research project, then third parties should be a little respectful of that and say, Okay, fine, you think it's important. Maybe I don't see it from your shoes. I don't fully understand why you think it's important. Maybe there is a class of people and situations where it is very important. I think many readers in the modern knowledge ecosystem are too quick to apply judgment that oh that's an unimportant question. So I think we should just be cautious. about dissing other people's work because w I think it's not important. So the I say the core is you do need clarity. Like be clear on what is a question you're asking and do ask a question or three questions. But an essay is different. It doesn't have to have a question. In a research in the STEM world, in the social science world, you do need a little bit of clarity on what is the question and articulate that question and then offer a persuasive answer. Otherwise like why are you writing a paper? you can't just say, Oh, these are such great questions and I oops actually I don't know the answer. Or make claims which are not substantiated and it's got to be novel. Okay. So what are the ingredients of a paper? These are the three ingredients of a paper, and the important question is in the eyes of the beholder and we should not get fussed",
       "words": [
         {
           "word": "I",
@@ -20523,15 +20539,7 @@
           "startTime": 1186.76,
           "endTime": 1187.0,
           "confidence": 0.9176
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1187.0,
-      "endTime": 1190.6,
-      "text": "asking and do ask a question or three questions. But",
-      "words": [
+        },
         {
           "word": "asking",
           "startTime": 1187.0,
@@ -20591,15 +20599,7 @@
           "startTime": 1189.96,
           "endTime": 1190.6,
           "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1190.6,
-      "endTime": 1222.86,
-      "text": "an essay is different. It doesn't have to have a question. In a research in the STEM world, in the social science world, you do need a little bit of clarity on what is the question and articulate that question and then offer a persuasive answer. Otherwise like why are you writing a paper? you can't just say, Oh, these are such great questions and I oops actually I don't know the answer. Or make claims which are not substantiated and it's got to be novel. Okay. So what are the ingredients of a paper? These are the three ingredients of a paper, and the important question is in the eyes of the beholder and we should not get fussed",
-      "words": [
+        },
         {
           "word": "an",
           "startTime": 1190.6,
@@ -42013,8 +42013,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2315.82,
-      "endTime": 2567.62,
-      "text": "leap blog is a uh uh peer-reviewed uh research journal that is co-edited by me and a bunch of others. And please google it and you'll find it. So this is a structure that works very well for a lot of nice modern scientific work and it is certainly the default setting in the world of science. That in STEM, if you had a default design of a paper, it is IMRD. It's not hard and fast, it's not a straight jacket. When you decide you want to do something different, you are allowed to, but it's a good way to channel the mind. That you're doing a research project, tell me IMRD. Okay, turning to a little more of an economics paper, here is a typical recipe that I like to use in an economics paper. We have an introduction section which is actually an executive summary. It's a thousand word summary of the paper. And oftentimes we will publish this thousand-word summary either in a newspaper or on a blog or both, just unveiling the paper. So the it's called introduction, but actually it's a summary. So it is the everything that here is this field, these are the important questions in the field. We have so many cool novel ideas on what we have done. Here's what we have discovered, here's how this changes the world. All in a thousand words. Okay, that's the introduction section. Then you turn around and actually start writing the paper. So the I is actually the section one is an introduction, is actually just a summary of the paper. So push it aside. Now you actually starting writing the paper. Then your job once again is what is this field? What is the setting? What is the institutional context in which I'm trying to study something? What are the important questions? What is known, what is not known. Okay, so what are the questions? So you get to that narration of what are the questions. Then you show your methods, you show your work. And it is a fashion in economics papers to often emphasize what are some alternative explanations that could have generated my findings. And can I do some robustness checks whereby I rule out some alternative hypotheses? And then you come to the conclusion section. The conclusion section is partly to just summarize what was said before. Okay, say it again that we uh embarked on an important journey, these are the questions that we were trying to solve. In the main, our answers are so and so. And then so what? How does this change your view of the world? Why is this important? What are its interconnections? How does it influence that literature and that literature? What are the interesting downstream ramifications that okay, now if you believe this, then you know what? We could go build this kind of new risk management system, or we should be doing this kind of research, or We could rewrite a regulation better. Okay, like that. So that's all in the conclusion section. So think of the paper as a title, a hundred word abstract. Always you'll put a table of contents, then the introduction section, that's the summary of the paper, then a statement of the field and the questions with the sharp articulation of the questions, then your main story of what you did. That here's how I went about trying to offer novel insights into these important questions. And what did you find? And then a conclusion section where you summarized, we fought for these questions, we got these answers. And at this point, I'm not going to argue with you again with the details because I just did that. But then now take a leap beyond. So what? Why does this matter? How does this change our view of the world? How does this impinge on adjacent literatures? What are its practical real world consequences? What are its consequences for research? What downstream opportunities for research are there? Okay, so this is the package of a common economics paper and many of my papers, but again, it's not a straitjacket. You don't have to use it all the time. Now, in this, I have some important thumb rules for every uh idealistic writer uh that is watching this show. Okay. A full hundred thousand people will read the title of your paper. Okay, with modern dissemination techniques, you get your paper out, okay. put it into a institutional working paper archive, get it out onto Repek. We'll come back to a little bit of the post production",
+      "endTime": 2614.98,
+      "text": "leap blog is a uh uh peer-reviewed uh research journal that is co-edited by me and a bunch of others. And please google it and you'll find it. So this is a structure that works very well for a lot of nice modern scientific work and it is certainly the default setting in the world of science. That in STEM, if you had a default design of a paper, it is IMRD. It's not hard and fast, it's not a straight jacket. When you decide you want to do something different, you are allowed to, but it's a good way to channel the mind. That you're doing a research project, tell me IMRD. Okay, turning to a little more of an economics paper, here is a typical recipe that I like to use in an economics paper. We have an introduction section which is actually an executive summary. It's a thousand word summary of the paper. And oftentimes we will publish this thousand-word summary either in a newspaper or on a blog or both, just unveiling the paper. So the it's called introduction, but actually it's a summary. So it is the everything that here is this field, these are the important questions in the field. We have so many cool novel ideas on what we have done. Here's what we have discovered, here's how this changes the world. All in a thousand words. Okay, that's the introduction section. Then you turn around and actually start writing the paper. So the I is actually the section one is an introduction, is actually just a summary of the paper. So push it aside. Now you actually starting writing the paper. Then your job once again is what is this field? What is the setting? What is the institutional context in which I'm trying to study something? What are the important questions? What is known, what is not known. Okay, so what are the questions? So you get to that narration of what are the questions. Then you show your methods, you show your work. And it is a fashion in economics papers to often emphasize what are some alternative explanations that could have generated my findings. And can I do some robustness checks whereby I rule out some alternative hypotheses? And then you come to the conclusion section. The conclusion section is partly to just summarize what was said before. Okay, say it again that we uh embarked on an important journey, these are the questions that we were trying to solve. In the main, our answers are so and so. And then so what? How does this change your view of the world? Why is this important? What are its interconnections? How does it influence that literature and that literature? What are the interesting downstream ramifications that okay, now if you believe this, then you know what? We could go build this kind of new risk management system, or we should be doing this kind of research, or We could rewrite a regulation better. Okay, like that. So that's all in the conclusion section. So think of the paper as a title, a hundred word abstract. Always you'll put a table of contents, then the introduction section, that's the summary of the paper, then a statement of the field and the questions with the sharp articulation of the questions, then your main story of what you did. That here's how I went about trying to offer novel insights into these important questions. And what did you find? And then a conclusion section where you summarized, we fought for these questions, we got these answers. And at this point, I'm not going to argue with you again with the details because I just did that. But then now take a leap beyond. So what? Why does this matter? How does this change our view of the world? How does this impinge on adjacent literatures? What are its practical real world consequences? What are its consequences for research? What downstream opportunities for research are there? Okay, so this is the package of a common economics paper and many of my papers, but again, it's not a straitjacket. You don't have to use it all the time. Now, in this, I have some important thumb rules for every uh idealistic writer uh that is watching this show. Okay. A full hundred thousand people will read the title of your paper. Okay, with modern dissemination techniques, you get your paper out, okay. put it into a institutional working paper archive, get it out onto Repek. We'll come back to a little bit of the post production process later. But a hundred thousand people are going to see the title. So you better make it good. I guess the good titles matter. Uh titles should not just be cute, they should also be about the paper. So there are some papers which have an enigmatic and cute title that lingers, but there is one particular paper which where I shall not name the paper and the authors. But it's a very cute title and I've thought about it for years and it actually dragged me to read the paper several times. But the paper is then not the title, it's just a cute title. There are uh there is a urge for cuteness in title and I titles and I think it's a bit overdone. It is the most important. It's a one sentence summary of your paper and it helps to have a literary flourish. But I think sometimes people are going too far.",
       "words": [
         {
           "word": "leap",
@@ -46647,15 +46647,7 @@
           "startTime": 2567.22,
           "endTime": 2567.62,
           "confidence": 0.9722
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2567.62,
-      "endTime": 2575.64,
-      "text": "process later. But a hundred thousand people are going to see the title. So you better make it good. I guess the good titles matter. Uh titles",
-      "words": [
+        },
         {
           "word": "process",
           "startTime": 2567.62,
@@ -46817,15 +46809,7 @@
           "startTime": 2575.14,
           "endTime": 2575.64,
           "confidence": 0.9734
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2577.46,
-      "endTime": 2612.42,
-      "text": "should not just be cute, they should also be about the paper. So there are some papers which have an enigmatic and cute title that lingers, but there is one particular paper which where I shall not name the paper and the authors. But it's a very cute title and I've thought about it for years and it actually dragged me to read the paper several times. But the paper is then not the title, it's just a cute title. There are uh there is a urge for cuteness in title and I titles and I think it's a bit overdone. It is the most important. It's a one sentence summary of your paper and it helps to have a literary flourish.",
-      "words": [
+        },
         {
           "word": "should",
           "startTime": 2577.46,
@@ -47557,15 +47541,7 @@
           "startTime": 2611.54,
           "endTime": 2612.42,
           "confidence": 0.9231
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2612.42,
-      "endTime": 2630.5,
-      "text": "But I think sometimes people are going too far. One of my favorite titles is uh one of B Jju Rao's early papers in the early 90s, and he had studied uh Dowry and how that was changing, and the title of the paper was The Rising Price of Husbands. Which is a great title. It's a great title. It's clever and it is about the paper.",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 2612.42,
@@ -47619,7 +47595,15 @@
           "startTime": 2614.26,
           "endTime": 2614.98,
           "confidence": 0.9464
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2614.98,
+      "endTime": 2630.5,
+      "text": "One of my favorite titles is uh one of B Jju Rao's early papers in the early 90s, and he had studied uh Dowry and how that was changing, and the title of the paper was The Rising Price of Husbands. Which is a great title. It's a great title. It's clever and it is about the paper.",
+      "words": [
         {
           "word": "One",
           "startTime": 2614.98,
@@ -48323,8 +48307,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2647.53,
-      "endTime": 2740.95,
-      "text": "So we look for cute, but I think it's the world has gone a little too far on focusing on the cute to the point where there are titles that are almost disconnected with the main body of the work. So a hundred thousand people are going to read the title of your paper, so make it count. Then uh 1,000 people are going to read the abstract. Okay, so make it count. Your abstract is a hundred word summary of your paper, ten thousand people are going to read the abstract. Okay, sadly, a large number of people only read the abstract and never go further than that. One thousand people are going to start reading the paper. This is the hard working, serious, thorough Amit Varma who promises himself that I'm going to bloody read this paper. Okay, so one thousand people are going to start reading the paper and a hundred people are going to actually read it. Okay, so this is life. This is the sadness of life. Getting read is very difficult, and when we make uh a well written paper, these numbers will go up commensurately. A well written paper will get read more. A lot of papers are badly written, and then you suffer this pathology that practically nobody ends up reading the paper. Most journal published papers achieve negligible citations, which is one metric. I I don't want to overstate citations as a metric. There's a lot of power game going on in citations. But most papers just die without a trace. They have no impact on other people. Nobody's reading it. Nobody's caring about it. And I think that is partly because not enough passion was put into writing it. So you know the old adage in writing, if it was not hard to write, it",
+      "endTime": 2766.39,
+      "text": "So we look for cute, but I think it's the world has gone a little too far on focusing on the cute to the point where there are titles that are almost disconnected with the main body of the work. So a hundred thousand people are going to read the title of your paper, so make it count. Then uh 1,000 people are going to read the abstract. Okay, so make it count. Your abstract is a hundred word summary of your paper, ten thousand people are going to read the abstract. Okay, sadly, a large number of people only read the abstract and never go further than that. One thousand people are going to start reading the paper. This is the hard working, serious, thorough Amit Varma who promises himself that I'm going to bloody read this paper. Okay, so one thousand people are going to start reading the paper and a hundred people are going to actually read it. Okay, so this is life. This is the sadness of life. Getting read is very difficult, and when we make uh a well written paper, these numbers will go up commensurately. A well written paper will get read more. A lot of papers are badly written, and then you suffer this pathology that practically nobody ends up reading the paper. Most journal published papers achieve negligible citations, which is one metric. I I don't want to overstate citations as a metric. There's a lot of power game going on in citations. But most papers just die without a trace. They have no impact on other people. Nobody's reading it. Nobody's caring about it. And I think that is partly because not enough passion was put into writing it. So you know the old adage in writing, if it was not hard to write, it will not be easy to read. And Care if it's a sophisticated scientific paper, it has to be easy to read, it has to be a delight, it has to be sparkling and lively, it has to engage the mind. Just because you're a boring academic, you have no excuse. You can't walk out of the challenge. Hey, you've got some new novel knowledge. You've discovered something for the first time in the universe. You should be full of the excitement of telling us what it is all about. So it doesn't have to be dull.",
       "words": [
         {
           "word": "So",
@@ -50155,15 +50139,7 @@
           "startTime": 2740.79,
           "endTime": 2740.95,
           "confidence": 0.9966
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2740.95,
-      "endTime": 2742.97,
-      "text": "will not be easy to read. And",
-      "words": [
+        },
         {
           "word": "will",
           "startTime": 2740.95,
@@ -50205,15 +50181,7 @@
           "startTime": 2742.47,
           "endTime": 2742.97,
           "confidence": 0.8764
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2743.58,
-      "endTime": 2766.39,
-      "text": "Care if it's a sophisticated scientific paper, it has to be easy to read, it has to be a delight, it has to be sparkling and lively, it has to engage the mind. Just because you're a boring academic, you have no excuse. You can't walk out of the challenge. Hey, you've got some new novel knowledge. You've discovered something for the first time in the universe. You should be full of the excitement of telling us what it is all about. So it doesn't have to be dull.",
-      "words": [
+        },
         {
           "word": "Care",
           "startTime": 2743.58,
@@ -59885,8 +59853,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3226.02,
-      "endTime": 3312.47,
-      "text": "freeze on the title. The process sounds so laborious, that I can imagine after you finished your paper with Ayush and Susan, you're just sitting back and putting on some Joni Mitchell and thinking, what title do we give? And then that brilliant line kind of uh pops up from the great song both sides now. So um I want to riffle out a little bit. I I I love b uh you know th this method of uh collaboratively working on uh um uh sort of a paper and using the mechanism of the slideshow. And I want to distinguish it from how people commonly think of a slideshow. Like Jeff Bezos, um uh you know, when he has his guide for how you do Amazon presentations, and he hates slideshows. His whole thing is do not bring me an effing powerpoint. A powerpoint will be simplistic, it will dumb down ideas. Instead, everybody has to write in proper paragraphs, they have to write a number of pages, I've forgotten how many but Because that forces you to flesh out your ideas, and then those pages are given to everyone else at the meeting in advance, so they come prepared. And I think it's a great guide to thinking and it does not contradict what you are doing at all. Because a kind of slideshow that is addressing is a simplifying mechanism. And here it's a core intricate. Here it's everything. You're putting everything on the slideshow. And forty-fifty slides of a show. Forty, fifty slides, and each slide will have many words and lots of data and all of that. And a slideshow that is meant for presentation should never look like that.",
+      "endTime": 3300.3,
+      "text": "freeze on the title. The process sounds so laborious, that I can imagine after you finished your paper with Ayush and Susan, you're just sitting back and putting on some Joni Mitchell and thinking, what title do we give? And then that brilliant line kind of uh pops up from the great song both sides now. So um I want to riffle out a little bit. I I I love b uh you know th this method of uh collaboratively working on uh um uh sort of a paper and using the mechanism of the slideshow. And I want to distinguish it from how people commonly think of a slideshow. Like Jeff Bezos, um uh you know, when he has his guide for how you do Amazon presentations, and he hates slideshows. His whole thing is do not bring me an effing powerpoint. A powerpoint will be simplistic, it will dumb down ideas. Instead, everybody has to write in proper paragraphs, they have to write a number of pages, I've forgotten how many but Because that forces you to flesh out your ideas, and then those pages are given to everyone else at the meeting in advance, so they come prepared. And I think it's a great guide to thinking and it does not contradict what you are doing at all. Because a kind of slideshow that is addressing is a simplifying mechanism. And here it's a core intricate. Here it's everything. You're putting everything on the",
       "words": [
         {
           "word": "freeze",
@@ -61369,7 +61337,15 @@
           "startTime": 3300.14,
           "endTime": 3300.3,
           "confidence": 0.9896
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3300.3,
+      "endTime": 3303.58,
+      "text": "slideshow. And forty-fifty slides of a show.",
+      "words": [
         {
           "word": "slideshow.",
           "startTime": 3300.3,
@@ -61411,7 +61387,15 @@
           "startTime": 3303.02,
           "endTime": 3303.58,
           "confidence": 0.8782
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3303.58,
+      "endTime": 3312.47,
+      "text": "Forty, fifty slides, and each slide will have many words and lots of data and all of that. And a slideshow that is meant for presentation should never look like that.",
+      "words": [
         {
           "word": "Forty,",
           "startTime": 3303.58,
@@ -62327,8 +62311,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3354.87,
-      "endTime": 3421.3,
-      "text": "our episode on the Outlaws. Outlaws, we talked about Mendel, and I had a fun fact, a trivia, that Mendel ordered forty copies of his paper from the press. Okay, in the modern world, there is no such limitation, and we're in an all-electronic world. At the same time, the world is deluged with too much rubbish. So when you get your uh treasure child out into some website, the world is unfortunately not waiting to read it and it is not easy to get read and oftentimes you will be ignored. So one does need to do a certain amount of work post-production to push the product. Okay, so we need to take effort to disseminate the product. So we should, you know, write it up in some newspapers, in some blog, sort of try to get visibility for the product. uh I'm a great believer in making a video of the paper. So tell the story in a video. Try to find conferences where you will present. And in this I have understood that uh small size of the room is absolutely key. What you want is thirty minutes, forty minutes,",
+      "endTime": 3466.1,
+      "text": "our episode on the Outlaws. Outlaws, we talked about Mendel, and I had a fun fact, a trivia, that Mendel ordered forty copies of his paper from the press. Okay, in the modern world, there is no such limitation, and we're in an all-electronic world. At the same time, the world is deluged with too much rubbish. So when you get your uh treasure child out into some website, the world is unfortunately not waiting to read it and it is not easy to get read and oftentimes you will be ignored. So one does need to do a certain amount of work post-production to push the product. Okay, so we need to take effort to disseminate the product. So we should, you know, write it up in some newspapers, in some blog, sort of try to get visibility for the product. uh I'm a great believer in making a video of the paper. So tell the story in a video. Try to find conferences where you will present. And in this I have understood that uh small size of the room is absolutely key. What you want is thirty minutes, forty minutes, fifty minutes with ten people. Because when you are put into a room with two hundred people and given ten minutes, then just nothing gets done. So you don't make any dent on the minds of the audience. So it is far better to get ten good people in a room where there's genuine concentration, where you get your thirty, forty, fifty minutes of a genuine presentation and a conversation around it. That is getting the word out. That is impinging on the minds of the people. Apart from that, nobody notices. So I'm a great believer that you should never go to a big conference. You should only go to small conferences. So small uh intense engagement with a few people is much better than a shallow engagement with large numbers of people. This is why the universe created ten hour podcasts and one hour videos.",
       "words": [
         {
           "word": "our",
@@ -63487,15 +63471,7 @@
           "startTime": 3420.98,
           "endTime": 3421.3,
           "confidence": 0.9917
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3421.3,
-      "endTime": 3424.42,
-      "text": "fifty minutes with ten people. Because",
-      "words": [
+        },
         {
           "word": "fifty",
           "startTime": 3421.3,
@@ -63531,15 +63507,7 @@
           "startTime": 3423.7,
           "endTime": 3424.42,
           "confidence": 0.9755
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3424.42,
-      "endTime": 3466.1,
-      "text": "when you are put into a room with two hundred people and given ten minutes, then just nothing gets done. So you don't make any dent on the minds of the audience. So it is far better to get ten good people in a room where there's genuine concentration, where you get your thirty, forty, fifty minutes of a genuine presentation and a conversation around it. That is getting the word out. That is impinging on the minds of the people. Apart from that, nobody notices. So I'm a great believer that you should never go to a big conference. You should only go to small conferences. So small uh intense engagement with a few people is much better than a shallow engagement with large numbers of people. This is why the universe created ten hour podcasts and one hour videos.",
-      "words": [
+        },
         {
           "word": "when",
           "startTime": 3424.42,
@@ -75587,8 +75555,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4014.86,
-      "endTime": 4032.32,
-      "text": "say to everybody that thinks they are writing a research product. Okay, once again, novel, persuasive. It could be a newspaper article, it could be a blog article, it could be a working paper, it could be a journal paper. Everybody that thinks they're writing a research paper needs to think more about",
+      "endTime": 4066.87,
+      "text": "say to everybody that thinks they are writing a research product. Okay, once again, novel, persuasive. It could be a newspaper article, it could be a blog article, it could be a working paper, it could be a journal paper. Everybody that thinks they're writing a research paper needs to think more about The craft of writing. I think it is grossly underestimated amongst researchers. Researchers think I'm living in some fancy econometrics and I'm doing some computer science, and they have not understood the core of writing. So I want to say two things. One is, gentle reader, you should take interest and prioritize the work of writing. For example, the simple strunk and white should be universal knowledge. for everybody in this field. And my second recommendation is you should attend Amitvarma's Art of Clear Writing class.",
       "words": [
         {
           "word": "say",
@@ -75907,15 +75875,7 @@
           "startTime": 4031.82,
           "endTime": 4032.32,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4032.9,
-      "endTime": 4037.78,
-      "text": "The craft of writing. I think it is grossly underestimated amongst researchers.",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 4032.9,
@@ -75987,15 +75947,7 @@
           "startTime": 4036.98,
           "endTime": 4037.78,
           "confidence": 0.9859
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4037.78,
-      "endTime": 4066.87,
-      "text": "Researchers think I'm living in some fancy econometrics and I'm doing some computer science, and they have not understood the core of writing. So I want to say two things. One is, gentle reader, you should take interest and prioritize the work of writing. For example, the simple strunk and white should be universal knowledge. for everybody in this field. And my second recommendation is you should attend Amitvarma's Art of Clear Writing class.",
-      "words": [
+        },
         {
           "word": "Researchers",
           "startTime": 4037.78,

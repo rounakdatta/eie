@@ -5,7 +5,7 @@
     "durationSeconds": 6862,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -247,8 +247,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 28.18,
-      "endTime": 62.18,
-      "text": "That was your start. Let's do it. So here's the thing, gentle readers, that just before we started, Ajay came out with a magnificent line. It's the one of the most memorable lines that have come from him, and that is saying a lot, because many memorable lines have come from him. Ajay Shah said that the great tragedy of my life is that I have lost my optimism for interstellar travel. Kindly explain. It's it's a very emotional thing. It's very difficult for me to talk about. Do you have to just You have to elaborate. You just you elaborated for me. Yeah. See, you do impressive",
+      "endTime": 51.44,
+      "text": "That was your start. Let's do it. So here's the thing, gentle readers, that just before we started, Ajay came out with a magnificent line. It's the one of the most memorable lines that have come from him, and that is saying a lot, because many memorable lines have come from him. Ajay Shah said that the great tragedy of my life is that I have lost my optimism for interstellar travel. Kindly explain.",
       "words": [
         {
           "word": "That",
@@ -693,7 +693,15 @@
           "startTime": 49.94,
           "endTime": 51.44,
           "confidence": 0.9066
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 51.46,
+      "endTime": 54.42,
+      "text": "It's it's a very emotional thing. It's very difficult for me to talk",
+      "words": [
         {
           "word": "It's",
           "startTime": 51.46,
@@ -771,7 +779,15 @@
           "startTime": 54.26,
           "endTime": 54.42,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 54.42,
+      "endTime": 62.18,
+      "text": "about. Do you have to just You have to elaborate. You just you elaborated for me. Yeah. See, you do impressive",
+      "words": [
         {
           "word": "about.",
           "startTime": 54.42,
@@ -66333,8 +66349,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3512.7,
-      "endTime": 3541.36,
-      "text": "Gentle readers, one thing that will not change in twenty fifty is that the sun will set and the sun will rise and the sun will set again. The sun has set. So the rest of the chapters where you talk about what you're going to talk about now are all going to be indoors. So I'm super excited to hear your elaborations. So first prediction for 2050, go for it. Gene editing. So what could be more fundamental than that? Each of us is two billion.",
+      "endTime": 3534.94,
+      "text": "Gentle readers, one thing that will not change in twenty fifty is that the sun will set and the sun will rise and the sun will set again. The sun has set. So the rest of the chapters where you talk about what you're going to talk about now are all going to be indoors. So I'm super excited to hear your elaborations. So first prediction for 2050, go for it. Gene editing. So",
       "words": [
         {
           "word": "Gentle",
@@ -66779,7 +66795,15 @@
           "startTime": 3533.98,
           "endTime": 3534.94,
           "confidence": 0.8894
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3534.94,
+      "endTime": 3610.81,
+      "text": "what could be more fundamental than that? Each of us is two billion. letters of ACTG and a whole bunch of code about the body is written down there. And so imagine that there are mistakes in that, and imagine that modern medicine is able to undertake targeted interventions that edit the genes of an adult. Okay? Imagine that being done on many, many problems. That would be absolutely mind blowing. So it's just an ultimate level of uh medical science being brought to bear on improving our health. There are glimmers of it that have begun. There are some uh lab experiments, one individual at a time, where a gene has been edited and a liver has been entirely fixed and so on. But in 25 years it's going to be absolutely staggering. So I think of it as the ultimate frontier of what medicine can do. That on one hand, we will increasingly read and decode The human DNA. We will figure out what switches to what, where, and we'll have the power to do editing. And we will be able to edit not just like an embryo, but a full blown living human being. You can retrofit improved genes upon",
+      "words": [
         {
           "word": "what",
           "startTime": 3534.94,
@@ -66857,15 +66881,7 @@
           "startTime": 3540.86,
           "endTime": 3541.36,
           "confidence": 0.8294
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3541.96,
-      "endTime": 3610.81,
-      "text": "letters of ACTG and a whole bunch of code about the body is written down there. And so imagine that there are mistakes in that, and imagine that modern medicine is able to undertake targeted interventions that edit the genes of an adult. Okay? Imagine that being done on many, many problems. That would be absolutely mind blowing. So it's just an ultimate level of uh medical science being brought to bear on improving our health. There are glimmers of it that have begun. There are some uh lab experiments, one individual at a time, where a gene has been edited and a liver has been entirely fixed and so on. But in 25 years it's going to be absolutely staggering. So I think of it as the ultimate frontier of what medicine can do. That on one hand, we will increasingly read and decode The human DNA. We will figure out what switches to what, where, and we'll have the power to do editing. And we will be able to edit not just like an embryo, but a full blown living human being. You can retrofit improved genes upon",
-      "words": [
+        },
         {
           "word": "letters",
           "startTime": 3541.96,
@@ -70287,8 +70303,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3733.56,
-      "endTime": 3988.73,
-      "text": "For a long time people have been talking about energy that is too cheap to meter, and many times this was uh pushed around nuclear power. And as an economist, I wish to say that hold your horses because there's quite a bit of capital cost that while you will put rods of uranium costing next to nothing into the nuclear power plant, and you know, you can have a thorium route whereby you can breed more energy than you started with. I I buy the fuel side of things. But the fact is nuclear power plants are extremely expensive pieces of hardware and they will always have a high capital cost. So that kind of world was a bit overstated. Fine. Let's turn to this world. The dominant force in this world is solar and wind. We have done one episode on the future of electricity. We have done one episode on uh Moore's Laws and Wright's Laws and the gains. Productivity and how we have improved on solar cells and how we are improving on windmills. It is not difficult to think of these things being scaled out. A couple of 10, 20 years of this kind of rights law progress, experience curves, improvements in manufacturing, incremental gains. Like just yesterday, I read that an undergraduate student has a mathematical breakthrough on the modeling of windwells. She has worked out. Better solve the equations of what happens in the blades of a windmill. Okay, and this will give 1%, 2% gains in the productivity of a windmill. Like that, the progress will go on. One mighty story waiting to unfold is offshore wind. That there are magical gains from wind power when you go offshore. As an aside for everybody in India, you should know that the best wind. uh sites in India are offshore beyond Tamil Nad and in a ring all around Sri Lanka. So it's one of the great stories that hundreds of billions of dollars has to go in to build all those offshore wind windmills and to some extent serve the Sri Lankan economy, to a main extent serve the Indian economy. There's a revolution waiting to happen there. So those cost gains and you know we've discussed time of day pricing, That you will have expensive energy in the evening, but you know what? In most of the day, the price of electricity will be zero. I'm so convinced that this is coming. That in the evening, yes, electricity will be expensive. But there will be hours of the day where the sun is shining in India, where the market price of electricity will be zero. It's an unbelievable moment that what would you do if electricity was free? Significant chunks of the day. What are all the applications we would think of? I feel we haven't even begun. We are all so grounded in the world of scarcity. So I'm not just saying that it will be cute and convenient that electricity will be cheap, will become very cheap. I'm saying we have not confronted the staggering consequences of the word zero. What would you do with solar electricity if for significant chunks of the day electricity were free? So I want to make up one trivial example. Imagine desalination of water. Okay, all along the coast. In the hours of the day when the price of energy on the Indian grid is like zero. You just do desalination and uh distill the water and get perfect water out. And so very large supplies would be available because frankly the industrial plant that will use electricity and purify the water is not very expensive. Okay, that's just one example. But I feel we need to go far more in this direction that in your mind's eye, Imagine the crashing price of solar electricity. Imagine the crashing price of wind supported by the offshore wind revolution. Imagine the crashing prices of lithium ion batteries and sodium ion batteries. Okay, nobody in their good mind in India today should be putting up any fossil fuel capacity because that age has gone. It's a cost story that the renewables revolution, the storage revolution is just so compelling in terms of price. And then think deeply about what would the people do that when Entrepreneurs, innovators, engineers are told, you know, there are a couple of hours of electricity every day where it's essentially",
+      "endTime": 3993.37,
+      "text": "For a long time people have been talking about energy that is too cheap to meter, and many times this was uh pushed around nuclear power. And as an economist, I wish to say that hold your horses because there's quite a bit of capital cost that while you will put rods of uranium costing next to nothing into the nuclear power plant, and you know, you can have a thorium route whereby you can breed more energy than you started with. I I buy the fuel side of things. But the fact is nuclear power plants are extremely expensive pieces of hardware and they will always have a high capital cost. So that kind of world was a bit overstated. Fine. Let's turn to this world. The dominant force in this world is solar and wind. We have done one episode on the future of electricity. We have done one episode on uh Moore's Laws and Wright's Laws and the gains. Productivity and how we have improved on solar cells and how we are improving on windmills. It is not difficult to think of these things being scaled out. A couple of 10, 20 years of this kind of rights law progress, experience curves, improvements in manufacturing, incremental gains. Like just yesterday, I read that an undergraduate student has a mathematical breakthrough on the modeling of windwells. She has worked out. Better solve the equations of what happens in the blades of a windmill. Okay, and this will give 1%, 2% gains in the productivity of a windmill. Like that, the progress will go on. One mighty story waiting to unfold is offshore wind. That there are magical gains from wind power when you go offshore. As an aside for everybody in India, you should know that the best wind. uh sites in India are offshore beyond Tamil Nad and in a ring all around Sri Lanka. So it's one of the great stories that hundreds of billions of dollars has to go in to build all those offshore wind windmills and to some extent serve the Sri Lankan economy, to a main extent serve the Indian economy. There's a revolution waiting to happen there. So those cost gains and you know we've discussed time of day pricing, That you will have expensive energy in the evening, but you know what? In most of the day, the price of electricity will be zero. I'm so convinced that this is coming. That in the evening, yes, electricity will be expensive. But there will be hours of the day where the sun is shining in India, where the market price of electricity will be zero. It's an unbelievable moment that what would you do if electricity was free? Significant chunks of the day. What are all the applications we would think of? I feel we haven't even begun. We are all so grounded in the world of scarcity. So I'm not just saying that it will be cute and convenient that electricity will be cheap, will become very cheap. I'm saying we have not confronted the staggering consequences of the word zero. What would you do with solar electricity if for significant chunks of the day electricity were free? So I want to make up one trivial example. Imagine desalination of water. Okay, all along the coast. In the hours of the day when the price of energy on the Indian grid is like zero. You just do desalination and uh distill the water and get perfect water out. And so very large supplies would be available because frankly the industrial plant that will use electricity and purify the water is not very expensive. Okay, that's just one example. But I feel we need to go far more in this direction that in your mind's eye, Imagine the crashing price of solar electricity. Imagine the crashing price of wind supported by the offshore wind revolution. Imagine the crashing prices of lithium ion batteries and sodium ion batteries. Okay, nobody in their good mind in India today should be putting up any fossil fuel capacity because that age has gone. It's a cost story that the renewables revolution, the storage revolution is just so compelling in terms of price. And then think deeply about what would the people do that when Entrepreneurs, innovators, engineers are told, you know, there are a couple of hours of electricity every day where it's essentially free. What would you do with it? I think there are going to be some great feats of",
       "words": [
         {
           "word": "For",
@@ -74723,15 +74739,7 @@
           "startTime": 3988.33,
           "endTime": 3988.73,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3988.73,
-      "endTime": 4008.43,
-      "text": "free. What would you do with it? I think there are going to be some great feats of imagination. Yeah, and not only would I uh recommend to everyone that episode we did The Future of Electricity, which I actually think is one of our best episodes, but also our episode on nuclear power. And yeah, it's so much fun this show. Isn't it fun, Ajayasha? Absolutely. Are we going to be doing a show in 2050?",
-      "words": [
+        },
         {
           "word": "free.",
           "startTime": 3988.73,
@@ -74839,7 +74847,15 @@
           "startTime": 3993.13,
           "endTime": 3993.37,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3993.37,
+      "endTime": 4008.43,
+      "text": "imagination. Yeah, and not only would I uh recommend to everyone that episode we did The Future of Electricity, which I actually think is one of our best episodes, but also our episode on nuclear power. And yeah, it's so much fun this show. Isn't it fun, Ajayasha? Absolutely. Are we going to be doing a show in 2050?",
+      "words": [
         {
           "word": "imagination.",
           "startTime": 3993.37,
@@ -75335,8 +75351,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4024.36,
-      "endTime": 4079.64,
-      "text": "Okay, the next is uh brain machine interfaces. Okay, so this is straight out of the matrix, but they're coming. And we can see little bits of the early beginnings. And 25 years will this be figured out a lot? I think yes. Okay. So I vividly remember once uh Bill Gage did an interview where he said that voice recognition is coming. And I remember at the time I was very skeptical. I said, like what? Voice recognition? It's so difficult. But you know what? Actually the AI happened. Meaning he couldn't have known what was the AI in the pipeline. This was quite a while ago. But he was just like dreaming that you know this is such an important problem and it's going to be solved. So today voice recognition is astonishingly good. And we can fast forward into a near future where voice recognition will be essentially perfect in noisy situations with a thick Tamilan accent or even worse, a thick Bengali accent, the voice",
+      "endTime": 4082.44,
+      "text": "Okay, the next is uh brain machine interfaces. Okay, so this is straight out of the matrix, but they're coming. And we can see little bits of the early beginnings. And 25 years will this be figured out a lot? I think yes. Okay. So I vividly remember once uh Bill Gage did an interview where he said that voice recognition is coming. And I remember at the time I was very skeptical. I said, like what? Voice recognition? It's so difficult. But you know what? Actually the AI happened. Meaning he couldn't have known what was the AI in the pipeline. This was quite a while ago. But he was just like dreaming that you know this is such an important problem and it's going to be solved. So today voice recognition is astonishingly good. And we can fast forward into a near future where voice recognition will be essentially perfect in noisy situations with a thick Tamilan accent or even worse, a thick Bengali accent, the voice recognition is going to work fully.",
       "words": [
         {
           "word": "Okay,",
@@ -76351,15 +76367,7 @@
           "startTime": 4079.32,
           "endTime": 4079.64,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4079.64,
-      "endTime": 4083.94,
-      "text": "recognition is going to work fully. Unnecessary.",
-      "words": [
+        },
         {
           "word": "recognition",
           "startTime": 4079.64,
@@ -76395,7 +76403,15 @@
           "startTime": 4081.64,
           "endTime": 4082.44,
           "confidence": 0.8697
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4082.44,
+      "endTime": 4083.94,
+      "text": "Unnecessary.",
+      "words": [
         {
           "word": "Unnecessary.",
           "startTime": 4082.44,
@@ -81447,8 +81463,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4345.51,
-      "endTime": 4442.52,
-      "text": "Next, mining in the asteroid belt. Okay? So I'm crushed in grief that we have no hope of getting through to Alpha Centauri with today's technology. I feel we are within reach of the manufacturing excellence and the improvements in robotics that spacecraft will go into the asteroid belt, will build factories there. So people have this wrong idea. that we will tow the asteroid back to the moon and mine it there. Like why would you? It's very expensive moving a whole pile of dirt. So intuitively think that pile of dirt is like the contents of an uh coal mine. Okay? Like you don't want to take the junk out of a coal mine. It's so expensive, it's filled with overhead. Whereas you want to mine it at the asteroid belt. So I think the magic is to build a factory there where you will find uh the h pieces of rock that contain yetrium and tantalum and you will make nice polished uh one meter by one meter by one meter blocks of these metals and they will go into container ships and the container ships will bring them back to the earth. And that will like comprehensively put an end to a lot of the weird resource shortage problems that m may prop pop up by twenty fifty. But for me this is just the coolness factor that wow, like building factories in the asteroid belt having completely robotic, personless operation, very high levels of autonomy, figuring out stuff. Um I mean the ultimate dream will be spacecraft that makes",
+      "endTime": 4444.52,
+      "text": "Next, mining in the asteroid belt. Okay? So I'm crushed in grief that we have no hope of getting through to Alpha Centauri with today's technology. I feel we are within reach of the manufacturing excellence and the improvements in robotics that spacecraft will go into the asteroid belt, will build factories there. So people have this wrong idea. that we will tow the asteroid back to the moon and mine it there. Like why would you? It's very expensive moving a whole pile of dirt. So intuitively think that pile of dirt is like the contents of an uh coal mine. Okay? Like you don't want to take the junk out of a coal mine. It's so expensive, it's filled with overhead. Whereas you want to mine it at the asteroid belt. So I think the magic is to build a factory there where you will find uh the h pieces of rock that contain yetrium and tantalum and you will make nice polished uh one meter by one meter by one meter blocks of these metals and they will go into container ships and the container ships will bring them back to the earth. And that will like comprehensively put an end to a lot of the weird resource shortage problems that m may prop pop up by twenty fifty. But for me this is just the coolness factor that wow, like building factories in the asteroid belt having completely robotic, personless operation, very high levels of autonomy, figuring out stuff. Um I mean the ultimate dream will be spacecraft that makes spacecraft sitting in the asteroid",
       "words": [
         {
           "word": "Next,",
@@ -83033,15 +83049,7 @@
           "startTime": 4442.28,
           "endTime": 4442.52,
           "confidence": 0.8854
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4442.52,
-      "endTime": 4450.44,
-      "text": "spacecraft sitting in the asteroid belt. Three D printers there only so they make the finished product and I'm joking what you're saying correct? No that's",
-      "words": [
+        },
         {
           "word": "spacecraft",
           "startTime": 4442.52,
@@ -83071,7 +83079,15 @@
           "startTime": 4443.96,
           "endTime": 4444.52,
           "confidence": 0.9859
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4444.52,
+      "endTime": 4450.44,
+      "text": "belt. Three D printers there only so they make the finished product and I'm joking what you're saying correct? No that's",
+      "words": [
         {
           "word": "belt.",
           "startTime": 4444.52,
@@ -85075,8 +85091,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4565.35,
-      "endTime": 4642.95,
-      "text": "you you won't need any uh low end labor that gets into the line of fire, there will be a bunch of autonomous vehicles that will fight with each other. So warfare will be drone to drone warfare. There will be wars that are fully drones trying to kill drones, and it will become clear objective data will come out that I'm winning, I'm losing, not too many people will die. So like here's an immediate implication. So what happens in war is one foolish person like Putin initiates a war. And now you've got uh one hundred thousand Russian casualties, about a third of them are dead, about thirty three thousand people have died, about sixty six thousand people have been wounded. At this point, the price you've paid in blood is so great that it becomes politically difficult to stop. Okay. So we've seen this like in the first world war, we've seen this in many other wars, that it is more difficult in any political system to back away saying, Oops, sorry, it was a mistake. Then you have to lose big time. to stop. And that's very costly to implement. But if they're just machines flying and killing machines, then you will expend pressure, but you will not expend blood. And then facts on the battlefield will become clear to both sides. And it will be easier to stop a war because",
+      "endTime": 4647.91,
+      "text": "you you won't need any uh low end labor that gets into the line of fire, there will be a bunch of autonomous vehicles that will fight with each other. So warfare will be drone to drone warfare. There will be wars that are fully drones trying to kill drones, and it will become clear objective data will come out that I'm winning, I'm losing, not too many people will die. So like here's an immediate implication. So what happens in war is one foolish person like Putin initiates a war. And now you've got uh one hundred thousand Russian casualties, about a third of them are dead, about thirty three thousand people have died, about sixty six thousand people have been wounded. At this point, the price you've paid in blood is so great that it becomes politically difficult to stop. Okay. So we've seen this like in the first world war, we've seen this in many other wars, that it is more difficult in any political system to back away saying, Oops, sorry, it was a mistake. Then you have to lose big time. to stop. And that's very costly to implement. But if they're just machines flying and killing machines, then you will expend pressure, but you will not expend blood. And then facts on the battlefield will become clear to both sides. And it will be easier to stop a war because not a lot of people died. So you just say, okay, I'll go improve my code and then I'll come back and fight you next",
       "words": [
         {
           "word": "you",
@@ -86493,15 +86509,7 @@
           "startTime": 4642.71,
           "endTime": 4642.95,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4642.95,
-      "endTime": 4729.19,
-      "text": "not a lot of people died. So you just say, okay, I'll go improve my code and then I'll come back and fight you next year. A lot of drones were used by Pakistan in the recent skirmish against us, where we came off uh quite well, in fact. And I have an episode on this with Prane Kutasani and Adity Ramnathana of Takshishila. And the question that I asked them, and it's something that I actually worry about. This is a real concrete worry. This is not a prediction for twenty fifty. It's it's a worry for twenty twenty six. that how long is it before drones are used to uh g commit terrorist actions on our city. You know? Like sitting a few miles outside Mumbai, it is easy for people with the willpower and the resources which really aren't much, to put together a thousand drones and to program a thousand drones to go into any crowd area of Mumbai or into Delhi Parliament, for example. I mean it was such a primitive way of attacking parliament, you're trying to send people there. But you could do it with drones. And it is impossible to actually protect against this Uh unless you have information in advance. You can protect high value targets perhaps and have your jammers and all that set up. But if you're just going to attack a random uh, you know, a concert ground where there's a rock concert happening in Mumbai, how the hell do you stop that? And I really worry, and the first time it happens, how does the state respond to that? What scapegoat does it find? Because initially you may not even know who carried it out. We had an episode on hybrid warfare. It could be Pakistan, it could be China, it could be some mad lunatic um uh i in India itself. What do",
-      "words": [
+        },
         {
           "word": "not",
           "startTime": 4642.95,
@@ -86651,7 +86659,15 @@
           "startTime": 4647.75,
           "endTime": 4647.91,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4647.91,
+      "endTime": 4729.19,
+      "text": "year. A lot of drones were used by Pakistan in the recent skirmish against us, where we came off uh quite well, in fact. And I have an episode on this with Prane Kutasani and Adity Ramnathana of Takshishila. And the question that I asked them, and it's something that I actually worry about. This is a real concrete worry. This is not a prediction for twenty fifty. It's it's a worry for twenty twenty six. that how long is it before drones are used to uh g commit terrorist actions on our city. You know? Like sitting a few miles outside Mumbai, it is easy for people with the willpower and the resources which really aren't much, to put together a thousand drones and to program a thousand drones to go into any crowd area of Mumbai or into Delhi Parliament, for example. I mean it was such a primitive way of attacking parliament, you're trying to send people there. But you could do it with drones. And it is impossible to actually protect against this Uh unless you have information in advance. You can protect high value targets perhaps and have your jammers and all that set up. But if you're just going to attack a random uh, you know, a concert ground where there's a rock concert happening in Mumbai, how the hell do you stop that? And I really worry, and the first time it happens, how does the state respond to that? What scapegoat does it find? Because initially you may not even know who carried it out. We had an episode on hybrid warfare. It could be Pakistan, it could be China, it could be some mad lunatic um uh i in India itself. What do",
+      "words": [
         {
           "word": "year.",
           "startTime": 4647.91,

@@ -5,7 +5,7 @@
     "durationSeconds": 3438,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 62.38,
-      "endTime": 84.2,
-      "text": "Welcome to episode 14 of Everything Is Everything. In our last episode, unlucky number 13, but thank God we got past that. We spoke about Bruce Springsteen. And to carry the musical theme forward, I'm wearing a shirt with the Beatles on it. John, Paul, George, Ringo. I'm sorry, is my sense of humor a problem for you? I have a better problem for you. But",
+      "endTime": 80.78,
+      "text": "Welcome to episode 14 of Everything Is Everything. In our last episode, unlucky number 13, but thank God we got past that. We spoke about Bruce Springsteen. And to carry the musical theme forward, I'm wearing a shirt with the Beatles on it. John, Paul, George, Ringo. I'm sorry, is my sense of humor a problem for you? I",
       "words": [
         {
           "word": "Welcome",
@@ -373,7 +373,15 @@
           "startTime": 80.62,
           "endTime": 80.78,
           "confidence": 0.9872
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 80.78,
+      "endTime": 143.97,
+      "text": "have a better problem for you. But let us teleport back. Into the Second World War. Okay. Late in the Second World War, uh, there were remarkable uh developments in uh making tanks on the German side. Okay, there's a famous Tiger tank, but also some other remarkable heavy tanks were being made by the Germans. One of the greatest questions for the Allies at that time was: are these just a few artisanal demo parts? Or are they being produced? Are they being produced on scale? How many are being produced a month? Okay. If thousands are being produced a month, then it's a whole new problem. And you know, the allies would have to go back to basics and rethink what they're going to do. So one of the most important questions was that of estimation. How many of a certain tank are being made per month? How might you approach this?",
+      "words": [
         {
           "word": "have",
           "startTime": 80.78,
@@ -415,15 +423,7 @@
           "startTime": 82.7,
           "endTime": 84.2,
           "confidence": 0.7388
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 85.82,
-      "endTime": 143.97,
-      "text": "let us teleport back. Into the Second World War. Okay. Late in the Second World War, uh, there were remarkable uh developments in uh making tanks on the German side. Okay, there's a famous Tiger tank, but also some other remarkable heavy tanks were being made by the Germans. One of the greatest questions for the Allies at that time was: are these just a few artisanal demo parts? Or are they being produced? Are they being produced on scale? How many are being produced a month? Okay. If thousands are being produced a month, then it's a whole new problem. And you know, the allies would have to go back to basics and rethink what they're going to do. So one of the most important questions was that of estimation. How many of a certain tank are being made per month? How might you approach this?",
-      "words": [
+        },
         {
           "word": "let",
           "startTime": 85.82,
@@ -28649,8 +28649,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1759.12,
-      "endTime": 1978.4,
-      "text": "We miss the boat on algorithms and what I'm worried about is that you and I will miss the boat on the YouTube algorithm. Keep hai kuchkaro. Let us at least if we can't go viral shah, let us at least go viral sha, as it were, right? So uh yeah, that that's uh it's actually a pretty moving story of not just a man, but an entire ecosystem which almost seems lost. Yes. Talked about the German tank problem. Do you have fun problems on your mind? Yes, yes. Why should we talk? See, we you uh the equity has to be there. You have spoken about German tanks. Now we must speak about British planes. Okay, let's set the record straight. So I want to tell you the story, and this is such a famous story, you obviously know it, and many of our gentle readers may also know it. Now, Abraham Wald was also kind of like a Renaissance man, did well in various uh fields, decision theory, sequential analysis, statistics, blah, blah, blah. And circa 1942. two, if I remember correctly, he was drafted into something called the Strategic Research Group. Right. The strategic research group was in fact headed by a gentleman called something Wallace, who was one of his students, and Wallace at one point described it, not without exaggeration as we know today looking back in hindsight, as the greatest group of living statisticians ever assembled. It was such a remarkable group. There was such intelligence in the room that at one point somebody quipped that Milton Friedman is the fourth smartest person in the room. Can you imagine? So, and Abraham Wald would have been the first smartest person. And despite this, I may tell you, he didn't have security clearance, by the way. So he would work on problems like which he didn't have security clearance to actually see for himself. So there was a joke that a secretary would stand by his side and every time he finished writing a sheet of paper, the secretary would quickly take the sheet away and then he'd begin work on the next sheet. So that was where the joke went. So there was an interesting problem that came to them about British aeroplanes that analysis needed to be done. A lot of British aeroplanes were coming back wounded, as it were. You anthropomorphized tanks earlier by saying tanks were killed. So these were wounded aeroplanes were kind of coming back. And uh one had to analyze these wounded aeroplanes to see how they could be made stronger. And one way of doing this was just seeing the bullet holes in different parts of the plane. Right. So a simple uh sort of uh uh a table that looked at that saw um that the engine had fewer holes than the fuselage. Uh right. And so a conclusion that many drew from there is that, hey, look, you know, uh all the bullet holes are in the fuselage, that's a problem, let's make it stronger. Walt said, No, wait a minute, that's not how you think about it. Ask the fundamental question, where are the missing bullets? Right? Once again. Where are the missing bullets? And his theory was this, that assume that all parts of a plane are going to get struck more or less equally, right? The part with the fewer bullets is the part which is most vulnerable that needs to be fixed because that is what is going down. Where are the missing bullets? The missing bullets are in the planes that went down. So it is the engine that you need to protect and you need to kind of uh cover up for that, which is a counterintuitive um uh you know sort of way of thinking about it. But U Stats came up with that, and it reminds me of something another great sports person came up with intuitively, where you know Ricky Ponting, the great Australian batsman, was once asked about his journey towards becoming a great batsman, and he said, Look, most batsmen have a map of the fielders in their head. I had a map of the gaps. That's that's sort of you had a German tank story. I r I I call you and I raise you with a British uh airplane story.",
+      "endTime": 1782.25,
+      "text": "We miss the boat on algorithms and what I'm worried about is that you and I will miss the boat on the YouTube algorithm. Keep hai kuchkaro. Let us at least if we can't go viral shah, let us at least go viral sha, as it were, right? So uh yeah, that that's uh it's actually a pretty moving story of not just a man, but an entire ecosystem which almost seems lost. Yes.",
       "words": [
         {
           "word": "We",
@@ -29095,7 +29095,15 @@
           "startTime": 1781.76,
           "endTime": 1782.25,
           "confidence": 0.8605
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1789.9,
+      "endTime": 1792.94,
+      "text": "Talked about the German tank problem. Do you have fun problems on your mind?",
+      "words": [
         {
           "word": "Talked",
           "startTime": 1789.9,
@@ -29179,7 +29187,15 @@
           "startTime": 1792.54,
           "endTime": 1792.94,
           "confidence": 0.9933
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1792.94,
+      "endTime": 1978.4,
+      "text": "Yes, yes. Why should we talk? See, we you uh the equity has to be there. You have spoken about German tanks. Now we must speak about British planes. Okay, let's set the record straight. So I want to tell you the story, and this is such a famous story, you obviously know it, and many of our gentle readers may also know it. Now, Abraham Wald was also kind of like a Renaissance man, did well in various uh fields, decision theory, sequential analysis, statistics, blah, blah, blah. And circa 1942. two, if I remember correctly, he was drafted into something called the Strategic Research Group. Right. The strategic research group was in fact headed by a gentleman called something Wallace, who was one of his students, and Wallace at one point described it, not without exaggeration as we know today looking back in hindsight, as the greatest group of living statisticians ever assembled. It was such a remarkable group. There was such intelligence in the room that at one point somebody quipped that Milton Friedman is the fourth smartest person in the room. Can you imagine? So, and Abraham Wald would have been the first smartest person. And despite this, I may tell you, he didn't have security clearance, by the way. So he would work on problems like which he didn't have security clearance to actually see for himself. So there was a joke that a secretary would stand by his side and every time he finished writing a sheet of paper, the secretary would quickly take the sheet away and then he'd begin work on the next sheet. So that was where the joke went. So there was an interesting problem that came to them about British aeroplanes that analysis needed to be done. A lot of British aeroplanes were coming back wounded, as it were. You anthropomorphized tanks earlier by saying tanks were killed. So these were wounded aeroplanes were kind of coming back. And uh one had to analyze these wounded aeroplanes to see how they could be made stronger. And one way of doing this was just seeing the bullet holes in different parts of the plane. Right. So a simple uh sort of uh uh a table that looked at that saw um that the engine had fewer holes than the fuselage. Uh right. And so a conclusion that many drew from there is that, hey, look, you know, uh all the bullet holes are in the fuselage, that's a problem, let's make it stronger. Walt said, No, wait a minute, that's not how you think about it. Ask the fundamental question, where are the missing bullets? Right? Once again. Where are the missing bullets? And his theory was this, that assume that all parts of a plane are going to get struck more or less equally, right? The part with the fewer bullets is the part which is most vulnerable that needs to be fixed because that is what is going down. Where are the missing bullets? The missing bullets are in the planes that went down. So it is the engine that you need to protect and you need to kind of uh cover up for that, which is a counterintuitive um uh you know sort of way of thinking about it. But U Stats came up with that, and it reminds me of something another great sports person came up with intuitively, where you know Ricky Ponting, the great Australian batsman, was once asked about his journey towards becoming a great batsman, and he said, Look, most batsmen have a map of the fielders in their head. I had a map of the gaps. That's that's sort of you had a German tank story. I r I I call you and I raise you with a British uh airplane story.",
+      "words": [
         {
           "word": "Yes,",
           "startTime": 1792.94,

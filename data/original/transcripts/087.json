@@ -5,7 +5,7 @@
     "durationSeconds": 4514,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -4059,8 +4059,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 266.06,
-      "endTime": 310.59,
-      "text": "the last five hundred years. No, and I love the subject. The subject passes, but not because it is about technology, which of course is great, but also I think it reveals a lot about human beings as well, and our fundamental drive towards innovation and progress, which is often understated or or even uh you know, not appreciated by uh many people. So well done, Mr. Shah. You have passed on both accounts. Further tests will be posed to you after the shooting of this episode. Thank you, sir. Do I have to submit the form and triplicate? Yes, why not? Since we are at it, please submit the form and triplicate in physical copies. All right, Raj. So jokes aside, uh let's go. Um I want",
+      "endTime": 290.02,
+      "text": "the last five hundred years. No, and I love the subject. The subject passes, but not because it is about technology, which of course is great, but also I think it reveals a lot about human beings as well, and our fundamental drive towards innovation and progress, which is often understated or or even uh you know, not appreciated by uh many people. So well done, Mr. Shah. You have passed on both accounts. Further tests will be posed to you after the shooting of this episode.",
       "words": [
         {
           "word": "the",
@@ -4583,7 +4583,15 @@
           "startTime": 289.38,
           "endTime": 290.02,
           "confidence": 0.808
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 290.02,
+      "endTime": 292.5,
+      "text": "Thank you, sir. Do I have to submit the form and triplicate?",
+      "words": [
         {
           "word": "Thank",
           "startTime": 290.02,
@@ -4655,7 +4663,15 @@
           "startTime": 291.78,
           "endTime": 292.5,
           "confidence": 0.9264
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 292.5,
+      "endTime": 310.59,
+      "text": "Yes, why not? Since we are at it, please submit the form and triplicate in physical copies. All right, Raj. So jokes aside, uh let's go. Um I want",
+      "words": [
         {
           "word": "Yes,",
           "startTime": 292.5,
@@ -4835,8 +4851,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 310.59,
-      "endTime": 333.65,
-      "text": "to start at uh just summarizing the standard knowledge and getting all of us on the same page about uh Moore's Law. Uh Moore's Law is expressed in a couple of different ways. I don't want to get into the history, I want to protect our time. Uh in essence, it is the claim that the number of transistors on a chip.",
+      "endTime": 686.46,
+      "text": "to start at uh just summarizing the standard knowledge and getting all of us on the same page about uh Moore's Law. Uh Moore's Law is expressed in a couple of different ways. I don't want to get into the history, I want to protect our time. Uh in essence, it is the claim that the number of transistors on a chip. doubles every eighteen months. Okay. So just think that uh we make a transistor. It's a thing with three prongs, first made in nineteen forty seven, assembled by hand at Bell Labs, and then uh came the pressure for doing more. That can you make more complex circuits, uh the most important customers of this world space research. So NASA was desperate. They wanted to put small compact pieces of equipment up in a satellite So NASA funding literally created the industry where uh people were pushing to make more complex things where on a single die you would put multiple transistors together. And these are called integrated circuits. And the the buzz the phrase is ICs. So an IC is an integrated circuit. It's a little piece of plastic on which multiple transistors are placed. Uh then you get to VLSI, very large scale integration, where you really start putting large numbers of transistors on a single chip. And uh this led up to uh a great milestone in world history, which is the Intel 4004. Okay so the Intel 4004 was the world's first CPU on a single chip. Prior to that, a CPU was a room-sized thing. This was microminize to the point where it was one single tiny integrated circuit. And for all ye callow gentle readers that are used to squandering like billions of transistors in the CPUs on your phones, I will have you know. I will have you know that the Intel 4004 had something like 2300 transistors. So I want you to pause to think of the madness of it. You get an entire CPU in 2300 transistors. That's it. Like we use the transistors to make some gates, and the full CPU is done in 2300 transistors. You know, so at heart, a CPU is a Turing machine, it needs to know how to fetch a memory uh cell into a register. It needs to know how to add. So addition is a very important skill. and it needs to have an if to be able to branch. Everything else is toppings. But in essence, you have to be able to do these three things. So in twenty three hundred transistors, you're doing the whole thing that we're getting an opcode. We're able to think about, Oh, you want me to do addition, and then a bunch of gates fire into action and the addition gets done all in a piddly twenty three hundred transistors. Okay, that is sheer magic. Let's say Intel four thousand four. From that point onwards the world got into an insane loop of on average. There are subtleties 1965 to 1975. I just want to stick to a rough bumper sticker that everybody should know, which is that the number of transistors on a chip has doubled on average every 18 months. So about every one point five years, you get a doubling in the number of transistors. This was written in a paper uh by Gordon Moore in 1965. Uh I want to show you two beautiful graphics. Uh in this graphic, I'm showing you five of the components which were used in the seven components that made his paper. So uh all you need is seven good data points to get a world changing observation. Okay, and I'm we're showing you a picture of five of the chips, and you see the complexity of the chips going up. And he saw this pattern. and he had the idea that let's think deeply about this and hypothesize what is going on. This is not a physics law. Right? There's no deeper reason why this ought to happen. It's not a physical fact about the universe. It's a social fact. It's an economic fact. It's an economic law that we are able to pile on the innovations and the capital intensity so that the number of transistors on a chip roughly doubles every eighteen months. And now I want to show you a second graph. This is a graph of a long time series of a variety of different CPUs through decades. This thing has just gone on. This fire has been burning and burning all around us. And uh this is called a semi-log graph because the y axis is in log scale. Equal distances on the y-axis correspond to a tenfold rise. So it's not a normal graph. And so the sweet engineering speak for this graph is straight lines on a semi-log graph. So the x-axis is time. The y-axis is something expressed in log scale. It's called a semi-log graph. The x-axis is not in log. That would be a log log graph. The x-axis is on time in linear scale. The y-axis is some object of interest, in this case, the number of transistors per chip, and it's expressed in log scale, and you get a straight line in that, which is basically you're getting a tenfold rise every few years, and that every X years you're getting a ten X, a ten X, or ten X. And these are just amazing phenomena when they happen. So we have been in the grip of Moore's Law for decades, and the CPUs have just gotten better. to the point where we have normalized this. We think billions of transistors is just normal. And I I just want to pause and say, like my God, what an achievement. Like what amazing people, what wonderful things. And so you know today we're going to think a little more about the causes and consequences and how firms make progress, how productivity growth arises, and a little bit thinking about countries and so",
       "words": [
         {
           "word": "to",
@@ -5209,15 +5225,7 @@
           "startTime": 333.15,
           "endTime": 333.65,
           "confidence": 0.8686
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 334.37,
-      "endTime": 337.81,
-      "text": "doubles every eighteen months. Okay. So",
-      "words": [
+        },
         {
           "word": "doubles",
           "startTime": 334.37,
@@ -5253,15 +5261,7 @@
           "startTime": 337.49,
           "endTime": 337.81,
           "confidence": 0.9963
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 337.81,
-      "endTime": 592.26,
-      "text": "just think that uh we make a transistor. It's a thing with three prongs, first made in nineteen forty seven, assembled by hand at Bell Labs, and then uh came the pressure for doing more. That can you make more complex circuits, uh the most important customers of this world space research. So NASA was desperate. They wanted to put small compact pieces of equipment up in a satellite So NASA funding literally created the industry where uh people were pushing to make more complex things where on a single die you would put multiple transistors together. And these are called integrated circuits. And the the buzz the phrase is ICs. So an IC is an integrated circuit. It's a little piece of plastic on which multiple transistors are placed. Uh then you get to VLSI, very large scale integration, where you really start putting large numbers of transistors on a single chip. And uh this led up to uh a great milestone in world history, which is the Intel 4004. Okay so the Intel 4004 was the world's first CPU on a single chip. Prior to that, a CPU was a room-sized thing. This was microminize to the point where it was one single tiny integrated circuit. And for all ye callow gentle readers that are used to squandering like billions of transistors in the CPUs on your phones, I will have you know. I will have you know that the Intel 4004 had something like 2300 transistors. So I want you to pause to think of the madness of it. You get an entire CPU in 2300 transistors. That's it. Like we use the transistors to make some gates, and the full CPU is done in 2300 transistors. You know, so at heart, a CPU is a Turing machine, it needs to know how to fetch a memory uh cell into a register. It needs to know how to add. So addition is a very important skill. and it needs to have an if to be able to branch. Everything else is toppings. But in essence, you have to be able to do these three things. So in twenty three hundred transistors, you're doing the whole thing that we're getting an opcode. We're able to think about, Oh, you want me to do addition, and then a bunch of gates fire into action and the addition gets done all in a piddly twenty three hundred transistors. Okay, that is sheer magic. Let's say Intel four thousand four. From that point onwards the world got into an insane loop of on average. There are subtleties 1965 to 1975. I just want to stick to a rough bumper sticker that everybody should know, which is that the number of transistors on a chip has doubled on average every 18 months. So about every one point five years, you get a doubling in the number of transistors. This was written in a paper uh by Gordon Moore in 1965. Uh I want to show you two beautiful graphics. Uh in this graphic, I'm showing you five of the components which were used in the seven components that made his paper. So uh all you need is seven good data points to get a world changing observation. Okay, and I'm we're showing you a picture of five of the chips, and you see the complexity of the chips going up. And he saw this pattern. and he had the idea that let's think deeply about this and hypothesize what is going on. This is not a physics law. Right? There's no deeper reason why this ought to happen. It's not a physical fact about the universe. It's a social fact. It's an economic fact. It's an economic law that we are able to pile on the innovations and the capital intensity so that the number of transistors on a chip roughly doubles every eighteen months. And now I want to show you a second graph. This is a graph of a long time series of a variety of different",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 337.81,
@@ -9323,15 +9323,7 @@
           "startTime": 591.94,
           "endTime": 592.26,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 592.26,
-      "endTime": 594.98,
-      "text": "CPUs through decades. This",
-      "words": [
+        },
         {
           "word": "CPUs",
           "startTime": 592.26,
@@ -9355,15 +9347,7 @@
           "startTime": 594.74,
           "endTime": 594.98,
           "confidence": 0.9874
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 594.98,
-      "endTime": 681.9,
-      "text": "thing has just gone on. This fire has been burning and burning all around us. And uh this is called a semi-log graph because the y axis is in log scale. Equal distances on the y-axis correspond to a tenfold rise. So it's not a normal graph. And so the sweet engineering speak for this graph is straight lines on a semi-log graph. So the x-axis is time. The y-axis is something expressed in log scale. It's called a semi-log graph. The x-axis is not in log. That would be a log log graph. The x-axis is on time in linear scale. The y-axis is some object of interest, in this case, the number of transistors per chip, and it's expressed in log scale, and you get a straight line in that, which is basically you're getting a tenfold rise every few years, and that every X years you're getting a ten X, a ten X, or ten X. And these are just amazing phenomena when they happen. So we have been in the grip of Moore's Law for decades, and the CPUs have just gotten better. to the point where we have normalized this. We think billions of transistors is just normal. And I I just want to pause and say, like my God, what an achievement. Like what amazing people, what wonderful things. And so you know today we're going to think a little more about the causes and consequences and how firms make progress,",
-      "words": [
+        },
         {
           "word": "thing",
           "startTime": 594.98,
@@ -10845,15 +10829,7 @@
           "startTime": 681.34,
           "endTime": 681.9,
           "confidence": 0.9031
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 681.9,
-      "endTime": 721.86,
-      "text": "how productivity growth arises, and a little bit thinking about countries and so on. And the you know, there's this old parable about this king who is very pleased with someone. So he asked him that Ask for your reward you shall receive. And this guy says, Okay, listen, there's a chessboard in front of you. Give me one grain of rice for the first square, A one. Give me another grain of rice for the second square uh give me uh double it for the second uh square, double that for the third square. So you know, so on uh down the line. And uh for the do it for the entire board. And the king says what is the problem? We are starting with one grain, but then eventually it becomes something mad more grains than the atoms in the universe or something. And um and because",
-      "words": [
+        },
         {
           "word": "how",
           "startTime": 681.9,
@@ -10931,7 +10907,15 @@
           "startTime": 686.3,
           "endTime": 686.46,
           "confidence": 0.9926
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 686.46,
+      "endTime": 721.86,
+      "text": "on. And the you know, there's this old parable about this king who is very pleased with someone. So he asked him that Ask for your reward you shall receive. And this guy says, Okay, listen, there's a chessboard in front of you. Give me one grain of rice for the first square, A one. Give me another grain of rice for the second square uh give me uh double it for the second uh square, double that for the third square. So you know, so on uh down the line. And uh for the do it for the entire board. And the king says what is the problem? We are starting with one grain, but then eventually it becomes something mad more grains than the atoms in the universe or something. And um and because",
+      "words": [
         {
           "word": "on.",
           "startTime": 686.46,
@@ -23081,8 +23065,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1350.16,
-      "endTime": 1393.09,
-      "text": "I first discovered uh cruise control because my friend Sharad Matur uh installed uh cru on his car by himself. And he was a car geek, he loved cars. And he said that uh he could get up from uh zero to a hundred kPH in a lower number of seconds with manual transmission compared to what automatic transmission could do. So you know, if you are an aficionado if you care if you are the the kind of person that will like to go racing in the street. then uh probably manual transmission is better for you. Whereas if you treat something just as in an instrumental way, that this is the way in which I go to my",
+      "endTime": 1395.41,
+      "text": "I first discovered uh cruise control because my friend Sharad Matur uh installed uh cru on his car by himself. And he was a car geek, he loved cars. And he said that uh he could get up from uh zero to a hundred kPH in a lower number of seconds with manual transmission compared to what automatic transmission could do. So you know, if you are an aficionado if you care if you are the the kind of person that will like to go racing in the street. then uh probably manual transmission is better for you. Whereas if you treat something just as in an instrumental way, that this is the way in which I go to my coffee shop, then you probably don't want to be",
       "words": [
         {
           "word": "I",
@@ -23803,15 +23787,7 @@
           "startTime": 1392.93,
           "endTime": 1393.09,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1393.09,
-      "endTime": 1473.34,
-      "text": "coffee shop, then you probably don't want to be bothered. So you know, before I get to my question for this chapter, a mini rant. Which is that whenever new technology comes up, there will be people on the left who will argue this will increase inequality. The haves will have more of it, the have nots will will not. To which I always ask for evidence. And I say, Tell me when this happened. Because technology to me levels a playing field. It is a great equalizer. You look at how GPS starts, you know, when the government funds it and it is only for space and military purposes and then it goes to say luxury high end cars, BMWs and all that, a very small number of people can use it. And today it's available with everyone. AI today uh can be used by anyone. All technology eventually is a has this great uh you know democratizing effect, as it were. The uh the cell phone that I use is not very different from the cell phone Elon Musk uses. We all have, you know, technology in that sense is a great equalizer. And part of the beauty of this revolution is how prices come down, down, down, down, down. So that's what I want to ask you about. That fine. You keep doubling the transistors on a chip and obviously like rice rings on a chessboard, it completely goes out of back. And my intuition is that therefore prices also come down enormously. Tell me more about that.",
-      "words": [
+        },
         {
           "word": "coffee",
           "startTime": 1393.09,
@@ -23865,7 +23841,15 @@
           "startTime": 1395.25,
           "endTime": 1395.41,
           "confidence": 0.9995
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1395.41,
+      "endTime": 1473.34,
+      "text": "bothered. So you know, before I get to my question for this chapter, a mini rant. Which is that whenever new technology comes up, there will be people on the left who will argue this will increase inequality. The haves will have more of it, the have nots will will not. To which I always ask for evidence. And I say, Tell me when this happened. Because technology to me levels a playing field. It is a great equalizer. You look at how GPS starts, you know, when the government funds it and it is only for space and military purposes and then it goes to say luxury high end cars, BMWs and all that, a very small number of people can use it. And today it's available with everyone. AI today uh can be used by anyone. All technology eventually is a has this great uh you know democratizing effect, as it were. The uh the cell phone that I use is not very different from the cell phone Elon Musk uses. We all have, you know, technology in that sense is a great equalizer. And part of the beauty of this revolution is how prices come down, down, down, down, down. So that's what I want to ask you about. That fine. You keep doubling the transistors on a chip and obviously like rice rings on a chessboard, it completely goes out of back. And my intuition is that therefore prices also come down enormously. Tell me more about that.",
+      "words": [
         {
           "word": "bothered.",
           "startTime": 1395.41,
@@ -25383,8 +25367,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1473.34,
-      "endTime": 1725.41,
-      "text": "And this is why I want to use the title for this episode as Moore's Laws in Plural, as opposed to just Moore's Law, which we've already finished, which is on average in about 18 months, we get a doubling of the number of transistors on a chip. If you went from 2300 transistors to 2.3 billion transistors on a CPU, and if alongside that The price of that resultant Marvel was like a million dollars. It would be no fun. It would be an obscure exotic technology that is of interest to a few people, maybe some military applications. What is equally mind blowing is the price gains that have taken place. And I would like to push this as another concept of Moore's Law. It's a different kind of Moore's Law where you don't put a number of transistors on the Y-axis, but you put some performance per price measure, you put some price measure. And then again, on log scale with time on the x-axis, in a semi-log graph, do you get a straight line. Okay? And the amazing thing is we got that. And not just around CPUs, but in many, many fields. So I just want to distinguish this, that you could have a technical parameter on the y-axis, which is the standard Moore's Law. But maybe 5x more important is when you start getting those price gains. And let me show you some examples of uh these kinds of things happening. Uh take solar panels. Okay. So we've got mind blowing gains in the price of a solar panel. Solar panels began as exotic technology that was put up on satellites in outer space because you wanted to take energy from the sun. Your choice was either a plutonium battery or solar cells. And uh plutonium batteries did not get that great price reduction, but solar cells did. or consider the price of bandwidth Okay. Today all of us find it normal to have anything from ten megabits a second to hundred megabits a second we don't even notice anymore. There was a time when this stuff was exotic, when I was a PhD student, in America, an entire university, the University of Southern California, ran on a T one line, which was considered the height of cool. It was something like 1.5 megabits a second. An entire university ran on 1.5 megabits a second. And today all of us get like you know 300 MB per second from an A CT or something at a price lower than what was paid for a T one line so many years ago. Okay. Or consider lithium ion batteries Consider the cost of lobbing a satellite into near earth orbit. Okay? So think of the price per kilo of sending stuff into orbit. So there was one great period in the beginning, in the sixties and seventies, where there was a begin in the prices of sending things up into orbit, then there was a long stagnation. And now we've got private sector energy innovating in this space, coming up with newer ideas, and also the bounty of modern electronics is being applied to these problems. Uh electronics and computers enables better design. Electronics and computers enable makes it possible to catch a rocket when it comes back. So this is further giving you a next wave of gains. For the cost of shipping things into near earth orbit. People are predicting numbers like $10 per kg. Just imagine for $10 you can toss something into near earth orbit. So these are all examples of Moore's Law kindomena where a price is on the y-axis. And as an economist, I just want to say that's the whole enchilada. You've got to get the prices down. Like not just technical capabilities, get us revolutions in prices. So it is that we go again and again. Um Larry Summers uh tells this story of the most dramatic technical change of his life. Uh I think it was at the time of the 1992 United States elections. Larry Summers was an advisor to Michael Dukakis, and there was a democratic convention, I think, in Chicago. And he remembers that he stepped into a car",
+      "endTime": 1762.56,
+      "text": "And this is why I want to use the title for this episode as Moore's Laws in Plural, as opposed to just Moore's Law, which we've already finished, which is on average in about 18 months, we get a doubling of the number of transistors on a chip. If you went from 2300 transistors to 2.3 billion transistors on a CPU, and if alongside that The price of that resultant Marvel was like a million dollars. It would be no fun. It would be an obscure exotic technology that is of interest to a few people, maybe some military applications. What is equally mind blowing is the price gains that have taken place. And I would like to push this as another concept of Moore's Law. It's a different kind of Moore's Law where you don't put a number of transistors on the Y-axis, but you put some performance per price measure, you put some price measure. And then again, on log scale with time on the x-axis, in a semi-log graph, do you get a straight line. Okay? And the amazing thing is we got that. And not just around CPUs, but in many, many fields. So I just want to distinguish this, that you could have a technical parameter on the y-axis, which is the standard Moore's Law. But maybe 5x more important is when you start getting those price gains. And let me show you some examples of uh these kinds of things happening. Uh take solar panels. Okay. So we've got mind blowing gains in the price of a solar panel. Solar panels began as exotic technology that was put up on satellites in outer space because you wanted to take energy from the sun. Your choice was either a plutonium battery or solar cells. And uh plutonium batteries did not get that great price reduction, but solar cells did. or consider the price of bandwidth Okay. Today all of us find it normal to have anything from ten megabits a second to hundred megabits a second we don't even notice anymore. There was a time when this stuff was exotic, when I was a PhD student, in America, an entire university, the University of Southern California, ran on a T one line, which was considered the height of cool. It was something like 1.5 megabits a second. An entire university ran on 1.5 megabits a second. And today all of us get like you know 300 MB per second from an A CT or something at a price lower than what was paid for a T one line so many years ago. Okay. Or consider lithium ion batteries Consider the cost of lobbing a satellite into near earth orbit. Okay? So think of the price per kilo of sending stuff into orbit. So there was one great period in the beginning, in the sixties and seventies, where there was a begin in the prices of sending things up into orbit, then there was a long stagnation. And now we've got private sector energy innovating in this space, coming up with newer ideas, and also the bounty of modern electronics is being applied to these problems. Uh electronics and computers enables better design. Electronics and computers enable makes it possible to catch a rocket when it comes back. So this is further giving you a next wave of gains. For the cost of shipping things into near earth orbit. People are predicting numbers like $10 per kg. Just imagine for $10 you can toss something into near earth orbit. So these are all examples of Moore's Law kindomena where a price is on the y-axis. And as an economist, I just want to say that's the whole enchilada. You've got to get the prices down. Like not just technical capabilities, get us revolutions in prices. So it is that we go again and again. Um Larry Summers uh tells this story of the most dramatic technical change of his life. Uh I think it was at the time of the 1992 United States elections. Larry Summers was an advisor to Michael Dukakis, and there was a democratic convention, I think, in Chicago. And he remembers that he stepped into a car which had been sent to pick him up, and the car had a phone. And he was so surprised he had never seen a phone in a car before. And he picked up the phone and called his wife and he said, You know what? I'm calling you from a car to that level of madness. And he says a scant one and a half years later, he was crossing a river in Africa, and somebody handed him a GSM phone saying, This call is for you. He says it took one and a half years to reach from some exotic technology in America to a river crossing in Africa. That is the way this stuff got democratized and it went all over the",
       "words": [
         {
           "word": "And",
@@ -29615,15 +29599,7 @@
           "startTime": 1724.93,
           "endTime": 1725.41,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1725.41,
-      "endTime": 1728.93,
-      "text": "which had been sent to pick him up, and the car had a phone. And",
-      "words": [
+        },
         {
           "word": "which",
           "startTime": 1725.41,
@@ -29713,15 +29689,7 @@
           "startTime": 1728.77,
           "endTime": 1728.93,
           "confidence": 0.9728
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1728.93,
-      "endTime": 1762.56,
-      "text": "he was so surprised he had never seen a phone in a car before. And he picked up the phone and called his wife and he said, You know what? I'm calling you from a car to that level of madness. And he says a scant one and a half years later, he was crossing a river in Africa, and somebody handed him a GSM phone saying, This call is for you. He says it took one and a half years to reach from some exotic technology in America to a river crossing in Africa. That is the way this stuff got democratized and it went all over the",
-      "words": [
+        },
         {
           "word": "he",
           "startTime": 1728.93,
@@ -35319,8 +35287,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2000.05,
-      "endTime": 2008.45,
-      "text": "there are three rival views of the world. There are also a couple of others which are less important. There are three rival views of the world on uh what",
+      "endTime": 2049.04,
+      "text": "there are three rival views of the world. There are also a couple of others which are less important. There are three rival views of the world on uh what happens in the journey to technological progress. We've already discussed Moore's law, where there would be something on the Y-axis which is like a technical measure or a price measure. on the X axis would be time, and you'd get a log scale, you'd get a straight line in a semi-log graph. Okay. Uh there are two other important rival theories about the world that everybody ought to know. The second one is called Wright's Lot, W-R-I-G-H. Oddly enough, this is something made by a person in 1936, and he was no, he was not one of the Wright brothers, but he came up with this idea while studying the manufacturing of plates.",
       "words": [
         {
           "word": "there",
@@ -35501,15 +35469,7 @@
           "startTime": 2008.05,
           "endTime": 2008.45,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2008.45,
-      "endTime": 2012.21,
-      "text": "happens in the journey to technological progress.",
-      "words": [
+        },
         {
           "word": "happens",
           "startTime": 2008.45,
@@ -35551,15 +35511,7 @@
           "startTime": 2011.65,
           "endTime": 2012.21,
           "confidence": 0.9838
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2012.21,
-      "endTime": 2049.04,
-      "text": "We've already discussed Moore's law, where there would be something on the Y-axis which is like a technical measure or a price measure. on the X axis would be time, and you'd get a log scale, you'd get a straight line in a semi-log graph. Okay. Uh there are two other important rival theories about the world that everybody ought to know. The second one is called Wright's Lot, W-R-I-G-H. Oddly enough, this is something made by a person in 1936, and he was no, he was not one of the Wright brothers, but he came up with this idea while studying the manufacturing of plates.",
-      "words": [
+        },
         {
           "word": "We've",
           "startTime": 2012.21,
@@ -36239,8 +36191,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2051.1,
-      "endTime": 2141.71,
-      "text": "This is a focus on volume, and I want to use the word volume as we do around poker or around chess. The idea is that you get productivity gains based on your lifetime volume. So, how many card have you ever made? How many planes have you ever made? You add up your lifetime experience on how many card you have made, and you get a semi-log graph in that. That as the volumes go up linearly. you get a semi-log graph and a crude thumb rule that when this works well and I'm going to come back to caveats in a moment is that for each doubling in the aggregative lifetime volume you get a twenty percent gain in productivity. This is an interesting idea. Not time. Volume. You put in volume and you will get improvements. And this is also called a learning curve, it's called an experience curve. It is a very interesting idea that there is learning by doing. The more you do it, the better you get. And as I say, a rough frontier, and I don't want to overstate this, is about every doubling you get uh 20% gain in productivity. A doubling of what? Of your lifetime work. So if you are a company that has made 10 million cars, then your next ten million cars will give you a twenty percent gain in productivity just out of the learning process. Because you went from ten million cars to twenty million cars, you did one doubling in the grand total number of parts that you ever made, and",
+      "endTime": 2143.87,
+      "text": "This is a focus on volume, and I want to use the word volume as we do around poker or around chess. The idea is that you get productivity gains based on your lifetime volume. So, how many card have you ever made? How many planes have you ever made? You add up your lifetime experience on how many card you have made, and you get a semi-log graph in that. That as the volumes go up linearly. you get a semi-log graph and a crude thumb rule that when this works well and I'm going to come back to caveats in a moment is that for each doubling in the aggregative lifetime volume you get a twenty percent gain in productivity. This is an interesting idea. Not time. Volume. You put in volume and you will get improvements. And this is also called a learning curve, it's called an experience curve. It is a very interesting idea that there is learning by doing. The more you do it, the better you get. And as I say, a rough frontier, and I don't want to overstate this, is about every doubling you get uh 20% gain in productivity. A doubling of what? Of your lifetime work. So if you are a company that has made 10 million cars, then your next ten million cars will give you a twenty percent gain in productivity just out of the learning process. Because you went from ten million cars to twenty million cars, you did one doubling in the grand total number of parts that you ever made, and you get a productivity gain in return for that.",
       "words": [
         {
           "word": "This",
@@ -37837,15 +37789,7 @@
           "startTime": 2141.55,
           "endTime": 2141.71,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2141.71,
-      "endTime": 2149.15,
-      "text": "you get a productivity gain in return for that. So basically when we make episode one seventy four will be twenty percent better than we are now. Correct.",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 2141.71,
@@ -37899,7 +37843,15 @@
           "startTime": 2143.47,
           "endTime": 2143.87,
           "confidence": 0.5885
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2143.87,
+      "endTime": 2149.15,
+      "text": "So basically when we make episode one seventy four will be twenty percent better than we are now. Correct.",
+      "words": [
         {
           "word": "So",
           "startTime": 2143.87,
@@ -42443,8 +42395,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2368.19,
-      "endTime": 2390.67,
-      "text": "But right away now I want to put up a bunch of caveats that this you should think of this as a frontier, as a production possibility frontier, that when things go right, we will get all these gains in volume. Okay, so uh rights law should not be seen as preordained. That just because your aggregate lifetime volume went up, you're not given a 20% productivity gain in",
+      "endTime": 2765.74,
+      "text": "But right away now I want to put up a bunch of caveats that this you should think of this as a frontier, as a production possibility frontier, that when things go right, we will get all these gains in volume. Okay, so uh rights law should not be seen as preordained. That just because your aggregate lifetime volume went up, you're not given a 20% productivity gain in your lap. It comes from purposive action, it comes from effort, meaning you do have to think like this. in the world of business the word manufacturing excellence is sometimes used. that you need to purposively extract productivity gains out of the process of production. And uh I am on the board at Britannia and I've seen this in Britannia. They do a great job that they've really got a whole philosophy around manufacturing excellence and productivity gains. And year after year they hammer away at making the firm better. And I find it just incredible how year after year they are squeezing out further little gains. of energy efficiency, of reducing wastage, and so on, and year after year they are obtaining cost reductions. And so this is a giant company, but which is gaining productivity every year. And they don't have this complacent that we are done, we know how to do this. Okay? So it should be viewed as a frontier and it's not preordained. It's not in the bag. Good firms do it, good teams do it, good creators do it at its best. rights law works, that your aggregative lifetime volume drives up your productivity, but it does require a certain effort and orientation to be intentional about it, to be purposive, saying, You know what, along this way, when I go from one million tanks to two million tanks, I want to harness those productivity gains, and then you'll run your life in a different way. So now I want to flip this around and I want to describe four characteristics of bad firms. Of the kind of firms that go through the volume but don't get The gains. So one kind of firm is a uh firm where some machines were brought in, probably by some external consultants. Okay. So you got an engineering consultant who told you buy these CNC lathes. So you have a shop floor filled with those CNC laths, and the firm feels like a bunch of peasants operating these machines. And they haven't thought deeply about the machines. They feel uh the a sense of helplessness. Uh they they are in a state of lassitude that they are not challenging how things are done. They didn't design how things are done. And then you are just in a stagnation that year after year. You're thinking Productivity means I have to buy better machines. And one day some consultant will come and I will buy a next batch of machines. your your model of the world is like those non-differentiable jumps where I went from fluorescent lights to LED lights and that day will come and some consultant will tell me that that day will come. For the rest, my job is production. Okay? So I think there's a beautiful line uh Even cowgirls get the blues. The only people who are on routine flights are the people who think that they are on routine flights. Okay, like that. The only people who experience stagnation of productivity as they add volume, are the people who are not looking for anything beyond. Okay, so you need that culture that here I am, I have these machines, but I will apply my mind and I will squeeze out a genius of productivity every day. And it just because I produced something last year, this year will not be the same. I will do things better this year. There needs to be a whole culture of manufacturing excellence. So this is the first idea that many firms in India are using world class machines, and that's great. But alongside that, I often see a certain despondence that I cannot even imagine how these machines are made, and it is beyond me, and I'm just dumbly operating these machines. And the second part is really inside the firm. that you do need the kind of people who will take interest in this. And then those people have to have the stability that they're there for long years. And they are hammering away at this and they're getting better at it and they're getting the joy and the feedback loops of doing it better. Okay? In many bad firms, you just tear up your entire team, people leave, and uh then a new crew starts and you've effectively lost that tacit knowledge. which is really the great thing that what you are after is not a technical measure that this kind of steel plant generates so many kilograms of steel per joule of energy, but really it is the tacit knowledge in all the people. And so you need to look at people with new eyes, that you need the kind of people who will think and then those people need to be there and we have to nourish and nurture our people. And we have to put up these graphs and celebrate when you get straight lines in semi log graphs. And another way to see this problem that I have seen in India is many firms are cut to the bone. They are so focused on cost cutting that they've really left no fat. If you do the extremes of cost cutting, then you get like really low quality stuff and you're telling your people shut up and execute. You just have a pure execution orientation. And then your people on routine flights that you're just day after day, you're doing execution, there is no money, there is no resource, there is no brain. available to do something more. Whereas you actually need something more. You need the kind of spending on people, and you need an everyday journey of the debate, the discussion, the strategic thinking, one by one, introducing innovations, introducing modifications. So I think of this as a vicious cycle that you can run a firm lean and uh that firm is kinda efficient in the short term because you've really driven down cost. But when you lack the fat, thinking, for strategy, for innovation, for making mistakes. Then actually you don't get on these journeys to quality. Whereas a firm that will additionally spend money on the kind of people on not having a mere execution orientation, a firm that will have the culture which just does not merely valorize execution, which says to people, shut up and do your work. Those kinds of firms will spend more because you will hire a different kind of person and you will not fill up the eight, ten hours a day with day to day practical firefighting and running around. But you'll actually price something more. Then those are the firms that will get on these straight lines and semi-log graphs, and then those firms will just do unbelievably well in the long",
       "words": [
         {
           "word": "But",
@@ -42859,15 +42811,7 @@
           "startTime": 2390.59,
           "endTime": 2390.67,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2390.67,
-      "endTime": 2395.48,
-      "text": "your lap. It comes from purposive action, it comes from effort, meaning you do have to think like this.",
-      "words": [
+        },
         {
           "word": "your",
           "startTime": 2390.67,
@@ -42981,15 +42925,7 @@
           "startTime": 2394.99,
           "endTime": 2395.48,
           "confidence": 0.9318
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2395.94,
-      "endTime": 2503.33,
-      "text": "in the world of business the word manufacturing excellence is sometimes used. that you need to purposively extract productivity gains out of the process of production. And uh I am on the board at Britannia and I've seen this in Britannia. They do a great job that they've really got a whole philosophy around manufacturing excellence and productivity gains. And year after year they hammer away at making the firm better. And I find it just incredible how year after year they are squeezing out further little gains. of energy efficiency, of reducing wastage, and so on, and year after year they are obtaining cost reductions. And so this is a giant company, but which is gaining productivity every year. And they don't have this complacent that we are done, we know how to do this. Okay? So it should be viewed as a frontier and it's not preordained. It's not in the bag. Good firms do it, good teams do it, good creators do it at its best. rights law works, that your aggregative lifetime volume drives up your productivity, but it does require a certain effort and orientation to be intentional about it, to be purposive, saying, You know what, along this way, when I go from one million tanks to two million tanks, I want to harness those productivity gains, and then you'll run your life in a different way. So now I want to flip this around and I want to describe four characteristics of bad firms. Of the kind of firms that go through the volume but don't get The gains. So one kind of firm is a uh firm where some machines were brought in, probably by some external consultants. Okay. So you got an engineering consultant who told you buy these CNC lathes. So you have a shop floor filled with those CNC laths, and the firm feels like a bunch of peasants operating these",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 2395.94,
@@ -44921,15 +44857,7 @@
           "startTime": 2503.09,
           "endTime": 2503.33,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2503.33,
-      "endTime": 2507.79,
-      "text": "machines. And they haven't thought deeply about the machines. They feel",
-      "words": [
+        },
         {
           "word": "machines.",
           "startTime": 2503.33,
@@ -44995,15 +44923,7 @@
           "startTime": 2507.07,
           "endTime": 2507.79,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2507.79,
-      "endTime": 2550.9,
-      "text": "uh the a sense of helplessness. Uh they they are in a state of lassitude that they are not challenging how things are done. They didn't design how things are done. And then you are just in a stagnation that year after year. You're thinking Productivity means I have to buy better machines. And one day some consultant will come and I will buy a next batch of machines. your your model of the world is like those non-differentiable jumps where I went from fluorescent lights to LED lights and that day will come and some consultant will tell me that that day will come. For the rest, my job is production. Okay? So I think there's a beautiful line uh Even cowgirls get the blues. The only people who are on routine flights",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 2507.79,
@@ -45807,15 +45727,7 @@
           "startTime": 2550.18,
           "endTime": 2550.9,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2550.9,
-      "endTime": 2554.9,
-      "text": "are the people who think that they are on routine flights. Okay, like that. The only",
-      "words": [
+        },
         {
           "word": "are",
           "startTime": 2550.9,
@@ -45911,15 +45823,7 @@
           "startTime": 2554.74,
           "endTime": 2554.9,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2554.9,
-      "endTime": 2765.74,
-      "text": "people who experience stagnation of productivity as they add volume, are the people who are not looking for anything beyond. Okay, so you need that culture that here I am, I have these machines, but I will apply my mind and I will squeeze out a genius of productivity every day. And it just because I produced something last year, this year will not be the same. I will do things better this year. There needs to be a whole culture of manufacturing excellence. So this is the first idea that many firms in India are using world class machines, and that's great. But alongside that, I often see a certain despondence that I cannot even imagine how these machines are made, and it is beyond me, and I'm just dumbly operating these machines. And the second part is really inside the firm. that you do need the kind of people who will take interest in this. And then those people have to have the stability that they're there for long years. And they are hammering away at this and they're getting better at it and they're getting the joy and the feedback loops of doing it better. Okay? In many bad firms, you just tear up your entire team, people leave, and uh then a new crew starts and you've effectively lost that tacit knowledge. which is really the great thing that what you are after is not a technical measure that this kind of steel plant generates so many kilograms of steel per joule of energy, but really it is the tacit knowledge in all the people. And so you need to look at people with new eyes, that you need the kind of people who will think and then those people need to be there and we have to nourish and nurture our people. And we have to put up these graphs and celebrate when you get straight lines in semi log graphs. And another way to see this problem that I have seen in India is many firms are cut to the bone. They are so focused on cost cutting that they've really left no fat. If you do the extremes of cost cutting, then you get like really low quality stuff and you're telling your people shut up and execute. You just have a pure execution orientation. And then your people on routine flights that you're just day after day, you're doing execution, there is no money, there is no resource, there is no brain. available to do something more. Whereas you actually need something more. You need the kind of spending on people, and you need an everyday journey of the debate, the discussion, the strategic thinking, one by one, introducing innovations, introducing modifications. So I think of this as a vicious cycle that you can run a firm lean and uh that firm is kinda efficient in the short term because you've really driven down cost. But when you lack the fat, thinking, for strategy, for innovation, for making mistakes. Then actually you don't get on these journeys to quality. Whereas a firm that will additionally spend money on the kind of people on not having a mere execution orientation, a firm that will have the culture which just does not merely valorize execution, which says to people, shut up and do your work. Those kinds of firms will spend more because you will hire a different kind of person and you will not fill up the eight, ten hours a day with day to day practical firefighting and running around. But you'll actually price something more. Then those are the firms that will get on these straight lines and semi-log graphs, and then those firms will just do unbelievably well in the long",
-      "words": [
+        },
         {
           "word": "people",
           "startTime": 2554.9,
@@ -73799,8 +73703,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4018.26,
-      "endTime": 4041.46,
-      "text": "I, for one, have made mistakes understanding the world because of the inability to see some of these gains. Uh when I look back in life, I vividly was there at the dawn of the digital camera revolution. At the time, I was a hardcore analog camera photographer. Okay. So I was shooting Codachrome and Ectachrome with Nikon cameras and loving",
+      "endTime": 4246.0,
+      "text": "I, for one, have made mistakes understanding the world because of the inability to see some of these gains. Uh when I look back in life, I vividly was there at the dawn of the digital camera revolution. At the time, I was a hardcore analog camera photographer. Okay. So I was shooting Codachrome and Ectachrome with Nikon cameras and loving the slides that were getting made. And uh it felt like the digital stuff was so shabby. It was so far. Meaning the computer engineer part of me like totally loved the convenience of having files as opposed to owning slides. Okay, and that message is loud and clear. But the early digital equipment was so shabby and so far from what was good quality that it just seemed insuperable. So uh quick calculations at the time showed that you needed about uh twelve megapixels of an image and you needed certain technical characteristics at each pixel. The human fovea at the at the center of the retina is uh the most uh sophisticated piece of imaging equipment. It is like it plays at ten thousand dots per inch. So when you focus and you see something intently in the center of your eye, the resolving power of the eye is unbelievable and digital stuff just felt so far away from that. And I failed to see that look, you just have to give it ten, twenty years, and these gaps will be overcome. Similarly, lithium ion storage. I am the great enthusiast around renewables, around storage, around batteries uh uh Ayush Patnaik and I have spent many evenings only discussing dreams of batteries. We just love batteries inordinately. But I just did not see that there was a straight line in a semi-log graph for a long time. And the miracles that are possible today with lithium ion batteries were things that came to me as a bit of a surprise. So I would like to say to everybody that humans are not good at exponential thinking. That by default you, gentle reader, are probably not appreciating the possibilities and the power of straight lines and semi log graphs, and I'd like to say it in two different ways that if you are a person making something, if you are a firm, then think about Wright's law. Make those graphs where you're putting volume on the x axis, aggregate lifetime production on the x axis, and some productivity metrics on the y axis in log scale. And if you don't have a rights law where there are gains, you know, very crudely a thumb rule of twenty percent productivity gain for each doubling in the volume, or something. That are you getting a semi-log straight line. If not, something is wrong with your organization, something is wrong with your culture. Okay, that you need to change course so that the you create that learning environment, that experimentation environment, that sense of trying things and making progress as opposed to dumbly doing execution work. Okay, this is one wing of the room that rights law is not preordained, it is not given to you for free. It comes out of your purpose of choices. When we build good firms, when we think and work in a more purposive way, we will harness some rights law style phenomenon. And it's our job to do it, to find those ways in which we get really good at things. We as individuals, we as firms. And then it is our job to look at the world and constantly look for these. straight lines and semi log graphs because they are happening all around us and we ignore them at our peril and then we should always be flipping around and saying, You know what? There is a rights law burning in this industry. And what would I do with",
       "words": [
         {
           "word": "I,",
@@ -74167,15 +74071,7 @@
           "startTime": 4040.9,
           "endTime": 4041.46,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4041.46,
-      "endTime": 4043.55,
-      "text": "the slides that were getting made.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 4041.46,
@@ -74211,15 +74107,7 @@
           "startTime": 4043.06,
           "endTime": 4043.55,
           "confidence": 0.989
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4044.32,
-      "endTime": 4078.61,
-      "text": "And uh it felt like the digital stuff was so shabby. It was so far. Meaning the computer engineer part of me like totally loved the convenience of having files as opposed to owning slides. Okay, and that message is loud and clear. But the early digital equipment was so shabby and so far from what was good quality that it just seemed insuperable. So uh quick calculations at the time showed that you needed about uh twelve megapixels of an image and you needed certain technical characteristics",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 4044.32,
@@ -74747,15 +74635,7 @@
           "startTime": 4077.57,
           "endTime": 4078.61,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4078.61,
-      "endTime": 4083.17,
-      "text": "at each pixel. The human fovea at the at the",
-      "words": [
+        },
         {
           "word": "at",
           "startTime": 4078.61,
@@ -74815,15 +74695,7 @@
           "startTime": 4083.01,
           "endTime": 4083.17,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4083.17,
-      "endTime": 4147.31,
-      "text": "center of the retina is uh the most uh sophisticated piece of imaging equipment. It is like it plays at ten thousand dots per inch. So when you focus and you see something intently in the center of your eye, the resolving power of the eye is unbelievable and digital stuff just felt so far away from that. And I failed to see that look, you just have to give it ten, twenty years, and these gaps will be overcome. Similarly, lithium ion storage. I am the great enthusiast around renewables, around storage, around batteries uh uh Ayush Patnaik and I have spent many evenings only discussing dreams of batteries. We just love batteries inordinately. But I just did not see that there was a straight line in a semi-log graph for a long time. And the miracles that are possible today with lithium ion batteries were things that came to me as a bit of a surprise. So I would like to say to everybody that humans are not good at exponential thinking. That by default you, gentle reader, are probably not",
-      "words": [
+        },
         {
           "word": "center",
           "startTime": 4083.17,
@@ -75921,15 +75793,7 @@
           "startTime": 4146.99,
           "endTime": 4147.31,
           "confidence": 0.9945
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4147.31,
-      "endTime": 4151.63,
-      "text": "appreciating the possibilities and the power of straight",
-      "words": [
+        },
         {
           "word": "appreciating",
           "startTime": 4147.31,
@@ -75977,15 +75841,7 @@
           "startTime": 4151.31,
           "endTime": 4151.63,
           "confidence": 0.9952
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4151.63,
-      "endTime": 4243.6,
-      "text": "lines and semi log graphs, and I'd like to say it in two different ways that if you are a person making something, if you are a firm, then think about Wright's law. Make those graphs where you're putting volume on the x axis, aggregate lifetime production on the x axis, and some productivity metrics on the y axis in log scale. And if you don't have a rights law where there are gains, you know, very crudely a thumb rule of twenty percent productivity gain for each doubling in the volume, or something. That are you getting a semi-log straight line. If not, something is wrong with your organization, something is wrong with your culture. Okay, that you need to change course so that the you create that learning environment, that experimentation environment, that sense of trying things and making progress as opposed to dumbly doing execution work. Okay, this is one wing of the room that rights law is not preordained, it is not given to you for free. It comes out of your purpose of choices. When we build good firms, when we think and work in a more purposive way, we will harness some rights law style phenomenon. And it's our job to do it, to find those ways in which we get really good at things. We as individuals, we as firms. And then it is our job to look at the world and constantly look for these. straight lines and semi log graphs because they are happening all around us and we ignore them at our peril and then we should always be flipping around and saying, You know what? There is a rights law burning in this",
-      "words": [
+        },
         {
           "word": "lines",
           "startTime": 4151.63,
@@ -77689,15 +77545,7 @@
           "startTime": 4243.28,
           "endTime": 4243.6,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4243.6,
-      "endTime": 4470.21,
-      "text": "industry. And what would I do with it? Very wise words. You know, in the last episode we spoke about uh you know the second big move by Netflix when in two thousand and seven they embraced streaming at a time where the bandwidth wasn't there and the displays weren't good enough. And it just seemed like crazy. You know, you could have made the same mistake you made in digital that oh the technology is so crappy, you know, what's the point? But my you know, what I would implore young entrepreneurs to do as a failed middle aged entrepreneur myself is Pl uh make for the future. Don't make for today. Today will be an artifact by the time twenty-four hours are over, you know, and your company will be dead in the water. Make for the future. Imagine five years from now, which is actually impossible to do because so many unknown unknowns technology is growing so far. But imagine that five years from now, when you wake up in the morning, what are you doing? How are you spending your time? And try to imagine that world uh which is not bound by the constraints of today, either of cost or of technological capacity or whatever, and make for that world. And if you make for that world, Today you will succeed. Amit Bhai give us a recommendation today. So I'll give you a recommendation which should be close to your heart. I don't know, but um but first I want to ask you a question. Does Susan have brown eyes? Little bit. Little bit brown, right? So there's a song by Van Morrison called Brown Eye Girl, which has the line going down to the old mind with a transistor radio. Right. So do you remember in the seventies and eighties, we would uh call uh a portable radio a transistor, which was of course a short form. And at that age, as a little kid, I didn't know key transistor Matlab is not the radio is not called a transistor, it's a transistor radio. And we have short formed it. But I don't want to recommend a song. It's kind of a cheesy pop song, which is like really early in his career. But I'll recommend two great albums, uh Astral Weeks. and Moon Dance, uh, which are both uh simply masterpieces. I might even have spoken about them uh uh before on this show. Uh for Astral Weeks what happened was that When he wrote this bunch of songs, he got together to record it with musicians he was not familiar with. He took a couple of musicians with him to the studio. They were quickly sacked by the producer. The producer had his own ideas and doing things. He got his own crew in. One of them was his great bassist called Richard Davis. So it was almost as if he was playing and singing the song on the guitar, but what was happening apart from that was something he was not in control of, and it was a bunch of jazz guys improvising. And the result is an absolute masterpiece. Um deeply moving songs. I will also link in the show notes to two great versions of Madame George, the iconic song of that uh album by Mary Ann Faithful and Luca Bloom. Great versions as well. So a great, great album, and Van Morrison initially wasn't too happy with it because it didn't turn out as he had planned. So he had a mental image in his head. But over time he came to realise it was a masterpiece, so much so that if I remember correctly, thirty years later he toured with Richard Davis again as his bassist and he wanted Davis to play it exactly as he had played it on the album. And Davis said, No, you fucker, I'm a jazz player, I'll do something different each time. You know, something to uh this effect. There's a great podcast episode that I had heard on uh Astral Weeks, which I will link from the show notes. And the second album is a great R and V album called Moondance. Like Astral Weeks came out in nineteen sixty eight. Moondance was I think circa nineteen seventy. And this is Van Morrison with his own band doing things exactly as he wants to do, R and B classics in the traditional way. And this is again just a great, great album. Every song is great. I could take another hour just uh talking about it, so I won't do that. But this I recommend uh from you. Brown eyed girl of course predates this, but it contains both a brown eyed girl like your Susan and Transistor Radios, which I know today that you love so much. What was the killer app of the",
-      "words": [
+        },
         {
           "word": "industry.",
           "startTime": 4243.6,
@@ -77739,7 +77587,15 @@
           "startTime": 4245.84,
           "endTime": 4246.0,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4246.0,
+      "endTime": 4304.43,
+      "text": "it? Very wise words. You know, in the last episode we spoke about uh you know the second big move by Netflix when in two thousand and seven they embraced streaming at a time where the bandwidth wasn't there and the displays weren't good enough. And it just seemed like crazy. You know, you could have made the same mistake you made in digital that oh the technology is so crappy, you know, what's the point? But my you know, what I would implore young entrepreneurs to do as a failed middle aged entrepreneur myself is Pl uh make for the future. Don't make for today. Today will be an artifact by the time twenty-four hours are over, you know, and your company will be dead in the water. Make for the future. Imagine five years from now, which is actually impossible to do because so many unknown unknowns technology is growing so far. But imagine that five years from now, when you wake up in the morning, what are you doing? How are you spending your time? And try to imagine that world uh which is not bound by the constraints of today, either of cost or of technological capacity or whatever, and make for that world. And if you make for that world, Today you will succeed.",
+      "words": [
         {
           "word": "it?",
           "startTime": 4246.0,
@@ -79053,7 +78909,15 @@
           "startTime": 4302.93,
           "endTime": 4304.43,
           "confidence": 0.8983
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4311.81,
+      "endTime": 4314.69,
+      "text": "Amit Bhai give us a recommendation today.",
+      "words": [
         {
           "word": "Amit",
           "startTime": 4311.81,
@@ -79095,7 +78959,15 @@
           "startTime": 4314.29,
           "endTime": 4314.69,
           "confidence": 0.9184
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4314.69,
+      "endTime": 4467.39,
+      "text": "So I'll give you a recommendation which should be close to your heart. I don't know, but um but first I want to ask you a question. Does Susan have brown eyes? Little bit. Little bit brown, right? So there's a song by Van Morrison called Brown Eye Girl, which has the line going down to the old mind with a transistor radio. Right. So do you remember in the seventies and eighties, we would uh call uh a portable radio a transistor, which was of course a short form. And at that age, as a little kid, I didn't know key transistor Matlab is not the radio is not called a transistor, it's a transistor radio. And we have short formed it. But I don't want to recommend a song. It's kind of a cheesy pop song, which is like really early in his career. But I'll recommend two great albums, uh Astral Weeks. and Moon Dance, uh, which are both uh simply masterpieces. I might even have spoken about them uh uh before on this show. Uh for Astral Weeks what happened was that When he wrote this bunch of songs, he got together to record it with musicians he was not familiar with. He took a couple of musicians with him to the studio. They were quickly sacked by the producer. The producer had his own ideas and doing things. He got his own crew in. One of them was his great bassist called Richard Davis. So it was almost as if he was playing and singing the song on the guitar, but what was happening apart from that was something he was not in control of, and it was a bunch of jazz guys improvising. And the result is an absolute masterpiece. Um deeply moving songs. I will also link in the show notes to two great versions of Madame George, the iconic song of that uh album by Mary Ann Faithful and Luca Bloom. Great versions as well. So a great, great album, and Van Morrison initially wasn't too happy with it because it didn't turn out as he had planned. So he had a mental image in his head. But over time he came to realise it was a masterpiece, so much so that if I remember correctly, thirty years later he toured with Richard Davis again as his bassist and he wanted Davis to play it exactly as he had played it on the album. And Davis said, No, you fucker, I'm a jazz player, I'll do something different each time. You know, something to uh this effect. There's a great podcast episode that I had heard on uh Astral Weeks, which I will link from the show notes. And the second album is a great R and V album called Moondance. Like Astral Weeks came out in nineteen sixty eight. Moondance was I think circa nineteen seventy. And this is Van Morrison with his own band doing things exactly as he wants to do, R and B classics in the traditional way. And this is again just a great, great album. Every song is great. I could take another hour just uh talking about it, so I won't do that. But this I recommend uh from you. Brown eyed girl of course predates this, but it contains both a brown eyed girl like your Susan and Transistor Radios, which I know today that you love so much.",
+      "words": [
         {
           "word": "So",
           "startTime": 4314.69,
@@ -82545,7 +82417,15 @@
           "startTime": 4466.96,
           "endTime": 4467.39,
           "confidence": 0.9584
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4467.81,
+      "endTime": 4483.41,
+      "text": "What was the killer app of the bad old days? So Nam Sita, can you imagine people walking around the streets with uh like ten centimeter by five centimeter by three centimeter objects glued into their ear. What do you think they",
+      "words": [
         {
           "word": "What",
           "startTime": 4467.81,
@@ -82587,15 +82467,7 @@
           "startTime": 4470.05,
           "endTime": 4470.21,
           "confidence": 0.9654
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4470.21,
-      "endTime": 4481.33,
-      "text": "bad old days? So Nam Sita, can you imagine people walking around the streets with uh like ten centimeter by five centimeter by three centimeter objects",
-      "words": [
+        },
         {
           "word": "bad",
           "startTime": 4470.21,
@@ -82751,15 +82623,7 @@
           "startTime": 4480.77,
           "endTime": 4481.33,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4481.33,
-      "endTime": 4513.79,
-      "text": "glued into their ear. What do you think they were doing? Cricket commentary. Yeah. You know, and and it's very interesting that A lot of people then all their memories of cricket are shaped by what they heard someone talk about. So when they'll talk about Surreel Gawaskurki Straight Drive, you know, Marshall Co Asemara. You know, you've heard a version and then your brain has concocted what must have happened and then later you retrofit it into the new footage that you see circa mid eighties and all of that.",
-      "words": [
+        },
         {
           "word": "glued",
           "startTime": 4481.33,
@@ -82813,7 +82677,15 @@
           "startTime": 4483.25,
           "endTime": 4483.41,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4483.41,
+      "endTime": 4513.79,
+      "text": "were doing? Cricket commentary. Yeah. You know, and and it's very interesting that A lot of people then all their memories of cricket are shaped by what they heard someone talk about. So when they'll talk about Surreel Gawaskurki Straight Drive, you know, Marshall Co Asemara. You know, you've heard a version and then your brain has concocted what must have happened and then later you retrofit it into the new footage that you see circa mid eighties and all of that.",
+      "words": [
         {
           "word": "were",
           "startTime": 4483.41,

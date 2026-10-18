@@ -5,7 +5,7 @@
     "durationSeconds": 7805,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 14.98,
-      "endTime": 49.96,
-      "text": "Welcome to Everything Is Everything, with the open sky above our head, and the green grass beneath our bare feet. Any endeavor we embark upon can never lead to defeat. And today in fact we are embarking upon an endeavour by popular demand. In an earlier episode, Ajay Sha, you promised us all that if there is enough demand for it, you will do an episode on Unix, one of the great passions of your life and the driving force of much of your creativity. And we're here we are. So there was enough, you know, this this tells you we read the comments. So please keep commenting, telling us what you'd like to see. We read the comments, we act according to your desires. And here we are, Unix.",
+      "endTime": 63.74,
+      "text": "Welcome to Everything Is Everything, with the open sky above our head, and the green grass beneath our bare feet. Any endeavor we embark upon can never lead to defeat. And today in fact we are embarking upon an endeavour by popular demand. In an earlier episode, Ajay Sha, you promised us all that if there is enough demand for it, you will do an episode on Unix, one of the great passions of your life and the driving force of much of your creativity. And we're here we are. So there was enough, you know, this this tells you we read the comments. So please keep commenting, telling us what you'd like to see. We read the comments, we act according to your desires. And here we are, Unix. So Aja, you all set for this Unix episode. Have you done your screencast and your recordings and",
       "words": [
         {
           "word": "Welcome",
@@ -799,15 +799,7 @@
           "startTime": 49.46,
           "endTime": 49.96,
           "confidence": 0.653
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 59.5,
-      "endTime": 70.78,
-      "text": "So Aja, you all set for this Unix episode. Have you done your screencast and your recordings and everything? Yeah, I'm ready with the screencast. And uh for the rest of the main story I kinda know well. So",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 59.5,
@@ -915,7 +907,15 @@
           "startTime": 63.58,
           "endTime": 63.74,
           "confidence": 0.9988
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 63.74,
+      "endTime": 70.78,
+      "text": "everything? Yeah, I'm ready with the screencast. And uh for the rest of the main story I kinda know well. So",
+      "words": [
         {
           "word": "everything?",
           "startTime": 63.74,
@@ -7997,8 +7997,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 428.62,
-      "endTime": 504.84,
-      "text": "So it is easy to create a more Stalinist organization where there is top down control and power going down. I I think that there was something about that moment about that moment in history after the Second World War, the boundless optimism in the United States, and the flowering of human freedom that was taking place, which created conditions where people were more eclectic and more eccentric, and there was less of an accept of top-down authority. Neither did the top try to oppress the others in the organization, nor did the organization accept too much top-down authority. So that created conditions for the human mind to flower. And later in the story of Unix we will go to UC Berkeley and Bellejoy and Silicon Valley. And in many ways it's the same story. It is the counterculture, the hippie culture, the flowering of the human possibilities which came with a new level of freedom and the willingness to question traditional social, cultural and authoritarian mores, which created conditions for people to do great things. And what I really like about what happened at Bell",
+      "endTime": 502.23,
+      "text": "So it is easy to create a more Stalinist organization where there is top down control and power going down. I I think that there was something about that moment about that moment in history after the Second World War, the boundless optimism in the United States, and the flowering of human freedom that was taking place, which created conditions where people were more eclectic and more eccentric, and there was less of an accept of top-down authority. Neither did the top try to oppress the others in the organization, nor did the organization accept too much top-down authority. So that created conditions for the human mind to flower. And later in the story of Unix we will go to UC Berkeley and Bellejoy and Silicon Valley. And in many ways it's the same story. It is the counterculture, the hippie culture, the flowering of the human possibilities which came with a new level of freedom and the willingness to question traditional social, cultural and authoritarian mores, which created conditions for people to do great things.",
       "words": [
         {
           "word": "So",
@@ -9055,7 +9055,15 @@
           "startTime": 501.82,
           "endTime": 502.23,
           "confidence": 0.9969
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 502.52,
+      "endTime": 647.54,
+      "text": "And what I really like about what happened at Bell Labs is uh that it was not just a place for dreamers. Like there's this beautiful phrase I picked up either from Gertner's book or Brian Curning's great uh history of Unix, which we'll also link from the show notes and is a must read, uh, which is that it was a place for eccentrics but not dreamers. And you know, not dreamers in the uh you know, the pejorative sense of the term. In the sense that everything that was made was made with a purpose. Ideas had to become things. You couldn't just build castles in the air. You know, you could take a long term perspective, but there was a purpose to it. And that impresses me. And the other thing that impresses me, which I think is super important, is you know, we've done an episode about how uh the g great minds tend to cluster together and multiply each other and all of that, and we learn that from the show notes as well. And it seems to me that there was something happening here. Like in Curning's great memoir, he talks about how one day, you know, he's just settled into this new office and when b you know, random guy comes to him and says, Hey I'm Dick, let's go for lunch. So he goes for lunch, you know. And then later on he realizes that this gentleman who just, you know, uh calls himself uh Dick A M Dick, let's go for lunch, he's a great Richard Hamming, you know, whose textbook uh Cunningham uh Cunningham has l Curnion has learned from and uh so on and so forth. And across the hall from him later on down the line, um, you know, there are all the great uh other great figures, Thomson, Richie, uh all of those guys. And uh there is a striking thing that um Curn says, which is geography is destiny. And that really strikes me. And you know, there's a there's a you know, these days there's a lot of fashion for work from home and all of that is one of those uh sort of mantras people keep using. And I remember this great tweet from Shane Parish a year ago to the effect of uh you know those who show up at work in the office will end up being the bosses of those who show up at at work at home. Something to that effect will reproduce a screen. And the idea isn't that oh you have to follow bureaucratic procedure and do the performative thing and go to office. The idea is you need to interact with real people. Where the to me, where the real work happens, the real creativity happens is in the watercooler conversations. It's in the beer after the office work. You know, all of that. Like you and I shoot in person, right? About half our episodes, gentle readers, have actually happened because on the fly we've been talking about something and we're like, I'm not sure. And we will also, of course, plan out certain episodes well in advance and send each other notes. But some of",
+      "words": [
         {
           "word": "And",
           "startTime": 502.52,
@@ -9115,15 +9123,7 @@
           "startTime": 504.44,
           "endTime": 504.84,
           "confidence": 0.9971
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 504.84,
-      "endTime": 647.54,
-      "text": "Labs is uh that it was not just a place for dreamers. Like there's this beautiful phrase I picked up either from Gertner's book or Brian Curning's great uh history of Unix, which we'll also link from the show notes and is a must read, uh, which is that it was a place for eccentrics but not dreamers. And you know, not dreamers in the uh you know, the pejorative sense of the term. In the sense that everything that was made was made with a purpose. Ideas had to become things. You couldn't just build castles in the air. You know, you could take a long term perspective, but there was a purpose to it. And that impresses me. And the other thing that impresses me, which I think is super important, is you know, we've done an episode about how uh the g great minds tend to cluster together and multiply each other and all of that, and we learn that from the show notes as well. And it seems to me that there was something happening here. Like in Curning's great memoir, he talks about how one day, you know, he's just settled into this new office and when b you know, random guy comes to him and says, Hey I'm Dick, let's go for lunch. So he goes for lunch, you know. And then later on he realizes that this gentleman who just, you know, uh calls himself uh Dick A M Dick, let's go for lunch, he's a great Richard Hamming, you know, whose textbook uh Cunningham uh Cunningham has l Curnion has learned from and uh so on and so forth. And across the hall from him later on down the line, um, you know, there are all the great uh other great figures, Thomson, Richie, uh all of those guys. And uh there is a striking thing that um Curn says, which is geography is destiny. And that really strikes me. And you know, there's a there's a you know, these days there's a lot of fashion for work from home and all of that is one of those uh sort of mantras people keep using. And I remember this great tweet from Shane Parish a year ago to the effect of uh you know those who show up at work in the office will end up being the bosses of those who show up at at work at home. Something to that effect will reproduce a screen. And the idea isn't that oh you have to follow bureaucratic procedure and do the performative thing and go to office. The idea is you need to interact with real people. Where the to me, where the real work happens, the real creativity happens is in the watercooler conversations. It's in the beer after the office work. You know, all of that. Like you and I shoot in person, right? About half our episodes, gentle readers, have actually happened because on the fly we've been talking about something and we're like, I'm not sure. And we will also, of course, plan out certain episodes well in advance and send each other notes. But some of",
-      "words": [
+        },
         {
           "word": "Labs",
           "startTime": 504.84,
@@ -12371,8 +12371,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 650.1,
-      "endTime": 663.14,
-      "text": "Be Films, for example, or the Great Math episode that we did, they were all they all came on the fly because we're sh taking energy from each other uh and and and and so I've I find that that's an incredible part and uh another",
+      "endTime": 683.61,
+      "text": "Be Films, for example, or the Great Math episode that we did, they were all they all came on the fly because we're sh taking energy from each other uh and and and and so I've I find that that's an incredible part and uh another aspect that Curning writes about. is that there there was no one boss who could determine your career. It was collegial, you're interacting with everyone, there are no departmental limits, you know, uh the hierarchies are sort of big and all over the place and almost self determined in a sense by who you respect, et cetera, et cetera. And and that just works work so beautifully.",
       "words": [
         {
           "word": "Be",
@@ -12649,15 +12649,7 @@
           "startTime": 662.9,
           "endTime": 663.14,
           "confidence": 0.9966
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 663.14,
-      "endTime": 667.05,
-      "text": "aspect that Curning writes about. is that there there was no one boss who",
-      "words": [
+        },
         {
           "word": "aspect",
           "startTime": 663.14,
@@ -12741,15 +12733,7 @@
           "startTime": 666.81,
           "endTime": 667.05,
           "confidence": 0.9982
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 667.05,
-      "endTime": 683.61,
-      "text": "could determine your career. It was collegial, you're interacting with everyone, there are no departmental limits, you know, uh the hierarchies are sort of big and all over the place and almost self determined in a sense by who you respect, et cetera, et cetera. And and that just works work so beautifully.",
-      "words": [
+        },
         {
           "word": "could",
           "startTime": 667.05,
@@ -14523,8 +14507,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 759.69,
-      "endTime": 898.44,
-      "text": "So um at heart, inside every computer, inside every cell phone, inside every smartwatch, bracket, I have a dumb watch. Uh inside every uh modern device, there is a thing that is called a CPU. Okay, CPU stands for a central processing unit. What is there in a CPU is the ability to process one instruction at a time. Okay, so hiding inside the CPU is the capability to read a computer program. And what is a computer program? It is one painful tiny detailed instruction after another. So it's an instruction like add one to this number. Okay, then check if this number is more than 42. If so, perform this action, if not perform that action. Okay. That capability is hiding inside a CPU. So a computer is a circuit board on which there is a CPU and there is some memory. Now so far all we have is the hardware. You can write computer programs in a language which is directly understood by the CPU. Okay, and that is called assembly language. There is an English like narration of how assembly language is written. And then there is a program that is called an assembler, which converts that English looking assembly language into the bits and bytes that go sit on the CPU and run there. Okay, you can do that. So that is the most bare metal way of writing computer programs. And for all practical purposes, writing assembly language is impossible for most humans. Okay, there was a bad world in which The first computers were created where the only thing you could do was write an assembly language. And that was horrendously difficult. So if you go back to the very first computers around Johnny von Neumann and the Enyak computer and the early IBM computers, they were programmed only in assembly language. And this was ridiculously hard. So we will put up a screen. An example of assembly code and you can't understand anything, it's very hard to write. You have to concentrate at ridiculous levels, you need to be a superperson in order to do that. So right from the start, the chase was on that can we find a better language that",
+      "endTime": 924.34,
+      "text": "So um at heart, inside every computer, inside every cell phone, inside every smartwatch, bracket, I have a dumb watch. Uh inside every uh modern device, there is a thing that is called a CPU. Okay, CPU stands for a central processing unit. What is there in a CPU is the ability to process one instruction at a time. Okay, so hiding inside the CPU is the capability to read a computer program. And what is a computer program? It is one painful tiny detailed instruction after another. So it's an instruction like add one to this number. Okay, then check if this number is more than 42. If so, perform this action, if not perform that action. Okay. That capability is hiding inside a CPU. So a computer is a circuit board on which there is a CPU and there is some memory. Now so far all we have is the hardware. You can write computer programs in a language which is directly understood by the CPU. Okay, and that is called assembly language. There is an English like narration of how assembly language is written. And then there is a program that is called an assembler, which converts that English looking assembly language into the bits and bytes that go sit on the CPU and run there. Okay, you can do that. So that is the most bare metal way of writing computer programs. And for all practical purposes, writing assembly language is impossible for most humans. Okay, there was a bad world in which The first computers were created where the only thing you could do was write an assembly language. And that was horrendously difficult. So if you go back to the very first computers around Johnny von Neumann and the Enyak computer and the early IBM computers, they were programmed only in assembly language. And this was ridiculously hard. So we will put up a screen. An example of assembly code and you can't understand anything, it's very hard to write. You have to concentrate at ridiculous levels, you need to be a superperson in order to do that. So right from the start, the chase was on that can we find a better language that fits the human mind? Okay, that's called a programming language. A programming language fits the human mind. Completely unambiguous. So it's unlike human language which is full of context and nuance, and we each of us read a sentence differently. That's not permissible. A computer programming language is an explicit, precise statement of what has to be done, but it is designed for the human mind to be able to read",
       "words": [
         {
           "word": "So",
@@ -16751,15 +16735,7 @@
           "startTime": 898.28,
           "endTime": 898.44,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 898.44,
-      "endTime": 900.6,
-      "text": "fits the human mind? Okay, that's",
-      "words": [
+        },
         {
           "word": "fits",
           "startTime": 898.44,
@@ -16795,15 +16771,7 @@
           "startTime": 900.36,
           "endTime": 900.6,
           "confidence": 0.9934
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 900.6,
-      "endTime": 924.34,
-      "text": "called a programming language. A programming language fits the human mind. Completely unambiguous. So it's unlike human language which is full of context and nuance, and we each of us read a sentence differently. That's not permissible. A computer programming language is an explicit, precise statement of what has to be done, but it is designed for the human mind to be able to read",
-      "words": [
+        },
         {
           "word": "called",
           "startTime": 900.6,
@@ -18081,8 +18049,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 979.94,
-      "endTime": 1023.19,
-      "text": "that brings us to the operating system. Okay, so in the o right in the beginning, Computers were done in the following fashion, that the CPU was given over exclusively to one program at a time. So you would submit a program for a run. That program would be on a deck of cards. There were physical decks of cards that would be like this. Gentle reader, I'm old enough that I've actually worked with punch cards. So there'd be a deck of cards which is copied into the computer's memory. The computer runs that and then it stops. Then it is ready to take the next deck of cards. That's how the computer worked. At a time it did only one thing. Okay, then early on at MIT they invented something called the",
+      "endTime": 1104.1,
+      "text": "that brings us to the operating system. Okay, so in the o right in the beginning, Computers were done in the following fashion, that the CPU was given over exclusively to one program at a time. So you would submit a program for a run. That program would be on a deck of cards. There were physical decks of cards that would be like this. Gentle reader, I'm old enough that I've actually worked with punch cards. So there'd be a deck of cards which is copied into the computer's memory. The computer runs that and then it stops. Then it is ready to take the next deck of cards. That's how the computer worked. At a time it did only one thing. Okay, then early on at MIT they invented something called the CTSS, which was sort of the first operating system, where the idea was that there are no more decks of cards. You get a screen, I get a screen, hundreds of people get a separate screen, and they start typing commands in the screen, but they're all sharing the same underlying computer. The time-sharing system where we each of us is given the illusion that we have a computer to ourselves. But the computer is very fast. We are very slow, we type slowly. So little slices of the computer's mind are given to each of the screens. Okay, now you get to the problem of a program that is called the operating system, which sits at the computer. And which is this supervisor, which is this manager of the resources of the computer. So the computer has some CPU, it has some memory, it has some disk, and this has to be shared amongst all the users. It has to be shared in a way that is fair to all the users. It has to be shared in a way that no user can collide with another user. I should not be able to do bad things to you, and I should not be able to do bad things that bring down the system. and all of us have to be given access to the powers and the capabilities and the resources of the system while having fairness on resource allocation and preventing us from damaging each other or bringing down",
       "words": [
         {
           "word": "that",
@@ -18887,15 +18855,7 @@
           "startTime": 1023.03,
           "endTime": 1023.19,
           "confidence": 0.9948
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1023.19,
-      "endTime": 1025.59,
-      "text": "CTSS, which was sort of the",
-      "words": [
+        },
         {
           "word": "CTSS,",
           "startTime": 1023.19,
@@ -18931,15 +18891,7 @@
           "startTime": 1025.35,
           "endTime": 1025.59,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1025.59,
-      "endTime": 1104.1,
-      "text": "first operating system, where the idea was that there are no more decks of cards. You get a screen, I get a screen, hundreds of people get a separate screen, and they start typing commands in the screen, but they're all sharing the same underlying computer. The time-sharing system where we each of us is given the illusion that we have a computer to ourselves. But the computer is very fast. We are very slow, we type slowly. So little slices of the computer's mind are given to each of the screens. Okay, now you get to the problem of a program that is called the operating system, which sits at the computer. And which is this supervisor, which is this manager of the resources of the computer. So the computer has some CPU, it has some memory, it has some disk, and this has to be shared amongst all the users. It has to be shared in a way that is fair to all the users. It has to be shared in a way that no user can collide with another user. I should not be able to do bad things to you, and I should not be able to do bad things that bring down the system. and all of us have to be given access to the powers and the capabilities and the resources of the system while having fairness on resource allocation and preventing us from damaging each other or bringing down",
-      "words": [
+        },
         {
           "word": "first",
           "startTime": 1025.59,
@@ -21865,8 +21817,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1193.85,
-      "endTime": 1210.04,
-      "text": "So I uh I I've already talked about two very special programs. I said that a compiler is a program that translates a high-level programming language into assembly code. And I said that an operating system is a supervisor. that manages many many people and many many",
+      "endTime": 1644.3,
+      "text": "So I uh I I've already talked about two very special programs. I said that a compiler is a program that translates a high-level programming language into assembly code. And I said that an operating system is a supervisor. that manages many many people and many many processes. These two are amongst the most complex programs that humans can write. They are great pinnacles of human accomplishment. So we start at the MIT CTSS and it was a great success and everybody loved it. And in the 60s at MIT a project was invented which was called Multics, which was the idea to push CTSS further and turn this into a bigger, better operating system. And this was a partnership between MIT and Bell Labs, and I think General Electric, which was supposed to build the computers, or I don't recall whether it was IBM. Multi-X was this big dream, it was a monstrous system, and by the way, we have a phrase for this which comes from the Bell Labs community. It suffered from a second system problem. So what happens is you build your first system, CTSS, and you become very proud and confident, and you know forty things that are wrong in CTSS. So you set out to build a second system where you will plug in all those 40 barriers. But the combination of arrogance, because you won on your first system, and overreach, that you're trying to now add 40 things into it. These two things damage the second system. So the second system is often a shitty. The first one will be spare and elegant and minimalistic, and it will have a design coherence. The first system will often be written in lonely isolation by a bunch of Mavericks. By the time the first system wins and becomes famous, now all kinds of power seekers want to clamber onto the project. And it is hard to say no to the less thoughtful feature requests from many powerful people. So second systems suffer from a changed power structure, from an excessive list of feature requests, and uh the loss of humility by many of the individuals in the first system. When they were doing the first system they were more human, they were frail, they were terrified, they were quaking in their boots. When the amount of boot quaking declined, uh hubrist sets in. So Multics was a giant failure. Okay? So uh MIT and Bell Labs and one third partner, which I think was General Electric, spent a lot of money and time and resources on trying to build multics and basically it never worked. I mean it kind of got commercial at some point and I think it died out finally by 1980, but basically it didn't work and it was not a great success. And uh one young genius from Bell Labs called Ken Thompson had been deputed by Bell Labs to work on multics. So he was part of the project. he witnessed the failure of that project and the project was shut down and so then he was back in Bell Labs. In the Cunihan book that you mentioned, there's a little origin story around Ken Thomson. Okay, so Ken Thompson was an undergraduate at UC Berkeley. This would be in the late fifties, early sixties, okay, the greatest years of what it meant to be in Berkeley. And uh he was this uh mad undergrad who would show up at twelve midnight and work on the computer till eight a.m. because that was the only way to get a computer all to himself. And he uh is quoted as saying, that was my personal computer because the entire university would go away and from 12 midnight to 8 a.m. the entire computer would be there exclusively for him. And he was very good at working with computers and imagining things to do. And so he was in UC Berkeley and then one of his professors asked him, Are you going to attend graduate school? uh which is American for postgraduate education. And Ken Thomson said no, because he thought he was not good enough. He thought he was just a regular guy. And just note the wonder of those years without telling him that professor filled up his application for attending a master's or a PhD, I forget which, and forged his signature and submitted the application form, and the guy was accepted. And just th think of that world. Think of the world where students and professors were comfortable and flexible and the concept of admission into graduate school was not something horrendously regimented. Okay. So as an aside, I have a similar story about my father. Okay, so my father restarted education very late in his life and he attended night school. To do an undergraduate degree and then did a master's in economics at the Bombay University. And in some ways, he was one of the cool people in that world, but he did not get good marks in the master's examination. And he was sunk in gloom because he felt that that meant that he would never get to do a PhD. And uh Diti Lakrawala and P. R. Brahmanand and M. L. Dartwala and the other elders of the Bombay University department talked about it with each other. They knew him as a person because he was their student. They knew that his marks were not so good. And they reached out to him and they said, We're taking you into the PhD anyway. So there was that sense of being able to make decisions, not in a numerical what is the cutoff, how many marks did you get, but rather going in a more sensible way without rigid rules. And I think these are important things all of us should be thinking more about. Because in India today everything is regimented and turned into black and white rules and we are opposed to all forms of discretion. And I think that somewhere in that we have lost the essence because actually we should always look at the person and not at mechanical procedure. So that's how Ken Thompson ended up in graduate school. Then his fame spread, and uh some people in Bell Labs tried to reach out to him and say that come work at Bell Labs. And he said, No, I'll never work for a corporation. Okay, so he he was clear that I I'm I am a researcher, I'm a thinker, and companies are no good and I'm not going to work for a company ever. And I don't know what I'm going to do with my life, but I'm not going to work for a company. So they hounded him and they said, uh come meet us, do a talk, and then you can decide. So in those days these were very expensive things. They flew him over to uh the West Coast. Uh sorry, they flew him over to the East Coast and He stepped into Bell Labs and he says later, I walked in that corridor and I saw all the names on the doors, and I thought, wow, wouldn't it be amazing to be near these people. So again it's that the clustering, the network effects that worked that Ken Thompson took interest in. So he did a talk and then he had rented a car and uh he left that place. And then there's some mind-blowing story that he first went to a friend's house, then he went to a motel, and then he went back. Okay and the folks at Bell Labs got a printed offer to that friend's home while he was there. Okay, and he wasn't sure, he hadn't made up his mind. Then he left that home and he went to the",
       "words": [
         {
           "word": "So",
@@ -22149,15 +22101,7 @@
           "startTime": 1209.8,
           "endTime": 1210.04,
           "confidence": 0.9985
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1210.04,
-      "endTime": 1213.72,
-      "text": "processes. These two are amongst the most complex",
-      "words": [
+        },
         {
           "word": "processes.",
           "startTime": 1210.04,
@@ -22205,15 +22149,7 @@
           "startTime": 1212.92,
           "endTime": 1213.72,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1213.72,
-      "endTime": 1270.14,
-      "text": "programs that humans can write. They are great pinnacles of human accomplishment. So we start at the MIT CTSS and it was a great success and everybody loved it. And in the 60s at MIT a project was invented which was called Multics, which was the idea to push CTSS further and turn this into a bigger, better operating system. And this was a partnership between MIT and Bell Labs, and I think General Electric, which was supposed to build the computers, or I don't recall whether it was IBM. Multi-X was this big dream, it was a monstrous system, and by the way, we have a phrase for this which comes from the Bell Labs community. It suffered from a second system problem. So what happens is you build your first system, CTSS, and you become very proud and confident, and you know forty things that are wrong in CTSS. So you set out to build a second system where you will plug in all those 40",
-      "words": [
+        },
         {
           "word": "programs",
           "startTime": 1213.72,
@@ -23221,15 +23157,7 @@
           "startTime": 1269.66,
           "endTime": 1270.14,
           "confidence": 0.91
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1270.14,
-      "endTime": 1272.14,
-      "text": "barriers. But the",
-      "words": [
+        },
         {
           "word": "barriers.",
           "startTime": 1270.14,
@@ -23247,15 +23175,7 @@
           "startTime": 1271.9,
           "endTime": 1272.14,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1272.14,
-      "endTime": 1310.6,
-      "text": "combination of arrogance, because you won on your first system, and overreach, that you're trying to now add 40 things into it. These two things damage the second system. So the second system is often a shitty. The first one will be spare and elegant and minimalistic, and it will have a design coherence. The first system will often be written in lonely isolation by a bunch of Mavericks. By the time the first system wins and becomes famous, now all kinds of power seekers want to clamber onto the project. And it is hard to say no to the less thoughtful feature requests from",
-      "words": [
+        },
         {
           "word": "combination",
           "startTime": 1272.14,
@@ -23885,15 +23805,7 @@
           "startTime": 1310.28,
           "endTime": 1310.6,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1310.6,
-      "endTime": 1313.4,
-      "text": "many powerful people. So second systems",
-      "words": [
+        },
         {
           "word": "many",
           "startTime": 1310.6,
@@ -23929,15 +23841,7 @@
           "startTime": 1312.6,
           "endTime": 1313.4,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1313.4,
-      "endTime": 1333.21,
-      "text": "suffer from a changed power structure, from an excessive list of feature requests, and uh the loss of humility by many of the individuals in the first system. When they were doing the first system they were more human, they were frail, they were terrified, they were quaking in their boots. When the amount of boot quaking declined,",
-      "words": [
+        },
         {
           "word": "suffer",
           "startTime": 1313.4,
@@ -24285,15 +24189,7 @@
           "startTime": 1332.49,
           "endTime": 1333.21,
           "confidence": 0.9123
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1333.21,
-      "endTime": 1335.53,
-      "text": "uh hubrist sets in.",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 1333.21,
@@ -24317,15 +24213,7 @@
           "startTime": 1335.05,
           "endTime": 1335.53,
           "confidence": 0.6498
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1335.53,
-      "endTime": 1457.07,
-      "text": "So Multics was a giant failure. Okay? So uh MIT and Bell Labs and one third partner, which I think was General Electric, spent a lot of money and time and resources on trying to build multics and basically it never worked. I mean it kind of got commercial at some point and I think it died out finally by 1980, but basically it didn't work and it was not a great success. And uh one young genius from Bell Labs called Ken Thompson had been deputed by Bell Labs to work on multics. So he was part of the project. he witnessed the failure of that project and the project was shut down and so then he was back in Bell Labs. In the Cunihan book that you mentioned, there's a little origin story around Ken Thomson. Okay, so Ken Thompson was an undergraduate at UC Berkeley. This would be in the late fifties, early sixties, okay, the greatest years of what it meant to be in Berkeley. And uh he was this uh mad undergrad who would show up at twelve midnight and work on the computer till eight a.m. because that was the only way to get a computer all to himself. And he uh is quoted as saying, that was my personal computer because the entire university would go away and from 12 midnight to 8 a.m. the entire computer would be there exclusively for him. And he was very good at working with computers and imagining things to do. And so he was in UC Berkeley and then one of his professors asked him, Are you going to attend graduate school? uh which is American for postgraduate education. And Ken Thomson said no, because he thought he was not good enough. He thought he was just a regular guy. And just note the wonder of those years without telling him that professor filled up his application for attending a master's or a PhD, I forget which, and forged his signature and submitted the application form, and the guy was accepted.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1335.53,
@@ -26395,15 +26283,7 @@
           "startTime": 1456.57,
           "endTime": 1457.07,
           "confidence": 0.9936
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1458.6,
-      "endTime": 1462.2,
-      "text": "And just th think of that world. Think of the",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 1458.6,
@@ -26463,15 +26343,7 @@
           "startTime": 1461.96,
           "endTime": 1462.2,
           "confidence": 0.9965
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1462.2,
-      "endTime": 1630.06,
-      "text": "world where students and professors were comfortable and flexible and the concept of admission into graduate school was not something horrendously regimented. Okay. So as an aside, I have a similar story about my father. Okay, so my father restarted education very late in his life and he attended night school. To do an undergraduate degree and then did a master's in economics at the Bombay University. And in some ways, he was one of the cool people in that world, but he did not get good marks in the master's examination. And he was sunk in gloom because he felt that that meant that he would never get to do a PhD. And uh Diti Lakrawala and P. R. Brahmanand and M. L. Dartwala and the other elders of the Bombay University department talked about it with each other. They knew him as a person because he was their student. They knew that his marks were not so good. And they reached out to him and they said, We're taking you into the PhD anyway. So there was that sense of being able to make decisions, not in a numerical what is the cutoff, how many marks did you get, but rather going in a more sensible way without rigid rules. And I think these are important things all of us should be thinking more about. Because in India today everything is regimented and turned into black and white rules and we are opposed to all forms of discretion. And I think that somewhere in that we have lost the essence because actually we should always look at the person and not at mechanical procedure. So that's how Ken Thompson ended up in graduate school. Then his fame spread, and uh some people in Bell Labs tried to reach out to him and say that come work at Bell Labs. And he said, No, I'll never work for a corporation. Okay, so he he was clear that I I'm I am a researcher, I'm a thinker, and companies are no good and I'm not going to work for a company ever. And I don't know what I'm going to do with my life, but I'm not going to work for a company. So they hounded him and they said, uh come meet us, do a talk, and then you can decide. So in those days these were very expensive things. They flew him over to uh the West Coast. Uh sorry, they flew him over to the East Coast and He stepped into Bell Labs and he says later, I walked in that corridor and I saw all the names on the doors, and I thought, wow, wouldn't it be amazing to be near these people. So again it's that the clustering, the network effects that worked that Ken Thompson took interest in. So he did a talk and then he had rented a car and uh he left that place. And then there's some mind-blowing story that he first went to a friend's house, then he went to a motel, and then he went back. Okay",
-      "words": [
+        },
         {
           "word": "world",
           "startTime": 1462.2,
@@ -29579,15 +29451,7 @@
           "startTime": 1629.42,
           "endTime": 1630.06,
           "confidence": 0.6902
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1630.06,
-      "endTime": 1632.06,
-      "text": "and the",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1630.06,
@@ -29599,15 +29463,7 @@
           "startTime": 1631.66,
           "endTime": 1632.06,
           "confidence": 0.9739
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1632.06,
-      "endTime": 1644.3,
-      "text": "folks at Bell Labs got a printed offer to that friend's home while he was there. Okay, and he wasn't sure, he hadn't made up his mind. Then he left that home and he went to the",
-      "words": [
+        },
         {
           "word": "folks",
           "startTime": 1632.06,
@@ -29873,8 +29729,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1648.86,
-      "endTime": 1770.02,
-      "text": "got back to him and they said, What have you done? And Have you accepted? And he said, How did you find me? Okay, and all that you knew was that I was at a motel in New Jersey. And they said, Well, we're the telephone company. We found the phone number of every motel in New Jersey and we made all the calls and we found you. He said, Very well, I accept. And that's how He joined uh Bell Labs. So Ken Thompson had come out of the Multics project and he was figuring out what to do and Bell Labs management had been burned by spending a lot of money on Multics and they said we don't want to do operating systems research. Okay, so for a long time Bell Labs had management had decided that we will hire all kinds of crazy people, but we're not going to fund all your projects. I mean, funding will be a little more uh tough to find. So you can fool around and do crazy things on your own time, but getting serious resourcing for an operating system, no, we're not going there. Now at that time there was an obsolete computer which was called a PDP seven. Okay, note in that age, in the mid sixties, this was an obsolete computer. So it was lying on some corner and nobody wanted it. Okay, so Ken Thompson sort of grabbed access to that computer. And it also had a disc and it had a weird disc. The disc was too fast for the computer. But these were just like the junk parts lying around In Bell Labs, and Ken Thompson grabbed these things and put them together. Okay, so in every office, I think there is a suitable supply of rubbish that nobody is using. And I think this story runs contrary to any declutter manifesto that you do want to keep your PDP 7s because as you're going to see, they can amount to something. So the on that PDP 7, Ken Thompson got to work writing a space travel game. What was the funnest thing to do with a PDP seven? He wrote a space travel game where you could fly a spacecraft and land on Jupiter, and of course you had to get the calculations correct, otherwise your craft would go wrong. Give me some perspective. What would have been the memory, the",
+      "endTime": 1767.94,
+      "text": "got back to him and they said, What have you done? And Have you accepted? And he said, How did you find me? Okay, and all that you knew was that I was at a motel in New Jersey. And they said, Well, we're the telephone company. We found the phone number of every motel in New Jersey and we made all the calls and we found you. He said, Very well, I accept. And that's how He joined uh Bell Labs. So Ken Thompson had come out of the Multics project and he was figuring out what to do and Bell Labs management had been burned by spending a lot of money on Multics and they said we don't want to do operating systems research. Okay, so for a long time Bell Labs had management had decided that we will hire all kinds of crazy people, but we're not going to fund all your projects. I mean, funding will be a little more uh tough to find. So you can fool around and do crazy things on your own time, but getting serious resourcing for an operating system, no, we're not going there. Now at that time there was an obsolete computer which was called a PDP seven. Okay, note in that age, in the mid sixties, this was an obsolete computer. So it was lying on some corner and nobody wanted it. Okay, so Ken Thompson sort of grabbed access to that computer. And it also had a disc and it had a weird disc. The disc was too fast for the computer. But these were just like the junk parts lying around In Bell Labs, and Ken Thompson grabbed these things and put them together. Okay, so in every office, I think there is a suitable supply of rubbish that nobody is using. And I think this story runs contrary to any declutter manifesto that you do want to keep your PDP 7s because as you're going to see, they can amount to something. So the on that PDP 7, Ken Thompson got to work writing a space travel game. What was the funnest thing to do with a PDP seven? He wrote a space travel game where you could fly a spacecraft and land on Jupiter, and of course you had to get the calculations correct, otherwise your craft would go wrong.",
       "words": [
         {
           "word": "got",
@@ -32251,7 +32107,15 @@
           "startTime": 1767.46,
           "endTime": 1767.94,
           "confidence": 0.9757
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1767.94,
+      "endTime": 1777.62,
+      "text": "Give me some perspective. What would have been the memory, the RAM, et cetera, et cetera, of a a computer which was obsolete den. 16 kilobytes. 16 KB. Yeah. So",
+      "words": [
         {
           "word": "Give",
           "startTime": 1767.94,
@@ -32317,15 +32181,7 @@
           "startTime": 1769.94,
           "endTime": 1770.02,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1770.02,
-      "endTime": 1777.62,
-      "text": "RAM, et cetera, et cetera, of a a computer which was obsolete den. 16 kilobytes. 16 KB. Yeah. So",
-      "words": [
+        },
         {
           "word": "RAM,",
           "startTime": 1770.02,
@@ -35187,8 +35043,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1926.07,
-      "endTime": 1968.54,
-      "text": "So there was a long interregnum and then there were some other uh uh useless machines that were used and some progress was made and then they hit the brainwave. The brain wave was that there was a patent department inside Bell Labs. Okay, so at that time Bell Labs was at a run rate of about one patent a day. So they were prolific in pushing out a lot of patent applications. And patent applications needed a certain strict formatting and they needed diagrams and they needed mathematical equations. And so the uh Management was about to put up a chunk of money for a commercial vendor who would give a specialized system that only knew how to do typesetting",
+      "endTime": 2588.73,
+      "text": "So there was a long interregnum and then there were some other uh uh useless machines that were used and some progress was made and then they hit the brainwave. The brain wave was that there was a patent department inside Bell Labs. Okay, so at that time Bell Labs was at a run rate of about one patent a day. So they were prolific in pushing out a lot of patent applications. And patent applications needed a certain strict formatting and they needed diagrams and they needed mathematical equations. And so the uh Management was about to put up a chunk of money for a commercial vendor who would give a specialized system that only knew how to do typesetting of patents and produce output on a phototype setter and that would be submitted to the US Patent Office. And they said, look, you give us that sum of money, we will build an internal piece of patent software. So they just it was equality that what you are about to pay to an external vendor for that kind of money. We will build an entire text processing, document processing system. And what they knew in their mind was they were actually going to write an operating system. So for the money that management was about to pay somebody for a specialized piece of patent processing software, they were going to write an entire typesetting system, a document processing system, and run it on Unix and build Unix out on some modern hardware. They knew that internally, they knew that was the kind of firepower that they had, and management approved it. So that's how the next wave of Unix development happened. And they built the world's first typesetting software, which was first called Rov and then NRF, and then TRof. And these are like very powerful abstract tools for writing marked up text. So if you've heard HTML hypertext markup language, the word markup originates here, where inside the text are embedded commands for italics and boldface and section number. raw text is given to a typesetting software which drives the typesetter and you get the beautifully typeset uh patent application. So all these things were built there and that's how Unix happened. The next piece is the story of C. By this time Unix was starting to go into multiple machines and in these years all the operating systems had been written in assembly language. So you needed crazy people like Ken Thompson to write an entire operating system in assembly language. And the great man Dennis Recci started working with Ken and saying that, you know, could we write this in a high level programming language? None of the high level programming languages of the age were good enough to write an operating system. So Dennis and others got together and built a brand new programming language, and that is C. So the most important programming language in the world today is C. And C was written to make it possible to write Unix in C. And then there was a ridiculous moment where Ken Thompson and Dennis Ritchie rewrote the entire UNX NC. And there are these great feats again and again in this story. And then it suddenly became portable. So it was able to go to more and more machines. I want to claim some credit to the for the economists here, that I think that there was significant pressure on ATT at the time from the antitrust authorities. And that impeded the ability of ATT to turn this into a product. Okay, so at this point, Unix was so cool and so powerful and so successful. It could have readily turned into ATT launching computers and operating system, and they would have become the bloody monopoly because they were streets ahead of everybody else. I have an opinion that they dropped this ball because they were absorbed in their battles with the US FTC. And launching a computer and an operating system would have appeared too close to the telecom business and it would have appeared like an extension of their monopoly power. And so they kind of let this thing be. It didn't readily fit their business strategy. And it kept growing, and then they licensed it to other universities, so it spread to other universities, and then they started giving source code licenses. So the full C source code started spreading to universities all over the world. Uh there's a famous book which was written where there is a print out of the Unix kernel source code, and there's a volume two, which is a line by line explanation of what it's doing. So this went to universities all over the world where people could then read how an operating system is written. And so their lingua franca was Unix, because Unix was the operating system that they studied. And most importantly it went to UC Berkeley, where there was a great man called Bill Joy, who Connected it up into the developments happening in the world of computer networking. And so Unix became the vehicle of PCP IP and the internet. And that was another little explosion, and the modern internet is the product of that. Then it went into the computer industry, there were Sun Microsystems, and many many commercial companies built various kinds of Unix machines in it. And the last huge milestone was Linux, where a young man in Finland. uh wrote a free clone of Unix which is called Linux and he released it into the internet as open source software. I think it was 1991 that he wrote a post on Net News. He was a young student saying, I'm I've been fooling around with the code of Minix and I have written a brand new operating system. What do you guys think? What should it do? And right after that there was an extremely mean and critical response by a great computer scientist called Andy Tannenbaum and little notes from my personal history. I remember after I read Andy Tannenbaum's article I thought he's not being fair and I was an older person compared to Linus. So I wrote email to Linus saying you should not be disheartened. What you're doing is very important. So like I was there right there in August 1991 when these developments were happening. I was reading and writing these stuff, these things, and I booted Linux when it reached version zero point one. And uh apart from some seven, eight years with Mac OS X, it Linux has been my only system since uh 1991. So today Unix has just triumphed completely. It is everywhere. Okay? As you said correctly, you may think you're using Amazon, but on the servers behind Amazon is uh running on Unix, uh the Kindle runs Unix, the Mac OS X was next OS, that was BSD Unix chosen by Steve Jobs when he was in Next. And then when he came back to Apple, he brought the entire next team back to Apple, and that is Mac OS X. And that same capability is there inside the phone and tablet that Apple makes. I remember at that time a big turning point was when they wanted to develop iTunes. And it was written in roughly a week. On the Unix environment of what was coming together inside Apple. And that was the day Steve Jobs truly understood. Till that time, he was going on the wisdom of other people, that really there is only one great operating system in the world, and that is BSD Unix. Many of the people he trusted the most had always said to him that the path to operating system is BSD Unix. When iTunes got done in a week, Steve Jobs is said to have got religion. He understood that. There is something magical going on here and you couldn't have done this anywhere else. And it is the perfection of Unix that makes these things possible. So today Unix is any everywhere. Uh there is a list that is called Top500.org, which is the five hundred most powerful computers in the world. Most of them are Unix, maybe there are one or two or five that are not Unix, but four hundred and ninety or more are running some variant of Unix today. So as I said, It's your Android phone, it's your iOS phone, it's your Kindle, it's your iPad, it is all the Linux computers, it is essentially everything happening in the server world, it's everything happening in the cloud, everything is Unix. Many routers run Unix. I encourage you to buy one of the routers that will run an open source version of Unix because then you can be tinkering with the software that runs on your router. Okay, I encourage everybody to buy one of the Raspberry Pi machines and play with them. They run Unix and so on. So essentially there is one holdout that is Microsoft. So there are some amount of Windows machines in this world. They're a declining share of the world. Apart from that, everything is Unix. So there is really no other operating system other than Unix today. And now I want to say this in a engineering wins way. It is a tribute to the superiority of the design, that that design scaled and scaled and scaled and scaled to completely unexpected Applications. So you started out with some 64K and 128K tiny primitive machines, but the design metaphors and the design principles and the values and that philosophy is working today with mind-bogglingly powerful machines and very different machines. Today's phone is not a simple machine. It has a multi-core CPU, which will have some performance cores and some efficiency cores. It'll have a GPU on it, it might have I hate the jargon, one of these AI chips. I hate these words. It it will have all the specialized stuff sitting on the computer. Or consider those top 500 list of the most powerful computers in the world. Consider individual blade processors sitting in modern cloud computing facilities where millions of CPUs are being put together again under Unix systems. So there is like a super operating system controlling millions of CPUs in a cloud computing center. it is a testimony to the beauty and greatness of that design that we are standing here in 2023 and the principles and visions of the early 70s and mid seventies are still the dominant paradigm today. There are grumblers and haters who will say that today Unix is holding us back. And I have no doubt that you have to reinvent and you have to find the next generation. Okay, so I think Ken Thompson says that somewhere in this world uh in some lab there is a little used and defunct Cray one supercomputer and uh there will be a next Ken Thomson who will write a space travel game on that and out of that will come the next revolution in computing. I've no doubt that will come. But it's a tribute to this space where there has been so much interest, so much research, so much money. And still it is these ideas and principles that have won. So if you want to be practical, like look, this stuff one. If you want to be aesthetic, then there's actually something",
       "words": [
         {
           "word": "So",
@@ -35915,15 +35771,7 @@
           "startTime": 1967.66,
           "endTime": 1968.54,
           "confidence": 0.8605
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1968.54,
-      "endTime": 1972.78,
-      "text": "of patents and produce output",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 1968.54,
@@ -35953,15 +35801,7 @@
           "startTime": 1972.14,
           "endTime": 1972.78,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1972.78,
-      "endTime": 2227.08,
-      "text": "on a phototype setter and that would be submitted to the US Patent Office. And they said, look, you give us that sum of money, we will build an internal piece of patent software. So they just it was equality that what you are about to pay to an external vendor for that kind of money. We will build an entire text processing, document processing system. And what they knew in their mind was they were actually going to write an operating system. So for the money that management was about to pay somebody for a specialized piece of patent processing software, they were going to write an entire typesetting system, a document processing system, and run it on Unix and build Unix out on some modern hardware. They knew that internally, they knew that was the kind of firepower that they had, and management approved it. So that's how the next wave of Unix development happened. And they built the world's first typesetting software, which was first called Rov and then NRF, and then TRof. And these are like very powerful abstract tools for writing marked up text. So if you've heard HTML hypertext markup language, the word markup originates here, where inside the text are embedded commands for italics and boldface and section number. raw text is given to a typesetting software which drives the typesetter and you get the beautifully typeset uh patent application. So all these things were built there and that's how Unix happened. The next piece is the story of C. By this time Unix was starting to go into multiple machines and in these years all the operating systems had been written in assembly language. So you needed crazy people like Ken Thompson to write an entire operating system in assembly language. And the great man Dennis Recci started working with Ken and saying that, you know, could we write this in a high level programming language? None of the high level programming languages of the age were good enough to write an operating system. So Dennis and others got together and built a brand new programming language, and that is C. So the most important programming language in the world today is C. And C was written to make it possible to write Unix in C. And then there was a ridiculous moment where Ken Thompson and Dennis Ritchie rewrote the entire UNX NC. And there are these great feats again and again in this story. And then it suddenly became portable. So it was able to go to more and more machines. I want to claim some credit to the for the economists here, that I think that there was significant pressure on ATT at the time from the antitrust authorities. And that impeded the ability of ATT to turn this into a product. Okay, so at this point, Unix was so cool and so powerful and so successful. It could have readily turned into ATT launching computers and operating system, and they would have become the bloody monopoly because they were streets ahead of everybody else. I have an opinion that they dropped this ball because they were absorbed in their battles with the US FTC. And launching a computer and an operating system would have appeared too close to the telecom business and it would have appeared like an extension of their monopoly power. And so they kind of let this thing be. It didn't readily fit their business strategy. And it kept growing, and then they licensed it to other universities, so it spread to other universities, and then they started giving source code licenses. So the full C source code started spreading to universities all over the world. Uh there's a famous book which was written where there is a print out of the Unix kernel source code, and there's a volume two, which is a line by line explanation of what it's doing. So this went to universities all over the world where people could then read how an operating system is written. And so their lingua franca was Unix, because Unix was the operating system that they studied. And most importantly it went to UC Berkeley, where there was a great man called Bill Joy, who Connected it up into the developments happening in the world of computer networking. And so Unix became the vehicle of PCP IP and the internet. And that was another little explosion, and the modern internet",
-      "words": [
+        },
         {
           "word": "on",
           "startTime": 1972.78,
@@ -40437,15 +40277,7 @@
           "startTime": 2226.6,
           "endTime": 2227.08,
           "confidence": 0.7017
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2227.08,
-      "endTime": 2229.32,
-      "text": "is the product of that. Then",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2227.08,
@@ -40481,15 +40313,7 @@
           "startTime": 2229.0,
           "endTime": 2229.32,
           "confidence": 0.9951
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2229.32,
-      "endTime": 2311.37,
-      "text": "it went into the computer industry, there were Sun Microsystems, and many many commercial companies built various kinds of Unix machines in it. And the last huge milestone was Linux, where a young man in Finland. uh wrote a free clone of Unix which is called Linux and he released it into the internet as open source software. I think it was 1991 that he wrote a post on Net News. He was a young student saying, I'm I've been fooling around with the code of Minix and I have written a brand new operating system. What do you guys think? What should it do? And right after that there was an extremely mean and critical response by a great computer scientist called Andy Tannenbaum and little notes from my personal history. I remember after I read Andy Tannenbaum's article I thought he's not being fair and I was an older person compared to Linus. So I wrote email to Linus saying you should not be disheartened. What you're doing is very important. So like I was there right there in August 1991 when these developments were happening. I was reading and writing these stuff, these things, and I booted Linux when it reached version zero point one. And uh apart from some seven, eight years with Mac OS X, it Linux has been my only system since uh 1991. So today Unix has just triumphed",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 2229.32,
@@ -41905,15 +41729,7 @@
           "startTime": 2310.73,
           "endTime": 2311.37,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2311.37,
-      "endTime": 2314.01,
-      "text": "completely. It is everywhere. Okay?",
-      "words": [
+        },
         {
           "word": "completely.",
           "startTime": 2311.37,
@@ -41943,15 +41759,7 @@
           "startTime": 2313.53,
           "endTime": 2314.01,
           "confidence": 0.6933
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2314.01,
-      "endTime": 2390.5,
-      "text": "As you said correctly, you may think you're using Amazon, but on the servers behind Amazon is uh running on Unix, uh the Kindle runs Unix, the Mac OS X was next OS, that was BSD Unix chosen by Steve Jobs when he was in Next. And then when he came back to Apple, he brought the entire next team back to Apple, and that is Mac OS X. And that same capability is there inside the phone and tablet that Apple makes. I remember at that time a big turning point was when they wanted to develop iTunes. And it was written in roughly a week. On the Unix environment of what was coming together inside Apple. And that was the day Steve Jobs truly understood. Till that time, he was going on the wisdom of other people, that really there is only one great operating system in the world, and that is BSD Unix. Many of the people he trusted the most had always said to him that the path to operating system is BSD Unix. When iTunes got done in a week, Steve Jobs is said to have got religion. He understood that. There is something magical going on here and you couldn't have done this anywhere else. And it is the perfection of Unix",
-      "words": [
+        },
         {
           "word": "As",
           "startTime": 2314.01,
@@ -43259,15 +43067,7 @@
           "startTime": 2389.86,
           "endTime": 2390.5,
           "confidence": 0.9519
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2390.5,
-      "endTime": 2392.58,
-      "text": "that makes these things possible.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 2390.5,
@@ -43297,15 +43097,7 @@
           "startTime": 2391.94,
           "endTime": 2392.58,
           "confidence": 0.9866
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2392.58,
-      "endTime": 2570.9,
-      "text": "So today Unix is any everywhere. Uh there is a list that is called Top500.org, which is the five hundred most powerful computers in the world. Most of them are Unix, maybe there are one or two or five that are not Unix, but four hundred and ninety or more are running some variant of Unix today. So as I said, It's your Android phone, it's your iOS phone, it's your Kindle, it's your iPad, it is all the Linux computers, it is essentially everything happening in the server world, it's everything happening in the cloud, everything is Unix. Many routers run Unix. I encourage you to buy one of the routers that will run an open source version of Unix because then you can be tinkering with the software that runs on your router. Okay, I encourage everybody to buy one of the Raspberry Pi machines and play with them. They run Unix and so on. So essentially there is one holdout that is Microsoft. So there are some amount of Windows machines in this world. They're a declining share of the world. Apart from that, everything is Unix. So there is really no other operating system other than Unix today. And now I want to say this in a engineering wins way. It is a tribute to the superiority of the design, that that design scaled and scaled and scaled and scaled to completely unexpected Applications. So you started out with some 64K and 128K tiny primitive machines, but the design metaphors and the design principles and the values and that philosophy is working today with mind-bogglingly powerful machines and very different machines. Today's phone is not a simple machine. It has a multi-core CPU, which will have some performance cores and some efficiency cores. It'll have a GPU on it, it might have I hate the jargon, one of these AI chips. I hate these words. It it will have all the specialized stuff sitting on the computer. Or consider those top 500 list of the most powerful computers in the world. Consider individual blade processors sitting in modern cloud computing facilities where millions of CPUs are being put together again under Unix systems. So there is like a super operating system controlling millions of CPUs in a cloud computing center. it is a testimony to the beauty and greatness of that design that we are standing here in 2023 and the principles and visions of the early 70s and mid seventies are still the dominant paradigm today. There are grumblers and haters who will say that today Unix is holding us back. And I have no doubt that you have to reinvent and you have to find the next generation. Okay, so I think Ken Thompson says that somewhere in this world uh in some lab there is a little used and defunct Cray one supercomputer and uh there will be a next Ken Thomson who will write a space travel game on that and out of that will come the next revolution in computing. I've no doubt that will come. But",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2392.58,
@@ -46401,15 +46193,7 @@
           "startTime": 2570.74,
           "endTime": 2570.9,
           "confidence": 0.989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2570.9,
-      "endTime": 2573.14,
-      "text": "it's a tribute to this",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 2570.9,
@@ -46439,15 +46223,7 @@
           "startTime": 2572.18,
           "endTime": 2573.14,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2573.14,
-      "endTime": 2588.73,
-      "text": "space where there has been so much interest, so much research, so much money. And still it is these ideas and principles that have won. So if you want to be practical, like look, this stuff one. If you want to be aesthetic, then there's actually something",
-      "words": [
+        },
         {
           "word": "space",
           "startTime": 2573.14,
@@ -46735,8 +46511,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2588.73,
-      "endTime": 2634.5,
-      "text": "beautiful going on here. You know, in our last episode we used this phrase dancing with chains. And to me, that's like a central motif of everything you just described, which is not just a triumph of engineering or a triumph of science, it's a triumph of creativity in the human mind. You know, you start with Ken Thompson, a young man trying to, you know, write uh a s a space computer Greg game on this little dinky machine, and there's a practical problem, the disc is going faster than it should, and he writes something for that, and he's dancing with chains and dancing with chains, and then Unix comes out of that. And then they don't have the budget for it, but they take a budget from somewhere else and they have to build a typesetting system, which they do. But they also use it for this. And everywhere, I think creative people, whether they're artists or writers, or programmers or engineers, are dancing with chains, and that's I think just shows",
+      "endTime": 2637.22,
+      "text": "beautiful going on here. You know, in our last episode we used this phrase dancing with chains. And to me, that's like a central motif of everything you just described, which is not just a triumph of engineering or a triumph of science, it's a triumph of creativity in the human mind. You know, you start with Ken Thompson, a young man trying to, you know, write uh a s a space computer Greg game on this little dinky machine, and there's a practical problem, the disc is going faster than it should, and he writes something for that, and he's dancing with chains and dancing with chains, and then Unix comes out of that. And then they don't have the budget for it, but they take a budget from somewhere else and they have to build a typesetting system, which they do. But they also use it for this. And everywhere, I think creative people, whether they're artists or writers, or programmers or engineers, are dancing with chains, and that's I think just shows you the power of the human mind and perhaps the importance of chains.",
       "words": [
         {
           "word": "beautiful",
@@ -47787,15 +47563,7 @@
           "startTime": 2634.26,
           "endTime": 2634.5,
           "confidence": 0.9973
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2634.5,
-      "endTime": 2734.97,
-      "text": "you the power of the human mind and perhaps the importance of chains. I want to address all of us in India. Okay? I think too often we feel that there is some uh rare world inside uh IBM TJ Watson labs where everything is good. Where all problems have been solved, there is no politics, there are no resource constraints, you have great colleagues, and that is why those great people are able to build great things. And because I am sitting in India here, in some dinky organization facing infinite constraints, I can't do cool things. And I just want to say that these chains are in your mind. And We need to wake up and we need to do things differently. Or we can dance anyway, even if these chains are there, we can dance anyway. There's plenty to do, and you can be cool and you can be creative. Okay, remember we talked about CR Rao in an earlier episode. It's like there was no right to win. Okay, so I want to use a business phrase. There was no right to win. You're CR Rao. You're an obscure uh graduate student sitting at ISI in Calcutta in an age before email. Okay, it's like how are you going to be at the frontier of the statistical thinking going on in Cambridge. And the answer is they did it. So I feel that these chains are there. We should recognize them. We should try to find ways to ease those constraints. But we should never lose sight of the curiosity and the passion. And actually great things can be done by each of us that you know sitting inside a concentration camp you can write poetry. So we should be always pushing on the greatness of what we do rather than you know whining about our chains or, you know, raging against our chains.",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 2634.5,
@@ -47873,7 +47641,15 @@
           "startTime": 2636.66,
           "endTime": 2637.22,
           "confidence": 0.9882
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2637.22,
+      "endTime": 2676.04,
+      "text": "I want to address all of us in India. Okay? I think too often we feel that there is some uh rare world inside uh IBM TJ Watson labs where everything is good. Where all problems have been solved, there is no politics, there are no resource constraints, you have great colleagues, and that is why those great people are able to build great things. And because I am sitting in India here, in some dinky organization facing infinite constraints, I can't do cool things. And I just want to say that these chains are in your mind. And We need to wake up and we need to do things differently.",
+      "words": [
         {
           "word": "I",
           "startTime": 2637.22,
@@ -48539,7 +48315,15 @@
           "startTime": 2675.4,
           "endTime": 2676.04,
           "confidence": 0.9647
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2676.04,
+      "endTime": 2678.84,
+      "text": "Or we can dance anyway, even if these chains are there, we can dance anyway.",
+      "words": [
         {
           "word": "Or",
           "startTime": 2676.04,
@@ -48629,7 +48413,15 @@
           "startTime": 2678.28,
           "endTime": 2678.84,
           "confidence": 0.7465
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2678.84,
+      "endTime": 2734.97,
+      "text": "There's plenty to do, and you can be cool and you can be creative. Okay, remember we talked about CR Rao in an earlier episode. It's like there was no right to win. Okay, so I want to use a business phrase. There was no right to win. You're CR Rao. You're an obscure uh graduate student sitting at ISI in Calcutta in an age before email. Okay, it's like how are you going to be at the frontier of the statistical thinking going on in Cambridge. And the answer is they did it. So I feel that these chains are there. We should recognize them. We should try to find ways to ease those constraints. But we should never lose sight of the curiosity and the passion. And actually great things can be done by each of us that you know sitting inside a concentration camp you can write poetry. So we should be always pushing on the greatness of what we do rather than you know whining about our chains or, you know, raging against our chains.",
+      "words": [
         {
           "word": "There's",
           "startTime": 2678.84,
@@ -51097,8 +50889,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2808.44,
-      "endTime": 2818.07,
-      "text": "So how much of it is born out of circumstances? This computer is ridiculously weak. This computer is mind blowingly underpowered by modern standards. So elegance is not just a w like today we think of elegance",
+      "endTime": 2815.51,
+      "text": "So how much of it is born out of circumstances? This computer is ridiculously weak. This computer is mind blowingly underpowered by modern standards. So",
       "words": [
         {
           "word": "So",
@@ -51249,7 +51041,15 @@
           "startTime": 2815.35,
           "endTime": 2815.51,
           "confidence": 0.7212
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2815.51,
+      "endTime": 2823.11,
+      "text": "elegance is not just a w like today we think of elegance as a virtue, but did it uh begin as a necessity? Look, uh",
+      "words": [
         {
           "word": "elegance",
           "startTime": 2815.51,
@@ -51321,15 +51121,7 @@
           "startTime": 2817.67,
           "endTime": 2818.07,
           "confidence": 0.9969
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2818.07,
-      "endTime": 2823.11,
-      "text": "as a virtue, but did it uh begin as a necessity? Look, uh",
-      "words": [
+        },
         {
           "word": "as",
           "startTime": 2818.07,
@@ -51413,8 +51205,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2823.11,
-      "endTime": 2833.11,
-      "text": "we have a selection bias, we remember the winners, we write histories about these great stories. There were countless other messy, ugly ways of doing computer",
+      "endTime": 2938.92,
+      "text": "we have a selection bias, we remember the winners, we write histories about these great stories. There were countless other messy, ugly ways of doing computer science which went away by the wayside. And that's how today we understand the value of philosophy. Okay, so we should come back to philosophy at depth. And I want to say to you, gentle reader, that if you think the words culture and philosophy sit in a different shelf from the words engineering or science, then, you know, I would like to question that. And at the heart of the unique story is the deep connection between the pinnacles of engineering and some very warm and soft words around culture and philosophy. For example, the tight link between the elements of style by Strunk and White and the elements of programming style, by Carnihan and Plogger. Okay. So there is actually a deep connection between these worlds of thinking. Similarly, uh people have often noticed how there was a deep impetus that came to Steve Jobs from the aesthetics of type setting. That the visual design of fonts was a powerful driver for him in the early years. And there was a direct connection between that artistic and aesthetic view and Steve Jobs as somebody who played a giant role in modern computers. Okay, so the answer is yes, that the words culture and philosophy and science and engineering and mathematics are actually one of a piece. And one of the elements of difficulty in the Indian doctor engineer world is the separation of those two cultures where the engineering types have lost this sense of what it means to do good engineering. And Hiding in the story of Unix are some very important elements that you know we should stay connected to because that's what actually keeps us vital and keeps us from being just, you know, one more ant in the procession, but doing something great with our lives.",
       "words": [
         {
           "word": "we",
@@ -51571,15 +51363,7 @@
           "startTime": 2832.71,
           "endTime": 2833.11,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2833.11,
-      "endTime": 2835.51,
-      "text": "science which went",
-      "words": [
+        },
         {
           "word": "science",
           "startTime": 2833.11,
@@ -51597,15 +51381,7 @@
           "startTime": 2834.63,
           "endTime": 2835.51,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2835.51,
-      "endTime": 2882.38,
-      "text": "away by the wayside. And that's how today we understand the value of philosophy. Okay, so we should come back to philosophy at depth. And I want to say to you, gentle reader, that if you think the words culture and philosophy sit in a different shelf from the words engineering or science, then, you know, I would like to question that. And at the heart of the unique story is the deep connection between the pinnacles of engineering and some very warm and soft words around culture and philosophy. For example, the tight link between the elements of style by Strunk and White and the elements of programming style, by Carnihan and Plogger. Okay. So there is actually a deep connection between these worlds of thinking. Similarly, uh people have often noticed how there was a deep impetus that came to Steve Jobs",
-      "words": [
+        },
         {
           "word": "away",
           "startTime": 2835.51,
@@ -52469,15 +52245,7 @@
           "startTime": 2881.74,
           "endTime": 2882.38,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2882.38,
-      "endTime": 2885.34,
-      "text": "from the aesthetics of type setting. That the",
-      "words": [
+        },
         {
           "word": "from",
           "startTime": 2882.38,
@@ -52525,15 +52293,7 @@
           "startTime": 2885.18,
           "endTime": 2885.34,
           "confidence": 0.9629
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2885.34,
-      "endTime": 2938.92,
-      "text": "visual design of fonts was a powerful driver for him in the early years. And there was a direct connection between that artistic and aesthetic view and Steve Jobs as somebody who played a giant role in modern computers. Okay, so the answer is yes, that the words culture and philosophy and science and engineering and mathematics are actually one of a piece. And one of the elements of difficulty in the Indian doctor engineer world is the separation of those two cultures where the engineering types have lost this sense of what it means to do good engineering. And Hiding in the story of Unix are some very important elements that you know we should stay connected to because that's what actually keeps us vital and keeps us from being just, you know, one more ant in the procession, but doing something great with our lives.",
-      "words": [
+        },
         {
           "word": "visual",
           "startTime": 2885.34,
@@ -55809,8 +55569,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3068.47,
-      "endTime": 3112.74,
-      "text": "Dick Hamming also uh has a great uh fact which is in that Bell Labs book. He was the first person to see it. He predicted back in the early sixties, You may think that Bell Labs does science and engineering, but more than half of it is going to be computation. And of course, he was absolutely right, as every sad graduate student in every field in the world now knows, you'll land up at grad school and all you do is programming. You may think you're doing biology, you may think you're doing political science. Gumfirke, it's just programming. So that is way the way the computer. The universe runs through algorithms. So universe is basically one big algorithm. Back to principles. So one principle is an aesthetic sense of beauty and simplicity. A second principle is to build tools and components",
+      "endTime": 3371.29,
+      "text": "Dick Hamming also uh has a great uh fact which is in that Bell Labs book. He was the first person to see it. He predicted back in the early sixties, You may think that Bell Labs does science and engineering, but more than half of it is going to be computation. And of course, he was absolutely right, as every sad graduate student in every field in the world now knows, you'll land up at grad school and all you do is programming. You may think you're doing biology, you may think you're doing political science. Gumfirke, it's just programming. So that is way the way the computer. The universe runs through algorithms. So universe is basically one big algorithm. Back to principles. So one principle is an aesthetic sense of beauty and simplicity. A second principle is to build tools and components and push the rest of the world aside, focus on one tool and one component at a time, and make that tool good. So build one small tool at a time with limited functionality, but then make it bulletproof. Make it well written, well tested, uh make it highly performative. That is capable of catering to very high levels of performance when given the correct level of resources. It can do almost anything. So, right, good algorithms do extreme amounts of unit testing, but have a simple coherent tool that does one thing at a time. And then create the mechanisms and the infrastructure for many, many tools to be able to work with each other. Okay. So make it easy for humans to combine tools. Don't ask humans to build a big giant complex system. Rather, go bottom up and build component, component, component. And then the humans will put them together like Lego blocks. And then we will get a big complex system. So I feel this is a very important design philosophy. Too often we get managers and conventional corporate computing. doing the so-called top down design where you start that we need this kind of enterprise IT system and then inside this we'll require this, inside this we'll require this, and we're going to do one big giant project and we'll throw thousands of manier at this. And that's really not an effective way to go. I want to tell my story about how I do this. And I I have had many conversations with some of the great gigs and hackers and I think there's a similar story there. I find that I think about a problem for a long time and don't write any code. It's just there, it's there on my mind, and I'm kind of processing it that I have filled my mind with the problem. I use the phrase have uploaded the problem in my brain. I make no promises on when I will give you an answer. And I know that when my mind is thinking about it, something is happening. And then in a large problem, I have that way of isolating that this is a difficult component, this is a difficult component, this is a difficult component. So I I isolate one, two, three difficult pieces out of that. And then I just throw away everything else and I focus on one. So I take one small problem, one small component, there'll be one function that's hard and I'll grind away at it, I'll think about the algorithms for it, I'll write it nicely, I'll test it nicely, and the greatest thing I do there is focus. That then I'm not thinking about everything else. I have got tunnel vision and I'm maniacally doing one or two or three critical components and just write them. Get them right and be proud and be happy that I've done these things properly. then zoom out and say, Okay guys, here we are, we're going to do this large thing, but I've got this in the pocket, I've got this in the pocket, I've got this in the pocket. And then suddenly a whole bunch of possibilities open up. Oh, this is so nice, we can connect this to this. Now we'll build this one translator that will convert this to this. And suddenly a whole system design blossoms. So it's good to do one small component at a time. It's good to find the hardest things and solve them and get them done. So I want to tell a story from the Adhar project, uh Nandan Nelekani, Sanjay Jay and others. were grappling with uh the problem of uh authentication, where there are like one point four billion people in the database, and Amitvarma presents himself and tries to make a fake ID. And the system has to be able to look at that and match it with one of the existing IDs. Or Amitvarma tries to go use the ID somewhere and say, Give me PDS rations and the system has to find that one in a billion and it also needs to do deduplication that if by mistake a second one has crept in, then you need to find that these two records are identical. And at the time they uh connected to the biggest computer companies of the world and said, Here's the algorithm that is required, and it has to run for one and a half billion people. So first, please note, they chose a tough piece of the giant UIDI problem. They didn't say I'm doing the full thing. They they are they understood the full thing. But inside that they knew this was going to be a hot spot. And uh they got presentations back From some of the top research groups of the world. And Nanda Nelekani has the cred and the respect that people will try hard to do cool things that are valued by him. And they had presentations from top research groups saying what you describe can't be",
       "words": [
         {
           "word": "Dick",
@@ -56675,15 +56435,7 @@
           "startTime": 3111.24,
           "endTime": 3112.74,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3113.08,
-      "endTime": 3115.24,
-      "text": "and push",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 3113.08,
@@ -56695,15 +56447,7 @@
           "startTime": 3114.68,
           "endTime": 3115.24,
           "confidence": 0.997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3115.24,
-      "endTime": 3152.25,
-      "text": "the rest of the world aside, focus on one tool and one component at a time, and make that tool good. So build one small tool at a time with limited functionality, but then make it bulletproof. Make it well written, well tested, uh make it highly performative. That is capable of catering to very high levels of performance when given the correct level of resources. It can do almost anything. So, right, good algorithms do extreme amounts of unit testing, but have a simple coherent tool that does one thing at a time. And then create the mechanisms and the infrastructure for many, many tools to be able to work with",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 3115.24,
@@ -57375,15 +57119,7 @@
           "startTime": 3152.01,
           "endTime": 3152.25,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3152.25,
-      "endTime": 3155.77,
-      "text": "each other. Okay. So make it",
-      "words": [
+        },
         {
           "word": "each",
           "startTime": 3152.25,
@@ -57419,15 +57155,7 @@
           "startTime": 3155.53,
           "endTime": 3155.77,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3155.77,
-      "endTime": 3270.66,
-      "text": "easy for humans to combine tools. Don't ask humans to build a big giant complex system. Rather, go bottom up and build component, component, component. And then the humans will put them together like Lego blocks. And then we will get a big complex system. So I feel this is a very important design philosophy. Too often we get managers and conventional corporate computing. doing the so-called top down design where you start that we need this kind of enterprise IT system and then inside this we'll require this, inside this we'll require this, and we're going to do one big giant project and we'll throw thousands of manier at this. And that's really not an effective way to go. I want to tell my story about how I do this. And I I have had many conversations with some of the great gigs and hackers and I think there's a similar story there. I find that I think about a problem for a long time and don't write any code. It's just there, it's there on my mind, and I'm kind of processing it that I have filled my mind with the problem. I use the phrase have uploaded the problem in my brain. I make no promises on when I will give you an answer. And I know that when my mind is thinking about it, something is happening. And then in a large problem, I have that way of isolating that this is a difficult component, this is a difficult component, this is a difficult component. So I I isolate one, two, three difficult pieces out of that. And then I just throw away everything else and I focus on one. So I take one small problem, one small component, there'll be one function that's hard and I'll grind away at it, I'll think about the algorithms for it, I'll write it nicely, I'll test it nicely, and the greatest thing I do there is focus. That then I'm not thinking about everything else. I have got tunnel vision and I'm maniacally doing one or two or three critical components and just write them. Get them right and be proud and be happy that I've done these things properly. then zoom out and say, Okay guys, here we are, we're going to do this large thing, but I've got this in the pocket,",
-      "words": [
+        },
         {
           "word": "easy",
           "startTime": 3155.77,
@@ -59803,15 +59531,7 @@
           "startTime": 3270.34,
           "endTime": 3270.66,
           "confidence": 0.8457
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3270.66,
-      "endTime": 3272.82,
-      "text": "I've got this in the pocket, I've got this in the pocket.",
-      "words": [
+        },
         {
           "word": "I've",
           "startTime": 3270.66,
@@ -59883,15 +59603,7 @@
           "startTime": 3272.42,
           "endTime": 3272.82,
           "confidence": 0.8864
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3272.82,
-      "endTime": 3341.4,
-      "text": "And then suddenly a whole bunch of possibilities open up. Oh, this is so nice, we can connect this to this. Now we'll build this one translator that will convert this to this. And suddenly a whole system design blossoms. So it's good to do one small component at a time. It's good to find the hardest things and solve them and get them done. So I want to tell a story from the Adhar project, uh Nandan Nelekani, Sanjay Jay and others. were grappling with uh the problem of uh authentication, where there are like one point four billion people in the database, and Amitvarma presents himself and tries to make a fake ID. And the system has to be able to look at that and match it with one of the existing IDs. Or Amitvarma tries to go use the ID somewhere and say, Give me PDS rations and the system has to find that one in a billion and it also needs to do deduplication that if by mistake a second one has crept in, then you need to find that these two records are identical. And at the time they uh connected to the biggest computer companies of the world and said, Here's the algorithm that is required, and it has to run for one and a half billion",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 3272.82,
@@ -61229,15 +60941,7 @@
           "startTime": 3340.84,
           "endTime": 3341.4,
           "confidence": 0.9983
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3341.4,
-      "endTime": 3343.48,
-      "text": "people. So first, please",
-      "words": [
+        },
         {
           "word": "people.",
           "startTime": 3341.4,
@@ -61261,15 +60965,7 @@
           "startTime": 3343.16,
           "endTime": 3343.48,
           "confidence": 0.9968
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3343.48,
-      "endTime": 3371.29,
-      "text": "note, they chose a tough piece of the giant UIDI problem. They didn't say I'm doing the full thing. They they are they understood the full thing. But inside that they knew this was going to be a hot spot. And uh they got presentations back From some of the top research groups of the world. And Nanda Nelekani has the cred and the respect that people will try hard to do cool things that are valued by him. And they had presentations from top research groups saying what you describe can't be",
-      "words": [
+        },
         {
           "word": "note,",
           "startTime": 3343.48,
@@ -61853,8 +61549,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3372.97,
-      "endTime": 3436.18,
-      "text": "And they turn around and they wrote it themselves and they did it. Okay so they focused on a difficult problem. They first tried to say some to somebody else, you do this, and then somebody else said, You can't do it. And then they said, okay, fine, very well, we will try. And then they internally solve those problems. They put the tools and technologies together to achieve those things. And then suddenly you're on confident ground because you know the difficult pieces are done, then it's a more normal project execution problem. So I feel this is a good trick. And this is a Unix way of thinking of work one component at a time, keep components simple, make them good, test them to death, make them high performance, document them well. Okay, which brings me to the next element of the Unix philosophy. There is a deep connection between thinking, programming, and writing. Writing code is like writing prose. They're not different. Okay, if you gentle reader think that you're writing code all day, what you need is to write more text all day. Okay, writing is the heart of thinking and writing English and writing code and thinking and arguing, these are all one of a piece. And that Unix",
+      "endTime": 3462.55,
+      "text": "And they turn around and they wrote it themselves and they did it. Okay so they focused on a difficult problem. They first tried to say some to somebody else, you do this, and then somebody else said, You can't do it. And then they said, okay, fine, very well, we will try. And then they internally solve those problems. They put the tools and technologies together to achieve those things. And then suddenly you're on confident ground because you know the difficult pieces are done, then it's a more normal project execution problem. So I feel this is a good trick. And this is a Unix way of thinking of work one component at a time, keep components simple, make them good, test them to death, make them high performance, document them well. Okay, which brings me to the next element of the Unix philosophy. There is a deep connection between thinking, programming, and writing. Writing code is like writing prose. They're not different. Okay, if you gentle reader think that you're writing code all day, what you need is to write more text all day. Okay, writing is the heart of thinking and writing English and writing code and thinking and arguing, these are all one of a piece. And that Unix community in Bell Labs pioneered A brevity and clarity of writing that was just new. Meaning before that there had been big ugly corporate things done by the likes of IBM and Digital Equipment Corporation, or you know, if any of us have been victims of documentation of many other computer companies that I shall not name. The people in Bell Labs invented a whole language, a style of talking,",
       "words": [
         {
           "word": "And",
@@ -63139,15 +62835,7 @@
           "startTime": 3435.7,
           "endTime": 3436.18,
           "confidence": 0.8841
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3436.18,
-      "endTime": 3438.92,
-      "text": "community in Bell Labs pioneered",
-      "words": [
+        },
         {
           "word": "community",
           "startTime": 3436.18,
@@ -63177,15 +62865,7 @@
           "startTime": 3438.42,
           "endTime": 3438.92,
           "confidence": 0.935
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3439.75,
-      "endTime": 3462.55,
-      "text": "A brevity and clarity of writing that was just new. Meaning before that there had been big ugly corporate things done by the likes of IBM and Digital Equipment Corporation, or you know, if any of us have been victims of documentation of many other computer companies that I shall not name. The people in Bell Labs invented a whole language, a style of talking,",
-      "words": [
+        },
         {
           "word": "A",
           "startTime": 3439.75,
@@ -71295,8 +70975,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3873.46,
-      "endTime": 3897.9,
-      "text": "This is the level at which Kunute played and you know, I shared the dream. That is the level at which we should think. And this takes work, this takes effort. And for that we've got to understand play for fifty years. Don't play for 50 days, don't play for 50 weeks, play for fifty years. These things take years, they take enormous amounts of devotion. Ayush has always emphasized to me that a word that I don't use enough is",
+      "endTime": 4042.36,
+      "text": "This is the level at which Kunute played and you know, I shared the dream. That is the level at which we should think. And this takes work, this takes effort. And for that we've got to understand play for fifty years. Don't play for 50 days, don't play for 50 weeks, play for fifty years. These things take years, they take enormous amounts of devotion. Ayush has always emphasized to me that a word that I don't use enough is devotion. It's not just intensity, it's not just a sprint, it's a marathon, and it has to come out from deep inside where we're willing to do these things for a long, long time because we dream of getting this beauty done. It is an artistic quest to make beauty and to translate some ideas into living embodiments in this world. So that's something that worked very well, which is the integration between the writing and the world of Bell Labs. Then we already talked a bit about the word power and the extent to which there was control. There was a lot of a self-organizing system in Bell Labs. If you say three thousand researchers bracket 1000 PhDs, There are probably hundreds of such labs all over the world. There are such in India, there are such in Soviet Russia, there are such in China. Okay, there are lots of corporations that have the easy ability to put down this kind of money. But the magic lay in the management. Because all too often when you get these kind of organizations, you get people at senior levels who are drunk with power, who crave power, who like to kick people around, who like to tell people what to do, who like to control people. And the essence of what worked in Bell Labs was a more federated culture that, you know, we'll get people in and then yeah we'll do some projects, we will be useful, we'll keep on delivering good things to Bell Labs. Um I seem to remember a story where uh the president of Bell Labs brought a visitor And uh there was a demo going on where Bell Labs was being shown to some important person, some powerful person, and Ken Thompson showed uh a project he was working on, which is he was writing a game of chess. He was writing a computer program that played chess. And that powerful person said, Yeah, this is cute, but how is it useful? And you know, I why are you wasting your time writing a program that played chess. Okay, now uh you may know that there is a dynamic programming algorithm for the chess endgame. Where in the end game you make a list of all possible mate situations and you work backwards for what are all the moves that take you there. Okay, Ken Thompson had invented that dynamic programming solution for the chess",
       "words": [
         {
           "word": "This",
@@ -71783,15 +71463,7 @@
           "startTime": 3897.58,
           "endTime": 3897.9,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3897.9,
-      "endTime": 3901.82,
-      "text": "devotion. It's not just intensity, it's not",
-      "words": [
+        },
         {
           "word": "devotion.",
           "startTime": 3897.9,
@@ -71833,15 +71505,7 @@
           "startTime": 3901.66,
           "endTime": 3901.82,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3901.82,
-      "endTime": 4021.83,
-      "text": "just a sprint, it's a marathon, and it has to come out from deep inside where we're willing to do these things for a long, long time because we dream of getting this beauty done. It is an artistic quest to make beauty and to translate some ideas into living embodiments in this world. So that's something that worked very well, which is the integration between the writing and the world of Bell Labs. Then we already talked a bit about the word power and the extent to which there was control. There was a lot of a self-organizing system in Bell Labs. If you say three thousand researchers bracket 1000 PhDs, There are probably hundreds of such labs all over the world. There are such in India, there are such in Soviet Russia, there are such in China. Okay, there are lots of corporations that have the easy ability to put down this kind of money. But the magic lay in the management. Because all too often when you get these kind of organizations, you get people at senior levels who are drunk with power, who crave power, who like to kick people around, who like to tell people what to do, who like to control people. And the essence of what worked in Bell Labs was a more federated culture that, you know, we'll get people in and then yeah we'll do some projects, we will be useful, we'll keep on delivering good things to Bell Labs. Um I seem to remember a story where uh the president of Bell Labs brought a visitor And uh there was a demo going on where Bell Labs was being shown to some important person, some powerful person, and Ken Thompson showed uh a project he was working on, which is he was writing a game of chess. He was writing a computer program that played chess. And that powerful person said, Yeah, this is cute, but how is it useful? And you know, I why are you wasting your time writing a program",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 3901.82,
@@ -73899,15 +73563,7 @@
           "startTime": 4021.59,
           "endTime": 4021.83,
           "confidence": 0.9974
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4021.83,
-      "endTime": 4025.43,
-      "text": "that played chess. Okay, now uh",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 4021.83,
@@ -73943,15 +73599,7 @@
           "startTime": 4024.87,
           "endTime": 4025.43,
           "confidence": 0.8028
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4025.43,
-      "endTime": 4042.36,
-      "text": "you may know that there is a dynamic programming algorithm for the chess endgame. Where in the end game you make a list of all possible mate situations and you work backwards for what are all the moves that take you there. Okay, Ken Thompson had invented that dynamic programming solution for the chess",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 4025.43,
@@ -74463,8 +74111,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4051.24,
-      "endTime": 4152.18,
-      "text": "Okay. So dynamic programming is a great idea that was built by Richard Bellman and Robert Calabar in Rand Corporation. Brackett Robert Calabar is a teacher of mine and I never got to meet uh uh Richard uh uh Bellman, but my PhD thesis, which was about women in Malaysia, was deeply a dynamic programming uh idea. And uh Ken Thompson took that idea from the sixties and in the seventies he brought this into chess and playing that end game. And as you said correctly, today chess end games are a completely solved problem because that algorithm works so well that in any end game you'll get it perfect. The president of Bell Labs answered to the visitor that yeah, he was building a chess program, but along that way there were some nice algorithms got developed, and you know it turns out to help in scheduling phone calls in the Bell system. So the president of Bell Labs understood those connections. And the president of Bell Labs was defending the fun and games of Richard of of Ken Thompson to a visitor outside. So first is it's such a great story about how m building a space travel game and a chess uh program is actually a good use of the human mind. And the second, that this was understood by the management. The management tried to create flexible, unpredictable, self-organizing structures where there was a lot of give that we won't prevent you from writing an operating system, we're just not going to fund it. Okay? That kind of thing. Where there was a lot of space for people to imagine and create. And uh similarly I've talked about Bill Joy and BSD Unix and",
+      "endTime": 4558.0,
+      "text": "Okay. So dynamic programming is a great idea that was built by Richard Bellman and Robert Calabar in Rand Corporation. Brackett Robert Calabar is a teacher of mine and I never got to meet uh uh Richard uh uh Bellman, but my PhD thesis, which was about women in Malaysia, was deeply a dynamic programming uh idea. And uh Ken Thompson took that idea from the sixties and in the seventies he brought this into chess and playing that end game. And as you said correctly, today chess end games are a completely solved problem because that algorithm works so well that in any end game you'll get it perfect. The president of Bell Labs answered to the visitor that yeah, he was building a chess program, but along that way there were some nice algorithms got developed, and you know it turns out to help in scheduling phone calls in the Bell system. So the president of Bell Labs understood those connections. And the president of Bell Labs was defending the fun and games of Richard of of Ken Thompson to a visitor outside. So first is it's such a great story about how m building a space travel game and a chess uh program is actually a good use of the human mind. And the second, that this was understood by the management. The management tried to create flexible, unpredictable, self-organizing structures where there was a lot of give that we won't prevent you from writing an operating system, we're just not going to fund it. Okay? That kind of thing. Where there was a lot of space for people to imagine and create. And uh similarly I've talked about Bill Joy and BSD Unix and the connections to the uh cultural revolutions of that period. And I think that there was really something going right in all that. A next piece of philosophy and culture that I want to talk about was that almost effortlessly without noticing it, the people in Bell Labs took the culture of science and mathematics in not keeping trade secrets but rather opening up the entire code. It was just the most natural thing to do. Like if I prove a theorem, I'm going to show you the proof. I'm not going to hide the proof. In similar fashion, if I write a computer program, I'm going to give you the code. Okay, it's it's the natural evolution of the old ideas of writing, publishing, sharing that were always there in the world of science and mathematics. That we don't hide the implementations and then we all build on each other's work. You find mistakes in my proof, I find mistakes in your code, that's how it goes on. Today it has a fancy name. It's the open source movement. But actually it's just a continuation of a story that began five hundred years ago. That Newton didn't express expect us to believe all the things that he said. He gave us proofs, he gave us demonstrations and those were published. They went out to other people. Okay, so while patenting gives a seventeen year head start, it also gives away all the details of your design to other people who will then read your design and start improving it. So it's a very interesting balance where on one hand I get protection, on the other hand my ideas go out. They get published and they go to other people. So this is how Bell Labs work. The Unix tapes went out to other people. So Unix spread to universities all over the world. It helped That the management in ATT was dithering between the idea that shall we commercialize it? Will the US FTC come after us if we try to commercialize it? And so they chose a compromise. We'll send it to universities with a special academic license that you can read the code and you can tinker with the code, but you can't commercialize it. But by that time, the knowledge went everywhere and people understood how this thing worked. And that is really the foundations of the open source world. So by the way, in the mid-70s and the late 70s, I forget the date, I seem to think it's 1976 or 75 or something. There is a famous pair of rival manifestos where uh Bill Gates wrote a manifesto. That software is so precious, it should be kept secret and it should turn into commercial products and we should build companies out of this and we should make money. And the great man Richard Stallman wrote a rival manifesto saying, No, this is a completely wrong vision of software. Software should be like mathematics and physics. It should be completely open. And from the mid-70s till today, there has been this competition between two rival views of the world. And there was a time, I think late 80s, early 90s, where it looked like Microsoft was winning. And there was a time where I seem to think 90% of all the profit of all the computer companies was being made by Microsoft. And Microsoft had infinite money going back to research. And you know, potentially just that sheer brute resourcing could have given them a next revolution in terms of ideas. But it is so interesting that in fact they never developed any new idea. And in fact, the hackers and the geeks and the uh dreamers of the Unix world ended up winning. And again and again when there was a competitive dynamics, it was TCP IP and the internet and Unix that won. So I think that they say something for that culture, that culture of openness, the culture of sharing, what today has a fancy name, the open source culture. Everybody read, everybody becomes stronger, we build on each other's shoulders, and there is infinite competition Between many many open source products. So the bar to compete in open source is actually very low. Like imagine if I'm your product is secret, my product is secret. You're a company, I'm a company. Now for me, I have to spend a lot of money to get to a minimum minimum viable product. Okay? Whereas if your code is with me, then it's a very low bar for me to take your code, change something trivial, and release my own product. So actually there is a machoning of rival products. Many people in the business world will whine that oh there are so many Unix variants. Yes, there are. That's a good thing. It's a feature, not a bug, because that is the sound of competitive dynamics where many many ideas are being expressed. Nothing prevents you from picking up any of the existing open source software and having a different point of view and saying, No, you know what, I'm gonna do this differently. Here, this is my idea. And you put it forth to the world. And if it works, it works, it takes off. And if it doesn't, it doesn't. So there is a even greater competitive dynamics in this peculiar commune-like environment where we're working in a s in a tradition of science and open culture rather than the traditions of closed corporate IP. So unaccustomed as I am to questioning some of the fundamentals of how modern capitalism works. I think that there is a public goods argument here that once source code is sitting on a website, how it got there is an interesting story. We'll come to that. There are some market failures leading up to that. But once source code is put up on a website for download, it does fit the tests of a public good. It's non rival because my downloading the code in no way diminishes the amount of code available yet for you to download. And it's non excludable because you can't exclude anybody. I mean, well, you can artificially put a lock and say people from Taiwan are not allowed to di download this code. But really, I mean there is there is no meaningful reason for any excludability in this edifice. So we've talked earlier about abuse of the word digital public goods. I think Unix and the internet are digital public goods. There's no government in the picture. There is public funding. The United United States Department of Defense funded TCPIP. Okay, and all in all mothership of ATT funded the early development of U Unix by paying those salaries. But the creations went out and they became the true digital public goods. There's no government in the picture, there is no coercion in the picture, nobody forced anybody. Okay, that is a digital public good. And I just want to say in passing for all the Indian nationalists, Nobody called it America Stack, they just called it Unix and the Internet. And you know, that's how these ideas work. Don't mix it up with nationalism. It will be used all over the world. It will be adopted all over the world. Linas Thorvald is from Finland, okay? And so on. You don't need to bring nationalism into it.",
       "words": [
         {
           "word": "Okay.",
@@ -76193,15 +75841,7 @@
           "startTime": 4151.94,
           "endTime": 4152.18,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4152.18,
-      "endTime": 4155.14,
-      "text": "the connections to the uh",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 4152.18,
@@ -76231,15 +75871,7 @@
           "startTime": 4154.9,
           "endTime": 4155.14,
           "confidence": 0.5943
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4155.14,
-      "endTime": 4392.26,
-      "text": "cultural revolutions of that period. And I think that there was really something going right in all that. A next piece of philosophy and culture that I want to talk about was that almost effortlessly without noticing it, the people in Bell Labs took the culture of science and mathematics in not keeping trade secrets but rather opening up the entire code. It was just the most natural thing to do. Like if I prove a theorem, I'm going to show you the proof. I'm not going to hide the proof. In similar fashion, if I write a computer program, I'm going to give you the code. Okay, it's it's the natural evolution of the old ideas of writing, publishing, sharing that were always there in the world of science and mathematics. That we don't hide the implementations and then we all build on each other's work. You find mistakes in my proof, I find mistakes in your code, that's how it goes on. Today it has a fancy name. It's the open source movement. But actually it's just a continuation of a story that began five hundred years ago. That Newton didn't express expect us to believe all the things that he said. He gave us proofs, he gave us demonstrations and those were published. They went out to other people. Okay, so while patenting gives a seventeen year head start, it also gives away all the details of your design to other people who will then read your design and start improving it. So it's a very interesting balance where on one hand I get protection, on the other hand my ideas go out. They get published and they go to other people. So this is how Bell Labs work. The Unix tapes went out to other people. So Unix spread to universities all over the world. It helped That the management in ATT was dithering between the idea that shall we commercialize it? Will the US FTC come after us if we try to commercialize it? And so they chose a compromise. We'll send it to universities with a special academic license that you can read the code and you can tinker with the code, but you can't commercialize it. But by that time, the knowledge went everywhere and people understood how this thing worked. And that is really the foundations of the open source world. So by the way, in the mid-70s and the late 70s, I forget the date, I seem to think it's 1976 or 75 or something. There is a famous pair of rival manifestos where uh Bill Gates wrote a manifesto. That software is so precious, it should be kept secret and it should turn into commercial products and we should build companies out of this and we should make money. And the great man Richard Stallman wrote a rival manifesto saying, No, this is a completely wrong vision of software. Software should be like mathematics and physics. It should be completely open. And from the mid-70s till today, there has been this competition between two rival views of the world. And there was a time, I think late 80s, early 90s, where it looked like Microsoft was winning. And there was a time where I seem to think 90% of all the profit of all the computer companies was being made by Microsoft. And Microsoft had infinite money going back to research. And you know, potentially just that sheer brute resourcing could have given them a next revolution in terms of ideas. But it is so interesting that in fact they never developed any new idea. And in fact, the hackers and the geeks and the uh dreamers of the Unix world ended up winning. And again and again when there was a competitive dynamics, it was TCP IP and the internet and Unix that won. So I think that they say something for that culture, that culture of openness, the culture of sharing, what today has a fancy name, the open source culture. Everybody read, everybody becomes stronger, we build on each other's shoulders, and there is infinite competition Between many many open source products. So the bar to compete in open source is actually very low. Like imagine if I'm your product is secret, my product is secret. You're a company, I'm a company. Now for me, I have to spend a lot of money to get to a minimum minimum viable",
-      "words": [
+        },
         {
           "word": "cultural",
           "startTime": 4155.14,
@@ -80697,15 +80329,7 @@
           "startTime": 4391.7,
           "endTime": 4392.26,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4392.26,
-      "endTime": 4396.74,
-      "text": "product. Okay? Whereas if your code is with me, then",
-      "words": [
+        },
         {
           "word": "product.",
           "startTime": 4392.26,
@@ -80765,15 +80389,7 @@
           "startTime": 4396.34,
           "endTime": 4396.74,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4396.74,
-      "endTime": 4474.39,
-      "text": "it's a very low bar for me to take your code, change something trivial, and release my own product. So actually there is a machoning of rival products. Many people in the business world will whine that oh there are so many Unix variants. Yes, there are. That's a good thing. It's a feature, not a bug, because that is the sound of competitive dynamics where many many ideas are being expressed. Nothing prevents you from picking up any of the existing open source software and having a different point of view and saying, No, you know what, I'm gonna do this differently. Here, this is my idea. And you put it forth to the world. And if it works, it works, it takes off. And if it doesn't, it doesn't. So there is a even greater competitive dynamics in this peculiar commune-like environment where we're working in a s in a tradition of science and open culture rather than the traditions of closed corporate IP. So unaccustomed as I am to questioning some of the fundamentals of how modern capitalism works. I think that there is a public goods argument here that once source code is sitting on a website, how it got there is an interesting story. We'll come to that. There are some market failures leading up to that. But once source code is put up on a website for download,",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 4396.74,
@@ -82177,15 +81793,7 @@
           "startTime": 4473.51,
           "endTime": 4474.39,
           "confidence": 0.9761
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4474.39,
-      "endTime": 4477.75,
-      "text": "it does fit the tests of a public good. It's",
-      "words": [
+        },
         {
           "word": "it",
           "startTime": 4474.39,
@@ -82245,15 +81853,7 @@
           "startTime": 4477.43,
           "endTime": 4477.75,
           "confidence": 0.9515
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4477.75,
-      "endTime": 4499.86,
-      "text": "non rival because my downloading the code in no way diminishes the amount of code available yet for you to download. And it's non excludable because you can't exclude anybody. I mean, well, you can artificially put a lock and say people from Taiwan are not allowed to di download this code. But really, I mean there is there is no meaningful reason for any excludability",
-      "words": [
+        },
         {
           "word": "non",
           "startTime": 4477.75,
@@ -82649,15 +82249,7 @@
           "startTime": 4498.74,
           "endTime": 4499.86,
           "confidence": 0.9945
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4499.86,
-      "endTime": 4503.54,
-      "text": "in this edifice. So we've",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 4499.86,
@@ -82687,15 +82279,7 @@
           "startTime": 4503.06,
           "endTime": 4503.54,
           "confidence": 0.9114
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4503.54,
-      "endTime": 4558.0,
-      "text": "talked earlier about abuse of the word digital public goods. I think Unix and the internet are digital public goods. There's no government in the picture. There is public funding. The United United States Department of Defense funded TCPIP. Okay, and all in all mothership of ATT funded the early development of U Unix by paying those salaries. But the creations went out and they became the true digital public goods. There's no government in the picture, there is no coercion in the picture, nobody forced anybody. Okay, that is a digital public good. And I just want to say in passing for all the Indian nationalists, Nobody called it America Stack, they just called it Unix and the Internet. And you know, that's how these ideas work. Don't mix it up with nationalism. It will be used all over the world. It will be adopted all over the world. Linas Thorvald is from Finland, okay? And so on. You don't need to bring nationalism into it.",
-      "words": [
+        },
         {
           "word": "talked",
           "startTime": 4503.54,
@@ -89025,8 +88609,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4862.63,
-      "endTime": 4902.12,
-      "text": "we take all this for granted today. We take a certain anarchism and a freedom and encryption technology and VPNs and all these concepts for granted. Yes, they have caused problems. Because email is so open, email has spam overlaid on top of it. But it is better to have gone down this route. than to have claustrophobic control, where you have to first show your iris scan and only then you can you're authorized to write emails and you are charged four rupees for each email, which is the way the world would have worked out without Unix. Again, marvelously inspiring. And you know, we're now before we cut to our forty five minute",
+      "endTime": 4895.66,
+      "text": "we take all this for granted today. We take a certain anarchism and a freedom and encryption technology and VPNs and all these concepts for granted. Yes, they have caused problems. Because email is so open, email has spam overlaid on top of it. But it is better to have gone down this route. than to have claustrophobic control, where you have to first show your iris scan and only then you can you're authorized to write emails and you are charged four rupees for each email, which is the way the world would have worked out without Unix.",
       "words": [
         {
           "word": "we",
@@ -89621,7 +89205,15 @@
           "startTime": 4895.16,
           "endTime": 4895.66,
           "confidence": 0.9384
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4897.64,
+      "endTime": 4945.59,
+      "text": "Again, marvelously inspiring. And you know, we're now before we cut to our forty five minute uh sort of screencast where you talk about uh Unix and what to do with it and all of that. A final question for s someone like me, you know, listening to a lot of this for the first time and uh sort of uh you know, watching your screencast for the first time and figuring out the power of this amazing language, and not just the power of this amazing language, but what the philosophy can mean for one if one chooses to reprogram oneself through it. My question is, what are the practical things someone like me can do? let us say I learn programming now, I learn Unix. I I have all this power at my fingertips, which Ken Thompson didn't when he started writing that uh sort of space travel program. What are all the different things a normal person like me can do who doesn't want to start a tech company, doesn't want to do, you know, any complicated things. So uh it's it's good and nice",
+      "words": [
         {
           "word": "Again,",
           "startTime": 4897.64,
@@ -89717,15 +89309,7 @@
           "startTime": 4901.8,
           "endTime": 4902.12,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4902.12,
-      "endTime": 4924.2,
-      "text": "uh sort of screencast where you talk about uh Unix and what to do with it and all of that. A final question for s someone like me, you know, listening to a lot of this for the first time and uh sort of uh you know, watching your screencast for the first time and figuring out the power of this amazing language, and not just the power of this amazing language, but what the philosophy can mean for one if one chooses to reprogram oneself through it.",
-      "words": [
+        },
         {
           "word": "uh",
           "startTime": 4902.12,
@@ -90253,15 +89837,7 @@
           "startTime": 4923.72,
           "endTime": 4924.2,
           "confidence": 0.9554
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4924.2,
-      "endTime": 4927.08,
-      "text": "My question is, what are the practical things someone like",
-      "words": [
+        },
         {
           "word": "My",
           "startTime": 4924.2,
@@ -90321,15 +89897,7 @@
           "startTime": 4926.92,
           "endTime": 4927.08,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4927.08,
-      "endTime": 4945.59,
-      "text": "me can do? let us say I learn programming now, I learn Unix. I I have all this power at my fingertips, which Ken Thompson didn't when he started writing that uh sort of space travel program. What are all the different things a normal person like me can do who doesn't want to start a tech company, doesn't want to do, you know, any complicated things. So uh it's it's good and nice",
-      "words": [
+        },
         {
           "word": "me",
           "startTime": 4927.08,
@@ -90779,8 +90347,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4945.59,
-      "endTime": 4954.73,
-      "text": "to talk about principles and philosophy and then, you know, we have cut to the chase. We have to cut to the chase, we have to show me where is the beef, or show me where is the rasgullah?",
+      "endTime": 4958.17,
+      "text": "to talk about principles and philosophy and then, you know, we have cut to the chase. We have to cut to the chase, we have to show me where is the beef, or show me where is the rasgullah? Okay so let's now turn around and be completely practical.",
       "words": [
         {
           "word": "to",
@@ -91015,15 +90583,7 @@
           "startTime": 4954.23,
           "endTime": 4954.73,
           "confidence": 0.731
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4955.45,
-      "endTime": 4969.27,
-      "text": "Okay so let's now turn around and be completely practical. What you said was firstly anti-national and secondly unhealthy. No Rosgulas, too much sugar. Cut to the chase.",
-      "words": [
+        },
         {
           "word": "Okay",
           "startTime": 4955.45,
@@ -91083,7 +90643,15 @@
           "startTime": 4957.45,
           "endTime": 4958.17,
           "confidence": 0.9574
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4958.17,
+      "endTime": 4969.27,
+      "text": "What you said was firstly anti-national and secondly unhealthy. No Rosgulas, too much sugar. Cut to the chase.",
+      "words": [
         {
           "word": "What",
           "startTime": 4958.17,
@@ -95189,8 +94757,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5187.26,
-      "endTime": 5211.06,
-      "text": "Um I haven't done any really cool thing yet, uh, but I I just wanted to say that for the uh artistically inclined people like uh our wonderful Namsita and Vaishnav. The Raspberry Pi is being used to build art installations. So it becomes a program that controls a combination of lights and movement and that turns into art installations. So that's an example of",
+      "endTime": 5213.22,
+      "text": "Um I haven't done any really cool thing yet, uh, but I I just wanted to say that for the uh artistically inclined people like uh our wonderful Namsita and Vaishnav. The Raspberry Pi is being used to build art installations. So it becomes a program that controls a combination of lights and movement and that turns into art installations. So that's an example of what can be done using the Raspberry",
       "words": [
         {
           "word": "Um",
@@ -95581,15 +95149,7 @@
           "startTime": 5210.9,
           "endTime": 5211.06,
           "confidence": 0.9942
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5211.06,
-      "endTime": 5223.79,
-      "text": "what can be done using the Raspberry Pi. And now it's time to go to your demonstration of Unix. So here is that video that you gentle uh readers have been waiting for. And uh here we go.",
-      "words": [
+        },
         {
           "word": "what",
           "startTime": 5211.06,
@@ -95631,7 +95191,15 @@
           "startTime": 5212.5,
           "endTime": 5213.22,
           "confidence": 0.9664
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5213.22,
+      "endTime": 5223.79,
+      "text": "Pi. And now it's time to go to your demonstration of Unix. So here is that video that you gentle uh readers have been waiting for. And uh here we go.",
+      "words": [
         {
           "word": "Pi.",
           "startTime": 5213.22,

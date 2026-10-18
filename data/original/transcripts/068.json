@@ -5,7 +5,7 @@
     "durationSeconds": 3821,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -8653,8 +8653,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 490.22,
-      "endTime": 492.54,
-      "text": "No bacon. I think they have some generic categories",
+      "endTime": 779.86,
+      "text": "No bacon. I think they have some generic categories called meat and fish and so on, but not the subtlety of bacon. Okay? So this is how the economic measurement is done of the behavior of a large amount of households. Then they are aggregated and you get an overall average of the weights in the consumption basket. So there are poor people, rich people, vegetarians, carnivores, they all have weights of what is the percentage share. of school fees of children in your household consumption. Okay, and you get one such uh list of weights for each household and you average them across the entire country. And that gives you the overall average weightage of what the households are buying. Okay? And imagine that you then compute that weighted average of prices based on this average basket. That leads to a price index, that leads to a measure of inflation. Okay? So the consumer price index is this, that we measure a large number of households, we express their consumption in a s as a certain weighted basket, and then month after month we go back, find out all those prices. The weights stay the same for a couple of years. Every month the prices change. So you plug in this month's prices, and you get a price index for this month. And then you keep going like this, and uh you get the measure of inflation for India. So it reflects the average inflation as perceived by the overall average of India. No two people are alike and each will differ in their subjective experience, but this is an average which reflects the overall average of what's going on in the country. And uh right here I want to say that in general one should always be uh skeptical about government data. uh when there is a broad lack of state capability in the country, it afflicts everything. So the same government that fares poorly on the police and the judiciary and the air quality in North India will also fare poorly in statistical measurement and the release of data. So I don't mean to single out the people doing economic measurement, but it's hard. It's a government organization. You know, they will have their own foibbles. So all government data should be viewed with great skepticism. And many years ago, when Ila Patnaik and I were working systematically in this field, we thought that it would be good to cross check the veracity of this data. So we used the CMI household survey to obtain the weights, and we cross-checked the weights against the weights as used in the CPI data of the government, and they broadly checked. then we used private sector data sources for prices and we cross check them against the government's data and broadly they checked out fine. Okay? So we are fairly confident that the Indian government mechanisms for making the CPI are reasonably sound. Okay, so these are not trivial statements to make. As you know, we are very sceptical about many, many parts of government data, most famously the GDP data. But for that reason, you know, we thought it's a hygiene check that You know, you can't go further with applications of the government CPI if you're going to mistrust the foundations of measurement. But mercifully, in this case, the data works out pretty good. So you can use the government CPI with reasonable confidence. While I'm on this subject, gentle reader, a pro tip that there is a thing that the government computes, which is the wholesale price index, the WPI. I won't go into it in detail, but you must know three propositions. First, that There is nothing wholesale about the wholesale price index. It's just confusing. That when people start thinking wholesale price index versus consumer price index, is this something to do with the retailing margins or something like that? And it's just rubbish. Don't go down that route, it means nothing. I won't bother explaining in detail. Second, the wholesale price index is not a meaningful price index because it is nobody's consumption basket. It has no interpretation. It is some random weights made up by some economists. Finally, the wholesale price index is a useful database of a large number of subcomponent prices. So for hundreds of objects like nickel, you will get a nickel price index from the WPI database. And you will look skeptical like what human being eats nickel. So you know, how can nickel be in a wholesale price index? And so just don't use the WPI for anything other than this one good application, which is it's a nice long term. database of prices in India, that's a good use of the underlying component prices. Once it's aggregated as an index, it makes no sense at",
       "words": [
         {
           "word": "No",
@@ -8709,15 +8709,7 @@
           "startTime": 491.82,
           "endTime": 492.54,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 492.54,
-      "endTime": 496.86,
-      "text": "called meat and fish and so on, but not the subtlety of bacon. Okay?",
-      "words": [
+        },
         {
           "word": "called",
           "startTime": 492.54,
@@ -8801,15 +8793,7 @@
           "startTime": 496.46,
           "endTime": 496.86,
           "confidence": 0.5396
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 496.86,
-      "endTime": 662.52,
-      "text": "So this is how the economic measurement is done of the behavior of a large amount of households. Then they are aggregated and you get an overall average of the weights in the consumption basket. So there are poor people, rich people, vegetarians, carnivores, they all have weights of what is the percentage share. of school fees of children in your household consumption. Okay, and you get one such uh list of weights for each household and you average them across the entire country. And that gives you the overall average weightage of what the households are buying. Okay? And imagine that you then compute that weighted average of prices based on this average basket. That leads to a price index, that leads to a measure of inflation. Okay? So the consumer price index is this, that we measure a large number of households, we express their consumption in a s as a certain weighted basket, and then month after month we go back, find out all those prices. The weights stay the same for a couple of years. Every month the prices change. So you plug in this month's prices, and you get a price index for this month. And then you keep going like this, and uh you get the measure of inflation for India. So it reflects the average inflation as perceived by the overall average of India. No two people are alike and each will differ in their subjective experience, but this is an average which reflects the overall average of what's going on in the country. And uh right here I want to say that in general one should always be uh skeptical about government data. uh when there is a broad lack of state capability in the country, it afflicts everything. So the same government that fares poorly on the police and the judiciary and the air quality in North India will also fare poorly in statistical measurement and the release of data. So I don't mean to single out the people doing economic measurement, but it's hard. It's a government organization. You know, they will have their own foibbles. So all government data should be viewed with great skepticism. And many years ago, when Ila Patnaik and I were working systematically in this field, we thought that it would be good to cross check the veracity of this data. So we used the CMI household survey to obtain the weights, and we cross-checked the weights against the weights as used in the CPI data of the government, and they broadly checked. then we used private sector data sources for prices and we cross check them against the government's data and broadly they",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 496.86,
@@ -11503,15 +11487,7 @@
           "startTime": 662.28,
           "endTime": 662.52,
           "confidence": 0.9927
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 662.52,
-      "endTime": 665.72,
-      "text": "checked out fine. Okay? So we are",
-      "words": [
+        },
         {
           "word": "checked",
           "startTime": 662.52,
@@ -11553,15 +11529,7 @@
           "startTime": 665.48,
           "endTime": 665.72,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 665.72,
-      "endTime": 779.86,
-      "text": "fairly confident that the Indian government mechanisms for making the CPI are reasonably sound. Okay, so these are not trivial statements to make. As you know, we are very sceptical about many, many parts of government data, most famously the GDP data. But for that reason, you know, we thought it's a hygiene check that You know, you can't go further with applications of the government CPI if you're going to mistrust the foundations of measurement. But mercifully, in this case, the data works out pretty good. So you can use the government CPI with reasonable confidence. While I'm on this subject, gentle reader, a pro tip that there is a thing that the government computes, which is the wholesale price index, the WPI. I won't go into it in detail, but you must know three propositions. First, that There is nothing wholesale about the wholesale price index. It's just confusing. That when people start thinking wholesale price index versus consumer price index, is this something to do with the retailing margins or something like that? And it's just rubbish. Don't go down that route, it means nothing. I won't bother explaining in detail. Second, the wholesale price index is not a meaningful price index because it is nobody's consumption basket. It has no interpretation. It is some random weights made up by some economists. Finally, the wholesale price index is a useful database of a large number of subcomponent prices. So for hundreds of objects like nickel, you will get a nickel price index from the WPI database. And you will look skeptical like what human being eats nickel. So you know, how can nickel be in a wholesale price index? And so just don't use the WPI for anything other than this one good application, which is it's a nice long term. database of prices in India, that's a good use of the underlying component prices. Once it's aggregated as an index, it makes no sense at",
-      "words": [
+        },
         {
           "word": "fairly",
           "startTime": 665.72,
@@ -14713,8 +14681,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 857.54,
-      "endTime": 869.7,
-      "text": "important. Except some of your patients die because uh food is so expensive they can't afford it anymore, and then you have less patients. I'm kidding. Continue. Don't answer me seriously. I was about to launch into answering. You seriously",
+      "endTime": 867.06,
+      "text": "important. Except some of your patients die because uh food is so expensive they can't afford it anymore, and then you have less patients. I'm kidding. Continue. Don't answer me seriously. I",
       "words": [
         {
           "word": "important.",
@@ -14907,7 +14875,15 @@
           "startTime": 866.98,
           "endTime": 867.06,
           "confidence": 0.9623
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 867.06,
+      "endTime": 908.36,
+      "text": "was about to launch into answering. You seriously that what do we know in the literature about the impact of inflation shocks on mortality and infant mortality and such like. Yeah, don't don't even get me started. Okay. So uh sometimes people think that uh inflation is the price of growth. If you're going to have high growth, then having a little bit of inflation is okay. And there is some sense in which these are correlated, but I think this is actually a very poor idea and you know the sooner we get rid of this the better. So it is interesting and important to ask the question. Why is inflation important? And you know, should one devote institutional apparatus to the conquest of inflation? And I solidly believe the answer is yes.",
+      "words": [
         {
           "word": "was",
           "startTime": 867.06,
@@ -14955,15 +14931,7 @@
           "startTime": 869.22,
           "endTime": 869.7,
           "confidence": 0.9372
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 869.7,
-      "endTime": 908.36,
-      "text": "that what do we know in the literature about the impact of inflation shocks on mortality and infant mortality and such like. Yeah, don't don't even get me started. Okay. So uh sometimes people think that uh inflation is the price of growth. If you're going to have high growth, then having a little bit of inflation is okay. And there is some sense in which these are correlated, but I think this is actually a very poor idea and you know the sooner we get rid of this the better. So it is interesting and important to ask the question. Why is inflation important? And you know, should one devote institutional apparatus to the conquest of inflation? And I solidly believe the answer is yes.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 869.7,
@@ -54149,8 +54117,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3049.42,
-      "endTime": 3050.86,
-      "text": "just scratch that, I'm not getting the",
+      "endTime": 3204.82,
+      "text": "just scratch that, I'm not getting the quote. You want to look it up? Norman Montague, the former central bank governor of the Bank of England, once famously said, I don't have reasons, I have my instincts. Okay. It's like don't hold me accountable. Don't ask me what am I doing and why. I'm some lofty character. There should be a mystique of central planning. This is all just nonsense. Oh sorry, there should be a mystique of central banking. This is all just nonsense and it should be swept away uh in the spirit of modern notions of public administration and public choice theory. So there was this bad period where really the intellectual leadership on what to do on monetary economics and finance was happening in academics and it was happening through the Ministry of Finance. And there was a long simmering conversation around these questions on how to do things differently. I have described to you a 2002 conversation where I was speaking with the Ashwan Sinna and talking about inflation targeting, and he was saying these ideas are way ahead of the Indian range of ideas amongst the intelligentsia. they need to become much more normalized in the Indian intellectual debate before some future finance minister can do that. And you know, point well taken. This is the way it should be done. And then in the uh mid-2000s, in the 2007 boom, uh the working of the RBI went phenomenally wrong. Uh at a time when the economy was booming and a lot of foreign capital was coming into the country. See these are correlated. When times are good, foreigners bring money into India. When times are bad, foreigners take money out of India. So at a time when the economy was booming and a lot of foreign capital was coming in, uh RBI tried to fix the exchange rate. Okay. So now foreign capital is coming into the country. The rupee ought to appreciate. They're preventing that appreciation by buying up the dollars. Okay? But when they buy the dollars, they pay for it in rupees. And so the local economy got flooded with rupees. And so it was expansionary monetary policy at the worst possible time. And that generated a nice big inflation crisis. And I think by and large, This won the case amongst the economists that this old RBI cannot just be accepted in the modern world. You now need to do better. And uh a critical milestone is FSLRC. In uh FSLRC, which began in 2011. There were rich internal debates and the planning process took place to create an inflation targeting system",
       "words": [
         {
           "word": "just",
@@ -54193,15 +54161,7 @@
           "startTime": 3050.78,
           "endTime": 3050.86,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3050.86,
-      "endTime": 3053.28,
-      "text": "quote. You want to look it up?",
-      "words": [
+        },
         {
           "word": "quote.",
           "startTime": 3050.86,
@@ -54243,15 +54203,7 @@
           "startTime": 3052.86,
           "endTime": 3053.28,
           "confidence": 0.6938
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3062.2,
-      "endTime": 3204.82,
-      "text": "Norman Montague, the former central bank governor of the Bank of England, once famously said, I don't have reasons, I have my instincts. Okay. It's like don't hold me accountable. Don't ask me what am I doing and why. I'm some lofty character. There should be a mystique of central planning. This is all just nonsense. Oh sorry, there should be a mystique of central banking. This is all just nonsense and it should be swept away uh in the spirit of modern notions of public administration and public choice theory. So there was this bad period where really the intellectual leadership on what to do on monetary economics and finance was happening in academics and it was happening through the Ministry of Finance. And there was a long simmering conversation around these questions on how to do things differently. I have described to you a 2002 conversation where I was speaking with the Ashwan Sinna and talking about inflation targeting, and he was saying these ideas are way ahead of the Indian range of ideas amongst the intelligentsia. they need to become much more normalized in the Indian intellectual debate before some future finance minister can do that. And you know, point well taken. This is the way it should be done. And then in the uh mid-2000s, in the 2007 boom, uh the working of the RBI went phenomenally wrong. Uh at a time when the economy was booming and a lot of foreign capital was coming into the country. See these are correlated. When times are good, foreigners bring money into India. When times are bad, foreigners take money out of India. So at a time when the economy was booming and a lot of foreign capital was coming in, uh RBI tried to fix the exchange rate. Okay. So now foreign capital is coming into the country. The rupee ought to appreciate. They're preventing that appreciation by buying up the dollars. Okay? But when they buy the dollars, they pay for it in rupees. And so the local economy got flooded with rupees. And so it was expansionary monetary policy at the worst possible time. And that generated a nice big inflation crisis. And I think by and large, This won the case amongst the economists that this old RBI cannot just be accepted in the modern world. You now need to do better. And uh a critical milestone is FSLRC. In uh FSLRC, which began in 2011. There were rich internal debates and the planning process took place to create an inflation targeting system",
-      "words": [
+        },
         {
           "word": "Norman",
           "startTime": 3062.2,

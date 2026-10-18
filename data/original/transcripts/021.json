@@ -5,7 +5,7 @@
     "durationSeconds": 4817,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -1782,8 +1782,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 150.42,
-      "endTime": 203.49,
-      "text": "The best way to do this is in a historical journey. So we should go step by step and see how there was a felt need. There was a problem in the world that needed to be solved. And one by one, the solutions came. And that palimpsest of layered solutions is how we ended up in the modern finance of today. So this is actually a generic learn. It's a generic Uh knowledge technology, which is it's always important to see things in a historical context. It's very hard to understand physics if I give you a textbook. It's easier to understand physics. It actually makes sense if you play it in the journey of time, place it in history. Who were we? Where were we? What was the question that was the puzzle? And then how was that question solved? And that way, as we walk forward, suddenly it all makes sense. It becomes comprehensible. So I think that the best way is to",
+      "endTime": 226.37,
+      "text": "The best way to do this is in a historical journey. So we should go step by step and see how there was a felt need. There was a problem in the world that needed to be solved. And one by one, the solutions came. And that palimpsest of layered solutions is how we ended up in the modern finance of today. So this is actually a generic learn. It's a generic Uh knowledge technology, which is it's always important to see things in a historical context. It's very hard to understand physics if I give you a textbook. It's easier to understand physics. It actually makes sense if you play it in the journey of time, place it in history. Who were we? Where were we? What was the question that was the puzzle? And then how was that question solved? And that way, as we walk forward, suddenly it all makes sense. It becomes comprehensible. So I think that the best way is to Look at this in historical terms. Yeah, I freely confess. I think finance is great fun. I think finance is very important. Um human beings are deeply motivated by uh money and economics is the second most important thing in the world.",
       "words": [
         {
           "word": "The",
@@ -2780,15 +2780,7 @@
           "startTime": 203.04,
           "endTime": 203.49,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 203.81,
-      "endTime": 206.51,
-      "text": "Look at this in historical terms.",
-      "words": [
+        },
         {
           "word": "Look",
           "startTime": 203.81,
@@ -2824,15 +2816,7 @@
           "startTime": 205.01,
           "endTime": 206.51,
           "confidence": 0.9037
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 213.81,
-      "endTime": 226.37,
-      "text": "Yeah, I freely confess. I think finance is great fun. I think finance is very important. Um human beings are deeply motivated by uh money and economics is the second most important thing in the world.",
-      "words": [
+        },
         {
           "word": "Yeah,",
           "startTime": 213.81,

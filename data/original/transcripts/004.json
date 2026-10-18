@@ -5,7 +5,7 @@
     "durationSeconds": 3376,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -1680,8 +1680,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 127.64,
-      "endTime": 132.46,
-      "text": "time? Or how do you write this in a fast and efficient way? How do you generate all the different",
+      "endTime": 135.5,
+      "text": "time? Or how do you write this in a fast and efficient way? How do you generate all the different n queens solutions for a number",
       "words": [
         {
           "word": "time?",
@@ -1802,15 +1802,7 @@
           "startTime": 131.96,
           "endTime": 132.46,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 132.94,
-      "endTime": 145.9,
-      "text": "n queens solutions for a number n. So what is the maximum number of queens on a board of nxn? I I presume. What is the maximum uh what is the biggest board on which you can do something like this? I",
-      "words": [
+        },
         {
           "word": "n",
           "startTime": 132.94,
@@ -1846,7 +1838,15 @@
           "startTime": 135.1,
           "endTime": 135.5,
           "confidence": 0.999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 135.5,
+      "endTime": 145.9,
+      "text": "n. So what is the maximum number of queens on a board of nxn? I I presume. What is the maximum uh what is the biggest board on which you can do something like this? I",
+      "words": [
         {
           "word": "n.",
           "startTime": 135.5,
@@ -29770,8 +29770,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1718.65,
-      "endTime": 1728.41,
-      "text": "Do you remember roughly what year was that book? The Insurgents. Yeah. Fred Kaplan's book? I don't remember the year, but we can be. Because thinking on the subject has evolved greatly.",
+      "endTime": 1721.61,
+      "text": "Do you remember roughly what year was that book? The",
       "words": [
         {
           "word": "Do",
@@ -29832,7 +29832,15 @@
           "startTime": 1721.37,
           "endTime": 1721.61,
           "confidence": 0.9321
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1721.61,
+      "endTime": 1726.09,
+      "text": "Insurgents. Yeah. Fred Kaplan's book? I don't remember the year, but we can be. Because",
+      "words": [
         {
           "word": "Insurgents.",
           "startTime": 1721.61,
@@ -29922,7 +29930,15 @@
           "startTime": 1725.93,
           "endTime": 1726.09,
           "confidence": 0.8396
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1726.09,
+      "endTime": 1728.41,
+      "text": "thinking on the subject has evolved greatly.",
+      "words": [
         {
           "word": "thinking",
           "startTime": 1726.09,
@@ -53556,8 +53572,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2979.45,
-      "endTime": 2992.67,
-      "text": "you? It's how little has changed. So there is a deeper level at which I could just recognize so many of the things going on and I came a c I came out with new respect of the folks a hundred years ago and a hundred and fifty years ago.",
+      "endTime": 3001.26,
+      "text": "you? It's how little has changed. So there is a deeper level at which I could just recognize so many of the things going on and I came a c I came out with new respect of the folks a hundred years ago and a hundred and fifty years ago. And Amit, tell us today, what is your recommendation for",
       "words": [
         {
           "word": "you?",
@@ -53858,15 +53874,7 @@
           "startTime": 2992.17,
           "endTime": 2992.67,
           "confidence": 0.9851
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2998.22,
-      "endTime": 3219.24,
-      "text": "And Amit, tell us today, what is your recommendation for today? Yeah, so you know, I remember a couple of years back, somebody there was this Twitter thing going around, everybody were naming their five favorite web series and all that. And I also did that, and one of them surprised a lot of people because they didn't really see it as a TV series or whatever, but I did. And this is Christoph Kislowski's great uh set of ten films, ten short films called Decalogue. So Christoph Kislowski is this Polish filmmaker, and at the turn of the nineties or at the end of the eighties, I forget exactly when. He was commissioned by Polish television to make a series of ten short films, uh, I think they were about an hour each, on the Ten Commandments. And uh and these films are masterpieces. Uh it's for me it's a pinnacle of cinema. Like he's much more famous for his Three Colors trilogy and the Double Life of Veronique, which came later. But for me, the Decalogue is just a pinnacle pinnacle of cinematic storytelling. And they're not directly about any of the commandments, but at the same time, they're beautiful human stories, like The first one, and I don't think I'll I'm really giving away any spoilers, but the first one which has stayed with me for a long time was about the commandment, Thou shalt not have any other god than me. And it is about a man who is very much like you, who has a young son, and the young son is waiting for the ice on the lake to freeze up enough so he can go skating. And the father is a scientist. So he's monitoring the temperature every day, he's monitoring the weather reports, he's monitoring everything, and the whole film is building up to that that his kid is so excited and he wants to go skating. And the father, ultra-rational, you know, figuring everything out, taking data from here, there, whatever. And then one day he realizes that yeah, this is the day you can go skating today within the margin of error, everything, nothing is gonna happen. The kid goes skating, the ice cracks, he dies. Right? And the last shot of the film, it's a very moving film. So I think of it is the father at the side of the lake, and in the distance he sees that there's a homeless person sitting on the side of the lake who's lit a fire to warm his hands. And this is not this film doesn't have an anti-science message to me. Instead, it has an important humility message to me. That never think that you can grok everything about the world or that you can calculate everything, that the world is deeply complex. And you know, if you have an engineering mindset that you can figure shit out, you know, things often go wrong. So a beautiful moving film. It o two of the films are made into longer films, uh I think 90-minute films, a short film about love, and a short film about killing, and uh they're masterpieces. In fact, I talk about a scene from a short film about love to tell my writing students about Show Don't Tell. How even in a film You can have that element of show-don't tell, where basically a short film about love is basically about this kid in an apartment uh complex who has a crush on a woman who lives just across. So kind of creepily he's spying on her and he's always trying to look into a window and all of that. And one day he decides that he's going to go up to her house and he's going to introduce himself. And I think he delivers the milk or the papers or whatever. So he decides that when she does that, he's gonna ask her out on a date. And uh he rings a bell. And at this point, a typical stereotypical film would show the door being opened, would show him ask a question, would show her response and all of that. But it just shows him ringing the bell, and the next shot is he's down in the courtyard, and it's a top angle shot, and he's down in the courtyard going round and round on a cycle in sheer joy. And it just tells you everything. And that's such a great moment of show don't tell. You know, even in in sort of a uh cinematic sense. So Decalogue to me is just the pinnacle of storytelling, and everyone should see it. And that's relevant for today. Uh",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 2998.22,
@@ -53926,7 +53934,15 @@
           "startTime": 3001.1,
           "endTime": 3001.26,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3001.26,
+      "endTime": 3219.24,
+      "text": "today? Yeah, so you know, I remember a couple of years back, somebody there was this Twitter thing going around, everybody were naming their five favorite web series and all that. And I also did that, and one of them surprised a lot of people because they didn't really see it as a TV series or whatever, but I did. And this is Christoph Kislowski's great uh set of ten films, ten short films called Decalogue. So Christoph Kislowski is this Polish filmmaker, and at the turn of the nineties or at the end of the eighties, I forget exactly when. He was commissioned by Polish television to make a series of ten short films, uh, I think they were about an hour each, on the Ten Commandments. And uh and these films are masterpieces. Uh it's for me it's a pinnacle of cinema. Like he's much more famous for his Three Colors trilogy and the Double Life of Veronique, which came later. But for me, the Decalogue is just a pinnacle pinnacle of cinematic storytelling. And they're not directly about any of the commandments, but at the same time, they're beautiful human stories, like The first one, and I don't think I'll I'm really giving away any spoilers, but the first one which has stayed with me for a long time was about the commandment, Thou shalt not have any other god than me. And it is about a man who is very much like you, who has a young son, and the young son is waiting for the ice on the lake to freeze up enough so he can go skating. And the father is a scientist. So he's monitoring the temperature every day, he's monitoring the weather reports, he's monitoring everything, and the whole film is building up to that that his kid is so excited and he wants to go skating. And the father, ultra-rational, you know, figuring everything out, taking data from here, there, whatever. And then one day he realizes that yeah, this is the day you can go skating today within the margin of error, everything, nothing is gonna happen. The kid goes skating, the ice cracks, he dies. Right? And the last shot of the film, it's a very moving film. So I think of it is the father at the side of the lake, and in the distance he sees that there's a homeless person sitting on the side of the lake who's lit a fire to warm his hands. And this is not this film doesn't have an anti-science message to me. Instead, it has an important humility message to me. That never think that you can grok everything about the world or that you can calculate everything, that the world is deeply complex. And you know, if you have an engineering mindset that you can figure shit out, you know, things often go wrong. So a beautiful moving film. It o two of the films are made into longer films, uh I think 90-minute films, a short film about love, and a short film about killing, and uh they're masterpieces. In fact, I talk about a scene from a short film about love to tell my writing students about Show Don't Tell. How even in a film You can have that element of show-don't tell, where basically a short film about love is basically about this kid in an apartment uh complex who has a crush on a woman who lives just across. So kind of creepily he's spying on her and he's always trying to look into a window and all of that. And one day he decides that he's going to go up to her house and he's going to introduce himself. And I think he delivers the milk or the papers or whatever. So he decides that when she does that, he's gonna ask her out on a date. And uh he rings a bell. And at this point, a typical stereotypical film would show the door being opened, would show him ask a question, would show her response and all of that. But it just shows him ringing the bell, and the next shot is he's down in the courtyard, and it's a top angle shot, and he's down in the courtyard going round and round on a cycle in sheer joy. And it just tells you everything. And that's such a great moment of show don't tell. You know, even in in sort of a uh cinematic sense. So Decalogue to me is just the pinnacle of storytelling, and everyone should see it. And that's relevant for today. Uh",
+      "words": [
         {
           "word": "today?",
           "startTime": 3001.26,

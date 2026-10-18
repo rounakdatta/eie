@@ -5,7 +5,7 @@
     "durationSeconds": 3435,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -7321,8 +7321,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 359.38,
-      "endTime": 372.42,
-      "text": "It's heartbreaking. It's very sad. It is a great metaphor for our times. Yeah, rather than some silly TV serials about children preparing in Kota, this is deep and allegorical. And I think uh the there's so many metaphors in the",
+      "endTime": 370.26,
+      "text": "It's heartbreaking. It's very sad. It is a great metaphor for our times. Yeah, rather than some silly TV serials about children preparing in Kota, this is deep and allegorical.",
       "words": [
         {
           "word": "It's",
@@ -7503,7 +7503,15 @@
           "startTime": 369.3,
           "endTime": 370.26,
           "confidence": 0.9862
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 370.26,
+      "endTime": 384.5,
+      "text": "And I think uh the there's so many metaphors in the swimming against the tide and finding the joy of not having to get expertise or knowledge in a particular lane, but actually being in the open sea, exploring as you want. It's it's beautiful to me.",
+      "words": [
         {
           "word": "And",
           "startTime": 370.26,
@@ -7569,15 +7577,7 @@
           "startTime": 372.18,
           "endTime": 372.42,
           "confidence": 0.8897
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 372.42,
-      "endTime": 384.5,
-      "text": "swimming against the tide and finding the joy of not having to get expertise or knowledge in a particular lane, but actually being in the open sea, exploring as you want. It's it's beautiful to me.",
-      "words": [
+        },
         {
           "word": "swimming",
           "startTime": 372.42,

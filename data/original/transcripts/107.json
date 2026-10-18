@@ -5,7 +5,7 @@
     "durationSeconds": 6131,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -8619,8 +8619,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 464.63,
-      "endTime": 468.71,
-      "text": "In this, I want to say three things. Uh the first is a line that",
+      "endTime": 570.7,
+      "text": "In this, I want to say three things. Uh the first is a line that we used in recent weeks. It is the fate of every great idea to start out as a cause and then become a movement, and then become a racket. Okay? So ideas don't stand still. political formations develop around these things and many things go to hell. The second principle is that an idea is not responsible for the people who believe in it. Okay? So when you say that Trump believes X, therefore X is an idiotic idea. Not true, not fair, not correct. An idea is not responsible for the person that believes in it. Ideas should be argued and judged and debated around a variety of uh intellectual aspects, but this is not a gotcha and the people who do that are being unfair. And the third thing is about tribalism. I feel that you know many people just feel the need to be in a gang, to be with others, to feel solidarity. And I'm speaking as a person that has no interest at all in solidarity or being in a gang. I just look at people with a sense of mystery, like, what are you doing? It doesn't make any sense. And uh I often think about the minor matter of being correct. Like you have to figure out stuff. You have to undertake good actions in the world. You have to succeed. You have to forecast the nature of the world that this intervention will lead to that kind of damage. And being correct matters. It's not just all ideology, but there's something very sad about the world that the tribal instinct is so powerful.",
       "words": [
         {
           "word": "In",
@@ -8711,15 +8711,7 @@
           "startTime": 468.15,
           "endTime": 468.71,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 468.71,
-      "endTime": 472.07,
-      "text": "we used in recent weeks. It is",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 468.71,
@@ -8761,15 +8753,7 @@
           "startTime": 471.91,
           "endTime": 472.07,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 472.07,
-      "endTime": 570.7,
-      "text": "the fate of every great idea to start out as a cause and then become a movement, and then become a racket. Okay? So ideas don't stand still. political formations develop around these things and many things go to hell. The second principle is that an idea is not responsible for the people who believe in it. Okay? So when you say that Trump believes X, therefore X is an idiotic idea. Not true, not fair, not correct. An idea is not responsible for the person that believes in it. Ideas should be argued and judged and debated around a variety of uh intellectual aspects, but this is not a gotcha and the people who do that are being unfair. And the third thing is about tribalism. I feel that you know many people just feel the need to be in a gang, to be with others, to feel solidarity. And I'm speaking as a person that has no interest at all in solidarity or being in a gang. I just look at people with a sense of mystery, like, what are you doing? It doesn't make any sense. And uh I often think about the minor matter of being correct. Like you have to figure out stuff. You have to undertake good actions in the world. You have to succeed. You have to forecast the nature of the world that this intervention will lead to that kind of damage. And being correct matters. It's not just all ideology, but there's something very sad about the world that the tribal instinct is so powerful.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 472.07,
@@ -10359,8 +10343,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 579.99,
-      "endTime": 812.43,
-      "text": "Before we get to the labels, there's another broad point I want to address. We will try our best here to speak in a neutral manner about what these labels mean and what they stand for. So that even if you identify with them, you'll say that yeah they've defined it correctly. I'll do that. But what I also want to do at the start, in the interest of transparency, is lay out the set of beliefs that you and I share about the world. And I think this set of beliefs is not really subjective. There's the evidence of centuries of data and things happening in the real world which lead us to argue these things with a certain amount of certainty. And here they are. Number one, the world is not zero sum. Right. A lot of political thinking, a lot of uh the basics of different ideologies are based on the assumption that the world is zero sum, there is a fixed amount of wealth, there is a fixed pie, and that is simply not true. We have earlier in the past, like in our episode on luxury beliefs, spoken about inequality and poverty, why they are very different things. Where if you have a fixed pie and you have a zero sum world, then yes, if poverty goes up, so will inequality. But in the real world, which is positive sum, they go in opposite direction. directions and the policies you need to handle both are opposites of each other. And therefore you need to understand the terms and understand the world carefully. If you want to remove poverty, it is not a simple matter as it would be in a fixed pie of taking money from the rich and giving it to the poor. That simply doesn't work. That makes everybody worse off. It leads to a negative sum game. You know, what you need is to play to growth for everyone. That's point one. We've elaborated on that in different episodes. Point two is that top down thinking simply doesn't work. Again, in our episode on fallacies, we discussed this in some detail, that you know, our instincts were hardwired into us in in the hunter gatherer age. We lived in small tribes, everything was manageable, and even though there were no engineers per se, the engineering mindset that I will design this from the top down could work. But at the level of a large society, it simply does not work. It leads to disaster. And you know, in our chapters on socialism, communism, Marxism, Stratisms, we'll we'll speak more uh more on this, I will elaborate But again, this is a fundamental belief um that we have. Our third belief, gentle readers, is that we should judge actions based on outcomes and not intentions. A common matter to every ideology is that their intentions are great, that this is what we will deliver, whether it is social justice or equality for all, and et cetera, et cetera. And all of these intentions sound fantastic. And I will not argue with any of these good intentions. What we need to see is what are the outcomes of the policies that emerge out of those ways of thinking. And we should strictly be focused on outcomes. And this brings me to my fourth one, that both of us believe in the power of freedom, not just in a moral sense, that freedom is good in and of itself, but also uh in a consequential sense, that freedom leads to the best outcomes. And therefore we have to think in terms of individual freedom. We have to think in terms of what is good for each individual, each person, and not in terms of groups. The moment you divide society into groups and you build narratives of oppression and victimhood, and you start playing that particular game, it simply never ever works out well. Individuals contain multitudes, and again we'll discuss this more in future chapters. So these are sort of broad precepts, um and all of these would not have been stuff I would have thought about when I was eighteen or nineteen or whatever. You know, I I was um uh of a different persuasion. But over time you could say I've been mugged by reality and I've come to understand the world a little better. And all of these just seem so fundamental and so important for all of us to internalise. It's a beautiful set of first principles that I think",
+      "endTime": 810.03,
+      "text": "Before we get to the labels, there's another broad point I want to address. We will try our best here to speak in a neutral manner about what these labels mean and what they stand for. So that even if you identify with them, you'll say that yeah they've defined it correctly. I'll do that. But what I also want to do at the start, in the interest of transparency, is lay out the set of beliefs that you and I share about the world. And I think this set of beliefs is not really subjective. There's the evidence of centuries of data and things happening in the real world which lead us to argue these things with a certain amount of certainty. And here they are. Number one, the world is not zero sum. Right. A lot of political thinking, a lot of uh the basics of different ideologies are based on the assumption that the world is zero sum, there is a fixed amount of wealth, there is a fixed pie, and that is simply not true. We have earlier in the past, like in our episode on luxury beliefs, spoken about inequality and poverty, why they are very different things. Where if you have a fixed pie and you have a zero sum world, then yes, if poverty goes up, so will inequality. But in the real world, which is positive sum, they go in opposite direction. directions and the policies you need to handle both are opposites of each other. And therefore you need to understand the terms and understand the world carefully. If you want to remove poverty, it is not a simple matter as it would be in a fixed pie of taking money from the rich and giving it to the poor. That simply doesn't work. That makes everybody worse off. It leads to a negative sum game. You know, what you need is to play to growth for everyone. That's point one. We've elaborated on that in different episodes. Point two is that top down thinking simply doesn't work. Again, in our episode on fallacies, we discussed this in some detail, that you know, our instincts were hardwired into us in in the hunter gatherer age. We lived in small tribes, everything was manageable, and even though there were no engineers per se, the engineering mindset that I will design this from the top down could work. But at the level of a large society, it simply does not work. It leads to disaster. And you know, in our chapters on socialism, communism, Marxism, Stratisms, we'll we'll speak more uh more on this, I will elaborate But again, this is a fundamental belief um that we have. Our third belief, gentle readers, is that we should judge actions based on outcomes and not intentions. A common matter to every ideology is that their intentions are great, that this is what we will deliver, whether it is social justice or equality for all, and et cetera, et cetera. And all of these intentions sound fantastic. And I will not argue with any of these good intentions. What we need to see is what are the outcomes of the policies that emerge out of those ways of thinking. And we should strictly be focused on outcomes. And this brings me to my fourth one, that both of us believe in the power of freedom, not just in a moral sense, that freedom is good in and of itself, but also uh in a consequential sense, that freedom leads to the best outcomes. And therefore we have to think in terms of individual freedom. We have to think in terms of what is good for each individual, each person, and not in terms of groups. The moment you divide society into groups and you build narratives of oppression and victimhood, and you start playing that particular game, it simply never ever works out well. Individuals contain multitudes, and again we'll discuss this more in future chapters. So these are sort of broad precepts, um and all of these would not have been stuff I would have thought about when I was eighteen or nineteen or whatever. You know, I I was um uh of a different persuasion. But over time you could say I've been mugged by reality and I've come to understand the world a little better. And all of these just seem so fundamental and so important for all of us to internalise. It's",
       "words": [
         {
           "word": "Before",
@@ -14867,7 +14851,15 @@
           "startTime": 809.79,
           "endTime": 810.03,
           "confidence": 0.9434
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 810.03,
+      "endTime": 881.9,
+      "text": "a beautiful set of first principles that I think all of us should sign on to. When you were saying intentions and outcomes, I was thinking of Adolf Hitler. um if your objective was the glory and furtherance of the Germanic peoples, of German DNA, then there was no bigger disaster for that than the man who espoused this the most. He espoused this the most fiercely, but he got something terribly wrong. Okay? Similarly, if you think that we're going to do something great for the working class, and then you end up with catastrophes Like Russia and China, then you know, clearly you failed to understand something deep about the world and you've just got the worst possible outcomes. So I totally uh get this point and I always push on this idea that come on, you gotta be right, that after ten years, fifty years, hundred years, it's gotta work, it's gotta come out right. Just having fancy claims doesn't suffice. Amit let's get started with",
+      "words": [
         {
           "word": "a",
           "startTime": 810.03,
@@ -14921,15 +14913,7 @@
           "startTime": 812.27,
           "endTime": 812.43,
           "confidence": 0.9983
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 812.43,
-      "endTime": 833.16,
-      "text": "all of us should sign on to. When you were saying intentions and outcomes, I was thinking of Adolf Hitler. um if your objective was the glory and furtherance of the Germanic peoples, of German DNA, then there was no bigger disaster for that than the man",
-      "words": [
+        },
         {
           "word": "all",
           "startTime": 812.43,
@@ -15211,15 +15195,7 @@
           "startTime": 832.76,
           "endTime": 833.16,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 833.16,
-      "endTime": 842.2,
-      "text": "who espoused this the most. He espoused this the most fiercely, but he got something terribly wrong. Okay? Similarly, if you",
-      "words": [
+        },
         {
           "word": "who",
           "startTime": 833.16,
@@ -15345,15 +15321,7 @@
           "startTime": 841.72,
           "endTime": 842.2,
           "confidence": 0.9766
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 842.2,
-      "endTime": 881.9,
-      "text": "think that we're going to do something great for the working class, and then you end up with catastrophes Like Russia and China, then you know, clearly you failed to understand something deep about the world and you've just got the worst possible outcomes. So I totally uh get this point and I always push on this idea that come on, you gotta be right, that after ten years, fifty years, hundred years, it's gotta work, it's gotta come out right. Just having fancy claims doesn't suffice. Amit let's get started with",
-      "words": [
+        },
         {
           "word": "think",
           "startTime": 842.2,
@@ -51735,8 +51703,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2823.34,
-      "endTime": 2995.77,
-      "text": "I want to add two things here. Um the minor matter of coming out correct. So there's an old joke in the Soviet Union, uh, where uh you know the saying that in order to make omelets you've got to break some eggs, which is sort of glossing over and justifying some of the violence, some of the destruction. And then the person says we broke a lot of eggs. Where's the omelette? But in the end the Soviet Union completely failed as a society. Communist China completely failed as a society. You and I have an episode on how the China model is broken in the sense of a high level of state control. It isn't even working today, meaning they have abandoned many a communist precept, but that high level of state control, it isn't working. At a more analytical level, Karl Marx saw the business cycle fluctuations that are ordinarily present in capitalism. and somehow came up with this idea that the fluctuation are going to get worse. Okay? So business cycle fluctuations are a part of the normal machine of capitalism. Financial crises are a part of the normal machine of capitalism. These things cannot be eliminated and should not be eliminated. That's how this works. We go through boom and bust. We go through crazy optimism and then there is over investment and then there's a crash. This is the normal rhythm of things. Karl Marx came up with an analytical claim that the magnitude of these fluctuations will go up in the future. Okay, so in the late 19th century, he started telling a story that look, the fluctuation are getting worse. After he died came the great depression. And that was seen by many people as proof that he was actually on the right track. And Standing in 2025, we know that no, not particularly. That the Great Depression was indeed the biggest ever shock that happened to the global capitalist system. But after that, we haven't got particularly big shocks. The 2008 crisis, all in all, was relatively small. The great economist Robert Lucas has remarked that really business cycle fluctuations are a small thing compared to the grand drama of growth. That the outstanding feature Of the capitalist economy is growth. That you get richer over the years, which is a great bounty. I mean, yeah, there'll be some fluctuations, but when you correctly draw the graph, the fluctuations appear irrelevant. The dominant phenomenon is the growth. And so that incredible success and prosperity of all the advanced economies today has come about under a liberal democratic.",
+      "endTime": 3078.24,
+      "text": "I want to add two things here. Um the minor matter of coming out correct. So there's an old joke in the Soviet Union, uh, where uh you know the saying that in order to make omelets you've got to break some eggs, which is sort of glossing over and justifying some of the violence, some of the destruction. And then the person says we broke a lot of eggs. Where's the omelette? But in the end the Soviet Union completely failed as a society. Communist China completely failed as a society. You and I have an episode on how the China model is broken in the sense of a high level of state control. It isn't even working today, meaning they have abandoned many a communist precept, but that high level of state control, it isn't working. At a more analytical level, Karl Marx saw the business cycle fluctuations that are ordinarily present in capitalism. and somehow came up with this idea that the fluctuation are going to get worse. Okay? So business cycle fluctuations are a part of the normal machine of capitalism. Financial crises are a part of the normal machine of capitalism. These things cannot be eliminated and should not be eliminated. That's how this works. We go through boom and bust. We go through crazy optimism and then there is over investment and then there's a crash. This is the normal rhythm of things. Karl Marx came up with an analytical claim that the magnitude of these fluctuations will go up in the future. Okay, so in the late 19th century, he started telling a story that look, the fluctuation are getting worse. After he died came the great depression. And that was seen by many people as proof that he was actually on the right track. And Standing in 2025, we know that no, not particularly. That the Great Depression was indeed the biggest ever shock that happened to the global capitalist system. But after that, we haven't got particularly big shocks. The 2008 crisis, all in all, was relatively small. The great economist Robert Lucas has remarked that really business cycle fluctuations are a small thing compared to the grand drama of growth. That the outstanding feature Of the capitalist economy is growth. That you get richer over the years, which is a great bounty. I mean, yeah, there'll be some fluctuations, but when you correctly draw the graph, the fluctuations appear irrelevant. The dominant phenomenon is the growth. And so that incredible success and prosperity of all the advanced economies today has come about under a liberal democratic. capitalist system with shades of grey. Never did a socialist or communist approach deliver results. Okay, so we've all seen the standard nighttime lights picture of North Korea versus South Korea. That you got these clean controlled experiments that the treatment was applied on East Germany and West Germany. And West Germany worked and East Germany didn't North Korea and South Korea and so on. So I think this stuff of being right and being wrong is core. You've got to care about winning, you've got to care about coming out right. And a lot of the left crew is just lost in some ideology. Again, maybe if you were standing in 1917 at the time of the Russian Revolution, you had some claims about the world. Fine. Maybe when the Great Depression happened, you could claim that wow, you see, our analytical toolkit had the correct predictions. We understood that the global capitalist system is dynamically unstable and the fluctuations are getting worse. Fine. But twenty twenty-five to hold such beliefs? You're truly confused. And so I say about the great Amitvarma. He who has not been a Marxist as a child has no heart. And he who is a Marxist as an adult has no brain.",
       "words": [
         {
           "word": "I",
@@ -54353,15 +54321,7 @@
           "startTime": 2995.27,
           "endTime": 2995.77,
           "confidence": 0.9246
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2996.63,
-      "endTime": 3002.23,
-      "text": "capitalist system with shades of grey. Never did a socialist",
-      "words": [
+        },
         {
           "word": "capitalist",
           "startTime": 2996.63,
@@ -54421,15 +54381,7 @@
           "startTime": 3001.67,
           "endTime": 3002.23,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3002.23,
-      "endTime": 3078.24,
-      "text": "or communist approach deliver results. Okay, so we've all seen the standard nighttime lights picture of North Korea versus South Korea. That you got these clean controlled experiments that the treatment was applied on East Germany and West Germany. And West Germany worked and East Germany didn't North Korea and South Korea and so on. So I think this stuff of being right and being wrong is core. You've got to care about winning, you've got to care about coming out right. And a lot of the left crew is just lost in some ideology. Again, maybe if you were standing in 1917 at the time of the Russian Revolution, you had some claims about the world. Fine. Maybe when the Great Depression happened, you could claim that wow, you see, our analytical toolkit had the correct predictions. We understood that the global capitalist system is dynamically unstable and the fluctuations are getting worse. Fine. But twenty twenty-five to hold such beliefs? You're truly confused. And so I say about the great Amitvarma. He who has not been a Marxist as a child has no heart. And he who is a Marxist as an adult has no brain.",
-      "words": [
+        },
         {
           "word": "or",
           "startTime": 3002.23,
@@ -70315,8 +70267,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3849.29,
-      "endTime": 3884.89,
-      "text": "was watching Ambedkar's response that it should be the game that the constitution sets in motion of rival political parties that leads to a program. And the outcome of that should not be coded upfront into the Constitution. It's a intellectually correct argument. But I was also a little sad that he did not bring up the intimate connections between socialism and rights. That the only way to make a socialism is to crush individual rights. And that is antithetic to any concept of",
+      "endTime": 3910.01,
+      "text": "was watching Ambedkar's response that it should be the game that the constitution sets in motion of rival political parties that leads to a program. And the outcome of that should not be coded upfront into the Constitution. It's a intellectually correct argument. But I was also a little sad that he did not bring up the intimate connections between socialism and rights. That the only way to make a socialism is to crush individual rights. And that is antithetic to any concept of constitutional liberal democracy. That if you have a constitution, you take rights seriously. So rights to speech, right to property, right to life, all these things are fundamental to liberal democracy and they don't go with the socialist program. It's a pity he didn't bring it up that way, and all of us need to understand these diff difficulties to a greater",
       "words": [
         {
           "word": "was",
@@ -70821,15 +70773,7 @@
           "startTime": 3884.65,
           "endTime": 3884.89,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3884.89,
-      "endTime": 3887.77,
-      "text": "constitutional liberal democracy.",
-      "words": [
+        },
         {
           "word": "constitutional",
           "startTime": 3884.89,
@@ -70847,15 +70791,7 @@
           "startTime": 3886.97,
           "endTime": 3887.77,
           "confidence": 0.8358
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3887.77,
-      "endTime": 3907.21,
-      "text": "That if you have a constitution, you take rights seriously. So rights to speech, right to property, right to life, all these things are fundamental to liberal democracy and they don't go with the socialist program. It's a pity he didn't bring it up that way, and all of us need to understand",
-      "words": [
+        },
         {
           "word": "That",
           "startTime": 3887.77,
@@ -71173,15 +71109,7 @@
           "startTime": 3906.25,
           "endTime": 3907.21,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3907.21,
-      "endTime": 4109.79,
-      "text": "these diff difficulties to a greater extent. You know, I'm going to object on behalf of Ambitkar and just gently point out two things. One thing I'll say that in those times, uh it is unfair to expect him to get everything right the way we would want in hindsight. History hadn't really played itself out. The Soviet Union still appeared to be a success, et cetera, et cetera. You know, all our heroes. Your heroes, uh Nehru and Kane's heroes of mine as well, uh got so many things wrong. You can't get everything right, and it's unfair to judge a person's work in hindsight. So that's one thing I would say. The second thing I would say is that Ambedkar was focusing on a social evil that was incredibly visceral to him, which was the evil of caste. And uh occupied all of his uh a lot of his intellectual attention and his cognitive faculties. And um you know, focus there meant less focus somewhere else, which is bound to happen. And I would defend him by saying that uh the positive things that have come out of his thinking and I know you agree with me, uh just vastly outweigh the little omissions that might have happened. And then communism. So actually so much of what we spoke about Marxism and socialism actually feeds into communism. So I'll keep it brief and I'll just go into the main maxims of communism. The main maxims of communism is that there is no private property at all, apart from individual possessions. I would presumably be allowed to hold my iPad, though I think the state could take it away at any time. Except that there would be no iPad because I would not be rich enough in a communist society to buy an iPad unless I was kind of uh running the show and iPad would not be produced in a mass way. So but leaving that aside, no private property at all. And then there is that maxim which Marx coined I think in uh eighteen seventy five. From each according to his ability to each according to his needs. And so that was the idea that um uh everything is equal and what you need you get and uh what w what you are able to produce you produce and it is just like an equal commune and the world doesn't really work like that and uh the world doesn't progress like that. Uh you know, equality of outcome really means equality of poverty. Uh you know, lessons of history, we already know that. And then there were other utopian aspects of it, like a classless society and all that, which never actually came about. But the point is the moment you try to get to that destination, And the moment you have a society where the state owns everything, Extreme violence is required, and we have seen the result of it in communist countries across the world, like the Soviet Union, like China, like Venezuela, and not modern China. Mao is China, but what Deng kind of did was a dictatorship with certain aspects of a market. So I would not like a a friend of mine told me the other day, but communism made China rich. And I'm like, No, markets made China rich to the extent that those markets were allowed. And it was a dictatorship, but that doesn't mean dictatorship dictatorships are good. It was an outlier and Generally dictatorships work out badly, completely different uh subject. But so that's where I would um uh sort of just like to sum up communism, that uh you know, it just ends so badly that with the lessons of history, for anyone to call themselves a communist today is an utter absurdity.",
-      "words": [
+        },
         {
           "word": "these",
           "startTime": 3907.21,
@@ -71217,7 +71145,15 @@
           "startTime": 3909.69,
           "endTime": 3910.01,
           "confidence": 0.9997
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3910.01,
+      "endTime": 4109.79,
+      "text": "extent. You know, I'm going to object on behalf of Ambitkar and just gently point out two things. One thing I'll say that in those times, uh it is unfair to expect him to get everything right the way we would want in hindsight. History hadn't really played itself out. The Soviet Union still appeared to be a success, et cetera, et cetera. You know, all our heroes. Your heroes, uh Nehru and Kane's heroes of mine as well, uh got so many things wrong. You can't get everything right, and it's unfair to judge a person's work in hindsight. So that's one thing I would say. The second thing I would say is that Ambedkar was focusing on a social evil that was incredibly visceral to him, which was the evil of caste. And uh occupied all of his uh a lot of his intellectual attention and his cognitive faculties. And um you know, focus there meant less focus somewhere else, which is bound to happen. And I would defend him by saying that uh the positive things that have come out of his thinking and I know you agree with me, uh just vastly outweigh the little omissions that might have happened. And then communism. So actually so much of what we spoke about Marxism and socialism actually feeds into communism. So I'll keep it brief and I'll just go into the main maxims of communism. The main maxims of communism is that there is no private property at all, apart from individual possessions. I would presumably be allowed to hold my iPad, though I think the state could take it away at any time. Except that there would be no iPad because I would not be rich enough in a communist society to buy an iPad unless I was kind of uh running the show and iPad would not be produced in a mass way. So but leaving that aside, no private property at all. And then there is that maxim which Marx coined I think in uh eighteen seventy five. From each according to his ability to each according to his needs. And so that was the idea that um uh everything is equal and what you need you get and uh what w what you are able to produce you produce and it is just like an equal commune and the world doesn't really work like that and uh the world doesn't progress like that. Uh you know, equality of outcome really means equality of poverty. Uh you know, lessons of history, we already know that. And then there were other utopian aspects of it, like a classless society and all that, which never actually came about. But the point is the moment you try to get to that destination, And the moment you have a society where the state owns everything, Extreme violence is required, and we have seen the result of it in communist countries across the world, like the Soviet Union, like China, like Venezuela, and not modern China. Mao is China, but what Deng kind of did was a dictatorship with certain aspects of a market. So I would not like a a friend of mine told me the other day, but communism made China rich. And I'm like, No, markets made China rich to the extent that those markets were allowed. And it was a dictatorship, but that doesn't mean dictatorship dictatorships are good. It was an outlier and Generally dictatorships work out badly, completely different uh subject. But so that's where I would um uh sort of just like to sum up communism, that uh you know, it just ends so badly that with the lessons of history, for anyone to call themselves a communist today is an utter absurdity.",
+      "words": [
         {
           "word": "extent.",
           "startTime": 3910.01,
@@ -106663,8 +106599,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5816.6,
-      "endTime": 5820.28,
-      "text": "Now you have to worry about all our gentle",
+      "endTime": 5829.72,
+      "text": "Now you have to worry about all our gentle readers who want to go deep into these things and understand them well. So show us a beautiful kit of readings that will carry this conversation",
       "words": [
         {
           "word": "Now",
@@ -106719,15 +106655,7 @@
           "startTime": 5819.72,
           "endTime": 5820.28,
           "confidence": 0.9957
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5820.28,
-      "endTime": 6129.1,
-      "text": "readers who want to go deep into these things and understand them well. So show us a beautiful kit of readings that will carry this conversation forward. So I'll name a bunch of books, many of which I have recommended on this show before, but they were fundamental in making me understand the world better, and I hope they'll do the same for you. And the first of them is called The Three Languages of Politics by Arnold Kling. Right, and Arnold Kling has also been on the scene and the unseen talking about this. And Kling's fundamental point in the book is that look, our discourse has been destroyed today because of a fundamental problem. That we are not talking to each other, we are talking past each other. How are we talking past each other? Because what he defined as a three ideological tribes in the US, uh today there's a fourth, he talks about that in his episode with me, that's Trumpism, Magaism, etc. But the three ideological tribes um that are uh sort of in the US are have different first principles. So progressives will come from a first principle of equality, libertarians will come from a first principle of freedom, conservatives will come from a first principle of tradition. And he will say that Therefore, if any two of these people are talking to each other, they are referring to their own first principles, not to the other side. It is if if if you care about equality and I care about freedom, it is pointless for me to come to you and say you are wrong because freedom, freedom, freedom. And vice versa. Instead we have to appreciate the other person's values, recognize that those values are important. We should not denigrate them or diss them. then speak on the basis of those values. So if I come to you and I'm a freedom guy and you're an equality guy, the good way to argue is to say that I recognize where you're coming from. These aims supremely important. You know, this is what we need. You want to reduce poverty, so do I. Right? Let's talk about what will get us there. Let's look at the lessons of history. And I will try to convince her in that way, and she will try to convince me in her way, and therefore we can actually get somewhere. But you have to respect the other person's positions and their first principles, and then have that dialogue. And then minds can change and Bayesian updating can happen. So it's a beautiful book for that reason and I recommend it. The next book I recommend is Communism by Richard Pipes. Richard Pipes is a great historian, he's written a lot on uh communism. And th this book that I'm recommending is a slim volume, which takes you into the horrors of what really happened there. And after this, no doubt you'll go into his uh other books and people like Robert Conquest have also uh covered the subject in great detail. But it is worth reading to see the reality of what went down and connect the journey of ideas to action to consequences. So that's a great book. Then another great book I will name is The Libertarian Mind, A Manifesto for Freedom by David Bose. Um he's the one I quoted earlier on how libertarians want to treat you as an adult, a great thinker who died recently. He was on my show many years ago. We did a remote episode, one hour, where we spoke about libertarianism. Uh a wonderful man, one of my modern heroes. Alas, by the time I visited DC last year, he had already passed away, otherwise I would have um Uh, you know, paid homage to him. Just a great thinker. Another great thinker who's still alive. And I'm scared of calling him on the scene in the unseen. I've never done this because to me he is such a venerable figure that I don't know what I could possibly say before him. It's a great Thomas Sowell who is now in his nineties. And there are many, many great books by him. I would just recommend just check out all his books. Oh my God, what a thinker. Right? And Two books in particular which you could um uh look at are um a conflict of visions. And this is about how ideologies take shape and come into being and so on and so forth. And another great book is Economic Facts and Fallacies, which, you know, by i b from the time you start that book to the time you end that book, uh at least in my case, it made me such a clearer thinker about economics. So a really great writer for that reason. I would recommend everything by Milton Friedman. Right. So uh I would recommend the Capitalism and Freedom. I would recommend Free to Choose, co-written with uh Rose His wife. And also the series Free to Choose. And there are two seasons of that which are easy to watch on YouTube and um we will link them here and you should check that out. I would recommend Frederick Hayek, most particularly the paper that we spoke about in our uh episode on four papers that change the world, uh the use of knowledge in society. Just like oh my god, such light bulbs moment in that it's a masterpiece. I'd recommend the collected works of Frederick Bascia, uh the man who really turned me on to freedom. The title of my podcast, The Seen and the Unseen, comes from one of his essays, an absolute uh genius. And that's pretty much my list for the moment and of course all previous episodes of Everything Is Everything that we've spoken about this episode twenty-five. uh on the role of the state. Episode twenty six continues down that line. Episode ten on freedom. We have episodes on Hayek, we have episodes on Bastia. Have you ever done an episode on Milton Friedman? Why on earth not? We should do one. And yeah, these are my recommendations. Do you have any, Aja?",
-      "words": [
+        },
         {
           "word": "readers",
           "startTime": 5820.28,
@@ -106883,7 +106811,15 @@
           "startTime": 5829.24,
           "endTime": 5829.72,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5829.72,
+      "endTime": 6129.1,
+      "text": "forward. So I'll name a bunch of books, many of which I have recommended on this show before, but they were fundamental in making me understand the world better, and I hope they'll do the same for you. And the first of them is called The Three Languages of Politics by Arnold Kling. Right, and Arnold Kling has also been on the scene and the unseen talking about this. And Kling's fundamental point in the book is that look, our discourse has been destroyed today because of a fundamental problem. That we are not talking to each other, we are talking past each other. How are we talking past each other? Because what he defined as a three ideological tribes in the US, uh today there's a fourth, he talks about that in his episode with me, that's Trumpism, Magaism, etc. But the three ideological tribes um that are uh sort of in the US are have different first principles. So progressives will come from a first principle of equality, libertarians will come from a first principle of freedom, conservatives will come from a first principle of tradition. And he will say that Therefore, if any two of these people are talking to each other, they are referring to their own first principles, not to the other side. It is if if if you care about equality and I care about freedom, it is pointless for me to come to you and say you are wrong because freedom, freedom, freedom. And vice versa. Instead we have to appreciate the other person's values, recognize that those values are important. We should not denigrate them or diss them. then speak on the basis of those values. So if I come to you and I'm a freedom guy and you're an equality guy, the good way to argue is to say that I recognize where you're coming from. These aims supremely important. You know, this is what we need. You want to reduce poverty, so do I. Right? Let's talk about what will get us there. Let's look at the lessons of history. And I will try to convince her in that way, and she will try to convince me in her way, and therefore we can actually get somewhere. But you have to respect the other person's positions and their first principles, and then have that dialogue. And then minds can change and Bayesian updating can happen. So it's a beautiful book for that reason and I recommend it. The next book I recommend is Communism by Richard Pipes. Richard Pipes is a great historian, he's written a lot on uh communism. And th this book that I'm recommending is a slim volume, which takes you into the horrors of what really happened there. And after this, no doubt you'll go into his uh other books and people like Robert Conquest have also uh covered the subject in great detail. But it is worth reading to see the reality of what went down and connect the journey of ideas to action to consequences. So that's a great book. Then another great book I will name is The Libertarian Mind, A Manifesto for Freedom by David Bose. Um he's the one I quoted earlier on how libertarians want to treat you as an adult, a great thinker who died recently. He was on my show many years ago. We did a remote episode, one hour, where we spoke about libertarianism. Uh a wonderful man, one of my modern heroes. Alas, by the time I visited DC last year, he had already passed away, otherwise I would have um Uh, you know, paid homage to him. Just a great thinker. Another great thinker who's still alive. And I'm scared of calling him on the scene in the unseen. I've never done this because to me he is such a venerable figure that I don't know what I could possibly say before him. It's a great Thomas Sowell who is now in his nineties. And there are many, many great books by him. I would just recommend just check out all his books. Oh my God, what a thinker. Right? And Two books in particular which you could um uh look at are um a conflict of visions. And this is about how ideologies take shape and come into being and so on and so forth. And another great book is Economic Facts and Fallacies, which, you know, by i b from the time you start that book to the time you end that book, uh at least in my case, it made me such a clearer thinker about economics. So a really great writer for that reason. I would recommend everything by Milton Friedman. Right. So uh I would recommend the Capitalism and Freedom. I would recommend Free to Choose, co-written with uh Rose His wife. And also the series Free to Choose. And there are two seasons of that which are easy to watch on YouTube and um we will link them here and you should check that out. I would recommend Frederick Hayek, most particularly the paper that we spoke about in our uh episode on four papers that change the world, uh the use of knowledge in society. Just like oh my god, such light bulbs moment in that it's a masterpiece. I'd recommend the collected works of Frederick Bascia, uh the man who really turned me on to freedom. The title of my podcast, The Seen and the Unseen, comes from one of his essays, an absolute uh genius. And that's pretty much my list for the moment and of course all previous episodes of Everything Is Everything that we've spoken about this episode twenty-five. uh on the role of the state. Episode twenty six continues down that line. Episode ten on freedom. We have episodes on Hayek, we have episodes on Bastia. Have you ever done an episode on Milton Friedman? Why on earth not? We should do one. And yeah, these are my recommendations. Do you have any, Aja?",
+      "words": [
         {
           "word": "forward.",
           "startTime": 5829.72,

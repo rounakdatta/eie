@@ -5,7 +5,7 @@
     "durationSeconds": 6103,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -14759,8 +14759,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 801.21,
-      "endTime": 836.9,
-      "text": "if you've grown plants, mushrooms are different. mushrooms are fungi and they require a peculiar combination of conditions under which to grow. And then just the way in which you have a container and the way they erupt. Just all kinds of things happen. It's alien. Like the fungi are an alien kingdom compared with the plants. And so that's why I'm like edge of the seat excitement when it comes to growing mushrooms. You sit near the pot and wait for it to erupt. This is all theoretical. I haven't done it yet. Right now I'm just like my stomach is bursting with anticipation of the glory of growing",
+      "endTime": 828.1,
+      "text": "if you've grown plants, mushrooms are different. mushrooms are fungi and they require a peculiar combination of conditions under which to grow. And then just the way in which you have a container and the way they erupt. Just all kinds of things happen. It's alien. Like the fungi are an alien kingdom compared with the plants. And so that's why I'm like edge of the seat excitement when it comes to growing mushrooms.",
       "words": [
         {
           "word": "if",
@@ -15205,7 +15205,15 @@
           "startTime": 827.22,
           "endTime": 828.1,
           "confidence": 0.9691
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 828.1,
+      "endTime": 830.1,
+      "text": "You sit near the pot and wait for it to erupt.",
+      "words": [
         {
           "word": "You",
           "startTime": 828.1,
@@ -15271,7 +15279,15 @@
           "startTime": 829.54,
           "endTime": 830.1,
           "confidence": 0.8872
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 830.1,
+      "endTime": 836.9,
+      "text": "This is all theoretical. I haven't done it yet. Right now I'm just like my stomach is bursting with anticipation of the glory of growing",
+      "words": [
         {
           "word": "This",
           "startTime": 830.1,
@@ -53323,8 +53339,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2831.67,
-      "endTime": 2859.11,
-      "text": "leading. I have much less faith in the elite, but if that's a margin on which you can make a d difference, uh that's What you uh Gara do and as far as everything is everything is concerned, Ajay Shah I don't follow the Marxian view here. I follow the great man theory that if you and I weren't didn't exist, the show would not be there. It is not in the tides of history. You and I are creatures of social forces. No, but uh the tides of history would not make two other people like us do the show. There are no people like us.",
+      "endTime": 2849.85,
+      "text": "leading. I have much less faith in the elite, but if that's a margin on which you can make a d difference, uh that's What you uh Gara do and as far as everything is everything is concerned, Ajay Shah I don't follow the Marxian view here. I follow the great man theory that if you and I weren't didn't exist, the show would not be there. It is not in the",
       "words": [
         {
           "word": "leading.",
@@ -53757,7 +53773,15 @@
           "startTime": 2849.77,
           "endTime": 2849.85,
           "confidence": 0.9877
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2849.85,
+      "endTime": 2853.05,
+      "text": "tides of history. You and I are creatures of social forces.",
+      "words": [
         {
           "word": "tides",
           "startTime": 2849.85,
@@ -53823,7 +53847,15 @@
           "startTime": 2852.41,
           "endTime": 2853.05,
           "confidence": 0.9416
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2853.05,
+      "endTime": 2859.11,
+      "text": "No, but uh the tides of history would not make two other people like us do the show. There are no people like us.",
+      "words": [
         {
           "word": "No,",
           "startTime": 2853.05,
@@ -93389,8 +93421,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4903.11,
-      "endTime": 4950.16,
-      "text": "world as I say, the world is a tragedy to those who feel a comedy to those who think. So let us just say that I have um that sounds very pompous, isn't it? But our first question that we took was about thoughtful people. So it is okay to think uh sometimes but actually the world is deeply funny also. See, h here's the deal. The fundamental truth about the world is mortality. We are going to die. Right? That's fundamentally a tragedy. Now once you take that fundamental tragedy into account, and we are both atheists kindly see atheism episode, awesome episode, I'm very proud of it. So once you take that fundamental fact into account that we are going to die, there is no tragedy greater than that. Every tragedy fails in comparison.",
+      "endTime": 4964.95,
+      "text": "world as I say, the world is a tragedy to those who feel a comedy to those who think. So let us just say that I have um that sounds very pompous, isn't it? But our first question that we took was about thoughtful people. So it is okay to think uh sometimes but actually the world is deeply funny also. See, h here's the deal. The fundamental truth about the world is mortality. We are going to die. Right? That's fundamentally a tragedy. Now once you take that fundamental tragedy into account, and we are both atheists kindly see atheism episode, awesome episode, I'm very proud of it. So once you take that fundamental fact into account that we are going to die, there is no tragedy greater than that. Every tragedy fails in comparison. Right. So then when you start stressing about this article, you feel like laughing when you think I'm taking that seriously, I'm gonna fucking die. So yeah. So uh",
       "words": [
         {
           "word": "world",
@@ -94207,15 +94239,7 @@
           "startTime": 4949.66,
           "endTime": 4950.16,
           "confidence": 0.9745
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4950.55,
-      "endTime": 4955.57,
-      "text": "Right. So then when you start stressing about this article,",
-      "words": [
+        },
         {
           "word": "Right.",
           "startTime": 4950.55,
@@ -94275,15 +94299,7 @@
           "startTime": 4954.07,
           "endTime": 4955.57,
           "confidence": 0.9035
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4957.99,
-      "endTime": 4964.95,
-      "text": "you feel like laughing when you think I'm taking that seriously, I'm gonna fucking die. So yeah. So uh",
-      "words": [
+        },
         {
           "word": "you",
           "startTime": 4957.99,
@@ -94403,8 +94419,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4964.95,
-      "endTime": 4988.3,
-      "text": "friend Amritha Agarwal always says that you're going to go into a precipitous health collapse and death with probability one. That end is going to be horrible. So what you're gonna do? And the answer is like Live here, live in this world, find the delight and the excitement and the happiness of being here. It's a glorious thing that we are",
+      "endTime": 5092.01,
+      "text": "friend Amritha Agarwal always says that you're going to go into a precipitous health collapse and death with probability one. That end is going to be horrible. So what you're gonna do? And the answer is like Live here, live in this world, find the delight and the excitement and the happiness of being here. It's a glorious thing that we are alive. Everything is everything and everything will die. Uh Tarun says to me, you've mentioned many times that I was shaped by my relationship with my father and the time and the place, the people. What should people do when they lack such things in their life? Uh just not being nurtured in these ways. How do you keep the fire burning? So the first few things I want to say is that uh we are all given a hand of cards. Okay? And so I don't whine about privilege. We are all given a hand of cards. Some are pretty, some are ugly, some are tall, some are short, some are rich, some are poor, some have books in their house. Okay, some have music in their house, some have nothing, and so on. So there is a random h hand of cards that we are given and a good constructive Energetic and positive approach to the world is I am here. I was dealt a hand of cards, how do I make the best of it? So I feel there's no point looking back and whining about structural injustice. It is far more interesting to ask the question of doing. Like the only interesting question is what we're gonna do. And actions matter. And how are we going to chart our life? So that's just my general idea that don't make too much of this privilege. I mean, you know there are all kinds of ups and downs and various people have various pluses and minuses in the random luck that they are given. And then the second is so if you're born without wings, do everything you can to not prevent them from growing. So you know, get on the journey of culture and knowledge and people and You're watching everything is everything. You've come to the right place and build a good life. That is available to",
       "words": [
         {
           "word": "friend",
@@ -94777,15 +94793,7 @@
           "startTime": 4988.14,
           "endTime": 4988.3,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4988.3,
-      "endTime": 4991.74,
-      "text": "alive. Everything is everything and everything will die.",
-      "words": [
+        },
         {
           "word": "alive.",
           "startTime": 4988.3,
@@ -94833,15 +94841,7 @@
           "startTime": 4990.7,
           "endTime": 4991.74,
           "confidence": 0.9095
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4991.74,
-      "endTime": 5092.01,
-      "text": "Uh Tarun says to me, you've mentioned many times that I was shaped by my relationship with my father and the time and the place, the people. What should people do when they lack such things in their life? Uh just not being nurtured in these ways. How do you keep the fire burning? So the first few things I want to say is that uh we are all given a hand of cards. Okay? And so I don't whine about privilege. We are all given a hand of cards. Some are pretty, some are ugly, some are tall, some are short, some are rich, some are poor, some have books in their house. Okay, some have music in their house, some have nothing, and so on. So there is a random h hand of cards that we are given and a good constructive Energetic and positive approach to the world is I am here. I was dealt a hand of cards, how do I make the best of it? So I feel there's no point looking back and whining about structural injustice. It is far more interesting to ask the question of doing. Like the only interesting question is what we're gonna do. And actions matter. And how are we going to chart our life? So that's just my general idea that don't make too much of this privilege. I mean, you know there are all kinds of ups and downs and various people have various pluses and minuses in the random luck that they are given. And then the second is so if you're born without wings, do everything you can to not prevent them from growing. So you know, get on the journey of culture and knowledge and people and You're watching everything is everything. You've come to the right place and build a good life. That is available to",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 4991.74,
@@ -101023,8 +101023,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5323.43,
-      "endTime": 5326.21,
-      "text": "Anjana says to you, Amit.",
+      "endTime": 5332.79,
+      "text": "Anjana says to you, Amit. Okay. I have to appear composed on the show.",
       "words": [
         {
           "word": "Anjana",
@@ -101055,15 +101055,7 @@
           "startTime": 5324.71,
           "endTime": 5326.21,
           "confidence": 0.856
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5330.31,
-      "endTime": 5337.99,
-      "text": "Okay. I have to appear composed on the show. What's Anjana going to think you're laughing at a question? No, it's laughing at me. The joke's opposition is perfect.",
-      "words": [
+        },
         {
           "word": "Okay.",
           "startTime": 5330.31,
@@ -101117,7 +101109,15 @@
           "startTime": 5332.31,
           "endTime": 5332.79,
           "confidence": 0.8804
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5332.79,
+      "endTime": 5337.99,
+      "text": "What's Anjana going to think you're laughing at a question? No, it's laughing at me. The joke's opposition is perfect.",
+      "words": [
         {
           "word": "What's",
           "startTime": 5332.79,
@@ -109581,8 +109581,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 5785.91,
-      "endTime": 5799.38,
-      "text": "I feel I'm immersed in uh a story of building knowledge and building community. I don't think of outcomes. Happy in the process. But just every day I'm thrilled to wake up and get an opportunity to be this",
+      "endTime": 5832.34,
+      "text": "I feel I'm immersed in uh a story of building knowledge and building community. I don't think of outcomes. Happy in the process. But just every day I'm thrilled to wake up and get an opportunity to be this life. And I just do it, it gives me satisfaction. Okay. And uh Amit, uh an obscure uh viewer called Nam Sita says, for people in creative fields, we try to nurture our souls, but it's also our bread and butter. What is the path to finding an income? What should we be thinking about marketing? How do we put ourselves out there and yet find the balance so that we're doing things that mean something to us and we're also pleasing the world",
       "words": [
         {
           "word": "I",
@@ -109817,15 +109817,7 @@
           "startTime": 5799.06,
           "endTime": 5799.38,
           "confidence": 0.9959
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5799.38,
-      "endTime": 5804.34,
-      "text": "life. And I just do it, it gives me satisfaction. Okay.",
-      "words": [
+        },
         {
           "word": "life.",
           "startTime": 5799.38,
@@ -109891,15 +109883,7 @@
           "startTime": 5803.62,
           "endTime": 5804.34,
           "confidence": 0.7102
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5804.34,
-      "endTime": 5832.34,
-      "text": "And uh Amit, uh an obscure uh viewer called Nam Sita says, for people in creative fields, we try to nurture our souls, but it's also our bread and butter. What is the path to finding an income? What should we be thinking about marketing? How do we put ourselves out there and yet find the balance so that we're doing things that mean something to us and we're also pleasing the world",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 5804.34,

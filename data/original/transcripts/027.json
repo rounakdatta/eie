@@ -5,7 +5,7 @@
     "durationSeconds": 3272,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -14490,8 +14490,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1028.1,
-      "endTime": 1053.17,
-      "text": "own. Just pause to think of the madness of what was said, that some folks in China sequenced the SARS-CoV-2 and uploaded a file. Then a piece of software read that file and printed out the design of the MRNA vaccine. That's how magical things have become. All the other delay to getting to the vaccine out was just the difficulties of the US FDA testing",
+      "endTime": 1055.89,
+      "text": "own. Just pause to think of the madness of what was said, that some folks in China sequenced the SARS-CoV-2 and uploaded a file. Then a piece of software read that file and printed out the design of the MRNA vaccine. That's how magical things have become. All the other delay to getting to the vaccine out was just the difficulties of the US FDA testing and then the difficulties of building factories to scale it",
       "words": [
         {
           "word": "own.",
@@ -14888,15 +14888,7 @@
           "startTime": 1052.61,
           "endTime": 1053.17,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1053.17,
-      "endTime": 1238.47,
-      "text": "and then the difficulties of building factories to scale it up. So the vaccine was ready practically the same day. Mind blowing so you know one of the delightful reasons that I got sort of excited about vaccines was you told me one day you told me that Amit you should take the influencer vaccine. And I said, This is great. There's a vaccine that protects me from influences. I'm signing up, give it to me. You had me at hello. And then I realized that as usual, as usual, Ajsha, it's your mis mispronunciations and your mumbling. And actually you were saying influenza vaccine. And you're a big fan of vaccines in general, and you do want me to take many vaccines, and I will, but we'll talk about that at the end of the episode. What I want to first sort of ask you about is that when it comes to vaccines, we are both fans of vaccines. We are fans of science. We are also fans of freedom. And now it gets a little messy and complicated because in India often there are many misconceptions, some of which were displayed during Covid and we discussed them in our great scene and scene and the unseen episode. Uh if I may uh use terms like great for my own episode. That's feels like self praise, but my guest was great. And uh so I I I want to quickly bring them up because I feel that in the context of what we spoke about in the last two episodes, you know, the state and public policy and all of that, using that framework, it would be useful to kind of Talk about this. And I'll I'll I'll quickly go through some of those. Like number one, people believe that the government should fund vaccine development because hey, if it's a good thing, if it's gonna help people, if it's gonna have positive externalities, government should fund it. Number two, the government only should run the production facilities. It's too important to be left to private parties. Uh they'll adulterate, they'll do this, they'll do that. And then the government should ban imports. Because why why trust anyone else build our own local capacity, nationalistic vaccine, etc. Self reliant. So self reliance vaccine and so on and so forth. And then the government should push vaccination by the people by running vaccination programs. So you know there's nothing as attractive to a bureaucrat as the thought of a government program. You t you know, before they go to sleep you whisper in the ear, government program. Committee, budget. And they'll go to sleep with a beat fixed smile on their face and their wife will think they're having an affair. Why are they smiling like this? But anyway, that'd be uh next sort of claim that people make. The government should completely control the vaccination event by each person, determining who gets vaccinated where and when because of course central planning. You've got to do it. You can't you can't let people decide for themselves. And finally, if a person does not want a vaccine for whatever reason, the government should coerce the person and force them. to get vaccinated. Because hey, they're good for everyone. If you don't know what's good for you, my bab knows what's good for you. So these are some of the common misconceptions. I think they're all rubbish. They make me really angry. My blood is already boiling. It's a good time to inject me with pus. But I want to uh ask you, you know, to kind of h dispassionately and coldly, how do we address all of these in view of the frameworks that we've spoken about already? Yeah. Uh gentle reader",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1053.17,
@@ -14956,7 +14948,15 @@
           "startTime": 1055.81,
           "endTime": 1055.89,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1055.89,
+      "endTime": 1238.47,
+      "text": "up. So the vaccine was ready practically the same day. Mind blowing so you know one of the delightful reasons that I got sort of excited about vaccines was you told me one day you told me that Amit you should take the influencer vaccine. And I said, This is great. There's a vaccine that protects me from influences. I'm signing up, give it to me. You had me at hello. And then I realized that as usual, as usual, Ajsha, it's your mis mispronunciations and your mumbling. And actually you were saying influenza vaccine. And you're a big fan of vaccines in general, and you do want me to take many vaccines, and I will, but we'll talk about that at the end of the episode. What I want to first sort of ask you about is that when it comes to vaccines, we are both fans of vaccines. We are fans of science. We are also fans of freedom. And now it gets a little messy and complicated because in India often there are many misconceptions, some of which were displayed during Covid and we discussed them in our great scene and scene and the unseen episode. Uh if I may uh use terms like great for my own episode. That's feels like self praise, but my guest was great. And uh so I I I want to quickly bring them up because I feel that in the context of what we spoke about in the last two episodes, you know, the state and public policy and all of that, using that framework, it would be useful to kind of Talk about this. And I'll I'll I'll quickly go through some of those. Like number one, people believe that the government should fund vaccine development because hey, if it's a good thing, if it's gonna help people, if it's gonna have positive externalities, government should fund it. Number two, the government only should run the production facilities. It's too important to be left to private parties. Uh they'll adulterate, they'll do this, they'll do that. And then the government should ban imports. Because why why trust anyone else build our own local capacity, nationalistic vaccine, etc. Self reliant. So self reliance vaccine and so on and so forth. And then the government should push vaccination by the people by running vaccination programs. So you know there's nothing as attractive to a bureaucrat as the thought of a government program. You t you know, before they go to sleep you whisper in the ear, government program. Committee, budget. And they'll go to sleep with a beat fixed smile on their face and their wife will think they're having an affair. Why are they smiling like this? But anyway, that'd be uh next sort of claim that people make. The government should completely control the vaccination event by each person, determining who gets vaccinated where and when because of course central planning. You've got to do it. You can't you can't let people decide for themselves. And finally, if a person does not want a vaccine for whatever reason, the government should coerce the person and force them. to get vaccinated. Because hey, they're good for everyone. If you don't know what's good for you, my bab knows what's good for you. So these are some of the common misconceptions. I think they're all rubbish. They make me really angry. My blood is already boiling. It's a good time to inject me with pus. But I want to uh ask you, you know, to kind of h dispassionately and coldly, how do we address all of these in view of the frameworks that we've spoken about already? Yeah. Uh gentle reader",
+      "words": [
         {
           "word": "up.",
           "startTime": 1055.89,
@@ -33358,8 +33358,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2079.97,
-      "endTime": 2194.93,
-      "text": "thing. And I also want to point out one more thing, uh, which we know we've spoken about in various uh different places, is that a lot of this coercion comes cloaked under good intentions. Now, let us be specific about some of the different kinds of coercion in the context of vaccines that we should oppose even if they have good intentions behind them because they would have bad outcomes. One of them is price controls. Where a government will say that oh poor people can't afford the vaccine, therefore you impose price controls. But we've spoken about price controls and what they do to incentives before. They are a complete disaster. They will hurt poor people more than help them. They will disin incentivise producers and innovators from producing and innovating. And price controls always lead to scarcities. All it means is you won't get the damn thing. The second kind of coercion which we spoke about in our scene on scene episode was where they say that hey, this is so important that only the government will control the supply. We won't let private players in. Private players are going to come for profit and they're going to exploit you. But then you know, it just means that you're vaccinating people slower than they would. What we recommended in our episode is the government can do whatever it's doing well and good, more power to them. This is a place for the state to kind of step in and make sure w uh enable vaccination to happen as fast as possible. But let private players also do what they are doing. If people like you and me go out there and pay a bomb for a random MRNA vaccine, in a sense, we are clearing the space for the scarce supply of the other vaccines to actually reach uh people who can't afford them. And they there can even be mechanisms by which people like us are subsidizing others who can't afford them. So to not let the beauty of a market with the with price system and the information and the incentives that it carries play out is a huge problem. And that kind of coercion comes with good ins uh intentions. But leads to really bad outcomes. I'm not even sure about the intentions, but we can debate that separately. Can I digress and tell a smallpox story? You tell a story, I'll tell a story. Let's do storytelling.",
+      "endTime": 2185.73,
+      "text": "thing. And I also want to point out one more thing, uh, which we know we've spoken about in various uh different places, is that a lot of this coercion comes cloaked under good intentions. Now, let us be specific about some of the different kinds of coercion in the context of vaccines that we should oppose even if they have good intentions behind them because they would have bad outcomes. One of them is price controls. Where a government will say that oh poor people can't afford the vaccine, therefore you impose price controls. But we've spoken about price controls and what they do to incentives before. They are a complete disaster. They will hurt poor people more than help them. They will disin incentivise producers and innovators from producing and innovating. And price controls always lead to scarcities. All it means is you won't get the damn thing. The second kind of coercion which we spoke about in our scene on scene episode was where they say that hey, this is so important that only the government will control the supply. We won't let private players in. Private players are going to come for profit and they're going to exploit you. But then you know, it just means that you're vaccinating people slower than they would. What we recommended in our episode is the government can do whatever it's doing well and good, more power to them. This is a place for the state to kind of step in and make sure w uh enable vaccination to happen as fast as possible. But let private players also do what they are doing. If people like you and me go out there and pay a bomb for a random MRNA vaccine, in a sense, we are clearing the space for the scarce supply of the other vaccines to actually reach uh people who can't afford them. And they there can even be mechanisms by which people like us are subsidizing others who can't afford them. So to not let the beauty of a market with the with price system and the information and the incentives that it carries play out is a huge problem. And that kind of coercion comes with good ins uh intentions. But leads to really bad outcomes.",
       "words": [
         {
           "word": "thing.",
@@ -35652,7 +35652,15 @@
           "startTime": 2184.85,
           "endTime": 2185.73,
           "confidence": 0.955
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2185.73,
+      "endTime": 2310.89,
+      "text": "I'm not even sure about the intentions, but we can debate that separately. Can I digress and tell a smallpox story? You tell a story, I'll tell a story. Let's do storytelling. One of the greatest uh Indian stories is the journey of the eradication of smallpox. Smallpox was eradicated through most of the world and uh India, uh Nepal, Bangladesh, Ethiopia, Somalia were the last holdouts. And spare a thought for all the hero who fought for smallpox eradication everywhere else. For them, this was a constant problem that there is a reservoir of smallpox in these countries because one day it can just bounce back. And the dream is we have stopped inoculating the next generation because we've stopped vaccinating the next generation because we're done. There's no smallpox left on this planet. So India was a very important place where this stuff had to be done and uh one of the many colorful characters in this is a guy named Larry Brilliant. Okay, Larry Brilliant uh was uh hippie living with a uh priest with a uh Hindu uh uh spiritual guide up in the Himalayas. Okay, and uh I forget the name of the person. Neem Karoli Baba. Nim Karoli Baba. Okay. And uh one day Mr. Baba had this brainwave that he saw some goddess in his dream, and he caught Larry Brilliant, one of his uh uh hippie uh students, and he said, Now get out of here. You have to go down into the plains in India, and you have to conquer smallpox. And Larry Brilliant was like, Huh? What is going on? Who are you? Why are you telling me this? What sense does it make? What can measly little eye do? Uh about uh smallpox in India. But the Papa said, get out. Now I want you out of here. Go fight smallpox. The goddess has told me in a dream that thou shalt fight smallpox.",
+      "words": [
         {
           "word": "I'm",
           "startTime": 2185.73,
@@ -35844,15 +35852,7 @@
           "startTime": 2194.21,
           "endTime": 2194.93,
           "confidence": 0.9727
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2194.93,
-      "endTime": 2310.89,
-      "text": "One of the greatest uh Indian stories is the journey of the eradication of smallpox. Smallpox was eradicated through most of the world and uh India, uh Nepal, Bangladesh, Ethiopia, Somalia were the last holdouts. And spare a thought for all the hero who fought for smallpox eradication everywhere else. For them, this was a constant problem that there is a reservoir of smallpox in these countries because one day it can just bounce back. And the dream is we have stopped inoculating the next generation because we've stopped vaccinating the next generation because we're done. There's no smallpox left on this planet. So India was a very important place where this stuff had to be done and uh one of the many colorful characters in this is a guy named Larry Brilliant. Okay, Larry Brilliant uh was uh hippie living with a uh priest with a uh Hindu uh uh spiritual guide up in the Himalayas. Okay, and uh I forget the name of the person. Neem Karoli Baba. Nim Karoli Baba. Okay. And uh one day Mr. Baba had this brainwave that he saw some goddess in his dream, and he caught Larry Brilliant, one of his uh uh hippie uh students, and he said, Now get out of here. You have to go down into the plains in India, and you have to conquer smallpox. And Larry Brilliant was like, Huh? What is going on? Who are you? Why are you telling me this? What sense does it make? What can measly little eye do? Uh about uh smallpox in India. But the Papa said, get out. Now I want you out of here. Go fight smallpox. The goddess has told me in a dream that thou shalt fight smallpox.",
-      "words": [
+        },
         {
           "word": "One",
           "startTime": 2194.93,
@@ -37792,8 +37792,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2317.85,
-      "endTime": 2370.84,
-      "text": "Enough is enough. So uh this uh the uh our hero uh got out of his uh ashram somewhere near Rishikesh, got into the overnight bus. And uh at 4 a.m. found himself in at the WHO compound. This is in the early 70s, at the WHO compound in Delhi. And there was nobody there. It was 4 a.m. There were some dogs barking. He slept at the gate of the WHO because he had nowhere else to go and he was hippie, he didn't have anything. In the morning, people came, they looked at him, Who is this guy? What is going on? He actually had a degree in medicine. So they signed him on as some junior flunky. into the smallpox project. Okay. So there were he was sufficiently impressive, and well he did know something about medicine. He was sufficiently impressive that after he had bath and he cleaned up that he got some job as a flunky in the smallpox",
+      "endTime": 2396.02,
+      "text": "Enough is enough. So uh this uh the uh our hero uh got out of his uh ashram somewhere near Rishikesh, got into the overnight bus. And uh at 4 a.m. found himself in at the WHO compound. This is in the early 70s, at the WHO compound in Delhi. And there was nobody there. It was 4 a.m. There were some dogs barking. He slept at the gate of the WHO because he had nowhere else to go and he was hippie, he didn't have anything. In the morning, people came, they looked at him, Who is this guy? What is going on? He actually had a degree in medicine. So they signed him on as some junior flunky. into the smallpox project. Okay. So there were he was sufficiently impressive, and well he did know something about medicine. He was sufficiently impressive that after he had bath and he cleaned up that he got some job as a flunky in the smallpox program. He was brilliant. He was very brilliant. He was not just brilliant, he was very brilliant. Okay, and then one thing led to another and it ended up that he was one of the top people who led the India smallpox eradication program. So There is a goddess in a dream that can actually have some vast consequences for the world. So that's my smallpox story. What is yours? So my smallpox story is not",
       "words": [
         {
           "word": "Enough",
@@ -38778,15 +38778,7 @@
           "startTime": 2370.12,
           "endTime": 2370.84,
           "confidence": 0.9873
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2370.84,
-      "endTime": 2375.88,
-      "text": "program. He was brilliant. He was very brilliant. He was not just brilliant, he was very brilliant.",
-      "words": [
+        },
         {
           "word": "program.",
           "startTime": 2370.84,
@@ -38888,15 +38880,7 @@
           "startTime": 2375.0,
           "endTime": 2375.88,
           "confidence": 0.8464
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2375.88,
-      "endTime": 2396.02,
-      "text": "Okay, and then one thing led to another and it ended up that he was one of the top people who led the India smallpox eradication program. So There is a goddess in a dream that can actually have some vast consequences for the world. So that's my smallpox story. What is yours? So my smallpox story is not",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 2375.88,

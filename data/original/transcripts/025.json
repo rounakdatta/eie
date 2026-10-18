@@ -5,7 +5,7 @@
     "durationSeconds": 3045,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -373,8 +373,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 71.12,
-      "endTime": 99.97,
-      "text": "I was in a ridiculously well maintained office where there was a glass wall which was completely clean. It was just wiped so clean. that you couldn't see anything uh that made you feel that there was a wall there. And I was busy talking and saying something and I abruptly took a right turn trying to go into the room to get my computer that was sitting there. And in fact I crashed into the glass wall and I got hurt a",
+      "endTime": 103.9,
+      "text": "I was in a ridiculously well maintained office where there was a glass wall which was completely clean. It was just wiped so clean. that you couldn't see anything uh that made you feel that there was a wall there. And I was busy talking and saying something and I abruptly took a right turn trying to go into the room to get my computer that was sitting there. And in fact I crashed into the glass wall and I got hurt a little. So it was Startling experiencing",
       "words": [
         {
           "word": "I",
@@ -873,15 +873,7 @@
           "startTime": 99.81,
           "endTime": 99.97,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 99.97,
-      "endTime": 128.3,
-      "text": "little. So it was Startling experiencing that. And not only does this tell me that in terms of clarity, there is something that is out there that can match the clarity of your prose. So, you know, compliment to both you and the glass wall. But I have to say that, you know, what this is a metaphor for me is the state, because the state is also like that invisible fist when we least expect it, we don't see it, it comes in our way, and kind of fits, you know, segue in nicely with the theme of our episode today.",
-      "words": [
+        },
         {
           "word": "little.",
           "startTime": 99.97,
@@ -917,7 +909,15 @@
           "startTime": 103.26,
           "endTime": 103.9,
           "confidence": 0.9966
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 103.9,
+      "endTime": 128.3,
+      "text": "that. And not only does this tell me that in terms of clarity, there is something that is out there that can match the clarity of your prose. So, you know, compliment to both you and the glass wall. But I have to say that, you know, what this is a metaphor for me is the state, because the state is also like that invisible fist when we least expect it, we don't see it, it comes in our way, and kind of fits, you know, segue in nicely with the theme of our episode today.",
+      "words": [
         {
           "word": "that.",
           "startTime": 103.9,

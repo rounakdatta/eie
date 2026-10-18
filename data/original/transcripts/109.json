@@ -5,7 +5,7 @@
     "durationSeconds": 4658,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -1053,8 +1053,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 63.63,
-      "endTime": 130.84,
-      "text": "I'm not remotely as exciting. Secret project, did you know the FSB, they scrape YouTube, they will hear the words. Secret project. And now they will start tapping your phone. What is the FSB and what are they doing on YouTube, the FSB is the new name of the KGB. Nah, I don't have anything hot to report. Um I in recent weeks I spent some days in beer. And uh the highlights of that was uh time spent with the amazing Sanat Sachdev. trail runner, extraordinaire and just all round cool person, and he made me think about running in the mountains. And uh I did a paragliding ride tandem for two hours. And uh at the top at the highest point it became uh a rocky ride and the guy behind me, the pilot, gently instructed me on how to stick my head out and puke on the forest below.",
+      "endTime": 74.6,
+      "text": "I'm not remotely as exciting. Secret project, did you know the FSB, they scrape YouTube, they will hear the words. Secret project. And now they will start tapping your phone. What",
       "words": [
         {
           "word": "I'm",
@@ -1241,7 +1241,15 @@
           "startTime": 74.36,
           "endTime": 74.6,
           "confidence": 0.8722
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 74.6,
+      "endTime": 77.4,
+      "text": "is the FSB and what are they doing on YouTube,",
+      "words": [
         {
           "word": "is",
           "startTime": 74.6,
@@ -1301,7 +1309,15 @@
           "startTime": 76.36,
           "endTime": 77.4,
           "confidence": 0.8824
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 77.4,
+      "endTime": 130.84,
+      "text": "the FSB is the new name of the KGB. Nah, I don't have anything hot to report. Um I in recent weeks I spent some days in beer. And uh the highlights of that was uh time spent with the amazing Sanat Sachdev. trail runner, extraordinaire and just all round cool person, and he made me think about running in the mountains. And uh I did a paragliding ride tandem for two hours. And uh at the top at the highest point it became uh a rocky ride and the guy behind me, the pilot, gently instructed me on how to stick my head out and puke on the forest below.",
+      "words": [
         {
           "word": "the",
           "startTime": 77.4,
@@ -8767,8 +8783,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 476.65,
-      "endTime": 484.2,
-      "text": "You said it is our intuition to think in certain ways, but then we learn something and the world actually works",
+      "endTime": 518.83,
+      "text": "You said it is our intuition to think in certain ways, but then we learn something and the world actually works in a different way. So I just speaking for me personally. You pluck me out of bed at 3 a.m. and what my mind is doing is basically the working of the price system and general equilibrium and the way that macroeconomy works, I do that for free. Then I have to consciously think of market imperfections and the other things that happen have to be layered on consciously. But like for me, my intuition is like the basics of price system general equilibrium is just my basic intuition.",
       "words": [
         {
           "word": "You",
@@ -8895,15 +8911,7 @@
           "startTime": 483.56,
           "endTime": 484.2,
           "confidence": 0.9923
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 484.2,
-      "endTime": 489.08,
-      "text": "in a different way. So I just speaking for me personally. You",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 484.2,
@@ -8975,15 +8983,7 @@
           "startTime": 488.52,
           "endTime": 489.08,
           "confidence": 0.9926
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 489.08,
-      "endTime": 516.11,
-      "text": "pluck me out of bed at 3 a.m. and what my mind is doing is basically the working of the price system and general equilibrium and the way that macroeconomy works, I do that for free. Then I have to consciously think of market imperfections and the other things that happen have to be layered on consciously. But like for me, my intuition is like the basics of price system general equilibrium",
-      "words": [
+        },
         {
           "word": "pluck",
           "startTime": 489.08,
@@ -9415,15 +9415,7 @@
           "startTime": 514.75,
           "endTime": 516.11,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 516.11,
-      "endTime": 627.79,
-      "text": "is just my basic intuition. I think what happens is that you can train your intuitions. So your intuitions, your the the the intuitions that you begin with will be the ones that you're hardwired with, um which are the flawed intuition of a zero sum world where top down uh uh thinking works. But then you have what I call these light bulb moments that you flick a uh uh switch and the light comes on. And you can never unsee what you have just seen. Like that bulb is on forever, and that becomes your new intuition. Like for me, for example, understanding the way prices work. We had an episode on four papers that change the world. Uh you know, and reading Hayek's essay, The Use of Knowledge in Society, and Understanding How Prices Work, and Understanding Spontaneous Order. Right, there's a great book by Matt Ridley, and I did an episode with uh Matt on this, uh, which is about I think it's called the Evolution of Everything. It sort of made me realize how spontaneous order runs through natural selection and you know, um how we are what we are, and runs through all of society, whether we whether you talk about the evolution of languages or prices and so on and so forth, and it is so miraculous. And once you see that, then you can't unsee that. Then if somebody says, Oh, let us fix a price and you know, just by legislating that the X should be the price of Y, we make that so. Right, and you realise the complete follow of that and the hubris involved in that. But those light bulb moments have to happen. And then the question is, how do those light bulb moments happen? It is through books like uh these. Like in our small way, you and I try exactly that, that we are constantly throwing light bulbs at the screen, not literally throwing light bulbs at the screen, which would be throwing light bulbs at the camera. You know, we throw a light bulb at the camera, a light bulb comes out of the uh the screen of the viewer. No, but So that's I I I think what we try to do in a small way. And it's great that books like this exist, which are a collection of light bulbs. I",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 516.11,
@@ -9453,7 +9445,15 @@
           "startTime": 517.95,
           "endTime": 518.83,
           "confidence": 0.9845
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 518.83,
+      "endTime": 627.79,
+      "text": "I think what happens is that you can train your intuitions. So your intuitions, your the the the intuitions that you begin with will be the ones that you're hardwired with, um which are the flawed intuition of a zero sum world where top down uh uh thinking works. But then you have what I call these light bulb moments that you flick a uh uh switch and the light comes on. And you can never unsee what you have just seen. Like that bulb is on forever, and that becomes your new intuition. Like for me, for example, understanding the way prices work. We had an episode on four papers that change the world. Uh you know, and reading Hayek's essay, The Use of Knowledge in Society, and Understanding How Prices Work, and Understanding Spontaneous Order. Right, there's a great book by Matt Ridley, and I did an episode with uh Matt on this, uh, which is about I think it's called the Evolution of Everything. It sort of made me realize how spontaneous order runs through natural selection and you know, um how we are what we are, and runs through all of society, whether we whether you talk about the evolution of languages or prices and so on and so forth, and it is so miraculous. And once you see that, then you can't unsee that. Then if somebody says, Oh, let us fix a price and you know, just by legislating that the X should be the price of Y, we make that so. Right, and you realise the complete follow of that and the hubris involved in that. But those light bulb moments have to happen. And then the question is, how do those light bulb moments happen? It is through books like uh these. Like in our small way, you and I try exactly that, that we are constantly throwing light bulbs at the screen, not literally throwing light bulbs at the screen, which would be throwing light bulbs at the camera. You know, we throw a light bulb at the camera, a light bulb comes out of the uh the screen of the viewer. No, but So that's I I I think what we try to do in a small way. And it's great that books like this exist, which are a collection of light bulbs. I",
+      "words": [
         {
           "word": "I",
           "startTime": 518.83,
@@ -11823,8 +11823,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 627.79,
-      "endTime": 633.39,
-      "text": "I just had a vision, everything is everything merch. There will be a cannon which is placed near the",
+      "endTime": 646.13,
+      "text": "I just had a vision, everything is everything merch. There will be a cannon which is placed near the TV and it shoots out used uh defunct tungsten bulbs and uh it's programmed so that from inside the show omit gets to control when the light bulb gets shot at the user.",
       "words": [
         {
           "word": "I",
@@ -11939,15 +11939,7 @@
           "startTime": 632.99,
           "endTime": 633.39,
           "confidence": 0.9313
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 633.39,
-      "endTime": 640.03,
-      "text": "TV and it shoots out used uh defunct tungsten bulbs and uh",
-      "words": [
+        },
         {
           "word": "TV",
           "startTime": 633.39,
@@ -12019,15 +12011,7 @@
           "startTime": 639.87,
           "endTime": 640.03,
           "confidence": 0.705
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 640.03,
-      "endTime": 646.13,
-      "text": "it's programmed so that from inside the show omit gets to control when the light bulb gets shot at the user.",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 640.03,
@@ -20101,8 +20085,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1060.68,
-      "endTime": 1083.55,
-      "text": "In my mind the biggest Example of that nature is the tension, the conversation around growth and distribution. Uh we did an EIE episode on development. And I just think that it is so damaging to lose sight of growth. Like if you can get that great fire going of sustained economic growth, it transforms the lives of",
+      "endTime": 1110.88,
+      "text": "In my mind the biggest Example of that nature is the tension, the conversation around growth and distribution. Uh we did an EIE episode on development. And I just think that it is so damaging to lose sight of growth. Like if you can get that great fire going of sustained economic growth, it transforms the lives of everybody. And it is the only way to make people better off. But so many people are willing to sacrifice growth and instead focus themselves on all the political harm that goes with redistribution. This is a game of class warfare. You pit people against people. It's a divide and conquer because you want to create that conflict in society. Whereas it would just be so much better to get",
       "words": [
         {
           "word": "In",
@@ -20451,15 +20435,7 @@
           "startTime": 1083.31,
           "endTime": 1083.55,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1083.55,
-      "endTime": 1087.71,
-      "text": "everybody. And it is the only way to make people better off.",
-      "words": [
+        },
         {
           "word": "everybody.",
           "startTime": 1083.55,
@@ -20531,15 +20507,7 @@
           "startTime": 1087.15,
           "endTime": 1087.71,
           "confidence": 0.9455
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1087.71,
-      "endTime": 1110.88,
-      "text": "But so many people are willing to sacrifice growth and instead focus themselves on all the political harm that goes with redistribution. This is a game of class warfare. You pit people against people. It's a divide and conquer because you want to create that conflict in society. Whereas it would just be so much better to get",
-      "words": [
+        },
         {
           "word": "But",
           "startTime": 1087.71,
@@ -47177,8 +47145,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2493.31,
-      "endTime": 2539.77,
-      "text": "I want to say a bunch of things on this subject. Um like you, I end up having to argue about this endlessly. First, I think it's a simple act of communication to say The aggregate consumption of society is the aggregate production of society. So when technology increases the aggregate production of society, the consumption goes up, per capita consumption goes up. It's just as simple as that. That look, we are going to improve our machines. Instead of one man making one pin, one man is going to make forty eight hundred pins. The aggregate production goes up. You divide by the population the per capita consumption goes up. So like we should all be aligned that productivity gains. economic growth. Okay. That there is no better cause",
+      "endTime": 2901.76,
+      "text": "I want to say a bunch of things on this subject. Um like you, I end up having to argue about this endlessly. First, I think it's a simple act of communication to say The aggregate consumption of society is the aggregate production of society. So when technology increases the aggregate production of society, the consumption goes up, per capita consumption goes up. It's just as simple as that. That look, we are going to improve our machines. Instead of one man making one pin, one man is going to make forty eight hundred pins. The aggregate production goes up. You divide by the population the per capita consumption goes up. So like we should all be aligned that productivity gains. economic growth. Okay. That there is no better cause than productivity gains. Second, I think that people get this a bit wrong in that you tend to look at a new technology and you're thinking that this roll out will be instantaneous and then instantaneously there won't be time for adoption and job loss and job retraining and all that. And I just want to say like hold it, these things take time. Okay. The full use of the steam engine in society took a long time. The full use of electricity in society took a long time. Okay? Look at CPUs, look at spreadsheets. Okay. Spreadsheets were there by the mid-70s. And hell, today we can see there are large parts of the Indian business world where even basic spreadsheet level capabilities have not quite spread. So these things take time. Oftentimes when we see an innovation, we think. that, oh my God, this is all gonna happen in a day. No, it takes time for these innovations to spread in society. It gives time for adjustment. So people will learn other things, people will find jobs, there will be plenty good things to do, and you don't have to over design for it and visualize it as some transformation that will happen immediately. Third, I want to talk about trade as a technology. Okay, so as fundamental, as beautiful, as glorious as scientific change and technological change is trade. Okay? Let me show you two ways in which you can make an electric vehicle. One way to make an electric vehicle is in the Igatpuri factory of Mahindra and Mahindra, where you have thousands of workers and they come together And they put together lithium ion batteries and motors, an operating system, and lo and behold, a car comes out the assembly line. Cool. There is another way to make lithium ion batteries. This is in the poultry farms of Maharashtra. Okay. So the way it works is that we have really good scale and efficiency and productivity in Maharashtra. Maharashtra is a leader in the Indian poultry business. And what you do is you make containers of frozen chicken, your frozen chicken containers, you take them to the JNPT, the Javarlal Nehru Port Trust, and you send them out into the high sea. And you know what? Magically, on the high seas, it turns into electric vehicles and it comes back. Okay so sitting at J NPT is a piece of magic that converts frozen chicken into electric vehicles. And that's a technology, and it's a very cool technology. It can do all kinds of product to product transformations and you know EIE episode industrial policy, we should never pick winners. So we should never favor the EV maker of Igatpuri versus the EV maker of J NPT. Okay, they're two rival technologies, they both should have free play. So the point is that even if you are somehow able to be a Ludite and shut down on the scientific and technical path to progress. Not that we're ever recommending you do that. You'd also need to become autarkic and shut down trade, because trade is a technology. Okay. So these are both pathways for technical transformation and they are there happening every day. They grind away things take time. Okay. Are driverless cars going to come? Yes. It's probability one, I have no doubt. the driverless cars are going to work. Are all the drivers of India going to lose their jobs? Yes, with probability one. How many years will it take? Probably 25 years. Okay? It's like it's not going to be an instantaneous transformation. So there is time these things happen slowly. Finally, yes, technological transformations happen and all societies have to go through the difficulties that you know there will be old interests that are hurt. There are firms that will go out of business There are creditors who will lose money because a company goes bankrupt, there are workers who will lose their jobs, there are entire dealerships of EVs that will have to, you know, change their ways because chicken-based EV is cheaper than making lithium-ion battery-based EVs, all these wrenching transformations have to keep on happening in society. I think successful societies are those which bring the right culture to the table. If you bring the culture of fanning class warfare, Then these changes are the initiation point of an explosion of a nuclear reactor. Because then things go bad. So if you basically create a culture of populism, a culture of class warfare, a culture of social conflict, then technology initiates the anger and it pits people against people. Okay? So then you get like these horrible schisms in society and people are at each other's throats. So I think that. great societies are those that are more Gandhiji and less Karl Marx, where look, we are all in this together, the world evolves, we will take it with a smile, with pleasure, we will deal with problems as they come along, but we will not succumb to the clarion call of class warfare. And when Karl Marx ra wrote that the history of the world is a history of class warfare, It's not a fair description of the world as it is. It is a fair description of the world as he sought to make it. And whether we make that world or not is in our hands. And it is about the culture. It's about the conversation. It's about the way we approach it. If we approach technology through the lens of hatred and violence and populism and anti elitism and all that, then yeah, sure, each technological transformation will give you the next Donald Trump. But if we are able to view it in a harmonious and healthy way, then we just treat it as a part of life. It is ever changing uh world that people have to confront and we'll figure out a comfortable and collaborative path to deal",
       "words": [
         {
           "word": "I",
@@ -47959,15 +47927,7 @@
           "startTime": 2539.29,
           "endTime": 2539.77,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2539.77,
-      "endTime": 2546.33,
-      "text": "than productivity gains. Second, I think that people get this a bit",
-      "words": [
+        },
         {
           "word": "than",
           "startTime": 2539.77,
@@ -48039,15 +47999,7 @@
           "startTime": 2546.09,
           "endTime": 2546.33,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2546.33,
-      "endTime": 2901.76,
-      "text": "wrong in that you tend to look at a new technology and you're thinking that this roll out will be instantaneous and then instantaneously there won't be time for adoption and job loss and job retraining and all that. And I just want to say like hold it, these things take time. Okay. The full use of the steam engine in society took a long time. The full use of electricity in society took a long time. Okay? Look at CPUs, look at spreadsheets. Okay. Spreadsheets were there by the mid-70s. And hell, today we can see there are large parts of the Indian business world where even basic spreadsheet level capabilities have not quite spread. So these things take time. Oftentimes when we see an innovation, we think. that, oh my God, this is all gonna happen in a day. No, it takes time for these innovations to spread in society. It gives time for adjustment. So people will learn other things, people will find jobs, there will be plenty good things to do, and you don't have to over design for it and visualize it as some transformation that will happen immediately. Third, I want to talk about trade as a technology. Okay, so as fundamental, as beautiful, as glorious as scientific change and technological change is trade. Okay? Let me show you two ways in which you can make an electric vehicle. One way to make an electric vehicle is in the Igatpuri factory of Mahindra and Mahindra, where you have thousands of workers and they come together And they put together lithium ion batteries and motors, an operating system, and lo and behold, a car comes out the assembly line. Cool. There is another way to make lithium ion batteries. This is in the poultry farms of Maharashtra. Okay. So the way it works is that we have really good scale and efficiency and productivity in Maharashtra. Maharashtra is a leader in the Indian poultry business. And what you do is you make containers of frozen chicken, your frozen chicken containers, you take them to the JNPT, the Javarlal Nehru Port Trust, and you send them out into the high sea. And you know what? Magically, on the high seas, it turns into electric vehicles and it comes back. Okay so sitting at J NPT is a piece of magic that converts frozen chicken into electric vehicles. And that's a technology, and it's a very cool technology. It can do all kinds of product to product transformations and you know EIE episode industrial policy, we should never pick winners. So we should never favor the EV maker of Igatpuri versus the EV maker of J NPT. Okay, they're two rival technologies, they both should have free play. So the point is that even if you are somehow able to be a Ludite and shut down on the scientific and technical path to progress. Not that we're ever recommending you do that. You'd also need to become autarkic and shut down trade, because trade is a technology. Okay. So these are both pathways for technical transformation and they are there happening every day. They grind away things take time. Okay. Are driverless cars going to come? Yes. It's probability one, I have no doubt. the driverless cars are going to work. Are all the drivers of India going to lose their jobs? Yes, with probability one. How many years will it take? Probably 25 years. Okay? It's like it's not going to be an instantaneous transformation. So there is time these things happen slowly. Finally, yes, technological transformations happen and all societies have to go through the difficulties that you know there will be old interests that are hurt. There are firms that will go out of business There are creditors who will lose money because a company goes bankrupt, there are workers who will lose their jobs, there are entire dealerships of EVs that will have to, you know, change their ways because chicken-based EV is cheaper than making lithium-ion battery-based EVs, all these wrenching transformations have to keep on happening in society. I think successful societies are those which bring the right culture to the table. If you bring the culture of fanning class warfare, Then these changes are the initiation point of an explosion of a nuclear reactor. Because then things go bad. So if you basically create a culture of populism, a culture of class warfare, a culture of social conflict, then technology initiates the anger and it pits people against people. Okay? So then you get like these horrible schisms in society and people are at each other's throats. So I think that. great societies are those that are more Gandhiji and less Karl Marx, where look, we are all in this together, the world evolves, we will take it with a smile, with pleasure, we will deal with problems as they come along, but we will not succumb to the clarion call of class warfare. And when Karl Marx ra wrote that the history of the world is a history of class warfare, It's not a fair description of the world as it is. It is a fair description of the world as he sought to make it. And whether we make that world or not is in our hands. And it is about the culture. It's about the conversation. It's about the way we approach it. If we approach technology through the lens of hatred and violence and populism and anti elitism and all that, then yeah, sure, each technological transformation will give you the next Donald Trump. But if we are able to view it in a harmonious and healthy way, then we just treat it as a part of life. It is ever changing uh world that people have to confront and we'll figure out a comfortable and collaborative path to deal",
-      "words": [
+        },
         {
           "word": "wrong",
           "startTime": 2546.33,
@@ -73877,8 +73829,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3923.32,
-      "endTime": 3951.96,
-      "text": "I have a rent control story. Tell me. So uh when I was growing up in Bombay The city was in the throes of rent control. It was essentially impossible to rent anything. Okay? Today there is modern legal engineering and renting is far more feasible. But uh when I was young it was impossible. There was just complete rent control, and exactly as you described, nobody ever wanted to give out any property on rent. You had a pugity system, it",
+      "endTime": 4049.2,
+      "text": "I have a rent control story. Tell me. So uh when I was growing up in Bombay The city was in the throes of rent control. It was essentially impossible to rent anything. Okay? Today there is modern legal engineering and renting is far more feasible. But uh when I was young it was impossible. There was just complete rent control, and exactly as you described, nobody ever wanted to give out any property on rent. You had a pugity system, it was just a complete mess. And I remember probably I was age ten, which would be like 1976. And my father was telling us a story. We had uh dinner at home on a dining table, four kids, and my mom and my father, and we got to talk for hours about the world. Uh my father was telling a story that you know, when I first came to Bombay, which was 1942, when Gandhija started the Quit India movement, my father came to Bombay. When I first came to Bombay, you could just walk around the street and within fifteen minutes you could rent a flat. And we were like wide eyed, wow, this could be done. Because that was a free market for rent. That the when there was no rate control. There was just no difficulty. You could just walk around the streets of Bombay and you could readily rent a house. And that was completely gone by the 70s, to the point where for kids like us it was an unbelievable concept that, wow, you could easily rent a house. It was it seemed impossible. On the subject of upkeep and the investments in the place, like you described, Barun Mitra's story, which is an absolutely great story. There is a nice development economics literature around land tenure and uh zamindari and so on, which tells the same kind of story that there's actually a lot of work that can be done for land improvement, and it only happens when people have property rights. And I felt the best way to say this is from James C. Scott. It's from an amazing book which is called Seeing Like the State, which you and I have talked about many times. He says that. Uh the greatest fertilizer of all is the tender gaze of an",
       "words": [
         {
           "word": "I",
@@ -74371,15 +74323,7 @@
           "startTime": 3951.8,
           "endTime": 3951.96,
           "confidence": 0.9948
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3951.96,
-      "endTime": 3954.28,
-      "text": "was just a complete mess. And",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 3951.96,
@@ -74415,15 +74359,7 @@
           "startTime": 3953.96,
           "endTime": 3954.28,
           "confidence": 0.9684
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3954.28,
-      "endTime": 4007.79,
-      "text": "I remember probably I was age ten, which would be like 1976. And my father was telling us a story. We had uh dinner at home on a dining table, four kids, and my mom and my father, and we got to talk for hours about the world. Uh my father was telling a story that you know, when I first came to Bombay, which was 1942, when Gandhija started the Quit India movement, my father came to Bombay. When I first came to Bombay, you could just walk around the street and within fifteen minutes you could rent a flat. And we were like wide eyed, wow, this could be done. Because that was a free market for rent. That the when there was no rate control. There was just no difficulty. You could just walk around the streets of Bombay and you could readily rent a house. And that was completely gone by the 70s, to the point where for kids like us it was an unbelievable concept that, wow, you could easily rent a house. It was it",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 3954.28,
@@ -75509,15 +75445,7 @@
           "startTime": 4007.63,
           "endTime": 4007.79,
           "confidence": 0.952
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4007.79,
-      "endTime": 4009.93,
-      "text": "seemed impossible.",
-      "words": [
+        },
         {
           "word": "seemed",
           "startTime": 4007.79,
@@ -75529,15 +75457,7 @@
           "startTime": 4008.43,
           "endTime": 4009.93,
           "confidence": 0.9412
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4010.91,
-      "endTime": 4049.2,
-      "text": "On the subject of upkeep and the investments in the place, like you described, Barun Mitra's story, which is an absolutely great story. There is a nice development economics literature around land tenure and uh zamindari and so on, which tells the same kind of story that there's actually a lot of work that can be done for land improvement, and it only happens when people have property rights. And I felt the best way to say this is from James C. Scott. It's from an amazing book which is called Seeing Like the State, which you and I have talked about many times. He says that. Uh the greatest fertilizer of all is the tender gaze of an",
-      "words": [
+        },
         {
           "word": "On",
           "startTime": 4010.91,
@@ -87449,8 +87369,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4619.34,
-      "endTime": 4657.7,
-      "text": "Yeah, I I completely agree. I'm not a Hazlit. Uh many people may not find me convincing. But please read the book, engage with it on its own terms, think about the world yourself, and hopefully it'll uh you know uh mean to you what it meant to landwich it and to me and to your mentee who will go unnamed but is turning into an Ajay, which is rather alarming. How do you find think of the idea of young Ajays, male and female running around the world talking like you, thinking like you? How do you think about it, Ajesha? They'll soon get over the delusion. That they can be you. No, that there is anything here which is somehow special. Oh my god, such modesty. Yeah.",
+      "endTime": 4647.02,
+      "text": "Yeah, I I completely agree. I'm not a Hazlit. Uh many people may not find me convincing. But please read the book, engage with it on its own terms, think about the world yourself, and hopefully it'll uh you know uh mean to you what it meant to landwich it and to me and to your mentee who will go unnamed but is turning into an Ajay, which is rather alarming. How do you find think of the idea of young Ajays, male and female running around the world talking like you, thinking like you? How do you think about it, Ajesha?",
       "words": [
         {
           "word": "Yeah,",
@@ -88063,7 +87983,15 @@
           "startTime": 4646.06,
           "endTime": 4647.02,
           "confidence": 0.687
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4647.02,
+      "endTime": 4653.32,
+      "text": "They'll soon get over the delusion. That they can be you. No, that there is anything here which is somehow",
+      "words": [
         {
           "word": "They'll",
           "startTime": 4647.02,
@@ -88183,7 +88111,15 @@
           "startTime": 4652.92,
           "endTime": 4653.32,
           "confidence": 0.998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4653.32,
+      "endTime": 4657.7,
+      "text": "special. Oh my god, such modesty. Yeah.",
+      "words": [
         {
           "word": "special.",
           "startTime": 4653.32,

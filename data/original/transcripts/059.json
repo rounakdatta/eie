@@ -5,7 +5,7 @@
     "durationSeconds": 5561,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -2427,8 +2427,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 151.8,
-      "endTime": 202.89,
-      "text": "In India, there is a long history where after independence there was this great outburst of an very intentional attempt at a rational scientific tradition. Okay, so there has been a long effort at going away from superstition from being more scientific, and there's a historic uh document in 1958, which is called the Science Policy Resolution. And uh It is stirring. That is the only words I want to say. In 1958, they were dreamers where they wanted to build this country standing on rationalism, on looking beyond all the superstition and harnessing science as a way of life, as an approach to the world, and as an instrumental path",
+      "endTime": 352.27,
+      "text": "In India, there is a long history where after independence there was this great outburst of an very intentional attempt at a rational scientific tradition. Okay, so there has been a long effort at going away from superstition from being more scientific, and there's a historic uh document in 1958, which is called the Science Policy Resolution. And uh It is stirring. That is the only words I want to say. In 1958, they were dreamers where they wanted to build this country standing on rationalism, on looking beyond all the superstition and harnessing science as a way of life, as an approach to the world, and as an instrumental path to making the country better. Okay, so it's a really beautiful. document and there is a extended quote from that document in this paper and we'll come back to this at the end. So you want to harness science to build a great country, how should you go about doing it? How much money should be spent on doing it. Now back at independence uh the folks went about doing this in perhaps the only way that they thought was available or feasible or obvious. And you know, I don't want to second guess what the world looked like then. But after independence, the enterprise that was initiated was of government funded, government run scientific facilities. So you have the great achievements of a TIFR or a BARC. They started out as private Tata group projects, but they turned into government projects, and the government funded them, and the government put down the money through which there were full-time employees who were civil servants. And that is the pathway that was taken then. This paper was born out of the idea that standing in 2023, 24, what does the world look like? What do we know about the successes and failures. Of government spending on science and technology all over the world. What has changed in the Indian landscape in terms of the state of maturity of the Indian landscape, and how might we think about this differently. And it was also a time to ask a whole bunch of first principles questions which draw deeply from basics of economics or politics or political philosophy of why are we doing this? And I think it helps us. Put a better conceptual foundation on the journey of government and science because otherwise it's a bit of a default mode. Oh, yeah, science is very good. Shouldn't we put more money into it and we'll hire thousand more scientists into some government lab? You know, we previously did an episode around infrastructure, we did an episode around education where I feel it's very interesting to open the box and ask first principles questions. And then you come out with a nuanced understanding and you have a theory of why are we doing this, which helps guide us on doing it in a more correct way, in a less mechanical",
       "words": [
         {
           "word": "In",
@@ -3095,15 +3095,7 @@
           "startTime": 202.33,
           "endTime": 202.89,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 202.89,
-      "endTime": 206.19,
-      "text": "to making the country better. Okay, so it's a really beautiful.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 202.89,
@@ -3169,15 +3161,7 @@
           "startTime": 205.69,
           "endTime": 206.19,
           "confidence": 0.93
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 206.89,
-      "endTime": 352.27,
-      "text": "document and there is a extended quote from that document in this paper and we'll come back to this at the end. So you want to harness science to build a great country, how should you go about doing it? How much money should be spent on doing it. Now back at independence uh the folks went about doing this in perhaps the only way that they thought was available or feasible or obvious. And you know, I don't want to second guess what the world looked like then. But after independence, the enterprise that was initiated was of government funded, government run scientific facilities. So you have the great achievements of a TIFR or a BARC. They started out as private Tata group projects, but they turned into government projects, and the government funded them, and the government put down the money through which there were full-time employees who were civil servants. And that is the pathway that was taken then. This paper was born out of the idea that standing in 2023, 24, what does the world look like? What do we know about the successes and failures. Of government spending on science and technology all over the world. What has changed in the Indian landscape in terms of the state of maturity of the Indian landscape, and how might we think about this differently. And it was also a time to ask a whole bunch of first principles questions which draw deeply from basics of economics or politics or political philosophy of why are we doing this? And I think it helps us. Put a better conceptual foundation on the journey of government and science because otherwise it's a bit of a default mode. Oh, yeah, science is very good. Shouldn't we put more money into it and we'll hire thousand more scientists into some government lab? You know, we previously did an episode around infrastructure, we did an episode around education where I feel it's very interesting to open the box and ask first principles questions. And then you come out with a nuanced understanding and you have a theory of why are we doing this, which helps guide us on doing it in a more correct way, in a less mechanical",
-      "words": [
+        },
         {
           "word": "document",
           "startTime": 206.89,
@@ -19921,8 +19905,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1147.6,
-      "endTime": 1197.48,
-      "text": "calculation. It is the cost of the the correct the difficulties of collecting money. It is the cost of the record keeping and the law, the lawyers and the accountants and so on. Who are participating in the entire compliance process, but most important, it is the cost of the way people distort the activities and change their behavior in order to avoid the taxes. So all of this distorts the economy and results in a lower GDP. Okay. So my first response to you is yes, we should not blunder into this. We should think wisely, and the first step of wisely is you got to be convinced again is 3x, otherwise you should not be doing the one. how much to spend? Should I spend one or two or five or five thousand? And the answer is you should stop when the marginal gains to society of the last rupee",
+      "endTime": 1445.72,
+      "text": "calculation. It is the cost of the the correct the difficulties of collecting money. It is the cost of the record keeping and the law, the lawyers and the accountants and so on. Who are participating in the entire compliance process, but most important, it is the cost of the way people distort the activities and change their behavior in order to avoid the taxes. So all of this distorts the economy and results in a lower GDP. Okay. So my first response to you is yes, we should not blunder into this. We should think wisely, and the first step of wisely is you got to be convinced again is 3x, otherwise you should not be doing the one. how much to spend? Should I spend one or two or five or five thousand? And the answer is you should stop when the marginal gains to society of the last rupee spent are three. Three rupees. Okay? So that you should have the discipline of not just saying, oh science so great, let's spend more money. Okay. The second idea is that uh there are l there is limited management capacity in public policy and uh There is a thing called focus. So if you diffuse the energy and the time and the attention of the leadership of the government into many many things, then you are adversely affecting everything. I'm fully with you on that. There should be a pecking order where there are certain foundations of civilization, and we can debate what they are, but they should get the highest priority, and this does not pass that test. Third, I also think that India lives in many centuries at once. And so you do need to worry about different parts of the economy. So Yashwan Sinna used to say that India lives in many different centuries at once. There are parts of India which are just medieval, where you're solving basics about you know women running away from home and uh getting captured and killed and so on. And then there is an India in the twenty first century. So in defense of Nehru and his ilk, who initiated this whole rationalist effort. and the scientific effort. I would make two claims, one of which is more clear, one of which is less clear. One is that the positive externalities of the entire project of Indian higher education and the science and technology organizations of the Indian state did seed The IT revolution. They did seed the Indian IT industry. Today, IT is India's greatest industry. What does India do? India makes IT and IT enable services and exports them to the West. That is a one line summary of the Indian economy. The Indian economy is a game of IT and IT enable services production in India by domestic and foreign companies, which is sold to the West. That is the Indian journey. And It is quite clear that the foundational capabilities, the intellectual capital that made this possible was forged out of very far-sighted investments in the science and science and technology and the higher education establishments that were built early after independence. IIT Bombay was begun in 1957. You see the date rhyme with the science policy resolution. There is something to say for this, and I am convinced that there is a case to do government expenditure on innovation policy. There is a lot to do on how to do it better, which is what this paper is all about. But it is also very important to constantly interrogate this case. So the least useful stance is to say, oh education we've always got to do more, or oh infrastructure you've always got to do more, or digital public goods are so great. We are all better off with a vibrant intellectual discourse where these grand ideas are constantly challenged and debated and we constantly worry that am I on the right track? Have I gone off track? Am I fighting the last war? You know, did the world change? So I value and respect your skepticism. I have an opinion on this, but gentle reader, you should argue for yourself that you know in India at this point, do you need a single paisa by the Indian state being spent on innovation policy? It's good to zero base and argue from scratch and convince yourself that these kinds of activities are genuinely worth it, particularly when money is so expensive when each rupees one of expenditure costs rupees three. And further, I would argue that there is an opportunity cost of top management time and attention. The scarcest thing in the world is the time and the attention of the leadership. If the Indian leadership was only doing five things, those five things would get done",
       "words": [
         {
           "word": "calculation.",
@@ -20835,15 +20819,7 @@
           "startTime": 1197.0,
           "endTime": 1197.48,
           "confidence": 0.946
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1197.48,
-      "endTime": 1200.76,
-      "text": "spent are three. Three rupees. Okay? So",
-      "words": [
+        },
         {
           "word": "spent",
           "startTime": 1197.48,
@@ -20885,15 +20861,7 @@
           "startTime": 1200.52,
           "endTime": 1200.76,
           "confidence": 0.9871
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1200.76,
-      "endTime": 1445.72,
-      "text": "that you should have the discipline of not just saying, oh science so great, let's spend more money. Okay. The second idea is that uh there are l there is limited management capacity in public policy and uh There is a thing called focus. So if you diffuse the energy and the time and the attention of the leadership of the government into many many things, then you are adversely affecting everything. I'm fully with you on that. There should be a pecking order where there are certain foundations of civilization, and we can debate what they are, but they should get the highest priority, and this does not pass that test. Third, I also think that India lives in many centuries at once. And so you do need to worry about different parts of the economy. So Yashwan Sinna used to say that India lives in many different centuries at once. There are parts of India which are just medieval, where you're solving basics about you know women running away from home and uh getting captured and killed and so on. And then there is an India in the twenty first century. So in defense of Nehru and his ilk, who initiated this whole rationalist effort. and the scientific effort. I would make two claims, one of which is more clear, one of which is less clear. One is that the positive externalities of the entire project of Indian higher education and the science and technology organizations of the Indian state did seed The IT revolution. They did seed the Indian IT industry. Today, IT is India's greatest industry. What does India do? India makes IT and IT enable services and exports them to the West. That is a one line summary of the Indian economy. The Indian economy is a game of IT and IT enable services production in India by domestic and foreign companies, which is sold to the West. That is the Indian journey. And It is quite clear that the foundational capabilities, the intellectual capital that made this possible was forged out of very far-sighted investments in the science and science and technology and the higher education establishments that were built early after independence. IIT Bombay was begun in 1957. You see the date rhyme with the science policy resolution. There is something to say for this, and I am convinced that there is a case to do government expenditure on innovation policy. There is a lot to do on how to do it better, which is what this paper is all about. But it is also very important to constantly interrogate this case. So the least useful stance is to say, oh education we've always got to do more, or oh infrastructure you've always got to do more, or digital public goods are so great. We are all better off with a vibrant intellectual discourse where these grand ideas are constantly challenged and debated and we constantly worry that am I on the right track? Have I gone off track? Am I fighting the last war? You know, did the world change? So I value and respect your skepticism. I have an opinion on this, but gentle reader, you should argue for yourself that you know in India at this point, do you need a single paisa by the Indian state being spent on innovation policy? It's good to zero base and argue from scratch and convince yourself that these kinds of activities are genuinely worth it, particularly when money is so expensive when each rupees one of expenditure costs rupees three. And further, I would argue that there is an opportunity cost of top management time and attention. The scarcest thing in the world is the time and the attention of the leadership. If the Indian leadership was only doing five things, those five things would get done",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1200.76,
@@ -24769,8 +24737,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1445.72,
-      "endTime": 1682.12,
-      "text": "better. So I'll I'll respond to a couple of those points. First, as far as uh the marginal use of public funds is concerned, which is a fantastic concept, it makes you realize. how much we should question everything the government does, because that one rupee of government spending is coming at the cost of three rupees of GDP, it's a big deal. But my point there would be that it i it does not follow from there that every time the government can spend a rupee and get three back, that it should necessarily do so. Because uh the costs and the benefits can accrue to different uh in different places to different people. So it should be at the level of society. Right. And uh I I I think society is a deeply toxic word. Uh you know, collectivists have used it to uh cause great chaos. I think you should think at the level of individuals. If you tell me that Amit I will take a rupee from you and make three rupees for myself, I would say no, that is not acceptable to me. That is to spill overs. So if Uh yeah, but let me finish. So so my point is that it is not the case. I agree with you that if that one rupee of spending is not getting you three rupees, you shouldn't do it. But nor do I think that every time one rupee can get you three rupees, you should do it. That case is not made because that one rupee in the first place has a cost. Like this was an excellent argument that our uh uh friend Suvesh Rai made against demonetization when the people who carried out that catastrophic policy uh uh you know spoke in terms of costs and benefits. And of course it was obvious the benefits will never be worth it. But Suryash's point was that. There's one set of people who bear the costs, there's another set of people who bear the benefits, and it is immoral just to say that overall society benefits. So I so that is my one issue with that particular point. And my other issue about uh, you know, I think it's actually a classic case of the seen and the unseen, if I may borrow Frederick Barcia's phrase again. When you speak of how the investment in uh science helped enable our IT revolution, I don't dispute that it did. I'm I'm saying that's a seen effect. The unseen effect is number one. what would have happened with the funds that were spent on setting it all up if it remained with the poor people that they were coerced from. Because it is again a myth that only a small percentage of the people pay taxes in India. That's income tax. Everybody pays taxes. You know, even the beggar at the traffic signal has to buy salt, and there is a tax on that. Everybody pays taxes. There was money coerce from the poor of India to set up IITs and all that. We don't see the unseen effect of that. And secondly, that notion of having this sort of top-down science policy, IITs, higher education, that notion came from a certain way of uh a certain top-down technocratic way of thinking. Which is also What led uh those leaders, well intentioned as they were, to not enable uh freedom to not enable society to solve its own problems, and that kept hundreds of millions of people in poverty for decades longer than necessary. You know, we've had an episode on uh freedom episode 10, which is really about India's economic story, which talks about that long, difficult journey. And and still today so many people are in poverty, and that's a moral shame, and every uh government is to blame for that to some extent. I've also had a great episode with our friend Rajeshwari Sen Gupta. Nine hours, 53 minutes, life in times of the Indian economy. So that goes into detail in this. So I get the benefit. I see it. At the same time, you know, there is an unseen factor there, which comes not just from the funds that were taken, but also from the mindset that led to people thinking in that way. However, I just want to say that. I get both sides of the puzzle, right? Uh in a different frame of mind, I could I could kind of agree with you. And I love your paper because what your paper says is that if you have to do this, this is a way to do it. So in that sense, I love the paper. That if the state wants to uh you know f fund innovation policy, we've been doing it wrong all these years. This is how you should do it. So in that sense it it works, and I'm not invalidating what you've done at all. Yeah, and",
+      "endTime": 1498.25,
+      "text": "better. So I'll I'll respond to a couple of those points. First, as far as uh the marginal use of public funds is concerned, which is a fantastic concept, it makes you realize. how much we should question everything the government does, because that one rupee of government spending is coming at the cost of three rupees of GDP, it's a big deal. But my point there would be that it i it does not follow from there that every time the government can spend a rupee and get three back, that it should necessarily do so. Because uh the costs and the benefits can accrue to different uh in different places to different people. So it should be at the level of society. Right. And uh I I I think society is a deeply toxic word. Uh you know, collectivists have used it to uh cause great chaos. I think you should think at the level of individuals. If you tell me that Amit I will take a rupee from you and make three rupees for myself, I would say no, that is not acceptable to me. That is",
       "words": [
         {
           "word": "better.",
@@ -25911,7 +25879,15 @@
           "startTime": 1497.37,
           "endTime": 1498.25,
           "confidence": 0.991
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1498.25,
+      "endTime": 1500.27,
+      "text": "to spill overs. So if",
+      "words": [
         {
           "word": "to",
           "startTime": 1498.25,
@@ -25941,7 +25917,15 @@
           "startTime": 1499.77,
           "endTime": 1500.27,
           "confidence": 0.6008
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1500.59,
+      "endTime": 1682.12,
+      "text": "Uh yeah, but let me finish. So so my point is that it is not the case. I agree with you that if that one rupee of spending is not getting you three rupees, you shouldn't do it. But nor do I think that every time one rupee can get you three rupees, you should do it. That case is not made because that one rupee in the first place has a cost. Like this was an excellent argument that our uh uh friend Suvesh Rai made against demonetization when the people who carried out that catastrophic policy uh uh you know spoke in terms of costs and benefits. And of course it was obvious the benefits will never be worth it. But Suryash's point was that. There's one set of people who bear the costs, there's another set of people who bear the benefits, and it is immoral just to say that overall society benefits. So I so that is my one issue with that particular point. And my other issue about uh, you know, I think it's actually a classic case of the seen and the unseen, if I may borrow Frederick Barcia's phrase again. When you speak of how the investment in uh science helped enable our IT revolution, I don't dispute that it did. I'm I'm saying that's a seen effect. The unseen effect is number one. what would have happened with the funds that were spent on setting it all up if it remained with the poor people that they were coerced from. Because it is again a myth that only a small percentage of the people pay taxes in India. That's income tax. Everybody pays taxes. You know, even the beggar at the traffic signal has to buy salt, and there is a tax on that. Everybody pays taxes. There was money coerce from the poor of India to set up IITs and all that. We don't see the unseen effect of that. And secondly, that notion of having this sort of top-down science policy, IITs, higher education, that notion came from a certain way of uh a certain top-down technocratic way of thinking. Which is also What led uh those leaders, well intentioned as they were, to not enable uh freedom to not enable society to solve its own problems, and that kept hundreds of millions of people in poverty for decades longer than necessary. You know, we've had an episode on uh freedom episode 10, which is really about India's economic story, which talks about that long, difficult journey. And and still today so many people are in poverty, and that's a moral shame, and every uh government is to blame for that to some extent. I've also had a great episode with our friend Rajeshwari Sen Gupta. Nine hours, 53 minutes, life in times of the Indian economy. So that goes into detail in this. So I get the benefit. I see it. At the same time, you know, there is an unseen factor there, which comes not just from the funds that were taken, but also from the mindset that led to people thinking in that way. However, I just want to say that. I get both sides of the puzzle, right? Uh in a different frame of mind, I could I could kind of agree with you. And I love your paper because what your paper says is that if you have to do this, this is a way to do it. So in that sense, I love the paper. That if the state wants to uh you know f fund innovation policy, we've been doing it wrong all these years. This is how you should do it. So in that sense it it works, and I'm not invalidating what you've done at all. Yeah, and",
+      "words": [
         {
           "word": "Uh",
           "startTime": 1500.59,

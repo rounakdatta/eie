@@ -5,7 +5,7 @@
     "durationSeconds": 4811,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -865,8 +865,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 56.51,
-      "endTime": 122.04,
-      "text": "In uh we did two episodes on globalization. In the second of the two episodes, I had ended with a rather happy view of things. Okay, in this gloomy world, I said this is both an opportunity for India to do some right things. And my opinion, my reading of the situation is that good things are in store. Okay? That is my reading of the situation based on reading newspapers and understanding the chessboard. That's all. I mean I'm I'm by no means an insider. I'm just I look at the pieces and I can figure what the moves can be. And I'm absolutely delighted that the first piece of that kind of story has actually happened, which is a decent free trade agreement between India and the UK. Okay now, I have only read the newspaper stories and that's something that's a no no. You should always read legal documents. You should never be content with uh newspaper version, but in the newspaper versions Roughly speaking, there seem to be the following kind of stories. That there is a reduction now in tariffs on 90% of the",
+      "endTime": 162.99,
+      "text": "In uh we did two episodes on globalization. In the second of the two episodes, I had ended with a rather happy view of things. Okay, in this gloomy world, I said this is both an opportunity for India to do some right things. And my opinion, my reading of the situation is that good things are in store. Okay? That is my reading of the situation based on reading newspapers and understanding the chessboard. That's all. I mean I'm I'm by no means an insider. I'm just I look at the pieces and I can figure what the moves can be. And I'm absolutely delighted that the first piece of that kind of story has actually happened, which is a decent free trade agreement between India and the UK. Okay now, I have only read the newspaper stories and that's something that's a no no. You should always read legal documents. You should never be content with uh newspaper version, but in the newspaper versions Roughly speaking, there seem to be the following kind of stories. That there is a reduction now in tariffs on 90% of the products, which is nice. And there's a 10-year glide path where many tariffs gradually go down. Okay, in my opinion, we should have done five years, but find 10 years. It fits the concept that firms should be given certainty that tariffs will go down. Then firms have to take a good hard look at themselves. either you're gonna go out of business or you have to increase your productivity. Okay, and it's great. And also because protectionism is going down, some people's raw materials are becoming cheaper. So they're actually becoming more exp more competitive. And I'm delighted to say that for eighty percent of the products, at the end of ten years, the tariff is contracted under the treaty to reach a number of zero.",
       "words": [
         {
           "word": "In",
@@ -2001,15 +2001,7 @@
           "startTime": 121.72,
           "endTime": 122.04,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 122.04,
-      "endTime": 124.84,
-      "text": "products, which is nice. And",
-      "words": [
+        },
         {
           "word": "products,",
           "startTime": 122.04,
@@ -2039,15 +2031,7 @@
           "startTime": 124.6,
           "endTime": 124.84,
           "confidence": 0.7606
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 124.84,
-      "endTime": 162.99,
-      "text": "there's a 10-year glide path where many tariffs gradually go down. Okay, in my opinion, we should have done five years, but find 10 years. It fits the concept that firms should be given certainty that tariffs will go down. Then firms have to take a good hard look at themselves. either you're gonna go out of business or you have to increase your productivity. Okay, and it's great. And also because protectionism is going down, some people's raw materials are becoming cheaper. So they're actually becoming more exp more competitive. And I'm delighted to say that for eighty percent of the products, at the end of ten years, the tariff is contracted under the treaty to reach a number of zero.",
-      "words": [
+        },
         {
           "word": "there's",
           "startTime": 124.84,
@@ -26141,8 +26125,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1345.15,
-      "endTime": 1398.35,
-      "text": "I just want to introduce terminology. Okay, so I just let's agree on terms and get our definitions right. Regulation is the business of state intervention that is oriented towards coercing firms. Okay, generally firms, meaning rarely are individuals a target of regulation. It is the business of the state coercing firms. Regulators are a specialized arm of the state that does regulation. Okay, so you can have a department of government engaged in regulatory activities. That's allowed. It's your choice. This is a public administration decision. Do you wish to do it under the rubric of a government department? Or do you wish to fork a specialized agency who will do regulation, and then that's called a regulator. So regulators only do regulation, but not all regulation is done by",
+      "endTime": 1560.81,
+      "text": "I just want to introduce terminology. Okay, so I just let's agree on terms and get our definitions right. Regulation is the business of state intervention that is oriented towards coercing firms. Okay, generally firms, meaning rarely are individuals a target of regulation. It is the business of the state coercing firms. Regulators are a specialized arm of the state that does regulation. Okay, so you can have a department of government engaged in regulatory activities. That's allowed. It's your choice. This is a public administration decision. Do you wish to do it under the rubric of a government department? Or do you wish to fork a specialized agency who will do regulation, and then that's called a regulator. So regulators only do regulation, but not all regulation is done by regulators. Okay third, I want to introduce the word regulatory theory. Okay. Very many people are used to looking at one field at a time. So you can discuss drug regulation, you can discuss securities regulation, you can discuss banking regulation. Regulatory theory is the general technology of regulation. It is ideas, the principles that really horizontally apply across all kinds of regulation. So there is a legitimate business of knowledge creation and deep understanding of the regulation of airports. And I'm not at all slamming the people who do that deeply. But I wish to say to them that you know what, there's actually a general technology. And so what you need to do is you need to build airport specific knowledge on top of the foundational knowledge of regulatory theory, which is actually working across domains. Whether you're regulating banks, or you're regulating airports, or you're regulating drugs, it's basically the same. Okay. So these are the three terms, regulation, regulators, and regulatory theory. Why would you have regulation? Why would the state ever have a legitimate case for coercing private firms? And you correctly said it is rooted in market failure. There may be a argument to interfere in the lives of the firms and coerce them to behave in certain ways. So at this point, I just wish to do a little bit of a classification system. If there is a public goods problem that the society needs a public good. then regulation is seldom the answer. If it's a positive externalities problem, like building an R and D system, we had an episode on innovation policy, that is seldom a regulation problem. If it's a negative externality problem, that there are comp fossil fuel companies pushing carbon dioxide in the air, there may be a case for regulation. If there is an asymmetric information problem, there may be a case for regulation, and finally if There is a market power problem, there may be a case for regulation. So it's not even true that all kinds of market failure may justify coercing firms and setting up a regulator. There is one and a half cases where really you don't need a regulator. That's not the appropriate intervention. So there are different kinds of interventions to use. When you face a public goods problem, you really want the government to either make the public good or buy the public goods from private firms. Or when there is a positive externality, you want a voucher type solution. Okay. And it's not a regulation type solution. So for for one and a half problems, it's not regulation. For two and a half it can be regulation.",
       "words": [
         {
           "word": "I",
@@ -26929,15 +26913,7 @@
           "startTime": 1398.11,
           "endTime": 1398.35,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1398.35,
-      "endTime": 1401.95,
-      "text": "regulators. Okay third, I want",
-      "words": [
+        },
         {
           "word": "regulators.",
           "startTime": 1398.35,
@@ -26967,15 +26943,7 @@
           "startTime": 1401.79,
           "endTime": 1401.95,
           "confidence": 0.986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1401.95,
-      "endTime": 1560.81,
-      "text": "to introduce the word regulatory theory. Okay. Very many people are used to looking at one field at a time. So you can discuss drug regulation, you can discuss securities regulation, you can discuss banking regulation. Regulatory theory is the general technology of regulation. It is ideas, the principles that really horizontally apply across all kinds of regulation. So there is a legitimate business of knowledge creation and deep understanding of the regulation of airports. And I'm not at all slamming the people who do that deeply. But I wish to say to them that you know what, there's actually a general technology. And so what you need to do is you need to build airport specific knowledge on top of the foundational knowledge of regulatory theory, which is actually working across domains. Whether you're regulating banks, or you're regulating airports, or you're regulating drugs, it's basically the same. Okay. So these are the three terms, regulation, regulators, and regulatory theory. Why would you have regulation? Why would the state ever have a legitimate case for coercing private firms? And you correctly said it is rooted in market failure. There may be a argument to interfere in the lives of the firms and coerce them to behave in certain ways. So at this point, I just wish to do a little bit of a classification system. If there is a public goods problem that the society needs a public good. then regulation is seldom the answer. If it's a positive externalities problem, like building an R and D system, we had an episode on innovation policy, that is seldom a regulation problem. If it's a negative externality problem, that there are comp fossil fuel companies pushing carbon dioxide in the air, there may be a case for regulation. If there is an asymmetric information problem, there may be a case for regulation, and finally if There is a market power problem, there may be a case for regulation. So it's not even true that all kinds of market failure may justify coercing firms and setting up a regulator. There is one and a half cases where really you don't need a regulator. That's not the appropriate intervention. So there are different kinds of interventions to use. When you face a public goods problem, you really want the government to either make the public good or buy the public goods from private firms. Or when there is a positive externality, you want a voucher type solution. Okay. And it's not a regulation type solution. So for for one and a half problems, it's not regulation. For two and a half it can be regulation.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1401.95,
@@ -30699,8 +30667,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1630.36,
-      "endTime": 1835.27,
-      "text": "Okay. So now let's turn to the why. That yeah, you could have a department of government. which could coerce firms to behave in certain ways. Why bother setting up a regulator? What is the benefit of setting up a regulator? First I want to take you back to the early 1990s where there was a thought and there was an opinion on why this might be worth doing. The claim at the time was that the culture of government departments is horrible. They're deeply interventionist. They don't get modern economics and uh To break away from central planning, we need to build a new organizational culture. We need much more modern, market-oriented people, we need a mix of economists and industry practitioners. That's never going to happen in a government department, so we should create a regulator. Okay? These kinds of things were said in the early 90s. Okay, I hate to break your bubble. It didn't happen at all. There is no part of the Indian state today where regulators are like this. They are just the same culture, the same capability as the government department. So this was a nice dream, it was a nice story. It was not adequately grounded in regulatory theory and so it did not happen. So the people that had such wishes did not have the level of legal and public administration knowledge to actually make it happen. If you wish to do it, today I feel we know how to do it. But at the time they did not know how to do it. So there was a gap of knowledge. And so none of this happened. And this is also not deeply the way the rest of the world works. Okay. So what are the reasons for doing a regulator in regulatory theory? So one piece is kinda related that in a government department, first of all, you have like an every five years transfer, so people are moving around departments a lot, and it's almost random. Like one day you could be doing civil aviation, next day you could be doing defense. Like there's no rhyme or reason. the fundamental HR process of government is deeply generalist. In a regulator, you can think that we can have a little more specialization and it has gone to the other extreme. Like cradle to grave lifetime employment in a regulator has its own problems. But for example, I would dream that there would be job rotation between regulators. So one day I'm regulating airports, one day I'm regulating drug companies. That seems good that you stay in the subject matter of regulation you develop a general capability of regulatory theory and then you keep switching between organizations and domains. You don't become too narrowly centered on one organization, one political dynamic of one organization and the entrenchment of an organizational culture and the politics of an organization. So I get that this can help. In India, we've done neither of these two good ideas. We basically have created cradle to grave employment in one organization that's called a regulator that has its own problems. It does cater to development of specialized domain knowledge of that industry, but it has its own problems. Like cradle to grave is a very bad idea. You just get entrenched in a mindset in a culture, you become unable to question the ways of your seniors because your seniors are going to be senior to you forever. The second deep reason. why regulators were done worldwide, was that the thinkers of government thought that there may actually be some benefits from breaking separation of",
+      "endTime": 2173.37,
+      "text": "Okay. So now let's turn to the why. That yeah, you could have a department of government. which could coerce firms to behave in certain ways. Why bother setting up a regulator? What is the benefit of setting up a regulator? First I want to take you back to the early 1990s where there was a thought and there was an opinion on why this might be worth doing. The claim at the time was that the culture of government departments is horrible. They're deeply interventionist. They don't get modern economics and uh To break away from central planning, we need to build a new organizational culture. We need much more modern, market-oriented people, we need a mix of economists and industry practitioners. That's never going to happen in a government department, so we should create a regulator. Okay? These kinds of things were said in the early 90s. Okay, I hate to break your bubble. It didn't happen at all. There is no part of the Indian state today where regulators are like this. They are just the same culture, the same capability as the government department. So this was a nice dream, it was a nice story. It was not adequately grounded in regulatory theory and so it did not happen. So the people that had such wishes did not have the level of legal and public administration knowledge to actually make it happen. If you wish to do it, today I feel we know how to do it. But at the time they did not know how to do it. So there was a gap of knowledge. And so none of this happened. And this is also not deeply the way the rest of the world works. Okay. So what are the reasons for doing a regulator in regulatory theory? So one piece is kinda related that in a government department, first of all, you have like an every five years transfer, so people are moving around departments a lot, and it's almost random. Like one day you could be doing civil aviation, next day you could be doing defense. Like there's no rhyme or reason. the fundamental HR process of government is deeply generalist. In a regulator, you can think that we can have a little more specialization and it has gone to the other extreme. Like cradle to grave lifetime employment in a regulator has its own problems. But for example, I would dream that there would be job rotation between regulators. So one day I'm regulating airports, one day I'm regulating drug companies. That seems good that you stay in the subject matter of regulation you develop a general capability of regulatory theory and then you keep switching between organizations and domains. You don't become too narrowly centered on one organization, one political dynamic of one organization and the entrenchment of an organizational culture and the politics of an organization. So I get that this can help. In India, we've done neither of these two good ideas. We basically have created cradle to grave employment in one organization that's called a regulator that has its own problems. It does cater to development of specialized domain knowledge of that industry, but it has its own problems. Like cradle to grave is a very bad idea. You just get entrenched in a mindset in a culture, you become unable to question the ways of your seniors because your seniors are going to be senior to you forever. The second deep reason. why regulators were done worldwide, was that the thinkers of government thought that there may actually be some benefits from breaking separation of powers. This is huge. So since the 17th century, we have known that liberal democracy works well by dispersing power, and you disperse power of the state between union and state government and city, and you disperse the power of the state between legislative and executive and judicial branch. So the legislature controls the text of the IPC. Okay? Is gay sex a crime or not? Is in the text of the IPC. The executive enforces against crimes. So they look at the text of the IPC and they look around the country looking for people who have violated it, and they conduct an investigation and maybe a prosecution. And then they bring a case in front of the court. And a judge and only the judge has the power to punish a person. A civil servant should never have the power to punish you. The civil servant should not have the power to harm you. You should be completely unafraid of a civil servant. You should be completely unafraid of a legislator. Only a judge should be able to harm you. Okay, this is separation of powers. We've done a whole episode on this. And it's great. It has enormous sense. Regulators arose when genuinely good thinkers of government started wondering, you know, could we do better by breaking a little bit. Of the separation of powers specifically by fusing the legislative function, i.e., the power to write law, and the executive function, the power to enforce the law. Okay? Let's make these together in one team. The world's most famous example of this is the United States SEC, the Securities and Exchanges Commission. This became a dedicated body. It came up in the 1930s during the Great Depression in the United States. The idea was to create a specialized team. which would have deep knowledge of securities. The Congress is a generalist organization with politicians. They are unable to understand the fast-paced changing world of the securities markets. So they delegate certain regulation writing power to these unelected officials. And of course it has to be done in a very careful and controlled way. It should not be a blanket power that you are the feudal lord of the securities market and you please write whatever regulations you want. It has to be very narrow. In this problem, there is this kind of market failure. So you are given you are hereby given the power to write a regulation to deal with this kind of problem. This kind of narrow contracting out of lawmaking power needs to come from the parliament to the regulator. So the law that creates a regulator needs to have this kind of careful, well-drafted paragraphs, which give one narrow power after another. So when you say there's an airport's regulator, you will tell him you are addressing a market failure called monopoly. And airports have a monopoly. So you will do uh regulation of the equity rate of return of the airport by using ABCD methods. Not your feudal lord of airports and you will decide everything and what shall be the color of the mirrors in the loo will be controlled by you. Okay. So there needs to be this kind of careful surgical delegation of a lawmaking power to the regulator, and then that same team, the same people also perform executive actions. What do they do? They police the landscape, they look for violations of these regulations, and they create an investigation packet and they make decisions about prosecution. Okay. So it's a very big milestone, and all of us need to wake up and notice that oh my God, you have violated separation of powers. Okay. And this is the global concept of a regulator. This is the way regulators work the world over. Okay, so as an example in the UK, there is a financial conduct agency. They do consumer protection for financial firms, and this is exactly what they do. There's a single FCA which covers all finance. It writes regulations about consumer protection. It polices the financial system looking for violations. It can conduct an investigation and it can decide that I think this merits a prosecution. Then they take the packet to a normal court, which is called the administrative tribunal. Then the financial firm will defend themselves in that court. Okay? This is a regulator as it is understood in the world. And these agencies have come up all over the world. price of some violation of separation of powers, you've chosen to fuse two things here. And at the price of a very uncomfortable delegation of power to unelect unelected officials, lawmakers are able to create specialized technical agencies who are supposed to know more, who are supposed to respond to a fast changing world and come out with regulations more rapidly. And it's it has its own dangers, it has its own concerns. But that is part of the answer of why would you bother creating a regulator. So in an ideal world, this is the theory that the regulator will be able to have domain knowledge, it will have specialized people, it will stay focused on one industry for a long period of time, it will have surgically careful delegation of precise regulatory powers by the parliament to the regulator saying on this you have the power to write this kind of limited law on my behalf. You are my agent For the business of drafting the law. Please note, you're not a feudal lord. You don't have unchecked powers. You don't have the ability to write whatever laws you want. And then you, the very same you, have the ability to do an investigation. So it's like the police and the parliament have been fused into one agency and you can carry till prosecution. This is the global theory about why regulators might be interesting.",
       "words": [
         {
           "word": "Okay.",
@@ -34349,15 +34317,7 @@
           "startTime": 1835.03,
           "endTime": 1835.27,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1835.27,
-      "endTime": 1837.67,
-      "text": "powers. This is huge.",
-      "words": [
+        },
         {
           "word": "powers.",
           "startTime": 1835.27,
@@ -34381,15 +34341,7 @@
           "startTime": 1837.03,
           "endTime": 1837.67,
           "confidence": 0.8593
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1837.67,
-      "endTime": 2173.37,
-      "text": "So since the 17th century, we have known that liberal democracy works well by dispersing power, and you disperse power of the state between union and state government and city, and you disperse the power of the state between legislative and executive and judicial branch. So the legislature controls the text of the IPC. Okay? Is gay sex a crime or not? Is in the text of the IPC. The executive enforces against crimes. So they look at the text of the IPC and they look around the country looking for people who have violated it, and they conduct an investigation and maybe a prosecution. And then they bring a case in front of the court. And a judge and only the judge has the power to punish a person. A civil servant should never have the power to punish you. The civil servant should not have the power to harm you. You should be completely unafraid of a civil servant. You should be completely unafraid of a legislator. Only a judge should be able to harm you. Okay, this is separation of powers. We've done a whole episode on this. And it's great. It has enormous sense. Regulators arose when genuinely good thinkers of government started wondering, you know, could we do better by breaking a little bit. Of the separation of powers specifically by fusing the legislative function, i.e., the power to write law, and the executive function, the power to enforce the law. Okay? Let's make these together in one team. The world's most famous example of this is the United States SEC, the Securities and Exchanges Commission. This became a dedicated body. It came up in the 1930s during the Great Depression in the United States. The idea was to create a specialized team. which would have deep knowledge of securities. The Congress is a generalist organization with politicians. They are unable to understand the fast-paced changing world of the securities markets. So they delegate certain regulation writing power to these unelected officials. And of course it has to be done in a very careful and controlled way. It should not be a blanket power that you are the feudal lord of the securities market and you please write whatever regulations you want. It has to be very narrow. In this problem, there is this kind of market failure. So you are given you are hereby given the power to write a regulation to deal with this kind of problem. This kind of narrow contracting out of lawmaking power needs to come from the parliament to the regulator. So the law that creates a regulator needs to have this kind of careful, well-drafted paragraphs, which give one narrow power after another. So when you say there's an airport's regulator, you will tell him you are addressing a market failure called monopoly. And airports have a monopoly. So you will do uh regulation of the equity rate of return of the airport by using ABCD methods. Not your feudal lord of airports and you will decide everything and what shall be the color of the mirrors in the loo will be controlled by you. Okay. So there needs to be this kind of careful surgical delegation of a lawmaking power to the regulator, and then that same team, the same people also perform executive actions. What do they do? They police the landscape, they look for violations of these regulations, and they create an investigation packet and they make decisions about prosecution. Okay. So it's a very big milestone, and all of us need to wake up and notice that oh my God, you have violated separation of powers. Okay. And this is the global concept of a regulator. This is the way regulators work the world over. Okay, so as an example in the UK, there is a financial conduct agency. They do consumer protection for financial firms, and this is exactly what they do. There's a single FCA which covers all finance. It writes regulations about consumer protection. It polices the financial system looking for violations. It can conduct an investigation and it can decide that I think this merits a prosecution. Then they take the packet to a normal court, which is called the administrative tribunal. Then the financial firm will defend themselves in that court. Okay? This is a regulator as it is understood in the world. And these agencies have come up all over the world. price of some violation of separation of powers, you've chosen to fuse two things here. And at the price of a very uncomfortable delegation of power to unelect unelected officials, lawmakers are able to create specialized technical agencies who are supposed to know more, who are supposed to respond to a fast changing world and come out with regulations more rapidly. And it's it has its own dangers, it has its own concerns. But that is part of the answer of why would you bother creating a regulator. So in an ideal world, this is the theory that the regulator will be able to have domain knowledge, it will have specialized people, it will stay focused on one industry for a long period of time, it will have surgically careful delegation of precise regulatory powers by the parliament to the regulator saying on this you have the power to write this kind of limited law on my behalf. You are my agent For the business of drafting the law. Please note, you're not a feudal lord. You don't have unchecked powers. You don't have the ability to write whatever laws you want. And then you, the very same you, have the ability to do an investigation. So it's like the police and the parliament have been fused into one agency and you can carry till prosecution. This is the global theory about why regulators might be interesting.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1837.67,
@@ -42445,8 +42397,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2318.03,
-      "endTime": 2515.79,
-      "text": "How does this How does all this happen? There's a parliamentary law that writes the code of each regulator. And in that code, you need all these things. The rule of law needs to be coded into the law that creates a RBI or airport's economic regulatory authority. The surgical control of what kind of regulation making power you have needs to be written into the law that creates airport's economic regulatory authority. Separation of powers. Like it is awkward and concerning when you've fused a legislative and an executive function, but you can't go all the way to the power to award punishment. That's a different level of problem altogether. And these three things were fused into regulators in India, and that gave us a really bad environment. Uh Dr. M. Sahu uh is a storied career. in the history of regulation in India. He's worked in the Ministry of Finance. He's worked in the NSC, he's worked in SEBI, he's worked in the Competition Commission, he was the first chairman of the bankruptcy regulator. And I'm sure five more things that I've forgotten. Uh he was the first person who understood this. In twenty twelve, he wrote a paper and he started doing talks. And for me it was just like wow, how did I not know this? I was a clueless economist and You know, we're just not paying enough attention to constitutional philosophy, law, political science, and then you know, what were the philosophers of India doing? What were the law experts of India doing? What were the political science people of India doing? And of course my Baradri, what were the economists doing? We just had a c comprehensive intellectual failure. These stories are what wake me up and they always tell me that the site of action to become a great country is to build intellectual power you need a better community. A country can only be as good as its thinkers. And this is the great demo of that. The people meant well. If there was knowledge in the intelligentsia in the elite of that period about these things, the laws would have been drafted correctly. Just nobody knew. And until Dr Sahu started campaigning like guys, what have we done? Like this doesn't make any sense. Since the seventeenth century we have known these kinds of things go badly. And then the problems of rule of law. I want to put yourself in the shoes Being a regulated person. Imagine you're an airport. Imagine you're a bank. Okay? Imagine you're a firm that comes under the regulation of one of these regulators. And really, the economic philosophy underlying these laws is that you're a feudal lord. The regulator is the lord, they will do your central planning, they'll tell you what to do. And if you ever act upity, they can destroy your business because they have all the power. They can deny people licenses, they can avoid punishments without due process, there is no transparency, you don't even know who's getting punished, and your life is in their hands. What is the firm going to do? The firm is going to shut up. So the regulated persons lose all freedom of speech. So now you've got a small little world where there is a regulator and there is an industry that is controlled by the regulator. It",
+      "endTime": 2768.81,
+      "text": "How does this How does all this happen? There's a parliamentary law that writes the code of each regulator. And in that code, you need all these things. The rule of law needs to be coded into the law that creates a RBI or airport's economic regulatory authority. The surgical control of what kind of regulation making power you have needs to be written into the law that creates airport's economic regulatory authority. Separation of powers. Like it is awkward and concerning when you've fused a legislative and an executive function, but you can't go all the way to the power to award punishment. That's a different level of problem altogether. And these three things were fused into regulators in India, and that gave us a really bad environment. Uh Dr. M. Sahu uh is a storied career. in the history of regulation in India. He's worked in the Ministry of Finance. He's worked in the NSC, he's worked in SEBI, he's worked in the Competition Commission, he was the first chairman of the bankruptcy regulator. And I'm sure five more things that I've forgotten. Uh he was the first person who understood this. In twenty twelve, he wrote a paper and he started doing talks. And for me it was just like wow, how did I not know this? I was a clueless economist and You know, we're just not paying enough attention to constitutional philosophy, law, political science, and then you know, what were the philosophers of India doing? What were the law experts of India doing? What were the political science people of India doing? And of course my Baradri, what were the economists doing? We just had a c comprehensive intellectual failure. These stories are what wake me up and they always tell me that the site of action to become a great country is to build intellectual power you need a better community. A country can only be as good as its thinkers. And this is the great demo of that. The people meant well. If there was knowledge in the intelligentsia in the elite of that period about these things, the laws would have been drafted correctly. Just nobody knew. And until Dr Sahu started campaigning like guys, what have we done? Like this doesn't make any sense. Since the seventeenth century we have known these kinds of things go badly. And then the problems of rule of law. I want to put yourself in the shoes Being a regulated person. Imagine you're an airport. Imagine you're a bank. Okay? Imagine you're a firm that comes under the regulation of one of these regulators. And really, the economic philosophy underlying these laws is that you're a feudal lord. The regulator is the lord, they will do your central planning, they'll tell you what to do. And if you ever act upity, they can destroy your business because they have all the power. They can deny people licenses, they can avoid punishments without due process, there is no transparency, you don't even know who's getting punished, and your life is in their hands. What is the firm going to do? The firm is going to shut up. So the regulated persons lose all freedom of speech. So now you've got a small little world where there is a regulator and there is an industry that is controlled by the regulator. It is complete, absolute power. Where You can write regulations, you can control licensing, you can avoid punishment, and the business people look up, they know that their life and death is in the hands of these civil servants. And so they will be obedient. They will say yes, sir. Okay? And there will be no freedom of speech. There will be no meaningful intellectual discussion around what is the nature of this central planning that has sprung up. Of course, the staff of the regulator will enjoy being comprehensive central planners. There is a deep misconception on the part of a lot of people that thanks to the 1991 reforms we got a great decline of central planning in India. This is largely not true because actually something like 75% of the economy came under the footprint of regulators. And we got more detailed, more intrusive central planning backed by hundreds of employees walking around these industries, controlling them in more intrusive detail than ever before. So earlier, at least the Indian state was far away. In your ground lived reality, you could do whatever you wanted. That changed. Once these kinds of organizations came up, they got intrusive, detailed control of every product and every process of each of these firms. They control industries. So you get a headline like XYZ regulator has introduced this product. Okay, it should make you see red. The introduction of a product should be by a firm. Firms should be thinking, innovating, launching products. No, that's not how India works. The regulator introduces the product. Why? Because the regulator says everything is banned. You've got to come to me. You've got to take my permission. I will not allow you to launch a product until I approve the product. Okay? This is central planning of the worst order. It doesn't end there. It's not just at the product. It is processes. They intrude inside the working of the firms. They tell the firm this is how this department will work. You should have this kind of process. They control the firms in a deep and intrusive way. Let me tell you a story. Many, many years ago, this may not be the way it works today, many, many years ago, a bank applied for the following approval. They wanted to promote consumers learning how to use ATMs. Okay. So pre previously, people love to go to a bank branch and withdraw cash. They wanted people to come to a ATM, put in their ATM card, type in a password, say I want 5,000 rupees, get cash. They wanted to encourage people to do this. So they thought that, you know, the Cadbury's chocolate five star. They wanted that candy bar to be stored inside the ATM. So each time you withdraw more than five thousand rupees, it'll also spit out a five star to you. Okay? Like this is the business judgment of the firm. It should be the birthright of the firm. So sad story number one, they had to go take approval of the regulator. Okay, that should bother us right there. Sad story two, the approval was denied. Regulator said it is undignified, along with cash. How can you give a five star candy? We don't like it, we will ban it. Okay so I want you to see the deep connections between all these pieces. When you violate separation of powers, you get monolithic power. That's the essence of what we knew from the 17th century, that when a state fuses too much power, it becomes too powerful, and that scares the private sector. When you don't have rule of law. that scares the private sector. Then the private sector goes quiet. The private sector stops talking. It stops complaining. It stops criticizing. You get a silence of the graveyard in the public domain. People only praise the regulators. They all say, Oh, it is so great. And of course now every regulated entity who gets in wants the licensing constraints to block anybody else from coming in. And then their job is to suck up to the regulator and say kind things, go meet them uh lobby with them, campaign with them all the time, always done with in a very solicitous way that oh sir, you are so great. Just one small thing, like you must ban this or you must prevent this, or that person is doing that. You should go raid them and make sure that they don't do these kinds of things. And that gives you a complete intrusive central planning environment. You lose competition, you lose innovation, you lose dynamism. This is one of the most important elements of how India lost the growth dynamic",
       "words": [
         {
           "word": "How",
@@ -45843,15 +45795,7 @@
           "startTime": 2515.55,
           "endTime": 2515.79,
           "confidence": 0.9262
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2515.79,
-      "endTime": 2518.85,
-      "text": "is complete, absolute power. Where",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 2515.79,
@@ -45881,15 +45825,7 @@
           "startTime": 2518.35,
           "endTime": 2518.85,
           "confidence": 0.8157
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2519.47,
-      "endTime": 2768.81,
-      "text": "You can write regulations, you can control licensing, you can avoid punishment, and the business people look up, they know that their life and death is in the hands of these civil servants. And so they will be obedient. They will say yes, sir. Okay? And there will be no freedom of speech. There will be no meaningful intellectual discussion around what is the nature of this central planning that has sprung up. Of course, the staff of the regulator will enjoy being comprehensive central planners. There is a deep misconception on the part of a lot of people that thanks to the 1991 reforms we got a great decline of central planning in India. This is largely not true because actually something like 75% of the economy came under the footprint of regulators. And we got more detailed, more intrusive central planning backed by hundreds of employees walking around these industries, controlling them in more intrusive detail than ever before. So earlier, at least the Indian state was far away. In your ground lived reality, you could do whatever you wanted. That changed. Once these kinds of organizations came up, they got intrusive, detailed control of every product and every process of each of these firms. They control industries. So you get a headline like XYZ regulator has introduced this product. Okay, it should make you see red. The introduction of a product should be by a firm. Firms should be thinking, innovating, launching products. No, that's not how India works. The regulator introduces the product. Why? Because the regulator says everything is banned. You've got to come to me. You've got to take my permission. I will not allow you to launch a product until I approve the product. Okay? This is central planning of the worst order. It doesn't end there. It's not just at the product. It is processes. They intrude inside the working of the firms. They tell the firm this is how this department will work. You should have this kind of process. They control the firms in a deep and intrusive way. Let me tell you a story. Many, many years ago, this may not be the way it works today, many, many years ago, a bank applied for the following approval. They wanted to promote consumers learning how to use ATMs. Okay. So pre previously, people love to go to a bank branch and withdraw cash. They wanted people to come to a ATM, put in their ATM card, type in a password, say I want 5,000 rupees, get cash. They wanted to encourage people to do this. So they thought that, you know, the Cadbury's chocolate five star. They wanted that candy bar to be stored inside the ATM. So each time you withdraw more than five thousand rupees, it'll also spit out a five star to you. Okay? Like this is the business judgment of the firm. It should be the birthright of the firm. So sad story number one, they had to go take approval of the regulator. Okay, that should bother us right there. Sad story two, the approval was denied. Regulator said it is undignified, along with cash. How can you give a five star candy? We don't like it, we will ban it. Okay so I want you to see the deep connections between all these pieces. When you violate separation of powers, you get monolithic power. That's the essence of what we knew from the 17th century, that when a state fuses too much power, it becomes too powerful, and that scares the private sector. When you don't have rule of law. that scares the private sector. Then the private sector goes quiet. The private sector stops talking. It stops complaining. It stops criticizing. You get a silence of the graveyard in the public domain. People only praise the regulators. They all say, Oh, it is so great. And of course now every regulated entity who gets in wants the licensing constraints to block anybody else from coming in. And then their job is to suck up to the regulator and say kind things, go meet them uh lobby with them, campaign with them all the time, always done with in a very solicitous way that oh sir, you are so great. Just one small thing, like you must ban this or you must prevent this, or that person is doing that. You should go raid them and make sure that they don't do these kinds of things. And that gives you a complete intrusive central planning environment. You lose competition, you lose innovation, you lose dynamism. This is one of the most important elements of how India lost the growth dynamic",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 2519.47,
@@ -50617,8 +50553,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2769.26,
-      "endTime": 2817.19,
-      "text": "Of nineteen ninety one to twenty eleven. It's such a scary story, and I didn't know the extent of this still infected just now. So I'm I'm I'm uh still kind of reeling from the shock. You know, power corrupts, absolute power corrupts, absolutely. And this is like a huge level of oppressive power. Uh and uh yeah, horrifying. I I need I need I need I need to recover. Let's have a chapter break. You need a coffee. So, Ajay, for the sake of gentle readers, you know, give us a bulleted summary of what is wrong with the regulatory state in India, as you just laid out. So let's take inputs and outcomes. Okay? Inputs. What is",
+      "endTime": 2812.79,
+      "text": "Of nineteen ninety one to twenty eleven. It's such a scary story, and I didn't know the extent of this still infected just now. So I'm I'm I'm uh still kind of reeling from the shock. You know, power corrupts, absolute power corrupts, absolutely. And this is like a huge level of oppressive power. Uh and uh yeah, horrifying. I I need I need I need I need to recover. Let's have a chapter break. You need a coffee. So, Ajay, for the sake of gentle readers, you know, give us a bulleted summary of what is wrong with the regulatory state in India, as you just laid out.",
       "words": [
         {
           "word": "Of",
@@ -51273,7 +51209,15 @@
           "startTime": 2812.23,
           "endTime": 2812.79,
           "confidence": 0.7947
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2812.79,
+      "endTime": 2870.15,
+      "text": "So let's take inputs and outcomes. Okay? Inputs. What is wrong with regulators in India is that their founding laws give them sweeping power to make laws as unelected officials. Their founding laws give them extreme concentration of power in violation of separation of powers. they have a combination of legislative, executive, and judicial powers. There is a low level of rule of law, so it all becomes arbitrary power. Okay? So this is the input about what is wrong. What is the outcome? The outcome is that we have lost dynamism. We have lost innovation. We have lost entry. We have lost the competition and the creative destruction of the market economy and uh it is an important source of why Indian GDP growth went down",
+      "words": [
         {
           "word": "So",
           "startTime": 2812.79,
@@ -51333,15 +51277,7 @@
           "startTime": 2817.03,
           "endTime": 2817.19,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2817.19,
-      "endTime": 2841.07,
-      "text": "wrong with regulators in India is that their founding laws give them sweeping power to make laws as unelected officials. Their founding laws give them extreme concentration of power in violation of separation of powers. they have a combination of legislative, executive, and judicial powers. There is a low level of rule of law, so it",
-      "words": [
+        },
         {
           "word": "wrong",
           "startTime": 2817.19,
@@ -51677,15 +51613,7 @@
           "startTime": 2840.91,
           "endTime": 2841.07,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2841.07,
-      "endTime": 2851.71,
-      "text": "all becomes arbitrary power. Okay? So this is the input about what is wrong. What is the outcome? The outcome is that we have lost",
-      "words": [
+        },
         {
           "word": "all",
           "startTime": 2841.07,
@@ -51835,15 +51763,7 @@
           "startTime": 2850.83,
           "endTime": 2851.71,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2851.71,
-      "endTime": 2870.15,
-      "text": "dynamism. We have lost innovation. We have lost entry. We have lost the competition and the creative destruction of the market economy and uh it is an important source of why Indian GDP growth went down",
-      "words": [
+        },
         {
           "word": "dynamism.",
           "startTime": 2851.71,
@@ -52133,8 +52053,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2882.55,
-      "endTime": 2931.72,
-      "text": "Uh here is a simple conceptual framework of how to fix it. The first is that the power to write law at regulators needs to be greatly narrowed down. Okay. In constitutional jargon, there is excessive delegation. The parliament can't give unchecked powers to write law to unelected officials. So each situation where a regulation can be written needs to be a high quality section of law where there is an objective, there are balancing considerations that on one hand you could go wrong in this direction, on the other hand, you could go wrong in this direction. And now you look at the world. and form a judgment of what is appropriate balance and based on that you write a regulation. So thought needs to be applied in how section by section of the parliamentary law delegates regulation",
+      "endTime": 3231.69,
+      "text": "Uh here is a simple conceptual framework of how to fix it. The first is that the power to write law at regulators needs to be greatly narrowed down. Okay. In constitutional jargon, there is excessive delegation. The parliament can't give unchecked powers to write law to unelected officials. So each situation where a regulation can be written needs to be a high quality section of law where there is an objective, there are balancing considerations that on one hand you could go wrong in this direction, on the other hand, you could go wrong in this direction. And now you look at the world. and form a judgment of what is appropriate balance and based on that you write a regulation. So thought needs to be applied in how section by section of the parliamentary law delegates regulation making power to the regulator. Second, the legislative and executive functions need to be thoroughly covered with rule of law procedures. Right now the laws are just skimpy. You can do whatever you want. Whereas actually you need hundreds of sections of law to tie down what is the due process that will be followed to make a regulation. Okay? Because you are not an elected official, you have a shortfall of democratic legitimacy. So there is a whole procedure about how regulations should be made, and uh there are checks and balances and the people are on board able to criticize how the regulations are being made, and that way the quality of the laws that are written by the regulator will be better. Similarly, on the executive side licensing. It can't be an arbitrary power that I will give somebody a license, I will not give somebody a license. There has to be due process around it. It should be possible for the aggrieved person to appeal. That if you denied me a licence, it is tantamount to your harming me. And under rule of law, when I am harmed, I should be able to appeal to a higher judicial authority. At present it's just like no, we don't like you, go away. We'll not give you a license. Okay? So a whole set of rule of law procedures need to be brought in around the executive function. So both for the legislative function and the executive function. The whole battery of process requirements are required whereby these organizations are not a case of unchecked power, but actually have checks and balances. Then you come to the uh judicial power. You could view it two ways. One way is we want a whole check and balance whereby there are judges sitting inside a regulatory organization. who are issuing orders. And you could do that. And I have been part of that kind of design work. But my views have shifted because of some really excellent research that has been going on on the working of the Bombay High Court and the Delhi High Court in my organization XKDR Forum. The old tropes about the process inefficiency of the High Courts are becoming less true. High courts are improving in terms of the way in which they work. So today I am increasingly starting to think Do it like the UK, do it like Australia, that the regulator can develop a packet and then if they decide to prosecute, go to the High Court. Let a true judge hear the case. Let the firm defend itself. At the High Court you don't even need to have a judicial function inside the regulatory organization. All these things have to happen in the primary law. So the site of action is the drafting of the law that makes the airport's economic regulatory authority. It needs a great bag of regulatory theory to be applied. And in this I want to say to everybody that you have heard me talk about all these issues, separation of powers, rule of law, procedures, checks and balances. All this is actually generic. It is not about SEBI, it is not about FSSAI, it is not about RERA, it's actually a general technology. So, as has been done in many other countries, there's a brilliant piece of law in the United States, which was done in 1946, okay? Don't you envy these countries? In 1946, there was a general law, which is called the Administrative Procedures Act, which was a republican pushback against democratic creation of too many federal agencies. It's a general law that covers all federal agencies. So Administrative Procedures Act. It's not for SEC, it's not for Particular organization after another. It's a general law that applies to all federal agencies. And it is this kind of thing that establish separation of powers is already in the constitution of the United States. And establish checks and balances, establish rule of law procedures. A lot of the heavy lifting is done in court. That when a regulator misbehaves, the agreed party challenges it in court. And that's how jurisprudence got built up over the years that constrains the working of regulators in America. when we had done the Separation of Powers episode, at the end we had talked about two very important developments that have taken place in the last two, three years on in the American landscape about uh the SEC, the right to a jury trial being used to knock out the ability to run trials inside the SEC and about Chevron Doctrine. Okay, so these are very big developments and the courts are all over the working of these regulatory agencies as it should be. That is a healthy way to approach this. So this is the way forward that we need to aim for the deeper regulatory theory transformation of the laws that create the regulators whereby we are re-establishing separation of powers and we are creating checks and balances and we are creating process requirements through which these things will operate.",
       "words": [
         {
           "word": "Uh",
@@ -52969,15 +52889,7 @@
           "startTime": 2931.08,
           "endTime": 2931.72,
           "confidence": 0.9743
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2931.72,
-      "endTime": 2936.52,
-      "text": "making power to the regulator. Second, the",
-      "words": [
+        },
         {
           "word": "making",
           "startTime": 2931.72,
@@ -53019,15 +52931,7 @@
           "startTime": 2935.96,
           "endTime": 2936.52,
           "confidence": 0.9924
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2936.52,
-      "endTime": 3019.47,
-      "text": "legislative and executive functions need to be thoroughly covered with rule of law procedures. Right now the laws are just skimpy. You can do whatever you want. Whereas actually you need hundreds of sections of law to tie down what is the due process that will be followed to make a regulation. Okay? Because you are not an elected official, you have a shortfall of democratic legitimacy. So there is a whole procedure about how regulations should be made, and uh there are checks and balances and the people are on board able to criticize how the regulations are being made, and that way the quality of the laws that are written by the regulator will be better. Similarly, on the executive side licensing. It can't be an arbitrary power that I will give somebody a license, I will not give somebody a license. There has to be due process around it. It should be possible for the aggrieved person to appeal. That if you denied me a licence, it is tantamount to your harming me. And under rule of law, when I am harmed, I should be able to appeal to a higher judicial authority. At present it's just like no, we don't like you, go away. We'll not give you a license. Okay? So a whole set of rule of law procedures need to be brought in around the executive function. So both for the legislative function and the executive function. The whole battery of process requirements are required whereby these organizations are not a case of unchecked power, but actually have",
-      "words": [
+        },
         {
           "word": "legislative",
           "startTime": 2936.52,
@@ -54611,15 +54515,7 @@
           "startTime": 3019.23,
           "endTime": 3019.47,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3019.47,
-      "endTime": 3025.39,
-      "text": "checks and balances. Then you come to the uh judicial power. You could",
-      "words": [
+        },
         {
           "word": "checks",
           "startTime": 3019.47,
@@ -54697,15 +54593,7 @@
           "startTime": 3025.23,
           "endTime": 3025.39,
           "confidence": 0.9952
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3025.39,
-      "endTime": 3228.71,
-      "text": "view it two ways. One way is we want a whole check and balance whereby there are judges sitting inside a regulatory organization. who are issuing orders. And you could do that. And I have been part of that kind of design work. But my views have shifted because of some really excellent research that has been going on on the working of the Bombay High Court and the Delhi High Court in my organization XKDR Forum. The old tropes about the process inefficiency of the High Courts are becoming less true. High courts are improving in terms of the way in which they work. So today I am increasingly starting to think Do it like the UK, do it like Australia, that the regulator can develop a packet and then if they decide to prosecute, go to the High Court. Let a true judge hear the case. Let the firm defend itself. At the High Court you don't even need to have a judicial function inside the regulatory organization. All these things have to happen in the primary law. So the site of action is the drafting of the law that makes the airport's economic regulatory authority. It needs a great bag of regulatory theory to be applied. And in this I want to say to everybody that you have heard me talk about all these issues, separation of powers, rule of law, procedures, checks and balances. All this is actually generic. It is not about SEBI, it is not about FSSAI, it is not about RERA, it's actually a general technology. So, as has been done in many other countries, there's a brilliant piece of law in the United States, which was done in 1946, okay? Don't you envy these countries? In 1946, there was a general law, which is called the Administrative Procedures Act, which was a republican pushback against democratic creation of too many federal agencies. It's a general law that covers all federal agencies. So Administrative Procedures Act. It's not for SEC, it's not for Particular organization after another. It's a general law that applies to all federal agencies. And it is this kind of thing that establish separation of powers is already in the constitution of the United States. And establish checks and balances, establish rule of law procedures. A lot of the heavy lifting is done in court. That when a regulator misbehaves, the agreed party challenges it in court. And that's how jurisprudence got built up over the years that constrains the working of regulators in America. when we had done the Separation of Powers episode, at the end we had talked about two very important developments that have taken place in the last two, three years on in the American landscape about uh the SEC, the right to a jury trial being used to knock out the ability to run trials inside the SEC and about Chevron Doctrine. Okay, so these are very big developments and the courts are all over the working of these regulatory agencies as it should be. That is a healthy way to approach this. So this is the way forward that we need to aim for the deeper regulatory theory transformation of the laws that create the regulators whereby we are re-establishing separation of powers and we are creating checks and balances and we are creating process requirements",
-      "words": [
+        },
         {
           "word": "view",
           "startTime": 3025.39,
@@ -58077,15 +57965,7 @@
           "startTime": 3227.43,
           "endTime": 3228.71,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3228.71,
-      "endTime": 3245.27,
-      "text": "through which these things will operate. So Arj, this is not thankfully where the story ends. Tell me about FSLRC.",
-      "words": [
+        },
         {
           "word": "through",
           "startTime": 3228.71,
@@ -58121,7 +58001,15 @@
           "startTime": 3231.19,
           "endTime": 3231.69,
           "confidence": 0.9806
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3240.65,
+      "endTime": 3245.27,
+      "text": "So Arj, this is not thankfully where the story ends. Tell me about FSLRC.",
+      "words": [
         {
           "word": "So",
           "startTime": 3240.65,
@@ -78767,8 +78655,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4417.11,
-      "endTime": 4682.11,
-      "text": "I mentioned Dr. Sahu a moment ago, who is a wonderful person and an important part of the Indian regulatory theory story. In twenty twelve, he was one of the first people to start telling us, you know, this violation of separation of powers is a core problem that has happened with regulators in India, and actually it is unprecedented. Like Dunya me, you don't get this sort of thing. Dr. Sahu was a board member at the brand new insolvency and bankruptcy regulator of India. A little bit of a sad story. Okay, Susan led the team that did the first draft of the in insolvency and bankruptcy code. We talked about this in our episode on bankruptcy. The hundred and forty sections of FSLRC of the checks and balances about how a regulator should work had been imported into that draft law by that team. Okay. Unfortunately it went into the belly of the government and all that got deleted. And the bad 15 sections from the SEBI Act were imported there. So that was a lost opportunity. Then Dr. Sahu became the first chairman of the insolvency and bankruptcy regulator. And he knows all this stuff. He's he's a master of all the same knowledge. He has worked as part of the FSLRC project and so on. And he said, What am I going to do? Like this law does not impose checks and balances on me, but I know that without checks and balances this is going to go badly. So he thought that just like when you don't have the law done correctly, you still have an agreement. between the Ministry of Finance and the RBI to block printing money to pay for the deficit, or an agreement between the Ministry of Finance and the RBI for inflation targeting. Like that. Can we make progress with something that is semi legal even though it's not in the law? So he did separation of powers inside the IBBI. He separated out three departments that there will be a legislative function, an executive function, and a judicial function. And the IBBI board Enacted a regulation governing how IBBI makes regulations, where some, but not all, of these good practices were imported in. Okay, to a decent extent, the extent to which you could take a subset out of what I described as the FSLRC rulemaking procedure, regulation making procedure was imported into this regulation to govern how IBBI makes regulations. So this was done, I think, in 2016 or 2017 at IBBI. Then it slumbered there for some years. Then recently there was a lot of thought around how SEBI can become better, how SEBI can become stronger. And SEBI did the same thing. SEBI came out with a regulation on making regulations, where that that same bag of ideas was imported into SEBI. And today is the happy day when in the early morning I got an SMS that this has been done by RBI. So now today you have three regulatory organizations. Where the board has approved a regulation that governs how the organization makes regulations. And it's not the end of the journey. There'll be many steps to go. But I think it's an important milestone. At this point, I think the intellectual argument has been won. A journey that began in the 2000s has reached winning the intellectual journey in 2025. Okay? At this point, I think nobody in good faith in India can argue. that oh yeah, it's a regulator, we have unchecked power. We can just make regulations as we like. Now there is humility, and then there will be the question how? And it'll take another ten years to figure out how to do this, how do you build the state capability, to make regulations, how do you become more controlled, what is market failure. Okay, imagine a whole new a generation of civil servants are going to understand what is market failure, how to do cost benefit analysis. It's great. It takes time. And we hope Now in the future, when new laws are drafted, when amendments to laws are drafted, this kind of tool chain will actually go into the laws where it can be done better. The version that you get as the board of a regulator establishing checks and balances on the staff of the regulator is not as good as what the parliament can do to establish checks and balances on the very agency. So I'm not saying that we are done, but I am saying that we are at an important milestone. This is a big day in the twenty five year journey of regulatory theory, and this is also a demo of our theory of",
+      "endTime": 4684.75,
+      "text": "I mentioned Dr. Sahu a moment ago, who is a wonderful person and an important part of the Indian regulatory theory story. In twenty twelve, he was one of the first people to start telling us, you know, this violation of separation of powers is a core problem that has happened with regulators in India, and actually it is unprecedented. Like Dunya me, you don't get this sort of thing. Dr. Sahu was a board member at the brand new insolvency and bankruptcy regulator of India. A little bit of a sad story. Okay, Susan led the team that did the first draft of the in insolvency and bankruptcy code. We talked about this in our episode on bankruptcy. The hundred and forty sections of FSLRC of the checks and balances about how a regulator should work had been imported into that draft law by that team. Okay. Unfortunately it went into the belly of the government and all that got deleted. And the bad 15 sections from the SEBI Act were imported there. So that was a lost opportunity. Then Dr. Sahu became the first chairman of the insolvency and bankruptcy regulator. And he knows all this stuff. He's he's a master of all the same knowledge. He has worked as part of the FSLRC project and so on. And he said, What am I going to do? Like this law does not impose checks and balances on me, but I know that without checks and balances this is going to go badly. So he thought that just like when you don't have the law done correctly, you still have an agreement. between the Ministry of Finance and the RBI to block printing money to pay for the deficit, or an agreement between the Ministry of Finance and the RBI for inflation targeting. Like that. Can we make progress with something that is semi legal even though it's not in the law? So he did separation of powers inside the IBBI. He separated out three departments that there will be a legislative function, an executive function, and a judicial function. And the IBBI board Enacted a regulation governing how IBBI makes regulations, where some, but not all, of these good practices were imported in. Okay, to a decent extent, the extent to which you could take a subset out of what I described as the FSLRC rulemaking procedure, regulation making procedure was imported into this regulation to govern how IBBI makes regulations. So this was done, I think, in 2016 or 2017 at IBBI. Then it slumbered there for some years. Then recently there was a lot of thought around how SEBI can become better, how SEBI can become stronger. And SEBI did the same thing. SEBI came out with a regulation on making regulations, where that that same bag of ideas was imported into SEBI. And today is the happy day when in the early morning I got an SMS that this has been done by RBI. So now today you have three regulatory organizations. Where the board has approved a regulation that governs how the organization makes regulations. And it's not the end of the journey. There'll be many steps to go. But I think it's an important milestone. At this point, I think the intellectual argument has been won. A journey that began in the 2000s has reached winning the intellectual journey in 2025. Okay? At this point, I think nobody in good faith in India can argue. that oh yeah, it's a regulator, we have unchecked power. We can just make regulations as we like. Now there is humility, and then there will be the question how? And it'll take another ten years to figure out how to do this, how do you build the state capability, to make regulations, how do you become more controlled, what is market failure. Okay, imagine a whole new a generation of civil servants are going to understand what is market failure, how to do cost benefit analysis. It's great. It takes time. And we hope Now in the future, when new laws are drafted, when amendments to laws are drafted, this kind of tool chain will actually go into the laws where it can be done better. The version that you get as the board of a regulator establishing checks and balances on the staff of the regulator is not as good as what the parliament can do to establish checks and balances on the very agency. So I'm not saying that we are done, but I am saying that we are at an important milestone. This is a big day in the twenty five year journey of regulatory theory, and this is also a demo of our theory of change. This is how progress happens.",
       "words": [
         {
           "word": "I",
@@ -83521,15 +83409,7 @@
           "startTime": 4681.95,
           "endTime": 4682.11,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4682.11,
-      "endTime": 4717.17,
-      "text": "change. This is how progress happens. One baby step at a time, the infant crawls away from the precipice, but it can still hear the labored breathing of the monster. I want to give you a fist bump. Well done. Well done. And you know th this is inspiring that uh twent Pachisalakte So basically now I'm thinking twenty-three years later everything is everything will have its first viral video. That is my hope. Laughing like that. You think it won't happen even then? Much before. Much before, what are you even saying? It could be this. I don't think it'll be this, but yeah, we'll keep trying.",
-      "words": [
+        },
         {
           "word": "change.",
           "startTime": 4682.11,
@@ -83565,7 +83445,15 @@
           "startTime": 4683.95,
           "endTime": 4684.75,
           "confidence": 0.9464
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4684.75,
+      "endTime": 4717.17,
+      "text": "One baby step at a time, the infant crawls away from the precipice, but it can still hear the labored breathing of the monster. I want to give you a fist bump. Well done. Well done. And you know th this is inspiring that uh twent Pachisalakte So basically now I'm thinking twenty-three years later everything is everything will have its first viral video. That is my hope. Laughing like that. You think it won't happen even then? Much before. Much before, what are you even saying? It could be this. I don't think it'll be this, but yeah, we'll keep trying.",
+      "words": [
         {
           "word": "One",
           "startTime": 4684.75,
@@ -84311,8 +84199,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4730.43,
-      "endTime": 4789.95,
-      "text": "You're gonna get a behind the scenes clip now. Next episode I'll have seven. Ignore this for now. But in the next step I'm giving you five. I promise next step I've been have five recommendations. Like you promised seven recommendations for this. Where I said it's time for regulations and he said next episode I will give seven, I have none now. Every episode he does this. The sevens are multiplying. Compound interest. The book I want to recommend is called I will have to read out the name. It's called Regulation A Primer by Susan Dudley and Jerry Brito. Wonderful book. It's mostly about how regulation works in America. But the first and last chapters are relevant to the overall general purpose series of regulation. Covers some of the Areas you covered, but nowhere near as comprehensively. So this episode is actually the recommendation. So please watch this episode, but if you are watching this, you already have. So please watch it again.",
+      "endTime": 4732.59,
+      "text": "You're gonna get a behind the scenes clip now.",
       "words": [
         {
           "word": "You're",
@@ -84367,7 +84255,15 @@
           "startTime": 4732.11,
           "endTime": 4732.59,
           "confidence": 0.9301
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4732.59,
+      "endTime": 4739.87,
+      "text": "Next episode I'll have seven. Ignore this for now. But in the next step I'm giving you five. I promise next step I've been have",
+      "words": [
         {
           "word": "Next",
           "startTime": 4732.59,
@@ -84517,7 +84413,15 @@
           "startTime": 4739.71,
           "endTime": 4739.87,
           "confidence": 0.6089
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4739.87,
+      "endTime": 4789.95,
+      "text": "five recommendations. Like you promised seven recommendations for this. Where I said it's time for regulations and he said next episode I will give seven, I have none now. Every episode he does this. The sevens are multiplying. Compound interest. The book I want to recommend is called I will have to read out the name. It's called Regulation A Primer by Susan Dudley and Jerry Brito. Wonderful book. It's mostly about how regulation works in America. But the first and last chapters are relevant to the overall general purpose series of regulation. Covers some of the Areas you covered, but nowhere near as comprehensively. So this episode is actually the recommendation. So please watch this episode, but if you are watching this, you already have. So please watch it again.",
+      "words": [
         {
           "word": "five",
           "startTime": 4739.87,

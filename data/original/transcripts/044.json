@@ -5,7 +5,7 @@
     "durationSeconds": 4132,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 14.84,
-      "endTime": 92.36,
-      "text": "Welcome to Everything Is Everything. I'm Amit. This is Ajay. And you might think from the subject of this video that he is going to be dry and so on, but there is going to be plenty of revelry, there is going to be quiet joy, there is going to be poetry, there is going to be song, and there will be instructions for dancing. What a good life. It's a good life, and I want to begin with a poem. It's a poem by Robert Bly. It's called Taking the Hands. Taking the hands of someone you love, you see their delicate cages. Tiny birds are singing in the secluded prairies and in the deep valleys of the hand still digesting. It's beautiful. It is beautiful. So, you know the reason I read that poem out is that it's both a great poem, and it also sort of conveys a universe that can be contained in something small. And I want to talk today about love. And I want to talk in particular about something that I know you have deep abiding passion for, that makes you excited, like a young schoolboy discovering whatever makes young schoolboys happy for the first time. So tell me about one of the great loves of your life, maps.",
+      "endTime": 49.97,
+      "text": "Welcome to Everything Is Everything. I'm Amit. This is Ajay. And you might think from the subject of this video that he is going to be dry and so on, but there is going to be plenty of revelry, there is going to be quiet joy, there is going to be poetry, there is going to be song, and there will be instructions for dancing. What a good life. It's a good life, and I want to begin with a poem. It's a poem by Robert Bly. It's called Taking the Hands. Taking the hands of someone you love, you see their delicate cages. Tiny birds are singing in the secluded prairies and in the deep valleys of the hand still",
       "words": [
         {
           "word": "Welcome",
@@ -745,7 +745,15 @@
           "startTime": 49.65,
           "endTime": 49.97,
           "confidence": 0.7754
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 49.97,
+      "endTime": 57.43,
+      "text": "digesting. It's beautiful. It is beautiful.",
+      "words": [
         {
           "word": "digesting.",
           "startTime": 49.97,
@@ -781,7 +789,15 @@
           "startTime": 56.93,
           "endTime": 57.43,
           "confidence": 0.9129
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 66.42,
+      "endTime": 92.36,
+      "text": "So, you know the reason I read that poem out is that it's both a great poem, and it also sort of conveys a universe that can be contained in something small. And I want to talk today about love. And I want to talk in particular about something that I know you have deep abiding passion for, that makes you excited, like a young schoolboy discovering whatever makes young schoolboys happy for the first time. So tell me about one of the great loves of your life, maps.",
+      "words": [
         {
           "word": "So,",
           "startTime": 66.42,
@@ -1321,8 +1337,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 94.47,
-      "endTime": 351.28,
-      "text": "Maps are great, maps are beautiful. Let me just talk about why maps are so interesting and so important. You know, in a way in the modern world, we're all blase. We're used to maps. You know, we're ubiquitously surrounded by maps, often very good maps. I want to take you back to the Middle Ages. You are Emperor Akbar, you are Emperor Aurangzeb. Okay, two great administrators of world history. And you actually don't know much about the country that you rule. Okay, now think of a thousand practical problems. How do you go from A to B? Who knows? You just keep on asking some local trackers on the way, and they say, Yeah, go this way, go that way, but there is no ability to envision and plan and evaluate the cost benefit of a route of a transportation mechanism. Where do you ford a river? How do you go up a mountain range? How do you wage an offensive war? How do you wage a defensive war? Where do you build a road? what is a nice place where maybe there can be a settlement. Okay. There are just thousands of questions and frankly, you're just in the dark. What you have is a large amount of local knowledge held in a deeply local way in local languages. And then you get a Chinese whispers in its communication, because you know there it will be in a local language. It has to be turned into the lingua franca. There will be all kinds of confusion when Tulu is translated into Persian. And both sides are confused about what they're asking. The person says, I want to find a good place to get water for my horses. And the person thinks the question was, Where can the horses ford the river? Okay. So there's just this complete mess of local information. And with local information, you're always solving local optimizations. You're not able to see the bird's eye picture of what is going on. You're not able to judge revenue potential. Okay, you're not able to understand how to tax the country. So The country is just some vague dark world of confusion and uncertainty, and everything is done through inefficient human to human contact, particularly with a large number of languages, as is the case with India, where the natives have knowledge and they are loath to give it to you, or they want to rent for it, or they want to deliberately mislead the traveler or the merchant or whatever. So that is the state of confusion and chaos that reigns. So into this world came the magic of map. And I've always felt that rush of looking at a map, and suddenly you know that suddenly the world is laid bare and you are able to see everything. And there are many, many kinds of maps. It can be a physical map, it can be a topo sheet, it can be a transportation map emphasizing railway lines and roads, and I don't want to pretend that there is only one map. There are many many kinds of maps. Maps do is they abruptly take you from darkness to the light. That you don't know, you'll bumble around in a confused way, asking some people, and suddenly you look at a map and boom, you know the answer. And we can envisage travel, we can make plans, we can make calculations. There's a whole array of good things that flow from a simple piece of a printed object. That's a map. So just from childhood. I have felt that rush again and again of seeing a good map. Suddenly, in the hands of a good map, you meticulously know the reality. And then there are bad maps. Then you kind of think, yeah, vaguely, somewhere here there is this something, but actually I don't know. So you really want that fine precision. So for example, when you're hiking in the mountains, you really want a 10-meter, 20-meter topo sheet. One is to 10,000 maps, one is to 20,000 maps. So in a one is to 20,000 map. One centimeter is 0.2 kilometers, it's 200 meters. So imagine each one centimeter on the map is 200 meters, or in a one is to 10,000 map, each one centimeter is a hundred meters. Okay. Now suddenly you can vividly understand where you are. You move every 100, 200 meters, you revise your judgment, ideally learn how to use a compass, and then you know where you are, and every step of the way you are able to look at the map, and the map is your guide. You don't need a human guide, a local tracker, you don't need the local knowledge. Suddenly you can be from far away",
+      "endTime": 360.66,
+      "text": "Maps are great, maps are beautiful. Let me just talk about why maps are so interesting and so important. You know, in a way in the modern world, we're all blase. We're used to maps. You know, we're ubiquitously surrounded by maps, often very good maps. I want to take you back to the Middle Ages. You are Emperor Akbar, you are Emperor Aurangzeb. Okay, two great administrators of world history. And you actually don't know much about the country that you rule. Okay, now think of a thousand practical problems. How do you go from A to B? Who knows? You just keep on asking some local trackers on the way, and they say, Yeah, go this way, go that way, but there is no ability to envision and plan and evaluate the cost benefit of a route of a transportation mechanism. Where do you ford a river? How do you go up a mountain range? How do you wage an offensive war? How do you wage a defensive war? Where do you build a road? what is a nice place where maybe there can be a settlement. Okay. There are just thousands of questions and frankly, you're just in the dark. What you have is a large amount of local knowledge held in a deeply local way in local languages. And then you get a Chinese whispers in its communication, because you know there it will be in a local language. It has to be turned into the lingua franca. There will be all kinds of confusion when Tulu is translated into Persian. And both sides are confused about what they're asking. The person says, I want to find a good place to get water for my horses. And the person thinks the question was, Where can the horses ford the river? Okay. So there's just this complete mess of local information. And with local information, you're always solving local optimizations. You're not able to see the bird's eye picture of what is going on. You're not able to judge revenue potential. Okay, you're not able to understand how to tax the country. So The country is just some vague dark world of confusion and uncertainty, and everything is done through inefficient human to human contact, particularly with a large number of languages, as is the case with India, where the natives have knowledge and they are loath to give it to you, or they want to rent for it, or they want to deliberately mislead the traveler or the merchant or whatever. So that is the state of confusion and chaos that reigns. So into this world came the magic of map. And I've always felt that rush of looking at a map, and suddenly you know that suddenly the world is laid bare and you are able to see everything. And there are many, many kinds of maps. It can be a physical map, it can be a topo sheet, it can be a transportation map emphasizing railway lines and roads, and I don't want to pretend that there is only one map. There are many many kinds of maps. Maps do is they abruptly take you from darkness to the light. That you don't know, you'll bumble around in a confused way, asking some people, and suddenly you look at a map and boom, you know the answer. And we can envisage travel, we can make plans, we can make calculations. There's a whole array of good things that flow from a simple piece of a printed object. That's a map. So just from childhood. I have felt that rush again and again of seeing a good map. Suddenly, in the hands of a good map, you meticulously know the reality. And then there are bad maps. Then you kind of think, yeah, vaguely, somewhere here there is this something, but actually I don't know. So you really want that fine precision. So for example, when you're hiking in the mountains, you really want a 10-meter, 20-meter topo sheet. One is to 10,000 maps, one is to 20,000 maps. So in a one is to 20,000 map. One centimeter is 0.2 kilometers, it's 200 meters. So imagine each one centimeter on the map is 200 meters, or in a one is to 10,000 map, each one centimeter is a hundred meters. Okay. Now suddenly you can vividly understand where you are. You move every 100, 200 meters, you revise your judgment, ideally learn how to use a compass, and then you know where you are, and every step of the way you are able to look at the map, and the map is your guide. You don't need a human guide, a local tracker, you don't need the local knowledge. Suddenly you can be from far away and you know what is going on. That is just so thrilling. So that is why I become so happy that there should be maps. The world should be a bounty of maps. And you know more than Emperor Aurangze.",
       "words": [
         {
           "word": "Maps",
@@ -6135,15 +6151,7 @@
           "startTime": 350.72,
           "endTime": 351.28,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 351.28,
-      "endTime": 354.24,
-      "text": "and you know what is going on. That is just so thrilling.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 351.28,
@@ -6215,15 +6223,7 @@
           "startTime": 353.68,
           "endTime": 354.24,
           "confidence": 0.9572
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 354.24,
-      "endTime": 360.66,
-      "text": "So that is why I become so happy that there should be maps. The world should be a bounty of maps. And you know more than Emperor Aurangze.",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 354.24,
@@ -67503,8 +67503,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3666.16,
-      "endTime": 3675.5,
-      "text": "I have rarely seen you so excited. You really want this exam, don't you? Let's do it. Let's do it. Even if I get zero on five. Let's do it.",
+      "endTime": 3671.84,
+      "text": "I have rarely seen you so excited. You really want this exam, don't you? Let's do it. Let's do it. Even",
       "words": [
         {
           "word": "I",
@@ -67631,7 +67631,15 @@
           "startTime": 3671.52,
           "endTime": 3671.84,
           "confidence": 0.9034
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3671.84,
+      "endTime": 3703.96,
+      "text": "if I get zero on five. Let's do it. Squealing an exam, an exam, an exam. How much fun. This is this is this is Jarr Talk in the land of murder where the shadows lie wondering to bind them. How did you get this? It says murder on the",
+      "words": [
         {
           "word": "if",
           "startTime": 3671.84,
@@ -67685,15 +67693,7 @@
           "startTime": 3674.0,
           "endTime": 3675.5,
           "confidence": 0.8307
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3682.72,
-      "endTime": 3686.24,
-      "text": "Squealing an exam, an exam, an exam. How much",
-      "words": [
+        },
         {
           "word": "Squealing",
           "startTime": 3682.72,
@@ -67747,15 +67747,7 @@
           "startTime": 3685.92,
           "endTime": 3686.24,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3686.24,
-      "endTime": 3693.78,
-      "text": "fun. This is this is this is",
-      "words": [
+        },
         {
           "word": "fun.",
           "startTime": 3686.24,
@@ -67797,15 +67789,7 @@
           "startTime": 3693.28,
           "endTime": 3693.78,
           "confidence": 0.9358
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3694.84,
-      "endTime": 3701.8,
-      "text": "Jarr Talk in the land of murder where the shadows lie wondering to bind them.",
-      "words": [
+        },
         {
           "word": "Jarr",
           "startTime": 3694.84,
@@ -67895,15 +67879,7 @@
           "startTime": 3701.16,
           "endTime": 3701.8,
           "confidence": 0.8939
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3701.8,
-      "endTime": 3730.03,
-      "text": "How did you get this? It says murder on the map. It says murder on the map, indeed. Yeah. But it also says Middle Earth, which I uh had blanked out, but well done. This was a simple one to get you started. Q one. The next one you had better get as well. Uh this is the next one. I'll give you a clue. Think classic work of fictional",
-      "words": [
+        },
         {
           "word": "How",
           "startTime": 3701.8,
@@ -67963,7 +67939,15 @@
           "startTime": 3703.88,
           "endTime": 3703.96,
           "confidence": 0.9801
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3703.96,
+      "endTime": 3730.03,
+      "text": "map. It says murder on the map, indeed. Yeah. But it also says Middle Earth, which I uh had blanked out, but well done. This was a simple one to get you started. Q one. The next one you had better get as well. Uh this is the next one. I'll give you a clue. Think classic work of fictional",
+      "words": [
         {
           "word": "map.",
           "startTime": 3703.96,
@@ -71603,8 +71587,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3962.47,
-      "endTime": 3968.89,
-      "text": "because there are plenty papers where you take people with Indian DNA living in an advanced economy and they have the exact same",
+      "endTime": 3971.86,
+      "text": "because there are plenty papers where you take people with Indian DNA living in an advanced economy and they have the exact same Average height in uh the new",
       "words": [
         {
           "word": "because",
@@ -71743,15 +71727,7 @@
           "startTime": 3968.39,
           "endTime": 3968.89,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3969.62,
-      "endTime": 3983.06,
-      "text": "Average height in uh the new country. Exactly. In fact, one of my cousins, my mom's twin son, who is a few months older than me, Halo Chagor, is uh much stronger than me. Right. And it's just and he grew up in the US and he's lived there all his time. It's about",
-      "words": [
+        },
         {
           "word": "Average",
           "startTime": 3969.62,
@@ -71787,7 +71763,15 @@
           "startTime": 3971.62,
           "endTime": 3971.86,
           "confidence": 0.9972
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3971.86,
+      "endTime": 3983.06,
+      "text": "country. Exactly. In fact, one of my cousins, my mom's twin son, who is a few months older than me, Halo Chagor, is uh much stronger than me. Right. And it's just and he grew up in the US and he's lived there all his time. It's about",
+      "words": [
         {
           "word": "country.",
           "startTime": 3971.86,

@@ -5,7 +5,7 @@
     "durationSeconds": 3338,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -27305,8 +27305,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1502.67,
-      "endTime": 1507.47,
-      "text": "point I want to make is that everybody who is there to all of these cities, even these terrible cities are",
+      "endTime": 1515.71,
+      "text": "point I want to make is that everybody who is there to all of these cities, even these terrible cities are network than being in a village. People are voting with their feet. You know? You might say a slum in Mumbai is terrible. It's better",
       "words": [
         {
           "word": "point",
@@ -27433,15 +27433,7 @@
           "startTime": 1507.31,
           "endTime": 1507.47,
           "confidence": 0.6909
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1507.47,
-      "endTime": 1510.01,
-      "text": "network than being in a village.",
-      "words": [
+        },
         {
           "word": "network",
           "startTime": 1507.47,
@@ -27477,15 +27469,7 @@
           "startTime": 1508.51,
           "endTime": 1510.01,
           "confidence": 0.6813
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1510.83,
-      "endTime": 1515.71,
-      "text": "People are voting with their feet. You know? You might say a slum in Mumbai is terrible. It's better",
-      "words": [
+        },
         {
           "word": "People",
           "startTime": 1510.83,
@@ -40899,8 +40883,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2293.63,
-      "endTime": 2295.89,
-      "text": "think they're more opt-in, they're voluntary. There's less coercion.",
+      "endTime": 2298.86,
+      "text": "think they're more opt-in, they're voluntary. There's less coercion. It's there's not even one hundred.",
       "words": [
         {
           "word": "think",
@@ -40955,15 +40939,7 @@
           "startTime": 2295.39,
           "endTime": 2295.89,
           "confidence": 0.9669
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2296.46,
-      "endTime": 2302.14,
-      "text": "It's there's not even one hundred. There are still those incentives in play. You know,",
-      "words": [
+        },
         {
           "word": "It's",
           "startTime": 2296.46,
@@ -40999,7 +40975,15 @@
           "startTime": 2297.82,
           "endTime": 2298.86,
           "confidence": 0.7238
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2298.86,
+      "endTime": 2302.14,
+      "text": "There are still those incentives in play. You know,",
+      "words": [
         {
           "word": "There",
           "startTime": 2298.86,

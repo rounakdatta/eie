@@ -5,7 +5,7 @@
     "durationSeconds": 2815,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -14775,8 +14775,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 824.63,
-      "endTime": 847.0,
-      "text": "Ayush Patnaik says that we each of us are a linear combination of our influences. So the only choice that you have is who are the five, fifteen, fifty people that you surround yourself with. Because after that, mischief thawed afoot and all these people are going to shape us. Is this something that you've thought about? Because on",
+      "endTime": 844.36,
+      "text": "Ayush Patnaik says that we each of us are a linear combination of our influences. So the only choice that you have is who are the five, fifteen, fifty people that you surround yourself with. Because after that, mischief thawed afoot and all these people are going to shape us.",
       "words": [
         {
           "word": "Ayush",
@@ -15077,7 +15077,15 @@
           "startTime": 843.64,
           "endTime": 844.36,
           "confidence": 0.9518
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 844.36,
+      "endTime": 859.0,
+      "text": "Is this something that you've thought about? Because on the one hand, it seems incredibly snobbish that I will only hang around with a certain kind of people. But on the other hand, however long we live, we have a limited life, we have limited bandwidth. You want to curate the company that you keep.",
+      "words": [
         {
           "word": "Is",
           "startTime": 844.36,
@@ -15131,15 +15139,7 @@
           "startTime": 846.84,
           "endTime": 847.0,
           "confidence": 0.8548
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 847.0,
-      "endTime": 859.0,
-      "text": "the one hand, it seems incredibly snobbish that I will only hang around with a certain kind of people. But on the other hand, however long we live, we have a limited life, we have limited bandwidth. You want to curate the company that you keep.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 847.0,
@@ -15705,8 +15705,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 873.43,
-      "endTime": 902.34,
-      "text": "agency. As John Lennon once said, life is what happens to you when you're busy making other plans. Yeah. Or life is what happens to you while you're busy making podcasts. So, you know, before we begin chapter two, my producer just told me do something about your cleavage. So I've kind of bought my shirt together. But like you know, what to do? I get this I guess it's distracting. So Ajay, what's your what's your what's what's a big theme that you want to talk about uh this week?",
+      "endTime": 878.23,
+      "text": "agency. As John Lennon once said, life is what happens to you when you're busy making other plans.",
       "words": [
         {
           "word": "agency.",
@@ -15815,7 +15815,15 @@
           "startTime": 877.67,
           "endTime": 878.23,
           "confidence": 0.9907
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 878.23,
+      "endTime": 881.53,
+      "text": "Yeah. Or life is what happens to you while you're busy making podcasts.",
+      "words": [
         {
           "word": "Yeah.",
           "startTime": 878.23,
@@ -15893,7 +15901,15 @@
           "startTime": 881.03,
           "endTime": 881.53,
           "confidence": 0.9981
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 887.7,
+      "endTime": 902.34,
+      "text": "So, you know, before we begin chapter two, my producer just told me do something about your cleavage. So I've kind of bought my shirt together. But like you know, what to do? I get this I guess it's distracting. So Ajay, what's your what's your what's what's a big theme that you want to talk about uh this week?",
+      "words": [
         {
           "word": "So,",
           "startTime": 887.7,
@@ -23869,8 +23885,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1380.52,
-      "endTime": 1455.02,
-      "text": "couple of questions for you. And the first of them is this that What is then the system in India currently and how would you know, what would your ideal system look like? For example, one extreme that I see is with, say, the tax department, right? If the tax departments decide that you have done something wrong and they ask you to pay a penalty, All you can do is appeal and the appeal is decided by the tax department itself. So it is both the prosecutor and the judge, which is a completely messed up system. It's raped and their incentives are to get as much collections as possible. So the uh common citizen is basically the screwed. There's really nothing you can do. Uh w so what's the system in India like? And explain to me in terms of incentives what exactly are wrong with it? Because when I think of For example, the incentives of the prosecutor you said should be to get a max conviction rate. Now this will mold his behavior so that he will be very selective about the cases he takes up. Similarly, I guess the incentive of the investigator should be to get as many cases as possible accepted by the prosecutor. To solve problems. To solve problems. So they're not wasting time either on vendetta or on pursuing frivolous cases. And none of these, of course, are the case. So explain to me what an id what what does does the system look like currently and what would an ideal design look like?",
+      "endTime": 1457.51,
+      "text": "couple of questions for you. And the first of them is this that What is then the system in India currently and how would you know, what would your ideal system look like? For example, one extreme that I see is with, say, the tax department, right? If the tax departments decide that you have done something wrong and they ask you to pay a penalty, All you can do is appeal and the appeal is decided by the tax department itself. So it is both the prosecutor and the judge, which is a completely messed up system. It's raped and their incentives are to get as much collections as possible. So the uh common citizen is basically the screwed. There's really nothing you can do. Uh w so what's the system in India like? And explain to me in terms of incentives what exactly are wrong with it? Because when I think of For example, the incentives of the prosecutor you said should be to get a max conviction rate. Now this will mold his behavior so that he will be very selective about the cases he takes up. Similarly, I guess the incentive of the investigator should be to get as many cases as possible accepted by the prosecutor. To solve problems. To solve problems. So they're not wasting time either on vendetta or on pursuing frivolous cases. And none of these, of course, are the case. So explain to me what an id what what does does the system look like currently and what would an ideal design look like? based on w what principles.",
       "words": [
         {
           "word": "couple",
@@ -25449,15 +25465,7 @@
           "startTime": 1454.52,
           "endTime": 1455.02,
           "confidence": 0.6597
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1455.43,
-      "endTime": 1622.13,
-      "text": "based on w what principles. So what is uh what is the system in place? It is heterogeneous. There is no one Indian system. Uh and I want to just highlight the distinction. You talked about an income tax matter heard by the superior. I'm much upstream of that. I'm at the point of indictment. When a letter comes saying we accuse you of this crime, that is the point. That the decision by the state to say to a private person That I claim that you have done this wrong thing. I'm on that decision. That do we even decide to indict? So I'm way upstream of the hearing of the case as you have described it. Okay, so where are we in India? There are many, many different systems. In organizations like the income tax and SEBI, this is the Indian administrative state. It is complete executive discretion. There is very little by way of checks and balances. And those are glaring problems that need to be solved. In the Criminal justice system, there is not even much of an institution of a public prosecutor. There are pieces of that, but it has withered away over the years. It has been crushed by the evolution of the country. And in a way, the job is to revive the institution of the public prosecutor. CBI is a better institution in that they have a clear separation between the investigator and the prosecutor. So I don't want to rush to the idea that is there a design, okay. I don't have that mature understanding in India today. My hope here is that let's start talking about these issues. Okay. Better minds than us need to apply themselves. And what I feel we need to think about in India is to embark on these long journeys of research and debate and discussion so that we will find good solutions that will work under Indian conditions. Simple transplantation will never work. So I'm not at all implying. that we should copy what the US has done or what the UK has done or what the Japanese have done. I am saying that we need to ask these questions and we need to think and devise answers. On the narrow problem of a regulator, something like a SEBI, I think we have a fair point of view. So inside the work of FSLRC which drafted the Indian Financial Court. We've got the fully articulated machinery of how to investigate, what cases to take up, how to hear them. A whole lot of this machinery has been designed, but that's for a narrow case of the r concept of a type two regulator as applied in India. But there is much, much more to the state and situations where the state will choose to indict a private person and they all need careful thought and design.",
-      "words": [
+        },
         {
           "word": "based",
           "startTime": 1455.43,
@@ -25487,7 +25495,15 @@
           "startTime": 1456.55,
           "endTime": 1457.51,
           "confidence": 0.875
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1457.51,
+      "endTime": 1622.13,
+      "text": "So what is uh what is the system in place? It is heterogeneous. There is no one Indian system. Uh and I want to just highlight the distinction. You talked about an income tax matter heard by the superior. I'm much upstream of that. I'm at the point of indictment. When a letter comes saying we accuse you of this crime, that is the point. That the decision by the state to say to a private person That I claim that you have done this wrong thing. I'm on that decision. That do we even decide to indict? So I'm way upstream of the hearing of the case as you have described it. Okay, so where are we in India? There are many, many different systems. In organizations like the income tax and SEBI, this is the Indian administrative state. It is complete executive discretion. There is very little by way of checks and balances. And those are glaring problems that need to be solved. In the Criminal justice system, there is not even much of an institution of a public prosecutor. There are pieces of that, but it has withered away over the years. It has been crushed by the evolution of the country. And in a way, the job is to revive the institution of the public prosecutor. CBI is a better institution in that they have a clear separation between the investigator and the prosecutor. So I don't want to rush to the idea that is there a design, okay. I don't have that mature understanding in India today. My hope here is that let's start talking about these issues. Okay. Better minds than us need to apply themselves. And what I feel we need to think about in India is to embark on these long journeys of research and debate and discussion so that we will find good solutions that will work under Indian conditions. Simple transplantation will never work. So I'm not at all implying. that we should copy what the US has done or what the UK has done or what the Japanese have done. I am saying that we need to ask these questions and we need to think and devise answers. On the narrow problem of a regulator, something like a SEBI, I think we have a fair point of view. So inside the work of FSLRC which drafted the Indian Financial Court. We've got the fully articulated machinery of how to investigate, what cases to take up, how to hear them. A whole lot of this machinery has been designed, but that's for a narrow case of the r concept of a type two regulator as applied in India. But there is much, much more to the state and situations where the state will choose to indict a private person and they all need careful thought and design.",
+      "words": [
         {
           "word": "So",
           "startTime": 1457.51,
@@ -30073,8 +30089,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1697.4,
-      "endTime": 1821.01,
-      "text": "system. So I want to say two, three things. The first is that I was part of The economic policy process and involved in amendments of laws in a different age where uh frankly the the opportunity to do things right was sky high. Okay, and the reason why those laws and amendments were not done well was because of intellectual failures of people like me. Okay, so people like me. were mainline economists, we tended to look at the world through the lens of economics and we simply did not have adequate knowledge of law and public administration and the complexities of developing checks and balances. And there weren't people around in India who had worked on all these problems. Okay. So I think that there was a deficiency in the knowledge in India at the time. So building a republic is a complicated thing and there was a lot of optimism that uh people are basically good, that civil servants are basically good. And so it was a lack of public choice theory and a lack of knowledge of how do you translate the ideas of market failure and state coercion aimed at addressing market failure into living breathing administrative systems that will enforce laws well. That knowledge didn't exist for a long, long time. And I feel very excited and happy That now in India, for the first time in the last 10-20 years, we are coming to grips with these problems in a deeper way. So I think that there was a knowledge gap. I think that in those years there was a opportunity that was sky high to do the right thing in terms of drafting of laws. And I remain optimistic that there are many, many moments in the life of this great country where there are problems. And there are people with a genuine attempt at solving problems. So at that time, if the knowledge is there, then it can. reach out and have an",
+      "endTime": 1823.65,
+      "text": "system. So I want to say two, three things. The first is that I was part of The economic policy process and involved in amendments of laws in a different age where uh frankly the the opportunity to do things right was sky high. Okay, and the reason why those laws and amendments were not done well was because of intellectual failures of people like me. Okay, so people like me. were mainline economists, we tended to look at the world through the lens of economics and we simply did not have adequate knowledge of law and public administration and the complexities of developing checks and balances. And there weren't people around in India who had worked on all these problems. Okay. So I think that there was a deficiency in the knowledge in India at the time. So building a republic is a complicated thing and there was a lot of optimism that uh people are basically good, that civil servants are basically good. And so it was a lack of public choice theory and a lack of knowledge of how do you translate the ideas of market failure and state coercion aimed at addressing market failure into living breathing administrative systems that will enforce laws well. That knowledge didn't exist for a long, long time. And I feel very excited and happy That now in India, for the first time in the last 10-20 years, we are coming to grips with these problems in a deeper way. So I think that there was a knowledge gap. I think that in those years there was a opportunity that was sky high to do the right thing in terms of drafting of laws. And I remain optimistic that there are many, many moments in the life of this great country where there are problems. And there are people with a genuine attempt at solving problems. So at that time, if the knowledge is there, then it can. reach out and have an impact. So I think we will chip away and we'll make",
       "words": [
         {
           "word": "system.",
@@ -32067,15 +32083,7 @@
           "startTime": 1820.93,
           "endTime": 1821.01,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1821.01,
-      "endTime": 2026.69,
-      "text": "impact. So I think we will chip away and we'll make progress. I did a recent episode of the scene in the unseen with my friend Modi Neilkantan who's uh, you know, had an incredible career in law. He was a partner of a law firm in the UK for many years, ditto in the U US. And he told me during that episode that there is this sort of dharma uh about uh uh n I I shouldn't call it a dharma. There is this convention, there is this practice among lawyers everywhere in the Western world that you have to sort of stick uh to what is legal in the sense that if you're defending your client, it doesn't mean you do anything for your client. So Murli realized this when he he took on an Indian client after coming back from there, and the Indian client expected him to lie on his behalf. And uh b I and you know the the the great revelation here is as in Murli's words, that in England, you know, perjury is the exception and it ends a lawyer's career if you do it. But in India it is a norm. It is expected you're serving your client only. And in a similar vein, I uh uh you know, did an episode with uh Dr. Lancelot Pinto and later with a couple of other doctors as well on the scene on the unseen, um the labor doctor Abby Phillips being one of them. And the common theme is that a lot of like the the dharma of a doctor, as it were, if I may use that term, like the dharma of a lawyer is to serve the law and to serve his client but within the law. The dharma of a doctor is to heal his patient, right? And uh what Lancelot revealed was that during COVID, a significant percentage of the deaths were because of overtreatment. Because people would go to a doctor. And they would say, nay, nay, nee, man, you know, my neighbor got COVID, he got ivermectin, he got this, he got that. I want all of those. And overtreatment happens, and overtreatment means that your immune system, you know, the cytokine storm happens and um uh you you kind of go. And the the results of the overtreatment really start after a week, if I remember correctly. And when I got COVID, Lancelot basically gave me paracetamols. And that's it, nothing else, right? Just and and some uh something to soothe the throat at a particular point in time to goggle with. But that was it. And I am thinking here of a more central thing, that the dharma of a doctor, that on the one hand this is your dharma, you do what's best for your patient. But on the other hand your incentive is give your patient what he wants, even if he doesn't even if he wants the wrong thing. The dharma of a lawyer is that you uphold the law. But uh or whatever you do is within the bounds of the l of the law. But you know, your client demands nanny, you gotta lie on my behalf, you gotta, you know, uh be deceitful, uh uh etcetera, etcetera, whatever that kind of involves. And I'm thinking about the dharma of various uh professions. Like, is there something like even journalists, for example? A journalist could say that my dharma is to speak truth to power, you know, or um uh you know to uh afflict the comfortable and to comfort the afflicted, you know, both leashes. But another point of view could be that you work for a media organization and the dharma of that organization is to make profits for a shareholders. So you give the market what it wants, which is not necessarily the truth, but one side of a narrative battle. And this is something a close mutual friend of our Suya Shrai often talks about that all of us have dharmas which depend on you know whatever our calling is, whatever we take upon ourselves. So what is your sense of this? Is this just highfalutin um uh idealistic thought Or is this something, even this sense of dharma as I put it, even if I put it in these lofty terms, is it something that can be shaped by institutions? For example, legal institutions in the UK would not let a lawyer get away with perjury. So institutions also are shaping your behaviour in a certain way. Yeah.",
-      "words": [
+        },
         {
           "word": "impact.",
           "startTime": 1821.01,
@@ -32141,7 +32149,15 @@
           "startTime": 1823.49,
           "endTime": 1823.65,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1823.65,
+      "endTime": 2026.69,
+      "text": "progress. I did a recent episode of the scene in the unseen with my friend Modi Neilkantan who's uh, you know, had an incredible career in law. He was a partner of a law firm in the UK for many years, ditto in the U US. And he told me during that episode that there is this sort of dharma uh about uh uh n I I shouldn't call it a dharma. There is this convention, there is this practice among lawyers everywhere in the Western world that you have to sort of stick uh to what is legal in the sense that if you're defending your client, it doesn't mean you do anything for your client. So Murli realized this when he he took on an Indian client after coming back from there, and the Indian client expected him to lie on his behalf. And uh b I and you know the the the great revelation here is as in Murli's words, that in England, you know, perjury is the exception and it ends a lawyer's career if you do it. But in India it is a norm. It is expected you're serving your client only. And in a similar vein, I uh uh you know, did an episode with uh Dr. Lancelot Pinto and later with a couple of other doctors as well on the scene on the unseen, um the labor doctor Abby Phillips being one of them. And the common theme is that a lot of like the the dharma of a doctor, as it were, if I may use that term, like the dharma of a lawyer is to serve the law and to serve his client but within the law. The dharma of a doctor is to heal his patient, right? And uh what Lancelot revealed was that during COVID, a significant percentage of the deaths were because of overtreatment. Because people would go to a doctor. And they would say, nay, nay, nee, man, you know, my neighbor got COVID, he got ivermectin, he got this, he got that. I want all of those. And overtreatment happens, and overtreatment means that your immune system, you know, the cytokine storm happens and um uh you you kind of go. And the the results of the overtreatment really start after a week, if I remember correctly. And when I got COVID, Lancelot basically gave me paracetamols. And that's it, nothing else, right? Just and and some uh something to soothe the throat at a particular point in time to goggle with. But that was it. And I am thinking here of a more central thing, that the dharma of a doctor, that on the one hand this is your dharma, you do what's best for your patient. But on the other hand your incentive is give your patient what he wants, even if he doesn't even if he wants the wrong thing. The dharma of a lawyer is that you uphold the law. But uh or whatever you do is within the bounds of the l of the law. But you know, your client demands nanny, you gotta lie on my behalf, you gotta, you know, uh be deceitful, uh uh etcetera, etcetera, whatever that kind of involves. And I'm thinking about the dharma of various uh professions. Like, is there something like even journalists, for example? A journalist could say that my dharma is to speak truth to power, you know, or um uh you know to uh afflict the comfortable and to comfort the afflicted, you know, both leashes. But another point of view could be that you work for a media organization and the dharma of that organization is to make profits for a shareholders. So you give the market what it wants, which is not necessarily the truth, but one side of a narrative battle. And this is something a close mutual friend of our Suya Shrai often talks about that all of us have dharmas which depend on you know whatever our calling is, whatever we take upon ourselves. So what is your sense of this? Is this just highfalutin um uh idealistic thought Or is this something, even this sense of dharma as I put it, even if I put it in these lofty terms, is it something that can be shaped by institutions? For example, legal institutions in the UK would not let a lawyer get away with perjury. So institutions also are shaping your behaviour in a certain way. Yeah.",
+      "words": [
         {
           "word": "progress.",
           "startTime": 1823.65,

@@ -5,7 +5,7 @@
     "durationSeconds": 3633,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -68095,8 +68095,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3587.87,
-      "endTime": 3602.59,
-      "text": "it. Ajay, do you have something to recommend? No, I will say it. Guys, like and subscribe the show. Okay, say it now. So, Ajay, do you have anything to add to that? Guys, like and subscribe the show. Yeah, and not just",
+      "endTime": 3595.79,
+      "text": "it. Ajay, do you have something to recommend? No, I will say it. Guys, like and subscribe the show. Okay, say it now.",
       "words": [
         {
           "word": "it.",
@@ -68235,7 +68235,15 @@
           "startTime": 3595.39,
           "endTime": 3595.79,
           "confidence": 0.9921
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3595.79,
+      "endTime": 3597.79,
+      "text": "So, Ajay, do you have anything to add to",
+      "words": [
         {
           "word": "So,",
           "startTime": 3595.79,
@@ -68289,7 +68297,15 @@
           "startTime": 3597.55,
           "endTime": 3597.79,
           "confidence": 0.9996
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3597.79,
+      "endTime": 3602.59,
+      "text": "that? Guys, like and subscribe the show. Yeah, and not just",
+      "words": [
         {
           "word": "that?",
           "startTime": 3597.79,

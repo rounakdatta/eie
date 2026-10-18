@@ -5,7 +5,7 @@
     "durationSeconds": 3573,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -7077,8 +7077,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 459.68,
-      "endTime": 704.76,
-      "text": "The example I want to give you is the French healthcare system. And for me personally, that was where some light bulb went off. Okay, so now OECD countries have many problems in their healthcare systems, most notably the United States, which probably spends 3x as much on healthcare. To other OECD countries and gets outcomes that are much worse. France is a country where the healthcare system works rather well. It's a very interesting arrangement of public and private, and many, many things are done right. And it's just inevitable that people like us will dig deeper and say, Oh, tell me more. Oh, tell me more. And you know, as a person with an interest in health, I would end up reading and studying and you know, I haven't had a chance to visit, but it would be very interesting to think deeply and understand how and why the French healthcare system works. The mistake around invisible infrastructure would be to start thinking that because XYZ design of the French healthcare system works so well in France, we could or should transplant that into India. And why is that? What would go wrong? Now I want us to go deeper into the French healthcare system and see it as sitting on a base of a hundred other subsystems in France. Think of all the things that go into a healthcare system. It is about public sector, it is about budgeting, it is about laws, rule of law, enforcement, uh product liability, liability in healthcare. the behavior of public, the behavior of private. It is about the HR practices of the government sector. It is about the contracting capabilities of the government sector. Okay? Now all these exert tugs and pulls upon the working of the French healthcare system. But this is the problem with the world. We tend to be blinded by expertise. Okay, so this is the curse of expertise. If I'm a health person, if I'm a healthcare person, then I tend to have tunnel vision. I don't look at all those other things. I just look at the cool, complex stories and arguments in the field of healthcare, which is my chosen specialization. Okay, I'm a specialist. And I tend to read deeply into the field of healthcare. And I tend to understand the French healthcare system well. And then I start thinking, Oh, couldn't you take this to other countries? Not seeing all the other surrounding uh subsystems of France that the healthcare system plugs into. And that is the problem of the invisible infrastructure. That when you go in, when you lead with the knowledge and the expertise of a healthcare person, you tend to not see all those other things. But the other infrastructure that makes the French healthcare system possible. And because they are invisible to the modern style specialized expert we use the word invisible infrastructure. If you only bother to look, all the things are there. It's not difficult to see the French legal system, the working of the courts, the rule of law, the government HR, the government contracting, the product liability, the healthcare liability, all all those pieces are there. But the thing is that the people who are specialists tend to be blind about them. A specialist discourse tends to be blind about these things. So you will get a lively conversation about elements of the French healthcare system that should belong in the UK and vice versa. Those are healthcare people talking to each other, saying the UK NHS is good at ABC, the French are good at XYZ, the UK should steal this idea, the French should steal that idea. So the conversation of specialists tends to ignore all the other things. And that's the invisible infrastructure. And then sure enough, when you try",
+      "endTime": 709.74,
+      "text": "The example I want to give you is the French healthcare system. And for me personally, that was where some light bulb went off. Okay, so now OECD countries have many problems in their healthcare systems, most notably the United States, which probably spends 3x as much on healthcare. To other OECD countries and gets outcomes that are much worse. France is a country where the healthcare system works rather well. It's a very interesting arrangement of public and private, and many, many things are done right. And it's just inevitable that people like us will dig deeper and say, Oh, tell me more. Oh, tell me more. And you know, as a person with an interest in health, I would end up reading and studying and you know, I haven't had a chance to visit, but it would be very interesting to think deeply and understand how and why the French healthcare system works. The mistake around invisible infrastructure would be to start thinking that because XYZ design of the French healthcare system works so well in France, we could or should transplant that into India. And why is that? What would go wrong? Now I want us to go deeper into the French healthcare system and see it as sitting on a base of a hundred other subsystems in France. Think of all the things that go into a healthcare system. It is about public sector, it is about budgeting, it is about laws, rule of law, enforcement, uh product liability, liability in healthcare. the behavior of public, the behavior of private. It is about the HR practices of the government sector. It is about the contracting capabilities of the government sector. Okay? Now all these exert tugs and pulls upon the working of the French healthcare system. But this is the problem with the world. We tend to be blinded by expertise. Okay, so this is the curse of expertise. If I'm a health person, if I'm a healthcare person, then I tend to have tunnel vision. I don't look at all those other things. I just look at the cool, complex stories and arguments in the field of healthcare, which is my chosen specialization. Okay, I'm a specialist. And I tend to read deeply into the field of healthcare. And I tend to understand the French healthcare system well. And then I start thinking, Oh, couldn't you take this to other countries? Not seeing all the other surrounding uh subsystems of France that the healthcare system plugs into. And that is the problem of the invisible infrastructure. That when you go in, when you lead with the knowledge and the expertise of a healthcare person, you tend to not see all those other things. But the other infrastructure that makes the French healthcare system possible. And because they are invisible to the modern style specialized expert we use the word invisible infrastructure. If you only bother to look, all the things are there. It's not difficult to see the French legal system, the working of the courts, the rule of law, the government HR, the government contracting, the product liability, the healthcare liability, all all those pieces are there. But the thing is that the people who are specialists tend to be blind about them. A specialist discourse tends to be blind about these things. So you will get a lively conversation about elements of the French healthcare system that should belong in the UK and vice versa. Those are healthcare people talking to each other, saying the UK NHS is good at ABC, the French are good at XYZ, the UK should steal this idea, the French should steal that idea. So the conversation of specialists tends to ignore all the other things. And that's the invisible infrastructure. And then sure enough, when you try Transplanting these things, they work pretty badly. The",
       "words": [
         {
           "word": "The",
@@ -10919,15 +10919,7 @@
           "startTime": 704.29,
           "endTime": 704.76,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 705.58,
-      "endTime": 727.98,
-      "text": "Transplanting these things, they work pretty badly. The curse of specialisation also, uh, you know, and after all, everything is everything. So Ajaib uh define invisible infrastructure. What do you mean? What is",
-      "words": [
+        },
         {
           "word": "Transplanting",
           "startTime": 705.58,
@@ -10975,7 +10967,15 @@
           "startTime": 709.58,
           "endTime": 709.74,
           "confidence": 0.7578
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 709.74,
+      "endTime": 727.98,
+      "text": "curse of specialisation also, uh, you know, and after all, everything is everything. So Ajaib uh define invisible infrastructure. What do you mean? What is",
+      "words": [
         {
           "word": "curse",
           "startTime": 709.74,
@@ -11717,8 +11717,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 772.1,
-      "endTime": 902.5,
-      "text": "This is a related idea, the soft infrastructure of the rule of law. And then that tends to take us into the thinking around rule of law and legal system and a couple of others. That is not what I mean by invisible infrastructure. Okay? So this is a little bit of a software analogy. Bear with me, gentle reader, if you're not a software person, just you'll see how all this fits together. You are one system. You are the French healthcare system. So think of three things. The first is that think of the French healthcare system as making demands upon capabilities in the rest of the economy. It's like an API call. So when the healthcare system needs to buy something, that something is coming under the product safety rules, under the product liability rules that are created and established by other parts of the economy. So think of that as an API call that each piece of the policy ecosystem requires other pieces to work. And those are the API calls, the function calls that each system makes and under conditions of underdevelopment, those capabilities either don't exist at all, or you are standing on shifting sands and the call is unreliable. That you know sometimes it'll work, sometimes it'll not work, and suddenly the whole thing starts breaking down because you don't have that bulletproof perfection of how some external system is supposed to behave. So that is the first thing. The think of all the calls That are made by the French healthcare system. Think of all the calls that are made by the Norwegian military. Enumerate some of them just to illustrate this. So I'm a Norwegian military. What am I going to do about pensions? Are you an expert on pensions? Are you an expert on military affairs? Now, you see how in India the entire military affairs story got tripped up because military pensions was not solved as a part of the larger story of pension reforms. And you know, we have an EIE episode on pension reforms. If you had an economy wide story about pensions, that you know we've solved all pensions. We have a nice clean defined contribution system and the entire country works, hums along beautifully with a sound DC pension system.",
+      "endTime": 865.42,
+      "text": "This is a related idea, the soft infrastructure of the rule of law. And then that tends to take us into the thinking around rule of law and legal system and a couple of others. That is not what I mean by invisible infrastructure. Okay? So this is a little bit of a software analogy. Bear with me, gentle reader, if you're not a software person, just you'll see how all this fits together. You are one system. You are the French healthcare system. So think of three things. The first is that think of the French healthcare system as making demands upon capabilities in the rest of the economy. It's like an API call. So when the healthcare system needs to buy something, that something is coming under the product safety rules, under the product liability rules that are created and established by other parts of the economy. So think of that as an API call that each piece of the policy ecosystem requires other pieces to work. And those are the API calls, the function calls that each system makes and under conditions of underdevelopment, those capabilities either don't exist at all, or you are standing on shifting sands and the call is unreliable. That you know sometimes it'll work, sometimes it'll not work, and suddenly the whole thing starts breaking down because you don't have that bulletproof perfection of how some external system is supposed to behave. So that is the first thing. The think of all the calls That are made by the French healthcare system. Think of all the calls that are made by the Norwegian military.",
       "words": [
         {
           "word": "This",
@@ -13351,7 +13351,15 @@
           "startTime": 864.54,
           "endTime": 865.42,
           "confidence": 0.9841
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 865.42,
+      "endTime": 867.5,
+      "text": "Enumerate some of them just to illustrate this.",
+      "words": [
         {
           "word": "Enumerate",
           "startTime": 865.42,
@@ -13399,7 +13407,15 @@
           "startTime": 867.1,
           "endTime": 867.5,
           "confidence": 0.9537
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 867.5,
+      "endTime": 902.5,
+      "text": "So I'm a Norwegian military. What am I going to do about pensions? Are you an expert on pensions? Are you an expert on military affairs? Now, you see how in India the entire military affairs story got tripped up because military pensions was not solved as a part of the larger story of pension reforms. And you know, we have an EIE episode on pension reforms. If you had an economy wide story about pensions, that you know we've solved all pensions. We have a nice clean defined contribution system and the entire country works, hums along beautifully with a sound DC pension system.",
+      "words": [
         {
           "word": "So",
           "startTime": 867.5,

@@ -5,7 +5,7 @@
     "durationSeconds": 5476,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -17,8 +17,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 88.79,
-      "endTime": 194.34,
-      "text": "Fool you for a moment, didn't we? This is Amit and Ajay, and we're glad to have you here. So, Ajay, I want to kind of tell you this story about a dear friend of mine, Gaurif Chintamani, who edits The Scene and the Unseen, helps us with sound for this show. And uh uh recently I was in Delhi for a bunch of recordings and he's a big fan of yours. And he had uh he started watching Everything Is Everything, loves the show, but he had heard your Ukraine episode and he was completely blown away. You know, the episode you and I uh did for The Scene and the Unseen, five and a half hour primer on Ukraine. Complete masterpiece. I've heard about it from so many people. Like, how did how does this guy know so much about Ukraine, right? And Gorov kind of had the same uh reaction, completely mind-blown. And at one point in his studio, I was saying, can you think of an expert I can call? He said, What is your response to that? I only know 16 things. Today we're gonna talk about Ukraine because you pointed out that a lot has happened there since we recorded our episode. So why not sort of do an update? But I'm not going to assume that everyone who's watching this right now has seen our episode, though I recommend this show. It's more than five hours. It's a master class in understanding um uh you know the history of the conflict, in understanding the deep history of Russia itself, Ukraine itself, and uh, you know, the nuances of that. But um And I recommend everyone go and watch that. But I want to begin by sort of before we come to the current conflict, I want to quickly go over some of the main areas for those who haven't heard that. And the first question I want to ask you is: why is this important? Russia and Ukraine are far away from where we are in India or far away from where many of our viewers might be. Why does it matter? It's a war in some other random place. Why why why why should we care?",
+      "endTime": 137.09,
+      "text": "Fool you for a moment, didn't we? This is Amit and Ajay, and we're glad to have you here. So, Ajay, I want to kind of tell you this story about a dear friend of mine, Gaurif Chintamani, who edits The Scene and the Unseen, helps us with sound for this show. And uh uh recently I was in Delhi for a bunch of recordings and he's a big fan of yours. And he had uh he started watching Everything Is Everything, loves the show, but he had heard your Ukraine episode and he was completely blown away. You know, the episode you and I uh did for The Scene and the Unseen, five and a half hour primer on Ukraine. Complete masterpiece. I've heard about it from so many people. Like, how did how does this guy know so much about Ukraine, right? And Gorov kind of had the same uh reaction, completely mind-blown. And at one point in his studio, I was saying, can you think of an expert I can call? He said, What is your response to that?",
       "words": [
         {
           "word": "Fool",
@@ -1111,7 +1111,15 @@
           "startTime": 136.21,
           "endTime": 137.09,
           "confidence": 0.8816
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 137.09,
+      "endTime": 139.11,
+      "text": "I only know 16 things.",
+      "words": [
         {
           "word": "I",
           "startTime": 137.09,
@@ -1141,7 +1149,15 @@
           "startTime": 138.61,
           "endTime": 139.11,
           "confidence": 0.8538
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 145.54,
+      "endTime": 194.34,
+      "text": "Today we're gonna talk about Ukraine because you pointed out that a lot has happened there since we recorded our episode. So why not sort of do an update? But I'm not going to assume that everyone who's watching this right now has seen our episode, though I recommend this show. It's more than five hours. It's a master class in understanding um uh you know the history of the conflict, in understanding the deep history of Russia itself, Ukraine itself, and uh, you know, the nuances of that. But um And I recommend everyone go and watch that. But I want to begin by sort of before we come to the current conflict, I want to quickly go over some of the main areas for those who haven't heard that. And the first question I want to ask you is: why is this important? Russia and Ukraine are far away from where we are in India or far away from where many of our viewers might be. Why does it matter? It's a war in some other random place. Why why why why should we care?",
+      "words": [
         {
           "word": "Today",
           "startTime": 145.54,

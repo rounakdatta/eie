@@ -5,7 +5,7 @@
     "durationSeconds": 2596,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -822,8 +822,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 58.62,
-      "endTime": 69.9,
-      "text": "some light on the matter. Welcome, gentle reader. I want to start at the Amitvarma and Ajaisha",
+      "endTime": 112.78,
+      "text": "some light on the matter. Welcome, gentle reader. I want to start at the Amitvarma and Ajaisha lament that uh state intervention is a messy business. Okay? Our greatest disagreement with the climate of opinion in India is about optimism on the state. All too often the state embarks on ambitious projects and these things just go wrong. Again and again, failure is the norm. And we just don't get how people can be so optimistic that the state should do this, the state should do that. The state is overburdened, it's doing too many things. It's failing all the time. What we need is a whole intellectual toolkit around understanding the kind of things where failure is likely and can we do",
       "words": [
         {
           "word": "some",
@@ -926,15 +926,7 @@
           "startTime": 69.02,
           "endTime": 69.9,
           "confidence": 0.8069
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 69.9,
-      "endTime": 73.1,
-      "text": "lament that uh state",
-      "words": [
+        },
         {
           "word": "lament",
           "startTime": 69.9,
@@ -958,15 +950,7 @@
           "startTime": 72.7,
           "endTime": 73.1,
           "confidence": 0.957
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 73.1,
-      "endTime": 112.78,
-      "text": "intervention is a messy business. Okay? Our greatest disagreement with the climate of opinion in India is about optimism on the state. All too often the state embarks on ambitious projects and these things just go wrong. Again and again, failure is the norm. And we just don't get how people can be so optimistic that the state should do this, the state should do that. The state is overburdened, it's doing too many things. It's failing all the time. What we need is a whole intellectual toolkit around understanding the kind of things where failure is likely and can we do",
-      "words": [
+        },
         {
           "word": "intervention",
           "startTime": 73.1,
@@ -2192,8 +2176,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 145.38,
-      "endTime": 228.62,
-      "text": "on the conceptual toolkit, we've actually done many pieces, but I just want like a few sentence restatement. Why does state intervention go wrong? Okay problem one, information. The world is too complex. There's the conceit of thinking that you know what's happening in the world. Actually, you don't. So the government makes mistakes because the true facts about the society are unknowable. Okay, that's reason one. Then problem two, public choice theory. We have an episode on this where there is a conflict of interest between the incentives of the personnel of the state. versus the objectives o that we might like for the state. Problem three, political economy. All real world uh behavior of the government is kicked around by special interest groups who have a disproportionate interest in trying to manipulate the working of the government. And there is a broad terminology around state capability that the government starts trying to do something, but they mess it up. They're not able to implement, they are not competent in a way for all these reasons. So this is the broad environment of diffidence that we bring to this table. That when somebody says the government will do one new thing, invertly we are groaning that look. It's not gonna work too well. There will be law of unintended consequences, you guys will make mistakes, there will be problems of",
+      "endTime": 231.5,
+      "text": "on the conceptual toolkit, we've actually done many pieces, but I just want like a few sentence restatement. Why does state intervention go wrong? Okay problem one, information. The world is too complex. There's the conceit of thinking that you know what's happening in the world. Actually, you don't. So the government makes mistakes because the true facts about the society are unknowable. Okay, that's reason one. Then problem two, public choice theory. We have an episode on this where there is a conflict of interest between the incentives of the personnel of the state. versus the objectives o that we might like for the state. Problem three, political economy. All real world uh behavior of the government is kicked around by special interest groups who have a disproportionate interest in trying to manipulate the working of the government. And there is a broad terminology around state capability that the government starts trying to do something, but they mess it up. They're not able to implement, they are not competent in a way for all these reasons. So this is the broad environment of diffidence that we bring to this table. That when somebody says the government will do one new thing, invertly we are groaning that look. It's not gonna work too well. There will be law of unintended consequences, you guys will make mistakes, there will be problems of state capability. Things will go wrong. Okay? So can we do",
       "words": [
         {
           "word": "on",
@@ -3580,15 +3564,7 @@
           "startTime": 228.46,
           "endTime": 228.62,
           "confidence": 0.992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 228.62,
-      "endTime": 263.42,
-      "text": "state capability. Things will go wrong. Okay? So can we do better. So you know, in episode twenty six and in episode ninety nine, in a manner of speaking, we discussed When is it appropriate for the government to intervene? I want to ask you a separate question today that we're examining. That one of the factors that goes into when a government should intervene or should not intervene is not just if the intervention is justified, but also whether it is possible, whether it is going to work, how hard or easy it is.",
-      "words": [
+        },
         {
           "word": "state",
           "startTime": 228.62,
@@ -3654,7 +3630,15 @@
           "startTime": 231.26,
           "endTime": 231.5,
           "confidence": 0.9954
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 231.5,
+      "endTime": 263.42,
+      "text": "better. So you know, in episode twenty six and in episode ninety nine, in a manner of speaking, we discussed When is it appropriate for the government to intervene? I want to ask you a separate question today that we're examining. That one of the factors that goes into when a government should intervene or should not intervene is not just if the intervention is justified, but also whether it is possible, whether it is going to work, how hard or easy it is.",
+      "words": [
         {
           "word": "better.",
           "startTime": 231.5,
@@ -6790,8 +6774,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 426.9,
-      "endTime": 432.98,
-      "text": "so first let's just be clear. We are faced with a problem statement. We want to do universal smallpox",
+      "endTime": 551.34,
+      "text": "so first let's just be clear. We are faced with a problem statement. We want to do universal smallpox vaccination. Okay. Or uh we want to build highways, or we want to make the police work. Okay, that's the way we're going to pose problems. And when faced with any of these problems, here are four tests through which such questions should be judged. Test one. Is there a low number of transactions? Is there a high number of transactions. So uh if you want to do anything that touches the population where there is a large number of people and you're literally engaging with millions of people, then it's a high number of transactions. That's more difficult. Whereas if something has to be done just by a few people, then there's a low number of transactions. So we did an episode on innovation. In innovation policy, what would you want to do? Do you want a government to maybe put out 500 research grants a year. So there's 500 transactions. Whereas if you want to go do a polio vaccination, you want to touch 500 million people. So a higher number of transactions is more difficult to organize than a lower number of transactions. Okay, so that's test one, number of transactions. Test two, discretion. Do the frontline workers, do the civil servants actually doing this work? have a high amount of discretion, do they have a low amount of discretion? And again it's obvious that if the frontline employees have a high amount of discretion, then you have a bigger management problem. How will we create the checks and balances, the accountability mechanisms through which those frontline civil servants will do the work that is consistent with the objectives of the organization, as opposed to their own self interest. Okay, so we are all deeply wired to be kind to our friends and family and our kids and kin, We have tribalistic loyalties. So when there is discretion, people will always use it in ways that are often incompatible with the objectives of the organization. So when there is low discretion, it is better. When there is high discretion, it is worse. It is harder to make a government intervention work when there is high",
       "words": [
         {
           "word": "so",
@@ -6906,15 +6890,7 @@
           "startTime": 432.18,
           "endTime": 432.98,
           "confidence": 0.9987
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 432.98,
-      "endTime": 435.78,
-      "text": "vaccination. Okay. Or uh we want",
-      "words": [
+        },
         {
           "word": "vaccination.",
           "startTime": 432.98,
@@ -6950,15 +6926,7 @@
           "startTime": 435.62,
           "endTime": 435.78,
           "confidence": 0.9881
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 435.78,
-      "endTime": 493.05,
-      "text": "to build highways, or we want to make the police work. Okay, that's the way we're going to pose problems. And when faced with any of these problems, here are four tests through which such questions should be judged. Test one. Is there a low number of transactions? Is there a high number of transactions. So uh if you want to do anything that touches the population where there is a large number of people and you're literally engaging with millions of people, then it's a high number of transactions. That's more difficult. Whereas if something has to be done just by a few people, then there's a low number of transactions. So we did an episode on innovation. In innovation policy, what would you want to do? Do you want a government to maybe put out 500 research grants a year. So there's 500 transactions. Whereas if you want to go do a polio vaccination, you want to touch 500 million people. So a higher number of transactions is more difficult to organize than a lower number of transactions. Okay, so that's test one, number",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 435.78,
@@ -8074,15 +8042,7 @@
           "startTime": 492.81,
           "endTime": 493.05,
           "confidence": 0.9948
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 493.05,
-      "endTime": 496.71,
-      "text": "of transactions. Test two, discretion.",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 493.05,
@@ -8112,15 +8072,7 @@
           "startTime": 495.21,
           "endTime": 496.71,
           "confidence": 0.9792
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 497.05,
-      "endTime": 501.3,
-      "text": "Do the frontline workers, do the civil servants actually doing this work?",
-      "words": [
+        },
         {
           "word": "Do",
           "startTime": 497.05,
@@ -8192,15 +8144,7 @@
           "startTime": 500.81,
           "endTime": 501.3,
           "confidence": 0.8322
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 501.66,
-      "endTime": 505.58,
-      "text": "have a high amount of discretion, do they have a low amount of discretion? And",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 501.66,
@@ -8290,15 +8234,7 @@
           "startTime": 505.34,
           "endTime": 505.58,
           "confidence": 0.9197
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 505.58,
-      "endTime": 539.18,
-      "text": "again it's obvious that if the frontline employees have a high amount of discretion, then you have a bigger management problem. How will we create the checks and balances, the accountability mechanisms through which those frontline civil servants will do the work that is consistent with the objectives of the organization, as opposed to their own self interest. Okay, so we are all deeply wired to be kind to our friends and family and our kids and kin, We have tribalistic loyalties. So when there is discretion, people will always use it in ways that are often incompatible with the",
-      "words": [
+        },
         {
           "word": "again",
           "startTime": 505.58,
@@ -8898,15 +8834,7 @@
           "startTime": 539.02,
           "endTime": 539.18,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 539.18,
-      "endTime": 541.58,
-      "text": "objectives of the organization. So",
-      "words": [
+        },
         {
           "word": "objectives",
           "startTime": 539.18,
@@ -8936,15 +8864,7 @@
           "startTime": 541.02,
           "endTime": 541.58,
           "confidence": 0.9827
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 541.58,
-      "endTime": 551.34,
-      "text": "when there is low discretion, it is better. When there is high discretion, it is worse. It is harder to make a government intervention work when there is high",
-      "words": [
+        },
         {
           "word": "when",
           "startTime": 541.58,
@@ -9156,8 +9076,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 553.02,
-      "endTime": 563.64,
-      "text": "Pritchett and Woolcock formulation. Number of transactions, number of amount of discretion. Then we go further. I think it's very important to think about the",
+      "endTime": 773.27,
+      "text": "Pritchett and Woolcock formulation. Number of transactions, number of amount of discretion. Then we go further. I think it's very important to think about the stakes. What is at stake? Okay? Is it some small piddly amount of money or some minor inconvenience? Or is it high stakes? So a policeman who can put you in jail. Now the conversation between you and the policeman is a high stakes conversation because suddenly you're in the hands of a civil servant who can make discretionary decisions this way or that way. and that shapes whether you go to jail or not go to jail. That's a high stakes conversation. It's very difficult to get that policeman to perform as per the objectives of the organization, as opposed to exploiting the power in that face to face conversation. Whereas there are things that are low stakes. You know, imagine there is somebody coming around doing a polio vaccination. The stakes are modest. There's nothing much that will happen. So frankly the frontline civil servant has very low power vis-a-vis the person, the kid who's getting the polio vaccination. So then we say that low stakes problems are easy, high stakes problems are difficult. Okay? Finally, number four, transparency, opacity. Okay. If something is done in a highly open environment where a lot of information is given out, there's plenty of data coming out in a way there is a body cam watching the policeman. Okay. then it becomes easier to get it right because you will get checks and balances. You will get the forces of the society, the watchers, the people watching the body cam, the people working with data, who is who are able to criticize the working of the government. You get the whole feedback loop of criticism. Okay? And that of course presumes a free and open information ecosystem that people have to be able to criticize. But if There's a government process that is transparent where metrics come out, enough information comes out so that the people and the journalists and the researchers and the intellectuals and the opposition parties are able to kick up a fuss saying, you know, so many bad things are happening in this space, then that is good, meaning it will create the checks and balances. Automatically the frontline civil servants, the managers of the civil servants will end up doing a better job. Whereas if things are done in the dark, if things are done under opacity. So just imagine if there was no CAG, if there was no RTI, if there was no transparency about what is being done, if there was no statistics, if no documents are being released, then like anything can be done. That government can go do all kinds of difficult, dangerous, monstro things, and you will go far away from any reasonable objective of the government. because those people have truly got raw arbitrary power in their hands. So test four, transparency. That if it's high transparency, it's an easier problem. If it's low transparency, it's a difficult problem. Okay. So to summarize, four tests. Test one, is it a high number of transactions? That's more difficult. Is it a high level of discretion? That's more difficult. Are there high stakes? That's more difficult. Is there high opacity? That's more difficult. Okay? So we have a clear toolkit and you don't even need paper and pen. You can just memorize this. And so then every time you're sitting around in a hostel room debating inflation targeting, you'll be able to roll out this toolkit and immediately analyze the policy and say, Hey dude, this one is an easy problem. This one is a difficult problem.",
       "words": [
         {
           "word": "Pritchett",
@@ -9308,15 +9228,7 @@
           "startTime": 563.32,
           "endTime": 563.64,
           "confidence": 0.9977
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 563.64,
-      "endTime": 566.6,
-      "text": "stakes. What is at stake? Okay?",
-      "words": [
+        },
         {
           "word": "stakes.",
           "startTime": 563.64,
@@ -9352,15 +9264,7 @@
           "startTime": 566.12,
           "endTime": 566.6,
           "confidence": 0.6399
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 566.6,
-      "endTime": 754.47,
-      "text": "Is it some small piddly amount of money or some minor inconvenience? Or is it high stakes? So a policeman who can put you in jail. Now the conversation between you and the policeman is a high stakes conversation because suddenly you're in the hands of a civil servant who can make discretionary decisions this way or that way. and that shapes whether you go to jail or not go to jail. That's a high stakes conversation. It's very difficult to get that policeman to perform as per the objectives of the organization, as opposed to exploiting the power in that face to face conversation. Whereas there are things that are low stakes. You know, imagine there is somebody coming around doing a polio vaccination. The stakes are modest. There's nothing much that will happen. So frankly the frontline civil servant has very low power vis-a-vis the person, the kid who's getting the polio vaccination. So then we say that low stakes problems are easy, high stakes problems are difficult. Okay? Finally, number four, transparency, opacity. Okay. If something is done in a highly open environment where a lot of information is given out, there's plenty of data coming out in a way there is a body cam watching the policeman. Okay. then it becomes easier to get it right because you will get checks and balances. You will get the forces of the society, the watchers, the people watching the body cam, the people working with data, who is who are able to criticize the working of the government. You get the whole feedback loop of criticism. Okay? And that of course presumes a free and open information ecosystem that people have to be able to criticize. But if There's a government process that is transparent where metrics come out, enough information comes out so that the people and the journalists and the researchers and the intellectuals and the opposition parties are able to kick up a fuss saying, you know, so many bad things are happening in this space, then that is good, meaning it will create the checks and balances. Automatically the frontline civil servants, the managers of the civil servants will end up doing a better job. Whereas if things are done in the dark, if things are done under opacity. So just imagine if there was no CAG, if there was no RTI, if there was no transparency about what is being done, if there was no statistics, if no documents are being released, then like anything can be done. That government can go do all kinds of difficult, dangerous, monstro things, and you will go far away from any reasonable objective of the government. because those people have truly got raw arbitrary power in their hands. So test four, transparency. That if it's high transparency, it's an easier problem. If it's low transparency, it's a difficult problem. Okay. So to summarize, four tests. Test one, is it a high number of transactions? That's more difficult. Is it a high level of discretion? That's more difficult. Are there high stakes? That's more difficult. Is there high opacity?",
-      "words": [
+        },
         {
           "word": "Is",
           "startTime": 566.6,
@@ -12492,15 +12396,7 @@
           "startTime": 753.75,
           "endTime": 754.47,
           "confidence": 0.9483
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 754.47,
-      "endTime": 756.47,
-      "text": "That's more difficult. Okay? So we",
-      "words": [
+        },
         {
           "word": "That's",
           "startTime": 754.47,
@@ -12536,15 +12432,7 @@
           "startTime": 756.31,
           "endTime": 756.47,
           "confidence": 0.9988
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 756.47,
-      "endTime": 773.27,
-      "text": "have a clear toolkit and you don't even need paper and pen. You can just memorize this. And so then every time you're sitting around in a hostel room debating inflation targeting, you'll be able to roll out this toolkit and immediately analyze the policy and say, Hey dude, this one is an easy problem. This one is a difficult problem.",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 756.47,
@@ -14364,8 +14252,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 839.94,
-      "endTime": 848.17,
-      "text": "So it starts at public choice theory. The government is not a mybab. The government is not a mythological creature of infinite capability. The government is a deeply",
+      "endTime": 868.33,
+      "text": "So it starts at public choice theory. The government is not a mybab. The government is not a mythological creature of infinite capability. The government is a deeply flawed creature. Okay, let's open the box and start thinking. Can I analyze alternative problems, you know, landings in Burma versus landings in China? And so we start getting this nice toolkit. So I actually loved the uh Pritchard and Woolcock paper because the very question they asked, was so insightful. It was great that you even asked that question.",
       "words": [
         {
           "word": "So",
@@ -14534,15 +14422,7 @@
           "startTime": 847.77,
           "endTime": 848.17,
           "confidence": 0.997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 848.17,
-      "endTime": 851.69,
-      "text": "flawed creature. Okay, let's open the box and start thinking.",
-      "words": [
+        },
         {
           "word": "flawed",
           "startTime": 848.17,
@@ -14602,15 +14482,7 @@
           "startTime": 850.65,
           "endTime": 851.69,
           "confidence": 0.7581
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 851.69,
-      "endTime": 865.23,
-      "text": "Can I analyze alternative problems, you know, landings in Burma versus landings in China? And so we start getting this nice toolkit. So I actually loved the uh Pritchard and Woolcock paper because the very question they asked,",
-      "words": [
+        },
         {
           "word": "Can",
           "startTime": 851.69,
@@ -14838,15 +14710,7 @@
           "startTime": 864.73,
           "endTime": 865.23,
           "confidence": 0.7963
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 865.53,
-      "endTime": 870.39,
-      "text": "was so insightful. It was great that you even asked that question. They asked the right question.",
-      "words": [
+        },
         {
           "word": "was",
           "startTime": 865.53,
@@ -14918,7 +14782,15 @@
           "startTime": 867.93,
           "endTime": 868.33,
           "confidence": 0.9384
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 868.33,
+      "endTime": 870.39,
+      "text": "They asked the right question.",
+      "words": [
         {
           "word": "They",
           "startTime": 868.33,
@@ -16794,8 +16666,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 970.62,
-      "endTime": 1001.94,
-      "text": "So uh one of the happy days in my life was when I first figured out some of these things and I had an op-ed. Uh the uh title was Monetary Policy is easy, Financial Regulation is hard. Okay, that is a great aha moment for me. Because you know, we tend to blur all these things. Yeah, central bank. Monetary policy, inflation targeting, banking regulation, we just think of it in one blur. But it was a huge moment for me when I understood so crystal clear that monetary policy done right with an inflation target is actually quite easy. Financial regulation is hard and will always be hard and there is no way",
+      "endTime": 1030.52,
+      "text": "So uh one of the happy days in my life was when I first figured out some of these things and I had an op-ed. Uh the uh title was Monetary Policy is easy, Financial Regulation is hard. Okay, that is a great aha moment for me. Because you know, we tend to blur all these things. Yeah, central bank. Monetary policy, inflation targeting, banking regulation, we just think of it in one blur. But it was a huge moment for me when I understood so crystal clear that monetary policy done right with an inflation target is actually quite easy. Financial regulation is hard and will always be hard and there is no way out. Let's think about that. Monetary policy. I don't want Stone Age monetary policy. There was a lot of bad things in the world. Let's only discuss modern, high quality, sensible monetary policy structures. You've got a properly structured central bank. There's no currency trading. The capital account is open. You're only doing inflation targeting. Okay? So no capital controls, no playing with the exchange rate. We have an episode on uh capital controls, you know what? We should have an episode on",
       "words": [
         {
           "word": "So",
@@ -17486,15 +17358,7 @@
           "startTime": 1001.78,
           "endTime": 1001.94,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1001.94,
-      "endTime": 1004.36,
-      "text": "out. Let's think about that. Monetary policy.",
-      "words": [
+        },
         {
           "word": "out.",
           "startTime": 1001.94,
@@ -17536,15 +17400,7 @@
           "startTime": 1003.86,
           "endTime": 1004.36,
           "confidence": 0.946
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1005.5,
-      "endTime": 1030.52,
-      "text": "I don't want Stone Age monetary policy. There was a lot of bad things in the world. Let's only discuss modern, high quality, sensible monetary policy structures. You've got a properly structured central bank. There's no currency trading. The capital account is open. You're only doing inflation targeting. Okay? So no capital controls, no playing with the exchange rate. We have an episode on uh capital controls, you know what? We should have an episode on",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1005.5,
@@ -18134,8 +17990,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1035.48,
-      "endTime": 1061.53,
-      "text": "Yeah. But one of these days we'll do a episode on the capital control. So we've got an episode on exchange rate uh management and we are going to play it simple that there is inflation and there's nothing else. How does this work? As an inflation target four percent? Six times a year there's a committee that meets okay the Monetary Policy Committee. five people properly structured, it should be one RBI governor and four uh independent private economists who",
+      "endTime": 1445.74,
+      "text": "Yeah. But one of these days we'll do a episode on the capital control. So we've got an episode on exchange rate uh management and we are going to play it simple that there is inflation and there's nothing else. How does this work? As an inflation target four percent? Six times a year there's a committee that meets okay the Monetary Policy Committee. five people properly structured, it should be one RBI governor and four uh independent private economists who owe nothing to the government. Okay, so they will vote independently. Each of them looks at the world, forms a judgment that is the economy set on a track where inflation will be above four or below four. If they believe that in the future inflation is headed towards an above four, they will vote in favor of raising rates. If not, they'll vote in favor of cutting rates. Now, what does it take to implement this? Let's go one by one. Transactions. Six transactions a year. That's it. For the rest in the year you're sleeping. So for all the hype and mystique around monetary policy, actually it's a trivial, easy problem. You need to get six decisions correct per year. You need to have four competent private economists on top of one great RBI governor hire, and you're done. It's not complicated. Okay. You'll need some RBI staff who will work with data and To some prediction models and all that, but this is not hard. Okay? So number of transactions low. Amount of discretion, low. Why? Because the properly structured inflation targeting system is clear. Deliver me that 4% and persuade me like you have to write a document. Each of the five voters has to write a document. What did you see in the economy? Why do you think interest rates should be raised, or why do you think interest rates should be cut? So actually, you don't have a whole lot of discretion. Is objective evidence. You form a view about the economy, and based on that, you say whether the rate should go up or the rate should go down. It's not your discretion, it's your judgment about what's going to happen to inflation. And if you make too many mistakes, you will be the laughing stock because people will be saying this guy doesn't understand that inflation is going to go up or inflation is going to go down. So it's not like you have discretion. Okay. So it is low discretion. So low number of transactions, low discretion. Stakes. You're a member of the monetary policy committee, you're an economist, you have no stakes. There's nothing going on. It's just your reputation. So if you vote repeatedly in a wrong way, you lose reputation, you lose respect. That the people who fail to understand the future trajectory of inflation, on average over steady state, will lose respect. But for the rest, there's no high stakes gamble, nobody's going to go to jail, there's no billions of dollars involved. It's a low stakes battle. And opacity. This can be fully transparent. Everything is can be public domain. So what is the process involved? Some internal staff will amass some statistics, make some forecasting models, make some predictions. Please release that document. Then five people will vote. Please release the details of the voting and have each of them write a rational document about why did you vote? Done. There's nothing else. So monetary policy is easy because it is low number of transactions, low discretion, low stakes. and low opacity, properly structured, meaning you can screw this up. You can have a third world country with a bad, badly structured monetary policy arrangement. But once you learn all this, and you see this is the public administration logic around the modern monetary policy committee design and the inflation targeting system, that you can get this right, that we have a decent chance at implementing this and a high chance at success. So this is story number one monetary policy. Now let's turn to financial regulation. Okay. Imagine there are one thousand financial firms in the country and you have prudential regulation, you have consumer protection, there were a bunch of things going on. Transactions. It's just horrible. You got a thousand firms, probably you know, there'll be a touch point With each of the thousand firms probably twice a year. Okay? It should not be more than that. I know, I know it can get much worse than that in a bad public administration system, but in a reasonable system, we probably have 2,000 touch points per year. It's a lot more. Whereas for monetary policy, we had six touch points a year or four touch points a year. So high number of transactions. Discretion. Yeah, lots and lots of discretion. A civil servant is looking at a bank and saying, you know, I'm not convinced about your uh asset recognition. Is this an NPA? Is this not an NPA? Okay, it's a judgment. And the civil servant has discretion saying, I agree with this, I don't agree with this. So there's lots of discretion in the way in which civil servants will supervise, will do investigations. Okay? The messy stuff we discussed in the regulation episode. So yeah, discretion high. Stakes. The stakes are billions of dollars. Okay, there are people trading, there are people building companies, getting a market cap on the companies. Finance is one of the biggest sectors. All that wealth is the stakes because depending on how a financial regulator chooses to play this way or that way, it can shatter business models, it can destroy the lives of individuals. There is the stakes are sky high that the individuals in financial regulation on the government side can do has massive consequences for the people that they face. The people that they face tremble in front of the financial regulator. Okay? So the stakes are high. Opacity. Most of that supervisory process happens in secrecy because they're not telling you what data did I get from which firm I went and did an investigation. I found these things wrong. All this is shrouded in secrecy. So Transactions high, discretion high, stakes high, opacity high, four on four. See the contrast? Monetary policy is easy, financial regulation is difficult. Okay? Suddenly we've got a toolkit. We've got the ability to look at a problem. If you didn't have this toolkit, you'd be kind of thinking, yeah, some economisty things, monetary policy, inflation sounds difficult to me, banking regulation sounds difficult to me. They sound about the same. No. With this toolkit, we know that. For a third world country like India, it is reasonably easy. You only have to get a law properly drafted, like the Indian financial code done by FSLRC, and it's reasonably easy to build and roll out an inflation targeting system. Small associated pieces need to be done that you need to get the composition of the monetary policy right, monetary policy committee right. You need to float the exchange rate, don't be intervening in the exchange rate market, have a open capital account. Once you've got all this. an easy problem. Banking regulation, truly difficult problem in the United States you will suffer doing banking regulation as they have. Okay, nice? Two examples. Shall I keep going with more",
       "words": [
         {
           "word": "Yeah.",
@@ -18622,15 +18478,7 @@
           "startTime": 1061.37,
           "endTime": 1061.53,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1061.53,
-      "endTime": 1064.89,
-      "text": "owe nothing to the government. Okay, so they will vote independently.",
-      "words": [
+        },
         {
           "word": "owe",
           "startTime": 1061.53,
@@ -18696,15 +18544,7 @@
           "startTime": 1063.93,
           "endTime": 1064.89,
           "confidence": 0.9899
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1064.89,
-      "endTime": 1185.85,
-      "text": "Each of them looks at the world, forms a judgment that is the economy set on a track where inflation will be above four or below four. If they believe that in the future inflation is headed towards an above four, they will vote in favor of raising rates. If not, they'll vote in favor of cutting rates. Now, what does it take to implement this? Let's go one by one. Transactions. Six transactions a year. That's it. For the rest in the year you're sleeping. So for all the hype and mystique around monetary policy, actually it's a trivial, easy problem. You need to get six decisions correct per year. You need to have four competent private economists on top of one great RBI governor hire, and you're done. It's not complicated. Okay. You'll need some RBI staff who will work with data and To some prediction models and all that, but this is not hard. Okay? So number of transactions low. Amount of discretion, low. Why? Because the properly structured inflation targeting system is clear. Deliver me that 4% and persuade me like you have to write a document. Each of the five voters has to write a document. What did you see in the economy? Why do you think interest rates should be raised, or why do you think interest rates should be cut? So actually, you don't have a whole lot of discretion. Is objective evidence. You form a view about the economy, and based on that, you say whether the rate should go up or the rate should go down. It's not your discretion, it's your judgment about what's going to happen to inflation. And if you make too many mistakes, you will be the laughing stock because people will be saying this guy doesn't understand that inflation is going to go up or inflation is going to go down. So it's not like you have discretion. Okay. So it is low discretion. So low number of transactions, low discretion. Stakes. You're a member of the monetary policy committee, you're an economist, you have no stakes. There's nothing going on. It's just your reputation. So if you vote repeatedly in a wrong way, you lose reputation, you lose respect. That the people who fail to understand the future trajectory of inflation, on average over steady",
-      "words": [
+        },
         {
           "word": "Each",
           "startTime": 1064.89,
@@ -21044,15 +20884,7 @@
           "startTime": 1185.37,
           "endTime": 1185.85,
           "confidence": 0.9819
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1185.85,
-      "endTime": 1189.13,
-      "text": "state, will lose respect. But for the",
-      "words": [
+        },
         {
           "word": "state,",
           "startTime": 1185.85,
@@ -21094,15 +20926,7 @@
           "startTime": 1189.05,
           "endTime": 1189.13,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1189.13,
-      "endTime": 1195.05,
-      "text": "rest, there's no high stakes gamble, nobody's going to go to jail, there's no billions of dollars involved. It's a low stakes",
-      "words": [
+        },
         {
           "word": "rest,",
           "startTime": 1189.13,
@@ -21234,15 +21058,7 @@
           "startTime": 1194.65,
           "endTime": 1195.05,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1195.05,
-      "endTime": 1197.23,
-      "text": "battle. And opacity.",
-      "words": [
+        },
         {
           "word": "battle.",
           "startTime": 1195.05,
@@ -21260,15 +21076,7 @@
           "startTime": 1196.73,
           "endTime": 1197.23,
           "confidence": 0.8598
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1197.9,
-      "endTime": 1370.74,
-      "text": "This can be fully transparent. Everything is can be public domain. So what is the process involved? Some internal staff will amass some statistics, make some forecasting models, make some predictions. Please release that document. Then five people will vote. Please release the details of the voting and have each of them write a rational document about why did you vote? Done. There's nothing else. So monetary policy is easy because it is low number of transactions, low discretion, low stakes. and low opacity, properly structured, meaning you can screw this up. You can have a third world country with a bad, badly structured monetary policy arrangement. But once you learn all this, and you see this is the public administration logic around the modern monetary policy committee design and the inflation targeting system, that you can get this right, that we have a decent chance at implementing this and a high chance at success. So this is story number one monetary policy. Now let's turn to financial regulation. Okay. Imagine there are one thousand financial firms in the country and you have prudential regulation, you have consumer protection, there were a bunch of things going on. Transactions. It's just horrible. You got a thousand firms, probably you know, there'll be a touch point With each of the thousand firms probably twice a year. Okay? It should not be more than that. I know, I know it can get much worse than that in a bad public administration system, but in a reasonable system, we probably have 2,000 touch points per year. It's a lot more. Whereas for monetary policy, we had six touch points a year or four touch points a year. So high number of transactions. Discretion. Yeah, lots and lots of discretion. A civil servant is looking at a bank and saying, you know, I'm not convinced about your uh asset recognition. Is this an NPA? Is this not an NPA? Okay, it's a judgment. And the civil servant has discretion saying, I agree with this, I don't agree with this. So there's lots of discretion in the way in which civil servants will supervise, will do investigations. Okay? The messy stuff we discussed in the regulation episode. So yeah, discretion high. Stakes. The stakes are billions of dollars. Okay, there are people trading, there are people building companies, getting a market cap on the companies. Finance is one of the biggest sectors. All that wealth is the stakes because depending on how a financial regulator chooses to play this way or that way, it can shatter business models, it can destroy the lives of individuals. There is the stakes are sky high that the individuals in financial regulation on the government side can do has massive consequences for the people that they face. The people that they face tremble in front of the financial regulator. Okay? So the stakes are high. Opacity. Most of that supervisory process happens in secrecy because they're not telling you what data did I get from which firm I went and did an investigation.",
-      "words": [
+        },
         {
           "word": "This",
           "startTime": 1197.9,
@@ -24346,15 +24154,7 @@
           "startTime": 1369.94,
           "endTime": 1370.74,
           "confidence": 0.9465
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1370.74,
-      "endTime": 1374.51,
-      "text": "I found these things wrong. All this is shrouded in secrecy. So",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 1370.74,
@@ -24426,15 +24226,7 @@
           "startTime": 1374.02,
           "endTime": 1374.51,
           "confidence": 0.7376
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1375.32,
-      "endTime": 1445.74,
-      "text": "Transactions high, discretion high, stakes high, opacity high, four on four. See the contrast? Monetary policy is easy, financial regulation is difficult. Okay? Suddenly we've got a toolkit. We've got the ability to look at a problem. If you didn't have this toolkit, you'd be kind of thinking, yeah, some economisty things, monetary policy, inflation sounds difficult to me, banking regulation sounds difficult to me. They sound about the same. No. With this toolkit, we know that. For a third world country like India, it is reasonably easy. You only have to get a law properly drafted, like the Indian financial code done by FSLRC, and it's reasonably easy to build and roll out an inflation targeting system. Small associated pieces need to be done that you need to get the composition of the monetary policy right, monetary policy committee right. You need to float the exchange rate, don't be intervening in the exchange rate market, have a open capital account. Once you've got all this. an easy problem. Banking regulation, truly difficult problem in the United States you will suffer doing banking regulation as they have. Okay, nice? Two examples. Shall I keep going with more",
-      "words": [
+        },
         {
           "word": "Transactions",
           "startTime": 1375.32,
@@ -26200,8 +25992,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1475.06,
-      "endTime": 1507.46,
-      "text": "So India has famously failed on getting elementary schooling going. Let's think a little more about what's at stake. So number of transactions high. Discretion, actually very high. So think deeply about it. The teacher in the class has complete discretion. Do I teach, do I not teach? Do I make eye contact with the kids? Do I not make eye contact with the kids? When they don't understand, do I just thunder on or do I try three times harder? Do I teach to the uh genius Amit Varma in my front row, or do I worry about People in the backbencher backbenches who are ignoring",
+      "endTime": 1551.19,
+      "text": "So India has famously failed on getting elementary schooling going. Let's think a little more about what's at stake. So number of transactions high. Discretion, actually very high. So think deeply about it. The teacher in the class has complete discretion. Do I teach, do I not teach? Do I make eye contact with the kids? Do I not make eye contact with the kids? When they don't understand, do I just thunder on or do I try three times harder? Do I teach to the uh genius Amit Varma in my front row, or do I worry about People in the backbencher backbenches who are ignoring my class completely. There's a lot of discretion. So elementary education, high discretion. Stakes. The stakes are actually low. So if I am a teacher and I do a bad job, what am I stealing? I'm stealing some wage of a school teacher in uh appropriately priced environment. It's probably 10,000 rupees a month. It's not a very high stakes thing. So stakes is not a problem. Secrecy. It doesn't have to be secret at all. We can create enough transparency around it through a variety of means. So bottom line is it's high disc high discretion, high transactions. Uh it can be uh low opacity and it can be uh and and it is low stakes.",
       "words": [
         {
           "word": "So",
@@ -26844,15 +26636,7 @@
           "startTime": 1507.06,
           "endTime": 1507.46,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1507.46,
-      "endTime": 1510.34,
-      "text": "my class completely. There's a lot of discretion. So",
-      "words": [
+        },
         {
           "word": "my",
           "startTime": 1507.46,
@@ -26906,15 +26690,7 @@
           "startTime": 1509.78,
           "endTime": 1510.34,
           "confidence": 0.9897
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1510.34,
-      "endTime": 1548.15,
-      "text": "elementary education, high discretion. Stakes. The stakes are actually low. So if I am a teacher and I do a bad job, what am I stealing? I'm stealing some wage of a school teacher in uh appropriately priced environment. It's probably 10,000 rupees a month. It's not a very high stakes thing. So stakes is not a problem. Secrecy. It doesn't have to be secret at all. We can create enough transparency around it through a variety of means. So bottom line is it's high disc high discretion, high transactions. Uh it can be uh low opacity and it can",
-      "words": [
+        },
         {
           "word": "elementary",
           "startTime": 1510.34,
@@ -27514,15 +27290,7 @@
           "startTime": 1547.83,
           "endTime": 1548.15,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1548.15,
-      "endTime": 1560.73,
-      "text": "be uh and and it is low stakes. Two out of four. Two out of four. Great and by the way, I was always a backbencher. So yeah, you don't insult me in the Mithvarma in the front bench. What are you saying? I never sat on a front bench. HP V campaign.",
-      "words": [
+        },
         {
           "word": "be",
           "startTime": 1548.15,
@@ -27570,7 +27338,15 @@
           "startTime": 1550.55,
           "endTime": 1551.19,
           "confidence": 0.9518
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1551.19,
+      "endTime": 1560.73,
+      "text": "Two out of four. Two out of four. Great and by the way, I was always a backbencher. So yeah, you don't insult me in the Mithvarma in the front bench. What are you saying? I never sat on a front bench. HP V campaign.",
+      "words": [
         {
           "word": "Two",
           "startTime": 1551.19,
@@ -27846,8 +27622,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1562.36,
-      "endTime": 1565.8,
-      "text": "Vaccination campaigns have high transactions.",
+      "endTime": 1591.83,
+      "text": "Vaccination campaigns have high transactions. Okay, but there's really no discretion at all. Like it's a fixed protocol. Catch a person, fire this, twenty-two twelve twenty-two days later, you do the second or a polio drop, there's absolutely no discretion. There's no stakes. The frontline worker has nothing to gain by threatening to withhold it or supply it or whatever. And transparency. There can be complete transparency. So this is easy. It's not difficult to run a program like",
       "words": [
         {
           "word": "Vaccination",
@@ -27878,15 +27654,7 @@
           "startTime": 1564.6,
           "endTime": 1565.8,
           "confidence": 0.9005
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1565.8,
-      "endTime": 1570.76,
-      "text": "Okay, but there's really no discretion at all. Like it's a fixed protocol.",
-      "words": [
+        },
         {
           "word": "Okay,",
           "startTime": 1565.8,
@@ -27964,15 +27732,7 @@
           "startTime": 1569.64,
           "endTime": 1570.76,
           "confidence": 0.9172
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1570.76,
-      "endTime": 1591.83,
-      "text": "Catch a person, fire this, twenty-two twelve twenty-two days later, you do the second or a polio drop, there's absolutely no discretion. There's no stakes. The frontline worker has nothing to gain by threatening to withhold it or supply it or whatever. And transparency. There can be complete transparency. So this is easy. It's not difficult to run a program like",
-      "words": [
+        },
         {
           "word": "Catch",
           "startTime": 1570.76,
@@ -28442,8 +28202,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1597.67,
-      "endTime": 1614.39,
-      "text": "Judiciary. Very high number of transactions. Ultimate discretion, ultimate high stakes. And there can be a certain amount of transparency, but you know, really a lot of things happen behind closed doors. Three judges on a bench, their conversation should be",
+      "endTime": 1617.75,
+      "text": "Judiciary. Very high number of transactions. Ultimate discretion, ultimate high stakes. And there can be a certain amount of transparency, but you know, really a lot of things happen behind closed doors. Three judges on a bench, their conversation should be secret, it should not be public domain. Three and a half out of",
       "words": [
         {
           "word": "Judiciary.",
@@ -28690,15 +28450,7 @@
           "startTime": 1614.31,
           "endTime": 1614.39,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1614.39,
-      "endTime": 1622.71,
-      "text": "secret, it should not be public domain. Three and a half out of four. Wow. What about taxation? Your favorite subject. Taxation.",
-      "words": [
+        },
         {
           "word": "secret,",
           "startTime": 1614.39,
@@ -28776,7 +28528,15 @@
           "startTime": 1617.67,
           "endTime": 1617.75,
           "confidence": 0.9967
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1617.75,
+      "endTime": 1622.71,
+      "text": "four. Wow. What about taxation? Your favorite subject. Taxation.",
+      "words": [
         {
           "word": "four.",
           "startTime": 1617.75,
@@ -30576,8 +30336,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1709.98,
-      "endTime": 1748.04,
-      "text": "we can discuss these things. And this is the starting point. I mean people can put different weightages on each of these metrics and, you know, do their own math in that sense. And we haven't even come to the question of, you know, um uh how the the interplay between how hard something is and how important it is to do something. That's an entirely separate thing. We'll come to that at the end. But uh So I love this. Well done. So, Ajesha, in your heart, I know you're a hacker. Can you hack this? So it is interesting to stare at a row",
+      "endTime": 1744.52,
+      "text": "we can discuss these things. And this is the starting point. I mean people can put different weightages on each of these metrics and, you know, do their own math in that sense. And we haven't even come to the question of, you know, um uh how the the interplay between how hard something is and how important it is to do something. That's an entirely separate thing. We'll come to that at the end. But uh So I love this. Well done. So, Ajesha, in your heart, I know you're a hacker. Can you hack this?",
       "words": [
         {
           "word": "we",
@@ -31160,7 +30920,15 @@
           "startTime": 1743.16,
           "endTime": 1744.52,
           "confidence": 0.9457
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1744.52,
+      "endTime": 1919.32,
+      "text": "So it is interesting to stare at a row and say, look, I really want to do this, but it's so hard. Can I do better? Okay? So in a way, think conceptually about how we came to modern monetary policy. It is because we wanted to solve a messy problem. We had opacity, we had a powerful governor who could do whatever they wanted, etc. And modern monetary policy based on an inflation target and a monetary policy committee dominated by private economists with complete transparency was actually hacking the components. So we changed our whole paradigm of how to think about this in order to make it easy. Okay. So I want to take you to another similar example. Uh in two thousand five I had a paper on the role of IT in governance. Okay. It was not at all about digital public goods or anything like that. It was just this one idea that many times You can take a high uh transactions, high discretion component and render it manageable using an IT system. Okay. So high transactions. What is so hard about high transactions? It's about pieces of paper and managing information and transmitting information from one office to another office, or pieces of paper getting counterfeited and so on. And so that's where a good IT system can help. That in the hands of a bad IT system, high transactions can be quite challenging, but one can conceive that, you know, I'll just like computerized the hell out of this and suddenly the problem will go away. Similarly, discretion. Okay, so uh in 2005, my mind was still heavily inside the glory of the railway reservation system, which at the time was new. Okay, let's pause to think about it. In the olden days, the booking status of a given seat on a given train was in a piece of paper, it was in a register. It was kept inside the railway office. So when you went and spoke with the person at the ticket counter, that person had complete discretion. He could lie to you, he could say there's no ticket here. Okay? And that discretion was in the hands of the frontline worker at the ticketing window of the railway system. Once we got a simple computer system done, just put this in a database which is openly and transparently available to the whole world, ideally through using an API. You don't need the government. to run uh IRCTC. I will link to one video on this. You just need the government to open up an API and then you know clear trip and make my trip will be in your system. Now at that point there is no discretion anymore. It's black and white. Seat number two A, is it taken? Is it not taken? So conceptually that is the value that IT systems bring. It is to remove discretion from the frontline civil servant and thereby convert a component from hard to easy. So we should be looking at these problem statements and wondering, is there a way in which I can redesign the policy so as to convert it into an",
+      "words": [
         {
           "word": "So",
           "startTime": 1744.52,
@@ -31214,15 +30982,7 @@
           "startTime": 1747.32,
           "endTime": 1748.04,
           "confidence": 0.9841
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1748.04,
-      "endTime": 1902.42,
-      "text": "and say, look, I really want to do this, but it's so hard. Can I do better? Okay? So in a way, think conceptually about how we came to modern monetary policy. It is because we wanted to solve a messy problem. We had opacity, we had a powerful governor who could do whatever they wanted, etc. And modern monetary policy based on an inflation target and a monetary policy committee dominated by private economists with complete transparency was actually hacking the components. So we changed our whole paradigm of how to think about this in order to make it easy. Okay. So I want to take you to another similar example. Uh in two thousand five I had a paper on the role of IT in governance. Okay. It was not at all about digital public goods or anything like that. It was just this one idea that many times You can take a high uh transactions, high discretion component and render it manageable using an IT system. Okay. So high transactions. What is so hard about high transactions? It's about pieces of paper and managing information and transmitting information from one office to another office, or pieces of paper getting counterfeited and so on. And so that's where a good IT system can help. That in the hands of a bad IT system, high transactions can be quite challenging, but one can conceive that, you know, I'll just like computerized the hell out of this and suddenly the problem will go away. Similarly, discretion. Okay, so uh in 2005, my mind was still heavily inside the glory of the railway reservation system, which at the time was new. Okay, let's pause to think about it. In the olden days, the booking status of a given seat on a given train was in a piece of paper, it was in a register. It was kept inside the railway office. So when you went and spoke with the person at the ticket counter, that person had complete discretion. He could lie to you, he could say there's no ticket here. Okay? And that discretion was in the hands of the frontline worker at the ticketing window of the railway system. Once we got a simple computer system done, just put this in a database which is openly and transparently available to the whole world, ideally through using an API. You don't need the government. to run uh IRCTC. I will link to one video on this. You just need the government to open up an API and then you know clear trip and make my trip will be in your system. Now at that point there is no discretion anymore. It's black and white. Seat number two A, is it taken? Is it not taken? So conceptually that is the value that IT systems",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1748.04,
@@ -34066,15 +33826,7 @@
           "startTime": 1902.02,
           "endTime": 1902.42,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1902.42,
-      "endTime": 1905.78,
-      "text": "bring. It is to remove discretion from",
-      "words": [
+        },
         {
           "word": "bring.",
           "startTime": 1902.42,
@@ -34116,15 +33868,7 @@
           "startTime": 1904.82,
           "endTime": 1905.78,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1905.78,
-      "endTime": 1919.32,
-      "text": "the frontline civil servant and thereby convert a component from hard to easy. So we should be looking at these problem statements and wondering, is there a way in which I can redesign the policy so as to convert it into an",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1905.78,
@@ -35254,8 +34998,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1972.09,
-      "endTime": 2022.6,
-      "text": "Yeah. That is a very important way to think about it, and it actually takes us to a deep implication of this way of thinking. So let's go step by step. I would like to first read one of the greatest quotes of all economics. This is from Adam Smith. Adam Smith says little else is requisite to carry a state to the highest degree of opulence from the lowest barbarism, but peace, easy taxes, and a tolerable administration of justice. All the rest being brought about by the natural course of things. Okay, so this is an absolutely great quote. It's deep and insightful. It's one of the most fundamental pieces of knowledge about economics. And he's saying to us, little else is required but peace. Easy taxes And the tolerable administration",
+      "endTime": 2197.9,
+      "text": "Yeah. That is a very important way to think about it, and it actually takes us to a deep implication of this way of thinking. So let's go step by step. I would like to first read one of the greatest quotes of all economics. This is from Adam Smith. Adam Smith says little else is requisite to carry a state to the highest degree of opulence from the lowest barbarism, but peace, easy taxes, and a tolerable administration of justice. All the rest being brought about by the natural course of things. Okay, so this is an absolutely great quote. It's deep and insightful. It's one of the most fundamental pieces of knowledge about economics. And he's saying to us, little else is required but peace. Easy taxes And the tolerable administration of justice. Very well. Let's dig into peace, easy taxes, and the tolerable administration of justice, and let's apply these four metrics. Okay, peace. Peace, peace. Military, foreign affairs, police, criminal justice system, courts. Okay? Horrible, horrible problems. High discretion, high stakes, okay, extremely difficult problems. So peace is not easy. Taxes, we already talked, very difficult problem. Tolerable administration of justice, we already talked, courts, judiciary, very difficult problems. Rule of law, very difficult problems. So suddenly we get a new insight into the world that little else is required, but what is required is very, very hard. It's a big ask that if somebody says to Javarlal Nehru in 1947, You know, you should be working on peace, easy taxes, and the tolerable administration of justice. And he should not brush it off. He's saying, Yeah, yeah, that's all good, but we also need to go to land reform. We should be saying, Wow, peace very hard. Easy taxes, very hard. Tolerable administration of justice, very hard. We have our hands full, we are swamped. Don't give me anything more to do. For a hundred years I just got to get this shit. So our conclusion should be That it is very hard to do these basics. So don't do mission creep. Don't add to your problem. We need all the effort, all the focus, all the resources. What are resources? Resources are money, resources are labor, the sheer headcount of civil servants. Most important, the resources are the time, the attention of the thinkers, of the researchers, of the research and reform community, of the leadership. Chief Minister does from morning to evening determines what gets done. So if the chief minister from morning to evening is doing meetings on peace, on easy taxes, on the tolerable administration of justice, they'll get done. But if the chief minister is distracted doing all sorts of other unrelated things, these things will not get done. These are scarce resources. There's a budget constraint in state capability. We have horrible shortages of management, of senior leadership, of research and reform teams in the country. So we should be lavishing these on this core. Why? Because this is required. It is essential. You can't make progress to becoming a successful economy without these. And by God, these are difficult. These are not easy problems. It's a huge challenge. It'll take fifty years, 100 years to figure these out. And so we should just try to say no to every other calendar entry. We should just say Peace, easy taxes, and a tolerable administration of justice is what we're",
       "words": [
         {
           "word": "Yeah.",
@@ -36054,15 +35798,7 @@
           "startTime": 2021.96,
           "endTime": 2022.6,
           "confidence": 0.9981
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2022.6,
-      "endTime": 2027.0,
-      "text": "of justice. Very well. Let's dig into peace,",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 2022.6,
@@ -36110,15 +35846,7 @@
           "startTime": 2026.12,
           "endTime": 2027.0,
           "confidence": 0.8482
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2027.0,
-      "endTime": 2106.34,
-      "text": "easy taxes, and the tolerable administration of justice, and let's apply these four metrics. Okay, peace. Peace, peace. Military, foreign affairs, police, criminal justice system, courts. Okay? Horrible, horrible problems. High discretion, high stakes, okay, extremely difficult problems. So peace is not easy. Taxes, we already talked, very difficult problem. Tolerable administration of justice, we already talked, courts, judiciary, very difficult problems. Rule of law, very difficult problems. So suddenly we get a new insight into the world that little else is required, but what is required is very, very hard. It's a big ask that if somebody says to Javarlal Nehru in 1947, You know, you should be working on peace, easy taxes, and the tolerable administration of justice. And he should not brush it off. He's saying, Yeah, yeah, that's all good, but we also need to go to land reform. We should be saying, Wow, peace very hard. Easy taxes, very hard. Tolerable administration of justice, very hard. We have our hands full, we are swamped. Don't give me anything more to do. For a hundred years I just got to get this",
-      "words": [
+        },
         {
           "word": "easy",
           "startTime": 2027.0,
@@ -37234,15 +36962,7 @@
           "startTime": 2106.1,
           "endTime": 2106.34,
           "confidence": 0.8114
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2106.34,
-      "endTime": 2109.59,
-      "text": "shit. So our conclusion should be",
-      "words": [
+        },
         {
           "word": "shit.",
           "startTime": 2106.34,
@@ -37278,15 +36998,7 @@
           "startTime": 2109.14,
           "endTime": 2109.59,
           "confidence": 0.998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2109.9,
-      "endTime": 2158.22,
-      "text": "That it is very hard to do these basics. So don't do mission creep. Don't add to your problem. We need all the effort, all the focus, all the resources. What are resources? Resources are money, resources are labor, the sheer headcount of civil servants. Most important, the resources are the time, the attention of the thinkers, of the researchers, of the research and reform community, of the leadership. Chief Minister does from morning to evening determines what gets done. So if the chief minister from morning to evening is doing meetings on peace, on easy taxes, on the tolerable administration of justice, they'll get done. But if the chief minister is distracted doing all sorts of other unrelated things, these things will not get done. These are scarce resources. There's a budget constraint in",
-      "words": [
+        },
         {
           "word": "That",
           "startTime": 2109.9,
@@ -38096,15 +37808,7 @@
           "startTime": 2158.06,
           "endTime": 2158.22,
           "confidence": 0.9836
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2158.22,
-      "endTime": 2160.7,
-      "text": "state capability. We have",
-      "words": [
+        },
         {
           "word": "state",
           "startTime": 2158.22,
@@ -38128,15 +37832,7 @@
           "startTime": 2160.54,
           "endTime": 2160.7,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2160.7,
-      "endTime": 2197.9,
-      "text": "horrible shortages of management, of senior leadership, of research and reform teams in the country. So we should be lavishing these on this core. Why? Because this is required. It is essential. You can't make progress to becoming a successful economy without these. And by God, these are difficult. These are not easy problems. It's a huge challenge. It'll take fifty years, 100 years to figure these out. And so we should just try to say no to every other calendar entry. We should just say Peace, easy taxes, and a tolerable administration of justice is what we're",
-      "words": [
+        },
         {
           "word": "horrible",
           "startTime": 2160.7,
@@ -43464,8 +43160,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2445.82,
-      "endTime": 2456.62,
-      "text": "first, I just touched on a beautiful Beetle song called Ellen or Rigby. Father McKenzie wiping the dirt from his hands as he walks from the grave. No one was saved. Okay.",
+      "endTime": 2535.34,
+      "text": "first, I just touched on a beautiful Beetle song called Ellen or Rigby. Father McKenzie wiping the dirt from his hands as he walks from the grave. No one was saved. Okay. That's how I think about government IT systems. Okay. Second, I have two recommendations from a 1984 uh U2 album, which is called Unforgettable Fire. One is called Bad and one is called Promenade. So the two songs are absolutely great. Okay. Third, uh Radio had no surprises. There's a beautiful cover by Regina Spector. I absolutely love it. I love the original as well. It's one of those schizophrenic things in my head that I just absolutely love both versions. Regina Spector grew up in Russia. She lives in the West and she's got a great version of this. Okay. Then five, I love the song Suzanne by Leonard Cohen. Okay, it's a really, really deep song. Um it's just one of the great songs to know. Okay. Six. There's a seventies band called Bread that most people have forgotten. I recommend a song called Obre. Seven. Uh this is I thought was a piece of nostalgia for me. Uh I grew up around an LP at home by Jaya Bose and Himangshu Biswas, and there was a little Patiali Dhun at the end. And just after all these years, I love it so much and I've decided it's not mere nostalgia, it's something truly cool. So seven pieces of",
       "words": [
         {
           "word": "first,",
@@ -43658,15 +43354,7 @@
           "startTime": 2456.3,
           "endTime": 2456.62,
           "confidence": 0.4882
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2456.62,
-      "endTime": 2461.26,
-      "text": "That's how I think about government IT systems. Okay. Second, I",
-      "words": [
+        },
         {
           "word": "That's",
           "startTime": 2456.62,
@@ -43732,15 +43420,7 @@
           "startTime": 2461.02,
           "endTime": 2461.26,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2461.26,
-      "endTime": 2531.18,
-      "text": "have two recommendations from a 1984 uh U2 album, which is called Unforgettable Fire. One is called Bad and one is called Promenade. So the two songs are absolutely great. Okay. Third, uh Radio had no surprises. There's a beautiful cover by Regina Spector. I absolutely love it. I love the original as well. It's one of those schizophrenic things in my head that I just absolutely love both versions. Regina Spector grew up in Russia. She lives in the West and she's got a great version of this. Okay. Then five, I love the song Suzanne by Leonard Cohen. Okay, it's a really, really deep song. Um it's just one of the great songs to know. Okay. Six. There's a seventies band called Bread that most people have forgotten. I recommend a song called Obre. Seven. Uh this is I thought was a piece of nostalgia for me. Uh I grew up around an LP at home by Jaya Bose and Himangshu Biswas, and there was a little Patiali Dhun at the end. And just after all these years, I love it so much and I've decided",
-      "words": [
+        },
         {
           "word": "have",
           "startTime": 2461.26,
@@ -44868,15 +44548,7 @@
           "startTime": 2530.7,
           "endTime": 2531.18,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2531.18,
-      "endTime": 2594.48,
-      "text": "it's not mere nostalgia, it's something truly cool. So seven pieces of music. So I'm very pleased with you. So since I we should also give recommendations, I'll also give music because why not? Uh one of my favorite songs of all time, Madame George by Van Morrison, and two covers of that. There's a glorious ethereal cover of Dad by Mary Ann Faithful. And recently when I was in hospital, in fact in January, I discovered another great cover version of Dead by the Irish singer songwriter Luca Bloom. So both fantastic covers of an absolutely epic classic song, uh, which I love. And since you mentioned Leonard Cohen, there came to mind a great cover of a song of his. This is by Greg Dooley of the Afghan Whigs. It's a song called Paper Thin Hotel, and it's an absolute masterpiece. I think I played it for you once. And yeah. Uh so it's a great, great song, and that is my second recommendation of today. So what a fun way to end an episode. And it was a fun episode, wasn't it? And we've got a Beatles song about IT systems. We've got a Beatles song about IT systems.",
-      "words": [
+        },
         {
           "word": "it's",
           "startTime": 2531.18,
@@ -44948,7 +44620,15 @@
           "startTime": 2535.26,
           "endTime": 2535.34,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2535.34,
+      "endTime": 2594.48,
+      "text": "music. So I'm very pleased with you. So since I we should also give recommendations, I'll also give music because why not? Uh one of my favorite songs of all time, Madame George by Van Morrison, and two covers of that. There's a glorious ethereal cover of Dad by Mary Ann Faithful. And recently when I was in hospital, in fact in January, I discovered another great cover version of Dead by the Irish singer songwriter Luca Bloom. So both fantastic covers of an absolutely epic classic song, uh, which I love. And since you mentioned Leonard Cohen, there came to mind a great cover of a song of his. This is by Greg Dooley of the Afghan Whigs. It's a song called Paper Thin Hotel, and it's an absolute masterpiece. I think I played it for you once. And yeah. Uh so it's a great, great song, and that is my second recommendation of today. So what a fun way to end an episode. And it was a fun episode, wasn't it? And we've got a Beatles song about IT systems. We've got a Beatles song about IT systems.",
+      "words": [
         {
           "word": "music.",
           "startTime": 2535.34,

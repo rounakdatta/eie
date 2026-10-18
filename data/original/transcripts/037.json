@@ -5,7 +5,7 @@
     "durationSeconds": 3026,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -27415,8 +27415,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1678.14,
-      "endTime": 1686.22,
-      "text": "I'm claiming that very algorithm can be customized. That could it be that the Amazon algorithm for Japan is different from the Amazon algorithm for",
+      "endTime": 1689.39,
+      "text": "I'm claiming that very algorithm can be customized. That could it be that the Amazon algorithm for Japan is different from the Amazon algorithm for India? Okay, I don't know the answer. No, my my hypothesizes.",
       "words": [
         {
           "word": "I'm",
@@ -27567,15 +27567,7 @@
           "startTime": 1686.14,
           "endTime": 1686.22,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1686.22,
-      "endTime": 1695.39,
-      "text": "India? Okay, I don't know the answer. No, my my hypothesizes. I I know the answer. The Amazon algorithm is optimizing not for Japan or India, but for the individual. I'm saying",
-      "words": [
+        },
         {
           "word": "India?",
           "startTime": 1686.22,
@@ -27641,7 +27633,15 @@
           "startTime": 1688.59,
           "endTime": 1689.39,
           "confidence": 0.7821
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1689.39,
+      "endTime": 1695.39,
+      "text": "I I know the answer. The Amazon algorithm is optimizing not for Japan or India, but for the individual. I'm saying",
+      "words": [
         {
           "word": "I",
           "startTime": 1689.39,

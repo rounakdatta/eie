@@ -5,7 +5,7 @@
     "durationSeconds": 7446,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -131893,8 +131893,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 6879.47,
-      "endTime": 6901.63,
-      "text": "So I don't agree with uh the idea that I will be fitter year on year. Because aging is happening with probability one. I feel that's an unreasonable benchmark and you're setting yourself up for sadness. I uh while you were speaking, a phrase I was thinking about was we've discussed this many times before. Let's start from the phrase, I want to be the best Amit Varma I can be.",
+      "endTime": 6933.37,
+      "text": "So I don't agree with uh the idea that I will be fitter year on year. Because aging is happening with probability one. I feel that's an unreasonable benchmark and you're setting yourself up for sadness. I uh while you were speaking, a phrase I was thinking about was we've discussed this many times before. Let's start from the phrase, I want to be the best Amit Varma I can be. You want to be the best Amit Varma, you can't. I'm just paraphrasing for you. So then we should imagine we enlarge that to say, I'm I want to be the best Amit Varma I can be at time T. So you know, we are where we are, meaning there's no point. Enraging against the limitations and the constraints. Okay and Jay or Zay says how to to you, Amit, how can I become more alive without becoming crazy?",
       "words": [
         {
           "word": "So",
@@ -132321,15 +132321,7 @@
           "startTime": 6900.99,
           "endTime": 6901.63,
           "confidence": 0.9517
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 6901.63,
-      "endTime": 6903.87,
-      "text": "You want to be the best Amit Varma, you can't. I'm",
-      "words": [
+        },
         {
           "word": "You",
           "startTime": 6901.63,
@@ -132395,15 +132387,7 @@
           "startTime": 6903.71,
           "endTime": 6903.87,
           "confidence": 0.8558
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 6903.87,
-      "endTime": 6933.37,
-      "text": "just paraphrasing for you. So then we should imagine we enlarge that to say, I'm I want to be the best Amit Varma I can be at time T. So you know, we are where we are, meaning there's no point. Enraging against the limitations and the constraints. Okay and Jay or Zay says how to to you, Amit, how can I become more alive without becoming crazy?",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 6903.87,

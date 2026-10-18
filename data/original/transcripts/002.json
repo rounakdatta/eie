@@ -5,7 +5,7 @@
     "durationSeconds": 3616,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -3572,8 +3572,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 254.54,
-      "endTime": 262.3,
-      "text": "into who you are today or were you always like this? Was there a journey to get to this point where you can have that uh terror? Well absolutely. So I",
+      "endTime": 259.9,
+      "text": "into who you are today or were you always like this? Was there a journey to get to this point where you can have",
       "words": [
         {
           "word": "into",
@@ -3718,7 +3718,15 @@
           "startTime": 259.74,
           "endTime": 259.9,
           "confidence": 0.9998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 259.9,
+      "endTime": 283.99,
+      "text": "that uh terror? Well absolutely. So I wasn't here for a long time. But uh I think it's an essential part of all of us that we have to be marathon runners. The world is hard, the world is complicated, and there is no point in screaming. It doesn't help. It's important to uh have that psychic dynamite, but played out in a sustained way.",
+      "words": [
         {
           "word": "that",
           "startTime": 259.9,
@@ -3760,15 +3768,7 @@
           "startTime": 262.14,
           "endTime": 262.3,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 262.3,
-      "endTime": 283.99,
-      "text": "wasn't here for a long time. But uh I think it's an essential part of all of us that we have to be marathon runners. The world is hard, the world is complicated, and there is no point in screaming. It doesn't help. It's important to uh have that psychic dynamite, but played out in a sustained way.",
-      "words": [
+        },
         {
           "word": "wasn't",
           "startTime": 262.3,
@@ -31400,8 +31400,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1703.67,
-      "endTime": 1716.84,
-      "text": "you know But I uh isn't there a conflation here? I think people who talk about AGI, for example, artificial general intelligence, they're not talking about LLMs. They're talking about a lot of the other stuff, which you are also incredibly exciting. So as long as we are clear on that, I'm fine. So I I'm",
+      "endTime": 1714.36,
+      "text": "you know But I uh isn't there a conflation here? I think people who talk about AGI, for example, artificial general intelligence, they're not talking about LLMs. They're talking about a lot of the other stuff, which you are also incredibly exciting.",
       "words": [
         {
           "word": "you",
@@ -31654,7 +31654,15 @@
           "startTime": 1713.96,
           "endTime": 1714.36,
           "confidence": 0.809
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1714.36,
+      "endTime": 1741.58,
+      "text": "So as long as we are clear on that, I'm fine. So I I'm just reporting my anxiety on these two fronts. One is around the claims of AI, and the other is my worry about the journey to mastery. That in my opinion, either in programming or in writing, the journey to mastery does not contain these tools. So I would switch off GitHub Copilot and write code from scratch if I was 17. I also want to express.",
+      "words": [
         {
           "word": "So",
           "startTime": 1714.36,
@@ -31738,15 +31746,7 @@
           "startTime": 1716.52,
           "endTime": 1716.84,
           "confidence": 0.8132
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1716.84,
-      "endTime": 1741.58,
-      "text": "just reporting my anxiety on these two fronts. One is around the claims of AI, and the other is my worry about the journey to mastery. That in my opinion, either in programming or in writing, the journey to mastery does not contain these tools. So I would switch off GitHub Copilot and write code from scratch if I was 17. I also want to express.",
-      "words": [
+        },
         {
           "word": "just",
           "startTime": 1716.84,
@@ -40202,8 +40202,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2155.83,
-      "endTime": 2382.88,
-      "text": "Couple of things. One, as far as protein folding is concerned, if you've ever seen me wrap a bacon around the wrap a piece of bacon around a sausage, you'll realize I'm bloody good at protein folding. Second, you mentioned that y these innovations had you squealing with excitement. Can you kindly demonstrate? I'm serious, how do you squeal with excitement? Just something like what you're talking about. I'd love to see you squealing with excitement. Uh quickly on Alpha Zero, because I was blown away by it. I'm a keen chess player. I'd written a column on it which will be like a link down below. I mean anything either of us have written on anything we've discussed will be linked down below. And uh so for the benefit of my listeners, just to simplify what exactly happened, there were two sort of Revolutions, the there were two seminal moments in chess as far as computers are concerned. And I'm not even talking about the Kasparov uh a match of 97. I'm talking about A 2003, 2004, when Stockfish became easily more powerful than the most powerful human player, and players started using computers for pedagogy and teaching themselves. And instead of everything become homogenized because of computers, it actually went in the opposite direction. Because before this, all the heuristics that people use, basically from the Soviet school of how you occupy the center, how you use space. and initiative was a fixed set of rules. And now you could find concrete examp exceptions to those rules using Stockfish and therefore go off in different directions, which has led to incredibly creative players like Wesley Shou and Ali Raza Firusha and so on, who are just so think so differently, you know. Like Anand at one point uh noted that, you know, with players of his generation, you d if they made an unexpected move, completely unexpected move, it was probably a bad move. But this generation they're just thinking differently. That was one revolution. 2017 was the next revolution which changed everything. Now Stockfish, the if the strongest human player Carlson is about 28-70 in classical chess, Stockfish would have been about 35-3600. AlphaZero came. It taught itself to play chess by playing with itself twenty-four for twenty-four hours, no human database, played with itself. In that time, if you look at the database of games, it followed the same progression as humans did. Whereas, you know, at one point in the 19th century the French defense was fashionable, today we know it is suboptimal. At one point in 2001, when Kramnik Kas Kasparov uh you know Kramnik unleashed the Berlin defense and we realized how strong it is, you know, Alpha Zero discovered the Berlin defense. The same evolutionary path, and then going further. beyond where humans are, and then doing things that we don't understand. And like you correctly pointed out, it realized that many of the heuristics of the past, for example, the relationship between material, And uh uh initiative, what stood for compensation changed completely. Now, obviously you had people, you know, right from the 60s, you had Petrosian with you know making exchange sacrifices, fashionable and so on, you know, long-term strategic bond sacrifices were common. But the kind of sacrifices Alpha Zero did, or the kind of attacks it did along the flanks, along the A and H files, which e like you said, Carlson took up, all of these guys took up. And Carlson's coach, Peter Heine Nelson, One said that I always wondered that if aliens with a superior intelligence came to Earth, how would they play chess? And now I know. When you saw the Alpha Zero games. And the thing about the Alpha Zero games is we can figure out some of the things that it has learnt. For example, the relationship between material and initiative and what it does down the flanks. We don't know how it did them, we don't know why it did them. It is a black box over. Some alien intelligence. It's an alien intelligence. It is a black box. We don't know how it does what it does, and it keeps getting smarter and smarter, which is incredibly exciting. And I think that Machine learning in such a way could come up with fundamental, could do the Einsteinian thing. Special relativity is special.",
+      "endTime": 2379.04,
+      "text": "Couple of things. One, as far as protein folding is concerned, if you've ever seen me wrap a bacon around the wrap a piece of bacon around a sausage, you'll realize I'm bloody good at protein folding. Second, you mentioned that y these innovations had you squealing with excitement. Can you kindly demonstrate? I'm serious, how do you squeal with excitement? Just something like what you're talking about. I'd love to see you squealing with excitement. Uh quickly on Alpha Zero, because I was blown away by it. I'm a keen chess player. I'd written a column on it which will be like a link down below. I mean anything either of us have written on anything we've discussed will be linked down below. And uh so for the benefit of my listeners, just to simplify what exactly happened, there were two sort of Revolutions, the there were two seminal moments in chess as far as computers are concerned. And I'm not even talking about the Kasparov uh a match of 97. I'm talking about A 2003, 2004, when Stockfish became easily more powerful than the most powerful human player, and players started using computers for pedagogy and teaching themselves. And instead of everything become homogenized because of computers, it actually went in the opposite direction. Because before this, all the heuristics that people use, basically from the Soviet school of how you occupy the center, how you use space. and initiative was a fixed set of rules. And now you could find concrete examp exceptions to those rules using Stockfish and therefore go off in different directions, which has led to incredibly creative players like Wesley Shou and Ali Raza Firusha and so on, who are just so think so differently, you know. Like Anand at one point uh noted that, you know, with players of his generation, you d if they made an unexpected move, completely unexpected move, it was probably a bad move. But this generation they're just thinking differently. That was one revolution. 2017 was the next revolution which changed everything. Now Stockfish, the if the strongest human player Carlson is about 28-70 in classical chess, Stockfish would have been about 35-3600. AlphaZero came. It taught itself to play chess by playing with itself twenty-four for twenty-four hours, no human database, played with itself. In that time, if you look at the database of games, it followed the same progression as humans did. Whereas, you know, at one point in the 19th century the French defense was fashionable, today we know it is suboptimal. At one point in 2001, when Kramnik Kas Kasparov uh you know Kramnik unleashed the Berlin defense and we realized how strong it is, you know, Alpha Zero discovered the Berlin defense. The same evolutionary path, and then going further. beyond where humans are, and then doing things that we don't understand. And like you correctly pointed out, it realized that many of the heuristics of the past, for example, the relationship between material, And uh uh initiative, what stood for compensation changed completely. Now, obviously you had people, you know, right from the 60s, you had Petrosian with you know making exchange sacrifices, fashionable and so on, you know, long-term strategic bond sacrifices were common. But the kind of sacrifices Alpha Zero did, or the kind of attacks it did along the flanks, along the A and H files, which e like you said, Carlson took up, all of these guys took up. And Carlson's coach, Peter Heine Nelson, One said that I always wondered that if aliens with a superior intelligence came to Earth, how would they play chess? And now I know. When you saw the Alpha Zero games. And the thing about the Alpha Zero games is we can figure out some of the things that it has learnt. For example, the relationship between material and initiative and what it does down the flanks. We don't know how it did them, we don't know why it did them. It is a black box over. Some alien intelligence. It's an alien intelligence. It is a black box. We don't know how it does what it does, and it keeps getting smarter and smarter, which is incredibly exciting. And I think that Machine learning in such a way could come up with fundamental, could do the Einsteinian thing.",
       "words": [
         {
           "word": "Couple",
@@ -44572,7 +44572,15 @@
           "startTime": 2377.54,
           "endTime": 2379.04,
           "confidence": 0.9704
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2379.86,
+      "endTime": 2431.85,
+      "text": "Special relativity is special. So, you know, I there's an there's a normal science that I have stress and multiplication, I'll do it better. That is sorting, I'll do it better. The leaps, the four papers of Einstein, uh, I continue to think are conceptual explosions that don't come to the machines. But that's okay, once again. This stuff is revolutionary. This stuff is incredibly useful. It will partner with humans in doing research. The improvements in the matrix algorithms that were made by uh DeepMind then turn around and fuel mathematicians who try to understand what happened, prove theorems about it. So I don't see it as either or. And I I don't see it as replacing humans, but I I feel this stuff is revolutionary. This stuff changes the course of production of human knowledge.",
+      "words": [
         {
           "word": "Special",
           "startTime": 2379.86,
@@ -44596,15 +44604,7 @@
           "startTime": 2381.38,
           "endTime": 2382.88,
           "confidence": 0.9611
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2382.98,
-      "endTime": 2431.85,
-      "text": "So, you know, I there's an there's a normal science that I have stress and multiplication, I'll do it better. That is sorting, I'll do it better. The leaps, the four papers of Einstein, uh, I continue to think are conceptual explosions that don't come to the machines. But that's okay, once again. This stuff is revolutionary. This stuff is incredibly useful. It will partner with humans in doing research. The improvements in the matrix algorithms that were made by uh DeepMind then turn around and fuel mathematicians who try to understand what happened, prove theorems about it. So I don't see it as either or. And I I don't see it as replacing humans, but I I feel this stuff is revolutionary. This stuff changes the course of production of human knowledge.",
-      "words": [
+        },
         {
           "word": "So,",
           "startTime": 2382.98,
