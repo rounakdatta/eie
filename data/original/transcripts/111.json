@@ -5,7 +5,7 @@
     "durationSeconds": 3220,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); long disagreements with FluidAudio settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -2225,8 +2225,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 133.51,
-      "endTime": 137.59,
-      "text": "I remember uh my first brush with FDI.",
+      "endTime": 186.11,
+      "text": "I remember uh my first brush with FDI. Uh I was with my father and there was a guest. This was a guest he was an American from Corning Glass. Okay. And uh he came to meet my father. This would be my father died in eighty four, so this would be in early eighties, he'd come to meet my father, and I just happened to be around. And uh Conning wanted to set up a factory in India to make glass. And uh my father said, You won't be able to do so. The Indian State doesn't allow this. This is banned, that is banned, and you know, it's a nice idea. There will be demand for this kind of glass and T V T uh television picture tubes in India and so on. But like sorry, the Indian State will ban it. And this guy was very baffled, why would the government want to prevent us from building factories in India.",
       "words": [
         {
           "word": "I",
@@ -2275,15 +2275,7 @@
           "startTime": 136.31,
           "endTime": 137.59,
           "confidence": 0.8133
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 137.59,
-      "endTime": 147.35,
-      "text": "Uh I was with my father and there was a guest. This was a guest he was an American from Corning Glass. Okay.",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 137.59,
@@ -2421,15 +2413,7 @@
           "startTime": 146.55,
           "endTime": 147.35,
           "confidence": 0.6072
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 147.35,
-      "endTime": 186.11,
-      "text": "And uh he came to meet my father. This would be my father died in eighty four, so this would be in early eighties, he'd come to meet my father, and I just happened to be around. And uh Conning wanted to set up a factory in India to make glass. And uh my father said, You won't be able to do so. The Indian State doesn't allow this. This is banned, that is banned, and you know, it's a nice idea. There will be demand for this kind of glass and T V T uh television picture tubes in India and so on. But like sorry, the Indian State will ban it. And this guy was very baffled, why would the government want to prevent us from building factories in India.",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 147.35,
@@ -3589,8 +3573,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 205.63,
-      "endTime": 208.83,
-      "text": "everybody knows about FDI, everybody talks about FTI and I",
+      "endTime": 242.27,
+      "text": "everybody knows about FDI, everybody talks about FTI and I will do uh brief touching upon some of those things here, but it's actually a rich field. And I want to push many, many interesting ideas and insights where we go under the hood and we see this thing in a more complete way. It's a great field. It's an important subject. I am not blase about it. I'm not glazed out about it. It's not a uh been there, done that. It's actually a rich, interesting field and for the next Uh twenty five years of the",
       "words": [
         {
           "word": "everybody",
@@ -3651,15 +3635,7 @@
           "startTime": 208.67,
           "endTime": 208.83,
           "confidence": 0.9911
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 208.83,
-      "endTime": 227.27,
-      "text": "will do uh brief touching upon some of those things here, but it's actually a rich field. And I want to push many, many interesting ideas and insights where we go under the hood and we see this thing in a more complete way. It's a great",
-      "words": [
+        },
         {
           "word": "will",
           "startTime": 208.83,
@@ -3941,15 +3917,7 @@
           "startTime": 226.95,
           "endTime": 227.27,
           "confidence": 0.9995
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 227.27,
-      "endTime": 242.27,
-      "text": "field. It's an important subject. I am not blase about it. I'm not glazed out about it. It's not a uh been there, done that. It's actually a rich, interesting field and for the next Uh twenty five years of the",
-      "words": [
+        },
         {
           "word": "field.",
           "startTime": 227.27,
@@ -4463,8 +4431,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 262.27,
-      "endTime": 280.03,
-      "text": "builds a factory in India. Okay. Let's go closer into that story. First give me the full form. Let us assume some of our gentle readers are readers of literature and poetry and may not FDI is foreign direct investment. And the general intuition is a foreigner built a factory to operate in India. Okay?",
+      "endTime": 272.51,
+      "text": "builds a factory in India. Okay. Let's go closer into that story. First give me the full form. Let us assume some of our gentle readers are readers of literature and poetry and may not",
       "words": [
         {
           "word": "builds",
@@ -4675,7 +4643,15 @@
           "startTime": 271.63,
           "endTime": 272.51,
           "confidence": 0.6603
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 272.51,
+      "endTime": 308.35,
+      "text": "FDI is foreign direct investment. And the general intuition is a foreigner built a factory to operate in India. Okay? Uh George Fernandes drove IBM and Coca-Cola out of India. That was shutting down on FDI into India. IBM operated in India, supported IBM mainframes being used in India But George Fernandes, you know, created conditions where IBM chose to pack their bags and leave. Okay, and the same with Coca-Cola. So that's our simple vision of FDI. But let's go closer and let's think of definitions and how would you",
+      "words": [
         {
           "word": "FDI",
           "startTime": 272.51,
@@ -4795,15 +4771,7 @@
           "startTime": 279.55,
           "endTime": 280.03,
           "confidence": 0.6154
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 280.03,
-      "endTime": 308.35,
-      "text": "Uh George Fernandes drove IBM and Coca-Cola out of India. That was shutting down on FDI into India. IBM operated in India, supported IBM mainframes being used in India But George Fernandes, you know, created conditions where IBM chose to pack their bags and leave. Okay, and the same with Coca-Cola. So that's our simple vision of FDI. But let's go closer and let's think of definitions and how would you",
-      "words": [
+        },
         {
           "word": "Uh",
           "startTime": 280.03,
@@ -5267,8 +5235,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 311.31,
-      "endTime": 315.63,
-      "text": "is a foreigner having a substantial and long-term stake",
+      "endTime": 498.57,
+      "text": "is a foreigner having a substantial and long-term stake in an Indian production arrangement. So consider a bakery. If uh Foreigner buys shares in an Indian bakery company, okay, like Britannia, and they buy the shared and they sell the shares next week, that's foreign portfolio investment. But if a foreigner comes on board with a significant long-term engagement and an involvement in the affairs of the company, then that's FTI. There is a definition which has been agreed to by the OECD and the IMF that the minimum equity shareholding should be 10%. Okay, then it's counted as FTI. If you have an equity shareholding of 9%, it will not be counted as FDI. This is the way it is done. Now, if a foreign parent company gives a loan to its Indian subsidiary, that's also FDI. So whether it is equity financing or debt financing, you are there, you have a significant presence, and that private debt relationship between a foreign uh headquarters and its Indian subsidiary is also counted as FDI. In this field, there is there are the words FDI in India and FDI by India. So foreign activities in India are FDI in India. Activities by Indian firms who may go to Vienna, Cafe Coffee Day is found in Vienna. I have a photograph to show you. And that would be FDI by India. Okay. So uh these are the uh basic definitions around FDI. Are two more subtleties inside this. What you see as private equity investment is actually often counted as FDI, even though it's actually like an arm's length financial investor. But the rule is if it's more than 10%, then it's FDI. So this bothers some people. So people will feel that if Minnesota mining and manufacturing 3M will build a factory in India, it's surely FDI. If a foreign Private equity fund will buy 11% in a completely Indian company. Is that quite FDI? Is it actually tantamount to portfolio investment? There are indeed shades of gray, but a stake of more than 10% and a stake that tends to persist for long periods of time is counted as FDI. Finally, if a foreign company owns operations in India, if the Indian operations make a profit, that profit can be either reinvested in India or it can be repatriated, it can be paid abroad. When that profit is reinvested in India, that is counted as a brand new FDI flow of that year. But it can be repatriated also. Okay? So this is the full environment of what constitutes FDI. It is a substantial involvement for the long term, involving ownership and control by foreigners of Indian companies of operations going on in India. That is the definition of",
       "words": [
         {
           "word": "is",
@@ -5323,15 +5291,7 @@
           "startTime": 314.99,
           "endTime": 315.63,
           "confidence": 0.9992
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 315.63,
-      "endTime": 320.93,
-      "text": "in an Indian production arrangement. So consider a bakery. If uh",
-      "words": [
+        },
         {
           "word": "in",
           "startTime": 315.63,
@@ -5397,15 +5357,7 @@
           "startTime": 320.43,
           "endTime": 320.93,
           "confidence": 0.718
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 321.53,
-      "endTime": 402.57,
-      "text": "Foreigner buys shares in an Indian bakery company, okay, like Britannia, and they buy the shared and they sell the shares next week, that's foreign portfolio investment. But if a foreigner comes on board with a significant long-term engagement and an involvement in the affairs of the company, then that's FTI. There is a definition which has been agreed to by the OECD and the IMF that the minimum equity shareholding should be 10%. Okay, then it's counted as FTI. If you have an equity shareholding of 9%, it will not be counted as FDI. This is the way it is done. Now, if a foreign parent company gives a loan to its Indian subsidiary, that's also FDI. So whether it is equity financing or debt financing, you are there, you have a significant presence, and that private debt relationship between a foreign uh headquarters and its Indian subsidiary is also counted as FDI. In this field, there is there are the words FDI in India and FDI by India. So foreign activities in India are FDI in India. Activities by Indian firms who may go to Vienna, Cafe Coffee Day is found in Vienna. I have a photograph to show you. And that would be FDI by",
-      "words": [
+        },
         {
           "word": "Foreigner",
           "startTime": 321.53,
@@ -6653,15 +6605,7 @@
           "startTime": 402.09,
           "endTime": 402.57,
           "confidence": 0.937
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 402.57,
-      "endTime": 410.83,
-      "text": "India. Okay. So uh these are the uh basic definitions around FDI.",
-      "words": [
+        },
         {
           "word": "India.",
           "startTime": 402.57,
@@ -6733,15 +6677,7 @@
           "startTime": 410.33,
           "endTime": 410.83,
           "confidence": 0.9444
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 411.93,
-      "endTime": 493.53,
-      "text": "Are two more subtleties inside this. What you see as private equity investment is actually often counted as FDI, even though it's actually like an arm's length financial investor. But the rule is if it's more than 10%, then it's FDI. So this bothers some people. So people will feel that if Minnesota mining and manufacturing 3M will build a factory in India, it's surely FDI. If a foreign Private equity fund will buy 11% in a completely Indian company. Is that quite FDI? Is it actually tantamount to portfolio investment? There are indeed shades of gray, but a stake of more than 10% and a stake that tends to persist for long periods of time is counted as FDI. Finally, if a foreign company owns operations in India, if the Indian operations make a profit, that profit can be either reinvested in India or it can be repatriated, it can be paid abroad. When that profit is reinvested in India, that is counted as a brand new FDI flow of that year. But it can be repatriated also. Okay? So this is the full environment of what constitutes FDI. It is a substantial involvement for the long term, involving ownership and control by foreigners of Indian",
-      "words": [
+        },
         {
           "word": "Are",
           "startTime": 411.93,
@@ -7983,15 +7919,7 @@
           "startTime": 492.97,
           "endTime": 493.53,
           "confidence": 0.999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 493.53,
-      "endTime": 511.39,
-      "text": "companies of operations going on in India. That is the definition of FDI Soy true love cannot be quantified, but are there ways to measure FDI?",
-      "words": [
+        },
         {
           "word": "companies",
           "startTime": 493.53,
@@ -8063,7 +7991,15 @@
           "startTime": 498.33,
           "endTime": 498.57,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 498.57,
+      "endTime": 511.39,
+      "text": "FDI Soy true love cannot be quantified, but are there ways to measure FDI?",
+      "words": [
         {
           "word": "FDI",
           "startTime": 498.57,
@@ -8153,8 +8089,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 512.7,
-      "endTime": 594.17,
-      "text": "In the balance of payments, we get beautiful, trusted, high quality FDI data. And so I already said FDI in India and FDI by India. Those are two separate heads that are seen. Under FDI in India, you see two streams. There is a gross inflow of FDI coming into India. Then there is a repatriation. So there are Indian operations or foreign companies who are sending money back abroad. So that's a gross outflow. And then you can net the two together and you get the net. FDI in India. That's a number. FDI by India. You will see the outflow by Indian companies putting FDI abroad. And then the foreign companies, the foreign operations of Indian companies pay money back into India. And so that's a two-way street there. And you can net that. That's a net FDI by India. And finally, you can net the whole thing. So you can take the net money coming into India. Some money is being pushed out by Indian persons, some money is coming in from foreign persons. You subtract out And you get a number that colloquially is can be called net net FDI. The reason I want to bring this up is as you see, there is a gross inflow, a gross outflow, a gross inflow, a gross outflow, a net FDI in India, a net FDI by India, and a net net. So there are seven different numbers in the game of",
+      "endTime": 620.01,
+      "text": "In the balance of payments, we get beautiful, trusted, high quality FDI data. And so I already said FDI in India and FDI by India. Those are two separate heads that are seen. Under FDI in India, you see two streams. There is a gross inflow of FDI coming into India. Then there is a repatriation. So there are Indian operations or foreign companies who are sending money back abroad. So that's a gross outflow. And then you can net the two together and you get the net. FDI in India. That's a number. FDI by India. You will see the outflow by Indian companies putting FDI abroad. And then the foreign companies, the foreign operations of Indian companies pay money back into India. And so that's a two-way street there. And you can net that. That's a net FDI by India. And finally, you can net the whole thing. So you can take the net money coming into India. Some money is being pushed out by Indian persons, some money is coming in from foreign persons. You subtract out And you get a number that colloquially is can be called net net FDI. The reason I want to bring this up is as you see, there is a gross inflow, a gross outflow, a gross inflow, a gross outflow, a net FDI in India, a net FDI by India, and a net net. So there are seven different numbers in the game of FDI. This is used to cherry pick a message that Propagandists want. So when a propagandist wants to make India look good, they will look at this entire landscape and pick a number that makes India look good, and vice versa. And it bothers me a lot because this is just a landscape of propaganda. And for me, the surest sign that this is propaganda is when people will use a title of the graph,",
       "words": [
         {
           "word": "In",
@@ -9619,15 +9555,7 @@
           "startTime": 593.93,
           "endTime": 594.17,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 594.17,
-      "endTime": 601.21,
-      "text": "FDI. This is used to cherry pick a message that Propagandists want. So",
-      "words": [
+        },
         {
           "word": "FDI.",
           "startTime": 594.17,
@@ -9705,15 +9633,7 @@
           "startTime": 600.89,
           "endTime": 601.21,
           "confidence": 0.9919
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 601.21,
-      "endTime": 620.01,
-      "text": "when a propagandist wants to make India look good, they will look at this entire landscape and pick a number that makes India look good, and vice versa. And it bothers me a lot because this is just a landscape of propaganda. And for me, the surest sign that this is propaganda is when people will use a title of the graph,",
-      "words": [
+        },
         {
           "word": "when",
           "startTime": 601.21,
@@ -11253,8 +11173,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 686.54,
-      "endTime": 711.82,
-      "text": "concept of what is going on here, and I want to show you a dream. Okay? The dream is that there is a country with bad institutions. So basically, the local private sector is unable to do things because they are messed up with bad institutions. But the country somehow able to get its shit together. And it says, look, for this one square kilometer, you build your factory and you will be protected from the depredations",
+      "endTime": 768.91,
+      "text": "concept of what is going on here, and I want to show you a dream. Okay? The dream is that there is a country with bad institutions. So basically, the local private sector is unable to do things because they are messed up with bad institutions. But the country somehow able to get its shit together. And it says, look, for this one square kilometer, you build your factory and you will be protected from the depredations of the local institutions. Okay. That is the dream of FDI. That we recognize that we are malfunctioning as a country. One day we'll fix our country. In the short term, I'll just create this as a hack. That there is this one square kilometer of a factory and there will be no local labor law. There will be no local uh messing with taxation. There will be no difficulties with getting visas for people to travel. There will be no customs duties or any other tariff barriers for goods that come in, for goods that go out. We will just not mess you up like we mess up our normal country. It takes enormous honesty to say this openly, and it's important for us to say this openly. That is the greatness of the South East Asian and the Chinese model of FDI. The idea was We'll fix China one day. Okay. Deng Xiaoping's dream was there will be no Xi Jinping. We will fix China one day.",
       "words": [
         {
           "word": "concept",
@@ -11717,15 +11637,7 @@
           "startTime": 710.54,
           "endTime": 711.82,
           "confidence": 0.9726
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 711.82,
-      "endTime": 717.26,
-      "text": "of the local institutions. Okay. That is the dream of FDI. That",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 711.82,
@@ -11797,15 +11709,7 @@
           "startTime": 716.62,
           "endTime": 717.26,
           "confidence": 0.9762
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 717.26,
-      "endTime": 768.91,
-      "text": "we recognize that we are malfunctioning as a country. One day we'll fix our country. In the short term, I'll just create this as a hack. That there is this one square kilometer of a factory and there will be no local labor law. There will be no local uh messing with taxation. There will be no difficulties with getting visas for people to travel. There will be no customs duties or any other tariff barriers for goods that come in, for goods that go out. We will just not mess you up like we mess up our normal country. It takes enormous honesty to say this openly, and it's important for us to say this openly. That is the greatness of the South East Asian and the Chinese model of FDI. The idea was We'll fix China one day. Okay. Deng Xiaoping's dream was there will be no Xi Jinping. We will fix China one day.",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 717.26,
@@ -12803,8 +12707,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 772.91,
-      "endTime": 819.87,
-      "text": "are bad institutions locally, but what China succeeded in, and the Southeast Asian countries succeeded in was institution building for the protection of the foreigner. So it's not true that Chinese FBI operates in bad institutions. FDI into China operates under good institutions because the Chinese state is able to back off. That we will not mess with these FDI people, and I'll come back to that in a moment. Okay? So that's a very important insight and clarity that it is because institutions in China are bad The great dreamers of China, Deng Xiaoping's world, understood. Like, look, it's going to take us a hundred years to fix Companies Act, to fix GST in China. Okay, we're not going to hold our breath waiting",
+      "endTime": 1009.23,
+      "text": "are bad institutions locally, but what China succeeded in, and the Southeast Asian countries succeeded in was institution building for the protection of the foreigner. So it's not true that Chinese FBI operates in bad institutions. FDI into China operates under good institutions because the Chinese state is able to back off. That we will not mess with these FDI people, and I'll come back to that in a moment. Okay? So that's a very important insight and clarity that it is because institutions in China are bad The great dreamers of China, Deng Xiaoping's world, understood. Like, look, it's going to take us a hundred years to fix Companies Act, to fix GST in China. Okay, we're not going to hold our breath waiting for that. Let's build this enclave where we'll do something different. And what is that something different? We will take special effort to create a trusted and predictable institutional interface where that damn foreigner is protected. Okay, now you could start saying this is not a level playing field. Why is this fair? You should be doing this for Indian companies also. Do it for Indian companies also. But it is worth doing for the foreign companies operating in your country. Why? So one is that what's in it for the country. The state has to back off from its depredation, from its expropriation, from its taxation, saying, I'm just going to do one thing that thousands of people will get jobs. When they earn an income. We will charge them an income tax on the labor income of workers working in a foreign factory. And when they spend money domestically, we'll charge them GST. For the rest, we just back off. We're not going to get money out of the foreigner operating in our country. Okay. The state has to see the sanity and the sense in that rather than viewing it through the lens of ideology. So if you get into social justice and you know inequality and all that, then you'll be in a mess. Whereas this is a simple point. Some thousands of workers will get jobs. It's great for them. And you know what? The state also will get paid because the state will get an income tax on the wage income of the worker and the state will get a GST on the expenditures by the worker. For the rest, everything that happens in the world of FDI is out of reach for the local government saying, I'm not going to do customs, I'm not going to mess with you, I won't come to you with income tax rates, all that rubbish will not happen. The normal misbehavior of the Indian state vis-a-vis Indian company. This is a pragmatic choice that the state can make and in my opinion should make. Part two. The people who work in global companies learn new knowledge. And this is the ultimate price. This is a great contribution that the foreigner makes to the development of your country. Because the people in the local economy learn things out of the working of the foreign firms. They learn the global frontier of productivity. They learn how to participate in globalized production. And by God, they leave and they go work for other companies, they start other companies. Okay, there's an entire process of diffusion of knowledge. So if you believe, as I know you do. that the ultimate motive force in a society is knowledge. Okay? That a society only becomes better through the knowledge of its people. Then we should view FDI as the crucible where the knowledge is made. That the individuals who work in these foreign operations, they gain knowledge. And then that knowledge sits with them. That knowledge is not captured by the foreign company. They move to other jobs, they start businesses. Again and again through world history, we have seen that knowledge diffusion happening. Uh in Bangladesh, there were first Taiwanese and South Korean companies who started government activities. And then the people who learned those government businesses stepped out and started their own businesses, and so on,",
       "words": [
         {
           "word": "are",
@@ -13555,15 +13459,7 @@
           "startTime": 819.55,
           "endTime": 819.87,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 819.87,
-      "endTime": 826.43,
-      "text": "for that. Let's build this enclave where we'll do something different. And what is that something different? We will take",
-      "words": [
+        },
         {
           "word": "for",
           "startTime": 819.87,
@@ -13683,15 +13579,7 @@
           "startTime": 825.95,
           "endTime": 826.43,
           "confidence": 0.9991
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 826.43,
-      "endTime": 838.76,
-      "text": "special effort to create a trusted and predictable institutional interface where that damn foreigner is protected. Okay, now you could start saying this is not a level playing field. Why is this fair? You should be doing this for Indian companies also.",
-      "words": [
+        },
         {
           "word": "special",
           "startTime": 826.43,
@@ -13943,15 +13831,7 @@
           "startTime": 838.35,
           "endTime": 838.76,
           "confidence": 0.7624
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 840.31,
-      "endTime": 855.91,
-      "text": "Do it for Indian companies also. But it is worth doing for the foreign companies operating in your country. Why? So one is that what's in it for the country. The state has to back",
-      "words": [
+        },
         {
           "word": "Do",
           "startTime": 840.31,
@@ -14161,15 +14041,7 @@
           "startTime": 855.43,
           "endTime": 855.91,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 855.91,
-      "endTime": 1009.23,
-      "text": "off from its depredation, from its expropriation, from its taxation, saying, I'm just going to do one thing that thousands of people will get jobs. When they earn an income. We will charge them an income tax on the labor income of workers working in a foreign factory. And when they spend money domestically, we'll charge them GST. For the rest, we just back off. We're not going to get money out of the foreigner operating in our country. Okay. The state has to see the sanity and the sense in that rather than viewing it through the lens of ideology. So if you get into social justice and you know inequality and all that, then you'll be in a mess. Whereas this is a simple point. Some thousands of workers will get jobs. It's great for them. And you know what? The state also will get paid because the state will get an income tax on the wage income of the worker and the state will get a GST on the expenditures by the worker. For the rest, everything that happens in the world of FDI is out of reach for the local government saying, I'm not going to do customs, I'm not going to mess with you, I won't come to you with income tax rates, all that rubbish will not happen. The normal misbehavior of the Indian state vis-a-vis Indian company. This is a pragmatic choice that the state can make and in my opinion should make. Part two. The people who work in global companies learn new knowledge. And this is the ultimate price. This is a great contribution that the foreigner makes to the development of your country. Because the people in the local economy learn things out of the working of the foreign firms. They learn the global frontier of productivity. They learn how to participate in globalized production. And by God, they leave and they go work for other companies, they start other companies. Okay, there's an entire process of diffusion of knowledge. So if you believe, as I know you do. that the ultimate motive force in a society is knowledge. Okay? That a society only becomes better through the knowledge of its people. Then we should view FDI as the crucible where the knowledge is made. That the individuals who work in these foreign operations, they gain knowledge. And then that knowledge sits with them. That knowledge is not captured by the foreign company. They move to other jobs, they start businesses. Again and again through world history, we have seen that knowledge diffusion happening. Uh in Bangladesh, there were first Taiwanese and South Korean companies who started government activities. And then the people who learned those government businesses stepped out and started their own businesses, and so on,",
-      "words": [
+        },
         {
           "word": "off",
           "startTime": 855.91,
@@ -26221,8 +26093,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1529.58,
-      "endTime": 1559.08,
-      "text": "FDI is a good guy, meaning we're not doing the things that are needed to be done to give them that simple, consistent, predictable institutional interface featuring a vast degree of deregulation. For the rest, FDI are good guys. They're building a factory, making jobs for my people. Portfolio investors are bad people, okay? Because it is hot money. They can buy today, they can sell tomorrow. I think that the hostility towards portfolio investment is coming from a place of deep insecurity. The fact that a portfolio investor can",
+      "endTime": 1659.39,
+      "text": "FDI is a good guy, meaning we're not doing the things that are needed to be done to give them that simple, consistent, predictable institutional interface featuring a vast degree of deregulation. For the rest, FDI are good guys. They're building a factory, making jobs for my people. Portfolio investors are bad people, okay? Because it is hot money. They can buy today, they can sell tomorrow. I think that the hostility towards portfolio investment is coming from a place of deep insecurity. The fact that a portfolio investor can sell securities and leave frightens an insecure Indian. That if you feel you are weak, if you know in your heart that you are weak, then you are afraid that the other guy can leave. Okay? If you love something, set it free. If it comes back, it is yours. If it doesn't, it never was. That is the right approach to apply to all the great loves of your life, whether FDI or FPI. Okay? And uh that is a wrong way to think about foreign portfolio investment. It's analytically wrong. So first let me just Shoot down how it is analytically wrong, and then let me show you the relationship and the comparison between FDI and portfolio investment in a new light that again is not part of the mainstream Indian intellectual discourse. The way to think about foreign portfolio investment is that of course you are weak, and foreigners know that. So there are many difficulties of operating in India, and foreign portfolio investors know that. It's built in the price. Okay, so you get a low price for your securities. So you don't have to think that, oh, I'm so insecure, I'm so weak. Why will anybody buy my shares? And if they bought my shares, oh my God, they will not love me next week and they'll fly away. Okay, and the second is that the financial markets are a vast churning where there are tens of thousands of buyers and tens of thousands of sellers. So on any given day, there is one foreign portfolio investor who is selling. And there is a Bengali who is buying, or there is a Bengali who is buying and there is a foreign portfolio investor who's selling. Or there's a foreign portfolio investor who is buying and a foreign portfolio investor is selling. And you don't need to think about foreign portfolio investors as a monolithic mass, that they will all",
       "words": [
         {
           "word": "FDI",
@@ -26763,15 +26635,7 @@
           "startTime": 1558.76,
           "endTime": 1559.08,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1559.08,
-      "endTime": 1565.72,
-      "text": "sell securities and leave frightens an insecure Indian. That if you feel you are",
-      "words": [
+        },
         {
           "word": "sell",
           "startTime": 1559.08,
@@ -26855,15 +26719,7 @@
           "startTime": 1565.56,
           "endTime": 1565.72,
           "confidence": 0.9986
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1565.72,
-      "endTime": 1659.39,
-      "text": "weak, if you know in your heart that you are weak, then you are afraid that the other guy can leave. Okay? If you love something, set it free. If it comes back, it is yours. If it doesn't, it never was. That is the right approach to apply to all the great loves of your life, whether FDI or FPI. Okay? And uh that is a wrong way to think about foreign portfolio investment. It's analytically wrong. So first let me just Shoot down how it is analytically wrong, and then let me show you the relationship and the comparison between FDI and portfolio investment in a new light that again is not part of the mainstream Indian intellectual discourse. The way to think about foreign portfolio investment is that of course you are weak, and foreigners know that. So there are many difficulties of operating in India, and foreign portfolio investors know that. It's built in the price. Okay, so you get a low price for your securities. So you don't have to think that, oh, I'm so insecure, I'm so weak. Why will anybody buy my shares? And if they bought my shares, oh my God, they will not love me next week and they'll fly away. Okay, and the second is that the financial markets are a vast churning where there are tens of thousands of buyers and tens of thousands of sellers. So on any given day, there is one foreign portfolio investor who is selling. And there is a Bengali who is buying, or there is a Bengali who is buying and there is a foreign portfolio investor who's selling. Or there's a foreign portfolio investor who is buying and a foreign portfolio investor is selling. And you don't need to think about foreign portfolio investors as a monolithic mass, that they will all",
-      "words": [
+        },
         {
           "word": "weak,",
           "startTime": 1565.72,
@@ -30483,8 +30339,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1755.07,
-      "endTime": 1837.51,
-      "text": "battle on the FDI side is I want deregulation. Like just get out of my hair. Don't tell me about your enforcement directorate. Don't give me your capital controls. Don't give me your passport visa problems. Don't bother me with all the nonsense that happens in your country. Give me one square kilometer. I will give jobs to your people, I will pay income to those people, and uh I will give them the knowledge. Okay, that's the bargain you want with an FDI investor. And then the question arises, is that institutional interface there? And do we trust that it'll be there for a long, long time? Okay, so it's a Deng Xiaoping problem that you want to create a very limited API, so to speak. The foreigner should be able to plug in to a very simple API, and the foreigner should have Optimism and confidence that the ruling elite understands this and believes it and will do it for a long, long time. This is again where ideas matter. That the theory of change is the knowledge has to happen and the policy community has to understand this is what we are doing with FDI. And then governments come, governments go, but you will hang on to that institutional promise. So that a 20 year planning horizon for building a factory will actually be upheld. Alternatively, let's discuss going to do foreign portfolio investment into Mozambique. If you do foreign portfolio investment, there is",
+      "endTime": 1912.06,
+      "text": "battle on the FDI side is I want deregulation. Like just get out of my hair. Don't tell me about your enforcement directorate. Don't give me your capital controls. Don't give me your passport visa problems. Don't bother me with all the nonsense that happens in your country. Give me one square kilometer. I will give jobs to your people, I will pay income to those people, and uh I will give them the knowledge. Okay, that's the bargain you want with an FDI investor. And then the question arises, is that institutional interface there? And do we trust that it'll be there for a long, long time? Okay, so it's a Deng Xiaoping problem that you want to create a very limited API, so to speak. The foreigner should be able to plug in to a very simple API, and the foreigner should have Optimism and confidence that the ruling elite understands this and believes it and will do it for a long, long time. This is again where ideas matter. That the theory of change is the knowledge has to happen and the policy community has to understand this is what we are doing with FDI. And then governments come, governments go, but you will hang on to that institutional promise. So that a 20 year planning horizon for building a factory will actually be upheld. Alternatively, let's discuss going to do foreign portfolio investment into Mozambique. If you do foreign portfolio investment, there is no way around the problem of local institutions. You need local institutions to have accounting data. You need to trust accounts. Okay. You need that hundred years of culture of decency in accounting, good quality accounting data. You need a whole financial sector, you need a stock market, you need a depository. So the entire story we told in the journey of Indian finance, we need that kind of equity market development so that you can trust that I will send in money and I will get the shares. And it won't prove to be the case that actually I did not own those shares. I mean just imagine what is the leap of faith you you are sitting in Assam or you're sitting in Tokyo Sending your money and you're being given some piece of paper that you own thousand shares of reliance. Okay, what do you believe? Like how do you trust these things? So the institutional richness and complexity of finance is at a different level altogether. That to do portfolio investment, you actually need superior institutions. So contrary to the feelings of many an Indian economist, it is FDI that demands a lower institutional quality and FPI. demands a higher institutional quality. And FPI is actually a more sophisticated",
       "words": [
         {
           "word": "battle",
@@ -31967,15 +31823,7 @@
           "startTime": 1837.27,
           "endTime": 1837.51,
           "confidence": 0.9953
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1837.51,
-      "endTime": 1857.39,
-      "text": "no way around the problem of local institutions. You need local institutions to have accounting data. You need to trust accounts. Okay. You need that hundred years of culture of decency in accounting, good quality accounting data. You need a whole financial sector, you need a stock market, you need a",
-      "words": [
+        },
         {
           "word": "no",
           "startTime": 1837.51,
@@ -32281,15 +32129,7 @@
           "startTime": 1857.31,
           "endTime": 1857.39,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1857.39,
-      "endTime": 1912.06,
-      "text": "depository. So the entire story we told in the journey of Indian finance, we need that kind of equity market development so that you can trust that I will send in money and I will get the shares. And it won't prove to be the case that actually I did not own those shares. I mean just imagine what is the leap of faith you you are sitting in Assam or you're sitting in Tokyo Sending your money and you're being given some piece of paper that you own thousand shares of reliance. Okay, what do you believe? Like how do you trust these things? So the institutional richness and complexity of finance is at a different level altogether. That to do portfolio investment, you actually need superior institutions. So contrary to the feelings of many an Indian economist, it is FDI that demands a lower institutional quality and FPI. demands a higher institutional quality. And FPI is actually a more sophisticated",
-      "words": [
+        },
         {
           "word": "depository.",
           "startTime": 1857.39,
@@ -44785,8 +44625,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2573.03,
-      "endTime": 2761.11,
-      "text": "pretty hair-raising thing that you're saying, look, I know I screw up. When I screw up, I will compensate the private investor. Okay. The second is that The Indian state misbehaves at all levels. It could be the union government, it could be the state government, it could be a city government. But the signatory of the BIT is a union government person, and we need that intellectual clarity that look, this is good for India, and the union government will pay out based on the terms of the BIT, even if the misbehavior was by a state government or by a city government. Look, look, we are here we are team India. We are here to stabilize foreign investors into India, and this is oftentimes not been understood. The next uh idea in this is that so there will be payouts that happen on account of the bilateral investment treaties. Uh the frontline officials in the Indian state have detested those payouts. It goes through a legal process, they lose a case, they view that case in a personal way. It's bad for my career Because I have lost a case. It is bad for me because my budget is being used to pay out on the BIT. But we're not playing for that person's career. We're not playing for that department's budget. We're playing for Team India. And then we should see that drip of payouts on account of BITs to be like an insurance premium. That I'm stabilizing $100 billion of FDI into India, I'm paying out $1 billion a year. It's a good deal. Okay? And this requires an intellectual power that. has been lacking in the country. So India made some progress signing bilateral investment treaties, but then there was this whole backlash that foreigners are unfair. They call this expropriation, but it is my sovereign right to expropriate you. You know, this kind of machismo and the whole principal agent problem that the individual joint secretary that has to fight a case filed under the BIT is irritated and arrogant and tends to lose cases because the Indian state actually does engage in many expropriatory activities and they get angry when they are making payouts. And so the Indian state basically moved away from that. And so we've often described how 1991 to 2011 was a golden age where India did relatively well. In 2016 there was a new model BIT where a lot of the good ideas Been abandoned. And today India is increasingly hostile to doing bilateral investment treaties. So I put that under the bin of FDI, that what we need is a high quality institutional interface whereby foreigners are given a special treatment. It is not fair. It is unfair. They're treated better than Indian businessmen. Okay, just accept that because it is in India's long-term interest to have more global high productivity firms operating in India. There will be some fails where, despite our best efforts, we ended up with a situation where a foreigner got",
+      "endTime": 2843.08,
+      "text": "pretty hair-raising thing that you're saying, look, I know I screw up. When I screw up, I will compensate the private investor. Okay. The second is that The Indian state misbehaves at all levels. It could be the union government, it could be the state government, it could be a city government. But the signatory of the BIT is a union government person, and we need that intellectual clarity that look, this is good for India, and the union government will pay out based on the terms of the BIT, even if the misbehavior was by a state government or by a city government. Look, look, we are here we are team India. We are here to stabilize foreign investors into India, and this is oftentimes not been understood. The next uh idea in this is that so there will be payouts that happen on account of the bilateral investment treaties. Uh the frontline officials in the Indian state have detested those payouts. It goes through a legal process, they lose a case, they view that case in a personal way. It's bad for my career Because I have lost a case. It is bad for me because my budget is being used to pay out on the BIT. But we're not playing for that person's career. We're not playing for that department's budget. We're playing for Team India. And then we should see that drip of payouts on account of BITs to be like an insurance premium. That I'm stabilizing $100 billion of FDI into India, I'm paying out $1 billion a year. It's a good deal. Okay? And this requires an intellectual power that. has been lacking in the country. So India made some progress signing bilateral investment treaties, but then there was this whole backlash that foreigners are unfair. They call this expropriation, but it is my sovereign right to expropriate you. You know, this kind of machismo and the whole principal agent problem that the individual joint secretary that has to fight a case filed under the BIT is irritated and arrogant and tends to lose cases because the Indian state actually does engage in many expropriatory activities and they get angry when they are making payouts. And so the Indian state basically moved away from that. And so we've often described how 1991 to 2011 was a golden age where India did relatively well. In 2016 there was a new model BIT where a lot of the good ideas Been abandoned. And today India is increasingly hostile to doing bilateral investment treaties. So I put that under the bin of FDI, that what we need is a high quality institutional interface whereby foreigners are given a special treatment. It is not fair. It is unfair. They're treated better than Indian businessmen. Okay, just accept that because it is in India's long-term interest to have more global high productivity firms operating in India. There will be some fails where, despite our best efforts, we ended up with a situation where a foreigner got expropriated. Then you have to give them the protection, which is the BIT. We should be signing OECD standard BITs with all the OECD countries because that is in India's self-interest. And the numbers that should be compared is the annual flow of payout on account of BIT versus the grand total FDI that comes into the country. And I think this is a very good deal. I also will observe in passing that it's actually brilliantly incentive compatible for the Indian state to pay money when the Indian state misbehaves. What better deal is there? Okay, the Indian state should get slapped in the face when the Indian state misbehaves. Now, yeah, union state, city, we'll figure. But it is very good to get slapped, because that is the only way you'll create these checks and balances. So I actually think it's a great commitment device whereby the Indian state says, look, I'm a poor country, I'm a third world country, I'm gradually trying to make my institutions better. Every now and then we'll fumble, we'll make mistakes. At that time, I'll get slapped in the face. I accept the contract that I will get slapped in the face, and trust me, I'm going about my business, each time I get slapped in the face, I'll diagnose what went wrong and I will fix it. Okay, so if you took that kind of humble approach, then we are on a path to progress. But instead the Indian state has taken an arrogant approach saying, It's my sovereign right to expropriate you. How dare you tell me that I have to pay money.",
       "words": [
         {
           "word": "pretty",
@@ -47829,15 +47669,7 @@
           "startTime": 2760.95,
           "endTime": 2761.11,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2761.11,
-      "endTime": 2766.15,
-      "text": "expropriated. Then you have to give them the protection, which is the BIT. We should be signing",
-      "words": [
+        },
         {
           "word": "expropriated.",
           "startTime": 2761.11,
@@ -47939,15 +47771,7 @@
           "startTime": 2765.43,
           "endTime": 2766.15,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2766.15,
-      "endTime": 2843.08,
-      "text": "OECD standard BITs with all the OECD countries because that is in India's self-interest. And the numbers that should be compared is the annual flow of payout on account of BIT versus the grand total FDI that comes into the country. And I think this is a very good deal. I also will observe in passing that it's actually brilliantly incentive compatible for the Indian state to pay money when the Indian state misbehaves. What better deal is there? Okay, the Indian state should get slapped in the face when the Indian state misbehaves. Now, yeah, union state, city, we'll figure. But it is very good to get slapped, because that is the only way you'll create these checks and balances. So I actually think it's a great commitment device whereby the Indian state says, look, I'm a poor country, I'm a third world country, I'm gradually trying to make my institutions better. Every now and then we'll fumble, we'll make mistakes. At that time, I'll get slapped in the face. I accept the contract that I will get slapped in the face, and trust me, I'm going about my business, each time I get slapped in the face, I'll diagnose what went wrong and I will fix it. Okay, so if you took that kind of humble approach, then we are on a path to progress. But instead the Indian state has taken an arrogant approach saying, It's my sovereign right to expropriate you. How dare you tell me that I have to pay money.",
-      "words": [
+        },
         {
           "word": "OECD",
           "startTime": 2766.15,
@@ -54179,8 +54003,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3123.87,
-      "endTime": 3130.59,
-      "text": "So this show, which has a 70% Indian audience and a 30% overseas audience,",
+      "endTime": 3136.03,
+      "text": "So this show, which has a 70% Indian audience and a 30% overseas audience, is an exporting show because 30% of a global audience is coming into this show. You have",
       "words": [
         {
           "word": "So",
@@ -54265,15 +54089,7 @@
           "startTime": 3129.87,
           "endTime": 3130.59,
           "confidence": 0.918
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3130.59,
-      "endTime": 3171.18,
-      "text": "is an exporting show because 30% of a global audience is coming into this show. You have graduated. I am worried about exporting from Poliab Income Tax Radio Jaiga. My head is spinning, bro. Calm down. We don't know nobody outside India watches us. Tell me the truth. Do you love FDI? I love FDI. But the good thing is that FDI is liberal with her affections. We do not have to compete. We can both get FDI. Isn't that nice? Yes. Uh I want to close here",
-      "words": [
+        },
         {
           "word": "is",
           "startTime": 3130.59,
@@ -54375,7 +54191,15 @@
           "startTime": 3135.79,
           "endTime": 3136.03,
           "confidence": 0.9986
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3136.03,
+      "endTime": 3171.18,
+      "text": "graduated. I am worried about exporting from Poliab Income Tax Radio Jaiga. My head is spinning, bro. Calm down. We don't know nobody outside India watches us. Tell me the truth. Do you love FDI? I love FDI. But the good thing is that FDI is liberal with her affections. We do not have to compete. We can both get FDI. Isn't that nice? Yes. Uh I want to close here",
+      "words": [
         {
           "word": "graduated.",
           "startTime": 3136.03,
