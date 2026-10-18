@@ -1,22 +1,31 @@
 #!/usr/bin/env python3
-"""Settle long speaker disagreements between the voiceprint labels and FluidAudio's diarization.
+"""Settle speaker disagreements between the voiceprint labels and FluidAudio's diarization.
 
-  python3 scripts/adjudicate.py [N ...]   # episodes whose labels agree with FluidAudio's on under 95% of words
+  python3 scripts/adjudicate.py [N ...]   # every transcribed episode not yet settled
   python3 scripts/adjudicate.py --again N # look again at an episode already settled
 
 Voiceprints can mistake a host for the other when his sound changes, as when he presents his
-screen (Ajay's Unix demo in Episode 32). FluidAudio, which clusters within the episode, usually
-gets those stretches right but misses short interjections that the voiceprints catch. So the
-voiceprint labels stand, except where the two disagree for at least MIN_STRETCH seconds. There
-Claude reads the passage in context and decides who is speaking: who is addressed by name, what
-the speaker says about himself, how the conversation flows.
+screen (Ajay's Unix demo in Episode 32), and they often hand the end of one of Ajay's sentences
+to Amit. FluidAudio, which clusters within the episode, usually gets those stretches right but
+misses short interjections that the voiceprints catch. So the voiceprint labels stand, except
+where the two disagree for at least MIN_STRETCH seconds. There Claude reads the passage in
+context and decides who is speaking: who is addressed by name, what the speaker says about
+himself, how the conversation flows.
+
+An episode settled earlier at 5 seconds and more (LONG_NOTE) is only asked about the stretches
+it hasn't been asked about. An episode whose insights were extracted from the labels before
+settling keeps them: Claude reads the corrected passages beside the insights and fixes any that
+now credit the wrong host (a story's teller, a recommendation's recommender, a host named in a
+joke or a core idea). The rest of each insight stays as extracted.
 
 Needs `pip install anthropic numpy`; Claude is reached through the auth2api gateway, with its
 key in work/.auth2api-key.
 """
 import collections
+import concurrent.futures
 import json
 import os
+import re
 import sys
 
 import anthropic
@@ -29,8 +38,28 @@ WORK = os.path.join(ROOT, "work")
 GATEWAY = "http://auth2api.apps.svc.cluster.local:8317"
 MODEL = "claude-opus-5-5"
 HOSTS = ("Amit Varma", "Ajay Shah")
-AGREEMENT, MIN_STRETCH = 0.95, 5.0
-NOTE = "; long disagreements with FluidAudio settled by Claude"
+MIN_STRETCH = 2.0
+NOTE = "; disagreements with FluidAudio of 2 s or more settled by Claude"
+LONG_NOTE = "; long disagreements with FluidAudio settled by Claude"  # 5 s or more, in episodes under 95% agreement
+INSIGHTS = os.path.join(ROOT, "data", "generated", "insights")
+AUDIT = """You check curated insights from an episode of Everything is Everything, a podcast hosted by Amit
+Varma and Ajay Shah. Some speaker labels in the episode's transcript have just been corrected. The insights were
+written from the transcript before the correction, so where a corrected passage is the source of an insight, the
+insight may credit the wrong host: a story's teller, a recommendation's recommender, or a host named in a joke or
+in a core idea's explanation.
+
+For each insight that a corrected passage shows to credit the wrong host, return a correction:
+- for a story (S), the field "teller" and the right host's full name;
+- for a recommendation (R), the field "recommender" and the right host's full name;
+- for a joke or reference (J), the field "content" and the whole text with only the host's name changed;
+- for a core idea (C), the field "explanation" and the whole text with only the host's name changed.
+Keep every other word as it is. Return no correction for an insight the passages don't bear on, or that is still
+right. Most insights need none."""
+AUDIT_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["corrections"], "properties": {
+    "corrections": {"type": "array", "items": {
+        "type": "object", "additionalProperties": False, "required": ["id", "field", "value", "reason"],
+        "properties": {"id": {"type": "string"}, "field": {"type": "string", "enum": ["teller", "recommender", "content", "explanation"]},
+                       "value": {"type": "string"}, "reason": {"type": "string"}}}}}}
 SCHEMA = {"type": "object", "additionalProperties": False, "required": ["speaker", "reason"],
           "properties": {"speaker": {"type": "string", "enum": [*HOSTS, "unsure"]}, "reason": {"type": "string"}}}
 SYSTEM = """You identify speakers in a transcript of Everything is Everything, a podcast hosted by
@@ -112,10 +141,61 @@ def ask(client, title, words, labels, fluid, lo, hi):
     return json.loads(next(b.text for b in message.content if b.type == "text"))
 
 
+def asked_before(n):
+    """The (start, end) of every stretch already put to Claude for this episode."""
+    spans = []
+    with open(os.path.join(WORK, "adjudicate-qc.jsonl"), encoding="utf-8") as f:
+        for line in f:
+            qc = json.loads(line)
+            if qc["episode"] == n:
+                spans += [(d["start"], d["start"] + d["seconds"]) for d in qc["decisions"]]
+    return spans
+
+
+def audit(client, title, insights, words, labels, changed):
+    """Fix insights that credit the wrong host for a passage whose labels just changed. Returns what was done."""
+    passages = []
+    for lo, hi, was in changed:
+        passages.append(f"<passage>\n{turns_text(words, labels, max(0, lo - 100), min(len(words), hi + 100))}\n</passage>\n"
+                        f"Corrected: \"{' '.join(w['word'] for w in words[lo:hi])}\" was labelled {was}, is {labels[lo]}.")
+    listed = []
+    for kind, letter, fields in (("stories", "S", ("teller", "topic", "summary", "quote")),
+                                 ("recommendations", "R", ("recommender", "item", "creator", "context")),
+                                 ("jokes_and_cultural_references", "J", ("content",)),
+                                 ("core_ideas", "C", ("concept", "explanation"))):
+        for i, x in enumerate(insights.get(kind, []), 1):
+            if kind != "core_ideas" or any(h.split()[0] in x["explanation"] for h in HOSTS):
+                listed.append(json.dumps({"id": f"{letter}{i:02d}"} | {f: x[f] for f in fields if x.get(f)}, ensure_ascii=False))
+    prompt = (f"Episode: {title}\n\nThe corrected passages, with the labels as they are now:\n\n" + "\n\n".join(passages)
+              + "\n\nThe insights:\n" + "\n".join(listed))
+    with client.messages.stream(model=MODEL, max_tokens=32000, system=AUDIT,
+                                messages=[{"role": "user", "content": prompt}],
+                                output_config={"effort": "high", "format": {"type": "json_schema", "schema": AUDIT_SCHEMA}}
+                                ) as stream:
+        message = stream.get_final_message()
+    kinds = {"S": "stories", "R": "recommendations", "J": "jokes_and_cultural_references", "C": "core_ideas"}
+    allowed = {"S": "teller", "R": "recommender", "J": "content", "C": "explanation"}
+    unnamed = lambda text: re.sub(r"\b(Amit|Ajay)( (Varma|Shah))?\b", "HOST", text)
+    done = []
+    for c in json.loads(next(b.text for b in message.content if b.type == "text"))["corrections"]:
+        m = re.fullmatch(r"([SRJC])0*(\d+)", c["id"].strip())
+        letter, i = (m[1], int(m[2])) if m else ("", 0)
+        items = insights.get(kinds.get(letter, ""), [])
+        x = items[i - 1] if 0 < i <= len(items) else None
+        ok = x is not None and c["field"] == allowed[letter] and (
+            c["value"] in HOSTS if c["field"] in ("teller", "recommender")
+            else unnamed(c["value"]) == unnamed(x[c["field"]]) and c["value"] != x[c["field"]])
+        if ok:
+            x[c["field"]] = c["value"]
+        done.append(c | {"applied": ok})
+    return done
+
+
 def adjudicate(client, n, again=False):
     path = os.path.join(TRANSCRIPTS, f"{n:03d}.json")
     transcript = load(path)
-    if transcript["metadata"]["speakerLabels"].endswith(NOTE) and not again:
+    settled = transcript["metadata"]["speakerLabels"]
+    if settled.endswith(NOTE) and not again:
         return None
     old = load(os.path.join(WORK, "fluidaudio", f"{n:03d}.json"))
     words = [w for seg in transcript["segments"] for w in seg["words"]]
@@ -125,16 +205,20 @@ def adjudicate(client, n, again=False):
     if not both:  # nothing to compare against
         return None
     agreement = sum(s == f for s, f in both) / len(both)
-    if agreement >= AGREEMENT:
+    asked = asked_before(n) if settled.endswith(LONG_NOTE) and not again else []
+    todo = [(lo, hi) for lo, hi in disputes(words, labels, fluid)
+            if not any(words[lo]["startTime"] < b and words[hi - 1]["endTime"] > a for a, b in asked)]
+    if not todo:
         return None
     title = load(os.path.join(METADATA, f"{n:03d}.json"))["title"].split("|")[0].strip()
-    decisions = []
-    for lo, hi in disputes(words, labels, fluid):
+    decisions, changed = [], []
+    for lo, hi in todo:
         verdict = ask(client, title, words, labels, fluid, lo, hi)
         seconds = round(words[hi - 1]["endTime"] - words[lo]["startTime"], 1)
         decisions.append({"start": words[lo]["startTime"], "seconds": seconds, "voiceprints": labels[lo],
                           "fluidaudio": fluid[lo], **verdict})
-        if verdict["speaker"] in HOSTS:
+        if verdict["speaker"] in HOSTS and verdict["speaker"] != labels[lo]:
+            changed.append((lo, hi, labels[lo]))
             labels[lo:hi] = [verdict["speaker"]] * (hi - lo)
     segments = []
     for w, s in zip(words, labels):
@@ -144,18 +228,35 @@ def adjudicate(client, n, again=False):
     transcript["segments"] = [{"speaker": s["speaker"], "startTime": s["words"][0]["startTime"],
                                "endTime": s["words"][-1]["endTime"], "text": " ".join(w["word"] for w in s["words"]),
                                "words": s["words"]} for s in segments]
-    if not transcript["metadata"]["speakerLabels"].endswith(NOTE):
-        transcript["metadata"]["speakerLabels"] += NOTE
+    base = settled[:-len(LONG_NOTE)] if settled.endswith(LONG_NOTE) else settled
+    transcript["metadata"]["speakerLabels"] = base if base.endswith(NOTE) else base + NOTE
     transcript["metadata"]["speakers"] = sorted({s["speaker"] for s in segments})
-    with open(path + ".tmp", "w", encoding="utf-8") as f:
-        f.write(json.dumps(transcript, indent=2, ensure_ascii=False) + "\n")
-    os.replace(path + ".tmp", path)
     both = [(s, f) for s, f in zip(labels, fluid) if s in HOSTS and f in HOSTS]
     qc = {"episode": n, "agreement_before": round(agreement, 4),
           "agreement_after": round(sum(s == f for s, f in both) / max(1, len(both)), 4), "decisions": decisions}
+    insights_path = os.path.join(INSIGHTS, f"{n:03d}.json")
+    insights = load(insights_path)
+    keep = insights.get("source", {}).get("speakers") == settled  # extracted from the labels just settled: fix, don't redo
+    if keep:
+        try:
+            qc["audit"] = audit(client, title, insights, words, labels, changed) if changed else []
+            insights["source"]["speakers"] = transcript["metadata"]["speakerLabels"]
+        except Exception as e:  # the insights will be extracted again instead
+            keep, qc["audit_error"] = False, f"{type(e).__name__}: {e}"
+    for obj, out in ((transcript, path), (insights, insights_path)) if keep else ((transcript, path),):
+        with open(out + ".tmp", "w", encoding="utf-8") as f:  # written together, so the extractor never sees one alone
+            f.write(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
+        os.replace(out + ".tmp", out)
     with open(os.path.join(WORK, "adjudicate-qc.jsonl"), "a", encoding="utf-8") as f:
         f.write(json.dumps(qc, ensure_ascii=False) + "\n")
     return qc
+
+
+def settle(client, n, again):
+    try:
+        return adjudicate(client, n, again)
+    except Exception as e:  # one bad episode shouldn't stop the rest
+        return {"episode": n, "error": f"{type(e).__name__}: {e}", "decisions": []}
 
 
 def main(args):
@@ -163,16 +264,19 @@ def main(args):
     episodes = [int(a) for a in args if not a.startswith("--")] or range(1, 129)
     with open(os.path.join(WORK, ".auth2api-key")) as f:
         client = anthropic.Anthropic(base_url=GATEWAY, api_key=f.read().strip(), max_retries=4, timeout=900)
-    for n in episodes:
-        meta = load(os.path.join(TRANSCRIPTS, f"{n:03d}.json"))["metadata"]
-        if "adapted per episode" not in meta.get("speakerLabels", ""):
-            continue  # not transcribed yet
-        qc = adjudicate(client, n, again)
-        if qc:
-            print(json.dumps({k: v for k, v in qc.items() if k != "decisions"} | {
-                "settled": collections.Counter(d["speaker"] == d["fluidaudio"] for d in qc["decisions"])[True],
-                "kept": collections.Counter(d["speaker"] == d["voiceprints"] for d in qc["decisions"])[True],
-                "unsure": sum(d["speaker"] == "unsure" for d in qc["decisions"])}), flush=True)
+    ready = []
+    for n in episodes:  # transcribed on the homelab and extracted; the extractor settles the rest before extracting
+        labels = load(os.path.join(TRANSCRIPTS, f"{n:03d}.json"))["metadata"].get("speakerLabels", "")
+        if "adapted per episode" in labels and load(os.path.join(INSIGHTS, f"{n:03d}.json")).get("source", {}).get("speakers") == labels:
+            ready.append(n)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        for qc in pool.map(lambda n: settle(client, n, again), ready):
+            if qc:
+                print(json.dumps({k: v for k, v in qc.items() if k not in ("decisions", "audit")} | {
+                    "settled": sum(d["speaker"] == d["fluidaudio"] for d in qc["decisions"]),
+                    "kept": sum(d["speaker"] == d["voiceprints"] for d in qc["decisions"]),
+                    "unsure": sum(d["speaker"] == "unsure" for d in qc["decisions"]),
+                    "fixed": [c["id"] for c in qc.get("audit", []) if c["applied"]]}), flush=True)
 
 
 if __name__ == "__main__":
