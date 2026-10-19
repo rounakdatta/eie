@@ -54,7 +54,7 @@ From there, 14 threads take you through every episode in listening order. They r
 
 | Path | Contents |
 |---|---|
-| `data/original/transcripts/NNN.json` | Diarised transcript (FluidAudio, Parakeet v3), with segments and word timings |
+| `data/original/transcripts/NNN.json` | Transcript with every word labelled Amit Varma, Ajay Shah or other, in speaker turns with word timings on the YouTube video's clock |
 | `data/original/descriptions/NNN.txt` | YouTube description: show notes, chapters, links |
 | `data/original/metadata/NNN.json` | YouTube metadata: release date, duration, views, likes, comments, chapters (fetched 15 Oct 2026) |
 | `data/generated/insights/NNN.json` | Per episode: stories, recommendations, core ideas, jokes and references |
@@ -70,13 +70,26 @@ Every insight has an ID made of its episode, kind and position. `045-S03` is the
 
 ```sh
 python3 scripts/eie.py metadata   # YouTube metadata and descriptions for every episode (needs yt-dlp)
+python3 scripts/transcribe.py     # transcripts with named speakers, from the podcast feed; resumable, run it under scripts/gently.py
+python3 scripts/extract.py        # settle speaker disputes (scripts/adjudicate.py), then extract each episode's insights
 python3 scripts/eie.py flatten    # ID-tagged JSONL of every insight in work/, the input to the analysis
 python3 scripts/eie.py build      # episodes.json; fails if an ID doesn't resolve or a title, URL or date disagrees with YouTube
 ```
 
-Audio and transcription are covered in [GEMINI.md](GEMINI.md) (yt-dlp, then FluidAudio). The insights and the analysis were written by Claude agents reading the transcripts and show notes, following the curation rules in GEMINI.md.
+The transcripts are made on a CPU from the show's podcast feed:
+1. Silero VAD cuts each episode at pauses.
+2. NVIDIA Parakeet TDT 0.6B v3, the model FluidAudio runs on a Mac, transcribes it.
+3. Every word is labelled by voice. WeSpeaker voiceprints of the two hosts, adapted to each episode, score 1.5 s windows, and a decoder that resists switching speakers turns the scores into turns. A third label covers any other voice.
+4. Wherever those labels and FluidAudio's diarization disagree for a second or more, Claude reads the passage and decides who is speaking.
+5. Times are moved onto the YouTube video's clock, and the feed's "audio version" notice is dropped.
+
+Claude Opus 5.5 extracts each episode's insights from its labelled transcript and show notes, following the curation rules in [GEMINI.md](GEMINI.md). Every quote, speaker and recommendation is checked against the episode. The analysis was written by Claude agents reading the insights.
 
 ## Caveats
 
-- Speaker labels are per-episode diarizer IDs, not names: Amit is `1` in episode 128 but `2` in episode 126. Episode 76 is one undiarised segment.
+- Speakers are named by machine. The labels agree with FluidAudio's diarization on 98.8% of words. Wherever the two disagreed for a second or more, Claude read the passage and decided who was speaking, which covers nine-tenths of the rest. Interjections under a second (0.1% of words) can still carry the wrong name.
+- `other` (0.1% of words) marks a third voice, such as the crew in the Q&A episodes, and now and then a host putting on a voice.
+- In episodes 53, 76 and 79 FluidAudio heard essentially one voice, so their labels rest on the voiceprints alone.
+- Episode 12's audio comes from YouTube, because the podcast feed files Episode 7's audio under it.
+- Episodes 1–16 were transcribed with Parakeet's full-precision build, the rest with its int8 build.
 - The insights record what the hosts said, slips included. In episode 6 Amit places the 1993 earthquake in Gujarat; in episode 66 he correctly says Latur.
