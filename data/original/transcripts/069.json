@@ -5,7 +5,7 @@
     "durationSeconds": 2658,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -12011,15 +12011,23 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 648.39,
-      "endTime": 649.51,
-      "text": "I mean it's entirely",
+      "endTime": 648.47,
+      "text": "I",
       "words": [
         {
           "word": "I",
           "startTime": 648.39,
           "endTime": 648.47,
           "confidence": 0.831
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 648.47,
+      "endTime": 660.47,
+      "text": "mean it's entirely possible, but the point is people intuitively kind of See, the it's not that a structure will work and it's not that an archetype will work. Ultimately it is the beautiful things you do within the structure and within the archetype",
+      "words": [
         {
           "word": "mean",
           "startTime": 648.47,
@@ -12037,15 +12045,7 @@
           "startTime": 649.03,
           "endTime": 649.51,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 649.51,
-      "endTime": 660.47,
-      "text": "possible, but the point is people intuitively kind of See, the it's not that a structure will work and it's not that an archetype will work. Ultimately it is the beautiful things you do within the structure and within the archetype",
-      "words": [
+        },
         {
           "word": "possible,",
           "startTime": 649.51,
@@ -20397,8 +20397,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1065.65,
-      "endTime": 1069.57,
-      "text": "I mean it's union, not riches. I mean in Cinderella's",
+      "endTime": 1070.77,
+      "text": "I mean it's union, not riches. I mean in Cinderella's case she becomes a princess.",
       "words": [
         {
           "word": "I",
@@ -20459,15 +20459,7 @@
           "startTime": 1068.93,
           "endTime": 1069.57,
           "confidence": 0.9734
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1069.57,
-      "endTime": 1085.37,
-      "text": "case she becomes a princess. So it is kinda. She gets to her kind of riches. Do you have any story in mind like this? I mean I'll have to hunt. In a sense you could say riches.",
-      "words": [
+        },
         {
           "word": "case",
           "startTime": 1069.57,
@@ -20497,7 +20489,15 @@
           "startTime": 1070.29,
           "endTime": 1070.77,
           "confidence": 0.821
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1070.77,
+      "endTime": 1083.29,
+      "text": "So it is kinda. She gets to her kind of riches. Do you have any story in mind like this? I mean I'll have to hunt. In a sense you could say",
+      "words": [
         {
           "word": "So",
           "startTime": 1070.77,
@@ -20689,21 +20689,21 @@
           "startTime": 1081.79,
           "endTime": 1083.29,
           "confidence": 0.9828
-        },
-        {
-          "word": "riches.",
-          "startTime": 1083.87,
-          "endTime": 1085.37,
-          "confidence": 0.7327
         }
       ]
     },
     {
       "speaker": "Ajay Shah",
-      "startTime": 1086.59,
+      "startTime": 1083.87,
       "endTime": 1100.43,
-      "text": "Very unexpected beginnings and uh just, you know, chipped away and ended up at the top of the game through many trials and tribulations. And as he said correctly, history will judge me more kindly than you guys are.",
+      "text": "riches. Very unexpected beginnings and uh just, you know, chipped away and ended up at the top of the game through many trials and tribulations. And as he said correctly, history will judge me more kindly than you guys are.",
       "words": [
+        {
+          "word": "riches.",
+          "startTime": 1083.87,
+          "endTime": 1085.37,
+          "confidence": 0.7327
+        },
         {
           "word": "Very",
           "startTime": 1086.59,
@@ -21393,10 +21393,10 @@
       ]
     },
     {
-      "speaker": "Amit Varma",
+      "speaker": "Ajay Shah",
       "startTime": 1128.63,
-      "endTime": 1156.0,
-      "text": "Tell us number three. Are you searching for number three? Are you on a quest to find number three? Number three is a quest. And uh You know, as the name indicates, you're searching for something, you go on a journey. It is a journey to find something, and eventually you find it. And this is again the oldest um um archetype in many ways. Odyssey, uh Pilgrim's Progress, The Divine Comedy, they all th they're all kind of centered around this.",
+      "endTime": 1129.64,
+      "text": "Tell us number three.",
       "words": [
         {
           "word": "Tell",
@@ -21421,7 +21421,15 @@
           "startTime": 1129.27,
           "endTime": 1129.64,
           "confidence": 0.9073
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1130.23,
+      "endTime": 1156.0,
+      "text": "Are you searching for number three? Are you on a quest to find number three? Number three is a quest. And uh You know, as the name indicates, you're searching for something, you go on a journey. It is a journey to find something, and eventually you find it. And this is again the oldest um um archetype in many ways. Odyssey, uh Pilgrim's Progress, The Divine Comedy, they all th they're all kind of centered around this.",
+      "words": [
         {
           "word": "Are",
           "startTime": 1130.23,
@@ -30555,8 +30563,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1590.34,
-      "endTime": 1623.36,
-      "text": "with yourself. Yeah, that's brilliant. And I think what a journey does is it perhaps brings that out. A journey outside is a journey inside in uh different ways. And there's a structure to this also. Okay. Let's do it. Five parts. And the five power structure is one, it begins with anticipation, and then there is initial fascination with whatever voyage you're setting out out on, then there's frustr frustration, then there's nightmare. Like when you went on a trek and you broke your leg and you were hanging off a cliff and you thought you're gonna die. And then there is escape in return. So So the Hobbit.",
+      "endTime": 1600.34,
+      "text": "with yourself. Yeah, that's brilliant. And I think what a journey does is it perhaps brings that out. A journey outside is a journey inside in uh different ways. And there's a structure to this also.",
       "words": [
         {
           "word": "with",
@@ -30773,7 +30781,15 @@
           "startTime": 1599.7,
           "endTime": 1600.34,
           "confidence": 0.8767
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1600.34,
+      "endTime": 1601.88,
+      "text": "Okay. Let's do it. Five parts.",
+      "words": [
         {
           "word": "Okay.",
           "startTime": 1600.34,
@@ -30809,7 +30825,15 @@
           "startTime": 1601.38,
           "endTime": 1601.88,
           "confidence": 0.8563
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1602.34,
+      "endTime": 1623.36,
+      "text": "And the five power structure is one, it begins with anticipation, and then there is initial fascination with whatever voyage you're setting out out on, then there's frustr frustration, then there's nightmare. Like when you went on a trek and you broke your leg and you were hanging off a cliff and you thought you're gonna die. And then there is escape in return. So So the Hobbit.",
+      "words": [
         {
           "word": "And",
           "startTime": 1602.34,
@@ -31381,8 +31405,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1631.86,
-      "endTime": 1639.14,
-      "text": "Yeah, and and Lord of the Rings are for that matter. Yeah. So so many classic adventure stories which require you to get up, go somewhere",
+      "endTime": 1640.18,
+      "text": "Yeah, and and Lord of the Rings are for that matter. Yeah. So so many classic adventure stories which require you to get up, go somewhere and",
       "words": [
         {
           "word": "Yeah,",
@@ -31539,21 +31563,21 @@
           "startTime": 1638.82,
           "endTime": 1639.14,
           "confidence": 0.996
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1639.14,
-      "endTime": 1645.86,
-      "text": "and kinda quest, but kinda journey and return and it changes you and your life is never the same",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 1639.14,
           "endTime": 1640.18,
           "confidence": 0.9847
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1640.18,
+      "endTime": 1645.86,
+      "text": "kinda quest, but kinda journey and return and it changes you and your life is never the same",
+      "words": [
         {
           "word": "kinda",
           "startTime": 1640.18,
@@ -44865,8 +44889,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2361.31,
-      "endTime": 2371.79,
-      "text": "So there were thousands of competing stories And you know, the Mahabharata and the Ramayana and the Ilyad and the Odisc, these are the things that survived. And I and I want to say that it's not just that there",
+      "endTime": 2370.03,
+      "text": "So there were thousands of competing stories And you know, the Mahabharata and the Ramayana and the Ilyad and the Odisc, these are the things that survived. And I and I want to",
       "words": [
         {
           "word": "So",
@@ -45065,7 +45089,15 @@
           "startTime": 2369.95,
           "endTime": 2370.03,
           "confidence": 0.9991
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2370.03,
+      "endTime": 2410.83,
+      "text": "say that it's not just that there are thousands of competing stories, but there are thousands of competing Ramayana's. You know, uh I think A. Ramanujan wrote this great essay called Three Hundred Ramayana's, if I remember the title correctly. And what happened through the Ramayana through time is that you have the original version, but then every time it was retold, it was retold contextually, given the time. So in the tribal belt, there's a telling of the Ramayana which will be completely different. So it becomes like a Roshak tell. test that it reflects the mures of that society and it reflects a changing thought and you know sometimes a main character will be different. So uh you know in that sense Ramayana and the Mahabharata are particularly fascinating because they're evolving stories, it is not one story. Or the",
+      "words": [
         {
           "word": "say",
           "startTime": 2370.03,
@@ -45107,15 +45139,7 @@
           "startTime": 2371.55,
           "endTime": 2371.79,
           "confidence": 0.9927
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2371.79,
-      "endTime": 2410.83,
-      "text": "are thousands of competing stories, but there are thousands of competing Ramayana's. You know, uh I think A. Ramanujan wrote this great essay called Three Hundred Ramayana's, if I remember the title correctly. And what happened through the Ramayana through time is that you have the original version, but then every time it was retold, it was retold contextually, given the time. So in the tribal belt, there's a telling of the Ramayana which will be completely different. So it becomes like a Roshak tell. test that it reflects the mures of that society and it reflects a changing thought and you know sometimes a main character will be different. So uh you know in that sense Ramayana and the Mahabharata are particularly fascinating because they're evolving stories, it is not one story. Or the",
-      "words": [
+        },
         {
           "word": "are",
           "startTime": 2371.79,
@@ -46763,8 +46787,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2459.17,
-      "endTime": 2548.66,
-      "text": "No I mean there is change everywhere, but our seventh archetype is rebirth, where that is central to the whole thing. That someone is being born of born again, that they are being changed in fundamental ways. So in a sense the story of D D Lj at at b you know, we discussed it in the chapter about voyage and return. Uh you know, but it is a and it has that element of comedy and mistaken identity and whatever. It could have had an element of tragedy, but uh you know, uh the story doesn't go beyond them getting together, maybe then later there is tragedy. But Amrish Puri, again, reborn, he actually becomes uh a sort of a different person in a really fundamental way. And you know, if you look at Western examples of that, again we go we can go a long way back. You'll have Sleeping Beauty, Snow White, Dickens' novel A Christmas Carol. The Amri Shuri character there is Scrooge. And Scrooge has a change of heart. So again, that is a kind of rebirth. Beauty and the beast. So again, it's a trope that kind of carries on through where, you know You have a situation, shit happens, conflict happens, the story moves forward, and at the end of it, the person changes in some fundamental way or the other. You could argue in a sense coming of eight stories can also uh you know function kinda like this. Has this ever happened to you? Have you changed in fundamental ways? Don't think so. You've been the same person. Yeah, in fundamental ways.",
+      "endTime": 2547.22,
+      "text": "No I mean there is change everywhere, but our seventh archetype is rebirth, where that is central to the whole thing. That someone is being born of born again, that they are being changed in fundamental ways. So in a sense the story of D D Lj at at b you know, we discussed it in the chapter about voyage and return. Uh you know, but it is a and it has that element of comedy and mistaken identity and whatever. It could have had an element of tragedy, but uh you know, uh the story doesn't go beyond them getting together, maybe then later there is tragedy. But Amrish Puri, again, reborn, he actually becomes uh a sort of a different person in a really fundamental way. And you know, if you look at Western examples of that, again we go we can go a long way back. You'll have Sleeping Beauty, Snow White, Dickens' novel A Christmas Carol. The Amri Shuri character there is Scrooge. And Scrooge has a change of heart. So again, that is a kind of rebirth. Beauty and the beast. So again, it's a trope that kind of carries on through where, you know You have a situation, shit happens, conflict happens, the story moves forward, and at the end of it, the person changes in some fundamental way or the other. You could argue in a sense coming of eight stories can also uh you know function kinda like this. Has this ever happened to you? Have you changed in fundamental ways? Don't think so. You've been the same person.",
       "words": [
         {
           "word": "No",
@@ -48367,7 +48391,15 @@
           "startTime": 2546.82,
           "endTime": 2547.22,
           "confidence": 0.6466
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2547.22,
+      "endTime": 2553.06,
+      "text": "Yeah, in fundamental ways. Meaning lots of implementation detail has happened, but the foundations were the same.",
+      "words": [
         {
           "word": "Yeah,",
           "startTime": 2547.22,
@@ -48391,15 +48423,7 @@
           "startTime": 2548.1,
           "endTime": 2548.66,
           "confidence": 0.9153
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2548.66,
-      "endTime": 2553.06,
-      "text": "Meaning lots of implementation detail has happened, but the foundations were the same.",
-      "words": [
+        },
         {
           "word": "Meaning",
           "startTime": 2548.66,

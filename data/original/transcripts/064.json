@@ -5,7 +5,7 @@
     "durationSeconds": 3351,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -147,8 +147,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 23.8,
-      "endTime": 98.27,
-      "text": "I want to tell a story from the deep past. See, I have the white hair to prove it. Okay, I know a deep past. I know a deep past of India that most of you in this audience do not. This is a past where the state of the art electronics was something exotic in India. and it was unavailable owing to Indian protectionism. Okay? So the Indian government thought that you could foster the growth of Indian industry and the success of Indian firms through self reliance and there were trade barriers and it was just very difficult to find many kinds of modern electronics in India. So you could get some consumer stuff, but you went a little offbeat and you just couldn't buy these things. And then there were elaborate subterranean chains of a informal market, some would say a black market, whereby you could obtain those things and you had to ask people traveling to buy you something. And for me personally, the most amazing purchase of those years was one of the early chess computers. So I had a tiny little device where you would move the pieces and",
+      "endTime": 100.48,
+      "text": "I want to tell a story from the deep past. See, I have the white hair to prove it. Okay, I know a deep past. I know a deep past of India that most of you in this audience do not. This is a past where the state of the art electronics was something exotic in India. and it was unavailable owing to Indian protectionism. Okay? So the Indian government thought that you could foster the growth of Indian industry and the success of Indian firms through self reliance and there were trade barriers and it was just very difficult to find many kinds of modern electronics in India. So you could get some consumer stuff, but you went a little offbeat and you just couldn't buy these things. And then there were elaborate subterranean chains of a informal market, some would say a black market, whereby you could obtain those things and you had to ask people traveling to buy you something. And for me personally, the most amazing purchase of those years was one of the early chess computers. So I had a tiny little device where you would move the pieces and LED would blink and it would tell you how to",
       "words": [
         {
           "word": "I",
@@ -1319,15 +1319,7 @@
           "startTime": 97.77,
           "endTime": 98.27,
           "confidence": 0.9975
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 98.96,
-      "endTime": 103.84,
-      "text": "LED would blink and it would tell you how to move. I had the same one. Oh my God. Wow. Continue.",
-      "words": [
+        },
         {
           "word": "LED",
           "startTime": 98.96,
@@ -1387,7 +1379,15 @@
           "startTime": 100.4,
           "endTime": 100.48,
           "confidence": 0.9987
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 100.48,
+      "endTime": 103.84,
+      "text": "move. I had the same one. Oh my God. Wow. Continue.",
+      "words": [
         {
           "word": "move.",
           "startTime": 100.48,

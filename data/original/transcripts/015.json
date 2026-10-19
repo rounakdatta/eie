@@ -5,7 +5,7 @@
     "durationSeconds": 3438,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -24103,8 +24103,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1481.5,
-      "endTime": 1486.04,
-      "text": "And this is our way of promising ourselves",
+      "endTime": 1487.74,
+      "text": "And this is our way of promising ourselves that we will do this",
       "words": [
         {
           "word": "And",
@@ -24153,15 +24153,7 @@
           "startTime": 1484.54,
           "endTime": 1486.04,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1486.46,
-      "endTime": 1498.46,
-      "text": "that we will do this right. We should have called the show CR Rao. Everything is Sierra Rao. So you you would also have put more effort in what is this? What kind of shirt are you wearing, untucked and all that? But no, no, what a fantastic thought.",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 1486.46,
@@ -24191,7 +24183,15 @@
           "startTime": 1487.42,
           "endTime": 1487.74,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1487.74,
+      "endTime": 1498.46,
+      "text": "right. We should have called the show CR Rao. Everything is Sierra Rao. So you you would also have put more effort in what is this? What kind of shirt are you wearing, untucked and all that? But no, no, what a fantastic thought.",
+      "words": [
         {
           "word": "right.",
           "startTime": 1487.74,
@@ -36277,8 +36277,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2127.4,
-      "endTime": 2334.78,
-      "text": "a beautiful and insightful story, which is related to the planes. Okay. So the planes were going from the island of the UK to the continent and Trying to kill facilities like uh oil refinery or a tank production factory. And uh they were getting shot up by German fighters and the ground-based flak, the 88-millimeter artillery gun. And uh they would either get shot down or they would struggle to limp back. By the way, one of the most beautiful phrases in the English language. Coming back on a wing and a prayer. Okay, that is a phrase that is used all the time. Well, this is where it originated. It is literally a British or an American plane high above the European continent with its engines shot out. So it's just a wing. It's trying to glide back home. And you're just praying that you'll reach in time. So that's the source of the phrase, uh, a wing and a prayer. Okay, so now in that Imagine that we are given a problem, that there is a tank factory and we want to kill it. So you gotta be scientific about it. You don't just throw bombs from high up and hope for the best. Okay? So there is always a bomb damage analysis that is done afterwards. You have a spotter plane, you have local intelligence, you have the brigadier's girlfriend, you gotta find out whether the plant actually got destroyed. And d at the time of World War Two, the imprecision of bombs falling under the force of gravity was horrendous. Okay, the circular error probabilities like one kilometer, five kilometers. You would throw thousands of bombs and you would not be sure you have hit one factory correctly. So you needed to figure out probabilities of what is the chance of the bomb hitting. Now, in that, the there were antiaircraft guns from the ground and there were German fighters that were at the ground who were Shooting at the craft. So for the fighters, it was terrifying to go low and they fight, they wanted to fly high. So they wanted to be at 20,000 feet. So you're out of range of the anti-aircraft guns. So you fly, you drop your bombs, and you come back home. Okay? And that sounds superficially like a good idea. Because, you know, the anti anti-aircraft guns don't get you. The jump the Luftwaffe had low capabilities by 1943 to actually scramble fighter planes and attack the bombers that were flying high above. Now that is where statistics comes in. Okay, so you start calculating that I send one bomber flying at 20,000 feet and it drops some bombs. And what's the hit rate? There's a minuscule hit rate. There's very high in precision. So very few bombs get through. Or I fly at 6,000 feet. I run the gauntlet of all the anti-aircraft guns. There is some rate at which this one is dying. There is some rate at which that one is dying. But I ask, what is the rate at which the factory is getting killed? Okay? And the brutal answer turns out that you have to fly at 6,000 feet. Because while the chances of getting killed by the anti-aircraft guns are higher, you need a smaller multiplication factor to overcome the imprecision.",
+      "endTime": 2336.62,
+      "text": "a beautiful and insightful story, which is related to the planes. Okay. So the planes were going from the island of the UK to the continent and Trying to kill facilities like uh oil refinery or a tank production factory. And uh they were getting shot up by German fighters and the ground-based flak, the 88-millimeter artillery gun. And uh they would either get shot down or they would struggle to limp back. By the way, one of the most beautiful phrases in the English language. Coming back on a wing and a prayer. Okay, that is a phrase that is used all the time. Well, this is where it originated. It is literally a British or an American plane high above the European continent with its engines shot out. So it's just a wing. It's trying to glide back home. And you're just praying that you'll reach in time. So that's the source of the phrase, uh, a wing and a prayer. Okay, so now in that Imagine that we are given a problem, that there is a tank factory and we want to kill it. So you gotta be scientific about it. You don't just throw bombs from high up and hope for the best. Okay? So there is always a bomb damage analysis that is done afterwards. You have a spotter plane, you have local intelligence, you have the brigadier's girlfriend, you gotta find out whether the plant actually got destroyed. And d at the time of World War Two, the imprecision of bombs falling under the force of gravity was horrendous. Okay, the circular error probabilities like one kilometer, five kilometers. You would throw thousands of bombs and you would not be sure you have hit one factory correctly. So you needed to figure out probabilities of what is the chance of the bomb hitting. Now, in that, the there were antiaircraft guns from the ground and there were German fighters that were at the ground who were Shooting at the craft. So for the fighters, it was terrifying to go low and they fight, they wanted to fly high. So they wanted to be at 20,000 feet. So you're out of range of the anti-aircraft guns. So you fly, you drop your bombs, and you come back home. Okay? And that sounds superficially like a good idea. Because, you know, the anti anti-aircraft guns don't get you. The jump the Luftwaffe had low capabilities by 1943 to actually scramble fighter planes and attack the bombers that were flying high above. Now that is where statistics comes in. Okay, so you start calculating that I send one bomber flying at 20,000 feet and it drops some bombs. And what's the hit rate? There's a minuscule hit rate. There's very high in precision. So very few bombs get through. Or I fly at 6,000 feet. I run the gauntlet of all the anti-aircraft guns. There is some rate at which this one is dying. There is some rate at which that one is dying. But I ask, what is the rate at which the factory is getting killed? Okay? And the brutal answer turns out that you have to fly at 6,000 feet. Because while the chances of getting killed by the anti-aircraft guns are higher, you need a smaller multiplication factor to overcome the imprecision. of the bombs.",
       "words": [
         {
           "word": "a",
@@ -39633,15 +39633,7 @@
           "startTime": 2334.28,
           "endTime": 2334.78,
           "confidence": 0.9669
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2335.5,
-      "endTime": 2339.82,
-      "text": "of the bombs. So the question you're really asking is how many lives is a factory worth?",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 2335.5,
@@ -39659,7 +39651,15 @@
           "startTime": 2335.98,
           "endTime": 2336.62,
           "confidence": 0.9858
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2336.62,
+      "endTime": 2339.82,
+      "text": "So the question you're really asking is how many lives is a factory worth?",
+      "words": [
         {
           "word": "So",
           "startTime": 2336.62,
@@ -42077,8 +42077,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2459.6,
-      "endTime": 2470.48,
-      "text": "So I mean I talked a lot about CR Rao. And I know you've uh deeply analyzed PC Mahalanabys, your fellow Bengali. Tell us more about",
+      "endTime": 2471.84,
+      "text": "So I mean I talked a lot about CR Rao. And I know you've uh deeply analyzed PC Mahalanabys, your fellow Bengali. Tell us more about Mahalanabis.",
       "words": [
         {
           "word": "So",
@@ -42235,21 +42235,21 @@
           "startTime": 2470.32,
           "endTime": 2470.48,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2470.48,
-      "endTime": 2867.98,
-      "text": "Mahalanabis. All Bengali geniuses are belong to me, Dada. So here's the scene. And you know, there I found, as you said earlier, that Mahalanabis, you know, studied physics first. And then when he was gonna ship back to India. he was given volumes and volumes of a statistical magazine called Biometrica. And he lost himself in those magazines. He got so fascinated that he was just enraptured by them. And by the time he landed in India, statistics was his love. Right. So he actually taught physics in Presidency College. That's where he was hired for a while. But in those days, he would go on to found the Indian Statistical Uh Institute and kind of do all of that. And and a very unusual kind of man, even for the age. And uh Nikil in his book has this excellent uh uh uh you know description of him. He writes. Tall, prominently nosed, stern of gaze, vast of brow with hair severely parted and slicked flat by coconut oil, Mahalonobis looked the part of a serious man. He was born into a family that belonged to Bengal's landed elite, and his early milieu was that of intellectual enquiry and religious reform in turn of the century calcata. He grew up to be a prim workaholic, seemingly immune to frivolity, and usually found day and night stooping over his calculations. As a friend of nearly half a century corroborated, he had no time for small talk and little capacity to compromise with unreason, these are the friend's words. And even a smile, tight lipped and partial to the right cheek, could seem a grudging concession. Mahalonabas appeared to make a virtue of withholding expressions of affection, being believing it his duty to conceal it, except to pets, which included dogs, cats, and cows. Now I know not of your fondness for dogs and cows, but the rest of this seems to fit you, Ajaisha, let me note uh and uh Cows also. Cows also, there you go. All of cows. All of this sort of uh fits you. And the interesting thing about Malono Bis is that around this time, he sort of was one of the early pioneers of randomized sample surveys. So in 1944, there was this sort of fascinating real-world experiment where uh Malonobis's innovation, the random sample survey, which you know he and his colleagues had sort of pioneered in a sense at the ISI, was pitted against traditional methods of counting. And I'll read this book out from uh uh Nikkel's book also, it's fascinating. He writes a science the science of random sample surveys, for which the professor and the institute were among the earliest crusaders, was yet to gain widespread acceptance anywhere in the world. There were calls to abandon it and tr return to traditional plot to plot enumeration. In nineteen forty four, the Bengal government decided to settle this dispute over technique by commissioning both methods in a competition. The idea was to run them simultaneously and then compare their results against the official jute sales uh figures. This was about jute basically. Against the official jute sales figures to determine the more accurate reading. It was a moment of sweet vindication for the institute and the science of sampling. The cumbersome enumeration or counting carried out by the government turned out to be off the mark. By sixteen point six percent. While the institute's more sophisticated sample survey end only by 0.3%. Even more conclusively, the sample survey cost only a tenth of the enumeration. Stopquote. So obviously at this point he kind of becomes uh you know much m better known, much more credible. And the question is, how does this then affect him? You know, remarkable success, clearly a great genius. And uh uh, you know, at one point Nikhil writes in his book, quote, an urban an urbane savant, Mahalano Bis was once described as Quote unquote, a physicist by training, statistician by intellect, and planner by conviction. He was also much more He was also much more versed in ancient Sanskrit text, possessing of a discerning ear for Bengali poetry and a dabbler in architecture. In short, he was a proud polymath, although of uneven talents, despite his high estimation of his own abilities. Even an admiring younger colleague conceded, and now these are the colleagues' words, he thought he knew best in practically every matter. Colleague's words ends. Mahlanabis was often referred to in Indian academic and government circles as a professor, and it wasn't a moniker he was shy about. um and it wasn't a moniker. He was shy about employing while signing correspondence. Uh stop quote. And you know, the the the story goes on. I will now quote the new third smartest man in the world, Milton Friedman, talking about Mahlonabys. And Friedman says this of Mahlonabys. Mahlonabis began as a mathematician and is a very able one. Able mathematicians are usually recognized for their ability at a relatively early age. Realizing their own ability as they do and working in a field of absolutes tends, in my opinion, to make them dangerous when they apply themselves to economic planning. They produce specific and detailed plans in which they have confidence without perhaps realizing that economic planning is not the absolute science that mathematics is. Uh stop quote. And he himself could not stand economists. He was much more thinking of the world in terms of physics. He respected physicists more, but he was also perhaps searching for those certainties, while economics have to economists have to recognize the messy complexities of the real world. Hannah Arendt said about Mahalanobis. He must be nearly seventy, and this was obviously l late in Mahalanobis' year years. He must be nearly seventy, immensely vigorous, alert and intelligent, but also domineering, vain and bigoted, a Bengali aristocrat who in moving towards a Stalinist type authoritarianism has completely bypassed democratic liberal notions, never in any doubt who would plan and who would be planned for or against. Right? And there is another uh you know, I know you hate surveillance in the surveillance state and all that, and there's another excerpt from Nikol's book about um, you know, what the ki kind of benevolent autocrat Mahlanabis was, and Nikol writes While attracting students from across the country to enroll in the institute's year long programme in statistics, the only one of its kind in India, the professor found little time to teach. This did not, however, soften the harsh glare of an overbearing administrator. Students and staff were expected to record their daily activities in a diary, and an attendance register was used to record entry and egress. I must know everything. But he would have loved Aadhaar and, you know, modern uh tools. of uh surveillance. So just contrasting sides, a man who is a genius, but in a sense is also trapped by his own genius into a hubris and an arrogance that uh doesn't serve him so well uh you know going down the line. This is",
-      "words": [
+        },
         {
           "word": "Mahalanabis.",
           "startTime": 2470.48,
           "endTime": 2471.84,
           "confidence": 0.7936
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2471.84,
+      "endTime": 2867.98,
+      "text": "All Bengali geniuses are belong to me, Dada. So here's the scene. And you know, there I found, as you said earlier, that Mahalanabis, you know, studied physics first. And then when he was gonna ship back to India. he was given volumes and volumes of a statistical magazine called Biometrica. And he lost himself in those magazines. He got so fascinated that he was just enraptured by them. And by the time he landed in India, statistics was his love. Right. So he actually taught physics in Presidency College. That's where he was hired for a while. But in those days, he would go on to found the Indian Statistical Uh Institute and kind of do all of that. And and a very unusual kind of man, even for the age. And uh Nikil in his book has this excellent uh uh uh you know description of him. He writes. Tall, prominently nosed, stern of gaze, vast of brow with hair severely parted and slicked flat by coconut oil, Mahalonobis looked the part of a serious man. He was born into a family that belonged to Bengal's landed elite, and his early milieu was that of intellectual enquiry and religious reform in turn of the century calcata. He grew up to be a prim workaholic, seemingly immune to frivolity, and usually found day and night stooping over his calculations. As a friend of nearly half a century corroborated, he had no time for small talk and little capacity to compromise with unreason, these are the friend's words. And even a smile, tight lipped and partial to the right cheek, could seem a grudging concession. Mahalonabas appeared to make a virtue of withholding expressions of affection, being believing it his duty to conceal it, except to pets, which included dogs, cats, and cows. Now I know not of your fondness for dogs and cows, but the rest of this seems to fit you, Ajaisha, let me note uh and uh Cows also. Cows also, there you go. All of cows. All of this sort of uh fits you. And the interesting thing about Malono Bis is that around this time, he sort of was one of the early pioneers of randomized sample surveys. So in 1944, there was this sort of fascinating real-world experiment where uh Malonobis's innovation, the random sample survey, which you know he and his colleagues had sort of pioneered in a sense at the ISI, was pitted against traditional methods of counting. And I'll read this book out from uh uh Nikkel's book also, it's fascinating. He writes a science the science of random sample surveys, for which the professor and the institute were among the earliest crusaders, was yet to gain widespread acceptance anywhere in the world. There were calls to abandon it and tr return to traditional plot to plot enumeration. In nineteen forty four, the Bengal government decided to settle this dispute over technique by commissioning both methods in a competition. The idea was to run them simultaneously and then compare their results against the official jute sales uh figures. This was about jute basically. Against the official jute sales figures to determine the more accurate reading. It was a moment of sweet vindication for the institute and the science of sampling. The cumbersome enumeration or counting carried out by the government turned out to be off the mark. By sixteen point six percent. While the institute's more sophisticated sample survey end only by 0.3%. Even more conclusively, the sample survey cost only a tenth of the enumeration. Stopquote. So obviously at this point he kind of becomes uh you know much m better known, much more credible. And the question is, how does this then affect him? You know, remarkable success, clearly a great genius. And uh uh, you know, at one point Nikhil writes in his book, quote, an urban an urbane savant, Mahalano Bis was once described as Quote unquote, a physicist by training, statistician by intellect, and planner by conviction. He was also much more He was also much more versed in ancient Sanskrit text, possessing of a discerning ear for Bengali poetry and a dabbler in architecture. In short, he was a proud polymath, although of uneven talents, despite his high estimation of his own abilities. Even an admiring younger colleague conceded, and now these are the colleagues' words, he thought he knew best in practically every matter. Colleague's words ends. Mahlanabis was often referred to in Indian academic and government circles as a professor, and it wasn't a moniker he was shy about. um and it wasn't a moniker. He was shy about employing while signing correspondence. Uh stop quote. And you know, the the the story goes on. I will now quote the new third smartest man in the world, Milton Friedman, talking about Mahlonabys. And Friedman says this of Mahlonabys. Mahlonabis began as a mathematician and is a very able one. Able mathematicians are usually recognized for their ability at a relatively early age. Realizing their own ability as they do and working in a field of absolutes tends, in my opinion, to make them dangerous when they apply themselves to economic planning. They produce specific and detailed plans in which they have confidence without perhaps realizing that economic planning is not the absolute science that mathematics is. Uh stop quote. And he himself could not stand economists. He was much more thinking of the world in terms of physics. He respected physicists more, but he was also perhaps searching for those certainties, while economics have to economists have to recognize the messy complexities of the real world. Hannah Arendt said about Mahalanobis. He must be nearly seventy, and this was obviously l late in Mahalanobis' year years. He must be nearly seventy, immensely vigorous, alert and intelligent, but also domineering, vain and bigoted, a Bengali aristocrat who in moving towards a Stalinist type authoritarianism has completely bypassed democratic liberal notions, never in any doubt who would plan and who would be planned for or against. Right? And there is another uh you know, I know you hate surveillance in the surveillance state and all that, and there's another excerpt from Nikol's book about um, you know, what the ki kind of benevolent autocrat Mahlanabis was, and Nikol writes While attracting students from across the country to enroll in the institute's year long programme in statistics, the only one of its kind in India, the professor found little time to teach. This did not, however, soften the harsh glare of an overbearing administrator. Students and staff were expected to record their daily activities in a diary, and an attendance register was used to record entry and egress. I must know everything. But he would have loved Aadhaar and, you know, modern uh tools. of uh surveillance. So just contrasting sides, a man who is a genius, but in a sense is also trapped by his own genius into a hubris and an arrogance that uh doesn't serve him so well uh you know going down the line. This is",
+      "words": [
         {
           "word": "All",
           "startTime": 2471.84,
@@ -59581,8 +59581,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3405.82,
-      "endTime": 3423.84,
-      "text": "Well uh the lady claimed that whether you put the tea in the milk or the milk in the tea, it matters. And Fisher set out to establish whether she actually knew it or she didn't. So a blind test would sort that out, right? Yeah. But how do you develop concepts of testing, blind testing?",
+      "endTime": 3418.46,
+      "text": "Well uh the lady claimed that whether you put the tea in the milk or the milk in the tea, it matters. And Fisher set out to establish whether she actually knew it or she didn't.",
       "words": [
         {
           "word": "Well",
@@ -59799,7 +59799,15 @@
           "startTime": 3417.82,
           "endTime": 3418.46,
           "confidence": 0.9512
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3418.46,
+      "endTime": 3420.06,
+      "text": "So a blind test would sort",
+      "words": [
         {
           "word": "So",
           "startTime": 3418.46,
@@ -59835,7 +59843,15 @@
           "startTime": 3419.74,
           "endTime": 3420.06,
           "confidence": 0.998
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3420.06,
+      "endTime": 3425.69,
+      "text": "that out, right? Yeah. But how do you develop concepts of testing, blind testing? The mathematics of these things.",
+      "words": [
         {
           "word": "that",
           "startTime": 3420.06,
@@ -59919,15 +59935,7 @@
           "startTime": 3423.34,
           "endTime": 3423.84,
           "confidence": 0.9483
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3424.17,
-      "endTime": 3438.79,
-      "text": "The mathematics of these things. I'm gonna rush out and buy that book right now. And in the meantime, gentle readers, thank you for sticking with us for so long. Ajay and I had a great time. I hope you had a great time. And uh we'll uh see you next week.",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 3424.17,
@@ -59957,7 +59965,15 @@
           "startTime": 3425.21,
           "endTime": 3425.69,
           "confidence": 0.9651
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3425.69,
+      "endTime": 3438.79,
+      "text": "I'm gonna rush out and buy that book right now. And in the meantime, gentle readers, thank you for sticking with us for so long. Ajay and I had a great time. I hope you had a great time. And uh we'll uh see you next week.",
+      "words": [
         {
           "word": "I'm",
           "startTime": 3425.69,

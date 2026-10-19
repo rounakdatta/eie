@@ -5,7 +5,7 @@
     "durationSeconds": 6134,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -8503,8 +8503,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 421.92,
-      "endTime": 427.6,
-      "text": "A voluntary act by uh incumbent workers and uh it was not economically",
+      "endTime": 591.31,
+      "text": "A voluntary act by uh incumbent workers and uh it was not economically material. This first turned into something bigger in the hands of uh Bismarck, who was the leader of Germany and I think in eighteen eighty nine uh was announced a pension scheme where fifty percent of the last year's income would be paid to people from age seventy. So please note the two dates. The announcement of this scheme, 1889, at a time when there were no antibiotics. So the people would just die. So now we have to keep track of the numbers and the conditions under in which it was done. We're talking eighteen eighty nine. In eighteen eighty nine Uh there was no antibiotics. So people were just dying. There was l literally nothing of modern science. There was bloodletting. Okay. So you would basically put leeches on the body of people. There was no science. So people were dying at an early age. There was just the beginnings of public health, but really there was nothing else going on. And the other is the number, age seventy. Now the residual longevity at age seventy is not a lot of years. So once again, this was a tiny gesture which feels nice but was not economically material. At this stage, can I just do a little bit of the terminology and the way we should think about it mathematically? Many of us are used to the words life expectancy at birth. Okay, so X is a random variable that is the time at death and the person is age zero. And we're saying, now that I know that you have been born, What is the average value of your time to death? So it's the expected value of time to death conditioning on the fact that you were born. Now as we progress through life, the expected residual life keeps on going up. So if I survived to age 10, then all the ways in which I could have been killed between zero and ten have been pushed out of the picture. So now my residual life expectancy is better. And now my time to death goes up compared to the life expectancy at birth. Okay, so everybody should keep this in mind that we're all used to a number like Indian life expectancy at birth is some seventy four years, but as you get older It's not that you're going to die at 74. Once you've made it to 60, you actually have more years to go. Once you've made it to 70, you have more years to go because it's a conditional expectation. It's E of X given X greater than 60, or E of X given X greater than 70, and so on. So just don't use E of X given X greater than zero when you think about E of X given X greater than 70. Okay, so in the old world of the late 19th century, these were negligible promises and they didn't matter much. Over the years this turned into a bloody mess because of a whole bunch of forces.",
       "words": [
         {
           "word": "A",
@@ -8583,15 +8583,7 @@
           "startTime": 426.88,
           "endTime": 427.6,
           "confidence": 0.9998
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 427.6,
-      "endTime": 428.8,
-      "text": "material. This",
-      "words": [
+        },
         {
           "word": "material.",
           "startTime": 427.6,
@@ -8603,15 +8595,7 @@
           "startTime": 428.48,
           "endTime": 428.8,
           "confidence": 0.9949
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 428.8,
-      "endTime": 591.31,
-      "text": "first turned into something bigger in the hands of uh Bismarck, who was the leader of Germany and I think in eighteen eighty nine uh was announced a pension scheme where fifty percent of the last year's income would be paid to people from age seventy. So please note the two dates. The announcement of this scheme, 1889, at a time when there were no antibiotics. So the people would just die. So now we have to keep track of the numbers and the conditions under in which it was done. We're talking eighteen eighty nine. In eighteen eighty nine Uh there was no antibiotics. So people were just dying. There was l literally nothing of modern science. There was bloodletting. Okay. So you would basically put leeches on the body of people. There was no science. So people were dying at an early age. There was just the beginnings of public health, but really there was nothing else going on. And the other is the number, age seventy. Now the residual longevity at age seventy is not a lot of years. So once again, this was a tiny gesture which feels nice but was not economically material. At this stage, can I just do a little bit of the terminology and the way we should think about it mathematically? Many of us are used to the words life expectancy at birth. Okay, so X is a random variable that is the time at death and the person is age zero. And we're saying, now that I know that you have been born, What is the average value of your time to death? So it's the expected value of time to death conditioning on the fact that you were born. Now as we progress through life, the expected residual life keeps on going up. So if I survived to age 10, then all the ways in which I could have been killed between zero and ten have been pushed out of the picture. So now my residual life expectancy is better. And now my time to death goes up compared to the life expectancy at birth. Okay, so everybody should keep this in mind that we're all used to a number like Indian life expectancy at birth is some seventy four years, but as you get older It's not that you're going to die at 74. Once you've made it to 60, you actually have more years to go. Once you've made it to 70, you have more years to go because it's a conditional expectation. It's E of X given X greater than 60, or E of X given X greater than 70, and so on. So just don't use E of X given X greater than zero when you think about E of X given X greater than 70. Okay, so in the old world of the late 19th century, these were negligible promises and they didn't matter much. Over the years this turned into a bloody mess because of a whole bunch of forces.",
-      "words": [
+        },
         {
           "word": "first",
           "startTime": 428.8,
@@ -40203,8 +40187,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2192.75,
-      "endTime": 2244.65,
-      "text": "So this was a critical part of the thought process in that period. When you NPV the promises to civil servants, that gives you a number which is like a stock of debt. So conceptually imagine if the Indian state would issue that much debt and buy private annuities, by private promises for all the present workers and present pensioners, then that would amount to 68% of GDP. That was an eye opener and it helped wake up everybody on the scale of this problem. Whereas before this work of Gautam Bharatvaj and Surendra Dave, people were looking at the flow of pension payments and they were saying, hey, this stuff is exploding, it's doubling every six years. So this is really scary. But people hadn't appreciated what a big number it turns into that",
+      "endTime": 2416.42,
+      "text": "So this was a critical part of the thought process in that period. When you NPV the promises to civil servants, that gives you a number which is like a stock of debt. So conceptually imagine if the Indian state would issue that much debt and buy private annuities, by private promises for all the present workers and present pensioners, then that would amount to 68% of GDP. That was an eye opener and it helped wake up everybody on the scale of this problem. Whereas before this work of Gautam Bharatvaj and Surendra Dave, people were looking at the flow of pension payments and they were saying, hey, this stuff is exploding, it's doubling every six years. So this is really scary. But people hadn't appreciated what a big number it turns into that the stock is 68% of GDP. This is I think a 2003 or 2002 calculation. and uh this was a truly terrifying moment. And uh it was a kinda gentler age where the political leadership, you know, thought in a higher minded way. So this reasoning bubbled up into the conversations of Yashwan Senna, of Jaswan Singh, of Ardwani and of Vajpai. Okay, so these were the big four of the NDI cabinet. And these were all cut from a different cloth. You know, you don't get those kinds of politicians very often in history. And these are people who immediately understood that the fate of the world is on the line and you need to do the fundamental change required to stop this thing right away, and you can't wait, that this one problem will, you know, truly damage the possibilities of India. So like you have emphasised, many people in India, once you start thinking about this problem, you actually understand that this is life threatening. There is no bigger danger to Indian public finance than pensions. Again you will recall in our military affairs episode, really the first crisis of Indian defense economics is how do you stop the problem of the pensions and a large scale agricultural workforce. Because if you don't do that, the entire story ends. There is no pathway to a meaningful modern military until you solve this problem that military pensions and the magnitude of an agricultural workforce. This is what is completely wrong. It has to become a s skilled workforce. comes together in a new kind of army where there are new kinds of compensation structures and the people need to be an NPS. Okay, so you have to get out of this conception of a defined benefit pension, otherwise there is no deal. You can decide what the nature of their HR contract is, but it's got to be a DC pension, it's got to be an NPS. So like that. This is so big. This one issue is make or break. So um gentle reader, if you think that it would be cool for the Indian state to have a mighty military. Ponder this sentence that a mighty military is made out of economics, and the first problem on the agenda of Indian military reform is solve this damn pensions mess. Because if you don't solve the military pension mess, there is no money. There's just no meaningful pathway to building a capable military. So this is how big it was and Big four got it. So Yashwan Senna and Jaswan Singh and Adwani and Vajpai, all of them got it. And they understood that this has to change. And that is how they were willing to sign on to the fundamental reform, which is the NPS.",
       "words": [
         {
           "word": "So",
@@ -41015,15 +40999,7 @@
           "startTime": 2243.37,
           "endTime": 2244.65,
           "confidence": 0.9761
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2244.65,
-      "endTime": 2246.49,
-      "text": "the stock is 68%",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 2244.65,
@@ -41047,15 +41023,7 @@
           "startTime": 2245.69,
           "endTime": 2246.49,
           "confidence": 0.7728
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2246.49,
-      "endTime": 2337.9,
-      "text": "of GDP. This is I think a 2003 or 2002 calculation. and uh this was a truly terrifying moment. And uh it was a kinda gentler age where the political leadership, you know, thought in a higher minded way. So this reasoning bubbled up into the conversations of Yashwan Senna, of Jaswan Singh, of Ardwani and of Vajpai. Okay, so these were the big four of the NDI cabinet. And these were all cut from a different cloth. You know, you don't get those kinds of politicians very often in history. And these are people who immediately understood that the fate of the world is on the line and you need to do the fundamental change required to stop this thing right away, and you can't wait, that this one problem will, you know, truly damage the possibilities of India. So like you have emphasised, many people in India, once you start thinking about this problem, you actually understand that this is life threatening. There is no bigger danger to Indian public finance than pensions. Again you will recall in our military affairs episode, really the first crisis of Indian defense economics is how do you stop the problem of the pensions and a large scale agricultural workforce. Because if you don't do that, the entire story ends. There is no pathway to a meaningful modern military until you solve this problem that military pensions and the magnitude of an agricultural workforce. This is what is completely wrong. It has to become",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 2246.49,
@@ -42567,15 +42535,7 @@
           "startTime": 2337.26,
           "endTime": 2337.9,
           "confidence": 0.99
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2337.9,
-      "endTime": 2339.68,
-      "text": "a s skilled workforce.",
-      "words": [
+        },
         {
           "word": "a",
           "startTime": 2337.9,
@@ -42599,15 +42559,7 @@
           "startTime": 2339.18,
           "endTime": 2339.68,
           "confidence": 0.8789
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2341.37,
-      "endTime": 2416.42,
-      "text": "comes together in a new kind of army where there are new kinds of compensation structures and the people need to be an NPS. Okay, so you have to get out of this conception of a defined benefit pension, otherwise there is no deal. You can decide what the nature of their HR contract is, but it's got to be a DC pension, it's got to be an NPS. So like that. This is so big. This one issue is make or break. So um gentle reader, if you think that it would be cool for the Indian state to have a mighty military. Ponder this sentence that a mighty military is made out of economics, and the first problem on the agenda of Indian military reform is solve this damn pensions mess. Because if you don't solve the military pension mess, there is no money. There's just no meaningful pathway to building a capable military. So this is how big it was and Big four got it. So Yashwan Senna and Jaswan Singh and Adwani and Vajpai, all of them got it. And they understood that this has to change. And that is how they were willing to sign on to the fundamental reform, which is the NPS.",
-      "words": [
+        },
         {
           "word": "comes",
           "startTime": 2341.37,
@@ -45823,8 +45775,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2517.07,
-      "endTime": 2554.1,
-      "text": "Yeah. So the uh principle, the philosophy of NPS is that can we use the state in creating a mechanism that replicates wise sound behavior of personal finance of a sophisticated person? Okay. You don't need the NPS because at your levels of IQ and knowledge, you will do all the right things by yourself. Okay? So you should save, you should be in equities, you should use index funds, you should be globally diversified, you should be very sensitive about the kind of payments you make to financial firms, you know, all these",
+      "endTime": 2556.05,
+      "text": "Yeah. So the uh principle, the philosophy of NPS is that can we use the state in creating a mechanism that replicates wise sound behavior of personal finance of a sophisticated person? Okay. You don't need the NPS because at your levels of IQ and knowledge, you will do all the right things by yourself. Okay? So you should save, you should be in equities, you should use index funds, you should be globally diversified, you should be very sensitive about the kind of payments you make to financial firms, you know, all these Homely recipes.",
       "words": [
         {
           "word": "Yeah.",
@@ -46389,15 +46341,7 @@
           "startTime": 2553.65,
           "endTime": 2554.1,
           "confidence": 0.8958
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2554.61,
-      "endTime": 2574.21,
-      "text": "Homely recipes. After I retire, I want the state to give me every month half of beer biceps income. And we'll be fine. That's where I want it indexed. Podcaster. Yeah. I want to be indexed to Mr. Beps. As far as money is concerned, I'm not doing his content. Yeah. So these",
-      "words": [
+        },
         {
           "word": "Homely",
           "startTime": 2554.61,
@@ -46409,7 +46353,15 @@
           "startTime": 2555.09,
           "endTime": 2556.05,
           "confidence": 0.8803
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2556.05,
+      "endTime": 2565.95,
+      "text": "After I retire, I want the state to give me every month half of beer biceps income. And we'll be fine. That's where I want it indexed. Podcaster.",
+      "words": [
         {
           "word": "After",
           "startTime": 2556.05,
@@ -46577,13 +46529,29 @@
           "startTime": 2564.45,
           "endTime": 2565.95,
           "confidence": 0.7155
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2566.21,
+      "endTime": 2567.71,
+      "text": "Yeah.",
+      "words": [
         {
           "word": "Yeah.",
           "startTime": 2566.21,
           "endTime": 2567.71,
           "confidence": 0.8113
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2568.77,
+      "endTime": 2574.21,
+      "text": "I want to be indexed to Mr. Beps. As far as money is concerned, I'm not doing his content. Yeah. So these",
+      "words": [
         {
           "word": "I",
           "startTime": 2568.77,
@@ -80113,8 +80081,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4387.04,
-      "endTime": 4402.26,
-      "text": "targeting. We are doing an episode on inflation targeting. It will come out in three weeks time. Uh we'll lead up to there uh uh gradually. But uh yeah, I mean I mean that's again 13 years, the long road to change. Yeah. So in similar fashion.",
+      "endTime": 4400.64,
+      "text": "targeting. We are doing an episode on inflation targeting. It will come out in three weeks time. Uh we'll lead up to there uh uh gradually. But uh yeah, I mean I mean that's again 13 years, the long road to change.",
       "words": [
         {
           "word": "targeting.",
@@ -80367,7 +80335,15 @@
           "startTime": 4400.24,
           "endTime": 4400.64,
           "confidence": 0.9601
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4400.64,
+      "endTime": 4974.52,
+      "text": "Yeah. So in similar fashion. Entire community grew up around the pension reforms, and there was a broad intellectual consensus when government announcements were made. They got applause, they were supported, and people understood this stuff. Now, in hindsight, the biggest tragedy was that that community disbanded. That okay, we're done. You know, we got the NPS announcements, we've the turbulent years of the Big Four of the NDA cabinet and the early decisions. of the UPA and then you think that okay it's done. In hindsight, that was like really bad. It was really wrong. That for anything to work in this country, you need a sustained Indian intellectual community that will take interest in issues, that will stay on top of the questions, that will keep arguing, keep debating, keep problem solving, and that is the only way things will get done. So you need to think a lot about the institutional architecture of the knowledge profession in India and the resource streams that will keep this kind of work alive because otherwise field after field will go to hell. It was an accident there was a little bit of magic created by people like Anand Bodhya and Surendra Dave and Gautam Bharatvaj, where for some time this field happened, but it was not sustained and they didn't sustain it and they were not able to sustain it. And nobody worried about the ecosystem. And without the ecosystem, you're nothing. That no good reform will sustain without that ecosystem. And that's precisely what started happening. So there were many, many small problems in the NPS which were not adequately resolved. So I'll give you an example. A person joins the NPS and within a short number of years they retire. Imagine a person is hired at fifty, they retire at sixty, and do you want to treat them the same way? There was the question of military pensions which had begun, which we discussed in our military uh affairs episode. The discussions with military pensions had begun, but because the community fell apart and there was the lack of continuity in the ideas, the military thing just kind of got dropped, and then it turned into something far more vicious with OROP and that actually went to hell. There were many, many small mistakes which needed to be fixed, which needed to be resolved. The pension reformers needed to go back to the critics of the NPS saying, we agree this is wrong, we'll fix it, but that wasn't done. One important flaw was that there was just constantly not enough equity exposure. When you go back to thinking 1104 and you think of equity rates of return over the last twenty years, they're just absolutely astounding. But it was the failure of nerve and thinking and philosophy by the civil servants who made all these decisions. That they just did a little bit of an equity juice, an equity kicker, and they never really went deeper into equity exposure. Again, equity exposure is an intellectual product. There needed to be more people thinking, reasoning, writing papers, doing a counterfactual saying, see, if you had done equity exposure, then you would have done so much better, you are making a mistake. by not putting in enough money in the equity market, their entire intellectual community and a public discourse around pensions went away. So then you were down to just some civil servants and you know in the Indian state these things go badly. So these decisions were not being made correctly and the NPS was not working out as well as it should have. Problems were not rebutted, problems were not solved, there was not enough equity exposure, the returns And then uh in one or two states, the discontent by young civil servants started saying, Oh, I know when I was recruited, I was told up front, fair and square, that I'll be given uh uh new pension system. But you know what, I want the old pension system and no matter what was originally said to me, I want the same promises that were given to the earlier folk. And again, these needed to be solved, these needed to be diffused. So I remember once, as an example, the government of Karnataka informally requested me to come spend a day with the trade unions in Karnataka, and I did that. And it's a matter of effort. It's a matter of talking, engaging, showing calculations, and overcoming these problems. But there was no community and you were down to the normal civil servants uh one more little piece was that the work of pension reforms moved out from the DEA from KP Krishnan to the DFS. And so there was also a loss of institutional memory and you know a lot of the people who had done this stuff earlier were no longer doing it with uh the DFS. So you know we at NIPFP had a uh good umbilical to the DEA, but we had no formal working arrangement with the DFS or with the PFRDA, and PFRDA had no intellectual organizations working with them. So all this was just a loss of momentum and the early frictions and the early difficulties were not resolved, and then people got angrier and angrier. And uh it is the want of entitled civil servants to demand more for themselves, to organize themselves, to big do union basi And then it is the want of various political characters to step forth and say, Okay, I will be at the front of your parade, and then things got worse and worse, and they started going to hell. And then in one state after another we started seeing some reverse moves to the OPS. I just want to say that any state which says that I will go back from the NPS to the OPS should know and they do know that legally all the contributions made by those workers are sitting in some kind of limbo. They're sitting in an NPS account and the state doesn't have access to that money because it's the individual's money. Okay? So the money sitting in your name in the NPS account is your private property. And last I heard it was not yet easy for governments in India to expropriate our private property. I mean I know they can do it, but it is still hard for the Indian state to expropriate an individual. So for the States it is just an unmitigated disaster. when a state announces that we will go back to OPS. Finally, one little fiscal reasoning in this field, by its very design, the NPS reform involved a one generation problem that for one generation governments are paying double. They are paying the old that is the people drawing a pension and they are paying that 10% higher salary for the young. Okay, and this is this was done by design that there will be a transition generation where you will pay twice. And in about a generation, in about 25 years, it starts kicking and it starts getting good. So conceptually, you had to hang in there from 2004 to 2024. Okay you had to hang in there to f for 25 years to 2029. And then you would start seeing the large fiscal gains. From 2029, it would start looking material and it would be a fiscal benefit to the state governments and the union government. The trouble is A. What was needed was uh public finance research capability and uh pensions research capability where people would be doing these implicit pension debt type calculations and showing simulations with new pension system, with DC, without DC, how does pensions work? But instead the pension reforms teams basically disbanded by 2004. So there was nobody left. The field was just wakened, nobody was discussing, nobody was talking, nobody was calculating, and the public finance committee community in India did not pick up the ball and make these calculations. So in fact, something beautiful was slumbering and continues to slumber in India for the people who have that goddamn nerve to hang in there from 2004 to 2029. Because after that you get a new paradise of fiscal soundness where the payments to the older generation start subsiding. And the benefits to the government in terms of fiscal soundness start showing up. But this whole consideration was there in the early pension reforms discourse from 1998 to 2004, 2005. After that, basically nobody knows it. There were no thinkers, there were no intellectuals, there were no orgs, there was nobody doing calculations, there was nobody writing op eds, there were no research papers. So all this stuff just kinda got lost. And then you have the incentives of the policymakers, of the politicians, of the decision makers. That on one side you've got some one lakh, two lakh young civil servants who organize themselves, may I pander to them. Versus on the other side, there is no public discourse, there are no intellectuals, there are no ideas, there are no papers, there's nobody showing me calculations that if I do it, this are the consequences, or like guys, hang on, you got to just hang there, hang tough till 2029. And you will start seeing a transformed fiscal environment. In fact, It was fiscally difficult for that first generation because you're paying pensions and you're paying the ten percent higher wage. And there were no proximate gains to the governments, to the decision makers. So they were more willing to say, okay, you might as well just give it up.",
+      "words": [
         {
           "word": "Yeah.",
           "startTime": 4400.64,
@@ -80397,15 +80373,7 @@
           "startTime": 4401.76,
           "endTime": 4402.26,
           "confidence": 0.8951
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4403.12,
-      "endTime": 4974.52,
-      "text": "Entire community grew up around the pension reforms, and there was a broad intellectual consensus when government announcements were made. They got applause, they were supported, and people understood this stuff. Now, in hindsight, the biggest tragedy was that that community disbanded. That okay, we're done. You know, we got the NPS announcements, we've the turbulent years of the Big Four of the NDA cabinet and the early decisions. of the UPA and then you think that okay it's done. In hindsight, that was like really bad. It was really wrong. That for anything to work in this country, you need a sustained Indian intellectual community that will take interest in issues, that will stay on top of the questions, that will keep arguing, keep debating, keep problem solving, and that is the only way things will get done. So you need to think a lot about the institutional architecture of the knowledge profession in India and the resource streams that will keep this kind of work alive because otherwise field after field will go to hell. It was an accident there was a little bit of magic created by people like Anand Bodhya and Surendra Dave and Gautam Bharatvaj, where for some time this field happened, but it was not sustained and they didn't sustain it and they were not able to sustain it. And nobody worried about the ecosystem. And without the ecosystem, you're nothing. That no good reform will sustain without that ecosystem. And that's precisely what started happening. So there were many, many small problems in the NPS which were not adequately resolved. So I'll give you an example. A person joins the NPS and within a short number of years they retire. Imagine a person is hired at fifty, they retire at sixty, and do you want to treat them the same way? There was the question of military pensions which had begun, which we discussed in our military uh affairs episode. The discussions with military pensions had begun, but because the community fell apart and there was the lack of continuity in the ideas, the military thing just kind of got dropped, and then it turned into something far more vicious with OROP and that actually went to hell. There were many, many small mistakes which needed to be fixed, which needed to be resolved. The pension reformers needed to go back to the critics of the NPS saying, we agree this is wrong, we'll fix it, but that wasn't done. One important flaw was that there was just constantly not enough equity exposure. When you go back to thinking 1104 and you think of equity rates of return over the last twenty years, they're just absolutely astounding. But it was the failure of nerve and thinking and philosophy by the civil servants who made all these decisions. That they just did a little bit of an equity juice, an equity kicker, and they never really went deeper into equity exposure. Again, equity exposure is an intellectual product. There needed to be more people thinking, reasoning, writing papers, doing a counterfactual saying, see, if you had done equity exposure, then you would have done so much better, you are making a mistake. by not putting in enough money in the equity market, their entire intellectual community and a public discourse around pensions went away. So then you were down to just some civil servants and you know in the Indian state these things go badly. So these decisions were not being made correctly and the NPS was not working out as well as it should have. Problems were not rebutted, problems were not solved, there was not enough equity exposure, the returns And then uh in one or two states, the discontent by young civil servants started saying, Oh, I know when I was recruited, I was told up front, fair and square, that I'll be given uh uh new pension system. But you know what, I want the old pension system and no matter what was originally said to me, I want the same promises that were given to the earlier folk. And again, these needed to be solved, these needed to be diffused. So I remember once, as an example, the government of Karnataka informally requested me to come spend a day with the trade unions in Karnataka, and I did that. And it's a matter of effort. It's a matter of talking, engaging, showing calculations, and overcoming these problems. But there was no community and you were down to the normal civil servants uh one more little piece was that the work of pension reforms moved out from the DEA from KP Krishnan to the DFS. And so there was also a loss of institutional memory and you know a lot of the people who had done this stuff earlier were no longer doing it with uh the DFS. So you know we at NIPFP had a uh good umbilical to the DEA, but we had no formal working arrangement with the DFS or with the PFRDA, and PFRDA had no intellectual organizations working with them. So all this was just a loss of momentum and the early frictions and the early difficulties were not resolved, and then people got angrier and angrier. And uh it is the want of entitled civil servants to demand more for themselves, to organize themselves, to big do union basi And then it is the want of various political characters to step forth and say, Okay, I will be at the front of your parade, and then things got worse and worse, and they started going to hell. And then in one state after another we started seeing some reverse moves to the OPS. I just want to say that any state which says that I will go back from the NPS to the OPS should know and they do know that legally all the contributions made by those workers are sitting in some kind of limbo. They're sitting in an NPS account and the state doesn't have access to that money because it's the individual's money. Okay? So the money sitting in your name in the NPS account is your private property. And last I heard it was not yet easy for governments in India to expropriate our private property. I mean I know they can do it, but it is still hard for the Indian state to expropriate an individual. So for the States it is just an unmitigated disaster. when a state announces that we will go back to OPS. Finally, one little fiscal reasoning in this field, by its very design, the NPS reform involved a one generation problem that for one generation governments are paying double. They are paying the old that is the people drawing a pension and they are paying that 10% higher salary for the young. Okay, and this is this was done by design that there will be a transition generation where you will pay twice. And in about a generation, in about 25 years, it starts kicking and it starts getting good. So conceptually, you had to hang in there from 2004 to 2024. Okay you had to hang in there to f for 25 years to 2029. And then you would start seeing the large fiscal gains. From 2029, it would start looking material and it would be a fiscal benefit to the state governments and the union government. The trouble is A. What was needed was uh public finance research capability and uh pensions research capability where people would be doing these implicit pension debt type calculations and showing simulations with new pension system, with DC, without DC, how does pensions work? But instead the pension reforms teams basically disbanded by 2004. So there was nobody left. The field was just wakened, nobody was discussing, nobody was talking, nobody was calculating, and the public finance committee community in India did not pick up the ball and make these calculations. So in fact, something beautiful was slumbering and continues to slumber in India for the people who have that goddamn nerve to hang in there from 2004 to 2029. Because after that you get a new paradise of fiscal soundness where the payments to the older generation start subsiding. And the benefits to the government in terms of fiscal soundness start showing up. But this whole consideration was there in the early pension reforms discourse from 1998 to 2004, 2005. After that, basically nobody knows it. There were no thinkers, there were no intellectuals, there were no orgs, there was nobody doing calculations, there was nobody writing op eds, there were no research papers. So all this stuff just kinda got lost. And then you have the incentives of the policymakers, of the politicians, of the decision makers. That on one side you've got some one lakh, two lakh young civil servants who organize themselves, may I pander to them. Versus on the other side, there is no public discourse, there are no intellectuals, there are no ideas, there are no papers, there's nobody showing me calculations that if I do it, this are the consequences, or like guys, hang on, you got to just hang there, hang tough till 2029. And you will start seeing a transformed fiscal environment. In fact, It was fiscally difficult for that first generation because you're paying pensions and you're paying the ten percent higher wage. And there were no proximate gains to the governments, to the decision makers. So they were more willing to say, okay, you might as well just give it up.",
-      "words": [
+        },
         {
           "word": "Entire",
           "startTime": 4403.12,

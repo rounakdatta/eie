@@ -5,7 +5,7 @@
     "durationSeconds": 3697,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -247,8 +247,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 109.19,
-      "endTime": 145.35,
-      "text": "So this is my friend Freddie, but before we talk about Freddie, we have to uh point out that uh Ajay and I sorry I should keep Freddie in the frame. Ajay and I are recording this in uh Karjat as of now. And our producer Vartika has a lovely line that could go on a t shirt about Kharjat. Vartika, what is your line? Bari Bari Bhate Varapau Khate, which is pretty much uh uh you know seems to be targeted at us. And uh I love Varapau. I also love uh Bari Bari Bhate. So how do you like Karjat? Uh best Varapau in the whole world. Best Varapau in the whole",
+      "endTime": 142.07,
+      "text": "So this is my friend Freddie, but before we talk about Freddie, we have to uh point out that uh Ajay and I sorry I should keep Freddie in the frame. Ajay and I are recording this in uh Karjat as of now. And our producer Vartika has a lovely line that could go on a t shirt about Kharjat. Vartika, what is your line? Bari Bari Bhate Varapau Khate, which is pretty much uh uh you know seems to be targeted at us. And uh I love Varapau. I also love uh Bari Bari Bhate. So how do you like Karjat? Uh",
       "words": [
         {
           "word": "So",
@@ -867,7 +867,15 @@
           "startTime": 141.75,
           "endTime": 142.07,
           "confidence": 0.8298
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 142.07,
+      "endTime": 143.43,
+      "text": "best Varapau in the whole",
+      "words": [
         {
           "word": "best",
           "startTime": 142.07,
@@ -897,7 +905,15 @@
           "startTime": 143.27,
           "endTime": 143.43,
           "confidence": 0.999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 143.43,
+      "endTime": 145.35,
+      "text": "world. Best Varapau in the whole",
+      "words": [
         {
           "word": "world.",
           "startTime": 143.43,

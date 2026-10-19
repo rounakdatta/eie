@@ -5,7 +5,7 @@
     "durationSeconds": 2980,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -2639,8 +2639,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 170.18,
-      "endTime": 174.98,
-      "text": "There are so many mistakes. You want me to pick the biggest one. The biggest of them. I mean",
+      "endTime": 173.06,
+      "text": "There are so many mistakes. You want me to pick the biggest one.",
       "words": [
         {
           "word": "There",
@@ -2719,7 +2719,15 @@
           "startTime": 172.5,
           "endTime": 173.06,
           "confidence": 0.6906
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 173.06,
+      "endTime": 182.18,
+      "text": "The biggest of them. I mean all of us make thousands of mistakes. Okay, we should have no pride. Our life is littered with mistakes, but you gotta pick the",
+      "words": [
         {
           "word": "The",
           "startTime": 173.06,
@@ -2755,15 +2763,7 @@
           "startTime": 173.86,
           "endTime": 174.98,
           "confidence": 0.9949
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 174.98,
-      "endTime": 182.18,
-      "text": "all of us make thousands of mistakes. Okay, we should have no pride. Our life is littered with mistakes, but you gotta pick the",
-      "words": [
+        },
         {
           "word": "all",
           "startTime": 174.98,

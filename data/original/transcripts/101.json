@@ -5,7 +5,7 @@
     "durationSeconds": 2596,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -4148,8 +4148,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 269.7,
-      "endTime": 388.74,
-      "text": "when we think about public policy, we should always bring implementation constraints on the table. Like right up front, start thinking, can we do it? Do we have the ability to do it? Is this an easy problem? Is this a difficult problem? Okay? And that's our main subject of today. So let's start at a military analogy. Suppose we're in a discussion where a hypothetical Indian expeditionary force is considering landings in Burma versus landings in China. Okay? In a flash. We know that, yeah, both are very hard, but push comes to shove. You know, a sufficiently complex Indian naval operation could create landings in Burma, but it's practically impossible to do landings in China. Watch what we just did. We discussed a problem statement and we arrived at a judgment that is this easy or is this hard. Okay. Could you do this a lot more? Could you face a wide array of problems in the world where somebody says, that we need to manipulate the exchange rate, we need to stabilize inflation, we need to build an atom bomb, we need to do polio vaccination. Okay? There are all kinds of there's a clamor of diverse demands for state intervention. Could we arrive at some framework, some concept, some toolkit whereby we can come up with an oral conversation judgment that you know this thing looks relatively easy, this thing looks relatively hard. Amazingly enough, the answer is yes, we do have this kind of toolkit. Before I get into the actual material of what uh that toolkit is and how it works, I just want to tell a little bit of a story around how these ideas came about. This originated in a paper in two thousand four by Lant Pritchett and Michael Woolcock. They did an early version of this and uh uh Vijay Kelkar and I built on their work. And uh we extend it and augmented it and Lant would agree",
+      "endTime": 390.02,
+      "text": "when we think about public policy, we should always bring implementation constraints on the table. Like right up front, start thinking, can we do it? Do we have the ability to do it? Is this an easy problem? Is this a difficult problem? Okay? And that's our main subject of today. So let's start at a military analogy. Suppose we're in a discussion where a hypothetical Indian expeditionary force is considering landings in Burma versus landings in China. Okay? In a flash. We know that, yeah, both are very hard, but push comes to shove. You know, a sufficiently complex Indian naval operation could create landings in Burma, but it's practically impossible to do landings in China. Watch what we just did. We discussed a problem statement and we arrived at a judgment that is this easy or is this hard. Okay. Could you do this a lot more? Could you face a wide array of problems in the world where somebody says, that we need to manipulate the exchange rate, we need to stabilize inflation, we need to build an atom bomb, we need to do polio vaccination. Okay? There are all kinds of there's a clamor of diverse demands for state intervention. Could we arrive at some framework, some concept, some toolkit whereby we can come up with an oral conversation judgment that you know this thing looks relatively easy, this thing looks relatively hard. Amazingly enough, the answer is yes, we do have this kind of toolkit. Before I get into the actual material of what uh that toolkit is and how it works, I just want to tell a little bit of a story around how these ideas came about. This originated in a paper in two thousand four by Lant Pritchett and Michael Woolcock. They did an early version of this and uh uh Vijay Kelkar and I built on their work. And uh we extend it and augmented it and Lant would agree that our version is",
       "words": [
         {
           "word": "when",
@@ -6124,15 +6124,7 @@
           "startTime": 388.34,
           "endTime": 388.74,
           "confidence": 0.9996
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 388.74,
-      "endTime": 426.9,
-      "text": "that our version is a bit better. Land does agree that uh uh your version is a bit better because do check out my episode of The Scene and the Unseen with Lant Pritchett and also my episode with Ajaisha, which is the last one, Life and Time, stand and a half hours, but I've got fourteen episodes with you. You are at this moment tied with our good friend Panikotasana. So yeah, it's a good battle who's gonna win. So let's get down to the metrics. What are the four tests that we can apply to figure out whether intervention is hard or easy? Okay,",
-      "words": [
+        },
         {
           "word": "that",
           "startTime": 388.74,
@@ -6156,7 +6148,15 @@
           "startTime": 389.86,
           "endTime": 390.02,
           "confidence": 0.9992
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 390.02,
+      "endTime": 426.9,
+      "text": "a bit better. Land does agree that uh uh your version is a bit better because do check out my episode of The Scene and the Unseen with Lant Pritchett and also my episode with Ajaisha, which is the last one, Life and Time, stand and a half hours, but I've got fourteen episodes with you. You are at this moment tied with our good friend Panikotasana. So yeah, it's a good battle who's gonna win. So let's get down to the metrics. What are the four tests that we can apply to figure out whether intervention is hard or easy? Okay,",
+      "words": [
         {
           "word": "a",
           "startTime": 390.02,
@@ -6774,8 +6774,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 426.9,
-      "endTime": 551.34,
-      "text": "so first let's just be clear. We are faced with a problem statement. We want to do universal smallpox vaccination. Okay. Or uh we want to build highways, or we want to make the police work. Okay, that's the way we're going to pose problems. And when faced with any of these problems, here are four tests through which such questions should be judged. Test one. Is there a low number of transactions? Is there a high number of transactions. So uh if you want to do anything that touches the population where there is a large number of people and you're literally engaging with millions of people, then it's a high number of transactions. That's more difficult. Whereas if something has to be done just by a few people, then there's a low number of transactions. So we did an episode on innovation. In innovation policy, what would you want to do? Do you want a government to maybe put out 500 research grants a year. So there's 500 transactions. Whereas if you want to go do a polio vaccination, you want to touch 500 million people. So a higher number of transactions is more difficult to organize than a lower number of transactions. Okay, so that's test one, number of transactions. Test two, discretion. Do the frontline workers, do the civil servants actually doing this work? have a high amount of discretion, do they have a low amount of discretion? And again it's obvious that if the frontline employees have a high amount of discretion, then you have a bigger management problem. How will we create the checks and balances, the accountability mechanisms through which those frontline civil servants will do the work that is consistent with the objectives of the organization, as opposed to their own self interest. Okay, so we are all deeply wired to be kind to our friends and family and our kids and kin, We have tribalistic loyalties. So when there is discretion, people will always use it in ways that are often incompatible with the objectives of the organization. So when there is low discretion, it is better. When there is high discretion, it is worse. It is harder to make a government intervention work when there is high",
+      "endTime": 773.27,
+      "text": "so first let's just be clear. We are faced with a problem statement. We want to do universal smallpox vaccination. Okay. Or uh we want to build highways, or we want to make the police work. Okay, that's the way we're going to pose problems. And when faced with any of these problems, here are four tests through which such questions should be judged. Test one. Is there a low number of transactions? Is there a high number of transactions. So uh if you want to do anything that touches the population where there is a large number of people and you're literally engaging with millions of people, then it's a high number of transactions. That's more difficult. Whereas if something has to be done just by a few people, then there's a low number of transactions. So we did an episode on innovation. In innovation policy, what would you want to do? Do you want a government to maybe put out 500 research grants a year. So there's 500 transactions. Whereas if you want to go do a polio vaccination, you want to touch 500 million people. So a higher number of transactions is more difficult to organize than a lower number of transactions. Okay, so that's test one, number of transactions. Test two, discretion. Do the frontline workers, do the civil servants actually doing this work? have a high amount of discretion, do they have a low amount of discretion? And again it's obvious that if the frontline employees have a high amount of discretion, then you have a bigger management problem. How will we create the checks and balances, the accountability mechanisms through which those frontline civil servants will do the work that is consistent with the objectives of the organization, as opposed to their own self interest. Okay, so we are all deeply wired to be kind to our friends and family and our kids and kin, We have tribalistic loyalties. So when there is discretion, people will always use it in ways that are often incompatible with the objectives of the organization. So when there is low discretion, it is better. When there is high discretion, it is worse. It is harder to make a government intervention work when there is high discretion. This is the Pritchett and Woolcock formulation. Number of transactions, number of amount of discretion. Then we go further. I think it's very important to think about the stakes. What is at stake? Okay? Is it some small piddly amount of money or some minor inconvenience? Or is it high stakes? So a policeman who can put you in jail. Now the conversation between you and the policeman is a high stakes conversation because suddenly you're in the hands of a civil servant who can make discretionary decisions this way or that way. and that shapes whether you go to jail or not go to jail. That's a high stakes conversation. It's very difficult to get that policeman to perform as per the objectives of the organization, as opposed to exploiting the power in that face to face conversation. Whereas there are things that are low stakes. You know, imagine there is somebody coming around doing a polio vaccination. The stakes are modest. There's nothing much that will happen. So frankly the frontline civil servant has very low power vis-a-vis the person, the kid who's getting the polio vaccination. So then we say that low stakes problems are easy, high stakes problems are difficult. Okay? Finally, number four, transparency, opacity. Okay. If something is done in a highly open environment where a lot of information is given out, there's plenty of data coming out in a way there is a body cam watching the policeman. Okay. then it becomes easier to get it right because you will get checks and balances. You will get the forces of the society, the watchers, the people watching the body cam, the people working with data, who is who are able to criticize the working of the government. You get the whole feedback loop of criticism. Okay? And that of course presumes a free and open information ecosystem that people have to be able to criticize. But if There's a government process that is transparent where metrics come out, enough information comes out so that the people and the journalists and the researchers and the intellectuals and the opposition parties are able to kick up a fuss saying, you know, so many bad things are happening in this space, then that is good, meaning it will create the checks and balances. Automatically the frontline civil servants, the managers of the civil servants will end up doing a better job. Whereas if things are done in the dark, if things are done under opacity. So just imagine if there was no CAG, if there was no RTI, if there was no transparency about what is being done, if there was no statistics, if no documents are being released, then like anything can be done. That government can go do all kinds of difficult, dangerous, monstro things, and you will go far away from any reasonable objective of the government. because those people have truly got raw arbitrary power in their hands. So test four, transparency. That if it's high transparency, it's an easier problem. If it's low transparency, it's a difficult problem. Okay. So to summarize, four tests. Test one, is it a high number of transactions? That's more difficult. Is it a high level of discretion? That's more difficult. Are there high stakes? That's more difficult. Is there high opacity? That's more difficult. Okay? So we have a clear toolkit and you don't even need paper and pen. You can just memorize this. And so then every time you're sitting around in a hostel room debating inflation targeting, you'll be able to roll out this toolkit and immediately analyze the policy and say, Hey dude, this one is an easy problem. This one is a difficult problem.",
       "words": [
         {
           "word": "so",
@@ -9038,15 +9038,7 @@
           "startTime": 550.86,
           "endTime": 551.34,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 551.34,
-      "endTime": 553.02,
-      "text": "discretion. This is the",
-      "words": [
+        },
         {
           "word": "discretion.",
           "startTime": 551.34,
@@ -9070,15 +9062,7 @@
           "startTime": 552.86,
           "endTime": 553.02,
           "confidence": 0.9945
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 553.02,
-      "endTime": 773.27,
-      "text": "Pritchett and Woolcock formulation. Number of transactions, number of amount of discretion. Then we go further. I think it's very important to think about the stakes. What is at stake? Okay? Is it some small piddly amount of money or some minor inconvenience? Or is it high stakes? So a policeman who can put you in jail. Now the conversation between you and the policeman is a high stakes conversation because suddenly you're in the hands of a civil servant who can make discretionary decisions this way or that way. and that shapes whether you go to jail or not go to jail. That's a high stakes conversation. It's very difficult to get that policeman to perform as per the objectives of the organization, as opposed to exploiting the power in that face to face conversation. Whereas there are things that are low stakes. You know, imagine there is somebody coming around doing a polio vaccination. The stakes are modest. There's nothing much that will happen. So frankly the frontline civil servant has very low power vis-a-vis the person, the kid who's getting the polio vaccination. So then we say that low stakes problems are easy, high stakes problems are difficult. Okay? Finally, number four, transparency, opacity. Okay. If something is done in a highly open environment where a lot of information is given out, there's plenty of data coming out in a way there is a body cam watching the policeman. Okay. then it becomes easier to get it right because you will get checks and balances. You will get the forces of the society, the watchers, the people watching the body cam, the people working with data, who is who are able to criticize the working of the government. You get the whole feedback loop of criticism. Okay? And that of course presumes a free and open information ecosystem that people have to be able to criticize. But if There's a government process that is transparent where metrics come out, enough information comes out so that the people and the journalists and the researchers and the intellectuals and the opposition parties are able to kick up a fuss saying, you know, so many bad things are happening in this space, then that is good, meaning it will create the checks and balances. Automatically the frontline civil servants, the managers of the civil servants will end up doing a better job. Whereas if things are done in the dark, if things are done under opacity. So just imagine if there was no CAG, if there was no RTI, if there was no transparency about what is being done, if there was no statistics, if no documents are being released, then like anything can be done. That government can go do all kinds of difficult, dangerous, monstro things, and you will go far away from any reasonable objective of the government. because those people have truly got raw arbitrary power in their hands. So test four, transparency. That if it's high transparency, it's an easier problem. If it's low transparency, it's a difficult problem. Okay. So to summarize, four tests. Test one, is it a high number of transactions? That's more difficult. Is it a high level of discretion? That's more difficult. Are there high stakes? That's more difficult. Is there high opacity? That's more difficult. Okay? So we have a clear toolkit and you don't even need paper and pen. You can just memorize this. And so then every time you're sitting around in a hostel room debating inflation targeting, you'll be able to roll out this toolkit and immediately analyze the policy and say, Hey dude, this one is an easy problem. This one is a difficult problem.",
-      "words": [
+        },
         {
           "word": "Pritchett",
           "startTime": 553.02,
@@ -29578,8 +29562,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1671.77,
-      "endTime": 1709.98,
-      "text": "that as well? This also protects us from our familiarity. So imagine I'm a finance guy. I might find some mystique in monetary policy. Oh my God, you guys deal with interest rates. Okay, complicated forecasting of inflation. That sounds very strange to me. Banking, I'm catch viscus, I know banking. So I may think banking regulation is easy. Monetary policy is alien to me. That doesn't mean it's hard. It just means you've got to get the right expertise. So this protects us from our own vulgar familiarity, and it gives us a more objective way to rate. the complexity of alternative problems. And then also to be able to argue about it with each other. We get a common intellectual framework through which",
+      "endTime": 1711.18,
+      "text": "that as well? This also protects us from our familiarity. So imagine I'm a finance guy. I might find some mystique in monetary policy. Oh my God, you guys deal with interest rates. Okay, complicated forecasting of inflation. That sounds very strange to me. Banking, I'm catch viscus, I know banking. So I may think banking regulation is easy. Monetary policy is alien to me. That doesn't mean it's hard. It just means you've got to get the right expertise. So this protects us from our own vulgar familiarity, and it gives us a more objective way to rate. the complexity of alternative problems. And then also to be able to argue about it with each other. We get a common intellectual framework through which we can discuss these things.",
       "words": [
         {
           "word": "that",
@@ -30330,15 +30314,7 @@
           "startTime": 1709.74,
           "endTime": 1709.98,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1709.98,
-      "endTime": 1744.52,
-      "text": "we can discuss these things. And this is the starting point. I mean people can put different weightages on each of these metrics and, you know, do their own math in that sense. And we haven't even come to the question of, you know, um uh how the the interplay between how hard something is and how important it is to do something. That's an entirely separate thing. We'll come to that at the end. But uh So I love this. Well done. So, Ajesha, in your heart, I know you're a hacker. Can you hack this?",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 1709.98,
@@ -30368,7 +30344,15 @@
           "startTime": 1710.62,
           "endTime": 1711.18,
           "confidence": 0.9854
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1711.18,
+      "endTime": 1744.52,
+      "text": "And this is the starting point. I mean people can put different weightages on each of these metrics and, you know, do their own math in that sense. And we haven't even come to the question of, you know, um uh how the the interplay between how hard something is and how important it is to do something. That's an entirely separate thing. We'll come to that at the end. But uh So I love this. Well done. So, Ajesha, in your heart, I know you're a hacker. Can you hack this?",
+      "words": [
         {
           "word": "And",
           "startTime": 1711.18,

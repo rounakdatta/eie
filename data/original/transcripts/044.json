@@ -5,7 +5,7 @@
     "durationSeconds": 4132,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -6397,8 +6397,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 361.35,
-      "endTime": 441.83,
-      "text": "And you know, that's that's like uh a beautiful st story of the magic of maps. And at this moment, you know, I had promised earlier a song, I had promised instructions for dancing, and I'll have both of them coming at you. Where uh you know, there's this beautiful song I just discovered by a band called Magnetic Fields. Uh a songwriter called Stephen Merritt, and he's uh written this song called The Book of Love. And these are some of the lyrics, and I'll tell you why I'm reading these out because it seems to have nothing to do with maps. The book of love is long and boring. No one can lift the damn thing. It's full of charts and facts and figures and instructions for dancing. The book of love has music in it. In fact, that's where music comes from. Some of it is just transcendental. Some of it is just really dumb. The book of love is long and boring and written very long ago, is full of flowers and heart shade boxes and things we are all too young to know. Right. And the reason I'm reading this out is that the book of love is still as mysterious as it was six hundred years ago, right? And the world was mysterious and like you pointed out, there was a time where people thought the earth was flat. There was a time where you had no idea, you know, the concept of we take for granted things like the concepts of countries and continents and we've just normalized all of that shit. And there was a time where we didn't know all of that, and I just find that uh, you know, so utterly",
+      "endTime": 443.44,
+      "text": "And you know, that's that's like uh a beautiful st story of the magic of maps. And at this moment, you know, I had promised earlier a song, I had promised instructions for dancing, and I'll have both of them coming at you. Where uh you know, there's this beautiful song I just discovered by a band called Magnetic Fields. Uh a songwriter called Stephen Merritt, and he's uh written this song called The Book of Love. And these are some of the lyrics, and I'll tell you why I'm reading these out because it seems to have nothing to do with maps. The book of love is long and boring. No one can lift the damn thing. It's full of charts and facts and figures and instructions for dancing. The book of love has music in it. In fact, that's where music comes from. Some of it is just transcendental. Some of it is just really dumb. The book of love is long and boring and written very long ago, is full of flowers and heart shade boxes and things we are all too young to know. Right. And the reason I'm reading this out is that the book of love is still as mysterious as it was six hundred years ago, right? And the world was mysterious and like you pointed out, there was a time where people thought the earth was flat. There was a time where you had no idea, you know, the concept of we take for granted things like the concepts of countries and continents and we've just normalized all of that shit. And there was a time where we didn't know all of that, and I just find that uh, you know, so utterly Um wonderful",
       "words": [
         {
           "word": "And",
@@ -8145,15 +8145,7 @@
           "startTime": 441.33,
           "endTime": 441.83,
           "confidence": 0.9993
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 442.32,
-      "endTime": 474.08,
-      "text": "Um wonderful It has been so transform. Like the book of love is as much a mystery today as it ever was. But in our understanding of the spatial world, I'm trying to remember there was a traveller who met Shah Jahan, and Shah Jahan was more or less convinced that most of the world is ruled by him. Because they just had no idea that he was kinda away. There's an Afghanistan and there is something beyond the Himalayas, but basically they had no clue about what is the world. And suddenly maps just bring Precision and clarity and you know where you are.",
-      "words": [
+        },
         {
           "word": "Um",
           "startTime": 442.32,
@@ -8165,7 +8157,15 @@
           "startTime": 442.64,
           "endTime": 443.44,
           "confidence": 0.7869
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 443.44,
+      "endTime": 474.08,
+      "text": "It has been so transform. Like the book of love is as much a mystery today as it ever was. But in our understanding of the spatial world, I'm trying to remember there was a traveller who met Shah Jahan, and Shah Jahan was more or less convinced that most of the world is ruled by him. Because they just had no idea that he was kinda away. There's an Afghanistan and there is something beyond the Himalayas, but basically they had no clue about what is the world. And suddenly maps just bring Precision and clarity and you know where you are.",
+      "words": [
         {
           "word": "It",
           "startTime": 443.44,
@@ -9577,8 +9577,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 526.84,
-      "endTime": 1117.43,
-      "text": "So uh maps came with the British uh as early as 1767, that is just a scant ten years after the Battle of Plassey. Robert Clive had commissioned map making. So it was part of that British capability of how to think about government. If you're going to own some land, you're going to tax some land, you want a map. And so as early as 1767, Robert Clive initiated mapping work in the territory that they controlled, some Bengal, some Bihar, and map making started in India pretty much for the first time. There were some vague doodles in the previous years, but it's really so while there was some trigonometry knowledge in India, it never came together to become map making knowledge in India. And this was brought by the British. And as British power expanded, the map making, the surveying went with them, and they kept enlarging the zone of light where maps were created. Of course, the great explosion came when George Everest went about a gigantic survey of the full country. So that was the first time when they started saying to themselves that we want a single consistent. Maps data set, and you always should view maps as data, which can have a physical representation, but that's just a painting made out of some data. So at heart, maps is data. It's a list of coordinates which have certain properties. So George Everest built the teams that went all around the country. I think it was they had a concept of a 30 kilometer by 30 kilometer by 30 kilometer triangle, and they built these interlocking triangles covering the whole country. As part of that, they discovered that. The place that we now call Mount Everest was the highest point of India. And so British India was very big compared to modern India. And they went around the entire country building these maps. The institution that is called the Survey of India came up and they started printing maps and they were doing the whole spectrum of maps. They were doing topo sheets, they were doing more transportation-oriented maps, they were doing big maps that cover the whole country. The whole spectrum of maps came out. And then you can think how. piddly cost. You just print a physical map, you charge hundred rupees, five hundred rupees for its printed manifestation. But to get to that level of knowledge is very, very costly because you have to go walk around the whole country and survey the whole country. After that, the marginal cost of a map is like nothing. And so in that sense maps is a public good. It was one of the early public goods produced by the British in India. It's non-rival and non-excludable. My use of the maps database And the map in no way intrudes on your use of the map's database. I mean, yeah, technically one physical map can be in front of me, you can't use it. But printing maps is cheap. Like you can just make millions of maps. You can mass produce the printing of maps. And it's non excludable. Once the maps out there, you know, they can just keep on going from one person to another. There is no shortage, and there is no way to exclude everybody from the light that maps bring. So it was one of the early achievements of the British. administration. Um digressions permitted? Of course, digressions encouraged. Okay. In Masurri, there was a beautiful thing which was called Everest House. Okay so when George Everest had to choose a place to live, he chose a beautiful spot in Masouri and, you know, he would have chosen the most amazing spot. I seem to remember there were tigers roaming in the valley in front of that spot in those days. And uh Many years later, it basically just became a run-down old white marble house. There were some legal dispute surrounding it, and it was just uh easily accessed to the whole public. Anybody could just go there, but it was in a state of decay and disrepair. And I actually loved that place. I thought it was absolutely atmospheric. Like if you could go and sit there and start thinking. and dreaming and imagining. You could feel what it m was like to be George Everest, to have built the first map of this country, and then to be living in that bungalow on the edge of that valley and the forest. It was just absolutely atmospheric. My mind would just go wild with the feeling of that place. I say all this in past tense because uh the last time I was there there was some ugly and tasteless construction being done to turn it into a museum by some government agencies. These things should really be done by people who have taste. So unfortunately, it was just ugly. But for those who have seen it before, you may remember, and I just want to connect it to the man George Everest who led this amazing project on building the first maps for India. So that's the brief backstory. Starting from Robert Clive in 1767 to the mid-nineteenth century, the British mapped India, the British built the survey of India, they had these beautiful maps, and for everybody in the country, it was a trivial price to buy decent quality maps, good maps by world standards became available, and once every few decades the British went out and surveyed the whole country again. You need to do these things over and over. Not just because human structures change, like railway stations and roads and populations, but also because rivers change their course and so on. So there is such a thing as a map database going out of date. It does need to go back to the reality and get in touch with the reality. And that is a very costly affair. You have to send human beings with theodolites all around the country. But the British managed to do that over and over and over. So that's the early history of the maps in India. In free India things did not work out so well. I seem to think in many regions map surveying really stopped. So I believe there are many regions in India where the last survey is from 1934 or something, they've never really done the surveys after that. And by the time I came to the age of yearning for maps, I discovered some very irritating things. The survey of India, first of all, many of the surveys were outdated. Uh second of all, they did not have one is to 10,000 or 1 is to 20,000 for the whole country. They had like one is to 200,000. So watch in a one is to 200,000 map, three, four, five, one centimeter is two kilometers. Okay, so it's nice. But it doesn't have that real feeling. Like you're walking in a land, you want one is to ten thousand, one is to two hundred uh twenty thousand with 10 meter contour lines, 20 meter contour lines, then you get that feeling that. You know, I've I've got an alien spaceship using which I can see the land, I can visualize the land, and I can choose what I'm doing next. The one is to two hundred thousand topo sheets that the survey of India was selling were nice, but just unsatisfying. And to add insult to injury, they had some weird rule, which maybe they still have, that Some hundred kilometers from the border of India, including the coastline of India, the sale of maps is prohibited because terrorists will use those maps. Okay? Now, excuse me, all the survey of India maps are there in the museum in London. So any self-respecting terrorist will go to London and get those maps. So what you end up doing is shooting yourself in the foot. So the people of India were deprived of this public good. Like you're taking my tax money, you're making these maps, but then you're saying, No, we will refuse to sell these maps in India for security considerations. Um I have a spectacular retort to something you said earlier in a previous ancient episode, but I shall be clueless and say it here. You were talking about deaths from nuclear power and deaths from coal and how coal is a truly dangerous technology. Okay, and my retort would be that we in India would do a lot better if we worried about deaths from terrorism and more about deaths from coal. Okay, this is an example of that. It's just very wasteful. Now, you know, I was living in Bombay. So all the cool maps for me were cut off because we're at the coast. You try hiking in the Himalayas, all the cool maps are cut off because it's near the border. So you know the survey of India was just like a really ineffective organization. They were not surveying the country regularly. And in any case, whatever treasure trove of maps they have was not there for the people. Remember, a public good is for the people. It's not there for the state. We don't give a damn about what the state has in their pocket. The state exists to serve the people. If the people don't have maps, what use is it? Okay, if the people are in the dark, what use is it? The map are for the people, so that the people can make plans. Maybe you want to buy some land. Maybe you want to think about how you will construct something. You need to see maps. You need to see topo sheets. And without that, you're just walking around the country, which is a very inefficient technology. So this is the prehistory of maps and what is just unsatisfactory about the survey of India. I don't want to single out the survey of India too much for criticism. As always, I will say, gentle reader, there is a general problem in India. You're an underdeveloped country, we are a developing country, everything works badly. Okay so monetary policy works badly, the police work badly, the judiciary works badly, the military works badly, the Survey of India works badly, the statistical system works badly. I don't mean to single out the survey of India as being out of line. But it's a part of this underdevelopment that there is low state capacity, there is just a lack of simple, sensible behavior on such a fundamental thing, which is",
+      "endTime": 722.36,
+      "text": "So uh maps came with the British uh as early as 1767, that is just a scant ten years after the Battle of Plassey. Robert Clive had commissioned map making. So it was part of that British capability of how to think about government. If you're going to own some land, you're going to tax some land, you want a map. And so as early as 1767, Robert Clive initiated mapping work in the territory that they controlled, some Bengal, some Bihar, and map making started in India pretty much for the first time. There were some vague doodles in the previous years, but it's really so while there was some trigonometry knowledge in India, it never came together to become map making knowledge in India. And this was brought by the British. And as British power expanded, the map making, the surveying went with them, and they kept enlarging the zone of light where maps were created. Of course, the great explosion came when George Everest went about a gigantic survey of the full country. So that was the first time when they started saying to themselves that we want a single consistent. Maps data set, and you always should view maps as data, which can have a physical representation, but that's just a painting made out of some data. So at heart, maps is data. It's a list of coordinates which have certain properties. So George Everest built the teams that went all around the country. I think it was they had a concept of a 30 kilometer by 30 kilometer by 30 kilometer triangle, and they built these interlocking triangles covering the whole country. As part of that, they discovered that. The place that we now call Mount Everest was the highest point of India. And so British India was very big compared to modern India. And they went around the entire country building these maps. The institution that is called the Survey of India came up and they started printing maps and they were doing the whole spectrum of maps. They were doing topo sheets, they were doing more transportation-oriented maps, they were doing big maps that cover the whole country. The whole spectrum of maps came out. And then you can think how. piddly cost. You just print a physical map, you charge hundred rupees, five hundred rupees for its printed manifestation. But to get to that level of knowledge is very, very costly because you have to go walk around the whole country and survey the whole country. After that, the marginal cost of a map is like nothing. And so in that sense maps is a public good. It was one of the early public goods produced by the British in India. It's non-rival and non-excludable. My use of the maps database And the map in no way intrudes on your use of the map's database. I mean, yeah, technically one physical map can be in front of me, you can't use it. But printing maps is cheap. Like you can just make millions of maps. You can mass produce the printing of maps. And it's non excludable. Once the maps out there, you know, they can just keep on going from one person to another. There is no shortage, and there is no way to exclude everybody from the light that maps bring. So it was one of the early achievements of the British. administration. Um digressions permitted?",
       "words": [
         {
           "word": "So",
@@ -13035,7 +13035,15 @@
           "startTime": 721.72,
           "endTime": 722.36,
           "confidence": 0.8232
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 722.36,
+      "endTime": 724.04,
+      "text": "Of course, digressions encouraged.",
+      "words": [
         {
           "word": "Of",
           "startTime": 722.36,
@@ -13059,7 +13067,15 @@
           "startTime": 723.32,
           "endTime": 724.04,
           "confidence": 0.969
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 724.04,
+      "endTime": 1117.43,
+      "text": "Okay. In Masurri, there was a beautiful thing which was called Everest House. Okay so when George Everest had to choose a place to live, he chose a beautiful spot in Masouri and, you know, he would have chosen the most amazing spot. I seem to remember there were tigers roaming in the valley in front of that spot in those days. And uh Many years later, it basically just became a run-down old white marble house. There were some legal dispute surrounding it, and it was just uh easily accessed to the whole public. Anybody could just go there, but it was in a state of decay and disrepair. And I actually loved that place. I thought it was absolutely atmospheric. Like if you could go and sit there and start thinking. and dreaming and imagining. You could feel what it m was like to be George Everest, to have built the first map of this country, and then to be living in that bungalow on the edge of that valley and the forest. It was just absolutely atmospheric. My mind would just go wild with the feeling of that place. I say all this in past tense because uh the last time I was there there was some ugly and tasteless construction being done to turn it into a museum by some government agencies. These things should really be done by people who have taste. So unfortunately, it was just ugly. But for those who have seen it before, you may remember, and I just want to connect it to the man George Everest who led this amazing project on building the first maps for India. So that's the brief backstory. Starting from Robert Clive in 1767 to the mid-nineteenth century, the British mapped India, the British built the survey of India, they had these beautiful maps, and for everybody in the country, it was a trivial price to buy decent quality maps, good maps by world standards became available, and once every few decades the British went out and surveyed the whole country again. You need to do these things over and over. Not just because human structures change, like railway stations and roads and populations, but also because rivers change their course and so on. So there is such a thing as a map database going out of date. It does need to go back to the reality and get in touch with the reality. And that is a very costly affair. You have to send human beings with theodolites all around the country. But the British managed to do that over and over and over. So that's the early history of the maps in India. In free India things did not work out so well. I seem to think in many regions map surveying really stopped. So I believe there are many regions in India where the last survey is from 1934 or something, they've never really done the surveys after that. And by the time I came to the age of yearning for maps, I discovered some very irritating things. The survey of India, first of all, many of the surveys were outdated. Uh second of all, they did not have one is to 10,000 or 1 is to 20,000 for the whole country. They had like one is to 200,000. So watch in a one is to 200,000 map, three, four, five, one centimeter is two kilometers. Okay, so it's nice. But it doesn't have that real feeling. Like you're walking in a land, you want one is to ten thousand, one is to two hundred uh twenty thousand with 10 meter contour lines, 20 meter contour lines, then you get that feeling that. You know, I've I've got an alien spaceship using which I can see the land, I can visualize the land, and I can choose what I'm doing next. The one is to two hundred thousand topo sheets that the survey of India was selling were nice, but just unsatisfying. And to add insult to injury, they had some weird rule, which maybe they still have, that Some hundred kilometers from the border of India, including the coastline of India, the sale of maps is prohibited because terrorists will use those maps. Okay? Now, excuse me, all the survey of India maps are there in the museum in London. So any self-respecting terrorist will go to London and get those maps. So what you end up doing is shooting yourself in the foot. So the people of India were deprived of this public good. Like you're taking my tax money, you're making these maps, but then you're saying, No, we will refuse to sell these maps in India for security considerations. Um I have a spectacular retort to something you said earlier in a previous ancient episode, but I shall be clueless and say it here. You were talking about deaths from nuclear power and deaths from coal and how coal is a truly dangerous technology. Okay, and my retort would be that we in India would do a lot better if we worried about deaths from terrorism and more about deaths from coal. Okay, this is an example of that. It's just very wasteful. Now, you know, I was living in Bombay. So all the cool maps for me were cut off because we're at the coast. You try hiking in the Himalayas, all the cool maps are cut off because it's near the border. So you know the survey of India was just like a really ineffective organization. They were not surveying the country regularly. And in any case, whatever treasure trove of maps they have was not there for the people. Remember, a public good is for the people. It's not there for the state. We don't give a damn about what the state has in their pocket. The state exists to serve the people. If the people don't have maps, what use is it? Okay, if the people are in the dark, what use is it? The map are for the people, so that the people can make plans. Maybe you want to buy some land. Maybe you want to think about how you will construct something. You need to see maps. You need to see topo sheets. And without that, you're just walking around the country, which is a very inefficient technology. So this is the prehistory of maps and what is just unsatisfactory about the survey of India. I don't want to single out the survey of India too much for criticism. As always, I will say, gentle reader, there is a general problem in India. You're an underdeveloped country, we are a developing country, everything works badly. Okay so monetary policy works badly, the police work badly, the judiciary works badly, the military works badly, the Survey of India works badly, the statistical system works badly. I don't mean to single out the survey of India as being out of line. But it's a part of this underdevelopment that there is low state capacity, there is just a lack of simple, sensible behavior on such a fundamental thing, which is",
+      "words": [
         {
           "word": "Okay.",
           "startTime": 724.04,
@@ -71189,8 +71205,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3937.99,
-      "endTime": 3962.47,
-      "text": "In particular men of the age of Nam Sata. It's about 19 year old. No, I don't get it. It's just nature. It's just nineteen year old males of height distributed around the world and India, of course, did poorly not some aspect of height may come from genetics, but a significant aspect of it really comes from nutrition and health. Almost nothing from genetics",
+      "endTime": 3943.91,
+      "text": "In particular men of the age of Nam Sata. It's about 19 year old.",
       "words": [
         {
           "word": "In",
@@ -71275,7 +71291,15 @@
           "startTime": 3942.95,
           "endTime": 3943.91,
           "confidence": 0.663
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3943.91,
+      "endTime": 3945.05,
+      "text": "No, I don't get it.",
+      "words": [
         {
           "word": "No,",
           "startTime": 3943.91,
@@ -71305,7 +71329,15 @@
           "startTime": 3944.55,
           "endTime": 3945.05,
           "confidence": 0.8615
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3947.59,
+      "endTime": 3962.47,
+      "text": "It's just nature. It's just nineteen year old males of height distributed around the world and India, of course, did poorly not some aspect of height may come from genetics, but a significant aspect of it really comes from nutrition and health. Almost nothing from genetics",
+      "words": [
         {
           "word": "It's",
           "startTime": 3947.59,

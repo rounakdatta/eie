@@ -5,7 +5,7 @@
     "durationSeconds": 3376,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -1082,8 +1082,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 93.96,
-      "endTime": 120.76,
-      "text": "Uh well I uh I have an ancient happy memory of uh writing a program that solves an eight queens problem first in FOTRAN, which is a very limited language in terms of its expressivity, and then in nicer languages that allow you to do these algorithms nicely. So for me it's an n-queens problem, and I have lost the ability to think of it as a chess problem. I only think",
+      "endTime": 122.36,
+      "text": "Uh well I uh I have an ancient happy memory of uh writing a program that solves an eight queens problem first in FOTRAN, which is a very limited language in terms of its expressivity, and then in nicer languages that allow you to do these algorithms nicely. So for me it's an n-queens problem, and I have lost the ability to think of it as a chess problem. I only think of it as an algorithm",
       "words": [
         {
           "word": "Uh",
@@ -1516,15 +1516,7 @@
           "startTime": 120.52,
           "endTime": 120.76,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 120.76,
-      "endTime": 127.64,
-      "text": "of it as an algorithm problem. Wow. So that's one way of looking at it. When AI can do this, why are you wasting your",
-      "words": [
+        },
         {
           "word": "of",
           "startTime": 120.76,
@@ -1554,7 +1546,15 @@
           "startTime": 121.48,
           "endTime": 122.36,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 122.36,
+      "endTime": 127.64,
+      "text": "problem. Wow. So that's one way of looking at it. When AI can do this, why are you wasting your",
+      "words": [
         {
           "word": "problem.",
           "startTime": 122.36,
@@ -3918,8 +3918,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 243.78,
-      "endTime": 507.91,
-      "text": "Well, uh if you think of a car caricature of a cartel, it would be opaque because at its peak it was a coalition of all the oil producers in the world and they would agree to fix a price and they would agree to cut supply so as to achieve their target price. So it was really the most brazen visible story of price fixing. But because it was not by firms and it was by governments, then it was immune to any kind of antitrust. So you could have uh competition policy rules in any one country, but there are no ways To enforce supranational rules about competition. So if you thought that there was a problem in competition, then this was the prototypical demo. In its heyday, uh OPEC was famous for driving up the price of crude oil quite dramatically in the early 70s, from something like $1.5 a barrel to something like $11 a barrel. There is a particular moment there where there had been a long and easy collaboration between Between the Arab countries, most notably Saudi Arabia, and the Western consumers of crude oil. And there was a live and let live on both sides. So OPEC did not really find its feet and go after trying to force up the price. Then there was this big event, which was the 1973 war. So if you recall the history, first there was the 1967 war, what Ariel uh Sharon named the Six-Day War, which Israel won spectacularly. And then a bunch of Arab countries prepared and prepared for a rematch. And they got their strategic surprise in the 1973 war, but then Israel was able to pick itself up, and Israel won the 73 war. At the end of that, the Arab street was just angry. There was just humiliation and frustration and blinding hatred all over the Middle East against Israel, which won the 1973 war. So this they they failed to eject the Jews in 1948. They had failed in 1967 and they had failed in 1973. So, in that fit of anger, a bunch of the oil-producing countries got together and said, we will raise the price of crude oil. And much later, when the histories were being written, we know that they themselves thought that this was a reckless thing to do. And for all you know, some uh powerful, important oil-consuming countries of the world will just land an army and grab the oil fields. Of the Persian Gulf. Okay. And it is believed that Henry Kissinger was the author of a pseudonymous article that was written in a magazine, which basically showed the detail of a military operation to grab the oil-producing regions of the Persian Gulf and turn them into a global trust. Okay, saying that these Bedouins should not have control of that oil. Okay, as we all know, that didn't happen. And suddenly the Arabs looked at each other saying, Wow, we got such a big increase in the oil price. Okay, and this is the beginnings of what I call The caricature of a cartel, the cartoonish monopoly, where really you're calling all the shots, and there is no ability of any state to try to make a difference. Okay? So if there was ever a cartel that shaped a price, this is it. So very well. How did it work? How did that work out? And let's look at the data. Roughly speaking, in 1974, the price of crude oil was about $11 a barrel, and today it's about $77 a barrel. Okay, so it's a 7x from 1974 till 2023, which works out to about 4% nominal USD. Okay, you knock out a little more than 2% for inflation. It's about 1.5% real. Okay, so you you tell me that you've got this powerful. Cartel that's controlling the price, and all they've managed to get is about one and a half percent real of a price hike over the succeeding",
+      "endTime": 509.75,
+      "text": "Well, uh if you think of a car caricature of a cartel, it would be opaque because at its peak it was a coalition of all the oil producers in the world and they would agree to fix a price and they would agree to cut supply so as to achieve their target price. So it was really the most brazen visible story of price fixing. But because it was not by firms and it was by governments, then it was immune to any kind of antitrust. So you could have uh competition policy rules in any one country, but there are no ways To enforce supranational rules about competition. So if you thought that there was a problem in competition, then this was the prototypical demo. In its heyday, uh OPEC was famous for driving up the price of crude oil quite dramatically in the early 70s, from something like $1.5 a barrel to something like $11 a barrel. There is a particular moment there where there had been a long and easy collaboration between Between the Arab countries, most notably Saudi Arabia, and the Western consumers of crude oil. And there was a live and let live on both sides. So OPEC did not really find its feet and go after trying to force up the price. Then there was this big event, which was the 1973 war. So if you recall the history, first there was the 1967 war, what Ariel uh Sharon named the Six-Day War, which Israel won spectacularly. And then a bunch of Arab countries prepared and prepared for a rematch. And they got their strategic surprise in the 1973 war, but then Israel was able to pick itself up, and Israel won the 73 war. At the end of that, the Arab street was just angry. There was just humiliation and frustration and blinding hatred all over the Middle East against Israel, which won the 1973 war. So this they they failed to eject the Jews in 1948. They had failed in 1967 and they had failed in 1973. So, in that fit of anger, a bunch of the oil-producing countries got together and said, we will raise the price of crude oil. And much later, when the histories were being written, we know that they themselves thought that this was a reckless thing to do. And for all you know, some uh powerful, important oil-consuming countries of the world will just land an army and grab the oil fields. Of the Persian Gulf. Okay. And it is believed that Henry Kissinger was the author of a pseudonymous article that was written in a magazine, which basically showed the detail of a military operation to grab the oil-producing regions of the Persian Gulf and turn them into a global trust. Okay, saying that these Bedouins should not have control of that oil. Okay, as we all know, that didn't happen. And suddenly the Arabs looked at each other saying, Wow, we got such a big increase in the oil price. Okay, and this is the beginnings of what I call The caricature of a cartel, the cartoonish monopoly, where really you're calling all the shots, and there is no ability of any state to try to make a difference. Okay? So if there was ever a cartel that shaped a price, this is it. So very well. How did it work? How did that work out? And let's look at the data. Roughly speaking, in 1974, the price of crude oil was about $11 a barrel, and today it's about $77 a barrel. Okay, so it's a 7x from 1974 till 2023, which works out to about 4% nominal USD. Okay, you knock out a little more than 2% for inflation. It's about 1.5% real. Okay, so you you tell me that you've got this powerful. Cartel that's controlling the price, and all they've managed to get is about one and a half percent real of a price hike over the succeeding 53 years.",
       "words": [
         {
           "word": "Well,",
@@ -7934,15 +7934,7 @@
           "startTime": 507.03,
           "endTime": 507.91,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 507.91,
-      "endTime": 544.02,
-      "text": "53 years. Simplify uh something for me. Um the whole idea of this particular cartel was a small bunch of players control all the oil in the world. Yes. Everybody needs oil. These guys can set the price to whatever limit they want. Now, obviously, it is not in their interest to raise it so much that an invading army comes and all of that happens. But they want to push that limit. Correct. And that and and then there'll be quite a window within which they can keep raising the prices, and that's a theory. Now what you're saying is that despite that, in thirty years it's just gone up one and a half percent effectively. In fifty years it's gone up one and a half percent. One and a half percent compounded.",
-      "words": [
+        },
         {
           "word": "53",
           "startTime": 507.91,
@@ -7954,7 +7946,15 @@
           "startTime": 508.79,
           "endTime": 509.75,
           "confidence": 0.975
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 509.75,
+      "endTime": 544.02,
+      "text": "Simplify uh something for me. Um the whole idea of this particular cartel was a small bunch of players control all the oil in the world. Yes. Everybody needs oil. These guys can set the price to whatever limit they want. Now, obviously, it is not in their interest to raise it so much that an invading army comes and all of that happens. But they want to push that limit. Correct. And that and and then there'll be quite a window within which they can keep raising the prices, and that's a theory. Now what you're saying is that despite that, in thirty years it's just gone up one and a half percent effectively. In fifty years it's gone up one and a half percent. One and a half percent compounded.",
+      "words": [
         {
           "word": "Simplify",
           "startTime": 509.75,

@@ -5,7 +5,7 @@
     "durationSeconds": 4129,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -3221,8 +3221,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 181.15,
-      "endTime": 197.63,
-      "text": "think a version of that I've heard. So first of all the original quote, uh I stood I I saw further than others because I was standing on the shoulders of giants is by Newton, and it's actually because Newton was a truly mean and unpleasant person. Okay? So have no illusions about it. The great man Newton was",
+      "endTime": 211.95,
+      "text": "think a version of that I've heard. So first of all the original quote, uh I stood I I saw further than others because I was standing on the shoulders of giants is by Newton, and it's actually because Newton was a truly mean and unpleasant person. Okay? So have no illusions about it. The great man Newton was not a nice person. He had a lifelong intellectual rivalry and conflict with Robert Hooke. Robert Hooke was a hunchback. Robert Hooke implied that the ideas that Newton developed were built out of Hooke's work, and this was Newton's",
       "words": [
         {
           "word": "think",
@@ -3577,15 +3577,7 @@
           "startTime": 197.47,
           "endTime": 197.63,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 197.63,
-      "endTime": 199.39,
-      "text": "not a nice person.",
-      "words": [
+        },
         {
           "word": "not",
           "startTime": 197.63,
@@ -3609,15 +3601,7 @@
           "startTime": 198.43,
           "endTime": 199.39,
           "confidence": 0.8949
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 199.39,
-      "endTime": 211.95,
-      "text": "He had a lifelong intellectual rivalry and conflict with Robert Hooke. Robert Hooke was a hunchback. Robert Hooke implied that the ideas that Newton developed were built out of Hooke's work, and this was Newton's",
-      "words": [
+        },
         {
           "word": "He",
           "startTime": 199.39,
@@ -3833,8 +3817,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 211.95,
-      "endTime": 221.87,
-      "text": "put down. Beautiful. So my question for you therefore is you're a nice guy. How can you be a great thinker? They are orthogonal. I didn't",
+      "endTime": 220.03,
+      "text": "put down. Beautiful. So my question for you therefore is you're a nice guy. How can you be a great thinker? They",
       "words": [
         {
           "word": "put",
@@ -3967,7 +3951,15 @@
           "startTime": 219.79,
           "endTime": 220.03,
           "confidence": 0.8087
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 220.03,
+      "endTime": 233.65,
+      "text": "are orthogonal. I didn't mean that they're negatively correlated. Also, there's a beautiful line which is a Unix fortune. It says that in computer something like in computer science we stand on each other's shoulders.",
+      "words": [
         {
           "word": "are",
           "startTime": 220.03,
@@ -3991,15 +3983,7 @@
           "startTime": 221.55,
           "endTime": 221.87,
           "confidence": 0.9819
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 221.87,
-      "endTime": 233.65,
-      "text": "mean that they're negatively correlated. Also, there's a beautiful line which is a Unix fortune. It says that in computer something like in computer science we stand on each other's shoulders.",
-      "words": [
+        },
         {
           "word": "mean",
           "startTime": 221.87,

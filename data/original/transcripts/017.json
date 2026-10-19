@@ -5,7 +5,7 @@
     "durationSeconds": 4363,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -8422,8 +8422,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 501.31,
-      "endTime": 611.23,
-      "text": "I want to say two things. One is that uh I feel many of us are brought up on uh unstated belief in the word progress. We assume the world's gonna get better. Uh the technology is gonna get better generally, GDP will increase. But beyond that, I feel we should be very cautious. Things can go terribly wrong. Many, many countries have gone terribly wrong. So I feel It is better to tell children a fairy tale where their technology will get better, but it could well be that their state gets worse. So you know the uh progress of a society is something far more complex and should not be taken for granted. So it's a very iffy thing, it's something to aspire for. We should dream of it, but we should not count on it. The second thing I want to say is that I've actually been struck by the emergence of Like Mahavir and concepts like uh Jainism in India. Because in that primitive society, it makes no functional sense at all. You're short of protein, you should be grabbing every scrap of protein that you can get. Okay, it is no golden age. So contrary to some claims that are made about some mythical past where uh the the where the streets were filled with cheese, right? Is that But there are no cats in America and the streets are filled with cheese. This is the kind of fable that the mice in Russia are told in a in a movie. So there was no mythical lost age where there was plenty and there was prosperity. And in that world, some people developed very advanced concepts and philosophies, and I really admire those people. And it it I think that it tells me about something in the Indian society where there are remarkable intellectual and philosophical",
+      "endTime": 612.43,
+      "text": "I want to say two things. One is that uh I feel many of us are brought up on uh unstated belief in the word progress. We assume the world's gonna get better. Uh the technology is gonna get better generally, GDP will increase. But beyond that, I feel we should be very cautious. Things can go terribly wrong. Many, many countries have gone terribly wrong. So I feel It is better to tell children a fairy tale where their technology will get better, but it could well be that their state gets worse. So you know the uh progress of a society is something far more complex and should not be taken for granted. So it's a very iffy thing, it's something to aspire for. We should dream of it, but we should not count on it. The second thing I want to say is that I've actually been struck by the emergence of Like Mahavir and concepts like uh Jainism in India. Because in that primitive society, it makes no functional sense at all. You're short of protein, you should be grabbing every scrap of protein that you can get. Okay, it is no golden age. So contrary to some claims that are made about some mythical past where uh the the where the streets were filled with cheese, right? Is that But there are no cats in America and the streets are filled with cheese. This is the kind of fable that the mice in Russia are told in a in a movie. So there was no mythical lost age where there was plenty and there was prosperity. And in that world, some people developed very advanced concepts and philosophies, and I really admire those people. And it it I think that it tells me about something in the Indian society where there are remarkable intellectual and philosophical capabilities.",
       "words": [
         {
           "word": "I",
@@ -10290,21 +10290,21 @@
           "startTime": 610.59,
           "endTime": 611.23,
           "confidence": 0.9994
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 611.23,
-      "endTime": 628.65,
-      "text": "capabilities. And it also tells me that there is perhaps long before the world can come together, long before globalization, there is a kind of globalization happening in this conceptual expanding circle. So, you know, let's get down to uh the topic of our episode, the three globalizations",
-      "words": [
+        },
         {
           "word": "capabilities.",
           "startTime": 611.23,
           "endTime": 612.43,
           "confidence": 0.9078
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 612.43,
+      "endTime": 628.65,
+      "text": "And it also tells me that there is perhaps long before the world can come together, long before globalization, there is a kind of globalization happening in this conceptual expanding circle. So, you know, let's get down to uh the topic of our episode, the three globalizations",
+      "words": [
         {
           "word": "And",
           "startTime": 612.43,
@@ -26772,8 +26772,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 1534.31,
-      "endTime": 1585.45,
-      "text": "business. They made it Rancid deliberately, and I have a counter story to your story. Let's see where that takes us, which is that when the iPod was first introduced, right, it had a random feature that it would just play songs at random. And some people began to complain that boss mere favorite artist ka Barbarata it is surely not a coincidence. It should be random, but I got six Bruce Swingsteens in a row. That cannot be random. But because people don't understand randomness. Correct. And the thing is you know the law of truly large numbers, given a long enough number of iterations, any undeclined thing will happen, including six Bruce Swingstein songs in a row. So how Apple dealt with this complaint was by introducing an algorithm which made it non-random, which got in the way of the randomness and made sure that if something was appearing. Non-random, it would just be changed, right? To so to make it appear random and not actually random. So what a mind-blowing story.",
+      "endTime": 1556.6,
+      "text": "business. They made it Rancid deliberately, and I have a counter story to your story. Let's see where that takes us, which is that when the iPod was first introduced, right, it had a random feature that it would just play songs at random. And some people began to complain that boss mere favorite artist ka Barbarata it is surely not a coincidence. It should be random, but I got six Bruce Swingsteens in a row. That cannot be random. But",
       "words": [
         {
           "word": "business.",
@@ -27260,7 +27260,15 @@
           "startTime": 1555.88,
           "endTime": 1556.6,
           "confidence": 0.5635
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1556.6,
+      "endTime": 1558.12,
+      "text": "because people don't understand randomness.",
+      "words": [
         {
           "word": "because",
           "startTime": 1556.6,
@@ -27290,7 +27298,15 @@
           "startTime": 1557.4,
           "endTime": 1558.12,
           "confidence": 0.9548
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1558.12,
+      "endTime": 1585.45,
+      "text": "Correct. And the thing is you know the law of truly large numbers, given a long enough number of iterations, any undeclined thing will happen, including six Bruce Swingstein songs in a row. So how Apple dealt with this complaint was by introducing an algorithm which made it non-random, which got in the way of the randomness and made sure that if something was appearing. Non-random, it would just be changed, right? To so to make it appear random and not actually random. So what a mind-blowing story.",
+      "words": [
         {
           "word": "Correct.",
           "startTime": 1558.12,
@@ -36614,8 +36630,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2095.61,
-      "endTime": 2116.51,
-      "text": "I want to simplify it for our listeners. This is of course called comparative advantage. And here's the idea. I am a better podcaster than you. I am also a better economist than you. However, I do the podcasting and I let you do the economics because hey, I can't spend all my time doing economics. So yeah, comparative advantage. Both obviously but yeah. Gains from trade.",
+      "endTime": 2114.89,
+      "text": "I want to simplify it for our listeners. This is of course called comparative advantage. And here's the idea. I am a better podcaster than you. I am also a better economist than you. However, I do the podcasting and I let you do the economics because hey, I can't spend all my time doing economics. So yeah, comparative advantage. Both obviously but",
       "words": [
         {
           "word": "I",
@@ -36994,7 +37010,15 @@
           "startTime": 2114.73,
           "endTime": 2114.89,
           "confidence": 0.6767
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2114.89,
+      "endTime": 2159.9,
+      "text": "yeah. Gains from trade. I will also say this in a different way. I'll go from first principles of public economics. What is the idea? The idea is that freedom works. Freedom works well, except when there's a market failure, in which case you need to generally classify it into one of the four categories of market failure and think it through clearly. Is there asymmetric information? Is there an externality? Is there a public good? Okay, like that, you need to be clear that you've got a market failure in your hands, and then maybe a state intervention is justifiable. Now it's so clear when a private voluntary transaction is taking place to buy ball bearings from Mozambique. There is no market failure. So when a state intervenes in that. it is harming and not",
+      "words": [
         {
           "word": "yeah.",
           "startTime": 2114.89,
@@ -37018,15 +37042,7 @@
           "startTime": 2116.01,
           "endTime": 2116.51,
           "confidence": 0.8413
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2118.79,
-      "endTime": 2159.9,
-      "text": "I will also say this in a different way. I'll go from first principles of public economics. What is the idea? The idea is that freedom works. Freedom works well, except when there's a market failure, in which case you need to generally classify it into one of the four categories of market failure and think it through clearly. Is there asymmetric information? Is there an externality? Is there a public good? Okay, like that, you need to be clear that you've got a market failure in your hands, and then maybe a state intervention is justifiable. Now it's so clear when a private voluntary transaction is taking place to buy ball bearings from Mozambique. There is no market failure. So when a state intervenes in that. it is harming and not",
-      "words": [
+        },
         {
           "word": "I",
           "startTime": 2118.79,
@@ -38330,8 +38346,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2181.02,
-      "endTime": 2211.4,
-      "text": "block them. Or I want to use uh public economics reasoning that when the state intervenes in the absence of a market failure It has an adverse impact on welfare. It has an adverse impact on GDP. So if you think of world GDP and the state is doing all these interference where there is no market failure, the state is harming world GDP. And in the second globalization, one by one, when the state got out of all those interventions. Global GDP blossom. And I think about this like uh you know,",
+      "endTime": 2209.96,
+      "text": "block them. Or I want to use uh public economics reasoning that when the state intervenes in the absence of a market failure It has an adverse impact on welfare. It has an adverse impact on GDP. So if you think of world GDP and the state is doing all these interference where there is no market failure, the state is harming world GDP. And in the second globalization, one by one, when the state got out of all those interventions. Global GDP blossom. And I think",
       "words": [
         {
           "word": "block",
@@ -38854,7 +38870,15 @@
           "startTime": 2209.8,
           "endTime": 2209.96,
           "confidence": 0.9965
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2209.96,
+      "endTime": 2253.16,
+      "text": "about this like uh you know, along the axis of consent and coercion, right? All um voluntary trade, or m you know it's a voluntary actions of two people. You and I trade, we are both better off, that is, you know, mutual consent. Consent wins, GDP grows. But if there is coercion by the state, not letting you and me trade, the benefits that both of you could have had, because it's a positive sum game, they don't happen. So coercion always takes you into a vicious cycle you know, cooperation and consent can bring you out of that vicious cycle. And I and I love the way you've defined freedom through this episode by pointing out that freedom is a natural state where um, you know, adults are engaging with each other through voluntary trade. And it is states that get in the way and are the enemies of",
+      "words": [
         {
           "word": "about",
           "startTime": 2209.96,
@@ -38890,15 +38914,7 @@
           "startTime": 2211.16,
           "endTime": 2211.4,
           "confidence": 0.7693
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2211.4,
-      "endTime": 2253.16,
-      "text": "along the axis of consent and coercion, right? All um voluntary trade, or m you know it's a voluntary actions of two people. You and I trade, we are both better off, that is, you know, mutual consent. Consent wins, GDP grows. But if there is coercion by the state, not letting you and me trade, the benefits that both of you could have had, because it's a positive sum game, they don't happen. So coercion always takes you into a vicious cycle you know, cooperation and consent can bring you out of that vicious cycle. And I and I love the way you've defined freedom through this episode by pointing out that freedom is a natural state where um, you know, adults are engaging with each other through voluntary trade. And it is states that get in the way and are the enemies of",
-      "words": [
+        },
         {
           "word": "along",
           "startTime": 2211.4,
@@ -44340,8 +44356,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2540.47,
-      "endTime": 2542.95,
-      "text": "Collaborating with European governments, everybody is",
+      "endTime": 2544.39,
+      "text": "Collaborating with European governments, everybody is aligning.",
       "words": [
         {
           "word": "Collaborating",
@@ -44378,21 +44394,21 @@
           "startTime": 2542.79,
           "endTime": 2542.95,
           "confidence": 0.9801
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 2542.95,
-      "endTime": 2547.43,
-      "text": "aligning. European governments are telling a Dutch businessman don't sell this machine to the",
-      "words": [
+        },
         {
           "word": "aligning.",
           "startTime": 2542.95,
           "endTime": 2544.39,
           "confidence": 0.6561
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 2544.39,
+      "endTime": 2547.43,
+      "text": "European governments are telling a Dutch businessman don't sell this machine to the",
+      "words": [
         {
           "word": "European",
           "startTime": 2544.39,
@@ -69252,8 +69268,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 3946.11,
-      "endTime": 4284.41,
-      "text": "Anyone who has watched I think it was episode nine of Everything Is Everything about how I reverse my type to diabetes will know that no matter how h happy I feel at your words, I will not say Apke Mou make he shakar. I will say apke mu make he indeed is a superfood. Avoid shakar, it is poison. Give us recommendations today. So I'll give you a recommendation and globalization themed, because after all, that is what we're talking about. And the first book I want to recommend is right here. And I will actually pick up a physical book I want you to note instead of, you know, looking at my kindle or looking at my notes. This is a great book called Public Opinion by Walter Lippmann, published, I think, circa. Published uh decades ago, a century ago, at least a century ago, right? And I want to read out something from the first chapter, which is like a class. Uh first chapter and it's called The World Outside and the Pictures in Our Heads. Right. That's the title again, The World Outside and the Pictures in Our Heads. And he writes There is an island in the ocean where in nineteen fourteen a few Englishmen, Frenchmen, and Germans lived. No cable reaches Red Island, and the British mail steamer comes but once in sixty days. In September it had not yet come, and the islanders were still talking about the latest newspaper which ruled about the approaching trial of Madame Kellow for the shooting Calmet. It was, therefore, with more than usual eagerness, that the whole colony assembled at the quay on a day in mid September to hear from the captain what the verdict had been. They learned that for over six weeks now, those of them who were English and those of them who were French had been fighting on behalf of the sanctity of treaties against those of them who were German. For six strange weeks they acted as if they were friends. when in fact they were enemies. Right? So it's a passage of time. They are at war and uh they don't know that they are at war for six weeks and are behaving normally. And when the first world war ends, exactly the same thing happens. That they don't know uh that the war is you know, they are still fighting. Well the war is actually over and everybody shaking hands and the leaders are all posing for pictures and the war is but they are still fighting and they're still killing each other. And uh so this is public opinion by Walter Lippmann is a great book if you want to understand the media, the way the media manipulates us uh what we should watch out for. And it's published more than a hundred years ago and is incredibly precinct. Like no technological change invalidates any of this book. So it's a masterpiece. Gotta read it. And that fact about the First World War also reminds me of a Japanese soldier called Hiro Unoda. Have you heard of Hiro Unoda? So Hiru Onoda was a Japanese soldier who at one point, uh in the second world war, I think circa 1944, uh landed up in this island in the Philippines where his orders were defend until the death, right? And here's what happened. No one told him the war was over. He was alone on this island, he had to defend it to his death. He followed orders because that is what a good soldier must do. And twenty-nine years later, he discovered the war was over. For twenty nine years he was on this island in the Philippines, every day defending the borders and trying to stop intruders, and obviously it was an isolated island. That brings me to my second recommendation. The reason I thought of Hero Unoda when you know I read out that story about the first first world war is that I first heard of Hero Unoda in this awesome podcast episode called Supernova in the East, part one, by Dan Carlin. And it's from Dan Carlin's great podcast, Hardcore History, perhaps the greatest podcast of all time. And that's my recommendation, not just the podcast Hardcore History as a whole, but there is a series there called Blueprint for Armageddon. And this is about World War One. And it's six episodes of about five hours each. Right? So about thirty hours of content, twenty five, thirty hours of content. I've forgotten exactly what uh exactly how long it is. And it is just one guy talking. It's a Dan Collin talking and he's practically thinking aloud and he doesn't read off a script or something. He just got themes he wants to talk about and he talks about them and there are no sound effects except the opening packaging right at the start, but there are no sound effects at all. It's just him talking, talking in a conversational way, not in a broadcasty way. And and I of course listen at double speed and that normalizes for me. But I remember I had gone out running this was back in the days I used to run enthusiastically and I'd gone out running one day and I started listening to this and I finished my one hour workout routine. And then I couldn't go back up to my apartment. I was standing beneath and I was just listening, listening. Another day I went out running, it started raining, I stayed outside. And that was a day he was speaking about a bunch of soldiers who died in a particular battle. And the night before they died, all of them sent letters to their wives or girlfriends. And they didn't know they were gonna die. They just knew they were gonna battle. And they all wrote letters to their wives and girlfriends. And he read out these letters. And I was weeping in the rain. And it is so powerful. And and I think listening to hardcore history, listening to Blueprint Farmageton really uh, you know, drove home to me the power of audio and the power of storytelling. That you don't need anything special. You just need a story and you just need to talk about it. And there's nothing beyond that. And that is primal. You know, that was our first entertainment. We had no music back in the day, no television, no web series, no binge watching, nothing. We had stories we could tell each other. Audio is the most powerful medium in the world. And you know, listening to hardcore history, listening to Blueprint Pharma get on not only taught me many lessons about the about the world war, about the great war as it were, World War One, but also taught me lessons about humanity, about resilience, about character, about tragedy, about the folly of nation states. But it also taught me a lesson about the power of audio. And I think that since we are doing a video podcast, that's a great note to end on.",
+      "endTime": 3961.17,
+      "text": "Anyone who has watched I think it was episode nine of Everything Is Everything about how I reverse my type to diabetes will know that no matter how h happy I feel at your words, I will not say Apke Mou make he shakar. I will say apke mu make he indeed is a superfood. Avoid shakar, it is poison.",
       "words": [
         {
           "word": "Anyone",
@@ -69614,7 +69630,15 @@
           "startTime": 3960.67,
           "endTime": 3961.17,
           "confidence": 0.9228
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 3968.04,
+      "endTime": 3969.32,
+      "text": "Give us recommendations today.",
+      "words": [
         {
           "word": "Give",
           "startTime": 3968.04,
@@ -69638,7 +69662,15 @@
           "startTime": 3968.92,
           "endTime": 3969.32,
           "confidence": 0.8007
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3969.32,
+      "endTime": 4284.41,
+      "text": "So I'll give you a recommendation and globalization themed, because after all, that is what we're talking about. And the first book I want to recommend is right here. And I will actually pick up a physical book I want you to note instead of, you know, looking at my kindle or looking at my notes. This is a great book called Public Opinion by Walter Lippmann, published, I think, circa. Published uh decades ago, a century ago, at least a century ago, right? And I want to read out something from the first chapter, which is like a class. Uh first chapter and it's called The World Outside and the Pictures in Our Heads. Right. That's the title again, The World Outside and the Pictures in Our Heads. And he writes There is an island in the ocean where in nineteen fourteen a few Englishmen, Frenchmen, and Germans lived. No cable reaches Red Island, and the British mail steamer comes but once in sixty days. In September it had not yet come, and the islanders were still talking about the latest newspaper which ruled about the approaching trial of Madame Kellow for the shooting Calmet. It was, therefore, with more than usual eagerness, that the whole colony assembled at the quay on a day in mid September to hear from the captain what the verdict had been. They learned that for over six weeks now, those of them who were English and those of them who were French had been fighting on behalf of the sanctity of treaties against those of them who were German. For six strange weeks they acted as if they were friends. when in fact they were enemies. Right? So it's a passage of time. They are at war and uh they don't know that they are at war for six weeks and are behaving normally. And when the first world war ends, exactly the same thing happens. That they don't know uh that the war is you know, they are still fighting. Well the war is actually over and everybody shaking hands and the leaders are all posing for pictures and the war is but they are still fighting and they're still killing each other. And uh so this is public opinion by Walter Lippmann is a great book if you want to understand the media, the way the media manipulates us uh what we should watch out for. And it's published more than a hundred years ago and is incredibly precinct. Like no technological change invalidates any of this book. So it's a masterpiece. Gotta read it. And that fact about the First World War also reminds me of a Japanese soldier called Hiro Unoda. Have you heard of Hiro Unoda? So Hiru Onoda was a Japanese soldier who at one point, uh in the second world war, I think circa 1944, uh landed up in this island in the Philippines where his orders were defend until the death, right? And here's what happened. No one told him the war was over. He was alone on this island, he had to defend it to his death. He followed orders because that is what a good soldier must do. And twenty-nine years later, he discovered the war was over. For twenty nine years he was on this island in the Philippines, every day defending the borders and trying to stop intruders, and obviously it was an isolated island. That brings me to my second recommendation. The reason I thought of Hero Unoda when you know I read out that story about the first first world war is that I first heard of Hero Unoda in this awesome podcast episode called Supernova in the East, part one, by Dan Carlin. And it's from Dan Carlin's great podcast, Hardcore History, perhaps the greatest podcast of all time. And that's my recommendation, not just the podcast Hardcore History as a whole, but there is a series there called Blueprint for Armageddon. And this is about World War One. And it's six episodes of about five hours each. Right? So about thirty hours of content, twenty five, thirty hours of content. I've forgotten exactly what uh exactly how long it is. And it is just one guy talking. It's a Dan Collin talking and he's practically thinking aloud and he doesn't read off a script or something. He just got themes he wants to talk about and he talks about them and there are no sound effects except the opening packaging right at the start, but there are no sound effects at all. It's just him talking, talking in a conversational way, not in a broadcasty way. And and I of course listen at double speed and that normalizes for me. But I remember I had gone out running this was back in the days I used to run enthusiastically and I'd gone out running one day and I started listening to this and I finished my one hour workout routine. And then I couldn't go back up to my apartment. I was standing beneath and I was just listening, listening. Another day I went out running, it started raining, I stayed outside. And that was a day he was speaking about a bunch of soldiers who died in a particular battle. And the night before they died, all of them sent letters to their wives or girlfriends. And they didn't know they were gonna die. They just knew they were gonna battle. And they all wrote letters to their wives and girlfriends. And he read out these letters. And I was weeping in the rain. And it is so powerful. And and I think listening to hardcore history, listening to Blueprint Farmageton really uh, you know, drove home to me the power of audio and the power of storytelling. That you don't need anything special. You just need a story and you just need to talk about it. And there's nothing beyond that. And that is primal. You know, that was our first entertainment. We had no music back in the day, no television, no web series, no binge watching, nothing. We had stories we could tell each other. Audio is the most powerful medium in the world. And you know, listening to hardcore history, listening to Blueprint Pharma get on not only taught me many lessons about the about the world war, about the great war as it were, World War One, but also taught me lessons about humanity, about resilience, about character, about tragedy, about the folly of nation states. But it also taught me a lesson about the power of audio. And I think that since we are doing a video podcast, that's a great note to end on.",
+      "words": [
         {
           "word": "So",
           "startTime": 3969.32,

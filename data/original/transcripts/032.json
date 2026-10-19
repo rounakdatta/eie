@@ -5,7 +5,7 @@
     "durationSeconds": 7805,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -14507,8 +14507,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 759.69,
-      "endTime": 924.34,
-      "text": "So um at heart, inside every computer, inside every cell phone, inside every smartwatch, bracket, I have a dumb watch. Uh inside every uh modern device, there is a thing that is called a CPU. Okay, CPU stands for a central processing unit. What is there in a CPU is the ability to process one instruction at a time. Okay, so hiding inside the CPU is the capability to read a computer program. And what is a computer program? It is one painful tiny detailed instruction after another. So it's an instruction like add one to this number. Okay, then check if this number is more than 42. If so, perform this action, if not perform that action. Okay. That capability is hiding inside a CPU. So a computer is a circuit board on which there is a CPU and there is some memory. Now so far all we have is the hardware. You can write computer programs in a language which is directly understood by the CPU. Okay, and that is called assembly language. There is an English like narration of how assembly language is written. And then there is a program that is called an assembler, which converts that English looking assembly language into the bits and bytes that go sit on the CPU and run there. Okay, you can do that. So that is the most bare metal way of writing computer programs. And for all practical purposes, writing assembly language is impossible for most humans. Okay, there was a bad world in which The first computers were created where the only thing you could do was write an assembly language. And that was horrendously difficult. So if you go back to the very first computers around Johnny von Neumann and the Enyak computer and the early IBM computers, they were programmed only in assembly language. And this was ridiculously hard. So we will put up a screen. An example of assembly code and you can't understand anything, it's very hard to write. You have to concentrate at ridiculous levels, you need to be a superperson in order to do that. So right from the start, the chase was on that can we find a better language that fits the human mind? Okay, that's called a programming language. A programming language fits the human mind. Completely unambiguous. So it's unlike human language which is full of context and nuance, and we each of us read a sentence differently. That's not permissible. A computer programming language is an explicit, precise statement of what has to be done, but it is designed for the human mind to be able to read",
+      "endTime": 978.02,
+      "text": "So um at heart, inside every computer, inside every cell phone, inside every smartwatch, bracket, I have a dumb watch. Uh inside every uh modern device, there is a thing that is called a CPU. Okay, CPU stands for a central processing unit. What is there in a CPU is the ability to process one instruction at a time. Okay, so hiding inside the CPU is the capability to read a computer program. And what is a computer program? It is one painful tiny detailed instruction after another. So it's an instruction like add one to this number. Okay, then check if this number is more than 42. If so, perform this action, if not perform that action. Okay. That capability is hiding inside a CPU. So a computer is a circuit board on which there is a CPU and there is some memory. Now so far all we have is the hardware. You can write computer programs in a language which is directly understood by the CPU. Okay, and that is called assembly language. There is an English like narration of how assembly language is written. And then there is a program that is called an assembler, which converts that English looking assembly language into the bits and bytes that go sit on the CPU and run there. Okay, you can do that. So that is the most bare metal way of writing computer programs. And for all practical purposes, writing assembly language is impossible for most humans. Okay, there was a bad world in which The first computers were created where the only thing you could do was write an assembly language. And that was horrendously difficult. So if you go back to the very first computers around Johnny von Neumann and the Enyak computer and the early IBM computers, they were programmed only in assembly language. And this was ridiculously hard. So we will put up a screen. An example of assembly code and you can't understand anything, it's very hard to write. You have to concentrate at ridiculous levels, you need to be a superperson in order to do that. So right from the start, the chase was on that can we find a better language that fits the human mind? Okay, that's called a programming language. A programming language fits the human mind. Completely unambiguous. So it's unlike human language which is full of context and nuance, and we each of us read a sentence differently. That's not permissible. A computer programming language is an explicit, precise statement of what has to be done, but it is designed for the human mind to be able to read and write. And then there has to be a translation of the programming language into the assembly. because at the bare metal they'll only understand assembly. Okay This translation is done using a very specialized computer program that is called a compiler. So a compiler converts the raw text of your programming language into an assembly language which can go into the CPU. Okay, so this is the basics of what is a programming language and right from the beginning. In nineteen fifty two, John Bacchus invented Fotran and Lisp got created, and ever since there has been the journey of finding newer and newer programming languages that better fit the human mind and are uh convertible into the assembly language at very high levels of efficiency, so that you don't want to waste computer power at down",
       "words": [
         {
           "word": "So",
@@ -17161,15 +17161,7 @@
           "startTime": 924.02,
           "endTime": 924.34,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 924.34,
-      "endTime": 925.7,
-      "text": "and write.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 924.34,
@@ -17181,15 +17173,7 @@
           "startTime": 924.58,
           "endTime": 925.7,
           "confidence": 0.9744
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 925.7,
-      "endTime": 978.02,
-      "text": "And then there has to be a translation of the programming language into the assembly. because at the bare metal they'll only understand assembly. Okay This translation is done using a very specialized computer program that is called a compiler. So a compiler converts the raw text of your programming language into an assembly language which can go into the CPU. Okay, so this is the basics of what is a programming language and right from the beginning. In nineteen fifty two, John Bacchus invented Fotran and Lisp got created, and ever since there has been the journey of finding newer and newer programming languages that better fit the human mind and are uh convertible into the assembly language at very high levels of efficiency, so that you don't want to waste computer power at down",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 925.7,
@@ -18049,8 +18033,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 979.94,
-      "endTime": 1104.1,
-      "text": "that brings us to the operating system. Okay, so in the o right in the beginning, Computers were done in the following fashion, that the CPU was given over exclusively to one program at a time. So you would submit a program for a run. That program would be on a deck of cards. There were physical decks of cards that would be like this. Gentle reader, I'm old enough that I've actually worked with punch cards. So there'd be a deck of cards which is copied into the computer's memory. The computer runs that and then it stops. Then it is ready to take the next deck of cards. That's how the computer worked. At a time it did only one thing. Okay, then early on at MIT they invented something called the CTSS, which was sort of the first operating system, where the idea was that there are no more decks of cards. You get a screen, I get a screen, hundreds of people get a separate screen, and they start typing commands in the screen, but they're all sharing the same underlying computer. The time-sharing system where we each of us is given the illusion that we have a computer to ourselves. But the computer is very fast. We are very slow, we type slowly. So little slices of the computer's mind are given to each of the screens. Okay, now you get to the problem of a program that is called the operating system, which sits at the computer. And which is this supervisor, which is this manager of the resources of the computer. So the computer has some CPU, it has some memory, it has some disk, and this has to be shared amongst all the users. It has to be shared in a way that is fair to all the users. It has to be shared in a way that no user can collide with another user. I should not be able to do bad things to you, and I should not be able to do bad things that bring down the system. and all of us have to be given access to the powers and the capabilities and the resources of the system while having fairness on resource allocation and preventing us from damaging each other or bringing down",
+      "endTime": 1170.73,
+      "text": "that brings us to the operating system. Okay, so in the o right in the beginning, Computers were done in the following fashion, that the CPU was given over exclusively to one program at a time. So you would submit a program for a run. That program would be on a deck of cards. There were physical decks of cards that would be like this. Gentle reader, I'm old enough that I've actually worked with punch cards. So there'd be a deck of cards which is copied into the computer's memory. The computer runs that and then it stops. Then it is ready to take the next deck of cards. That's how the computer worked. At a time it did only one thing. Okay, then early on at MIT they invented something called the CTSS, which was sort of the first operating system, where the idea was that there are no more decks of cards. You get a screen, I get a screen, hundreds of people get a separate screen, and they start typing commands in the screen, but they're all sharing the same underlying computer. The time-sharing system where we each of us is given the illusion that we have a computer to ourselves. But the computer is very fast. We are very slow, we type slowly. So little slices of the computer's mind are given to each of the screens. Okay, now you get to the problem of a program that is called the operating system, which sits at the computer. And which is this supervisor, which is this manager of the resources of the computer. So the computer has some CPU, it has some memory, it has some disk, and this has to be shared amongst all the users. It has to be shared in a way that is fair to all the users. It has to be shared in a way that no user can collide with another user. I should not be able to do bad things to you, and I should not be able to do bad things that bring down the system. and all of us have to be given access to the powers and the capabilities and the resources of the system while having fairness on resource allocation and preventing us from damaging each other or bringing down the system. So this specialized program is called the operating system. So you and I may think that I am interacting with a browser or I am interacting with an editor, that is what we see. But for that editor to run, for that editor to access resources, for that editor to behave in a safe way. All these things are being orchestrated behind the scenes by something that is called the operating system. There is an older term which I actually find descriptive which is supervisor. So think of it as the supervisor who's there all the time. The operating system is always there behind the scenes, watching over the shop, watching over all the processes that are running and applying rules to all of them. receiving requests for resources and access to all kinds of machine capabilities by all of them. Sometimes saying no, I can't do this or taking back the result to that process. So all the things that users do are processes, they all hang off an operating system. So the operating system is the mother, it's the core of what lies inside every computer.",
       "words": [
         {
           "word": "that",
@@ -20367,15 +20351,7 @@
           "startTime": 1103.78,
           "endTime": 1104.1,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1104.1,
-      "endTime": 1105.46,
-      "text": "the system. So",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1104.1,
@@ -20393,15 +20369,7 @@
           "startTime": 1105.14,
           "endTime": 1105.46,
           "confidence": 0.9906
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1105.46,
-      "endTime": 1159.43,
-      "text": "this specialized program is called the operating system. So you and I may think that I am interacting with a browser or I am interacting with an editor, that is what we see. But for that editor to run, for that editor to access resources, for that editor to behave in a safe way. All these things are being orchestrated behind the scenes by something that is called the operating system. There is an older term which I actually find descriptive which is supervisor. So think of it as the supervisor who's there all the time. The operating system is always there behind the scenes, watching over the shop, watching over all the processes that are running and applying rules to all of them. receiving requests for resources and access to all kinds of machine capabilities by all of them. Sometimes saying no, I can't do this or taking back the result",
-      "words": [
+        },
         {
           "word": "this",
           "startTime": 1105.46,
@@ -21313,15 +21281,7 @@
           "startTime": 1158.79,
           "endTime": 1159.43,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1159.43,
-      "endTime": 1161.27,
-      "text": "to that process. So all",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1159.43,
@@ -21351,15 +21311,7 @@
           "startTime": 1161.11,
           "endTime": 1161.27,
           "confidence": 0.9997
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1161.27,
-      "endTime": 1170.73,
-      "text": "the things that users do are processes, they all hang off an operating system. So the operating system is the mother, it's the core of what lies inside every computer.",
-      "words": [
+        },
         {
           "word": "the",
           "startTime": 1161.27,
@@ -32419,8 +32371,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1782.58,
-      "endTime": 1895.13,
-      "text": "Definitely not 64 K bytes. Okay, so this was an ancient machine and he was just fooling around. He wrote a space travel game. Cunhan writes that I played that game and I enjoyed it. Many other people enjoyed playing the game. They said ah, so nice. Okay so that was the beginning of trying to do something with that PDP 7. And he was fooling around and he was fooling around. And there comes a day where uh Ken Thompson understood that you know I am three weeks away from an operating system. Okay, so what had happened was he was fighting with that disc, and the disc was faster than the computer. And so he wrote a pretty general disc scheduling algorithm and a file system, and a whole bunch of things had been done. He had an application, the space travel game, he had a file system, he had a device driver to control a disk, a pretty sophisticated device driver that could even deal with a disk that was faster than the computer. And then he suddenly had this. clear idea for I am three weeks away from a complete operating system from a very simple strip down operating system. And it just so happened that his wife and child were going to California to visit his parents. And so he had three weeks all to himself. And he planned it as one week to write an editor, one week to write an assembler, one week to write the operating system kernel, in three weeks I'll be done. And it actually worked out like that. did that one marathon sprint and it was exactly one week for an editor, one week for an assembler, one week for a kernel, put the whole thing together, boom, Unix had booted. And there was an internal conversation, what should the name be, and of course it was deeply inspired by the failed Multics experience, but it was very bare, it was very stripped down, and so they chose the name Unix.",
+      "endTime": 1924.63,
+      "text": "Definitely not 64 K bytes. Okay, so this was an ancient machine and he was just fooling around. He wrote a space travel game. Cunhan writes that I played that game and I enjoyed it. Many other people enjoyed playing the game. They said ah, so nice. Okay so that was the beginning of trying to do something with that PDP 7. And he was fooling around and he was fooling around. And there comes a day where uh Ken Thompson understood that you know I am three weeks away from an operating system. Okay, so what had happened was he was fighting with that disc, and the disc was faster than the computer. And so he wrote a pretty general disc scheduling algorithm and a file system, and a whole bunch of things had been done. He had an application, the space travel game, he had a file system, he had a device driver to control a disk, a pretty sophisticated device driver that could even deal with a disk that was faster than the computer. And then he suddenly had this. clear idea for I am three weeks away from a complete operating system from a very simple strip down operating system. And it just so happened that his wife and child were going to California to visit his parents. And so he had three weeks all to himself. And he planned it as one week to write an editor, one week to write an assembler, one week to write the operating system kernel, in three weeks I'll be done. And it actually worked out like that. did that one marathon sprint and it was exactly one week for an editor, one week for an assembler, one week for a kernel, put the whole thing together, boom, Unix had booted. And there was an internal conversation, what should the name be, and of course it was deeply inspired by the failed Multics experience, but it was very bare, it was very stripped down, and so they chose the name Unix. So sort of conveying something not Multics, but actually It was there. So that's where it began. But management didn't know and management didn't want it. So then with this in hand, they went back to management and said, Hey, you know, we've written a small operating system. Now give us money and we will make it better and bigger. And management said, No, we're not going anywhere near operating systems. Yeah, because you guys wasted tons of money on that multi-x project. No OS research here. OS's",
       "words": [
         {
           "word": "Definitely",
@@ -34473,15 +34425,7 @@
           "startTime": 1894.25,
           "endTime": 1895.13,
           "confidence": 0.7125
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1895.13,
-      "endTime": 1896.41,
-      "text": "So sort of",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 1895.13,
@@ -34499,15 +34443,7 @@
           "startTime": 1896.25,
           "endTime": 1896.41,
           "confidence": 0.9876
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 1896.41,
-      "endTime": 1924.63,
-      "text": "conveying something not Multics, but actually It was there. So that's where it began. But management didn't know and management didn't want it. So then with this in hand, they went back to management and said, Hey, you know, we've written a small operating system. Now give us money and we will make it better and bigger. And management said, No, we're not going anywhere near operating systems. Yeah, because you guys wasted tons of money on that multi-x project. No OS research here. OS's",
-      "words": [
+        },
         {
           "word": "conveying",
           "startTime": 1896.41,
@@ -49501,8 +49437,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 2734.97,
-      "endTime": 2808.44,
-      "text": "We should always keep dancing So I have a question here. Which is uh which has to like one of the colorful descriptions of Multics and White failed is that Multics was trying to climb many trees at the same time. Right? A description I love. And one of the qualities that mathematicians and programmers and so on value is elegance. In fact, Cunningham wrote a an early book on um a computer uh how to do programming, which was modeled on the elements of stri uh elements of style by Strunk and White. And his thing was the same values which you take to writing good prose, which is simplicity, elegance, you make it easy to understand, not a word out of place. You need those values in programming as well. So my question to you is kind of twofold here. One is that what is the value of internalizing this particular uh uh sort of qu uh quality as you know uh part of your set of uh uh personal values? And number two, how much is this dictated by the scarcity of time and equipment that you would actually get? Because you describe Ken Thomson, okay, he's got those eight hours at night and he's staying up all night. And he can't afford to be wasteful in that time in any of the programming that he does.",
+      "endTime": 2809.72,
+      "text": "We should always keep dancing So I have a question here. Which is uh which has to like one of the colorful descriptions of Multics and White failed is that Multics was trying to climb many trees at the same time. Right? A description I love. And one of the qualities that mathematicians and programmers and so on value is elegance. In fact, Cunningham wrote a an early book on um a computer uh how to do programming, which was modeled on the elements of stri uh elements of style by Strunk and White. And his thing was the same values which you take to writing good prose, which is simplicity, elegance, you make it easy to understand, not a word out of place. You need those values in programming as well. So my question to you is kind of twofold here. One is that what is the value of internalizing this particular uh uh sort of qu uh quality as you know uh part of your set of uh uh personal values? And number two, how much is this dictated by the scarcity of time and equipment that you would actually get? Because you describe Ken Thomson, okay, he's got those eight hours at night and he's staying up all night. And he can't afford to be wasteful in that time in any of the programming that he does. So how much of it is born out of",
       "words": [
         {
           "word": "We",
@@ -50883,15 +50819,7 @@
           "startTime": 2808.12,
           "endTime": 2808.44,
           "confidence": 0.9544
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 2808.44,
-      "endTime": 2815.51,
-      "text": "So how much of it is born out of circumstances? This computer is ridiculously weak. This computer is mind blowingly underpowered by modern standards. So",
-      "words": [
+        },
         {
           "word": "So",
           "startTime": 2808.44,
@@ -50945,7 +50873,15 @@
           "startTime": 2809.64,
           "endTime": 2809.72,
           "confidence": 0.9999
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 2809.72,
+      "endTime": 2815.51,
+      "text": "circumstances? This computer is ridiculously weak. This computer is mind blowingly underpowered by modern standards. So",
+      "words": [
         {
           "word": "circumstances?",
           "startTime": 2809.72,
@@ -53645,8 +53581,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 2961.62,
-      "endTime": 3060.63,
-      "text": "I want to go to the question, why did this happen? Okay, why did Unix work? Was it just an accident? And I think that there are many, many important lessons that we can take from this story, from this supreme success. Okay. So if you Are a cold uh optimizer of your own life and career and merely wish to make mega bucks, you should care that the most valuable industry of this world today is equal to everything running Unix other than one holdout, that is some Microsoft Windows computers. Everything else is running Unix. So then you should be asking, hey, how did that happen? Or if you think more deeply about philosophy and culture, you should be asking, What is that DNA? What is the philosophy and the culture that worked so well? So here are some ingredients that are on my mind. I'll want to just ramble about them in no particular order. Okay, so first is that aesthetic sense of simplicity. That systems that are designed around a few simple components and throw away a lot of features and capability work better because the human mind can comprehend them. Uh the great computer scientist David Galanter has a great line. He says that When faced with complexity, our only defense is beauty. So there is an aesthetic sense of beauty which is important. And we need to be in touch with that aesthetic sense. Because only when things are simple and beautiful. So I want to use the idea that simplicity and beauty is the user interface of the human mind. I don't know why that is so. Humans are not robots. We are created by billions of years of evolution. and the abstractions are simple, elegant abstractions. This reminds me of uh a quote by the",
+      "endTime": 3058.79,
+      "text": "I want to go to the question, why did this happen? Okay, why did Unix work? Was it just an accident? And I think that there are many, many important lessons that we can take from this story, from this supreme success. Okay. So if you Are a cold uh optimizer of your own life and career and merely wish to make mega bucks, you should care that the most valuable industry of this world today is equal to everything running Unix other than one holdout, that is some Microsoft Windows computers. Everything else is running Unix. So then you should be asking, hey, how did that happen? Or if you think more deeply about philosophy and culture, you should be asking, What is that DNA? What is the philosophy and the culture that worked so well? So here are some ingredients that are on my mind. I'll want to just ramble about them in no particular order. Okay, so first is that aesthetic sense of simplicity. That systems that are designed around a few simple components and throw away a lot of features and capability work better because the human mind can comprehend them. Uh the great computer scientist David Galanter has a great line. He says that When faced with complexity, our only defense is beauty. So there is an aesthetic sense of beauty which is important. And we need to be in touch with that aesthetic sense. Because only when things are simple and beautiful. So I want to use the idea that simplicity and beauty is the user interface of the human mind. I don't know why that is so. Humans are not robots. We are created by billions of years of evolution. and the abstractions are simple, elegant abstractions.",
       "words": [
         {
           "word": "I",
@@ -55411,7 +55347,15 @@
           "startTime": 3057.91,
           "endTime": 3058.79,
           "confidence": 0.958
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 3058.79,
+      "endTime": 3067.49,
+      "text": "This reminds me of uh a quote by the aforementioned uh Dick Hamming, where he said, The purpose of computing is insight, not numbers.",
+      "words": [
         {
           "word": "This",
           "startTime": 3058.79,
@@ -55465,15 +55409,7 @@
           "startTime": 3060.47,
           "endTime": 3060.63,
           "confidence": 0.9979
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3060.63,
-      "endTime": 3067.49,
-      "text": "aforementioned uh Dick Hamming, where he said, The purpose of computing is insight, not numbers.",
-      "words": [
+        },
         {
           "word": "aforementioned",
           "startTime": 3060.63,
@@ -55569,8 +55505,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 3068.47,
-      "endTime": 3371.29,
-      "text": "Dick Hamming also uh has a great uh fact which is in that Bell Labs book. He was the first person to see it. He predicted back in the early sixties, You may think that Bell Labs does science and engineering, but more than half of it is going to be computation. And of course, he was absolutely right, as every sad graduate student in every field in the world now knows, you'll land up at grad school and all you do is programming. You may think you're doing biology, you may think you're doing political science. Gumfirke, it's just programming. So that is way the way the computer. The universe runs through algorithms. So universe is basically one big algorithm. Back to principles. So one principle is an aesthetic sense of beauty and simplicity. A second principle is to build tools and components and push the rest of the world aside, focus on one tool and one component at a time, and make that tool good. So build one small tool at a time with limited functionality, but then make it bulletproof. Make it well written, well tested, uh make it highly performative. That is capable of catering to very high levels of performance when given the correct level of resources. It can do almost anything. So, right, good algorithms do extreme amounts of unit testing, but have a simple coherent tool that does one thing at a time. And then create the mechanisms and the infrastructure for many, many tools to be able to work with each other. Okay. So make it easy for humans to combine tools. Don't ask humans to build a big giant complex system. Rather, go bottom up and build component, component, component. And then the humans will put them together like Lego blocks. And then we will get a big complex system. So I feel this is a very important design philosophy. Too often we get managers and conventional corporate computing. doing the so-called top down design where you start that we need this kind of enterprise IT system and then inside this we'll require this, inside this we'll require this, and we're going to do one big giant project and we'll throw thousands of manier at this. And that's really not an effective way to go. I want to tell my story about how I do this. And I I have had many conversations with some of the great gigs and hackers and I think there's a similar story there. I find that I think about a problem for a long time and don't write any code. It's just there, it's there on my mind, and I'm kind of processing it that I have filled my mind with the problem. I use the phrase have uploaded the problem in my brain. I make no promises on when I will give you an answer. And I know that when my mind is thinking about it, something is happening. And then in a large problem, I have that way of isolating that this is a difficult component, this is a difficult component, this is a difficult component. So I I isolate one, two, three difficult pieces out of that. And then I just throw away everything else and I focus on one. So I take one small problem, one small component, there'll be one function that's hard and I'll grind away at it, I'll think about the algorithms for it, I'll write it nicely, I'll test it nicely, and the greatest thing I do there is focus. That then I'm not thinking about everything else. I have got tunnel vision and I'm maniacally doing one or two or three critical components and just write them. Get them right and be proud and be happy that I've done these things properly. then zoom out and say, Okay guys, here we are, we're going to do this large thing, but I've got this in the pocket, I've got this in the pocket, I've got this in the pocket. And then suddenly a whole bunch of possibilities open up. Oh, this is so nice, we can connect this to this. Now we'll build this one translator that will convert this to this. And suddenly a whole system design blossoms. So it's good to do one small component at a time. It's good to find the hardest things and solve them and get them done. So I want to tell a story from the Adhar project, uh Nandan Nelekani, Sanjay Jay and others. were grappling with uh the problem of uh authentication, where there are like one point four billion people in the database, and Amitvarma presents himself and tries to make a fake ID. And the system has to be able to look at that and match it with one of the existing IDs. Or Amitvarma tries to go use the ID somewhere and say, Give me PDS rations and the system has to find that one in a billion and it also needs to do deduplication that if by mistake a second one has crept in, then you need to find that these two records are identical. And at the time they uh connected to the biggest computer companies of the world and said, Here's the algorithm that is required, and it has to run for one and a half billion people. So first, please note, they chose a tough piece of the giant UIDI problem. They didn't say I'm doing the full thing. They they are they understood the full thing. But inside that they knew this was going to be a hot spot. And uh they got presentations back From some of the top research groups of the world. And Nanda Nelekani has the cred and the respect that people will try hard to do cool things that are valued by him. And they had presentations from top research groups saying what you describe can't be",
+      "endTime": 3462.55,
+      "text": "Dick Hamming also uh has a great uh fact which is in that Bell Labs book. He was the first person to see it. He predicted back in the early sixties, You may think that Bell Labs does science and engineering, but more than half of it is going to be computation. And of course, he was absolutely right, as every sad graduate student in every field in the world now knows, you'll land up at grad school and all you do is programming. You may think you're doing biology, you may think you're doing political science. Gumfirke, it's just programming. So that is way the way the computer. The universe runs through algorithms. So universe is basically one big algorithm. Back to principles. So one principle is an aesthetic sense of beauty and simplicity. A second principle is to build tools and components and push the rest of the world aside, focus on one tool and one component at a time, and make that tool good. So build one small tool at a time with limited functionality, but then make it bulletproof. Make it well written, well tested, uh make it highly performative. That is capable of catering to very high levels of performance when given the correct level of resources. It can do almost anything. So, right, good algorithms do extreme amounts of unit testing, but have a simple coherent tool that does one thing at a time. And then create the mechanisms and the infrastructure for many, many tools to be able to work with each other. Okay. So make it easy for humans to combine tools. Don't ask humans to build a big giant complex system. Rather, go bottom up and build component, component, component. And then the humans will put them together like Lego blocks. And then we will get a big complex system. So I feel this is a very important design philosophy. Too often we get managers and conventional corporate computing. doing the so-called top down design where you start that we need this kind of enterprise IT system and then inside this we'll require this, inside this we'll require this, and we're going to do one big giant project and we'll throw thousands of manier at this. And that's really not an effective way to go. I want to tell my story about how I do this. And I I have had many conversations with some of the great gigs and hackers and I think there's a similar story there. I find that I think about a problem for a long time and don't write any code. It's just there, it's there on my mind, and I'm kind of processing it that I have filled my mind with the problem. I use the phrase have uploaded the problem in my brain. I make no promises on when I will give you an answer. And I know that when my mind is thinking about it, something is happening. And then in a large problem, I have that way of isolating that this is a difficult component, this is a difficult component, this is a difficult component. So I I isolate one, two, three difficult pieces out of that. And then I just throw away everything else and I focus on one. So I take one small problem, one small component, there'll be one function that's hard and I'll grind away at it, I'll think about the algorithms for it, I'll write it nicely, I'll test it nicely, and the greatest thing I do there is focus. That then I'm not thinking about everything else. I have got tunnel vision and I'm maniacally doing one or two or three critical components and just write them. Get them right and be proud and be happy that I've done these things properly. then zoom out and say, Okay guys, here we are, we're going to do this large thing, but I've got this in the pocket, I've got this in the pocket, I've got this in the pocket. And then suddenly a whole bunch of possibilities open up. Oh, this is so nice, we can connect this to this. Now we'll build this one translator that will convert this to this. And suddenly a whole system design blossoms. So it's good to do one small component at a time. It's good to find the hardest things and solve them and get them done. So I want to tell a story from the Adhar project, uh Nandan Nelekani, Sanjay Jay and others. were grappling with uh the problem of uh authentication, where there are like one point four billion people in the database, and Amitvarma presents himself and tries to make a fake ID. And the system has to be able to look at that and match it with one of the existing IDs. Or Amitvarma tries to go use the ID somewhere and say, Give me PDS rations and the system has to find that one in a billion and it also needs to do deduplication that if by mistake a second one has crept in, then you need to find that these two records are identical. And at the time they uh connected to the biggest computer companies of the world and said, Here's the algorithm that is required, and it has to run for one and a half billion people. So first, please note, they chose a tough piece of the giant UIDI problem. They didn't say I'm doing the full thing. They they are they understood the full thing. But inside that they knew this was going to be a hot spot. And uh they got presentations back From some of the top research groups of the world. And Nanda Nelekani has the cred and the respect that people will try hard to do cool things that are valued by him. And they had presentations from top research groups saying what you describe can't be done. Okay? And they turn around and they wrote it themselves and they did it. Okay so they focused on a difficult problem. They first tried to say some to somebody else, you do this, and then somebody else said, You can't do it. And then they said, okay, fine, very well, we will try. And then they internally solve those problems. They put the tools and technologies together to achieve those things. And then suddenly you're on confident ground because you know the difficult pieces are done, then it's a more normal project execution problem. So I feel this is a good trick. And this is a Unix way of thinking of work one component at a time, keep components simple, make them good, test them to death, make them high performance, document them well. Okay, which brings me to the next element of the Unix philosophy. There is a deep connection between thinking, programming, and writing. Writing code is like writing prose. They're not different. Okay, if you gentle reader think that you're writing code all day, what you need is to write more text all day. Okay, writing is the heart of thinking and writing English and writing code and thinking and arguing, these are all one of a piece. And that Unix community in Bell Labs pioneered A brevity and clarity of writing that was just new. Meaning before that there had been big ugly corporate things done by the likes of IBM and Digital Equipment Corporation, or you know, if any of us have been victims of documentation of many other computer companies that I shall not name. The people in Bell Labs invented a whole language, a style of talking,",
       "words": [
         {
           "word": "Dick",
@@ -61523,15 +61459,7 @@
           "startTime": 3370.97,
           "endTime": 3371.29,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 3371.29,
-      "endTime": 3372.97,
-      "text": "done. Okay?",
-      "words": [
+        },
         {
           "word": "done.",
           "startTime": 3371.29,
@@ -61543,15 +61471,7 @@
           "startTime": 3372.49,
           "endTime": 3372.97,
           "confidence": 0.4845
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 3372.97,
-      "endTime": 3462.55,
-      "text": "And they turn around and they wrote it themselves and they did it. Okay so they focused on a difficult problem. They first tried to say some to somebody else, you do this, and then somebody else said, You can't do it. And then they said, okay, fine, very well, we will try. And then they internally solve those problems. They put the tools and technologies together to achieve those things. And then suddenly you're on confident ground because you know the difficult pieces are done, then it's a more normal project execution problem. So I feel this is a good trick. And this is a Unix way of thinking of work one component at a time, keep components simple, make them good, test them to death, make them high performance, document them well. Okay, which brings me to the next element of the Unix philosophy. There is a deep connection between thinking, programming, and writing. Writing code is like writing prose. They're not different. Okay, if you gentle reader think that you're writing code all day, what you need is to write more text all day. Okay, writing is the heart of thinking and writing English and writing code and thinking and arguing, these are all one of a piece. And that Unix community in Bell Labs pioneered A brevity and clarity of writing that was just new. Meaning before that there had been big ugly corporate things done by the likes of IBM and Digital Equipment Corporation, or you know, if any of us have been victims of documentation of many other computer companies that I shall not name. The people in Bell Labs invented a whole language, a style of talking,",
-      "words": [
+        },
         {
           "word": "And",
           "startTime": 3372.97,
@@ -88523,8 +88443,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4857.51,
-      "endTime": 4862.63,
-      "text": "Bill Gates, ATT could have a different incentives. Different set of incentives. So",
+      "endTime": 4860.71,
+      "text": "Bill Gates, ATT could have a different incentives.",
       "words": [
         {
           "word": "Bill",
@@ -88573,7 +88493,15 @@
           "startTime": 4859.27,
           "endTime": 4860.71,
           "confidence": 0.8349
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4860.71,
+      "endTime": 4895.66,
+      "text": "Different set of incentives. So we take all this for granted today. We take a certain anarchism and a freedom and encryption technology and VPNs and all these concepts for granted. Yes, they have caused problems. Because email is so open, email has spam overlaid on top of it. But it is better to have gone down this route. than to have claustrophobic control, where you have to first show your iris scan and only then you can you're authorized to write emails and you are charged four rupees for each email, which is the way the world would have worked out without Unix.",
+      "words": [
         {
           "word": "Different",
           "startTime": 4860.71,
@@ -88603,15 +88531,7 @@
           "startTime": 4861.83,
           "endTime": 4862.63,
           "confidence": 0.6918
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4862.63,
-      "endTime": 4895.66,
-      "text": "we take all this for granted today. We take a certain anarchism and a freedom and encryption technology and VPNs and all these concepts for granted. Yes, they have caused problems. Because email is so open, email has spam overlaid on top of it. But it is better to have gone down this route. than to have claustrophobic control, where you have to first show your iris scan and only then you can you're authorized to write emails and you are charged four rupees for each email, which is the way the world would have worked out without Unix.",
-      "words": [
+        },
         {
           "word": "we",
           "startTime": 4862.63,
@@ -89211,8 +89131,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 4897.64,
-      "endTime": 4945.59,
-      "text": "Again, marvelously inspiring. And you know, we're now before we cut to our forty five minute uh sort of screencast where you talk about uh Unix and what to do with it and all of that. A final question for s someone like me, you know, listening to a lot of this for the first time and uh sort of uh you know, watching your screencast for the first time and figuring out the power of this amazing language, and not just the power of this amazing language, but what the philosophy can mean for one if one chooses to reprogram oneself through it. My question is, what are the practical things someone like me can do? let us say I learn programming now, I learn Unix. I I have all this power at my fingertips, which Ken Thompson didn't when he started writing that uh sort of space travel program. What are all the different things a normal person like me can do who doesn't want to start a tech company, doesn't want to do, you know, any complicated things. So uh it's it's good and nice",
+      "endTime": 4943.83,
+      "text": "Again, marvelously inspiring. And you know, we're now before we cut to our forty five minute uh sort of screencast where you talk about uh Unix and what to do with it and all of that. A final question for s someone like me, you know, listening to a lot of this for the first time and uh sort of uh you know, watching your screencast for the first time and figuring out the power of this amazing language, and not just the power of this amazing language, but what the philosophy can mean for one if one chooses to reprogram oneself through it. My question is, what are the practical things someone like me can do? let us say I learn programming now, I learn Unix. I I have all this power at my fingertips, which Ken Thompson didn't when he started writing that uh sort of space travel program. What are all the different things a normal person like me can do who doesn't want to start a tech company, doesn't want to do, you know, any complicated things.",
       "words": [
         {
           "word": "Again,",
@@ -90299,7 +90219,15 @@
           "startTime": 4943.19,
           "endTime": 4943.83,
           "confidence": 0.6974
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4943.83,
+      "endTime": 4958.17,
+      "text": "So uh it's it's good and nice to talk about principles and philosophy and then, you know, we have cut to the chase. We have to cut to the chase, we have to show me where is the beef, or show me where is the rasgullah? Okay so let's now turn around and be completely practical.",
+      "words": [
         {
           "word": "So",
           "startTime": 4943.83,
@@ -90341,15 +90269,7 @@
           "startTime": 4945.35,
           "endTime": 4945.59,
           "confidence": 0.9989
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 4945.59,
-      "endTime": 4958.17,
-      "text": "to talk about principles and philosophy and then, you know, we have cut to the chase. We have to cut to the chase, we have to show me where is the beef, or show me where is the rasgullah? Okay so let's now turn around and be completely practical.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 4945.59,
@@ -90765,8 +90685,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4969.85,
-      "endTime": 5160.94,
-      "text": "What does this mean for practical people? What does it mean for uh all of us who are, you know, navigating a complex world and getting ahead? So a couple of thoughts. The first is that, you know, unless you're using Windows, you're already using Unix. I'm just making you more aware. of what your life is and how we got here. And so that, you know, when you touch these objects and these creations you have that sense in your fingertips of the journey to hear about how we got here. It's just, you know, it's like you're standing in front of a painting, but I'm telling you the backstory. Yeah, that's the first and simple thing. The second is that uh uh there are ways in which uh we can connect and engage into this world more. Um You mentioned Bell Labs as being this amazing place where people met each other and talk to each other and face to face meetings is indeed a fabulous thing. But a lot of the work of the modern internet has gone into distance work with occasional video calls, but primarily uh bulletin boards and mailing lists and such tools of collaboration. So it is incredible and mind blowing that today the Linux kernel, the world's most complex piece of code, The Linux kernel is managed by about 10,000 or 20,000 programmers who are spread all over the world. And a couple of them live in India, I'm very proud to say. And coordinated by multiple sub managers and managers, and at the top Linus Torvalds, but it's all done in the open through a system that is called Git. And Git is a miracle written by Linus Torvalds. It has a user interface that is called GitHub. And this has become an open collaborative system whereby all of us are welcome to go look. So we can just go look at the sausage factory, we can see what is being done by who and how, and then we can start participating and we can start contributing. So there is a low bar. You can contribute a bug report, you can contribute a feature request. Or you can start writing some documentation that you did something and you late painfully understood what it actually means and you feel that there is no good document that expresses it, you can write a document and you can become part of it. And highest of all, you can be writing code and you can become part of this. So I feel that for all of us in India or Bangladesh or Vietnam or every far flung corner of the world, this is actually miraculously empowering because it's not that there are some far away great people in Bell Labs. I can watch, I can stalk them, and I can keep watching what they're doing, and minute by minute I can see the creative process and I can become part of it to the extent that I like. So I feel this is a very nice line of attack that many of us should consider. And I already mentioned the Raspberry Pi. It's a small credit card-sized computer with price points from two, three thousand rupees to 5000 rupees. for the card itself, and then you'll have to spend more money putting either a keyboard or a meter to measure the temperature outside or something that will control the watering of your plants.",
+      "endTime": 5185.1,
+      "text": "What does this mean for practical people? What does it mean for uh all of us who are, you know, navigating a complex world and getting ahead? So a couple of thoughts. The first is that, you know, unless you're using Windows, you're already using Unix. I'm just making you more aware. of what your life is and how we got here. And so that, you know, when you touch these objects and these creations you have that sense in your fingertips of the journey to hear about how we got here. It's just, you know, it's like you're standing in front of a painting, but I'm telling you the backstory. Yeah, that's the first and simple thing. The second is that uh uh there are ways in which uh we can connect and engage into this world more. Um You mentioned Bell Labs as being this amazing place where people met each other and talk to each other and face to face meetings is indeed a fabulous thing. But a lot of the work of the modern internet has gone into distance work with occasional video calls, but primarily uh bulletin boards and mailing lists and such tools of collaboration. So it is incredible and mind blowing that today the Linux kernel, the world's most complex piece of code, The Linux kernel is managed by about 10,000 or 20,000 programmers who are spread all over the world. And a couple of them live in India, I'm very proud to say. And coordinated by multiple sub managers and managers, and at the top Linus Torvalds, but it's all done in the open through a system that is called Git. And Git is a miracle written by Linus Torvalds. It has a user interface that is called GitHub. And this has become an open collaborative system whereby all of us are welcome to go look. So we can just go look at the sausage factory, we can see what is being done by who and how, and then we can start participating and we can start contributing. So there is a low bar. You can contribute a bug report, you can contribute a feature request. Or you can start writing some documentation that you did something and you late painfully understood what it actually means and you feel that there is no good document that expresses it, you can write a document and you can become part of it. And highest of all, you can be writing code and you can become part of this. So I feel that for all of us in India or Bangladesh or Vietnam or every far flung corner of the world, this is actually miraculously empowering because it's not that there are some far away great people in Bell Labs. I can watch, I can stalk them, and I can keep watching what they're doing, and minute by minute I can see the creative process and I can become part of it to the extent that I like. So I feel this is a very nice line of attack that many of us should consider. And I already mentioned the Raspberry Pi. It's a small credit card-sized computer with price points from two, three thousand rupees to 5000 rupees. for the card itself, and then you'll have to spend more money putting either a keyboard or a meter to measure the temperature outside or something that will control the watering of your plants. Okay? But everybody should play with the Raspberry Pi. It's a delight. It's a tiny small cheap computer. You boot Linux on it and you can be tinkering with computers and various cool applications of computers at a very low entry level point and the whole thing comes to life and you know we can be building systems, building code, we can become tinkerers, we can become creators to a greater extent.",
       "words": [
         {
           "word": "What",
@@ -94235,15 +94155,7 @@
           "startTime": 5160.14,
           "endTime": 5160.94,
           "confidence": 0.8575
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5160.94,
-      "endTime": 5162.62,
-      "text": "Okay? But",
-      "words": [
+        },
         {
           "word": "Okay?",
           "startTime": 5160.94,
@@ -94255,15 +94167,7 @@
           "startTime": 5161.5,
           "endTime": 5162.62,
           "confidence": 0.9842
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 5162.62,
-      "endTime": 5185.1,
-      "text": "everybody should play with the Raspberry Pi. It's a delight. It's a tiny small cheap computer. You boot Linux on it and you can be tinkering with computers and various cool applications of computers at a very low entry level point and the whole thing comes to life and you know we can be building systems, building code, we can become tinkerers, we can become creators to a greater extent.",
-      "words": [
+        },
         {
           "word": "everybody",
           "startTime": 5162.62,
@@ -133087,8 +132991,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 7734.73,
-      "endTime": 7755.13,
-      "text": "I have three recommendations on this. One is there is a book by Neil Stephenson, which is called In the Beginning Was the Command Line. Neil Stevenson is the great novelist, and I feel he gets this world deeply, and he has tried to tell the story in a very instinctive and passionate way. So it's not an engineering book, but he gets the dream, he gets the philosophy,",
+      "endTime": 7803.89,
+      "text": "I have three recommendations on this. One is there is a book by Neil Stephenson, which is called In the Beginning Was the Command Line. Neil Stevenson is the great novelist, and I feel he gets this world deeply, and he has tried to tell the story in a very instinctive and passionate way. So it's not an engineering book, but he gets the dream, he gets the philosophy, and it's a good book to read. The second is uh essay by Eric Raymond, which is called The Cathedral and the Bazaar. The Cathedral is a model where some great people sit together in one building and build something, and the bazaar is the teeming, screaming world where thousands of people get together and argue about things and disagree, and out of that comes something beautiful. And Eric Raymond, I feel was the first person to understand the meta-sociology about why Unix works so well. It's an unreasonably successful strategy. It's like you're not paying, but they're building the world's best software. What is going on. Okay, so Eric Raymond was the first person who's started understanding what is going on. And the third book is Brian Cenigan 2020 book, which is a brief history of the early years of Unix and Bell Labs.",
       "words": [
         {
           "word": "I",
@@ -133503,15 +133407,7 @@
           "startTime": 7754.41,
           "endTime": 7755.13,
           "confidence": 0.9828
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 7755.13,
-      "endTime": 7756.5,
-      "text": "and it's a good book to read.",
-      "words": [
+        },
         {
           "word": "and",
           "startTime": 7755.13,
@@ -133553,15 +133449,7 @@
           "startTime": 7756.09,
           "endTime": 7756.5,
           "confidence": 0.9933
-        }
-      ]
-    },
-    {
-      "speaker": "Ajay Shah",
-      "startTime": 7756.86,
-      "endTime": 7803.89,
-      "text": "The second is uh essay by Eric Raymond, which is called The Cathedral and the Bazaar. The Cathedral is a model where some great people sit together in one building and build something, and the bazaar is the teeming, screaming world where thousands of people get together and argue about things and disagree, and out of that comes something beautiful. And Eric Raymond, I feel was the first person to understand the meta-sociology about why Unix works so well. It's an unreasonably successful strategy. It's like you're not paying, but they're building the world's best software. What is going on. Okay, so Eric Raymond was the first person who's started understanding what is going on. And the third book is Brian Cenigan 2020 book, which is a brief history of the early years of Unix and Bell Labs.",
-      "words": [
+        },
         {
           "word": "The",
           "startTime": 7756.86,

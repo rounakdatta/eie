@@ -5,7 +5,7 @@
     "durationSeconds": 3477,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -8212,8 +8212,8 @@
     {
       "speaker": "Amit Varma",
       "startTime": 451.08,
-      "endTime": 496.74,
-      "text": "Magnificently put and we've actually spoken about this in the past. We've uh by the way, for uh gentle listeners, we've had a great episode on when should the state intervene where J spoke at much more length about public goods, how we define them. And one of our craves, I think it was in that episode and no other, is that how we are you know but the the danger of many economic terms is that they both have a specific technical meaning in the way economists use it. And otherwise you can just use it in a general way, like market failure. Oh, the market failed to give me a red shirt, it's a market failure, right? Or public goods is good for the public, it's a public good. Public health is the health of the public. Exactly. So you need to kind of Uh you know, uh think about all of these because words are meaning. You know, if you s kind of strip meanings away and anything can mean whatever you want it to mean, then uh you know that really hurts the discourse.",
+      "endTime": 483.72,
+      "text": "Magnificently put and we've actually spoken about this in the past. We've uh by the way, for uh gentle listeners, we've had a great episode on when should the state intervene where J spoke at much more length about public goods, how we define them. And one of our craves, I think it was in that episode and no other, is that how we are you know but the the danger of many economic terms is that they both have a specific technical meaning in the way economists use it. And otherwise you can just use it in a general way, like market failure. Oh, the market failed to give me a red shirt, it's a market failure, right? Or public goods is good for the public, it's a public good.",
       "words": [
         {
           "word": "Magnificently",
@@ -9000,7 +9000,15 @@
           "startTime": 482.84,
           "endTime": 483.72,
           "confidence": 0.8129
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 483.72,
+      "endTime": 485.56,
+      "text": "Public health is the health of the public.",
+      "words": [
         {
           "word": "Public",
           "startTime": 483.72,
@@ -9048,7 +9056,15 @@
           "startTime": 484.92,
           "endTime": 485.56,
           "confidence": 0.6768
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 485.56,
+      "endTime": 496.74,
+      "text": "Exactly. So you need to kind of Uh you know, uh think about all of these because words are meaning. You know, if you s kind of strip meanings away and anything can mean whatever you want it to mean, then uh you know that really hurts the discourse.",
+      "words": [
         {
           "word": "Exactly.",
           "startTime": 485.56,
@@ -19574,8 +19590,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1039.0,
-      "endTime": 1447.5,
-      "text": "So the first is the great example that you said. Exactly the India digital public goods story play out many years ago in the field of computer networks. Okay the uh global telecom monopolies got together and designed a computer networking standard that is called X. And this was Agreed to by governments, and in those days, in many many countries, including advanced economies, telecom was a public sector monopoly. So all these uh rich country monopolies got together and designed a standard. And all the private telecom equipment manufacturers fell into line and started making equipment for this. And this was supposed to be the great global new standard for computer networking. It was called XO25, and it was being pushed by all the governments. So it's it's very reminiscent of the top-down push that we see here in India, led by the government trying to push some technology down the throats of the people. In fact, there something very different happened, which is that uh the United States DARPA had contracted out a research project. to a bunch of researchers, including WintSurf, to develop a computer networking standard that would work under battlefield conditions. Where the emphasis was extreme robustness, extreme ability to handle failure and re route dynamically under battlefield conditions. And who could have known that that actually is a very interesting and important metaphor on how to think about the world. That you know we are here in Himachal Pradesh. a line goes down, a line goes up, and it is a glory of T CPIP that it will dynamically shift paths and find a channel through. So actually that was a very insightful way to think about how to do computer networking. And then Bill Joy and others took that existing T CPIP standard and put it inside Unix. And the development of Unix is another great bottom up thing where really the academic computer scientists and the hobbyists all over the world built this thing out. That they built TCP IP, they built Unix, they built BSD, BSD Unix, and later on this turned into Linux. And this is the internet revolution. So the entire internet revolution came by fighting off a government standard. TCP IP competed with the government. TCP IP competed with Microsoft. At the time it was a large and important computer company. And Microsoft was pushing some standard of its own. I seem to remember it was called BOE or something. And then there was Nobel pushing a standard of its own called network. So there were two giant corporations and one government. And the hackers and the hobbyists and the academicians, they won. Because that BSD and Unix had the correct engine on how to do these things. And you've got to think further why. The why was it was just the power of brain power and adaptation, that continuous thinking, rethinking hundreds of minds all over the world. That the open source revolution should really open our eyes. the power of innovation as opposed to top down. So I would really plead with the policymakers and the bureaucrats who think that they are pushing digital public goods down on the country. That I think they have failed to understand how engineering happens. Okay, so I am a card carrying engineer, in addition to being an economist. How many cards do you have, first? I I carry a couple of cards. And my deep insight into engineering and computer science is around the glory of how free software works, how open source has worked. We did an episode on Unix. I have a deep intuition into the magic of many, many minds. thinking, disagreeing, coming up with rival versions, constantly tinkering, coming up with a new attempt. There'll be five fragmented systems competing with each other. That is a good thing. In the world of Linux, there are ten rival file systems squabbling with each other all the time. That is a healthy thing. If there was just one standard, then you've basically got the silence of a graveyard. So I feel I would like to say to the politicians and the bureaucrats who are doing these monopoly systems that I feel they are misunderstanding the glory of a single standard. Single standards are mediocrity. Single standards are the silence of a graveyard. What works is the energy, the dynamism, the differences of opinion, the competition. So in the world of uh technology there is a lot of uh emphasis on the phrase standards wars. Okay, periodically rival technologies fight it out. There's an old war between Petamax and VHS in the world of video I just described the war around computer networks of the CPIP versus X2 25 versus Microsoft NetBOE versus uh Novelle uh systems. I'm forgetting the exact name that was used for the networking protocol inside Novel Network. Similarly, there has been rivalry in uh uh so many computer standards, and it just erupts every few years. There are multiple rival ideas on how you want to think about the world. And there are wars, there are passionate disagreements and competition where different camps are trying to take their idea and see it through. And that's a good thing. That messy process of people arguing, people fighting, multiple competing systems, they don't talk to each other. Okay, so for example, I want to talk about health. Okay, once again, many powerful people in India are in the grip of high modernism, and what they would like to do is they would like to top down shove Standards on the country, government monopolies on the country, a single government repository where all health records in India will be stored, which sounds like a little nightmare to me. Okay? In the United States, there are 13 of 14 rival standards for electronic health records. There are 13 or 14 rival companies, each of which has built their own EHR system. And there are there's innumerable amounts of squabbling between all these people. But in that squabbling, is continuous technical improvement. And then they will negotiate with each other. Some private company will come up which will build a connector between your standard and my standard, and private people will pay for that translation module. And that's how the messy uh bazaar of the uh technology industry works. I am alluding to a beautiful essay by Eric Raymond that we will link to in the show notes, The Cathedral and the Bazaar. And I would love to sell this as a critical reading. For every advocate of the new monopolies in the world of technology, I feel they have not understood the glory of the modern world of technology. The modern world of technology is a world of cleverness, of intelligence, of ceaseless development, of competition, of rivalry, of standards, wars, and of striving. It is not the silence of a graveyard.",
+      "endTime": 1240.17,
+      "text": "So the first is the great example that you said. Exactly the India digital public goods story play out many years ago in the field of computer networks. Okay the uh global telecom monopolies got together and designed a computer networking standard that is called X. And this was Agreed to by governments, and in those days, in many many countries, including advanced economies, telecom was a public sector monopoly. So all these uh rich country monopolies got together and designed a standard. And all the private telecom equipment manufacturers fell into line and started making equipment for this. And this was supposed to be the great global new standard for computer networking. It was called XO25, and it was being pushed by all the governments. So it's it's very reminiscent of the top-down push that we see here in India, led by the government trying to push some technology down the throats of the people. In fact, there something very different happened, which is that uh the United States DARPA had contracted out a research project. to a bunch of researchers, including WintSurf, to develop a computer networking standard that would work under battlefield conditions. Where the emphasis was extreme robustness, extreme ability to handle failure and re route dynamically under battlefield conditions. And who could have known that that actually is a very interesting and important metaphor on how to think about the world. That you know we are here in Himachal Pradesh. a line goes down, a line goes up, and it is a glory of T CPIP that it will dynamically shift paths and find a channel through. So actually that was a very insightful way to think about how to do computer networking. And then Bill Joy and others took that existing T CPIP standard and put it inside Unix. And the development of Unix is another great bottom up thing where really the academic computer scientists and the hobbyists all over the world built this thing out. That they built TCP IP, they built Unix, they built BSD, BSD Unix, and later on this turned into Linux. And this is the internet revolution. So the entire internet revolution came by fighting off a government standard. TCP IP competed with the government. TCP IP competed with Microsoft. At the time it was a large and important computer company. And Microsoft was pushing some standard of its own. I seem to remember it was called BOE or something. And then there was Nobel pushing a standard of its own called network. So there were two giant corporations and one government. And the hackers and the hobbyists and the academicians, they won. Because that BSD and Unix had the correct engine on how to do these things. And you've got to think further why. The why was it was just the power of brain power and adaptation, that continuous thinking, rethinking hundreds of minds all over the world. That the open source revolution should really open our eyes. the power of innovation as opposed to top down. So I would really plead with the policymakers and the bureaucrats who think that they are pushing digital public goods down on the country. That I think they have failed to understand how engineering happens. Okay, so I am a card carrying engineer, in addition to being an economist.",
       "words": [
         {
           "word": "So",
@@ -22930,7 +22946,15 @@
           "startTime": 1239.45,
           "endTime": 1240.17,
           "confidence": 0.9597
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1240.17,
+      "endTime": 1241.61,
+      "text": "How many cards do you have, first?",
+      "words": [
         {
           "word": "How",
           "startTime": 1240.17,
@@ -22972,7 +22996,15 @@
           "startTime": 1241.13,
           "endTime": 1241.61,
           "confidence": 0.5403
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 1241.61,
+      "endTime": 1447.5,
+      "text": "I I carry a couple of cards. And my deep insight into engineering and computer science is around the glory of how free software works, how open source has worked. We did an episode on Unix. I have a deep intuition into the magic of many, many minds. thinking, disagreeing, coming up with rival versions, constantly tinkering, coming up with a new attempt. There'll be five fragmented systems competing with each other. That is a good thing. In the world of Linux, there are ten rival file systems squabbling with each other all the time. That is a healthy thing. If there was just one standard, then you've basically got the silence of a graveyard. So I feel I would like to say to the politicians and the bureaucrats who are doing these monopoly systems that I feel they are misunderstanding the glory of a single standard. Single standards are mediocrity. Single standards are the silence of a graveyard. What works is the energy, the dynamism, the differences of opinion, the competition. So in the world of uh technology there is a lot of uh emphasis on the phrase standards wars. Okay, periodically rival technologies fight it out. There's an old war between Petamax and VHS in the world of video I just described the war around computer networks of the CPIP versus X2 25 versus Microsoft NetBOE versus uh Novelle uh systems. I'm forgetting the exact name that was used for the networking protocol inside Novel Network. Similarly, there has been rivalry in uh uh so many computer standards, and it just erupts every few years. There are multiple rival ideas on how you want to think about the world. And there are wars, there are passionate disagreements and competition where different camps are trying to take their idea and see it through. And that's a good thing. That messy process of people arguing, people fighting, multiple competing systems, they don't talk to each other. Okay, so for example, I want to talk about health. Okay, once again, many powerful people in India are in the grip of high modernism, and what they would like to do is they would like to top down shove Standards on the country, government monopolies on the country, a single government repository where all health records in India will be stored, which sounds like a little nightmare to me. Okay? In the United States, there are 13 of 14 rival standards for electronic health records. There are 13 or 14 rival companies, each of which has built their own EHR system. And there are there's innumerable amounts of squabbling between all these people. But in that squabbling, is continuous technical improvement. And then they will negotiate with each other. Some private company will come up which will build a connector between your standard and my standard, and private people will pay for that translation module. And that's how the messy uh bazaar of the uh technology industry works. I am alluding to a beautiful essay by Eric Raymond that we will link to in the show notes, The Cathedral and the Bazaar. And I would love to sell this as a critical reading. For every advocate of the new monopolies in the world of technology, I feel they have not understood the glory of the modern world of technology. The modern world of technology is a world of cleverness, of intelligence, of ceaseless development, of competition, of rivalry, of standards, wars, and of striving. It is not the silence of a graveyard.",
+      "words": [
         {
           "word": "I",
           "startTime": 1241.61,

@@ -5,7 +5,7 @@
   python3 scripts/extract.py --wait    # keep going as the transcription run finishes episodes
   python3 scripts/extract.py --force N # redo episode N even if it's already extracted
 
-Speaker disagreements of 2 s or more are settled first (scripts/adjudicate.py). Then Claude Opus 5.5
+Speaker disagreements of 1 s or more are settled first (scripts/adjudicate.py). Then Claude Opus 5.5
 reads the speaker-labelled transcript, the show notes and the previous
 extraction (a checklist of candidates, never a source) and returns the four kinds of insight
 in the existing schema. Quotes, speakers and recommendations are then checked against the

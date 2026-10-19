@@ -5,7 +5,7 @@
     "durationSeconds": 5319,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx)",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -30625,8 +30625,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1479.06,
-      "endTime": 1499.27,
-      "text": "Is that a useful distinction? Between uh the true fan that will generally listen to every episode versus the people that think well about the show and will occasionally come in when a person or a subject is of interest. So I'm gonna touch",
+      "endTime": 1498.21,
+      "text": "Is that a useful distinction? Between uh the true fan that will generally listen to every episode versus the people that think well about the show and will occasionally come in when a person or a subject is of interest.",
       "words": [
         {
           "word": "Is",
@@ -30867,7 +30867,15 @@
           "startTime": 1496.71,
           "endTime": 1498.21,
           "confidence": 0.9302
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1498.23,
+      "endTime": 1541.72,
+      "text": "So I'm gonna touch on it later when I talk about the Thousand Two fans and uh you know what that uh concept is. But my sense is that if it's something like podcasting especially, once people connect with you, it's a personal connection, they'll kind of follow you. No, if you're talking to someone they're really not interested in or on a subject they're really not interested in, then you might lose them. Uh f momentarily. They they may not listen to every episode, which is fine. And it is not that, you know, we release our stuff weekly, but people don't have to watch weekly. Some people will turn up every Friday because now as you know we get in the comments, it's a fix, right? Even though everything is everything is relatively like tiny compared to uh the scene and the unseen, but already that loyal audience is building, which uh will land up every Friday. But even if they don't, it's okay. Maybe somebody binges three, four episodes at a time.",
+      "words": [
         {
           "word": "So",
           "startTime": 1498.23,
@@ -30891,15 +30899,7 @@
           "startTime": 1499.03,
           "endTime": 1499.27,
           "confidence": 0.9999
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1499.27,
-      "endTime": 1541.72,
-      "text": "on it later when I talk about the Thousand Two fans and uh you know what that uh concept is. But my sense is that if it's something like podcasting especially, once people connect with you, it's a personal connection, they'll kind of follow you. No, if you're talking to someone they're really not interested in or on a subject they're really not interested in, then you might lose them. Uh f momentarily. They they may not listen to every episode, which is fine. And it is not that, you know, we release our stuff weekly, but people don't have to watch weekly. Some people will turn up every Friday because now as you know we get in the comments, it's a fix, right? Even though everything is everything is relatively like tiny compared to uh the scene and the unseen, but already that loyal audience is building, which uh will land up every Friday. But even if they don't, it's okay. Maybe somebody binges three, four episodes at a time.",
-      "words": [
+        },
         {
           "word": "on",
           "startTime": 1499.27,

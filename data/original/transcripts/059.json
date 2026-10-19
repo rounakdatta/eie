@@ -5,7 +5,7 @@
     "durationSeconds": 5561,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma",
@@ -71371,8 +71371,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4030.08,
-      "endTime": 4436.01,
-      "text": "the paper, we have four examples just to give a flavor of what happens in these kinds of organizations. You know, to not only be talking at the level of philosophy, but with some closer connection to implementation. The first example is NASA. Okay. Everybody loves NASA right from its inception, which I think is also 1958. Oh, I never noticed the connection. Right from the inception, the very founding paragraphs about NASA is that it should contract out everything, that there is a danger. That NASA will try to hire its own people and build things, but no, the right way to do this is to contract it out. And there is a fascinating thing that NASA has helped secure its budgets by saying to lawmakers that you give us 100 rupees, 80 rupees goes out to the society. So we are not trying to build a big government bureaucracy. We are contracting out, we're sending money to the universities and the private firms, and so your money will be well spent and it will go back. To the people. This is an argument NASA makes when trying to raise money from the people making budgets. So it's a great way to think about NASA that only 20% of the money that goes to NASA stays inside NASA, 80% goes out as contracts. I want to say two things about how they approach it. The first is that there is a process of staged risk management. So at a very early stage. There's a phrase TRL technology readiness levels. At a very early stage, there's a lot of risk. Nobody knows what's going to happen. The TRL is low. At that point, you want to do early foundational research and just get to some documents. And also oftentimes you may feel there are multiple pathways here. So NASA would commission one university and one private firm that go build me some early concepts around this kind of problem. We show some examples in the paper. Then after those documents are in hand, NASA would give out a bunch of contracts for a next level design saying give me a document. Then they would give out a next group of contracts saying show me a working demo in my office where we will measure ABCD parameters. So you've turned it from a high level concept to a design to a working prototype. And then based on those prototypes, NASA will give out a contract saying, Okay, build me this engine and give me quantity five of these engines, and then the engine is plugged into a spacecraft. So NASA is not building the spacecraft, it is doing a process of contracting through which this work gets done, and the beauty of this approach is all the things we said earlier, multiple competing rival contracts. So firms and universities all over the uh country are challenged. To do global state of the art complex research solving problems that nobody in the world knows how to solve. And out of that, they create new knowledge, they create capabilities, they create people, they file for patents, and there has been a merry flow of all kinds of civilian technologies that came out of the space program. The things were done for the space program, which later on turned into civilian technologies. There are many, many such examples, but right now. In the global context today, you will appreciate I will hold up one great example. The power user for a remarkable mad new technology called integrated circuits was NASA. In the beginning, there was only one buyer called NASA, because in a spacecraft you had the pressure for miniaturization. On Earth, you could keep big bulky circuit boards and it was okay. When the IC came along, it was NASA that smelled blood and said, I want this, I want this. All the early firms in ICs were running on NASA contracts because NASA wanted that miniaturization to happen. So integrated circuits and the entire semiconductor industry and modern CPUs ultimately are a child of research contracts from NASA, who which created the integrated circuit industry. So this is the first idea that I want to put forward about how. NASA works and it's pretty remarkable. The second remarkable thing I want to describe about NASA is that have you heard about JPL, the jet propulsion laboratory? Okay, so gentle reader, have you heard about JPL? It's a storied facility, it is the mission center for all the uh interplanetary missions run by NASA. And it has been there since the 60s. Since the 60s. JPL is the nerve center where you've got the people who are dealing with the spacecraft that are up in the air, flying to Mars, flying to Jupiter. I think in Indian powerlands it would be called a control room. Okay, the control room of all the interplanetary exploration done by NASA is called JPL, Jet Propulsion Lab. Okay, and they also do a whole bunch of the related science and the engineering. Most people in India will be shocked to know that JPL sits at a private university called Caltech. JPL is not a government facility. JPL is a contract. And it's been running since the 60s. It's been there forever. It's not a short-term contract, they are very long-term contracts. When NASA has just decided the right place for JPL is Caltech. And when you pause for a minute, think how perfect it is. Okay, Caltech is just one of the world's great engineering universities. And the brain power of Caltech is physic adjacent to the brain power of JPL. JPL benefits because there are coffee table conversations with people from Caltech. Caltech benefits because there are coffee table conversations with people from JPL, but thousands of scientists and employees of JPL are physic. And this has been the arrangement since the 60s. So this is an eye opener that. You're not just outsourcing some canteen operations, you're not just buying one piece of steel. The entire control room of the interplanetary exploration of NASA has been contracting forever since the 60s at Caltech, which is a private university. And this gives you a flavor of the scale of ambition of contracting out at NASA. So if you respect NASA, if you think there's something great in NASA. I think it's important to understand that the secret source of the purely instrumental argument about why NASA works so well is because 80% of the money that comes into NASA goes out to private universities, government universities, and",
+      "endTime": 4437.21,
+      "text": "the paper, we have four examples just to give a flavor of what happens in these kinds of organizations. You know, to not only be talking at the level of philosophy, but with some closer connection to implementation. The first example is NASA. Okay. Everybody loves NASA right from its inception, which I think is also 1958. Oh, I never noticed the connection. Right from the inception, the very founding paragraphs about NASA is that it should contract out everything, that there is a danger. That NASA will try to hire its own people and build things, but no, the right way to do this is to contract it out. And there is a fascinating thing that NASA has helped secure its budgets by saying to lawmakers that you give us 100 rupees, 80 rupees goes out to the society. So we are not trying to build a big government bureaucracy. We are contracting out, we're sending money to the universities and the private firms, and so your money will be well spent and it will go back. To the people. This is an argument NASA makes when trying to raise money from the people making budgets. So it's a great way to think about NASA that only 20% of the money that goes to NASA stays inside NASA, 80% goes out as contracts. I want to say two things about how they approach it. The first is that there is a process of staged risk management. So at a very early stage. There's a phrase TRL technology readiness levels. At a very early stage, there's a lot of risk. Nobody knows what's going to happen. The TRL is low. At that point, you want to do early foundational research and just get to some documents. And also oftentimes you may feel there are multiple pathways here. So NASA would commission one university and one private firm that go build me some early concepts around this kind of problem. We show some examples in the paper. Then after those documents are in hand, NASA would give out a bunch of contracts for a next level design saying give me a document. Then they would give out a next group of contracts saying show me a working demo in my office where we will measure ABCD parameters. So you've turned it from a high level concept to a design to a working prototype. And then based on those prototypes, NASA will give out a contract saying, Okay, build me this engine and give me quantity five of these engines, and then the engine is plugged into a spacecraft. So NASA is not building the spacecraft, it is doing a process of contracting through which this work gets done, and the beauty of this approach is all the things we said earlier, multiple competing rival contracts. So firms and universities all over the uh country are challenged. To do global state of the art complex research solving problems that nobody in the world knows how to solve. And out of that, they create new knowledge, they create capabilities, they create people, they file for patents, and there has been a merry flow of all kinds of civilian technologies that came out of the space program. The things were done for the space program, which later on turned into civilian technologies. There are many, many such examples, but right now. In the global context today, you will appreciate I will hold up one great example. The power user for a remarkable mad new technology called integrated circuits was NASA. In the beginning, there was only one buyer called NASA, because in a spacecraft you had the pressure for miniaturization. On Earth, you could keep big bulky circuit boards and it was okay. When the IC came along, it was NASA that smelled blood and said, I want this, I want this. All the early firms in ICs were running on NASA contracts because NASA wanted that miniaturization to happen. So integrated circuits and the entire semiconductor industry and modern CPUs ultimately are a child of research contracts from NASA, who which created the integrated circuit industry. So this is the first idea that I want to put forward about how. NASA works and it's pretty remarkable. The second remarkable thing I want to describe about NASA is that have you heard about JPL, the jet propulsion laboratory? Okay, so gentle reader, have you heard about JPL? It's a storied facility, it is the mission center for all the uh interplanetary missions run by NASA. And it has been there since the 60s. Since the 60s. JPL is the nerve center where you've got the people who are dealing with the spacecraft that are up in the air, flying to Mars, flying to Jupiter. I think in Indian powerlands it would be called a control room. Okay, the control room of all the interplanetary exploration done by NASA is called JPL, Jet Propulsion Lab. Okay, and they also do a whole bunch of the related science and the engineering. Most people in India will be shocked to know that JPL sits at a private university called Caltech. JPL is not a government facility. JPL is a contract. And it's been running since the 60s. It's been there forever. It's not a short-term contract, they are very long-term contracts. When NASA has just decided the right place for JPL is Caltech. And when you pause for a minute, think how perfect it is. Okay, Caltech is just one of the world's great engineering universities. And the brain power of Caltech is physic adjacent to the brain power of JPL. JPL benefits because there are coffee table conversations with people from Caltech. Caltech benefits because there are coffee table conversations with people from JPL, but thousands of scientists and employees of JPL are physic. And this has been the arrangement since the 60s. So this is an eye opener that. You're not just outsourcing some canteen operations, you're not just buying one piece of steel. The entire control room of the interplanetary exploration of NASA has been contracting forever since the 60s at Caltech, which is a private university. And this gives you a flavor of the scale of ambition of contracting out at NASA. So if you respect NASA, if you think there's something great in NASA. I think it's important to understand that the secret source of the purely instrumental argument about why NASA works so well is because 80% of the money that comes into NASA goes out to private universities, government universities, and private companies.",
       "words": [
         {
           "word": "the",
@@ -77979,15 +77979,7 @@
           "startTime": 4435.77,
           "endTime": 4436.01,
           "confidence": 1.0
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 4436.01,
-      "endTime": 4453.82,
-      "text": "private companies. What happens in NASA doesn't stay in NASA. What happens in NASA does not stay in NASA. So your next example, tell us about the NIH. The",
-      "words": [
+        },
         {
           "word": "private",
           "startTime": 4436.01,
@@ -77999,7 +77991,15 @@
           "startTime": 4436.33,
           "endTime": 4437.21,
           "confidence": 0.9956
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4437.21,
+      "endTime": 4453.82,
+      "text": "What happens in NASA doesn't stay in NASA. What happens in NASA does not stay in NASA. So your next example, tell us about the NIH. The",
+      "words": [
         {
           "word": "What",
           "startTime": 4437.21,
@@ -80483,8 +80483,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4602.68,
-      "endTime": 4796.14,
-      "text": "The third example in the paper is French military RD. Okay, so every military likes to have global state of the art equipment, and you end up having to do some amount of your own research of adaptation and modification and localization. I described the thin air at Kardumla as a problem that only the Indian military has to solve. Or imagine that you know you have old Soviet equipment, can you modernize it? Can I put a modern night vision capability on an old T72? This kind of RD has to go on all the time. In India, that's done in a makeway where you have a DRDO. The French have a very interesting mechanism where the bulk of the French military production and military RD is done by a bunch of corporations. So there are private companies who do the RD and the defense manufacturing. So you know, Raphael is a great French fighter. It is built in the private sector. It is designed in the private sector. And the government gives RD contracts to those private firms to develop that craft. And they have interesting risk sharing arrangements. They have a concept called a cost plus contract. That is not a grant, but it effectively pays for the risk taking of the private person. And the private companies are given challenges by the military. So the military says that this is the problem that I want to solve. I want ABCD capabilities. And then the private corporations go do that RD, and there's a whole institutional arrangement around that, which is described in the paper. So there is a very interesting model of R D being funded by the government in private corporations in the French military system. So, Ajai, what's the final example? A final example is a story from India. The first uh attempt in India to create a mechanism with government funding is called Nmitly, and it was done at CSIR. The idea here is to have a partnership between a private company and the CSIR to take some of the knowledge and innovations of CSIR and turn them into products in the economy. And in this The government puts money to the private firm. So the private firm gets the knowledge from the CSIR labs and they get some money. And through this, you get the pipeline. So it's useful to think of TRLs, technology readiness levels. Innovations go from TRL 1, 2, 3, 4, 5. So as the risk goes down, it goes closer and closer to being a product. So the idea is you start with ideas and innovations that are at low levels of TRL. Inside CSIR, where they are more in the nature of scientific development at prototype level and so on, and carry it through closer to its industrial application. This is a concept called NMITLI, which was built at CSIR and successfully run for some years. Unfortunately, it is no more, but it's an Indian story, and you also get to see the difficulties and the limitations. And we have studied the difficulties of NMITL in great detail in terms of our proposing solutions.",
+      "endTime": 4704.94,
+      "text": "The third example in the paper is French military RD. Okay, so every military likes to have global state of the art equipment, and you end up having to do some amount of your own research of adaptation and modification and localization. I described the thin air at Kardumla as a problem that only the Indian military has to solve. Or imagine that you know you have old Soviet equipment, can you modernize it? Can I put a modern night vision capability on an old T72? This kind of RD has to go on all the time. In India, that's done in a makeway where you have a DRDO. The French have a very interesting mechanism where the bulk of the French military production and military RD is done by a bunch of corporations. So there are private companies who do the RD and the defense manufacturing. So you know, Raphael is a great French fighter. It is built in the private sector. It is designed in the private sector. And the government gives RD contracts to those private firms to develop that craft. And they have interesting risk sharing arrangements. They have a concept called a cost plus contract. That is not a grant, but it effectively pays for the risk taking of the private person. And the private companies are given challenges by the military. So the military says that this is the problem that I want to solve. I want ABCD capabilities. And then the private corporations go do that RD, and there's a whole institutional arrangement around that, which is described in the paper. So there is a very interesting model of R D being funded by the government in private corporations in the French military system.",
       "words": [
         {
           "word": "The",
@@ -82231,7 +82231,15 @@
           "startTime": 4704.44,
           "endTime": 4704.94,
           "confidence": 0.9929
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 4714.27,
+      "endTime": 4715.71,
+      "text": "So, Ajai, what's the final",
+      "words": [
         {
           "word": "So,",
           "startTime": 4714.27,
@@ -82261,7 +82269,15 @@
           "startTime": 4715.39,
           "endTime": 4715.71,
           "confidence": 1.0
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 4715.71,
+      "endTime": 4796.14,
+      "text": "example? A final example is a story from India. The first uh attempt in India to create a mechanism with government funding is called Nmitly, and it was done at CSIR. The idea here is to have a partnership between a private company and the CSIR to take some of the knowledge and innovations of CSIR and turn them into products in the economy. And in this The government puts money to the private firm. So the private firm gets the knowledge from the CSIR labs and they get some money. And through this, you get the pipeline. So it's useful to think of TRLs, technology readiness levels. Innovations go from TRL 1, 2, 3, 4, 5. So as the risk goes down, it goes closer and closer to being a product. So the idea is you start with ideas and innovations that are at low levels of TRL. Inside CSIR, where they are more in the nature of scientific development at prototype level and so on, and carry it through closer to its industrial application. This is a concept called NMITLI, which was built at CSIR and successfully run for some years. Unfortunately, it is no more, but it's an Indian story, and you also get to see the difficulties and the limitations. And we have studied the difficulties of NMITL in great detail in terms of our proposing solutions.",
+      "words": [
         {
           "word": "example?",
           "startTime": 4715.71,
@@ -84003,8 +84019,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 4827.32,
-      "endTime": 5006.81,
-      "text": "It is very hard. There's no denying that. But you know what? I mean, this is twenty twenty-four, from nineteen forty-seven onwards. We have solved many hard problems in India. So I am a pure optimist when it comes to India public policy. Yes, we will grapple with these problems, and if the leadership decides that they want to do it, they can do it. Here are some elements of solutions that have been identified in this paper. So in the paper, we do high-level uh guidance for how solutions should go about, not the gritty detail. So for an intuition. Uh in finance, a critical document is called the report of the Financial Sector Legislative Reforms Commission. Volume one is a document of the ideas, and volume two is the draft law. In the volume one, which is the document of ideas, we do page long things that are call drafting instructions, where we put the essence of what is required of a new legal document. Okay. In this paper, we do those kinds of drafting instructions. Then some teams will be needed to implement them. And get it through batteries of lawyers and turn them into living legal documents. But we do this at the level of ideas and getting up to drafting instructions. First, there is a critical document in India which is called GFR, the general financial rules. It is oriented towards simple contracts where you are buying goods, you're buying services, you're buying works, and there is no risk, there is no RD, there is no possibility of failure. And you will be held to contract performance. So if the private vendor does not deliver, then the government will go after him. There is no concept of risk, there is no concept of RD, there is no concept of grant, there is no concept of cost plus contracts. So what we have done is we have identified the contractual nature that has been used elsewhere in the world for doing RD funding by the government. We have identified the gap in the GFR. And our first to-do is that the GFR needs new chapters. Whereby it will become possible for the government to do grants and it will become possible for the government to do cost plus agreements because these are the legal engineering through which these highways of money to private persons can run. So this is work program number one that you need to amend the GFR. The work program number two is the very foundations of the scientific organizations, they are created in so-called founding documents. It could be a lot. That is the simplest kind of thing, but there can also be other kinds of documents. It is important and essential to write down in the founding document that the purpose of this organization is to create spillovers in the society by contracting out scientific research. Because if this is not done, you are vulnerable to the CAG CVC saying why did you contract out? You were supposed to do this. By default in India, it is make. Why did you contract out? Prove to me that contracting out was better.",
+      "endTime": 5008.75,
+      "text": "It is very hard. There's no denying that. But you know what? I mean, this is twenty twenty-four, from nineteen forty-seven onwards. We have solved many hard problems in India. So I am a pure optimist when it comes to India public policy. Yes, we will grapple with these problems, and if the leadership decides that they want to do it, they can do it. Here are some elements of solutions that have been identified in this paper. So in the paper, we do high-level uh guidance for how solutions should go about, not the gritty detail. So for an intuition. Uh in finance, a critical document is called the report of the Financial Sector Legislative Reforms Commission. Volume one is a document of the ideas, and volume two is the draft law. In the volume one, which is the document of ideas, we do page long things that are call drafting instructions, where we put the essence of what is required of a new legal document. Okay. In this paper, we do those kinds of drafting instructions. Then some teams will be needed to implement them. And get it through batteries of lawyers and turn them into living legal documents. But we do this at the level of ideas and getting up to drafting instructions. First, there is a critical document in India which is called GFR, the general financial rules. It is oriented towards simple contracts where you are buying goods, you're buying services, you're buying works, and there is no risk, there is no RD, there is no possibility of failure. And you will be held to contract performance. So if the private vendor does not deliver, then the government will go after him. There is no concept of risk, there is no concept of RD, there is no concept of grant, there is no concept of cost plus contracts. So what we have done is we have identified the contractual nature that has been used elsewhere in the world for doing RD funding by the government. We have identified the gap in the GFR. And our first to-do is that the GFR needs new chapters. Whereby it will become possible for the government to do grants and it will become possible for the government to do cost plus agreements because these are the legal engineering through which these highways of money to private persons can run. So this is work program number one that you need to amend the GFR. The work program number two is the very foundations of the scientific organizations, they are created in so-called founding documents. It could be a lot. That is the simplest kind of thing, but there can also be other kinds of documents. It is important and essential to write down in the founding document that the purpose of this organization is to create spillovers in the society by contracting out scientific research. Because if this is not done, you are vulnerable to the CAG CVC saying why did you contract out? You were supposed to do this. By default in India, it is make. Why did you contract out? Prove to me that contracting out was better. Those kinds of questions get raised. So",
       "words": [
         {
           "word": "It",
@@ -87185,15 +87201,7 @@
           "startTime": 5006.35,
           "endTime": 5006.81,
           "confidence": 0.9966
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 5007.39,
-      "endTime": 5010.91,
-      "text": "Those kinds of questions get raised. So the same way Nasser did in the founding document. Correct. In",
-      "words": [
+        },
         {
           "word": "Those",
           "startTime": 5007.39,
@@ -87235,7 +87243,15 @@
           "startTime": 5008.59,
           "endTime": 5008.75,
           "confidence": 0.4438
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 5008.75,
+      "endTime": 5010.91,
+      "text": "the same way Nasser did in the founding document. Correct. In",
+      "words": [
         {
           "word": "the",
           "startTime": 5008.75,

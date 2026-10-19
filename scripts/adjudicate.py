@@ -12,8 +12,8 @@ where the two disagree for at least MIN_STRETCH seconds. There Claude reads the 
 context and decides who is speaking: who is addressed by name, what the speaker says about
 himself, how the conversation flows.
 
-An episode settled earlier at 5 seconds and more (LONG_NOTE) is only asked about the stretches
-it hasn't been asked about. An episode whose insights were extracted from the labels before
+An episode settled earlier at a longer threshold (EARLIER) is only asked about the stretches it
+hasn't been asked about. An episode whose insights were extracted from the labels before
 settling keeps them: Claude reads the corrected passages beside the insights and fixes any that
 now credit the wrong host (a story's teller, a recommendation's recommender, a host named in a
 joke or a core idea). The rest of each insight stays as extracted.
@@ -39,9 +39,10 @@ WORK = os.path.join(ROOT, "work")
 GATEWAY = "http://auth2api.apps.svc.cluster.local:8317"
 MODEL = "claude-opus-5-5"
 HOSTS = ("Amit Varma", "Ajay Shah")
-MIN_STRETCH = 2.0
-NOTE = "; disagreements with FluidAudio of 2 s or more settled by Claude"
-LONG_NOTE = "; long disagreements with FluidAudio settled by Claude"  # 5 s or more, in episodes under 95% agreement
+MIN_STRETCH = 1.0
+NOTE = "; disagreements with FluidAudio of 1 s or more settled by Claude"
+EARLIER = ("; disagreements with FluidAudio of 2 s or more settled by Claude",
+           "; long disagreements with FluidAudio settled by Claude")  # 5 s or more, in episodes under 95% agreement
 INSIGHTS = os.path.join(ROOT, "data", "generated", "insights")
 AUDIT = """You check curated insights from an episode of Everything is Everything, a podcast hosted by Amit
 Varma and Ajay Shah. Some speaker labels in the episode's transcript have just been corrected. The insights were
@@ -219,7 +220,8 @@ def adjudicate(client, n, again=False):
     if not both:  # nothing to compare against
         return None
     agreement = sum(s == f for s, f in both) / len(both)
-    asked = asked_before(n) if settled.endswith(LONG_NOTE) and not again else []
+    earlier = next((e for e in EARLIER if settled.endswith(e)), None)
+    asked = asked_before(n) if earlier and not again else []
     todo = [(lo, hi) for lo, hi in disputes(words, labels, fluid)
             if not any(words[lo]["startTime"] < b and words[hi - 1]["endTime"] > a for a, b in asked)]
     if not todo:
@@ -242,7 +244,7 @@ def adjudicate(client, n, again=False):
     transcript["segments"] = [{"speaker": s["speaker"], "startTime": s["words"][0]["startTime"],
                                "endTime": s["words"][-1]["endTime"], "text": " ".join(w["word"] for w in s["words"]),
                                "words": s["words"]} for s in segments]
-    base = settled[:-len(LONG_NOTE)] if settled.endswith(LONG_NOTE) else settled
+    base = settled[:-len(earlier)] if earlier else settled
     transcript["metadata"]["speakerLabels"] = base if base.endswith(NOTE) else base + NOTE
     transcript["metadata"]["speakers"] = sorted({s["speaker"] for s in segments})
     both = [(s, f) for s, f in zip(labels, fluid) if s in HOSTS and f in HOSTS]

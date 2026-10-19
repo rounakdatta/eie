@@ -5,7 +5,7 @@
     "durationSeconds": 4701,
     "asr": "nvidia/parakeet-tdt-0.6b-v3 (int8 ONNX, onnx-asr)",
     "vad": "silero-vad",
-    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 2 s or more settled by Claude",
+    "speakerLabels": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
     "speakers": [
       "Ajay Shah",
       "Amit Varma"
@@ -11058,8 +11058,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 561.07,
-      "endTime": 565.47,
-      "text": "It's easier to be a commentator. Yeah, I'll come back to that. You're in the pressure cooker. I'll come back",
+      "endTime": 562.43,
+      "text": "It's easier to be a commentator.",
       "words": [
         {
           "word": "It's",
@@ -11096,7 +11096,15 @@
           "startTime": 561.79,
           "endTime": 562.43,
           "confidence": 0.923
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 562.43,
+      "endTime": 563.79,
+      "text": "Yeah, I'll come back to that.",
+      "words": [
         {
           "word": "Yeah,",
           "startTime": 562.43,
@@ -11132,7 +11140,15 @@
           "startTime": 562.99,
           "endTime": 563.79,
           "confidence": 0.8509
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Ajay Shah",
+      "startTime": 563.79,
+      "endTime": 565.47,
+      "text": "You're in the pressure cooker. I'll come back",
+      "words": [
         {
           "word": "You're",
           "startTime": 563.79,
@@ -29770,8 +29786,8 @@
     {
       "speaker": "Ajay Shah",
       "startTime": 1488.19,
-      "endTime": 1502.56,
-      "text": "difference. I mean once you have extreme time pressure. It's the same instantaneity of judging a position and not calculating. So I felt that, you know, rapid training goes into that. To some extent, yes,",
+      "endTime": 1501.52,
+      "text": "difference. I mean once you have extreme time pressure. It's the same instantaneity of judging a position and not calculating. So I felt that, you know, rapid training goes into that.",
       "words": [
         {
           "word": "difference.",
@@ -29958,7 +29974,15 @@
           "startTime": 1501.04,
           "endTime": 1501.52,
           "confidence": 0.8
-        },
+        }
+      ]
+    },
+    {
+      "speaker": "Amit Varma",
+      "startTime": 1501.52,
+      "endTime": 1548.9,
+      "text": "To some extent, yes, to some extent, not quite, because even if you get into time pressure with five minutes left in a classical game, you might say that it's the same as a Blitz game because you have five minutes there, but here you've spent two hours thinking about the position and the uh nuances and everything. So it's slightly different, like you know, the the a classic example of someone who would get into severe time trouble in classical but was world blades champion twice is Alexander Grishchuk. So it's kind of interesting how time pressure plays out. And also that was a wonderful point about how accidents happen when your mind switches off. Like when we did the hiking episode I referred to the book Traffic by Tom Vanderbilt, where he points out that a large proportion of traffic accidents happens when you're really close to home. Because that's when you mentally switch off, you're almost home in your mind you're home and uh your alertness goes away. So that's another important lesson.",
+      "words": [
         {
           "word": "To",
           "startTime": 1501.52,
@@ -29982,15 +30006,7 @@
           "startTime": 1502.16,
           "endTime": 1502.56,
           "confidence": 0.8615
-        }
-      ]
-    },
-    {
-      "speaker": "Amit Varma",
-      "startTime": 1502.56,
-      "endTime": 1548.9,
-      "text": "to some extent, not quite, because even if you get into time pressure with five minutes left in a classical game, you might say that it's the same as a Blitz game because you have five minutes there, but here you've spent two hours thinking about the position and the uh nuances and everything. So it's slightly different, like you know, the the a classic example of someone who would get into severe time trouble in classical but was world blades champion twice is Alexander Grishchuk. So it's kind of interesting how time pressure plays out. And also that was a wonderful point about how accidents happen when your mind switches off. Like when we did the hiking episode I referred to the book Traffic by Tom Vanderbilt, where he points out that a large proportion of traffic accidents happens when you're really close to home. Because that's when you mentally switch off, you're almost home in your mind you're home and uh your alertness goes away. So that's another important lesson.",
-      "words": [
+        },
         {
           "word": "to",
           "startTime": 1502.56,
