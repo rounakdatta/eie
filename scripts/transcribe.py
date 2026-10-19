@@ -10,7 +10,8 @@ Audio comes from the show's podcast feed. Silero VAD cuts it at pauses into chun
 fp32 build) transcribes them, and each word
 is labelled Amit Varma, Ajay Shah or other by comparing WeSpeaker ResNet34 voiceprints
 (via sherpa-onnx) with the two hosts' voices. The feed opens with a ~14 s notice the video
-lacks ("You're listening to the audio version ..."), which is dropped, and its clock is offset
+lacks ("You're listening to the audio version ..."), which is dropped; a greeting spoken over the
+intro music, which VAD misses, is recovered (see opening). The feed's clock is offset
 from the YouTube video's, so times are shifted to the video's: the offset comes from matching
 the current transcript's word timings against the feed audio's loudness.
 
@@ -343,16 +344,21 @@ def opening(asr, audio, words, old_words, offset):
         if heard[i]["startTime"] - heard[i - 1]["endTime"] >= 1.0:
             heard = heard[i:]
             break
-    plain = lambda text: re.sub(r"[^a-z ]+", "", text.lower()).split()
+    plain = lambda text: " ".join(re.sub(r"[^a-z ]+", "", text.lower()).split())
     said = plain("".join(w["word"] for w in heard))  # FluidAudio's pieces carry their own spaces
-    if len(said) < 2:
+    if not said:
         return []
-    found = [dict(w, endTime=min(w["endTime"], words[0]["startTime"]))
-             for w in transcribe(asr, audio, [(heard[0]["startTime"] - 0.3 + offset, words[0]["startTime"])])
-             if w["startTime"] < words[0]["startTime"] - 0.05]
-    if difflib.SequenceMatcher(None, said, plain(" ".join(w["word"] for w in found)), autojunk=False).ratio() < 0.6:
-        return []
-    return found
+    same = lambda ws: [re.sub(r"[^a-z]+", "", w["word"].lower()) for w in ws]
+    for before, after in ((0.3, 0.0), (0.3, 0.6), (1.8, 1.0)):  # Parakeet can return nothing for a clip under music
+        found = [dict(w, endTime=min(w["endTime"], words[0]["startTime"]))
+                 for w in transcribe(asr, audio, [(heard[0]["startTime"] - before + offset, words[0]["startTime"] + after)])
+                 if w["startTime"] < words[0]["startTime"] - 0.05]
+        overlap = max(k for k in range(len(found) + 1) if same(found[len(found) - k:]) == same(words[:k]))
+        found = found[:len(found) - overlap]  # the first words again, timed a touch earlier this time
+        # by character: FluidAudio's first piece is often clipped ("ello gentle reader" for "Hello, gentle readers")
+        if found and difflib.SequenceMatcher(None, said, plain(" ".join(w["word"] for w in found)), autojunk=False).ratio() >= 0.6:
+            return found
+    return []
 
 
 def load_asr():
@@ -449,10 +455,7 @@ def relabel(episodes):
 
 def main(episodes):
     guard_memory()
-    so = onnxruntime.SessionOptions()
-    so.intra_op_num_threads, so.inter_op_num_threads = THREADS, 1
-    asr = onnx_asr.load_model("nemo-parakeet-tdt-0.6b-v3", path=os.path.join(MODELS, "parakeet-v3-int8"),
-                              quantization="int8", sess_options=so).with_timestamps()
+    asr = load_asr()
     vad_config = sherpa_onnx.VadModelConfig()
     vad_config.silero_vad.model = os.path.join(MODELS, "silero_vad.onnx")
     vad_config.silero_vad.threshold, vad_config.silero_vad.min_silence_duration = 0.5, 0.3
@@ -499,6 +502,7 @@ def main(episodes):
             words = transcribe(asr, audio, speech_chunks(vad, audio))
             notice = preroll_end(words)
             words = [w for w in words if w["startTime"] >= notice]
+            words = opening(asr, audio, words, old_words, offset) + words
         labels, voice_match, drift, swapped = label(extractor, voices, audio, words,
                                                     os.path.join(WORK, "embeddings", f"{n:03d}.npz"))
         kept = [(dict(w, startTime=round(w["startTime"] - offset, 2), endTime=round(w["endTime"] - offset, 2)), s)
