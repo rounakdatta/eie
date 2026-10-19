@@ -252,12 +252,24 @@ def extract(client, n):
     return qc
 
 
+_seen = {}
+
+
+def peek(path, field):
+    """One top-level field of a JSON file, parsed again only when the file changes: the --wait loop
+    looks at every transcript every ten minutes, and parsing them all costs half a minute of CPU."""
+    mtime = os.path.getmtime(path)
+    if _seen.get(path, (None,))[0] != mtime:
+        _seen[path] = (mtime, load(path).get(field) or {})
+    return _seen[path][1]
+
+
 def pending(episodes, force=False):
     todo = []
     for n in episodes:
-        meta = load(os.path.join(TRANSCRIPTS, f"{n:03d}.json"))["metadata"]
+        meta = peek(os.path.join(TRANSCRIPTS, f"{n:03d}.json"), "metadata")
         ready = meta.get("asr", "").startswith(READY[0]) and READY[1] in meta.get("speakerLabels", "")
-        done = load(os.path.join(INSIGHTS, f"{n:03d}.json")).get("source", {}).get("speakers") == meta.get("speakerLabels")
+        done = peek(os.path.join(INSIGHTS, f"{n:03d}.json"), "source").get("speakers") == meta.get("speakerLabels")
         if ready and (force or not done):
             todo.append(n)
     return todo
@@ -277,7 +289,7 @@ def main(args):
                 except Exception as e:  # one bad episode shouldn't stop the run
                     print(json.dumps({"episode": n, "error": f"{type(e).__name__}: {e}"}), flush=True)
         if not wait or not pending(episodes) and all(
-                load(os.path.join(INSIGHTS, f"{n:03d}.json")).get("source") for n in episodes):
+                peek(os.path.join(INSIGHTS, f"{n:03d}.json"), "source") for n in episodes):
             break
         time.sleep(600)
 

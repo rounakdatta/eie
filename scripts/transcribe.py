@@ -3,6 +3,7 @@
 
   python3 scripts/transcribe.py [N ...]   # all 128 by default; resumable, skips finished episodes
   python3 scripts/transcribe.py --relabel # redo only the speaker labels, from the cached voiceprints
+  python3 scripts/transcribe.py --openings # restore greetings spoken over the intro music (see opening)
 
 Audio comes from the show's podcast feed. Silero VAD cuts it at pauses into chunks of up to
 30 s, NVIDIA Parakeet TDT 0.6B v3 (int8 ONNX, via onnx-asr; episodes 1-16 ran the 2x larger
@@ -331,6 +332,71 @@ def segments_of(words, labels):
              "text": " ".join(w["word"] for w in s["words"]), "words": s["words"]} for s in segments]
 
 
+def opening(asr, audio, words, old_words, offset):
+    """Words spoken over the intro music, before the first word VAD found: Silero doesn't hear
+    speech under music, so a greeting can go missing ("Welcome, gentle reader, to this episode of").
+    Whatever FluidAudio heard in the 10 s before the first word, after its last pause, is transcribed
+    again and kept if it reads the same. Words on the feed clock in and out; old_words on the video's."""
+    first = words[0]["startTime"] - offset
+    heard = [w for w in old_words if first - 10 <= w["startTime"] < first - 0.3]
+    for i in range(len(heard) - 1, 0, -1):
+        if heard[i]["startTime"] - heard[i - 1]["endTime"] >= 1.0:
+            heard = heard[i:]
+            break
+    plain = lambda text: re.sub(r"[^a-z ]+", "", text.lower()).split()
+    said = plain("".join(w["word"] for w in heard))  # FluidAudio's pieces carry their own spaces
+    if len(said) < 2:
+        return []
+    found = [dict(w, endTime=min(w["endTime"], words[0]["startTime"]))
+             for w in transcribe(asr, audio, [(heard[0]["startTime"] - 0.3 + offset, words[0]["startTime"])])
+             if w["startTime"] < words[0]["startTime"] - 0.05]
+    if difflib.SequenceMatcher(None, said, plain(" ".join(w["word"] for w in found)), autojunk=False).ratio() < 0.6:
+        return []
+    return found
+
+
+def load_asr():
+    so = onnxruntime.SessionOptions()
+    so.intra_op_num_threads, so.inter_op_num_threads = THREADS, 1
+    return onnx_asr.load_model("nemo-parakeet-tdt-0.6b-v3", path=os.path.join(MODELS, "parakeet-v3-int8"),
+                               quantization="int8", sess_options=so).with_timestamps()
+
+
+def openings(episodes):
+    """Restore the openings of finished transcripts (see opening). The restored words go to the host
+    FluidAudio heard there: the first word's speaker if FluidAudio has one voice across both, else the other."""
+    asr = None
+    for n in episodes:
+        path = os.path.join(TRANSCRIPTS, f"{n:03d}.json")
+        current = load_json(path)
+        if not current["metadata"].get("speakerLabels", "").startswith(LABELS):
+            continue
+        words = [w for s in current["segments"] for w in s["words"]]
+        labels = [s["speaker"] for s in current["segments"] for _ in s["words"]]
+        old = fluidaudio(n, current)
+        old_words = [w for s in old["segments"] for w in s.get("words", [])]
+        offset = current["metadata"]["feedOffsetSeconds"]
+        first = words[0]["startTime"]
+        if len([w for w in old_words if first - 10 <= w["startTime"] < first - 0.3]) < 3:
+            continue  # FluidAudio heard nothing before the first word either
+        asr = asr or load_asr()
+        feed = [dict(words[0], startTime=first + offset, endTime=words[0]["endTime"] + offset)]
+        found = [dict(w, startTime=round(w["startTime"] - offset, 2), endTime=round(w["endTime"] - offset, 2))
+                 for w in opening(asr, feed_audio(n), feed, old_words, offset)]
+        qc = {"episode": n, "restored": " ".join(w["word"] for w in found)}
+        if found:
+            voice = lambda t: next((s["speaker"] for s in old["segments"] if s["startTime"] <= t <= s["endTime"]), None)
+            hosts = [h for h in VOICES if h != labels[0]]
+            here, there = voice(found[0]["startTime"]), voice(first)
+            same = here is None or there is None or here == there or labels[0] not in VOICES
+            qc["speaker"] = labels[0] if same else hosts[0]
+            current["segments"] = segments_of(found + words, [qc["speaker"]] * len(found) + labels)
+            write_json(current, path)
+        with open(os.path.join(WORK, "openings-qc.jsonl"), "a", encoding="utf-8") as f:
+            f.write(json.dumps(qc, ensure_ascii=False) + "\n")
+        print(json.dumps(qc, ensure_ascii=False), flush=True)
+
+
 def relabel(episodes):
     """New speaker labels for finished transcripts, from the cached voiceprints: no audio needed.
 
@@ -466,4 +532,4 @@ def main(episodes):
 
 if __name__ == "__main__":
     numbers = [int(a) for a in sys.argv[1:] if not a.startswith("--")] or range(1, 129)
-    relabel(numbers) if "--relabel" in sys.argv else main(numbers)
+    relabel(numbers) if "--relabel" in sys.argv else openings(numbers) if "--openings" in sys.argv else main(numbers)
