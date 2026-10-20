@@ -4,51 +4,51 @@ All 128 episodes of [*Everything is Everything*](https://www.youtube.com/@amitva
 
 ## Start here
 
-These are the ten episodes that open the most threads, from [`threads.json`](data/generated/analysis/threads.json):
+These are ten entry points from [`threads.json`](data/generated/analysis/threads.json), the episodes that open the most threads and show the hosts at their best:
 
 | Ep | Episode | Why |
 |---|---|---|
-| 10 | Why Freedom Matters | The show's keystone, linked from 19 later episodes: freedom as consent, then India's economic history through that lens. |
-| 25 | Understanding the State | The base of the state thread: the state as violence, so every intervention carries a moral cost. |
-| 21 | The Beauty of Finance | Ajay makes finance make sense through its history; 15 later episodes build on it. |
-| 57 | How to Do Development | Failure is the norm, and success needs capable firms, a capable state and accountable politics. |
-| 95 | The Globalisation Episode | Why trade is positive-sum, and why tariffs hurt your own poor. |
-| 28 | The Reformers | India's quiet reformers, pitched as a web series, and a lesson in how change happens. |
-| 8 | Why Talent Comes in Clusters | The O-ring theory of talent, then Ajay on why new states fail. |
-| 9 | How I Reversed My Type 2 Diabetes | Amit's diabetes reversal doubles as the story of how a sugar lobby bent science. |
-| 38 | Poker and Life | Expected value, variance and tilt, turned into lessons for life. |
-| 127 | 10 Frameworks That Shaped Us | The ten frameworks behind how the hosts see the world. |
+| 127 | 10 Frameworks That Shaped Us | The hosts' ten core frameworks in one sitting, touching almost every thread. |
+| 10 | Why Freedom Matters | The show's most-linked episode, from 19 later ones: freedom as the route to prosperity, through India's economic history. |
+| 25 | Understanding the State | Every act of government is an act of violence: the foundation of the state thread. |
+| 21 | The Beauty of Finance | Ajay demystifies finance through its history; 15 later episodes link back to it. |
+| 57 | How to Do Development | The show's biggest question, why India is poor, with a sharp critique of development economics. |
+| 54 | A Deep Dive Into Education | A lifetime of thinking about education, with advice for parents and young people. |
+| 34 | How Family Firms Evolve | Ajay's masterclass on family firms opens the firms thread. |
+| 38 | Poker and Life | Amit's poker presentation: expected value, luck and equanimity, with the hosts at play. |
+| 120 | The Art of Reading | Why and how to read, which Amit counts among the show's best episodes. |
+| 23 | Seven Stories That Should Be Films | The lighter side: seven stories the hosts pitch as films, proof they aren't only about ideas. |
 
-From there, 14 threads take you through every episode in listening order. They run from *Why freedom works* and *How the state works, and fails* through *Indian finance* and *Firms: where prosperity is made*, to *Private passions* and *The art of living*.
+From there, 14 threads take you through every episode in listening order. They run from *What the state should do, and what it shouldn't* and *Firms: where prosperity is made* through *The beauty of finance, and India's long road to it* to *Private passions* and *Life lessons: habits, choices and a life well spent*.
 
 ## Highlights
 
 **What they recommend most.** Leaving out their own work, these are the works the hosts came back to across the most episodes ([`reading_list.json`](data/generated/analysis/reading_list.json)):
 
 1. *The Use of Knowledge in Society*, Friedrich Hayek: 12 episodes
-2. *Seeing Like a State*, James C. Scott: 9
+2. *Seeing Like a State*, James C. Scott: 11
 3. *Economics in One Lesson*, Henry Hazlitt: 7
 4. *I, Pencil*, Leonard Read: 7
-5. *The Four Quadrants of Conformism*, Paul Graham: 7
-6. *The Double 'Thank You' Moment*, John Stossel: 7
+5. *The Double 'Thank You' Moment*, John Stossel: 7
+6. *The Four Quadrants of Conformism*, Paul Graham: 7
 7. *That Which Is Seen, and That Which Is Not Seen*, Frédéric Bastiat: 6
-8. *The End of History?*, Francis Fukuyama: 6
-9. *The Selfish Gene*, Richard Dawkins: 6
-10. *The Blank Slate*, Steven Pinker: 5
+
+Nine more come up in 5 episodes each, among them *The Blank Slate*, *The Selfish Gene*, *The Fatal Conceit*, *The Nature of the Firm* and *The Power Broker*.
 
 **The ideas they return to.** These are the broadest of the 50 big ideas in [`big_ideas.json`](data/generated/analysis/big_ideas.json):
-- The Knowledge Problem: 14 episodes
-- Progress Is Not Inevitable: 13
-- Prices Are Signals Wrapped in Incentives: 12
-- Openness Wins: 12
-- The State Is a Monopoly of Violence: 12
-- The Policy Pipeline: 12
-- Tribalism Is the Enemy of Being Correct: 12
-- Spontaneous Order: 12
+- Don't freeze in amber: 25 episodes
+- People are not wood or stones: they optimize: 25
+- The double thank-you moment: the world is positive-sum: 25
+- Stone-age hardware, cultural software: 24
+- Development is a story of firms: 22
+- Index every belief on a zero-to-one scale: 22
+- The seen and the unseen: 21
+- The knowledge problem: no planner can know what prices know: 21
+- Self-ownership: the individual is the unit: 21
 
 **The foundations went under-watched.** The episodes most often linked from later show notes are 10 *Why Freedom Matters* (19 links), 21 *The Beauty of Finance* (15), 25 *Understanding the State* (14), 26 *When Should the State Act?* (13) and 28 *The Reformers* (13). Episode 37, *From Imperial to Adaptive Firms*, is linked from 11 episodes, yet with 6.9k views it is among the five least watched. The most watched are *The Art of Reading* (47.8k), *How Much Wealth Do You Need to Retire?* (45.3k) and *Understanding Human Sexuality* (37.3k). Together the 128 videos have 1.9M views.
 
-**Best of.** [`best_of.json`](data/generated/analysis/best_of.json) has the 30 stories most worth retelling, among them V.P. Menon burning down his school, Amul adding rancid flavour back into its butter, and the CIA's plutonium lost on Nanda Devi. It also has the 25 funniest moments and the 15 best references.
+**Best of.** [`best_of.json`](data/generated/analysis/best_of.json) has the 30 stories most worth retelling. Among them are Lal Bihari, declared dead by his cousins, spending 18 years proving he was alive; the CIA's plutonium battery lost on Nanda Devi; and Amul adding the taste of rancid butter to its own to win over Bombay. It also has the 25 funniest moments and the 15 best references.
 
 ## Data
 
@@ -61,7 +61,7 @@ From there, 14 threads take you through every episode in listening order. They r
 | `data/generated/episodes.json` | Episode index: metadata, threads, which episodes link to which, insight counts |
 | `data/generated/analysis/threads.json` | 14 listening threads covering all 128 episodes, plus where to start |
 | `data/generated/analysis/big_ideas.json` | 50 ideas that recur across episodes, each with its source insights |
-| `data/generated/analysis/reading_list.json` | All 2,929 recommendations, deduplicated into 1,671 works, each with why the hosts recommend it |
+| `data/generated/analysis/reading_list.json` | All 2,779 recommendations, deduplicated into 1,664 works, each with why the hosts recommend it |
 | `data/generated/analysis/best_of.json` | The best stories, jokes and references |
 
 Every insight has an ID made of its episode, kind and position. `045-S03` is the third story of episode 45; the kinds are S for stories, R recommendations, C core ideas and J jokes and references. The analysis files cite insights only by ID.
@@ -91,5 +91,6 @@ Claude Opus 5.5 extracts each episode's insights from its labelled transcript an
 - `other` (0.1% of words) marks a third voice, such as the crew in the Q&A episodes, and now and then a host putting on a voice.
 - In episodes 53, 76 and 79 FluidAudio heard essentially one voice, so their labels rest on the voiceprints alone.
 - Episode 12's audio comes from YouTube, because the podcast feed files Episode 7's audio under it.
+- The YouTube videos of episodes 1–25 open with a teaser clip from later in the episode. The feed has no teaser, so those transcripts begin at the show's own opening, and the teaser's words appear where they fall in the episode. Episode 12, transcribed from YouTube's audio, keeps its teaser.
 - Episodes 1–16 were transcribed with Parakeet's full-precision build, the rest with its int8 build.
 - The insights record what the hosts said, slips included. In episode 6 Amit places the 1993 earthquake in Gujarat; in episode 66 he correctly says Latur.
