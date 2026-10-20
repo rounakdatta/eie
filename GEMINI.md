@@ -8,6 +8,7 @@ These are instructions provided to the Gemini CLI for processing audio files fro
 - **FluidAudio Directory:** `~/personal/FluidAudio`
 - **yt-dlp Cookies:** `~/Downloads/cookies.txt`
 - Frequency of episode drops: Every Friday
+- The show ended with Episode 128 on 5 December 2025, so there is nothing left to backfill.
 
 ## Processing Workflow
 
