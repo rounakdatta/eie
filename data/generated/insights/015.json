@@ -6,383 +6,400 @@
   "stories": [
     {
       "teller": "Ajay Shah",
-      "topic": "The German Tank Problem",
-      "summary": "During WWII, Allied intelligence wanted to know how many heavy tanks Germany was producing per month. Human-intelligence sources (the brigadiers' girlfriends) said roughly 1,500 a month. Statisticians took the serial numbers from sporadically captured/killed tanks, observed that the Germans assigned incremental numbers, and used the average inter-tank distance plus the highest observed serial to estimate the total. Their answer was roughly 200 a month. After the war, the German production records confirmed the statisticians were right and the spies were wrong.",
-      "insight": "A canonical demonstration that careful inference from a small, well-understood data structure can outperform a flood of human reports built on flattery and self-interest. Amit's punchline distills the politics of espionage: 'brigadiers lie to their girlfriends.'"
+      "topic": "The German Tank Problem: Statisticians vs the Brigadier's Girlfriend",
+      "summary": "Late in World War II the Allies needed to know whether Germany's new heavy tanks were a few showpieces or were being mass-produced. Spies, the people who 'knew the girlfriend of some brigadier', reported around 1,500 tanks a month. Statisticians used a different source: the serial numbers on tanks destroyed in battle. The methodical Germans numbered their tanks in sequence. So if you have seen, say, 24, 74 and 90, you should not conclude there are only 90 tanks. You take the average gap between the observed numbers and add it to the highest one. Their estimate was about 200 a month. When the Allies examined German production records after the war, the statisticians turned out to be right and the spies wrong.",
+      "insight": "Careful reasoning about how data is generated can beat apparently privileged insider information. A simple formula applied to the right structure outperformed gossip. Germany's orderly numbering itself became an intelligence leak; as Ajay notes, it would have been harder if every number had been randomized.",
+      "quote": "And after the war ended, when the Allies went and did the postmortem inside the German production records, it turned out that basically the statisticians were right and the humint was wrong."
     },
     {
       "teller": "Ajay Shah",
-      "topic": "Asking Dennis Aigner Whether Estimators Have a Limit",
-      "summary": "As a PhD student with no prior probability or statistics training, Ajay was placed in a fourth-year undergraduate econometrics class taught by Dennis Aigner. As Aigner walked through better and better estimators, Ajay raised his hand and asked whether there had to be a theoretical limit. Aigner replied that an Indian guy had asked the same question and got the answer — and that answer is the Cramér-Rao lower bound.",
-      "insight": "The right naive question, asked at the right moment, can lead you straight to one of the deepest results in a field. Beginner's mind is not a handicap — sometimes it's the path to the foundational question others stopped asking."
+      "topic": "The Naive Question That Led to the Cramér-Rao Bound",
+      "summary": "Ajay began his PhD without ever having studied probability or statistics, so he was made to take a fourth-year undergraduate econometrics class taught by Dennis Aigner. Aigner opened with a 'helicopter tour' of all of statistics that swept Ajay away. As Aigner showed how one estimator could be improved, and then improved again, Ajay asked whether there had to be a theoretical limit. Aigner replied that an Indian had asked exactly that question and answered it. The answer is the Cramér-Rao lower bound.",
+      "insight": "Admitting a gap in your knowledge is how you close it ('All gaps are overcomable'). A beginner's obvious question can lead straight to a field's foundational result, and in this case that result was proved by a young Indian in Calcutta.",
+      "quote": "And I put up my hand and I said that surely you can't keep going forever, that there will be a limit, there will be a theoretical limit on how good an estimator can get. And he said there was an Indian guy who asked that question and he got the answer, and that is the Cramér-Rao lower bound."
     },
     {
       "teller": "Ajay Shah",
-      "topic": "C.R. Rao at ISI: Two of the Greatest Theorems of 20th-Century Statistics",
-      "summary": "C.R. Rao, born in 1920 in South India, migrated to Calcutta and joined Mahalanobis's Indian Statistical Institute in the mid-40s — pre-independence, with no government money, run on Mahalanobis's personal funds. As a young man cut off from the European mainstream, Rao independently produced two of the great statistical results of the 20th century: the Cramer-Rao lower bound (the theoretical limit on how good an estimator can be) and the Rao-Blackwell theorem (a procedure for one-step improvement of estimators). Both were named jointly with Western co-discoverers because Ronald Fisher, with characteristic decency, recognised the work and started calling them by their joint names.",
-      "insight": "Greatness can emerge from an isolated outpost if you have one obsessive institution-builder around whom an ecosystem coheres. And recognition is not automatic — it required Fisher's personal generosity for Rao's work to enter the global canon, just as Darwin and Wallace shared credit because the Royal Society chose to honour both."
+      "topic": "CR Rao in Calcutta, and Fisher's Decency",
+      "summary": "CR Rao was born in 1920. He came from Andhra Pradesh to Calcutta as an ordinary student at PC Mahalanobis's Indian Statistical Institute (ISI). This was before independence, so there was no government money, and Mahalanobis often funded the institute himself. Cut off from the European mainstream, Rao produced two of the handful of greatest results in 20th-century statistics: the Cramér-Rao lower bound in 1943, and the Rao-Blackwell theorem, which is a technique for making an estimator one step better. Each was discovered independently of the other person named in it. Ajay asked the mathematician Rajeeva Karandikar how Rao's name survived, given how easily Indian work gets ignored. The answer was Ronald Fisher. Fisher visited ISI, understood the results and started calling them by the joint names. Ajay compares this to the Royal Society presenting Darwin and Wallace together.",
+      "insight": "World-class work can come from an isolated outpost, but recognition depends on the decency of the people who control the field. Without Fisher, work done in Calcutta in 1943, with no internet, could simply have disappeared. Ajay says Indian work is still routinely ignored and later claimed by others, and that this has happened to him.",
+      "quote": "This is the decency of Fisher that Fisher started calling it the Rao-Blackwell Theorem. Fisher started calling it the Cramér-Rao lower bound. And suddenly for the whole world, it became Rao's work."
     },
     {
       "teller": "Ajay Shah",
-      "topic": "Ramanujan vs Anand: Two Models of Indian Genius",
-      "summary": "Ramanujan was completely self-taught from one obscure 19th-century textbook, then transported to Cambridge where G.H. Hardy translated his raw genius into world-class mathematics — the achievement was Cambridge's. Anand, by contrast, was largely built by an Indian ecosystem that nurtured and funded him; he then helped seed the next generation, who today are the strongest teen chess cohort in the world. Ajay places C.R. Rao on the Anand axis: not a precocious child shipped abroad, but a regular student who walked into Mahalanobis's ISI and exploded inside the ecosystem it provided.",
-      "insight": "Individual genius is one phenomenon; an ecosystem that cultivates many talents over decades is another, and they should not be confused. India can occasionally produce a Ramanujan; what it must learn to build are the Mahalanobis-style ecosystems that transform regular students into world-changing minds."
+      "topic": "How ISI's Head Start Was Squandered",
+      "summary": "Having one CR Rao convinced a whole generation at ISI that 'this is a game we can play'. ISI was world-class, and its journal Sankhya was respected internationally and stocked by libraries everywhere. That early lead did not build into anything larger. In the 1970s and 80s the frontier moved from mathematical statistics, which proves theorems about closed-form estimators, to computational statistics. Bradley Efron's bootstrap in 1979 was one of the key innovations. In computational statistics an estimator can be an algorithm, which requires combining statistics with computer science. India's statistics community stuck to theorem-proving and missed the shift that grew into today's data-science revolution.",
+      "insight": "Being at the frontier once guarantees nothing. Fields reinvent themselves, and communities that don't follow get left behind. Ajay also sees a deeper problem: the way Indian state-funded research institutions are managed seems incompatible with excellence.",
+      "quote": "But the Indian statistics community didn't turn on the dime and reinvent themselves. And that's just a pity."
     },
     {
       "teller": "Ajay Shah",
-      "topic": "CRRao.jl as a Commitment Device",
-      "summary": "Ajay's collaborator Sourish Das, building a Bayesian-first statistical modelling package in Julia, came to him on a Monday and said he wanted to call it CRRao.jl as a commitment device — naming it after the legend would force them to do the work right. Later they got an email from Rao's daughter saying she had shown him the package and he had smiled. That smile, Ajay says, was the closest he ever came to the greatness of C.R. Rao.",
-      "insight": "A reminder that names function as constraints. Honouring a hero in code (or anywhere) is a public promise to live up to the standard the name implies. The hero's smile, in turn, is a quiet completion of a circle that crossed seventy years."
-    },
-    {
-      "teller": "Ajay Shah",
-      "topic": "Why Indian Statistics Missed the Computational Revolution",
-      "summary": "Through the 1940s and 50s, Indian mathematical statistics — Mahalanobis, Rao and their generation — was at the global frontier of theorem-proving and closed-form estimators. In 1979 Bradley Efron developed the bootstrap, and the field shifted: the unit of analysis stopped being a closed-form mathematical estimator and became an algorithm. The Indian statistics community stayed wedded to the old style, kept proving theorems, and largely missed the data-science revolution that grew out of computational statistics.",
-      "insight": "Past excellence is not future excellence. Research communities, like artists, can be frozen at their hit moment. India was at the global frontier in mathematical statistics; staying there meant being late to the field that mathematical statistics gave birth to."
+      "topic": "CRRao.jl: A Name as a Commitment Device",
+      "summary": "At XKDR Forum and the Chennai Mathematical Institute, Ajay's colleague Sourish Das leads a Julia package. It gives one uniform way to call many kinds of estimators, from linear regression to random forests, in either frequentist or Bayesian form. While names were being debated, Sourish proposed calling it CRRao.jl as a 'commitment device', a way to kick themselves into doing it well. Later CR Rao's daughter emailed to say she had shown her father the package and he had smiled.",
+      "insight": "Naming your work after a hero is a public promise to meet his standard. That smile was, in Ajay's words, the closest he ever came to the greatness of CR Rao.",
+      "quote": "We got an email from CR Rao's daughter that somehow she became aware that we had built this package and she said that she showed it to him and he smiled. Okay, so that is the closest that I ever came to the greatness that is CR Rao."
     },
     {
       "teller": "Amit Varma",
-      "topic": "Abraham Wald and the Missing Bullet Holes",
-      "summary": "Around 1942, Abraham Wald was drafted into the Statistical Research Group — a body so brilliant that Milton Friedman was once described as the fourth smartest person in the room. Wald lacked security clearance, so a secretary stood by his side and whisked away each finished sheet of paper before he saw the next problem. Asked to advise where to add armour to British planes returning with bullet holes, the obvious answer was 'reinforce the fuselage' since that's where the holes were. Wald reframed it: where are the missing bullets? They are in the planes that did not return. Armour the engines — the part with no holes — because hits there are the ones that bring planes down.",
-      "insight": "The classic worked example of survivorship bias. The planes you see are the survivors; the data you don't have is the most important data. Always ask what is missing from the sample before you act on what is present."
+      "topic": "Abraham Wald and the Missing Bullets",
+      "summary": "Around 1942 Abraham Wald was drafted into a wartime research group so brilliant that someone quipped Milton Friedman was the fourth smartest person in the room. Wald did not have security clearance. The joke went that a secretary stood beside him and took away each sheet as soon as he finished writing it. The group was asked how to strengthen planes that came back riddled with bullets. Returning planes had more holes in the fuselage than in the engine, so the obvious plan was to reinforce the fuselage. Wald asked where the missing bullets were. If hits are spread fairly evenly, the missing ones struck the planes that never came back. So the engine, the part with the fewest holes on returning planes, was the part to protect.",
+      "insight": "The data you can see has been filtered by survival, and the most important evidence is often what is absent. Amit connects this to Ricky Ponting, who said he carried a map of the gaps in the field rather than of the fielders.",
+      "quote": "Where are the missing bullets? The missing bullets are in the planes that went down. So it is the engine that you need to protect."
     },
     {
       "teller": "Amit Varma",
-      "topic": "Ricky Ponting Had a Map of the Gaps",
-      "summary": "Asked about his journey to greatness, Ricky Ponting said most batsmen carry a map of the fielders in their heads. He carried a map of the gaps.",
-      "insight": "Same Wald move in another domain: stop looking at where the obstacles are and look at where they aren't. Inverting the question is often the whole insight."
-    },
-    {
-      "teller": "Amit Varma",
-      "topic": "The Cricket-Tipster Scam as Survivorship Bias",
-      "summary": "Write to a thousand cricket bettors saying you can predict the result of the next India-Sri Lanka match. Tell five hundred India will win, five hundred Sri Lanka. Repeat with the surviving five hundred, then the surviving 250, then 125, until ten or twelve people have seen you correctly call six matches in a row. They will pay you handsomely. They are seeing only the surviving prediction strand; the 988 wrong calls are invisible to them. The same logic explains why a five- or six-year track record of a single mutual fund is meaningless when you can look back across a fund family.",
-      "insight": "Every 'amazing track record' raises the same question: out of how many starting attempts? Without the denominator, you cannot tell skill from selection."
+      "topic": "The Cricket Tipster Scam",
+      "summary": "Amit once wrote a column built on this scam. You contact 1,000 cricket bettors and offer free tips. You tell 500 of them India will win the next India–Sri Lanka match and tell the other 500 that Sri Lanka will. Whatever happens, you then split the group you got right in half and repeat. After a few rounds, a dozen or so people have seen you call five or six results in a row, and they will gladly pay you. Mutual funds can work the same way: run a family of funds following random strategies, and by sheer luck one of them will show a brilliant five- or six-year record.",
+      "insight": "A great track record means nothing until you know how many attempts failed and vanished. Selection can look exactly like skill.",
+      "quote": "You can just randomly make them do different things and by sheer dumb luck, one will come out on top. But it doesn't mean that that is a correct strategy. Perhaps it just got lucky."
     },
     {
       "teller": "Ajay Shah",
       "topic": "How Many Lives Does It Take to Kill a Factory?",
-      "summary": "WWII bombers were so imprecise (circular error probability of 1-5 km) that bombing a tank factory or oil refinery from 20,000 feet meant throwing thousands of bombs and rarely hitting. Flying low at 6,000 feet improved precision dramatically but exposed crews to anti-aircraft 88mm flak. The young Robert McNamara and Curtis LeMay, working as quantitative thinkers, computed factories killed per pilot lost — and concluded that flying at 6,000 feet was the right answer. They told the pilots: 'We love you more than life itself, but the efficient way is to count how many of you die per unit factory.'",
-      "insight": "A brutal but honest example of utilitarian calculation in war. The cost is real and the language sounds monstrous, but refusing to do the math doesn't make the trade-off go away — it just hides it from the people making the decision."
+      "summary": "Allied bombers flew from Britain to hit German factories and refineries, facing German fighters and 88mm anti-aircraft guns. Pilots wanted to fly at 20,000 feet, above the guns. But WWII bombs, falling under gravity, could land kilometres off target, so very few hit from that height. At 6,000 feet more crews would be shot down, but far more bombs would hit. The statisticians, including a young Robert McNamara, ignored how frightening each altitude felt. They calculated how many airmen died for each factory destroyed, and the answer was 6,000 feet. When the pilots were told, they were in uproar. Along the way Ajay explains that the phrase 'a wing and a prayer' comes from crippled bombers gliding home with their engines shot out.",
+      "insight": "Choosing the right thing to measure can overturn intuition. The option that looks deadlier for each flight can cost fewer lives overall. Refusing to put numbers on a hard trade-off does not make it go away.",
+      "quote": "And Curtis LeMay and Robert McNamara said, we love you more than life itself, but we want fewer of you to die. And the way to do it is to go at 6,000 because we are counting how many of you die per unit factory killed."
     },
     {
       "teller": "Amit Varma",
-      "topic": "Mahalanobis vs the Bengal Government on Counting Jute",
-      "summary": "In 1944 the Bengal government, sceptical of Mahalanobis's new random sample survey method, ran a competition: traditional plot-to-plot enumeration against the institute's sample survey, both compared against official jute sales figures. The cumbersome enumeration was off by 16.6%; the sample survey was off by only 0.3% — and cost a tenth as much. It was a moment of vindication for Mahalanobis and ISI.",
-      "insight": "Sometimes a clean head-to-head bake-off is the only thing that breaks an entrenched method. The savings here weren't marginal — better answers at one-tenth the cost. When the better tool is also the cheaper tool, the only reason for inertia is institutional ego."
+      "topic": "Wald's Death in India",
+      "summary": "Amit adds a sad coda. Abraham Wald died in 1950, aged 48, in an Air India crash in India, along with his wife. He had just given a talk at ISI in Calcutta and was travelling to a statistics congress in Bangalore.",
+      "insight": "The story comes full circle: the wartime statisticians and the ISI world of Mahalanobis and Rao were closely connected, and Calcutta was then a stop for the world's best statisticians.",
+      "quote": "And this again brings us a full circle back to the ISI because he died in India."
     },
     {
       "teller": "Amit Varma",
-      "topic": "Mahalanobis the Polymath and the Authoritarian",
-      "summary": "Drawing on Nikhil Menon's Planning Democracy, Amit paints a portrait of P.C. Mahalanobis — physicist by training, statistician by intellect, planner by conviction — Sanskrit reader, Bengali poetry connoisseur, dabbler in architecture, prim workaholic with hair slicked flat by coconut oil. Hannah Arendt described him as immensely vigorous, alert, and intelligent, but also domineering, vain, bigoted, and a Bengali aristocrat moving toward Stalinist authoritarianism. He required students and staff to record their daily activities in a diary and sign in and out of the institute. Milton Friedman warned that able mathematicians, working in a field of absolutes, become dangerous when they apply themselves to economic planning.",
-      "insight": "The same temperament that built ISI — the obsessive, controlling, certainty-seeking mind — turned ruinous when applied to the messy, complex, adaptive system of an economy. High modernism builds great institutions and broken economies, sometimes by the same person."
+      "topic": "Mahalanobis: Genius Trapped by His Own Genius",
+      "summary": "Mahalanobis trained in physics. On the voyage back to India he was given volumes of the statistics journal Biometrika, and he arrived home in love with statistics. He taught physics at Presidency College before founding ISI. Reading from Nikhil Menon's Planning Democracy, Amit describes a stern, prim workaholic with coconut-oiled hair who showed affection only to his pets. He was a proud polymath, 'a physicist by training, statistician by intellect, and planner by conviction', who 'thought he knew best in practically every matter'. He made staff and students record their daily activities in a diary. Milton Friedman warned that able mathematicians, used to a field of absolutes, become dangerous when they turn to economic planning. Another account, which Amit attributes to Hannah Arendt, calls him domineering and vain, a Bengali aristocrat moving towards Stalinist-style authoritarianism.",
+      "insight": "The certainty and control that make a brilliant scientist and institution-builder can turn into hubris when applied to a messy society. Ajay calls this a recurring theme: the precision of science and engineering leaves many successful people unprepared for the real world.",
+      "quote": "A man who is a genius, but in a sense is also trapped by his own genius into a hubris and an arrogance that doesn't serve him so well."
     },
     {
       "teller": "Amit Varma",
-      "topic": "The Bharat Sadhu Samaj — When the State Tried to License Sadhus",
-      "summary": "In 1956 the Indian government, alarmed that there were an estimated 75 lakh sadhus and many were said to be frauds, brought a sadhu registration bill. The idea was that to be known as a sadhu you would apply to the government, get a license, and join the Bharat Sadhu Samaj. Once it was set up, President Rajendra Prasad addressed the licensed sadhus and told them their scriptures did not enjoin indifference to this world — and that supporting the five-year plan was the path to good in the next world.",
-      "insight": "An almost-comic distillation of high modernism's ambition: not just the economy, but spiritual practice itself, brought under state licensing in service of central planning. The fact that today's sadhus are not certified is its own quiet verdict."
+      "topic": "The 1944 Jute Showdown: Sampling vs Counting",
+      "summary": "In 1944 random sample surveys were not yet widely accepted anywhere in the world, and there were calls to abandon them. The Bengal government settled the dispute with a contest over jute. Traditional plot-by-plot counting and ISI's random sample survey were run at the same time, and both were checked against official jute sales figures. The count was off by 16.6%. The sample survey was off by only 0.3%, and it cost a tenth as much.",
+      "insight": "A well-designed sample can beat a brute-force count on accuracy and cost at the same time. A clean head-to-head test was what finally won the argument for ISI.",
+      "quote": "The cumbersome enumeration or counting carried out by the government turned out to be off the mark by sixteen point six percent, while the institute's more sophisticated sample survey erred only by 0.3%."
     },
     {
       "teller": "Amit Varma",
-      "topic": "J.B.S. Haldane Came to India Because He Didn't Want to Wear Socks",
-      "summary": "J.B.S. Haldane, the British polymath, moved to India in his 60s to work at ISI under Mahalanobis. Asked why he had left England, he didn't deliver a grand statement about simple living or freedom from convention. He said: 'I don't want to wear socks.' Photos from his Indian years show him in banyan, dhoti, pajama — never a sock in sight. (Of Mahalanobis's constant travel he wrote: 'The journeyings of our director define a novel random vector.')",
-      "insight": "A textbook 'show, don't tell' moment. The casual, bodily image — no socks — communicates an entire philosophy of life more vividly than any abstract phrase about freedom or simplicity could."
+      "topic": "The Bharat Sadhu Samaaj: Licensing Holy Men",
+      "summary": "In the mid-1950s there were an estimated 75 lakh sadhus in India, and the worry was that many were frauds. A sadhu registration bill was brought in 1956. To be recognised as a sadhu you would apply for a government licence and join the Bharat Sadhu Samaaj. President Rajendra Prasad then addressed the gathered sadhus. He told them nothing could be achieved in the other world without first setting this world in order, which was a pitch for their support of the Five-Year Plan. Amit found the story in Nikhil Menon's Planning Democracy.",
+      "insight": "The planning era's ambition reached as far as certifying holy men and recruiting them to sell the Plan. It is a vivid, comic picture of how far the planning state tried to extend.",
+      "quote": "He wanted the support for the five year plan because he said that you wanna be good in that world, you gotta be good in this world. Five year plan will get you there."
     },
     {
       "teller": "Amit Varma",
-      "topic": "Abraham Wald Died in an Air India Crash After Speaking at ISI",
-      "summary": "After the Wald story comes a small, full-circle coda: Wald died in 1950 in an Air India plane crash, aged 48, with his wife. He had just given a talk at ISI in Calcutta and was on his way to the Indian Statistical Congress in Bangalore. So Milton Friedman, instead of being the fourth smartest in the room, became the third smartest — but not in a way he would have liked.",
-      "insight": "Tragic punctuation to a story about survivorship bias: the man who taught the world to look for the missing planes was himself one of them."
+      "topic": "Haldane Moved to India to Stop Wearing Socks",
+      "summary": "JBS Haldane came to work at ISI in the mid-1950s, when he was in his sixties. He quipped that Mahalanobis's constant travels 'define a novel random vector'. Asked why he had left England for India, he didn't talk about simple living or escaping convention. He said he didn't want to wear socks anymore. Photos from the rest of his life show him in banyan, dhoti and pyjama, and never in socks.",
+      "insight": "This is Amit's favourite example of the writing principle 'show, don't tell': one concrete detail conveys a whole philosophy of life.",
+      "quote": "Instead, he said, I don't want to wear socks anymore. And that's such a beautiful sentiment because everybody immediately gets a vibe."
     },
     {
       "teller": "Amit Varma",
-      "topic": "Chintaman Deshmukh Saved ISI and Married a Tree-Inscribed Proposal",
-      "summary": "Around 1944 Chintaman Deshmukh — later India's first Indian RBI Governor and Finance Minister — approved a flow of funds to ISI that practically guaranteed its survival. Nikhil Menon describes him as a diminutive, suave, cerebral product of elite Bombay and Cambridge education who topped the ICS, recited Vedic shlokas for pleasure, translated Kalidasa's Meghadūta from Sanskrit, and quoted scripture in economic policy. Widowed in the early 50s, he later married Durgabai Deshmukh — herself a remarkable woman who had walked out of her own child marriage at fourteen. The opening lines of her autobiography Chintaman and I: 'Chintaman took me to a eucalyptus tree in his garden and inscribed two Sanskrit shlokas on its bark. It was a proposal of marriage. I accepted, and he kissed me.'",
-      "insight": "A sketch of a vanished kind of public servant — scholar, polyglot, Sanskrit lover, and quietly romantic. As Amit notes: even people who care about statistics and math have hearts."
+      "topic": "Chintaman Deshmukh's Proposal on a Tree",
+      "summary": "Around 1944 Chintaman Deshmukh, a senior official who later became finance minister, approved funding that practically guaranteed ISI's survival. Nikhil Menon describes him as a Cambridge-educated man who topped the Indian Civil Service, recited Vedic shlokas for pleasure, translated Kalidasa's Meghaduta and quoted scripture in support of economic policy. Widowed in the early 1950s, he married Durgabai Deshmukh. She was a feisty, outspoken woman who had been married off as a child at eight and, at 14, refused to go through with the marriage. Her autobiography, Chintaman and I, opens with his proposal.",
+      "insight": "The official who saved the institute was also a romantic. As Amit puts it, even people who care about statistics and math have hearts.",
+      "quote": "Chintaman took me to a eucalyptus tree in his garden and inscribed two Sanskrit slokas on its bark. It was a proposal of marriage. I accepted and he kissed me."
     }
   ],
   "recommendations": [
     {
       "recommender": "Amit Varma",
-      "item": "The Great Mental Models",
+      "item": "The Great Mental Models (three-volume set)",
       "type": "book",
       "creator": "Shane Parrish (Farnam Street)",
-      "context": "A three-volume set from Farnam Street covering general thinking models, then physics and chemistry, then mathematics.",
-      "reason": "Formal education rarely teaches us how to think. These books supply the tools — frames, models, analogies — that let you find the commonalities between fields, the literal practice of 'everything is everything.' Gifted to Amit by his friend Gautam John; he says the Kindle copies are cheap and everyone should own them."
+      "context": "Amit's recommendation for the episode. A friend, Gautam John, gave him the set in Bangalore. Volume one covers general thinking models, and later volumes cover physics, chemistry and mathematics.",
+      "reason": "Formal education rarely teaches how to think about the world. These books supply the frames for finding connections across fields, which is the 'everything is everything' idea in practice. Amit calls them a treasure everyone should own, and notes the Kindle copies are cheap."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "The Knowledge Project Podcast",
+      "type": "podcast",
+      "creator": "Shane Parrish",
+      "context": "Mentioned while recommending The Great Mental Models, written by the same author.",
+      "reason": "Amit calls it 'the excellent Knowledge Project podcast'."
     },
     {
       "recommender": "Ajay Shah",
       "item": "The Lady Tasting Tea",
       "type": "book",
       "creator": "David Salsburg",
-      "context": "A history of how 20th-century statistics took shape, anchored in the famous Fisher experiment of testing whether a lady could really tell whether milk had been poured into tea or tea into milk.",
-      "reason": "Even if you have never done statistics, this book is fun. It uses concrete questions like the lady's tea claim to develop the ideas of testing, blind testing, and the mathematics behind them — the human and historical entry point into the field."
+      "context": "Ajay's recommendation for the episode. It covers the early years of statistics, including Fisher testing a lady's claim that she could tell whether the tea or the milk had been poured first.",
+      "reason": "Fun even if you have never studied statistics. It shows how simple questions led to the concepts and mathematics of testing and blind testing."
     },
     {
-      "recommender": "Ajay Shah",
+      "recommender": "Amit Varma",
       "item": "Planning Democracy",
       "type": "book",
       "creator": "Nikhil Menon",
-      "context": "A history of the Planning Commission, P.C. Mahalanobis, and how data was gathered and used in the early Indian state.",
-      "reason": "The source of much of the Mahalanobis material in this episode — the jute survey vindication, the diary-and-attendance authoritarianism, the Bharat Sadhu Samaj, Chintaman Deshmukh. Essential for understanding the Nehruvian planning era from the inside."
+      "context": "The source of Amit's material on Mahalanobis, the 1944 jute contest, the Bharat Sadhu Samaaj and Chintaman Deshmukh.",
+      "reason": "It is full of vivid portraits and strange history from India's planning era. Amit says 'everyone should buy it'."
     },
     {
       "recommender": "Amit Varma",
       "item": "A Dominant Character",
       "type": "book",
       "creator": "Samanth Subramanian",
-      "context": "A biography of J.B.S. Haldane, the British polymath who moved to India and worked at ISI.",
-      "reason": "A beautifully written biography of a wild, eccentric genius who loved India enough to take Indian citizenship and refuse to wear socks. Captures both the spirit of mid-century scientific inquiry and the political radicalism of the man."
+      "context": "Amit's source for the JBS Haldane stories, including the one about socks.",
+      "reason": "Amit calls it a great book on Haldane, the scientist who spent his last years in India."
     },
     {
       "recommender": "Amit Varma",
       "item": "Chintaman and I",
       "type": "book",
       "creator": "Durgabai Deshmukh",
-      "context": "Durgabai Deshmukh's autobiography, which opens with Chintaman Deshmukh's eucalyptus-tree marriage proposal in Sanskrit.",
-      "reason": "Out of print on Kindle and hard to find anywhere; Amit located a free copy on the internet and links it from the show notes. A first-person window into a remarkable woman who walked out of a child marriage at fourteen and later married one of independent India's most cultured public servants."
+      "context": "Durgabai Deshmukh's autobiography. Amit couldn't find it on Kindle or anywhere else, then found a free copy online and linked it in the show notes.",
+      "reason": "He loves its opening lines, in which Chintaman proposes by carving Sanskrit shlokas into a eucalyptus tree. It is a window into an unusual couple."
     },
     {
       "recommender": "Ajay Shah",
       "item": "The Julia Programming Language",
       "type": "tool",
-      "creator": "Jeff Bezanson, Stefan Karpinski, Viral Shah, Alan Edelman",
-      "context": "A modern programming language for high-performance scientific computing, co-created by Ajay's friend Viral Shah.",
-      "reason": "Solves the 'two language problem' — clean and understandable like Python, fast like C. Ajay considers it one of the great achievements of modern programming and the right substrate for the next generation of statistics and data science."
+      "creator": "Viral Shah (co-creator)",
+      "context": "Ajay's appeal to anyone who cares about programming. His friend Viral Shah co-created the language, and XKDR Forum builds statistics packages in it.",
+      "reason": "Ajay calls it one of the great achievements of modern programming. It lets you write clean, understandable code at the frontier of performance, and he thinks it is transformative for statistics and data science."
     },
     {
       "recommender": "Ajay Shah",
       "item": "CRRao.jl",
       "type": "tool",
-      "creator": "Sourish Das, XKDR Forum, Chennai Mathematical Institute",
-      "context": "An open-source Julia statistical modelling package providing a single uniform API across linear regression, Bayesian regression, random forests, and many other estimators — Bayesian by default, with no extra distance to cross.",
-      "reason": "Named after C.R. Rao as a commitment device to do the work right. Ajay believes a uniform Bayesian-first calling convention is what serious data science needs, and that Julia is the right substrate for it."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "The Tamilian Gentleman Who Took on the World",
-      "type": "article",
-      "creator": "Amit Varma",
-      "context": "Amit's ESPN piece on Viswanathan Anand, referenced in passing as part of the Ramanujan-vs-Anand discussion.",
-      "reason": "The source for the framing that Anand was the product and seeder of an Indian chess ecosystem rather than a lone Ramanujan-style genius."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "Don't Get Fooled by Success",
-      "type": "article",
-      "creator": "Amit Varma",
-      "context": "Amit's 2005 column on survivorship bias.",
-      "reason": "The piece in which Amit worked through the cricket-tipster scam as an illustration of survivorship bias and how five- or six-year track records of mutual funds and hedge funds can be sheer selection."
+      "creator": "Sourish Das / XKDR Forum",
+      "context": "A Julia statistical modelling package led by Sourish Das and named after CR Rao. The show notes link its GitHub page, its documentation and Sourish's write-up, 'CRRao: A Julia Statistical Modeling Package for All'.",
+      "reason": "It gives one consistent interface across many estimators and is uncompromisingly Bayesian, removing the extra effort Bayesian computation usually requires."
     },
     {
       "recommender": "Ajay Shah",
-      "item": "Two Great Investment Strategies",
-      "type": "article",
-      "creator": "Ajay Shah",
-      "context": "Ajay's 1998 column.",
-      "reason": "Listed in the show's resources alongside Amit's survivorship-bias piece, as Ajay's companion treatment of inference and selection in investing."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "The History of the Planning Commission (Episode 306, The Seen and the Unseen)",
-      "type": "podcast episode",
-      "creator": "Amit Varma with Nikhil Menon",
-      "context": "Amit's long-form interview with Nikhil Menon about Planning Democracy.",
-      "reason": "The deep-dive companion conversation behind much of the Mahalanobis and Sadhu Samaj material in this episode."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "The Art of Narrative Nonfiction (+ JBS Haldane) (Episode 183, The Seen and the Unseen)",
-      "type": "podcast episode",
-      "creator": "Amit Varma with Samanth Subramanian",
-      "context": "Amit's episode with Samanth Subramanian on narrative non-fiction and his Haldane biography.",
-      "reason": "The episode that surfaced the 'I don't want to wear socks' anecdote and other Haldane stories Amit draws on here."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "Why Talent Comes in Clusters (Episode 8, Everything is Everything)",
-      "type": "podcast episode",
-      "creator": "Amit Varma and Ajay Shah",
-      "context": "An earlier EIE episode that develops the Ramanujan-vs-Anand framing in detail.",
-      "reason": "The reference point Ajay invokes when contrasting Ramanujan and Anand as two models of Indian genius."
-    },
-    {
-      "recommender": "Amit Varma",
-      "item": "Why Freedom Matters (Episode 10, Everything is Everything)",
-      "type": "podcast episode",
-      "creator": "Amit Varma and Ajay Shah",
-      "context": "An earlier EIE episode that includes the case of Arun Shourie being decades ahead of the West and uncited.",
-      "reason": "Cited here to support Ajay's broader point that important Indian work routinely gets ignored by the global mainstream — making Fisher's decency toward Rao's work the rare exception."
-    },
-    {
-      "recommender": "Ajay Shah",
-      "item": "Doing Applied Statistics Research in Julia",
+      "item": "Doing applied statistics research in Julia",
       "type": "speech",
       "creator": "Ajay Shah",
-      "context": "Ajay's talk on YouTube about doing applied statistics in Julia.",
-      "reason": "Listed as a deeper pointer for viewers who want to follow up on the Julia and CRRao.jl work."
-    },
-    {
-      "recommender": "Ajay Shah",
-      "item": "The Knowledge Project Podcast",
-      "type": "podcast",
-      "creator": "Shane Parrish",
-      "context": "Shane Parrish's podcast from Farnam Street.",
-      "reason": "Listed alongside The Great Mental Models as part of Parrish's broader project of teaching people to think better."
-    },
-    {
-      "recommender": "Ajay Shah",
-      "item": "In Service of the Republic: The Art and Science of Economic Policy",
-      "type": "book",
-      "creator": "Vijay Kelkar and Ajay Shah",
-      "context": "Kelkar and Shah's book on economic policy.",
-      "reason": "Listed as a useful resource alongside the show; the source of Ajay's deeper view that high modernism — engineers and physicists assuming their certainty extends to economic life — has been one of the great mistakes of the 20th century."
+      "context": "Ajay's talk on YouTube, linked in the show notes alongside the Julia and CRRao.jl discussion.",
+      "reason": "A follow-up for anyone interested in the case for doing data analysis in Julia."
     },
     {
       "recommender": "Amit Varma",
-      "item": "The Art of Clear Writing",
-      "type": "course",
+      "item": "Don't Get Fooled by Success (2005)",
+      "type": "article",
       "creator": "Amit Varma",
-      "context": "Amit's online writing course.",
-      "reason": "Listed as a useful resource. Amit's course on clear writing for anyone who wants to write more crisply."
+      "context": "Amit mentions he once wrote a column built on the cricket-tipster scam.",
+      "reason": "It illustrates survivorship bias and why a fund's track record can be pure luck."
+    },
+    {
+      "recommender": "Ajay Shah",
+      "item": "Two great investment strategies (1998)",
+      "type": "article",
+      "creator": "Ajay Shah",
+      "context": "Linked in the show notes next to the survivorship-bias and mutual-fund discussion.",
+      "reason": "Ajay's own older piece on investing, a companion to the point that fund track records can mislead."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "The Seen and the Unseen, Episode 183: The Art of Narrative Nonfiction (with Samanth Subramanian)",
+      "type": "podcast episode",
+      "creator": "Amit Varma",
+      "context": "Amit mentions his episode with Samanth Subramanian on narrative nonfiction, which covered Haldane.",
+      "reason": "The longer conversation behind the Haldane stories and the 'show, don't tell' example."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "Everything is Everything, Episode 8: Why Talent Comes in Clusters",
+      "type": "podcast episode",
+      "creator": "Amit Varma and Ajay Shah",
+      "context": "Amit points viewers to it during Ajay's comparison of Ramanujan and Anand.",
+      "reason": "That episode discussed Ramanujan and Anand in detail and is the background to this episode's argument."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "Everything is Everything, Episode 10: Why Freedom Matters",
+      "type": "podcast episode",
+      "creator": "Amit Varma and Ajay Shah",
+      "context": "Amit recalls it when Ajay says Indian work gets ignored by the global mainstream.",
+      "reason": "In it Ajay pointed out that Arun Shourie was decades ahead of the West on some ideas and went unrecognised."
+    },
+    {
+      "recommender": "Amit Varma",
+      "item": "The Tamilian gentleman who took on the world",
+      "type": "article",
+      "creator": "Amit Varma",
+      "context": "Amit's ESPN piece on Viswanathan Anand, linked in the show notes next to the Ramanujan-vs-Anand discussion.",
+      "reason": "Background on Anand, whom Ajay holds up as the model of genius built by an Indian ecosystem."
+    },
+    {
+      "recommender": "Ajay Shah",
+      "item": "Calyampudi Radhakrishna Rao: A brief biography",
+      "type": "article",
+      "context": "A biography from the St Andrews mathematics history archive, linked in the show notes for Ajay's CR Rao chapter.",
+      "reason": "For readers who want more on the man Ajay calls the finest product of the Bengal Renaissance."
+    },
+    {
+      "recommender": "Ajay Shah",
+      "item": "The German Tank Problem explained",
+      "type": "other",
+      "creator": "NStatum",
+      "context": "A YouTube explainer linked in the show notes for the opening story.",
+      "reason": "A visual walk-through of the estimation idea Ajay describes, in which serial numbers reveal how many tanks were made."
     }
   ],
   "core_ideas": [
     {
-      "concept": "The Cramer-Rao Lower Bound",
-      "explanation": "An impossibility result for statistics: given a model and a data set, there is a theoretical floor on how good any unbiased estimator can be. You can keep designing better estimators, but you cannot cross the Cramer-Rao bound. C.R. Rao proved it in 1943 in Calcutta as a young man, independently of Cramer in Sweden. The reason this matters beyond statistics: it is one of the rare results that tells you not just what works but what cannot be beaten — a bound on what any future cleverness can achieve.",
-      "quote": "There will be a theoretical limit on how good an estimator can get."
+      "concept": "Tyrannies Leak: HUMINT and SIGINT",
+      "explanation": "Intelligence comes from people (HUMINT) or from intercepted signals and communications (SIGINT). Authoritarian regimes are especially exposed to human sources, because their obedient staff are often full of people who privately hate the ruler.",
+      "quote": "One of the great lessons of history is that authoritarian tyrants have obedient regimes that are full of people who hate them."
     },
     {
-      "concept": "The Rao-Blackwell Theorem",
-      "explanation": "A constructive companion to the Cramer-Rao bound: a procedure that takes any estimator and produces a new one that is at least as good (and usually better) by conditioning on a sufficient statistic. It is the operational machinery for moving an estimator step by step toward the Cramer-Rao floor."
+      "concept": "Estimators and Their Limit: Cramér-Rao and Rao-Blackwell",
+      "explanation": "Statistics is the craft of designing, analysing and comparing estimators, which are formulas that infer unknowns like the total number of German tanks. The Cramér-Rao lower bound shows there is a theoretical limit on how good an estimator can be for a given model and data set. The Rao-Blackwell theorem is a method for making an estimator one step better. CR Rao worked out both in Calcutta, the first in 1943.",
+      "quote": "So you can run and run and build better and better estimators, but you can't cross the Cramér-Rao lower bound."
     },
     {
       "concept": "Survivorship Bias",
-      "explanation": "When you analyse a data set, you are usually analysing the survivors. The bombers in the hangar are the ones that didn't get hit in fatal places; the mutual funds with five-year records are the ones that didn't get killed; the cricket tipster who got six picks right is the one whose strand of forecasts didn't die. The most important data is often the data you do not see. Always ask, before acting on what is present, what is missing from this sample.",
-      "quote": "Where are the missing bullets?"
+      "explanation": "A data set usually contains only the survivors: planes that made it home, funds that weren't shut down, tips that happened to be right. The units that died along the way are invisible. Before trusting the data, ask how it was generated and what is missing. Wald's armour advice and the cricket-tipster scam are two versions of the same trap.",
+      "quote": "When you see the data set, you are seeing the survivors. There are many units of observation that died along the way and you don't get to see them. So it's always important to think more clearly about the source of the data rather than blindly using the data."
     },
     {
-      "concept": "From Closed-Form Estimators to Algorithms (Computational Statistics)",
-      "explanation": "Until the 1970s, statistics meant proving theorems and writing estimators in closed mathematical form. Bradley Efron's 1979 invention of the bootstrap was part of a shift in which an estimator could be defined as an algorithm — a recipe a computer could carry out — rather than as a formula. This fused statistics with computer science and gave rise to modern data science. India's statistics community, anchored in the older theorem-proving tradition, was slow to make the jump.",
-      "quote": "The unit of analysis stops being a mathematical estimator that can be written down in closed form, but the estimator becomes an algorithm."
+      "concept": "Statistics Is Thinking, Not Button-Pushing",
+      "explanation": "Ajay warns that data analysis is too often treated as feeding data into software and reading off answers. Stories like the tank and bomber problems show that real insight comes from understanding the problem, using intuition and common sense.",
+      "quote": "For too many people, statistics has become a mechanical process where you throw some data into some software package and you get some answers. And always and always it is important to preserve fundamental intuition and insight and common sense."
     },
     {
-      "concept": "Ramanujan vs Anand: Two Models of Indian Talent",
-      "explanation": "Ramanujan represents the lone, self-taught genius rescued and shaped by an external ecosystem (Cambridge, Hardy). His translation into greatness was the achievement of someone else's institution. Anand represents the genius produced and amplified by a domestic ecosystem — flawed but sufficient — who in turn helps build the next generation. India can occasionally accident a Ramanujan; sustained world-class output requires the patient construction of Anand-style ecosystems."
+      "concept": "From Theorems to Algorithms: Mathematical vs Computational Statistics",
+      "explanation": "Mid-century statistics was mathematical statistics: estimators were closed-form formulas, analysed by proving theorems. From the 1970s, with innovations like Bradley Efron's bootstrap in 1979, an estimator could be an algorithm. That merged statistics with computer science and led to today's data science. India's statistics community, so strong in the old style, missed this shift.",
+      "quote": "An estimator doesn't have to be a closed-form mathematical formula. An estimator can be an algorithm."
     },
     {
-      "concept": "The Mahalanobis Phenomenon: Eccentric Founders Beat Bureaucracies",
-      "explanation": "ISI in the 1940s was world-class without government money — a private institution bootstrapped by one obsessive, confident, idiosyncratic person who attracted Fisher, Haldane, and others to Calcutta. Modern Indian public-sector research and education organisations, despite vastly more resources, have struggled to recreate that excellence. Ajay's reading: don't ask for more public-sector institutions; ask for more eccentric, confident, crazy, creative individuals empowered to build isolated centres of excellence.",
-      "quote": "What you need is a Mahalanobis. What you don't need is a government bureaucracy."
+      "concept": "Ramanujan vs Anand: Two Models of Indian Genius",
+      "explanation": "Ramanujan was a self-taught prodigy who appeared despite deprivation, but Cambridge and GH Hardy turned him into a great mathematician, so that achievement belongs to Cambridge's ecosystem. Anand was largely built by an Indian chess ecosystem, and he then helped nurture the next generation, so that India's teenagers are now among the best in the world. CR Rao fits the Anand model: an ordinary student who flourished inside the ecosystem Mahalanobis built.",
+      "quote": "CR Rao to me is a little more of an Anand story and not the Ramanujan story."
+    },
+    {
+      "concept": "Excellence Comes From Founders, Not Bureaucracies",
+      "explanation": "ISI reached the world frontier before independence, with no government funding, because of one eccentric, driven founder. Ajay is sceptical of calls for more public-sector universities. In his view, India's state-funded research and teaching institutions, IITs included, have management problems that seem incompatible with quality. What creates excellence is individuals who build isolated centres of excellence.",
+      "quote": "What you need is a Mahalanobis. What you need is that eccentric, confident, crazy, creative person. What you don't need is a government bureaucracy."
+    },
+    {
+      "concept": "Credit Depends on the Decency of Gatekeepers",
+      "explanation": "Work done in India, then and now, is easily ignored or later claimed by others in the global mainstream. Rao's 1943 results entered the canon only because Ronald Fisher chose to recognise them, just as the Royal Society chose to give Wallace credit alongside Darwin. Recognition is not automatic. It depends on the fairness of the people who shape a field.",
+      "quote": "We see this even today in the age of the internet. That when work is done in India, very often the global mainstream just ignores it."
     },
     {
       "concept": "High Modernism",
-      "explanation": "The two-part conviction that scientists and engineers know what to do, and that their special claim on truth licenses them to coerce everyone else into following. It works in narrow control systems — one mathematical model, one piece of software — and breaks badly in the social world, where unknowability is the dominant feature. Mahalanobis the brilliant physicist became Mahalanobis the dangerous central planner because the certainty trained by physics did not survive contact with an economy. The 20th century is, in large part, a record of high modernism's failures.",
+      "explanation": "High modernism is a two-part belief. First, scientists and engineers know what should be done. Second, that special claim on truth entitles them to coercive power over everyone else. Minds trained on controlled systems such as a mathematical model, an engineering project or one piece of software are unprepared for societies, which are full of the unknowable. Milton Friedman made the same point about mathematicians like Mahalanobis who turn to economic planning.",
       "quote": "If there is one great thing we have learned through the twentieth century, it is that high modernism works pretty badly."
     },
     {
-      "concept": "Fisher's Decency and the Naming of Theorems",
-      "explanation": "Indian work — even great work — has historically been brushed aside by the global mainstream, especially before the internet. Rao's 1943 results could easily have remained invisible. They didn't because Ronald Fisher, who occasionally visited ISI, recognised what was happening and chose to call them the Cramer-Rao lower bound and the Rao-Blackwell theorem. The same generosity, exercised by the Royal Society, gave Wallace co-credit with Darwin for natural selection. Naming is a moral act: who gets included in a theorem's title is a decision about what a discipline remembers."
+      "concept": "Measure the Right Thing: Lives per Factory Destroyed",
+      "explanation": "The bombing problem flips once you change what you measure. Instead of asking how risky each flight is, you ask how many lives each factory destroyed costs. Flying low is deadlier per flight but far more accurate, so fewer crews die in total. Choosing the right objective turns a gut fear into a solvable estimation problem.",
+      "quote": "So how many lives does it take to kill a factory? Not the subjective fear of a pilot going to 6,000 feet or 20,000 feet."
     },
     {
-      "concept": "Random Sampling Beats Census",
-      "explanation": "Mahalanobis's 1944 jute experiment in Bengal showed that a well-designed random sample survey could be off by 0.3% (versus 16.6% for traditional plot-to-plot enumeration) at one-tenth the cost. The deeper point is that asking the right small question of a small sample, with proper inference, can dominate exhaustive counting — and can do so on both accuracy and price simultaneously."
+      "concept": "Random Sampling Beats Brute-Force Counting",
+      "explanation": "Mahalanobis and ISI were early champions of the random sample survey. In the 1944 Bengal jute contest, a sample survey came within 0.3% of the truth, while plot-by-plot counting was off by 16.6%, and the survey cost a tenth as much. A well-designed sample can be both more accurate and cheaper than counting everything.",
+      "quote": "Even more conclusively, the sample survey cost only a tenth of the enumeration."
     },
     {
       "concept": "Show, Don't Tell",
-      "explanation": "A core writing principle: don't state your point in abstract words; show it through a concrete image or detail and let the reader infer. Haldane's answer to why he moved to India — 'I don't want to wear socks' — is a textbook instance. The vibe is immediate; nothing needs explaining; an entire ethic of life is conveyed without an adjective."
-    },
-    {
-      "concept": "Counting Lives Per Factory",
-      "explanation": "WWII bomber command's painful arithmetic: at 20,000 feet you survive but rarely hit the target; at 6,000 feet you hit more often but die more often. The decision is not 'which altitude feels less terrifying' but 'which altitude minimises pilots killed per factory destroyed.' Pricing in the cost of human lives explicitly, in the same units as the objective, is the unsentimental core of operations research — and a forerunner of how McNamara would later think about Vietnam.",
-      "quote": "We love you more than life itself, but we want the efficient way to do it."
-    },
-    {
-      "concept": "Commitment Devices in Naming",
-      "explanation": "Sourish Das called the package CRRao.jl as a commitment device — naming it after the giant publicly bound the team to do the work to a standard worthy of the name. The mechanism generalises: name a thing after a hero, and you make it harder to deliver something shoddy. Reputation, even by association, is a form of constraint."
+      "explanation": "A core writing principle: rather than stating a point in abstract words, convey it through a concrete detail. Haldane could have said he wanted a simple life free of convention. Instead he said he didn't want to wear socks anymore, and everyone instantly understood.",
+      "quote": "The writing principle show don't tell is just don't tell something in straight words, show it with something."
     }
   ],
   "jokes_and_cultural_references": [
     {
       "type": "humor",
-      "content": "Amit's punchline to the German Tank Problem: 'The moral of the story is — brigadiers lie to their girlfriends.'"
+      "content": "After the German Tank Problem, Amit offers the moral: 'The moral of the story is brigadiers lie to their girlfriends.' Ajay adds: 'Or that tanks don't lie.'"
     },
     {
       "type": "humor",
-      "content": "Ajay on the Statistical Research Group: it was so brilliant that 'someone quipped Milton Friedman is the fourth smartest person in the room. Can you imagine?'"
+      "content": "Ajay brings the gag back in the bombing story, listing the ways to check bomb damage: 'You have a spotter plane, you have local intelligence, you have the brigadier's girlfriend.'"
     },
     {
       "type": "humor",
-      "content": "Amit closes the Wald story with Air India: after the 1950 crash, 'Milton Friedman would now be the third smartest man in the room — but not in a way he would have liked.'"
+      "content": "Amit on Wald's wartime group: it was so brilliant that someone quipped 'Milton Friedman is the fourth smartest person in the room'. And because Wald lacked security clearance, the joke went that a secretary took away each sheet the moment he finished writing it."
     },
     {
       "type": "humor",
-      "content": "Ajay on the standard sources of human intelligence in WWII: 'You have a spotter plane, you have local intelligence, you have the brigadier's girlfriend.'"
+      "content": "After telling how Wald died in a plane crash in India, Amit adds: 'Milton Friedman would now be the third smartest man in the room, but not in a way he would have liked.'"
     },
     {
       "type": "humor",
-      "content": "Amit on Mahalanobis: after reading Nikhil Menon's portrait of a stern, prim, expression-withholding workaholic affectionate only to dogs, cats and cows, Amit turns to Ajay: 'I know not of your fondness for dogs and cows, but the rest of this seems to fit you.'"
+      "content": "Poker banter between the stories. Amit: 'You had a German tank story. I call you and I raise you with a British airplane story.' After Ajay's bombing story, Amit says: 'You raised me, so I will just fold.'"
     },
     {
       "type": "humor",
-      "content": "Amit on the cats fighting in the background mid-episode: 'That is a ghost of statisticians past who have worked at the ISI wailing to see the condition.'"
+      "content": "On Sourish Das naming the package after CR Rao, Amit says: 'We should have called the show CR Rao. Everything is CR Rao.'"
     },
     {
       "type": "humor",
-      "content": "Amit on Haldane's 'I don't want to wear socks' as a life-philosophy statement: 'Nobody likes wearing socks. I mean, unless they're kinda kinky and you know they wear it on their heads while doing unspeakable things — look up autoerotic asphyxiation.'"
+      "content": "When Ajay starts talking about Julia, Amit riffs on the famous lyric: 'As another Julia would say, the hills are alive with the sound of coding.'"
     },
     {
       "type": "humor",
-      "content": "Amit on the Sadhu Samaj: 'Once the Bharat Sadhu Samaj was farmed — uh, formed; not farmed, you could farm them — with licensed and certificated sadhus, with the documentation in triplicate and all of that...'"
+      "content": "After the story of India missing the boat on computational statistics, Amit says: 'We missed the boat on algorithms and what I'm worried about is that you and I will miss the boat on the YouTube algorithm.' He follows with a pun on going viral and Viral Shah, the Julia co-creator Ajay had just mentioned."
     },
     {
       "type": "humor",
-      "content": "Ajay riffing off the name CRRao.jl: 'We should have called the show CR. Everything is CR.' Amit: 'You would also have put more effort into what kind of shirt you're wearing — untucked and all that.'"
+      "content": "When cats start fighting off-camera, Amit tells viewers it is the 'ghosts of statisticians past who have worked at the ISI wailing to see the condition'."
     },
     {
       "type": "humor",
-      "content": "Amit, after Ajay raises the lethal British-bomber dilemma over the German tank problem: 'You raised me, so I will just fold. I don't want to play the next hand I'm forced to play.'"
+      "content": "Amit happily accepts Ajay's claim that CR Rao, from Andhra Pradesh, is the Bengal Renaissance's greatest achievement: 'You know the whole world is Bengali.' He mentions a fantasy novel in which Bengal colonizes the world, quotes the American Statistical Association's praise of Rao as a 'Bengal Renaissance man', and later declares: 'All Bengali geniuses are belong to me, Dada.'"
     },
     {
       "type": "humor",
-      "content": "Amit punning off Julia: 'As another Julia would say, the hills are alive with the sound of coding.'"
+      "content": "After reading Nikhil Menon's portrait of a stern, prim Mahalanobis who showed affection only to dogs, cats and cows, Amit tells Ajay that apart from the dogs and cows, 'the rest of this seems to fit you'. Ajay replies: 'Cows also.'"
     },
     {
       "type": "humor",
-      "content": "Ajay claiming Bengal's catchment is unbounded: of South Indian C.R. Rao becoming 'the greatest achievement of the Bengali Renaissance' — 'we will certainly claim him as one of our own if you give us a chance.' Amit replies: 'All Bengali geniuses are belong to me, Dada.'"
+      "content": "On Mahalanobis making staff log their daily activities, Amit says to Ajay, the privacy advocate: 'he would have loved Aadhaar'."
+    },
+    {
+      "type": "humor",
+      "content": "On the government licensing sadhus, Ajay asks: 'Was there a certification examination? Was there a UID?' Amit trips over his words: 'Once the Bharat Sadhu Samaaj was farmed, formed, not farmed, you could farm them', with sadhus' 'documentation in triplicate'."
+    },
+    {
+      "type": "humor",
+      "content": "On Haldane and socks, Amit says nobody likes wearing socks 'unless they're kind of kinky and, you know, they wear it on their heads while doing unspeakable things. Look up autoerotic asphyxiation.' The show notes link the topic with the warning: '(Do not try this at home.)'"
+    },
+    {
+      "type": "humor",
+      "content": "After the eucalyptus-tree proposal: 'when men were men and inscribed Sanskrit shlokas into barks of trees. Have you ever done that?' The answer: 'No, no such luck.'"
+    },
+    {
+      "type": "humor",
+      "content": "Amit, a self-described man of the right, introduces his recommendation: 'I want to turn to my right because I'm always turning to the right.'"
+    },
+    {
+      "type": "humor",
+      "content": "Amit quotes Haldane's line that Mahalanobis's constant travels 'define a novel random vector', then admits: 'I have no idea what that phrase means, but I'm sure you do.'"
     },
     {
       "type": "reference",
-      "content": "'Coming back on a wing and a prayer' — Ajay notes the phrase originated from WWII British and American bombers literally limping back to England with engines shot out, gliding home and praying to make it. One of the most beautiful phrases in the English language with a very specific factual origin."
+      "content": "'Coming back on a wing and a prayer': Ajay calls it one of the most beautiful phrases in English and traces it to WWII bombers whose engines were shot out, gliding home on just a wing and hoping to make it."
     },
     {
       "type": "reference",
-      "content": "Ricky Ponting's frame for batting greatness: 'Most batsmen have a map of the fielders in their head. I had a map of the gaps.'"
+      "content": "Ricky Ponting on becoming a great batsman, quoted by Amit as an intuitive version of Wald's insight: 'Most batsmen have a map of the fielders in their head. I had a map of the gaps.'"
     },
     {
       "type": "reference",
-      "content": "Hannah Arendt on Mahalanobis (quoted by Amit): 'Immensely vigorous, alert and intelligent, but also domineering, vain and bigoted, a Bengali aristocrat who in moving towards Stalinist type authoritarianism has completely bypassed democratic liberal notions.'"
+      "content": "Darwin and Wallace: Ajay compares the joint names on Rao's theorems to the 'Darwin-Wallace theory of evolution'. The Royal Society gave both men credit, even though Wallace had his idea in a malaria fever dream weeks earlier while Darwin had been working on it for decades."
     },
     {
       "type": "reference",
-      "content": "Milton Friedman's warning about mathematicians as planners: 'Able mathematicians, working in a field of absolutes, tend to be dangerous when they apply themselves to economic planning. They produce specific and detailed plans in which they have confidence without realising that economic planning is not the absolute science that mathematics is.'"
+      "content": "Sankhya, the journal ISI built in its golden age, was respected as world-class, and 'libraries all over the world would get Sankhya'."
     },
     {
       "type": "reference",
-      "content": "J.B.S. Haldane on Mahalanobis's restless travel: 'The journeyings of our director define a novel random vector.'"
+      "content": "The American Statistical Association on CR Rao, quoted by Amit: 'Rao is a living legend whose work has influenced not just statistics, but has far-reaching implications for fields as varied as economics, genetics, anthropology, geology, national planning, demography, biometry, and medicine.'"
     },
     {
       "type": "reference",
-      "content": "Durgabai Deshmukh's opening lines in Chintaman and I: 'Chintaman took me to a eucalyptus tree in his garden and inscribed two Sanskrit shlokas on its bark. It was a proposal of marriage. I accepted, and he kissed me.'"
-    },
-    {
-      "type": "reference",
-      "content": "Darwin and Wallace in the Royal Society — the precedent Ajay invokes for joint credit: when Wallace's letter arrived after a malarial fever-dream insight, the Royal Society knew Darwin had been nursing the theory for twenty-five years and chose to present them together rather than let one displace the other."
-    },
-    {
-      "type": "reference",
-      "content": "Sankhya — the journal built out of ISI in its world-class era, respected globally and stocked by libraries everywhere. Cited as evidence of how high India's statistical institutions once flew."
+      "content": "Milton Friedman on Mahalanobis, quoted by Amit: able mathematicians, 'working in a field of absolutes', become dangerous in economic planning because 'they produce specific and detailed plans in which they have confidence without perhaps realizing that economic planning is not the absolute science that mathematics is.'"
     }
-  ]
+  ],
+  "source": {
+    "transcript": "nvidia/parakeet-tdt-0.6b-v3 (fp32 ONNX, onnx-asr)",
+    "speakers": "WeSpeaker ResNet34 voiceprints, adapted per episode, sticky decoding, third voice as other (sherpa-onnx); disagreements with FluidAudio of 1 s or more settled by Claude",
+    "model": "claude-opus-5-5",
+    "extracted": "2026-10-16"
+  }
 }
