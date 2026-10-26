@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Beware of These Five Fallacies! · Everything is Everything, distilled</title>
+  <meta name="description" content="Episode 45 of Everything is Everything, Amit Varma and Ajay Shah's podcast, as ideas, stories, books and laughs you can hear in their own voices.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161B" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 22'%3E%3Ccircle cx='11' cy='11' r='10' fill='%23D4522F'/%3E%3Ccircle cx='23' cy='11' r='10' fill='%232B5BA6' fill-opacity='.85'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="art.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply a saved theme before first paint, so a dark reader never sees a flash of paper.
+    try { const t = localStorage.getItem("eie.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#ideas">Skip to the ideas</a>
+
+  <header class="bar" id="bar">
+    <a class="mark" href="#top" aria-label="Everything is Everything, distilled: back to the top">
+      <svg viewBox="0 0 34 22" aria-hidden="true"><circle cx="11" cy="11" r="10" class="mark-a"/><circle cx="23" cy="11" r="10" class="mark-b"/></svg>
+      <span class="mark-name">Everything is Everything</span>
+    </a>
+    <nav class="sections" aria-label="Sections">
+      <a href="#ideas">Ideas</a>
+      <a href="#stories">Stories</a>
+      <a href="#shelf">Shelf</a>
+      <a href="#laughs">Laughs</a>
+      <a href="#remember">Remember<span class="due" hidden></span></a>
+      <a href="#onward">Onward</a>
+    </nav>
+    <button class="icon-btn theme" type="button" aria-label="Switch to dark theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sun" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/><path class="moon" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="archive" aria-labelledby="archive-title">
+      <h2 class="archive-title" id="archive-title"><span>Episode <b class="num">45</b> of 128</span><span class="archive-note">Each bar is an episode: its height is its length, its colours who did the talking.</span></h2>
+      <div class="ribbon" aria-label="All 128 episodes"></div>
+      <div class="ribbon-tip" role="status" hidden></div>
+    </section>
+
+    <section class="masthead" aria-labelledby="ep-title"></section>
+    <section class="strip-wrap" aria-labelledby="strip-title"></section>
+    <section class="sec" id="ideas" aria-labelledby="ideas-title"></section>
+    <section class="sec" id="stories" aria-labelledby="stories-title"></section>
+    <section class="sec" id="shelf" aria-labelledby="shelf-title"></section>
+    <section class="sec" id="laughs" aria-labelledby="laughs-title"></section>
+    <section class="sec" id="remember" aria-labelledby="remember-title"></section>
+    <section class="sec" id="onward" aria-labelledby="onward-title"></section>
+  </main>
+
+  <footer class="foot"></footer>
+
+  <!-- The moment player: one YouTube player for the whole page, docked. -->
+  <aside class="dock" id="dock" aria-label="Now playing" hidden>
+    <div class="dock-head">
+      <p class="dock-title"></p>
+      <button class="icon-btn dock-close" type="button" aria-label="Close the player">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="dock-video"><div id="yt"></div><p class="dock-hint" hidden>Tap the video to start it.</p></div>
+    <div class="dock-progress" aria-hidden="true"><span></span></div>
+    <p class="dock-caption" aria-hidden="true"></p>
+    <div class="dock-controls">
+      <button class="pill dock-replay" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg>Again</button>
+      <button class="pill dock-toggle" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M8 5v14M16 5v14"/><path class="i-play" d="M7 4.5v15l12.5-7.5z"/></svg></button>
+      <button class="pill dock-more" type="button">Keep listening</button>
+      <span class="dock-keys" aria-hidden="true">K pause · J L 10 s · Esc</span>
+    </div>
+    <p class="sr-only" role="status" id="dock-status"></p>
+  </aside>
+
+  <div class="drawer-scrim" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden></aside>
+
+  <!-- off-screen rather than display:none: Safari won't draw a <use> whose symbol sits in a hidden tree -->
+  <div id="sprite" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

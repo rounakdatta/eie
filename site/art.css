@@ -1,0 +1,83 @@
+/* The illustrations: ISOTYPE pictograms printed as risograph spot inks.
+   Every plate is drawn in up to five inks, one class per ink, like the drums of a riso press:
+   y yellow, p pink, r red, b blue, g teal, k key (ink black), and s, a shade of the plate for ground
+   and shadow. Inks multiply where they overlap, as real ink does, so a yellow sun behind a blue
+   figure prints green. Wrap each figure in one ink's <g> so it blends as one print, and cut gaps inside
+   it with x, the knock colour: white under multiply shows exactly what is underneath. w is opaque
+   paper, for covering.
+   The dark theme keeps every plate a print on paper, only dimmer. Inverting the key ink to cream
+   (tried first) turned every black glyph on a yellow sign into cream on yellow; a picture's inner
+   contrast must not depend on the theme. */
+
+:root {
+  --plate: #EDE5D4;
+  --shade: #DDD1BA;
+  --i-k: #232736;
+  --i-b: #3F6FC6;
+  --i-r: #EC5B42;
+  --i-y: #F5C232;
+  --i-g: #2C9887;
+  --i-p: #EE7BA8;
+  --blend: multiply;
+  --knock: #fff;
+  --grain-blend: multiply;
+  --grain-opacity: .3;
+}
+
+:root[data-theme="dark"] {
+  --plate: #CFC6B2;
+  --shade: #BDB29B;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --plate: #CFC6B2;
+    --shade: #BDB29B;
+  }
+}
+
+.art {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: var(--plate);
+  border-radius: 3px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.art > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Paper grain over the whole plate, ink and paper alike, as on a printed page. */
+.art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url(grain.png) 0 0 / 160px 160px;
+  mix-blend-mode: var(--grain-blend);
+  opacity: var(--grain-opacity);
+}
+
+.art .y, .art .p, .art .r, .art .b, .art .g, .art .k { mix-blend-mode: var(--blend); }
+.art .y { fill: var(--i-y); }
+.art .p { fill: var(--i-p); }
+.art .r { fill: var(--i-r); }
+.art .b { fill: var(--i-b); }
+.art .g { fill: var(--i-g); }
+.art .k { fill: var(--i-k); }
+.art .w { fill: var(--plate); }
+.art .x { fill: var(--knock); }
+.art .s { fill: var(--shade); }
+/* Line work, for the rare arrow or tally a pictogram can't carry. */
+.art .ks { fill: none; stroke: var(--i-k); stroke-linecap: round; stroke-linejoin: round; mix-blend-mode: var(--blend); }
+.art .ws { fill: none; stroke: var(--plate); stroke-linecap: round; stroke-linejoin: round; }
+.art .xs { fill: none; stroke: var(--knock); stroke-linecap: round; stroke-linejoin: round; }
+.art .bs { fill: none; stroke: var(--i-b); stroke-linecap: round; stroke-linejoin: round; mix-blend-mode: var(--blend); }
+.art .rs { fill: none; stroke: var(--i-r); stroke-linecap: round; stroke-linejoin: round; mix-blend-mode: var(--blend); }
+.art .ys { fill: none; stroke: var(--i-y); stroke-linecap: round; stroke-linejoin: round; mix-blend-mode: var(--blend); }
+.art .gs { fill: none; stroke: var(--i-g); stroke-linecap: round; stroke-linejoin: round; mix-blend-mode: var(--blend); }

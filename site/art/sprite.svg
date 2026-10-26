@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+  <!-- The pictogram library. Every person in every plate is one of these, so a person always looks
+       like a person from this book. Units: a standing adult is 100 tall, feet on y=100. Shapes carry
+       no fill, so a <use class="b"> prints in blue; gaps inside a figure use the knock colour. -->
+
+  <!-- Standing, facing us. -->
+  <symbol id="fig" viewBox="0 0 40 100">
+    <circle cx="20" cy="9" r="8.6"/>
+    <path d="M11 20.4h18a4 4 0 0 1 4 4.3L31.2 56H8.8L7 24.7a4 4 0 0 1 4-4.3z"/>
+    <rect x="0.6" y="21.4" width="5.2" height="33.5" rx="2.6"/>
+    <rect x="34.2" y="21.4" width="5.2" height="33.5" rx="2.6"/>
+    <path d="M9 57.6h10.2V100h-8.6z"/>
+    <path d="M20.8 57.6H31l-1.6 42.4h-8.6z"/>
+  </symbol>
+
+  <!-- Standing, facing right. -->
+  <symbol id="fig-r" viewBox="0 0 34 100">
+    <circle cx="16" cy="9" r="8.6"/>
+    <path d="M13.6 20.4h8.8a4 4 0 0 1 4 4.1L25.6 56H10.4l-.8-31.5a4 4 0 0 1 4-4.1z"/>
+    <path d="M10.6 57.6H25l-.4 37.8h6.4a1.6 1.6 0 0 1 1.6 1.6V100H11.4z"/>
+    <rect x="17.4" y="20.4" width="10" height="36.4" rx="5" style="fill:var(--knock)"/>
+    <rect x="19.4" y="22.4" width="5.8" height="32.4" rx="2.9"/>
+  </symbol>
+
+  <!-- Walking, facing right. -->
+  <symbol id="fig-walk" viewBox="0 0 52 100">
+    <circle cx="25" cy="9" r="8.6"/>
+    <path d="M22.6 20.4h8.8a4 4 0 0 1 4 4.1L34.6 56H19.4l-.8-31.5a4 4 0 0 1 4-4.1z"/>
+    <path d="M19.6 55.2l9.6 2.8-10.4 37.4.8 4.6H6.2v-2.8l6.6-2.2z"/>
+    <path d="M24.4 56.6h10.2l7 37.6 8.4 1.6V100H35.4z"/>
+    <rect x="22.2" y="19.6" width="10" height="34" rx="5" transform="rotate(-24 27.2 24.4)" style="fill:var(--knock)"/>
+    <rect x="24.4" y="21.6" width="5.6" height="30" rx="2.8" transform="rotate(-24 27.2 24.4)"/>
+  </symbol>
+
+  <!-- Arms raised, facing us: cheering, standing up in a crowd. -->
+  <symbol id="fig-up" viewBox="0 0 48 100">
+    <circle cx="24" cy="21" r="8.6"/>
+    <path d="M15 32.4h18a4 4 0 0 1 4 4.3L35.2 64H12.8L11 36.7a4 4 0 0 1 4-4.3z"/>
+    <path d="M10.2 34.6a2.7 2.7 0 0 1-5-1.2L2.6 4.2a2.7 2.7 0 0 1 5.3-1z"/>
+    <path d="M37.8 34.6a2.7 2.7 0 0 0 5-1.2l2.6-29.2a2.7 2.7 0 0 0-5.3-1z"/>
+    <path d="M13 65.6h10.2V100h-8.6z"/>
+    <path d="M24.8 65.6H35l-1.6 34.4h-8.6z"/>
+  </symbol>
+
+  <!-- Sitting, facing right, as on a bench or a stadium seat. -->
+  <symbol id="fig-sit" viewBox="0 0 44 78">
+    <circle cx="16" cy="9" r="8.6"/>
+    <path d="M13.6 20.4h8.8a4 4 0 0 1 4 4.1L25.8 50H10.2l-.6-25.5a4 4 0 0 1 4-4.1z"/>
+    <path d="M10.2 47.4h27.2a4.6 4.6 0 0 1 4.6 4.6V78h-9V57H10.2z"/>
+    <rect x="17.4" y="20.4" width="10" height="31.6" rx="5" style="fill:var(--knock)"/>
+    <rect x="19.4" y="22.4" width="5.8" height="27.6" rx="2.9"/>
+  </symbol>
+
+  <!-- A child, facing us. -->
+  <symbol id="child" viewBox="0 0 30 64">
+    <circle cx="15" cy="7.6" r="7.2"/>
+    <path d="M8.6 17.4h12.8a3 3 0 0 1 3 3.2L23 41H7L5.6 20.6a3 3 0 0 1 3-3.2z"/>
+    <rect x="0.4" y="18.2" width="4.2" height="21" rx="2.1"/>
+    <rect x="25.4" y="18.2" width="4.2" height="21" rx="2.1"/>
+    <path d="M7.2 42.4h7V64H8z"/>
+    <path d="M15.8 42.4h7L22 64h-6.2z"/>
+  </symbol>
+
+  <!-- A coin, face on. -->
+  <symbol id="coin" viewBox="0 0 20 20">
+    <circle cx="10" cy="10" r="10"/>
+    <circle cx="10" cy="10" r="6.6" style="fill:var(--knock)"/>
+    <circle cx="10" cy="10" r="5"/>
+  </symbol>
+
+  <!-- A closed book, standing. -->
+  <symbol id="book" viewBox="0 0 30 40">
+    <path d="M2 0h24a2 2 0 0 1 2 2v34H6a2 2 0 0 0 0 4h22v0H5a5 5 0 0 1-5-5V2a2 2 0 0 1 2-2z"/>
+  </symbol>
+
+  <!-- An arrow pointing right: cause, then effect. -->
+  <symbol id="arrow" viewBox="0 0 60 20">
+    <path d="M0 7.4h44V0l16 10-16 10v-7.4H0z"/>
+  </symbol>
+
+  <!-- A building of the state: pediment, columns, steps. -->
+  <symbol id="state" viewBox="0 0 80 70">
+    <path d="M40 0l40 16H0z"/>
+    <rect x="2" y="18" width="76" height="5"/>
+    <rect x="8" y="26" width="7" height="32"/>
+    <rect x="24" y="26" width="7" height="32"/>
+    <rect x="49" y="26" width="7" height="32"/>
+    <rect x="65" y="26" width="7" height="32"/>
+    <rect x="0" y="60" width="80" height="4"/>
+    <rect x="-4" y="65" width="88" height="5"/>
+  </symbol>
+
+  <!-- A factory: saw-tooth roof and a chimney. -->
+  <symbol id="factory" viewBox="0 0 80 60">
+    <path d="M0 60V26l16-10v10l16-10v10l16-10v10h8V0h10v26h14v34z"/>
+  </symbol>
+
+  <!-- A question mark, drawn rather than typed. -->
+  <symbol id="q" viewBox="0 0 24 40">
+    <path d="M3.2 11.6A9 9 0 0 1 12 2.4a9.6 9.6 0 0 1 9.6 9.6c0 6.4-6.8 7.6-6.8 13.6h-6c0-8.4 6.8-9.4 6.8-13.6a3.6 3.6 0 0 0-3.6-3.6 3.4 3.4 0 0 0-3.4 3.4z"/>
+    <circle cx="11.8" cy="34.2" r="3.8"/>
+  </symbol>
+</svg>
