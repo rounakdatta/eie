@@ -1,0 +1,42 @@
+# Publish the newspaper to GitHub Pages whenever the site changes on main.
+# The pages are built locally (site/build.py, site/paper/build-paper.py) and committed, so this only
+# gathers the files the paper reads, keeping their relative paths: paper/, data/045.json, grain.png.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gather the newspaper
+        run: |
+          mkdir -p _site/paper _site/data
+          cp -r site/paper/index.html site/paper/paper.js site/paper/paper.css site/paper/edition-045.built.json site/paper/fonts site/paper/media _site/paper/
+          cp site/data/045.json _site/data/
+          cp site/grain.png _site/
+          cp site/pages-index.html _site/index.html
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
