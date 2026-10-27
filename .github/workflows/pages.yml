@@ -1,6 +1,6 @@
 # Publish the newspaper to GitHub Pages whenever the site changes on main.
 # The pages are built locally (site/build.py, site/paper/build-paper.py) and committed, so this only
-# gathers the files the paper reads, keeping their relative paths: paper/, data/045.json, grain.png.
+# gathers the files the paper reads with site/publish.sh, the same gathering eie.taptappers.club serves.
 name: Pages
 
 on:
@@ -28,11 +28,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Gather the newspaper
         run: |
-          mkdir -p _site/paper _site/data
-          cp -r site/paper/index.html site/paper/paper.js site/paper/paper.css site/paper/edition-045.built.json site/paper/fonts site/paper/media _site/paper/
-          cp site/data/045.json _site/data/
-          cp site/grain.png _site/
-          cp site/pages-index.html _site/index.html
+          sh site/publish.sh _site
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
