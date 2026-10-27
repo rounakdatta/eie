@@ -41,7 +41,10 @@ node site/tools/paper-fit.cjs 1440         # how each band was fitted: depth, co
 node site/tools/paper-shots.cjs <dir>      # each page as an image
 ```
 
-GitHub Pages publishes it from main (`.github/workflows/pages.yml`): the root redirects to `paper/`.
+It is published in two places, both serving what `site/publish.sh` gathers: the paper, the one transcript it reads, and a front page that redirects to `paper/`.
+
+- **https://eie.taptappers.club**, on the homelab (`kubernetes/apps/hugo-sites/sites/eie` in homelab.setup). Its pod fetches only `site/` from a tag of this repo (a blobless sparse clone, a few MB of the repo's 230) and runs `publish.sh` itself. To publish a change: merge it, tag main `site-vX.Y.Z`, and set `BRANCH` in that overlay to the tag; the deploy rolls the pod.
+- **https://rounak.taptappers.club/eie/**, on GitHub Pages (`.github/workflows/pages.yml`), on every push to main that touches `site/`.
 
 ## The typesetting engine (`Fit` in paper-src.js)
 
