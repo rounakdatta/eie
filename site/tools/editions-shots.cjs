@@ -39,7 +39,7 @@ async function main() {
     await d.goto(`${base}${n}/`, { waitUntil: "load", timeout: 60000 });
     await d.waitForSelector("html[data-fit]", { state: "attached", timeout: 60000 });
     await settle(d);
-    for (const [i, el] of (await d.$$(".page")).entries()) await el.screenshot({ path: path.join(out, `${id}-p${i + 1}.png`) });
+    for (const [i, el] of (await d.$$(".page")).entries()) await el.screenshot({ path: path.join(out, `${id}-p${i + 1}.png`), timeout: 120000 });
     await d.close();
     const m = await browser.newPage({ viewport: { width: +opt("phone", 390), height: 844 }, isMobile: true, hasTouch: true });
     await m.goto(`${base}${n}/`, { waitUntil: "load", timeout: 60000 });
@@ -48,7 +48,7 @@ async function main() {
     // in pieces: a single capture stops drawing at 16,384 px, and an edition on a phone runs to 30,000
     const H = await m.evaluate(() => document.documentElement.scrollHeight);
     for (let y = 0, k = 0; y < H; y += 12000, k++)
-      await m.screenshot({ path: path.join(out, `${id}-phone-${k}.png`), fullPage: true, clip: { x: 0, y, width: +opt("phone", 390), height: Math.min(12000, H - y) } });
+      await m.screenshot({ path: path.join(out, `${id}-phone-${k}.png`), fullPage: true, clip: { x: 0, y, width: +opt("phone", 390), height: Math.min(12000, H - y) }, timeout: 120000 });
     await m.close();
     console.log(id);
   }
