@@ -3,7 +3,7 @@
 //
 //   node site/tools/paper-verify.cjs
 const { chromium } = require("/home/rounak/personal/Codeman/node_modules/playwright");
-const URL = "http://127.0.0.1:8745/paper/";
+const URL = "http://127.0.0.1:8746/45/";
 const out = [];
 const check = (name, ok, detail = "") => { out.push(ok); console.log(`${ok ? "pass" : "FAIL"}  ${name}${detail ? `  (${detail})` : ""}`); };
 (async () => {
@@ -20,7 +20,7 @@ const check = (name, ok, detail = "") => { out.push(ok); console.log(`${ok ? "pa
     // 2. the jump loses and repeats nothing: page 1 + page 2 = the edition's lead
     if (w === 1440 || w === 1199 || w === 2560) {
       const r = await p.evaluate(async () => {
-        const e = await fetch("edition-045.built.json").then((x) => x.json());
+        const e = await fetch("edition.json").then((x) => x.json());
         const clean = (s) => s.replace(/­/g, "").replace(/\{[^}]*\}/g, "").replace(/\*/g, "").replace(/^## /, "").replace(/\s+/g, " ").trim();
         const want = clean(`${e.p1.lead.dateline}: ` + e.p1.lead.body.map(clean).join(" "));
         // the words a reader sees: not the play marks' hidden time labels

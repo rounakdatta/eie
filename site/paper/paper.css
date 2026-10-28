@@ -79,11 +79,30 @@ html.resetting #paper { opacity: .35; transition-duration: .1s; }
 .tease .x { display: block; margin-top: 5px; font: 700 14.5px/1.25 var(--head); font-stretch: 80%; color: #1e1e1e; }
 .tease .p { color: var(--red); font-weight: 800; white-space: nowrap; }
 .tease:hover .x { text-decoration: underline; text-underline-offset: 2px; }
+/* the teasers either side of Ajay's cut-out keep clear of it, whatever their words */
+html:not(.article) .skyline .tease:nth-of-type(2) { padding-right: 18px; }
+html:not(.article) .skyline .tease:nth-of-type(3) { padding-left: 20px; }
 .sky-photo { position: relative; z-index: 2; height: 11cqi; margin: 0; }
 .sky-photo img { height: 100%; width: 100%; object-fit: cover; object-position: 50% 22%; }
 .sky-photo figcaption { position: absolute; right: 5px; bottom: 3px; font: 700 10.5px var(--head); font-stretch: 80%; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.85); }
 .folio { position: relative; z-index: 5; display: flex; justify-content: space-between; align-items: center; gap: 10px; background: var(--blue); color: #fff; padding: 0 10px; height: var(--lh); font: 700 12.5px/var(--lh) var(--head); font-stretch: 85%; letter-spacing: .04em; text-transform: uppercase; }
 .folio a { text-decoration: none; text-transform: none; letter-spacing: 0; }
+
+/* the edition bar over the nameplate, and the editions either side at the foot of the last page */
+.edbar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: var(--lh); margin: -12px 0 10px; border-bottom: 1px solid var(--hair);
+  font: 700 11.5px/var(--lh) var(--head); font-stretch: 85%; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.edbar a { text-decoration: none; color: inherit; }
+.edbar a:hover { color: var(--ink); }
+.edbar .all { color: var(--blue); }
+.edbar .next { text-align: right; }
+.nextup { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--gut); margin-top: var(--lh); padding-top: calc(var(--lh) / 2); border-top: 3px double var(--ink); }
+.nextup .nx { display: block; text-decoration: none; }
+.nextup .k { display: block; font: 700 11px/var(--lh) var(--head); font-stretch: 85%; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.nextup .h { display: block; font: 800 23px/1.12 var(--head); font-stretch: 75%; color: var(--ink); text-wrap: balance; }
+.nextup .next { text-align: right; }
+.nextup .all { align-self: start; text-align: center; padding: 0 var(--gut); border-left: 1px solid var(--rule); border-right: 1px solid var(--rule); }
+.nextup .all .h { color: var(--blue); }
+.nextup a:hover .h { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
 
 /* inside pages: the running head */
 .runhead { display: flex; align-items: center; gap: 12px; height: calc(var(--lh) * 2); border-bottom: 3px solid var(--ink); font: 700 12px/1 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .06em; color: #333; }
@@ -148,7 +167,7 @@ html.resetting #paper { opacity: .35; transition-duration: .1s; }
 /* a crosshead is two lines (a line of air, then its words) and never splits; the engine sees
    that no column starts or ends on one, and may drop one to make the columns come out even */
 .text h4 { margin: 0; padding-top: var(--lh); font: 800 13.5px/var(--lh) var(--head); font-stretch: 80%; text-transform: uppercase; letter-spacing: .05em; break-inside: avoid; }
-.text h4.dropped { display: none; }
+.text h4.dropped, .text p.opt.dropped { display: none; }
 .text .jump { margin: 0; text-align: right; text-indent: 0; font: 800 11.5px/var(--lh) var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .06em; }
 .text .jump a { text-decoration: none; }
 .text .jump a::after { content: " ▶"; }
@@ -244,14 +263,15 @@ html.article .strip-key .howto { margin-left: 0; }
 .from { margin: 0; font: 800 12px/var(--lh) var(--head); font-stretch: 85%; letter-spacing: .08em; text-transform: uppercase; }
 .from a { text-decoration: none; }
 .from a::before { content: "◀ "; }
-.portraits { display: grid; grid-template-columns: repeat(var(--n, 2), 1fr); gap: 10px; }
+.portraits { display: grid; grid-template-columns: repeat(var(--n, 2), calc((100% - (var(--slots, var(--n, 2)) - 1) * 10px) / var(--slots, var(--n, 2)))); justify-content: center; gap: 10px; background: none; }
+.portraits::after { display: none; }   /* each portrait has its own edge, the row has none */
 .portraits figure { margin: 0; display: flex; flex-direction: column; min-height: 0; }
 .portraits .pic { flex: 1; }
 .portraits img { object-position: 50% 18%; }
 
 /* page three: by the numbers */
 .numbers { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: var(--gut); }
-.numbers .cell { position: relative; display: flex; flex-direction: column; }
+.numbers .cell { position: relative; display: flex; flex-direction: column; min-width: 0; }
 .numbers .cell + .cell::before { content: ""; position: absolute; top: 0; bottom: 0; left: calc(var(--gut) / -2); border-left: 1px solid var(--rule); }
 .numbers .fig { font: 900 54px/calc(var(--lh) * 3) var(--head); font-stretch: 72%; color: var(--red); letter-spacing: -.01em; }
 .numbers .what { font: 15px/var(--lh) var(--text); text-wrap: pretty; }
@@ -264,7 +284,7 @@ html.article .strip-key .howto { margin-left: 0; }
 /* page four: the shelf, laughs, quiz, glossary */
 .shelf.text p { text-indent: 0; text-align: left; }
 .shelf h4.bk { padding-top: var(--lh); font: 800 15.5px/var(--lh) var(--head); font-stretch: 80%; text-transform: none; letter-spacing: 0; background: linear-gradient(var(--hair), var(--hair)) 0 calc(var(--lh) / 2) / 100% 1px no-repeat; }
-.shelf h4.bk:first-child { padding-top: 0; background: none; }
+.shelf h4.bk:first-child, .shelf h4.bk.tight { padding-top: 0; background: none; }
 .shelf .by { font-style: italic; color: var(--ink-2); }
 .shelf .meta { font: 600 12px/var(--lh) var(--head); font-stretch: 85%; color: var(--muted); }
 .shelf .meta a { color: var(--blue); text-decoration: none; }
@@ -360,7 +380,8 @@ html.article .mod > * + * { margin-top: 8px; }
 html.article .hl.xl { font-size: 46px; line-height: 48px; }
 html.article .hl.l { font-size: 34px; line-height: 38px; }
 html.article .ptitle { font-size: 46px; line-height: 50px; }
-html.article .numbers { grid-template-columns: 1fr 1fr; row-gap: 14px; }
+html.article .numbers { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; }   /* a column that can't grow makes a wide figure shrink to fit */
+html.article .numbers .fig { display: block; font-size: 44px; line-height: 50px; white-space: nowrap; }
 html.article .numbers .cell:nth-child(odd)::before { display: none; }
 html.article .cw-grid { --cell: calc((100vw - 32px) / var(--w)) !important; }
 html.article .cw-bar { height: auto; min-height: 44px; position: sticky; top: 0; z-index: 2; }
@@ -370,11 +391,15 @@ html.article .skyline { display: flex; min-height: 0; padding-top: 4px; }
 html.article .skyline > span[aria-hidden], html.article .skyline .vr, html.article .sky-photo, html.article .cutout { display: none; }
 html.article .tease { flex: 1 1 0; min-width: 0; padding: 4px 6px; border-left: 1px solid var(--hair); }
 html.article .tease:first-of-type { border-left: 0; }
-html.article .tease .k { font-size: 11px; white-space: nowrap; } html.article .tease .w { font-size: clamp(15px, 5.2cqi, 22px); } html.article .tease .x { font-size: 12px; line-height: 1.2; }
+html.article .tease .k { font-size: 11px; line-height: 1.15; }   /* a long kicker wraps: at 10px "Immune to the" still didn't fit */ html.article .tease .w { font-size: clamp(15px, 5.2cqi, 22px); } html.article .tease .x { font-size: 12px; line-height: 1.2; }
 html.article .folio { height: auto; flex-wrap: wrap; justify-content: space-between; font-size: 11px; line-height: 1.6; padding: 3px 8px; }
 html.article .folio .mid { order: -1; width: 100%; text-align: center; font-size: 12px; }
 html.article .strip-ch { display: none; }
 html.article .runhead .date { display: none; }
+html.article .edbar { margin: -6px 0 8px; font-size: 10.5px; letter-spacing: .06em; }
+html.article .nextup { grid-template-columns: 1fr; row-gap: 14px; }
+html.article .nextup .next { text-align: left; }
+html.article .nextup .all { order: 3; text-align: left; padding: 10px 0 0; border: 0; border-top: 1px solid var(--rule); }
 html.article .dock { left: 0; right: 0; bottom: 0; width: auto; border-width: 1px 0 0; }
 html.article .dock-keys { display: none; }
 html.article .dock[data-ended] .dock-video, html.article .dock[data-ended] .dock-progress, html.article .dock[data-ended] .dock-caption { display: none; }

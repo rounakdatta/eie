@@ -11,7 +11,7 @@ const OUT = process.argv[2];
     const ctx = await b.newContext({ viewport: vp, deviceScaleFactor: mobile ? 2 : 1.5, isMobile: !!mobile, hasTouch: !!mobile });
     const p = await ctx.newPage();
     p.on("pageerror", (e) => console.log("pageerror:", e.message));
-    await p.goto("http://127.0.0.1:8745/paper/", { waitUntil: "networkidle" });
+    await p.goto("http://127.0.0.1:8745/45/", { waitUntil: "networkidle" });
     await p.waitForSelector("html[data-fit], html.article[data-ready]", { state: "attached", timeout: 30000 });
     await p.evaluate(() => document.fonts.ready);
     // scroll the whole paper once, as a reader would, so every lazy picture has loaded

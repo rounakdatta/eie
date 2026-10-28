@@ -27,7 +27,8 @@ def load(*parts):
 
 
 def tokens(text):
-    return re.sub(r"[^a-z0-9' ]+", " ", text.lower()).split()
+    # a typographer's apostrophe is an apostrophe: the edition's copy writes "I’m", the transcript "I'm"
+    return re.sub(r"[^a-z0-9' ]+", " ", text.lower().replace("\u2019", "'").replace("\u2018", "'")).split()
 
 
 def cs(t):

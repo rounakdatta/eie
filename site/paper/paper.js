@@ -9,9 +9,10 @@
 // story instead ("article mode"), where none of this is needed.
 //
 // build-paper.py makes paper.js from this file, splicing in the helpers and the moment player
-// from ../app.js.
+// from ../app.js. Every edition's page is the same: /45/index.html names its episode, and reads its
+// edition.json, data.json and media/ beside it.
 
-const EP = 45;
+const EP = +document.body.dataset.ep;
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const NAMES = ["Amit Varma", "Ajay Shah", "someone else"];
@@ -374,7 +375,7 @@ const Dock = {
 
 function upper(arr, x) { let lo = 0, hi = arr.length; while (lo < hi) { const m = (lo + hi) >> 1; arr[m] <= x ? (lo = m + 1) : (hi = m); } return lo; }
 
-const MEDIA = "media/";
+const MEDIA = "media/", SHARED = "../paper/media/";
 const LH = 22, GUT = 22;
 const RM = matchMedia("(prefers-reduced-motion: reduce)");
 const item = (id) => D.items.find((i) => i.id === id);
@@ -392,7 +393,8 @@ function momentOf(ref) {
   const [id, mode] = ref.split("|");
   const it = item(id);
   if (!it?.clip) return null;
-  if (mode === "whole" && it.span) return { ...here(it), clip: it.span, at: [it.span[0]], title: `${titleOf(it)} (the whole story)` };
+  const span = E.spans?.[id] || it.span;
+  if (mode === "whole" && span) return { ...here(it), clip: span, at: [span[0]], title: `${titleOf(it)} (the whole story)` };
   return here(it);
 }
 
@@ -421,7 +423,9 @@ function rich(s) {
   }
   return frag;
 }
-const para = (s, cls) => (s.startsWith("## ") ? h("h4", {}, s.slice(3)) : h("p", { class: cls }, rich(s)));
+/* A paragraph; "## " makes it a crosshead, and "~ " one the engine may leave out to fit. */
+const para = (s, cls) => (s.startsWith("## ") ? h("h4", {}, s.slice(3))
+  : s.startsWith("~ ") ? h("p", { class: `opt ${cls || ""}`.trim() }, rich(s.slice(2))) : h("p", { class: cls }, rich(s)));
 
 /* Bind a mark to the last syllable of the text before it, so the mark never starts a line alone
    while the word can still hyphenate before that syllable. (Binding the whole word made it a wide
@@ -457,7 +461,9 @@ function longDay(iso) {   // a newspaper's dateline: Friday 3 May 2024
 /* A picture whose depth the engine chooses, within the crop its subject allows (data-r: the
    least, natural and most height for its width). A fixed one keeps its natural crop. A video is
    a silent loop from the episode; its button plays the moment with sound. */
-function picture({ src, video, poster, caption, credit, focus = "50% 40%", ratio = [0.5, 0.5625, 0.7], play, fixed, frame }) {
+function picture(pic) {
+  if (!pic) return [];   // an edition may lack a picture; the story stands without one
+  const { src, video, poster, caption, credit, focus = "50% 40%", ratio = [0.5, 0.5625, 0.7], play, fixed, frame } = pic;
   const fig = h("figure", { class: `pic${fixed ? "" : " elastic"}${frame ? " frame" : ""}`, "data-r": ratio.join(","), "data-fixed": fixed ? "" : null, style: { "--ar": (1 / ratio[1]).toFixed(4) } });
   if (video) {
     const v = h("video", { src: MEDIA + video, poster: MEDIA + poster, muted: true, loop: true, playsinline: true, preload: "metadata", "aria-hidden": "true", style: { objectPosition: focus } });
@@ -498,7 +504,7 @@ function watchButton(play) {
 
 function speakerAt(t) { return WORDS.s[Math.max(0, upper(WORDS.t, t) - 1)]; }
 
-function pullQuote({ text: q, item: id, who }, sizes = "17,19,21,23,25", label, pad = 6) {
+function pullQuote({ text: q, item: id, who }, sizes = "17,19,21,23,25", label, pad = 10) {
   const m = momentOf(id);
   return h("figure", { class: "quote elastic", "data-sizes": sizes, "data-pad": String(pad) },
     label ? h("p", { class: "answers-label" }, label) : null,
@@ -518,15 +524,29 @@ function runhead(n, section) {
     h("span", {}, "Everything is Everything"), h("span", { class: "date t" }, longDay(D.episode.date)));
 }
 
-function portraits(list, per = [1.0, 1.25, 1.6]) {
-  // the row's depth for its width: each portrait's own proportions, shared across the row
-  const k = 1 / list.length;
-  return h("div", { class: "portraits pic elastic", "data-r": per.map((x) => (x * k).toFixed(3)).join(","), style: { "--n": list.length, "--ar": (list.length / per[1]).toFixed(3) } },
+function portraits(list, per = [1.0, 1.25, 1.6], least = 1) {
+  // the row's depth for its width: each portrait's own proportions, shared across the row. Fewer
+  // portraits than `least` keep the size they'd have in a row of `least`, centred: one portrait
+  // across a whole story was a poster, not a picture
+  const slots = Math.max(least, list.length), k = 1 / slots;
+  return h("div", { class: "portraits pic elastic", "data-r": per.map((x) => (x * k).toFixed(3)).join(","), style: { "--n": list.length, "--slots": slots, "--ar": (slots / per[1]).toFixed(3) } },
     list.map((p) => h("figure", {}, h("div", { class: "pic" }, h("img", { src: MEDIA + p.src, alt: p.caption })),
       h("figcaption", { class: "cap" }, p.caption, h("span", { class: "credit" }, ` ${p.credit}`)))));
 }
 
 /* ── page one ─────────────────────────────────────────────── */
+
+/* The edition bar, over the nameplate: this paper's place in the run, and the ways along it. */
+function edbar() {
+  const N = E.nav;
+  const link = (x, cls, label, text) => (x
+    ? h("a", { class: cls, href: `../${x.n}/`, title: x.head, "aria-label": `${label}: Episode ${x.n}, ${x.head}` }, text)
+    : h("span", { class: cls }));
+  return h("nav", { class: "edbar", "aria-label": "Editions" },
+    link(N.prev, "prev", "The edition before", `‹ Episode ${N.prev?.n}`),
+    h("a", { class: "all", href: "../" }, `All ${N.total} editions`),
+    link(N.next, "next", "The next edition", `Episode ${N.next?.n} ›`));
+}
 
 function page1() {
   const e = D.episode, M = E.masthead, P = E.p1;
@@ -534,12 +554,14 @@ function page1() {
   const [t1, t2, t3] = M.skyline;
   const tease = (t) => h("a", { class: "tease", href: `#${t.to}` }, h("span", { class: "k" }, t.kicker),
     h("span", { class: `w ${t.colour}` }, t.word), h("span", { class: "x" }, t.text, " ", h("span", { class: "p" }, t.page)));
-  const cutout = (cls, t) => h("div", { class: `cutout ${cls}`, "aria-hidden": "true" }, h("img", { src: MEDIA + t.cutout, alt: "" }));
-  page.append(h("header", { class: "mast" },
+  const cutout = (cls, t) => h("div", { class: `cutout ${cls}`, "aria-hidden": "true" }, h("img", { src: SHARED + t.cutout, alt: "" }));
+  const photo = t3.photo
+    ? h("figure", { class: "sky-photo" }, h("img", { src: MEDIA + t3.photo.src, alt: t3.photo.who, style: t3.photo.focus ? { objectPosition: t3.photo.focus } : {} }), h("figcaption", {}, t3.photo.who))
+    : h("span", { "aria-hidden": "true" });
+  page.append(edbar(), h("header", { class: "mast" },
     h("h1", { class: "nameplate" }, h("span", {}, "Everything is Everything")), h("div", { class: "rule" }),
     h("div", { class: "skyline" }, h("span", { "aria-hidden": "true" }), tease(t1), h("span", { class: "vr" }), tease(t2),
-      h("span", { "aria-hidden": "true" }), h("span", { class: "vr" }), tease(t3),
-      h("figure", { class: "sky-photo" }, h("img", { src: MEDIA + t3.photo, alt: t3.who }), h("figcaption", {}, t3.who))),
+      h("span", { "aria-hidden": "true" }), h("span", { class: "vr" }), tease(t3), photo),
     cutout("left", t1), cutout("mid", t2),
     h("div", { class: "folio" }, h("span", {}, M.folio.left),
       h("span", { class: "mid t" }, `${longDay(e.date)} · ${Math.floor(e.seconds / 60)} minutes · ${M.folio.price}`),
@@ -549,7 +571,7 @@ function page1() {
   const briefs = P.brief.flatMap((b) => [h("h3", {}, b.head), h("p", {}, h("span", { class: "sq", "aria-hidden": "true" }), rich(b.text))]);
   const th = P.thought;
   const brief = mod(1, "brief", { "aria-label": "In brief" }, snap("h2", "", "In brief"), text(1, "", briefs), gap(),
-    h("aside", { class: "box thought elastic", "data-sizes": "17,18,19,20,21,22,23,24" }, h("h3", {}, th.label), h("q", {}, th.text),
+    h("aside", { class: "box thought elastic", "data-sizes": "15,16,17,18,19,20,21,22,23,24", "data-pad": "8" }, h("h3", {}, th.label), h("q", {}, th.text),
       h("p", { class: "who" }, withMark(th.who, say(momentOf(th.item))))),
     gap());
 
@@ -562,11 +584,11 @@ function page1() {
 
   // the second and third stories
   const S = P.second;
-  const second = mod(1, "second", { id: "depression" }, snap("p", "label", h("span", {}, S.label)), snap("h2", "hl l", S.head),
+  const second = mod(1, "second", { id: S.id }, snap("p", "label", h("span", {}, S.label)), snap("h2", "hl l", S.head),
     h("p", { class: "deck snap", "data-gap": "8" }, S.deck), ...picture(S.pic), text(1, "", S.body.map((s) => para(s))),
     gap(), pullQuote(S.quote, "15,16,17,18,19,20"), listen(S.listen));
   const T = P.third;
-  const third = mod(1, "third", { id: "nile" }, ...picture(T.pic), snap("h2", "hl l", T.head), text(1, "", T.body.map((s) => para(s))),
+  const third = mod(1, "third", { id: T.id }, ...picture(T.pic), snap("h2", "hl l", T.head), text(1, "", T.body.map((s) => para(s))),
     listen(T.listen), gap(),
     snap("aside", "box talk", h("h3", {}, "Who talked"),
       h("div", { class: "meter", role: "img", "aria-label": `Amit ${Math.round(D.share[0] * 100)}% and Ajay ${Math.round(D.share[1] * 100)}% of the talking` },
@@ -575,15 +597,15 @@ function page1() {
     gap(),
     h("nav", { class: "box inside elastic", "data-pad": "3", "aria-label": "Inside" }, h("h3", {}, "Inside"),
       h("ol", {}, E.index.map((x) => h("li", {}, h("a", { href: `#${x.to}` }, x.label), h("span", { class: "p" }, x.page))))),
-    snap("p", "footnote", "*There is no free lunch. Page 2"));
+    snap("p", "footnote", M.footnote));
 
   page.append(h("section", { class: "band", "data-fit": "", "data-min": "54" }, brief, lead, second, third));
   page.append(h("section", { class: "band ruled" }, mod(6, "flush", {}, strip())));
   return page;
 }
 
-/* The episode, minute by minute: who held the microphone, chapter by chapter, with the five
-   fallacies marked where they were said. A click anywhere listens from there. */
+/* The episode, minute by minute: who held the microphone, chapter by chapter, with the moments the
+   lead's reel plays marked where they were said. A click anywhere listens from there. */
 const Strip = {
   el: null,
   playhead(t) {
@@ -593,6 +615,8 @@ const Strip = {
     $(".strip-play", this.el).style.left = `${(t / (D.episode.seconds * 100)) * 100}%`;
   },
 };
+const capital = (s) => s[0].toUpperCase() + s.slice(1);
+const an = (w) => (/^[aeiou]/i.test(w) ? "An" : "A");
 function strip() {
   const e = D.episode, dur = e.seconds * 100, pct = (cs) => `${(cs / dur) * 100}%`;
   const free = (t, title) => ({ ep: EP, videoId: e.videoId, clip: [t, t + 6000], at: [t], spk: speakerAt(t + 200), free: true, title });
@@ -609,58 +633,75 @@ function strip() {
     const r = turns.getBoundingClientRect(), t = ((ev.clientX - r.left) / r.width) * dur;
     Player.play(free(WORDS.t[Math.max(0, upper(WORDS.t, t) - 1)], `from ${clock(t)}`), null);
   });
-  const marks = h("div", { class: "strip-marks" });
-  E.p1.lead.pic.play.reel.forEach((id, k) => {
+  const L = E.p1.lead, marks = h("div", { class: "strip-marks" });
+  L.reel.forEach((id, k) => {
     const m = momentOf(id);
-    marks.append(h("button", { type: "button", style: { left: pct(m.at[0]) }, "aria-label": `Fallacy ${k + 1}: ${titleOf(item(id))}, at ${clock(m.at[0])}`,
+    if (!m) return;
+    // a marker is centred on its moment, but kept whole inside the strip at either end
+    marks.append(h("button", { type: "button", style: { left: `clamp(8.5px, ${pct(m.at[0])}, calc(100% - 8.5px))` }, "aria-label": `${capital(L.reelUnit)} ${k + 1}: ${titleOf(item(id))}, at ${clock(m.at[0])}`,
       onclick: (ev) => Player.play(m, ev.currentTarget) }, String(k + 1)));
   });
   const axis = h("div", { class: "strip-axis t", "aria-hidden": "true" });
-  for (let m = 0; m * 6000 < dur; m += 5) axis.append(h("span", { style: { left: pct(m * 6000) } }, `${m}:00`));
+  // the first label starts at its tick and the last ends at it, so neither hangs off the strip
+  for (let m = 0; m * 6000 < dur; m += dur > 540000 ? 10 : 5) {
+    const at = (m * 6000) / dur;
+    axis.append(h("span", { style: { left: pct(m * 6000), transform: at < 0.03 ? "none" : at > 0.97 ? "translateX(-100%)" : null } }, `${m}:00`));
+  }
   Strip.el = h("div", { class: "strip" }, chapters, turns, marks, axis, h("div", { class: "strip-play" }));
   return [h("h2", { class: "strip-title" }, "The episode, minute by minute"),
-    h("p", { class: "strip-sub" }, "Each band is a turn at the microphone. The numbers mark the five fallacies. Click a chapter, a number or any minute to listen from there."),
+    h("p", { class: "strip-sub" }, `Each band is a turn at the microphone. The numbers mark ${L.reelName}. Click a chapter, a number or any minute to listen from there.`),
     Strip.el,
-    h("div", { class: "strip-key" }, h("span", { style: { "--c": "var(--amit)" } }, "Amit Varma"), h("span", { style: { "--c": "var(--ajay)" } }, "Ajay Shah"), h("span", { class: "num" }, "A fallacy, where it was named"),
+    h("div", { class: "strip-key" }, h("span", { style: { "--c": "var(--amit)" } }, "Amit Varma"), h("span", { style: { "--c": "var(--ajay)" } }, "Ajay Shah"), h("span", { class: "num" }, `${an(L.reelUnit)} ${L.reelUnit}, where it was named`),
       h("span", { class: "howto" }, h("span", { class: "say", "data-s": "0", "aria-hidden": "true" }, h("span", { class: "disc", html: PLAY })), h("span", { class: "say", "data-s": "1", "aria-hidden": "true" }, h("span", { class: "disc", html: PLAY })),
         "Throughout the paper, a play mark is a moment you can hear, in Amit’s voice (red) or Ajay’s (blue)."))];
 }
 
-/* ── page two: the five fallacies ─────────────────────────── */
+/* ── page two: the argument, chapter by chapter ───────────── */
+
+/* Rows for the sections after the first: two to a row, or three where two would leave one alone. */
+function rowsOf(list) {
+  const n = list.length;
+  if (n <= 3) return n ? [list] : [];
+  if (n === 4) return [list.slice(0, 2), list.slice(2)];
+  if (n === 5) return [list.slice(0, 2), list.slice(2)];
+  return [list.slice(0, 3), ...rowsOf(list.slice(3))];
+}
 
 function page2() {
   const P = E.p2, page = h("article", { class: "page", id: "p2", "aria-label": "Page 2" }, runhead(2, "Opinion"));
   page.append(h("section", { class: "band" }, mod(6, "title flush", {}, h("h2", { class: "ptitle" }, P.title), h("p", { class: "pdeck" }, rich(P.deck)))));
-  const f = (k) => P.fallacies[k];
-  const art = (x, fixed) => picture({ src: x.art, credit: "Art: Simahina", focus: "50% 50%", ratio: [0.42, 0.5625, 0.74], play: { chapter: x.chapter }, fixed, frame: true });
-  const head = (x) => [snap("p", "fnum", `Fallacy ${x.number}`), snap("h2", "hl l", x.head), snap("p", "byline left", bylineFor(x.chapter))];
+  const art = (x, fixed) => (x.art ? picture({ ...x.art, focus: x.art.focus || "50% 50%", play: x.chapter != null ? { chapter: x.chapter } : { item: x.quote.item }, fixed, frame: !!x.art.card }) : []);
+  const head = (x) => [snap("p", "fnum", x.label), snap("h2", "hl l", x.head), snap("p", "byline left", bylineFor(x))];
   const body = (x, cols) => text(cols, "drop", x.body.map((s) => para(s)));
+  const [s1, ...rest] = P.sections, side = P.side;
 
-  // the first fallacy leads the page, with the book behind the episode beside it
-  const f1 = f(0);
+  // the first section leads the page, with its quote, a picture and a box beside it
   page.append(h("section", { class: "band ruled", "data-fit": "" },
-    mod(4, "", { id: f1.id }, ...art(f1), ...head(f1), body(f1, 3)),
-    mod(2, "", {}, pullQuote(f1.quote, "19,20,21,22,23,24,25,26"), gap(),
-      ...picture({ src: P.sowell.src, caption: P.sowell.caption, credit: P.sowell.credit, focus: "50% 22%", ratio: [0.9, 1.25, 1.7] }),
-      snap("aside", "box tint", h("h3", {}, "The book behind the episode"),
-        h("p", {}, rich("*Economic Facts and Fallacies* names fallacies that are foundational, in that many other errors grow out of them. Sowell is one of Amit Varma’s intellectual heroes, “still going strong at ninety plus”. {045-R01}"))))));
-  for (const [a, b] of [[f(1), f(2)], [f(3), f(4)]]) {
-    page.append(h("section", { class: "band ruled", "data-fit": "" }, ...[a, b].map((x) => mod(3, "", { id: x.id },
+    mod(4, "", { id: s1.id }, ...art(s1), ...head(s1), body(s1, 3)),
+    mod(2, "", {}, pullQuote(side.quote, "19,20,21,22,23,24,25,26"), gap(),
+      ...(side.photo ? picture({ ...side.photo, focus: side.photo.focus || "50% 22%" }) : []),
+      snap("aside", "box tint", h("h3", {}, side.box.title), h("p", {}, rich(side.box.text))))));
+  for (const row of rowsOf(rest)) {
+    const span = 6 / row.length, cols = row.length === 1 ? "4,3" : row.length === 2 ? "2" : "1";
+    page.append(h("section", { class: "band ruled", "data-fit": "" }, ...row.map((x) => mod(span, "", { id: x.id },
       ...art(x, !!x.portraits), ...head(x),
-      x.portraits ? [portraits(x.portraits, [0.75, 1.1, 1.5]), gap()] : null,
-      body(x, 2), gap(), pullQuote(x.quote, "17,19,21,23,25,27")))));
+      x.portraits ? [portraits(x.portraits, [0.75, 1.1, 1.5], 2), gap()] : null,
+      body(x, cols), gap(), pullQuote(x.quote, "17,19,21,23,25,27")))));
   }
   // the lead's continuation, from page one
   page.append(h("section", { class: "band ruled", "data-fit": "" },
     mod(6, "cont", { id: "from1" }, snap("p", "from", h("a", { href: "#lead" }, "From page 1")), snap("h2", "hl m", P.from1.head),
-      text("3,2,4", "", []), gap(),
-      pullQuote({ text: "One way to get past the fighting that we do, this ideological bickering that has become so common, is to recognize the other person’s core first principle, which is also to recognize that other person’s humanity.", item: "045-C17" }, "18,20,22,24,26"))));
+      // one wide column is the last resort, for a continuation too short to divide evenly
+      text("3,2,4,1", "", []), gap(), pullQuote(P.cont.quote, "18,20,22,24,26"))));
   return page;
 }
 
-/* Who carried a chapter: one name if one voice held 60% of it, else both, the larger first. */
-function bylineFor(ch) {
-  const c = D.episode.chapters, a = c[ch].start * 100, b = (c[ch + 1]?.start ?? D.episode.seconds) * 100;
+/* Who carried a section: its chapter's voices (one name if one held 60% of it, else both, the
+   larger first), or the voice of its quote where it has no chapter. */
+function bylineFor(x) {
+  const c = D.episode.chapters, ch = x.chapter;
+  if (ch == null || !c[ch]) return NAMES[momentOf(x.quote.item)?.spk ?? 2];
+  const a = c[ch].start * 100, b = (c[ch + 1]?.start ?? D.episode.seconds) * 100;
   const talk = [0, 0, 0];
   for (const [s, e, k] of D.turns) talk[k] += Math.max(0, Math.min(e, b) - Math.max(s, a));
   const [amit, ajay] = talk, top = amit >= ajay ? 0 : 1;
@@ -675,20 +716,23 @@ function page3() {
   const story = (s, span, cols) => {
     const it = item(s.item);
     return mod(span, "", { id: s.id },
-      ...picture({ video: s.video, poster: s.poster, caption: s.caption, focus: s.focus, ratio: [0.4, 0.5625, 0.9], play: { item: s.item, mode: "whole" } }),
+      ...picture(s.pic),
       snap("p", "kicker", s.kicker), snap("h2", "hl l", s.head), snap("p", "byline left", `Told by ${it.teller}`),
       text(cols, "drop", s.body.map((x) => para(x))),
       gap(),
       s.why ? h("aside", { class: "box tint why elastic", "data-pad": "10" }, h("h3", {}, "Why it stays with you"), h("p", {}, rich(s.why))) : pullQuote(s.quote),
       s.postscript ? h("p", { class: "ps snap", "data-gap": "0" }, h("b", {}, "Postscript"), rich(s.postscript)) : null);
   };
-  const [ryan, monkey, tomatoes, pool] = P.stories;
-  page.append(h("section", { class: "band ruled", "data-fit": "" }, story(ryan, 4, 3), story(monkey, 2, 1)));
-  page.append(h("section", { class: "band ruled", "data-fit": "" }, story(tomatoes, 3, 2), story(pool, 3, 2)));
+  const S = P.stories;
+  // four stories make two rows, the first led by a wide one; three stand side by side
+  const rows = S.length === 4 ? [[[S[0], 4, "3"], [S[1], 2, "1"]], [[S[2], 3, "2"], [S[3], 3, "2"]]]
+    : S.length === 3 ? [[[S[0], 2, "1"], [S[1], 2, "1"], [S[2], 2, "1"]]]
+      : [S.map((s) => [s, 6 / S.length, S.length === 1 ? "4,3" : "2"])];
+  for (const row of rows) page.append(h("section", { class: "band ruled", "data-fit": "" }, ...row.map(([s, span, cols]) => story(s, span, cols))));
   page.append(h("section", { class: "band ruled", id: "numbers" }, mod(6, "flush", {}, snap("p", "label", h("span", {}, "By the numbers")),
     h("div", { class: "numbers" }, P.numbers.map((n) => {
-      const m = n.moment ? momentOf(`#${n.moment}`) : momentOf(n.item);
-      return h("div", { class: "cell" }, h("span", { class: "fig t" }, n.figure), h("span", { class: "what" }, n.text), say(m, `${FIRST[m.spk]} · ${clock(m.at[0])}`));
+      const m = momentOf(n.ref);
+      return h("div", { class: "cell" }, h("span", { class: "fig t" }, n.figure), h("span", { class: "what" }, n.text), m ? say(m, `${FIRST[m.spk]} · ${clock(m.at[0])}`) : null);
     })))));
   return page;
 }
@@ -699,40 +743,60 @@ function page4() {
   const P = E.p4, page = h("article", { class: "page", id: "p4", "aria-label": "Page 4" }, runhead(4, "Books & laughs"));
   const shelf = E.shelf.flatMap((b) => {
     const m = momentOf(b.id);
-    return [h("h4", { class: "bk" }, b.title),
+    return [h("h4", { class: "bk air" }, b.title),
       h("p", {}, h("span", { class: "by" }, [b.creator, b.type].filter(Boolean).join(" · ")), ". ", rich(b.why)),
       // real spaces between the parts, so a narrow phone can wrap the line between them
-      h("p", { class: "meta" }, m ? say(m, `${FIRST[m.spk]} at ${clock(m.at[0])}`) : h("span", { class: "nb" }, "In the show notes"),
+      // its meta line is the shelf's finest lever: the last few may be left out on a desktop to divide
+      // the columns evenly (a short shelf found no even setting without it); phones show them all
+      h("p", { class: "meta opt" }, m ? say(m, `${FIRST[m.spk]} at ${clock(m.at[0])}`) : h("span", { class: "nb" }, "In the show notes"),
         b.episodes > 1 ? [" ", h("span", { class: "sep" }, "|"), " ", h("span", { class: "nb" }, `In ${b.episodes} episodes`)] : null,
         b.url ? [" ", h("span", { class: "sep" }, "|"), " ", h("a", { class: "nb", href: b.url, target: "_blank", rel: "noopener" }, `${domain(b.url)} ↗`)] : null)];
   });
-  const overheard = "045-J12";
-  const funny = E.laughs.filter((j) => j.type === "humor" && j.id !== overheard), refs = E.laughs.filter((j) => j.type !== "humor");
-  const laughList = [...funny.map((j) => h("p", {}, withMark(j.text, say(momentOf(j.id))))), h("h4", {}, P.laughs.refsTitle),
-    ...refs.map((j) => h("p", {}, withMark(j.text, say(momentOf(j.id)))))];
-  page.append(h("section", { class: "band", "data-fit": "" },
-    mod(4, "", { id: "shelf" }, snap("h2", "hl l", P.shelf.title), h("p", { class: "pdeck snap", "data-gap": "8" }, P.shelf.deck),
-      portraits(P.shelf.portraits, [0.55, 0.9, 1.4]), gap(), text("3,2", "shelf", shelf)),
-    mod(2, "", { id: "laughs" }, h("h2", { class: "hl l snap", "data-gap": "6" }, P.laughs.title), text(1, "laughs", laughList), gap(),
-      pullQuote({ text: "I wasn’t whining and we will fight over the use of your word whining. I don’t whine.", item: overheard,
-        who: "Amit Varma, told he had opened the episode by whining" }, "16,17,18,19,20,21,22,23,24,25,26", "Overheard"))));
+  const funny = E.laughs.filter((j) => j.type === "humor"), refs = E.laughs.filter((j) => j.type !== "humor");
+  // past the first four jokes, a laugh line is one a sub-editor may cut to fit, the name-drops first
+  const laughList = [...funny.map((j, k) => h("p", { class: k >= 4 ? "opt" : null }, withMark(j.text, say(momentOf(j.id))))), refs.length ? h("h4", {}, P.laughs.refsTitle) : null,
+    ...refs.map((j) => h("p", { class: "opt" }, withMark(j.text, say(momentOf(j.id)))))].filter(Boolean);
+  const O = P.laughs.overheard;
+  const laughText = text(1, "laughs", laughList);
+  laughText.dataset.optmax = "8";   // up to eight lines may go, where the default lever stops at three
+  const laughs = (span) => mod(span, "", { id: "laughs" }, h("h2", { class: "hl l snap", "data-gap": "6" }, P.laughs.title), laughText, gap(),
+    pullQuote({ text: O.text, item: O.item, who: O.who }, "16,17,18,19,20,21,22,23,24,25,26", "Overheard", 24));
+  const books = (span, cols) => mod(span, "", { id: "shelf" }, snap("h2", "hl l", P.shelf.title), h("p", { class: "pdeck snap", "data-gap": "8" }, P.shelf.deck),
+    P.shelf.portraits?.length ? [portraits(P.shelf.portraits, [0.55, 0.9, 1.4], 3), gap()] : null, text(cols, "shelf", shelf));
+  // a long shelf takes the page's width, and the laugh lines join the quiz
+  const wide = P.shelf.wide;
+  // a short shelf reads, and divides, better in two columns than three
+  page.append(h("section", { class: "band", "data-fit": "" }, ...(wide ? [books(6, "4,5,3")] : [books(4, E.shelf.length <= 12 ? "2,3" : "3,2"), laughs(2)])));
   page.append(crossword());
-  const quizItems = P.quiz.map((q, k) => h("p", {}, h("span", { class: "qn" }, `${k + 1}.`), q.q));
+  const quizItems = P.quiz.map((q, k) => h("p", {}, h("span", { class: "qn" }, `${k + 1}.`), rich(q.q)));
   const answers = h("ol", { class: "answers", tabindex: "0", "aria-label": "The answers, printed upside down. Point at them, or press Enter, to turn them over" },
     P.quiz.map((q, k) => h("li", {}, h("b", {}, `${k + 1}.`), withMark(q.a, say(momentOf(q.item))))));
   answers.addEventListener("click", (ev) => { if (!ev.target.closest(".say")) answers.classList.toggle("up"); });
   answers.addEventListener("keydown", (ev) => { if (ev.target === answers && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); answers.classList.toggle("up"); } });
   const [word, ...terms] = P.glossary;
   const lower = (s) => s[0].toLowerCase() + s.slice(1);
-  page.append(h("section", { class: "band ruled", "data-fit": "" },
-    mod(3, "", { id: "quiz" }, snap("h2", "hl l", "Quiz"), h("p", { class: "pdeck snap", "data-gap": "8" }, "Answer out loud first: recalling it is what makes it stay."),
+  const span = wide ? 2 : 3;
+  page.append(h("section", { class: "band ruled", "data-fit": "" }, wide ? laughs(2) : null,
+    mod(span, "", { id: "quiz" }, snap("h2", "hl l", "Quiz"), h("p", { class: "pdeck snap", "data-gap": "8" }, "Answer out loud first: recalling it is what makes it stay."),
       text(1, "quiz", quizItems), gap(),
-      h("aside", { class: "box elastic", "data-pad": "8" }, h("p", { class: "answers-label" }, "Answers, upside down"), answers)),
-    mod(3, "", { id: "gloss" }, h("h2", { class: "hl l snap", "data-gap": "6" }, "Word watch"),
-      pullQuote({ text: `${word.term}: ${lower(word.def)}`, item: word.item, who: "Word of the day" }, "18,20,22,24,26,28,30,32", null, 10), gap(),
-      text("2,1", "gloss", terms.map((g) => h("p", {}, h("b", {}, g.term), ": ", withMark(g.def, g.item ? say(momentOf(g.item)) : null)))))));
-  page.append(h("footer", { class: "colophon" }, E.p4.credits));
+      h("aside", { class: "box elastic", "data-pad": "14" }, h("p", { class: "answers-label" }, "Answers, upside down"), answers)),
+    mod(span, "", { id: "gloss" }, h("h2", { class: "hl l snap", "data-gap": "6" }, "Word watch"),
+      pullQuote({ text: `${word.term}: ${lower(word.def)}`, item: word.item, who: "Word of the day" }, "18,20,22,24,26,28,30,32", null, 20), gap(),
+      text(wide ? "1" : "2,1", "gloss", terms.map((g) => h("p", {}, h("b", {}, g.term), ": ", withMark(g.def, g.item ? say(momentOf(g.item)) : null)))))));
+  page.append(h("footer", { class: "colophon" }, P.credits), nextup());
   return page;
+}
+
+/* The foot of the last page: the editions either side of this one, by their headlines. */
+function nextup() {
+  const N = E.nav;
+  if (!N.prev && !N.next) return null;
+  const card = (x, cls, label) => (x
+    ? h("a", { class: `nx ${cls}`, href: `../${x.n}/` }, h("span", { class: "k" }, `${label} · Episode ${x.n}`), h("span", { class: "h" }, x.head))
+    : h("span", { class: `nx ${cls}` }));
+  return h("nav", { class: "nextup", "aria-label": "More editions" }, card(N.prev, "prev", "The edition before"),
+    h("a", { class: "nx all", href: "../" }, h("span", { class: "k" }, "The archive"), h("span", { class: "h" }, `All ${N.total} editions`)),
+    card(N.next, "next", "The next edition"));
 }
 
 /* ── the crossword ────────────────────────────────────────── */
@@ -870,9 +934,25 @@ const SPACES = [0, 0.06, -0.06];   // word-spacing, em: a second, finer way to m
 const rows = (px) => Math.round(px / LH);
 function range(a, b) { const out = []; for (let x = a; x <= b; x++) out.push(x); return out; }
 
+/* A headline with a word wider than its column is set smaller, as a sub-editor would, until the
+   word fits: "macroeconomists" in one narrow column ran off the page. Its line height, and so the
+   grid, stays as it was. */
+function fitHeads(root) {
+  for (const el of $$(".hl, .ptitle, .tease .w, .tease .k, .numbers .fig", root)) {
+    el.style.fontSize = "";
+    let fs = parseFloat(getComputedStyle(el).fontSize);
+    const least = el.closest(".tease") ? 10 : 16;   // a phone's teaser starts at 15px
+    while (el.scrollWidth > el.clientWidth + 1 && fs > least) {
+      fs -= fs > 20 ? 2 : 1;
+      el.style.fontSize = `${fs}px`;
+    }
+  }
+}
+
 /* Pad a block down to the next line, keeping at least data-gap pixels of white below its ink;
    give a fixed picture its natural crop in whole lines. */
 function snapAll(root) {
+  fitHeads(root);
   // a chapter label that cannot be read whole keeps only its rule; its name is in its tooltip
   for (const b of $$(".strip-ch button", root)) b.classList.toggle("tight", b.scrollWidth > b.clientWidth + 1);
   // a crossword's squares are as large as its column allows, up to 40px
@@ -904,7 +984,8 @@ const Fit = {
     this.bandms = [];
     for (const [i, page] of pages.entries()) {
       snapAll(page);
-      for (const band of $$(".band[data-fit]", page)) {
+      for (const [j, band] of $$(".band[data-fit]", page).entries()) {
+        band.dataset.key = `${page.id}.${j}`;
         if (i) await breathe();
         if (gen !== this.gen) return;
         const b0 = performance.now();
@@ -942,8 +1023,20 @@ const Fit = {
     for (const mm of models) {
       const ok = !!this.apply(mm, T);
       if (!ok) mm.el.dataset.fit = "short";
-      this.report.push({ id: mm.el.id || mm.el.className, T, ok, why: mm.why });
+      this.report.push({ id: mm.el.id || mm.el.className, band: b.dataset.key, T, ok, why: mm.why, ...this.range(mm) });
     }
+  },
+
+  /* For a band that could not be fitted: how deep each story can be made, in lines, and how many
+     words a line of its text holds, so a sub-editor knows what to cut or add. */
+  range(mm) {
+    const pic = mm.pic ? [mm.picL.min, mm.picL.max] : [0, 0];
+    const hs = mm.box ? mm.boxO.map((o) => o.h) : [0];
+    const rs = !mm.text ? [0] : mm.cut ? [6, 999] : mm.textO.map((o) => o.L / o.n);
+    const words = mm.text ? mm.text.textContent.trim().split(/\s+/).length : 0;
+    const L = mm.text && mm.textO[0] ? mm.textO[0].L : null;
+    return { range: rs.length ? [mm.F + pic[0] + Math.min(...hs) + Math.min(...rs), mm.F + pic[1] + Math.max(...hs) + Math.max(...rs)] : null,
+      cols: mm.n, wpl: L ? +(words / L).toFixed(1) : null, words };
   },
 
   tryDepths(b, models) {
@@ -997,6 +1090,14 @@ const Fit = {
     const heads = $$(":scope > h4:not(.bk):not(.keep)", t), k = heads.length;
     const drops = k <= 3 ? range(0, (1 << k) - 1).map((bits) => heads.map((_, i) => i).filter((i) => bits & (1 << i)))
       : [[], ...heads.map((_, i) => [i]), heads.map((_, i) => i)];
+    // paragraphs the copy marks as optional ("~ "), left out from the last one back: a whole
+    // paragraph moves a column by lines, where spacing moves it by one
+    const opts = $$(":scope > p.opt", t), ods = range(0, Math.min(opts.length, +t.dataset.optmax || 3));
+    const omit = (od) => opts.forEach((x, i) => x.classList.toggle("dropped", i >= opts.length - od));
+    // a listing's titles carry a line of air each; the last few may give theirs up, a line at a time
+    // (the shelf found no even setting without it: a title at a column's foot, or lines that wouldn't divide)
+    const airs = $$(":scope > .air", t).slice(1), tights = range(0, Math.min(airs.length, 3));
+    const tighten = (k) => airs.forEach((x, i) => x.classList.toggle("tight", i >= airs.length - k));
     // a story with a drop cap may also take a two-line cap, or none, if its lines will not divide
     const caps = t.classList.contains("drop") || t.dataset.cap ? ["drop", "drop2", "nocap"] : [null];
     t.dataset.cap = caps[0] || "";
@@ -1004,30 +1105,51 @@ const Fit = {
     const measure = (c) => {
       cap(c.cap);
       heads.forEach((x, i) => x.classList.toggle("dropped", c.drop.includes(i)));
+      omit(c.od || 0);
+      tighten(c.tight || 0);
       s.columnCount = "1"; s.height = "auto"; s.width = `${(w - (c.n - 1) * GUT) / c.n}px`;
       s.letterSpacing = c.t ? `${c.t}em` : ""; s.wordSpacing = c.ws ? `${c.ws}em` : "";
       const raw = t.getBoundingClientRect().height / LH;
       return Math.abs(raw - Math.round(raw)) < 0.05 ? Math.round(raw) : null;
     };
-    const done = () => { cap(caps[0]); heads.forEach((x) => x.classList.remove("dropped")); Object.assign(s, { letterSpacing: "", wordSpacing: "", width: "", columnCount: "", height: "" }); };
+    const done = () => { cap(caps[0]); heads.forEach((x) => x.classList.remove("dropped")); omit(0); tighten(0); Object.assign(s, { letterSpacing: "", wordSpacing: "", width: "", columnCount: "", height: "" }); };
     if (mm.cut) {   // a story that may be cut needs only its full length
-      const L = measure({ n: mm.n, drop: [], t: 0, ws: 0, cap: caps[0] });
+      const L = measure({ n: mm.n, drop: [], od: 0, t: 0, ws: 0, cap: caps[0] });
       done();
-      return [{ n: mm.n, drop: [], t: 0, ws: 0, cap: caps[0], L: L ?? 0 }];
+      return [{ n: mm.n, drop: [], od: 0, t: 0, ws: 0, cap: caps[0], L: L ?? 0 }];
     }
+    // A text is laid out once for each measure, cap and spacing; what a crosshead, an optional
+    // paragraph or a title's air takes away is whole lines, so every other setting's length is
+    // arithmetic. (Laying out every setting, a shelf of listings took sixteen seconds to set.)
+    const bases = new Map();
+    const lines = (el) => Math.round(el.getBoundingClientRect().height / LH);
+    const predict = (c) => {
+      const key = `${c.n}|${c.cap}|${c.ws}|${c.t}`;
+      if (!bases.has(key)) {
+        const L = measure({ ...c, drop: [], od: 0, tight: 0 });
+        bases.set(key, L == null ? null : { L, heads: heads.map(lines), opts: opts.map(lines) });
+      }
+      const b = bases.get(key);
+      if (!b) return null;
+      let L = b.L - c.tight;   // a tightened title gives up its one line of air
+      for (const i of c.drop) L -= b.heads[i];
+      for (let i = opts.length - c.od; i < opts.length; i++) L -= b.opts[i];
+      return L;
+    };
     const cands = [];
-    for (const n of mm.ns) for (const k of caps) for (const drop of drops) for (const ws of SPACES) for (const tr of TRACKS) cands.push({ n, cap: k, drop, ws, t: tr });
-    cands.sort((a, b) => mm.ns.indexOf(a.n) - mm.ns.indexOf(b.n) || caps.indexOf(a.cap) - caps.indexOf(b.cap) || a.drop.length - b.drop.length || Math.abs(a.ws) - Math.abs(b.ws) || Math.abs(a.t) - Math.abs(b.t));
+    for (const n of mm.ns) for (const k of caps) for (const drop of drops) for (const od of ods) for (const tight of tights) for (const ws of SPACES) for (const tr of TRACKS) cands.push({ n, cap: k, drop, od, tight, ws, t: tr });
+    cands.sort((a, b) => mm.ns.indexOf(a.n) - mm.ns.indexOf(b.n) || caps.indexOf(a.cap) - caps.indexOf(b.cap) || a.drop.length - b.drop.length || a.od - b.od || a.tight - b.tight || Math.abs(a.ws) - Math.abs(b.ws) || Math.abs(a.t) - Math.abs(b.t));
     const found = new Map();
-    let tries = 0;
+    let checks = 0;
+    const most = Number.isFinite(limit) ? limit * 6 : 240;   // checks in real columns: the costly part
     for (const c of cands) {
-      if (++tries > limit * 6) break;   // a text whose lines barely move gives up early
-      const L = measure(c);
-      if (L == null || L % c.n) continue;
-      const key = `${c.n}|${c.cap}|${c.drop}|${L}`;
+      const L = predict(c);
+      if (L == null || L <= 0 || L % c.n) continue;
+      const key = `${c.n}|${c.cap}|${c.drop}|${c.od}|${c.tight}|${L}`;
       if (found.has(key)) continue;
+      if (++checks > most) break;
       s.width = "";   // back to the full measure, to be set in columns
-      this.set(mm, { r: L / c.n, t: c.t, ws: c.ws, drop: c.drop, n: c.n, cap: c.cap });
+      this.set(mm, { r: L / c.n, t: c.t, ws: c.ws, drop: c.drop, od: c.od, tight: c.tight, n: c.n, cap: c.cap });
       if (this.columns(mm) === true) found.set(key, { ...c, L });
       if (found.size >= limit) break;
     }
@@ -1058,24 +1180,32 @@ const Fit = {
     if (!mm.text) { for (const p of P) for (const b of B) if (mm.F + p + b.h === T) yield { p, b }; return; }
     const n = mm.n;
     if (mm.cut) {
-      const L = mm.textO[0].L;
+      // the cheapest first, which is not always the natural picture: a taller one that carries a real
+      // paragraph to page 2 beats one that jumps a sentence
+      const L = mm.textO[0].L, out = [];
       for (const p of P) for (const b of B) {
         const r = T - mm.F - p - b.h;
         if (r < 6 || r * n > L) continue;
-        yield r * n === L ? { p, b, r, t: 0 } : { p, b, r, t: 0, cut: r * n - 1 };
+        out.push(r * n === L ? { p, b, r, t: 0 } : { p, b, r, t: 0, cut: r * n - 1 });
       }
+      out.sort((x, y) => this.cost(x, mm) - this.cost(y, mm));
+      yield* out;
       return;
     }
     for (const o of mm.textO) {
       const r = o.L / o.n;
-      for (const p of P) for (const b of B) if (mm.F + r + p + b.h === T) yield { p, b, r, t: o.t, ws: o.ws, drop: o.drop, n: o.n, cap: o.cap };
+      for (const p of P) for (const b of B) if (mm.F + r + p + b.h === T) yield { p, b, r, t: o.t, ws: o.ws, drop: o.drop, od: o.od, tight: o.tight, n: o.n, cap: o.cap };
     }
   },
 
   cost(plan, mm) {
+    // a jump that carries a sentence or two to page 2 is no jump at all: a newspaper would rather
+    // set page one a few lines shallower and carry a real paragraph over
+    const moved = plan.cut != null ? mm.textO[0].L - plan.cut : 0;
+    const stub = moved > 0 && moved < 10 ? (10 - moved) * 6 : 0;
     // a picture cropped a line taller is invisible; a line of air in a box is not
-    return (mm.pic ? Math.abs(plan.p - mm.picL.nat) : 0) + plan.b.pad * 4 + Math.abs(plan.t || 0) * 250 + Math.abs(plan.ws || 0) * 15 + (plan.drop?.length || 0) * 3
-      + (plan.n && plan.n !== mm.ns[0] ? 2 : 0) + (plan.cap === "drop2" ? 2 : plan.cap === "nocap" ? 5 : 0);
+    return stub + (mm.pic ? Math.abs(plan.p - mm.picL.nat) : 0) + plan.b.pad * 4 + Math.abs(plan.t || 0) * 250 + Math.abs(plan.ws || 0) * 15 + (plan.drop?.length || 0) * 3
+      + (plan.n && plan.n !== mm.ns[0] ? 2 : 0) + (plan.cap === "drop2" ? 2 : plan.cap === "nocap" ? 5 : 0) + (plan.od || 0) * 8 + (plan.tight || 0) * 2;
   },
 
   /* The shallowest a band can be: no story above its least depth, never above data-min. */
@@ -1130,6 +1260,10 @@ const Fit = {
       if (plan.cap) { mm.text.classList.remove("drop", "drop2", "nocap"); mm.text.classList.add(plan.cap); }
       const s = mm.text.style;
       $$(":scope > h4:not(.bk):not(.keep)", mm.text).forEach((x, k) => x.classList.toggle("dropped", (plan.drop || []).includes(k)));
+      const opts = $$(":scope > p.opt", mm.text);
+      opts.forEach((x, k) => x.classList.toggle("dropped", k >= opts.length - (plan.od || 0)));
+      const airs = $$(":scope > .air", mm.text).slice(1);
+      airs.forEach((x, k) => x.classList.toggle("tight", k >= airs.length - (plan.tight || 0)));
       s.columnCount = String(mm.n); s.columnFill = "auto"; s.height = `${plan.r * LH}px`;
       s.letterSpacing = plan.t ? `${plan.t}em` : "";
       s.wordSpacing = plan.ws ? `${plan.ws}em` : "";
@@ -1268,6 +1402,8 @@ async function render() {
   } else {
     $$(".page").forEach((p) => p.classList.add("set"));
     shown();
+    // measured in the paper's own faces: a fallback font's narrower word fitted where the real one didn't
+    document.fonts.ready.then(() => $$(".page").forEach(fitHeads));
   }
   Pager.observe();
 }
@@ -1342,8 +1478,8 @@ function land() {
 async function main() {
   performance.mark("eie:start");
   const [d, e] = await Promise.all([
-    fetch(`../data/${String(EP).padStart(3, "0")}.json`).then((r) => r.json()),
-    fetch(`edition-${String(EP).padStart(3, "0")}.built.json`).then((r) => r.json()),
+    fetch("data.json").then((r) => r.json()),
+    fetch("edition.json").then((r) => r.json()),
   ]);
   D = d; E = e;
   performance.mark("eie:data");
@@ -1358,4 +1494,4 @@ async function main() {
   document.documentElement.dataset.ready = "true";
 }
 
-main().catch((err) => { console.error(err); $("#paper").append(h("p", { class: "page" }, "The paper couldn’t load. Serve the site folder over http (python3 -m http.server).")); });
+main().catch((err) => { console.error(err); $("#paper").append(h("p", { class: "page" }, "The paper couldn’t load. Serve the published site over http (sh site/publish.sh out, then python3 -m http.server --directory out).")); });
