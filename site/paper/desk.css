@@ -1,0 +1,116 @@
+/* Lost & Found: the archive desk (desk.js), in the paper's own type and inks. A classified ad on the
+   front page and in a drawer over an edition; what it finds comes back as clippings cut with pinking
+   shears; what you go to is ringed in red pencil. Uses paper.css's (or front.css's) colours and faces. */
+
+.desk { position: relative; border: 3px double var(--ink); padding: 14px 20px 18px; background: var(--paper); color: var(--ink);
+  font: 400 16px/1.45 var(--text); text-align: left; }
+.desk .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.desk-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 5px; border-bottom: 1.5px solid var(--ink); }
+.desk-h { margin: 0; font: 800 30px/1 var(--head); font-stretch: 70%; text-transform: uppercase; letter-spacing: .01em; color: var(--ink); }
+.desk-tag { font: 700 10.5px/1 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .16em; color: var(--muted); white-space: nowrap; }
+.desk-how { margin: 10px 0 14px; max-width: 64ch; font: italic 400 16.5px/1.4 var(--text); color: var(--ink-2); }
+
+/* the line you write on, and the stamp beside it */
+.desk-form { display: flex; align-items: stretch; gap: 12px; max-width: 900px; }
+.desk-lost { flex: none; align-self: flex-end; padding-bottom: 9px; font: 800 13px/1 var(--head); font-stretch: 80%; text-transform: uppercase; letter-spacing: .14em; color: var(--red); }
+.desk-lost::after { content: ":"; }
+.desk-form input { flex: 1; min-width: 0; margin: 0; padding: 6px 2px 5px; appearance: none; border: 0; border-bottom: 1.5px solid var(--ink); border-radius: 0;
+  background: transparent; color: var(--ink); font: 400 21px/1.3 var(--text); }
+.desk-form input::placeholder { color: #9b968d; font-style: italic; }
+.desk-form input::-webkit-search-cancel-button { -webkit-appearance: none; }
+.desk-form input:focus { outline: none; border-bottom-color: var(--red); box-shadow: 0 1.5px 0 var(--red); }
+.desk-go { flex: none; padding: 0 20px; border: 0; border-radius: 2px; background: var(--ink); color: var(--paper); cursor: pointer;
+  font: 700 13px/1 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .14em; }
+.desk-go:hover { background: var(--red); }
+.desk-go:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 2px; }
+
+/* three things to try, for whoever has never used it */
+.desk-try { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin: 11px 0 0; color: var(--muted); }
+.desk-try > span { font: 700 10.5px/1.4 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .14em; }
+.desk-eg { padding: 0; border: 0; border-bottom: 1px dotted var(--rule); background: none; color: var(--ink-2); cursor: pointer; font: italic 400 15px/1.45 var(--text); }
+.desk-eg::before { content: "“"; }
+.desk-eg::after { content: "”"; }
+.desk-eg:hover { color: var(--red); border-bottom-color: var(--red); }
+.desk-eg:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 2px; }
+.desk.asked .desk-try { display: none; }
+
+/* what the desk says back */
+.desk-out:empty { display: none; }
+.desk-out { margin-top: 18px; }
+.desk-reading, .desk-say { margin: 0; font: italic 400 16px/1.45 var(--text); color: var(--ink-2); }
+.desk-reading b { display: inline-block; min-width: 2.1em; font: 800 16px/1 var(--head); font-style: normal; color: var(--red); }
+.desk-count { margin: 0 0 12px; font: 700 11.5px/1.35 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .14em; color: var(--ink); }
+.desk-quick { margin-left: 10px; font-weight: 600; letter-spacing: .02em; text-transform: none; color: var(--muted); }
+
+/* a clipping: cut out with pinking shears and laid on the desk. The shadow follows the cut (a
+   drop-shadow on the link, the zigzag a mask on the paper inside it). */
+.clip { display: block; color: inherit; text-decoration: none; filter: drop-shadow(0 1px .6px rgba(0, 0, 0, .2)) drop-shadow(0 6px 6px rgba(0, 0, 0, .09));
+  transition: transform .16s ease, filter .16s ease; }
+.clip-paper { --zig: 5px; display: block; padding: 13px 16px calc(13px + var(--zig)); background: #fffdf7;
+  -webkit-mask: linear-gradient(#000 0 0) top / 100% calc(100% - var(--zig)) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / calc(var(--zig) * 2) var(--zig) repeat-x;
+  mask: linear-gradient(#000 0 0) top / 100% calc(100% - var(--zig)) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / calc(var(--zig) * 2) var(--zig) repeat-x; }
+.clip:hover { transform: translateY(-2px); filter: drop-shadow(0 1px .6px rgba(0, 0, 0, .22)) drop-shadow(0 10px 9px rgba(0, 0, 0, .12)); }
+.clip:focus-visible { outline: 2px dashed var(--blue); outline-offset: 4px; }
+.clip-line { display: block; font: 700 10.5px/1.35 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .13em; color: var(--muted); }
+.clip-line > * { white-space: nowrap; }
+.clip-line > * + *::before { content: " · "; color: var(--muted); font-weight: 700; }
+.clip-line b { font-weight: 800; color: var(--red); }
+.clip-head { display: block; margin-top: 5px; font: 800 20px/1.1 var(--head); font-stretch: 76%; color: var(--ink); text-wrap: balance; }
+.clip.best .clip-head { font-size: 30px; font-stretch: 72%; line-height: 1.04; }
+.clip-quote { display: block; margin-top: 6px; font: italic 400 17px/1.4 var(--text); color: var(--ink); quotes: "“" "”"; }
+.clip-quote::before { content: open-quote; } .clip-quote::after { content: close-quote; }
+.clip-kick { display: block; margin-top: 5px; font: italic 400 16px/1.35 var(--text); color: var(--ink-2); }
+.clip-snip { display: block; margin-top: 7px; font: 400 15px/1.45 var(--text); color: var(--ink-2); }
+.clip-note { display: block; margin-top: 8px; padding-left: 12px; border-left: 2px solid #c8321f; font: italic 400 14.5px/1.4 var(--text); color: #9c2817; }
+.clip-go { display: inline-block; margin-top: 11px; font: 700 12px/1.2 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .1em; color: var(--blue); }
+.clip:hover .clip-go { text-decoration: underline; text-underline-offset: 3px; }
+.desk-more { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 340px)); gap: 16px 20px; margin-top: 18px; }
+.desk-more .clip:nth-child(3n + 1) { transform: rotate(-.4deg); }
+.desk-more .clip:nth-child(3n + 2) { transform: rotate(.35deg); }
+.desk-more .clip:hover { transform: translateY(-2px); }
+@media (prefers-reduced-motion: reduce) { .clip, .clip:hover, .desk-more .clip { transition: none; transform: none; } }
+
+/* the drawer over an edition */
+html.desk-open { overflow: hidden; }
+.desk-back { position: fixed; inset: 0; z-index: 60; background: rgba(30, 26, 20, .4); }
+.desk-sheet { position: fixed; z-index: 61; top: 0; left: 50%; width: min(780px, 100vw); max-height: 100dvh; overflow: auto; overscroll-behavior: contain;
+  padding: 16px 16px 20px; background: var(--desk); border-radius: 0 0 6px 6px; box-shadow: 0 22px 44px -16px rgba(0, 0, 0, .55);
+  transform: translateX(-50%); animation: desk-down .22s ease-out; }
+.desk-sheet[hidden], .desk-back[hidden] { display: none; }
+.desk-close { position: absolute; z-index: 2; top: 20px; right: 26px; padding: 2px 8px; border: 0; background: none; cursor: pointer;
+  font: 400 26px/1 var(--head); color: var(--muted); }
+.desk-close:hover { color: var(--ink); }
+.desk-close:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 2px; }
+.desk-drawer .desk-top { padding-right: 34px; }
+.desk-drawer .desk-tag { display: none; }
+@keyframes desk-down { from { transform: translate(-50%, -18px); opacity: 0; } to { transform: translate(-50%, 0); opacity: 1; } }
+
+/* arriving: the place ringed in red pencil, and a note in the margin of what was asked */
+.desk-ring { position: absolute; z-index: 30; overflow: visible; pointer-events: none; }
+.desk-ring .ring-line { fill: none; stroke: #c8321f; stroke-width: 2.7; stroke-linecap: round; stroke-linejoin: round; opacity: .9; filter: url(#pencil);
+  stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1s cubic-bezier(.4, .05, .25, 1); }
+.desk-ring.drawn .ring-line { stroke-dashoffset: 0; }
+.desk-ring.still .ring-line { transition: none; }
+/* the note: a slip in red pencil, pinned to the corner of the window */
+.desk-mark { position: fixed; z-index: 45; left: 16px; bottom: 16px; display: inline-flex; align-items: baseline; gap: 8px; max-width: min(440px, calc(100vw - 32px)); margin: 0;
+  padding: 7px 6px 8px 12px; transform: rotate(-1.2deg); transform-origin: left bottom; background: #fffdf7; border-radius: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .18), 0 8px 18px -8px rgba(0, 0, 0, .35); font: italic 400 16px/1.3 var(--text); color: #a8291a; animation: desk-note .4s ease-out .8s both; }
+.desk-mark span { font: 700 10.5px/1 var(--head); font-style: normal; font-stretch: 85%; text-transform: uppercase; letter-spacing: .14em; }
+.desk-mark i { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.desk-x { padding: 0 5px; border: 0; background: none; cursor: pointer; font: 400 19px/1 var(--head); color: #8b776c; }
+.desk-x:hover { color: var(--ink); }
+@keyframes desk-note { from { opacity: 0; transform: rotate(-1.4deg) translateY(4px); } to { opacity: 1; transform: rotate(-1.4deg); } }
+@media (prefers-reduced-motion: reduce) { .desk-sheet, .desk-mark { animation: none; } }
+
+/* a phone: the drawer is the whole width, the form stacks when it must */
+@media (max-width: 560px) {
+  .desk { padding: 12px 14px 16px; }
+  .desk-h { font-size: 26px; }
+  .desk-how { font-size: 15.5px; }
+  .desk-form input { font-size: 19px; }
+  .desk-go { padding: 0 14px; letter-spacing: .1em; }
+  .desk-sheet { padding: 10px 10px 16px; border-radius: 0; }
+  .desk-close { top: 13px; right: 16px; }
+  .clip.best .clip-head { font-size: 25px; }
+  .desk-more { grid-template-columns: 1fr; }
+}

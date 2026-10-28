@@ -28,8 +28,12 @@ function threads(list, byN) {
     for (const b of tabs.children) b.setAttribute("aria-selected", String(b.dataset.id === t.id));
     const sel = [...tabs.children].find((b) => b.dataset.id === t.id);
     panel.setAttribute("aria-labelledby", sel.id);
-    if (focus) sel.focus();
-    sel.scrollIntoView({ block: "nearest", inline: "nearest" });
+    if (focus) sel.focus({ preventScroll: true });
+    // bring the tab into the strip's view sideways only: scrollIntoView also scrolled the page to it, so
+    // the archive opened halfway down, at the threads, past its own nameplate
+    const tr = tabs.getBoundingClientRect(), sr = sel.getBoundingClientRect();
+    if (sr.left < tr.left) tabs.scrollLeft -= tr.left - sr.left + 8;
+    else if (sr.right > tr.right) tabs.scrollLeft += sr.right - tr.right + 8;
     const path = t.path.filter((s) => byN.has(s.episode));
     panel.replaceChildren(
       h("div", {}, h("h3", {}, t.name), h("p", { class: "summary" }, t.summary), h("p", { class: "count" }, `${path.length} editions, in order`)),

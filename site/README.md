@@ -66,6 +66,27 @@ The site is published in two places, both serving what `site/publish.sh` gathers
 - **https://eie.taptappers.club**, on the homelab (`kubernetes/apps/hugo-sites/sites/eie` in homelab.setup). Its pod fetches only `site/` from a tag of this repo (a blobless sparse clone) and runs `publish.sh` itself. To publish a change: merge it, tag main `site-vX.Y.Z`, and set `BRANCH` in that overlay to the tag; the deploy rolls the pod.
 - **https://rounak.taptappers.club/eie/**, on GitHub Pages (`.github/workflows/pages.yml`), on every push to main that touches `site/`.
 
+## Covers on the shelf (`site/paper/covers.py`)
+
+Every book, film, series, album, song and podcast on a shelf has its cover beside it, where one could be found and checked: 607 works in the reading list, `site/covers/<id>.jpg` (300 px tall) and `site/covers/index.json`, published at `/covers/` and shared by every edition.
+
+- **Where from, best first:** for a book, the edition the hosts linked (an Amazon link's own cover: the short link's redirect gives the ASIN), then Open Library, then the cover on the book's Wikipedia page. For a film or series, the poster on its Wikipedia page, asked for by name ("Title (film)") before a search. For music and podcasts, a Spotify link's artwork, then Apple's iTunes Search.
+- **Every cover is looked at before it is kept.** Claude, shown ten at a time, keeps only the front cover of that work (any edition), a poster or title card of that film, or the sleeve of that record. It refuses a different work (The Godfather Part III for The Godfather), a back cover or spine, a placeholder, or a plain cloth binding with nothing to identify it. A refused candidate makes way for the next. Entries that aren't one work ("Arun Shourie's books") get none.
+- **On the page** a cover floats beside its entry, exactly four lines tall, so the entry stays on the grid; it is drawn as an object on the paper (a hairline and a soft shadow). One of the show's own episodes on a shelf links to its edition here ("Read Edition 38 →") rather than to the video.
+- `python3 site/paper/covers.py` looks for works with no verdict yet; `--only=ID,…` looks again.
+
+## Lost & Found: the archive desk (`site/search/`, `site/paper/desk.js`)
+
+Half-remember something from the show, describe it however vaguely ("the guy who did push-ups as penance", "why poor countries shouldn't buy the fanciest jets"), and the desk sends you to the page it was printed on, rings it in red pencil, and pins a note of what you asked to the corner of the window.
+
+- **Where it sits:** a classified-ad box under the nameplate on the front page; in an edition, "Lost & Found" in the edition bar (or "/") opens it as a sheet over the paper. What it finds comes back as clippings cut with pinking shears: the best one large, with its first lines; the rest small. Pressing Enter again on the same words goes to the best.
+- **Places** (`spots.py`): every piece of every edition that says something (the lead, the stories, the opinion sections, In Brief, the numbers, every work on the shelf, every laugh line, the glossary), 8,271 in all. Each has an anchor on its page, the same ids `paper-src.js` gives it.
+- **Hooks** (`hooks.py`, written once, committed in `search/hooks/`): for every place, the phrases a reader might use for it from memory, by Claude reading each edition (one call an edition): the gist in everyday words, the people and numbers in it, the ideas it is an example of, how it might be misremembered.
+- **The search** (`server.py`, standard library only): the reader's words find 40 candidates by BM25 over the headlines, hooks and text; then Claude Haiku, through auth2api, reads those candidates with their hooks and picks the ones meant, best first, with a line on each. A question asked before is answered from memory for a week. Past its limits (8 a minute and 150 a day a reader, 900 an hour in all), or when Claude can't be asked, the words alone answer, and the page says so. No question is logged.
+- **Measured** (`work/editions/desk-eval.py`) on queries another model wrote from random places, told to describe each the way a listener half-remembers it. With names in them (60 queries), 85% put the place first and 97% in the top three. With only a fuzzy gist, across all 128 editions (80 queries: no names, numbers or headline words), 78% put the exact place first and 89% in the top three, and 82% put the right edition first. Most misses are the same thing found in another place: the episode itself instead of a later shelf entry pointing to it.
+- A median search takes about 2.9 s with Claude and 40 ms by words alone. Sonnet 4.6 for the pick was no better first (79%) and a second slower. Widening the question with a second call cost 1.4 s and changed nothing measurable, so it is off (`WIDEN=1`).
+- **Where it runs:** a sidecar beside nginx in eie.taptappers.club's pod, on the files nginx serves; nginx sends `/api/` to it. Its own Ingress rate-limits `/api` per reader at the edge. The Pages copy asks eie.taptappers.club, which allows it by CORS.
+
 ## The typesetting engine (`Fit` in paper-src.js)
 
 The rule a newspaper keeps: no column ends short. On a desktop (1180 px and wider) every story is fitted:
