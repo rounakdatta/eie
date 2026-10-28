@@ -3,6 +3,8 @@
 
   python3 site/paper/media.py 1 50          # these episodes (each needs its copy.json)
   python3 site/paper/media.py --all         # every edition with a copy and no media.json yet
+  python3 site/paper/media.py 4 --into=DIR  # make them again in DIR/004, leaving the edition as it is
+                                            # (--sections-only: just the opinion page and the side)
 
 Needs ffmpeg and yt-dlp on PATH, Pillow and anthropic (work/venv; `. work/env.sh` first), and the
 auth2api key in work/.auth2api-key. Every picture is the episode's own or a checked photograph:
@@ -27,6 +29,7 @@ import json
 import os
 import re
 import shutil
+import signal
 import subprocess
 import sys
 import time
@@ -42,6 +45,8 @@ ROOT = os.path.dirname(SITE)
 EDITIONS = os.path.join(SITE, "editions")
 WORK = os.path.join(ROOT, "work", "media")
 LOGS = os.path.join(ROOT, "work", "editions", "media-logs")
+INTO = None   # --into=DIR: write NNN/media.json and NNN/media/ there, leaving the edition as it is
+SECTIONS_ONLY = False   # --sections-only: just the opinion page's pictures and the side (no Commons, no loops)
 GATEWAY = "http://auth2api.apps.svc.cluster.local:8317"
 MODEL = "claude-opus-5-5"
 UA = "EiE-newspaper/1.0 (https://github.com/rounakdatta/eie)"
@@ -427,7 +432,8 @@ def pictures(client, n, archive):
     items = {i["id"]: i for i in ep["items"]}
     dur = meta["duration_seconds"]
     chapters = meta["chapters"]
-    out = os.path.join(d, "media")
+    dst = os.path.join(INTO, f"{n:03d}") if INTO else d
+    out = os.path.join(dst, "media")
     if os.path.isdir(out):
         shutil.rmtree(out)
     os.makedirs(out)
@@ -446,7 +452,7 @@ def pictures(client, n, archive):
     for p in copy["shelf"]["portraits"]:
         wanted.append(("shelf", p["person"], p["hint"], True))
     found = {}
-    for key, name, hint, person in wanted:
+    for key, name, hint, person in ([] if SECTIONS_ONLY else wanted):
         if name in found:
             continue
         try:
@@ -537,6 +543,8 @@ def pictures(client, n, archive):
             speaker_slot(f"still:{s['id']}", s["quote"]["item"])
     speaker_slot("side-still", copy["p2"]["sections"][0]["quote"]["item"])
 
+    if SECTIONS_ONLY:
+        slots = {k: v for k, v in slots.items() if k.split(":")[0] in ("card", "still", "side-still")}
     cands = [(key, x) for key, s in slots.items() for x in s["times"]]
     video.fetch([x for _, x in cands])   # a whole video needs nothing; clips come in a few calls
     if video.why:
@@ -682,15 +690,23 @@ def pictures(client, n, archive):
     # the opinion page: chapter cards where they carry art (a plain title card was a black box with
     # words in it), else whoever carried the chapter
     media["sections"] = {}
+    carded = set()   # a chapter's card goes on its first section only: the same art twice on one page
+    close_of = None   # read as a misprint (Episode 100 had one three times)
     for i, s in enumerate(copy["p2"]["sections"]):
-        p = pick(f"card:{s['id']}", moving=False, need="art")
+        p = pick(f"card:{s['id']}", moving=False, need="art") if s["chapter"] not in carded else None
         if p:
             fn = f"ch{s['chapter']}.jpg"
             still(video, p["t"], os.path.join(out, fn))
             media["sections"][s["id"]] = {"src": fn, "credit": "Art: Simahina" if simahina else None, "card": True}
+            carded.add(s["chapter"])
+            close_of = None
             continue
         key = f"still:{s['id']}"
-        p, how = speaker(key, moving=False, pair_first=i % 2 == 1) if key in slots else (None, "")
+        # after a close-up of the same voice, a two-shot first: two near-identical close-ups side by
+        # side read as one picture printed twice (Episode 7's two of Ajay Shah)
+        pair = i % 2 == 1 or (key in slots and close_of == slots[key]["speaker"])
+        p, how = speaker(key, moving=False, pair_first=pair) if key in slots else (None, "")
+        close_of = slots[key]["speaker"] if p and not how else None
         if p:
             fn = f"still-{s['id']}.jpg"
             still(video, p["t"], os.path.join(out, fn))
@@ -706,7 +722,7 @@ def pictures(client, n, archive):
             media["sections"][s["id"]] = {"src": fn, "credit": "Art: Simahina" if simahina else None, "card": True}
     # beside the first section: the person the copy names, else the speaker of its quote
     side = copy["p2"]["side"].get("photo")
-    if side and side["person"] in photos:
+    if side and side["person"] in photos and photos[side["person"]]["src"] != (media.get("second") or {}).get("src"):
         ph = photos[side["person"]]
         media["side"] = {"src": ph["src"], "caption": ph["caption"], "credit": ph["credit"], "focus": ph["focus"],
                          "ratio": [round(ph["nat"] * 0.72, 3), ph["nat"], round(min(ph["nat"] * 1.36, 1.9), 3)]}
@@ -744,11 +760,11 @@ def pictures(client, n, archive):
     missing = ([k for k in ("lead", "second", "third", "side") if not media.get(k)]
                + [f"story:{k}" for k, v in media["stories"].items() if not v]
                + [f"section:{x['id']}" for x in copy["p2"]["sections"] if x["id"] not in media["sections"]])
-    with open(os.path.join(d, "media.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(dst, "media.json"), "w", encoding="utf-8") as f:
         json.dump(media, f, ensure_ascii=False, indent=2)
         f.write("\n")
     os.makedirs(LOGS, exist_ok=True)
-    with open(os.path.join(LOGS, f"{n:03d}.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(LOGS, f"{n:03d}{'-into' if INTO else ''}.json"), "w", encoding="utf-8") as f:
         json.dump({"episode": n, "calls": log, "slots": {k: {**v, "times": v["times"]} for k, v in slots.items()},
                    "frames": {f"{k}@{x}": v for (k, x), v in frames.items()}}, f, ensure_ascii=False, indent=1)
     video.close()
@@ -759,6 +775,12 @@ def pictures(client, n, archive):
 
 
 def main(args):
+    global INTO, SECTIONS_ONLY
+    # a kill runs the cleanup too: a claim (.picturing) left behind made the next run skip its episode
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(1))
+    INTO = next((a.split("=", 1)[1] for a in args if a.startswith("--into=")), None)
+    SECTIONS_ONLY = "--sections-only" in args
+    assert INTO or not SECTIONS_ONLY, "--sections-only makes a partial manifest: use it with --into"
     every = "--all" in args
     reverse = "--reverse" in args
     episodes = [int(a) for a in args if a.isdigit()] or (range(1, 129) if every else [])
