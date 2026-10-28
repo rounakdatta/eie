@@ -5,7 +5,7 @@
 const fs = require("fs");
 const { chromium } = require("/home/rounak/personal/Codeman/node_modules/playwright");
 
-async function main(out, url = "http://127.0.0.1:8745/paper/") {
+async function main(out, url = "http://127.0.0.1:8745/45/") {
   fs.mkdirSync(out, { recursive: true });
   const browser = await chromium.launch({
     executablePath: "/home/rounak/.nix-profile/bin/google-chrome",
@@ -29,7 +29,7 @@ async function main(out, url = "http://127.0.0.1:8745/paper/") {
   await pause(2600);                                   // page one, as it lands
   await glide(380, 1500); await pause(1800);           // the lead and its columns
   await p.mouse.move(1300, 520, { steps: 12 });
-  await p.click("#nile .watch");                       // a moving picture, heard
+  await p.click("#third .watch");                       // a moving picture, heard
   await playing(); await pause(6500);
   await p.click(".dock-close"); await pause(400);
   await glide(await topOf(".jump") - 500, 1200); await pause(900);

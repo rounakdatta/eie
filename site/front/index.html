@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Everything is Everything, as a newspaper: every edition</title>
+  <meta name="description" content="Every episode of Amit Varma and Ajay Shah’s Everything is Everything, set as a four-page newspaper, with every quote playable in their own voices.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Everything is Everything, as a newspaper">
+  <meta property="og:description" content="Every episode of Amit Varma and Ajay Shah’s show, set as a four-page newspaper, with every quote playable in their own voices.">
+  <meta property="og:image" content="https://eie.taptappers.club/45/media/two-shot.jpg">
+  <meta property="og:url" content="https://eie.taptappers.club/">
+  <link rel="canonical" href="https://eie.taptappers.club/">
+  <meta name="theme-color" content="#1f5ea8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 22'%3E%3Ccircle cx='11' cy='11' r='10' fill='%23D4522F'/%3E%3Ccircle cx='23' cy='11' r='10' fill='%232B5BA6' fill-opacity='.85'/%3E%3C/svg%3E">
+  <link rel="preload" href="paper/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="paper/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="front.css">
+</head>
+<body>
+  <main class="sheet">
+    <header class="mast">
+      <h1 class="nameplate"><span>Everything is Everything</span></h1>
+      <div class="rule"></div>
+      <p class="tagline">Every episode of Amit Varma and Ajay Shah’s weekly show, set as a four-page newspaper. Every play mark starts the video at the moment it was said.</p>
+      <div class="folio"><span>The archive</span><span class="mid t" id="count">June 2023 to December 2025</span><a href="https://www.youtube.com/@amitvarma" target="_blank" rel="noopener">youtube.com/@amitvarma</a></div>
+    </header>
+
+    <section class="band" aria-labelledby="start-h">
+      <h2 class="sec" id="start-h">Start here</h2>
+      <p class="sub">Six editions to begin with, and why.</p>
+      <div class="cards start" id="start"></div>
+    </section>
+
+    <section class="band" aria-labelledby="threads-h">
+      <h2 class="sec" id="threads-h">Follow a thread</h2>
+      <p class="sub">Reading paths through the show: an argument built episode by episode, in the order to read them.</p>
+      <div class="tabs" role="tablist" aria-label="Threads" id="tabs"></div>
+      <div class="thread" role="tabpanel" id="thread" tabindex="0"></div>
+    </section>
+
+    <section class="band" aria-labelledby="all-h">
+      <div class="all-head">
+        <h2 class="sec" id="all-h">Every edition</h2>
+        <label class="find"><span class="sr-only">Search the editions</span>
+          <input type="search" id="q" placeholder="Search headlines, stories, episode titles" autocomplete="off" spellcheck="false"></label>
+      </div>
+      <p class="sub" id="found" aria-live="polite"></p>
+      <div id="all"></div>
+    </section>
+
+    <footer class="colophon">Everything is Everything was Amit Varma and Ajay Shah’s weekly show, 128 episodes from June 2023 to December 2025. Each edition is made from one episode’s video, transcript and show notes; the articles and headlines were written by Claude, an AI model, from the episode’s machine-made transcript, and checked against it. The chapter art is by Simahina.</footer>
+  </main>
+  <script type="module" src="front.js"></script>
+</body>
+</html>

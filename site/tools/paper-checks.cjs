@@ -2,7 +2,7 @@
 //
 //   node site/tools/paper-checks.cjs [url]
 const { chromium } = require("/home/rounak/personal/Codeman/node_modules/playwright");
-const URL = process.argv[2] || "http://127.0.0.1:8745/paper/";
+const URL = process.argv[2] || "http://127.0.0.1:8746/45/";
 const results = [];
 const check = (name, ok, detail = "") => { results.push(ok); console.log(`${ok ? "pass" : "FAIL"}  ${name}${detail ? `  (${detail})` : ""}`); };
 async function until(p, fn, ms = 15000) { const t0 = Date.now(); while (Date.now() - t0 < ms) { if (await p.evaluate(fn)) return true; await p.waitForTimeout(150); } return false; }

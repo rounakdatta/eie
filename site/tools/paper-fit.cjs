@@ -8,7 +8,7 @@ const { chromium } = require("/home/rounak/personal/Codeman/node_modules/playwri
   const p = await b.newPage({ viewport: { width: W, height: 1000 } });
   p.on("pageerror", (e) => console.log("pageerror:", e.message));
   p.on("console", (m) => { if (["error", "warning"].includes(m.type())) console.log("console:", m.text()); });
-  await p.goto("http://127.0.0.1:8745/paper/", { waitUntil: "networkidle" });
+  await p.goto("http://127.0.0.1:8745/45/", { waitUntil: "networkidle" });
   await p.waitForSelector("html[data-ready]", { state: "attached", timeout: 30000 });
   const r = await p.evaluate(() => {
     const out = { fit: document.documentElement.dataset.fit, ms: document.documentElement.dataset.fitms, bands: [] };
