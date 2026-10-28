@@ -155,7 +155,7 @@ function pullQuote({ text: q, item: id, who }, sizes = "17,19,21,23,25", label, 
   const m = momentOf(id);
   return h("figure", { class: "quote elastic", "data-sizes": sizes, "data-pad": String(pad) },
     label ? h("p", { class: "answers-label" }, label) : null,
-    h("q", {}, q), h("figcaption", { class: "who" }, who || NAMES[m?.spk ?? 2], say(m)));
+    h("q", {}, q), h("figcaption", { class: "who" }, who ? rich(who) : NAMES[m?.spk ?? 2], say(m)));
 }
 
 function listen(items) {
@@ -200,7 +200,7 @@ function page1() {
   const page = h("article", { class: "page", id: "p1", "aria-label": "Page 1" });
   const [t1, t2, t3] = M.skyline;
   const tease = (t) => h("a", { class: "tease", href: `#${t.to}` }, h("span", { class: "k" }, t.kicker),
-    h("span", { class: `w ${t.colour}` }, t.word), h("span", { class: "x" }, t.text, " ", h("span", { class: "p" }, t.page)));
+    h("span", { class: `w ${t.colour}` }, t.word), h("span", { class: "x" }, rich(t.text), " ", h("span", { class: "p" }, t.page)));
   const cutout = (cls, t) => h("div", { class: `cutout ${cls}`, "aria-hidden": "true" }, h("img", { src: SHARED + t.cutout, alt: "" }));
   const photo = t3.photo
     ? h("figure", { class: "sky-photo" }, h("img", { src: MEDIA + t3.photo.src, alt: t3.photo.who, style: t3.photo.focus ? { objectPosition: t3.photo.focus } : {} }), h("figcaption", {}, t3.photo.who))
@@ -232,7 +232,7 @@ function page1() {
   // the second and third stories
   const S = P.second;
   const second = mod(1, "second", { id: S.id }, snap("p", "label", h("span", {}, S.label)), snap("h2", "hl l", S.head),
-    h("p", { class: "deck snap", "data-gap": "8" }, S.deck), ...picture(S.pic), text(1, "", S.body.map((s) => para(s))),
+    h("p", { class: "deck snap", "data-gap": "8" }, rich(S.deck)), ...picture(S.pic), text(1, "", S.body.map((s) => para(s))),
     gap(), pullQuote(S.quote, "15,16,17,18,19,20"), listen(S.listen));
   const T = P.third;
   const third = mod(1, "third", { id: T.id }, ...picture(T.pic), snap("h2", "hl l", T.head), text(1, "", T.body.map((s) => para(s))),
@@ -360,7 +360,7 @@ function bylineFor(x) {
 
 function page3() {
   const P = E.p3, page = h("article", { class: "page", id: "p3", "aria-label": "Page 3" }, runhead(3, "Features"));
-  page.append(h("section", { class: "band" }, mod(6, "title flush", {}, h("h2", { class: "ptitle" }, P.title), h("p", { class: "pdeck" }, P.deck))));
+  page.append(h("section", { class: "band" }, mod(6, "title flush", {}, h("h2", { class: "ptitle" }, P.title), h("p", { class: "pdeck" }, rich(P.deck)))));
   const story = (s, span, cols) => {
     const it = item(s.item);
     return mod(span, "", { id: s.id },
@@ -380,7 +380,7 @@ function page3() {
   page.append(h("section", { class: "band ruled", id: "numbers" }, mod(6, "flush", {}, snap("p", "label", h("span", {}, "By the numbers")),
     h("div", { class: "numbers" }, P.numbers.map((n) => {
       const m = momentOf(n.ref);
-      return h("div", { class: "cell" }, h("span", { class: "fig t" }, n.figure), h("span", { class: "what" }, n.text), m ? say(m, `${FIRST[m.spk]} · ${clock(m.at[0])}`) : null);
+      return h("div", { class: "cell" }, h("span", { class: "fig t" }, n.figure), h("span", { class: "what" }, rich(n.text)), m ? say(m, `${FIRST[m.spk]} · ${clock(m.at[0])}`) : null);
     })))));
   return page;
 }
@@ -588,9 +588,14 @@ function range(a, b) { const out = []; for (let x = a; x <= b; x++) out.push(x);
 function fitHeads(root) {
   for (const el of $$(".hl, .ptitle, .tease .w, .tease .k, .numbers .fig", root)) {
     el.style.fontSize = "";
+    el.style.fontStretch = "";
+    const over = () => el.scrollWidth > el.clientWidth + 1;
+    // a teaser's word condenses before it shrinks (the face goes down to 62% wide): "Beethoven" keeps
+    // more of its size beside "Guitar" that way
+    if (el.matches(".tease .w")) for (let s = 70; over() && s >= 62; s -= 2) el.style.fontStretch = `${s}%`;
     let fs = parseFloat(getComputedStyle(el).fontSize);
     const least = el.closest(".tease") ? 10 : 16;   // a phone's teaser starts at 15px
-    while (el.scrollWidth > el.clientWidth + 1 && fs > least) {
+    while (over() && fs > least) {
       fs -= fs > 20 ? 2 : 1;
       el.style.fontSize = `${fs}px`;
     }

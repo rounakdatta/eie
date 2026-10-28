@@ -6,7 +6,8 @@
 // Serve the published site first (sh site/publish.sh /tmp/pub; python3 -m http.server 8745
 // --directory /tmp/pub). For each edition: the engine's verdict at each width (every band's columns
 // ending on its last line), which story fell short and why; on phones, nothing wider than the screen;
-// at every width, the minute-by-minute strip's labels and markers clear of each other;
+// at every width, the minute-by-minute strip's labels and markers clear of each other; on desktops, the
+// skyline's teasers clear of the hosts' cut-outs;
 // on every load, console errors and files that failed to come.
 const fs = require("fs");
 const { chromium } = require("/home/rounak/personal/Codeman/node_modules/playwright");
@@ -25,6 +26,19 @@ const STRIP = () => {
   const marks = [...strip.querySelectorAll(".strip-marks button")].map((b) => b.getBoundingClientRect()).sort((a, b) => a.left - b.left);
   marks.forEach((q, i) => { if (i && q.left < marks[i - 1].right - 0.5) bad.push("markers"); });
   for (const q of [...labels, ...marks]) if (q.left < sb.left - 0.5 || q.right > sb.right + 0.5) bad.push("outside");
+  return [...new Set(bad)];
+};
+
+// the skyline: no teaser's words under a host's cut-out (a word wider than its column once widened the
+// column, and "Beethoven" ran under Ajay Shah)
+const SKY = () => {
+  const cuts = [...document.querySelectorAll(".cutout img")].map((i) => i.getBoundingClientRect()), bad = [];
+  for (const part of document.querySelectorAll(".skyline .tease .k, .skyline .tease .w, .skyline .tease .x")) {
+    const rg = document.createRange();
+    rg.selectNodeContents(part);
+    for (const q of rg.getClientRects()) for (const c of cuts)
+      if (q.width && q.right > c.left + 1 && q.left < c.right - 1 && q.bottom > c.top + 1 && q.top < c.bottom - 1) bad.push(part.className.split(" ")[0]);
+  }
   return [...new Set(bad)];
 };
 
@@ -69,6 +83,7 @@ async function main() {
           return { fit, short, broken, over, ms: +document.documentElement.dataset.fitms || null };
         });
         r.widths[w].strip = await p.evaluate(STRIP);
+        r.widths[w].sky = await p.evaluate(SKY);
       }
     } catch (e) {
       r.errors.push(`desktop: ${e.message.split("\n")[0]}`);
@@ -98,12 +113,12 @@ async function main() {
       await c.close();
     }
     r.seconds = Math.round((Date.now() - t0) / 1000);
-    const bad = Object.entries(r.widths).filter(([, v]) => v.fit !== "ok" || v.over.length || v.broken.length || v.strip.length);
+    const bad = Object.entries(r.widths).filter(([, v]) => v.fit !== "ok" || v.over.length || v.broken.length || v.strip.length || v.sky.length);
     const phonesBad = Object.entries(r.phones).filter(([w, v]) => v.scroll > +w || v.wide.length || v.strip.length);
     r.ok = !bad.length && !phonesBad.length && !r.errors.length && !r.missing.length && Object.keys(r.widths).length === WIDTHS.length;
     report.push(r);
     console.log(`${r.ok ? "ok  " : "FAIL"} ${String(n).padStart(3)}  ${r.seconds}s` +
-      (bad.length ? `  fit: ${bad.map(([w, v]) => `${w}:${[...v.short.filter((s) => !s.ok).map((s) => s.id), ...v.over.map((o) => `over(${o})`), ...v.broken.map((b) => `broken(${b})`), ...v.strip.map((x) => `strip(${x})`)].join("+") || v.fit}`).join(" ")}` : "") +
+      (bad.length ? `  fit: ${bad.map(([w, v]) => `${w}:${[...v.short.filter((s) => !s.ok).map((s) => s.id), ...v.over.map((o) => `over(${o})`), ...v.broken.map((b) => `broken(${b})`), ...v.strip.map((x) => `strip(${x})`), ...v.sky.map((x) => `sky(${x})`)].join("+") || v.fit}`).join(" ")}` : "") +
       (phonesBad.length ? `  phones: ${phonesBad.map(([w, v]) => `${w}:${v.scroll}px ${v.wide.join(",")}${v.strip.length ? ` strip(${v.strip.join(",")})` : ""}`).join(" ")}` : "") +
       (r.errors.length ? `  errors: ${r.errors.slice(0, 3).join(" | ")}` : "") + (r.missing.length ? `  missing: ${r.missing.slice(0, 4).join(", ")}` : ""));
   }

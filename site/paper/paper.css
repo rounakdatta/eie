@@ -70,7 +70,9 @@ html.resetting #paper { opacity: .35; transition-duration: .1s; }
 .cutout img { display: block; height: 100%; width: auto; filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); }
 .cutout.left { left: 0; height: 20cqi; }
 .cutout.mid { left: 57.6cqi; height: 18.4cqi; }
-.skyline { position: relative; display: grid; grid-template-columns: 19fr 19fr 1px 19fr 15fr 1px 16fr 12fr; align-items: center; min-height: 12cqi; padding: 8px 0 10px; }
+/* the columns hold their places (minmax(0, …)): a word wider than its column would otherwise widen it
+   and slide its teaser under a host's cut-out; fitHeads condenses and shrinks the word instead */
+.skyline { position: relative; display: grid; grid-template-columns: minmax(0, 19fr) minmax(0, 19fr) 1px minmax(0, 19fr) minmax(0, 15fr) 1px minmax(0, 16fr) minmax(0, 12fr); align-items: center; min-height: 12cqi; padding: 8px 0 10px; }
 .skyline .vr { align-self: stretch; background: var(--hair); margin: 8px 0; }
 .tease { position: relative; z-index: 4; display: block; text-align: center; text-decoration: none; padding: 0 10px; }
 .tease .k { display: block; font: italic 400 21px/1.1 var(--text); text-transform: uppercase; letter-spacing: .02em; color: #2a2a2a; }
