@@ -607,10 +607,16 @@ function fitHeads(root) {
    touch are left out evenly, and the markers are nudged apart in time order, kept inside the strip. */
 function stripFit(root) {
   for (const ax of $$(".strip-axis", root)) {
-    const spans = [...ax.children];
+    const spans = [...ax.children], W = ax.clientWidth;
     for (let k = 1; k <= 8; k *= 2) {
-      spans.forEach((s, i) => { s.hidden = i % k !== 0; });
-      const r = spans.filter((s) => !s.hidden).map((s) => s.getBoundingClientRect());
+      const shown = spans.filter((s, i) => { s.hidden = i % k !== 0; return !s.hidden; });
+      // each label centred on its tick, but kept whole inside the strip: "50:00" of a 52-minute
+      // episode is near enough the end to hang off a phone's strip
+      for (const s of shown) {
+        const x = s.offsetLeft, wl = s.offsetWidth, L = Math.min(Math.max(x - wl / 2, 0), W - wl);
+        s.style.transform = `translateX(${(L - x).toFixed(1)}px)`;
+      }
+      const r = shown.map((s) => s.getBoundingClientRect());
       if (r.every((q, i) => !i || q.left >= r[i - 1].right + 6)) break;
     }
   }
