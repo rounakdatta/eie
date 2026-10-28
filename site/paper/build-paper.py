@@ -116,6 +116,9 @@ class Archive:
         self.works = load(DATA, "generated", "analysis", "reading_list.json")["items"]
         self.threads = load(DATA, "generated", "analysis", "threads.json")
         self.works_by_mention = {m: w for w in self.works for m in w["mentions"]}
+        # the shelf's covers (paper/covers.py): a work's id -> its picture, or why there is none
+        covers = os.path.join(SITE, "covers", "index.json")
+        self.covers = load(covers) if os.path.exists(covers) else {}
         self.ideas_by_source = {}
         for idea in big:
             for s in idea["sources"] + [idea["quote"]["source"]]:
@@ -153,10 +156,14 @@ def page_of(target, copy):
     return "P4"
 
 
-def credits(n, media, notes):
+def credits(n, media, notes, covers=()):
     """The colophon: what the edition is made from, and whose pictures it uses."""
-    if isinstance(media.get("credits"), str):
-        return media["credits"]
+    shelf = ""
+    if covers:
+        names = sorted(covers)
+        shelf = " The covers on the shelf are from " + (", ".join(names[:-1]) + " and " + names[-1] if len(names) > 1 else names[0]) + "."
+    if isinstance(media.get("credits"), str):   # Episode 45's, written by hand
+        return media["credits"] + shelf
     art = re.search(r"^(Chapter image[^:\n]*?) by Simahina", notes, re.M | re.I)
     parts = [
         "Everything is Everything was Amit Varma and Ajay Shah’s weekly show, 128 episodes from June 2023 to December 2025. "
@@ -168,7 +175,7 @@ def credits(n, media, notes):
     photos = media.get("credits") or []
     if photos:
         parts.append("Other photographs are from Wikimedia Commons: " + "; ".join(photos) + ".")
-    return " ".join(parts)
+    return " ".join(parts) + shelf
 
 
 def picture(m, slot, **extra):
@@ -207,16 +214,24 @@ def build_edition(n, archive, editions):
         spans[s["item"]] = [build.cs(t.words[first][0] - 0.05), build.cs(t.words[last][1])]
 
     # the shelf: every recommendation, with the reason the reading list gives for works that recur
-    shelf = []
+    shelf, cover_sources = [], set()
     for it in (i for i in ep["items"] if i["id"][4] == "R"):
         work = archive.works_by_mention.get(it["id"], {})
         recurring = len(work.get("episodes", [])) > 1
         why = (work["why"] if recurring else it["reason"])
         why = smart(re.split(r"(?<=[.!?])\s+(?=[A-Z“'\"])", why)[0])
         title = smart(re.sub(r"\s*\(Episode (\d+) of Everything is Everything\)", r" (Episode \1)", it["item"]))
-        shelf.append({"id": it["id"], "title": title, "creator": smart(it.get("creator", "")), "type": it["type"],
-                      "why": why, "episodes": len(work.get("episodes", [])) or 1, "url": it.get("url"),
-                      "who": it["recommender"]})
+        entry = {"id": it["id"], "title": title, "creator": smart(it.get("creator", "")), "type": it["type"],
+                 "why": why, "episodes": len(work.get("episodes", [])) or 1, "url": it.get("url"),
+                 "who": it["recommender"]}
+        own = re.search(r"\(Episode (\d+) of Everything is Everything\)", it["item"])
+        if own and 1 <= int(own.group(1)) <= 128 and int(own.group(1)) != n:   # one of this show's own: its edition is here
+            entry["edition"] = int(own.group(1))
+        c = archive.covers.get(work.get("id"), {})
+        if c.get("src"):
+            entry["cover"] = {"src": c["src"], "r": round(c["w"] / c["h"], 3)}
+            cover_sources.add(c["source"])
+        shelf.append(entry)
     L = copy["laughs"]
     laughs = [{"id": i, "type": items[i]["type"], "text": smart(items[i]["content"])} for i in L["funny"] + L["refs"]]
 
@@ -290,7 +305,7 @@ def build_edition(n, archive, editions):
             "laughs": {"title": L["title"], "refsTitle": L["refsTitle"], "overheard": L["overheard"]},
             "quiz": copy["quiz"],
             "glossary": copy["glossary"],
-            "credits": credits(n, media, notes),
+            "credits": credits(n, media, notes, cover_sources),
         },
         "shelf": shelf,
         "laughs": laughs,

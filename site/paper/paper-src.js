@@ -22,7 +22,8 @@ let D, A, E, WORDS;   // the episode, the archive (unused here), this edition, t
 
 //@include player
 
-const MEDIA = "media/", SHARED = "../paper/media/";
+const MEDIA = "media/", SHARED = "../paper/media/", COVERS = "../covers/";
+const GLASS = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.6 12.6 17 17" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
 const LH = 22, GUT = 22;
 const RM = matchMedia("(prefers-reduced-motion: reduce)");
 const item = (id) => D.items.find((i) => i.id === id);
@@ -190,9 +191,14 @@ function edbar() {
     ? h("a", { class: cls, href: `../${x.n}/`, title: x.head, "aria-label": `${label}: Episode ${x.n}, ${x.head}` }, text)
     : h("span", { class: cls }));
   return h("nav", { class: "edbar", "aria-label": "Editions" },
-    link(N.prev, "prev", "The edition before", `‹ Episode ${N.prev?.n}`),
-    h("a", { class: "all", href: "../" }, `All ${N.total} editions`),
-    link(N.next, "next", "The next edition", `Episode ${N.next?.n} ›`));
+    // on the narrowest phones the word "Episode" gives way, so the bar keeps to one line
+    link(N.prev, "prev", "The edition before", ["‹ ", h("span", { class: "w" }, "Episode "), `${N.prev?.n}`]),
+    // the archive desk (paper/desk.js) sits beside the way back to every edition: "/" opens it too
+    h("span", { class: "mid" }, h("a", { class: "all", href: "../" }, `All ${N.total} editions`),
+      h("button", { type: "button", class: "find", "aria-haspopup": "dialog", "aria-keyshortcuts": "/", "aria-label": "Lost & Found: find something you half-remember",
+        onclick: (ev) => document.dispatchEvent(new CustomEvent("eie:desk", { detail: ev.currentTarget })) },
+      h("span", { class: "glass", html: GLASS }), h("span", { class: "long" }, "Lost & Found"), h("span", { class: "short" }, "Find"))),
+    link(N.next, "next", "The next edition", [h("span", { class: "w" }, "Episode "), `${N.next?.n} ›`]));
 }
 
 function page1() {
@@ -215,10 +221,10 @@ function page1() {
       h("a", { href: `https://www.youtube.com/watch?v=${e.videoId}`, target: "_blank", rel: "noopener" }, M.folio.right))));
 
   // In brief, ending in a thought for the day
-  const briefs = P.brief.flatMap((b) => [h("h3", {}, b.head), h("p", {}, h("span", { class: "sq", "aria-hidden": "true" }), rich(b.text))]);
+  const briefs = P.brief.flatMap((b, k) => [h("h3", { id: `brief-${k + 1}` }, b.head), h("p", {}, h("span", { class: "sq", "aria-hidden": "true" }), rich(b.text))]);
   const th = P.thought;
   const brief = mod(1, "brief", { "aria-label": "In brief" }, snap("h2", "", "In brief"), text(1, "", briefs), gap(),
-    h("aside", { class: "box thought elastic", "data-sizes": "15,16,17,18,19,20,21,22,23,24", "data-pad": "8" }, h("h3", {}, th.label), h("q", {}, th.text),
+    h("aside", { class: "box thought elastic", id: "thought", "data-sizes": "15,16,17,18,19,20,21,22,23,24", "data-pad": "8" }, h("h3", {}, th.label), h("q", {}, th.text),
       h("p", { class: "who" }, withMark(th.who, say(momentOf(th.item))))),
     gap());
 
@@ -335,7 +341,7 @@ function page2() {
     mod(4, "", { id: s1.id }, ...art(s1), ...head(s1), body(s1, 3)),
     mod(2, "", {}, pullQuote(side.quote, "19,20,21,22,23,24,25,26"), gap(),
       ...(side.photo ? picture({ ...side.photo, focus: side.photo.focus || "50% 22%" }) : []),
-      snap("aside", "box tint", h("h3", {}, side.box.title), h("p", {}, rich(side.box.text))))));
+      Object.assign(snap("aside", "box tint", h("h3", {}, side.box.title), h("p", {}, rich(side.box.text))), { id: "side" }))));
   for (const row of rowsOf(rest)) {
     const span = 6 / row.length, cols = row.length === 1 ? "4,3" : row.length === 2 ? "2" : "1";
     page.append(h("section", { class: "band ruled", "data-fit": "" }, ...row.map((x) => mod(span, "", { id: x.id },
@@ -385,9 +391,9 @@ function page3() {
       : [S.map((s) => [s, 6 / S.length, S.length === 1 ? "4,3" : "2"])];
   for (const row of rows) page.append(h("section", { class: "band ruled", "data-fit": "" }, ...row.map(([s, span, cols]) => story(s, span, cols))));
   page.append(h("section", { class: "band ruled", id: "numbers" }, mod(6, "flush", {}, snap("p", "label", h("span", {}, "By the numbers")),
-    h("div", { class: "numbers" }, P.numbers.map((n) => {
+    h("div", { class: "numbers" }, P.numbers.map((n, k) => {
       const m = momentOf(n.ref);
-      return h("div", { class: "cell" }, h("span", { class: "fig t" }, n.figure), h("span", { class: "what" }, rich(n.text)), m ? say(m, `${FIRST[m.spk]} · ${clock(m.at[0])}`) : null);
+      return h("div", { class: "cell", id: `num-${k + 1}` }, h("span", { class: "fig t" }, n.figure), h("span", { class: "what" }, rich(n.text)), m ? say(m, `${FIRST[m.spk]} · ${clock(m.at[0])}`) : null);
     })))));
   return page;
 }
@@ -398,24 +404,33 @@ function page4() {
   const P = E.p4, page = h("article", { class: "page", id: "p4", "aria-label": "Page 4" }, runhead(4, "Books & laughs"));
   const shelf = E.shelf.flatMap((b) => {
     const m = momentOf(b.id);
-    return [h("h4", { class: "bk air" }, b.title),
+    // the cover beside a book, a film, a record: a float exactly four lines tall, so the entry beside
+    // it stays on the grid; it links where the title's link goes, for the eye only (the link is below).
+    // A cover near a column's foot is pushed whole to the next column (Chrome splits no float), away
+    // from its title: the engine treats that as a fault, and accepts it only if nothing else fits.
+    const cover = b.cover ? h(b.url ? "a" : "span", { class: "cover", style: { "--r": b.cover.r }, "aria-hidden": "true",
+      ...(b.url ? { href: b.url, target: "_blank", rel: "noopener", tabindex: "-1" } : {}) },
+    h("img", { class: "art", src: COVERS + b.cover.src, alt: "", loading: "lazy", decoding: "async" })) : null;
+    return [h("h4", { class: "bk air", id: `r-${b.id}` }, cover, b.title),
       h("p", {}, h("span", { class: "by" }, [b.creator, b.type].filter(Boolean).join(" · ")), ". ", rich(b.why)),
       // real spaces between the parts, so a narrow phone can wrap the line between them
       // its meta line is the shelf's finest lever: the last few may be left out on a desktop to divide
       // the columns evenly (a short shelf found no even setting without it); phones show them all
       h("p", { class: "meta opt" }, m ? say(m, `${FIRST[m.spk]} at ${clock(m.at[0])}`) : h("span", { class: "nb" }, "In the show notes"),
         b.episodes > 1 ? [" ", h("span", { class: "sep" }, "|"), " ", h("span", { class: "nb" }, `In ${b.episodes} episodes`)] : null,
-        b.url ? [" ", h("span", { class: "sep" }, "|"), " ", h("a", { class: "nb", href: b.url, target: "_blank", rel: "noopener" }, `${domain(b.url)} ↗`)] : null)];
+        // one of this show's own episodes is an edition here: the link goes to it, not to the video
+        b.edition ? [" ", h("span", { class: "sep" }, "|"), " ", h("a", { class: "nb", href: `../${b.edition}/` }, `Read Edition ${b.edition} →`)]
+          : b.url ? [" ", h("span", { class: "sep" }, "|"), " ", h("a", { class: "nb", href: b.url, target: "_blank", rel: "noopener" }, `${domain(b.url)} ↗`)] : null)];
   });
   const funny = E.laughs.filter((j) => j.type === "humor"), refs = E.laughs.filter((j) => j.type !== "humor");
   // past the first four jokes, a laugh line is one a sub-editor may cut to fit, the name-drops first
-  const laughList = [...funny.map((j, k) => h("p", { class: k >= 4 ? "opt" : null }, withMark(j.text, say(momentOf(j.id))))), refs.length ? h("h4", {}, P.laughs.refsTitle) : null,
-    ...refs.map((j) => h("p", { class: "opt" }, withMark(j.text, say(momentOf(j.id)))))].filter(Boolean);
+  const laughList = [...funny.map((j, k) => h("p", { class: k >= 4 ? "opt" : null, id: `j-${j.id}` }, withMark(j.text, say(momentOf(j.id))))), refs.length ? h("h4", {}, P.laughs.refsTitle) : null,
+    ...refs.map((j) => h("p", { class: "opt", id: `j-${j.id}` }, withMark(j.text, say(momentOf(j.id)))))].filter(Boolean);
   const O = P.laughs.overheard;
   const laughText = text(1, "laughs", laughList);
   laughText.dataset.optmax = "8";   // up to eight lines may go, where the default lever stops at three
   const laughs = (span) => mod(span, "", { id: "laughs" }, h("h2", { class: "hl l snap", "data-gap": "6" }, P.laughs.title), laughText, gap(),
-    pullQuote({ text: O.text, item: O.item, who: O.who }, "16,17,18,19,20,21,22,23,24,25,26", "Overheard", 24));
+    Object.assign(pullQuote({ text: O.text, item: O.item, who: O.who }, "16,17,18,19,20,21,22,23,24,25,26", "Overheard", 24), { id: "overheard" }));
   const books = (span, cols) => mod(span, "", { id: "shelf" }, snap("h2", "hl l", P.shelf.title), h("p", { class: "pdeck snap", "data-gap": "8" }, P.shelf.deck),
     P.shelf.portraits?.length ? [portraits(P.shelf.portraits, [0.55, 0.9, 1.4], 3), gap()] : null, text(cols, "shelf", shelf));
   // a long shelf takes the page's width, and the laugh lines join the quiz
@@ -436,8 +451,8 @@ function page4() {
       text(1, "quiz", quizItems), gap(),
       h("aside", { class: "box elastic", "data-pad": "14" }, h("p", { class: "answers-label" }, "Answers, upside down"), answers)),
     mod(span, "", { id: "gloss" }, h("h2", { class: "hl l snap", "data-gap": "6" }, "Word watch"),
-      pullQuote({ text: `${word.term}: ${lower(word.def)}`, item: word.item, who: "Word of the day" }, "18,20,22,24,26,28,30,32", null, 20), gap(),
-      text(wide ? "1" : "2,1", "gloss", terms.map((g) => h("p", {}, h("b", {}, g.term), ": ", withMark(g.def, g.item ? say(momentOf(g.item)) : null)))))));
+      Object.assign(pullQuote({ text: `${word.term}: ${lower(word.def)}`, item: word.item, who: "Word of the day" }, "18,20,22,24,26,28,30,32", null, 20), { id: "word" }), gap(),
+      text(wide ? "1" : "2,1", "gloss", terms.map((g, k) => h("p", { id: `g-${k + 1}` }, h("b", {}, g.term), ": ", withMark(g.def, g.item ? say(momentOf(g.item)) : null)))))));
   page.append(h("footer", { class: "colophon" }, P.credits), nextup());
   return page;
 }
@@ -829,22 +844,26 @@ const Fit = {
     const cands = [];
     for (const n of mm.ns) for (const k of caps) for (const drop of drops) for (const od of ods) for (const tight of tights) for (const ws of SPACES) for (const tr of TRACKS) cands.push({ n, cap: k, drop, od, tight, ws, t: tr });
     cands.sort((a, b) => mm.ns.indexOf(a.n) - mm.ns.indexOf(b.n) || caps.indexOf(a.cap) - caps.indexOf(b.cap) || a.drop.length - b.drop.length || a.od - b.od || a.tight - b.tight || Math.abs(a.ws) - Math.abs(b.ws) || Math.abs(a.t) - Math.abs(b.t));
-    const found = new Map();
-    let checks = 0;
-    const most = Number.isFinite(limit) ? limit * 6 : 240;   // checks in real columns: the costly part
+    const found = new Map(), spare = new Map(), checks = new Map();
+    // checks in real columns, the costly part, are budgeted for each column count: a count that cannot
+    // work (a shelf's covers pushed into a fourth column) must not use up the next count's turn
+    const most = Number.isFinite(limit) ? limit * 6 : 240;
     for (const c of cands) {
+      if ((checks.get(c.n) || 0) >= most) continue;   // this column count has had its turn: not even measured
       const L = predict(c);
       if (L == null || L <= 0 || L % c.n) continue;
       const key = `${c.n}|${c.cap}|${c.drop}|${c.od}|${c.tight}|${L}`;
       if (found.has(key)) continue;
-      if (++checks > most) break;
+      checks.set(c.n, (checks.get(c.n) || 0) + 1);
       s.width = "";   // back to the full measure, to be set in columns
       this.set(mm, { r: L / c.n, t: c.t, ws: c.ws, drop: c.drop, od: c.od, tight: c.tight, n: c.n, cap: c.cap });
-      if (this.columns(mm) === true) found.set(key, { ...c, L });
+      const ok = this.columns(mm, true);
+      if (ok === true) found.set(key, { ...c, L });
+      else if (ok === "cover apart" && spare.size < limit) spare.set(key, { ...c, L });   // only if nothing better
       if (found.size >= limit) break;
     }
     done();
-    return [...found.values()];
+    return found.size ? [...found.values()] : [...spare.values()];
   },
 
   /* The depths a box can take: each type size, then up to data-pad lines of air around it. */
@@ -966,7 +985,7 @@ const Fit = {
     return mm.text ? this.columns(mm) : true;
   },
 
-  columns(mm) {
+  columns(mm, strict = false) {
     const tb = mm.text.getBoundingClientRect(), colW = (tb.width + GUT) / mm.n, cols = new Map();
     for (const el of mm.text.children) for (const q of el.getClientRects()) {
       if (q.height < 1) continue;
@@ -980,6 +999,9 @@ const Fit = {
     if (!all.every((c) => Math.abs(c.bottom - tb.bottom) < 1.5)) return "ragged";
     if (all.some((c) => c.last.tagName === "H4")) return "crosshead at a foot";
     if (all.some((c) => c.first.tagName === "H4" && !c.first.classList.contains("bk") && !c.first.classList.contains("keep"))) return "crosshead at a head";
+    // a shelf's cover pushed to the next column, away from its title: avoided wherever the text can be
+    // set any other way
+    if (strict && $$(".cover", mm.text).some((x) => Math.abs(x.getBoundingClientRect().left - x.parentElement.getClientRects()[0].left) > 2)) return "cover apart";
     return true;
   },
 
@@ -1147,6 +1169,9 @@ function wire() {
     .observe($(".dock-toggle"), { attributes: true, attributeFilter: ["aria-label"] });
   addEventListener("keydown", (ev) => {
     if (ev.metaKey || ev.ctrlKey || ev.altKey || $("#dock").hidden) return;
+    // never while typing: a K in the crossword, or in the desk's question, is a letter, not a pause
+    if (ev.target.closest?.("input, textarea, select, [contenteditable]")) return;
+    if (document.documentElement.classList.contains("desk-open")) return;   // the desk's sheet has the keys
     if (ev.key === "Escape") return $(".dock-close").click();
     const k = ev.key.toLowerCase();
     if (k === "k") { ev.preventDefault(); Player.toggle(); }

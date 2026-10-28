@@ -16,6 +16,7 @@
   <link rel="preload" href="paper/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="paper/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="front.css">
+  <link rel="stylesheet" href="paper/desk.css">
 </head>
 <body>
   <main class="sheet">
@@ -25,6 +26,9 @@
       <p class="tagline">Every episode of Amit Varma and Ajay Shah’s weekly show, set as a four-page newspaper. Every play mark starts the video at the moment it was said.</p>
       <div class="folio"><span>The archive</span><span class="mid t" id="count">June 2023 to December 2025</span><a href="https://www.youtube.com/@amitvarma" target="_blank" rel="noopener">youtube.com/@amitvarma</a></div>
     </header>
+
+    <!-- Lost & Found, the archive desk: ask for something half-remembered, and be sent to where it was printed -->
+    <section class="band desk-band"><div id="desk"></div></section>
 
     <section class="band" aria-labelledby="start-h">
       <h2 class="sec" id="start-h">Start here</h2>
@@ -52,5 +56,6 @@
     <footer class="colophon">Everything is Everything was Amit Varma and Ajay Shah’s weekly show, 128 episodes from June 2023 to December 2025. Each edition is made from one episode’s video, transcript and show notes; the articles and headlines were written by Claude, an AI model, from the episode’s machine-made transcript, and checked against it. The chapter art is by Simahina.</footer>
   </main>
   <script type="module" src="front.js"></script>
+  <script defer src="paper/desk.js"></script>
 </body>
 </html>

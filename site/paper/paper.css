@@ -97,6 +97,12 @@ html:not(.article) .skyline .tease:nth-of-type(3) { padding-left: 20px; }
 .edbar a:hover { color: var(--ink); }
 .edbar .all { color: var(--blue); }
 .edbar .next { text-align: right; }
+.edbar .mid { display: inline-flex; align-items: center; gap: 16px; }
+.edbar .find { all: unset; display: inline-flex; align-items: center; gap: 5px; padding: 4px 6px; margin: -4px -6px; cursor: pointer; color: var(--red); }
+.edbar .find svg { width: 12px; height: 12px; }
+.edbar .find:hover .long, .edbar .find:hover .short { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.edbar .find:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 1px; }
+.edbar .find .short { display: none; }
 .nextup { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--gut); margin-top: var(--lh); padding-top: calc(var(--lh) / 2); border-top: 3px double var(--ink); }
 .nextup .nx { display: block; text-decoration: none; }
 .nextup .k { display: block; font: 700 11px/var(--lh) var(--head); font-stretch: 85%; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
@@ -288,6 +294,15 @@ html.article .strip-key .howto { margin-left: 0; }
 .shelf h4.bk { padding-top: var(--lh); font: 800 15.5px/var(--lh) var(--head); font-stretch: 80%; text-transform: none; letter-spacing: 0; background: linear-gradient(var(--hair), var(--hair)) 0 calc(var(--lh) / 2) / 100% 1px no-repeat; }
 .shelf h4.bk:first-child, .shelf h4.bk.tight { padding-top: 0; background: none; }
 .shelf .by { font-style: italic; color: var(--ink-2); }
+/* a cover beside its entry: four lines tall and starting on the title's line, so the entry keeps to the
+   grid (each title clears the cover above it); the picture sits a few pixels inside that box, its top
+   level with the title's capitals, drawn as an object on the paper */
+.shelf h4.bk { clear: left; }
+.shelf .cover { display: block; float: left; width: calc(var(--lh) * 4 * var(--r, .667)); max-width: calc(var(--lh) * 4); height: calc(var(--lh) * 4); margin: 0 11px 0 0; padding: 5px 0 3px; box-sizing: border-box; }
+.shelf .cover .art { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 1px 2px 2px 1px; background: #e9e4d8;
+  box-shadow: 0 0 0 .5px rgba(0, 0, 0, .28), 1px 2px 3px rgba(0, 0, 0, .2); }
+a.cover:hover .art { box-shadow: 0 0 0 .5px rgba(0, 0, 0, .35), 2px 3px 6px rgba(0, 0, 0, .28); }
+html.article .shelf .cover { width: calc(26px * 4 * var(--r, .667)); max-width: calc(26px * 4); height: calc(26px * 4); margin-right: 12px; padding: 6px 0 4px; }
 .shelf .meta { font: 600 12px/var(--lh) var(--head); font-stretch: 85%; color: var(--muted); }
 .shelf .meta a { color: var(--blue); text-decoration: none; }
 .shelf .meta .sep { margin: 0 1px; color: var(--hair); }
@@ -399,6 +414,10 @@ html.article .folio .mid { order: -1; width: 100%; text-align: center; font-size
 html.article .strip-ch { display: none; }
 html.article .runhead .date { display: none; }
 html.article .edbar { margin: -6px 0 8px; font-size: 10.5px; letter-spacing: .06em; }
+html.article .edbar .mid { gap: 12px; }
+html.article .edbar .find .long { display: none; }
+html.article .edbar .find .short { display: inline; }
+@media (max-width: 380px) { html.article .edbar { letter-spacing: .03em; } html.article .edbar .w { display: none; } html.article .edbar .mid { gap: 9px; } }
 html.article .nextup { grid-template-columns: 1fr; row-gap: 14px; }
 html.article .nextup .next { text-align: left; }
 html.article .nextup .all { order: 3; text-align: left; padding: 10px 0 0; border: 0; border-top: 1px solid var(--rule); }

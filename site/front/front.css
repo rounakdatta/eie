@@ -108,3 +108,6 @@ a { color: inherit; }
   .cards:not(.start) { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .card img { transition: none; } }
+
+/* Lost & Found, the archive desk (paper/desk.css): its own double rule is its border */
+.desk-band { border-top: 0; padding-top: 0; margin-top: 26px; }

@@ -1,7 +1,7 @@
 // Check every edition the way a reader meets it: fitted at seven desktop widths, read on three
 // phones, with nothing missing and nothing broken.
 //
-//   node site/tools/editions-verify.cjs [base-url] [--only=1,45,50] [--widths=1180,1920] [--out=report.json]
+//   node site/tools/editions-verify.cjs [base-url] [--only=1,45,50] [--widths=1180,1920] [--phones=320] [--out=report.json]
 //
 // Serve the published site first (sh site/publish.sh /tmp/pub; python3 -m http.server 8745
 // --directory /tmp/pub). For each edition: the engine's verdict at each width (every band's columns
@@ -13,7 +13,7 @@ const fs = require("fs");
 const { chromium } = require("/home/rounak/personal/Codeman/node_modules/playwright");
 
 let WIDTHS = [1180, 1280, 1366, 1440, 1600, 1920, 2560];   // --widths= checks fewer, faster
-const PHONES = [320, 375, 414];
+let PHONES = [320, 375, 414];   // --phones= checks fewer
 
 // the minute-by-minute strip: no axis label over another, no marker over another, all inside the strip
 // (on a phone a 56-minute episode once printed "0:005:00", and two moments a minute apart one number)
@@ -49,6 +49,7 @@ async function main() {
   const list = await (await fetch(`${base}editions.json`)).json();
   const only = opt("only") ? opt("only").split(",").map(Number) : null;
   if (opt("widths")) WIDTHS = opt("widths").split(",").map(Number);
+  if (opt("phones")) PHONES = opt("phones").split(",").map(Number);
   const eds = list.editions.map((e) => e.n).filter((n) => !only || only.includes(n));
   const browser = await chromium.launch({ executablePath: "/home/rounak/.nix-profile/bin/google-chrome", args: ["--no-sandbox", "--disable-gpu", "--disable-dev-shm-usage"] });
   const report = [];
