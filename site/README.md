@@ -94,3 +94,6 @@ Things learned the hard way, so they stay fixed:
 - A word joiner does not stop Chrome breaking before an inline button. The last-syllable span does.
 - Probing for the cut character by character went wrong at soft hyphens ("inge-n|uity"); only break opportunities are probed now.
 - A half-line spacer took a whole module off the grid, so no depth could ever be whole. Every block is a whole number of lines.
+- A grid column of `Nfr` can't shrink below its content. A teaser word wider than its column widened it, and the teaser slid under a host's cut-out, while the shrink-to-fit pass saw a word that fitted its box. The skyline's columns are `minmax(0, Nfr)`, and a teaser's word condenses before it shrinks.
+- What fits a desktop's strip doesn't fit a phone's. The minute-by-minute strip is set at its own width: labels that would touch are left out evenly, labels are kept inside the strip in pixels, and markers a minute apart are nudged apart.
+- Headless Chrome stops drawing a full-page capture at 16,384 px, and a playing video comes out blank. `editions-shots` takes a phone edition in pieces and pauses the films first.
