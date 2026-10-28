@@ -6,12 +6,27 @@
 // Serve the published site first (sh site/publish.sh /tmp/pub; python3 -m http.server 8745
 // --directory /tmp/pub). For each edition: the engine's verdict at each width (every band's columns
 // ending on its last line), which story fell short and why; on phones, nothing wider than the screen;
+// at every width, the minute-by-minute strip's labels and markers clear of each other;
 // on every load, console errors and files that failed to come.
 const fs = require("fs");
 const { chromium } = require("/home/rounak/personal/Codeman/node_modules/playwright");
 
 const WIDTHS = [1180, 1280, 1366, 1440, 1600, 1920, 2560];
 const PHONES = [320, 375, 414];
+
+// the minute-by-minute strip: no axis label over another, no marker over another, all inside the strip
+// (on a phone a 56-minute episode once printed "0:005:00", and two moments a minute apart one number)
+const STRIP = () => {
+  const strip = document.querySelector(".strip"), bad = [];
+  if (!strip) return bad;
+  const sb = strip.getBoundingClientRect();
+  const labels = [...strip.querySelectorAll(".strip-axis span")].filter((s) => !s.hidden).map((s) => s.getBoundingClientRect());
+  labels.forEach((q, i) => { if (i && q.left < labels[i - 1].right + 2) bad.push("labels"); });
+  const marks = [...strip.querySelectorAll(".strip-marks button")].map((b) => b.getBoundingClientRect()).sort((a, b) => a.left - b.left);
+  marks.forEach((q, i) => { if (i && q.left < marks[i - 1].right - 0.5) bad.push("markers"); });
+  for (const q of [...labels, ...marks]) if (q.left < sb.left - 0.5 || q.right > sb.right + 0.5) bad.push("outside");
+  return [...new Set(bad)];
+};
 
 async function main() {
   const args = process.argv.slice(2);
@@ -53,6 +68,7 @@ async function main() {
             .filter((m) => m.scrollWidth > m.clientWidth + 2).map((m) => `${m.closest(".mod")?.id || ""} ${m.tagName.toLowerCase()}.${m.className}`.trim());
           return { fit, short, broken, over, ms: +document.documentElement.dataset.fitms || null };
         });
+        r.widths[w].strip = await p.evaluate(STRIP);
       }
     } catch (e) {
       r.errors.push(`desktop: ${e.message.split("\n")[0]}`);
@@ -74,19 +90,21 @@ async function main() {
           }
           return { article: document.documentElement.classList.contains("article"), scroll: document.documentElement.scrollWidth, wide: [...new Set(wide)].slice(0, 6) };
         });
+        await q.evaluate(() => document.fonts.ready.then(() => new Promise((ok) => requestAnimationFrame(ok))));
+        r.phones[w].strip = await q.evaluate(STRIP);
       } catch (e) {
         r.errors.push(`phone ${w}: ${e.message.split("\n")[0]}`);
       }
       await c.close();
     }
     r.seconds = Math.round((Date.now() - t0) / 1000);
-    const bad = Object.entries(r.widths).filter(([, v]) => v.fit !== "ok" || v.over.length || v.broken.length);
-    const phonesBad = Object.entries(r.phones).filter(([w, v]) => v.scroll > +w || v.wide.length);
+    const bad = Object.entries(r.widths).filter(([, v]) => v.fit !== "ok" || v.over.length || v.broken.length || v.strip.length);
+    const phonesBad = Object.entries(r.phones).filter(([w, v]) => v.scroll > +w || v.wide.length || v.strip.length);
     r.ok = !bad.length && !phonesBad.length && !r.errors.length && !r.missing.length && Object.keys(r.widths).length === WIDTHS.length;
     report.push(r);
     console.log(`${r.ok ? "ok  " : "FAIL"} ${String(n).padStart(3)}  ${r.seconds}s` +
-      (bad.length ? `  fit: ${bad.map(([w, v]) => `${w}:${[...v.short.filter((s) => !s.ok).map((s) => s.id), ...v.over.map((o) => `over(${o})`), ...v.broken.map((b) => `broken(${b})`)].join("+") || v.fit}`).join(" ")}` : "") +
-      (phonesBad.length ? `  phones: ${phonesBad.map(([w, v]) => `${w}:${v.scroll}px ${v.wide.join(",")}`).join(" ")}` : "") +
+      (bad.length ? `  fit: ${bad.map(([w, v]) => `${w}:${[...v.short.filter((s) => !s.ok).map((s) => s.id), ...v.over.map((o) => `over(${o})`), ...v.broken.map((b) => `broken(${b})`), ...v.strip.map((x) => `strip(${x})`)].join("+") || v.fit}`).join(" ")}` : "") +
+      (phonesBad.length ? `  phones: ${phonesBad.map(([w, v]) => `${w}:${v.scroll}px ${v.wide.join(",")}${v.strip.length ? ` strip(${v.strip.join(",")})` : ""}`).join(" ")}` : "") +
       (r.errors.length ? `  errors: ${r.errors.slice(0, 3).join(" | ")}` : "") + (r.missing.length ? `  missing: ${r.missing.slice(0, 4).join(", ")}` : ""));
   }
   await browser.close();

@@ -637,8 +637,9 @@ function strip() {
   L.reel.forEach((id, k) => {
     const m = momentOf(id);
     if (!m) return;
-    // a marker is centred on its moment, but kept whole inside the strip at either end
-    marks.append(h("button", { type: "button", style: { left: `clamp(8.5px, ${pct(m.at[0])}, calc(100% - 8.5px))` }, "aria-label": `${capital(L.reelUnit)} ${k + 1}: ${titleOf(item(id))}, at ${clock(m.at[0])}`,
+    // a marker is centred on its moment, but kept whole inside the strip at either end (and stripFit
+    // nudges apart markers that would cover each other)
+    marks.append(h("button", { type: "button", "data-at": (m.at[0] / dur).toFixed(5), style: { left: `clamp(8.5px, ${pct(m.at[0])}, calc(100% - 8.5px))` }, "aria-label": `${capital(L.reelUnit)} ${k + 1}: ${titleOf(item(id))}, at ${clock(m.at[0])}`,
       onclick: (ev) => Player.play(m, ev.currentTarget) }, String(k + 1)));
   });
   const axis = h("div", { class: "strip-axis t", "aria-hidden": "true" });
@@ -949,10 +950,34 @@ function fitHeads(root) {
   }
 }
 
+/* The minute-by-minute strip at its width. On a phone the axis has room for every other label, or every
+   fourth, and two moments a minute apart would put one number over the other: the labels that would
+   touch are left out evenly, and the markers are nudged apart in time order, kept inside the strip. */
+function stripFit(root) {
+  for (const ax of $$(".strip-axis", root)) {
+    const spans = [...ax.children];
+    for (let k = 1; k <= 8; k *= 2) {
+      spans.forEach((s, i) => { s.hidden = i % k !== 0; });
+      const r = spans.filter((s) => !s.hidden).map((s) => s.getBoundingClientRect());
+      if (r.every((q, i) => !i || q.left >= r[i - 1].right + 6)) break;
+    }
+  }
+  for (const row of $$(".strip-marks", root)) {
+    const w = row.clientWidth, R = 8.5, gap = 2 * R + 2;
+    const ms = [...row.children].sort((a, b) => a.dataset.at - b.dataset.at);
+    if (!w || !ms.length) continue;
+    const x = ms.map((b) => b.dataset.at * w);
+    for (let i = 0; i < x.length; i++) x[i] = Math.max(x[i], i ? x[i - 1] + gap : R);
+    for (let i = x.length - 1; i >= 0; i--) x[i] = Math.min(x[i], i < x.length - 1 ? x[i + 1] - gap : w - R);
+    ms.forEach((b, i) => { b.style.left = `${x[i].toFixed(1)}px`; });
+  }
+}
+
 /* Pad a block down to the next line, keeping at least data-gap pixels of white below its ink;
    give a fixed picture its natural crop in whole lines. */
 function snapAll(root) {
   fitHeads(root);
+  stripFit(root);
   // a chapter label that cannot be read whole keeps only its rule; its name is in its tooltip
   for (const b of $$(".strip-ch button", root)) b.classList.toggle("tight", b.scrollWidth > b.clientWidth + 1);
   // a crossword's squares are as large as its column allows, up to 40px
@@ -1402,8 +1427,9 @@ async function render() {
   } else {
     $$(".page").forEach((p) => p.classList.add("set"));
     shown();
+    $$(".page").forEach(stripFit);
     // measured in the paper's own faces: a fallback font's narrower word fitted where the real one didn't
-    document.fonts.ready.then(() => $$(".page").forEach(fitHeads));
+    document.fonts.ready.then(() => $$(".page").forEach((p) => { fitHeads(p); stripFit(p); }));
   }
   Pager.observe();
 }
