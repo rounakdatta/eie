@@ -671,7 +671,14 @@ function rowsOf(list) {
 function page2() {
   const P = E.p2, page = h("article", { class: "page", id: "p2", "aria-label": "Page 2" }, runhead(2, "Opinion"));
   page.append(h("section", { class: "band" }, mod(6, "title flush", {}, h("h2", { class: "ptitle" }, P.title), h("p", { class: "pdeck" }, rich(P.deck)))));
-  const art = (x, fixed) => (x.art ? picture({ ...x.art, focus: x.art.focus || "50% 50%", play: x.chapter != null ? { chapter: x.chapter } : { item: x.quote.item }, fixed, frame: !!x.art.card }) : []);
+  // a chapter's card plays the chapter from its start; a still plays its own section's line (three
+  // stills from one chapter all said "Listen from 2:30")
+  const art = (x, fixed) => {
+    if (!x.art) return [];
+    const chapter = x.chapter != null ? { chapter: x.chapter } : null;
+    const play = !x.art.card && momentOf(x.quote.item) ? { item: x.quote.item } : chapter || (momentOf(x.quote.item) ? { item: x.quote.item } : null);
+    return picture({ ...x.art, focus: x.art.focus || "50% 50%", play, fixed, frame: !!x.art.card });
+  };
   const head = (x) => [snap("p", "fnum", x.label), snap("h2", "hl l", x.head), snap("p", "byline left", bylineFor(x))];
   const body = (x, cols) => text(cols, "drop", x.body.map((s) => para(s)));
   const [s1, ...rest] = P.sections, side = P.side;
