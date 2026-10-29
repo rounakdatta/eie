@@ -421,9 +421,11 @@ function rich(s) {
       bind(frag, c);
     } else if (part.startsWith("[[")) {
       // not bound to the word before it, as a play mark is: with a line allowed to break before it, the
-      // widest piece that can't break is the mark and a stop (a name bound to it ran out of narrow columns)
+      // widest piece that can't break is the mark and a stop (a name bound to it ran out of narrow columns).
+      // The break is a thin space, which hangs at a line's end, so a mark that starts a line is flush with
+      // the column (a margin indented it); it goes with the mark when a text leaves its marks out
       const key = part.slice(2, -2), x = E.xrefs?.[key];
-      if (x) frag.append("\u200b", xmark(x, key));
+      if (x) frag.append(h("span", { class: "xr" }, "\u2009", xmark(x, key)));
     } else if (part.startsWith("*")) frag.append(h("em", {}, part.slice(1, -1).replace(/\[\[[^\]]*\]\]/g, "")));   // never a mark's raw token
     else frag.append(part);
   }
@@ -433,7 +435,7 @@ function rich(s) {
    or person is taken up. Its title says where it leads; the desk (desk.js) takes the reader there, rings
    the place, and offers the way back. */
 const xmark = (x, key) => h("a", { class: "xref", id: `xr-${key}`, href: `../${x.ep}/#${x.a}`, "data-ep": x.ep, "data-a": x.a,
-  "data-page": x.page, "data-head": x.head, "data-label": x.label, "aria-label": `See also No. ${x.ep}, page ${x.page}: ${x.head}` },
+  "data-page": x.page, "data-head": x.head, "data-label": x.label, "aria-label": `See also No. ${x.ep}, page ${x.page}: ${x.head}${x.label ? ` (${x.label})` : ""}` },
 `→\u2009No.\u00a0${x.ep}`);
 
 /* A paragraph; "## " makes it a crosshead, and "~ " one the engine may leave out to fit. */
@@ -1260,10 +1262,11 @@ const Fit = {
       }
       return found.size ? [...found.values()] : [...spare.values()];
     };
-    // a cross-reference mark is the last lever: a text that cannot be set any way with its marks (a short
-    // story whose lines will not divide once a mark adds one) leaves them out at this measure only
+    // a cross-reference mark is the last lever: a text that cannot be set any way with its marks, even on
+    // the last look, which has no limit (a short story whose lines will not divide once a mark adds one),
+    // leaves them out at this measure only
     let out = search(false);
-    if (!out.length && t.querySelector("a.xref")) out = search(true);
+    if (!out.length && !Number.isFinite(limit) && t.querySelector("a.xref")) out = search(true);
     done();
     return out;
   },
@@ -1462,9 +1465,9 @@ const Fit = {
 function splitPoint(p, y) {
   const r = document.createRange();
   const top = (node, a) => { r.setStart(node, a); r.setEnd(node, a + 1); return r.getClientRects()[0]?.top ?? -Infinity; };
-  const nodes = [...p.childNodes].flatMap(function flat(n) { return n.nodeType === 1 && !n.matches(".say") ? [...n.childNodes].flatMap(flat) : [n]; });
+  const nodes = [...p.childNodes].flatMap(function flat(n) { return n.nodeType === 1 && !n.matches(".say, .xref") ? [...n.childNodes].flatMap(flat) : [n]; });
   for (const node of nodes) {
-    if (node.nodeType === 1) {   // a moment chip
+    if (node.nodeType === 1) {   // a moment chip or a cross-reference: moved whole, never split
       if (node.getBoundingClientRect().top >= y - 1) return { node: node.parentNode, offset: [...node.parentNode.childNodes].indexOf(node) };
       continue;
     }
