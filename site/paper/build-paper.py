@@ -19,6 +19,7 @@ and site/editions/index.json, every edition in brief, for the archive page and t
 paper.js is paper-src.js with the helpers and the moment player spliced in from ../app.js, so the
 illustrated page and the newspaper share one player and one set of fixes.
 """
+import glob
 import html
 import json
 import os
@@ -40,7 +41,7 @@ import copydesk  # noqa: E402
 
 HY = pyphen.Pyphen(lang="en_US", left=2, right=3)
 WORD = re.compile(r"(?<![\w’'-])[a-z]{6,}(?![\w’'])")   # lower-case words of six letters or more; names stay whole
-TOKEN = re.compile(r"(\{[^}]*\}|\*[^*]*\*)")           # moment marks and *titles* are set as they are
+TOKEN = re.compile(r"(\{[^}]*\}|\*[^*]*\*|\[\[[^\]]*\]\])")   # moment marks, *titles* and [[cross-references]] are set as they are
 RUNNING = {"body", "text", "why", "postscript", "def", "a", "boxText"}   # fields set as justified running text
 
 # A picture's crop, as heights for its width: the least, the natural and the most the engine may give it.
@@ -126,6 +127,15 @@ class Archive:
                 if idea["id"] not in self.ideas_by_source[s]:
                     self.ideas_by_source[s].append(idea["id"])
 
+        # every place in every edition a cross-reference may lead to (search/spots.py): its page and headline
+        sys.path.insert(0, os.path.join(SITE, "search"))
+        from spots import spots
+        self.places = {}
+        for d in sorted(glob.glob(os.path.join(EDITIONS, "[0-9][0-9][0-9]", "edition.json"))):
+            m = int(os.path.basename(os.path.dirname(d)))
+            for s in spots(load(d), m):
+                self.places[s["id"]] = {"ep": m, "a": s["a"], "page": s["page"], "head": s["head"]}
+
     def episode(self, n):
         return build.build_episode(n, self.anchors, self.episodes, self.works_by_mention, self.ideas_by_source,
                                    self.threads["threads"])
@@ -185,6 +195,77 @@ def picture(m, slot, **extra):
     pic = {k: v for k, v in m.items() if k in ("src", "video", "poster", "caption", "credit", "focus", "ratio", "card")}
     pic.setdefault("ratio", RATIO[slot])
     return {**pic, **extra}
+
+
+HIDDEN = re.compile(r"\s*\{[^}]*\}|\[\[[^\]]*\]\]|\*|\u00ad")   # in copy, what a reader doesn't see as words
+
+
+def locate(raw, phrase):
+    """Where a phrase ends in a paragraph of copy, read as a reader reads it (no moment marks, stars or soft
+    hyphens, either kind of quote): the index in the raw text just after it, past the rest of a word it ends
+    inside, a closing quote or bracket, a moment mark and any mark already there. None where it isn't."""
+    vis, where, i = [], [], 0
+    for m in HIDDEN.finditer(raw):
+        vis += raw[i:m.start()]; where += range(i, m.start()); i = m.end()
+    vis += raw[i:]; where += range(i, len(raw))
+    fold = lambda t: "".join({"’": "'", "‘": "'", "“": '"', "”": '"'}.get(c, c) for c in t).lower()
+    k = fold("".join(vis)).find(fold(phrase))
+    if k < 0 or not phrase:
+        return None
+    end = where[k + len(phrase) - 1] + 1
+    if raw[:end].count("*") % 2 and "*" in raw[end:]:   # inside an italic title ("The Fatal Conceit: …"): after it
+        end = raw.index("*", end)
+    while end < len(raw):
+        c, after = raw[end], raw[end + 1:end + 2]
+        if c.isalnum() or (c in "’'-" and after.isalnum()):   # never inside a word: "Percy Mistry" of "Percy Mistry’s"
+            end += 1
+        elif c in "”’\")]»*":   # a closing quote, bracket or italics star stays with its words
+            end += 1
+        else:   # a moment mark, or a mark already after these words (the stronger, so this one goes after it)
+            m = re.match(r"\s*\{[^}]*\}|\[\[[^\]]*\]\]", raw[end:])
+            if not m:
+                break
+            end += m.end()
+    return end
+
+
+def load_xrefs(n):
+    path = os.path.join(SITE, "search", "xrefs", f"{n:03d}.json")
+    return load(path) if os.path.exists(path) else []
+
+
+def xrefs_into(E, refs, places):
+    """Each cross-reference (search/xrefs.py) set as a mark after its phrase, in text the paper sets as rich
+    text: a story's paragraphs (not its crossheads; an optional one last), In Brief, the side box, a story's
+    why and postscript, the thought's credit. Where the phrase isn't in any of them (a pull quote, a
+    caption), the mark ends the piece's first paragraph. Returns where each mark leads."""
+    P1, P2, P3 = E["p1"], E["p2"], E["p3"]
+
+    def body(o):
+        ps = [(o["body"], i) for i, x in enumerate(o.get("body") or []) if isinstance(x, str) and not x.startswith("## ")]
+        return [x for x in ps if not x[0][x[1]].startswith("~ ")] + [x for x in ps if x[0][x[1]].startswith("~ ")]
+    slots = {"lead": body(P1["lead"]), P1["second"]["id"]: body(P1["second"]), P1["third"]["id"]: body(P1["third"])}
+    for k, b in enumerate(P1["brief"]):
+        slots[f"brief-{k + 1}"] = [(b, "text")]
+    if P1.get("thought"):
+        slots["thought"] = [(P1["thought"], "who")]
+    if (P2.get("side") or {}).get("box"):
+        slots["side"] = [(P2["side"]["box"], "text")]
+    for s in P2["sections"]:
+        slots[s["id"]] = body(s)
+    for s in P3["stories"]:
+        slots[s["id"]] = body(s) + [(s, k) for k in ("why", "postscript") if s.get(k)]
+    table = {}
+    for r in refs:
+        to, here = places.get(r["to"]), slots.get(r["a"])
+        if not to or not here:
+            continue
+        key = f"x{len(table) + 1}"
+        at = next(((c, i, p) for c, i in here if (p := locate(c[i], r["phrase"])) is not None), None)
+        c, i, p = at or (*here[0], len(here[0][0][here[0][1]]))
+        c[i] = c[i][:p] + f"[[{key}]]" + c[i][p:]
+        table[key] = {**to, "label": r["label"]}
+    return table
 
 
 def build_edition(n, archive, editions):
@@ -312,6 +393,7 @@ def build_edition(n, archive, editions):
         "crossword": {"w": layout["w"], "h": layout["h"], "entries": entries},
         "chapters": {c["title"]: c["short"] for c in copy["chapters"]},
     }
+    xrefs = xrefs_into(E, load_xrefs(n), archive.places)   # marks into the text before it is hyphenated
     unmark = lambda s: re.sub(r"\s*\{[^}]*\}", "", s)   # the paper adds the item's own mark here
     E["p1"]["thought"]["who"] = unmark(E["p1"]["thought"]["who"])
     for q in E["p4"]["quiz"]:
@@ -319,6 +401,7 @@ def build_edition(n, archive, editions):
     for g in E["p4"]["glossary"]:
         g["def"] = unmark(g["def"])
     E = walk(E)
+    E["xrefs"] = xrefs   # after: an anchor is a key, never hyphenated ("a" is also the quiz's answers)
 
     # the edition's neighbours, for the edition bar and the foot of the last page
     order = sorted(editions)

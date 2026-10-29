@@ -12,7 +12,7 @@ SOFT = "­"
 def clean(s):
     """Copy as a reader sees it: no moment marks, no italics stars, no soft hyphens."""
     s = (s or "").replace(SOFT, "")
-    s = re.sub(r"\s*\{[^}]*\}", "", s)
+    s = re.sub(r"\s*\{[^}]*\}|\[\[[^\]]*\]\]", "", s)   # moment marks, cross-reference marks
     s = s.replace("*", "")
     return re.sub(r"\s+", " ", s).strip()
 

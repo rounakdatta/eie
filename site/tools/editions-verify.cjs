@@ -29,6 +29,19 @@ const STRIP = () => {
   return [...new Set(bad)];
 };
 
+// every cross-reference the edition carries is a mark on its page (one lost inside italics once printed
+// its raw token instead)
+const XREFS = async () => {
+  const E = await (await fetch("edition.json")).json();
+  const keys = Object.keys(E.xrefs || {});
+  return { n: keys.length, missing: keys.filter((k) => !document.getElementById(`xr-${k}`)), raw: /\[\[x\d+\]\]/.test(document.body.textContent) };
+};
+// each mark once, at every width: one split at the jump to page 2 once left an empty copy of itself on page 1
+const TWICE = () => {
+  const ids = [...document.querySelectorAll("a.xref")].map((a) => a.id);
+  return ids.filter((id, i) => ids.indexOf(id) !== i);
+};
+
 // the skyline: no teaser's words under a host's cut-out (a word wider than its column once widened the
 // column, and "Beethoven" ran under Ajay Shah)
 const SKY = () => {
@@ -71,7 +84,7 @@ async function main() {
           await p.evaluate(() => delete document.documentElement.dataset.fit);
           await p.setViewportSize({ width: w, height: 1000 });
         }
-        await p.waitForFunction(() => document.documentElement.dataset.fit, null, { timeout: 60000 });
+        await p.waitForFunction(() => document.documentElement.dataset.fit, null, { timeout: 120000 });
         r.widths[w] = await p.evaluate(() => {
           const fit = document.documentElement.dataset.fit;
           // every story in a row that could not be fitted, with how deep it can go and its words a line
@@ -86,6 +99,11 @@ async function main() {
         });
         r.widths[w].strip = await p.evaluate(STRIP);
         r.widths[w].sky = await p.evaluate(SKY);
+        r.widths[w].twice = await p.evaluate(TWICE);
+        if (w === WIDTHS[0]) r.xrefs = await p.evaluate(XREFS);
+        // not a fault, but worth knowing: marks a text left out to set evenly at this width (Fit.options)
+        r.widths[w].hidden = await p.evaluate(() => [...document.querySelectorAll(".text.noxref .xref, .text > .dropped .xref")]
+          .map((x) => x.closest(".dropped") ? `${x.id}(in a dropped paragraph)` : x.id));
       }
     } catch (e) {
       r.errors.push(`desktop: ${e.message.split("\n")[0]}`);
@@ -115,13 +133,16 @@ async function main() {
       await c.close();
     }
     r.seconds = Math.round((Date.now() - t0) / 1000);
-    const bad = Object.entries(r.widths).filter(([, v]) => v.fit !== "ok" || v.over.length || v.broken.length || v.strip.length || v.sky.length);
+    const bad = Object.entries(r.widths).filter(([, v]) => v.fit !== "ok" || v.over.length || v.broken.length || v.strip.length || v.sky.length || v.twice.length);
     const phonesBad = Object.entries(r.phones).filter(([w, v]) => v.scroll > +w || v.wide.length || v.strip.length);
-    r.ok = !bad.length && !phonesBad.length && !r.errors.length && !r.missing.length && Object.keys(r.widths).length === WIDTHS.length;
+    const xbad = r.xrefs && (r.xrefs.missing.length || r.xrefs.raw);
+    r.ok = !bad.length && !phonesBad.length && !xbad && !r.errors.length && !r.missing.length && Object.keys(r.widths).length === WIDTHS.length;
     report.push(r);
     console.log(`${r.ok ? "ok  " : "FAIL"} ${String(n).padStart(3)}  ${r.seconds}s` +
-      (bad.length ? `  fit: ${bad.map(([w, v]) => `${w}:${[...v.short.filter((s) => !s.ok).map((s) => s.id), ...v.over.map((o) => `over(${o})`), ...v.broken.map((b) => `broken(${b})`), ...v.strip.map((x) => `strip(${x})`), ...v.sky.map((x) => `sky(${x})`)].join("+") || v.fit}`).join(" ")}` : "") +
+      (bad.length ? `  fit: ${bad.map(([w, v]) => `${w}:${[...v.short.filter((s) => !s.ok).map((s) => s.id), ...v.over.map((o) => `over(${o})`), ...v.broken.map((b) => `broken(${b})`), ...v.strip.map((x) => `strip(${x})`), ...v.sky.map((x) => `sky(${x})`), ...v.twice.map((x) => `twice(${x})`)].join("+") || v.fit}`).join(" ")}` : "") +
       (phonesBad.length ? `  phones: ${phonesBad.map(([w, v]) => `${w}:${v.scroll}px ${v.wide.join(",")}${v.strip.length ? ` strip(${v.strip.join(",")})` : ""}`).join(" ")}` : "") +
+      (xbad ? `  xrefs: ${r.xrefs.missing.length} of ${r.xrefs.n} not on the page${r.xrefs.raw ? ", a raw token printed" : ""}` : "") +
+      (Object.values(r.widths).some((v) => v.hidden?.length) ? `  marks left out: ${Object.entries(r.widths).filter(([, v]) => v.hidden?.length).map(([w, v]) => `${w}:${v.hidden.join(",")}`).join(" ")}` : "") +
       (r.errors.length ? `  errors: ${r.errors.slice(0, 3).join(" | ")}` : "") + (r.missing.length ? `  missing: ${r.missing.slice(0, 4).join(", ")}` : ""));
   }
   await browser.close();

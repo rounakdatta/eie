@@ -222,8 +222,10 @@
   let ringEl = null, noteEl = null;
   function unmark() { ringEl?.remove(); noteEl?.remove(); ringEl = noteEl = null; }
 
-  function mark(anchor, q) {
+  let marked = null;   // what is ringed, to ring it again at a new width
+  function mark(anchor, q, from) {
     unmark();
+    marked = [anchor, q, from];
     let el = document.getElementById(anchor);
     if (!el) return;
     let what = target(el);
@@ -248,10 +250,16 @@
         h("feDisplacementMap", { in: "SourceGraphic", in2: "grain", scale: "1.6" })), path);
       document.body.append(ringEl);
       noteEl = h("p", { class: "desk-mark", role: "status" },
-        h("span", {}, "Found"), h("i", {}, `“${q}”`),
+        ...(from ? note(from) : [h("span", {}, "Found"), h("i", {}, `“${q}”`)]),
         h("button", { type: "button", class: "desk-x", "aria-label": "Rub out the ring" }, "×"));
       noteEl.querySelector("button").addEventListener("click", unmark);
       document.body.append(noteEl);
+      // followed from the keyboard: the focus goes where the next key wants it, once (not at each resize):
+      // to the way back, or, come back, to the mark that was followed
+      if (from?.kb && !from.focused) {
+        from.focused = true;
+        (from.back ? el : noteEl.querySelector(".desk-back-link"))?.focus({ preventScroll: true });
+      }
       if (!RM.matches) requestAnimationFrame(() => ringEl?.classList.add("drawn"));
       else ringEl.classList.add("drawn", "still");
     };
@@ -264,7 +272,7 @@
     };
     requestAnimationFrame(settle);
   }
-  addEventListener("resize", () => { if (ringEl) { const a = decodeURIComponent(location.hash.slice(1)); const q = noteEl?.querySelector("i")?.textContent.slice(1, -1); unmark(); if (a && q) mark(a, q); } });
+  addEventListener("resize", () => { if (ringEl && marked) mark(...marked); });
 
   /* ── the drawer, in an edition ─────────────────────────────────────────────────────────────── */
   let drawer = null, back = null, opener = null;
@@ -315,12 +323,61 @@
     let came = null;
     try { came = JSON.parse(sessionStorage.getItem("eie.found") || "null"); sessionStorage.removeItem("eie.found"); } catch {}
     if (ED && came && came.ep === ED && Date.now() - came.t < 120000) {
-      const go = () => mark(came.a, came.q);
+      const go = () => mark(came.a, came.q, came.from);
       if (document.documentElement.dataset.ready) go();
       else new MutationObserver((_, mo) => { if (document.documentElement.dataset.ready) { mo.disconnect(); setTimeout(go, 50); } })
         .observe(document.documentElement, { attributes: true, attributeFilter: ["data-ready"] });
     }
   }
+  /* ── cross-references to other editions (paper-src.js xmark): a click goes to the place and rings it,
+     with the way back in the note; a pointer resting on one shows where it leads ─────────────────── */
+  function note(from) {
+    const back = h("a", { class: "desk-back-link", href: `${ROOT}${from.ep}/#${from.a}` }, `← back to No. ${from.ep}`);
+    back.addEventListener("click", (ev) => {
+      if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button) return;
+      ev.preventDefault();
+      follow(from.ep, from.a, { ep: ED, a: marked?.[0], head: document.getElementById(marked?.[0])?.textContent.trim().slice(0, 80), back: true, kb: ev.detail === 0 });
+    });
+    return from.back ? [h("span", {}, `Back from No. ${from.ep}`)]
+      : [h("span", {}, `From No. ${from.ep}`), h("i", {}, from.label || from.head || ""), back];
+  }
+  function follow(ep, a, from) {
+    try { sessionStorage.setItem("eie.found", JSON.stringify({ ep, a, t: Date.now(), from })); } catch {}
+    if (ep === ED) { history.replaceState(null, "", `#${a}`); mark(a, null, from); return; }
+    location.href = `${ROOT}${ep}/#${a}`;
+  }
+  function source(x) {   // the piece a mark sits in, for the note on the other side: its headline
+    const brief = x.closest("p")?.previousElementSibling;
+    const head = brief?.id?.startsWith("brief-") ? brief : x.closest(".mod")?.querySelector(".hl, h2, h3");
+    return (head?.textContent || "").trim().slice(0, 80);
+  }
+  document.addEventListener("click", (ev) => {
+    const x = ev.target.closest?.("a.xref");
+    if (!x || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button) return;
+    ev.preventDefault();
+    card?.remove();
+    follow(+x.dataset.ep, x.dataset.a, { ep: ED, a: x.id, head: source(x), label: x.dataset.label, kb: ev.detail === 0 });   // detail 0: Enter, not a click
+  });
+  let card = null;
+  const fine = matchMedia("(hover: hover) and (pointer: fine)");
+  function show(x) {
+    card?.remove();
+    card = h("div", { class: "xcard", role: "tooltip" },
+      h("span", { class: "clip-line" }, h("span", {}, `Also in No. ${x.dataset.ep}`), h("b", {}, `Page ${x.dataset.page}`)),
+      h("span", { class: "xcard-head" }, x.dataset.head), x.dataset.label ? h("span", { class: "xcard-label" }, x.dataset.label) : null);
+    document.body.append(card);
+    const r = x.getBoundingClientRect(), w = card.offsetWidth, ht = card.offsetHeight;
+    const left = Math.min(Math.max(8, r.left + r.width / 2 - w / 2), innerWidth - w - 8);
+    const top = r.top - ht - 10 > 8 ? r.top - ht - 10 : r.bottom + 10;
+    Object.assign(card.style, { left: `${left}px`, top: `${top}px` });
+  }
+  document.addEventListener("pointerover", (ev) => { const x = ev.target.closest?.("a.xref"); if (x && fine.matches) show(x); });
+  document.addEventListener("pointerout", (ev) => { if (ev.target.closest?.("a.xref")) { card?.remove(); card = null; } });
+  document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && card) { card.remove(); card = null; } });
+  document.addEventListener("focusin", (ev) => { if (ev.target.matches?.("a.xref")) show(ev.target); });
+  document.addEventListener("focusout", (ev) => { if (ev.target.matches?.("a.xref")) { card?.remove(); card = null; } });
+  addEventListener("scroll", () => { card?.remove(); card = null; }, { passive: true });
+
   window.EieDesk = { open, close, mark, GLASS };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
 })();

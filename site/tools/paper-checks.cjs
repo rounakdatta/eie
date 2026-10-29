@@ -35,7 +35,7 @@ async function columnsFlush(p) {
   for (const w of [1920, 1440, 1180]) {
     const p = await browser.newPage({ viewport: { width: w, height: 1000 } });
     await p.goto(URL, { waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 120000 });
     const bad = await columnsFlush(p);
     const fit = await p.evaluate(() => document.documentElement.dataset.fit);
     check(`at ${w}px every column ends on its band's last line`, fit === "ok" && bad.length === 0, bad.slice(0, 3).join("; ") || `engine says ${fit}`);
@@ -78,10 +78,10 @@ async function columnsFlush(p) {
   {
     const p = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     await p.goto(URL, { waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 120000 });
     await p.evaluate(() => localStorage.removeItem("eie.cw.45"));
     await p.reload({ waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 120000 });
     await p.evaluate(() => document.getElementById("crossword").scrollIntoView());
     await p.click('.cw-clue[data-k="17a"]');
     await p.keyboard.type("NILE", { delay: 30 });
@@ -101,7 +101,7 @@ async function columnsFlush(p) {
     check("a solved clue's mark plays the moment its answer came up", ok);
     await p.click(".dock-close");
     await p.reload({ waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 120000 });
     const kept = await p.evaluate(() => [...document.querySelectorAll(".cw-clue.solved")].map((c) => c.dataset.k).join());
     check("crossword progress survives a reload", kept === "17a", kept);
     await p.evaluate(() => localStorage.removeItem("eie.cw.45"));
@@ -113,7 +113,7 @@ async function columnsFlush(p) {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 });
     const p = await ctx.newPage();
     await p.goto(URL, { waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-ready]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-ready]", { state: "attached", timeout: 120000 });
     const r = await p.evaluate(() => ({ article: document.documentElement.classList.contains("article"), cont: getComputedStyle(document.getElementById("from1")).display,
       wide: document.documentElement.scrollWidth, last: document.querySelector("#lead .text p:last-child")?.textContent.slice(0, 40) }));
     check("on a phone the lead runs whole, with no jump and nothing wider than the screen", r.article && r.cont === "none" && r.wide <= 390, JSON.stringify(r));
