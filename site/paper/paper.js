@@ -420,8 +420,10 @@ function rich(s) {
       if (!c) continue;
       bind(frag, c);
     } else if (part.startsWith("[[")) {
+      // not bound to the word before it, as a play mark is: with a line allowed to break before it, the
+      // widest piece that can't break is the mark and a stop (a name bound to it ran out of narrow columns)
       const key = part.slice(2, -2), x = E.xrefs?.[key];
-      if (x) bind(frag, xmark(x, key));
+      if (x) frag.append("\u200b", xmark(x, key));
     } else if (part.startsWith("*")) frag.append(h("em", {}, part.slice(1, -1).replace(/\[\[[^\]]*\]\]/g, "")));   // never a mark's raw token
     else frag.append(part);
   }
