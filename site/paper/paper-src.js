@@ -60,17 +60,27 @@ function say(m, label, aria) {
    it, so it never wraps to the start of a line on its own. */
 function rich(s) {
   const frag = document.createDocumentFragment();
-  for (const part of s.split(/(\{[^}]*\}|\*[^*]+\*)/)) {
+  for (const part of s.split(/(\{[^}]*\}|\*[^*]+\*|\[\[[^\]]+\]\])/)) {
     if (!part) continue;
     if (part.startsWith("{")) {
       const c = say(momentOf(part.slice(1, -1)));
       if (!c) continue;
       bind(frag, c);
-    } else if (part.startsWith("*")) frag.append(h("em", {}, part.slice(1, -1)));
+    } else if (part.startsWith("[[")) {
+      const key = part.slice(2, -2), x = E.xrefs?.[key];
+      if (x) bind(frag, xmark(x, key));
+    } else if (part.startsWith("*")) frag.append(h("em", {}, part.slice(1, -1).replace(/\[\[[^\]]*\]\]/g, "")));   // never a mark's raw token
     else frag.append(part);
   }
   return frag;
 }
+/* A cross-reference to another edition, set as a paper sets one ("see No. 66"): where the same story, idea
+   or person is taken up. Its title says where it leads; the desk (desk.js) takes the reader there, rings
+   the place, and offers the way back. */
+const xmark = (x, key) => h("a", { class: "xref", id: `xr-${key}`, href: `../${x.ep}/#${x.a}`, "data-ep": x.ep, "data-a": x.a,
+  "data-page": x.page, "data-head": x.head, "data-label": x.label, "aria-label": `See also No. ${x.ep}, page ${x.page}: ${x.head}` },
+`→\u2009No.\u00a0${x.ep}`);
+
 /* A paragraph; "## " makes it a crosshead, and "~ " one the engine may leave out to fit. */
 const para = (s, cls) => (s.startsWith("## ") ? h("h4", {}, s.slice(3))
   : s.startsWith("~ ") ? h("p", { class: `opt ${cls || ""}`.trim() }, rich(s.slice(2))) : h("p", { class: cls }, rich(s)));

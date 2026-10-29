@@ -75,6 +75,18 @@ Every book, film, series, album, song and podcast on a shelf has its cover besid
 - **On the page** a cover floats beside its entry, exactly four lines tall, so the entry stays on the grid; it is drawn as an object on the paper (a hairline and a soft shadow). One of the show's own episodes on a shelf links to its edition here ("Read Edition 38 →") rather than to the video.
 - `python3 site/paper/covers.py` looks for works with no verdict yet; `--only=ID,…` looks again.
 
+## Cross-references between editions (`site/search/xrefs.py`)
+
+Where a story, an idea, a person or a book in one edition is the one another edition takes up, a small mark at that point says so, as a newspaper prints "see page 3": "→ No. 66".
+- **Following one:** a pointer resting on a mark shows where it leads (the edition, the page, the headline, what the two share). A click goes there and rings the place in red pencil, with a note: "From No. 45 · what they share · ← back to No. 45". Back is the same journey home, ringing the mark you left from.
+- **Finding them:**
+  - Candidates come for each piece of prose (the lead, the stories, the opinion sections, In Brief, the side box, the thought), about 2,500 in all. They are found by words and hooks (the desk's BM25) and by the archive's big ideas (insights the analysis tied together across episodes).
+  - Claude reads each edition's pieces with their candidates. It keeps only real cross-references: the same story told again, the same idea argued elsewhere, the same person or event at the heart of both. It says after which words the mark belongs, and what the two share.
+  - A phrase is kept only if it is in the piece.
+- **Setting them:**
+  - `build-paper.py` puts a `[[xN]]` token after the phrase, read as a reader reads it (past moment marks, through italics, either kind of quote). It never goes inside a crosshead, a quote or an italic span.
+  - The edition's `xrefs` says where each leads. The paper binds the mark to the word before it, like a play mark, and the engine sets the text with the marks in.
+
 ## Lost & Found: the archive desk (`site/search/`, `site/paper/desk.js`)
 
 Half-remember something from the show, describe it however vaguely ("the guy who did push-ups as penance", "why poor countries shouldn't buy the fanciest jets"), and the desk sends you to the page it was printed on, rings it in red pencil, and pins a note of what you asked to the corner of the window.

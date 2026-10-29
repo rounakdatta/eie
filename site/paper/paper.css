@@ -195,6 +195,11 @@ html:not(.article) .skyline .tease:nth-of-type(3) { padding-left: 20px; }
 .say:hover .lbl { text-decoration: underline; text-underline-offset: 2px; }
 /* in running prose the mark is only its disc, like a footnote mark: a time label made each one a
    wide unbreakable block, and the justified line before it gaped */
+/* a cross-reference to another edition: the paper's page references, small, in its blue */
+.xref { margin-left: .28em; font: 700 .72em/1 var(--head); font-stretch: 82%; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap;
+  color: var(--blue); text-decoration: none; }
+.xref:hover { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.xref:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 1px; }
 .text p:not(.meta) .say .lbl { display: none; }
 .text p:not(.meta) .say { margin: 0 0 0 3px; padding: 0; }
 .say:hover .disc { transform: scale(1.15); }
