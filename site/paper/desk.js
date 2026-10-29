@@ -253,13 +253,13 @@
         ...(from ? note(from) : [h("span", {}, "Found"), h("i", {}, `“${q}”`)]),
         h("button", { type: "button", class: "desk-x", "aria-label": "Rub out the ring" }, "×"));
       noteEl.querySelector("button").addEventListener("click", unmark);
+      document.body.append(noteEl);
       // followed from the keyboard: the focus goes where the next key wants it, once (not at each resize):
       // to the way back, or, come back, to the mark that was followed
       if (from?.kb && !from.focused) {
         from.focused = true;
         (from.back ? el : noteEl.querySelector(".desk-back-link"))?.focus({ preventScroll: true });
       }
-      document.body.append(noteEl);
       if (!RM.matches) requestAnimationFrame(() => ringEl?.classList.add("drawn"));
       else ringEl.classList.add("drawn", "still");
     };
