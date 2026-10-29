@@ -95,6 +95,8 @@ async function main() {
         r.widths[w].strip = await p.evaluate(STRIP);
         r.widths[w].sky = await p.evaluate(SKY);
         if (w === WIDTHS[0]) r.xrefs = await p.evaluate(XREFS);
+        // not a fault, but worth knowing: marks a text left out to set evenly at this width (Fit.options)
+        r.widths[w].hidden = await p.evaluate(() => [...document.querySelectorAll(".text.noxref .xref")].map((x) => x.id));
       }
     } catch (e) {
       r.errors.push(`desktop: ${e.message.split("\n")[0]}`);
@@ -133,6 +135,7 @@ async function main() {
       (bad.length ? `  fit: ${bad.map(([w, v]) => `${w}:${[...v.short.filter((s) => !s.ok).map((s) => s.id), ...v.over.map((o) => `over(${o})`), ...v.broken.map((b) => `broken(${b})`), ...v.strip.map((x) => `strip(${x})`), ...v.sky.map((x) => `sky(${x})`)].join("+") || v.fit}`).join(" ")}` : "") +
       (phonesBad.length ? `  phones: ${phonesBad.map(([w, v]) => `${w}:${v.scroll}px ${v.wide.join(",")}${v.strip.length ? ` strip(${v.strip.join(",")})` : ""}`).join(" ")}` : "") +
       (xbad ? `  xrefs: ${r.xrefs.missing.length} of ${r.xrefs.n} not on the page${r.xrefs.raw ? ", a raw token printed" : ""}` : "") +
+      (Object.values(r.widths).some((v) => v.hidden?.length) ? `  marks left out: ${Object.entries(r.widths).filter(([, v]) => v.hidden?.length).map(([w, v]) => `${w}:${v.hidden.join(",")}`).join(" ")}` : "") +
       (r.errors.length ? `  errors: ${r.errors.slice(0, 3).join(" | ")}` : "") + (r.missing.length ? `  missing: ${r.missing.slice(0, 4).join(", ")}` : ""));
   }
   await browser.close();
