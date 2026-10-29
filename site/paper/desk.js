@@ -253,6 +253,12 @@
         ...(from ? note(from) : [h("span", {}, "Found"), h("i", {}, `“${q}”`)]),
         h("button", { type: "button", class: "desk-x", "aria-label": "Rub out the ring" }, "×"));
       noteEl.querySelector("button").addEventListener("click", unmark);
+      // followed from the keyboard: the focus goes where the next key wants it, once (not at each resize):
+      // to the way back, or, come back, to the mark that was followed
+      if (from?.kb && !from.focused) {
+        from.focused = true;
+        (from.back ? el : noteEl.querySelector(".desk-back-link"))?.focus({ preventScroll: true });
+      }
       document.body.append(noteEl);
       if (!RM.matches) requestAnimationFrame(() => ringEl?.classList.add("drawn"));
       else ringEl.classList.add("drawn", "still");
@@ -330,7 +336,7 @@
     back.addEventListener("click", (ev) => {
       if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button) return;
       ev.preventDefault();
-      follow(from.ep, from.a, { ep: ED, a: marked?.[0], head: document.getElementById(marked?.[0])?.textContent.trim().slice(0, 80), back: true });
+      follow(from.ep, from.a, { ep: ED, a: marked?.[0], head: document.getElementById(marked?.[0])?.textContent.trim().slice(0, 80), back: true, kb: ev.detail === 0 });
     });
     return from.back ? [h("span", {}, `Back from No. ${from.ep}`)]
       : [h("span", {}, `From No. ${from.ep}`), h("i", {}, from.label || from.head || ""), back];
@@ -350,7 +356,7 @@
     if (!x || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button) return;
     ev.preventDefault();
     card?.remove();
-    follow(+x.dataset.ep, x.dataset.a, { ep: ED, a: x.id, head: source(x), label: x.dataset.label });
+    follow(+x.dataset.ep, x.dataset.a, { ep: ED, a: x.id, head: source(x), label: x.dataset.label, kb: ev.detail === 0 });   // detail 0: Enter, not a click
   });
   let card = null;
   const fine = matchMedia("(hover: hover) and (pointer: fine)");
@@ -367,6 +373,7 @@
   }
   document.addEventListener("pointerover", (ev) => { const x = ev.target.closest?.("a.xref"); if (x && fine.matches) show(x); });
   document.addEventListener("pointerout", (ev) => { if (ev.target.closest?.("a.xref")) { card?.remove(); card = null; } });
+  document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && card) { card.remove(); card = null; } });
   document.addEventListener("focusin", (ev) => { if (ev.target.matches?.("a.xref")) show(ev.target); });
   document.addEventListener("focusout", (ev) => { if (ev.target.matches?.("a.xref")) { card?.remove(); card = null; } });
   addEventListener("scroll", () => { card?.remove(); card = null; }, { passive: true });
