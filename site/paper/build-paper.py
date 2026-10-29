@@ -202,8 +202,8 @@ HIDDEN = re.compile(r"\s*\{[^}]*\}|\[\[[^\]]*\]\]|\*|\u00ad")   # in copy, what 
 
 def locate(raw, phrase):
     """Where a phrase ends in a paragraph of copy, read as a reader reads it (no moment marks, stars or soft
-    hyphens, either kind of quote): the index in the raw text just after it, past a closing quote or bracket
-    and a moment mark that follow at once. None where it isn't."""
+    hyphens, either kind of quote): the index in the raw text just after it, past the rest of a word it ends
+    inside, a closing quote or bracket, a moment mark and any mark already there. None where it isn't."""
     vis, where, i = [], [], 0
     for m in HIDDEN.finditer(raw):
         vis += raw[i:m.start()]; where += range(i, m.start()); i = m.end()
@@ -215,10 +215,18 @@ def locate(raw, phrase):
     end = where[k + len(phrase) - 1] + 1
     if raw[:end].count("*") % 2 and "*" in raw[end:]:   # inside an italic title ("The Fatal Conceit: …"): after it
         end = raw.index("*", end)
-    while end < len(raw) and raw[end] in "”’\")]»*":   # a closing quote, bracket or italics star stays with its words
-        end += 1
-    m = re.match(r"\s*\{[^}]*\}", raw[end:])
-    return end + (m.end() if m else 0)
+    while end < len(raw):
+        c, after = raw[end], raw[end + 1:end + 2]
+        if c.isalnum() or (c in "’'-" and after.isalnum()):   # never inside a word: "Percy Mistry" of "Percy Mistry’s"
+            end += 1
+        elif c in "”’\")]»*":   # a closing quote, bracket or italics star stays with its words
+            end += 1
+        else:   # a moment mark, or a mark already after these words (the stronger, so this one goes after it)
+            m = re.match(r"\s*\{[^}]*\}|\[\[[^\]]*\]\]", raw[end:])
+            if not m:
+                break
+            end += m.end()
+    return end
 
 
 def load_xrefs(n):
