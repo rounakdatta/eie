@@ -1210,7 +1210,7 @@ const Fit = {
       const raw = t.getBoundingClientRect().height / LH;
       return Math.abs(raw - Math.round(raw)) < 0.05 ? Math.round(raw) : null;
     };
-    const done = () => { cap(caps[0]); heads.forEach((x) => x.classList.remove("dropped")); omit(0); tighten(0); Object.assign(s, { letterSpacing: "", wordSpacing: "", width: "", columnCount: "", height: "" }); };
+    const done = () => { cap(caps[0]); heads.forEach((x) => x.classList.remove("dropped")); omit(0); tighten(0); t.classList.remove("noxref"); Object.assign(s, { letterSpacing: "", wordSpacing: "", width: "", columnCount: "", height: "" }); };
     if (mm.cut) {   // a story that may be cut needs only its full length
       const L = measure({ n: mm.n, drop: [], od: 0, t: 0, ws: 0, cap: caps[0] });
       done();
@@ -1237,26 +1237,35 @@ const Fit = {
     const cands = [];
     for (const n of mm.ns) for (const k of caps) for (const drop of drops) for (const od of ods) for (const tight of tights) for (const ws of SPACES) for (const tr of TRACKS) cands.push({ n, cap: k, drop, od, tight, ws, t: tr });
     cands.sort((a, b) => mm.ns.indexOf(a.n) - mm.ns.indexOf(b.n) || caps.indexOf(a.cap) - caps.indexOf(b.cap) || a.drop.length - b.drop.length || a.od - b.od || a.tight - b.tight || Math.abs(a.ws) - Math.abs(b.ws) || Math.abs(a.t) - Math.abs(b.t));
-    const found = new Map(), spare = new Map(), checks = new Map();
     // checks in real columns, the costly part, are budgeted for each column count: a count that cannot
     // work (a shelf's covers pushed into a fourth column) must not use up the next count's turn
     const most = Number.isFinite(limit) ? limit * 6 : 240;
-    for (const c of cands) {
-      if ((checks.get(c.n) || 0) >= most) continue;   // this column count has had its turn: not even measured
-      const L = predict(c);
-      if (L == null || L <= 0 || L % c.n) continue;
-      const key = `${c.n}|${c.cap}|${c.drop}|${c.od}|${c.tight}|${L}`;
-      if (found.has(key)) continue;
-      checks.set(c.n, (checks.get(c.n) || 0) + 1);
-      s.width = "";   // back to the full measure, to be set in columns
-      this.set(mm, { r: L / c.n, t: c.t, ws: c.ws, drop: c.drop, od: c.od, tight: c.tight, n: c.n, cap: c.cap });
-      const ok = this.columns(mm, true);
-      if (ok === true) found.set(key, { ...c, L });
-      else if (ok === "cover apart" && spare.size < limit) spare.set(key, { ...c, L });   // only if nothing better
-      if (found.size >= limit) break;
-    }
+    const search = (noxref) => {
+      t.classList.toggle("noxref", noxref);
+      bases.clear();
+      const found = new Map(), spare = new Map(), checks = new Map();
+      for (const c of cands) {
+        if ((checks.get(c.n) || 0) >= most) continue;   // this column count has had its turn: not even measured
+        const L = predict(c);
+        if (L == null || L <= 0 || L % c.n) continue;
+        const key = `${c.n}|${c.cap}|${c.drop}|${c.od}|${c.tight}|${L}`;
+        if (found.has(key)) continue;
+        checks.set(c.n, (checks.get(c.n) || 0) + 1);
+        s.width = "";   // back to the full measure, to be set in columns
+        this.set(mm, { r: L / c.n, t: c.t, ws: c.ws, drop: c.drop, od: c.od, tight: c.tight, n: c.n, cap: c.cap, noxref });
+        const ok = this.columns(mm, true);
+        if (ok === true) found.set(key, { ...c, L, noxref });
+        else if (ok === "cover apart" && spare.size < limit) spare.set(key, { ...c, L, noxref });   // only if nothing better
+        if (found.size >= limit) break;
+      }
+      return found.size ? [...found.values()] : [...spare.values()];
+    };
+    // a cross-reference mark is the last lever: a text that cannot be set any way with its marks (a short
+    // story whose lines will not divide once a mark adds one) leaves them out at this measure only
+    let out = search(false);
+    if (!out.length && t.querySelector("a.xref")) out = search(true);
     done();
-    return found.size ? [...found.values()] : [...spare.values()];
+    return out;
   },
 
   /* The depths a box can take: each type size, then up to data-pad lines of air around it. */
@@ -1296,7 +1305,7 @@ const Fit = {
     }
     for (const o of mm.textO) {
       const r = o.L / o.n;
-      for (const p of P) for (const b of B) if (mm.F + r + p + b.h === T) yield { p, b, r, t: o.t, ws: o.ws, drop: o.drop, od: o.od, tight: o.tight, n: o.n, cap: o.cap };
+      for (const p of P) for (const b of B) if (mm.F + r + p + b.h === T) yield { p, b, r, t: o.t, ws: o.ws, drop: o.drop, od: o.od, tight: o.tight, n: o.n, cap: o.cap, noxref: o.noxref };
     }
   },
 
@@ -1366,6 +1375,7 @@ const Fit = {
       opts.forEach((x, k) => x.classList.toggle("dropped", k >= opts.length - (plan.od || 0)));
       const airs = $$(":scope > .air", mm.text).slice(1);
       airs.forEach((x, k) => x.classList.toggle("tight", k >= airs.length - (plan.tight || 0)));
+      mm.text.classList.toggle("noxref", !!plan.noxref);
       s.columnCount = String(mm.n); s.columnFill = "auto"; s.height = `${plan.r * LH}px`;
       s.letterSpacing = plan.t ? `${plan.t}em` : "";
       s.wordSpacing = plan.ws ? `${plan.ws}em` : "";
