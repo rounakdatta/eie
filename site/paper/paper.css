@@ -326,7 +326,11 @@ html.article .shelf .cover { width: calc(26px * 4 * var(--r, .667)); max-width: 
 .cw-bar { align-self: stretch; height: calc(var(--lh) * 2); margin: 0 0 8px; padding: 0 10px; display: flex; align-items: center; gap: 8px; background: #eef2f8; border-left: 4px solid var(--blue); font: 15px/1.3 var(--text); overflow: hidden; }
 .cw-bar b { font: 800 13px/1 var(--head); font-stretch: 80%; text-transform: uppercase; letter-spacing: .04em; color: var(--blue); white-space: nowrap; }
 .cw-grid { display: grid; grid-template-columns: repeat(var(--w), var(--cell, 44px)); grid-template-rows: repeat(var(--h), var(--cell, 44px)); }
-.cw-cell { position: relative; background: #fff; box-shadow: 0 0 0 1px #1d1d1d; }
+/* each line drawn once, the same thickness everywhere: top and left by the square, right and bottom only at
+   a run's end (--cell and --line, whole pixels of the screen: cwFit in paper-src.js) */
+.cw-cell { position: relative; box-sizing: border-box; background: #fff; border: 0 solid #1d1d1d; border-width: var(--line, 1px) 0 0 var(--line, 1px); }
+.cw-cell.r { border-right-width: var(--line, 1px); }
+.cw-cell.b { border-bottom-width: var(--line, 1px); }
 .cw-cell.word { background: #dbe7f6; }
 .cw-cell.on { background: #ffe58a; }
 .cw-cell.wrong .cw-in { color: var(--red); text-decoration: line-through; }
@@ -400,8 +404,8 @@ html.article .ptitle { font-size: 46px; line-height: 50px; }
 html.article .numbers { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; }   /* a column that can't grow makes a wide figure shrink to fit */
 html.article .numbers .fig { display: block; font-size: 44px; line-height: 50px; white-space: nowrap; }
 html.article .numbers .cell:nth-child(odd)::before { display: none; }
-html.article .cw-grid { --cell: calc((100vw - 32px) / var(--w)) !important; }
 html.article .cw-bar { height: auto; min-height: 44px; position: sticky; top: 0; z-index: 2; }
+html.article .cw-grid { align-self: flex-start; }   /* from the column's edge, a whole pixel: centred, its start fell between pixels */
 html.article .nameplate { font-size: 8.9cqi; letter-spacing: -.02em; }
 html.article .nameplate span { transform: none; }
 html.article .skyline { display: flex; min-height: 0; padding-top: 4px; }

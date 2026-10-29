@@ -34,6 +34,29 @@
 .desk-eg:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 2px; }
 .desk.asked .desk-try { display: none; }
 
+/* what readers asked lately, floated along the bar: quoted, between the paper's small red squares; what
+   is wider than the bar drifts slowly (pausing under a finger, a pointer or the keyboard), its ends faded */
+.desk-asked { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; column-gap: 14px; max-width: 900px; margin: 12px 0 0; }
+.desk-asked[hidden] { display: none; }
+.desk-asked-k { font: 700 10.5px/1.4 var(--head); font-stretch: 85%; text-transform: uppercase; letter-spacing: .14em; color: var(--red); white-space: nowrap; }
+.desk-tape { overflow: hidden; }
+.desk-tape.drifting { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 92%, transparent); }
+.desk-track { display: flex; width: max-content; }
+.desk-tape.drifting .desk-track { animation: desk-drift var(--drift, 60s) linear infinite; }
+.desk-tape.drifting:hover .desk-track, .desk-tape.drifting:focus-within .desk-track { animation-play-state: paused; }
+@keyframes desk-drift { to { transform: translateX(-50%); } }
+.desk-run { display: flex; align-items: baseline; flex-wrap: nowrap; }
+.desk-tape:not(.drifting) .desk-run { flex-wrap: wrap; row-gap: 2px; }
+.desk-tape:not(.drifting) .desk-run > .desk-sep:last-child { display: none; }
+.desk-q { padding: 1px 0; border: 0; background: none; cursor: pointer; white-space: nowrap; font: italic 400 15.5px/1.45 var(--text); color: var(--ink-2); }
+.desk-q::before { content: "“"; } .desk-q::after { content: "”"; }
+.desk-q:hover { color: var(--red); }
+.desk-q:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 2px; }
+.desk-sep { flex: none; align-self: center; width: 5px; height: 5px; margin: 0 14px; background: var(--red); opacity: .8; }
+.desk-asked-note { grid-column: 2; margin: 2px 0 0; font: 400 12.5px/1.4 var(--head); font-stretch: 90%; color: var(--muted); }
+.desk.asked .desk-asked { display: none; }
+@media (prefers-reduced-motion: reduce) { .desk-tape.drifting .desk-track { animation: none; } }
+
 /* what the desk says back */
 .desk-out:empty { display: none; }
 .desk-out { margin-top: 18px; }
@@ -113,4 +136,6 @@ html.desk-open { overflow: hidden; }
   .desk-close { top: 13px; right: 16px; }
   .clip.best .clip-head { font-size: 25px; }
   .desk-more { grid-template-columns: 1fr; }
+  .desk-asked { grid-template-columns: minmax(0, 1fr); row-gap: 3px; }
+  .desk-asked-note { grid-column: 1; }
 }

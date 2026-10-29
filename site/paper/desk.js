@@ -10,6 +10,7 @@
   const ROOT = ED ? "../" : "./";
   const HOME = /^(127\.0\.0\.1|localhost)$/.test(location.hostname) || location.hostname === "eie.taptappers.club";
   const API = HOME ? "/api/search" : "https://eie.taptappers.club/api/search";
+  const ASKED = API.replace(/search$/, "asked");
   const RM = matchMedia("(prefers-reduced-motion: reduce)");
   const KIND = { lead: "The lead", story: "A story", opinion: "Opinion", brief: "In brief", thought: "Thought for the day", box: "Box",
     number: "By the numbers", shelf: "On the shelf", laugh: "Laugh lines", word: "Word watch" };
@@ -37,24 +38,63 @@
   function box(mode) {
     const id = `desk-${mode}`;
     const input = h("input", { type: "search", id: `${id}-q`, name: "q", autocomplete: "off", spellcheck: "false", enterkeyhint: "search",
-      maxlength: "300", placeholder: "the story about push-ups as penance…", "aria-describedby": `${id}-how` });
+      // a placeholder whole at the narrowest width: on a phone the long one was cut mid-phrase
+      maxlength: "300", placeholder: innerWidth < 560 ? "push-ups as penance…" : "the story about push-ups as penance…", "aria-describedby": `${id}-how` });
     const go = h("button", { type: "submit", class: "desk-go" }, "Find it");
     const form = h("form", { class: "desk-form", role: "search", "aria-label": "Search the archive" },
       h("label", { class: "desk-lost", for: input.id }, "Lost", h("span", { class: "sr-only" }, ": describe what you remember")), input, go);
     const picks = [...TRY].sort(() => Math.random() - 0.5).slice(0, 3);
     const tries = h("p", { class: "desk-try" }, h("span", {}, "Try"), picks.map((t) => h("button", { type: "button", class: "desk-eg" }, t)));
     const out = h("div", { class: "desk-out", "aria-live": "polite" });
+    const asked = h("div", { class: "desk-asked", hidden: true });
     const el = h("section", { class: `desk desk-${mode}`, "aria-labelledby": `${id}-h` },
       h("div", { class: "desk-top" }, h("h2", { class: "desk-h", id: `${id}-h` }, "Lost & Found"),
         h("span", { class: "desk-tag" }, "The archive desk")),
       h("p", { class: "desk-how", id: `${id}-how` }, "Lost something from the show? A story, an argument, a book, a joke: describe it the way you remember it, however vaguely, and the desk will find the page it was printed on."),
-      form, tries, out);
+      form, tries, asked, out);
     form.addEventListener("submit", (ev) => { ev.preventDefault(); ask(input.value, out, input); });
     tries.addEventListener("click", (ev) => {
       const b = ev.target.closest(".desk-eg");
       if (b) { input.value = b.textContent; ask(b.textContent, out, input); }
     });
+    asked.addEventListener("click", (ev) => {
+      const b = ev.target.closest(".desk-q");
+      if (b) { input.value = b.dataset.q; ask(b.dataset.q, out, input); }
+    });
+    // cleared, the box is as it was: what readers asked comes back
+    input.addEventListener("input", () => { if (!input.value) { el.classList.remove("asked"); out.replaceChildren(); last = null; } });
+    lately().then((d) => float(d, asked, tries)).catch(() => {});
     return { el, input, out };
+  }
+
+  /* ── what readers asked, floated along the bar: the questions the desk judged fit to show others
+     (see search/server.py), most recent first. Until there are any, the "Try" examples stand in. ── */
+  let latelyP = null;
+  const lately = () => (latelyP ||= fetch(ASKED).then((r) => (r.ok ? r.json() : null)));
+
+  function float(d, asked, tries) {
+    if (!d?.asked?.length) return;
+    const qs = d.asked.slice(0, 24);
+    const item = (x) => [h("button", { type: "button", class: "desk-q", "data-q": x.q, title: x.n > 1 ? `Asked ${x.n} times` : null }, x.q),
+      h("span", { class: "desk-sep", "aria-hidden": "true" })];
+    const track = h("div", { class: "desk-track" }, h("span", { class: "desk-run" }, qs.map((x) => item(x))));
+    const tape = h("div", { class: "desk-tape", role: "group", "aria-label": "Questions other readers asked lately" }, track);
+    const total = d.total.toLocaleString("en-IN");
+    asked.replaceChildren(h("span", { class: "desk-asked-k" }, "Readers asked"), tape,
+      h("p", { class: "desk-asked-note" }, `${total} ${d.total === 1 ? "question" : "questions"} asked so far. Questions are shown to other readers, without names.`));
+    asked.hidden = false;
+    tries.hidden = true;
+    // only what is wider than the bar drifts, and slowly: a second copy makes the loop seamless
+    requestAnimationFrame(() => {
+      const run = track.firstElementChild, w = run.getBoundingClientRect().width;
+      if (w <= tape.clientWidth || RM.matches) return;
+      const copy = run.cloneNode(true);
+      copy.setAttribute("aria-hidden", "true");
+      for (const b of copy.querySelectorAll("button")) b.tabIndex = -1;
+      track.append(copy);
+      track.style.setProperty("--drift", `${Math.round(w / 34)}s`);   // about 34 px a second
+      tape.classList.add("drifting");
+    });
   }
 
   /* ── asking ─────────────────────────────────────────────────────────────────────────────────── */

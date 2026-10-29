@@ -5,7 +5,14 @@ by their words and by the hooks Claude wrote for each (hooks.py); then Claude, r
 candidates, picks the ones meant, best first, with a line on each.
 
   GET /api/search?q=the push-ups penance   ->  {"results": [{"ep": 45, "a": "ryan", "url": "45/#ryan", ...}], "mode": "ai"}
+  GET /api/asked                           ->  {"total": 1234, "asked": [{"q": "…", "n": 3, "t": "…"}]}
   GET /api/health
+
+Every search is written down (DATA/searches.jsonl, one line each: when, the question, how it was
+answered and where it led; never who asked). The questions other readers may see, the ones the page
+floats along the search bar, are those that found something and that Claude, reading the question with
+its candidates, judged fit to show: a genuine question about the show, with no one's personal details
+and nothing offensive. A filter here refuses links, addresses and numbers that look like phones too.
 
 Standard library only: it runs as a sidecar beside nginx in eie.taptappers.club's pod, on the files
 nginx serves (SITE, the published site) and the hooks (HOOKS), and asks auth2api in-cluster (AUTH2API,
@@ -38,6 +45,7 @@ AUTH2API = os.environ.get("AUTH2API", "http://auth2api.apps.svc.cluster.local:83
 KEY = os.environ.get("AUTH2API_KEY", "").strip()
 MODEL = os.environ.get("MODEL", "claude-haiku-4-5")
 WIDEN_ON = os.environ.get("WIDEN") == "1"
+DATA = os.environ.get("DATA", "/data")   # where every search is logged; none, if it can't be written
 ORIGINS = {"https://eie.taptappers.club", "https://rounak.taptappers.club"} | set(filter(None, os.environ.get("ORIGINS", "").split(",")))
 # Claude-read searches a reader may make: 8 a minute, 150 a day; and everyone together, 900 an hour.
 # Past those, the words alone answer. (LIMITS="minute,day,hour" changes them, for a test.)
@@ -167,7 +175,12 @@ as an archivist would: what the reader will find there, with its people and its 
 how it answers what they asked. Never repeat the headline; never invent what the place doesn't say.
 For example: “Amit's college friend Ryan, who did 25 push-ups as penance for every lapse”.
 
-Reply with JSON alone: {{"picks": [{{"n": 3, "note": "..."}}]}}
+Then say whether the reader's words may be shown to other readers, as one of the questions people have
+asked (“show”): true only for a genuine question about the show's ideas, stories, people, books or jokes,
+worded so a stranger would be curious; false for anything with a private person's name or details, a
+link, contact details, abuse, crudity, a test or gibberish, or anything that isn't about the show.
+
+Reply with JSON alone: {{"picks": [{{"n": 3, "note": "..."}}], "show": true}}
 
 The places:
 {places}"""
@@ -189,13 +202,14 @@ def ask(q, cands, eds):
     with urllib.request.urlopen(req, timeout=14) as r:
         reply = json.loads(r.read())
     text = "".join(b.get("text", "") for b in reply.get("content", []) if b.get("type") == "text")
-    picks = json.loads(text[text.index("{"):text.rindex("}") + 1]).get("picks", [])
+    reply = json.loads(text[text.index("{"):text.rindex("}") + 1])
+    picks, show = reply.get("picks", []), reply.get("show") is True
     out = []
     for p in picks:
         n = p.get("n")
         if isinstance(n, int) and 1 <= n <= len(cands) and all(cands[n - 1][1] is not x for x, _ in out):
             out.append((cands[n - 1][1], (p.get("note") or "").strip()[:160]))
-    return out[:5]
+    return out[:5], show
 
 
 class Limits:
@@ -224,7 +238,73 @@ class Limits:
             return True
 
 
+# never floated for others, whatever the verdict: links, addresses, long runs of digits (a phone), and a
+# few words no reader should meet in a newspaper's margin
+UNFIT = re.compile(r"(https?:|www\.|\.(com|in|org|net)\b|@|\d[\d\s-]{6,}\d)", re.I)
+CRUDE = set("""fuck fucking fucker shit shitty cunt bitch bastard dick cock pussy whore slut nigger nigga faggot fag
+retard retarded chutiya chutiye madarchod behenchod bhenchod bhosdike randi gandu lund""".split())
+
+
+def fit(q):
+    """May this question be floated for other readers, its verdict aside?"""
+    w = re.findall(r"[a-z']+", q.lower())
+    return 6 <= len(q) <= 90 and 2 <= len(q.split()) <= 16 and not UNFIT.search(q) and not CRUDE & set(w)
+
+
+class Asked:
+    """Every search, written down; and the questions fit to float for other readers, most recent first."""
+
+    def __init__(self):
+        self.lock = threading.Lock()
+        self.total = 0
+        self.shown = collections.OrderedDict()   # normalised -> {"q", "n", "t"}, oldest first
+        self.path = os.path.join(DATA, "searches.jsonl")
+        try:
+            os.makedirs(DATA, exist_ok=True)
+            with open(self.path, "a", encoding="utf-8"):
+                pass
+        except OSError as e:
+            print(json.dumps({"log": "off", "why": str(e)[:120]}), flush=True)
+            self.path = None
+        if self.path:
+            with open(self.path, encoding="utf-8") as f:
+                for line in f:
+                    try:
+                        self.count(json.loads(line))
+                    except ValueError:
+                        continue
+
+    def count(self, e):
+        self.total += 1
+        if e.get("show") and e.get("n") and fit(e["q"]):
+            k = " ".join(e["q"].lower().split()).rstrip("?.! ")
+            was = self.shown.pop(k, {"q": " ".join(e["q"].split()).rstrip(" "), "n": 0})
+            self.shown[k] = {**was, "n": was["n"] + 1, "t": e["t"]}
+            while len(self.shown) > 500:
+                self.shown.popitem(last=False)
+
+    def note(self, q, out, show, test=False):
+        r = out["results"]
+        e = {"t": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "q": q, "mode": out["mode"], "n": len(r),
+             "top": f"{r[0]['ep']}#{r[0]['a']}" if r else None, "show": bool(show) and not test,
+             **({"cached": True} if out.get("cached") else {}), **({"test": True} if test else {})}
+        with self.lock:
+            self.count(e)
+            if self.path:
+                try:
+                    with open(self.path, "a", encoding="utf-8") as f:
+                        f.write(json.dumps(e, ensure_ascii=False) + "\n")
+                except OSError as err:
+                    print(json.dumps({"log": "failed", "why": str(err)[:120]}), flush=True)
+
+    def public(self):
+        with self.lock:
+            recent = list(reversed(self.shown.values()))[:40]
+            return {"total": self.total, "asked": [{"q": x["q"], "n": x["n"], "t": x["t"]} for x in recent]}
+
+
 INDEX = None
+ASKED = None
 LIMITS = Limits()
 CACHE = collections.OrderedDict()   # a normalised question -> its answer, for a week
 CACHE_LOCK = threading.Lock()
@@ -238,17 +318,19 @@ def result(s, note, eds):
             "snip": snip, "note": note, "date": e["date"], "edition": e["head"], "title": e["title"], "url": f"{s['ep']}/#{s['a']}"}
 
 
-def answer(q, ip):
+def answer(q, ip, test=False):
     key = " ".join(words(q)) or q.lower()
     with CACHE_LOCK:
         hit = CACHE.get(key)
         if hit and time.time() - hit[0] < 7 * 86400:
             CACHE.move_to_end(key)
-            return {**hit[1], "cached": True}
+            out = {**hit[1], "cached": True}
+            ASKED.note(q, out, hit[2], test)
+            return out
     t0 = time.time()
     cands = INDEX.search(q)
     eds = INDEX.editions
-    mode, picks = "words", None
+    mode, picks, show = "words", None, False
     if KEY and LIMITS.take(ip):
         try:   # the words the piece may use, then candidates by both: the reader's own first (WIDEN=1; it
             # cost 1.4 s a search and changed nothing measurable on 50 vague questions, so it is off)
@@ -267,7 +349,7 @@ def answer(q, ip):
             print(json.dumps({"widen": "failed", "why": f"{type(e).__name__}: {str(e)[:120]}"}), flush=True)
         if cands:
             try:
-                picks = ask(q, cands, eds)
+                picks, show = ask(q, cands, eds)
                 mode = "ai"
             except Exception as e:   # the words alone, then
                 print(json.dumps({"ask": "failed", "why": f"{type(e).__name__}: {str(e)[:120]}"}), flush=True)
@@ -276,24 +358,25 @@ def answer(q, ip):
     out = {"q": q, "mode": mode, "results": [result(s, note, eds) for s, note in picks], "ms": round((time.time() - t0) * 1000)}
     if mode == "ai":   # only a considered answer is worth keeping
         with CACHE_LOCK:
-            CACHE[key] = (time.time(), out)
+            CACHE[key] = (time.time(), out, show)
             while len(CACHE) > 4000:
                 CACHE.popitem(last=False)
+    ASKED.note(q, out, show, test)
     return out
 
 
 class Handler(BaseHTTPRequestHandler):
     server_version = "eie-desk/1"
 
-    def log_message(self, *a):   # no reader's question is written down
+    def log_message(self, *a):   # no request line, and so no one's address: the searches log has the questions
         pass
 
-    def send(self, code, obj):
+    def send(self, code, obj, cache=0):
         body = json.dumps(obj, ensure_ascii=False).encode()
         self.send_response(code)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
-        self.send_header("Cache-Control", "no-store")
+        self.send_header("Cache-Control", f"public, max-age={cache}" if cache else "no-store")
         origin = self.headers.get("Origin", "")
         if origin in ORIGINS or origin.startswith("http://127.0.0.1") or origin.startswith("http://localhost"):
             self.send_header("Access-Control-Allow-Origin", origin)
@@ -309,6 +392,8 @@ class Handler(BaseHTTPRequestHandler):
         if u.path in ("/api/health", "/health"):
             return self.send(200, {"ok": True, "spots": INDEX.N, "editions": len(INDEX.editions), "hooked": sum(1 for s in INDEX.spots if s["hooks"]),
                                    "ai": bool(KEY), "model": MODEL})
+        if u.path in ("/api/asked", "/asked"):
+            return self.send(200, ASKED.public(), cache=60)
         if u.path not in ("/api/search", "/search"):
             return self.send(404, {"error": "not here"})
         q = urllib.parse.parse_qs(u.query).get("q", [""])[0]
@@ -317,18 +402,21 @@ class Handler(BaseHTTPRequestHandler):
             return self.send(400, {"error": "Describe it in a few words."})
         ip = (self.headers.get("X-Real-Ip") or self.headers.get("X-Forwarded-For", "").split(",")[0] or self.client_address[0]).strip()
         try:
-            self.send(200, answer(q, ip))
+            # a test of the desk (X-Desk-Test) is written down as one, and never floated as a reader's question
+            self.send(200, answer(q, ip, test=bool(self.headers.get("X-Desk-Test"))))
         except Exception as e:
             print(json.dumps({"search": "failed", "why": f"{type(e).__name__}: {str(e)[:160]}"}), flush=True)
             self.send(500, {"error": "The desk is closed for a moment. Try again."})
 
 
 def main():
-    global INDEX
+    global INDEX, ASKED
     t0 = time.time()
     INDEX = Index()
+    ASKED = Asked()
     print(json.dumps({"desk": "open", "port": PORT, "spots": INDEX.N, "editions": len(INDEX.editions),
-                      "hooked": sum(1 for s in INDEX.spots if s["hooks"]), "ai": bool(KEY), "seconds": round(time.time() - t0, 2)}), flush=True)
+                      "hooked": sum(1 for s in INDEX.spots if s["hooks"]), "ai": bool(KEY), "logged": ASKED.total, "log": bool(ASKED.path),
+                      "seconds": round(time.time() - t0, 2)}), flush=True)
     ThreadingHTTPServer(("0.0.0.0", PORT), Handler).serve_forever()
 
 
