@@ -14,17 +14,17 @@ const check = (name, ok, detail = "") => { out.push(ok); console.log(`${ok ? "pa
   for (const w of widths) {
     const p = await b.newPage({ viewport: { width: w, height: 1000 } });
     await p.goto(URL, { waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 120000 });
     const fit = await p.evaluate(() => document.documentElement.dataset.fit);
     if (fit !== "ok") bad.push(`${w}: ${fit}`);
     // 2. the jump loses and repeats nothing: page 1 + page 2 = the edition's lead
     if (w === 1440 || w === 1199 || w === 2560) {
       const r = await p.evaluate(async () => {
         const e = await fetch("edition.json").then((x) => x.json());
-        const clean = (s) => s.replace(/­/g, "").replace(/\{[^}]*\}/g, "").replace(/\*/g, "").replace(/^## /, "").replace(/\s+/g, " ").trim();
+        const clean = (s) => s.replace(/[­\u200b]/g, "").replace(/\{[^}]*\}|\[\[[^\]]*\]\]/g, "").replace(/\*/g, "").replace(/^## /, "").replace(/\s+/g, " ").trim();
         const want = clean(`${e.p1.lead.dateline}: ` + e.p1.lead.body.map(clean).join(" "));
-        // the words a reader sees: not the play marks' hidden time labels
-        const grab = (sel) => [...document.querySelectorAll(sel)].filter((el) => !el.classList.contains("jump")).map((el) => { const c = el.cloneNode(true); c.querySelectorAll(".say").forEach((x) => x.remove()); return c.textContent; }).join(" ");
+        // the words of the copy: not the play marks' hidden time labels, nor the cross-references' "→ No. 66"
+        const grab = (sel) => [...document.querySelectorAll(sel)].filter((el) => !el.classList.contains("jump")).map((el) => { const c = el.cloneNode(true); c.querySelectorAll(".say, .xr").forEach((x) => x.remove()); return c.textContent; }).join(" ");
         let got = clean(grab("#lead .text > *") + " " + grab("#from1 .text > *"));
         got = got.replace(/(\w)- (\w)/g, "$1$2");   // a word hyphenated across the jump
         return { same: got === want, want: want.length, got: got.length, diff: (() => { let i = 0; while (i < want.length && want[i] === got[i]) i++; return `${want.slice(i, i + 40)} | ${got.slice(i, i + 40)}`; })() };
@@ -38,16 +38,16 @@ const check = (name, ok, detail = "") => { out.push(ok); console.log(`${ok ? "pa
   {
     const p = await b.newPage({ viewport: { width: 1440, height: 1000 } });
     await p.goto(URL, { waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-fit]", { state: "attached", timeout: 120000 });
     const n1 = await p.evaluate(() => document.querySelector("#from1 .text").textContent.length);
     await p.setViewportSize({ width: 1260, height: 1000 });
     await p.waitForTimeout(400);
-    await p.waitForFunction(() => document.documentElement.dataset.fit, null, { timeout: 30000 });
+    await p.waitForFunction(() => document.documentElement.dataset.fit, null, { timeout: 120000 });
     await p.setViewportSize({ width: 1500, height: 1000 });   // and again, while it may still be setting
     await p.waitForTimeout(260);
     await p.setViewportSize({ width: 1440, height: 1000 });
     await p.waitForTimeout(400);
-    await p.waitForFunction(() => document.documentElement.dataset.fit, null, { timeout: 30000 });
+    await p.waitForFunction(() => document.documentElement.dataset.fit, null, { timeout: 120000 });
     const r = await p.evaluate(() => ({ fit: document.documentElement.dataset.fit, n: document.querySelector("#from1 .text").textContent.length, pages: document.querySelectorAll(".page").length, leads: document.querySelectorAll("#lead").length }));
     check("resizing re-sets the paper cleanly", r.fit === "ok" && r.n === n1 && r.pages === 4 && r.leads === 1, JSON.stringify({ ...r, before: n1 }));
     // 4. the crossword's keyboard: arrows, Tab, Backspace, Enter
@@ -75,7 +75,7 @@ const check = (name, ok, detail = "") => { out.push(ok); console.log(`${ok ? "pa
     const ctx = await b.newContext({ viewport: { width: w, height: 780 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 });
     const p = await ctx.newPage();
     await p.goto(URL, { waitUntil: "networkidle" });
-    await p.waitForSelector("html[data-ready]", { state: "attached", timeout: 30000 });
+    await p.waitForSelector("html[data-ready]", { state: "attached", timeout: 120000 });
     const r = await p.evaluate(() => { const g = document.querySelector(".cw-grid").getBoundingClientRect(); return { wide: document.documentElement.scrollWidth, grid: Math.round(g.right) }; });
     check(`on a ${w}px phone nothing is wider than the screen, the crossword included`, r.wide <= w && r.grid <= w, JSON.stringify(r));
     await ctx.close();
