@@ -445,7 +445,9 @@ const para = (s, cls) => (s.startsWith("## ") ? h("h4", {}, s.slice(3))
 function bind(parent, mark) {
   const prev = parent.lastChild;
   if (!mark) return parent;
-  if (prev?.nodeType !== 3) { parent.append(mark); return parent; }
+  // a mark right after another (a cross-reference after a play mark): a line may break between them, or
+  // the word and both marks were one unbreakable piece that ran out of a narrow column
+  if (prev?.nodeType !== 3) { if (prev) parent.append("\u200b"); parent.append(mark); return parent; }
   const m = prev.data.match(/(\S+)\s*$/);
   if (!m) { parent.append(mark); return parent; }
   const word = m[1], cut = word.lastIndexOf("\u00ad") + 1;
