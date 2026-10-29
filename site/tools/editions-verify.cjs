@@ -102,7 +102,8 @@ async function main() {
         r.widths[w].twice = await p.evaluate(TWICE);
         if (w === WIDTHS[0]) r.xrefs = await p.evaluate(XREFS);
         // not a fault, but worth knowing: marks a text left out to set evenly at this width (Fit.options)
-        r.widths[w].hidden = await p.evaluate(() => [...document.querySelectorAll(".text.noxref .xref, .text > .dropped .xref")].map((x) => x.id));
+        r.widths[w].hidden = await p.evaluate(() => [...document.querySelectorAll(".text.noxref .xref, .text > .dropped .xref")]
+          .map((x) => x.closest(".dropped") ? `${x.id}(in a dropped paragraph)` : x.id));
       }
     } catch (e) {
       r.errors.push(`desktop: ${e.message.split("\n")[0]}`);
