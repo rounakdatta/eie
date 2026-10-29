@@ -498,7 +498,10 @@ function crossword() {
     cell.input = h("input", { class: "cw-in", type: "text", maxlength: "2", autocomplete: "off", autocorrect: "off", autocapitalize: "characters", spellcheck: "false",
       "aria-label": entries.map((e) => `${name(e)}, letter ${e.cells.indexOf(cell) + 1} of ${e.answer.length}`).join("; ") });
     cell.input.value = saved[cell.k] || "";
-    cell.box = h("div", { class: "cw-cell", style: { gridRow: cell.r + 1, gridColumn: cell.c + 1 } },
+    // every line drawn once: a square draws its own top and left edges, and its right and bottom edges
+    // only where no square follows (two squares each drawing a whole outline overlapped by turns)
+    const edge = [!at.has(`${cell.r},${cell.c + 1}`) && "r", !at.has(`${cell.r + 1},${cell.c}`) && "b"].filter(Boolean).join(" ");
+    cell.box = h("div", { class: `cw-cell ${edge}`.trim(), style: { gridRow: cell.r + 1, gridColumn: cell.c + 1 } },
       cell.n ? h("span", { class: "cw-n", "aria-hidden": "true" }, String(cell.n)) : null, cell.input);
     grid.append(cell.box);
   }
@@ -653,6 +656,30 @@ function stripFit(root) {
   }
 }
 
+/* A crossword's squares, as large as its column allows (up to 40px), each a whole number of the screen's
+   own pixels, and its lines a whole number thick. On a phone at three pixels to the point, a square of
+   25.87 points was 77.6 pixels: some squares came out 77 and some 78, some lines thicker than others, and
+   rows that didn't quite meet. A desktop keeps whole points as before (the band it sits in is fitted to
+   them), snapped to pixels only where a screen's ratio isn't whole. */
+function cwFit(root) {
+  const dpr = devicePixelRatio || 1, article = document.documentElement.classList.contains("article");
+  // a length Chrome keeps exactly (it lays out in 64ths of a point): otherwise each square is a hair
+  // off, and across fifteen squares the hairs add up to nearly a pixel
+  const exact = (pt) => Math.abs(pt * 64 - Math.round(pt * 64)) < 1e-6;
+  for (const g of $$(".cw-grid", root)) {
+    const w = +g.style.getPropertyValue("--w"), room = g.parentElement.clientWidth;
+    if (!w || !room) continue;
+    const pts = article ? room / w : Math.floor(Math.min(40, room / w));
+    let px = Math.floor(pts * dpr);
+    for (let k = px; k >= Math.floor(px * 0.85); k--) if (exact(k / dpr)) { px = k; break; }
+    const cell = px / dpr;
+    g.style.setProperty("--cell", `${cell}px`);
+    g.style.setProperty("--line", `${Math.max(1, Math.round(dpr)) / dpr}px`);
+    // on a phone the grid starts at the column's edge (a whole pixel), moved in by whole pixels to centre it
+    g.style.marginLeft = article ? `${Math.floor(((room - cell * w) / 2) * dpr) / dpr}px` : "";
+  }
+}
+
 /* Pad a block down to the next line, keeping at least data-gap pixels of white below its ink;
    give a fixed picture its natural crop in whole lines. */
 function snapAll(root) {
@@ -660,8 +687,7 @@ function snapAll(root) {
   stripFit(root);
   // a chapter label that cannot be read whole keeps only its rule; its name is in its tooltip
   for (const b of $$(".strip-ch button", root)) b.classList.toggle("tight", b.scrollWidth > b.clientWidth + 1);
-  // a crossword's squares are as large as its column allows, up to 40px
-  for (const g of $$(".cw-grid", root)) g.style.setProperty("--cell", `${Math.min(40, Math.floor(g.parentElement.clientWidth / +g.style.getPropertyValue("--w")))}px`);
+  cwFit(root);
   for (const el of $$(".pic[data-fixed]", root)) el.style.height = `${Math.round((el.clientWidth * +el.dataset.r.split(",")[1]) / LH) * LH}px`;
   for (const el of $$(".snap", root)) {
     el.style.paddingBottom = "";
@@ -1115,6 +1141,7 @@ async function render() {
     $$(".page").forEach((p) => p.classList.add("set"));
     shown();
     $$(".page").forEach(stripFit);
+    $$(".page").forEach(cwFit);
     // measured in the paper's own faces: a fallback font's narrower word fitted where the real one didn't
     document.fonts.ready.then(() => $$(".page").forEach((p) => { fitHeads(p); stripFit(p); }));
   }
