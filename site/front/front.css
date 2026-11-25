@@ -109,5 +109,14 @@ a { color: inherit; }
 }
 @media (prefers-reduced-motion: reduce) { .card img { transition: none; } }
 
+/* the newsreel: a way in to the reel, its first four moments */
+.reelhead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.reelhead .go { flex: none; padding: 8px 15px; border-radius: 19px; background: var(--ink); color: #fff; text-decoration: none;
+  font: 700 14px/1 var(--head); font-stretch: 85%; letter-spacing: .02em; }
+.reelhead .go:hover { background: var(--ink-2); }
+.cards.reels { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cards.reels .hd { font-size: 20px; }
+@media (max-width: 760px) { .cards.reels { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cards.reels .hd { font-size: 17.5px; } }
+
 /* Lost & Found, the archive desk (paper/desk.css): its own double rule is its border */
 .desk-band { border-top: 0; padding-top: 0; margin-top: 26px; }

@@ -1,6 +1,7 @@
 #!/bin/sh
 # Gather the newspaper into one folder: the archive's front page, every edition at /N/ (its page, its
-# copy and data, its pictures), the paper's shared files at /paper/, and the shelf's covers at /covers/. Both places it is published
+# copy and data, its pictures), the paper's shared files at /paper/, the newsreel at /reels/, and the
+# shelf's covers at /covers/. Both places it is published
 # serve exactly this: GitHub Pages (.github/workflows/pages.yml) and eie.taptappers.club, whose pod
 # runs this script itself (homelab.setup: kubernetes/apps/hugo-sites/sites/eie).
 #
@@ -14,6 +15,8 @@ cp "$site/paper/index.html" "$out/paper/index.html"   # the old address of Episo
 cp "$site/grain.png" "$out/"
 cp -r "$site/front/." "$out/"
 cp "$site/editions/index.json" "$out/editions.json"
+mkdir -p "$out/reels"   # the newsreel: its page here, its feed served by the desk (search/reels.py)
+cp "$site/reels/index.html" "$site/reels/reels.css" "$site/reels/reels.js" "$out/reels/"
 mkdir -p "$out/covers"   # the shelf's covers, shared by every edition (site/paper/covers.py)
 for f in "$site"/covers/*.jpg; do [ -f "$f" ] && cp "$f" "$out/covers/"; done
 for d in "$site"/editions/[0-9][0-9][0-9]; do

@@ -24,6 +24,7 @@ let D, A, E, WORDS;   // the episode, the archive (unused here), this edition, t
 
 const MEDIA = "media/", SHARED = "../paper/media/", COVERS = "../covers/";
 const GLASS = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.6 12.6 17 17" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
+const REEL = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3.8v12.4L16 10z" fill="currentColor"/></svg>';
 const LH = 22, GUT = 22;
 const RM = matchMedia("(prefers-reduced-motion: reduce)");
 const item = (id) => D.items.find((i) => i.id === id);
@@ -213,8 +214,19 @@ function edbar() {
     h("span", { class: "mid" }, h("a", { class: "all", href: "../" }, `All ${N.total} editions`),
       h("button", { type: "button", class: "find", "aria-haspopup": "dialog", "aria-keyshortcuts": "/", "aria-label": "Lost & Found: find something you half-remember",
         onclick: (ev) => document.dispatchEvent(new CustomEvent("eie:desk", { detail: ev.currentTarget })) },
-      h("span", { class: "glass", html: GLASS }), h("span", { class: "long" }, "Lost & Found"), h("span", { class: "short" }, "Find"))),
+      h("span", { class: "glass", html: GLASS }), h("span", { class: "long" }, "Lost & Found"), h("span", { class: "short" }, "Find")),
+      // the newsreel (../reels/): this edition's moments one after another, offered while the reel is on
+      offerReel(h("a", { class: "reelgo", href: `../reels/?ep=${EP}`, hidden: true, "aria-label": "The newsreel: this edition’s moments, one after another" },
+        h("span", { class: "tri", html: REEL }), h("span", { class: "long" }, "Newsreel"), h("span", { class: "short" }, "Watch")))),
     link(N.next, "next", "The next edition", [h("span", { class: "w" }, "Episode "), `${N.next?.n} ›`]));
+}
+
+/* The newsreel has a switch, the desk's (search/reels.py): while it is off, nothing offers it. */
+function offerReel(el) {
+  const home = /^(127\.0\.0\.1|localhost)$/.test(location.hostname) || location.hostname === "eie.taptappers.club";
+  fetch(home ? "/api/reels/state" : "https://eie.taptappers.club/api/reels/state")
+    .then((r) => (r.ok ? r.json() : null)).then((s) => { if (s?.on) el.hidden = false; }).catch(() => {});
+  return el;
 }
 
 function page1() {

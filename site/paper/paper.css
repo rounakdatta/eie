@@ -103,6 +103,10 @@ html:not(.article) .skyline .tease:nth-of-type(3) { padding-left: 20px; }
 .edbar .find:hover .long, .edbar .find:hover .short { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .edbar .find:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 1px; }
 .edbar .find .short { display: none; }
+.edbar .reelgo { display: inline-flex; align-items: center; gap: 5px; padding: 4px 6px; margin: -4px -6px; color: var(--ink); }
+.edbar .reelgo svg { width: 10px; height: 10px; }
+.edbar .reelgo:hover .long, .edbar .reelgo:hover .short { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.edbar .reelgo .short { display: none; }
 .nextup { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--gut); margin-top: var(--lh); padding-top: calc(var(--lh) / 2); border-top: 3px double var(--ink); }
 .nextup .nx { display: block; text-decoration: none; }
 .nextup .k { display: block; font: 700 11px/var(--lh) var(--head); font-stretch: 85%; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
@@ -428,6 +432,8 @@ html.article .edbar { margin: -6px 0 8px; font-size: 10.5px; letter-spacing: .06
 html.article .edbar .mid { gap: 12px; }
 html.article .edbar .find .long { display: none; }
 html.article .edbar .find .short { display: inline; }
+html.article .edbar .reelgo .long { display: none; }
+html.article .edbar .reelgo .short { display: inline; }
 @media (max-width: 380px) { html.article .edbar { letter-spacing: .03em; } html.article .edbar .w { display: none; } html.article .edbar .mid { gap: 9px; } }
 html.article .nextup { grid-template-columns: 1fr; row-gap: 14px; }
 html.article .nextup .next { text-align: left; }
