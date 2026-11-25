@@ -94,6 +94,31 @@ function every(eds) {
   filter();
 }
 
+/* The newsreel's first moments, as a way in. Its feed answers 503 while the reel is switched off, and
+   then the band stays hidden: nothing offers a reel that isn't there. */
+async function newsreel() {
+  const home = /^(127\.0\.0\.1|localhost)$/.test(location.hostname) || location.hostname === "eie.taptappers.club";
+  // a reader who has watched some of it sees what comes next for them, not the same four every visit
+  let pos = -1;
+  try { pos = JSON.parse(localStorage.getItem("eie.reel.pos")) ?? -1; } catch {}
+  const r = await fetch(`${home ? "" : "https://eie.taptappers.club"}/api/reels?n=4${pos >= 0 ? `&at=${pos + 1}` : ""}`);
+  if (!r.ok) return;
+  const d = await r.json();
+  if (!d.items.length) return;
+  if (pos >= 0) {
+    const n = pos + 1;
+    $("#reelband .go").firstChild.textContent = "Carry on ";
+    $("#reelband .sub").textContent = `You are ${n.toLocaleString("en-IN")} ${n === 1 ? "moment" : "moments"} in, of ${d.total.toLocaleString("en-IN")}. Next:`;
+  }
+  const who = ["Amit Varma", "Ajay Shah", ""];
+  const kind = { S: "A story", C: "An idea", R: "Recommended", J: "A laugh" };
+  $("#reels").replaceChildren(...d.items.map((x) => h("a", { class: "card", href: `reels/?n=${x.id}` },
+    h("span", { class: "pic" }, h("img", { src: `${x.ep}/media/${x.poster}`, alt: "", loading: "lazy", decoding: "async" })),
+    h("span", { class: "no" }, kind[x.k], who[x.spk] ? ` · ${who[x.spk]}` : ""),
+    h("span", { class: "hd" }, x.head || `No. ${x.ep}: ${x.edition}`))));
+  $("#reelband").hidden = false;
+}
+
 async function main() {
   const data = await (await fetch("editions.json")).json();
   const eds = data.editions, byN = new Map(eds.map((e) => [e.n, e]));
@@ -106,3 +131,4 @@ async function main() {
 }
 
 main().catch((err) => { console.error(err); $("#all").append(h("p", { class: "none" }, "The list of editions couldn’t load.")); });
+newsreel().catch(() => {});
