@@ -1,0 +1,273 @@
+/* The newsreel: the paper's moments, one to a screen, each played at the second it was said.
+
+   It is the paper's own type and inks (paper/paper.css): Archivo condensed for what a piece is,
+   Newsreader for what was said, the folio's blue, and colour for one thing only, who is speaking
+   (vermilion Amit, cobalt Ajay). In daylight it is a page of the paper; at night (the system's dark
+   setting) the same page by lamplight, because a lit white page around a film is a glare.
+
+   One reel fills the screen. The feed scrolls natively and snaps a reel at a time, so a finger, a
+   trackpad, a wheel and the keyboard all move it with the platform's own physics; the reels are a
+   handful of recycled slots, and the films three players laid over them (reels.js). */
+
+@font-face { font-family: "Head"; src: url(../paper/fonts/archivo.woff2) format("woff2"); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
+@font-face { font-family: "Text"; src: url(../paper/fonts/newsreader.woff2) format("woff2"); font-weight: 200 800; font-display: swap; }
+@font-face { font-family: "Text"; src: url(../paper/fonts/newsreader-italic.woff2) format("woff2"); font-weight: 200 800; font-style: italic; font-display: swap; }
+
+:root {
+  --page: #fbfaf6; --ink: #121212; --ink-2: #2f2f2f; --muted: #6c6a66; --hair: #d9d4ca; --rule: #b9b4aa;
+  --unsaid: #77736b; --blue: #1f5ea8; --amit: #d4522f; --ajay: #2b5ba6; --other: #6c6a66;
+  --screen: #1a1917; --chip: #fff; --chip-ink: #121212; --veil: rgba(18, 18, 18, .42); --sheet: #fbfaf6;
+  --head: "Head", "Arial Narrow", sans-serif; --text: "Text", Georgia, serif;
+  --top: calc(52px + env(safe-area-inset-top));
+  --bottom: calc(68px + env(safe-area-inset-bottom));
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #121110; --ink: #efebe3; --ink-2: #d8d3c9; --muted: #a29d94; --hair: #2c2a27; --rule: #45413c;
+    --unsaid: #8d887f; --blue: #8db2e8; --amit: #f08a66; --ajay: #86a9ec; --other: #a29d94;
+    --screen: #000; --chip: #24221f; --chip-ink: #efebe3; --veil: rgba(0, 0, 0, .6); --sheet: #1a1917;
+  }
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body { margin: 0; overflow: hidden; background: var(--page); color: var(--ink); font: 400 16px/1.45 var(--text);
+  -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; }
+:focus-visible { outline: 2.5px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.t { font-variant-numeric: tabular-nums lining-nums; }
+svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ── the bar: the way back, which reel this is and where in it, the sound ─────────────── */
+.bar { position: fixed; z-index: 3; top: 0; left: 0; right: 0; height: var(--top); padding: env(safe-area-inset-top) max(10px, env(safe-area-inset-right)) 0 max(10px, env(safe-area-inset-left));
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 8px; background: var(--page); border-bottom: 1px solid var(--hair); }
+.back { justify-self: start; display: inline-flex; align-items: center; gap: 2px; min-height: 44px; padding: 0 8px 0 0; text-decoration: none;
+  font: 700 14px/1 var(--head); font-stretch: 85%; letter-spacing: .02em; color: var(--ink-2); }
+.back svg { width: 22px; height: 22px; }
+.back { white-space: nowrap; }
+.back .short { display: none; }
+@media (max-width: 380px) { .back .long { display: none; } .back .short { display: inline; } }
+.which { display: grid; grid-template-columns: auto auto; column-gap: 3px; justify-items: center; align-items: center; min-height: 44px; padding: 4px 8px 4px 12px; border-radius: 22px; max-width: min(58vw, 520px); }
+.which .name, .which .where { grid-column: 1; }
+.which .name { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 800 15px/1.15 var(--head); font-stretch: 78%; letter-spacing: .01em; text-transform: uppercase; }
+.which .where { font: 600 11.5px/1.3 var(--head); font-stretch: 88%; color: var(--muted); letter-spacing: .03em; }
+.which .caret { grid-column: 2; grid-row: 1 / span 2; width: 18px; height: 18px; color: var(--muted); }
+.which:hover .name { text-decoration: underline; text-underline-offset: 3px; }
+.sound { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px 0 10px; border-radius: 20px;
+  font: 700 13.5px/1 var(--head); font-stretch: 85%; letter-spacing: .02em; border: 1px solid var(--rule); background: var(--chip); color: var(--chip-ink); }
+.sound .on { display: none; }
+.sound[aria-pressed="true"] .on { display: inline; }
+.sound[aria-pressed="true"] .off { display: none; }
+/* muted while it plays: the one thing to do first, so it is the one dark button */
+body[data-muted-playing] .sound { background: var(--ink); color: var(--page); border-color: var(--ink); }
+
+/* ── the feed ───────────────────────────────────────────────────────────────── */
+/* between the bars, never under them: nothing of the page ever lies over a film, even mid-swipe */
+#feed { position: fixed; top: var(--top); bottom: var(--bottom); left: 0; right: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; scroll-snap-type: y mandatory;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch; outline: none; }
+#feed::-webkit-scrollbar { display: none; }
+.track { position: relative; width: 100%; }
+.list { position: absolute; inset: 0; transition: opacity .25s ease; }
+/* the first reel appears once it has its words, rather than as an empty frame filling in */
+body:not(.ready) .list, body:not(.ready) .films { opacity: 0; }
+
+.reel { position: absolute; left: 0; right: 0; height: var(--h, 100vh); scroll-snap-align: start; scroll-snap-stop: always;
+  display: flex; align-items: center; justify-content: center;
+  padding: 10px max(18px, env(safe-area-inset-right)) 10px max(18px, env(safe-area-inset-left)); }
+.reel .inner { width: 100%; max-width: 640px; display: flex; flex-direction: column; }
+.reel:focus-visible { outline: 2.5px solid var(--blue); outline-offset: -6px; }
+.reel .text, .reel .media { display: contents; }
+.kicker { order: 1; display: flex; align-items: center; gap: 7px; margin: 0 0 7px; font: 700 12px/1.2 var(--head); font-stretch: 85%;
+  letter-spacing: .09em; text-transform: uppercase; color: var(--blue); }
+.kicker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
+.kicker .who { color: var(--muted); }
+.head { order: 2; margin: 0 0 14px; font: 800 30px/1.06 var(--head); font-stretch: 76%; letter-spacing: -.005em; text-wrap: balance; color: var(--ink); }
+/* a laugh's line is its setup, as the paper prints an overheard remark: lighter, before the words */
+.reel[data-k="J"] .head { font: italic 400 19px/1.3 var(--text); letter-spacing: 0; color: var(--ink-2); margin-bottom: 12px; }
+.reel[data-k="J"] .head:empty { display: none; }
+.screen { order: 3; position: relative; margin: 0 -18px; aspect-ratio: 16 / 9; min-height: 200px; background: var(--screen); overflow: hidden; }
+.screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.reel[data-state="error"] .foot .t { color: var(--ink-2); }
+/* under the film: how far through the moment, when it was said, and where it comes from */
+.foot { order: 4; position: relative; display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin: 0; padding: 7px 0 0;
+  font: 600 12.5px/1.3 var(--head); font-stretch: 88%; color: var(--muted); }
+.foot::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--hair); }
+.foot .bar-p { position: absolute; left: 0; top: 0; height: 2px; width: 100%; transform-origin: 0 50%; transform: scaleX(var(--p, 0)); background: var(--c); }
+.foot a { text-decoration: none; color: var(--ink-2); }
+.foot a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.said { order: 5; margin: 14px 0 0; font: italic 400 21px/1.36 var(--text); color: var(--unsaid); text-wrap: pretty; }
+.said .w { transition: color .12s linear; }
+.said .w.on { color: var(--ink); }
+.said .w.now { color: var(--c); }
+.reel[data-state="ended"] .said .w, .reel[data-state="free"] .said .w, .reel[data-state="error"] .said .w { color: var(--ink); }
+.dek .long { display: none; }
+.dek { order: 6; margin: 12px 0 0; font: 400 16px/1.45 var(--text); color: var(--ink-2); text-wrap: pretty;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.src { order: 7; margin: 12px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; font: 600 13px/1.4 var(--head); font-stretch: 88%; color: var(--muted); }
+.src a { text-decoration: none; }
+.src a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.src .ed b { color: var(--ink-2); font-weight: 700; }
+.src .all { font: inherit; color: var(--blue); }
+.src .all::after { content: " ›"; }
+.src .all:hover { text-decoration: underline; text-underline-offset: 3px; }
+.reel .head, .reel .dek { cursor: pointer; }
+/* a recommendation: its title and maker beside its cover, as the shelf prints it */
+.titled { order: 2; display: flex; gap: 14px; align-items: flex-start; justify-content: space-between; margin: 0 0 14px; }
+.titled .head { margin: 0; }
+.by { margin: 4px 0 0; font: italic 400 17px/1.3 var(--text); color: var(--ink-2); }
+.cover { flex: none; width: 52px; height: auto; margin-top: 3px; box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 0 0 .5px rgba(0,0,0,.12); }
+
+/* the films: three players, laid over whichever reels they are playing, always as YouTube draws them */
+.frame { position: absolute; left: 0; top: 0; z-index: 1; background: transparent; }
+.frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.terms { margin: 16px 0 0; font: 400 13px/1.45 var(--text); color: var(--muted); text-wrap: pretty; }
+.end .terms { max-width: 36em; }
+
+/* the end of a reel: what is next, and the ways on */
+.end { text-align: center; }
+.end .inner { align-items: center; }
+.end h2 { margin: 0 0 10px; font: 800 34px/1.05 var(--head); font-stretch: 74%; text-wrap: balance; }
+.end p { margin: 0 0 18px; font: italic 400 18px/1.4 var(--text); color: var(--ink-2); text-wrap: balance; }
+.end .ways { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.end .ways a, .end .ways button { padding: 10px 16px; border-radius: 22px; border: 1px solid var(--rule); background: var(--chip); color: var(--chip-ink);
+  font: 700 14px/1 var(--head); font-stretch: 85%; text-decoration: none; min-height: 42px; display: inline-flex; align-items: center; }
+.end .ways .first { background: var(--ink); color: var(--page); border-color: var(--ink); }
+
+/* A reel never spills into the next: where its words don't fit the screen, reels.js steps down (data-fit)
+   — the line on why it matters shorter, then the words as said smaller, then the line gone. */
+.reel[data-fit="1"] .dek { -webkit-line-clamp: 2; }
+.reel[data-fit="2"] .dek { -webkit-line-clamp: 1; }
+.reel[data-fit="2"] .said, .reel[data-fit="3"] .said { font-size: 18px; line-height: 1.34; margin-top: 10px; }
+.reel[data-fit="3"] .dek { display: none; }
+.reel[data-fit="3"] .head { font-size: 25px; }
+.reel[data-fit="4"] .dek, .reel[data-fit="4"] .src { display: none; }
+.reel[data-fit="4"] .said { font-size: 16px; line-height: 1.32; margin-top: 8px; }
+.reel[data-fit="4"] .head { font-size: 22px; margin-bottom: 8px; }
+
+/* not loaded yet: the shape of a reel, quietly, never a flash of "nothing here" */
+.reel[data-state="loading"] .head, .reel[data-state="loading"] .said { color: transparent; }
+.reel[data-state="loading"] .head::before { content: ""; display: block; height: 1.9em; width: 82%; background: var(--hair); border-radius: 2px; }
+
+/* ── the controls, within a thumb's reach ─────────────────────────────────────── */
+.ctl { position: fixed; z-index: 3; left: 0; right: 0; bottom: 0; height: var(--bottom); padding: 0 max(12px, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(12px, env(safe-area-inset-left));
+  display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--page); border-top: 1px solid var(--hair); }
+.ctl button { min-width: 48px; height: 48px; border-radius: 24px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; color: var(--ink); }
+.ctl button:hover { background: color-mix(in srgb, var(--ink) 7%, transparent); }
+.ctl .play { width: 56px; height: 56px; border-radius: 28px; background: var(--ink); color: var(--page); }
+.ctl .play:hover { background: var(--ink-2); }
+.ctl .play .go, .ctl .play .again { display: none; }
+body[data-paused] .ctl .play .pause, body[data-ended] .ctl .play .pause { display: none; }
+body[data-paused]:not([data-ended]) .ctl .play .go { display: inline; fill: currentColor; stroke: none; }
+body[data-ended] .ctl .play .again { display: inline; }
+.ctl .share { padding: 0 14px; font: 700 13.5px/1 var(--head); font-stretch: 85%; letter-spacing: .02em; }
+.ctl .more { padding: 0 16px; border: 1px solid var(--rule); background: var(--chip); color: var(--chip-ink); font: 700 13.5px/1 var(--head); font-stretch: 85%; letter-spacing: .02em; }
+.ctl .prev, .ctl .next { color: var(--muted); }
+.ctl .sound { height: 44px; border-radius: 22px; padding: 0 14px 0 10px; }
+/* a finger swipes; the arrows stay for a screen reader */
+@media (pointer: coarse) {
+  .ctl .prev, .ctl .next { position: absolute; width: 1px; height: 1px; min-width: 0; overflow: hidden; clip: rect(0 0 0 0); }
+}
+.ctl button:disabled { opacity: .3; cursor: default; background: none; }
+body[data-broken] .ctl .play { display: none; }   /* a film that can't play has nothing to play again */
+
+.keys { display: none; }
+.keys kbd { font: 700 11px/1 var(--head); padding: 2px 5px; border: 1px solid var(--rule); border-radius: 4px; color: var(--ink-2); }
+
+/* ── the sheet: narrowing the reel, and the rest of a piece ───────────────────── */
+.sheet { position: fixed; z-index: 5; inset: 0; background: var(--veil); display: flex; align-items: flex-end; justify-content: center; }
+.sheet-card { width: min(640px, 100%); max-height: min(86vh, 760px); overflow: auto; overscroll-behavior: contain; background: var(--sheet); color: var(--ink);
+  border-radius: 14px 14px 0 0; padding: 18px max(20px, env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  box-shadow: 0 -8px 30px rgba(0,0,0,.18); }
+.sheet h2 { margin: 0 0 4px; font: 900 26px/1.05 var(--head); font-stretch: 72%; text-transform: uppercase; }
+.sheet .sub { margin: 0 0 14px; font: italic 400 16px/1.4 var(--text); color: var(--ink-2); }
+.sheet h3 { margin: 18px 0 8px; font: 700 12px/1.2 var(--head); font-stretch: 85%; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.chips button, .chips a { padding: 8px 13px; min-height: 38px; border-radius: 19px; border: 1px solid var(--rule); background: var(--chip); color: var(--chip-ink);
+  font: 700 13.5px/1.1 var(--head); font-stretch: 85%; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; text-align: left; }
+.chips [aria-pressed="true"], .chips [aria-current="true"] { background: var(--ink); color: var(--page); border-color: var(--ink); }
+.chips .n { font-weight: 600; opacity: .7; }
+.find { display: flex; gap: 8px; }
+.find input { flex: 1; min-width: 0; padding: 10px 12px; border: 1px solid var(--ink); border-radius: 0; background: var(--page); color: var(--ink); font: 400 17px/1.2 var(--text); }
+.find button { padding: 0 16px; background: var(--ink); color: var(--page); font: 700 14px/1 var(--head); font-stretch: 85%; }
+.sheet .done { margin-top: 18px; width: 100%; min-height: 46px; border-radius: 23px; background: var(--ink); color: var(--page); font: 700 15px/1 var(--head); font-stretch: 85%; }
+.sheet .whole p { margin: 0 0 12px; font: 400 17px/1.5 var(--text); }
+.sheet h2.piece { margin: 4px 0 10px; font: 800 30px/1.06 var(--head); font-stretch: 76%; text-transform: none; text-wrap: balance; }
+.sheet .kicker { margin-bottom: 4px; }
+
+.toast { position: fixed; z-index: 6; left: 50%; bottom: calc(var(--bottom) + 10px); transform: translate(-50%, 8px); margin: 0; padding: 9px 15px; border-radius: 19px;
+  background: var(--ink); color: var(--page); font: 700 13.5px/1.2 var(--head); font-stretch: 85%; opacity: 0; transition: opacity .2s, transform .2s; pointer-events: none; }
+.toast[data-on] { opacity: 1; transform: translate(-50%, 0); }
+.nojs { padding: 30vh 24px 0; text-align: center; font: italic 18px/1.5 var(--text); }
+
+/* ── wide screens: a spread, the film beside what it is ────────────────────────── */
+@media (min-width: 980px) and (min-height: 560px) {
+  :root { --top: 64px; --bottom: 76px; }
+  .bar { padding: 0 24px; }
+  .which .name { font-size: 17px; }
+  .which .where { font-size: 12.5px; }
+  .reel { padding-left: 40px; padding-right: 40px; }
+  .reel .inner { max-width: 1320px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 clamp(32px, 4vw, 64px); align-items: start; }
+  .reel .text, .reel .media { display: flex; flex-direction: column; min-width: 0; }
+  .reel .text { margin-top: -3px; }   /* the kicker's cap height level with the film's top edge */
+  .kicker { font-size: 13px; margin-bottom: 12px; }
+  .head { font-size: clamp(38px, 3.4vw, 58px); margin-bottom: 18px; }
+  .reel[data-k="J"] .head { font-size: clamp(26px, 2.2vw, 36px); line-height: 1.25; }
+  .screen { margin: 0; }
+  .said { font-size: clamp(21px, 1.65vw, 27px); margin-top: 18px; }
+  .dek { font-size: clamp(17px, 1.25vw, 20px); -webkit-line-clamp: 9; margin-top: 0; }
+  /* a desktop has the room for the whole of why it matters */
+  .dek .short { display: none; }
+  .dek .long { display: inline; }
+  .src { font-size: 14px; margin-top: 18px; }
+  .ctl { gap: 14px; }
+  .end .inner { display: flex; max-width: 720px; }
+  .sheet { align-items: center; }
+  .sheet-card { border-radius: 14px; }
+  .ctl .sound { position: fixed; top: 12px; right: 24px; }
+  .keys { display: block; position: fixed; z-index: 3; right: 24px; bottom: 26px; font: 600 12px/1.3 var(--head); font-stretch: 88%; color: var(--muted); }
+}
+@media (min-width: 1600px) and (min-height: 860px) {
+  .reel .inner { max-width: 1480px; }
+}
+/* a phone on its side: the film as large as the height allows, its words beside it */
+@media (orientation: landscape) and (max-height: 559px) {
+  :root { --top: calc(40px + env(safe-area-inset-top)); --bottom: calc(52px + env(safe-area-inset-bottom)); }
+  .reel { padding-top: 8px; padding-bottom: 8px; }
+  .reel .inner { max-width: none; height: 100%; display: grid; grid-template-columns: auto minmax(200px, 1fr); gap: 0 18px; align-items: center; }
+  .reel .text, .reel .media { display: flex; flex-direction: column; min-width: 0; }
+  .reel .media { order: -1; height: 100%; justify-content: center; }
+  .screen { margin: 0; height: calc(var(--h) - 46px); max-width: calc(100vw - 260px); width: auto; aspect-ratio: 16 / 9; }   /* room for the line under it */
+  .said { display: none; }
+  .head { font-size: 22px; margin-bottom: 8px; }
+  .dek { -webkit-line-clamp: 4; font-size: 15px; }
+  .ctl .play { width: 46px; height: 46px; }
+  .toast { left: auto; right: max(12px, env(safe-area-inset-right)); transform: none; }
+  .toast[data-on] { transform: none; }
+  .ctl button { height: 42px; min-width: 42px; }
+}
+/* tall narrow phones get a larger hand; small ones keep the reel to the essentials */
+@media (max-width: 979px) and (min-height: 860px) {
+  .head { font-size: 34px; }
+  .said { font-size: 22px; }
+}
+@media (max-height: 700px) and (orientation: portrait) {
+  .head { font-size: 26px; margin-bottom: 10px; }
+  .said { font-size: 19px; margin-top: 10px; }
+  .dek { -webkit-line-clamp: 2; font-size: 15px; margin-top: 8px; }
+  .src { margin-top: 8px; }
+}
+@media (min-width: 600px) and (max-width: 979px) and (orientation: portrait) {
+  .screen { margin: 0; }
+  .head { font-size: 40px; }
+  .said { font-size: 24px; }
+  .dek { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .said .w, .toast, .list { transition: none; }
+}
+
+.sheet-card:focus { outline: none; }
