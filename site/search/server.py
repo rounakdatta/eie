@@ -37,6 +37,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from spots import spots  # noqa: E402
+import reels  # noqa: E402
 
 SITE = os.environ.get("SITE", "/site")
 HOOKS = os.environ.get("HOOKS", os.path.join(HERE, "hooks"))
@@ -305,6 +306,7 @@ class Asked:
 
 INDEX = None
 ASKED = None
+REELS = None   # the newsreel's feed (reels.py), when this version has one
 LIMITS = Limits()
 CACHE = collections.OrderedDict()   # a normalised question -> its answer, for a week
 CACHE_LOCK = threading.Lock()
@@ -372,7 +374,7 @@ class Handler(BaseHTTPRequestHandler):
         pass
 
     def send(self, code, obj, cache=0):
-        body = json.dumps(obj, ensure_ascii=False).encode()
+        body = (obj if isinstance(obj, str) else json.dumps(obj, ensure_ascii=False)).encode()
         self.send_response(code)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
@@ -391,7 +393,13 @@ class Handler(BaseHTTPRequestHandler):
         u = urllib.parse.urlsplit(self.path)
         if u.path in ("/api/health", "/health"):
             return self.send(200, {"ok": True, "spots": INDEX.N, "editions": len(INDEX.editions), "hooked": sum(1 for s in INDEX.spots if s["hooks"]),
-                                   "ai": bool(KEY), "model": MODEL})
+                                   "ai": bool(KEY), "model": MODEL, "reels": bool(REELS and REELS.on()), "nuggets": len(REELS.blob) if REELS else 0})
+        if u.path.startswith("/api/reels"):
+            try:
+                return self.reels(u)
+            except Exception as e:
+                print(json.dumps({"reels": "failed", "why": f"{type(e).__name__}: {str(e)[:160]}"}), flush=True)
+                return self.send(500, {"error": "The newsreel stumbled. Try again."})
         if u.path in ("/api/asked", "/asked"):
             return self.send(200, ASKED.public(), cache=60)
         if u.path not in ("/api/search", "/search"):
@@ -409,13 +417,39 @@ class Handler(BaseHTTPRequestHandler):
             self.send(500, {"error": "The desk is closed for a moment. Try again."})
 
 
+    def reels(self, u):
+        """The newsreel's feed (reels.py): pages of nuggets, the same for everyone, so publicly cacheable."""
+        # Short lives in caches, so the switch is felt within a minute everywhere: the replies only change
+        # with a deploy, but a page of the reel cached for an hour would play on for an hour after "off".
+        if u.path == "/api/reels/state":
+            return self.send(200, {"on": bool(REELS and REELS.on())}, cache=15)
+        if not (REELS and REELS.on()):
+            return self.send(503, {"off": True, "error": "The newsreel is resting."})
+        ip = (self.headers.get("X-Real-Ip") or self.headers.get("X-Forwarded-For", "").split(",")[0] or self.client_address[0]).strip()
+        if not REELS.allow(ip):
+            return self.send(429, {"error": "A moment, please: too many at once."})
+        if u.path == "/api/reels/menu":
+            return self.send(200, REELS.menu(), cache=60)
+        if u.path != "/api/reels":
+            return self.send(404, {"error": "not here"})
+        return self.send(200, REELS.page(reels.params(u.query)), cache=60)
+
+
 def main():
-    global INDEX, ASKED
+    global INDEX, ASKED, REELS
     t0 = time.time()
     INDEX = Index()
     ASKED = Asked()
+    try:
+        REELS = reels.Reels(words, data=DATA)
+    except FileNotFoundError:
+        REELS = None   # a version from before the reel: the desk works on without it
+    except Exception as e:   # a broken file costs the reel, never Lost & Found
+        print(json.dumps({"reels": "off", "why": f"{type(e).__name__}: {str(e)[:160]}"}), flush=True)
+        REELS = None
     print(json.dumps({"desk": "open", "port": PORT, "spots": INDEX.N, "editions": len(INDEX.editions),
                       "hooked": sum(1 for s in INDEX.spots if s["hooks"]), "ai": bool(KEY), "logged": ASKED.total, "log": bool(ASKED.path),
+                      "nuggets": len(REELS.blob) if REELS else 0, "reels": bool(REELS and REELS.on()),
                       "seconds": round(time.time() - t0, 2)}), flush=True)
     ThreadingHTTPServer(("0.0.0.0", PORT), Handler).serve_forever()
 
