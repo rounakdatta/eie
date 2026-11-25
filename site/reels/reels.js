@@ -370,8 +370,13 @@ async function play(i) {
 function stalled(i, f) {
   clearInterval(S.stall);
   const since = performance.now();
+  f.buffered = f.nudged = false;
   S.stall = setInterval(() => {
     if (S.cur !== i || S.paused || S.ended || f.state === 1) return clearInterval(S.stall);
+    // A start that buffered, then came to rest unstarted with no word from YouTube, is asked once more:
+    // seen now and then on a first film, which then never began (playVideo again is harmless if it was
+    // only slow; it cancels nothing, unlike cueing again).
+    if (!f.nudged && f.buffered && f.state === -1 && performance.now() - (f.changedAt || since) > 2500) { f.nudged = true; f.yt.playVideo(); }
     if (performance.now() - since > 10000 && f.state !== 3) {
       clearInterval(S.stall);
       toast("Tap the film to start it");
@@ -418,6 +423,7 @@ function blocked(f) {
 function stateChange(f, s) {
   f.state = s;
   f.changedAt = performance.now();
+  if (s === 3) f.buffered = true;
   if (f.item !== S.cur) { if (s === 1) f.yt.pauseVideo(); return; }   // never a film out of sight
   const rec = S.timing[S.timing.length - 1];
   if (rec && rec.id === S.items[S.cur]?.id) (rec.states ||= []).push([Math.round(performance.now() - rec.t0), s]);
